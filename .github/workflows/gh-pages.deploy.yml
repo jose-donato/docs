@@ -1,11 +1,14 @@
-name: Deploy to GitHub Pages
+name: Deploy to Github Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+
+  workflow_dispatch:
 
 jobs:
-  build:
+  deployment:
     runs-on: ubuntu-latest
 
     strategy:
@@ -13,22 +16,31 @@ jobs:
         node-version: [14.x]
 
     steps:
-      - name: Get files
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install packages
-        run: npm ci
-      - name: Build project
-        run: npm run build
-      - name: Export static files
-        run: npm run export
-      - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+
+      - name: Update NPM
+        run: npm i -g npm@latest
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
         with:
-          branch: gh-pages
-          folder: out
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+      - name: Build
+        run: |
+          npm i --legacy-peer-deps
+          npm run build
+          npm run export
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./out
