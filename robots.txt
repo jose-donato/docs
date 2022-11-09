@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://doks.netlify.app/sitemap.xml
+Sitemap: https://jose-donato.github.io/docs/sitemap.xml
