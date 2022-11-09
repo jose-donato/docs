@@ -1,2 +1,2 @@
 canonifyURLs = true
-baseurl = https://jose-donato.github.io/docs/
+baseurl = "https://jose-donato.github.io/docs/"
