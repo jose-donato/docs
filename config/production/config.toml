@@ -1,1 +1,2 @@
-canonifyURLs = false
+canonifyURLs = true
+baseurl = https://jose-donato.github.io/docs/
