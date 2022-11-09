@@ -1,9 +1,11 @@
 const autoprefixer = require('autoprefixer');
+const tailwindcss = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss');
 const whitelister = require('purgecss-whitelister');
 
 module.exports = {
   plugins: [
+    tailwindcss(),
     autoprefixer(),
     purgecss({
       content: [
