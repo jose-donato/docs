@@ -9,7 +9,7 @@ const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
   url: "https://jose-donato.github.io", // Your website URL
-  baseUrl: "/",
+  baseUrl: "/docs/",
   projectName: "docs",
   organizationName: "jose-donato",
   trailingSlash: false,
