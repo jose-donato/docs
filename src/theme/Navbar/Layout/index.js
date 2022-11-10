@@ -60,7 +60,6 @@ export default function NavbarLayout({ children }) {
         }
       )}
     >
-      {console.log(pathname.startsWith("/docs/sdk"))}
       {children}
       <NavbarBackdrop onClick={mobileSidebar.toggle} />
       <NavbarMobileSidebar />
