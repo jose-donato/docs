@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://jose-donato.github.io/docs/sitemap.xml
