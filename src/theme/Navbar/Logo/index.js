@@ -6,7 +6,6 @@ import Link from "@docusaurus/Link";
 
 export default function NavbarLogo() {
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <div className="flex items-center gap-x-[56px]">
       <Link to="/">
@@ -18,9 +17,10 @@ export default function NavbarLogo() {
           className={clsx(
             "text-xs rounded px-2 py-1 hover:text-white hover:no-underline",
             {
-              "text-grey-100 bg-grey-800 ": pathname.startsWith("/terminal"),
+              "text-grey-100 bg-grey-800 ":
+                pathname.startsWith("/docs/terminal"),
               "text-grey-500 hover:bg-grey-800 ":
-                !pathname.startsWith("/terminal"),
+                !pathname.startsWith("/docs/terminal"),
             }
           )}
         >
@@ -31,8 +31,9 @@ export default function NavbarLogo() {
           className={clsx(
             "text-xs px-2 py-1 rounded hover:text-white hover:no-underline",
             {
-              "text-grey-100 bg-grey-800 ": pathname.startsWith("/sdk"),
-              "text-grey-500 hover:bg-grey-800 ": !pathname.startsWith("/sdk"),
+              "text-grey-100 bg-grey-800 ": pathname.startsWith("/docs/sdk"),
+              "text-grey-500 hover:bg-grey-800 ":
+                !pathname.startsWith("/docs/sdk"),
             }
           )}
         >

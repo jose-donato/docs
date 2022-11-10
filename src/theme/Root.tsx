@@ -1,6 +1,22 @@
-import React from 'react';
+import { useLocation } from "@docusaurus/router";
+import React, { useEffect } from "react";
 
-// Default implementation, that you can customize
 export default function Root({ children }) {
-	return <>{children}</>;
+  const { pathname } = useLocation();
+  useEffect(() => {
+    console.log(pathname);
+    if (pathname.startsWith("/docs/terminal")) {
+      document.documentElement.style.setProperty(
+        "--ifm-color-primary",
+        "#006bb6"
+      );
+    } else if (pathname.startsWith("/docs/sdk")) {
+      document.documentElement.style.setProperty(
+        "--ifm-color-primary",
+        "#e47600"
+      );
+    } else {
+    }
+  }, [pathname]);
+  return <>{children}</>;
 }
