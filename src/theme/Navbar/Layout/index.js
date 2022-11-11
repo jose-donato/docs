@@ -29,7 +29,7 @@ export default function NavbarLayout({ children }) {
     if (pathname.startsWith("/docs/terminal")) {
       document.documentElement.style.setProperty(
         "--ifm-color-primary",
-        "#006bb6"
+        "#669DCB"
       );
     } else if (pathname.startsWith("/docs/sdk")) {
       document.documentElement.style.setProperty(

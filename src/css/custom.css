@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+* {
+  font-family: 'Fira Code', monospace !important;
+}
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
 :root {
+  /*
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -19,12 +25,13 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  */
   --aa-primary-color-rgb: 255, 0, 0 !important;
   --aa-muted-color-rgb: 255, 0, 0 !important;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
+  /*
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -32,15 +39,11 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --aa-primary-color-rgb: rgba(
-    var(--aa-text-color-rgb),
-    var(--aa-text-color-alpha)
-  ) !important;
-  --aa-muted-color-rgb: rgba(
-    var(--aa-text-color-rgb),
-    var(--aa-text-color-alpha)
-  ) !important;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);*/
+  --aa-primary-color-rgb: rgba(var(--aa-text-color-rgb),
+      var(--aa-text-color-alpha)) !important;
+  --aa-muted-color-rgb: rgba(var(--aa-text-color-rgb),
+      var(--aa-text-color-alpha)) !important;
   --aa-background-color-rgb: 0, 0, 0 !important;
 }
 
@@ -66,65 +69,53 @@
 
 .header_docs_sdk {
   background: rgb(25, 10, 17);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(25, 10, 17, 1) 0%,
-    rgba(43, 17, 25, 1) 15%,
-    rgba(64, 27, 33, 1) 45%,
-    rgba(75, 33, 26, 1) 64%,
-    rgba(77, 34, 21, 1) 82%,
-    rgba(71, 35, 15, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(25, 10, 17, 1) 0%,
-    rgba(43, 17, 25, 1) 15%,
-    rgba(64, 27, 33, 1) 45%,
-    rgba(75, 33, 26, 1) 64%,
-    rgba(77, 34, 21, 1) 82%,
-    rgba(71, 35, 15, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(25, 10, 17, 1) 0%,
-    rgba(43, 17, 25, 1) 15%,
-    rgba(64, 27, 33, 1) 45%,
-    rgba(75, 33, 26, 1) 64%,
-    rgba(77, 34, 21, 1) 82%,
-    rgba(71, 35, 15, 1) 100%
-  ) !important;
+  background: -moz-linear-gradient(90deg,
+      rgba(25, 10, 17, 1) 0%,
+      rgba(43, 17, 25, 1) 15%,
+      rgba(64, 27, 33, 1) 45%,
+      rgba(75, 33, 26, 1) 64%,
+      rgba(77, 34, 21, 1) 82%,
+      rgba(71, 35, 15, 1) 100%);
+  background: -webkit-linear-gradient(90deg,
+      rgba(25, 10, 17, 1) 0%,
+      rgba(43, 17, 25, 1) 15%,
+      rgba(64, 27, 33, 1) 45%,
+      rgba(75, 33, 26, 1) 64%,
+      rgba(77, 34, 21, 1) 82%,
+      rgba(71, 35, 15, 1) 100%);
+  background: linear-gradient(90deg,
+      rgba(25, 10, 17, 1) 0%,
+      rgba(43, 17, 25, 1) 15%,
+      rgba(64, 27, 33, 1) 45%,
+      rgba(75, 33, 26, 1) 64%,
+      rgba(77, 34, 21, 1) 82%,
+      rgba(71, 35, 15, 1) 100%) !important;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#190a11", endColorstr="#47230f", GradientType=1);
 }
 
 /* convert to css tag */
 .header_docs_terminal {
   background: rgb(6, 45, 72);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(6, 45, 72, 1) 0%,
-    rgba(11, 48, 84, 1) 15%,
-    rgba(14, 56, 108, 1) 45%,
-    rgba(11, 32, 61, 1) 64%,
-    rgba(6, 16, 26, 1) 82%,
-    rgba(6, 7, 9, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(6, 45, 72, 1) 0%,
-    rgba(11, 48, 84, 1) 15%,
-    rgba(14, 56, 108, 1) 45%,
-    rgba(11, 32, 61, 1) 64%,
-    rgba(6, 16, 26, 1) 82%,
-    rgba(6, 7, 9, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(6, 45, 72, 1) 0%,
-    rgba(11, 48, 84, 1) 15%,
-    rgba(14, 56, 108, 1) 45%,
-    rgba(11, 32, 61, 1) 64%,
-    rgba(6, 16, 26, 1) 82%,
-    rgba(6, 7, 9, 1) 100%
-  );
+  background: -moz-linear-gradient(90deg,
+      rgba(6, 45, 72, 1) 0%,
+      rgba(11, 48, 84, 1) 15%,
+      rgba(14, 56, 108, 1) 45%,
+      rgba(11, 32, 61, 1) 64%,
+      rgba(6, 16, 26, 1) 82%,
+      rgba(6, 7, 9, 1) 100%);
+  background: -webkit-linear-gradient(90deg,
+      rgba(6, 45, 72, 1) 0%,
+      rgba(11, 48, 84, 1) 15%,
+      rgba(14, 56, 108, 1) 45%,
+      rgba(11, 32, 61, 1) 64%,
+      rgba(6, 16, 26, 1) 82%,
+      rgba(6, 7, 9, 1) 100%);
+  background: linear-gradient(90deg,
+      rgba(6, 45, 72, 1) 0%,
+      rgba(11, 48, 84, 1) 15%,
+      rgba(14, 56, 108, 1) 45%,
+      rgba(11, 32, 61, 1) 64%,
+      rgba(6, 16, 26, 1) 82%,
+      rgba(6, 7, 9, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#062d48", endColorstr="#060709", GradientType=1);
 }
