@@ -31,6 +31,14 @@ export default function Home(): JSX.Element {
             </p>
           </Link>
         </div>
+        <div className='flex w-full container items-center justify-center gap-6 px-6 sm:mx-0 mt-8 md:!mt-14 lg:!mt-15 md:mb-0 flex-col lg:!flex-row z-10 lg:!translate-y-0'>
+          <Link to="/docs/z-guides-markdown" className="!no-underline header_docs_sdk relative w-full h-full max-w-full p-8 rounded overflow-hidden flex flex-col items-center justify-center border border-grey-400 bg-grey-900">
+            <h3 className='uppercase text-white tracking-widest font-bold text-2xl mb-2'>Markdown Throwdown</h3>
+            <p className='text-center text-sm text-grey-300'>
+              A place where Andrew made a bunch of markdown examples
+            </p>
+          </Link>
+        </div>
       </main>
     </Layout>
   );

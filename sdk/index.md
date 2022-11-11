@@ -4,52 +4,11 @@ sidebar_position: 1
 
 # Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# OPENBB PYTHON SDK
 
-## Getting Started
 
-Get started by **creating a new site**.
+OpenBB SDK gives you direct and programmatic access to all capabilities from OpenBB Terminal. You will have the necessary building blocks to create your own financial tools and applications, whether that be a visualization dashboard or a custom report on Jupyter Notebook.
 
-Or **try Docusaurus immediately** with
-**[docusaurus.new](https://docusaurus.new)**.
+With OpenBB SDK, you can access to normalized financial data from dozens of data providers, without having to develop your own integrations from scratch. On top of financial data feeds, OpenBB SDK also provides you with a toolbox to perform financial analysis on a variety of asset classes, including stocks, crypto, ETFs, funds; the economy as well as your portfolios.
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related
-    to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run
-the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any
-other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work
-with your newly created Docusaurus site, you'll need to navigate the terminal
-there.
-
-The `npm run start` command builds your website locally and serves it through a
-development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads
-automatically** and displays your changes.
+OpenBB SDK is created and maintained by OpenBB team together with the contributions from hundreds of community members. This gives us an unrivaled speed of development and the ability to maintain stable integrations with numerous third-party data providers. Developing and maintaining an full-blown investment research infrastructure from the ground up takes a lot of time and effort. However, it does not have to be. Take advantage of OpenBB SDK with its out-of-the-box data connectors and financial analysis toolkit. So that you can focus on designing and building your financial reports and applications.

@@ -49,6 +49,15 @@ const config = {
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "z-guides-markdown",
+        path: "z-guides-markdown",
+        routeBasePath: "z-guides-markdown",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
     require.resolve("@cmfcmf/docusaurus-search-local"),
   ],
   presets: [
