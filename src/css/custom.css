@@ -12,7 +12,7 @@
   }
 
   article {
-    @apply prose lg:prose-lg dark:prose-invert;
+    @apply prose lg:prose-lg dark:prose-invert !max-w-none;
   }
 }
 

@@ -76,10 +76,10 @@ function ColorModeToggle({ className, value, onChange }) {
           </button>
         </PopoverPrimitive.Content>
       </PopoverPrimitive.Root>
-      <button className="relative flex items-center justify-center md:justify-start bg-grey-900 p-2 border text-grey-400 border-grey-400 hover:text-grey-200 active:text-white focus:outline-grey-500 focus:outline hover:border-grey-200 rounded md:w-[200px] input gap-3">
+      {/*<button className="relative flex items-center justify-center md:justify-start bg-grey-900 p-2 border text-grey-400 border-grey-400 hover:text-grey-200 active:text-white focus:outline-grey-500 focus:outline hover:border-grey-200 rounded md:w-[200px] input gap-3">
         <span className='text-xs whitespace-nowrap'>Search...</span>
         <span className="absolute right-1.5 px-1.5 text-grey-400 border border-grey-400/50 rounded text-[10px] items-center gap-1 hidden sm:flex">CTRL+K</span>
-      </button>
+        </button>*/}
     </div>
   );
 }
