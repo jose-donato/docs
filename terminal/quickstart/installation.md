@@ -89,7 +89,7 @@ Each of this steps need to be followed to have a working version of OpenBBTermin
 
 We will detail these steps in the rest of this document.
 
-1. Installing Docker and Docker Compose
+### 1. Installing Docker and Docker Compose
 INSTALL DOCKER
 
 Installing Docker Desktop is the easiest way for most people:
@@ -124,7 +124,7 @@ Open the docker desktop app in this case.
 Server:
 ERROR: Cannot connect to the Docker daemon at unix:///var/run/docker.sock.
 Is the docker daemon running?
-2. Pulling and running OpenBBTerminal Docker Container
+### 2. Pulling and running OpenBBTerminal Docker Container
 DOCKER COMPOSE
 
 Here are the commands to use Docker Compose to pull and run the OpenBBTerminal Docker Container:
@@ -161,7 +161,7 @@ Note for windows:
     Ignore this message if you are using Powershell or a more evolved interpreters.
     If you are using the builtin Windows interpreter.
     Replace `~` by `%USERPROFILE%` in the command above.
-3. Configuring your X-server to show plots
+### 3. Configuring your X-server to show plots
 In order to display plots in the docker container, we need to configure the XServer on the host machine. Without this configuration the interactive charts will not be displayed.
 
 On Windows
@@ -245,7 +245,7 @@ If you are using WSL or Linux click Installing on Linux
 If you are using Windows click Installing on Windows. ONLY REQUIRED IF NOT USING WSL, you also need to install/update Microsoft C++ Build Tools from here: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 After following the steps, confirm that you have it by opening a terminal and running: conda -V. The output should be something along the lines of: conda 4.11.0
 
-Install git
+### Install git
 ``` bash
 conda install -c anaconda git
 ```
@@ -258,7 +258,7 @@ sudo apt install -y cmake gcc
 pip install cmake
 ```
 
-Clone the Project
+### Clone the Project
 
 Via HTTPS: git clone https://github.com/OpenBB-finance/OpenBBTerminal.git
 via SSH: git clone git@github.com:OpenBB-finance/OpenBBTerminal.git
@@ -268,7 +268,7 @@ Navigate into the project's folder
 cd OpenBBTerminal/
 ```
 
-Create Environment
+### Create Environment
 
 You can name the environment whatever you want. Although you could use names such as: welikethestock, thisistheway or diamondhands, we recommend something simple and intuitive like obb. This is because this name will be used from now onwards.
 
@@ -289,15 +289,14 @@ conda env create -n obb --file build/conda/conda-3-9-env-full.yaml
 
 _Note: Using python 3.10 can lead to undesirable functionality for certain commands._
 
-
-Activate the virtual environment
+### Activate the virtual environment
 
 ``` bash
 conda activate obb
 ```
 Note: At the end, you can deactivate it with: conda deactivate.
 
-Install dependencies with poetry
+### Install dependencies with poetry
 
 Install the main dependencies with
 ``` bash
@@ -305,7 +304,6 @@ poetry install
 ```
 
 For machine learning instead type:
-
 ``` bash
 poetry install -E prediction
 ```
@@ -316,7 +314,7 @@ If you are having trouble with Poetry (e.g. on a non-conda python), simply insta
 pip install -r requirements.txt
 ```
 
-You're ready to use the terminal!
+### You're ready to use the terminal!
 
 ``` bash
 python terminal.py
