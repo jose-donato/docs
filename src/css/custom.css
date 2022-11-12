@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  pre {
+    @apply !border !border-grey-400/20 !shadow;
+  }
+
+  body {
+    @apply bg-white dark:bg-grey-850;
+  }
+
+  article {
+    @apply prose lg:prose-lg dark:prose-invert;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
 * {
@@ -46,6 +60,8 @@
       var(--aa-text-color-alpha)) !important;
   --aa-background-color-rgb: 0, 0, 0 !important;
 }
+
+
 
 .aa-DetachedSearchButtonPlaceholder {
   font-size: 12px;
@@ -118,4 +134,13 @@
       rgba(6, 16, 26, 1) 82%,
       rgba(6, 7, 9, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#062d48", endColorstr="#060709", GradientType=1);
+}
+
+
+.header_docs {
+  background: rgb(21, 20, 21);
+  background: -moz-linear-gradient(90deg, rgba(21, 20, 21, 1) 0%, rgba(38, 38, 39, 1) 15%, rgba(73, 73, 73, 1) 40%, rgba(76, 77, 76, 255) 64%, rgba(46, 47, 46, 1) 82%, rgba(16, 16, 17, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(21, 20, 21, 1) 0%, rgba(38, 38, 39, 1) 15%, rgba(73, 73, 73, 1) 40%, rgba(76, 77, 76, 255) 64%, rgba(46, 47, 46, 1) 82%, rgba(16, 16, 17, 1) 100%);
+  background: linear-gradient(90deg, rgba(21, 20, 21, 1) 0%, rgba(38, 38, 39, 1) 15%, rgba(73, 73, 73, 1) 40%, rgba(76, 77, 76, 255) 64%, rgba(46, 47, 46, 1) 82%, rgba(16, 16, 17, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151415", endColorstr="#101011", GradientType=1);
 }
