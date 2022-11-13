@@ -1,6 +1,6 @@
 ---
 title: trending
-description: Returns a list of trending articles
+description: OpenBB SDK Function
 ---
 # trending
 

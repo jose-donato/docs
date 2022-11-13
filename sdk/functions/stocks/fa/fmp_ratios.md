@@ -1,6 +1,6 @@
 ---
 title: fmp_ratios
-description: Get key ratios
+description: OpenBB SDK Function
 ---
 # fmp_ratios
 

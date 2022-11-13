@@ -1,6 +1,6 @@
 ---
 title: events
-description: Get economic calendar [Source: Investing.com]
+description: OpenBB SDK Function
 ---
 # events
 

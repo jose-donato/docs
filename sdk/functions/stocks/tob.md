@@ -1,6 +1,6 @@
 ---
 title: tob
-description: Get top of book bid and ask for ticker on exchange [CBOE.com]
+description: OpenBB SDK Function
 ---
 # tob
 

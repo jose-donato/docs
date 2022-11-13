@@ -1,6 +1,6 @@
 ---
 title: analyst
-description: Get analyst data. [Source: Finviz]
+description: OpenBB SDK Function
 ---
 # analyst
 

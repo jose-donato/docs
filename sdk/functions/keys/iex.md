@@ -1,6 +1,6 @@
 ---
 title: iex
-description: Set IEX Cloud key
+description: OpenBB SDK Function
 ---
 # iex
 

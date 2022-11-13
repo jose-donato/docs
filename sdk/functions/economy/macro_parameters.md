@@ -1,6 +1,6 @@
 ---
 title: macro_parameters
-description: This function returns the available macro parameters with detail.
+description: OpenBB SDK Function
 ---
 # macro_parameters
 

@@ -1,6 +1,6 @@
 ---
 title: filter_stocks
-description: Filter stocks based on country, sector, industry, market cap and exclude exchanges.
+description: OpenBB SDK Function
 ---
 # filter_stocks
 

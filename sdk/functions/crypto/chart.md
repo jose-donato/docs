@@ -1,6 +1,6 @@
 ---
 title: chart
-description: Load data for Technical Analysis
+description: OpenBB SDK Function
 ---
 # chart
 

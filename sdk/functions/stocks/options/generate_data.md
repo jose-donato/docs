@@ -1,6 +1,6 @@
 ---
 title: generate_data
-description: Gets x values, and y values before and after premiums
+description: OpenBB SDK Function
 ---
 # generate_data
 

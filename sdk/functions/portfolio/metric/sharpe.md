@@ -1,6 +1,6 @@
 ---
 title: sharpe
-description: Class method that retrieves sharpe ratio for portfolio and benchmark selected
+description: OpenBB SDK Function
 ---
 # sharpe
 

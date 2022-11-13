@@ -1,6 +1,6 @@
 ---
 title: active
-description: Get stocks ordered in descending order by intraday trade volume. [Source: Yahoo Finance]
+description: OpenBB SDK Function
 ---
 # active
 

@@ -1,6 +1,6 @@
 ---
 title: getdd
-description: Gets due diligence posts from list of subreddits [Source: reddit]
+description: OpenBB SDK Function
 ---
 # getdd
 

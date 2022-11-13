@@ -1,6 +1,6 @@
 ---
 title: binance_available_quotes_for_each_coin
-description: Helper methods that for every coin available on Binance add all quote assets. [Source: Binance]
+description: OpenBB SDK Function
 ---
 # binance_available_quotes_for_each_coin
 

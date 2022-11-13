@@ -1,6 +1,6 @@
 ---
 title: hq
-description: Gets google map url for headquarter
+description: OpenBB SDK Function
 ---
 # hq
 

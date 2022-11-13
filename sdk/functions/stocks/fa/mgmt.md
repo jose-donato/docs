@@ -1,6 +1,6 @@
 ---
 title: mgmt
-description: Get company managers from Business Insider
+description: OpenBB SDK Function
 ---
 # mgmt
 

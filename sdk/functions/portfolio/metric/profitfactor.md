@@ -1,6 +1,6 @@
 ---
 title: profitfactor
-description: Gets profit factor
+description: OpenBB SDK Function
 ---
 # profitfactor
 

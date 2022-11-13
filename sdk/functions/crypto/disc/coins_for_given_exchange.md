@@ -1,6 +1,6 @@
 ---
 title: coins_for_given_exchange
-description: Helper method to get all coins available on binance exchange [Source: CoinGecko]
+description: OpenBB SDK Function
 ---
 # coins_for_given_exchange
 

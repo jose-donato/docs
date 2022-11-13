@@ -1,6 +1,6 @@
 ---
 title: crypto_hack_slugs
-description: Get all crypto hack slugs
+description: OpenBB SDK Function
 ---
 # crypto_hack_slugs
 

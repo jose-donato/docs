@@ -1,6 +1,6 @@
 ---
 title: cmc
-description: Set Coinmarketcap key
+description: OpenBB SDK Function
 ---
 # cmc
 

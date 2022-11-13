@@ -1,6 +1,6 @@
 ---
 title: wma
-description: Gets weighted moving average (WMA) for stock
+description: OpenBB SDK Function
 ---
 # wma
 

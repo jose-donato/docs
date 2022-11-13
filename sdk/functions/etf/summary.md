@@ -1,6 +1,6 @@
 ---
 title: summary
-description: Return summary description of ETF. [Source: Yahoo Finance]
+description: OpenBB SDK Function
 ---
 # summary
 
@@ -21,6 +21,34 @@ Description: Return summary description of ETF. [Source: Yahoo Finance]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | str | None | Summary description of the ETF | None | None |
+
+## Returns
+
+None
+
+## Examples
+
+
+
+
+# VIEW
+
+# summary
+
+## etf_yfinance_view.display_etf_description
+
+```python
+def summary(name: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_view.py#L102)
+
+Description: Display ETF description summary. [Source: Yahoo Finance]
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| name | str | ETF name | None | False |
 
 ## Returns
 

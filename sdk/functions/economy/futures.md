@@ -1,6 +1,6 @@
 ---
 title: futures
-description: Scrape data for top commodities
+description: OpenBB SDK Function
 ---
 # futures
 

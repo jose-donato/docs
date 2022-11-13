@@ -1,6 +1,6 @@
 ---
 title: rating
-description: Get ratings for a given ticker. [Source: Financial Modeling Prep]
+description: OpenBB SDK Function
 ---
 # rating
 

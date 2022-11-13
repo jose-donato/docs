@@ -1,6 +1,6 @@
 ---
 title: sust
-description: Get sustainability metrics from yahoo
+description: OpenBB SDK Function
 ---
 # sust
 

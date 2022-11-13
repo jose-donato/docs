@@ -1,6 +1,6 @@
 ---
 title: capm_information
-description: Provides information that relates to the CAPM model
+description: OpenBB SDK Function
 ---
 # capm_information
 

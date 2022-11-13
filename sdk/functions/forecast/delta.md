@@ -1,6 +1,6 @@
 ---
 title: delta
-description: Calculate the %change of a variable based on a specific column
+description: OpenBB SDK Function
 ---
 # delta
 

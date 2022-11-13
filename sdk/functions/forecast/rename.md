@@ -1,6 +1,6 @@
 ---
 title: rename
-description: Rename a column in a dataframe
+description: OpenBB SDK Function
 ---
 # rename
 

@@ -1,6 +1,6 @@
 ---
 title: sectors
-description: Get all sectors in Yahoo Finance data based on country or industry. [Source: Finance Database]
+description: OpenBB SDK Function
 ---
 # sectors
 

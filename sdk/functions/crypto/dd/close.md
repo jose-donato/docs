@@ -1,6 +1,6 @@
 ---
 title: close
-description: Returns the price of a cryptocurrency
+description: OpenBB SDK Function
 ---
 # close
 

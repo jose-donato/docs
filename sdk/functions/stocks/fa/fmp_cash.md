@@ -1,6 +1,6 @@
 ---
 title: fmp_cash
-description: Get cash flow
+description: OpenBB SDK Function
 ---
 # fmp_cash
 

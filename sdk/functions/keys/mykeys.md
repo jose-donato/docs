@@ -1,6 +1,6 @@
 ---
 title: mykeys
-description: Get currently set API keys.
+description: OpenBB SDK Function
 ---
 # mykeys
 

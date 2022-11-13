@@ -1,6 +1,6 @@
 ---
 title: country_codes
-description: Get available country codes for Bigmac index
+description: OpenBB SDK Function
 ---
 # country_codes
 

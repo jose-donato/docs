@@ -1,6 +1,6 @@
 ---
 title: asc
-description: Get Yahoo Finance small cap stocks with earnings growth rates better than 25%.
+description: OpenBB SDK Function
 ---
 # asc
 

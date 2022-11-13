@@ -1,6 +1,6 @@
 ---
 title: gaintopain
-description: Get Pain-to-Gain ratio based on historical data
+description: OpenBB SDK Function
 ---
 # gaintopain
 

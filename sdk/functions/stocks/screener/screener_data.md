@@ -1,6 +1,6 @@
 ---
 title: screener_data
-description: Screener Overview
+description: OpenBB SDK Function
 ---
 # screener_data
 

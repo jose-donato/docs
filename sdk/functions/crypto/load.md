@@ -1,6 +1,6 @@
 ---
 title: load
-description: Load crypto currency to get data for
+description: OpenBB SDK Function
 ---
 # load
 

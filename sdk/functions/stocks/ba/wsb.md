@@ -1,6 +1,6 @@
 ---
 title: wsb
-description: Get wsb posts [Source: reddit]
+description: OpenBB SDK Function
 ---
 # wsb
 

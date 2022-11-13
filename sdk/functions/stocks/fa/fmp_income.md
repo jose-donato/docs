@@ -1,6 +1,6 @@
 ---
 title: fmp_income
-description: Get income statements
+description: OpenBB SDK Function
 ---
 # fmp_income
 

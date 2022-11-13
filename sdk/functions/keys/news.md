@@ -1,6 +1,6 @@
 ---
 title: news
-description: Set News key
+description: OpenBB SDK Function
 ---
 # news
 

@@ -1,6 +1,6 @@
 ---
 title: enterprise
-description: Financial Modeling Prep ticker enterprise
+description: OpenBB SDK Function
 ---
 # enterprise
 

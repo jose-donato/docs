@@ -1,6 +1,6 @@
 ---
 title: trackerr
-description: Get tracking error
+description: OpenBB SDK Function
 ---
 # trackerr
 

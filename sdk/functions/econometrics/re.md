@@ -1,6 +1,6 @@
 ---
 title: re
-description: The random effects model is virtually identical to the pooled OLS model except that is accounts for the
+description: OpenBB SDK Function
 ---
 # re
 

@@ -1,6 +1,6 @@
 ---
 title: summary
-description: Get technical summary report provided by FinBrain's API
+description: OpenBB SDK Function
 ---
 # summary
 

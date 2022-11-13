@@ -1,6 +1,6 @@
 ---
 title: list_of_coins
-description: Get list of all available coins on CoinPaprika  [Source: CoinPaprika]
+description: OpenBB SDK Function
 ---
 # list_of_coins
 

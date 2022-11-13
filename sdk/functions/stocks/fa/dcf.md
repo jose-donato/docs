@@ -1,6 +1,6 @@
 ---
 title: dcf
-description: Get stocks dcf from FMP
+description: OpenBB SDK Function
 ---
 # dcf
 

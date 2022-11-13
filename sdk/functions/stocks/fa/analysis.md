@@ -1,6 +1,6 @@
 ---
 title: analysis
-description: Save time reading SEC filings with the help of machine learning. [Source: https://eclect.us]
+description: OpenBB SDK Function
 ---
 # analysis
 

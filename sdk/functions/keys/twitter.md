@@ -1,6 +1,6 @@
 ---
 title: twitter
-description: Set Twitter key
+description: OpenBB SDK Function
 ---
 # twitter
 

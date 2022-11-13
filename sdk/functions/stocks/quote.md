@@ -1,6 +1,6 @@
 ---
 title: quote
-description: Display quote from YahooFinance
+description: OpenBB SDK Function
 ---
 # quote
 

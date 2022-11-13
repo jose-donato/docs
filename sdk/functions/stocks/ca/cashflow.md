@@ -1,6 +1,6 @@
 ---
 title: cashflow
-description: Get cashflow data. [Source: Marketwatch]
+description: OpenBB SDK Function
 ---
 # cashflow
 

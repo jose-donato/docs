@@ -1,6 +1,6 @@
 ---
 title: coinglass
-description: Set Coinglass key.
+description: OpenBB SDK Function
 ---
 # coinglass
 

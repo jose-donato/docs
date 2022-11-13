@@ -1,6 +1,6 @@
 ---
 title: sortino
-description: Class method that retrieves sortino ratio for portfolio and benchmark selected
+description: OpenBB SDK Function
 ---
 # sortino
 

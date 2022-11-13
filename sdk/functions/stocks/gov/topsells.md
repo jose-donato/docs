@@ -1,6 +1,6 @@
 ---
 title: topsells
-description: Get top sell government trading [Source: quiverquant.com]
+description: OpenBB SDK Function
 ---
 # topsells
 
@@ -25,6 +25,39 @@ Description: Get top sell government trading [Source: quiverquant.com]
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of top government sell trading |
+
+## Examples
+
+
+
+
+# VIEW
+
+# topsells
+
+## stocks_gov_quiverquant_view.display_government_sells
+
+```python
+def topsells(gov_type: str, past_transactions_months: int, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L150)
+
+Description: Top sell government trading [Source: quiverquant.com]
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| gov_type | str | Type of government data between: congress, senate and house | None | False |
+| past_transactions_months | int | Number of months to get trading for | None | False |
+| limit | int | Number of tickers to show | None | False |
+| raw | bool | Display raw data | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
 
 ## Examples
 

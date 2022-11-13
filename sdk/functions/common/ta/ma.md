@@ -1,6 +1,6 @@
 ---
 title: ma
-description: Plots MA technical indicator
+description: OpenBB SDK Function
 ---
 # ma
 

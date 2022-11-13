@@ -1,6 +1,6 @@
 ---
 title: losers
-description: Get top losers. [Source: Yahoo Finance]
+description: OpenBB SDK Function
 ---
 # losers
 

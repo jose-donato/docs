@@ -1,6 +1,6 @@
 ---
 title: fred_notes
-description: Get series notes. [Source: FRED]
+description: OpenBB SDK Function
 ---
 # fred_notes
 

@@ -1,6 +1,6 @@
 ---
 title: customer
-description: Print customers from ticker provided
+description: OpenBB SDK Function
 ---
 # customer
 

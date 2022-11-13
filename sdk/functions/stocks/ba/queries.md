@@ -1,6 +1,6 @@
 ---
 title: queries
-description: Get related queries from google api [Source: google]
+description: OpenBB SDK Function
 ---
 # queries
 

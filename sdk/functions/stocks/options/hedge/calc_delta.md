@@ -1,6 +1,6 @@
 ---
 title: calc_delta
-description: The first-order partial-derivative with respect to the underlying asset of the Black-Scholes
+description: OpenBB SDK Function
 ---
 # calc_delta
 

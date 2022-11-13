@@ -1,6 +1,6 @@
 ---
 title: news
-description: Get news from Finviz
+description: OpenBB SDK Function
 ---
 # news
 

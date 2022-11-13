@@ -1,6 +1,6 @@
 ---
 title: view
-description: Display screener output
+description: OpenBB SDK Function
 ---
 # view
 

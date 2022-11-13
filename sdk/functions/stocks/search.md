@@ -1,6 +1,6 @@
 ---
 title: search
-description: Search selected query for tickers.
+description: OpenBB SDK Function
 ---
 # search
 

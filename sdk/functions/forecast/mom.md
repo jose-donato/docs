@@ -1,6 +1,6 @@
 ---
 title: mom
-description: A momentum oscillator, which measures the percentage change between the current
+description: OpenBB SDK Function
 ---
 # mom
 

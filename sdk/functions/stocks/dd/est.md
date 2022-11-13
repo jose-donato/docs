@@ -1,6 +1,6 @@
 ---
 title: est
-description: Get analysts' estimates for a given ticker. [Source: Business Insider]
+description: OpenBB SDK Function
 ---
 # est
 

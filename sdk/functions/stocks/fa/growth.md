@@ -1,6 +1,6 @@
 ---
 title: growth
-description: Get financial statement growth
+description: OpenBB SDK Function
 ---
 # growth
 

@@ -1,6 +1,6 @@
 ---
 title: website
-description: Gets website of company from yfinance
+description: OpenBB SDK Function
 ---
 # website
 

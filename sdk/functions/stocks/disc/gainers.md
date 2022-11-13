@@ -1,6 +1,6 @@
 ---
 title: gainers
-description: Get top gainers. [Source: Yahoo Finance]
+description: OpenBB SDK Function
 ---
 # gainers
 

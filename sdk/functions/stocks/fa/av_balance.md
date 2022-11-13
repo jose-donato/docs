@@ -1,6 +1,6 @@
 ---
 title: av_balance
-description: Get balance sheets for company
+description: OpenBB SDK Function
 ---
 # av_balance
 

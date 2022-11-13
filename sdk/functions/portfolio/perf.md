@@ -1,6 +1,6 @@
 ---
 title: perf
-description: Get portfolio performance vs the benchmark
+description: OpenBB SDK Function
 ---
 # perf
 

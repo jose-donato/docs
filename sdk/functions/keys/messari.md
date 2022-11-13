@@ -1,6 +1,6 @@
 ---
 title: messari
-description: Set Messari key.
+description: OpenBB SDK Function
 ---
 # messari
 

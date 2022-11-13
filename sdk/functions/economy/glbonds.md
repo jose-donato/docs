@@ -1,6 +1,6 @@
 ---
 title: glbonds
-description: Scrape data for global bonds
+description: OpenBB SDK Function
 ---
 # glbonds
 

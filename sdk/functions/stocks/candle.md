@@ -1,6 +1,6 @@
 ---
 title: candle
-description: Show candle plot of loaded ticker.
+description: OpenBB SDK Function
 ---
 # candle
 

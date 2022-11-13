@@ -1,6 +1,6 @@
 ---
 title: finnhub
-description: Set Finnhub key
+description: OpenBB SDK Function
 ---
 # finnhub
 

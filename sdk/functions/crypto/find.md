@@ -1,6 +1,6 @@
 ---
 title: find
-description: Find similar coin by coin name,symbol or id.
+description: OpenBB SDK Function
 ---
 # find
 

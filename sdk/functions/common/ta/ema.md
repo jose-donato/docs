@@ -1,6 +1,6 @@
 ---
 title: ema
-description: Gets exponential moving average (EMA) for stock
+description: OpenBB SDK Function
 ---
 # ema
 

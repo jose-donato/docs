@@ -1,6 +1,6 @@
 ---
 title: countries
-description: Get all countries in Yahoo Finance data based on sector or industry. [Source: Finance Database]
+description: OpenBB SDK Function
 ---
 # countries
 

@@ -1,6 +1,6 @@
 ---
 title: exchanges
-description: Helper method to get all the exchanges supported by ccxt
+description: OpenBB SDK Function
 ---
 # exchanges
 

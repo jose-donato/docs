@@ -1,6 +1,6 @@
 ---
 title: global_deaths
-description: Get historical deaths for given country
+description: OpenBB SDK Function
 ---
 # global_deaths
 

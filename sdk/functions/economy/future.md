@@ -1,6 +1,6 @@
 ---
 title: future
-description: Get futures data. [Source: Finviz]
+description: OpenBB SDK Function
 ---
 # future
 

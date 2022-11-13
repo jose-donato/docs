@@ -1,6 +1,6 @@
 ---
 title: polygon
-description: Set Polygon key
+description: OpenBB SDK Function
 ---
 # polygon
 

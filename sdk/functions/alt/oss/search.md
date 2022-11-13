@@ -1,6 +1,6 @@
 ---
 title: search
-description: Get repos sorted by stars or forks. Can be filtered by categories
+description: OpenBB SDK Function
 ---
 # search
 

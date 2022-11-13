@@ -1,6 +1,6 @@
 ---
 title: trading_pair_info
-description: Get information about chosen trading pair. [Source: Coinbase]
+description: OpenBB SDK Function
 ---
 # trading_pair_info
 

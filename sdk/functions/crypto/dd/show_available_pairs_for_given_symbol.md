@@ -1,6 +1,6 @@
 ---
 title: show_available_pairs_for_given_symbol
-description: Return all available quoted assets for given symbol. [Source: Binance]
+description: OpenBB SDK Function
 ---
 # show_available_pairs_for_given_symbol
 

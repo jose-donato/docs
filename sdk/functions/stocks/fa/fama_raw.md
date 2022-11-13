@@ -1,6 +1,6 @@
 ---
 title: fama_raw
-description: Get Fama French data
+description: OpenBB SDK Function
 ---
 # fama_raw
 

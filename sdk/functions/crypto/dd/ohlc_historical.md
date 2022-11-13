@@ -1,6 +1,6 @@
 ---
 title: ohlc_historical
-description: Open/High/Low/Close values with volume and market_cap. [Source: CoinPaprika]
+description: OpenBB SDK Function
 ---
 # ohlc_historical
 

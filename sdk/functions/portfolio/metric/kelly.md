@@ -1,6 +1,6 @@
 ---
 title: kelly
-description: Gets kelly criterion
+description: OpenBB SDK Function
 ---
 # kelly
 

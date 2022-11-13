@@ -1,6 +1,6 @@
 ---
 title: ipo
-description: Get IPO calendar
+description: OpenBB SDK Function
 ---
 # ipo
 

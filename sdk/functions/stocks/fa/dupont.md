@@ -1,6 +1,6 @@
 ---
 title: dupont
-description: Get dupont ratios
+description: OpenBB SDK Function
 ---
 # dupont
 

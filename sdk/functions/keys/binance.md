@@ -1,6 +1,6 @@
 ---
 title: binance
-description: Set Binance key
+description: OpenBB SDK Function
 ---
 # binance
 

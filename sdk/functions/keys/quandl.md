@@ -1,6 +1,6 @@
 ---
 title: quandl
-description: Set Quandl key
+description: OpenBB SDK Function
 ---
 # quandl
 

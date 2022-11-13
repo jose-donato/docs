@@ -1,6 +1,6 @@
 ---
 title: lobbying
-description: Corporate lobbying details
+description: OpenBB SDK Function
 ---
 # lobbying
 

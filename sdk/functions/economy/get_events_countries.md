@@ -1,6 +1,6 @@
 ---
 title: get_events_countries
-description: Get available countries for events command.
+description: OpenBB SDK Function
 ---
 # get_events_countries
 

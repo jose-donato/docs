@@ -1,6 +1,6 @@
 ---
 title: data
-description: Get fundamental data from finviz
+description: OpenBB SDK Function
 ---
 # data
 

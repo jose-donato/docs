@@ -1,6 +1,6 @@
 ---
 title: ols
-description: Performs an OLS regression on timeseries data. [Source: Statsmodels]
+description: OpenBB SDK Function
 ---
 # ols
 

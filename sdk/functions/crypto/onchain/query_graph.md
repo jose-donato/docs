@@ -1,6 +1,6 @@
 ---
 title: query_graph
-description: Helper methods for querying graphql api. [Source: https://bitquery.io/]
+description: OpenBB SDK Function
 ---
 # query_graph
 

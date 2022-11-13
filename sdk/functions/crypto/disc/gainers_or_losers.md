@@ -1,6 +1,6 @@
 ---
 title: gainers_or_losers
-description: Returns data about top gainers - coins which gain the most in given period and
+description: OpenBB SDK Function
 ---
 # gainers_or_losers
 

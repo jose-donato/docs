@@ -1,6 +1,6 @@
 ---
 title: commonsense
-description: Get common sense ratio
+description: OpenBB SDK Function
 ---
 # commonsense
 

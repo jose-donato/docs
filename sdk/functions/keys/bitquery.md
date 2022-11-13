@@ -1,6 +1,6 @@
 ---
 title: bitquery
-description: Set Bitquery key
+description: OpenBB SDK Function
 ---
 # bitquery
 

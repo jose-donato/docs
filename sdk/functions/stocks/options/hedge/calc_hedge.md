@@ -1,6 +1,6 @@
 ---
 title: calc_hedge
-description: Determine the hedge position and the weights within each option and
+description: OpenBB SDK Function
 ---
 # calc_hedge
 
@@ -28,6 +28,40 @@ as follows: {'Portfolio': {'Delta': VALUE, 'Gamma': VALUE, 'Vega': VALUE}} etc |
 | Type | Description |
 | ---- | ----------- |
 | float | None |
+
+## Examples
+
+
+
+
+# VIEW
+
+# calc_hedge
+
+## stocks_options_hedge_view.show_calculated_hedge
+
+```python
+def calc_hedge(portfolio_option_amount: float, side: str, greeks: dict, sign: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_view.py#L62)
+
+Description: Determine the hedge position and the weights within each option and
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio_option_amount | float | Number to show | None | False |
+| side | str | Whether you have a Call or Put instrument | None | False |
+| greeks | dict | Dictionary containing delta, gamma and vega values for the portfolio and option A and B. Structure is
+as follows: {'Portfolio': {'Delta': VALUE, 'Gamma': VALUE, 'Vega': VALUE}} etc | None | False |
+| sign | int | Whether you have a long (1) or short (-1) position | None | False |
+
+## Returns
+
+| Type | Description |
+| ---- | ----------- |
+| A table with the neutral portfolio weights. | None |
 
 ## Examples
 

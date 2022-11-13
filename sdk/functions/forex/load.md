@@ -1,6 +1,6 @@
 ---
 title: load
-description: Load forex for two given symbols.
+description: OpenBB SDK Function
 ---
 # load
 

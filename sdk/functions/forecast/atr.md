@@ -1,6 +1,6 @@
 ---
 title: atr
-description: Calculate the Average True Range of a variable based on a a specific stock ticker.
+description: OpenBB SDK Function
 ---
 # atr
 

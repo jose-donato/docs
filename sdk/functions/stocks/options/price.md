@@ -1,6 +1,6 @@
 ---
 title: price
-description: Get current price for a given ticker
+description: OpenBB SDK Function
 ---
 # price
 

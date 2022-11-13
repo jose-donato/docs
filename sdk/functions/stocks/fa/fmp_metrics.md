@@ -1,6 +1,6 @@
 ---
 title: fmp_metrics
-description: Get key metrics
+description: OpenBB SDK Function
 ---
 # fmp_metrics
 

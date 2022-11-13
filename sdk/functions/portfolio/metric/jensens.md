@@ -1,6 +1,6 @@
 ---
 title: jensens
-description: Get jensen's alpha
+description: OpenBB SDK Function
 ---
 # jensens
 

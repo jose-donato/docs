@@ -1,6 +1,6 @@
 ---
 title: process_candle
-description: Process DataFrame into candle style plot.
+description: OpenBB SDK Function
 ---
 # process_candle
 

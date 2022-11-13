@@ -1,6 +1,6 @@
 ---
 title: price
-description: Request price for a forex pair.
+description: OpenBB SDK Function
 ---
 # price
 
@@ -25,6 +25,35 @@ Description: Request price for a forex pair.
 | Type | Description |
 | ---- | ----------- |
 | Union[Dict[str, str], bool] | The currency pair price or False |
+
+## Examples
+
+
+
+
+# VIEW
+
+# price
+
+## forex_oanda_view.get_fx_price
+
+```python
+def pric) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L39)
+
+Description: View price for loaded currency pair.
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda account ID | None | False |
+| instrument | Union[str, None] | Instrument code or None | None | False |
+
+## Returns
+
+None
 
 ## Examples
 

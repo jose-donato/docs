@@ -1,6 +1,6 @@
 ---
 title: process_chains
-description: Function to take in the requests.get and return a DataFrame
+description: OpenBB SDK Function
 ---
 # process_chains
 

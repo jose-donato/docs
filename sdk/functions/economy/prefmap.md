@@ -1,6 +1,6 @@
 ---
 title: prefmap
-description: Opens Finviz map website in a browser. [Source: Finviz]
+description: OpenBB SDK Function
 ---
 # prefmap
 

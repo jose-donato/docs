@@ -1,6 +1,6 @@
 ---
 title: friend_ids
-description: Get Series IDs. [Source: FRED]
+description: OpenBB SDK Function
 ---
 # friend_ids
 

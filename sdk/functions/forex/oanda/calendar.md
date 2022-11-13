@@ -1,6 +1,6 @@
 ---
 title: calendar
-description: Request data of significant events calendar.
+description: OpenBB SDK Function
 ---
 # calendar
 
@@ -25,6 +25,35 @@ Description: Request data of significant events calendar.
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Calendar events data or False |
+
+## Examples
+
+
+
+
+# VIEW
+
+# calendar
+
+## forex_oanda_view.calendar
+
+```python
+def calenda) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L392)
+
+Description: View calendar of significant events.
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| instrument | str | The loaded currency pair | None | False |
+| days | int | Number of days in advance | None | False |
+
+## Returns
+
+None
 
 ## Examples
 

@@ -1,6 +1,6 @@
 ---
 title: sto
-description: Stochastic Oscillator %K and %D : A stochastic oscillator is a momentum indicator comparing a particular closing
+description: OpenBB SDK Function
 ---
 # sto
 

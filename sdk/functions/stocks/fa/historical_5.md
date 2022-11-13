@@ -1,6 +1,6 @@
 ---
 title: historical_5
-description: Get 5 year monthly historical performance for a ticker with dividends filtered
+description: OpenBB SDK Function
 ---
 # historical_5
 

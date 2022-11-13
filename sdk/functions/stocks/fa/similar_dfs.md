@@ -1,6 +1,6 @@
 ---
 title: similar_dfs
-description: Get dataframes for similar companies
+description: OpenBB SDK Function
 ---
 # similar_dfs
 

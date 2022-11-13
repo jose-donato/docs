@@ -1,6 +1,6 @@
 ---
 title: calc_gamma
-description: The second-order partial-derivative with respect to the underlying asset of the Black-Scholes equation
+description: OpenBB SDK Function
 ---
 # calc_gamma
 

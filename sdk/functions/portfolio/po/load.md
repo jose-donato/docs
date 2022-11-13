@@ -1,6 +1,6 @@
 ---
 title: load
-description: Load in the Excel file to determine the allocation that needs to be set.
+description: OpenBB SDK Function
 ---
 # load
 

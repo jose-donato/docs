@@ -1,6 +1,6 @@
 ---
 title: categories_keys
-description: None
+description: OpenBB SDK Function
 ---
 # categories_keys
 

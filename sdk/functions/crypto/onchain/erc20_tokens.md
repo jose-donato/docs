@@ -1,6 +1,6 @@
 ---
 title: erc20_tokens
-description: Helper method that loads ~1500 most traded erc20 token.
+description: OpenBB SDK Function
 ---
 # erc20_tokens
 

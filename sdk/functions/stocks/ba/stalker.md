@@ -1,6 +1,6 @@
 ---
 title: stalker
-description: Gets messages from given user [Source: stocktwits]
+description: OpenBB SDK Function
 ---
 # stalker
 

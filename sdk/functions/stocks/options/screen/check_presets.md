@@ -1,6 +1,6 @@
 ---
 title: check_presets
-description: Checks option screener preset values
+description: OpenBB SDK Function
 ---
 # check_presets
 

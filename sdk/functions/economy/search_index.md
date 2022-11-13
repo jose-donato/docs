@@ -1,6 +1,6 @@
 ---
 title: search_index
-description: Search indices by keyword. [Source: FinanceDatabase]
+description: OpenBB SDK Function
 ---
 # search_index
 

@@ -1,6 +1,6 @@
 ---
 title: balance
-description: Get balance data. [Source: Marketwatch]
+description: OpenBB SDK Function
 ---
 # balance
 

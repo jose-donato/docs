@@ -1,6 +1,6 @@
 ---
 title: tail
-description: Get tail ratio
+description: OpenBB SDK Function
 ---
 # tail
 

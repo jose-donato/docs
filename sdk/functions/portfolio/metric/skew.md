@@ -1,6 +1,6 @@
 ---
 title: skew
-description: Class method that retrieves skewness for portfolio and benchmark selected
+description: OpenBB SDK Function
 ---
 # skew
 

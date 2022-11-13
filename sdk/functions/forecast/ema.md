@@ -1,6 +1,6 @@
 ---
 title: ema
-description: A moving average provides an indication of the trend of the price movement
+description: OpenBB SDK Function
 ---
 # ema
 

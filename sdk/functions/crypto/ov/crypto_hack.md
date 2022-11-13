@@ -1,6 +1,6 @@
 ---
 title: crypto_hack
-description: Get crypto hack
+description: OpenBB SDK Function
 ---
 # crypto_hack
 

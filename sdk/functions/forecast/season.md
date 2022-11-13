@@ -1,6 +1,6 @@
 ---
 title: season
-description: Plot seasonality from a dataset
+description: OpenBB SDK Function
 ---
 # season
 

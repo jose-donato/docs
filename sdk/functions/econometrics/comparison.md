@@ -1,6 +1,6 @@
 ---
 title: comparison
-description: Compare regression results between Panel Data regressions.
+description: OpenBB SDK Function
 ---
 # comparison
 

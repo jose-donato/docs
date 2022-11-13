@@ -1,6 +1,6 @@
 ---
 title: arktrades
-description: Gets a dataframe of ARK trades for ticker
+description: OpenBB SDK Function
 ---
 # arktrades
 

@@ -1,6 +1,6 @@
 ---
 title: macro_countries
-description: This function returns the available countries and respective currencies.
+description: OpenBB SDK Function
 ---
 # macro_countries
 

@@ -1,6 +1,6 @@
 ---
 title: hotpenny
-description: Returns today hot penny stocks
+description: OpenBB SDK Function
 ---
 # hotpenny
 

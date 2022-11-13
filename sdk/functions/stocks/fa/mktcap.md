@@ -1,6 +1,6 @@
 ---
 title: mktcap
-description: Get market cap over time for ticker. [Source: Yahoo Finance]
+description: OpenBB SDK Function
 ---
 # mktcap
 

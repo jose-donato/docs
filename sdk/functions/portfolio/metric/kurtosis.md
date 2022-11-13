@@ -1,6 +1,6 @@
 ---
 title: kurtosis
-description: Class method that retrieves kurtosis for portfolio and benchmark selected
+description: OpenBB SDK Function
 ---
 # kurtosis
 

@@ -1,6 +1,6 @@
 ---
 title: hist
-description: Get historical forex data.
+description: OpenBB SDK Function
 ---
 # hist
 

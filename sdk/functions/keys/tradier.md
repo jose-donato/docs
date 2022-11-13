@@ -1,6 +1,6 @@
 ---
 title: tradier
-description: Set Tradier key
+description: OpenBB SDK Function
 ---
 # tradier
 

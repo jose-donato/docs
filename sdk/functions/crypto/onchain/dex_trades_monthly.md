@@ -1,6 +1,6 @@
 ---
 title: dex_trades_monthly
-description: Get list of trades on Decentralized Exchanges monthly aggregated.
+description: OpenBB SDK Function
 ---
 # dex_trades_monthly
 

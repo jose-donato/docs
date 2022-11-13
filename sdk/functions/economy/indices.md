@@ -1,6 +1,6 @@
 ---
 title: indices
-description: Get the top US indices
+description: OpenBB SDK Function
 ---
 # indices
 

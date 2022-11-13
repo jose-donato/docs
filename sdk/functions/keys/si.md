@@ -1,6 +1,6 @@
 ---
 title: si
-description: Set Sentimentinvestor key.
+description: OpenBB SDK Function
 ---
 # si
 

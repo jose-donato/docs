@@ -1,6 +1,6 @@
 ---
 title: github_data
-description: Get repository stats
+description: OpenBB SDK Function
 ---
 # github_data
 

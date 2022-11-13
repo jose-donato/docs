@@ -1,6 +1,6 @@
 ---
 title: text_sent
-description: Find the sentiment of a post and related comments
+description: OpenBB SDK Function
 ---
 # text_sent
 

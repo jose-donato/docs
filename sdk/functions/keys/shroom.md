@@ -1,6 +1,6 @@
 ---
 title: shroom
-description: Set Shroom key
+description: OpenBB SDK Function
 ---
 # shroom
 

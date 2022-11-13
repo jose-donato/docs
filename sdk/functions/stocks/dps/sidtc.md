@@ -1,6 +1,6 @@
 ---
 title: sidtc
-description: Get short interest and days to cover. [Source: Stockgrid]
+description: OpenBB SDK Function
 ---
 # sidtc
 

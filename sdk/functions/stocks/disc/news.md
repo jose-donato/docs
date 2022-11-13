@@ -1,6 +1,6 @@
 ---
 title: news
-description: Gets news. [Source: SeekingAlpha]
+description: OpenBB SDK Function
 ---
 # news
 

@@ -1,6 +1,6 @@
 ---
 title: dte
-description: Gets days to expiration from yfinance option date
+description: OpenBB SDK Function
 ---
 # dte
 

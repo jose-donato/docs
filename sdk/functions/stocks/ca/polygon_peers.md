@@ -1,6 +1,6 @@
 ---
 title: polygon_peers
-description: Get similar companies from Polygon
+description: OpenBB SDK Function
 ---
 # polygon_peers
 

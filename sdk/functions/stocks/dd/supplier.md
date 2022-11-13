@@ -1,6 +1,6 @@
 ---
 title: supplier
-description: Get suppliers from ticker provided. [Source: CSIMarket]
+description: OpenBB SDK Function
 ---
 # supplier
 

@@ -1,6 +1,6 @@
 ---
 title: get_binance_trading_pairs
-description: Returns all available pairs on Binance in DataFrame format. DataFrame has 3 columns symbol, baseAsset, quoteAsset
+description: OpenBB SDK Function
 ---
 # get_binance_trading_pairs
 

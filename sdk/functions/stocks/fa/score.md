@@ -1,6 +1,6 @@
 ---
 title: score
-description: Gets value score from fmp
+description: OpenBB SDK Function
 ---
 # score
 

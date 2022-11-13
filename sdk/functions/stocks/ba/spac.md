@@ -1,6 +1,6 @@
 ---
 title: spac
-description: Get posts containing SPAC from top subreddits [Source: reddit]
+description: OpenBB SDK Function
 ---
 # spac
 

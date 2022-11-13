@@ -1,6 +1,6 @@
 ---
 title: global_info
-description: Get global statistics about crypto from CoinGecko API like:
+description: OpenBB SDK Function
 ---
 # global_info
 

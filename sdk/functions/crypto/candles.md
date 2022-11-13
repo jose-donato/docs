@@ -1,6 +1,6 @@
 ---
 title: candles
-description: Plot candle chart from dataframe. [Source: Binance]
+description: OpenBB SDK Function
 ---
 # candles
 

@@ -1,6 +1,6 @@
 ---
 title: check_valid_binance_string
-description: Check if symbol is in defined binance. [Source: Binance]
+description: OpenBB SDK Function
 ---
 # check_valid_binance_string
 

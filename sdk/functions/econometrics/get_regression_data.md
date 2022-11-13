@@ -1,6 +1,6 @@
 ---
 title: get_regression_data
-description: This function creates a DataFrame with the required regression data as
+description: OpenBB SDK Function
 ---
 # get_regression_data
 

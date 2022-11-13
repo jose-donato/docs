@@ -1,6 +1,6 @@
 ---
 title: currencies
-description: Scrape data for global currencies
+description: OpenBB SDK Function
 ---
 # currencies
 

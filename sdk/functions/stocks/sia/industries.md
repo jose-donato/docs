@@ -1,6 +1,6 @@
 ---
 title: industries
-description: Get all industries in Yahoo Finance data based on country or sector. [Source: Finance Database]
+description: OpenBB SDK Function
 ---
 # industries
 

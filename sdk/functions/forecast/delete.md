@@ -1,6 +1,6 @@
 ---
 title: delete
-description: None
+description: OpenBB SDK Function
 ---
 # delete
 

@@ -1,6 +1,6 @@
 ---
 title: calculate_adjusted_var
-description: Calculates VaR, which is adjusted for skew and kurtosis (Cornish-Fischer-Expansion)
+description: OpenBB SDK Function
 ---
 # calculate_adjusted_var
 

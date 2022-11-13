@@ -1,6 +1,6 @@
 ---
 title: cal
-description: Get calendar earnings for ticker symbol
+description: OpenBB SDK Function
 ---
 # cal
 

@@ -1,6 +1,6 @@
 ---
 title: shorted
-description: Get most shorted stock screener [Source: Yahoo Finance]
+description: OpenBB SDK Function
 ---
 # shorted
 

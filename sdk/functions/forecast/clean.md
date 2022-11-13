@@ -1,6 +1,6 @@
 ---
 title: clean
-description: Clean up NaNs from the dataset
+description: OpenBB SDK Function
 ---
 # clean
 

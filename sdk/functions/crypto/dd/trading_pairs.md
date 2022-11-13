@@ -1,6 +1,6 @@
 ---
 title: trading_pairs
-description: Helper method that return all trading pairs on binance. Methods ause this data for input for e.g
+description: OpenBB SDK Function
 ---
 # trading_pairs
 

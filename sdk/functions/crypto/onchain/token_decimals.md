@@ -1,6 +1,6 @@
 ---
 title: token_decimals
-description: Helper methods that gets token decimals number. [Source: Ethplorer]
+description: OpenBB SDK Function
 ---
 # token_decimals
 

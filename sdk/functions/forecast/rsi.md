@@ -1,6 +1,6 @@
 ---
 title: rsi
-description: A momentum indicator that measures the magnitude of recent price changes to evaluate
+description: OpenBB SDK Function
 ---
 # rsi
 

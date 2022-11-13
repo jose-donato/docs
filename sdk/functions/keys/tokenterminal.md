@@ -1,6 +1,6 @@
 ---
 title: tokenterminal
-description: Set Token Terminal key.
+description: OpenBB SDK Function
 ---
 # tokenterminal
 

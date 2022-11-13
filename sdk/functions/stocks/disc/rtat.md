@@ -1,6 +1,6 @@
 ---
 title: rtat
-description: Gets the top 10 retail stocks per day
+description: OpenBB SDK Function
 ---
 # rtat
 

@@ -1,7 +1,8 @@
----
-title: load_bls
-description: Load a Excel file with views for Black Litterman model.
----
+
+
+
+# VIEW
+
 # load_bls
 
 ## portfolio_optimization_excel_model.load_bl_views

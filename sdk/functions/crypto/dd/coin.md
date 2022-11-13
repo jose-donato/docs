@@ -1,6 +1,6 @@
 ---
 title: coin
-description: Get coin by id [Source: CoinPaprika]
+description: OpenBB SDK Function
 ---
 # coin
 

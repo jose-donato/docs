@@ -1,6 +1,6 @@
 ---
 title: set_keys
-description: Set API keys in bundle.
+description: OpenBB SDK Function
 ---
 # set_keys
 

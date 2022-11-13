@@ -1,6 +1,6 @@
 ---
 title: hsi
-description: Returns a high short interest DataFrame
+description: OpenBB SDK Function
 ---
 # hsi
 

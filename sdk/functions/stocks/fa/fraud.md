@@ -1,6 +1,6 @@
 ---
 title: fraud
-description: Get fraud ratios based on fundamentals
+description: OpenBB SDK Function
 ---
 # fraud
 

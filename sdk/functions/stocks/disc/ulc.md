@@ -1,6 +1,6 @@
 ---
 title: ulc
-description: Get Yahoo Finance potentially undervalued large cap stocks.
+description: OpenBB SDK Function
 ---
 # ulc
 

@@ -1,6 +1,6 @@
 ---
 title: av_metrics
-description: Get key metrics from overview
+description: OpenBB SDK Function
 ---
 # av_metrics
 

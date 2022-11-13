@@ -1,6 +1,6 @@
 ---
 title: github
-description: Set GitHub key.
+description: OpenBB SDK Function
 ---
 # github
 

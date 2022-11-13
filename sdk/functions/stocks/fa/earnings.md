@@ -1,6 +1,6 @@
 ---
 title: earnings
-description: Get earnings calendar for ticker
+description: OpenBB SDK Function
 ---
 # earnings
 

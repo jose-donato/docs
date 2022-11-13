@@ -1,6 +1,6 @@
 ---
 title: santiment
-description: Set Santiment key.
+description: OpenBB SDK Function
 ---
 # santiment
 

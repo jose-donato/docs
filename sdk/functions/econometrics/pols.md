@@ -1,6 +1,6 @@
 ---
 title: pols
-description: PooledOLS is just plain OLS that understands that various panel data structures.
+description: OpenBB SDK Function
 ---
 # pols
 

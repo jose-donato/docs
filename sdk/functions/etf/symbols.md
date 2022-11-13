@@ -1,6 +1,6 @@
 ---
 title: symbols
-description: Gets all etf names and symbols
+description: OpenBB SDK Function
 ---
 # symbols
 

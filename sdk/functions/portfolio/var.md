@@ -1,6 +1,6 @@
 ---
 title: var
-description: Get portfolio VaR
+description: OpenBB SDK Function
 ---
 # var
 

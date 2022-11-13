@@ -1,6 +1,6 @@
 ---
 title: stocks_data
-description: Get stocks data based on a list of stocks and the finance key. The function searches for the
+description: OpenBB SDK Function
 ---
 # stocks_data
 

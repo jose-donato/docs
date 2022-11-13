@@ -1,6 +1,6 @@
 ---
 title: upcoming
-description: Returns a DataFrame with upcoming earnings
+description: OpenBB SDK Function
 ---
 # upcoming
 

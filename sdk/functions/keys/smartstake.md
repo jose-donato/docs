@@ -1,6 +1,6 @@
 ---
 title: smartstake
-description: Set Smartstake key.
+description: OpenBB SDK Function
 ---
 # smartstake
 

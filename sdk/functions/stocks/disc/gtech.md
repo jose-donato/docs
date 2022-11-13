@@ -1,6 +1,6 @@
 ---
 title: gtech
-description: Get technology stocks with revenue and earnings growth in excess of 25%. [Source: Yahoo Finance]
+description: OpenBB SDK Function
 ---
 # gtech
 

@@ -1,6 +1,6 @@
 ---
 title: fe
-description: When effects are correlated with the regressors the RE and BE estimators are not consistent.
+description: OpenBB SDK Function
 ---
 # fe
 

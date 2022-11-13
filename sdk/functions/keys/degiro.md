@@ -1,6 +1,6 @@
 ---
 title: degiro
-description: Set Degiro key
+description: OpenBB SDK Function
 ---
 # degiro
 

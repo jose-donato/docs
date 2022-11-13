@@ -1,6 +1,6 @@
 ---
 title: shrs
-description: Get shareholders from yahoo
+description: OpenBB SDK Function
 ---
 # shrs
 

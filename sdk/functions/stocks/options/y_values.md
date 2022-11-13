@@ -1,6 +1,6 @@
 ---
 title: y_values
-description: Generates y values for corresponding x values
+description: OpenBB SDK Function
 ---
 # y_values
 

@@ -1,6 +1,6 @@
 ---
 title: x_values
-description: Generates different price values that need to be tested
+description: OpenBB SDK Function
 ---
 # x_values
 

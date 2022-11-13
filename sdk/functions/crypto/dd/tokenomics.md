@@ -1,6 +1,6 @@
 ---
 title: tokenomics
-description: Get tokenomics for given coin. [Source: CoinGecko]
+description: OpenBB SDK Function
 ---
 # tokenomics
 

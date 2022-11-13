@@ -1,6 +1,6 @@
 ---
 title: finnhub_peers
-description: Get similar companies from Finhub
+description: OpenBB SDK Function
 ---
 # finnhub_peers
 

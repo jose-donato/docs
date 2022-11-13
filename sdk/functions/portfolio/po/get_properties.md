@@ -1,6 +1,6 @@
 ---
 title: get_properties
-description: Get properties to use on property optimization.
+description: OpenBB SDK Function
 ---
 # get_properties
 

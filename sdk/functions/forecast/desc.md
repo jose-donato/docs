@@ -1,6 +1,6 @@
 ---
 title: desc
-description: Returns statistics for a given df
+description: OpenBB SDK Function
 ---
 # desc
 

@@ -1,6 +1,6 @@
 ---
 title: av_income
-description: Get income statements for company
+description: OpenBB SDK Function
 ---
 # av_income
 

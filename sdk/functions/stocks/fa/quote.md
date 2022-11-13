@@ -1,6 +1,6 @@
 ---
 title: quote
-description: Gets ticker quote from FMP
+description: OpenBB SDK Function
 ---
 # quote
 

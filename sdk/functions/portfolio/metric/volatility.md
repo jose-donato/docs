@@ -1,6 +1,6 @@
 ---
 title: volatility
-description: Class method that retrieves volatility for portfolio and benchmark selected
+description: OpenBB SDK Function
 ---
 # volatility
 

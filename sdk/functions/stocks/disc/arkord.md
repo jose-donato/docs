@@ -1,6 +1,6 @@
 ---
 title: arkord
-description: Returns ARK orders in a Dataframe
+description: OpenBB SDK Function
 ---
 # arkord
 

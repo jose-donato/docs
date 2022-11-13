@@ -1,6 +1,6 @@
 ---
 title: dividend
-description: Gets option chain from yf for given ticker and expiration
+description: OpenBB SDK Function
 ---
 # dividend
 

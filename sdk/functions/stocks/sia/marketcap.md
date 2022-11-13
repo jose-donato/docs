@@ -1,6 +1,6 @@
 ---
 title: marketcap
-description: Get all market cap division in Yahoo Finance data. [Source: Finance Database]
+description: OpenBB SDK Function
 ---
 # marketcap
 

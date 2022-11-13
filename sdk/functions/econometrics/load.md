@@ -1,6 +1,6 @@
 ---
 title: load
-description: Load custom file into dataframe.
+description: OpenBB SDK Function
 ---
 # load
 

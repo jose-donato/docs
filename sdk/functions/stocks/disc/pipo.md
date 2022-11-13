@@ -1,6 +1,6 @@
 ---
 title: pipo
-description: Past IPOs dates. [Source: Finnhub]
+description: OpenBB SDK Function
 ---
 # pipo
 

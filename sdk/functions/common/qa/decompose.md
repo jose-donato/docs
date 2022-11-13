@@ -1,6 +1,6 @@
 ---
 title: decompose
-description: Perform seasonal decomposition
+description: OpenBB SDK Function
 ---
 # decompose
 

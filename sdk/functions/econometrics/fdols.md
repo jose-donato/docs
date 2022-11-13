@@ -1,6 +1,6 @@
 ---
 title: fdols
-description: First differencing is an alternative to using fixed effects when there might be correlation.
+description: OpenBB SDK Function
 ---
 # fdols
 

@@ -1,6 +1,6 @@
 ---
 title: bols
-description: The between estimator is an alternative, usually less efficient estimator, can can be used to
+description: OpenBB SDK Function
 ---
 # bols
 

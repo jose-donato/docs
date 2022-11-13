@@ -1,6 +1,6 @@
 ---
 title: es
-description: Get portfolio expected shortfall
+description: OpenBB SDK Function
 ---
 # es
 

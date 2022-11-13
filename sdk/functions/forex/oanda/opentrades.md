@@ -1,6 +1,6 @@
 ---
 title: opentrades
-description: Request open trades data.
+description: OpenBB SDK Function
 ---
 # opentrades
 
@@ -24,6 +24,34 @@ Description: Request open trades data.
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Open trades data or False |
+
+## Examples
+
+
+
+
+# VIEW
+
+# opentrades
+
+## forex_oanda_view.get_open_trades
+
+```python
+def opentrade) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L259)
+
+Description: View open trades.
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda user account ID | None | False |
+
+## Returns
+
+None
 
 ## Examples
 

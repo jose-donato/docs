@@ -1,6 +1,6 @@
 ---
 title: load
-description: Load a symbol to perform analysis using the string above as a template.
+description: OpenBB SDK Function
 ---
 # load
 

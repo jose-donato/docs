@@ -1,6 +1,6 @@
 ---
 title: fisher
-description: Fisher Transform
+description: OpenBB SDK Function
 ---
 # fisher
 

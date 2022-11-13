@@ -1,6 +1,6 @@
 ---
 title: av
-description: Set Alpha Vantage key
+description: OpenBB SDK Function
 ---
 # av
 

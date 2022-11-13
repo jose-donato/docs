@@ -1,6 +1,6 @@
 ---
 title: finviz_peers
-description: Get similar companies from Finviz
+description: OpenBB SDK Function
 ---
 # finviz_peers
 

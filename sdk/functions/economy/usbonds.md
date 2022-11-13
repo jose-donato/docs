@@ -1,6 +1,6 @@
 ---
 title: usbonds
-description: Scrape data for us bonds
+description: OpenBB SDK Function
 ---
 # usbonds
 

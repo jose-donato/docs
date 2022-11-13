@@ -1,6 +1,6 @@
 ---
 title: cpanic
-description: Set Cpanic key.
+description: OpenBB SDK Function
 ---
 # cpanic
 

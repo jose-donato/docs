@@ -1,6 +1,6 @@
 ---
 title: coinbase
-description: Set Coinbase key
+description: OpenBB SDK Function
 ---
 # coinbase
 

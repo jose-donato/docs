@@ -1,6 +1,6 @@
 ---
 title: fmp_balance
-description: Get balance sheets
+description: OpenBB SDK Function
 ---
 # fmp_balance
 

@@ -1,6 +1,6 @@
 ---
 title: eodhd
-description: Set Eodhd key.
+description: OpenBB SDK Function
 ---
 # eodhd
 

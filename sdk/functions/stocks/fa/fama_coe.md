@@ -1,6 +1,6 @@
 ---
 title: fama_coe
-description: Use Fama and French to get the cost of equity for a company
+description: OpenBB SDK Function
 ---
 # fama_coe
 

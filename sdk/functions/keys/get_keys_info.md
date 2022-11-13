@@ -1,6 +1,6 @@
 ---
 title: get_keys_info
-description: Get info on available APIs to use in set_keys.
+description: OpenBB SDK Function
 ---
 # get_keys_info
 

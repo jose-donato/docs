@@ -1,6 +1,6 @@
 ---
 title: screen
-description: Screens the etfs pulled from my repo (https://github.com/jmaslek/etf_scraper),
+description: OpenBB SDK Function
 ---
 # screen
 

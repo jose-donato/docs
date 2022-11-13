@@ -1,6 +1,6 @@
 ---
 title: trending
-description: Get trending tickers from stocktwits [Source: stocktwits]
+description: OpenBB SDK Function
 ---
 # trending
 

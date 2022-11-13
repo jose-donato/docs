@@ -1,6 +1,6 @@
 ---
 title: fmp
-description: Set Financial Modeling Prep key
+description: OpenBB SDK Function
 ---
 # fmp
 

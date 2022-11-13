@@ -1,6 +1,6 @@
 ---
 title: lowfloat
-description: Returns low float DataFrame
+description: OpenBB SDK Function
 ---
 # lowfloat
 

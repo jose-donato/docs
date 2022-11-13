@@ -1,6 +1,6 @@
 ---
 title: calc_vega
-description: The first-order partial-derivative with respect to the underlying asset volatility of
+description: OpenBB SDK Function
 ---
 # calc_vega
 

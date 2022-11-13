@@ -1,6 +1,6 @@
 ---
 title: divs
-description: Get historical dividend for ticker
+description: OpenBB SDK Function
 ---
 # divs
 

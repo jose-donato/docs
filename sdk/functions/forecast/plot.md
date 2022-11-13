@@ -1,6 +1,6 @@
 ---
 title: plot
-description: Plot data from a dataset
+description: OpenBB SDK Function
 ---
 # plot
 

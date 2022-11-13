@@ -1,6 +1,6 @@
 ---
 title: basic_info
-description: Basic coin information [Source: CoinPaprika]
+description: OpenBB SDK Function
 ---
 # basic_info
 

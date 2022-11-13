@@ -1,6 +1,6 @@
 ---
 title: available_indices
-description: Get available indices
+description: OpenBB SDK Function
 ---
 # available_indices
 

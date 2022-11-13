@@ -1,6 +1,6 @@
 ---
 title: walert
-description: Set Walert key
+description: OpenBB SDK Function
 ---
 # walert
 

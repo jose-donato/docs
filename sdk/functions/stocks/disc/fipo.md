@@ -1,6 +1,6 @@
 ---
 title: fipo
-description: Future IPOs dates. [Source: Finnhub]
+description: OpenBB SDK Function
 ---
 # fipo
 

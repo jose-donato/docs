@@ -1,6 +1,6 @@
 ---
 title: av_overview
-description: Get alpha vantage company overview
+description: OpenBB SDK Function
 ---
 # av_overview
 

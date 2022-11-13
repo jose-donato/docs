@@ -1,6 +1,6 @@
 ---
 title: reddit
-description: Set Reddit key
+description: OpenBB SDK Function
 ---
 # reddit
 

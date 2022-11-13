@@ -1,6 +1,6 @@
 ---
 title: rsquare
-description: Class method that retrieves R2 Score for portfolio and benchmark selected
+description: OpenBB SDK Function
 ---
 # rsquare
 

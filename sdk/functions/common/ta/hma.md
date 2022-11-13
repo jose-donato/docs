@@ -1,6 +1,6 @@
 ---
 title: hma
-description: Gets hull moving average (HMA) for stock
+description: OpenBB SDK Function
 ---
 # hma
 

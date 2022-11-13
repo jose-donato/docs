@@ -1,6 +1,6 @@
 ---
 title: check_if_open
-description: Check if market open helper function
+description: OpenBB SDK Function
 ---
 # check_if_open
 

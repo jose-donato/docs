@@ -1,7 +1,8 @@
----
-title: screener
-description: Screener one of the following: overview, valuation, financial, ownership, performance, technical.
----
+
+
+
+# VIEW
+
 # screener
 
 ## stocks_screener_finviz_view.screener

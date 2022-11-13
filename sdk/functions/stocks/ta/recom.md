@@ -1,6 +1,6 @@
 ---
 title: recom
-description: Get tradingview recommendation based on technical indicators
+description: OpenBB SDK Function
 ---
 # recom
 

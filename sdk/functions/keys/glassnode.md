@@ -1,6 +1,6 @@
 ---
 title: glassnode
-description: Set Glassnode key.
+description: OpenBB SDK Function
 ---
 # glassnode
 

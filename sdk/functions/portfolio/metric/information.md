@@ -1,6 +1,6 @@
 ---
 title: information
-description: Get information ratio
+description: OpenBB SDK Function
 ---
 # information
 

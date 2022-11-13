@@ -1,6 +1,6 @@
 ---
 title: last_price
-description: Makes api request for last price
+description: OpenBB SDK Function
 ---
 # last_price
 

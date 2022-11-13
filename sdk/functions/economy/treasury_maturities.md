@@ -1,6 +1,6 @@
 ---
 title: treasury_maturities
-description: Get treasury maturity options [Source: EconDB]
+description: OpenBB SDK Function
 ---
 # treasury_maturities
 

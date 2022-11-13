@@ -1,6 +1,6 @@
 ---
 title: ugs
-description: Get stocks with earnings growth rates better than 25% and relatively low PE and PEG ratios.
+description: OpenBB SDK Function
 ---
 # ugs
 

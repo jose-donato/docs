@@ -1,6 +1,6 @@
 ---
 title: fred
-description: Set FRED key
+description: OpenBB SDK Function
 ---
 # fred
 

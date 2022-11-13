@@ -1,6 +1,6 @@
 ---
 title: signal
-description: A price signal based on short/long term price.
+description: OpenBB SDK Function
 ---
 # signal
 

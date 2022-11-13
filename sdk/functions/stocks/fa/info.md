@@ -1,6 +1,6 @@
 ---
 title: info
-description: Gets ticker symbol info
+description: OpenBB SDK Function
 ---
 # info
 

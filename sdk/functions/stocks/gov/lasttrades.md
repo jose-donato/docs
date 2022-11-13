@@ -1,6 +1,6 @@
 ---
 title: lasttrades
-description: Get last government trading [Source: quiverquant.com]
+description: OpenBB SDK Function
 ---
 # lasttrades
 

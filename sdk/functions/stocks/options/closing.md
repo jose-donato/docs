@@ -1,6 +1,6 @@
 ---
 title: closing
-description: Get closing prices for a given ticker
+description: OpenBB SDK Function
 ---
 # closing
 

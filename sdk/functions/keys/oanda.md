@@ -1,6 +1,6 @@
 ---
 title: oanda
-description: Set Oanda key
+description: OpenBB SDK Function
 ---
 # oanda
 

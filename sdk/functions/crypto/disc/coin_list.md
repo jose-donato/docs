@@ -1,6 +1,6 @@
 ---
 title: coin_list
-description: Get list of coins available on CoinGecko [Source: CoinGecko]
+description: OpenBB SDK Function
 ---
 # coin_list
 

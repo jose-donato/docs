@@ -1,6 +1,6 @@
 ---
 title: fama_raw
-description: Gets base Fama French data to calculate risk
+description: OpenBB SDK Function
 ---
 # fama_raw
 

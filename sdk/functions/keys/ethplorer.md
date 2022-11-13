@@ -1,6 +1,6 @@
 ---
 title: ethplorer
-description: Set Ethplorer key.
+description: OpenBB SDK Function
 ---
 # ethplorer
 

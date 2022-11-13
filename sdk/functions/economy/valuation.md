@@ -1,6 +1,6 @@
 ---
 title: valuation
-description: Get group (sectors, industry or country) valuation data. [Source: Finviz]
+description: OpenBB SDK Function
 ---
 # valuation
 

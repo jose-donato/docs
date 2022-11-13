@@ -1,6 +1,6 @@
 ---
 title: view
-description: Get finviz image for given ticker
+description: OpenBB SDK Function
 ---
 # view
 

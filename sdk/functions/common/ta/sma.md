@@ -1,6 +1,6 @@
 ---
 title: sma
-description: Gets simple moving average (EMA) for stock
+description: OpenBB SDK Function
 ---
 # sma
 

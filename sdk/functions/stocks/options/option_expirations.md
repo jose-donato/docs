@@ -1,6 +1,6 @@
 ---
 title: option_expirations
-description: Get available expiration dates for given ticker
+description: OpenBB SDK Function
 ---
 # option_expirations
 

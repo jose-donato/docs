@@ -1,6 +1,6 @@
 ---
 title: government_trading
-description: Returns the most recent transactions by members of government
+description: OpenBB SDK Function
 ---
 # government_trading
 

@@ -1,6 +1,6 @@
 ---
 title: bw
-description: Show box and whisker plots
+description: OpenBB SDK Function
 ---
 # bw
 

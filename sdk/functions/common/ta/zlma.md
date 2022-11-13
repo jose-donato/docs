@@ -1,6 +1,6 @@
 ---
 title: zlma
-description: Gets zero-lagged exponential moving average (ZLEMA) for stock
+description: OpenBB SDK Function
 ---
 # zlma
 

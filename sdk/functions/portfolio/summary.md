@@ -1,6 +1,6 @@
 ---
 title: summary
-description: Get summary portfolio and benchmark returns
+description: OpenBB SDK Function
 ---
 # summary
 

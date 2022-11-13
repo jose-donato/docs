@@ -1,6 +1,6 @@
 ---
 title: get_currency_list
-description: Load AV currency codes from a local file.
+description: OpenBB SDK Function
 ---
 # get_currency_list
 

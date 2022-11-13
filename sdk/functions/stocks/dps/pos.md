@@ -1,6 +1,6 @@
 ---
 title: pos
-description: Get dark pool short positions. [Source: Stockgrid]
+description: OpenBB SDK Function
 ---
 # pos
 

@@ -1,6 +1,6 @@
 ---
 title: combine
-description: Adds the given column of df2 to df1
+description: OpenBB SDK Function
 ---
 # combine
 

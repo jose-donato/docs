@@ -1,6 +1,6 @@
 ---
 title: overview
-description: Scrape data for market overview
+description: OpenBB SDK Function
 ---
 # overview
 

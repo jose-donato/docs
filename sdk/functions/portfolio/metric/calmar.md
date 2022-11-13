@@ -1,6 +1,6 @@
 ---
 title: calmar
-description: Get calmar ratio
+description: OpenBB SDK Function
 ---
 # calmar
 

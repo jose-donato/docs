@@ -1,6 +1,6 @@
 ---
 title: spacc
-description: Get top tickers from r/SPACs [Source: reddit]
+description: OpenBB SDK Function
 ---
 # spacc
 

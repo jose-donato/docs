@@ -1,6 +1,6 @@
 ---
 title: dividends
-description: Gets dividend calendar for given date.  Date represents Ex-Dividend Date
+description: OpenBB SDK Function
 ---
 # dividends
 

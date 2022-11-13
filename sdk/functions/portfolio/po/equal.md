@@ -1,6 +1,6 @@
 ---
 title: equal
-description: Equally weighted portfolio, where weight = 1/# of symbols
+description: OpenBB SDK Function
 ---
 # equal
 

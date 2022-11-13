@@ -1,6 +1,6 @@
 ---
 title: coin_market_chart
-description: Get prices for given coin. [Source: CoinGecko]
+description: OpenBB SDK Function
 ---
 # coin_market_chart
 

@@ -1,6 +1,6 @@
 ---
 title: candle
-description: Show candle plot for fx data.
+description: OpenBB SDK Function
 ---
 # candle
 

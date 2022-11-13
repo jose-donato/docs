@@ -1,6 +1,6 @@
 ---
 title: profile
-description: Get ticker profile from FMP
+description: OpenBB SDK Function
 ---
 # profile
 

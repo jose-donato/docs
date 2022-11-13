@@ -1,6 +1,6 @@
 ---
 title: payoff
-description: Gets payoff ratio
+description: OpenBB SDK Function
 ---
 # payoff
 

@@ -1,6 +1,6 @@
 ---
 title: get_ycrv_countries
-description: Get available countries for ycrv command.
+description: OpenBB SDK Function
 ---
 # get_ycrv_countries
 

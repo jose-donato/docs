@@ -1,6 +1,6 @@
 ---
 title: maxdrawdown
-description: Class method that retrieves maximum drawdown ratio for portfolio and benchmark selected
+description: OpenBB SDK Function
 ---
 # maxdrawdown
 
