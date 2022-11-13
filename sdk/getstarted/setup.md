@@ -67,8 +67,6 @@ Community members have also had successful installations with:
     ```python
     conda install -c conda-forge git -y
     ```
-    
-    In a term
 
 3. **Clone the GitHub Repo**
 
