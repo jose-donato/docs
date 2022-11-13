@@ -1,9 +1,13 @@
+---
+title: price
+description: Request price for a forex pair.
+---
 # price
 
 ## forex_oanda_model.fx_price_request
 
 ```python
-def get_stars_history(repo: str):
+def price(accountID: str, instrument: Union[str, NoneType]) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L35)
 

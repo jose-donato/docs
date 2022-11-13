@@ -1,9 +1,13 @@
+---
+title: divs
+description: Get historical dividend for ticker
+---
 # divs
 
 ## stocks_fa_yahoo_finance_model.get_dividends
 
 ```python
-def get_stars_history(repo: str):
+def divs(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L255)
 

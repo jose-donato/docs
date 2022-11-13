@@ -1,9 +1,13 @@
+---
+title: tk
+description: Returns coin tokenomics
+---
 # tk
 
 ## crypto_dd_messari_model.get_tokenomics
 
 ```python
-def get_stars_history(repo: str):
+def t) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L271)
 

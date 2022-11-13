@@ -1,9 +1,13 @@
+---
+title: spac
+description: Get posts containing SPAC from top subreddits [Source: reddit]
+---
 # spac
 
 ## stocks_ba_reddit_model.get_spac
 
 ```python
-def get_stars_history(repo: str):
+def spa) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L458)
 

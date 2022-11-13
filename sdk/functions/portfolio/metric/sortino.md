@@ -1,9 +1,13 @@
+---
+title: sortino
+description: Class method that retrieves sortino ratio for portfolio and benchmark selected
+---
 # sortino
 
 ## portfolio_model.get_sortino_ratio
 
 ```python
-def get_stars_history(repo: str):
+def sortino(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, risk_free_rate: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1014)
 

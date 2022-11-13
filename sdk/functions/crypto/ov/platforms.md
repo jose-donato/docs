@@ -1,9 +1,13 @@
+---
+title: platforms
+description: Get list of financial platforms from CoinGecko API [Source: CoinGecko]
+---
 # platforms
 
 ## crypto_ov_pycoingecko_model.get_financial_platforms
 
 ```python
-def get_stars_history(repo: str):
+def platforms(sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L259)
 

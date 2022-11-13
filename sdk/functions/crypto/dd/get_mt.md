@@ -1,9 +1,13 @@
+---
+title: get_mt
+description: Returns available messari timeseries
+---
 # get_mt
 
 ## crypto_dd_messari_model.get_available_timeseries
 
 ```python
-def get_stars_history(repo: str):
+def get_mt(only_free: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L33)
 

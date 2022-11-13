@@ -1,9 +1,13 @@
+---
+title: cpinfo
+description: Returns basic coin information for all coins from CoinPaprika API [Source: CoinPaprika]
+---
 # cpinfo
 
 ## crypto_ov_coinpaprika_model.get_coins_info
 
 ```python
-def get_stars_history(repo: str):
+def cpinfo(symbols: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L200)
 

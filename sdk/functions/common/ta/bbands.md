@@ -1,9 +1,13 @@
+---
+title: bbands
+description: Calculate Bollinger Bands
+---
 # bbands
 
 ## common_ta_volatility_model.bbands
 
 ```python
-def get_stars_history(repo: str):
+def bbands(data: pd.DataFrame, window: int, n_std: float, mamode: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L17)
 

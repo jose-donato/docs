@@ -1,9 +1,13 @@
+---
+title: rolling
+description: Return rolling mean and standard deviation
+---
 # rolling
 
 ## common_qa_rolling_model.get_rolling_avg
 
 ```python
-def get_stars_history(repo: str):
+def rolling(data: pd.DataFrame, window: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L15)
 

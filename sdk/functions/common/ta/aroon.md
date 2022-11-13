@@ -1,9 +1,13 @@
+---
+title: aroon
+description: Aroon technical indicator
+---
 # aroon
 
 ## common_ta_trend_indicators_model.aroon
 
 ```python
-def get_stars_history(repo: str):
+def aroon(data: pd.DataFrame, window: int, scalar: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L55)
 

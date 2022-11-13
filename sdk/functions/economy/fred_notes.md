@@ -1,9 +1,13 @@
+---
+title: fred_notes
+description: Get series notes. [Source: FRED]
+---
 # fred_notes
 
 ## economy_fred_model.get_series_notes
 
 ```python
-def get_stars_history(repo: str):
+def fred_note) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L68)
 
@@ -18,6 +22,8 @@ Description: Get series notes. [Source: FRED]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | DataFrame of matched series | None | None |
+
+## Returns
 
 None
 

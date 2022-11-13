@@ -1,9 +1,13 @@
+---
+title: info
+description: Get info about ERC20 token. [Source: Ethplorer]
+---
 # info
 
 ## crypto_onchain_ethplorer_model.get_token_info
 
 ```python
-def get_stars_history(repo: str):
+def info(address: Any) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L372)
 

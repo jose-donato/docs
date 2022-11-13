@@ -1,9 +1,13 @@
+---
+title: lowfloat
+description: Returns low float DataFrame
+---
 # lowfloat
 
 ## stocks_disc_shortinterest_model.get_low_float
 
 ```python
-def get_stars_history(repo: str):
+def lowfloa) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L14)
 

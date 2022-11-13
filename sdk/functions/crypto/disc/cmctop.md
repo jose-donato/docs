@@ -1,9 +1,13 @@
+---
+title: cmctop
+description: Shows top n coins. [Source: CoinMarketCap]
+---
 # cmctop
 
 ## crypto_disc_coinmarketcap_model.get_cmc_top_n
 
 ```python
-def get_stars_history(repo: str):
+def cmcto) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L26)
 

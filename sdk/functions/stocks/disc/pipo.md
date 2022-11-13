@@ -1,9 +1,13 @@
+---
+title: pipo
+description: Past IPOs dates. [Source: Finnhub]
+---
 # pipo
 
 ## stocks_disc_finnhub_model.get_past_ipo
 
 ```python
-def get_stars_history(repo: str):
+def pip) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L66)
 
@@ -15,6 +19,8 @@ Description: Past IPOs dates. [Source: Finnhub]
 | ---- | ---- | ----------- | ------- | -------- |
 | num_days_behind | int | Number of days to look behind for IPOs dates | None | False |
 | start_date | str | The starting date (format YYYY-MM-DD) to look for IPOs | None | False |
+
+## Returns
 
 None
 

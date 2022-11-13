@@ -1,9 +1,13 @@
+---
+title: dividends
+description: Gets dividend calendar for given date.  Date represents Ex-Dividend Date
+---
 # dividends
 
 ## stocks_disc_nasdaq_model.get_dividend_cal
 
 ```python
-def get_stars_history(repo: str):
+def dividends(date: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/nasdaq_model.py#L54)
 

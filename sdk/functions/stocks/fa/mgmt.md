@@ -1,9 +1,13 @@
+---
+title: mgmt
+description: Get company managers from Business Insider
+---
 # mgmt
 
 ## stocks_fa_business_insider_model.get_management
 
 ```python
-def get_stars_history(repo: str):
+def mgmt(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/business_insider_model.py#L18)
 

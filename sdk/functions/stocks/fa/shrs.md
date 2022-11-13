@@ -1,9 +1,13 @@
+---
+title: shrs
+description: Get shareholders from yahoo
+---
 # shrs
 
 ## stocks_fa_yahoo_finance_model.get_shareholders
 
 ```python
-def get_stars_history(repo: str):
+def shrs(symbol: str, holder: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L74)
 

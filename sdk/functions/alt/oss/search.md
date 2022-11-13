@@ -1,9 +1,13 @@
+---
+title: search
+description: Get repos sorted by stars or forks. Can be filtered by categories
+---
 # search
 
 ## alt_oss_github_model.search_repos
 
 ```python
-def get_stars_history(repo: str):
+def search(sortby: str, page: int, categories: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L54)
 

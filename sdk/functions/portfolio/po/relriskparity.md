@@ -1,9 +1,13 @@
+---
+title: relriskparity
+description: Builds a relaxed risk parity portfolio using the least squares approach
+---
 # relriskparity
 
 ## portfolio_optimization_optimizer_model.get_rel_risk_parity_portfolio
 
 ```python
-def get_stars_history(repo: str):
+def relriskparity(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, version: str, risk_cont: List[str], penal_factor: float, target_return: float, mean: str, covariance: str, d_ewma: float, value: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1839)
 

@@ -1,9 +1,13 @@
+---
+title: theta
+description: Performs Theta forecasting
+---
 # theta
 
 ## forecast_theta_model.get_theta_data
 
 ```python
-def get_stars_history(repo: str):
+def theta(data: Union[pd.Series, pd.DataFrame], target_column: str, seasonal: str, seasonal_periods: int, n_predict: int, start_window: float, forecast_horizon: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/theta_model.py#L28)
 

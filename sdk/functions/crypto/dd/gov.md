@@ -1,9 +1,13 @@
+---
+title: gov
+description: Returns coin governance
+---
 # gov
 
 ## crypto_dd_messari_model.get_governance
 
 ```python
-def get_stars_history(repo: str):
+def go) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L560)
 

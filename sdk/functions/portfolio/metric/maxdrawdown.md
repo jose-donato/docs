@@ -1,9 +1,13 @@
+---
+title: maxdrawdown
+description: Class method that retrieves maximum drawdown ratio for portfolio and benchmark selected
+---
 # maxdrawdown
 
 ## portfolio_model.get_maximum_drawdown_ratio
 
 ```python
-def get_stars_history(repo: str):
+def maxdrawdown(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1059)
 

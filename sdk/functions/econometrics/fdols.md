@@ -1,9 +1,13 @@
+---
+title: fdols
+description: First differencing is an alternative to using fixed effects when there might be correlation.
+---
 # fdols
 
 ## econometrics_regression_model.get_fdols
 
 ```python
-def get_stars_history(repo: str):
+def fdols(regression_variables: List[Tuple], data: Dict[str, pd.DataFrame]) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L379)
 

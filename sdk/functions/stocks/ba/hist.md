@@ -1,9 +1,13 @@
+---
+title: hist
+description: Get hour-level sentiment data for the chosen symbol
+---
 # hist
 
 ## stocks_ba_sentimentinvestor_model.get_historical
 
 ```python
-def get_stars_history(repo: str):
+def his) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
 

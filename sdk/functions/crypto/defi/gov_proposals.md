@@ -1,9 +1,13 @@
+---
+title: gov_proposals
+description: Get terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
+---
 # gov_proposals
 
 ## crypto_defi_terramoney_fcd_model.get_proposals
 
 ```python
-def get_stars_history(repo: str):
+def gov_proposals(status: str, sortby: str, ascend: bool, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L195)
 

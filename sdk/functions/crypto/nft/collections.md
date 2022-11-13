@@ -1,9 +1,13 @@
+---
+title: collections
+description: Get nft collections [Source: https://nftpricefloor.com/]
+---
 # collections
 
 ## crypto_nft_pricefloor_model.get_collections
 
 ```python
-def get_stars_history(repo: str):
+def collection) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L23)
 

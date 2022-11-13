@@ -1,9 +1,13 @@
+---
+title: performance
+description: Get group (sectors, industry or country) performance data. [Source: Finviz]
+---
 # performance
 
 ## economy_finviz_model.get_performance_data
 
 ```python
-def get_stars_history(repo: str):
+def performance(group: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L111)
 
@@ -19,6 +23,8 @@ Description: Get group (sectors, industry or country) performance data. [Source:
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | dataframe with performance data | None | None |
+
+## Returns
 
 None
 

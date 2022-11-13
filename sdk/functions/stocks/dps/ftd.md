@@ -1,9 +1,13 @@
+---
+title: ftd
+description: Display fails-to-deliver data for a given ticker. [Source: SEC]
+---
 # ftd
 
 ## stocks_dps_sec_model.get_fails_to_deliver
 
 ```python
-def get_stars_history(repo: str):
+def ftd(symbol: str, start_date: str, end_date: str, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_model.py#L58)
 
@@ -20,6 +24,8 @@ Description: Display fails-to-deliver data for a given ticker. [Source: SEC]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | Fail to deliver data | None | None |
+
+## Returns
 
 None
 

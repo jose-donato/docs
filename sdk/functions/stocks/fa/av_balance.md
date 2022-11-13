@@ -1,9 +1,13 @@
+---
+title: av_balance
+description: Get balance sheets for company
+---
 # av_balance
 
 ## stocks_fa_av_model.get_balance_sheet
 
 ```python
-def get_stars_history(repo: str):
+def av_balance(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L252)
 

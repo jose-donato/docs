@@ -1,9 +1,13 @@
+---
+title: fr
+description: Returns coin fundraising
+---
 # fr
 
 ## crypto_dd_messari_model.get_fundraising
 
 ```python
-def get_stars_history(repo: str):
+def f) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L631)
 

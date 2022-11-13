@@ -1,9 +1,13 @@
+---
+title: sharpe
+description: Class method that retrieves sharpe ratio for portfolio and benchmark selected
+---
 # sharpe
 
 ## portfolio_model.get_sharpe_ratio
 
 ```python
-def get_stars_history(repo: str):
+def sharpe(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, risk_free_rate: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L969)
 

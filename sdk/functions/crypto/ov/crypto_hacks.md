@@ -1,9 +1,13 @@
+---
+title: crypto_hacks
+description: Get major crypto-related hacks
+---
 # crypto_hacks
 
 ## crypto_ov_rekt_model.get_crypto_hacks
 
 ```python
-def get_stars_history(repo: str):
+def crypto_hacks(sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L91)
 

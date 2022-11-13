@@ -1,9 +1,13 @@
+---
+title: adosc
+description: Calculate AD oscillator technical indicator
+---
 # adosc
 
 ## common_ta_volume_model.adosc
 
 ```python
-def get_stars_history(repo: str):
+def adosc(data: pd.DataFrame, use_open: bool, fast: int, slow: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L45)
 

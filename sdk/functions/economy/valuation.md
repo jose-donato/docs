@@ -1,9 +1,13 @@
+---
+title: valuation
+description: Get group (sectors, industry or country) valuation data. [Source: Finviz]
+---
 # valuation
 
 ## economy_finviz_model.get_valuation_data
 
 ```python
-def get_stars_history(repo: str):
+def valuation(group: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L65)
 
@@ -19,6 +23,8 @@ Description: Get group (sectors, industry or country) valuation data. [Source: F
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | dataframe with valuation/performance data | None | None |
+
+## Returns
 
 None
 

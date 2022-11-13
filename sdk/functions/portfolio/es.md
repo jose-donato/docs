@@ -1,9 +1,13 @@
+---
+title: es
+description: Get portfolio expected shortfall
+---
 # es
 
 ## portfolio_model.get_es
 
 ```python
-def get_stars_history(repo: str):
+def es(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, use_mean: bool, distribution: str, percentile: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1722)
 

@@ -1,9 +1,13 @@
+---
+title: search_index
+description: Search indices by keyword. [Source: FinanceDatabase]
+---
 # search_index
 
 ## economy_yfinance_model.get_search_indices
 
 ```python
-def get_stars_history(repo: str):
+def search_index(keyword: list, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L714)
 
@@ -18,6 +22,8 @@ Description: Search indices by keyword. [Source: FinanceDatabase]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.Dataframe | None | Dataframe with the available options. | None | None |
+
+## Returns
 
 None
 

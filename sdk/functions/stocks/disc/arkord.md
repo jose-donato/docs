@@ -1,9 +1,13 @@
+---
+title: arkord
+description: Returns ARK orders in a Dataframe
+---
 # arkord
 
 ## stocks_disc_ark_model.get_ark_orders
 
 ```python
-def get_stars_history(repo: str):
+def arkord(buys_only: bool, sells_only: bool, fund: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L22)
 

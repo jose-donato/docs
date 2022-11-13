@@ -1,9 +1,13 @@
+---
+title: tyld
+description: Get historical yield for a given maturity
+---
 # tyld
 
 ## economy_alphavantage_model.get_treasury_yield
 
 ```python
-def get_stars_history(repo: str):
+def tyld(interval: str, maturity: str, start_date: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L228)
 

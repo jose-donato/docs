@@ -1,9 +1,13 @@
+---
+title: cpcontracts
+description: Gets all contract addresses for given platform [Source: CoinPaprika]
+---
 # cpcontracts
 
 ## crypto_ov_coinpaprika_model.get_contract_platform
 
 ```python
-def get_stars_history(repo: str):
+def cpcontracts(platform_id: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L418)
 

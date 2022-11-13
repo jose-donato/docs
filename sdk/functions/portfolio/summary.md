@@ -1,9 +1,13 @@
+---
+title: summary
+description: Get summary portfolio and benchmark returns
+---
 # summary
 
 ## portfolio_model.get_summary
 
 ```python
-def get_stars_history(repo: str):
+def summary(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, risk_free_rate: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1783)
 

@@ -1,9 +1,13 @@
+---
+title: panel
+description: Based on the regression type, this function decides what regression to run.
+---
 # panel
 
 ## econometrics_regression_model.get_regressions_results
 
 ```python
-def get_stars_history(repo: str):
+def panel(regression_type: str, regression_variables: List[Tuple], data: Dict[str, pd.DataFrame], entity_effects: bool, time_effects: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L33)
 

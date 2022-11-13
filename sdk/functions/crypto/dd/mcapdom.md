@@ -1,9 +1,13 @@
+---
+title: mcapdom
+description: Returns market dominance of a coin over time
+---
 # mcapdom
 
 ## crypto_dd_messari_model.get_marketcap_dominance
 
 ```python
-def get_stars_history(repo: str):
+def mcapdom(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L80)
 

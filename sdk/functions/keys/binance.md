@@ -1,9 +1,13 @@
+---
+title: binance
+description: Set Binance key
+---
 # binance
 
 ## keys_model.set_binance_key
 
 ```python
-def get_stars_history(repo: str):
+def binance(key: str, secret: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1323)
 

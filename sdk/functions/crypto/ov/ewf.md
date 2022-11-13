@@ -1,9 +1,13 @@
+---
+title: ewf
+description: Scrapes exchange withdrawal fees
+---
 # ewf
 
 ## crypto_ov_withdrawalfees_model.get_overall_exchange_withdrawal_fees
 
 ```python
-def get_stars_history(repo: str):
+def ew) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L180)
 

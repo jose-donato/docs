@@ -1,9 +1,13 @@
+---
+title: ols
+description: Performs an OLS regression on timeseries data. [Source: Statsmodels]
+---
 # ols
 
 ## econometrics_regression_model.get_ols
 
 ```python
-def get_stars_history(repo: str):
+def ols(regression_variables: List[Tuple], data: Dict[str, pd.DataFrame], show_regression: bool, export: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L135)
 

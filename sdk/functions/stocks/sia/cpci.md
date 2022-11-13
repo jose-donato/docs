@@ -1,9 +1,13 @@
+---
+title: cpci
+description: Get number of companies per country in a specific industry (and specific market cap).
+---
 # cpci
 
 ## stocks_sia_financedatabase_model.get_companies_per_country_in_industry
 
 ```python
-def get_stars_history(repo: str):
+def cpci(industry: str, mktcap: str, exclude_exchanges: bool) -> dict:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L410)
 

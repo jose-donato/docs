@@ -1,9 +1,13 @@
+---
+title: cpsearch
+description: Search CoinPaprika. [Source: CoinPaprika]
+---
 # cpsearch
 
 ## crypto_disc_coinpaprika_model.get_search_results
 
 ```python
-def get_stars_history(repo: str):
+def cpsearch(query: str, category: Union[Any, NoneType], modifier: Union[Any, NoneType], sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py#L26)
 

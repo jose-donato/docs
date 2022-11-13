@@ -1,9 +1,13 @@
+---
+title: cgstables
+description: Returns top stable coins [Source: CoinGecko]
+---
 # cgstables
 
 ## crypto_ov_pycoingecko_model.get_stable_coins
 
 ```python
-def get_stars_history(repo: str):
+def cgstables(limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L184)
 

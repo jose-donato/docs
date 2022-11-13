@@ -1,9 +1,13 @@
+---
+title: riskparity
+description: Builds a risk parity portfolio using the risk budgeting approach
+---
 # riskparity
 
 ## portfolio_optimization_optimizer_model.get_risk_parity_portfolio
 
 ```python
-def get_stars_history(repo: str):
+def riskparity(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_cont: List[str], risk_free_rate: float, alpha: float, target_return: float, mean: str, covariance: str, d_ewma: float, value: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1681)
 

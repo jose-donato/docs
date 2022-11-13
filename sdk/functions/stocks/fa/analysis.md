@@ -1,9 +1,13 @@
+---
+title: analysis
+description: Save time reading SEC filings with the help of machine learning. [Source: https://eclect.us]
+---
 # analysis
 
 ## stocks_fa_eclect_us_model.get_filings_analysis
 
 ```python
-def get_stars_history(repo: str):
+def analysis(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/eclect_us_model.py#L17)
 

@@ -1,9 +1,13 @@
+---
+title: bullbear
+description: Gets bullbear sentiment for ticker [Source: stocktwits]
+---
 # bullbear
 
 ## stocks_ba_stocktwits_model.get_bullbear
 
 ```python
-def get_stars_history(repo: str):
+def bullbear(symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L15)
 

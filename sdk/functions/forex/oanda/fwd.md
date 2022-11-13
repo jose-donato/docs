@@ -1,9 +1,13 @@
+---
+title: fwd
+description: Gets forward rates from fxempire
+---
 # fwd
 
 ## forex_fxempire_model.get_forward_rates
 
 ```python
-def get_stars_history(repo: str):
+def fwd(to_symbol: str, from_symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/fxempire_model.py#L13)
 

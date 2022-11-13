@@ -1,9 +1,13 @@
+---
+title: cgderivatives
+description: Get list of crypto derivatives from CoinGecko API [Source: CoinGecko]
+---
 # cgderivatives
 
 ## crypto_ov_pycoingecko_model.get_derivatives
 
 ```python
-def get_stars_history(repo: str):
+def cgderivatives(sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L340)
 

@@ -1,9 +1,13 @@
+---
+title: mret
+description: Get monthly returns
+---
 # mret
 
 ## portfolio_model.get_monthly_returns
 
 ```python
-def get_stars_history(repo: str):
+def mret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1899)
 

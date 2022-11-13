@@ -1,9 +1,13 @@
+---
+title: kelly
+description: Gets kelly criterion
+---
 # kelly
 
 ## portfolio_model.get_kelly_criterion
 
 ```python
-def get_stars_history(repo: str):
+def kelly(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1285)
 

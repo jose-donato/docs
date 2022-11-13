@@ -1,9 +1,13 @@
+---
+title: hist
+description: Get historical prices for all comparison stocks
+---
 # hist
 
 ## stocks_ca_yahoo_finance_model.get_historical
 
 ```python
-def get_stars_history(repo: str):
+def hist(similar: List[str], start_date: str, candle_type: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L30)
 

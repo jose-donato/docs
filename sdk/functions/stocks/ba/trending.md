@@ -1,9 +1,13 @@
+---
+title: trending
+description: Get trending tickers from stocktwits [Source: stocktwits]
+---
 # trending
 
 ## stocks_ba_stocktwits_model.get_trending
 
 ```python
-def get_stars_history(repo: str):
+def trendin) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L81)
 

@@ -1,9 +1,13 @@
+---
+title: calendar
+description: Request data of significant events calendar.
+---
 # calendar
 
 ## forex_oanda_model.get_calendar_request
 
 ```python
-def get_stars_history(repo: str):
+def calendar(days: int, instrument: Union[str, NoneType]) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L644)
 

@@ -1,9 +1,13 @@
+---
+title: wf
+description: Scrapes top coins withdrawal fees
+---
 # wf
 
 ## crypto_ov_withdrawalfees_model.get_overall_withdrawal_fees
 
 ```python
-def get_stars_history(repo: str):
+def wf(limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L119)
 

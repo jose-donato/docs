@@ -1,9 +1,13 @@
+---
+title: gainers_or_losers
+description: Returns data about top gainers - coins which gain the most in given period and
+---
 # gainers_or_losers
 
 ## crypto_disc_pycoingecko_model.get_gainers_or_losers
 
 ```python
-def get_stars_history(repo: str):
+def gainers_or_losers(limit: int, interval: str, typ: str, sortby: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L188)
 

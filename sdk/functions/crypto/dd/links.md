@@ -1,9 +1,13 @@
+---
+title: links
+description: Returns asset's links
+---
 # links
 
 ## crypto_dd_messari_model.get_links
 
 ```python
-def get_stars_history(repo: str):
+def link) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L185)
 

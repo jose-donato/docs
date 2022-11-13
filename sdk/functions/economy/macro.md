@@ -1,9 +1,13 @@
+---
+title: macro
+description: This functions groups the data queried from the EconDB database [Source: EconDB]
+---
 # macro
 
 ## economy_econdb_model.get_aggregated_macro_data
 
 ```python
-def get_stars_history(repo: str):
+def macro(parameters: list, countries: list, transform: str, start_date: str, end_date: Any, symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L648)
 
@@ -24,6 +28,8 @@ Description: This functions groups the data queried from the EconDB database [So
 | pd.DataFrame | None | A DataFrame with the requested macro data of all chosen countries | None | None |
 | Dictionary | None | A dictionary containing the units of each country's parameter (e.g. EUR) | None | None |
 | str | None | Denomination which can be Trillions, Billions, Millions, Thousands | None | None |
+
+## Returns
 
 None
 

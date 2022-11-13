@@ -1,9 +1,13 @@
+---
+title: overview
+description: Get overview data for selected etf
+---
 # overview
 
 ## etf_stockanalysis_model.get_etf_overview
 
 ```python
-def get_stars_history(repo: str):
+def overview(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L49)
 
@@ -17,6 +21,8 @@ Description: Get overview data for selected etf
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | df | pd.DataFrame | Dataframe of stock overview data | None | False |
+
+## Returns
 
 None
 

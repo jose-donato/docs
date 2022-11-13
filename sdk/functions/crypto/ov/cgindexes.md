@@ -1,9 +1,13 @@
+---
+title: cgindexes
+description: Get list of crypto indexes from CoinGecko API [Source: CoinGecko]
+---
 # cgindexes
 
 ## crypto_ov_pycoingecko_model.get_indexes
 
 ```python
-def get_stars_history(repo: str):
+def cgindexes(sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L318)
 

@@ -1,9 +1,13 @@
+---
+title: pos
+description: Get dark pool short positions. [Source: Stockgrid]
+---
 # pos
 
 ## stocks_dps_stockgrid_model.get_dark_pool_short_positions
 
 ```python
-def get_stars_history(repo: str):
+def pos(sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L19)
 
@@ -21,6 +25,8 @@ Description: Get dark pool short positions. [Source: Stockgrid]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | Dark pool short position data | None | None |
+
+## Returns
 
 None
 

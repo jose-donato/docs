@@ -1,9 +1,13 @@
+---
+title: summary
+description: Request Oanda account summary.
+---
 # summary
 
 ## forex_oanda_model.account_summary_request
 
 ```python
-def get_stars_history(repo: str):
+def summary(accountID: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L73)
 

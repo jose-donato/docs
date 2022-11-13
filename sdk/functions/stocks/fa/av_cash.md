@@ -1,9 +1,13 @@
+---
+title: av_cash
+description: Get cash flows for company
+---
 # av_cash
 
 ## stocks_fa_av_model.get_cash_flow
 
 ```python
-def get_stars_history(repo: str):
+def av_cash(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L339)
 

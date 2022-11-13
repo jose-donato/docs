@@ -1,9 +1,13 @@
+---
+title: rtat
+description: Gets the top 10 retail stocks per day
+---
 # rtat
 
 ## stocks_disc_nasdaq_model.get_retail_tickers
 
 ```python
-def get_stars_history(repo: str):
+def rta) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L19)
 

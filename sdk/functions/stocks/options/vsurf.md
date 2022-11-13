@@ -1,9 +1,13 @@
+---
+title: vsurf
+description: Gets IV surface for calls and puts for ticker
+---
 # vsurf
 
 ## stocks_options_yfinance_model.get_iv_surface
 
 ```python
-def get_stars_history(repo: str):
+def vsurf(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L320)
 

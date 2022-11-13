@@ -1,9 +1,13 @@
+---
+title: index
+description: Get data on selected indices over time [Source: Yahoo Finance]
+---
 # index
 
 ## economy_yfinance_model.get_indices
 
 ```python
-def get_stars_history(repo: str):
+def index(indices: list, interval: str, start_date: int, end_date: int, column: str, returns: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L669)
 
@@ -23,6 +27,8 @@ Intraday data cannot extend last 60 days | None | False |
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.Dataframe | None | Dataframe with historical data on selected indices. | None | None |
+
+## Returns
 
 None
 

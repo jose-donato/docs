@@ -1,9 +1,13 @@
+---
+title: rsort
+description: Get rolling sortino
+---
 # rsort
 
 ## portfolio_model.get_rolling_sortino
 
 ```python
-def get_stars_history(repo: str):
+def rsort(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, risk_free_rate: float, window: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1511)
 

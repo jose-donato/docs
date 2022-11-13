@@ -1,9 +1,13 @@
+---
+title: search
+description: Search selected query for tickers.
+---
 # search
 
 ## stocks_helper.search
 
 ```python
-def get_stars_history(repo: str):
+def search(query: str, country: str, sector: str, industry: str, exchange_country: str, limit: int, export: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L98)
 
@@ -20,6 +24,8 @@ Description: Search selected query for tickers.
 | exchange_country | str | Search by exchange country to find stock matching | None | False |
 | limit | int | The limit of companies shown. | None | False |
 | export | str | Export data | None | False |
+
+## Returns
 
 None
 

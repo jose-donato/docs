@@ -1,9 +1,13 @@
+---
+title: degiro
+description: Set Degiro key
+---
 # degiro
 
 ## keys_model.set_degiro_key
 
 ```python
-def get_stars_history(repo: str):
+def degiro(username: str, password: str, secret: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1167)
 

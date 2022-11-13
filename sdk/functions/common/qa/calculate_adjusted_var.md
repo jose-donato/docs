@@ -1,9 +1,13 @@
+---
+title: calculate_adjusted_var
+description: Calculates VaR, which is adjusted for skew and kurtosis (Cornish-Fischer-Expansion)
+---
 # calculate_adjusted_var
 
 ## common_qa_model.calculate_adjusted_var
 
 ```python
-def get_stars_history(repo: str):
+def calculate_adjusted_var(kurtosis: float, skew: float, ndp: float, std: float, mean: float) -> float:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L184)
 

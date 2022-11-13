@@ -1,9 +1,13 @@
+---
+title: token_decimals
+description: Helper methods that gets token decimals number. [Source: Ethplorer]
+---
 # token_decimals
 
 ## crypto_onchain_ethplorer_model.get_token_decimals
 
 ```python
-def get_stars_history(repo: str):
+def token_decimals(address: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L175)
 

@@ -1,9 +1,13 @@
+---
+title: gwei
+description: Returns the most recent Ethereum gas fees in gwei
+---
 # gwei
 
 ## crypto_onchain_ethgasstation_model.get_gwei_fees
 
 ```python
-def get_stars_history(repo: str):
+def gwe) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethgasstation_model.py#L12)
 

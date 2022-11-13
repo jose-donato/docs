@@ -1,9 +1,13 @@
+---
+title: screener_output
+description: Screen options based on preset filters
+---
 # screener_output
 
 ## stocks_options_screen_syncretism_model.get_screener_output
 
 ```python
-def get_stars_history(repo: str):
+def screener_output(preset: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L158)
 

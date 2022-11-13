@@ -1,9 +1,13 @@
+---
+title: regr
+description: Perform Regression Forecasting
+---
 # regr
 
 ## forecast_regr_model.get_regression_data
 
 ```python
-def get_stars_history(repo: str):
+def regr(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]]) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/regr_model.py#L21)
 

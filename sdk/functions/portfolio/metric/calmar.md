@@ -1,9 +1,13 @@
+---
+title: calmar
+description: Get calmar ratio
+---
 # calmar
 
 ## portfolio_model.get_calmar_ratio
 
 ```python
-def get_stars_history(repo: str):
+def calmar(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1256)
 

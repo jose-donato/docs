@@ -1,11 +1,15 @@
+---
+title: eb
+description: Returns the total amount of coins held on exchange addresses in units and percentage.
+---
 # eb
 
 ## crypto_dd_glassnode_model.get_exchange_balances
 
 ```python
-def get_stars_history(repo: str):
+def e) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L437)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L439)
 
 Description: Returns the total amount of coins held on exchange addresses in units and percentage.
 
@@ -15,8 +19,8 @@ Description: Returns the total amount of coins held on exchange addresses in uni
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
 | exchange | str | Exchange to check net position change (e.g., binance) | None | False |
-| start_date | int | Initial date timestamp (e.g., 1_614_556_800) | None | False |
-| end_date | int | End date timestamp (e.g., 1_614_556_800) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 
 ## Returns
 

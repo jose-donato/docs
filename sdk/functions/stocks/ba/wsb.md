@@ -1,9 +1,13 @@
+---
+title: wsb
+description: Get wsb posts [Source: reddit]
+---
 # wsb
 
 ## stocks_ba_reddit_model.get_wsb_community
 
 ```python
-def get_stars_history(repo: str):
+def ws) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L606)
 

@@ -1,9 +1,13 @@
+---
+title: cpplatforms
+description: List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama ... [Source: CoinPaprika]
+---
 # cpplatforms
 
 ## crypto_ov_coinpaprika_model.get_all_contract_platforms
 
 ```python
-def get_stars_history(repo: str):
+def cpplatform) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L397)
 

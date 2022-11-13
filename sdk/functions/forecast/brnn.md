@@ -1,9 +1,13 @@
+---
+title: brnn
+description: Performs Block RNN forecasting
+---
 # brnn
 
 ## forecast_brnn_model.get_brnn_data
 
 ```python
-def get_stars_history(repo: str):
+def brnn(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, past_covariates: str, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, model_type: str, n_rnn_layers: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/brnn_model.py#L21)
 

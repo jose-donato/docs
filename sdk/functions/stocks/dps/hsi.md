@@ -1,9 +1,13 @@
+---
+title: hsi
+description: Returns a high short interest DataFrame
+---
 # hsi
 
 ## stocks_dps_shortinterest_model.get_high_short_interest
 
 ```python
-def get_stars_history(repo: str):
+def hs) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/shortinterest_model.py#L17)
 

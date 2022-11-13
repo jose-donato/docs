@@ -1,9 +1,13 @@
+---
+title: grhist
+description: Get histoical option greeks
+---
 # grhist
 
 ## stocks_options_screen_syncretism_model.get_historical_greeks
 
 ```python
-def get_stars_history(repo: str):
+def grhist(symbol: str, expiry: str, strike: Union[str, float], chain_id: str, put: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L36)
 

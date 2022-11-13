@@ -1,9 +1,13 @@
+---
+title: calc_hedge
+description: Determine the hedge position and the weights within each option and
+---
 # calc_hedge
 
 ## stocks_options_hedge_model.calc_hedge
 
 ```python
-def get_stars_history(repo: str):
+def calc_hedge(portfolio_option_amount: float, side: str, greeks: dict, sign: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_model.py#L12)
 

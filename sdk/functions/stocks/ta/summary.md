@@ -1,9 +1,13 @@
+---
+title: summary
+description: Get technical summary report provided by FinBrain's API
+---
 # summary
 
 ## stocks_ta_finbrain_model.get_technical_summary_report
 
 ```python
-def get_stars_history(repo: str):
+def summary(symbol: str) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finbrain_model.py#L14)
 

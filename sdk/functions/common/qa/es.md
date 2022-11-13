@@ -1,9 +1,13 @@
+---
+title: es
+description: Gets Expected Shortfall for specified stock dataframe.
+---
 # es
 
 ## common_qa_model.get_es
 
 ```python
-def get_stars_history(repo: str):
+def es(data: pd.DataFrame, use_mean: bool, distribution: str, percentile: Union[float, int], portfolio: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L357)
 

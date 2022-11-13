@@ -1,9 +1,13 @@
+---
+title: fmp_income
+description: Get income statements
+---
 # fmp_income
 
 ## stocks_fa_fmp_model.get_income
 
 ```python
-def get_stars_history(repo: str):
+def fmp_incom) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L212)
 

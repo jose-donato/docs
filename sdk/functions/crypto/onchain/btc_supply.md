@@ -1,9 +1,13 @@
+---
+title: btc_supply
+description: Returns BTC circulating supply [Source: https://api.blockchain.info/]
+---
 # btc_supply
 
 ## crypto_onchain_blockchain_model.get_btc_circulating_supply
 
 ```python
-def get_stars_history(repo: str):
+def btc_suppl) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_model.py#L41)
 

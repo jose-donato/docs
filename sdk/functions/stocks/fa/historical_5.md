@@ -1,9 +1,13 @@
+---
+title: historical_5
+description: Get 5 year monthly historical performance for a ticker with dividends filtered
+---
 # historical_5
 
 ## stocks_fa_dcf_model.get_historical_5
 
 ```python
-def get_stars_history(repo: str):
+def historical_5(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L277)
 

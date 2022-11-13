@@ -1,9 +1,13 @@
+---
+title: similar_dfs
+description: Get dataframes for similar companies
+---
 # similar_dfs
 
 ## stocks_fa_dcf_model.get_similar_dfs
 
 ```python
-def get_stars_history(repo: str):
+def similar_dfs(symbol: str, info: Dict[str, Any], n: int, no_filter: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L467)
 

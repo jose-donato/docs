@@ -1,9 +1,13 @@
+---
+title: stoch
+description: Stochastic oscillator
+---
 # stoch
 
 ## common_ta_momentum_model.stoch
 
 ```python
-def get_stars_history(repo: str):
+def stoch(data: pd.DataFrame, fastkperiod: int, slowdperiod: int, slowkperiod: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L125)
 
@@ -20,6 +24,8 @@ Description: Stochastic oscillator
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | Dataframe of technical indicator | None | None |
+
+## Returns
 
 None
 

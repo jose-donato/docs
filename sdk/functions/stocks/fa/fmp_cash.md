@@ -1,9 +1,13 @@
+---
+title: fmp_cash
+description: Get cash flow
+---
 # fmp_cash
 
 ## stocks_fa_fmp_model.get_cash
 
 ```python
-def get_stars_history(repo: str):
+def fmp_cas) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L348)
 

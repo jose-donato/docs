@@ -1,9 +1,13 @@
+---
+title: calc_delta
+description: The first-order partial-derivative with respect to the underlying asset of the Black-Scholes
+---
 # calc_delta
 
 ## stocks_options_hedge_model.calc_delta
 
 ```python
-def get_stars_history(repo: str):
+def calc_delta(asset_price: float, asset_volatility: float, strike_price: float, time_to_expiration: float, risk_free_rate: float, sign: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_model.py#L183)
 

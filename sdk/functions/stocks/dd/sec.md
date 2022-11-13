@@ -1,9 +1,13 @@
+---
+title: sec
+description: Get SEC filings for a given stock ticker. [Source: Market Watch]
+---
 # sec
 
 ## stocks_dd_marketwatch_model.get_sec_filings
 
 ```python
-def get_stars_history(repo: str):
+def sec(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_model.py#L19)
 

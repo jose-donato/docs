@@ -1,9 +1,13 @@
+---
+title: wfpe
+description: Scrapes coin withdrawal fees per exchange
+---
 # wfpe
 
 ## crypto_ov_withdrawalfees_model.get_crypto_withdrawal_fees
 
 ```python
-def get_stars_history(repo: str):
+def wfpe(symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L208)
 

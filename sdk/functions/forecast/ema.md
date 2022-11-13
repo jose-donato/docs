@@ -1,9 +1,13 @@
+---
+title: ema
+description: A moving average provides an indication of the trend of the price movement
+---
 # ema
 
 ## forecast_model.add_ema
 
 ```python
-def get_stars_history(repo: str):
+def ema(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L146)
 

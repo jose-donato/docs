@@ -1,9 +1,13 @@
+---
+title: ln
+description: Return a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
+---
 # ln
 
 ## etf_financedatabase_model.get_etfs_by_name
 
 ```python
-def get_stars_history(repo: str):
+def ln(name: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L14)
 
@@ -17,6 +21,8 @@ Description: Return a selection of ETFs based on name filtered by total assets. 
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | data | Dict | Dictionary with ETFs that match a certain name | None | False |
+
+## Returns
 
 None
 

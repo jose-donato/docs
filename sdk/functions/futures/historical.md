@@ -1,9 +1,13 @@
+---
+title: historical
+description: Get historical futures [Source: Yahoo Finance]
+---
 # historical
 
 ## futures_yfinance_model.get_historical_futures
 
 ```python
-def get_stars_history(repo: str):
+def historical(symbols: List[str], expiry: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L78)
 
@@ -18,6 +22,8 @@ Description: Get historical futures [Source: Yahoo Finance]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | Dict | None | Dictionary with sector weightings allocation | None | None |
+
+## Returns
 
 None
 

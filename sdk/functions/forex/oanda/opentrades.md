@@ -1,9 +1,13 @@
+---
+title: opentrades
+description: Request open trades data.
+---
 # opentrades
 
 ## forex_oanda_model.open_trades_request
 
 ```python
-def get_stars_history(repo: str):
+def opentrades(accountID: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L469)
 

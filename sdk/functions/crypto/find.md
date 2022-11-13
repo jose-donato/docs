@@ -1,11 +1,15 @@
+---
+title: find
+description: Find similar coin by coin name,symbol or id.
+---
 # find
 
 ## crypto_helpers.find
 
 ```python
-def get_stars_history(repo: str):
+def find(query: str, source: str, key: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L953)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L997)
 
 Description: Find similar coin by coin name,symbol or id.
 
@@ -18,6 +22,8 @@ Description: Find similar coin by coin name,symbol or id.
 | key | str | Searching key (symbol, id, name) | None | False |
 | limit | int | Number of records to display | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
 
 None
 

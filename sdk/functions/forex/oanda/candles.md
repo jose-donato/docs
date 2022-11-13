@@ -1,9 +1,13 @@
+---
+title: candles
+description: Request data for candle chart.
+---
 # candles
 
 ## forex_oanda_model.get_candles_dataframe
 
 ```python
-def get_stars_history(repo: str):
+def candles(instrument: Union[str, NoneType], granularity: str, candlecount: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L580)
 

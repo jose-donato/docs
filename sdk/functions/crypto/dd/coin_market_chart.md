@@ -1,9 +1,13 @@
+---
+title: coin_market_chart
+description: Get prices for given coin. [Source: CoinGecko]
+---
 # coin_market_chart
 
 ## crypto_dd_pycoingecko_model.get_coin_market_chart
 
 ```python
-def get_stars_history(repo: str):
+def coin_market_chart(symbol: str, vs_currency: str, days: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L221)
 

@@ -1,9 +1,13 @@
+---
+title: futures
+description: Scrape data for top commodities
+---
 # futures
 
 ## economy_wsj_model.top_commodities
 
 ```python
-def get_stars_history(repo: str):
+def future) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L102)
 

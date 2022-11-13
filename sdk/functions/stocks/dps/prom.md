@@ -1,9 +1,13 @@
+---
+title: prom
+description: Get all FINRA ATS data, and parse most promising tickers based on linear regression
+---
 # prom
 
 ## stocks_dps_finra_model.getATSdata
 
 ```python
-def get_stars_history(repo: str):
+def prom(limit: int, tier_ats: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L215)
 

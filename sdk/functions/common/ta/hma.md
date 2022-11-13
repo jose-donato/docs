@@ -1,9 +1,13 @@
+---
+title: hma
+description: Gets hull moving average (HMA) for stock
+---
 # hma
 
 ## common_ta_overlap_model.hma
 
 ```python
-def get_stars_history(repo: str):
+def hma(data: pd.Series, length: int, offset: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L90)
 
@@ -19,6 +23,8 @@ Description: Gets hull moving average (HMA) for stock
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | df_ta | pd.DataFrame | Dataframe containing prices and HMA | None | False |
+
+## Returns
 
 None
 

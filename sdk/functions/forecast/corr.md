@@ -1,9 +1,13 @@
+---
+title: corr
+description: Returns correlation for a given df
+---
 # corr
 
 ## forecast_model.corr_df
 
 ```python
-def get_stars_history(repo: str):
+def corr(data: pd.DataFrame) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L496)
 

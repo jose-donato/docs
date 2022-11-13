@@ -1,9 +1,13 @@
+---
+title: mktcap
+description: Get market cap over time for ticker. [Source: Yahoo Finance]
+---
 # mktcap
 
 ## stocks_fa_yahoo_finance_model.get_mktcap
 
 ```python
-def get_stars_history(repo: str):
+def mktcap(symbol: str, start_date: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L272)
 

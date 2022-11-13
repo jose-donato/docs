@@ -1,9 +1,13 @@
+---
+title: option_expirations
+description: Get available expiration dates for given ticker
+---
 # option_expirations
 
 ## stocks_options_yfinance_model.option_expirations
 
 ```python
-def get_stars_history(repo: str):
+def option_expirations(symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L136)
 

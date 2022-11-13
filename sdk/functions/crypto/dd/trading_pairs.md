@@ -1,9 +1,13 @@
+---
+title: trading_pairs
+description: Helper method that return all trading pairs on binance. Methods ause this data for input for e.g
+---
 # trading_pairs
 
 ## crypto_dd_binance_model._get_trading_pairs
 
 ```python
-def get_stars_history(repo: str):
+def trading_pair) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L20)
 

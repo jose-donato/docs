@@ -1,9 +1,13 @@
+---
+title: positionbook
+description: Request position book data for plotting.
+---
 # positionbook
 
 ## forex_oanda_model.positionbook_plot_data_request
 
 ```python
-def get_stars_history(repo: str):
+def positionbook(instrument: Union[str, NoneType], accountID: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L181)
 

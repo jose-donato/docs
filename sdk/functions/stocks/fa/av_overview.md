@@ -1,9 +1,13 @@
+---
+title: av_overview
+description: Get alpha vantage company overview
+---
 # av_overview
 
 ## stocks_fa_av_model.get_overview
 
 ```python
-def get_stars_history(repo: str):
+def av_overview(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L35)
 

@@ -1,9 +1,13 @@
+---
+title: fmp_balance
+description: Get balance sheets
+---
 # fmp_balance
 
 ## stocks_fa_fmp_model.get_balance
 
 ```python
-def get_stars_history(repo: str):
+def fmp_balanc) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L279)
 

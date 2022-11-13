@@ -1,9 +1,13 @@
+---
+title: upcoming
+description: Returns a DataFrame with upcoming earnings
+---
 # upcoming
 
 ## stocks_disc_seeking_alpha_model.get_next_earnings
 
 ```python
-def get_stars_history(repo: str):
+def upcoming(limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L40)
 

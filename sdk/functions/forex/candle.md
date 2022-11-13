@@ -1,9 +1,13 @@
+---
+title: candle
+description: Show candle plot for fx data.
+---
 # candle
 
 ## forex_helpers.display_candle
 
 ```python
-def get_stars_history(repo: str):
+def candle(data: pd.DataFrame, to_symbol: str, from_symbol: str, ma: Union[Iterable[int], NoneType], external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], use_matplotlib: bool, add_trend: bool, yscale: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L226)
 
@@ -18,6 +22,8 @@ Description: Show candle plot for fx data.
 | from_symbol | str | From forex symbol | None | False |
 | ma | Optional[Iterable[int]] | Moving averages | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | False |
+
+## Returns
 
 None
 

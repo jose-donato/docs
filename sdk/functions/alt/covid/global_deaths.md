@@ -1,11 +1,15 @@
+---
+title: global_deaths
+description: Get historical deaths for given country
+---
 # global_deaths
 
 ## alt_covid_model.get_global_deaths
 
 ```python
-def get_stars_history(repo: str):
+def global_deaths(country: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L54)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L69)
 
 Description: Get historical deaths for given country
 

@@ -1,9 +1,13 @@
+---
+title: reddit
+description: Set Reddit key
+---
 # reddit
 
 ## keys_model.set_reddit_key
 
 ```python
-def get_stars_history(repo: str):
+def reddit(client_id: str, client_secret: str, password: str, username: str, useragent: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L854)
 

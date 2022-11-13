@@ -1,9 +1,13 @@
+---
+title: load
+description: Load a symbol to perform analysis using the string above as a template.
+---
 # load
 
 ## stocks_helper.load
 
 ```python
-def get_stars_history(repo: str):
+def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType], interval: int, end_date: Union[datetime.datetime, str, NoneType], prepost: bool, source: str, iexrange: str, weekly: bool, monthly: bool, verbose: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L218)
 

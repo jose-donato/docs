@@ -1,9 +1,13 @@
+---
+title: load
+description: Load forex for two given symbols.
+---
 # load
 
 ## forex_helpers.load
 
 ```python
-def get_stars_history(repo: str):
+def load(to_symbol: str, from_symbol: str, resolution: str, interval: str, start_date: str, source: str, verbose: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L96)
 

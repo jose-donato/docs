@@ -1,9 +1,13 @@
+---
+title: maxdiv
+description: Builds a maximal diversification portfolio
+---
 # maxdiv
 
 ## portfolio_optimization_optimizer_model.get_max_diversification_portfolio
 
 ```python
-def get_stars_history(repo: str):
+def maxdiv(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, covariance: str, d_ewma: float, value: float, value_short: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1101)
 

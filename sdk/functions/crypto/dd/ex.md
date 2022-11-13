@@ -1,9 +1,13 @@
+---
+title: ex
+description: Get all exchanges for given coin id. [Source: CoinPaprika]
+---
 # ex
 
 ## crypto_dd_coinpaprika_model.get_coin_exchanges_by_id
 
 ```python
-def get_stars_history(repo: str):
+def ex(symbol: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L149)
 

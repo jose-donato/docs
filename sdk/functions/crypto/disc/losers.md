@@ -1,9 +1,13 @@
+---
+title: losers
+description: Shows Largest Losers - coins which lose the most in given period. [Source: CoinGecko]
+---
 # losers
 
 ## crypto_disc_pycoingecko_model.get_losers
 
 ```python
-def get_stars_history(repo: str):
+def losers(interval: str, limit: int, sortby: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L280)
 

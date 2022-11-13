@@ -1,9 +1,13 @@
+---
+title: cpi
+description: Get Consumer Price Index from Alpha Vantage
+---
 # cpi
 
 ## economy_alphavantage_model.get_cpi
 
 ```python
-def get_stars_history(repo: str):
+def cpi(interval: str, start_year: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L180)
 

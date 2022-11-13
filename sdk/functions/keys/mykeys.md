@@ -1,9 +1,13 @@
+---
+title: mykeys
+description: Get currently set API keys.
+---
 # mykeys
 
 ## keys_model.get_keys
 
 ```python
-def get_stars_history(repo: str):
+def mykeys(show: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L231)
 

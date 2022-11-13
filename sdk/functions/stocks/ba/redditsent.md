@@ -1,9 +1,13 @@
+---
+title: redditsent
+description: Finds posts related to a specific search term in Reddit
+---
 # redditsent
 
 ## stocks_ba_reddit_model.get_posts_about
 
 ```python
-def get_stars_history(repo: str):
+def redditsen) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L868)
 

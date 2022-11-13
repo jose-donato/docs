@@ -1,9 +1,13 @@
+---
+title: herc
+description: Builds a hierarchical risk parity portfolio
+---
 # herc
 
 ## portfolio_optimization_optimizer_model.get_herc
 
 ```python
-def get_stars_history(repo: str):
+def herc(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, codependence: str, covariance: str, objective: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, a_sim: int, beta: float, b_sim: int, linkage: str, k: int, max_k: int, bins_info: str, alpha_tail: float, leaf_order: bool, d_ewma: float, value: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L2473)
 
@@ -138,6 +142,8 @@ The default is 0.94. | 0.94 | True |
 | value | float | Amount to allocate to portfolio in long positions, by default 1.0 | 1.0 | True |
 | value_short | float | Amount to allocate to portfolio in short positions, by default 0.0 | 0.0 | True |
 | table | bool | True if plot table weights, by default False | False | True |
+
+## Returns
 
 None
 

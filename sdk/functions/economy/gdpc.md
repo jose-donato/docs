@@ -1,9 +1,13 @@
+---
+title: gdpc
+description: Real GDP per Capita for United States
+---
 # gdpc
 
 ## economy_alphavantage_model.get_gdp_capita
 
 ```python
-def get_stars_history(repo: str):
+def gdpc(start_year: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L94)
 

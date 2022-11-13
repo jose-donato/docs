@@ -1,9 +1,13 @@
+---
+title: tft
+description: Performs Temporal Fusion Transformer forecasting
+---
 # tft
 
 ## forecast_tft_model.get_tft_data
 
 ```python
-def get_stars_history(repo: str):
+def tft(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, hidden_size: int, lstm_layers: int, num_attention_heads: int, full_attention: bool, dropout: float, hidden_continuous_size: int, n_epochs: int, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tft_model.py#L25)
 

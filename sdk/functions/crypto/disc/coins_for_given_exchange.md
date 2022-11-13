@@ -1,9 +1,13 @@
+---
+title: coins_for_given_exchange
+description: Helper method to get all coins available on binance exchange [Source: CoinGecko]
+---
 # coins_for_given_exchange
 
 ## crypto_disc_pycoingecko_model.get_coins_for_given_exchange
 
 ```python
-def get_stars_history(repo: str):
+def coins_for_given_exchange(exchange_id: str, page: int) -> dict:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L348)
 

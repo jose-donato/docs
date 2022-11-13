@@ -1,9 +1,13 @@
+---
+title: finnhub
+description: Set Finnhub key
+---
 # finnhub
 
 ## keys_model.set_finnhub_key
 
 ```python
-def get_stars_history(repo: str):
+def finnhub(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L739)
 

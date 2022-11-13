@@ -1,9 +1,13 @@
+---
+title: tv
+description: Get token volume on different Decentralized Exchanges. [Source: https://graphql.bitquery.io/]
+---
 # tv
 
 ## crypto_onchain_bitquery_model.get_token_volume_on_dexes
 
 ```python
-def get_stars_history(repo: str):
+def tv(symbol: str, trade_amount_currency: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L512)
 

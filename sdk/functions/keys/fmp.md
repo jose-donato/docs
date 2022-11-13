@@ -1,9 +1,13 @@
+---
+title: fmp
+description: Set Financial Modeling Prep key
+---
 # fmp
 
 ## keys_model.set_fmp_key
 
 ```python
-def get_stars_history(repo: str):
+def fmp(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L325)
 

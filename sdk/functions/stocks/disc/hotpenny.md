@@ -1,9 +1,13 @@
+---
+title: hotpenny
+description: Returns today hot penny stocks
+---
 # hotpenny
 
 ## stocks_disc_shortinterest_model.get_today_hot_penny_stocks
 
 ```python
-def get_stars_history(repo: str):
+def hotpenn) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L37)
 

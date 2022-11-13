@@ -1,9 +1,13 @@
+---
+title: indices
+description: Get the top US indices
+---
 # indices
 
 ## economy_wsj_model.us_indices
 
 ```python
-def get_stars_history(repo: str):
+def indice) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L15)
 

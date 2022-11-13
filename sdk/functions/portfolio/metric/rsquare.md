@@ -1,9 +1,13 @@
+---
+title: rsquare
+description: Class method that retrieves R2 Score for portfolio and benchmark selected
+---
 # rsquare
 
 ## portfolio_model.get_r2_score
 
 ```python
-def get_stars_history(repo: str):
+def rsquare(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L794)
 

@@ -1,9 +1,13 @@
+---
+title: website
+description: Gets website of company from yfinance
+---
 # website
 
 ## stocks_fa_yahoo_finance_model.get_website
 
 ```python
-def get_stars_history(repo: str):
+def website(symbol: str) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L209)
 

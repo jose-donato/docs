@@ -1,9 +1,13 @@
+---
+title: th
+description: Get info about token historical transactions. [Source: Ethplorer]
+---
 # th
 
 ## crypto_onchain_ethplorer_model.get_token_history
 
 ```python
-def get_stars_history(repo: str):
+def th(address: Any, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L481)
 

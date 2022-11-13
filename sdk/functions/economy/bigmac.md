@@ -1,9 +1,13 @@
+---
+title: bigmac
+description: Display Big Mac Index for given countries
+---
 # bigmac
 
 ## economy_nasdaq_model.get_big_mac_indices
 
 ```python
-def get_stars_history(repo: str):
+def bigma) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L165)
 

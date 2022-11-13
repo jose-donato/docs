@@ -1,9 +1,13 @@
+---
+title: unitroot
+description: Calculate test statistics for unit roots
+---
 # unitroot
 
 ## common_qa_model.get_unitroot
 
 ```python
-def get_stars_history(repo: str):
+def unitroot(data: pd.DataFrame, fuller_reg: str, kpss_reg: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L136)
 

@@ -1,9 +1,13 @@
+---
+title: desc
+description: Returns statistics for a given df
+---
 # desc
 
 ## forecast_model.describe_df
 
 ```python
-def get_stars_history(repo: str):
+def desc(data: pd.DataFrame) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L479)
 

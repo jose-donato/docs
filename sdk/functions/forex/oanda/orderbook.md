@@ -1,9 +1,13 @@
+---
+title: orderbook
+description: Request order book data for plotting.
+---
 # orderbook
 
 ## forex_oanda_model.orderbook_plot_data_request
 
 ```python
-def get_stars_history(repo: str):
+def orderbook(instrument: Union[str, NoneType], accountID: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L136)
 

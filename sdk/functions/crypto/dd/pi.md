@@ -1,9 +1,13 @@
+---
+title: pi
+description: Returns coin product info
+---
 # pi
 
 ## crypto_dd_messari_model.get_project_product_info
 
 ```python
-def get_stars_history(repo: str):
+def p) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L341)
 

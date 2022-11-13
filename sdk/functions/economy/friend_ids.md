@@ -1,9 +1,13 @@
+---
+title: friend_ids
+description: Get Series IDs. [Source: FRED]
+---
 # friend_ids
 
 ## economy_fred_model.get_series_ids
 
 ```python
-def get_stars_history(repo: str):
+def friend_id) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L124)
 
@@ -18,6 +22,8 @@ Description: Get Series IDs. [Source: FRED]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.Dataframe | None | Dataframe with series IDs and titles | None | None |
+
+## Returns
 
 None
 

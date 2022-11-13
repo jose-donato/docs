@@ -1,9 +1,13 @@
+---
+title: sharpe
+description: Calculates the sharpe ratio
+---
 # sharpe
 
 ## common_qa_model.get_sharpe
 
 ```python
-def get_stars_history(repo: str):
+def sharpe(data: pd.DataFrame, rfr: float, window: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L539)
 

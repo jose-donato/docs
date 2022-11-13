@@ -1,9 +1,13 @@
+---
+title: root
+description: Calculate test statistics for unit roots
+---
 # root
 
 ## econometrics_model.get_root
 
 ```python
-def get_stars_history(repo: str):
+def root(data: pd.Series, fuller_reg: str, kpss_reg: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L165)
 

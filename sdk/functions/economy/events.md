@@ -1,9 +1,13 @@
+---
+title: events
+description: Get economic calendar [Source: Investing.com]
+---
 # events
 
 ## economy_investingcom_model.get_economic_calendar
 
 ```python
-def get_stars_history(repo: str):
+def events(country: str, importance: str, category: str, start_date: str, end_date: str, limit: Any) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L372)
 

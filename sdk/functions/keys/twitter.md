@@ -1,9 +1,13 @@
+---
+title: twitter
+description: Set Twitter key
+---
 # twitter
 
 ## keys_model.set_twitter_key
 
 ```python
-def get_stars_history(repo: str):
+def twitter(key: str, secret: str, access_token: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1024)
 

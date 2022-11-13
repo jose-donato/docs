@@ -1,9 +1,13 @@
+---
+title: inv
+description: Returns coin investors
+---
 # inv
 
 ## crypto_dd_messari_model.get_investors
 
 ```python
-def get_stars_history(repo: str):
+def in) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L486)
 

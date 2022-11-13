@@ -1,9 +1,13 @@
+---
+title: tokenterminal
+description: Set Token Terminal key.
+---
 # tokenterminal
 
 ## keys_model.set_tokenterminal_key
 
 ```python
-def get_stars_history(repo: str):
+def tokenterminal(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L2215)
 

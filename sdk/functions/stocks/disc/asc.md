@@ -1,9 +1,13 @@
+---
+title: asc
+description: Get Yahoo Finance small cap stocks with earnings growth rates better than 25%.
+---
 # asc
 
 ## stocks_disc_yahoofinance_model.get_asc
 
 ```python
-def get_stars_history(repo: str):
+def as) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L137)
 

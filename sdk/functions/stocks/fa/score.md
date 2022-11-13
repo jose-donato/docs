@@ -1,9 +1,13 @@
+---
+title: score
+description: Gets value score from fmp
+---
 # score
 
 ## stocks_fa_fmp_model.get_score
 
 ```python
-def get_stars_history(repo: str):
+def scor) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L24)
 

@@ -1,11 +1,15 @@
+---
+title: slopes
+description: Load cases and find slope over period
+---
 # slopes
 
 ## alt_covid_model.get_case_slopes
 
 ```python
-def get_stars_history(repo: str):
+def slopes(days_back: int, limit: int, threshold: int, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L137)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L152)
 
 Description: Load cases and find slope over period
 

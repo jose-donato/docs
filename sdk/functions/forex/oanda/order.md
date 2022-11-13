@@ -1,9 +1,13 @@
+---
+title: order
+description: Request creation of buy/sell trade order.
+---
 # order
 
 ## forex_oanda_model.create_order_request
 
 ```python
-def get_stars_history(repo: str):
+def order(price: int, units: int, instrument: Union[str, NoneType], accountID: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L269)
 

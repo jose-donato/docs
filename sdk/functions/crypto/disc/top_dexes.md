@@ -1,9 +1,13 @@
+---
+title: top_dexes
+description: Get top dexes by daily volume and users [Source: https://dappradar.com/]
+---
 # top_dexes
 
 ## crypto_disc_dappradar_model.get_top_dexes
 
 ```python
-def get_stars_history(repo: str):
+def top_dexes(sortby: str, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L122)
 

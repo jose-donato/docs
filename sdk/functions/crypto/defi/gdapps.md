@@ -1,9 +1,13 @@
+---
+title: gdapps
+description: Display top dApps (in terms of TVL) grouped by chain.
+---
 # gdapps
 
 ## crypto_defi_llama_model.get_grouped_defi_protocols
 
 ```python
-def get_stars_history(repo: str):
+def gdapps(limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L143)
 

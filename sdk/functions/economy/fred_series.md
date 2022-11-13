@@ -1,9 +1,13 @@
+---
+title: fred_series
+description: Get Series data. [Source: FRED]
+---
 # fred_series
 
 ## economy_fred_model.get_aggregated_series_data
 
 ```python
-def get_stars_history(repo: str):
+def fred_serie) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L203)
 
@@ -19,6 +23,8 @@ Description: Get Series data. [Source: FRED]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | Series data | None | None |
+
+## Returns
 
 None
 

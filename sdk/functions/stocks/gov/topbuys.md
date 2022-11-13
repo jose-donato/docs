@@ -1,9 +1,13 @@
+---
+title: topbuys
+description: Get top buy government trading [Source: quiverquant.com]
+---
 # topbuys
 
 ## stocks_gov_quiverquant_model.get_government_buys
 
 ```python
-def get_stars_history(repo: str):
+def topbuys(gov_type: str, past_transactions_months: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L226)
 

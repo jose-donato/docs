@@ -1,9 +1,13 @@
+---
+title: sidtc
+description: Get short interest and days to cover. [Source: Stockgrid]
+---
 # sidtc
 
 ## stocks_dps_stockgrid_model.get_short_interest_days_to_cover
 
 ```python
-def get_stars_history(repo: str):
+def sidtc(sortby: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L77)
 
@@ -18,6 +22,8 @@ Description: Get short interest and days to cover. [Source: Stockgrid]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | Short interest and days to cover data | None | None |
+
+## Returns
 
 None
 

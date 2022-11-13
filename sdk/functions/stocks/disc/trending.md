@@ -1,9 +1,13 @@
+---
+title: trending
+description: Returns a list of trending articles
+---
 # trending
 
 ## stocks_disc_seeking_alpha_model.get_trending_list
 
 ```python
-def get_stars_history(repo: str):
+def trending(limit: int) -> list:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L99)
 

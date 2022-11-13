@@ -1,9 +1,13 @@
+---
+title: bols
+description: The between estimator is an alternative, usually less efficient estimator, can can be used to
+---
 # bols
 
 ## econometrics_regression_model.get_bols
 
 ```python
-def get_stars_history(repo: str):
+def bols(regression_variables: List[Tuple], data: Dict[str, pd.DataFrame]) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L282)
 

@@ -1,9 +1,13 @@
+---
+title: get_properties
+description: Get properties to use on property optimization.
+---
 # get_properties
 
 ## portfolio_optimization_optimizer_model.get_properties
 
 ```python
-def get_stars_history(repo: str):
+def get_propertie) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L3072)
 

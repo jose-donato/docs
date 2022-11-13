@@ -1,9 +1,13 @@
+---
+title: luna_supply
+description: Get supply history of the Terra ecosystem
+---
 # luna_supply
 
 ## crypto_defi_smartstake_model.get_luna_supply_stats
 
 ```python
-def get_stars_history(repo: str):
+def luna_supply(supply_type: str, days: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_model.py#L13)
 

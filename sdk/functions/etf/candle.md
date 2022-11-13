@@ -1,9 +1,13 @@
+---
+title: candle
+description: Show candle plot of loaded ticker.
+---
 # candle
 
 ## stocks_helper.display_candle
 
 ```python
-def get_stars_history(repo: str):
+def candle(symbol: str, data: pd.DataFrame, use_matplotlib: bool, intraday: bool, add_trend: bool, ma: Union[Iterable[int], NoneType], asset_type: str, start_date: Union[datetime.datetime, str, NoneType], interval: int, end_date: Union[datetime.datetime, str, NoneType], prepost: bool, source: str, iexrange: str, weekly: bool, monthly: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], raw: bool, yscale: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L433)
 
@@ -32,6 +36,8 @@ Description: Show candle plot of loaded ticker.
 | monthly | bool | Flag to get monthly data | None | False |
 | raw | bool | Flag to display raw data, by default False | False | True |
 | yscale | str | Linear or log for yscale | None | False |
+
+## Returns
 
 None
 

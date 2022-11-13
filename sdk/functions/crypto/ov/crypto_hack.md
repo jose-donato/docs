@@ -1,9 +1,13 @@
+---
+title: crypto_hack
+description: Get crypto hack
+---
 # crypto_hack
 
 ## crypto_ov_rekt_model.get_crypto_hack
 
 ```python
-def get_stars_history(repo: str):
+def crypto_hack(slug: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L137)
 

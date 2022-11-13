@@ -1,11 +1,15 @@
+---
+title: active
+description: Returns active addresses of a certain symbol
+---
 # active
 
 ## crypto_dd_glassnode_model.get_active_addresses
 
 ```python
-def get_stars_history(repo: str):
+def activ) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L307)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L303)
 
 Description: Returns active addresses of a certain symbol
 
@@ -14,9 +18,9 @@ Description: Returns active addresses of a certain symbol
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
-| start_date | int | Initial date timestamp (e.g., 1_614_556_800) | None | False |
-| end_date | int | End date timestamp (e.g., 1_614_556_800) | None | False |
 | interval | str | Interval frequency (e.g., 24h) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 
 ## Returns
 

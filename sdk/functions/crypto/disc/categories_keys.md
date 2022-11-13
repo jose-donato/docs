@@ -1,9 +1,13 @@
+---
+title: categories_keys
+description: None
+---
 # categories_keys
 
 ## crypto_disc_pycoingecko_model.get_categories_keys
 
 ```python
-def get_stars_history(repo: str):
+def categories_key) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L114)
 
@@ -13,6 +17,8 @@ Description: None
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+
+## Returns
 
 None
 

@@ -1,9 +1,13 @@
+---
+title: oi
+description: Returns open interest by exchange for a certain symbol
+---
 # oi
 
 ## crypto_dd_coinglass_model.get_open_interest_per_exchange
 
 ```python
-def get_stars_history(repo: str):
+def o) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L148)
 

@@ -1,9 +1,13 @@
+---
+title: rating
+description: Get ratings for a given ticker. [Source: Financial Modeling Prep]
+---
 # rating
 
 ## stocks_dd_fmp_model.get_rating
 
 ```python
-def get_stars_history(repo: str):
+def ratin) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 

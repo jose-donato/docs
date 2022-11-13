@@ -1,9 +1,13 @@
+---
+title: watchlist
+description: Get reddit users watchlists [Source: reddit]
+---
 # watchlist
 
 ## stocks_ba_reddit_model.get_watchlists
 
 ```python
-def get_stars_history(repo: str):
+def watchlis) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L39)
 

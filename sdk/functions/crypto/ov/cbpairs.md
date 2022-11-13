@@ -1,9 +1,13 @@
+---
+title: cbpairs
+description: Get a list of available currency pairs for trading. [Source: Coinbase]
+---
 # cbpairs
 
 ## crypto_ov_coinbase_model.get_trading_pairs
 
 ```python
-def get_stars_history(repo: str):
+def cbpairs(limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_model.py#L23)
 

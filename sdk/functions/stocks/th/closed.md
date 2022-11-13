@@ -1,9 +1,13 @@
+---
+title: closed
+description: Get closed exchanges.
+---
 # closed
 
 ## stocks_th_bursa_model.get_closed
 
 ```python
-def get_stars_history(repo: str):
+def close) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L75)
 

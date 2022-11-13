@@ -1,9 +1,13 @@
+---
+title: close
+description: Close a trade.
+---
 # close
 
 ## forex_oanda_model.close_trades_request
 
 ```python
-def get_stars_history(repo: str):
+def close(orderID: str, units: Union[int, NoneType], accountID: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L525)
 

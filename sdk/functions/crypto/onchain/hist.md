@@ -1,9 +1,13 @@
+---
+title: hist
+description: Get information about balance historical transactions. [Source: Ethplorer]
+---
 # hist
 
 ## crypto_onchain_ethplorer_model.get_address_history
 
 ```python
-def get_stars_history(repo: str):
+def hist(address: Any, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L328)
 

@@ -1,9 +1,13 @@
+---
+title: top_nfts
+description: Get top nft collections [Source: https://dappradar.com/]
+---
 # top_nfts
 
 ## crypto_disc_dappradar_model.get_top_nfts
 
 ```python
-def get_stars_history(repo: str):
+def top_nfts(sortby: str, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L77)
 

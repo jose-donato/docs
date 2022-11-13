@@ -1,9 +1,13 @@
+---
+title: var
+description: Gets value at risk for specified stock dataframe.
+---
 # var
 
 ## common_qa_model.get_var
 
 ```python
-def get_stars_history(repo: str):
+def var(data: pd.DataFrame, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: Union[int, float], portfolio: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L226)
 

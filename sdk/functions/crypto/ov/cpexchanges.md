@@ -1,9 +1,13 @@
+---
+title: cpexchanges
+description: List exchanges from CoinPaprika API [Source: CoinPaprika]
+---
 # cpexchanges
 
 ## crypto_ov_coinpaprika_model.get_list_of_exchanges
 
 ```python
-def get_stars_history(repo: str):
+def cpexchanges(symbols: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L282)
 

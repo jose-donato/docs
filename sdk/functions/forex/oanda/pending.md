@@ -1,9 +1,13 @@
+---
+title: pending
+description: Request information on pending orders.
+---
 # pending
 
 ## forex_oanda_model.pending_orders_request
 
 ```python
-def get_stars_history(repo: str):
+def pending(accountID: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L420)
 

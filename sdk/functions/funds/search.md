@@ -1,9 +1,13 @@
+---
+title: search
+description: Search investpy for matching funds
+---
 # search
 
 ## mutual_funds_investpy_model.search_funds
 
 ```python
-def get_stars_history(repo: str):
+def search(by: str, value: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L19)
 

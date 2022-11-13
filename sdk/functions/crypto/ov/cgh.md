@@ -1,9 +1,13 @@
+---
+title: cgh
+description: Get N coins from CoinGecko [Source: CoinGecko]
+---
 # cgh
 
 ## crypto_ov_pycoingecko_model.get_coins
 
 ```python
-def get_stars_history(repo: str):
+def cgh(limit: int, category: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L120)
 

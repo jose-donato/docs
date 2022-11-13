@@ -1,9 +1,13 @@
+---
+title: balance
+description: Get account holdings for asset. [Source: Binance]
+---
 # balance
 
 ## crypto_dd_binance_model.get_balance
 
 ```python
-def get_stars_history(repo: str):
+def balanc) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L174)
 

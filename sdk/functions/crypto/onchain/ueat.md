@@ -1,9 +1,13 @@
+---
+title: ueat
+description: Get number of unique ethereum addresses which made a transaction in given time interval.
+---
 # ueat
 
 ## crypto_onchain_bitquery_model.get_ethereum_unique_senders
 
 ```python
-def get_stars_history(repo: str):
+def ueat(interval: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L583)
 

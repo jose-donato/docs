@@ -1,9 +1,13 @@
+---
+title: histcont
+description: Get historical quarterly government contracts [Source: quiverquant.com]
+---
 # histcont
 
 ## stocks_gov_quiverquant_model.get_hist_contracts
 
 ```python
-def get_stars_history(repo: str):
+def histcont(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L138)
 

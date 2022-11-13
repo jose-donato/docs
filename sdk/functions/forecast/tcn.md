@@ -1,9 +1,13 @@
+---
+title: tcn
+description: Perform TCN forecasting
+---
 # tcn
 
 ## forecast_tcn_model.get_tcn_data
 
 ```python
-def get_stars_history(repo: str):
+def tcn(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, dropout: float, num_filters: int, weight_norm: bool, dilation_base: int, n_epochs: int, learning_rate: float, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_model.py#L19)
 

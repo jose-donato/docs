@@ -1,9 +1,13 @@
+---
+title: sma
+description: Gets simple moving average (EMA) for stock
+---
 # sma
 
 ## common_ta_overlap_model.sma
 
 ```python
-def get_stars_history(repo: str):
+def sma(data: pd.Series, length: int, offset: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L42)
 
@@ -19,6 +23,8 @@ Description: Gets simple moving average (EMA) for stock
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | Dataframe containing prices and SMA | None | None |
+
+## Returns
 
 None
 

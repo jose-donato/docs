@@ -1,9 +1,13 @@
+---
+title: ema
+description: Gets exponential moving average (EMA) for stock
+---
 # ema
 
 ## common_ta_overlap_model.ema
 
 ```python
-def get_stars_history(repo: str):
+def ema(data: pd.Series, length: int, offset: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L18)
 
@@ -19,6 +23,8 @@ Description: Gets exponential moving average (EMA) for stock
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | Dataframe containing prices and EMA | None | None |
+
+## Returns
 
 None
 

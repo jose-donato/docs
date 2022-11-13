@@ -1,9 +1,13 @@
+---
+title: chains_nasdaq
+description: Get option chain for symbol at a given expiration
+---
 # chains_nasdaq
 
 ## stocks_options_nasdaq_model.get_chain_given_expiration
 
 ```python
-def get_stars_history(repo: str):
+def chains_nasdaq(symbol: str, expiration: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/nasdaq_model.py#L112)
 

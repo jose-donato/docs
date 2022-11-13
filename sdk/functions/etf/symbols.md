@@ -1,9 +1,13 @@
+---
+title: symbols
+description: Gets all etf names and symbols
+---
 # symbols
 
 ## etf_stockanalysis_model.get_all_names_symbols
 
 ```python
-def get_stars_history(repo: str):
+def symbol) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L18)
 

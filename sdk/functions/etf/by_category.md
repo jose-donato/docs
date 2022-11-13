@@ -1,9 +1,13 @@
+---
+title: by_category
+description: Return a selection of ETFs based on category filtered by total assets.
+---
 # by_category
 
 ## etf_financedatabase_model.get_etfs_by_category
 
 ```python
-def get_stars_history(repo: str):
+def by_category(category: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L55)
 
@@ -17,6 +21,8 @@ Description: Return a selection of ETFs based on category filtered by total asse
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | data | Dict | Dictionary with ETFs that match a certain description | None | False |
+
+## Returns
 
 None
 

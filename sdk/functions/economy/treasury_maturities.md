@@ -1,9 +1,13 @@
+---
+title: treasury_maturities
+description: Get treasury maturity options [Source: EconDB]
+---
 # treasury_maturities
 
 ## economy_econdb_model.get_treasury_maturities
 
 ```python
-def get_stars_history(repo: str):
+def treasury_maturitie) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L828)
 
@@ -13,6 +17,8 @@ Description: Get treasury maturity options [Source: EconDB]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+
+## Returns
 
 None
 

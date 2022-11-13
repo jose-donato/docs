@@ -1,9 +1,13 @@
+---
+title: ohlc_historical
+description: Open/High/Low/Close values with volume and market_cap. [Source: CoinPaprika]
+---
 # ohlc_historical
 
 ## crypto_dd_coinpaprika_model.get_ohlc_historical
 
 ```python
-def get_stars_history(repo: str):
+def ohlc_historical(symbol: str, quotes: str, days: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L246)
 

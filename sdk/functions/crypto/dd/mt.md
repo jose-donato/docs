@@ -1,9 +1,13 @@
+---
+title: mt
+description: Returns messari timeseries
+---
 # mt
 
 ## crypto_dd_messari_model.get_messari_timeseries
 
 ```python
-def get_stars_history(repo: str):
+def m) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L117)
 

@@ -1,9 +1,13 @@
+---
+title: messari
+description: Set Messari key.
+---
 # messari
 
 ## keys_model.set_messari_key
 
 ```python
-def get_stars_history(repo: str):
+def messari(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1976)
 

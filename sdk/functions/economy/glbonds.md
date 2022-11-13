@@ -1,9 +1,13 @@
+---
+title: glbonds
+description: Scrape data for global bonds
+---
 # glbonds
 
 ## economy_wsj_model.global_bonds
 
 ```python
-def get_stars_history(repo: str):
+def glbond) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L193)
 

@@ -1,9 +1,13 @@
+---
+title: macro_parameters
+description: This function returns the available macro parameters with detail.
+---
 # macro_parameters
 
 ## economy_econdb_model.get_macro_parameters
 
 ```python
-def get_stars_history(repo: str):
+def macro_parameter) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L624)
 
@@ -13,6 +17,8 @@ Description: This function returns the available macro parameters with detail.
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+
+## Returns
 
 None
 

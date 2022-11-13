@@ -1,9 +1,13 @@
+---
+title: decompose
+description: Perform seasonal decomposition
+---
 # decompose
 
 ## common_qa_model.get_seasonal_decomposition
 
 ```python
-def get_stars_history(repo: str):
+def decompose(data: pd.DataFrame, multiplicative: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L45)
 

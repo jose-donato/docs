@@ -1,9 +1,13 @@
+---
+title: lasttrades
+description: Get last government trading [Source: quiverquant.com]
+---
 # lasttrades
 
 ## stocks_gov_quiverquant_model.get_last_government
 
 ```python
-def get_stars_history(repo: str):
+def lasttrades(gov_type: str, limit: int, representative: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L163)
 

@@ -1,9 +1,13 @@
+---
+title: delta
+description: Calculate the %change of a variable based on a specific column
+---
 # delta
 
 ## forecast_model.add_delta
 
 ```python
-def get_stars_history(repo: str):
+def delta(dataset: pd.DataFrame, target_column: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L322)
 
@@ -13,6 +17,8 @@ Description: Calculate the %change of a variable based on a specific column
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+
+## Returns
 
 None
 

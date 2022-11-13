@@ -1,9 +1,13 @@
+---
+title: marketcap
+description: Get all market cap division in Yahoo Finance data. [Source: Finance Database]
+---
 # marketcap
 
 ## stocks_sia_financedatabase_model.get_marketcap
 
 ```python
-def get_stars_history(repo: str):
+def marketca) -> list:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L96)
 

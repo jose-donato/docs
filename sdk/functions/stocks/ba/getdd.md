@@ -1,9 +1,13 @@
+---
+title: getdd
+description: Gets due diligence posts from list of subreddits [Source: reddit]
+---
 # getdd
 
 ## stocks_ba_reddit_model.get_due_dilligence
 
 ```python
-def get_stars_history(repo: str):
+def getd) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L715)
 

@@ -1,9 +1,13 @@
+---
+title: book
+description: Get order book for currency. [Source: Binance]
+---
 # book
 
 ## crypto_dd_binance_model.get_order_book
 
 ```python
-def get_stars_history(repo: str):
+def boo) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L138)
 

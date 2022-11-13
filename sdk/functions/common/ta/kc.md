@@ -1,9 +1,13 @@
+---
+title: kc
+description: Keltner Channels
+---
 # kc
 
 ## common_ta_volatility_model.kc
 
 ```python
-def get_stars_history(repo: str):
+def kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L87)
 

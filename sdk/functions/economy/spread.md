@@ -1,9 +1,13 @@
+---
+title: spread
+description: Get spread matrix. [Source: Investing.com]
+---
 # spread
 
 ## economy_investingcom_model.get_spread_matrix
 
 ```python
-def get_stars_history(repo: str):
+def spread(countries: Union[str, List[str]], maturity: str, change: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L223)
 

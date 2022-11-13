@@ -1,9 +1,13 @@
+---
+title: btc_transac
+description: Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
+---
 # btc_transac
 
 ## crypto_onchain_blockchain_model.get_btc_confirmed_transactions
 
 ```python
-def get_stars_history(repo: str):
+def btc_transa) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_model.py#L60)
 

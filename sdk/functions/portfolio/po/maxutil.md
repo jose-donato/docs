@@ -1,9 +1,13 @@
+---
+title: maxutil
+description: Builds a maximal return/risk ratio portfolio
+---
 # maxutil
 
 ## portfolio_optimization_optimizer_model.get_max_util
 
 ```python
-def get_stars_history(repo: str):
+def maxutil(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, target_return: float, target_risk: float, mean: str, covariance: str, d_ewma: float, value: float, value_short: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L809)
 

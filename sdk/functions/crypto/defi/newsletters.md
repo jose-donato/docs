@@ -1,9 +1,13 @@
+---
+title: newsletters
+description: Scrape all substack newsletters from url list.
+---
 # newsletters
 
 ## crypto_defi_substack_model.get_newsletters
 
 ```python
-def get_stars_history(repo: str):
+def newsletter) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L51)
 

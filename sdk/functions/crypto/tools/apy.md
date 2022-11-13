@@ -1,9 +1,13 @@
+---
+title: apy
+description: Converts apr into apy
+---
 # apy
 
 ## crypto_tools_model.calculate_apy
 
 ```python
-def get_stars_history(repo: str):
+def apy(apr: float, compounding_times: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_model.py#L18)
 

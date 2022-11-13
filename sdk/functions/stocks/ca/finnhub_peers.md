@@ -1,9 +1,13 @@
+---
+title: finnhub_peers
+description: Get similar companies from Finhub
+---
 # finnhub_peers
 
 ## stocks_ca_finnhub_model.get_similar_companies
 
 ```python
-def get_stars_history(repo: str):
+def finnhub_peer) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 

@@ -1,9 +1,13 @@
+---
+title: dwat
+description: Calculate test statistics for Durbing Watson autocorrelation
+---
 # dwat
 
 ## econometrics_regression_model.get_dwat
 
 ```python
-def get_stars_history(repo: str):
+def dwat(residual: pd.DataFrame) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L473)
 

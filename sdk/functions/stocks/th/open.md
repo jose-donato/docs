@@ -1,9 +1,13 @@
+---
+title: open
+description: Get open exchanges.
+---
 # open
 
 ## stocks_th_bursa_model.get_open
 
 ```python
-def get_stars_history(repo: str):
+def ope) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L53)
 

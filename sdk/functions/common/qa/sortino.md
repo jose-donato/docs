@@ -1,9 +1,13 @@
+---
+title: sortino
+description: Calculates the sortino ratio
+---
 # sortino
 
 ## common_qa_model.get_sortino
 
 ```python
-def get_stars_history(repo: str):
+def sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L563)
 

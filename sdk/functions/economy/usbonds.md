@@ -1,9 +1,13 @@
+---
+title: usbonds
+description: Scrape data for us bonds
+---
 # usbonds
 
 ## economy_wsj_model.us_bonds
 
 ```python
-def get_stars_history(repo: str):
+def usbond) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L150)
 

@@ -1,9 +1,13 @@
+---
+title: get_keys_info
+description: Get info on available APIs to use in set_keys.
+---
 # get_keys_info
 
 ## keys_model.get_keys_info
 
 ```python
-def get_stars_history(repo: str):
+def get_keys_inf) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L168)
 

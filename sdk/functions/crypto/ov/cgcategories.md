@@ -1,9 +1,13 @@
+---
+title: cgcategories
+description: Returns top crypto categories [Source: CoinGecko]
+---
 # cgcategories
 
 ## crypto_ov_pycoingecko_model.get_top_crypto_categories
 
 ```python
-def get_stars_history(repo: str):
+def cgcategories(sort_filter: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L156)
 

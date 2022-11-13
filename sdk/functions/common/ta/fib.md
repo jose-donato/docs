@@ -1,9 +1,13 @@
+---
+title: fib
+description: Calculate Fibonacci levels
+---
 # fib
 
 ## common_ta_custom_indicators_model.calculate_fib_levels
 
 ```python
-def get_stars_history(repo: str):
+def fib(data: pd.DataFrame, limit: int, start_date: Any, end_date: Any) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_model.py#L16)
 

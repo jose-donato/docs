@@ -1,9 +1,13 @@
+---
+title: tokenomics
+description: Get tokenomics for given coin. [Source: CoinGecko]
+---
 # tokenomics
 
 ## crypto_dd_pycoingecko_model.get_coin_tokenomics
 
 ```python
-def get_stars_history(repo: str):
+def tokenomics(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L252)
 

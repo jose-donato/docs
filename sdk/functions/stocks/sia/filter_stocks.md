@@ -1,9 +1,13 @@
+---
+title: filter_stocks
+description: Filter stocks based on country, sector, industry, market cap and exclude exchanges.
+---
 # filter_stocks
 
 ## stocks_sia_financedatabase_model.filter_stocks
 
 ```python
-def get_stars_history(repo: str):
+def filter_stocks(country: str, sector: str, industry: str, marketcap: str, exclude_exchanges: bool) -> list:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L108)
 

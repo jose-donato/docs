@@ -1,9 +1,13 @@
+---
+title: stats
+description: Get base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
+---
 # stats
 
 ## crypto_defi_graph_model.get_uniswap_stats
 
 ```python
-def get_stars_history(repo: str):
+def stat) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L123)
 

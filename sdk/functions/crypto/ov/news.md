@@ -1,9 +1,13 @@
+---
+title: news
+description: Get recent posts from CryptoPanic news aggregator platform. [Source: https://cryptopanic.com/]
+---
 # news
 
 ## crypto_ov_cryptopanic_model.get_news
 
 ```python
-def get_stars_history(repo: str):
+def news(limit: int, post_kind: str, filter_: Union[str, NoneType], region: str, source: Union[str, NoneType], symbol: Union[str, NoneType], sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_model.py#L156)
 

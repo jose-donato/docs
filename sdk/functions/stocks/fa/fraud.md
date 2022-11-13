@@ -1,9 +1,13 @@
+---
+title: fraud
+description: Get fraud ratios based on fundamentals
+---
 # fraud
 
 ## stocks_fa_av_model.get_fraud_ratios
 
 ```python
-def get_stars_history(repo: str):
+def fraud(symbol: str, detail: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L593)
 

@@ -1,9 +1,13 @@
+---
+title: om
+description: Get omega ratio
+---
 # om
 
 ## portfolio_model.get_omega
 
 ```python
-def get_stars_history(repo: str):
+def om(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, threshold_start: float, threshold_end: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1756)
 

@@ -1,9 +1,13 @@
+---
+title: ps
+description: Get all most important ticker related information for given coin id [Source: CoinPaprika]
+---
 # ps
 
 ## crypto_dd_coinpaprika_model.get_tickers_info_for_coin
 
 ```python
-def get_stars_history(repo: str):
+def ps(symbol: str, quotes: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L295)
 

@@ -1,9 +1,13 @@
+---
+title: equal
+description: Equally weighted portfolio, where weight = 1/# of symbols
+---
 # equal
 
 ## portfolio_optimization_optimizer_model.get_equal_weights
 
 ```python
-def get_stars_history(repo: str):
+def equal(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, value: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L163)
 

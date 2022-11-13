@@ -1,9 +1,13 @@
+---
+title: volatility
+description: Class method that retrieves volatility for portfolio and benchmark selected
+---
 # volatility
 
 ## portfolio_model.get_volatility
 
 ```python
-def get_stars_history(repo: str):
+def volatility(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L930)
 

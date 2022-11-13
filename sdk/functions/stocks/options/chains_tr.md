@@ -1,9 +1,13 @@
+---
+title: chains_tr
+description: Display option chains [Source: Tradier]"
+---
 # chains_tr
 
 ## stocks_options_tradier_model.get_option_chains
 
 ```python
-def get_stars_history(repo: str):
+def chains_t) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L153)
 

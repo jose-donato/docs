@@ -1,9 +1,13 @@
+---
+title: tob
+description: Get top of book bid and ask for ticker on exchange [CBOE.com]
+---
 # tob
 
 ## stocks_cboe_model.get_top_of_book
 
 ```python
-def get_stars_history(repo: str):
+def tob(symbol: str, exchange: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/cboe_model.py#L12)
 

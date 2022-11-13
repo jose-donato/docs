@@ -1,9 +1,13 @@
+---
+title: exchanges
+description: Helper method to get all the exchanges supported by ccxt
+---
 # exchanges
 
 ## crypto_dd_ccxt_model.get_exchanges
 
 ```python
-def get_stars_history(repo: str):
+def exchange) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L10)
 

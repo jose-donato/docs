@@ -1,9 +1,13 @@
+---
+title: popular
+description: Get popular tickers from list of subreddits [Source: reddit]
+---
 # popular
 
 ## stocks_ba_reddit_model.get_popular_tickers
 
 ```python
-def get_stars_history(repo: str):
+def popula) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L146)
 

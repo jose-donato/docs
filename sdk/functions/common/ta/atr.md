@@ -1,9 +1,13 @@
+---
+title: atr
+description: Average True Range
+---
 # atr
 
 ## common_ta_volatility_model.atr
 
 ```python
-def get_stars_history(repo: str):
+def atr(data: pd.DataFrame, window: int, mamode: str, offset: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L131)
 

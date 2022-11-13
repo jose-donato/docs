@@ -1,9 +1,13 @@
+---
+title: treasury
+description: Get U.S. Treasury rates [Source: EconDB]
+---
 # treasury
 
 ## economy_econdb_model.get_treasuries
 
 ```python
-def get_stars_history(repo: str):
+def treasury(instruments: list, maturities: list, frequency: str, start_date: str, end_date: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L723)
 
@@ -22,6 +26,8 @@ Available options can be accessed through economy.treasury_maturities(). | None 
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | treasury_data | pd.Dataframe | Holds data of the selected types and maturities | None | False |
+
+## Returns
 
 None
 

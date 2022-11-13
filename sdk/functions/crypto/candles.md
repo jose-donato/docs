@@ -1,11 +1,15 @@
+---
+title: candles
+description: Plot candle chart from dataframe. [Source: Binance]
+---
 # candles
 
 ## crypto_helpers.plot_candles
 
 ```python
-def get_stars_history(repo: str):
+def candles(candles_df: pd.DataFrame, volume: bool, ylabel: str, title: str, external_axes: list[plt.Axes] | None, yscale: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L1425)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L1469)
 
 Description: Plot candle chart from dataframe. [Source: Binance]
 
@@ -19,6 +23,8 @@ Description: Plot candle chart from dataframe. [Source: Binance]
 | title | str | Title of graph, by default "" | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 | yscale | str | Scaling for y axis.  Either linear or log | None | False |
+
+## Returns
 
 None
 

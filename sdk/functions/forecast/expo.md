@@ -1,9 +1,13 @@
+---
+title: expo
+description: Performs Probabilistic Exponential Smoothing forecasting
+---
 # expo
 
 ## forecast_expo_model.get_expo_data
 
 ```python
-def get_stars_history(repo: str):
+def expo(data: Union[pd.Series, pd.DataFrame], target_column: str, trend: str, seasonal: str, seasonal_periods: int, dampen: str, n_predict: int, start_window: float, forecast_horizon: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/expo_model.py#L32)
 

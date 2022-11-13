@@ -1,9 +1,13 @@
+---
+title: balance
+description: Get info about tokens on you ethereum blockchain balance. Eth balance, balance of all tokens which
+---
 # balance
 
 ## crypto_onchain_ethplorer_model.get_address_info
 
 ```python
-def get_stars_history(repo: str):
+def balance(address: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L195)
 

@@ -1,9 +1,13 @@
+---
+title: maxdecorr
+description: Builds a maximal decorrelation portfolio
+---
 # maxdecorr
 
 ## portfolio_optimization_optimizer_model.get_max_decorrelation_portfolio
 
 ```python
-def get_stars_history(repo: str):
+def maxdecorr(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, covariance: str, d_ewma: float, value: float, value_short: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1215)
 

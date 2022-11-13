@@ -1,9 +1,13 @@
+---
+title: ipo
+description: Get IPO calendar
+---
 # ipo
 
 ## stocks_disc_finnhub_model.get_ipo_calendar
 
 ```python
-def get_stars_history(repo: str):
+def ip) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L15)
 

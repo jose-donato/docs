@@ -1,9 +1,13 @@
+---
+title: mom
+description: A momentum oscillator, which measures the percentage change between the current
+---
 # mom
 
 ## forecast_model.add_momentum
 
 ```python
-def get_stars_history(repo: str):
+def mom(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L295)
 

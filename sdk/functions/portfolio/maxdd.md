@@ -1,9 +1,13 @@
+---
+title: maxdd
+description: Calculate the drawdown (MDD) of historical series.  Note that the calculation is done
+---
 # maxdd
 
 ## portfolio_model.get_maximum_drawdown
 
 ```python
-def get_stars_history(repo: str):
+def maxdd(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, is_returns: bool) -> Series:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1382)
 
@@ -19,6 +23,8 @@ Description: Calculate the drawdown (MDD) of historical series.  Note that the c
 | ---------- | None | None | None | None |
 | pd.Series | None | Holdings series | None | None |
 | pd.Series | None | Drawdown series | None | None |
+
+## Returns
 
 None
 

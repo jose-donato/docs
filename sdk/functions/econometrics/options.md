@@ -1,9 +1,13 @@
+---
+title: options
+description: Obtain columns-dataset combinations from loaded in datasets that can be used in other commands
+---
 # options
 
 ## econometrics_model.get_options
 
 ```python
-def get_stars_history(repo: str):
+def options(datasets: Dict[str, pd.DataFrame], dataset_name: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L20)
 

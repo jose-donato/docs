@@ -1,9 +1,13 @@
+---
+title: nhits
+description: Performs Nhits forecasting
+---
 # nhits
 
 ## forecast_nhits_model.get_nhits_data
 
 ```python
-def get_stars_history(repo: str):
+def nhits(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, past_covariates: str, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, num_stacks: int, num_blocks: int, num_layers: int, layer_widths: int, pooling_kernel_sizes: Union[Tuple[Tuple[int]], NoneType], n_freq_downsample: Union[Tuple[Tuple[int]], NoneType], dropout: float, activation: str, max_pool_1d: bool, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nhits_model.py#L21)
 

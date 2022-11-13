@@ -1,9 +1,13 @@
+---
+title: sratio
+description: Get terra blockchain staking ratio history [Source: https://fcd.terra.dev/swagger]
+---
 # sratio
 
 ## crypto_defi_terramoney_fcd_model.get_staking_ratio_history
 
 ```python
-def get_stars_history(repo: str):
+def sratio(limit: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L284)
 

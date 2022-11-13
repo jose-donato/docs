@@ -1,9 +1,13 @@
+---
+title: overview
+description: Scrape data for market overview
+---
 # overview
 
 ## economy_wsj_model.market_overview
 
 ```python
-def get_stars_history(repo: str):
+def overvie) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L61)
 

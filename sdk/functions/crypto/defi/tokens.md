@@ -1,9 +1,13 @@
+---
+title: tokens
+description: Get list of tokens trade-able on Uniswap DEX. [Source: https://thegraph.com/en/]
+---
 # tokens
 
 ## crypto_defi_graph_model.get_uni_tokens
 
 ```python
-def get_stars_history(repo: str):
+def tokens(skip: int, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L80)
 

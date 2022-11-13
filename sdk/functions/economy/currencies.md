@@ -1,9 +1,13 @@
+---
+title: currencies
+description: Scrape data for global currencies
+---
 # currencies
 
 ## economy_wsj_model.global_currencies
 
 ```python
-def get_stars_history(repo: str):
+def currencie) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L231)
 

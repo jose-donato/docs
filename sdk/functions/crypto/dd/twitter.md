@@ -1,9 +1,13 @@
+---
+title: twitter
+description: Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
+---
 # twitter
 
 ## crypto_dd_coinpaprika_model.get_coin_twitter_timeline
 
 ```python
-def get_stars_history(repo: str):
+def twitter(symbol: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L41)
 

@@ -1,9 +1,13 @@
+---
+title: rsi
+description: A momentum indicator that measures the magnitude of recent price changes to evaluate
+---
 # rsi
 
 ## forecast_model.add_rsi
 
 ```python
-def get_stars_history(repo: str):
+def rsi(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L224)
 

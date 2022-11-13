@@ -1,9 +1,13 @@
+---
+title: il
+description: Calculates Impermanent Loss in a custom liquidity pool
+---
 # il
 
 ## crypto_tools_model.calculate_il
 
 ```python
-def get_stars_history(repo: str):
+def il(price_changeA: float, price_changeB: float, proportion: float, initial_pool_value: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_model.py#L56)
 

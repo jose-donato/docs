@@ -1,9 +1,13 @@
+---
+title: spacc
+description: Get top tickers from r/SPACs [Source: reddit]
+---
 # spacc
 
 ## stocks_ba_reddit_model.get_spac_community
 
 ```python
-def get_stars_history(repo: str):
+def spac) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L318)
 

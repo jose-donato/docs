@@ -1,9 +1,13 @@
+---
+title: events
+description: Get all events related to given coin like conferences, start date of futures trading etc.
+---
 # events
 
 ## crypto_dd_coinpaprika_model.get_coin_events_by_id
 
 ```python
-def get_stars_history(repo: str):
+def events(symbol: str, sortby: Any, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L89)
 

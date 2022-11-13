@@ -1,9 +1,13 @@
+---
+title: rename
+description: Rename a column in a dataframe
+---
 # rename
 
 ## forecast_model.rename_column
 
 ```python
-def get_stars_history(repo: str):
+def rename(data: pd.DataFrame, old_column: str, new_column: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L452)
 

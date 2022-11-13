@@ -1,9 +1,13 @@
+---
+title: skew
+description: Class method that retrieves skewness for portfolio and benchmark selected
+---
 # skew
 
 ## portfolio_model.get_skewness
 
 ```python
-def get_stars_history(repo: str):
+def skew(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L824)
 

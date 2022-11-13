@@ -1,9 +1,13 @@
+---
+title: nbeats
+description: Perform NBEATS Forecasting
+---
 # nbeats
 
 ## forecast_nbeats_model.get_NBEATS_data
 
 ```python
-def get_stars_history(repo: str):
+def nbeats(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, num_stacks: int, num_blocks: int, num_layers: int, layer_widths: int, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nbeats_model.py#L20)
 

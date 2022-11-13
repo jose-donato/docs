@@ -1,9 +1,13 @@
+---
+title: available_indices
+description: Get available indices
+---
 # available_indices
 
 ## economy_yfinance_model.get_available_indices
 
 ```python
-def get_stars_history(repo: str):
+def available_indice) -> dict:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L659)
 

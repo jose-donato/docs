@@ -1,9 +1,13 @@
+---
+title: av_income
+description: Get income statements for company
+---
 # av_income
 
 ## stocks_fa_av_model.get_income_statements
 
 ```python
-def get_stars_history(repo: str):
+def av_income(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L161)
 

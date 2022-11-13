@@ -1,9 +1,13 @@
+---
+title: ctb
+description: Get cost to borrow of stocks [Source: Stocksera]
+---
 # ctb
 
 ## stocks_dps_stocksera_model.get_cost_to_borrow
 
 ```python
-def get_stars_history(repo: str):
+def ctb(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stocksera_model.py#L18)
 

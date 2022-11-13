@@ -1,9 +1,13 @@
+---
+title: fred_yeild_curve
+description: Gets yield curve data from FRED
+---
 # fred_yeild_curve
 
 ## economy_fred_model.get_yield_curve
 
 ```python
-def get_stars_history(repo: str):
+def fred_yeild_curv) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L250)
 

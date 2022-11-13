@@ -1,9 +1,13 @@
+---
+title: fe
+description: When effects are correlated with the regressors the RE and BE estimators are not consistent.
+---
 # fe
 
 ## econometrics_regression_model.get_fe
 
 ```python
-def get_stars_history(repo: str):
+def fe(regression_variables: List[Tuple], data: Dict[str, pd.DataFrame], entity_effects: bool, time_effects: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L325)
 

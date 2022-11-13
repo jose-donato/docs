@@ -1,9 +1,13 @@
+---
+title: quote
+description: Display quote from YahooFinance
+---
 # quote
 
 ## stocks_views.display_quote
 
 ```python
-def get_stars_history(repo: str):
+def quote(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_views.py#L6)
 
@@ -13,6 +17,8 @@ Description: Display quote from YahooFinance
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+
+## Returns
 
 None
 

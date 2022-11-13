@@ -1,9 +1,13 @@
+---
+title: check_presets
+description: Checks option screener preset values
+---
 # check_presets
 
 ## stocks_options_screen_syncretism_model.check_presets
 
 ```python
-def get_stars_history(repo: str):
+def check_presets(preset_dict: dict) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L251)
 

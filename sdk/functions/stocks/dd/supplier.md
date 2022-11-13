@@ -1,9 +1,13 @@
+---
+title: supplier
+description: Get suppliers from ticker provided. [Source: CSIMarket]
+---
 # supplier
 
 ## stocks_dd_csimarket_model.get_suppliers
 
 ```python
-def get_stars_history(repo: str):
+def supplier(symbol: str, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L41)
 

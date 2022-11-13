@@ -1,9 +1,13 @@
+---
+title: countries
+description: Get all countries in Yahoo Finance data based on sector or industry. [Source: Finance Database]
+---
 # countries
 
 ## stocks_sia_financedatabase_model.get_countries
 
 ```python
-def get_stars_history(repo: str):
+def countries(industry: str, sector: str) -> list:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L18)
 

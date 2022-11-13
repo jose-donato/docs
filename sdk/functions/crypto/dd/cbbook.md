@@ -1,9 +1,13 @@
+---
+title: cbbook
+description: Get orders book for chosen trading pair. [Source: Coinbase]
+---
 # cbbook
 
 ## crypto_dd_coinbase_model.get_order_book
 
 ```python
-def get_stars_history(repo: str):
+def cbbook(symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L58)
 

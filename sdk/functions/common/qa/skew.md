@@ -1,9 +1,13 @@
+---
+title: skew
+description: Skewness Indicator
+---
 # skew
 
 ## common_qa_rolling_model.get_skew
 
 ```python
-def get_stars_history(repo: str):
+def skew(data: pd.DataFrame, window: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L105)
 

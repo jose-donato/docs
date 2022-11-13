@@ -1,9 +1,13 @@
+---
+title: gacc
+description: Get terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
+---
 # gacc
 
 ## crypto_defi_terramoney_fcd_model.get_account_growth
 
 ```python
-def get_stars_history(repo: str):
+def gacc(cumulative: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L261)
 

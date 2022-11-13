@@ -1,9 +1,13 @@
+---
+title: normality
+description: Look at the distribution of returns and generate statistics on the relation to the normal curve.
+---
 # normality
 
 ## common_qa_model.get_normality
 
 ```python
-def get_stars_history(repo: str):
+def normality(data: pd.DataFrame) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L82)
 

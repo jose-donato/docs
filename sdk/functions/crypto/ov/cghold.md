@@ -1,9 +1,13 @@
+---
+title: cghold
+description: Returns public companies that holds ethereum or bitcoin [Source: CoinGecko]
+---
 # cghold
 
 ## crypto_ov_pycoingecko_model.get_holdings_overview
 
 ```python
-def get_stars_history(repo: str):
+def cghold(endpoint: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L101)
 

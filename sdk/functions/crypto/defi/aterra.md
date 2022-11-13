@@ -1,9 +1,13 @@
+---
+title: aterra
+description: Returns historical data of an asset in a certain terra address
+---
 # aterra
 
 ## crypto_defi_terraengineer_model.get_history_asset_from_terra_address
 
 ```python
-def get_stars_history(repo: str):
+def aterra(asset: str, address: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L18)
 

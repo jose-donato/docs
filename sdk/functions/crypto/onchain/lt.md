@@ -1,9 +1,13 @@
+---
+title: lt
+description: Get trades on Decentralized Exchanges aggregated by DEX [Source: https://graphql.bitquery.io/]
+---
 # lt
 
 ## crypto_onchain_bitquery_model.get_dex_trades_by_exchange
 
 ```python
-def get_stars_history(repo: str):
+def lt(trade_amount_currency: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L265)
 

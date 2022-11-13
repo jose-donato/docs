@@ -1,9 +1,13 @@
+---
+title: summary
+description: Print summary statistics
+---
 # summary
 
 ## common_qa_model.get_summary
 
 ```python
-def get_stars_history(repo: str):
+def summary(data: pd.DataFrame) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L24)
 

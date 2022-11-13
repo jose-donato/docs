@@ -1,9 +1,13 @@
+---
+title: candles
+description: Get candles for chosen trading pair and time interval. [Source: Coinbase]
+---
 # candles
 
 ## crypto_dd_coinbase_model.get_candles
 
 ```python
-def get_stars_history(repo: str):
+def candles(symbol: str, interval: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L129)
 

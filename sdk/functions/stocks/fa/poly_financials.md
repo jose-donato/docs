@@ -1,9 +1,13 @@
+---
+title: poly_financials
+description: Get ticker financial statements from polygon
+---
 # poly_financials
 
 ## stocks_fa_polygon_model.get_financials
 
 ```python
-def get_stars_history(repo: str):
+def poly_financial) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 

@@ -1,9 +1,13 @@
+---
+title: prices
+description: Get token historical prices with volume and market cap, and average price. [Source: Ethplorer]
+---
 # prices
 
 ## crypto_onchain_ethplorer_model.get_token_historical_price
 
 ```python
-def get_stars_history(repo: str):
+def prices(address: Any, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L537)
 

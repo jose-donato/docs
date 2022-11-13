@@ -1,9 +1,13 @@
+---
+title: signal
+description: A price signal based on short/long term price.
+---
 # signal
 
 ## forecast_model.add_signal
 
 ```python
-def get_stars_history(repo: str):
+def signal(dataset: pd.DataFrame, target_column: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L361)
 

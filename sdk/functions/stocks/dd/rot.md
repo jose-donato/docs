@@ -1,9 +1,13 @@
+---
+title: rot
+description: Get rating over time data. [Source: Finnhub]
+---
 # rot
 
 ## stocks_dd_finnhub_model.get_rating_over_time
 
 ```python
-def get_stars_history(repo: str):
+def ro) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 

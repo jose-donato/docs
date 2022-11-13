@@ -1,11 +1,15 @@
+---
+title: hr
+description: Returns dataframe with mean hashrate of btc or eth blockchain and symbol price
+---
 # hr
 
 ## crypto_dd_glassnode_model.get_hashrate
 
 ```python
-def get_stars_history(repo: str):
+def h) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L365)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L364)
 
 Description: Returns dataframe with mean hashrate of btc or eth blockchain and symbol price
 
@@ -14,8 +18,8 @@ Description: Returns dataframe with mean hashrate of btc or eth blockchain and s
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Blockchain to check hashrate (BTC or ETH) | None | False |
-| start_date | int | Initial date timestamp (e.g., 1_614_556_800) | None | False |
-| end_date | int | End date timestamp (e.g., 1_614_556_800) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 | interval | str | Interval frequency (e.g., 24h) | None | False |
 
 ## Returns

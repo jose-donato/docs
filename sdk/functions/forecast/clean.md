@@ -1,9 +1,13 @@
+---
+title: clean
+description: Clean up NaNs from the dataset
+---
 # clean
 
 ## forecast_model.clean
 
 ```python
-def get_stars_history(repo: str):
+def clean(dataset: pd.DataFrame, fill: Union[str, NoneType], drop: Union[str, NoneType], limit: Union[int, NoneType]) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L87)
 

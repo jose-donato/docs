@@ -1,9 +1,13 @@
+---
+title: rh
+description: Set Robinhood key
+---
 # rh
 
 ## keys_model.set_rh_key
 
 ```python
-def get_stars_history(repo: str):
+def rh(username: str, password: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1108)
 

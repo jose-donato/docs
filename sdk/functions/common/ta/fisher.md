@@ -1,9 +1,13 @@
+---
+title: fisher
+description: Fisher Transform
+---
 # fisher
 
 ## common_ta_momentum_model.fisher
 
 ```python
-def get_stars_history(repo: str):
+def fisher(data: pd.DataFrame, window: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L164)
 
@@ -18,6 +22,8 @@ Description: Fisher Transform
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | df_ta | pd.DataFrame | Dataframe of technical indicator | None | False |
+
+## Returns
 
 None
 

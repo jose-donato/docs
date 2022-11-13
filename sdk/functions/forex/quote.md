@@ -1,9 +1,13 @@
+---
+title: quote
+description: Get current exchange rate quote from alpha vantage.
+---
 # quote
 
 ## forex_av_model.get_quote
 
 ```python
-def get_stars_history(repo: str):
+def quote(to_symbol: str, from_symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L55)
 

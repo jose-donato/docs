@@ -1,9 +1,13 @@
+---
+title: unu
+description: Get unusual option activity from fdscanner.com
+---
 # unu
 
 ## stocks_options_fdscanner_model.unusual_options
 
 ```python
-def get_stars_history(repo: str):
+def unu(limit: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L17)
 

@@ -1,9 +1,13 @@
+---
+title: hcp
+description: Builds hierarchical clustering based portfolios
+---
 # hcp
 
 ## portfolio_optimization_optimizer_model.get_hcp_portfolio
 
 ```python
-def get_stars_history(repo: str):
+def hcp(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, model: str, codependence: str, covariance: str, objective: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, a_sim: int, beta: float, b_sim: int, linkage: str, k: int, max_k: int, bins_info: str, alpha_tail: float, leaf_order: bool, d_ewma: float, value: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1985)
 

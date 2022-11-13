@@ -1,9 +1,13 @@
+---
+title: top_games
+description: Get top blockchain games by daily volume and users [Source: https://dappradar.com/]
+---
 # top_games
 
 ## crypto_disc_dappradar_model.get_top_games
 
 ```python
-def get_stars_history(repo: str):
+def top_games(sortby: str, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L163)
 

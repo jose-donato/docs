@@ -1,9 +1,13 @@
+---
+title: rbeta
+description: Get rolling beta using portfolio and benchmark returns
+---
 # rbeta
 
 ## portfolio_model.get_rolling_beta
 
 ```python
-def get_stars_history(repo: str):
+def rbeta(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1552)
 

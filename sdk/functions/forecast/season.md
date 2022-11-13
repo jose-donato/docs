@@ -1,9 +1,13 @@
+---
+title: season
+description: Plot seasonality from a dataset
+---
 # season
 
 ## forecast_view.display_seasonality
 
 ```python
-def get_stars_history(repo: str):
+def season(data: pd.DataFrame, column: str, export: str, m: Union[int, NoneType], max_lag: int, alpha: float, external_axes: Union[List[axes], NoneType]) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L119)
 
@@ -20,6 +24,8 @@ Description: Plot seasonality from a dataset
 | max_lag | int | The maximal lag order to consider. Default is 24. | 24 | False |
 | alpha | float | The confidence interval to display. Default is 0.05. | 0.05 | False |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
+
+## Returns
 
 None
 

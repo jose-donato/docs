@@ -1,9 +1,13 @@
+---
+title: chains_yf
+description: Gets option chain from yf for given ticker and expiration
+---
 # chains_yf
 
 ## stocks_options_yfinance_model.get_option_chain
 
 ```python
-def get_stars_history(repo: str):
+def chains_yf(symbol: str, expiry: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L157)
 

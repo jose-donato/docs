@@ -1,9 +1,13 @@
+---
+title: ycrv
+description: Get yield curve for specified country. [Source: Investing.com]
+---
 # ycrv
 
 ## economy_investingcom_model.get_yieldcurve
 
 ```python
-def get_stars_history(repo: str):
+def ycrv(country: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L305)
 

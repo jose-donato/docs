@@ -1,9 +1,13 @@
+---
+title: profitfactor
+description: Gets profit factor
+---
 # profitfactor
 
 ## portfolio_model.get_profit_factor
 
 ```python
-def get_stars_history(repo: str):
+def profitfactor(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1320)
 

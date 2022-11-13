@@ -1,9 +1,13 @@
+---
+title: hist_ce
+description: Historic prices for a specific option [chartexchange]
+---
 # hist_ce
 
 ## stocks_options_chartexchange_model.get_option_history
 
 ```python
-def get_stars_history(repo: str):
+def hist_ce(symbol: str, date: str, call: bool, price: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/chartexchange_model.py#L18)
 

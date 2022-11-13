@@ -1,9 +1,13 @@
+---
+title: growth
+description: Get financial statement growth
+---
 # growth
 
 ## stocks_fa_fmp_model.get_financial_growth
 
 ```python
-def get_stars_history(repo: str):
+def growt) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L498)
 

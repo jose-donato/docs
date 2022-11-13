@@ -1,9 +1,13 @@
+---
+title: fmp_ratios
+description: Get key ratios
+---
 # fmp_ratios
 
 ## stocks_fa_fmp_model.get_key_ratios
 
 ```python
-def get_stars_history(repo: str):
+def fmp_ratio) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L456)
 

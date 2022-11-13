@@ -1,9 +1,13 @@
+---
+title: show_available_pairs_for_given_symbol
+description: Return all available quoted assets for given symbol. [Source: Binance]
+---
 # show_available_pairs_for_given_symbol
 
 ## crypto_dd_binance_model.show_available_pairs_for_given_symbol
 
 ```python
-def get_stars_history(repo: str):
+def show_available_pairs_for_given_symbo) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L110)
 

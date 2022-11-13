@@ -1,9 +1,13 @@
+---
+title: tx
+description: Get info about transaction. [Source: Ethplorer]
+---
 # tx
 
 ## crypto_onchain_ethplorer_model.get_tx_info
 
 ```python
-def get_stars_history(repo: str):
+def tx(tx_hash: Any) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L436)
 

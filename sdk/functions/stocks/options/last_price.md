@@ -1,9 +1,13 @@
+---
+title: last_price
+description: Makes api request for last price
+---
 # last_price
 
 ## stocks_options_tradier_model.last_price
 
 ```python
-def get_stars_history(repo: str):
+def last_pric) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L227)
 

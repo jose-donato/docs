@@ -1,9 +1,13 @@
+---
+title: pols
+description: PooledOLS is just plain OLS that understands that various panel data structures.
+---
 # pols
 
 ## econometrics_regression_model.get_pols
 
 ```python
-def get_stars_history(repo: str):
+def pols(regression_variables: List[Tuple], data: Dict[str, pd.DataFrame]) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L197)
 

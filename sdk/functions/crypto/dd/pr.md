@@ -1,9 +1,13 @@
+---
+title: pr
+description: Fetch data to calculate potential returns of a certain coin. [Source: CoinGecko]
+---
 # pr
 
 ## crypto_dd_pycoingecko_model.get_coin_potential_returns
 
 ```python
-def get_stars_history(repo: str):
+def pr(main_coin: str, to_symbol: Union[str, NoneType], limit: Union[int, NoneType], price: Union[int, NoneType]) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L62)
 

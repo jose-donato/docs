@@ -1,9 +1,13 @@
+---
+title: est
+description: Get analysts' estimates for a given ticker. [Source: Business Insider]
+---
 # est
 
 ## stocks_dd_business_insider_model.get_estimates
 
 ```python
-def get_stars_history(repo: str):
+def est(symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L70)
 

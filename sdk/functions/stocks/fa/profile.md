@@ -1,9 +1,13 @@
+---
+title: profile
+description: Get ticker profile from FMP
+---
 # profile
 
 ## stocks_fa_fmp_model.get_profile
 
 ```python
-def get_stars_history(repo: str):
+def profil) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L55)
 
@@ -17,6 +21,8 @@ Description: Get ticker profile from FMP
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame |  | Dataframe of ticker profile | None | False |
+
+## Returns
 
 None
 

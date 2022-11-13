@@ -1,9 +1,13 @@
+---
+title: overview
+description: None
+---
 # overview
 
 ## mutual_funds_investpy_model.get_overview
 
 ```python
-def get_stars_history(repo: str):
+def overview(country: str, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L48)
 

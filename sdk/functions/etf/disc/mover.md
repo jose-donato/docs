@@ -1,9 +1,13 @@
+---
+title: mover
+description: Scrape data for top etf movers.
+---
 # mover
 
 ## etf_disc_wsj_model.etf_movers
 
 ```python
-def get_stars_history(repo: str):
+def mover(sort_type: str, export: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_model.py#L14)
 

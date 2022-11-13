@@ -1,9 +1,13 @@
+---
+title: add_hedge_option
+description: Determine the delta, gamma and vega value of the portfolio and/or options.
+---
 # add_hedge_option
 
 ## stocks_options_hedge_model.add_hedge_option
 
 ```python
-def get_stars_history(repo: str):
+def add_hedge_option(price: float, implied_volatility: float, strike: float, days: float, sign: int) -> tuple:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_model.py#L143)
 

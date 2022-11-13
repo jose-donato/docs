@@ -1,9 +1,13 @@
+---
+title: price
+description: Get current price for a given ticker
+---
 # price
 
 ## stocks_options_yfinance_model.get_price
 
 ```python
-def get_stars_history(repo: str):
+def price(symbol: str) -> float:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L257)
 
@@ -17,6 +21,8 @@ Description: Get current price for a given ticker
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | price | float | The price of the ticker | None | False |
+
+## Returns
 
 None
 

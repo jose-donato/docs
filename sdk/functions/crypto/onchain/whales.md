@@ -1,9 +1,13 @@
+---
+title: whales
+description: Whale Alert's API allows you to retrieve live and historical transaction data from major blockchains.
+---
 # whales
 
 ## crypto_onchain_whale_alert_model.get_whales_transactions
 
 ```python
-def get_stars_history(repo: str):
+def whales(min_value: int, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_model.py#L85)
 

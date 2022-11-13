@@ -1,9 +1,13 @@
+---
+title: future
+description: Get futures data. [Source: Finviz]
+---
 # future
 
 ## economy_finviz_model.get_futures
 
 ```python
-def get_stars_history(repo: str):
+def future(future_type: str, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L186)
 
@@ -19,6 +23,8 @@ Description: Get futures data. [Source: Finviz]
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.Dataframe | None | Indices, Energy, Metals, Meats, Grains, Softs, Bonds, Currencies | None | None |
+
+## Returns
 
 None
 

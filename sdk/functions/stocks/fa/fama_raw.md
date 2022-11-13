@@ -1,9 +1,13 @@
+---
+title: fama_raw
+description: Get Fama French data
+---
 # fama_raw
 
 ## stocks_fa_dcf_model.get_fama_raw
 
 ```python
-def get_stars_history(repo: str):
+def fama_ra) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L239)
 

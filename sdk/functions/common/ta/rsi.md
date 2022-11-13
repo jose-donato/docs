@@ -1,9 +1,13 @@
+---
+title: rsi
+description: Relative strength index
+---
 # rsi
 
 ## common_ta_momentum_model.rsi
 
 ```python
-def get_stars_history(repo: str):
+def rsi(data: pd.Series, window: int, scalar: float, drift: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L92)
 
@@ -20,6 +24,8 @@ Description: Relative strength index
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame | None | Dataframe of technical indicator | None | None |
+
+## Returns
 
 None
 

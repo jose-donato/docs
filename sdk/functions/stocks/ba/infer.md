@@ -1,9 +1,13 @@
+---
+title: infer
+description: Load tweets from twitter API and analyzes using VADER
+---
 # infer
 
 ## stocks_ba_twitter_model.load_analyze_tweets
 
 ```python
-def get_stars_history(repo: str):
+def infe) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L22)
 

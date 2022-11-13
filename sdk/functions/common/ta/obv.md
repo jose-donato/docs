@@ -1,9 +1,13 @@
+---
+title: obv
+description: On Balance Volume
+---
 # obv
 
 ## common_ta_volume_model.obv
 
 ```python
-def get_stars_history(repo: str):
+def obv(data: pd.DataFrame) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L89)
 

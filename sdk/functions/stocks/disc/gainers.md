@@ -1,9 +1,13 @@
+---
+title: gainers
+description: Get top gainers. [Source: Yahoo Finance]
+---
 # gainers
 
 ## stocks_disc_yahoofinance_model.get_gainers
 
 ```python
-def get_stars_history(repo: str):
+def gainer) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L15)
 

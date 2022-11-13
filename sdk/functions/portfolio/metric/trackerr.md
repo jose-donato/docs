@@ -1,9 +1,13 @@
+---
+title: trackerr
+description: Get tracking error
+---
 # trackerr
 
 ## portfolio_model.get_tracking_error
 
 ```python
-def get_stars_history(repo: str):
+def trackerr(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1121)
 

@@ -1,9 +1,13 @@
+---
+title: news
+description: Gets news. [Source: SeekingAlpha]
+---
 # news
 
 ## stocks_disc_seeking_alpha_model.get_news
 
 ```python
-def get_stars_history(repo: str):
+def news(news_type: str, limit: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L198)
 

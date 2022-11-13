@@ -1,9 +1,13 @@
+---
+title: tail
+description: Get tail ratio
+---
 # tail
 
 ## portfolio_model.get_tail_ratio
 
 ```python
-def get_stars_history(repo: str):
+def tail(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1170)
 

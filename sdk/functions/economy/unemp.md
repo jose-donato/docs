@@ -1,9 +1,13 @@
+---
+title: unemp
+description: Get historical unemployment for United States
+---
 # unemp
 
 ## economy_alphavantage_model.get_unemployment
 
 ```python
-def get_stars_history(repo: str):
+def unemp(start_year: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L282)
 

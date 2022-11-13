@@ -1,9 +1,13 @@
+---
+title: enterprise
+description: Financial Modeling Prep ticker enterprise
+---
 # enterprise
 
 ## stocks_fa_fmp_model.get_enterprise
 
 ```python
-def get_stars_history(repo: str):
+def enterpris) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L130)
 
@@ -19,6 +23,8 @@ Description: Financial Modeling Prep ticker enterprise
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | pd.DataFrame |  | Dataframe of enterprise information | None | False |
+
+## Returns
 
 None
 

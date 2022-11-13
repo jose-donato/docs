@@ -1,9 +1,13 @@
+---
+title: gh
+description: Returns  a list of developer activity for a given coin and time interval.
+---
 # gh
 
 ## crypto_dd_santiment_model.get_github_activity
 
 ```python
-def get_stars_history(repo: str):
+def g) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L27)
 

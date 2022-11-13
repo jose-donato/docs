@@ -1,9 +1,13 @@
+---
+title: ef
+description: Get efficient frontier
+---
 # ef
 
 ## portfolio_optimization_optimizer_model.get_ef
 
 ```python
-def get_stars_history(repo: str):
+def ef(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, alpha: float, value: float, value_short: float, n_portfolios: int, seed: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1504)
 

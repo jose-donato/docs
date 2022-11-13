@@ -1,9 +1,13 @@
+---
+title: baas
+description: Get an average bid and ask prices, average spread for given crypto pair for chosen time period.
+---
 # baas
 
 ## crypto_onchain_bitquery_model.get_spread_for_crypto_pair
 
 ```python
-def get_stars_history(repo: str):
+def baas(symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L723)
 

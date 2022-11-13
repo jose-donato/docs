@@ -1,9 +1,13 @@
+---
+title: dtvl
+description: Returns information about historical tvl of a defi protocol.
+---
 # dtvl
 
 ## crypto_defi_llama_model.get_defi_protocol
 
 ```python
-def get_stars_history(repo: str):
+def dtvl(protocol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L123)
 

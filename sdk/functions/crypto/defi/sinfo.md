@@ -1,9 +1,13 @@
+---
+title: sinfo
+description: Get staking info for provided terra account [Source: https://fcd.terra.dev/swagger]
+---
 # sinfo
 
 ## crypto_defi_terramoney_fcd_model.get_staking_account_info
 
 ```python
-def get_stars_history(repo: str):
+def sinfo(address: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L103)
 

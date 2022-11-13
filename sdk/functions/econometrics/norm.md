@@ -1,9 +1,13 @@
+---
+title: norm
+description: The distribution of returns and generate statistics on the relation to the normal curve.
+---
 # norm
 
 ## econometrics_model.get_normality
 
 ```python
-def get_stars_history(repo: str):
+def norm(data: pd.Series) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L110)
 

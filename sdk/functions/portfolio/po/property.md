@@ -1,9 +1,13 @@
+---
+title: property
+description: Calculate portfolio weights based on selected property
+---
 # property
 
 ## portfolio_optimization_optimizer_model.get_property_weights
 
 ```python
-def get_stars_history(repo: str):
+def property(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, s_property: str, value: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L233)
 

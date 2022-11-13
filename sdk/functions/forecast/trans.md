@@ -1,9 +1,13 @@
+---
+title: trans
+description: Performs Transformer forecasting
+---
 # trans
 
 ## forecast_trans_model.get_trans_data
 
 ```python
-def get_stars_history(repo: str):
+def trans(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, past_covariates: str, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, d_model: int, nhead: int, num_encoder_layers: int, num_decoder_layers: int, dim_feedforward: int, activation: str, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/trans_model.py#L19)
 

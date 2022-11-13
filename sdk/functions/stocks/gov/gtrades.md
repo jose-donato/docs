@@ -1,9 +1,13 @@
+---
+title: gtrades
+description: Government trading for specific ticker [Source: quiverquant.com]
+---
 # gtrades
 
 ## stocks_gov_quiverquant_model.get_cleaned_government_trading
 
 ```python
-def get_stars_history(repo: str):
+def gtrades(symbol: str, gov_type: str, past_transactions_months: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L416)
 

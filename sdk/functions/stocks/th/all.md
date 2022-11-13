@@ -1,9 +1,13 @@
+---
+title: all
+description: Get all exchanges.
+---
 # all
 
 ## stocks_th_bursa_model.get_all
 
 ```python
-def get_stars_history(repo: str):
+def al) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L97)
 

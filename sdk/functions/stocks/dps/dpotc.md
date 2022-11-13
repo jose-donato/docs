@@ -1,9 +1,13 @@
+---
+title: dpotc
+description: Get all FINRA data associated with a ticker
+---
 # dpotc
 
 ## stocks_dps_finra_model.getTickerFINRAdata
 
 ```python
-def get_stars_history(repo: str):
+def dpotc(symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L296)
 

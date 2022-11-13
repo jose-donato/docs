@@ -1,9 +1,13 @@
+---
+title: pairs
+description: Get lastly added trade-able pairs on Uniswap with parameters like:
+---
 # pairs
 
 ## crypto_defi_graph_model.get_uniswap_pool_recently_added
 
 ```python
-def get_stars_history(repo: str):
+def pairs(last_days: int, min_volume: int, min_liquidity: int, min_tx: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L163)
 

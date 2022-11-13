@@ -1,9 +1,13 @@
+---
+title: query_graph
+description: Helper methods for querying graphql api. [Source: https://bitquery.io/]
+---
 # query_graph
 
 ## crypto_onchain_bitquery_model.query_graph
 
 ```python
-def get_stars_history(repo: str):
+def query_grap) -> dict:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L158)
 

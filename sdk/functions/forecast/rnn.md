@@ -1,9 +1,13 @@
+---
+title: rnn
+description: Perform RNN forecasting
+---
 # rnn
 
 ## forecast_rnn_model.get_rnn_data
 
 ```python
-def get_stars_history(repo: str):
+def rnn(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rnn_model.py#L20)
 

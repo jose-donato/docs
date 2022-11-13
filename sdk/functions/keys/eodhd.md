@@ -1,9 +1,13 @@
+---
+title: eodhd
+description: Set Eodhd key.
+---
 # eodhd
 
 ## keys_model.set_eodhd_key
 
 ```python
-def get_stars_history(repo: str):
+def eodhd(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L2037)
 

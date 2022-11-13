@@ -1,9 +1,13 @@
+---
+title: rm
+description: Returns coin roadmap
+---
 # rm
 
 ## crypto_dd_messari_model.get_roadmap
 
 ```python
-def get_stars_history(repo: str):
+def r) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L224)
 

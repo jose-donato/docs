@@ -1,9 +1,13 @@
+---
+title: coin_list
+description: Get list of coins available on CoinGecko [Source: CoinGecko]
+---
 # coin_list
 
 ## crypto_disc_pycoingecko_model.get_coin_list
 
 ```python
-def get_stars_history(repo: str):
+def coin_lis) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L330)
 

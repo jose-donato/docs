@@ -1,9 +1,13 @@
+---
+title: var
+description: Get portfolio VaR
+---
 # var
 
 ## portfolio_model.get_var
 
 ```python
-def get_stars_history(repo: str):
+def var(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1684)
 

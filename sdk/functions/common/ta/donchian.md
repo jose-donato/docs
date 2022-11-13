@@ -1,9 +1,13 @@
+---
+title: donchian
+description: Calculate Donchian Channels
+---
 # donchian
 
 ## common_ta_volatility_model.donchian
 
 ```python
-def get_stars_history(repo: str):
+def donchian(data: pd.DataFrame, upper_length: int, lower_length: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L52)
 

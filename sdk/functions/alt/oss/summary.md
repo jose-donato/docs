@@ -1,9 +1,13 @@
+---
+title: summary
+description: Get repository summary
+---
 # summary
 
 ## alt_oss_github_model.get_repo_summary
 
 ```python
-def get_stars_history(repo: str):
+def summary(repo: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L171)
 

@@ -1,9 +1,13 @@
+---
+title: sentiment
+description: Gets Sentiment analysis from several symbols provided by FinBrain's API
+---
 # sentiment
 
 ## stocks_ca_finbrain_model.get_sentiments
 
 ```python
-def get_stars_history(repo: str):
+def sentiment(symbols: List[str]) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L46)
 

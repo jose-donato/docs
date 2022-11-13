@@ -1,9 +1,13 @@
+---
+title: perf
+description: Get portfolio performance vs the benchmark
+---
 # perf
 
 ## portfolio_model.get_performance_vs_benchmark
 
 ```python
-def get_stars_history(repo: str):
+def perf(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, show_all_trades: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1580)
 

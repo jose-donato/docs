@@ -1,9 +1,13 @@
+---
+title: info
+description: None
+---
 # info
 
 ## mutual_funds_investpy_model.get_fund_info
 
 ```python
-def get_stars_history(repo: str):
+def info(name: str, country: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L144)
 

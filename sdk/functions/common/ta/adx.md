@@ -1,9 +1,13 @@
+---
+title: adx
+description: ADX technical indicator
+---
 # adx
 
 ## common_ta_trend_indicators_model.adx
 
 ```python
-def get_stars_history(repo: str):
+def adx(data: pd.DataFrame, window: int, scalar: int, drift: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L15)
 

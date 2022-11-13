@@ -1,9 +1,13 @@
+---
+title: smartstake
+description: Set Smartstake key.
+---
 # smartstake
 
 ## keys_model.set_smartstake_key
 
 ```python
-def get_stars_history(repo: str):
+def smartstake(key: str, access_token: str, persist: bool, show_output: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1845)
 

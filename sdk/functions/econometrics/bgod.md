@@ -1,9 +1,13 @@
+---
+title: bgod
+description: Calculate test statistics for autocorrelation
+---
 # bgod
 
 ## econometrics_regression_model.get_bgod
 
 ```python
-def get_stars_history(repo: str):
+def bgod(model: pd.DataFrame, lags: int) -> tuple:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L496)
 

@@ -1,9 +1,13 @@
+---
+title: clean
+description: Clean up NaNs from the dataset
+---
 # clean
 
 ## econometrics_model.clean
 
 ```python
-def get_stars_history(repo: str):
+def clean(dataset: pd.DataFrame, fill: str, drop: str, limit: Union[int, NoneType]) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L62)
 

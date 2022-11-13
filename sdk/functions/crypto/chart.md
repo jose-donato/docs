@@ -1,11 +1,15 @@
+---
+title: chart
+description: Load data for Technical Analysis
+---
 # chart
 
 ## crypto_helpers.plot_chart
 
 ```python
-def get_stars_history(repo: str):
+def chart(prices_df: pd.DataFrame, to_symbol: str, from_symbol: str, source: str, exchange: str, interval: str, external_axes: list[plt.Axes] | None, yscale: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L1373)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L1417)
 
 Description: Load data for Technical Analysis
 
@@ -17,6 +21,8 @@ Description: Load data for Technical Analysis
 | to_symbol | str | Coin (only used for chart title), by default "" | None | False |
 | from_symbol | str | Currency (only used for chart title), by default "" | None | False |
 | yscale | str | Scale for y axis of plot Either linear or log | None | False |
+
+## Returns
 
 None
 

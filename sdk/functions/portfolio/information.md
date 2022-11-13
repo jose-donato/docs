@@ -1,9 +1,13 @@
+---
+title: information
+description: Get information ratio
+---
 # information
 
 ## portfolio_model.get_information_ratio
 
 ```python
-def get_stars_history(repo: str):
+def information(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1146)
 

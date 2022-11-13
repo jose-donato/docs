@@ -1,9 +1,13 @@
+---
+title: inf
+description: Get historical Inflation for United States from AlphaVantage
+---
 # inf
 
 ## economy_alphavantage_model.get_inflation
 
 ```python
-def get_stars_history(repo: str):
+def inf(start_year: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L137)
 

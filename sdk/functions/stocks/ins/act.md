@@ -1,9 +1,13 @@
+---
+title: act
+description: Get insider activity. [Source: Business Insider]
+---
 # act
 
 ## stocks_insider_businessinsider_model.get_insider_activity
 
 ```python
-def get_stars_history(repo: str):
+def act(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/businessinsider_model.py#L16)
 

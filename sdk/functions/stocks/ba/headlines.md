@@ -1,9 +1,13 @@
+---
+title: headlines
+description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrain]
+---
 # headlines
 
 ## stocks_ba_finbrain_model.get_sentiment
 
 ```python
-def get_stars_history(repo: str):
+def headlines(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/finbrain_model.py#L14)
 

@@ -1,9 +1,13 @@
+---
+title: news
+description: Get news from Finviz
+---
 # news
 
 ## stocks_dd_finviz_model.get_news
 
 ```python
-def get_stars_history(repo: str):
+def news(symbol: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finviz_model.py#L16)
 

@@ -1,9 +1,13 @@
+---
+title: quantile
+description: Overlay Median & Quantile
+---
 # quantile
 
 ## common_qa_rolling_model.get_quantile
 
 ```python
-def get_stars_history(repo: str):
+def quantile(data: pd.DataFrame, window: int, quantile_pct: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L73)
 

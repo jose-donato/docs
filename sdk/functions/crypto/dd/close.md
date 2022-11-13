@@ -1,11 +1,15 @@
+---
+title: close
+description: Returns the price of a cryptocurrency
+---
 # close
 
 ## crypto_dd_glassnode_model.get_close_price
 
 ```python
-def get_stars_history(repo: str):
+def clos) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L178)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L179)
 
 Description: Returns the price of a cryptocurrency
 

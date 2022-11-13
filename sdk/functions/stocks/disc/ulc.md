@@ -1,9 +1,13 @@
+---
+title: ulc
+description: Get Yahoo Finance potentially undervalued large cap stocks.
+---
 # ulc
 
 ## stocks_disc_yahoofinance_model.get_ulc
 
 ```python
-def get_stars_history(repo: str):
+def ul) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L115)
 

@@ -1,9 +1,13 @@
+---
+title: linregr
+description: Perform Linear Regression Forecasting
+---
 # linregr
 
 ## forecast_linregr_model.get_linear_regression_data
 
 ```python
-def get_stars_history(repo: str):
+def linregr(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]], random_state: Union[int, NoneType]) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/linregr_model.py#L21)
 

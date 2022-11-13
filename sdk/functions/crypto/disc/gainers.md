@@ -1,9 +1,13 @@
+---
+title: gainers
+description: Shows Largest Gainers - coins which gain the most in given period. [Source: CoinGecko]
+---
 # gainers
 
 ## crypto_disc_pycoingecko_model.get_gainers
 
 ```python
-def get_stars_history(repo: str):
+def gainers(interval: str, limit: int, sortby: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L252)
 

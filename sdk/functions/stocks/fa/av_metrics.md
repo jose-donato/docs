@@ -1,9 +1,13 @@
+---
+title: av_metrics
+description: Get key metrics from overview
+---
 # av_metrics
 
 ## stocks_fa_av_model.get_key_metrics
 
 ```python
-def get_stars_history(repo: str):
+def av_metrics(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L100)
 

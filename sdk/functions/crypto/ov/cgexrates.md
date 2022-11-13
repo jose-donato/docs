@@ -1,9 +1,13 @@
+---
+title: cgexrates
+description: Get list of crypto, fiats, commodity exchange rates from CoinGecko API [Source: CoinGecko]
+---
 # cgexrates
 
 ## crypto_ov_pycoingecko_model.get_exchange_rates
 
 ```python
-def get_stars_history(repo: str):
+def cgexrates(sortby: str, ascend: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L388)
 

@@ -1,9 +1,13 @@
+---
+title: combine
+description: Adds the given column of df2 to df1
+---
 # combine
 
 ## forecast_model.combine_dfs
 
 ```python
-def get_stars_history(repo: str):
+def combine(df1: pd.DataFrame, df2: pd.DataFrame, column: str, dataset: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L396)
 
@@ -20,6 +24,8 @@ Description: Adds the given column of df2 to df1
 | Returns | None | None | None | None |
 | ---------- | None | None | None | None |
 | data | pd.DataFrame | The new dataframe | None | False |
+
+## Returns
 
 None
 

@@ -1,9 +1,13 @@
+---
+title: load
+description: Load custom file into dataframe.
+---
 # load
 
 ## common_model.load
 
 ```python
-def get_stars_history(repo: str):
+def load(file: str, data_files: Union[Dict[Any, Any], NoneType], data_examples: Union[Dict[Any, Any], NoneType]) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/common_model.py#L52)
 

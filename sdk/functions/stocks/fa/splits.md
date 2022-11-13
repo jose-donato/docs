@@ -1,9 +1,13 @@
+---
+title: splits
+description: Get splits and reverse splits events. [Source: Yahoo Finance]
+---
 # splits
 
 ## stocks_fa_yahoo_finance_model.get_splits
 
 ```python
-def get_stars_history(repo: str):
+def splits(symbol: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L307)
 

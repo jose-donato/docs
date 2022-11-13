@@ -1,9 +1,13 @@
+---
+title: cps
+description: Get number of companies per sector in a specific country (and specific market cap). [Source: Finance Database]
+---
 # cps
 
 ## stocks_sia_financedatabase_model.get_companies_per_sector_in_country
 
 ```python
-def get_stars_history(repo: str):
+def cps(country: str, mktcap: str, exclude_exchanges: bool) -> dict:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L204)
 

@@ -1,9 +1,13 @@
+---
+title: dcf
+description: Get stocks dcf from FMP
+---
 # dcf
 
 ## stocks_fa_fmp_model.get_dcf
 
 ```python
-def get_stars_history(repo: str):
+def dc) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L172)
 

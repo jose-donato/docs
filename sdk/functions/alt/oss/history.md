@@ -1,9 +1,13 @@
+---
+title: history
+description: Get repository star history
+---
 # history
 
 ## alt_oss_github_model.get_stars_history
 
 ```python
-def get_stars_history(repo: str):
+def history(repo: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L83)
 

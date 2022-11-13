@@ -1,9 +1,13 @@
+---
+title: historical
+description: View historical price of stocks that meet preset
+---
 # historical
 
 ## stocks_screener_yahoofinance_model.historical
 
 ```python
-def get_stars_history(repo: str):
+def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_model.py#L52)
 

@@ -1,9 +1,13 @@
+---
+title: cpis
+description: Get number of companies per industry in a specific sector (and specific market cap).
+---
 # cpis
 
 ## stocks_sia_financedatabase_model.get_companies_per_industry_in_sector
 
 ```python
-def get_stars_history(repo: str):
+def cpis(sector: str, mktcap: str, exclude_exchanges: bool) -> dict:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L308)
 

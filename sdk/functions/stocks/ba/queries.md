@@ -1,9 +1,13 @@
+---
+title: queries
+description: Get related queries from google api [Source: google]
+---
 # queries
 
 ## stocks_ba_google_model.get_queries
 
 ```python
-def get_stars_history(repo: str):
+def queries(symbol: str, limit: int) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L72)
 

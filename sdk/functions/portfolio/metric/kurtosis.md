@@ -1,9 +1,13 @@
+---
+title: kurtosis
+description: Class method that retrieves kurtosis for portfolio and benchmark selected
+---
 # kurtosis
 
 ## portfolio_model.get_kurtosis
 
 ```python
-def get_stars_history(repo: str):
+def kurtosis(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L861)
 
