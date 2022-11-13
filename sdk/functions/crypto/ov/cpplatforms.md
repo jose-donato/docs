@@ -1,58 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# cpplatforms
 
-|
+## crypto_ov_coinpaprika_model.get_all_contract_platforms
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L397)
 
-.. raw:: html
+Description: List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama ... [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cpplatforms() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama ... [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | index, platform_id |
 
-* **Returns**
-
-    pandas.DataFrame
-        index, platform_id
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.cpplatforms(
-    export: str,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama.
-    [Source: CoinPaprika]
-    </p>
-
-* **Parameters**
-
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

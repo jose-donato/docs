@@ -1,86 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# luna_supply
 
-|
+## crypto_defi_smartstake_model.get_luna_supply_stats
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_model.py#L13)
 
-.. raw:: html
+Description: Get supply history of the Terra ecosystem
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.luna_supply(
-    supply_type: str = 'lunaSupplyChallengeStats',
-    days: int = 30,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| supply_type | str | Supply type to unpack json | None | False |
+| days | int | Day count to fetch data | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get supply history of the Terra ecosystem
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of supply history data |
 
-    Source: [Smartstake.io]
-    </p>
-
-* **Parameters**
-
-    supply_type: str
-        Supply type to unpack json
-    days: int
-        Day count to fetch data
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of supply history data
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.defi.luna_supply(
-    days: int = 30,
-    export: str = '',
-    supply_type: str = 'lunaSupplyChallengeStats',
-    limit: int = 5,
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display Luna circulating supply stats
-    </p>
-
-* **Parameters**
-
-    days: int
-        Number of days
-    supply_type: str
-        Supply type to unpack json
-    export: str
-        Export type
-    limit: int
-        Number of results display on the terminal
-        Default: 5
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

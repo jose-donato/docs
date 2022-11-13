@@ -1,93 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# cpexmarkets
 
-|
+## crypto_ov_coinpaprika_model.get_exchanges_market
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L346)
 
-.. raw:: html
+Description: List markets by exchange ID [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cpexmarkets(
-    exchange_id: str = 'binance',
-    symbols: str = 'USD',
-    sortby: str = 'pair',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| exchange_id | str | identifier of exchange e.g for Binance Exchange -> binance | None | False |
+| symbols | str | Comma separated quotes to return e.g quotes=USD,BTC | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    List markets by exchange ID [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | pair, base_currency_name, quote_currency_name, market_url,
+category, reported_volume_24h_share, trust_score, |
 
-* **Parameters**
-
-    exchange_id: str
-        identifier of exchange e.g for Binance Exchange -> binance
-    symbols: str
-        Comma separated quotes to return e.g quotes=USD,BTC
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pandas.DataFrame
-        pair, base_currency_name, quote_currency_name, market_url,
-        category, reported_volume_24h_share, trust_score,
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.cpexmarkets(
-    exchange: str = 'binance',
-    sortby: str = 'pair',
-    ascend: bool = True,
-    limit: int = 15,
-    links: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Get all markets for given exchange [Source: CoinPaprika]
-    </p>
-
-* **Parameters**
-
-    exchange: str
-        Exchange identifier e.g Binance
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data descending
-    links: bool
-        Flag to display urls
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

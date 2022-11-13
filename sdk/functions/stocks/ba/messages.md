@@ -1,74 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# messages
 
-|
+## stocks_ba_stocktwits_model.get_messages
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L54)
 
-.. raw:: html
+Description: Get last messages for a given ticker [Source: stocktwits]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ba.messages(
-    symbol: str,
-    limit: int = 30,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number of messages to get | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get last messages for a given ticker [Source: stocktwits]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of messages |
 
-* **Parameters**
-
-    symbol : str
-        Stock ticker symbol
-    limit : int
-        Number of messages to get
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of messages
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.ba.messages(
-    symbol: str,
-    limit: int = 30,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Print up to 30 of the last messages on the board. [Source: Stocktwits]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol
-    limit: int
-        Number of messages to get
-    chart: bool
-       Flag to display chart
+## Examples
 

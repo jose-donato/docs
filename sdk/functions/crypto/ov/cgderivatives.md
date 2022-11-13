@@ -1,81 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# cgderivatives
 
-|
+## crypto_ov_pycoingecko_model.get_derivatives
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L340)
 
-.. raw:: html
+Description: Get list of crypto derivatives from CoinGecko API [Source: CoinGecko]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cgderivatives(
-    sortby: str = 'Rank',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get list of crypto derivatives from CoinGecko API [Source: CoinGecko]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Rank, Market, Symbol, Price, Pct_Change_24h, Contract_Type, Basis, Spread,
+Funding_Rate, Volume_24h, |
 
-* **Parameters**
-
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data descending
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pandas.DataFrame
-        Rank, Market, Symbol, Price, Pct_Change_24h, Contract_Type, Basis, Spread,
-        Funding_Rate, Volume_24h,
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.cgderivatives(
-    sortby: str = 'Rank',
-    ascend: bool = False,
-    limit: int = 15,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Shows  list of crypto derivatives. [Source: CoinGecko]
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data descending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

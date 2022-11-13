@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# text_sent
 
-|
+## stocks_ba_reddit_model.get_sentiment
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L1055)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Find the sentiment of a post and related comments
 
-{{< highlight python >}}
-stocks.ba.text_sent(
-    post_data: List[str],
-    chart: bool = False,
-) -> float
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| post_data | list[str] | A post and its comments in string form | None | False |
 
-    <p>
-    Find the sentiment of a post and related comments
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| float | A number in the range [-1, 1] representing sentiment |
 
-    post_data: list[str]
-        A post and its comments in string form
+## Examples
 
-* **Returns**
-
-    float
-        A number in the range [-1, 1] representing sentiment

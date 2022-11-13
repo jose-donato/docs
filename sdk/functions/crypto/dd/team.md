@@ -1,75 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# team
 
-|
+## crypto_dd_messari_model.get_team
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L410)
 
-.. raw:: html
+Description: Returns coin team
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.team(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check team | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns coin team
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | individuals |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check team
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        individuals
-    pd.DataFrame
-        organizations
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.dd.team(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display coin team
-    [Source: https://messari.io/]
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check coin team
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

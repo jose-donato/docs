@@ -1,89 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# donchian
 
-|
+## common_ta_volatility_model.donchian
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L52)
 
-.. raw:: html
+Description: Calculate Donchian Channels
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.donchian(
-    data: pandas.core.frame.DataFrame,
-    upper_length: int = 20,
-    lower_length: int = 20,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of ohlc prices | None | False |
+| upper_length | int | Length of window to calculate upper channel | None | False |
+| lower_length | int | Length of window to calculate lower channel | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate Donchian Channels
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of upper and lower channels |
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    upper_length : int
-        Length of window to calculate upper channel
-    lower_length : int
-        Length of window to calculate lower channel
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of upper and lower channels
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.ta.donchian(
-    data: pandas.core.frame.DataFrame,
-    symbol: str = '',
-    upper_length: int = 20,
-    lower_length: int = 20,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Show donchian channels
-    </p>
-
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    symbol : str
-        Ticker symbol
-    upper_length : int
-        Length of window to calculate upper channel
-    lower_length : int
-        Length of window to calculate lower channel
-    export : str
-        Format of export file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

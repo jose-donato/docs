@@ -1,46 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# av_balance
 
-|
+## stocks_fa_av_model.get_balance_sheet
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L252)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get balance sheets for company
 
-{{< highlight python >}}
-stocks.fa.av_balance(
-    symbol: str,
-    limit: int = 5,
-    quarterly: bool = False,
-    ratios: bool = False,
-    plot: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number of past to get | None | False |
+| quarterly | bool | Flag to get quarterly instead of annual, by default False | False | True |
+| ratios | bool | Shows percentage change, by default False | False | False |
+| plot | bool | If the data shall be formatted ready to plot | None | False |
 
-    <p>
-    Get balance sheets for company
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame of the balance sheet |
 
-    symbol : str
-        Stock ticker symbol
-    limit : int
-        Number of past to get
-    quarterly : bool, optional
-        Flag to get quarterly instead of annual, by default False
-    ratios: bool
-        Shows percentage change, by default False
-    plot: bool
-        If the data shall be formatted ready to plot
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        DataFrame of the balance sheet

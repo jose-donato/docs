@@ -1,42 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# coin_market_chart
 
-|
+## crypto_dd_pycoingecko_model.get_coin_market_chart
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L221)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get prices for given coin. [Source: CoinGecko]
 
-{{< highlight python >}}
-crypto.dd.coin_market_chart(
-    symbol: str = '',
-    vs_currency: str = 'usd',
-    days: int = 30,
-    **kwargs: Any,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| vs_currency | str | currency vs which display data | None | False |
+| days | int | number of days to display the data | None | False |
+| kwargs | None | unspecified keyword arguments | None | None |
 
-    <p>
-    Get prices for given coin. [Source: CoinGecko]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Prices for given coin
+Columns: time, price, currency |
 
-    vs_currency: str
-        currency vs which display data
-    days: int
-        number of days to display the data
-    kwargs
-        unspecified keyword arguments
+## Examples
 
-* **Returns**
-
-    pandas.DataFrame
-        Prices for given coin
-        Columns: time, price, currency

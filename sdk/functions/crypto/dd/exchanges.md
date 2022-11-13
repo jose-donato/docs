@@ -1,34 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# exchanges
 
-|
+## crypto_dd_ccxt_model.get_exchanges
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L10)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Helper method to get all the exchanges supported by ccxt
 
-{{< highlight python >}}
-crypto.dd.exchanges()
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Helper method to get all the exchanges supported by ccxt
-    [Source: https://docs.ccxt.com/en/latest/manual.html]
+## Returns
 
-    Parameters
-    ----------
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| List[str] | list of all the exchanges supported by ccxt |
 
-* **Parameters**
+## Examples
 
-    
-
-* **Returns**
-
-    List[str]
-        list of all the exchanges supported by ccxt

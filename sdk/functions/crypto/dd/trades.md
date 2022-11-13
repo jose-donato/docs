@@ -1,88 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# trades
 
-|
+## crypto_dd_coinbase_model.get_trades
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
 
-.. raw:: html
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L100)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get last N trades for chosen trading pair. [Source: Coinbase]
 
-{{< highlight python >}}
-crypto.dd.trades(
-    exchange_id: str,
-    symbol: str,
-    to_symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name   | Type | Description                                                                                  | Default | Optional |
+| ------ | ---- | -------------------------------------------------------------------------------------------- | ------- | -------- |
+| symbol | str  | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH                                    | None    | False    |
+| limit  | int  | Last `limit` of trades. Maximum is 1000.                                                     | None    | False    |
+| side   | str  | You can chose either sell or buy side. If side is not set then all trades will be displayed. | None    | False    |
 
-    <p>
-    Returns trades for a coin in a given exchange
-    [Source: https://docs.ccxt.com/en/latest/manual.html]
-    </p>
+## Returns
 
-* **Parameters**
+| Type         | Description                             |
+| ------------ | --------------------------------------- |
+| pd.DataFrame | Last N trades for chosen trading pairs. |
 
-    exchange_id : str
-        exchange id
-    symbol : str
-        coin symbol
-    to_symbol : str
-        currency to compare coin against
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        trades for a coin in a given exchange
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.dd.trades(
-    exchange: str,
-    symbol: str,
-    to_symbol: str,
-    limit: int = 10,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Displays trades for a coin in a given exchange
-    [Source: https://docs.ccxt.com/en/latest/manual.html]
-    </p>
-
-* **Parameters**
-
-    exchange : str
-        exchange id
-    symbol : str
-        coin symbol
-    to_symbol : str
-        currency to compare coin against
-    limit : int
-        number of trades to display
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
-
+## Examples

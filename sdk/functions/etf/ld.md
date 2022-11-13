@@ -1,76 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ld
 
-|
+## etf_financedatabase_model.get_etfs_by_description
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L34)
 
-.. raw:: html
+Description: Return a selection of ETFs based on description filtered by total assets.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.ld(
-    description: str,
-    chart: bool = False,
-) -> Dict
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| description | str | Search by description to find ETFs matching the criteria. | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| data | Dict | Dictionary with ETFs that match a certain description | None | False |
 
-.. raw:: html
+None
 
-    <p>
-    Return a selection of ETFs based on description filtered by total assets.
-    [Source: Finance Database]
-    </p>
-
-* **Parameters**
-
-    description: str
-        Search by description to find ETFs matching the criteria.
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    data : Dict
-        Dictionary with ETFs that match a certain description
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-etf.ld(
-    description: str,
-    limit: int = 10,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display a selection of ETFs based on description filtered by total assets.
-    [Source: Finance Database]
-    </p>
-
-* **Parameters**
-
-    description: str
-        Search by description to find ETFs matching the criteria.
-    limit: int
-        Limit of ETFs to display
-    export: str
-        Type of format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

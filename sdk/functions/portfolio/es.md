@@ -1,42 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# es
 
-|
+## portfolio_model.get_es
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1722)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get portfolio expected shortfall
 
-{{< highlight python >}}
-portfolio.es(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    use_mean: bool = False,
-    distribution: str = 'normal',
-    percentile: float = 99.9,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| use_mean |  | if one should use the data mean return | None | False |
+| distribution | str | choose distribution to use: logistic, laplace, normal | None | False |
+| percentile | float | es percentile (%) | None | False |
 
-    <p>
-    Get portfolio expected shortfall
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | None |
 
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    use_mean:
-        if one should use the data mean return
-    distribution: str
-        choose distribution to use: logistic, laplace, normal
-    percentile: float
-        es percentile (%)
+## Examples
 
-* **Returns**
-
-    pd.DataFrame

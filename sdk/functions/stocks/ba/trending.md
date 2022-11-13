@@ -1,26 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# trending
 
-|
+## stocks_ba_stocktwits_model.get_trending
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L81)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get trending tickers from stocktwits [Source: stocktwits]
 
-{{< highlight python >}}
-stocks.ba.trending() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get trending tickers from stocktwits [Source: stocktwits]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of trending tickers and watchlist count |
 
-    pd.DataFrame
-        Dataframe of trending tickers and watchlist count
+## Examples
+

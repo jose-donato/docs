@@ -1,57 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# cgdefi
 
-|
+## crypto_ov_pycoingecko_model.get_global_defi_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L479)
 
-.. raw:: html
+Description: Get global statistics about Decentralized Finances [Source: CoinGecko]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cgdefi() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get global statistics about Decentralized Finances [Source: CoinGecko]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Metric, Value |
 
-* **Returns**
-
-    pandas.DataFrame
-        Metric, Value
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.cgdefi(
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Shows global statistics about Decentralized Finances. [Source: CoinGecko]
-    </p>
-
-* **Parameters**
-
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

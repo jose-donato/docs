@@ -1,26 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# shorted
 
-|
+## stocks_dps_yahoofinance_model.get_most_shorted
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/yahoofinance_model.py#L15)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get most shorted stock screener [Source: Yahoo Finance]
 
-{{< highlight python >}}
-stocks.dps.shorted() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get most shorted stock screener [Source: Yahoo Finance]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Most Shorted Stocks |
 
-    pd.DataFrame
-        Most Shorted Stocks
+## Examples
+

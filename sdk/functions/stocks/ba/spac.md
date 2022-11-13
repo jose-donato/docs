@@ -1,38 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# spac
 
-|
+## stocks_ba_reddit_model.get_spac
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L458)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get posts containing SPAC from top subreddits [Source: reddit]
 
-{{< highlight python >}}
-stocks.ba.spac(
-    limit: int = 5,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, dict, int]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of posts to get for each subreddit, by default 5 | 5 | True |
 
-    <p>
-    Get posts containing SPAC from top subreddits [Source: reddit]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | Dataframe of reddit submissions |
 
-    limit : int, optional
-        Number of posts to get for each subreddit, by default 5
+## Examples
 
-* **Returns**
-
-    pd.DataFrame :
-        Dataframe of reddit submissions
-    dict :
-        Dictionary of tickers and counts
-    int :
-        Number of posts found.

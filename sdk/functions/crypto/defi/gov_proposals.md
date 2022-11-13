@@ -1,89 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# gov_proposals
 
-|
+## crypto_defi_terramoney_fcd_model.get_proposals
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L195)
 
-.. raw:: html
+Description: Get terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.gov_proposals(
-    status: str = '',
-    sortby: str = 'id',
-    ascend: bool = True,
-    limit: int = 10,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| status | str | status of proposal, one from list: ['Voting','Deposit','Passed','Rejected'] | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| limit | int | Number of records to display | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Terra blockchain governance proposals list |
 
-* **Parameters**
-
-    status: str
-        status of proposal, one from list: ['Voting','Deposit','Passed','Rejected']
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    limit: int
-        Number of records to display
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Terra blockchain governance proposals list
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.defi.gov_proposals(
-    limit: int = 10,
-    status: str = 'all',
-    sortby: str = 'id',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Number of records to display
-    status: str
-        status of proposal, one from list: ['Voting','Deposit','Passed','Rejected']
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascend
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

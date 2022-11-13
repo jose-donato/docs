@@ -1,27 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# hotpenny
 
-|
+## stocks_disc_shortinterest_model.get_today_hot_penny_stocks
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L37)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Returns today hot penny stocks
 
-{{< highlight python >}}
-stocks.disc.hotpenny() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Returns today hot penny stocks
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| DataFrame | Today hot penny stocks DataFrame with the following columns:
+Ticker, Price, Change, $ Volume, Volume, # Trades |
 
-    DataFrame
-        Today hot penny stocks DataFrame with the following columns:
-        Ticker, Price, Change, $ Volume, Volume, # Trades
+## Examples
+

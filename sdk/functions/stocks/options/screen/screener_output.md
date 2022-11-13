@@ -1,81 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# screener_output
 
-|
+## stocks_options_screen_syncretism_model.get_screener_output
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L158)
 
-.. raw:: html
+Description: Screen options based on preset filters
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.screen.screener_output(
-    preset: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, str]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| preset | str | Chosen preset | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Screen options based on preset filters
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | DataFrame with screener data, or empty if errors |
 
-* **Parameters**
+## Examples
 
-    preset: str
-        Chosen preset
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame:
-        DataFrame with screener data, or empty if errors
-    str:
-        String containing error message if supplied
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.options.screen.screener_output(
-    preset: str,
-    limit: int = 20,
-    export: str = '',
-    chart: bool = False,
-) -> List
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Print the output of screener
-    </p>
-
-* **Parameters**
-
-    preset: str
-        Chosen preset
-    limit: int
-        Number of randomly sorted rows to display
-    export: str
-        Format for export file
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    List
-        List of tickers screened

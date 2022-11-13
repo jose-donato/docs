@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# check_presets
 
-|
+## stocks_options_screen_syncretism_model.check_presets
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L251)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Checks option screener preset values
 
-{{< highlight python >}}
-stocks.options.screen.check_presets(
-    preset_dict: dict,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| preset_dict | dict | Defined presets from configparser | None | False |
 
-    <p>
-    Checks option screener preset values
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | String of all errors accumulated |
 
-    preset_dict: dict
-        Defined presets from configparser
+## Examples
 
-* **Returns**
-
-    error: str
-        String of all errors accumulated

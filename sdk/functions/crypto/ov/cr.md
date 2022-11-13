@@ -1,82 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# cr
 
-|
+## crypto_ov_loanscan_model.get_rates
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_model.py#L266)
 
-.. raw:: html
+Description: Returns crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cr(
-    rate_type: str = 'borrow',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | supply | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
-    [Source: https://loanscan.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| crypto interest rates per platform | None |
 
-* **Parameters**
-
-    rate_type : str
-        Interest rate type: {borrow, supply}. Default: supply
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pandas.DataFrame: crypto interest rates per platform
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.cr(
-    symbols: str,
-    platforms: str,
-    rate_type: str = 'borrow',
-    limit: int = 10,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Displays crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
-    [Source: https://loanscan.io/]
-    </p>
-
-* **Parameters**
-
-    rate_type: str
-        Interest rate type: {borrow, supply}. Default: supply
-    symbols: str
-        Crypto separated by commas. Default: BTC,ETH,USDT,USDC
-    platforms: str
-        Platforms separated by commas. Default: BlockFi,Ledn,SwissBorg,Youhodler
-    limit: int
-        Number of records to show
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

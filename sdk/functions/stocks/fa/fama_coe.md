@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# fama_coe
 
-|
+## stocks_fa_dcf_model.get_fama_coe
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L299)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Use Fama and French to get the cost of equity for a company
 
-{{< highlight python >}}
-stocks.fa.fama_coe(
-    symbol: str,
-    chart: bool = False,
-) -> float
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | The ticker symbol to be analyzed | None | False |
 
-    <p>
-    Use Fama and French to get the cost of equity for a company
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| float | The stock's Fama French coefficient |
 
-    symbol : str
-        The ticker symbol to be analyzed
+## Examples
 
-* **Returns**
-
-    coef : float
-        The stock's Fama French coefficient

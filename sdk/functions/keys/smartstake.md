@@ -1,44 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# smartstake
 
-|
+## keys_model.set_smartstake_key
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1845)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Set Smartstake key.
 
-{{< highlight python >}}
-keys.smartstake(
-    key: str,
-    access_token: str,
-    persist: bool = False,
-    show_output: bool = False,
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| key | str | API key | None | False |
+| access_token | str | API token | None | False |
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
+If True, api key change will be global, i.e. it will affect terminal environment variables.
+By default, False. | None | False |
+| show_output | bool | Display status string or not. By default, False. | None | False |
 
-    <p>
-    Set Smartstake key.
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | None |
 
-    key: str
-        API key
-    access_token: str
-        API token
-    persist: bool
-        If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
-        If True, api key change will be global, i.e. it will affect terminal environment variables.
-        By default, False.
-    show_output: bool
-        Display status string or not. By default, False.
+## Examples
 
-* **Returns**
-
-    status: str

@@ -1,89 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# aroon
 
-|
+## common_ta_trend_indicators_model.aroon
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L55)
 
-.. raw:: html
+Description: Aroon technical indicator
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.aroon(
-    data: pandas.core.frame.DataFrame,
-    window: int = 25,
-    scalar: int = 100,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe with OHLC price data | None | False |
+| window | int | Length of window | None | False |
+| scalar | int | Scalar variable | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Aroon technical indicator
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame with aroon indicator |
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe with OHLC price data
-    window : int
-        Length of window
-    scalar : int
-        Scalar variable
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        DataFrame with aroon indicator
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.ta.aroon(
-    data: pandas.core.frame.DataFrame,
-    window: int = 25,
-    scalar: int = 100,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Plot Aroon indicator
-    </p>
-
-* **Parameters**
-
-    data: pd.DataFrame
-        Dataframe with OHLC price data
-    window: int
-        Length of window
-    symbol: str
-        Ticker
-    scalar: int
-        Scalar variable
-    export: str
-        Format to export data
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (3 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

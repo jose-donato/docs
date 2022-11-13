@@ -1,77 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# vsurf
 
-|
+## stocks_options_yfinance_model.get_iv_surface
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L320)
 
-.. raw:: html
+Description: Gets IV surface for calls and puts for ticker
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.vsurf(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol to get | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Gets IV surface for calls and puts for ticker
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of DTE, Strike and IV |
 
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol to get
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of DTE, Strike and IV
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.options.vsurf(
-    symbol: str,
-    export: str = '',
-    z: str = 'IV',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display vol surface
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        Ticker symbol to get surface for
-    export : str
-        Format to export data
-    z : str
-        The variable for the Z axis
-    external_axes: Optional[List[plt.Axes]]
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

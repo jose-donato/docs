@@ -1,90 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# psi_q
 
-|
+## stocks_dps_quandl_model.get_short_interest
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
 
-.. raw:: html
+Description: Plots the short interest of a stock. This corresponds to the
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.dps.psi_q(
-    symbol: str,
-    nyse: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | ticker to get short interest from | None | False |
+| nyse | bool | data from NYSE if true, otherwise NASDAQ | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | short interest volume data | None | None |
 
-.. raw:: html
+None
 
-    <p>
-    Plots the short interest of a stock. This corresponds to the
-    number of shares that have been sold short but have not yet been
-    covered or closed out. Either NASDAQ or NYSE [Source: Quandl]
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        ticker to get short interest from
-    nyse : bool
-        data from NYSE if true, otherwise NASDAQ
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        short interest volume data
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.dps.psi_q(
-    symbol: str,
-    nyse: bool = False,
-    limit: int = 10,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Plots the short interest of a stock. This corresponds to the
-    number of shares that have been sold short but have not yet been
-    covered or closed out. Either NASDAQ or NYSE [Source: Quandl]
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        ticker to get short interest from
-    nyse : bool
-        data from NYSE if true, otherwise NASDAQ
-    limit: int
-        Number of past days to show short interest
-    raw : bool
-        Flag to print raw data instead
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

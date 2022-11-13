@@ -1,45 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# clean
 
-|
+## econometrics_model.clean
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L62)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Clean up NaNs from the dataset
 
-{{< highlight python >}}
-econometrics.clean(
-    dataset: pandas.core.frame.DataFrame,
-    fill: str = '',
-    drop: str = '',
-    limit: Optional[int] = None,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| dataset | pd.DataFrame | The dataset you wish to clean | None | False |
+| fill | str | The method of filling NaNs. Choose from:
+rfill, cfill, rbfill, cbfill, rffill, cffill | None | False |
+| drop | str | The method of dropping NaNs. Choose from:
+rdrop, cdrop | None | False |
+| limit | int | The maximum limit you wish to apply that can be forward or backward filled | None | False |
 
-    <p>
-    Clean up NaNs from the dataset
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | Dataframe with cleaned up data |
 
-    dataset : pd.DataFrame
-        The dataset you wish to clean
-    fill : str
-        The method of filling NaNs. Choose from:
-        rfill, cfill, rbfill, cbfill, rffill, cffill
-    drop : str
-        The method of dropping NaNs. Choose from:
-        rdrop, cdrop
-    limit : int
-        The maximum limit you wish to apply that can be forward or backward filled
+## Examples
 
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe with cleaned up data

@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# arktrades
 
-|
+## stocks_dd_ark_model.get_ark_trades_by_ticker
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/ark_model.py#L18)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets a dataframe of ARK trades for ticker
 
-{{< highlight python >}}
-stocks.dd.arktrades(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to get trades for | None | False |
 
-    <p>
-    Gets a dataframe of ARK trades for ticker
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame of trades |
 
-    symbol : str
-        Ticker to get trades for
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        DataFrame of trades

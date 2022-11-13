@@ -1,40 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# bols
 
-|
+## econometrics_regression_model.get_bols
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L282)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: The between estimator is an alternative, usually less efficient estimator, can can be used to
 
-{{< highlight python >}}
-econometrics.bols(
-    regression_variables: List[Tuple],
-    data: Dict[str, pandas.core.frame.DataFrame],
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, Any, List[Any], Any]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| regression_variables | list | The regressions variables entered where the first variable is
+the dependent variable. | None | False |
+| data | dict | A dictionary containing the datasets. | None | False |
 
-    <p>
-    The between estimator is an alternative, usually less efficient estimator, can can be used to
-     estimate model parameters. It is particular simple since it first computes the time averages of
-     y and x and then runs a simple regression using these averages. [Source: LinearModels]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| The dataset used, the dependent variable, the independent variable and | None |
 
-    regression_variables : list
-        The regressions variables entered where the first variable is
-        the dependent variable.
-    data : dict
-        A dictionary containing the datasets.
+## Examples
 
-* **Returns**
-
-    The dataset used, the dependent variable, the independent variable and
-    the Between OLS model.

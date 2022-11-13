@@ -1,26 +1,20 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# macro_countries
 
-|
+## economy_econdb_model.get_macro_countries
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L636)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: This function returns the available countries and respective currencies.
 
-{{< highlight python >}}
-economy.macro_countries() -> Dict[str, str]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    This function returns the available countries and respective currencies.
-    </p>
+None
 
-* **Returns**
+## Examples
 
-    Dict[str, str]
-        A dictionary with the available countries and respective currencies.

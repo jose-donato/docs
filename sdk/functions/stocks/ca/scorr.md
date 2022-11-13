@@ -1,76 +1,23 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# scorr
 
-|
+## stocks_ca_finbrain_model.get_sentiment_correlation
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L124)
 
-.. raw:: html
+Description: Get correlation sentiments across similar companies. [Source: FinBrain]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ca.scorr(
-    similar: List[str],
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| similar | List[str] | Similar companies to compare income with.
+Comparable companies can be accessed through
+finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
 
-.. raw:: html
+None
 
-    <p>
-    Get correlation sentiments across similar companies. [Source: FinBrain]
-    </p>
-
-* **Parameters**
-
-    similar : List[str]
-        Similar companies to compare income with.
-        Comparable companies can be accessed through
-        finnhub_peers(), finviz_peers(), polygon_peers().
-    chart: bool
-       Flag to display chart
-
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.ca.scorr(
-    similar: List[str],
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Plot correlation sentiments heatmap across similar companies. [Source: FinBrain]
-    </p>
-
-* **Parameters**
-
-    similar : List[str]
-        Similar companies to compare income with.
-        Comparable companies can be accessed through
-        finviz_peers(), finnhub_peers() or polygon_peers().
-    raw : bool, optional
-        Output raw values, by default False
-    export : str, optional
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

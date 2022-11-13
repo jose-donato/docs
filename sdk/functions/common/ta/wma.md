@@ -1,40 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# wma
 
-|
+## common_ta_overlap_model.wma
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L66)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets weighted moving average (WMA) for stock
 
-{{< highlight python >}}
-common.ta.wma(
-    data: pandas.core.series.Series,
-    length: int = 50,
-    offset: int = 0,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Dataframe of dates and prices | None | False |
+| length | int | Length of SMA window | None | False |
+| offset | int | Length of offset | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| df_ta | pd.DataFrame | Dataframe containing prices and WMA | None | False |
 
-    <p>
-    Gets weighted moving average (WMA) for stock
-    </p>
+None
 
-* **Parameters**
+## Examples
 
-    data: pd.Series
-        Dataframe of dates and prices
-    length: int
-        Length of SMA window
-    offset: int
-        Length of offset
-
-* **Returns**
-
-    df_ta: pd.DataFrame
-        Dataframe containing prices and WMA

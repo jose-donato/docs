@@ -1,34 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# closing
 
-|
+## stocks_options_yfinance_model.get_closing
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L296)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get closing prices for a given ticker
 
-{{< highlight python >}}
-stocks.options.closing(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.series.Series
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | The ticker symbol to get the price for | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| price | List[float] | A list of closing prices for a ticker | None | False |
 
-    <p>
-    Get closing prices for a given ticker
-    </p>
+None
 
-* **Parameters**
+## Examples
 
-    symbol : str
-        The ticker symbol to get the price for
-
-* **Returns**
-
-    price : List[float]
-        A list of closing prices for a ticker

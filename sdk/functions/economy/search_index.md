@@ -1,37 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# search_index
 
-|
+## economy_yfinance_model.get_search_indices
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L714)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Search indices by keyword. [Source: FinanceDatabase]
 
-{{< highlight python >}}
-economy.search_index(
-    keyword: list,
-    limit: int = 10,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| keyword | list | The keyword you wish to search for. This can include spaces. | None | False |
+| limit | int | The amount of views you want to show, by default this is set to 10. | this | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.Dataframe | None | Dataframe with the available options. | None | None |
 
-    <p>
-    Search indices by keyword. [Source: FinanceDatabase]
-    </p>
+None
 
-* **Parameters**
+## Examples
 
-    keyword: list
-        The keyword you wish to search for. This can include spaces.
-    limit: int
-        The amount of views you want to show, by default this is set to 10.
-
-* **Returns**
-
-    pd.Dataframe
-        Dataframe with the available options.

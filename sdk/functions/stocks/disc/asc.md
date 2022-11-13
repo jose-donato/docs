@@ -1,27 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# asc
 
-|
+## stocks_disc_yahoofinance_model.get_asc
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L137)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get Yahoo Finance small cap stocks with earnings growth rates better than 25%.
 
-{{< highlight python >}}
-stocks.disc.asc() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get Yahoo Finance small cap stocks with earnings growth rates better than 25%.
-    [Source: Yahoo Finance]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Most aggressive small cap stocks |
 
-    pd.DataFrame
-        Most aggressive small cap stocks
+## Examples
+

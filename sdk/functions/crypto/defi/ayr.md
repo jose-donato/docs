@@ -1,62 +1,20 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ayr
 
-|
+## crypto_defi_terraengineer_model.get_anchor_yield_reserve
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L61)
 
-.. raw:: html
+Description: Displays the 30-day history of the Anchor Yield Reserve.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.ayr() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+None
 
-    <p>
-    Displays the 30-day history of the Anchor Yield Reserve.
-    [Source: https://terra.engineer/]
-    </p>
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe containing historical data
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.defi.ayr(
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Displays the 30-day history of the Anchor Yield Reserve.
-    [Source: https://terra.engineer/]
-    </p>
-
-* **Parameters**
-
-    export : str
-        Export dataframe data to csv,json,xlsx file, by default False
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

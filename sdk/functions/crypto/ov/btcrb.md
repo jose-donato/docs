@@ -1,79 +1,22 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# btcrb
 
-|
+## crypto_ov_glassnode_model.get_btc_rainbow
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/glassnode_model.py#L16)
 
-.. raw:: html
+Description: Get bitcoin price data
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.btcrb(
-    start_date: str = '2010-01-01',
-    end_date: str = '2022-11-10',
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 
-.. raw:: html
+None
 
-    <p>
-    Get bitcoin price data
-    [Price data from source: https://glassnode.com]
-    [Inspired by: https://blockchaincenter.net]
-    </p>
-
-* **Parameters**
-
-    start_date : str
-        Initial date, format YYYY-MM-DD
-    end_date : str
-        Final date, format YYYY-MM-DD
-    chart: bool
-       Flag to display chart
-
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.btcrb(
-    start_date: str = '2010-01-01',
-    end_date: str = '2022-11-10',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Displays bitcoin rainbow chart
-    [Price data from source: https://glassnode.com]
-    [Inspired by: https://blockchaincenter.net]
-    </p>
-
-* **Parameters**
-
-    start_date : int
-        Initial date, format YYYY-MM-DD
-    end_date : int
-        Final date, format YYYY-MM-DD
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

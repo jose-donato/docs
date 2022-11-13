@@ -1,26 +1,20 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# macro_parameters
 
-|
+## economy_econdb_model.get_macro_parameters
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L624)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: This function returns the available macro parameters with detail.
 
-{{< highlight python >}}
-economy.macro_parameters() -> Dict[str, Dict[str, str]]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    This function returns the available macro parameters with detail.
-    </p>
+None
 
-* **Returns**
+## Examples
 
-    Dict[str, Dict[str, str]]
-        A dictionary with the available macro parameters.

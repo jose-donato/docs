@@ -1,99 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ma
 
-|
+## common_ta_overlap_view.view_ma
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L31)
 
-.. raw:: html
+Description: Plots MA technical indicator
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.ma(
-    data: pandas.core.series.Series,
-    window: List[int] = None,
-    offset: int = 0,
-    ma_type: str = 'EMA',
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Series of prices | None | False |
+| window | List[int] | Length of EMA window | None | False |
+| offset | int | Offset variable | None | False |
+| ma_type | str | Type of moving average.  Either "EMA" "ZLMA" or "SMA" | None | False |
+| symbol | str | Ticker | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-.. raw:: html
+None
 
-    <p>
-    Plots MA technical indicator
-    </p>
-
-* **Parameters**
-
-    data: pd.Series
-        Series of prices
-    window: List[int]
-        Length of EMA window
-    offset: int
-        Offset variable
-    ma_type: str
-        Type of moving average.  Either "EMA" "ZLMA" or "SMA"
-    symbol: str
-        Ticker
-    export: str
-        Format to export data
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
-
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.ta.ma(
-    data: pandas.core.series.Series,
-    window: List[int] = None,
-    offset: int = 0,
-    ma_type: str = 'EMA',
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Plots MA technical indicator
-    </p>
-
-* **Parameters**
-
-    data: pd.Series
-        Series of prices
-    window: List[int]
-        Length of EMA window
-    offset: int
-        Offset variable
-    ma_type: str
-        Type of moving average.  Either "EMA" "ZLMA" or "SMA"
-    symbol: str
-        Ticker
-    export: str
-        Format to export data
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

@@ -1,27 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# hsi
 
-|
+## stocks_dps_shortinterest_model.get_high_short_interest
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/shortinterest_model.py#L17)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Returns a high short interest DataFrame
 
-{{< highlight python >}}
-stocks.dps.hsi() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Returns a high short interest DataFrame
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| DataFrame | High short interest Dataframe with the following columns:
+Ticker, Company, Exchange, ShortInt, Float, Outstd, Industry |
 
-    DataFrame
-        High short interest Dataframe with the following columns:
-        Ticker, Company, Exchange, ShortInt, Float, Outstd, Industry
+## Examples
+

@@ -1,83 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# popular
 
-|
+## stocks_ba_reddit_model.get_popular_tickers
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L146)
 
-.. raw:: html
+Description: Get popular tickers from list of subreddits [Source: reddit]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ba.popular(
-    limit: int = 10,
-    post_limit: int = 50,
-    subreddits: str = '',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of top tickers to get | None | False |
+| post_limit | int | How many posts to analyze in each subreddit | None | False |
+| subreddits | str | String of comma separated subreddits. | None | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get popular tickers from list of subreddits [Source: reddit]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame of top tickers from supplied subreddits |
 
-* **Parameters**
-
-    limit : int
-        Number of top tickers to get
-    post_limit : int
-        How many posts to analyze in each subreddit
-    subreddits : str, optional
-        String of comma separated subreddits.
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        DataFrame of top tickers from supplied subreddits
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.ba.popular(
-    limit: int = 10,
-    post_limit: int = 50,
-    subreddits: str = '',
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Print latest popular tickers. [Source: Reddit]
-    </p>
-
-* **Parameters**
-
-    limit : int
-        Number of top tickers to get
-    post_limit : int
-        How many posts to analyze in each subreddit
-    subreddits : str, optional
-        String of comma separated subreddits.
-    export : str
-        Format to export dataframe
-    chart: bool
-       Flag to display chart
+## Examples
 

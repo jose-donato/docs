@@ -1,50 +1,32 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# stocks_data
 
-|
+## stocks_sia_stockanalysis_model.get_stocks_data
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/stockanalysis_model.py#L83)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get stocks data based on a list of stocks and the finance key. The function searches for the
 
-{{< highlight python >}}
-stocks.sia.stocks_data(
-    symbols: List[str] = None,
-    finance_key: str = 'ncf',
-    stocks_data: dict = None,
-    period: str = 'annual',
-    symbol: str = 'USD',
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbols | list | A list of tickers that will be used to collect data for. | None | False |
+| finance_key | str | The finance key used to search within the SA_KEYS for the correct name of item
+on the financial statement | None | False |
+| stocks_data | dict | A dictionary that is empty on initialisation but filled once data is collected
+for the first time. | None | False |
+| period | str | Whether you want annually, quarterly or trailing financial statements. | None | False |
+| symbol | str | Choose in what currency you wish to convert each company's financial statement.
+Default is USD (US Dollars). | USD | False |
 
-    <p>
-    Get stocks data based on a list of stocks and the finance key. The function searches for the
-    correct financial statement automatically. [Source: StockAnalysis]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| dict | Dictionary of filtered stocks data separated by financial statement |
 
-    symbols: list
-        A list of tickers that will be used to collect data for.
-    finance_key: str
-        The finance key used to search within the SA_KEYS for the correct name of item
-        on the financial statement
-    stocks_data : dict
-        A dictionary that is empty on initialisation but filled once data is collected
-        for the first time.
-    period : str
-        Whether you want annually, quarterly or trailing financial statements.
-    symbol : str
-        Choose in what currency you wish to convert each company's financial statement.
-        Default is USD (US Dollars).
+## Examples
 
-* **Returns**
-
-    dict
-        Dictionary of filtered stocks data separated by financial statement

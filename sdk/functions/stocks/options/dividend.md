@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# dividend
 
-|
+## stocks_options_yfinance_model.get_dividend
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L184)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets option chain from yf for given ticker and expiration
 
-{{< highlight python >}}
-stocks.options.dividend(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.series.Series
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get options for | None | False |
 
-    <p>
-    Gets option chain from yf for given ticker and expiration
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| yf.ticker.Dividends | Dividends |
 
-    symbol: str
-        Ticker symbol to get options for
+## Examples
 
-* **Returns**
-
-    chains: yf.ticker.Dividends
-        Dividends

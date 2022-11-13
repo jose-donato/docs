@@ -1,90 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# tokens
 
-|
+## crypto_defi_graph_model.get_uni_tokens
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L80)
 
-.. raw:: html
+Description: Get list of tokens trade-able on Uniswap DEX. [Source: https://thegraph.com/en/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.tokens(
-    skip: int = 0,
-    limit: int = 100,
-    sortby: str = 'index',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| skip | int | Skip n number of records. | None | False |
+| limit | int | Show n number of records. | None | False |
+| sortby | str | The column to sort by | None | False |
+| ascend | bool | Whether to sort in ascending order | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get list of tokens trade-able on Uniswap DEX. [Source: https://thegraph.com/en/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Uniswap tokens with trading volume, transaction count, liquidity. |
 
-* **Parameters**
-
-    skip: int
-        Skip n number of records.
-    limit: int
-        Show n number of records.
-    sortby: str
-        The column to sort by
-    ascend: bool
-        Whether to sort in ascending order
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Uniswap tokens with trading volume, transaction count, liquidity.
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.defi.tokens(
-    skip: int = 0,
-    limit: int = 20,
-    sortby: str = 'index',
-    ascend: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Displays tokens trade-able on Uniswap DEX.
-    [Source: https://thegraph.com/en/]
-    </p>
-
-* **Parameters**
-
-    skip: int
-        Number of records to skip
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data descending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

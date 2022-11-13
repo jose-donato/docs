@@ -1,79 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# get_mt
 
-|
+## crypto_dd_messari_model.get_available_timeseries
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L33)
 
-.. raw:: html
+Description: Returns available messari timeseries
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.get_mt(
-    only_free: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| only_free | bool | Display only timeseries available for free | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns available messari timeseries
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | available timeseries |
 
-* **Parameters**
-
-    only_free : bool
-        Display only timeseries available for free
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        available timeseries
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.dd.get_mt(
-    limit: int = 10,
-    query: str = '',
-    only_free: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display messari timeseries list
-    [Source: https://messari.io/]
-    </p>
-
-* **Parameters**
-
-    limit : int
-        number to show
-    query : str
-        Query to search across all messari timeseries
-    only_free : bool
-        Display only timeseries available for free
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

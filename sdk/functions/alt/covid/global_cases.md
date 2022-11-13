@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# global_cases
 
-|
+## alt_covid_model.get_global_cases
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L25)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get historical cases for given country
 
-{{< highlight python >}}
-alt.covid.global_cases(
-    country: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country to search for | None | False |
 
-    <p>
-    Get historical cases for given country
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of historical cases |
 
-    country: str
-        Country to search for
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of historical cases

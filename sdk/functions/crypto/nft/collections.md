@@ -1,74 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# collections
 
-|
+## crypto_nft_pricefloor_model.get_collections
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L23)
 
-.. raw:: html
+Description: Get nft collections [Source: https://nftpricefloor.com/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.nft.collections() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get nft collections [Source: https://nftpricefloor.com/]
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | nft collections |
 
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        nft collections
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.nft.collections(
-    show_fp: bool = False,
-    show_sales: bool = False,
-    limit: int = 5,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display NFT collections. [Source: https://nftpricefloor.com/]
-    </p>
-
-* **Parameters**
-
-    show_fp : bool
-        Show NFT Price Floor for top collections
-    limit: int
-        Number of NFT collections to display
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

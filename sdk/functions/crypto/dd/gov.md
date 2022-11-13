@@ -1,75 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# gov
 
-|
+## crypto_dd_messari_model.get_governance
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L560)
 
-.. raw:: html
+Description: Returns coin governance
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.gov(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[str, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check governance | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns coin governance
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| str | governance summary |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check governance
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    str
-        governance summary
-    pd.DataFrame
-        Metric Value with governance details
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.dd.gov(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display coin governance
-    [Source: https://messari.io/]
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check coin governance
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

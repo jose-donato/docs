@@ -1,99 +1,31 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# yf_financials
 
-|
+## stocks_fa_yahoo_finance_model.get_financials
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L327)
 
-.. raw:: html
+Description: Get cashflow statement for company
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.fa.yf_financials(
-    symbol: str,
-    statement: str,
-    ratios: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| statement | str | can be:
 
-.. raw:: html
+- cash-flow
+- financials for Income
+- balance-sheet | None | False |
+| ratios | bool | Shows percentage change | None | False |
 
-    <p>
-    Get cashflow statement for company
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of Financial statement |
 
-    symbol : str
-        Stock ticker symbol
-    statement: str
-        can be:
-
-        - cash-flow
-        - financials for Income
-        - balance-sheet
-
-    ratios: bool
-        Shows percentage change
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of Financial statement
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.fa.yf_financials(
-    symbol: str,
-    statement: str,
-    limit: int = 12,
-    ratios: bool = False,
-    plot: list = None,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display tickers balance sheet, income statement or cash-flow
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol
-    statement: str
-        Possible values are:
-
-        - cash-flow
-        - financials for Income
-        - balance-sheet
-
-    limit: int
-        Number of periods to show
-    ratios: bool
-        Shows percentage change
-    plot: list
-        List of row labels to plot
-    export: str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

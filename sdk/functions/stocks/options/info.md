@@ -1,71 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# info
 
-|
+## stocks_options_yfinance_model.get_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L278)
 
-.. raw:: html
+Description: Get info for a given ticker
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.info(
-    symbol: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | The ticker symbol to get the price for | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| price | float | The info for a given ticker | None | False |
 
-.. raw:: html
+None
 
-    <p>
-    Get info for a given ticker
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        The ticker symbol to get the price for
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    price : float
-        The info for a given ticker
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.options.info(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Scrapes Barchart.com for the options information
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Ticker symbol to get options info for
-    export: str
-        Format of export file
-    chart: bool
-       Flag to display chart
+## Examples
 

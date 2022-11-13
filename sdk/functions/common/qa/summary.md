@@ -1,71 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# summary
 
-|
+## common_qa_model.get_summary
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L24)
 
-.. raw:: html
+Description: Print summary statistics
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.qa.summary(
-    data: pandas.core.frame.DataFrame,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe to get summary statistics for | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Print summary statistics
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Summary statistics |
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe to get summary statistics for
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    summary : pd.DataFrame
-        Summary statistics
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.qa.summary(
-    data: pandas.core.frame.DataFrame,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Show summary statistics
-    </p>
-
-* **Parameters**
-
-    data : pd.DataFrame
-        DataFrame to get statistics of
-    export : str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

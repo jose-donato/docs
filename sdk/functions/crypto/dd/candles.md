@@ -1,77 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# candles
 
-|
+## crypto_dd_coinbase_model.get_candles
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L129)
 
-.. raw:: html
+Description: Get candles for chosen trading pair and time interval. [Source: Coinbase]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.candles(
-    symbol: str,
-    interval: str = '24h',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
+| interval | str | Time interval. One from 1min, 5min ,15min, 1hour, 6hour, 24hour | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get candles for chosen trading pair and time interval. [Source: Coinbase]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Candles for chosen trading pair. |
 
-* **Parameters**
-
-    symbol: str
-        Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH
-    interval: str
-        Time interval. One from 1min, 5min ,15min, 1hour, 6hour, 24hour
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Candles for chosen trading pair.
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.dd.candles(
-    symbol: str,
-    interval: str = '24h',
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Get candles for chosen trading pair and time interval. [Source: Coinbase]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH
-    interval: str
-        Time interval. One from 1m, 5m ,15m, 1h, 6h, 24h
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

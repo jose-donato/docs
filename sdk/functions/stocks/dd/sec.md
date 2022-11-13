@@ -1,74 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# sec
 
-|
+## stocks_dd_marketwatch_model.get_sec_filings
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_model.py#L19)
 
-.. raw:: html
+Description: Get SEC filings for a given stock ticker. [Source: Market Watch]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.dd.sec(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get SEC filings for a given stock ticker. [Source: Market Watch]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | SEC filings data |
 
-* **Parameters**
-
-    symbol : str
-        Stock ticker symbol
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    df_financials : pd.DataFrame
-        SEC filings data
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.dd.sec(
-    symbol: str,
-    limit: int = 5,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display SEC filings for a given stock ticker. [Source: Market Watch]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol
-    limit: int
-        Number of ratings to display
-    export: str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

@@ -1,42 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# set_keys
 
-|
+## keys_model.set_keys
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L116)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Set API keys in bundle.
 
-{{< highlight python >}}
-keys.set_keys(
-    keys_dict: Dict[str, Dict[str, Union[str, bool]]],
-    persist: bool = False,
-    show_output: bool = False,
-    chart: bool = False,
-) -> Dict
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| keys_dict | Dict[str, Dict[str, Union[str, bool]]] | E.g. {"fred": {"key":"XXXXX"}, "binance": {"key":"YYYYY", "secret":"ZZZZZ"}}
+More info on APIs can be found through get_keys_info(). | None | False |
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
+If True, api key change will be global, i.e. it will affect terminal environment variables.
+By default, False. | None | False |
+| show_output | bool | Display status string or not. By default, False. | None | False |
 
-    <p>
-    Set API keys in bundle.
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| Dict | None |
 
-    keys_dict: Dict[str, Dict[str, Union[str, bool]]]
-        E.g. {"fred": {"key":"XXXXX"}, "binance": {"key":"YYYYY", "secret":"ZZZZZ"}}
-        More info on APIs can be found through get_keys_info().
-    persist: bool
-        If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
-        If True, api key change will be global, i.e. it will affect terminal environment variables.
-        By default, False.
-    show_output: bool
-        Display status string or not. By default, False.
+## Examples
 
-* **Returns**
-
-    status_dict: Dict

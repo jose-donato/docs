@@ -1,75 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# inv
 
-|
+## crypto_dd_messari_model.get_investors
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L486)
 
-.. raw:: html
+Description: Returns coin investors
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.inv(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check investors | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns coin investors
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | individuals |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check investors
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        individuals
-    pd.DataFrame
-        organizations
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.dd.inv(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display coin investors
-    [Source: https://messari.io/]
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check coin investors
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

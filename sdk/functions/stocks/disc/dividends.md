@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# dividends
 
-|
+## stocks_disc_nasdaq_model.get_dividend_cal
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/nasdaq_model.py#L54)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets dividend calendar for given date.  Date represents Ex-Dividend Date
 
-{{< highlight python >}}
-stocks.disc.dividends(
-    date: str = '2022-11-10',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| date | datetime | Date to get for in format YYYY-MM-DD | None | False |
 
-    <p>
-    Gets dividend calendar for given date.  Date represents Ex-Dividend Date
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | Dataframe of dividend calendar |
 
-    date: datetime
-        Date to get for in format YYYY-MM-DD
+## Examples
 
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of dividend calendar

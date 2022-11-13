@@ -1,71 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# view
 
-|
+## stocks_ta_finviz_model.get_finviz_image
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_model.py#L15)
 
-.. raw:: html
+Description: Get finviz image for given ticker
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ta.view(
-    symbol: str,
-    chart: bool = False,
-) -> bytes
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get finviz image for given ticker
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| bytes | Image in byte format |
 
-* **Parameters**
-
-    symbol: str
-        Ticker symbol
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    bytes
-        Image in byte format
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.ta.view(
-    symbol: str,
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    View finviz image for ticker
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

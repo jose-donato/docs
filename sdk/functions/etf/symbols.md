@@ -1,28 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# symbols
 
-|
+## etf_stockanalysis_model.get_all_names_symbols
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L18)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets all etf names and symbols
 
-{{< highlight python >}}
-etf.symbols() -> Tuple[List[str], List[str]]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Gets all etf names and symbols
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| List[str]: | List of all available etf symbols |
 
-    etf_symbols: List[str]:
-        List of all available etf symbols
-    etf_names: List[str]
-        List of all available etf names
+## Examples
+

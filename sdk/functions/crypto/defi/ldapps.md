@@ -1,94 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ldapps
 
-|
+## crypto_defi_llama_model.get_defi_protocols
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L34)
 
-.. raw:: html
+Description: Returns information about listed DeFi protocols, their current TVL and changes to it in the last hour/day/week.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.ldapps(
-    limit: int = 100,
-    sortby: str = '',
-    ascend: bool = False,
-    description: bool = False,
-    drop_chain: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | The number of dApps to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
+| description | bool | Flag to display description of protocol | None | False |
+| drop_chain | bool | Whether to drop the chain column | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns information about listed DeFi protocols, their current TVL and changes to it in the last hour/day/week.
-    [Source: https://docs.llama.fi/api]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Information about DeFi protocols |
 
-* **Parameters**
-
-    limit: int
-        The number of dApps to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data descending
-    description: bool
-        Flag to display description of protocol
-    drop_chain: bool
-        Whether to drop the chain column
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Information about DeFi protocols
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.defi.ldapps(
-    sortby: str,
-    limit: int = 20,
-    ascend: bool = False,
-    description: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display information about listed DeFi protocols, their current TVL and changes to it in
-    the last hour/day/week. [Source: https://docs.llama.fi/api]
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data descending
-    description: bool
-        Flag to display description of protocol
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

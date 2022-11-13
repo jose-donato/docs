@@ -1,72 +1,22 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# print_insider_data
 
-|
+## stocks_insider_openinsider_model.get_print_insider_data
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_model.py#L1436)
 
-.. raw:: html
+Description: Print insider data
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ins.print_insider_data(
-    type_insider: str = 'lcb',
-    limit: int = 10,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | None | False |
+| limit | int | Limit of data rows to display | None | False |
 
-.. raw:: html
+None
 
-    <p>
-    Print insider data
-    </p>
-
-* **Parameters**
-
-    type_insider: str
-        Insider type of data. Available types can be accessed through get_insider_types().
-    limit: int
-        Limit of data rows to display
-    chart: bool
-       Flag to display chart
-
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.ins.print_insider_data(
-    type_insider: str = 'lcb',
-    limit: int = 10,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Print insider data
-    </p>
-
-* **Parameters**
-
-    type_insider: str
-        Insider type of data. Available types can be accessed through get_insider_types().
-    limit: int
-        Limit of data rows to display
-    export: str
-        Export data format
-    chart: bool
-       Flag to display chart
+## Examples
 

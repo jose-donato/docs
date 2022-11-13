@@ -1,37 +1,20 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# check_if_open
 
-|
+## stocks_th_bursa_model.check_if_open
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L156)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Check if market open helper function
 
-{{< highlight python >}}
-stocks.th.check_if_open(
-    bursa: pandas.core.frame.DataFrame,
-    exchange: str,
-    chart: bool = False,
-) -> bool
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Check if market open helper function
-    </p>
+None
 
-* **Parameters**
+## Examples
 
-    bursa : pd.DataFrame
-        pd.DataFrame of all exchanges
-    exchange : str
-        bursa pd.DataFrame index value for exchange
-
-* **Returns**
-
-    bool
-        If market is open

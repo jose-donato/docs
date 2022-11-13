@@ -1,34 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# quote
 
-|
+## stocks_fa_fmp_model.get_quote
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L83)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets ticker quote from FMP
 
-{{< highlight python >}}
-stocks.fa.quote(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame |  | Dataframe of ticker quote | None | False |
 
-    <p>
-    Gets ticker quote from FMP
-    </p>
+None
 
-* **Parameters**
+## Examples
 
-    symbol : str
-        Stock ticker symbol
-
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of ticker quote

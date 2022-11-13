@@ -1,37 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# query_graph
 
-|
+## crypto_onchain_bitquery_model.query_graph
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L158)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Helper methods for querying graphql api. [Source: https://bitquery.io/]
 
-{{< highlight python >}}
-crypto.onchain.query_graph(
-    url: str,
-    query: str,
-    chart: bool = False,
-) -> dict
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| url | str | Endpoint url | None | False |
+| query | str | Graphql query | None | False |
 
-    <p>
-    Helper methods for querying graphql api. [Source: https://bitquery.io/]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | Dictionary with response data |
 
-    url: str
-        Endpoint url
-    query: str
-        Graphql query
+## Examples
 
-* **Returns**
-
-    dict:
-        Dictionary with response data

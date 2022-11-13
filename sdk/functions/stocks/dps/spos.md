@@ -1,80 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# spos
 
-|
+## stocks_dps_stockgrid_model.get_net_short_position
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L168)
 
-.. raw:: html
+Description: Get net short position. [Source: Stockgrid]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.dps.spos(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock to get data from | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Net short position | None | None |
 
-.. raw:: html
+None
 
-    <p>
-    Get net short position. [Source: Stockgrid]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Stock to get data from
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Net short position
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.dps.spos(
-    symbol: str,
-    limit: int = 84,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Plot net short position. [Source: Stockgrid]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Stock to plot for
-    limit : int
-        Number of last open market days to show
-    raw : bool
-        Flag to print raw data instead
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

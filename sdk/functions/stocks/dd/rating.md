@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# rating
 
-|
+## stocks_dd_fmp_model.get_rating
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get ratings for a given ticker. [Source: Financial Modeling Prep]
 
-{{< highlight python >}}
-stocks.dd.rating(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Get ratings for a given ticker. [Source: Financial Modeling Prep]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Rating data |
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Rating data

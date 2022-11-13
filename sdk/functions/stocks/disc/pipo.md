@@ -1,32 +1,22 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# pipo
 
-|
+## stocks_disc_finnhub_model.get_past_ipo
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L66)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Past IPOs dates. [Source: Finnhub]
 
-{{< highlight python >}}
-stocks.disc.pipo(
-    num_days_behind: int = 5,
-    start_date: Optional[str] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| num_days_behind | int | Number of days to look behind for IPOs dates | None | False |
+| start_date | str | The starting date (format YYYY-MM-DD) to look for IPOs | None | False |
 
-    <p>
-    Past IPOs dates. [Source: Finnhub]
-    </p>
+None
 
-* **Parameters**
+## Examples
 
-    num_days_behind: int
-        Number of days to look behind for IPOs dates
-    start_date: str
-        The starting date (format YYYY-MM-DD) to look for IPOs

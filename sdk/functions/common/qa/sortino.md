@@ -1,86 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# sortino
 
-|
+## common_qa_model.get_sortino
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L563)
 
-.. raw:: html
+Description: Calculates the sortino ratio
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.qa.sortino(
-    data: pandas.core.frame.DataFrame,
-    target_return: float = 0,
-    window: float = 252,
-    adjusted: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | selected dataframe | None | False |
+| target_return | float | target return of the asset | None | False |
+| window | float | length of the rolling window | None | False |
+| adjusted | bool | adjust the sortino ratio | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculates the sortino ratio
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | sortino ratio |
 
-* **Parameters**
-
-    data: pd.DataFrame
-        selected dataframe
-    target_return: float
-        target return of the asset
-    window: float
-        length of the rolling window
-    adjusted: bool
-        adjust the sortino ratio
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    sortino: pd.DataFrame
-        sortino ratio
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.qa.sortino(
-    data: pandas.core.frame.DataFrame,
-    target_return: float,
-    window: float,
-    adjusted: bool,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Displays the sortino ratio
-    </p>
-
-* **Parameters**
-
-    data: pd.DataFrame
-        selected dataframe
-    target_return: float
-        target return of the asset
-    window: float
-        length of the rolling window
-    adjusted: bool
-        adjust the sortino ratio
-    chart: bool
-       Flag to display chart
+## Examples
 

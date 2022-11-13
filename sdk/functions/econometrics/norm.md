@@ -1,85 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# norm
 
-|
+## econometrics_model.get_normality
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L110)
 
-.. raw:: html
+Description: The distribution of returns and generate statistics on the relation to the normal curve.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-econometrics.norm(
-    data: pandas.core.series.Series,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | A series or column of a DataFrame to test normality for | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    The distribution of returns and generate statistics on the relation to the normal curve.
-    This function calculates skew and kurtosis (the third and fourth moments) and performs both
-    a Jarque-Bera and Shapiro Wilk test to determine if data is normally distributed.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing statistics of normality |
 
-* **Parameters**
-
-    data : pd.Series
-        A series or column of a DataFrame to test normality for
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe containing statistics of normality
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-econometrics.norm(
-    data: pandas.core.series.Series,
-    dataset: str = '',
-    column: str = '',
-    plot: bool = False,
-    export: str = '',
-    external_axes: Optional[List[axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Determine the normality of a timeseries.
-    </p>
-
-* **Parameters**
-
-    data: pd.Series
-        Series of custom data
-    dataset: str
-        Dataset name
-    column: str
-        Column for y data
-    plot : bool
-        Whether you wish to plot a histogram
-    export: str
-        Format to export data.
-    external_axes: Optional[List[plt.axes]]
-        External axes to plot on
-    chart: bool
-       Flag to display chart
+## Examples
 

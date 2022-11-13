@@ -1,80 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# cgexrates
 
-|
+## crypto_ov_pycoingecko_model.get_exchange_rates
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L388)
 
-.. raw:: html
+Description: Get list of crypto, fiats, commodity exchange rates from CoinGecko API [Source: CoinGecko]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cgexrates(
-    sortby: str = 'Name',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get list of crypto, fiats, commodity exchange rates from CoinGecko API [Source: CoinGecko]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Index, Name, Unit, Value, Type |
 
-* **Parameters**
-
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pandas.DataFrame
-        Index, Name, Unit, Value, Type
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.cgexrates(
-    sortby: str = 'Name',
-    ascend: bool = False,
-    limit: int = 15,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Shows  list of crypto, fiats, commodity exchange rates. [Source: CoinGecko]
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

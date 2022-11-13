@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# cal
 
-|
+## stocks_fa_yahoo_finance_model.get_calendar_earnings
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L178)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get calendar earnings for ticker symbol
 
-{{< highlight python >}}
-stocks.fa.cal(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Get calendar earnings for ticker symbol
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of calendar earnings |
 
-    symbol: str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of calendar earnings

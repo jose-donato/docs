@@ -1,84 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# unu
 
-|
+## stocks_options_fdscanner_model.unusual_options
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L17)
 
-.. raw:: html
+Description: Get unusual option activity from fdscanner.com
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.unu(
-    limit: int = 100,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number to show | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get unusual option activity from fdscanner.com
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing options information |
 
-* **Parameters**
-
-    limit: int
-        Number to show
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    df: pd.DataFrame
-        Dataframe containing options information
-    last_updated: pd.Timestamp
-        Timestamp indicated when data was updated from website
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.options.unu(
-    limit: int = 20,
-    sortby: str = 'Vol/OI', ascend: bool = False,
-    calls_only: bool = False,
-    puts_only: bool = False,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Displays the unusual options table
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Number of rows to show
-    sortby: str
-        Data column to sort on
-    ascend: bool
-        Whether to sort in ascend order
-    calls_only : bool
-        Flag to only show calls
-    puts_only : bool
-        Flag to show puts only
-    export: str
-        File type to export
-    chart: bool
-       Flag to display chart
+## Examples
 

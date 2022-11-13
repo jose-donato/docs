@@ -1,26 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# indices
 
-|
+## economy_wsj_model.us_indices
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L15)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get the top US indices
 
-{{< highlight python >}}
-economy.indices() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get the top US indices
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing name, price, net change and percent change |
 
-    indices: pd.DataFrame
-        Dataframe containing name, price, net change and percent change
+## Examples
+

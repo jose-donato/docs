@@ -1,74 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# mover
 
-|
+## etf_disc_wsj_model.etf_movers
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_model.py#L14)
 
-.. raw:: html
+Description: Scrape data for top etf movers.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.disc.mover(
-    sort_type: str = 'gainers',
-    export: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| sort_type | str | Data to get. Can be "gainers", "decliners" or "active" | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Scrape data for top etf movers.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Datafame containing the name, price, change and the volume of the etf |
 
-* **Parameters**
-
-    sort_type: str
-        Data to get. Can be "gainers", "decliners" or "active"
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    etfmovers: pd.DataFrame
-        Datafame containing the name, price, change and the volume of the etf
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-etf.disc.mover(
-    sort_type: str = 'gainers',
-    limit: int = 10, export='',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Show top ETF movers from wsj.com
-    </p>
-
-* **Parameters**
-
-    sort_type: str
-        What to show. Either Gainers, Decliners or Activity
-    limit: int
-        Number of etfs to show
-    export: str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

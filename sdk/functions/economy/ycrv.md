@@ -1,75 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ycrv
 
-|
+## economy_investingcom_model.get_yieldcurve
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L305)
 
-.. raw:: html
+Description: Get yield curve for specified country. [Source: Investing.com]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-economy.ycrv(
-    date: datetime.datetime = None,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, datetime.datetime]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country to display yield curve. List of available countries is accessible through get_ycrv_countries(). | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Gets yield curve data from FRED
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Country yield curve |
 
-* **Parameters**
-
-    date: datetime
-        Date to get curve for.  If None, gets most recent date
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of yields and maturities
-    str
-        Date for which the yield curve is obtained
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-economy.ycrv(
-    date: datetime.datetime = None,
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    raw: bool = False,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display yield curve based on US Treasury rates for a specified date.
-    </p>
-
-* **Parameters**
-
-    date: datetime
-        Date to get yield curve for
-    external_axes: Optional[List[plt.Axes]]
-        External axes to plot data on
-    chart: bool
-       Flag to display chart
+## Examples
 

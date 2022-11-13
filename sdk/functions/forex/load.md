@@ -1,52 +1,31 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# load
 
-|
+## forex_helpers.load
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L96)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Load forex for two given symbols.
 
-{{< highlight python >}}
-forex.load(
-    to_symbol: str,
-    from_symbol: str,
-    resolution: str = 'd',
-    interval: str = '1day',
-    start_date: str = '2021-11-10',
-    source: str = 'YahooFinance',
-    verbose: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| to_symbol | str | The from currency symbol. Ex: USD, EUR, GBP, YEN | None | False |
+| from_symbol | str | The from currency symbol. Ex: USD, EUR, GBP, YEN | None | False |
+| resolution | str | The resolution for the data, by default "d" | None | True |
+| interval | str | What interval to get data for, by default "1day" | None | True |
+| start_date | str | When to begin loading in data, by default last_year.strftime("%Y-%m-%d") | last_year.strftime | True |
+| source | str | Where to get data from, by default "YahooFinance" | None | True |
+| verbose | bool | Display verbose information on what was the pair that was loaded, by default True | True | True |
 
-    <p>
-    Load forex for two given symbols.
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | The loaded data |
 
-    to_symbol : str
-        The from currency symbol. Ex: USD, EUR, GBP, YEN
-    from_symbol : str
-        The from currency symbol. Ex: USD, EUR, GBP, YEN
-    resolution : str, optional
-        The resolution for the data, by default "d"
-    interval : str, optional
-        What interval to get data for, by default "1day"
-    start_date : str, optional
-        When to begin loading in data, by default last_year.strftime("%Y-%m-%d")
-    source : str, optional
-        Where to get data from, by default "YahooFinance"
-    verbose : bool, optional
-        Display verbose information on what was the pair that was loaded, by default True
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        The loaded data

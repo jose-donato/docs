@@ -1,37 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# rise
 
-|
+## stocks_ba_google_model.get_rise
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L105)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get top rising related queries with this stock's query [Source: google]
 
-{{< highlight python >}}
-stocks.ba.rise(
-    symbol: str,
-    limit: int = 10,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number of queries to show | None | False |
 
-    <p>
-    Get top rising related queries with this stock's query [Source: google]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing rising related queries |
 
-    symbol: str
-        Stock ticker symbol
-    limit: int
-        Number of queries to show
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe containing rising related queries

@@ -1,76 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# bgod
 
-|
+## econometrics_regression_model.get_bgod
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L496)
 
-.. raw:: html
+Description: Calculate test statistics for autocorrelation
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-econometrics.bgod(
-    model: pandas.core.frame.DataFrame,
-    lags: int = 3,
-    chart: bool = False,
-) -> tuple
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| model | OLS Model | Model containing residual values. | None | False |
+| lags | int | The amount of lags. | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate test statistics for autocorrelation
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Test results from the Breusch-Godfrey Test | None |
 
-* **Parameters**
-
-    model : OLS Model
-        Model containing residual values.
-    lags : int
-        The amount of lags.
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    Test results from the Breusch-Godfrey Test
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-econometrics.bgod(
-    model: pandas.core.frame.DataFrame,
-    lags: int = 3,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Show Breusch-Godfrey autocorrelation test
-    </p>
-
-* **Parameters**
-
-    model : OLS Model
-        Model containing residual values.
-    lags : int
-        The amount of lags included.
-    export : str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

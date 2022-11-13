@@ -1,80 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# gacc
 
-|
+## crypto_defi_terramoney_fcd_model.get_account_growth
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L261)
 
-.. raw:: html
+Description: Get terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.gacc(
-    cumulative: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| cumulative | bool | distinguish between periodical and cumulative account growth data | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | historical data of accounts growth |
 
-* **Parameters**
-
-    cumulative: bool
-        distinguish between periodical and cumulative account growth data
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        historical data of accounts growth
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.defi.gacc(
-    kind: str = 'total',
-    cumulative: bool = False,
-    limit: int = 90,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Number of records to display
-    kind: str
-        display total account count or active account count. One from list [active, total]
-    cumulative: bool
-        Flag to show cumulative or discrete values. For active accounts only discrete value are available.
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

@@ -1,42 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ohlc_historical
 
-|
+## crypto_dd_coinpaprika_model.get_ohlc_historical
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L246)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Open/High/Low/Close values with volume and market_cap. [Source: CoinPaprika]
 
-{{< highlight python >}}
-crypto.dd.ohlc_historical(
-    symbol: str = 'eth-ethereum',
-    quotes: str = 'USD',
-    days: int = 90,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Paprika coin identifier e.g. eth-ethereum | None | False |
+| quotes | str | returned data quote (available values: usd btc) | None | False |
+| days | int | time range for chart in days. Maximum 365 | None | False |
 
-    <p>
-    Open/High/Low/Close values with volume and market_cap. [Source: CoinPaprika]
-    Request example: https://api.coinpaprika.com/v1/coins/btc-bitcoin/ohlcv/historical?start=2019-01-01&end=2019-01-20
-    if the last day is current day it can an change with every request until actual close of the day at 23:59:59
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Open/High/Low/Close values with volume and market_cap. |
 
-    symbol: str
-        Paprika coin identifier e.g. eth-ethereum
-    quotes: str
-        returned data quote (available values: usd btc)
-    days: int
-        time range for chart in days. Maximum 365
+## Examples
 
-* **Returns**
-
-    pandas.DataFrame
-        Open/High/Low/Close values with volume and market_cap.

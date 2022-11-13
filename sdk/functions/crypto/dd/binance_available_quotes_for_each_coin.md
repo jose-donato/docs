@@ -1,27 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# binance_available_quotes_for_each_coin
 
-|
+## crypto_dd_binance_model.get_binance_available_quotes_for_each_coin
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L76)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Helper methods that for every coin available on Binance add all quote assets. [Source: Binance]
 
-{{< highlight python >}}
-crypto.dd.binance_available_quotes_for_each_coin() -> dict
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Helper methods that for every coin available on Binance add all quote assets. [Source: Binance]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+|  | All quote assets for given coin
+{'ETH' : ['BTC', 'USDT' ...], 'UNI' : ['ETH', 'BTC','BUSD', ...] |
 
-    dict:
-        All quote assets for given coin
-        {'ETH' : ['BTC', 'USDT' ...], 'UNI' : ['ETH', 'BTC','BUSD', ...]
+## Examples
+

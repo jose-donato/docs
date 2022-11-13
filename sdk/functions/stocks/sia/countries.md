@@ -1,37 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# countries
 
-|
+## stocks_sia_financedatabase_model.get_countries
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L18)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get all countries in Yahoo Finance data based on sector or industry. [Source: Finance Database]
 
-{{< highlight python >}}
-stocks.sia.countries(
-    industry: str = '',
-    sector: str = '',
-    chart: bool = False,
-) -> list
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| industry | str | Filter retrieved countries by industry | None | False |
+| sector | str | Filter retrieved countries by sector | None | False |
 
-    <p>
-    Get all countries in Yahoo Finance data based on sector or industry. [Source: Finance Database]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| list | List of possible countries |
 
-    industry : str
-        Filter retrieved countries by industry
-    sector : str
-        Filter retrieved countries by sector
+## Examples
 
-* **Returns**
-
-    list
-        List of possible countries

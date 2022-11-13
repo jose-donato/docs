@@ -1,78 +1,23 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# search
 
-|
+## futures_yfinance_model.get_search_futures
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L49)
 
-.. raw:: html
+Description: Get search futures [Source: Yahoo Finance]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-futures.search(
-    category: str = '',
-    exchange: str = '',
-    description: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| category | str | Select the category where the future exists | None | False |
+| exchange | str | Select the exchange where the future exists | None | False |
+| description | str | Select the description where the future exists | None | False |
 
-.. raw:: html
+None
 
-    <p>
-    Get search futures [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    category: str
-        Select the category where the future exists
-    exchange: str
-        Select the exchange where the future exists
-    description: str
-        Select the description where the future exists
-    chart: bool
-       Flag to display chart
-
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-futures.search(
-    category: str = '',
-    exchange: str = '',
-    description: str = '',
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display search futures [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    category: str
-        Select the category where the future exists
-    exchange: str
-        Select the exchange where the future exists
-    description: str
-        Select the description of the future
-    export: str
-        Type of format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

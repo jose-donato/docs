@@ -1,44 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ols
 
-|
+## econometrics_regression_model.get_ols
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L135)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Performs an OLS regression on timeseries data. [Source: Statsmodels]
 
-{{< highlight python >}}
-econometrics.ols(
-    regression_variables: List[Tuple],
-    data: Dict[str, pandas.core.frame.DataFrame],
-    show_regression: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, Any, List[Any], Any]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| regression_variables | list | The regressions variables entered where the first variable is
+the dependent variable. | None | False |
+| data | dict | A dictionary containing the datasets. | None | False |
+| show_regression | bool | Whether to show the regression results table. | None | False |
+| export | str | Format to export data | None | False |
 
-    <p>
-    Performs an OLS regression on timeseries data. [Source: Statsmodels]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| The dataset used, the dependent variable, the independent variable and | None |
 
-    regression_variables : list
-        The regressions variables entered where the first variable is
-        the dependent variable.
-    data : dict
-        A dictionary containing the datasets.
-    show_regression: bool
-        Whether to show the regression results table.
-    export: str
-        Format to export data
+## Examples
 
-* **Returns**
-
-    The dataset used, the dependent variable, the independent variable and
-    the OLS model.

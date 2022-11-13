@@ -1,32 +1,22 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# stalker
 
-|
+## stocks_ba_stocktwits_model.get_stalker
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L105)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets messages from given user [Source: stocktwits]
 
-{{< highlight python >}}
-stocks.ba.stalker(
-    user: str,
-    limit: int = 30,
-    chart: bool = False,
-) -> List[Dict]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| user | str | User to get posts for | None | False |
+| limit | int | Number of posts to get, by default 30 | 30 | True |
 
-    <p>
-    Gets messages from given user [Source: stocktwits]
-    </p>
+None
 
-* **Parameters**
+## Examples
 
-    user : str
-        User to get posts for
-    limit : int, optional
-        Number of posts to get, by default 30

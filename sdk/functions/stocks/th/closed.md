@@ -1,66 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# closed
 
-|
+## stocks_th_bursa_model.get_closed
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L75)
 
-.. raw:: html
+Description: Get closed exchanges.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.th.closed() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get closed exchanges.
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Currently closed exchanges |
 
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Currently closed exchanges
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.th.closed()
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display closed exchanges.
-
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
+## Examples
 

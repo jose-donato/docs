@@ -1,95 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# rsi
 
-|
+## common_ta_momentum_model.rsi
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L92)
 
-.. raw:: html
+Description: Relative strength index
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.rsi(
-    data: pandas.core.series.Series,
-    window: int = 14,
-    scalar: float = 100,
-    drift: int = 1,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Dataframe of prices | None | False |
+| window | int | Length of window | None | False |
+| scalar | float | Scalar variable | None | False |
+| drift | int | Drift variable | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Dataframe of technical indicator | None | None |
 
-.. raw:: html
+None
 
-    <p>
-    Relative strength index
-    </p>
-
-* **Parameters**
-
-    data: pd.Series
-        Dataframe of prices
-    window: int
-        Length of window
-    scalar: float
-        Scalar variable
-    drift: int
-        Drift variable
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of technical indicator
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.ta.rsi(
-    data: pandas.core.series.Series,
-    window: int = 14,
-    scalar: float = 100.0,
-    drift: int = 1,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display RSI Indicator
-    </p>
-
-* **Parameters**
-
-    data : pd.Series
-        Values to input
-    window : int
-        Length of window
-    scalar : float
-        Scalar variable
-    drift : int
-        Drift variable
-    symbol : str
-        Stock ticker
-    export : str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

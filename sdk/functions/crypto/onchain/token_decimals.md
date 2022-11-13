@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# token_decimals
 
-|
+## crypto_onchain_ethplorer_model.get_token_decimals
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L175)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Helper methods that gets token decimals number. [Source: Ethplorer]
 
-{{< highlight python >}}
-crypto.onchain.token_decimals(
-    address: str,
-    chart: bool = False,
-) -> Optional[int]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| address | str | Blockchain balance e.g. 0x1f9840a85d5af5bf1d1762f925bdaddc4201f984 | None | False |
 
-    <p>
-    Helper methods that gets token decimals number. [Source: Ethplorer]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | DataFrame with list of tokens and their balances. |
 
-    address: str
-        Blockchain balance e.g. 0x1f9840a85d5af5bf1d1762f925bdaddc4201f984
+## Examples
 
-* **Returns**
-
-    pd.DataFrame:
-        DataFrame with list of tokens and their balances.

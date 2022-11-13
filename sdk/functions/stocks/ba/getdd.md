@@ -1,43 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# getdd
 
-|
+## stocks_ba_reddit_model.get_due_dilligence
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L715)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets due diligence posts from list of subreddits [Source: reddit]
 
-{{< highlight python >}}
-stocks.ba.getdd(
-    symbol: str,
-    limit: int = 5,
-    n_days: int = 3,
-    show_all_flairs: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker | None | False |
+| limit | int | Number of posts to get | None | False |
+| n_days | int | Number of days back to get posts | None | False |
+| show_all_flairs | bool | Search through all flairs (apart from Yolo and Meme) | None | False |
 
-    <p>
-    Gets due diligence posts from list of subreddits [Source: reddit]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of submissions |
 
-    symbol: str
-        Stock ticker
-    limit: int
-        Number of posts to get
-    n_days: int
-        Number of days back to get posts
-    show_all_flairs: bool
-        Search through all flairs (apart from Yolo and Meme)
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of submissions

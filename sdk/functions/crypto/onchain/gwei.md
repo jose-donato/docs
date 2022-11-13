@@ -1,72 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# gwei
 
-|
+## crypto_onchain_ethgasstation_model.get_gwei_fees
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethgasstation_model.py#L12)
 
-.. raw:: html
+Description: Returns the most recent Ethereum gas fees in gwei
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.gwei() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns the most recent Ethereum gas fees in gwei
-    [Source: https://ethgasstation.info]
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | four gas fees and durations
+    (fees for slow, average, fast and
+    fastest transactions in gwei and
+    its average durations in seconds) |
 
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        four gas fees and durations
-            (fees for slow, average, fast and
-            fastest transactions in gwei and
-            its average durations in seconds)
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.onchain.gwei(
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Current gwei fees
-    [Source: https://ethgasstation.info]
-    </p>
-
-* **Parameters**
-
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

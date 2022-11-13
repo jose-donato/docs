@@ -1,80 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# close
 
-|
+## forex_oanda_model.close_trades_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L525)
 
-.. raw:: html
+Description: Close a trade.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.close(
-    orderID: str,
-    units: Optional[int] = 0,
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| orderID | str | ID of the order to close | None | False |
+| units | Union[int, None] | Number of units to close. If empty default to all. | to | False |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Close a trade.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Union[pd.DataFrame, bool] | Close trades data or False |
 
-* **Parameters**
-
-    orderID : str
-        ID of the order to close
-    units : Union[int, None]
-        Number of units to close. If empty default to all.
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    Union[pd.DataFrame, bool]
-        Close trades data or False
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-forex.oanda.close(
-    accountID: str,
-    orderID: str = '',
-    units: Optional[int] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Close a trade.
-    </p>
-
-* **Parameters**
-
-    accountID : str
-        Oanda user account ID
-    orderID : str
-        ID of the order to close
-    units : Union[int, None]
-        Number of units to close. If empty default to all.
-    chart: bool
-       Flag to display chart
+## Examples
 

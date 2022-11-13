@@ -1,26 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ctb
 
-|
+## stocks_dps_stocksera_model.get_cost_to_borrow
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stocksera_model.py#L18)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get cost to borrow of stocks [Source: Stocksera]
 
-{{< highlight python >}}
-stocks.dps.ctb() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | ticker to get cost to borrow from | None | False |
 
-    <p>
-    Get stocks with highest cost to borrow [Source: Interactive Broker]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Cost to borrow |
 
-    pd.DataFrame
-        Cost to borrow
+## Examples
+

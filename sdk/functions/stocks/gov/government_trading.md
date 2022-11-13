@@ -1,38 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# government_trading
 
-|
+## stocks_gov_quiverquant_model.get_government_trading
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L24)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Returns the most recent transactions by members of government
 
-{{< highlight python >}}
-stocks.gov.government_trading(
-    gov_type: str = 'congress',
-    symbol: str = '',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| gov_type | str | Type of government data between:
+'congress', 'senate', 'house', 'contracts', 'quarter-contracts' and 'corporate-lobbying' | None | False |
+| symbol | str | Ticker symbol to get congress trading data from | None | False |
 
-    <p>
-    Returns the most recent transactions by members of government
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Most recent transactions by members of U.S. Congress |
 
-    gov_type: str
-        Type of government data between:
-        'congress', 'senate', 'house', 'contracts', 'quarter-contracts' and 'corporate-lobbying'
-    symbol : str
-        Ticker symbol to get congress trading data from
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Most recent transactions by members of U.S. Congress

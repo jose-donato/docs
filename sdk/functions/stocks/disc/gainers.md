@@ -1,26 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# gainers
 
-|
+## stocks_disc_yahoofinance_model.get_gainers
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L15)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get top gainers. [Source: Yahoo Finance]
 
-{{< highlight python >}}
-stocks.disc.gainers() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get top gainers. [Source: Yahoo Finance]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Stock Gainers |
 
-    pd.DataFrame
-        Stock Gainers
+## Examples
+

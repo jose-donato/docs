@@ -1,74 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# quote
 
-|
+## forex_av_model.get_quote
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L55)
 
-.. raw:: html
+Description: Get current exchange rate quote from alpha vantage.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.quote(
-    to_symbol: str = 'USD',
-    from_symbol: str = 'EUR',
-    chart: bool = False,
-) -> Dict
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| to_symbol | str | To forex symbol | None | False |
+| from_symbol | str | From forex symbol | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get current exchange rate quote from alpha vantage.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Dict | Dictionary of exchange rate |
 
-* **Parameters**
-
-    to_symbol : str
-        To forex symbol
-    from_symbol : str
-        From forex symbol
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    Dict
-        Dictionary of exchange rate
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-forex.quote(
-    to_symbol: str = 'USD',
-    from_symbol: str = 'EUR',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display current forex pair exchange rate.
-    </p>
-
-* **Parameters**
-
-    to_symbol : str
-        To symbol
-    from_symbol : str
-        From forex symbol
-    chart: bool
-       Flag to display chart
+## Examples
 

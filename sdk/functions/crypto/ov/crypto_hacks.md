@@ -1,86 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# crypto_hacks
 
-|
+## crypto_ov_rekt_model.get_crypto_hacks
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L91)
 
-.. raw:: html
+Description: Get major crypto-related hacks
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.crypto_hacks(
-    sortby: str = 'Platform',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | None | False |
+| ascend | None | Flag to sort data ascending | None | None |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get major crypto-related hacks
-    [Source: https://rekt.news]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | Hacks with columns {Platform,Date,Amount [$],Audited,Slug,URL} |
 
-* **Parameters**
-
-    sortby: str
-        Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL}
-    ascend
-        Flag to sort data ascending
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pandas.DataFrame:
-        Hacks with columns {Platform,Date,Amount [$],Audited,Slug,URL}
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.crypto_hacks(
-    limit: int = 15,
-    sortby: str = 'Platform',
-    ascend: bool = False,
-    slug: str = 'polyntwork-rekt',
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display list of major crypto-related hacks. If slug is passed
-    individual crypto hack is displayed instead of list of crypto hacks
-    [Source: https://rekt.news]
-    </p>
-
-* **Parameters**
-
-    slug: str
-        Crypto hack slug to check (e.g., polynetwork-rekt)
-    limit: int
-        Number of hacks to search
-    sortby: str
-        Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL}
-    ascend: bool
-        Flag to sort data ascending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

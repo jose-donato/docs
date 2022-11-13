@@ -1,37 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# option_chain
 
-|
+## stocks_options_yfinance_model.get_option_chain
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L157)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets option chain from yf for given ticker and expiration
 
-{{< highlight python >}}
-stocks.options.option_chain(
-    symbol: str,
-    expiry: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get options for | None | False |
+| expiry | str | Date to get options for. YYYY-MM-DD | None | False |
 
-    <p>
-    Gets option chain from yf for given ticker and expiration
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| yf.ticker.Options | Options chain |
 
-    symbol: str
-        Ticker symbol to get options for
-    expiry: str
-        Date to get options for. YYYY-MM-DD
+## Examples
 
-* **Returns**
-
-    chains: yf.ticker.Options
-        Options chain

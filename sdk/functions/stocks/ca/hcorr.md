@@ -1,92 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# hcorr
 
-|
+## stocks_ca_yahoo_finance_model.get_correlation
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L94)
 
-.. raw:: html
+Description: Get historical price correlation. [Source: Yahoo Finance]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ca.hcorr(
-    similar: List[str],
-    start_date: str = '2021-11-09',
-    candle_type: str = 'a',
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| similar | List[str] | List of similar tickers.
+Comparable companies can be accessed through
+finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
+| start_date | str | Start date of comparison, by default 1 year ago | 1 | True |
+| candle_type | str | OHLCA column to use for candles or R for returns, by default "a" for Adjusted Close | None | True |
 
-.. raw:: html
+None
 
-    <p>
-    Get historical price correlation. [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    similar : List[str]
-        List of similar tickers.
-        Comparable companies can be accessed through
-        finnhub_peers(), finviz_peers(), polygon_peers().
-    start_date : str, optional
-        Start date of comparison, by default 1 year ago
-    candle_type : str, optional
-        OHLCA column to use for candles or R for returns, by default "a" for Adjusted Close
-    chart: bool
-       Flag to display chart
-
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.ca.hcorr(
-    similar: List[str],
-    start_date: str = '2021-11-09',
-    candle_type: str = 'a',
-    display_full_matrix: bool = False,
-    raw: bool = False,
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Correlation heatmap based on historical price comparison
-    between similar companies. [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    similar : List[str]
-        List of similar tickers.
-        Comparable companies can be accessed through
-        finnhub_peers(), finviz_peers(), polygon_peers().
-    start_date : str, optional
-        Start date of comparison, by default 1 year ago
-    candle_type : str, optional
-        OHLCA column to use for candles or R for returns, by default "a" for Adjusted Close
-    display_full_matrix : bool, optional
-        Optionally display all values in the matrix, rather than masking off half, by default False
-    raw: bool, optional
-        Whether to display raw data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    export : str, optional
-        Format to export correlation prices, by default ""
-    chart: bool
-       Flag to display chart
+## Examples
 

@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# upcoming
 
-|
+## stocks_disc_seeking_alpha_model.get_next_earnings
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L40)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Returns a DataFrame with upcoming earnings
 
-{{< highlight python >}}
-stocks.disc.upcoming(
-    limit: int = 10,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of pages | None | False |
 
-    <p>
-    Returns a DataFrame with upcoming earnings
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| DataFrame | Upcoming earnings DataFrame |
 
-    limit : int
-        Number of pages
+## Examples
 
-* **Returns**
-
-    DataFrame
-        Upcoming earnings DataFrame

@@ -1,77 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# obv
 
-|
+## common_ta_volume_model.obv
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L89)
 
-.. raw:: html
+Description: On Balance Volume
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.obv(
-    data: pandas.core.frame.DataFrame,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of OHLC prices | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    On Balance Volume
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe with technical indicator |
 
-* **Parameters**
-
-    data: pd.DataFrame
-        Dataframe of OHLC prices
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe with technical indicator
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.ta.obv(
-    data: pandas.core.frame.DataFrame,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Plot OBV technical indicator
-    </p>
-
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    symbol : str
-        Ticker
-    export: str
-        Format to export data as
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

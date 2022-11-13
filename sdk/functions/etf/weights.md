@@ -1,80 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# weights
 
-|
+## etf_yfinance_model.get_etf_sector_weightings
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L14)
 
-.. raw:: html
+Description: Return sector weightings allocation of ETF. [Source: Yahoo Finance]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.weights(
-    name: str,
-    chart: bool = False,
-) -> Dict
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| name | str | ETF name | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| Dict | None | Dictionary with sector weightings allocation | None | None |
 
-.. raw:: html
+None
 
-    <p>
-    Return sector weightings allocation of ETF. [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    name: str
-        ETF name
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    Dict
-        Dictionary with sector weightings allocation
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-etf.weights(
-    name: str,
-    raw: bool = False,
-    min_pct_to_display: float = 5,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display sector weightings allocation of ETF. [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    name: str
-        ETF name
-    raw: bool
-        Display sector weighting allocation
-    min_pct_to_display: float
-        Minimum percentage to display sector
-    export: str
-        Type of format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

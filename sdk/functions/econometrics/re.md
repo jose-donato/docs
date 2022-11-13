@@ -1,40 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# re
 
-|
+## econometrics_regression_model.get_re
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L239)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: The random effects model is virtually identical to the pooled OLS model except that is accounts for the
 
-{{< highlight python >}}
-econometrics.re(
-    regression_variables: List[Tuple],
-    data: Dict[str, pandas.core.frame.DataFrame],
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, Any, List[Any], Any]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| regression_variables | list | The regressions variables entered where the first variable is
+the dependent variable. | None | False |
+| data | dict | A dictionary containing the datasets. | None | False |
 
-    <p>
-    The random effects model is virtually identical to the pooled OLS model except that is accounts for the
-    structure of the model and so is more efficient. Random effects uses a quasi-demeaning strategy which
-    subtracts the time average of the within entity values to account for the common shock. [Source: LinearModels]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| The dataset used, the dependent variable, the independent variable and | None |
 
-    regression_variables : list
-        The regressions variables entered where the first variable is
-        the dependent variable.
-    data : dict
-        A dictionary containing the datasets.
+## Examples
 
-* **Returns**
-
-    The dataset used, the dependent variable, the independent variable and
-    the RandomEffects model.

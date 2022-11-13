@@ -1,71 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# overview
 
-|
+## etf_stockanalysis_model.get_etf_overview
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L49)
 
-.. raw:: html
+Description: Get overview data for selected etf
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.overview(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| etf_symbol | str | Etf symbol to get overview for | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| df | pd.DataFrame | Dataframe of stock overview data | None | False |
 
-.. raw:: html
+None
 
-    <p>
-    Get overview data for selected etf
-    </p>
-
-* **Parameters**
-
-    etf_symbol : str
-        Etf symbol to get overview for
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    df : pd.DataFrame
-        Dataframe of stock overview data
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-etf.overview(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Print etf overview information
-    </p>
-
-* **Parameters**
-
-    symbol:str
-        ETF symbols to display overview for
-    export:str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

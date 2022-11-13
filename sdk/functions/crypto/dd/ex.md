@@ -1,89 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# ex
 
-|
+## crypto_dd_coinpaprika_model.get_coin_exchanges_by_id
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L149)
 
-.. raw:: html
+Description: Get all exchanges for given coin id. [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.ex(
-    symbol: str = 'eth-ethereum',
-    sortby: str = 'adjusted_volume_24h_share',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Identifier of Coin from CoinPaprika | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid (see for possible values:
+https://api.coinpaprika.com/v1). | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get all exchanges for given coin id. [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | All exchanges for given coin
+Columns: id, name, adjusted_volume_24h_share, fiats |
 
-* **Parameters**
-
-    symbol: str
-        Identifier of Coin from CoinPaprika
-    sortby: str
-        Key by which to sort data. Every column name is valid (see for possible values:
-        https://api.coinpaprika.com/v1).
-    ascend: bool
-        Flag to sort data ascending
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pandas.DataFrame
-        All exchanges for given coin
-        Columns: id, name, adjusted_volume_24h_share, fiats
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.dd.ex(
-    symbol: str = 'btc',
-    limit: int = 10,
-    sortby: str = 'adjusted_volume_24h_share',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Get all exchanges for given coin id. [Source: CoinPaprika]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Cryptocurrency symbol (e.g. BTC)
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data. Every column name is valid (see for possible values:
-        https://api.coinpaprika.com/v1).
-    ascend: bool
-        Flag to sort data ascending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

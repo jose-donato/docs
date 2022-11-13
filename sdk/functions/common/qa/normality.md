@@ -1,76 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# normality
 
-|
+## common_qa_model.get_normality
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L82)
 
-.. raw:: html
+Description: Look at the distribution of returns and generate statistics on the relation to the normal curve.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.qa.normality(
-    data: pandas.core.frame.DataFrame,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of targeted data | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Look at the distribution of returns and generate statistics on the relation to the normal curve.
-    This function calculates skew and kurtosis (the third and fourth moments) and performs both
-    a Jarque-Bera and Shapiro Wilk test to determine if data is normally distributed.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing statistics of normality |
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe of targeted data
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe containing statistics of normality
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.qa.normality(
-    data: pandas.core.frame.DataFrame,
-    target: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    View normality statistics
-    </p>
-
-* **Parameters**
-
-    data : pd.DataFrame
-        DataFrame
-    target : str
-        Column in data to look at
-    export : str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

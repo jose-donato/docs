@@ -1,74 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# wfpe
 
-|
+## crypto_ov_withdrawalfees_model.get_crypto_withdrawal_fees
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L208)
 
-.. raw:: html
+Description: Scrapes coin withdrawal fees per exchange
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.wfpe(
-    symbol: str,
-    chart: bool = False,
-) -> List[Any]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Coin to check withdrawal fees. By default bitcoin | bitcoin | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Scrapes coin withdrawal fees per exchange
-    [Source: https://withdrawalfees.com/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | - str:              Overall statistics (exchanges, lowest, average and median)
+- pandas.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount |
 
-* **Parameters**
-
-    symbol: str
-        Coin to check withdrawal fees. By default bitcoin
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    List:
-        - str:              Overall statistics (exchanges, lowest, average and median)
-        - pandas.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.ov.wfpe(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Coin withdrawal fees per exchange
-    [Source: https://withdrawalfees.com/]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Coin to check withdrawal fees
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

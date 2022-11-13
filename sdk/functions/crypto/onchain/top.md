@@ -1,75 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# top
 
-|
+## crypto_onchain_ethplorer_model.get_top_tokens
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L267)
 
-.. raw:: html
+Description: Get top 50 tokens. [Source: Ethplorer]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.top(
-    sortby: str = 'rank',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get top 50 tokens. [Source: Ethplorer]
+| Type | Description |
+| ---- | ----------- |
+|  | DataFrame with list of top 50 tokens. |
 
-    Returns
-    -------
-    pd.DataFrame:
-        DataFrame with list of top 50 tokens.
-    </p>
-
-* **Returns**
-
-    pd.DataFrame:
-        DataFrame with list of top 50 tokens.
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.onchain.top(
-    limit: int = 15,
-    sortby: str = 'rank',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display top ERC20 tokens [Source: Ethplorer]
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Limit of transactions. Maximum 100
-    sortby: str
-        Key to sort by.
-    ascend: str
-        Sort in descending order.
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

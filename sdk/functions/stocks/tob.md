@@ -1,39 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# tob
 
-|
+## stocks_cboe_model.get_top_of_book
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/cboe_model.py#L12)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get top of book bid and ask for ticker on exchange [CBOE.com]
 
-{{< highlight python >}}
-stocks.tob(
-    symbol: str,
-    exchange: str = 'BZX',
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to get | None | False |
+| exchange | str | Exchange to look at.  Can be `BZX`,`EDGX`, `BYX`, `EDGA` | None | False |
 
-    <p>
-    Get top of book bid and ask for ticker on exchange [CBOE.com]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DatatFrame | Dataframe of Bids |
 
-    symbol: str
-        Ticker to get
-    exchange: str
-        Exchange to look at.  Can be `BZX`,`EDGX`, `BYX`, `EDGA`
+## Examples
 
-* **Returns**
-
-    pd.DatatFrame
-        Dataframe of Bids
-    pd.DataFrame
-        Dataframe of asks

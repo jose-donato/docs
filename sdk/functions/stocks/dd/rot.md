@@ -1,80 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# rot
 
-|
+## stocks_dd_finnhub_model.get_rating_over_time
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 
-.. raw:: html
+Description: Get rating over time data. [Source: Finnhub]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.dd.rot(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get ratings from | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get rating over time data. [Source: Finnhub]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Get dataframe with ratings |
 
-* **Parameters**
-
-    symbol : str
-        Ticker symbol to get ratings from
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Get dataframe with ratings
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.dd.rot(
-    symbol: str,
-    limit: int = 10,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Rating over time (monthly). [Source: Finnhub]
-    </p>
-
-* **Parameters**
-
-    ticker : str
-        Ticker to get ratings from
-    limit : int
-        Number of last months ratings to show
-    raw: bool
-        Display raw data only
-    export: str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]]
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

@@ -1,95 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# macd
 
-|
+## common_ta_momentum_model.macd
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L60)
 
-.. raw:: html
+Description: Moving average convergence divergence
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.macd(
-    data: pandas.core.series.Series,
-    n_fast: int = 12,
-    n_slow: int = 26,
-    n_signal: int = 9,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Values for calculation | None | False |
+| n_fast | int | Fast period | None | False |
+| n_slow | int | Slow period | None | False |
+| n_signal | int | Signal period | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Dataframe of technical indicator | None | None |
 
-.. raw:: html
+None
 
-    <p>
-    Moving average convergence divergence
-    </p>
-
-* **Parameters**
-
-    data: pd.Series
-        Values for calculation
-    n_fast : int
-        Fast period
-    n_slow : int
-        Slow period
-    n_signal : int
-        Signal period
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of technical indicator
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.ta.macd(
-    data: pandas.core.series.Series,
-    n_fast: int = 12,
-    n_slow: int = 26,
-    n_signal: int = 9,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Plot MACD signal
-    </p>
-
-* **Parameters**
-
-    data : pd.Series
-        Values to input
-    n_fast : int
-        Fast period
-    n_slow : int
-        Slow period
-    n_signal : int
-        Signal period
-    symbol : str
-        Stock ticker
-    export : str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

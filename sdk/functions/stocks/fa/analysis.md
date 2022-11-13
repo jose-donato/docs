@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# analysis
 
-|
+## stocks_fa_eclect_us_model.get_filings_analysis
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/eclect_us_model.py#L17)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Save time reading SEC filings with the help of machine learning. [Source: https://eclect.us]
 
-{{< highlight python >}}
-stocks.fa.analysis(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to see analysis of filings | None | False |
 
-    <p>
-    Save time reading SEC filings with the help of machine learning. [Source: https://eclect.us]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | Analysis of filings text |
 
-    symbol: str
-        Ticker symbol to see analysis of filings
+## Examples
 
-* **Returns**
-
-    str
-        Analysis of filings text

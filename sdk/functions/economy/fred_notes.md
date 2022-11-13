@@ -1,37 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# fred_notes
 
-|
+## economy_fred_model.get_series_notes
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L68)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get series notes. [Source: FRED]
 
-{{< highlight python >}}
-economy.fred_notes(
-    search_query: str,
-    limit: int = -1,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| search_query | str | Text query to search on fred series notes database | None | False |
+| limit | int | Maximum number of series notes to display | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | DataFrame of matched series | None | None |
 
-    <p>
-    Get series notes. [Source: FRED]
-    </p>
+None
 
-* **Parameters**
+## Examples
 
-    search_query : str
-        Text query to search on fred series notes database
-    limit : int
-        Maximum number of series notes to display
-
-* **Returns**
-
-    pd.DataFrame
-        DataFrame of matched series

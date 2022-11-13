@@ -1,24 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# available_indices
 
-|
+## economy_yfinance_model.get_available_indices
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L659)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get available indices
 
-{{< highlight python >}}
-economy.available_indices() -> dict
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get available indices
+## Returns
 
-    Returns:
-        dict: dictionary with available indices and respective detail
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| dict | dictionary with available indices and respective detail |
+
+## Examples
+

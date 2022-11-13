@@ -1,67 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# trending
 
-|
+## crypto_disc_pycoingecko_model.get_trending_coins
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L308)
 
-.. raw:: html
+Description: Returns trending coins [Source: CoinGecko]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.disc.trending() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns trending coins [Source: CoinGecko]
+| Type | Description |
+| ---- | ----------- |
+|  | Trending Coins |
 
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pandas.DataFrame:
-        Trending Coins
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.disc.trending(
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display trending coins [Source: CoinGecko]
-    </p>
-
-* **Parameters**
-
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Examples
 

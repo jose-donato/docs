@@ -1,46 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# calculate_adjusted_var
 
-|
+## common_qa_model.calculate_adjusted_var
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L184)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Calculates VaR, which is adjusted for skew and kurtosis (Cornish-Fischer-Expansion)
 
-{{< highlight python >}}
-common.qa.calculate_adjusted_var(
-    kurtosis: float,
-    skew: float,
-    ndp: float,
-    std: float,
-    mean: float,
-    chart: bool = False,
-) -> float
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| kurtosis | float | kurtosis of data | None | False |
+| skew | float | skew of data | None | False |
+| ndp | float | normal distribution percentage number (99% -> -2.326) | None | False |
+| std | float | standard deviation of data | None | False |
+| mean | float | mean of data | None | False |
 
-    <p>
-    Calculates VaR, which is adjusted for skew and kurtosis (Cornish-Fischer-Expansion)
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| float | Real adjusted VaR |
 
-    kurtosis: float
-        kurtosis of data
-    skew: float
-        skew of data
-    ndp: float
-        normal distribution percentage number (99% -> -2.326)
-    std: float
-        standard deviation of data
-    mean: float
-        mean of data
+## Examples
 
-* **Returns**
-
-    float
-        Real adjusted VaR

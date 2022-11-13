@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# website
 
-|
+## stocks_fa_yahoo_finance_model.get_website
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L209)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets website of company from yfinance
 
-{{< highlight python >}}
-stocks.fa.website(
-    symbol: str,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Gets website of company from yfinance
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | Company website |
 
-    symbol: str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    str
-        Company websit

@@ -1,66 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# open
 
-|
+## stocks_th_bursa_model.get_open
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L53)
 
-.. raw:: html
+Description: Get open exchanges.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.th.open() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get open exchanges.
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Currently open exchanges |
 
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Currently open exchanges
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.th.open()
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display open exchanges.
-
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
+## Examples
 

@@ -1,63 +1,21 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# openpositions
 
-|
+## forex_oanda_model.open_positions_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L377)
 
-.. raw:: html
+Description: Request information on open positions.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.openpositions(
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+None
 
-    <p>
-    Request information on open positions.
-    </p>
-
-* **Parameters**
-
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
-
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-forex.oanda.openpositions(
-    accountID: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Get information about open positions.
-    </p>
-
-* **Parameters**
-
-    accountID : str
-        Oanda user account ID
-    chart: bool
-       Flag to display chart
+## Examples
 

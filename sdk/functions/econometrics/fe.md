@@ -1,46 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# fe
 
-|
+## econometrics_regression_model.get_fe
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L325)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: When effects are correlated with the regressors the RE and BE estimators are not consistent.
 
-{{< highlight python >}}
-econometrics.fe(
-    regression_variables: List[Tuple],
-    data: Dict[str, pandas.core.frame.DataFrame],
-    entity_effects: bool = False,
-    time_effects: bool = False,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, Any, List[Any], Any]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| regression_variables | list | The regressions variables entered where the first variable is
+the dependent variable. | None | False |
+| data | dict | A dictionary containing the datasets. | None | False |
+| entity_effects | bool | Whether to include entity effects | None | False |
+| time_effects | bool | Whether to include time effects | None | False |
 
-    <p>
-    When effects are correlated with the regressors the RE and BE estimators are not consistent.
-    The usual solution is to use Fixed Effects which are called entity_effects when applied to
-    entities and time_effects when applied to the time dimension. [Source: LinearModels]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| The dataset used, the dependent variable, the independent variable and | None |
 
-    regression_variables : list
-        The regressions variables entered where the first variable is
-        the dependent variable.
-    data : dict
-        A dictionary containing the datasets.
-    entity_effects : bool
-        Whether to include entity effects
-    time_effects : bool
-        Whether to include time effects
+## Examples
 
-* **Returns**
-
-    The dataset used, the dependent variable, the independent variable and
-    the OLS model.

@@ -1,26 +1,20 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# treasury_maturities
 
-|
+## economy_econdb_model.get_treasury_maturities
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L828)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get treasury maturity options [Source: EconDB]
 
-{{< highlight python >}}
-economy.treasury_maturities() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get treasury maturity options [Source: EconDB]
-    </p>
+None
 
-* **Returns**
+## Examples
 
-    df: pd.DataFrame
-        Contains the name of the instruments and a string containing all options.

@@ -1,77 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# unemp
 
-|
+## economy_alphavantage_model.get_unemployment
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L282)
 
-.. raw:: html
+Description: Get historical unemployment for United States
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-economy.unemp(
-    start_year: int = 2010,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| start_year | int | Start year for plot, by default 2010 | 2010 | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get historical unemployment for United States
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of historical yields |
 
-* **Parameters**
-
-    start_year : int, optional
-        Start year for plot, by default 2010
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of historical yields
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-economy.unemp(
-    start_year: int = 2010,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display US unemployment AlphaVantage
-    </p>
-
-* **Parameters**
-
-    start_year : int, optional
-        Start year for plot, by default 2010
-    raw : bool, optional
-        Flag to show raw data, by default False
-    export : str, optional
-        Format to export data, by default ""
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

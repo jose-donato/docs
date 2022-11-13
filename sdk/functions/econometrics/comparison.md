@@ -1,35 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# comparison
 
-|
+## econometrics_regression_model.get_comparison
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L425)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Compare regression results between Panel Data regressions.
 
-{{< highlight python >}}
-econometrics.comparison(
-    regressions, export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| regressions | Dict | Dictionary with regression results. | None | False |
+| export | str | Format to export data | None | False |
 
-    <p>
-    Compare regression results between Panel Data regressions.
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| Returns a PanelModelComparison which shows an overview of the different regression results. | None |
 
-    regressions : Dict
-        Dictionary with regression results.
-    export : str
-        Format to export data
+## Examples
 
-* **Returns**
-
-    Returns a PanelModelComparison which shows an overview of the different regression results.

@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# mgmt
 
-|
+## stocks_fa_business_insider_model.get_management
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/business_insider_model.py#L18)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get company managers from Business Insider
 
-{{< highlight python >}}
-stocks.fa.mgmt(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Get company managers from Business Insider
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of managers |
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of managers

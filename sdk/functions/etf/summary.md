@@ -1,68 +1,24 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# summary
 
-|
+## etf_yfinance_model.get_etf_summary_description
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L43)
 
-.. raw:: html
+Description: Return summary description of ETF. [Source: Yahoo Finance]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.summary(
-    name: str,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| name | str | ETF name | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| str | None | Summary description of the ETF | None | None |
 
-.. raw:: html
+None
 
-    <p>
-    Return summary description of ETF. [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    name: str
-        ETF name
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    str
-        Summary description of the ETF
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-etf.summary(
-    name: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display ETF description summary. [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    name: str
-        ETF name
-    chart: bool
-       Flag to display chart
+## Examples
 

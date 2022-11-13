@@ -1,72 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# watchlist
 
-|
+## stocks_ba_reddit_model.get_watchlists
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L39)
 
-.. raw:: html
+Description: Get reddit users watchlists [Source: reddit]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ba.watchlist(
-    limit: int = 5,
-    chart: bool = False,
-) -> Tuple[List[praw.models.reddit.submission.Submission], dict, int]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of posts to look through | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get reddit users watchlists [Source: reddit]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | List of reddit submissions |
 
-* **Parameters**
-
-    limit : int
-        Number of posts to look through
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    list[praw.models.reddit.submission.Submission]:
-        List of reddit submissions
-    dict:
-        Dictionary of tickers and counts
-    int
-        Count of how many posts were analyzed
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.ba.watchlist(
-    limit: int = 5,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Print other users watchlist. [Source: Reddit]
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Maximum number of submissions to look at
-    chart: bool
-       Flag to display chart
+## Examples
 

@@ -1,101 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# kc
 
-|
+## common_ta_volatility_model.kc
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L87)
 
-.. raw:: html
+Description: Keltner Channels
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.kc(
-    data: pandas.core.frame.DataFrame,
-    window: int = 20,
-    scalar: float = 2,
-    mamode: str = 'ema',
-    offset: int = 0,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of ohlc prices | None | False |
+| window | int | Length of window | None | False |
+| scalar | float | Scalar value | None | False |
+| mamode | str | Type of filter | None | False |
+| offset | int | Offset value | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Keltner Channels
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of rolling kc |
 
-* **Parameters**
-
-    data: pd.DataFrame
-        Dataframe of ohlc prices
-    window : int
-        Length of window
-    scalar: float
-        Scalar value
-    mamode: str
-        Type of filter
-    offset : int
-        Offset value
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of rolling kc
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-common.ta.kc(
-    data: pandas.core.frame.DataFrame,
-    window: int = 20,
-    scalar: float = 2,
-    mamode: str = 'ema',
-    offset: int = 0,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    View Keltner Channels Indicator
-    </p>
-
-* **Parameters**
-
-    data: pd.DataFrame
-        Dataframe of ohlc prices
-    window: int
-        Length of window
-    scalar: float
-        Scalar value
-    mamode: str
-        Type of filter
-    offset: int
-        Offset value
-    symbol: str
-        Ticker symbol
-    export: str
-        Format to export data
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

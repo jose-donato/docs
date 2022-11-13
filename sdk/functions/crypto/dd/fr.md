@@ -1,82 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# fr
 
-|
+## crypto_dd_messari_model.get_fundraising
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L631)
 
-.. raw:: html
+Description: Returns coin fundraising
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.fr(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[str, pandas.core.frame.DataFrame, pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check fundraising | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns coin fundraising
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| str | launch summary |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check fundraising
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    str
-        launch summary
-    pd.DataFrame
-        Sales rounds
-    pd.DataFrame
-        Treasury Accounts
-    pd.DataFrame
-        Metric Value launch details
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.dd.fr(
-    symbol: str,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display coin fundraising
-    [Source: https://messari.io/]
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check coin fundraising
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

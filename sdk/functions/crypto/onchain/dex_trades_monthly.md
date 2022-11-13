@@ -1,42 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# dex_trades_monthly
 
-|
+## crypto_onchain_bitquery_model.get_dex_trades_monthly
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L332)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get list of trades on Decentralized Exchanges monthly aggregated.
 
-{{< highlight python >}}
-crypto.onchain.dex_trades_monthly(
-    trade_amount_currency: str = 'USD',
-    limit: int = 90,
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| trade_amount_currency | str | Currency of displayed trade amount. Default: USD | USD | False |
+| limit | int | Last n days to query data. Maximum 365 (bigger numbers can cause timeouts
+on server side) | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
-    <p>
-    Get list of trades on Decentralized Exchanges monthly aggregated.
-    [Source: https://graphql.bitquery.io/]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Trades on Decentralized Exchanges monthly aggregated |
 
-    trade_amount_currency: str
-        Currency of displayed trade amount. Default: USD
-    limit:  int
-        Last n days to query data. Maximum 365 (bigger numbers can cause timeouts
-        on server side)
-    ascend: bool
-        Flag to sort data ascending
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Trades on Decentralized Exchanges monthly aggregated

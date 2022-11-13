@@ -1,74 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# calendar
 
-|
+## forex_oanda_model.get_calendar_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L644)
 
-.. raw:: html
+Description: Request data of significant events calendar.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.calendar(
-    days: int = 14,
-    instrument: Optional[str] = None,
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
+| days | int | Number of days in advance | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request data of significant events calendar.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Union[pd.DataFrame, bool] | Calendar events data or False |
 
-* **Parameters**
-
-    instrument : Union[str, None]
-        The loaded currency pair, by default None
-    days : int
-        Number of days in advance
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    Union[pd.DataFrame, bool]
-        Calendar events data or False
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-forex.oanda.calendar(
-    instrument: str,
-    days: int = 7,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    View calendar of significant events.
-    </p>
-
-* **Parameters**
-
-    instrument : str
-        The loaded currency pair
-    days : int
-        Number of days in advance
-    chart: bool
-       Flag to display chart
+## Examples
 

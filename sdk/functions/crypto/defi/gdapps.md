@@ -1,76 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# gdapps
 
-|
+## crypto_defi_llama_model.get_grouped_defi_protocols
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L143)
 
-.. raw:: html
+Description: Display top dApps (in terms of TVL) grouped by chain.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.gdapps(
-    limit: int = 50,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of top dApps to display | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Display top dApps (in terms of TVL) grouped by chain.
-    [Source: https://docs.llama.fi/api]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Information about DeFi protocols grouped by chain |
 
-* **Parameters**
-
-    limit: int
-        Number of top dApps to display
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-        Information about DeFi protocols grouped by chain
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.defi.gdapps(
-    limit: int = 50,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display top dApps (in terms of TVL) grouped by chain.
-    [Source: https://docs.llama.fi/api]
-    </p>
-
-* **Parameters**
-
-    num: int
-        Number of top dApps to display
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

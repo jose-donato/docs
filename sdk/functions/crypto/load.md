@@ -1,56 +1,33 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# load
 
-|
+## crypto_helpers.load
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L473)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Load crypto currency to get data for
 
-{{< highlight python >}}
-crypto.load(
-    symbol: 'str',
-    start_date: 'datetime' = datetime.datetime(
-    2019, 11, 6, 10, 18, 10, 442664, chart: bool = False,
-), interval: 'str' = '1440',
-    exchange: 'str' = 'binance',
-    vs_currency: 'str' = 'usdt',
-    end_date: 'datetime' = datetime.datetime(
-    2022, 11, 10, 10, 18, 10, 442664, chart: bool = False,
-), source: 'str' = 'CCXT',
-    chart: bool = False,
-) -> 'pd.DataFrame'
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Coin to get | None | False |
+| start_date | datetime | The datetime to start at | None | False |
+| interval | str | The interval between data points in minutes.
+Choose from: 1, 15, 30, 60, 240, 1440, 10080, 43200 | None | False |
+| exchange | str: | The exchange to get data from. | None | False |
+| vs_currency | str | Quote Currency (Defaults to usdt) | None | False |
+| end_date | datetime | The datetime to end at | None | False |
+| source | str | The source of the data
+Choose from: CCXT, CoinGecko, YahooFinance | None | False |
 
-    <p>
-    Load crypto currency to get data for
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe consisting of price and volume data |
 
-    symbol: str
-        Coin to get
-    start_date: datetime
-        The datetime to start at
-    interval: str
-        The interval between data points in minutes.
-        Choose from: 1, 15, 30, 60, 240, 1440, 10080, 43200
-    exchange: str:
-        The exchange to get data from.
-    vs_currency: str
-        Quote Currency (Defaults to usdt)
-    end_date: datetime
-       The datetime to end at
-    source: str
-        The source of the data
-        Choose from: CCXT, CoinGecko, YahooFinance
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe consisting of price and volume data

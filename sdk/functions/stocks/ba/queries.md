@@ -1,36 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# queries
 
-|
+## stocks_ba_google_model.get_queries
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L72)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get related queries from google api [Source: google]
 
-{{< highlight python >}}
-stocks.ba.queries(
-    symbol: str,
-    limit: int = 10,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol to compare | None | False |
+| limit | int | Number of queries to show | None | False |
 
-    <p>
-    Get related queries from google api [Source: google]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| {'top': pd.DataFrame or None, 'rising': pd.DataFrame or None} | None |
 
-    symbol: str
-        Stock ticker symbol to compare
-    limit: int
-        Number of queries to show
+## Examples
 
-* **Returns**
-
-    dict : {'top': pd.DataFrame or None, 'rising': pd.DataFrame or None}

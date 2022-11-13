@@ -1,74 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# holdings
 
-|
+## etf_stockanalysis_model.get_etf_holdings
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L83)
 
-.. raw:: html
+Description: Get ETF holdings
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.holdings(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Symbol to get holdings for | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get ETF holdings
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of holdings |
 
-* **Parameters**
-
-    symbol: str
-        Symbol to get holdings for
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    df: pd.DataFrame
-        Dataframe of holdings
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-etf.holdings(
-    symbol: str,
-    limit: int = 10,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        ETF symbol to show holdings for
-    limit: int
-        Number of holdings to show
-    export: str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Examples
 

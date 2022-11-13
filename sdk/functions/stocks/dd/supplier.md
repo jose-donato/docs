@@ -1,37 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# supplier
 
-|
+## stocks_dd_csimarket_model.get_suppliers
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L41)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get suppliers from ticker provided. [Source: CSIMarket]
 
-{{< highlight python >}}
-stocks.dd.supplier(
-    symbol: str,
-    limit: int = 50,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to select suppliers from | None | False |
+| limit | int | The maximum number of rows to show | None | False |
 
-    <p>
-    Get suppliers from ticker provided. [Source: CSIMarket]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | A dataframe of suppliers |
 
-    symbol: str
-        Ticker to select suppliers from
-    limit: int
-        The maximum number of rows to show
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        A dataframe of suppliers

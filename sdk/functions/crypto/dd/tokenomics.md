@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# tokenomics
 
-|
+## crypto_dd_pycoingecko_model.get_coin_tokenomics
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L252)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get tokenomics for given coin. [Source: CoinGecko]
 
-{{< highlight python >}}
-crypto.dd.tokenomics(
-    symbol: str = '',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | coin symbol to check tokenomics | None | False |
 
-    <p>
-    Get tokenomics for given coin. [Source: CoinGecko]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Metric, Value with tokenomics |
 
-    symbol: str
-        coin symbol to check tokenomics
+## Examples
 
-* **Returns**
-
-    pandas.DataFrame
-        Metric, Value with tokenomics

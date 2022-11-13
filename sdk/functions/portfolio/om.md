@@ -1,79 +1,27 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# om
 
-|
+## portfolio_model.get_omega
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1756)
 
-.. raw:: html
+Description: Get omega ratio
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-portfolio.om(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    threshold_start: float = 0,
-    threshold_end: float = 1.5,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get omega ratio
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | None |
 
-* **Parameters**
-
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    threshold_start: float
-        annualized target return threshold start of plotted threshold range
-    threshold_end: float
-        annualized target return threshold end of plotted threshold range
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-portfolio.om(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    threshold_start: float = 0,
-    threshold_end: float = 1.5,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display omega ratio
-    </p>
-
-* **Parameters**
-
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    threshold_start: float
-        annualized target return threshold start of plotted threshold range
-    threshold_end: float
-        annualized target return threshold end of plotted threshold range
-    chart: bool
-       Flag to display chart
+## Examples
 

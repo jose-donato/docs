@@ -1,27 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# lowfloat
 
-|
+## stocks_disc_shortinterest_model.get_low_float
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L14)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Returns low float DataFrame
 
-{{< highlight python >}}
-stocks.disc.lowfloat() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Returns low float DataFrame
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| DataFrame | Low float DataFrame with the following columns:
+Ticker, Company, Exchange, ShortInt, Float, Outstd, Industry |
 
-    DataFrame
-        Low float DataFrame with the following columns:
-        Ticker, Company, Exchange, ShortInt, Float, Outstd, Industry
+## Examples
+

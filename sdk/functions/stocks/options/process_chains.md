@@ -1,34 +1,25 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+# process_chains
 
-|
+## stocks_options_tradier_model.process_chains
 
-.. raw:: html
+```python
+def get_stars_history(repo: str):
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L190)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Function to take in the requests.get and return a DataFrame
 
-{{< highlight python >}}
-stocks.options.process_chains(
-    response: requests.models.Response,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| response | requests.models.Response | This is the response from tradier api. | None | False |
 
-    <p>
-    Function to take in the requests.get and return a DataFrame
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe with all available options |
 
-    response: requests.models.Response
-        This is the response from tradier api.
+## Examples
 
-* **Returns**
-
-    opt_chain: pd.DataFrame
-        Dataframe with all available options
