@@ -7,10 +7,6 @@
     @apply !shadow;
   }
 
-  html {
-    @apply dark:!bg-grey-850;
-  }
-
   article {
     @apply prose lg:prose-lg dark:prose-invert !max-w-none;
   }
@@ -49,6 +45,7 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   */
+  --ifm-table-border-color: var(--docs-color-border);
   --aa-primary-color-rgb: 255, 0, 0 !important;
   --aa-muted-color-rgb: 255, 0, 0 !important;
 }
@@ -63,6 +60,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);*/
+  --docs-color-border: #2e2e2e;
   --aa-primary-color-rgb: rgba(
     var(--aa-text-color-rgb),
     var(--aa-text-color-alpha)
@@ -157,6 +155,33 @@
     rgba(6, 7, 9, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#062d48", endColorstr="#060709", GradientType=1);
+}
+
+table {
+  border-collapse: collapse;
+  border: none;
+  background-color: transparent;
+
+  text-align: left;
+  font-size: 90%;
+}
+
+table :is(tr, td, th, thead) {
+  --ifm-table-stripe-background: transparent;
+  --table-cell-color: transparent;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--docs-color-border);
+}
+
+table thead tr {
+  border-bottom: 1px solid var(--docs-color-border);
+}
+
+table th {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--docs-color-text-100);
 }
 
 .header_docs {

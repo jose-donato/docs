@@ -44,7 +44,7 @@ const config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "sdk",
-        path: "sdk",
+        path: "content/sdk",
         routeBasePath: "sdk",
         sidebarPath: require.resolve("./sidebars.js"),
       },
@@ -72,7 +72,7 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           routeBasePath: "terminal",
-          path: "terminal",
+          path: "content/terminal",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
