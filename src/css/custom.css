@@ -7,10 +7,6 @@
     @apply !border !border-grey-400/20 !shadow;
   }
 
-  html {
-    @apply dark:!bg-grey-850;
-  }
-
   article {
     @apply prose lg:prose-lg dark:prose-invert !max-w-none;
   }
