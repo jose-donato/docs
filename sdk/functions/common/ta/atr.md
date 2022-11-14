@@ -2,14 +2,21 @@
 title: atr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # atr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_volatility_model.atr
 
-```python
+```python title='openbb_terminal/common/technical_analysis/volatility_model.py'
 def atr(data: pd.DataFrame, window: int, mamode: str, offset: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L131)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L132)
 
 Description: Average True Range
 
@@ -32,17 +39,15 @@ Description: Average True Range
 
 
 
-
-# VIEW
-
-# atr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_volatility_view.display_atr
 
-```python
-def atr(data: pd.DataFrame, symbol: str, window: int, mamode: str, offset: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/volatility_view.py'
+def display_atr(data: pd.DataFrame, symbol: str, window: int, mamode: str, offset: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L288)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L289)
 
 Description: Show ATR
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

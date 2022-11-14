@@ -2,14 +2,21 @@
 title: price
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # price
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.fx_price_request
 
-```python
-def price(accountID: str, instrument: Union[str, NoneType]) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def fx_price_request(accountID: str, instrument: Union[str, NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L35)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L36)
 
 Description: Request price for a forex pair.
 
@@ -30,17 +37,15 @@ Description: Request price for a forex pair.
 
 
 
-
-# VIEW
-
-# price
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.get_fx_price
 
-```python
-def pric) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_fx_price() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L39)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L40)
 
 Description: View price for loaded currency pair.
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

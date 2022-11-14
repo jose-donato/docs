@@ -2,14 +2,15 @@
 title: jensens
 description: OpenBB SDK Function
 ---
+
 # jensens
 
 ## portfolio_model.get_jensens_alpha
 
-```python
-def jensens(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, risk_free_rate: float, window: str) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_jensens_alpha(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, risk_free_rate: float, window: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1222)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1223)
 
 Description: Get jensen's alpha
 

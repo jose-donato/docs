@@ -2,14 +2,21 @@
 title: dret
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # dret
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_model.get_daily_returns
 
-```python
-def dret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_daily_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1994)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1995)
 
 Description: Get daily returns
 
@@ -30,17 +37,15 @@ Description: Get daily returns
 
 
 
-
-# VIEW
-
-# dret
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_view.display_daily_returns
 
-```python
-def dret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_view.py'
+def display_daily_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L470)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L471)
 
 Description: Display daily returns
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

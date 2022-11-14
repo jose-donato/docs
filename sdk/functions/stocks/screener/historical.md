@@ -2,14 +2,21 @@
 title: historical
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # historical
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_screener_yahoofinance_model.historical
 
-```python
+```python title='openbb_terminal/stocks/screener/yahoofinance_model.py'
 def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_model.py#L52)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_model.py#L53)
 
 Description: View historical price of stocks that meet preset
 
@@ -33,17 +40,15 @@ Description: View historical price of stocks that meet preset
 
 
 
-
-# VIEW
-
-# historical
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_screener_yahoofinance_view.historical
 
-```python
+```python title='openbb_terminal/stocks/screener/yahoofinance_view.py'
 def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_view.py#L27)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_view.py#L28)
 
 Description: View historical price of stocks that meet preset
 
@@ -67,3 +72,7 @@ Description: View historical price of stocks that meet preset
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

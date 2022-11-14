@@ -2,12 +2,19 @@
 title: var
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # var
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_model.get_var
 
-```python
-def var(data: pd.DataFrame, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: Union[int, float], portfolio: bool) -> DataFrame:
+```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
+def get_var(data: pd.DataFrame, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: Union[int, float], portfolio: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L226)
 
@@ -34,15 +41,13 @@ Description: Gets value at risk for specified stock dataframe.
 
 
 
-
-# VIEW
-
-# var
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_view.display_var
 
-```python
-def var(data: pd.DataFrame, symbol: str, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: float, data_range: int, portfolio: bool) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
+def display_var(data: pd.DataFrame, symbol: str, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: float, data_range: int, portfolio: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1006)
 
@@ -67,3 +72,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,15 @@
 title: ema
 description: OpenBB SDK Function
 ---
+
 # ema
 
 ## common_ta_overlap_model.ema
 
-```python
+```python title='openbb_terminal/common/technical_analysis/overlap_model.py'
 def ema(data: pd.Series, length: int, offset: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L19)
 
 Description: Gets exponential moving average (EMA) for stock
 

@@ -2,14 +2,21 @@
 title: holders
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # holders
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_ethplorer_model.get_top_token_holders
 
-```python
-def holders(address: Any, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
+def get_top_token_holders(address: Any, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L297)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L298)
 
 Description: Get info about top token holders. [Source: Ethplorer]
 
@@ -31,17 +38,15 @@ Description: Get info about top token holders. [Source: Ethplorer]
 
 
 
-
-# VIEW
-
-# holders
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_ethplorer_view.display_top_token_holders
 
-```python
-def holder) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_top_token_holders() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L113)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L114)
 
 Description: Display info about top ERC20 token holders. [Source: Ethplorer]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

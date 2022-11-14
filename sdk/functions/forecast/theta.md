@@ -2,14 +2,21 @@
 title: theta
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # theta
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forecast_theta_model.get_theta_data
 
-```python
-def theta(data: Union[pd.Series, pd.DataFrame], target_column: str, seasonal: str, seasonal_periods: int, n_predict: int, start_window: float, forecast_horizon: int) -> None:
+```python title='openbb_terminal/forecast/theta_model.py'
+def get_theta_data(data: Union[pd.Series, pd.DataFrame], target_column: str, seasonal: str, seasonal_periods: int, n_predict: int, start_window: float, forecast_horizon: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/theta_model.py#L28)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/theta_model.py#L29)
 
 Description: Performs Theta forecasting
 
@@ -37,17 +44,15 @@ If not set, inferred from frequency of the series. | None | False |
 
 
 
-
-# VIEW
-
-# theta
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forecast_theta_view.display_theta_forecast
 
-```python
-def theta(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, seasonal: str, seasonal_periods: int, n_predict: int, start_window: float, forecast_horizon: int, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/theta_view.py'
+def display_theta_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, seasonal: str, seasonal_periods: int, n_predict: int, start_window: float, forecast_horizon: int, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/theta_view.py#L20)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/theta_view.py#L21)
 
 Description: Display Theta forecast
 
@@ -80,3 +85,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

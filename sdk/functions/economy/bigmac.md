@@ -2,14 +2,21 @@
 title: bigmac
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # bigmac
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_nasdaq_model.get_big_mac_indices
 
-```python
-def bigma) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_big_mac_indices() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L165)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L166)
 
 Description: Display Big Mac Index for given countries
 
@@ -29,17 +36,15 @@ Description: Display Big Mac Index for given countries
 
 
 
-
-# VIEW
-
-# bigmac
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_nasdaq_view.display_big_mac_index
 
-```python
-def bigma) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_big_mac_index() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L58)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L59)
 
 Description: Display Big Mac Index for given countries
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

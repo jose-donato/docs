@@ -2,12 +2,13 @@
 title: si
 description: OpenBB SDK Function
 ---
+
 # si
 
 ## keys_model.set_si_key
 
-```python
-def si(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_si_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1388)
 

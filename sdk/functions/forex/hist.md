@@ -2,14 +2,15 @@
 title: hist
 description: OpenBB SDK Function
 ---
+
 # hist
 
 ## forex_av_model.get_historical
 
-```python
-def hist(to_symbol: str, from_symbol: str, resolution: str, interval: int, start_date: str) -> DataFrame:
+```python title='openbb_terminal/forex/av_model.py'
+def get_historical(to_symbol: str, from_symbol: str, resolution: str, interval: int, start_date: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L96)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L97)
 
 Description: Get historical forex data.
 

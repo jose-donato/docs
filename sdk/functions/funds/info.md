@@ -2,14 +2,21 @@
 title: info
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # info
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## mutual_funds_investpy_model.get_fund_info
 
-```python
-def info(name: str, country: str) -> DataFrame:
+```python title='openbb_terminal/mutual_funds/investpy_model.py'
+def get_fund_info(name: str, country: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L144)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L145)
 
 Description: None
 
@@ -30,17 +37,15 @@ Description: None
 
 
 
-
-# VIEW
-
-# info
+</TabItem>
+<TabItem value="view" label="View">
 
 ## mutual_funds_investpy_view.display_fund_info
 
-```python
-def info(name: str, country: str) -> None:
+```python title='openbb_terminal/mutual_funds/investpy_view.py'
+def display_fund_info(name: str, country: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_view.py#L103)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_view.py#L104)
 
 Description: Display fund information.  Finds name from symbol first if name is false
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

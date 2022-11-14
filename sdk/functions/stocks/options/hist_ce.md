@@ -2,14 +2,21 @@
 title: hist_ce
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # hist_ce
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_chartexchange_model.get_option_history
 
-```python
-def hist_ce(symbol: str, date: str, call: bool, price: str) -> DataFrame:
+```python title='openbb_terminal/stocks/options/chartexchange_model.py'
+def get_option_history(symbol: str, date: str, call: bool, price: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/chartexchange_model.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/chartexchange_model.py#L19)
 
 Description: Historic prices for a specific option [chartexchange]
 
@@ -32,17 +39,15 @@ Description: Historic prices for a specific option [chartexchange]
 
 
 
-
-# VIEW
-
-# hist_ce
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_chartexchange_view.display_raw
 
-```python
-def hist_ce(symbol: str, expiry: str, call: bool, price: float, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/options/chartexchange_view.py'
+def display_raw(symbol: str, expiry: str, call: bool, price: float, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/chartexchange_view.py#L58)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/chartexchange_view.py#L59)
 
 Description: Return raw stock data[chartexchange]
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

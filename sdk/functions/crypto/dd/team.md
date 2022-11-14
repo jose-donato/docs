@@ -2,14 +2,21 @@
 title: team
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # team
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_team
 
-```python
-def tea) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_team() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L410)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L411)
 
 Description: Returns coin team
 
@@ -29,17 +36,15 @@ Description: Returns coin team
 
 
 
-
-# VIEW
-
-# team
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_team
 
-```python
-def tea) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_team() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L543)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L544)
 
 Description: Display coin team
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

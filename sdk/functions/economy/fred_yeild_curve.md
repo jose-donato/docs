@@ -2,14 +2,21 @@
 title: fred_yeild_curve
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # fred_yeild_curve
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_fred_model.get_yield_curve
 
-```python
-def fred_yeild_curv) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_yield_curve() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L250)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L251)
 
 Description: Gets yield curve data from FRED
 
@@ -29,17 +36,15 @@ Description: Gets yield curve data from FRED
 
 
 
-
-# VIEW
-
-# fred_yeild_curve
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_fred_view.display_yield_curve
 
-```python
-def fred_yeild_curv) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_yield_curve() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L176)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L177)
 
 Description: Display yield curve based on US Treasury rates for a specified date.
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

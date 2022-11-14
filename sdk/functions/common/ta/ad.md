@@ -2,14 +2,21 @@
 title: ad
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ad
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_volume_model.ad
 
-```python
+```python title='openbb_terminal/common/technical_analysis/volume_model.py'
 def ad(data: pd.DataFrame, use_open: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L17)
 
 Description: Calculate AD technical indicator
 
@@ -30,17 +37,15 @@ Description: Calculate AD technical indicator
 
 
 
-
-# VIEW
-
-# ad
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_volume_view.display_ad
 
-```python
-def ad(data: pd.DataFrame, use_open: bool, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/volume_view.py'
+def display_ad(data: pd.DataFrame, use_open: bool, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L27)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L28)
 
 Description: Plot AD technical indicator
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

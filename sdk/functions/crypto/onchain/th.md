@@ -2,14 +2,21 @@
 title: th
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # th
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_ethplorer_model.get_token_history
 
-```python
-def th(address: Any, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
+def get_token_history(address: Any, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L481)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L482)
 
 Description: Get info about token historical transactions. [Source: Ethplorer]
 
@@ -31,17 +38,15 @@ Description: Get info about token historical transactions. [Source: Ethplorer]
 
 
 
-
-# VIEW
-
-# th
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_ethplorer_view.display_token_history
 
-```python
-def t) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_token_history() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L275)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L276)
 
 Description: Display info about token history. [Source: Ethplorer]
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

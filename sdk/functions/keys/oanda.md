@@ -2,12 +2,13 @@
 title: oanda
 description: OpenBB SDK Function
 ---
+
 # oanda
 
 ## keys_model.set_oanda_key
 
-```python
-def oanda(account: str, access_token: str, account_type: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_oanda_key(account: str, access_token: str, account_type: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1248)
 

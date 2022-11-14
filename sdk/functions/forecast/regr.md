@@ -2,14 +2,21 @@
 title: regr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # regr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forecast_regr_model.get_regression_data
 
-```python
-def regr(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]]) -> None:
+```python title='openbb_terminal/forecast/regr_model.py'
+def get_regression_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/regr_model.py#L21)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/regr_model.py#L22)
 
 Description: Perform Regression Forecasting
 
@@ -36,17 +43,15 @@ Description: Perform Regression Forecasting
 
 
 
-
-# VIEW
-
-# regr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forecast_regr_view.display_regression
 
-```python
-def regr(data: Union[pd.Series, pd.DataFrame], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]], export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, explainability_raw: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/regr_view.py'
+def display_regression(data: Union[pd.Series, pd.DataFrame], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]], export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, explainability_raw: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/regr_view.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/regr_view.py#L20)
 
 Description: Display Regression Forecasting
 
@@ -78,3 +83,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,12 +2,19 @@
 title: omega
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # omega
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_model.get_omega
 
-```python
-def omega(data: pd.DataFrame, threshold_start: float, threshold_end: float) -> DataFrame:
+```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
+def get_omega(data: pd.DataFrame, threshold_start: float, threshold_end: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L638)
 
@@ -29,15 +36,13 @@ None
 
 
 
-
-# VIEW
-
-# omega
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_view.display_omega
 
-```python
-def omega(data: pd.DataFrame, threshold_start: float, threshold_end: float) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
+def display_omega(data: pd.DataFrame, threshold_start: float, threshold_end: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1170)
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

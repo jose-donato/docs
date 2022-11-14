@@ -2,14 +2,21 @@
 title: hcorr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # hcorr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ca_yahoo_finance_model.get_correlation
 
-```python
-def hcorr(similar: List[str], start_date: str, candle_type: str) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py'
+def get_correlation(similar: List[str], start_date: str, candle_type: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L94)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L95)
 
 Description: Get historical price correlation. [Source: Yahoo Finance]
 
@@ -31,17 +38,15 @@ None
 
 
 
-
-# VIEW
-
-# hcorr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ca_yahoo_finance_view.display_correlation
 
-```python
-def hcorr(similar: List[str], start_date: str, candle_type: str, display_full_matrix: bool, raw: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], export: str) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py'
+def display_correlation(similar: List[str], start_date: str, candle_type: str, display_full_matrix: bool, raw: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L162)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L163)
 
 Description: Correlation heatmap based on historical price comparison
 
@@ -65,3 +70,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

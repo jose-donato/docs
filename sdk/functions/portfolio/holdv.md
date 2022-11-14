@@ -2,12 +2,19 @@
 title: holdv
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # holdv
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_model.get_holdings_value
 
-```python
-def holdv(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_holdings_value(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1339)
 
@@ -29,17 +36,15 @@ Description: Get holdings of assets (absolute value)
 
 
 
-
-# VIEW
-
-# holdv
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_view.display_holdings_value
 
-```python
-def holdv(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, unstack: bool, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_view.py'
+def display_holdings_value(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, unstack: bool, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L625)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L626)
 
 Description: Display holdings of assets (absolute value)
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

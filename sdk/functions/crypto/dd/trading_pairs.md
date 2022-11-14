@@ -2,14 +2,15 @@
 title: trading_pairs
 description: OpenBB SDK Function
 ---
+
 # trading_pairs
 
 ## crypto_dd_binance_model._get_trading_pairs
 
-```python
-def trading_pair) -> None:
+```python title='openbb_terminal/decorators.py'
+def _get_trading_pairs() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L20)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L21)
 
 Description: Helper method that return all trading pairs on binance. Methods ause this data for input for e.g
 

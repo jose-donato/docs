@@ -2,14 +2,15 @@
 title: sma
 description: OpenBB SDK Function
 ---
+
 # sma
 
 ## common_ta_overlap_model.sma
 
-```python
+```python title='openbb_terminal/common/technical_analysis/overlap_model.py'
 def sma(data: pd.Series, length: int, offset: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L42)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L43)
 
 Description: Gets simple moving average (EMA) for stock
 

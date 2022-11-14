@@ -2,12 +2,19 @@
 title: panel
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # panel
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## econometrics_regression_model.get_regressions_results
 
-```python
-def panel(regression_type: str, regression_variables: List[Tuple], data: Dict[str, pd.DataFrame], entity_effects: bool, time_effects: bool) -> None:
+```python title='openbb_terminal/econometrics/regression_model.py'
+def get_regressions_results(regression_type: str, regression_variables: List[Tuple], data: Dict[str, pd.DataFrame], entity_effects: bool, time_effects: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L33)
 
@@ -34,17 +41,15 @@ the dependent variable. | None | False |
 
 
 
-
-# VIEW
-
-# panel
+</TabItem>
+<TabItem value="view" label="View">
 
 ## econometrics_regression_view.display_panel
 
-```python
-def panel(data: Dict[str, pd.DataFrame], regression_variables: List[Tuple], regression_type: str, entity_effects: bool, time_effects: bool, export: str) -> None:
+```python title='openbb_terminal/econometrics/regression_view.py'
+def display_panel(data: Dict[str, pd.DataFrame], regression_variables: List[Tuple], regression_type: str, entity_effects: bool, time_effects: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L23)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L24)
 
 Description: Based on the regression type, this function decides what regression to run.
 
@@ -70,3 +75,7 @@ OLS, POLS, RE, BOLS, FE | None | False |
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: tx
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # tx
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_ethplorer_model.get_tx_info
 
-```python
-def tx(tx_hash: Any) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
+def get_tx_info(tx_hash: Any) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L436)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L437)
 
 Description: Get info about transaction. [Source: Ethplorer]
 
@@ -29,17 +36,15 @@ Description: Get info about transaction. [Source: Ethplorer]
 
 
 
-
-# VIEW
-
-# tx
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_ethplorer_view.display_tx_info
 
-```python
-def t) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_tx_info() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L248)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L249)
 
 Description: Display info about transaction. [Source: Ethplorer]
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

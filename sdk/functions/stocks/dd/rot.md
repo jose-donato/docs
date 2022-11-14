@@ -2,14 +2,21 @@
 title: rot
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # rot
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dd_finnhub_model.get_rating_over_time
 
-```python
-def ro) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_rating_over_time() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
 
 Description: Get rating over time data. [Source: Finnhub]
 
@@ -29,17 +36,15 @@ Description: Get rating over time data. [Source: Finnhub]
 
 
 
-
-# VIEW
-
-# rot
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dd_finnhub_view.rating_over_time
 
-```python
-def ro) -> None:
+```python title='openbb_terminal/decorators.py'
+def rating_over_time() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L74)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L75)
 
 Description: Rating over time (monthly). [Source: Finnhub]
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

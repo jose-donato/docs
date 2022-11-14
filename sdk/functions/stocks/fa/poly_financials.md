@@ -2,14 +2,21 @@
 title: poly_financials
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # poly_financials
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_fa_polygon_model.get_financials
 
-```python
-def poly_financial) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_financials() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
 
 Description: Get ticker financial statements from polygon
 
@@ -32,17 +39,15 @@ Description: Get ticker financial statements from polygon
 
 
 
-
-# VIEW
-
-# poly_financials
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_fa_polygon_view.display_fundamentals
 
-```python
-def poly_financial) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_fundamentals() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L25)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L26)
 
 Description: Display tickers balance sheet or income statement
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

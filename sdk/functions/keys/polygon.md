@@ -2,12 +2,13 @@
 title: polygon
 description: OpenBB SDK Function
 ---
+
 # polygon
 
 ## keys_model.set_polygon_key
 
-```python
-def polygon(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_polygon_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L441)
 

@@ -2,14 +2,15 @@
 title: usbonds
 description: OpenBB SDK Function
 ---
+
 # usbonds
 
 ## economy_wsj_model.us_bonds
 
-```python
-def usbond) -> DataFrame:
+```python title='openbb_terminal/economy/wsj_model.py'
+def us_bonds() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L150)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L151)
 
 Description: Scrape data for us bonds
 

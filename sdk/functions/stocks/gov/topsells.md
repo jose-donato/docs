@@ -2,14 +2,21 @@
 title: topsells
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # topsells
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_gov_quiverquant_model.get_government_sells
 
-```python
-def topsells(gov_type: str, past_transactions_months: int) -> DataFrame:
+```python title='openbb_terminal/stocks/government/quiverquant_model.py'
+def get_government_sells(gov_type: str, past_transactions_months: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L286)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L287)
 
 Description: Get top sell government trading [Source: quiverquant.com]
 
@@ -30,17 +37,15 @@ Description: Get top sell government trading [Source: quiverquant.com]
 
 
 
-
-# VIEW
-
-# topsells
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_gov_quiverquant_view.display_government_sells
 
-```python
-def topsells(gov_type: str, past_transactions_months: int, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/government/quiverquant_view.py'
+def display_government_sells(gov_type: str, past_transactions_months: int, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L150)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L151)
 
 Description: Top sell government trading [Source: quiverquant.com]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

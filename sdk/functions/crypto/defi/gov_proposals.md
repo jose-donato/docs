@@ -2,14 +2,21 @@
 title: gov_proposals
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # gov_proposals
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_terramoney_fcd_model.get_proposals
 
-```python
-def gov_proposals(status: str, sortby: str, ascend: bool, limit: int) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
+def get_proposals(status: str, sortby: str, ascend: bool, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L195)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L196)
 
 Description: Get terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
 
@@ -32,17 +39,15 @@ Description: Get terra blockchain governance proposals list [Source: https://fcd
 
 
 
-
-# VIEW
-
-# gov_proposals
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_terramoney_fcd_view.display_gov_proposals
 
-```python
-def gov_proposals(limit: int, status: str, sortby: str, ascend: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
+def display_gov_proposals(limit: int, status: str, sortby: str, ascend: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L107)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L108)
 
 Description: Display terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

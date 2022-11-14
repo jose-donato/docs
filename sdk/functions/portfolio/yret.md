@@ -2,14 +2,21 @@
 title: yret
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # yret
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_model.get_yearly_returns
 
-```python
-def yret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_yearly_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1850)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1851)
 
 Description: Get yearly returns
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# yret
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_view.display_yearly_returns
 
-```python
-def yret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_view.py'
+def display_yearly_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L288)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L289)
 
 Description: Display yearly returns
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

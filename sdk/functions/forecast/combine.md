@@ -2,14 +2,15 @@
 title: combine
 description: OpenBB SDK Function
 ---
+
 # combine
 
 ## forecast_model.combine_dfs
 
-```python
-def combine(df1: pd.DataFrame, df2: pd.DataFrame, column: str, dataset: str) -> DataFrame:
+```python title='openbb_terminal/forecast/forecast_model.py'
+def combine_dfs(df1: pd.DataFrame, df2: pd.DataFrame, column: str, dataset: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L396)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L397)
 
 Description: Adds the given column of df2 to df1
 

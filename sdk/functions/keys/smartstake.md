@@ -2,12 +2,13 @@
 title: smartstake
 description: OpenBB SDK Function
 ---
+
 # smartstake
 
 ## keys_model.set_smartstake_key
 
-```python
-def smartstake(key: str, access_token: str, persist: bool, show_output: bool) -> None:
+```python title='openbb_terminal/keys_model.py'
+def set_smartstake_key(key: str, access_token: str, persist: bool, show_output: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1845)
 

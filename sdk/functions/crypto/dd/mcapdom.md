@@ -2,14 +2,21 @@
 title: mcapdom
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # mcapdom
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_marketcap_dominance
 
-```python
-def mcapdom(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_marketcap_dominance(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L80)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L81)
 
 Description: Returns market dominance of a coin over time
 
@@ -32,17 +39,15 @@ Description: Returns market dominance of a coin over time
 
 
 
-
-# VIEW
-
-# mcapdom
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_marketcap_dominance
 
-```python
-def mcapdo) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_marketcap_dominance() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L174)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L175)
 
 Description: Display market dominance of a coin over time
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

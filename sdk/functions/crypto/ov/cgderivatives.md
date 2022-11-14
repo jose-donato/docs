@@ -2,14 +2,21 @@
 title: cgderivatives
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cgderivatives
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_pycoingecko_model.get_derivatives
 
-```python
-def cgderivatives(sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
+def get_derivatives(sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L340)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L341)
 
 Description: Get list of crypto derivatives from CoinGecko API [Source: CoinGecko]
 
@@ -31,17 +38,15 @@ Funding_Rate, Volume_24h, |
 
 
 
-
-# VIEW
-
-# cgderivatives
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_pycoingecko_view.display_derivatives
 
-```python
-def cgderivatives(sortby: str, ascend: bool, limit: int, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
+def display_derivatives(sortby: str, ascend: bool, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L673)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L674)
 
 Description: Shows  list of crypto derivatives. [Source: CoinGecko]
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

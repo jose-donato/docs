@@ -2,14 +2,21 @@
 title: options
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # options
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## econometrics_model.get_options
 
-```python
-def options(datasets: Dict[str, pd.DataFrame], dataset_name: str) -> None:
+```python title='openbb_terminal/econometrics/econometrics_model.py'
+def get_options(datasets: Dict[str, pd.DataFrame], dataset_name: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L20)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L21)
 
 Description: Obtain columns-dataset combinations from loaded in datasets that can be used in other commands
 
@@ -31,17 +38,15 @@ options table. |
 
 
 
-
-# VIEW
-
-# options
+</TabItem>
+<TabItem value="view" label="View">
 
 ## econometrics_view.show_options
 
-```python
-def options(datasets: Dict[str, pd.DataFrame], dataset_name: str, export: str) -> None:
+```python title='openbb_terminal/econometrics/econometrics_view.py'
+def show_options(datasets: Dict[str, pd.DataFrame], dataset_name: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L33)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L34)
 
 Description: Plot custom data
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

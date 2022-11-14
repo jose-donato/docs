@@ -2,14 +2,21 @@
 title: balance
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # balance
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_ethplorer_model.get_address_info
 
-```python
-def balance(address: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
+def get_address_info(address: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L195)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L196)
 
 Description: Get info about tokens on you ethereum blockchain balance. Eth balance, balance of all tokens which
 
@@ -31,17 +38,15 @@ Description: Get info about tokens on you ethereum blockchain balance. Eth balan
 
 
 
-
-# VIEW
-
-# balance
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_ethplorer_view.display_address_info
 
-```python
-def balanc) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_address_info() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L20)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L21)
 
 Description: Display info about tokens for given ethereum blockchain balance e.g. ETH balance,
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

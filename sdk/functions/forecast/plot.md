@@ -2,14 +2,15 @@
 title: plot
 description: OpenBB SDK Function
 ---
+
 # plot
 
 ## forecast_view.display_plot
 
-```python
-def plot(data: pd.DataFrame, columns: List[str], export: str, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/forecast_view.py'
+def display_plot(data: pd.DataFrame, columns: List[str], export: str, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L73)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L74)
 
 Description: Plot data from a dataset
 

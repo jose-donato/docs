@@ -2,14 +2,15 @@
 title: text_sent
 description: OpenBB SDK Function
 ---
+
 # text_sent
 
 ## stocks_ba_reddit_model.get_sentiment
 
-```python
-def text_sen) -> float:
+```python title='openbb_terminal/decorators.py'
+def get_sentiment() -> float:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L1055)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L1056)
 
 Description: Find the sentiment of a post and related comments
 

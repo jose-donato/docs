@@ -2,14 +2,15 @@
 title: kelly
 description: OpenBB SDK Function
 ---
+
 # kelly
 
 ## portfolio_model.get_kelly_criterion
 
-```python
-def kelly(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_kelly_criterion(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1285)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1286)
 
 Description: Gets kelly criterion
 

@@ -2,14 +2,15 @@
 title: price
 description: OpenBB SDK Function
 ---
+
 # price
 
 ## stocks_options_yfinance_model.get_price
 
-```python
-def price(symbol: str) -> float:
+```python title='openbb_terminal/stocks/options/yfinance_model.py'
+def get_price(symbol: str) -> float:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L257)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L258)
 
 Description: Get current price for a given ticker
 

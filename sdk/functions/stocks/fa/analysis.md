@@ -2,14 +2,15 @@
 title: analysis
 description: OpenBB SDK Function
 ---
+
 # analysis
 
 ## stocks_fa_eclect_us_model.get_filings_analysis
 
-```python
-def analysis(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/eclect_us_model.py'
+def get_filings_analysis(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/eclect_us_model.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/eclect_us_model.py#L18)
 
 Description: Save time reading SEC filings with the help of machine learning. [Source: https://eclect.us]
 

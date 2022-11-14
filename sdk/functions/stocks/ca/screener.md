@@ -2,14 +2,15 @@
 title: screener
 description: OpenBB SDK Function
 ---
+
 # screener
 
 ## stocks_ca_finviz_compare_model.get_comparison_data
 
-```python
-def screener(similar: List[str], data_type: str) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py'
+def get_comparison_data(similar: List[str], data_type: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L54)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L55)
 
 Description: Screener Overview
 

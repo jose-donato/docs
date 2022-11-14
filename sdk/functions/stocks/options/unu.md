@@ -2,14 +2,21 @@
 title: unu
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # unu
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_fdscanner_model.unusual_options
 
-```python
-def unu(limit: int) -> None:
+```python title='openbb_terminal/stocks/options/fdscanner_model.py'
+def unusual_options(limit: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L18)
 
 Description: Get unusual option activity from fdscanner.com
 
@@ -29,17 +36,15 @@ Description: Get unusual option activity from fdscanner.com
 
 
 
-
-# VIEW
-
-# unu
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_fdscanner_view.display_options
 
-```python
-def unu(limit: int, sortby: str, ascend: bool, calls_only: bool, puts_only: bool, export: str) -> None:
+```python title='openbb_terminal/stocks/options/fdscanner_view.py'
+def display_options(limit: int, sortby: str, ascend: bool, calls_only: bool, puts_only: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_view.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_view.py#L15)
 
 Description: Displays the unusual options table
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

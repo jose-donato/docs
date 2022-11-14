@@ -2,14 +2,21 @@
 title: info
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # info
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_ethplorer_model.get_token_info
 
-```python
-def info(address: Any) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
+def get_token_info(address: Any) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L372)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L373)
 
 Description: Get info about ERC20 token. [Source: Ethplorer]
 
@@ -29,17 +36,15 @@ Description: Get info about ERC20 token. [Source: Ethplorer]
 
 
 
-
-# VIEW
-
-# info
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_ethplorer_view.display_token_info
 
-```python
-def inf) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_token_info() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L205)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L206)
 
 Description: Display info about ERC20 token. [Source: Ethplorer]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

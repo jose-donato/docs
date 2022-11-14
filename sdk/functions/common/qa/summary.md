@@ -2,14 +2,21 @@
 title: summary
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # summary
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_model.get_summary
 
-```python
-def summary(data: pd.DataFrame) -> DataFrame:
+```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
+def get_summary(data: pd.DataFrame) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L24)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L25)
 
 Description: Print summary statistics
 
@@ -29,17 +36,15 @@ Description: Print summary statistics
 
 
 
-
-# VIEW
-
-# summary
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_view.display_summary
 
-```python
-def summary(data: pd.DataFrame, export: str) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
+def display_summary(data: pd.DataFrame, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L52)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L53)
 
 Description: Show summary statistics
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

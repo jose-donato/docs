@@ -2,14 +2,15 @@
 title: fisher
 description: OpenBB SDK Function
 ---
+
 # fisher
 
 ## common_ta_momentum_model.fisher
 
-```python
+```python title='openbb_terminal/common/technical_analysis/momentum_model.py'
 def fisher(data: pd.DataFrame, window: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L164)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L165)
 
 Description: Fisher Transform
 

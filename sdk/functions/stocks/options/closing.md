@@ -2,14 +2,15 @@
 title: closing
 description: OpenBB SDK Function
 ---
+
 # closing
 
 ## stocks_options_yfinance_model.get_closing
 
-```python
-def closing(symbol: str) -> Series:
+```python title='openbb_terminal/stocks/options/yfinance_model.py'
+def get_closing(symbol: str) -> Series:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L296)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L297)
 
 Description: Get closing prices for a given ticker
 

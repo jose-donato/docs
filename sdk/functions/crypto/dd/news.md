@@ -2,14 +2,21 @@
 title: news
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # news
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_cryptopanic_model.get_news
 
-```python
-def news(limit: int, post_kind: str, filter_: Union[str, NoneType], region: str, source: Union[str, NoneType], symbol: Union[str, NoneType], sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/cryptopanic_model.py'
+def get_news(limit: int, post_kind: str, filter_: Union[str, NoneType], region: str, source: Union[str, NoneType], symbol: Union[str, NoneType], sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_model.py#L156)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_model.py#L157)
 
 Description: Get recent posts from CryptoPanic news aggregator platform. [Source: https://cryptopanic.com/]
 
@@ -35,17 +42,15 @@ es (Español), fr (Français), it (Italiano), pt (Português), ru (Русски�
 
 
 
-
-# VIEW
-
-# news
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_cryptopanic_view.display_news
 
-```python
-def new) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_news() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
 
 Description: Display recent posts from CryptoPanic news aggregator platform.
 
@@ -67,3 +72,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

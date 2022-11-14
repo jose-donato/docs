@@ -2,14 +2,15 @@
 title: commonsense
 description: OpenBB SDK Function
 ---
+
 # commonsense
 
 ## portfolio_model.get_common_sense_ratio
 
-```python
-def commonsense(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_common_sense_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1198)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1199)
 
 Description: Get common sense ratio
 

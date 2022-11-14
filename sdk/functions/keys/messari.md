@@ -2,12 +2,13 @@
 title: messari
 description: OpenBB SDK Function
 ---
+
 # messari
 
 ## keys_model.set_messari_key
 
-```python
-def messari(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_messari_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1976)
 

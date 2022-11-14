@@ -2,14 +2,15 @@
 title: fmp_cash
 description: OpenBB SDK Function
 ---
+
 # fmp_cash
 
 ## stocks_fa_fmp_model.get_cash
 
-```python
-def fmp_cas) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_cash() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L348)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L349)
 
 Description: Get cash flow
 

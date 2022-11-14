@@ -2,14 +2,15 @@
 title: recom
 description: OpenBB SDK Function
 ---
+
 # recom
 
 ## stocks_ta_tradingview_model.get_tradingview_recommendation
 
-```python
-def recom(symbol: str, screener: str, exchange: str, interval: str) -> DataFrame:
+```python title='openbb_terminal/stocks/technical_analysis/tradingview_model.py'
+def get_tradingview_recommendation(symbol: str, screener: str, exchange: str, interval: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_model.py#L55)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_model.py#L56)
 
 Description: Get tradingview recommendation based on technical indicators
 

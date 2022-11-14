@@ -2,14 +2,21 @@
 title: platforms
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # platforms
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_pycoingecko_model.get_financial_platforms
 
-```python
-def platforms(sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
+def get_financial_platforms(sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L259)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L260)
 
 Description: Get list of financial platforms from CoinGecko API [Source: CoinGecko]
 
@@ -30,17 +37,15 @@ Description: Get list of financial platforms from CoinGecko API [Source: CoinGec
 
 
 
-
-# VIEW
-
-# platforms
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_pycoingecko_view.display_platforms
 
-```python
-def platforms(sortby: str, ascend: bool, limit: int, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
+def display_platforms(sortby: str, ascend: bool, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L556)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L557)
 
 Description: Shows list of financial platforms. [Source: CoinGecko]
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

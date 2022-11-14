@@ -2,14 +2,15 @@
 title: arkord
 description: OpenBB SDK Function
 ---
+
 # arkord
 
 ## stocks_disc_ark_model.get_ark_orders
 
-```python
-def arkord(buys_only: bool, sells_only: bool, fund: str) -> DataFrame:
+```python title='openbb_terminal/stocks/discovery/ark_model.py'
+def get_ark_orders(buys_only: bool, sells_only: bool, fund: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L22)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L23)
 
 Description: Returns ARK orders in a Dataframe
 

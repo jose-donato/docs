@@ -2,14 +2,21 @@
 title: grhist
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # grhist
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_screen_syncretism_model.get_historical_greeks
 
-```python
-def grhist(symbol: str, expiry: str, strike: Union[str, float], chain_id: str, put: bool) -> DataFrame:
+```python title='openbb_terminal/stocks/options/screen/syncretism_model.py'
+def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], chain_id: str, put: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L36)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L37)
 
 Description: Get histoical option greeks
 
@@ -33,17 +40,15 @@ Description: Get histoical option greeks
 
 
 
-
-# VIEW
-
-# grhist
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_screen_syncretism_view.view_historical_greeks
 
-```python
-def grhist(symbol: str, expiry: str, strike: Union[float, str], greek: str, chain_id: str, put: bool, raw: bool, limit: Union[int, str], export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/options/screen/syncretism_view.py'
+def view_historical_greeks(symbol: str, expiry: str, strike: Union[float, str], greek: str, chain_id: str, put: bool, raw: bool, limit: Union[int, str], export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L105)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L106)
 
 Description: Plots historical greeks for a given option. [Source: Syncretism]
 
@@ -68,3 +73,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

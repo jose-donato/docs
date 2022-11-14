@@ -2,12 +2,13 @@
 title: summary
 description: OpenBB SDK Function
 ---
+
 # summary
 
 ## portfolio_model.get_summary
 
-```python
-def summary(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, risk_free_rate: float) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_summary(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, risk_free_rate: float) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1783)
 

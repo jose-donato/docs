@@ -2,14 +2,21 @@
 title: spread
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # spread
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_rolling_model.get_spread
 
-```python
-def spread(data: pd.DataFrame, window: int) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_model.py'
+def get_spread(data: pd.DataFrame, window: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L41)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L42)
 
 Description: Standard Deviation and Variance
 
@@ -30,17 +37,15 @@ Description: Standard Deviation and Variance
 
 
 
-
-# VIEW
-
-# spread
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_rolling_view.display_spread
 
-```python
-def spread(data: pd.DataFrame, target: str, symbol: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_view.py'
+def display_spread(data: pd.DataFrame, target: str, symbol: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L135)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L136)
 
 Description: View rolling spread
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

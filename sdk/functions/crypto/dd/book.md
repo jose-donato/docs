@@ -2,14 +2,21 @@
 title: book
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # book
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_binance_model.get_order_book
 
-```python
-def boo) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_order_book() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L138)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L139)
 
 Description: Get order book for currency. [Source: Binance]
 
@@ -31,17 +38,15 @@ Description: Get order book for currency. [Source: Binance]
 
 
 
-
-# VIEW
-
-# book
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_binance_view.display_order_book
 
-```python
-def book(from_symbol: str, limit: int, to_symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/binance_view.py'
+def display_order_book(from_symbol: str, limit: int, to_symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_view.py#L23)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_view.py#L24)
 
 Description: Get order book for currency. [Source: Binance]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,12 +2,13 @@
 title: reddit
 description: OpenBB SDK Function
 ---
+
 # reddit
 
 ## keys_model.set_reddit_key
 
-```python
-def reddit(client_id: str, client_secret: str, password: str, username: str, useragent: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_reddit_key(client_id: str, client_secret: str, password: str, username: str, useragent: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L854)
 

@@ -2,14 +2,15 @@
 title: ema
 description: OpenBB SDK Function
 ---
+
 # ema
 
 ## forecast_model.add_ema
 
-```python
-def ema(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
+```python title='openbb_terminal/forecast/forecast_model.py'
+def add_ema(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L146)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L147)
 
 Description: A moving average provides an indication of the trend of the price movement
 

@@ -2,14 +2,21 @@
 title: gacc
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # gacc
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_terramoney_fcd_model.get_account_growth
 
-```python
-def gacc(cumulative: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
+def get_account_growth(cumulative: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L261)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L262)
 
 Description: Get terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
 
@@ -29,17 +36,15 @@ Description: Get terra blockchain account growth history [Source: https://fcd.te
 
 
 
-
-# VIEW
-
-# gacc
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_terramoney_fcd_view.display_account_growth
 
-```python
-def gacc(kind: str, cumulative: bool, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
+def display_account_growth(kind: str, cumulative: bool, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L138)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L139)
 
 Description: Display terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

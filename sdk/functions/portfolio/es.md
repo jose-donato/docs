@@ -2,14 +2,15 @@
 title: es
 description: OpenBB SDK Function
 ---
+
 # es
 
 ## portfolio_model.get_es
 
-```python
-def es(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, use_mean: bool, distribution: str, percentile: float) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_es(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, use_mean: bool, distribution: str, percentile: float) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1722)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1723)
 
 Description: Get portfolio expected shortfall
 

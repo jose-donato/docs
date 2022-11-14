@@ -2,14 +2,21 @@
 title: psi_q
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # psi_q
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dps_quandl_model.get_short_interest
 
-```python
-def psi_) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_short_interest() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
 
 Description: Plots the short interest of a stock. This corresponds to the
 
@@ -31,17 +38,15 @@ None
 
 
 
-
-# VIEW
-
-# psi_q
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dps_quandl_view.short_interest
 
-```python
-def psi_) -> None:
+```python title='openbb_terminal/decorators.py'
+def short_interest() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L96)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L97)
 
 Description: Plots the short interest of a stock. This corresponds to the
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

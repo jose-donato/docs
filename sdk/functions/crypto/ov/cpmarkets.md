@@ -2,14 +2,21 @@
 title: cpmarkets
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpmarkets
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_coinpaprika_model.get_coins_market_info
 
-```python
-def cpmarkets(symbols: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
+def get_coins_market_info(symbols: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L240)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L241)
 
 Description: Returns basic coin information for all coins from CoinPaprika API [Source: CoinPaprika]
 
@@ -32,17 +39,15 @@ pct_change_1h, pct_change_24h, ath_price, pct_from_ath, |
 
 
 
-
-# VIEW
-
-# cpmarkets
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_coinpaprika_view.display_all_coins_market_info
 
-```python
-def cpmarkets(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
+def display_all_coins_market_info(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L104)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L105)
 
 Description: Displays basic market information for all coins from CoinPaprika API. [Source: CoinPaprika]
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: headlines
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # headlines
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_finbrain_model.get_sentiment
 
-```python
-def headlines(symbol: str) -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/finbrain_model.py'
+def get_sentiment(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/finbrain_model.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/finbrain_model.py#L15)
 
 Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrain]
 
@@ -29,17 +36,15 @@ Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrai
 
 
 
-
-# VIEW
-
-# headlines
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_crypto_finbrain_view.display_crypto_sentiment_analysis
 
-```python
-def headlines(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/finbrain_crypto_view.py'
+def display_crypto_sentiment_analysis(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/finbrain_crypto_view.py#L38)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/finbrain_crypto_view.py#L39)
 
 Description: Sentiment analysis from FinBrain for Cryptocurrencies
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

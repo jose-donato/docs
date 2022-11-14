@@ -2,14 +2,21 @@
 title: ueat
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ueat
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_bitquery_model.get_ethereum_unique_senders
 
-```python
-def ueat(interval: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/bitquery_model.py'
+def get_ethereum_unique_senders(interval: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L583)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L584)
 
 Description: Get number of unique ethereum addresses which made a transaction in given time interval.
 
@@ -33,17 +40,15 @@ month or week. | None | False |
 
 
 
-
-# VIEW
-
-# ueat
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_bitquery_view.display_ethereum_unique_senders
 
-```python
-def uea) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_ethereum_unique_senders() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L223)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L224)
 
 Description: Display number of unique ethereum addresses which made a transaction in given time interval
 
@@ -68,3 +73,7 @@ For better user experience maximum time period in days is equal to 90. | None | 
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

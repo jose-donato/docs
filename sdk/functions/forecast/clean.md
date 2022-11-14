@@ -2,14 +2,15 @@
 title: clean
 description: OpenBB SDK Function
 ---
+
 # clean
 
 ## forecast_model.clean
 
-```python
+```python title='openbb_terminal/forecast/forecast_model.py'
 def clean(dataset: pd.DataFrame, fill: Union[str, NoneType], drop: Union[str, NoneType], limit: Union[int, NoneType]) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L87)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L88)
 
 Description: Clean up NaNs from the dataset
 

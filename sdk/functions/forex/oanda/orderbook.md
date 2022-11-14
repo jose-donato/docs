@@ -2,14 +2,21 @@
 title: orderbook
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # orderbook
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.orderbook_plot_data_request
 
-```python
-def orderbook(instrument: Union[str, NoneType], accountID: str) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def orderbook_plot_data_request(instrument: Union[str, NoneType], accountID: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L136)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L137)
 
 Description: Request order book data for plotting.
 
@@ -30,17 +37,15 @@ Description: Request order book data for plotting.
 
 
 
-
-# VIEW
-
-# orderbook
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.get_order_book
 
-```python
-def orderboo) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_order_book() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L79)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L80)
 
 Description: Plot the orderbook for the instrument if Oanda provides one.
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

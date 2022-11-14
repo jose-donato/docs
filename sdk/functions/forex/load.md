@@ -2,14 +2,15 @@
 title: load
 description: OpenBB SDK Function
 ---
+
 # load
 
 ## forex_helpers.load
 
-```python
+```python title='openbb_terminal/forex/forex_helper.py'
 def load(to_symbol: str, from_symbol: str, resolution: str, interval: str, start_date: str, source: str, verbose: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L96)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L97)
 
 Description: Load forex for two given symbols.
 

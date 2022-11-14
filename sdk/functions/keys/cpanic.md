@@ -2,12 +2,13 @@
 title: cpanic
 description: OpenBB SDK Function
 ---
+
 # cpanic
 
 ## keys_model.set_cpanic_key
 
-```python
-def cpanic(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_cpanic_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1726)
 

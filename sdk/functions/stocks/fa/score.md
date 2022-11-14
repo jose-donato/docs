@@ -2,14 +2,15 @@
 title: score
 description: OpenBB SDK Function
 ---
+
 # score
 
 ## stocks_fa_fmp_model.get_score
 
-```python
-def scor) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_score() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L24)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L25)
 
 Description: Gets value score from fmp
 

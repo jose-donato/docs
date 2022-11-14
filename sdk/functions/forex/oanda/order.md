@@ -2,14 +2,21 @@
 title: order
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # order
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.create_order_request
 
-```python
-def order(price: int, units: int, instrument: Union[str, NoneType], accountID: str) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def create_order_request(price: int, units: int, instrument: Union[str, NoneType], accountID: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L269)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L270)
 
 Description: Request creation of buy/sell trade order.
 
@@ -32,17 +39,15 @@ Description: Request creation of buy/sell trade order.
 
 
 
-
-# VIEW
-
-# order
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.create_order
 
-```python
-def orde) -> None:
+```python title='openbb_terminal/decorators.py'
+def create_order() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L177)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L178)
 
 Description: Create a buy/sell order.
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

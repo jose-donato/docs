@@ -2,12 +2,13 @@
 title: exchanges
 description: OpenBB SDK Function
 ---
+
 # exchanges
 
 ## crypto_dd_ccxt_model.get_exchanges
 
-```python
-def exchange) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py'
+def get_exchanges() -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L10)
 

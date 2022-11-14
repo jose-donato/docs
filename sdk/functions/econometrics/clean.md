@@ -2,14 +2,15 @@
 title: clean
 description: OpenBB SDK Function
 ---
+
 # clean
 
 ## econometrics_model.clean
 
-```python
+```python title='openbb_terminal/econometrics/econometrics_model.py'
 def clean(dataset: pd.DataFrame, fill: str, drop: str, limit: Union[int, NoneType]) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L62)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L63)
 
 Description: Clean up NaNs from the dataset
 

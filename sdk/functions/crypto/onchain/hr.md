@@ -2,14 +2,21 @@
 title: hr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # hr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_glassnode_model.get_hashrate
 
-```python
-def h) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_hashrate() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L364)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L365)
 
 Description: Returns dataframe with mean hashrate of btc or eth blockchain and symbol price
 
@@ -32,17 +39,15 @@ Description: Returns dataframe with mean hashrate of btc or eth blockchain and s
 
 
 
-
-# VIEW
-
-# hr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_glassnode_view.display_hashrate
 
-```python
-def h) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_hashrate() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L305)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L306)
 
 Description: Display dataframe with mean hashrate of btc or eth blockchain and symbol price.
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

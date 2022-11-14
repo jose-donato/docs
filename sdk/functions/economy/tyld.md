@@ -2,14 +2,21 @@
 title: tyld
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # tyld
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_alphavantage_model.get_treasury_yield
 
-```python
-def tyld(interval: str, maturity: str, start_date: str) -> DataFrame:
+```python title='openbb_terminal/economy/alphavantage_model.py'
+def get_treasury_yield(interval: str, maturity: str, start_date: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L228)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L229)
 
 Description: Get historical yield for a given maturity
 
@@ -31,17 +38,15 @@ Description: Get historical yield for a given maturity
 
 
 
-
-# VIEW
-
-# tyld
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_alphavantage_view.display_treasury_yield
 
-```python
-def tyl) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_treasury_yield() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L314)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L315)
 
 Description: Display historical treasury yield for given maturity
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

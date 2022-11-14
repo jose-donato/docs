@@ -2,14 +2,21 @@
 title: ttcp
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ttcp
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_bitquery_model.get_most_traded_pairs
 
-```python
-def ttcp(network: str, exchange: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/bitquery_model.py'
+def get_most_traded_pairs(network: str, exchange: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L657)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L658)
 
 Description: Get most traded crypto pairs on given decentralized exchange in chosen time period.
 
@@ -31,17 +38,15 @@ None
 
 
 
-
-# VIEW
-
-# ttcp
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_bitquery_view.display_most_traded_pairs
 
-```python
-def ttc) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_most_traded_pairs() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L283)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L284)
 
 Description: Display most traded crypto pairs on given decentralized exchange in chosen time period.
 
@@ -63,3 +68,7 @@ Description: Display most traded crypto pairs on given decentralized exchange in
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

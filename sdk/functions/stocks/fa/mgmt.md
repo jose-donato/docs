@@ -2,14 +2,15 @@
 title: mgmt
 description: OpenBB SDK Function
 ---
+
 # mgmt
 
 ## stocks_fa_business_insider_model.get_management
 
-```python
-def mgmt(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/business_insider_model.py'
+def get_management(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/business_insider_model.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/business_insider_model.py#L19)
 
 Description: Get company managers from Business Insider
 

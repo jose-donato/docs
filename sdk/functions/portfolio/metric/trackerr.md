@@ -2,14 +2,15 @@
 title: trackerr
 description: OpenBB SDK Function
 ---
+
 # trackerr
 
 ## portfolio_model.get_tracking_error
 
-```python
-def trackerr(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_tracking_error(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1121)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1122)
 
 Description: Get tracking error
 

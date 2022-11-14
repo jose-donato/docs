@@ -2,14 +2,15 @@
 title: ipo
 description: OpenBB SDK Function
 ---
+
 # ipo
 
 ## stocks_disc_finnhub_model.get_ipo_calendar
 
-```python
-def ip) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_ipo_calendar() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 
 Description: Get IPO calendar
 

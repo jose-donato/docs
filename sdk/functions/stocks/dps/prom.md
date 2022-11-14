@@ -2,14 +2,21 @@
 title: prom
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # prom
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dps_finra_model.getATSdata
 
-```python
-def prom(limit: int, tier_ats: str) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/finra_model.py'
+def getATSdata(limit: int, tier_ats: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L215)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L216)
 
 Description: Get all FINRA ATS data, and parse most promising tickers based on linear regression
 
@@ -30,17 +37,15 @@ Description: Get all FINRA ATS data, and parse most promising tickers based on l
 
 
 
-
-# VIEW
-
-# prom
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dps_finra_view.darkpool_otc
 
-```python
-def prom(input_limit: int, limit: int, tier: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/finra_view.py'
+def darkpool_otc(input_limit: int, limit: int, tier: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L188)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L189)
 
 Description: Display dark pool (ATS) data of tickers with growing trades activity. [Source: FINRA]
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

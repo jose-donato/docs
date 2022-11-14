@@ -2,14 +2,21 @@
 title: mret
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # mret
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_model.get_monthly_returns
 
-```python
-def mret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_monthly_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1899)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1900)
 
 Description: Get monthly returns
 
@@ -30,17 +37,15 @@ Description: Get monthly returns
 
 
 
-
-# VIEW
-
-# mret
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_view.display_monthly_returns
 
-```python
-def mret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, show_vals: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_view.py'
+def display_monthly_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, show_vals: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L368)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L369)
 
 Description: Display monthly returns
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,12 +2,13 @@
 title: github
 description: OpenBB SDK Function
 ---
+
 # github
 
 ## keys_model.set_github_key
 
-```python
-def github(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_github_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1926)
 

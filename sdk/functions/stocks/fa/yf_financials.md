@@ -2,14 +2,21 @@
 title: yf_financials
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # yf_financials
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_fa_yahoo_finance_model.get_financials
 
-```python
-def yf_financials(symbol: str, statement: str, ratios: bool) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+def get_financials(symbol: str, statement: str, ratios: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L327)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L328)
 
 Description: Get cashflow statement for company
 
@@ -35,17 +42,15 @@ Description: Get cashflow statement for company
 
 
 
-
-# VIEW
-
-# yf_financials
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_fa_yahoo_finance_view.display_fundamentals
 
-```python
-def yf_financials(symbol: str, statement: str, limit: int, ratios: bool, plot: list, export: str) -> None:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py'
+def display_fundamentals(symbol: str, statement: str, limit: int, ratios: bool, plot: list, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L382)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L383)
 
 Description: Display tickers balance sheet, income statement or cash-flow
 
@@ -70,3 +75,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

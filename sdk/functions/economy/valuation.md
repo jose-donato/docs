@@ -2,14 +2,15 @@
 title: valuation
 description: OpenBB SDK Function
 ---
+
 # valuation
 
 ## economy_finviz_model.get_valuation_data
 
-```python
-def valuation(group: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/economy/finviz_model.py'
+def get_valuation_data(group: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L65)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L66)
 
 Description: Get group (sectors, industry or country) valuation data. [Source: Finviz]
 

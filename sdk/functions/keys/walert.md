@@ -2,12 +2,13 @@
 title: walert
 description: OpenBB SDK Function
 ---
+
 # walert
 
 ## keys_model.set_walert_key
 
-```python
-def walert(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_walert_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1534)
 

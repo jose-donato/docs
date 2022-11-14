@@ -2,14 +2,15 @@
 title: customer
 description: OpenBB SDK Function
 ---
+
 # customer
 
 ## stocks_dd_csimarket_model.get_customers
 
-```python
-def customer(symbol: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/stocks/due_diligence/csimarket_model.py'
+def get_customers(symbol: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L65)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L66)
 
 Description: Print customers from ticker provided
 

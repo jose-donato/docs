@@ -2,14 +2,15 @@
 title: coin_market_chart
 description: OpenBB SDK Function
 ---
+
 # coin_market_chart
 
 ## crypto_dd_pycoingecko_model.get_coin_market_chart
 
-```python
-def coin_market_chart(symbol: str, vs_currency: str, days: int) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py'
+def get_coin_market_chart(symbol: str, vs_currency: str, days: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L221)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L222)
 
 Description: Get prices for given coin. [Source: CoinGecko]
 

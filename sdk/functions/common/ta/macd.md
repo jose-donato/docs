@@ -2,14 +2,21 @@
 title: macd
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # macd
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_momentum_model.macd
 
-```python
+```python title='openbb_terminal/common/technical_analysis/momentum_model.py'
 def macd(data: pd.Series, n_fast: int, n_slow: int, n_signal: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L60)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L61)
 
 Description: Moving average convergence divergence
 
@@ -33,17 +40,15 @@ None
 
 
 
-
-# VIEW
-
-# macd
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_momentum_view.display_macd
 
-```python
-def macd(data: pd.Series, n_fast: int, n_slow: int, n_signal: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/momentum_view.py'
+def display_macd(data: pd.Series, n_fast: int, n_slow: int, n_signal: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L125)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L126)
 
 Description: Plot MACD signal
 
@@ -65,3 +70,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,15 @@
 title: earnings
 description: OpenBB SDK Function
 ---
+
 # earnings
 
 ## stocks_fa_av_model.get_earnings
 
-```python
-def earnings(symbol: str, quarterly: bool) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
+def get_earnings(symbol: str, quarterly: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L429)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L430)
 
 Description: Get earnings calendar for ticker
 

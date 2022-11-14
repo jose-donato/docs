@@ -2,14 +2,21 @@
 title: granger
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # granger
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## econometrics_model.get_granger_causality
 
-```python
-def granger(dependent_series: Any, independent_series: Any, lags: Any) -> None:
+```python title='openbb_terminal/econometrics/econometrics_model.py'
+def get_granger_causality(dependent_series: Any, independent_series: Any, lags: Any) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L207)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L208)
 
 Description: Calculate granger tests
 
@@ -29,17 +36,15 @@ None
 
 
 
-
-# VIEW
-
-# granger
+</TabItem>
+<TabItem value="view" label="View">
 
 ## econometrics_view.display_granger
 
-```python
-def granger(dependent_series: pd.Series, independent_series: pd.Series, lags: int, confidence_level: float, export: str) -> None:
+```python title='openbb_terminal/econometrics/econometrics_view.py'
+def display_granger(dependent_series: pd.Series, independent_series: pd.Series, lags: int, confidence_level: float, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L253)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L254)
 
 Description: Show granger tests
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

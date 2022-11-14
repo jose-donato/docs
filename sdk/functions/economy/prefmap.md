@@ -2,14 +2,15 @@
 title: prefmap
 description: OpenBB SDK Function
 ---
+
 # prefmap
 
 ## economy_finviz_model.get_performance_map
 
-```python
-def prefmap(period: str, map_filter: str) -> None:
+```python title='openbb_terminal/economy/finviz_model.py'
+def get_performance_map(period: str, map_filter: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L40)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L41)
 
 Description: Opens Finviz map website in a browser. [Source: Finviz]
 

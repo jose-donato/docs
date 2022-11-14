@@ -2,14 +2,15 @@
 title: spacc
 description: OpenBB SDK Function
 ---
+
 # spacc
 
 ## stocks_ba_reddit_model.get_spac_community
 
-```python
-def spac) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_spac_community() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L318)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L319)
 
 Description: Get top tickers from r/SPACs [Source: reddit]
 

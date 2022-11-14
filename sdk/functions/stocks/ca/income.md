@@ -2,14 +2,21 @@
 title: income
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # income
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ca_marketwatch_model.get_income_comparison
 
-```python
-def income(similar: List[str], timeframe: str, quarter: bool) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/marketwatch_model.py'
+def get_income_comparison(similar: List[str], timeframe: str, quarter: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L73)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L74)
 
 Description: Get income data. [Source: Marketwatch]
 
@@ -32,17 +39,15 @@ None
 
 
 
-
-# VIEW
-
-# income
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ca_marketwatch_view.display_income_comparison
 
-```python
-def income(symbols: List[str], timeframe: str, quarter: bool, export: str) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/marketwatch_view.py'
+def display_income_comparison(symbols: List[str], timeframe: str, quarter: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_view.py#L22)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_view.py#L23)
 
 Description: Display income data. [Source: Marketwatch]
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

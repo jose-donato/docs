@@ -2,14 +2,21 @@
 title: mkt
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # mkt
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_coinpaprika_model.get_coin_markets_by_id
 
-```python
-def mkt(symbol: str, quotes: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py'
+def get_coin_markets_by_id(symbol: str, quotes: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L186)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L187)
 
 Description: All markets for given coin and currency [Source: CoinPaprika]
 
@@ -38,17 +45,15 @@ https://api.coinpaprika.com/v1). | None | False |
 
 
 
-
-# VIEW
-
-# mkt
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_coinpaprika_view.display_markets
 
-```python
-def mkt(from_symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool, links: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py'
+def display_markets(from_symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool, links: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L241)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L242)
 
 Description: Get all markets for given coin id. [Source: CoinPaprika]
 
@@ -71,3 +76,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,12 +2,19 @@
 title: sortino
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # sortino
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_model.get_sortino
 
-```python
-def sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> DataFrame:
+```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
+def get_sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L563)
 
@@ -32,15 +39,13 @@ Description: Calculates the sortino ratio
 
 
 
-
-# VIEW
-
-# sortino
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_view.display_sortino
 
-```python
-def sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
+def display_sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1138)
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

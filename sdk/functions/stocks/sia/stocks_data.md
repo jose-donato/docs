@@ -2,14 +2,15 @@
 title: stocks_data
 description: OpenBB SDK Function
 ---
+
 # stocks_data
 
 ## stocks_sia_stockanalysis_model.get_stocks_data
 
-```python
-def stocks_data(symbols: List[str], finance_key: str, stocks_data: dict, period: str, symbol: str) -> None:
+```python title='openbb_terminal/stocks/sector_industry_analysis/stockanalysis_model.py'
+def get_stocks_data(symbols: List[str], finance_key: str, stocks_data: dict, period: str, symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/stockanalysis_model.py#L83)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/stockanalysis_model.py#L84)
 
 Description: Get stocks data based on a list of stocks and the finance key. The function searches for the
 

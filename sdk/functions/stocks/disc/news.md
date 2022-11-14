@@ -2,14 +2,15 @@
 title: news
 description: OpenBB SDK Function
 ---
+
 # news
 
 ## stocks_disc_seeking_alpha_model.get_news
 
-```python
-def news(news_type: str, limit: int) -> None:
+```python title='openbb_terminal/stocks/discovery/seeking_alpha_model.py'
+def get_news(news_type: str, limit: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L198)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L199)
 
 Description: Gets news. [Source: SeekingAlpha]
 

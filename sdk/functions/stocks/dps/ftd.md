@@ -2,14 +2,21 @@
 title: ftd
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ftd
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dps_sec_model.get_fails_to_deliver
 
-```python
-def ftd(symbol: str, start_date: str, end_date: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/stocks/dark_pool_shorts/sec_model.py'
+def get_fails_to_deliver(symbol: str, start_date: str, end_date: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_model.py#L58)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_model.py#L59)
 
 Description: Display fails-to-deliver data for a given ticker. [Source: SEC]
 
@@ -33,17 +40,15 @@ None
 
 
 
-
-# VIEW
-
-# ftd
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dps_sec_view.fails_to_deliver
 
-```python
-def ftd(symbol: str, data: pd.DataFrame, start_date: str, end_date: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/sec_view.py'
+def fails_to_deliver(symbol: str, data: pd.DataFrame, start_date: str, end_date: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_view.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_view.py#L27)
 
 Description: Display fails-to-deliver data for a given ticker. [Source: SEC]
 
@@ -66,3 +71,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

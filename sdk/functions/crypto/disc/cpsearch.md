@@ -2,14 +2,21 @@
 title: cpsearch
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpsearch
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_disc_coinpaprika_model.get_search_results
 
-```python
-def cpsearch(query: str, category: Union[Any, NoneType], modifier: Union[Any, NoneType], sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py'
+def get_search_results(query: str, category: Union[Any, NoneType], modifier: Union[Any, NoneType], sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py#L27)
 
 Description: Search CoinPaprika. [Source: CoinPaprika]
 
@@ -38,17 +45,15 @@ Columns: Metric, Value |
 
 
 
-
-# VIEW
-
-# cpsearch
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_disc_coinpaprika_view.display_search_results
 
-```python
-def cpsearch(query: str, category: str, limit: int, sortby: str, ascend: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/discovery/coinpaprika_view.py'
+def display_search_results(query: str, category: str, limit: int, sortby: str, ascend: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_view.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_view.py#L16)
 
 Description: Search over CoinPaprika. [Source: CoinPaprika]
 
@@ -70,3 +75,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

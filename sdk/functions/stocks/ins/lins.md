@@ -2,14 +2,21 @@
 title: lins
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # lins
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_insider_finviz_model.get_last_insider_activity
 
-```python
-def lins(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/insider/finviz_model.py'
+def get_last_insider_activity(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_model.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_model.py#L16)
 
 Description: Get last insider activity for a given stock ticker. [Source: Finviz]
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# lins
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_insider_finviz_view.last_insider_activity
 
-```python
-def lins(symbol: str, limit: int, export: str) -> None:
+```python title='openbb_terminal/stocks/insider/finviz_view.py'
+def last_insider_activity(symbol: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_view.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_view.py#L15)
 
 Description: Display insider activity for a given stock ticker. [Source: Finviz]
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

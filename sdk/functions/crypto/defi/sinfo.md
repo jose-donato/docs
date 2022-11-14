@@ -2,14 +2,21 @@
 title: sinfo
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # sinfo
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_terramoney_fcd_model.get_staking_account_info
 
-```python
-def sinfo(address: str) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
+def get_staking_account_info(address: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L103)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L104)
 
 Description: Get staking info for provided terra account [Source: https://fcd.terra.dev/swagger]
 
@@ -29,17 +36,15 @@ Description: Get staking info for provided terra account [Source: https://fcd.te
 
 
 
-
-# VIEW
-
-# sinfo
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_terramoney_fcd_view.display_account_staking_info
 
-```python
-def sinfo(address: str, limit: int, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
+def display_account_staking_info(address: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L31)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L32)
 
 Description: Display staking info for provided terra account address [Source: https://fcd.terra.dev/swagger]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

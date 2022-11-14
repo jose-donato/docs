@@ -2,12 +2,13 @@
 title: degiro
 description: OpenBB SDK Function
 ---
+
 # degiro
 
 ## keys_model.set_degiro_key
 
-```python
-def degiro(username: str, password: str, secret: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_degiro_key(username: str, password: str, secret: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1167)
 

@@ -2,14 +2,21 @@
 title: stoch
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # stoch
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_momentum_model.stoch
 
-```python
+```python title='openbb_terminal/common/technical_analysis/momentum_model.py'
 def stoch(data: pd.DataFrame, fastkperiod: int, slowdperiod: int, slowkperiod: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L125)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L126)
 
 Description: Stochastic oscillator
 
@@ -33,17 +40,15 @@ None
 
 
 
-
-# VIEW
-
-# stoch
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_momentum_view.display_stoch
 
-```python
-def stoch(data: pd.DataFrame, fastkperiod: int, slowdperiod: int, slowkperiod: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/momentum_view.py'
+def display_stoch(data: pd.DataFrame, fastkperiod: int, slowdperiod: int, slowkperiod: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L306)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L307)
 
 Description: Plot stochastic oscillator signal
 
@@ -65,3 +70,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

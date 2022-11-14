@@ -2,14 +2,21 @@
 title: fwd
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # fwd
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_fxempire_model.get_forward_rates
 
-```python
-def fwd(to_symbol: str, from_symbol: str) -> None:
+```python title='openbb_terminal/forex/fxempire_model.py'
+def get_forward_rates(to_symbol: str, from_symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/fxempire_model.py#L13)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/fxempire_model.py#L14)
 
 Description: Gets forward rates from fxempire
 
@@ -30,17 +37,15 @@ Description: Gets forward rates from fxempire
 
 
 
-
-# VIEW
-
-# fwd
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_fxempire_view.display_forward_rates
 
-```python
-def fwd(to_symbol: str, from_symbol: str, export: str) -> None:
+```python title='openbb_terminal/forex/fxempire_view.py'
+def display_forward_rates(to_symbol: str, from_symbol: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/fxempire_view.py#L13)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/fxempire_view.py#L14)
 
 Description: Display forward rates for currency pairs
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

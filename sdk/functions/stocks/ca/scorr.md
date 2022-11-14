@@ -2,14 +2,21 @@
 title: scorr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # scorr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ca_finbrain_model.get_sentiment_correlation
 
-```python
-def scorr(similar: List[str]) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/finbrain_model.py'
+def get_sentiment_correlation(similar: List[str]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L124)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L125)
 
 Description: Get correlation sentiments across similar companies. [Source: FinBrain]
 
@@ -29,17 +36,15 @@ None
 
 
 
-
-# VIEW
-
-# scorr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ca_finbrain_view.display_sentiment_correlation
 
-```python
-def scorr(similar: List[str], raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/finbrain_view.py'
+def display_sentiment_correlation(similar: List[str], raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L121)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L122)
 
 Description: Plot correlation sentiments heatmap across similar companies. [Source: FinBrain]
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

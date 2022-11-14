@@ -2,14 +2,15 @@
 title: events
 description: OpenBB SDK Function
 ---
+
 # events
 
 ## economy_investingcom_model.get_economic_calendar
 
-```python
-def events(country: str, importance: str, category: str, start_date: str, end_date: str, limit: Any) -> None:
+```python title='openbb_terminal/economy/investingcom_model.py'
+def get_economic_calendar(country: str, importance: str, category: str, start_date: str, end_date: str, limit: Any) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L372)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L373)
 
 Description: Get economic calendar [Source: Investing.com]
 

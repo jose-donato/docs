@@ -2,14 +2,21 @@
 title: calendar
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # calendar
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.get_calendar_request
 
-```python
-def calendar(days: int, instrument: Union[str, NoneType]) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def get_calendar_request(days: int, instrument: Union[str, NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L644)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L645)
 
 Description: Request data of significant events calendar.
 
@@ -30,17 +37,15 @@ Description: Request data of significant events calendar.
 
 
 
-
-# VIEW
-
-# calendar
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.calendar
 
-```python
-def calenda) -> None:
+```python title='openbb_terminal/decorators.py'
+def calendar() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L392)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L393)
 
 Description: View calendar of significant events.
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

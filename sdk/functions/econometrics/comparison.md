@@ -2,14 +2,15 @@
 title: comparison
 description: OpenBB SDK Function
 ---
+
 # comparison
 
 ## econometrics_regression_model.get_comparison
 
-```python
-def comparison(regressions: Any, export: str) -> None:
+```python title='openbb_terminal/econometrics/regression_model.py'
+def get_comparison(regressions: Any, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L425)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L426)
 
 Description: Compare regression results between Panel Data regressions.
 

@@ -2,14 +2,21 @@
 title: pairs
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # pairs
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_graph_model.get_uniswap_pool_recently_added
 
-```python
-def pairs(last_days: int, min_volume: int, min_liquidity: int, min_tx: int) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/defi/graph_model.py'
+def get_uniswap_pool_recently_added(last_days: int, min_volume: int, min_liquidity: int, min_tx: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L163)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L164)
 
 Description: Get lastly added trade-able pairs on Uniswap with parameters like:
 
@@ -32,17 +39,15 @@ Description: Get lastly added trade-able pairs on Uniswap with parameters like:
 
 
 
-
-# VIEW
-
-# pairs
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_graph_view.display_recently_added
 
-```python
-def pairs(limit: int, days: int, min_volume: int, min_liquidity: int, min_tx: int, sortby: str, ascend: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/graph_view.py'
+def display_recently_added(limit: int, days: int, min_volume: int, min_liquidity: int, min_tx: int, sortby: str, ascend: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L101)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L102)
 
 Description: Displays Lastly added pairs on Uniswap DEX.
 
@@ -65,3 +70,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

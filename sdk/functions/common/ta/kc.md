@@ -2,14 +2,21 @@
 title: kc
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # kc
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_volatility_model.kc
 
-```python
+```python title='openbb_terminal/common/technical_analysis/volatility_model.py'
 def kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L87)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L88)
 
 Description: Keltner Channels
 
@@ -33,17 +40,15 @@ Description: Keltner Channels
 
 
 
-
-# VIEW
-
-# kc
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_volatility_view.view_kc
 
-```python
-def kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/volatility_view.py'
+def view_kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L193)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L194)
 
 Description: View Keltner Channels Indicator
 
@@ -66,3 +71,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

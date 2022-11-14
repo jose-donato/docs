@@ -2,12 +2,13 @@
 title: twitter
 description: OpenBB SDK Function
 ---
+
 # twitter
 
 ## keys_model.set_twitter_key
 
-```python
-def twitter(key: str, secret: str, access_token: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_twitter_key(key: str, secret: str, access_token: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1024)
 

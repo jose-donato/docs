@@ -2,14 +2,21 @@
 title: pt
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # pt
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dd_business_insider_model.get_price_target_from_analysts
 
-```python
-def pt(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/due_diligence/business_insider_model.py'
+def get_price_target_from_analysts(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L20)
 
 Description: Get analysts' price targets for a given stock. [Source: Business Insider]
 
@@ -29,17 +36,15 @@ Description: Get analysts' price targets for a given stock. [Source: Business In
 
 
 
-
-# VIEW
-
-# pt
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dd_business_insider_view.price_target_from_analysts
 
-```python
-def pt(symbol: str, data: pd.DataFrame, start_date: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/due_diligence/business_insider_view.py'
+def price_target_from_analysts(symbol: str, data: pd.DataFrame, start_date: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_view.py#L30)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_view.py#L31)
 
 Description: Display analysts' price targets for a given stock. [Source: Business Insider]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,12 +2,13 @@
 title: finnhub
 description: OpenBB SDK Function
 ---
+
 # finnhub
 
 ## keys_model.set_finnhub_key
 
-```python
-def finnhub(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_finnhub_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L739)
 

@@ -2,14 +2,21 @@
 title: close
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # close
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.close_trades_request
 
-```python
-def close(orderID: str, units: Union[int, NoneType], accountID: str) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def close_trades_request(orderID: str, units: Union[int, NoneType], accountID: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L525)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L526)
 
 Description: Close a trade.
 
@@ -31,17 +38,15 @@ Description: Close a trade.
 
 
 
-
-# VIEW
-
-# close
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.close_trade
 
-```python
-def clos) -> None:
+```python title='openbb_terminal/decorators.py'
+def close_trade() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L279)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L280)
 
 Description: Close a trade.
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

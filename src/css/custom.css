@@ -4,7 +4,7 @@
 
 @layer base {
   pre {
-    @apply !border !border-grey-400/20 !shadow;
+    @apply !shadow;
   }
 
   html {

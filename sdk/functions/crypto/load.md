@@ -2,11 +2,12 @@
 title: load
 description: OpenBB SDK Function
 ---
+
 # load
 
 ## crypto_helpers.load
 
-```python
+```python title='openbb_terminal/cryptocurrency/cryptocurrency_helpers.py'
 def load(symbol: str, start_date: datetime | str | None, interval: str, exchange: str, vs_currency: str, end_date: datetime | str | None, source: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L507)

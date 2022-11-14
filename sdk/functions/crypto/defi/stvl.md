@@ -2,14 +2,21 @@
 title: stvl
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # stvl
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_llama_model.get_defi_tvl
 
-```python
-def stv) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/defi/llama_model.py'
+def get_defi_tvl() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L164)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L165)
 
 Description: Returns historical values of the total sum of TVLs from all listed protocols.
 
@@ -28,17 +35,15 @@ Description: Returns historical values of the total sum of TVLs from all listed 
 
 
 
-
-# VIEW
-
-# stvl
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_llama_view.display_defi_tvl
 
-```python
-def stvl(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/llama_view.py'
+def display_defi_tvl(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L187)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L188)
 
 Description: Displays historical values of the total sum of TVLs from all listed protocols.
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

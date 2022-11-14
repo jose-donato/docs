@@ -2,14 +2,21 @@
 title: adx
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # adx
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_trend_indicators_model.adx
 
-```python
+```python title='openbb_terminal/common/technical_analysis/trend_indicators_model.py'
 def adx(data: pd.DataFrame, window: int, scalar: int, drift: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L16)
 
 Description: ADX technical indicator
 
@@ -32,17 +39,15 @@ Description: ADX technical indicator
 
 
 
-
-# VIEW
-
-# adx
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_trend_indicators_view.display_adx
 
-```python
-def adx(data: pd.DataFrame, window: int, scalar: int, drift: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/trend_indicators_view.py'
+def display_adx(data: pd.DataFrame, window: int, scalar: int, drift: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_view.py#L29)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_view.py#L30)
 
 Description: Plot ADX indicator
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: inv
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # inv
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_investors
 
-```python
-def in) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_investors() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L486)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L487)
 
 Description: Returns coin investors
 
@@ -29,17 +36,15 @@ Description: Returns coin investors
 
 
 
-
-# VIEW
-
-# inv
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_investors
 
-```python
-def in) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_investors() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L497)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L498)
 
 Description: Display coin investors
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

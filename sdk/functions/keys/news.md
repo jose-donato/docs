@@ -2,12 +2,13 @@
 title: news
 description: OpenBB SDK Function
 ---
+
 # news
 
 ## keys_model.set_news_key
 
-```python
-def news(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_news_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L560)
 

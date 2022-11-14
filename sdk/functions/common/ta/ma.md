@@ -2,14 +2,15 @@
 title: ma
 description: OpenBB SDK Function
 ---
+
 # ma
 
 ## common_ta_overlap_view.view_ma
 
-```python
-def ma(data: pd.Series, window: List[int], offset: int, ma_type: str, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/overlap_view.py'
+def view_ma(data: pd.Series, window: List[int], offset: int, ma_type: str, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L31)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L32)
 
 Description: Plots MA technical indicator
 

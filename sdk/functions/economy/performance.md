@@ -2,14 +2,21 @@
 title: performance
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # performance
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_finviz_model.get_performance_data
 
-```python
-def performance(group: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/economy/finviz_model.py'
+def get_performance_data(group: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L111)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L112)
 
 Description: Get group (sectors, industry or country) performance data. [Source: Finviz]
 
@@ -32,17 +39,15 @@ None
 
 
 
-
-# VIEW
-
-# performance
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_finviz_view.display_performance
 
-```python
-def performance(group: str, sortby: str, ascend: bool, export: str) -> None:
+```python title='openbb_terminal/economy/finviz_view.py'
+def display_performance(group: str, sortby: str, ascend: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_view.py#L71)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_view.py#L72)
 
 Description: View group (sectors, industry or country) performance data. [Source: Finviz]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

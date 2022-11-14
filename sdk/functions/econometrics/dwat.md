@@ -2,14 +2,21 @@
 title: dwat
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # dwat
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## econometrics_regression_model.get_dwat
 
-```python
-def dwat(residual: pd.DataFrame) -> DataFrame:
+```python title='openbb_terminal/econometrics/regression_model.py'
+def get_dwat(residual: pd.DataFrame) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L473)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L474)
 
 Description: Calculate test statistics for Durbing Watson autocorrelation
 
@@ -29,17 +36,15 @@ Description: Calculate test statistics for Durbing Watson autocorrelation
 
 
 
-
-# VIEW
-
-# dwat
+</TabItem>
+<TabItem value="view" label="View">
 
 ## econometrics_regression_view.display_dwat
 
-```python
-def dwat(dependent_variable: pd.Series, residual: pd.DataFrame, plot: bool, export: str, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/econometrics/regression_view.py'
+def display_dwat(dependent_variable: pd.Series, residual: pd.DataFrame, plot: bool, export: str, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L84)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L85)
 
 Description: Show Durbin-Watson autocorrelation tests
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

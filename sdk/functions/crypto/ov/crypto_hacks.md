@@ -2,14 +2,21 @@
 title: crypto_hacks
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # crypto_hacks
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_rekt_model.get_crypto_hacks
 
-```python
-def crypto_hacks(sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/rekt_model.py'
+def get_crypto_hacks(sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L91)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L92)
 
 Description: Get major crypto-related hacks
 
@@ -30,17 +37,15 @@ Description: Get major crypto-related hacks
 
 
 
-
-# VIEW
-
-# crypto_hacks
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_rekt_view.display_crypto_hacks
 
-```python
-def crypto_hacks(limit: int, sortby: str, ascend: bool, slug: str, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/rekt_view.py'
+def display_crypto_hacks(limit: int, sortby: str, ascend: bool, slug: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_view.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_view.py#L18)
 
 Description: Display list of major crypto-related hacks. If slug is passed
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

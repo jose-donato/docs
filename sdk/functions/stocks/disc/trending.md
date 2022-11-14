@@ -2,14 +2,15 @@
 title: trending
 description: OpenBB SDK Function
 ---
+
 # trending
 
 ## stocks_disc_seeking_alpha_model.get_trending_list
 
-```python
-def trending(limit: int) -> list:
+```python title='openbb_terminal/stocks/discovery/seeking_alpha_model.py'
+def get_trending_list(limit: int) -> list:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L99)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L100)
 
 Description: Returns a list of trending articles
 

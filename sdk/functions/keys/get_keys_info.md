@@ -2,12 +2,13 @@
 title: get_keys_info
 description: OpenBB SDK Function
 ---
+
 # get_keys_info
 
 ## keys_model.get_keys_info
 
-```python
-def get_keys_inf) -> None:
+```python title='openbb_terminal/keys_model.py'
+def get_keys_info() -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L168)
 

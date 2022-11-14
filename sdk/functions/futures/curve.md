@@ -2,14 +2,21 @@
 title: curve
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # curve
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## futures_yfinance_model.get_curve_futures
 
-```python
-def curve(symbol: str) -> None:
+```python title='openbb_terminal/futures/yfinance_model.py'
+def get_curve_futures(symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L117)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L118)
 
 Description: Get curve futures [Source: Yahoo Finance]
 
@@ -27,17 +34,15 @@ None
 
 
 
-
-# VIEW
-
-# curve
+</TabItem>
+<TabItem value="view" label="View">
 
 ## futures_yfinance_view.display_curve
 
-```python
-def curve(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/futures/yfinance_view.py'
+def display_curve(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L227)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L228)
 
 Description: Display curve futures [Source: Yahoo Finance]
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

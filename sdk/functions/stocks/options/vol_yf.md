@@ -2,14 +2,21 @@
 title: vol_yf
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # vol_yf
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_yfinance_model.get_vol
 
-```python
-def vol_yf(symbol: str, expiry: str) -> DataFrame:
+```python title='openbb_terminal/stocks/options/yfinance_model.py'
+def get_vol(symbol: str, expiry: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L533)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L534)
 
 Description: Plot volume
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# vol_yf
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_yfinance_view.plot_vol
 
-```python
-def vol_yf(symbol: str, expiry: str, min_sp: float, max_sp: float, calls_only: bool, puts_only: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/options/yfinance_view.py'
+def plot_vol(symbol: str, expiry: str, min_sp: float, max_sp: float, calls_only: bool, puts_only: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L337)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L338)
 
 Description: Plot volume
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

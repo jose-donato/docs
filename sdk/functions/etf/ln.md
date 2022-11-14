@@ -2,14 +2,21 @@
 title: ln
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ln
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## etf_financedatabase_model.get_etfs_by_name
 
-```python
-def ln(name: str) -> None:
+```python title='openbb_terminal/etf/financedatabase_model.py'
+def get_etfs_by_name(name: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L15)
 
 Description: Return a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
 
@@ -30,17 +37,15 @@ None
 
 
 
-
-# VIEW
-
-# ln
+</TabItem>
+<TabItem value="view" label="View">
 
 ## etf_financedatabase_view.display_etf_by_name
 
-```python
-def ln(name: str, limit: int, export: str) -> None:
+```python title='openbb_terminal/etf/financedatabase_view.py'
+def display_etf_by_name(name: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_view.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_view.py#L18)
 
 Description: Display a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

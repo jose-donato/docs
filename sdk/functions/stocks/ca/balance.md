@@ -2,14 +2,15 @@
 title: balance
 description: OpenBB SDK Function
 ---
+
 # balance
 
 ## stocks_ca_marketwatch_model.get_balance_comparison
 
-```python
-def balance(similar: List[str], timeframe: str, quarter: bool) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/marketwatch_model.py'
+def get_balance_comparison(similar: List[str], timeframe: str, quarter: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L101)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L102)
 
 Description: Get balance data. [Source: Marketwatch]
 

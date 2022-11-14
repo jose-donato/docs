@@ -2,14 +2,15 @@
 title: fred_notes
 description: OpenBB SDK Function
 ---
+
 # fred_notes
 
 ## economy_fred_model.get_series_notes
 
-```python
-def fred_note) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_series_notes() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L68)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L69)
 
 Description: Get series notes. [Source: FRED]
 

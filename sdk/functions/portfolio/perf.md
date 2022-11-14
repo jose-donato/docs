@@ -2,14 +2,15 @@
 title: perf
 description: OpenBB SDK Function
 ---
+
 # perf
 
 ## portfolio_model.get_performance_vs_benchmark
 
-```python
-def perf(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, show_all_trades: bool) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_performance_vs_benchmark(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, show_all_trades: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1580)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1581)
 
 Description: Get portfolio performance vs the benchmark
 

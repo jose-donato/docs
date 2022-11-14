@@ -2,14 +2,21 @@
 title: luna_supply
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # luna_supply
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_smartstake_model.get_luna_supply_stats
 
-```python
-def luna_supply(supply_type: str, days: int) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/defi/smartstake_model.py'
+def get_luna_supply_stats(supply_type: str, days: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_model.py#L13)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_model.py#L14)
 
 Description: Get supply history of the Terra ecosystem
 
@@ -30,17 +37,15 @@ Description: Get supply history of the Terra ecosystem
 
 
 
-
-# VIEW
-
-# luna_supply
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_smartstake_view.display_luna_circ_supply_change
 
-```python
-def luna_suppl) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_luna_circ_supply_change() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L28)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L29)
 
 Description: Display Luna circulating supply stats
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

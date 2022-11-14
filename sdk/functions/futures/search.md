@@ -2,14 +2,21 @@
 title: search
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # search
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## futures_yfinance_model.get_search_futures
 
-```python
-def search(category: str, exchange: str, description: str) -> None:
+```python title='openbb_terminal/futures/yfinance_model.py'
+def get_search_futures(category: str, exchange: str, description: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L49)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L50)
 
 Description: Get search futures [Source: Yahoo Finance]
 
@@ -29,17 +36,15 @@ None
 
 
 
-
-# VIEW
-
-# search
+</TabItem>
+<TabItem value="view" label="View">
 
 ## futures_yfinance_view.display_search
 
-```python
-def search(category: str, exchange: str, description: str, export: str) -> None:
+```python title='openbb_terminal/futures/yfinance_view.py'
+def display_search(category: str, exchange: str, description: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L28)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L29)
 
 Description: Display search futures [Source: Yahoo Finance]
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

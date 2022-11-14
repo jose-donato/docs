@@ -2,14 +2,21 @@
 title: quantile
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # quantile
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_rolling_model.get_quantile
 
-```python
-def quantile(data: pd.DataFrame, window: int, quantile_pct: float) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_model.py'
+def get_quantile(data: pd.DataFrame, window: int, quantile_pct: float) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L73)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L74)
 
 Description: Overlay Median & Quantile
 
@@ -31,17 +38,15 @@ Description: Overlay Median & Quantile
 
 
 
-
-# VIEW
-
-# quantile
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_rolling_view.display_quantile
 
-```python
-def quantile(data: pd.DataFrame, target: str, symbol: str, window: int, quantile: float, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_view.py'
+def display_quantile(data: pd.DataFrame, target: str, symbol: str, window: int, quantile: float, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L245)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L246)
 
 Description: View rolling quantile
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

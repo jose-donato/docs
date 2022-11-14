@@ -2,11 +2,12 @@
 title: load
 description: OpenBB SDK Function
 ---
+
 # load
 
 ## stocks_helper.load
 
-```python
+```python title='openbb_terminal/stocks/stocks_helper.py'
 def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType], interval: int, end_date: Union[datetime.datetime, str, NoneType], prepost: bool, source: str, iexrange: str, weekly: bool, monthly: bool, verbose: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L218)

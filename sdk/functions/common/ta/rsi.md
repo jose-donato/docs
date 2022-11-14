@@ -2,14 +2,21 @@
 title: rsi
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # rsi
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_momentum_model.rsi
 
-```python
+```python title='openbb_terminal/common/technical_analysis/momentum_model.py'
 def rsi(data: pd.Series, window: int, scalar: float, drift: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L92)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L93)
 
 Description: Relative strength index
 
@@ -33,17 +40,15 @@ None
 
 
 
-
-# VIEW
-
-# rsi
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_momentum_view.display_rsi
 
-```python
-def rsi(data: pd.Series, window: int, scalar: float, drift: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/momentum_view.py'
+def display_rsi(data: pd.Series, window: int, scalar: float, drift: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L218)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L219)
 
 Description: Display RSI Indicator
 
@@ -65,3 +70,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

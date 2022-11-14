@@ -2,14 +2,21 @@
 title: rnn
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # rnn
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forecast_rnn_model.get_rnn_data
 
-```python
-def rnn(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool) -> None:
+```python title='openbb_terminal/forecast/rnn_model.py'
+def get_rnn_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rnn_model.py#L20)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rnn_model.py#L21)
 
 Description: Perform RNN forecasting
 
@@ -44,17 +51,15 @@ Defaults to True. | True | False |
 
 
 
-
-# VIEW
-
-# rnn
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forecast_rnn_view.display_rnn_forecast
 
-```python
-def rnn(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/rnn_view.py'
+def display_rnn_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rnn_view.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rnn_view.py#L20)
 
 Description: Display RNN forecast
 
@@ -93,3 +98,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: pr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # pr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_pycoingecko_model.get_coin_potential_returns
 
-```python
-def pr(main_coin: str, to_symbol: Union[str, NoneType], limit: Union[int, NoneType], price: Union[int, NoneType]) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py'
+def get_coin_potential_returns(main_coin: str, to_symbol: Union[str, NoneType], limit: Union[int, NoneType], price: Union[int, NoneType]) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L62)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L63)
 
 Description: Fetch data to calculate potential returns of a certain coin. [Source: CoinGecko]
 
@@ -33,17 +40,15 @@ Columns: Coin, Current Price, Target Coin, Potential Price, Potential Market Cap
 
 
 
-
-# VIEW
-
-# pr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_pycoingecko_view.display_coin_potential_returns
 
-```python
-def pr(to_symbol: str, from_symbol: Union[str, NoneType], limit: Union[int, NoneType], price: Union[int, NoneType], export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/pycoingecko_view.py'
+def display_coin_potential_returns(to_symbol: str, from_symbol: Union[str, NoneType], limit: Union[int, NoneType], price: Union[int, NoneType], export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_view.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_view.py#L20)
 
 Description: Displays potential returns of a certain coin. [Source: CoinGecko]
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

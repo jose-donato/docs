@@ -2,11 +2,12 @@
 title: process_candle
 description: OpenBB SDK Function
 ---
+
 # process_candle
 
 ## stocks_helper.process_candle
 
-```python
+```python title='openbb_terminal/stocks/stocks_helper.py'
 def process_candle(data: pd.DataFrame) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L800)

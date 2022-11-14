@@ -2,14 +2,15 @@
 title: maxdrawdown
 description: OpenBB SDK Function
 ---
+
 # maxdrawdown
 
 ## portfolio_model.get_maximum_drawdown_ratio
 
-```python
-def maxdrawdown(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_maximum_drawdown_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1059)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1060)
 
 Description: Class method that retrieves maximum drawdown ratio for portfolio and benchmark selected
 

@@ -2,14 +2,21 @@
 title: adosc
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # adosc
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_volume_model.adosc
 
-```python
+```python title='openbb_terminal/common/technical_analysis/volume_model.py'
 def adosc(data: pd.DataFrame, use_open: bool, fast: int, slow: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L45)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L46)
 
 Description: Calculate AD oscillator technical indicator
 
@@ -32,17 +39,15 @@ Description: Calculate AD oscillator technical indicator
 
 
 
-
-# VIEW
-
-# adosc
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_volume_view.display_adosc
 
-```python
-def adosc(data: pd.DataFrame, fast: int, slow: int, use_open: bool, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/volume_view.py'
+def display_adosc(data: pd.DataFrame, fast: int, slow: int, use_open: bool, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L140)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L141)
 
 Description: Display AD Osc Indicator
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

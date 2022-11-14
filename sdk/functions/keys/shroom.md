@@ -2,12 +2,13 @@
 title: shroom
 description: OpenBB SDK Function
 ---
+
 # shroom
 
 ## keys_model.set_shroom_key
 
-```python
-def shroom(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_shroom_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L2162)
 

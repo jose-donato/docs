@@ -2,14 +2,21 @@
 title: mover
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # mover
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## etf_disc_wsj_model.etf_movers
 
-```python
-def mover(sort_type: str, export: bool) -> DataFrame:
+```python title='openbb_terminal/etf/discovery/wsj_model.py'
+def etf_movers(sort_type: str, export: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_model.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_model.py#L15)
 
 Description: Scrape data for top etf movers.
 
@@ -29,17 +36,15 @@ Description: Scrape data for top etf movers.
 
 
 
-
-# VIEW
-
-# mover
+</TabItem>
+<TabItem value="view" label="View">
 
 ## etf_disc_wsj_view.show_top_mover
 
-```python
-def mover(sort_type: str, limit: int, export: Any) -> None:
+```python title='openbb_terminal/etf/discovery/wsj_view.py'
+def show_top_mover(sort_type: str, limit: int, export: Any) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_view.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_view.py#L16)
 
 Description: Show top ETF movers from wsj.com
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

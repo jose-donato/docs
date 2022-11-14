@@ -2,14 +2,21 @@
 title: cr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_loanscan_model.get_rates
 
-```python
-def cr(rate_type: str) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/loanscan_model.py'
+def get_rates(rate_type: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_model.py#L266)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_model.py#L267)
 
 Description: Returns crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
 
@@ -29,17 +36,15 @@ Description: Returns crypto {borrow,supply} interest rates for cryptocurrencies 
 
 
 
-
-# VIEW
-
-# cr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_loanscan_view.display_crypto_rates
 
-```python
-def cr(symbols: str, platforms: str, rate_type: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/loanscan_view.py'
+def display_crypto_rates(symbols: str, platforms: str, rate_type: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_view.py#L23)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_view.py#L24)
 
 Description: Displays crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

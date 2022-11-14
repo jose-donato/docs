@@ -2,14 +2,21 @@
 title: rtps
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # rtps
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_alphavantage_model.get_sector_data
 
-```python
-def rtp) -> DataFrame:
+```python title='openbb_terminal/economy/alphavantage_model.py'
+def get_sector_data() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L19)
 
 Description: Get real-time performance sector data
 
@@ -26,17 +33,15 @@ None
 
 
 
-
-# VIEW
-
-# rtps
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_alphavantage_view.realtime_performance_sector
 
-```python
-def rtp) -> None:
+```python title='openbb_terminal/decorators.py'
+def realtime_performance_sector() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L27)
 
 Description: Display Real-Time Performance sector. [Source: AlphaVantage]
 
@@ -54,3 +59,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,11 +2,18 @@
 title: calc_hedge
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # calc_hedge
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_hedge_model.calc_hedge
 
-```python
+```python title='openbb_terminal/stocks/options/hedge/hedge_model.py'
 def calc_hedge(portfolio_option_amount: float, side: str, greeks: dict, sign: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_model.py#L12)
@@ -33,15 +40,13 @@ as follows: {'Portfolio': {'Delta': VALUE, 'Gamma': VALUE, 'Vega': VALUE}} etc |
 
 
 
-
-# VIEW
-
-# calc_hedge
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_hedge_view.show_calculated_hedge
 
-```python
-def calc_hedge(portfolio_option_amount: float, side: str, greeks: dict, sign: int) -> None:
+```python title='openbb_terminal/stocks/options/hedge/hedge_view.py'
+def show_calculated_hedge(portfolio_option_amount: float, side: str, greeks: dict, sign: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_view.py#L62)
 
@@ -65,3 +70,7 @@ as follows: {'Portfolio': {'Delta': VALUE, 'Gamma': VALUE, 'Vega': VALUE}} etc |
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: maxsharpe
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # maxsharpe
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_optimization_optimizer_model.get_max_sharpe
 
-```python
-def maxsharpe(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, target_return: float, target_risk: float, mean: str, covariance: str, d_ewma: float, value: float, value_short: float) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py'
+def get_max_sharpe(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, target_return: float, target_risk: float, mean: str, covariance: str, d_ewma: float, value: float, value_short: float) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L517)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L518)
 
 Description: Builds a maximal return/risk ratio portfolio
 
@@ -90,17 +97,15 @@ The default is 0.94. | 0.94 | True |
 
 
 
-
-# VIEW
-
-# maxsharpe
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_optimization_optimizer_view.display_max_sharpe
 
-```python
-def maxsharpe(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, target_return: float, target_risk: float, mean: str, covariance: str, d_ewma: float, value: float, value_short: float, table: bool) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py'
+def display_max_sharpe(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, target_return: float, target_risk: float, mean: str, covariance: str, d_ewma: float, value: float, value_short: float, table: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L1031)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L1032)
 
 Description: Builds a maximal return/risk ratio portfolio
 
@@ -179,3 +184,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

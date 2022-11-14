@@ -2,14 +2,15 @@
 title: mktcap
 description: OpenBB SDK Function
 ---
+
 # mktcap
 
 ## stocks_fa_yahoo_finance_model.get_mktcap
 
-```python
-def mktcap(symbol: str, start_date: str) -> None:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+def get_mktcap(symbol: str, start_date: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L272)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L273)
 
 Description: Get market cap over time for ticker. [Source: Yahoo Finance]
 

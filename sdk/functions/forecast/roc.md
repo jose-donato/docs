@@ -2,14 +2,15 @@
 title: roc
 description: OpenBB SDK Function
 ---
+
 # roc
 
 ## forecast_model.add_roc
 
-```python
-def roc(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
+```python title='openbb_terminal/forecast/forecast_model.py'
+def add_roc(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L266)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L267)
 
 Description: A momentum oscillator, which measures the percentage change between the current
 

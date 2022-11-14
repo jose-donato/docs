@@ -2,12 +2,19 @@
 title: gainers
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # gainers
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_disc_pycoingecko_model.get_gainers
 
-```python
-def gainers(interval: str, limit: int, sortby: str) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
+def get_gainers(interval: str, limit: int, sortby: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L252)
 
@@ -33,17 +40,15 @@ Columns: Symbol, Name, Volume, Price, %Change_{interval}, Url |
 
 
 
-
-# VIEW
-
-# gainers
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_disc_pycoingecko_view.display_gainers
 
-```python
-def gainers(interval: str, limit: int, sortby: str, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py'
+def display_gainers(interval: str, limit: int, sortby: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L99)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L100)
 
 Description: Shows Largest Gainers - coins which gain the most in given period. [Source: CoinGecko]
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

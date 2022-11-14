@@ -2,14 +2,21 @@
 title: relriskparity
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # relriskparity
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_optimization_optimizer_model.get_rel_risk_parity_portfolio
 
-```python
-def relriskparity(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, version: str, risk_cont: List[str], penal_factor: float, target_return: float, mean: str, covariance: str, d_ewma: float, value: float) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py'
+def get_rel_risk_parity_portfolio(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, version: str, risk_cont: List[str], penal_factor: float, target_return: float, mean: str, covariance: str, d_ewma: float, value: float) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1839)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1840)
 
 Description: Builds a relaxed risk parity portfolio using the least squares approach
 
@@ -79,17 +86,15 @@ The default is 0.94. | 0.94 | True |
 
 
 
-
-# VIEW
-
-# relriskparity
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_optimization_optimizer_view.display_rel_risk_parity
 
-```python
-def relriskparity(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, version: str, risk_cont: List[str], penal_factor: float, target_return: float, mean: str, covariance: str, d_ewma: float, value: float, table: bool) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py'
+def display_rel_risk_parity(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, version: str, risk_cont: List[str], penal_factor: float, target_return: float, mean: str, covariance: str, d_ewma: float, value: float, table: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L2455)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L2456)
 
 Description: Builds a relaxed risk parity portfolio using the least squares approach
 
@@ -156,3 +161,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: cpi
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpi
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_alphavantage_model.get_cpi
 
-```python
-def cpi(interval: str, start_year: int) -> DataFrame:
+```python title='openbb_terminal/economy/alphavantage_model.py'
+def get_cpi(interval: str, start_year: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L180)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L181)
 
 Description: Get Consumer Price Index from Alpha Vantage
 
@@ -30,17 +37,15 @@ Description: Get Consumer Price Index from Alpha Vantage
 
 
 
-
-# VIEW
-
-# cpi
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_alphavantage_view.display_cpi
 
-```python
-def cp) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_cpi() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L256)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L257)
 
 Description: Display US consumer price index (CPI) from AlphaVantage
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

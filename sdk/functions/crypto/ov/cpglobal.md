@@ -2,14 +2,21 @@
 title: cpglobal
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpglobal
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_coinpaprika_model.get_global_market
 
-```python
-def cpgloba) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
+def get_global_market() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L71)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L72)
 
 Description: Return data frame with most important global crypto statistics like:
 
@@ -29,17 +36,15 @@ Metric, Value |
 
 
 
-
-# VIEW
-
-# cpglobal
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_coinpaprika_view.display_global_market
 
-```python
-def cpglobal(export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
+def display_global_market(export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L73)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L74)
 
 Description: Return data frame with most important global crypto statistics like:
 
@@ -55,3 +60,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

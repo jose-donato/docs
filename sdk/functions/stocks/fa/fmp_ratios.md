@@ -2,14 +2,15 @@
 title: fmp_ratios
 description: OpenBB SDK Function
 ---
+
 # fmp_ratios
 
 ## stocks_fa_fmp_model.get_key_ratios
 
-```python
-def fmp_ratio) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_key_ratios() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L456)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L457)
 
 Description: Get key ratios
 

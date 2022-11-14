@@ -2,14 +2,21 @@
 title: exchange
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # exchange
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_th_bursa_model.get_bursa
 
-```python
-def exchange(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/tradinghours/bursa_model.py'
+def get_bursa(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L20)
 
 Description: Get current exchange open hours.
 
@@ -29,17 +36,15 @@ Description: Get current exchange open hours.
 
 
 
-
-# VIEW
-
-# exchange
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_th_bursa_view.display_exchange
 
-```python
-def exchange(symbol: str) -> None:
+```python title='openbb_terminal/stocks/tradinghours/bursa_view.py'
+def display_exchange(symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L15)
 
 Description: Display current exchange trading hours.
 
@@ -55,3 +60,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

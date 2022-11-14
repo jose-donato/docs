@@ -2,14 +2,15 @@
 title: gainers_or_losers
 description: OpenBB SDK Function
 ---
+
 # gainers_or_losers
 
 ## crypto_disc_pycoingecko_model.get_gainers_or_losers
 
-```python
-def gainers_or_losers(limit: int, interval: str, typ: str, sortby: str) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
+def get_gainers_or_losers(limit: int, interval: str, typ: str, sortby: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L188)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L189)
 
 Description: Returns data about top gainers - coins which gain the most in given period and
 

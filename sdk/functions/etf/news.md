@@ -2,14 +2,21 @@
 title: news
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # news
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_newsapi_model.get_news
 
-```python
-def new) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_news() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
 
 Description: Get news for a given term. [Source: NewsAPI]
 
@@ -33,17 +40,15 @@ None
 
 
 
-
-# VIEW
-
-# news
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_newsapi_view.display_news
 
-```python
-def new) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_news() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L20)
 
 Description: Display news for a given term. [Source: NewsAPI]
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

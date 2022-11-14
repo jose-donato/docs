@@ -2,14 +2,21 @@
 title: cgstables
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cgstables
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_pycoingecko_model.get_stable_coins
 
-```python
-def cgstables(limit: int, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
+def get_stable_coins(limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L184)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L185)
 
 Description: Returns top stable coins [Source: CoinGecko]
 
@@ -31,17 +38,15 @@ Description: Returns top stable coins [Source: CoinGecko]
 
 
 
-
-# VIEW
-
-# cgstables
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_pycoingecko_view.display_stablecoins
 
-```python
-def cgstables(limit: int, export: str, sortby: str, ascend: bool, pie: bool) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
+def display_stablecoins(limit: int, export: str, sortby: str, ascend: bool, pie: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L336)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L337)
 
 Description: Shows stablecoins data [Source: CoinGecko]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

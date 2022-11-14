@@ -2,14 +2,21 @@
 title: baas
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # baas
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_bitquery_model.get_spread_for_crypto_pair
 
-```python
-def baas(symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/bitquery_model.py'
+def get_spread_for_crypto_pair(symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L723)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L724)
 
 Description: Get an average bid and ask prices, average spread for given crypto pair for chosen time period.
 
@@ -33,17 +40,15 @@ Description: Get an average bid and ask prices, average spread for given crypto 
 
 
 
-
-# VIEW
-
-# baas
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_bitquery_view.display_spread_for_crypto_pair
 
-```python
-def baa) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_spread_for_crypto_pair() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L342)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L343)
 
 Description: Display an average bid and ask prices, average spread for given crypto pair for chosen
 
@@ -66,3 +71,7 @@ Description: Display an average bid and ask prices, average spread for given cry
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

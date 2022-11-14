@@ -2,14 +2,15 @@
 title: close
 description: OpenBB SDK Function
 ---
+
 # close
 
 ## crypto_dd_glassnode_model.get_close_price
 
-```python
-def clos) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_close_price() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L179)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L180)
 
 Description: Returns the price of a cryptocurrency
 

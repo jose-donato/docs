@@ -2,14 +2,21 @@
 title: plot
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # plot
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_optimization_optimizer_view.additional_plots
 
-```python
-def plot(weights: Any, data: pd.DataFrame, category: Dict, title_opt: str, freq: str, risk_measure: str, risk_free_rate: float, alpha: float, a_sim: float, beta: float, b_sim: float, pie: bool, hist: bool, dd: bool, rc_chart: bool, heat: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py'
+def additional_plots(weights: Any, data: pd.DataFrame, category: Dict, title_opt: str, freq: str, risk_measure: str, risk_free_rate: float, alpha: float, a_sim: float, beta: float, b_sim: float, pie: bool, hist: bool, dd: bool, rc_chart: bool, heat: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L3740)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L3741)
 
 Description: Plot additional charts
 
@@ -78,17 +85,15 @@ None
 
 
 
-
-# VIEW
-
-# plot
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_optimization_optimizer_view.additional_plots
 
-```python
-def plot(weights: Any, data: pd.DataFrame, category: Dict, title_opt: str, freq: str, risk_measure: str, risk_free_rate: float, alpha: float, a_sim: float, beta: float, b_sim: float, pie: bool, hist: bool, dd: bool, rc_chart: bool, heat: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py'
+def additional_plots(weights: Any, data: pd.DataFrame, category: Dict, title_opt: str, freq: str, risk_measure: str, risk_free_rate: float, alpha: float, a_sim: float, beta: float, b_sim: float, pie: bool, hist: bool, dd: bool, rc_chart: bool, heat: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L3740)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L3741)
 
 Description: Plot additional charts
 
@@ -155,3 +160,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

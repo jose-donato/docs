@@ -2,14 +2,21 @@
 title: bgod
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # bgod
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## econometrics_regression_model.get_bgod
 
-```python
-def bgod(model: pd.DataFrame, lags: int) -> tuple:
+```python title='openbb_terminal/econometrics/regression_model.py'
+def get_bgod(model: pd.DataFrame, lags: int) -> tuple:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L496)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L497)
 
 Description: Calculate test statistics for autocorrelation
 
@@ -30,17 +37,15 @@ Description: Calculate test statistics for autocorrelation
 
 
 
-
-# VIEW
-
-# bgod
+</TabItem>
+<TabItem value="view" label="View">
 
 ## econometrics_regression_view.display_bgod
 
-```python
-def bgod(model: pd.DataFrame, lags: int, export: str) -> None:
+```python title='openbb_terminal/econometrics/regression_view.py'
+def display_bgod(model: pd.DataFrame, lags: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L146)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L147)
 
 Description: Show Breusch-Godfrey autocorrelation test
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

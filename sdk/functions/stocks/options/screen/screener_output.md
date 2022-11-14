@@ -2,14 +2,21 @@
 title: screener_output
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # screener_output
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_screen_syncretism_model.get_screener_output
 
-```python
-def screener_output(preset: str) -> None:
+```python title='openbb_terminal/stocks/options/screen/syncretism_model.py'
+def get_screener_output(preset: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L158)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L159)
 
 Description: Screen options based on preset filters
 
@@ -29,17 +36,15 @@ Description: Screen options based on preset filters
 
 
 
-
-# VIEW
-
-# screener_output
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_screen_syncretism_view.view_screener_output
 
-```python
-def screener_output(preset: str, limit: int, export: str) -> None:
+```python title='openbb_terminal/stocks/options/screen/syncretism_view.py'
+def view_screener_output(preset: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L58)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L59)
 
 Description: Print the output of screener
 
@@ -59,3 +64,7 @@ Description: Print the output of screener
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

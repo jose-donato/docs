@@ -2,14 +2,15 @@
 title: trending
 description: OpenBB SDK Function
 ---
+
 # trending
 
 ## stocks_ba_stocktwits_model.get_trending
 
-```python
-def trendin) -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/stocktwits_model.py'
+def get_trending() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L81)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L82)
 
 Description: Get trending tickers from stocktwits [Source: stocktwits]
 

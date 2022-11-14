@@ -2,14 +2,21 @@
 title: donchian
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # donchian
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_volatility_model.donchian
 
-```python
+```python title='openbb_terminal/common/technical_analysis/volatility_model.py'
 def donchian(data: pd.DataFrame, upper_length: int, lower_length: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L52)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L53)
 
 Description: Calculate Donchian Channels
 
@@ -31,17 +38,15 @@ Description: Calculate Donchian Channels
 
 
 
-
-# VIEW
-
-# donchian
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_volatility_view.display_donchian
 
-```python
-def donchian(data: pd.DataFrame, symbol: str, upper_length: int, lower_length: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/volatility_view.py'
+def display_donchian(data: pd.DataFrame, symbol: str, upper_length: int, lower_length: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L111)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L112)
 
 Description: Show donchian channels
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

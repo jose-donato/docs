@@ -2,14 +2,21 @@
 title: ross
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ross
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## alt_oss_runa_model.get_startups
 
-```python
-def ros) -> DataFrame:
+```python title='openbb_terminal/alternative/oss/runa_model.py'
+def get_startups() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L102)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L103)
 
 Description: Get startups from ROSS index [Source: https://runacap.com/]
 
@@ -28,17 +35,15 @@ Description: Get startups from ROSS index [Source: https://runacap.com/]
 
 
 
-
-# VIEW
-
-# ross
+</TabItem>
+<TabItem value="view" label="View">
 
 ## alt_oss_runa_view.display_rossindex
 
-```python
-def ross(limit: int, sortby: str, ascend: bool, show_chart: bool, show_growth: bool, chart_type: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/alternative/oss/runa_view.py'
+def display_rossindex(limit: int, sortby: str, ascend: bool, show_chart: bool, show_growth: bool, chart_type: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_view.py#L24)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_view.py#L25)
 
 Description: Display list of startups from ross index [Source: https://runacap.com/]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,15 @@
 title: shrs
 description: OpenBB SDK Function
 ---
+
 # shrs
 
 ## stocks_fa_yahoo_finance_model.get_shareholders
 
-```python
-def shrs(symbol: str, holder: str) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+def get_shareholders(symbol: str, holder: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L74)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L75)
 
 Description: Get shareholders from yahoo
 

@@ -2,14 +2,21 @@
 title: toplobbying
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # toplobbying
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_gov_quiverquant_model.get_top_lobbying
 
-```python
-def toplobbyin) -> DataFrame:
+```python title='openbb_terminal/stocks/government/quiverquant_model.py'
+def get_top_lobbying() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L357)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L358)
 
 Description: Corporate lobbying details
 
@@ -28,17 +35,15 @@ Description: Corporate lobbying details
 
 
 
-
-# VIEW
-
-# toplobbying
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_gov_quiverquant_view.display_top_lobbying
 
-```python
-def toplobbying(limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/government/quiverquant_view.py'
+def display_top_lobbying(limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L621)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L622)
 
 Description: Top lobbying tickers based on total spent
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

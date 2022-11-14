@@ -2,12 +2,13 @@
 title: tob
 description: OpenBB SDK Function
 ---
+
 # tob
 
 ## stocks_cboe_model.get_top_of_book
 
-```python
-def tob(symbol: str, exchange: str) -> None:
+```python title='openbb_terminal/stocks/cboe_model.py'
+def get_top_of_book(symbol: str, exchange: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/cboe_model.py#L12)
 

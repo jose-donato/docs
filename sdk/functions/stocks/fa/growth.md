@@ -2,14 +2,15 @@
 title: growth
 description: OpenBB SDK Function
 ---
+
 # growth
 
 ## stocks_fa_fmp_model.get_financial_growth
 
-```python
-def growt) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_financial_growth() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L498)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L499)
 
 Description: Get financial statement growth
 

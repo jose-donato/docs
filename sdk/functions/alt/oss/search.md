@@ -2,12 +2,13 @@
 title: search
 description: OpenBB SDK Function
 ---
+
 # search
 
 ## alt_oss_github_model.search_repos
 
-```python
-def search(sortby: str, page: int, categories: str) -> DataFrame:
+```python title='openbb_terminal/alternative/oss/github_model.py'
+def search_repos(sortby: str, page: int, categories: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L54)
 

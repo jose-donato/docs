@@ -2,14 +2,21 @@
 title: cgh
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cgh
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_pycoingecko_model.get_coins
 
-```python
-def cgh(limit: int, category: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
+def get_coins(limit: int, category: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L120)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L121)
 
 Description: Get N coins from CoinGecko [Source: CoinGecko]
 
@@ -32,17 +39,15 @@ Description: Get N coins from CoinGecko [Source: CoinGecko]
 
 
 
-
-# VIEW
-
-# cgh
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_pycoingecko_view.display_crypto_heatmap
 
-```python
-def cgh(category: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
+def display_crypto_heatmap(category: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L35)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L36)
 
 Description: Shows cryptocurrencies heatmap [Source: CoinGecko]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

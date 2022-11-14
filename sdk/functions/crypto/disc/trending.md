@@ -2,14 +2,21 @@
 title: trending
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # trending
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_disc_pycoingecko_model.get_trending_coins
 
-```python
-def trendin) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
+def get_trending_coins() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L308)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L309)
 
 Description: Returns trending coins [Source: CoinGecko]
 
@@ -28,17 +35,15 @@ Description: Returns trending coins [Source: CoinGecko]
 
 
 
-
-# VIEW
-
-# trending
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_disc_pycoingecko_view.display_trending
 
-```python
-def trending(export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py'
+def display_trending(export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L191)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L192)
 
 Description: Display trending coins [Source: CoinGecko]
 
@@ -54,3 +59,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

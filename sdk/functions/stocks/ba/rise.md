@@ -2,14 +2,21 @@
 title: rise
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # rise
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_google_model.get_rise
 
-```python
-def rise(symbol: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/google_model.py'
+def get_rise(symbol: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L105)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L106)
 
 Description: Get top rising related queries with this stock's query [Source: google]
 
@@ -30,17 +37,15 @@ Description: Get top rising related queries with this stock's query [Source: goo
 
 
 
-
-# VIEW
-
-# rise
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ba_google_view.display_rise
 
-```python
-def rise(symbol: str, limit: int, export: str) -> None:
+```python title='openbb_terminal/common/behavioural_analysis/google_view.py'
+def display_rise(symbol: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L242)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L243)
 
 Description: Print top rising related queries with this stock's query. [Source: Google]
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

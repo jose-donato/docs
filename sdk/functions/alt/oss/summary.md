@@ -2,14 +2,21 @@
 title: summary
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # summary
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## alt_oss_github_model.get_repo_summary
 
-```python
-def summary(repo: str) -> DataFrame:
+```python title='openbb_terminal/alternative/oss/github_model.py'
+def get_repo_summary(repo: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L171)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L172)
 
 Description: Get repository summary
 
@@ -29,17 +36,15 @@ Description: Get repository summary
 
 
 
-
-# VIEW
-
-# summary
+</TabItem>
+<TabItem value="view" label="View">
 
 ## alt_oss_github_view.display_repo_summary
 
-```python
-def summary(repo: str, export: str) -> None:
+```python title='openbb_terminal/alternative/oss/github_view.py'
+def display_repo_summary(repo: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L122)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L123)
 
 Description: Display repo summary [Source: https://api.github.com]
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

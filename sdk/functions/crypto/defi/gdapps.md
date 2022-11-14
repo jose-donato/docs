@@ -2,14 +2,21 @@
 title: gdapps
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # gdapps
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_llama_model.get_grouped_defi_protocols
 
-```python
-def gdapps(limit: int) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/defi/llama_model.py'
+def get_grouped_defi_protocols(limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L143)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L144)
 
 Description: Display top dApps (in terms of TVL) grouped by chain.
 
@@ -29,17 +36,15 @@ Description: Display top dApps (in terms of TVL) grouped by chain.
 
 
 
-
-# VIEW
-
-# gdapps
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_llama_view.display_grouped_defi_protocols
 
-```python
-def gdapps(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/llama_view.py'
+def display_grouped_defi_protocols(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L27)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L28)
 
 Description: Display top dApps (in terms of TVL) grouped by chain.
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

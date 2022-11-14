@@ -2,11 +2,12 @@
 title: set_keys
 description: OpenBB SDK Function
 ---
+
 # set_keys
 
 ## keys_model.set_keys
 
-```python
+```python title='openbb_terminal/keys_model.py'
 def set_keys(keys_dict: Dict[str, Dict[str, Union[str, bool]]], persist: bool, show_output: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L116)

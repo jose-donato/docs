@@ -2,14 +2,21 @@
 title: overview
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # overview
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## mutual_funds_investpy_model.get_overview
 
-```python
-def overview(country: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/mutual_funds/investpy_model.py'
+def get_overview(country: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L48)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L49)
 
 Description: None
 
@@ -30,17 +37,15 @@ Description: None
 
 
 
-
-# VIEW
-
-# overview
+</TabItem>
+<TabItem value="view" label="View">
 
 ## mutual_funds_investpy_view.display_overview
 
-```python
-def overview(country: str, limit: int, export: str) -> None:
+```python title='openbb_terminal/mutual_funds/investpy_view.py'
+def display_overview(country: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_view.py#L73)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_view.py#L74)
 
 Description: Displays an overview of the main funds from a country.
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

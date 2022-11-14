@@ -2,14 +2,15 @@
 title: view
 description: OpenBB SDK Function
 ---
+
 # view
 
 ## stocks_ta_finviz_model.get_finviz_image
 
-```python
-def view(symbol: str) -> bytes:
+```python title='openbb_terminal/stocks/technical_analysis/finviz_model.py'
+def get_finviz_image(symbol: str) -> bytes:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_model.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_model.py#L16)
 
 Description: Get finviz image for given ticker
 

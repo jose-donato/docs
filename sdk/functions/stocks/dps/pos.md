@@ -2,14 +2,15 @@
 title: pos
 description: OpenBB SDK Function
 ---
+
 # pos
 
 ## stocks_dps_stockgrid_model.get_dark_pool_short_positions
 
-```python
-def pos(sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py'
+def get_dark_pool_short_positions(sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L20)
 
 Description: Get dark pool short positions. [Source: Stockgrid]
 

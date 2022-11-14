@@ -2,14 +2,21 @@
 title: historical
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # historical
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## futures_yfinance_model.get_historical_futures
 
-```python
-def historical(symbols: List[str], expiry: str) -> None:
+```python title='openbb_terminal/futures/yfinance_model.py'
+def get_historical_futures(symbols: List[str], expiry: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L78)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L79)
 
 Description: Get historical futures [Source: Yahoo Finance]
 
@@ -31,17 +38,15 @@ None
 
 
 
-
-# VIEW
-
-# historical
+</TabItem>
+<TabItem value="view" label="View">
 
 ## futures_yfinance_view.display_historical
 
-```python
-def historical(symbols: List[str], expiry: str, start_date: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/futures/yfinance_view.py'
+def display_historical(symbols: List[str], expiry: str, start_date: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L64)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L65)
 
 Description: Display historical futures [Source: Yahoo Finance]
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: cpci
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpci
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_sia_financedatabase_model.get_companies_per_country_in_industry
 
-```python
-def cpci(industry: str, mktcap: str, exclude_exchanges: bool) -> dict:
+```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py'
+def get_companies_per_country_in_industry(industry: str, mktcap: str, exclude_exchanges: bool) -> dict:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L410)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L411)
 
 Description: Get number of companies per country in a specific industry (and specific market cap).
 
@@ -31,17 +38,15 @@ Description: Get number of companies per country in a specific industry (and spe
 
 
 
-
-# VIEW
-
-# cpci
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_sia_financedatabase_view.display_companies_per_country_in_industry
 
-```python
-def cpci(industry: str, mktcap: str, exclude_exchanges: bool, export: str, raw: bool, max_countries_to_display: int, min_pct_to_display_country: float, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py'
+def display_companies_per_country_in_industry(industry: str, mktcap: str, exclude_exchanges: bool, export: str, raw: bool, max_countries_to_display: int, min_pct_to_display_country: float, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L819)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L820)
 
 Description: Display number of companies per country in a specific industry. [Source: Finance Database]
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

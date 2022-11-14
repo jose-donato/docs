@@ -2,14 +2,15 @@
 title: av_income
 description: OpenBB SDK Function
 ---
+
 # av_income
 
 ## stocks_fa_av_model.get_income_statements
 
-```python
-def av_income(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
+def get_income_statements(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L161)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L162)
 
 Description: Get income statements for company
 

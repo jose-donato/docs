@@ -2,14 +2,21 @@
 title: ef
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ef
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_optimization_optimizer_model.get_ef
 
-```python
-def ef(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, alpha: float, value: float, value_short: float, n_portfolios: int, seed: int) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py'
+def get_ef(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, alpha: float, value: float, value_short: float, n_portfolios: int, seed: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1504)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1505)
 
 Description: Get efficient frontier
 
@@ -69,17 +76,15 @@ The default is 0.05. | 0.05 | True |
 
 
 
-
-# VIEW
-
-# ef
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_optimization_optimizer_view.display_ef
 
-```python
-def ef(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, alpha: float, value: float, value_short: float, n_portfolios: int, seed: int, tangency: bool, plot_tickers: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py'
+def display_ef(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, risk_measure: str, risk_free_rate: float, alpha: float, value: float, value_short: float, n_portfolios: int, seed: int, tangency: bool, plot_tickers: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L2083)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L2084)
 
 Description: Display efficient frontier
 
@@ -137,3 +142,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

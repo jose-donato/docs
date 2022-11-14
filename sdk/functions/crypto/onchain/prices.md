@@ -2,14 +2,21 @@
 title: prices
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # prices
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_ethplorer_model.get_token_historical_price
 
-```python
-def prices(address: Any, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
+def get_token_historical_price(address: Any, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L537)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L538)
 
 Description: Get token historical prices with volume and market cap, and average price. [Source: Ethplorer]
 
@@ -31,17 +38,15 @@ Description: Get token historical prices with volume and market cap, and average
 
 
 
-
-# VIEW
-
-# prices
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_ethplorer_view.display_token_historical_prices
 
-```python
-def price) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_token_historical_prices() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L333)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L334)
 
 Description: Display token historical prices with volume and market cap, and average price.
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

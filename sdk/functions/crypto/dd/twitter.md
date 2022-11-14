@@ -2,14 +2,21 @@
 title: twitter
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # twitter
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_coinpaprika_model.get_coin_twitter_timeline
 
-```python
-def twitter(symbol: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py'
+def get_coin_twitter_timeline(symbol: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L41)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L42)
 
 Description: Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
 
@@ -34,17 +41,15 @@ Columns: date, user_name, status, retweet_count, like_count |
 
 
 
-
-# VIEW
-
-# twitter
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_coinpaprika_view.display_twitter
 
-```python
-def twitter(symbol: str, limit: int, sortby: str, ascend: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py'
+def display_twitter(symbol: str, limit: int, sortby: str, ascend: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L86)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L87)
 
 Description: Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
 
@@ -66,3 +71,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

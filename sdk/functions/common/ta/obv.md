@@ -2,14 +2,21 @@
 title: obv
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # obv
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_volume_model.obv
 
-```python
+```python title='openbb_terminal/common/technical_analysis/volume_model.py'
 def obv(data: pd.DataFrame) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L89)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L90)
 
 Description: On Balance Volume
 
@@ -29,17 +36,15 @@ Description: On Balance Volume
 
 
 
-
-# VIEW
-
-# obv
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_volume_view.display_obv
 
-```python
-def obv(data: pd.DataFrame, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/volume_view.py'
+def display_obv(data: pd.DataFrame, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L248)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L249)
 
 Description: Plot OBV technical indicator
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

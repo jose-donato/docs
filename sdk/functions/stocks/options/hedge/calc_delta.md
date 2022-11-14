@@ -2,11 +2,12 @@
 title: calc_delta
 description: OpenBB SDK Function
 ---
+
 # calc_delta
 
 ## stocks_options_hedge_model.calc_delta
 
-```python
+```python title='openbb_terminal/stocks/options/hedge/hedge_model.py'
 def calc_delta(asset_price: float, asset_volatility: float, strike_price: float, time_to_expiration: float, risk_free_rate: float, sign: int) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_model.py#L183)

@@ -2,14 +2,15 @@
 title: sharpe
 description: OpenBB SDK Function
 ---
+
 # sharpe
 
 ## portfolio_model.get_sharpe_ratio
 
-```python
-def sharpe(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, risk_free_rate: float) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_sharpe_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, risk_free_rate: float) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L969)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L970)
 
 Description: Class method that retrieves sharpe ratio for portfolio and benchmark selected
 

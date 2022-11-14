@@ -2,14 +2,15 @@
 title: divs
 description: OpenBB SDK Function
 ---
+
 # divs
 
 ## stocks_fa_yahoo_finance_model.get_dividends
 
-```python
-def divs(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+def get_dividends(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L255)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L256)
 
 Description: Get historical dividend for ticker
 

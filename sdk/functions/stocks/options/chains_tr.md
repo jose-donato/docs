@@ -2,14 +2,21 @@
 title: chains_tr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # chains_tr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_tradier_model.get_option_chains
 
-```python
-def chains_t) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_option_chains() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L153)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L154)
 
 Description: Display option chains [Source: Tradier]"
 
@@ -30,17 +37,15 @@ Description: Display option chains [Source: Tradier]"
 
 
 
-
-# VIEW
-
-# chains_tr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_tradier_view.display_chains
 
-```python
-def chains_tr(symbol: str, expiry: str, to_display: List[str], min_sp: float, max_sp: float, calls_only: bool, puts_only: bool, export: str) -> None:
+```python title='openbb_terminal/stocks/options/tradier_view.py'
+def display_chains(symbol: str, expiry: str, to_display: List[str], min_sp: float, max_sp: float, calls_only: bool, puts_only: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_view.py#L154)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_view.py#L155)
 
 Description: Display option chain
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

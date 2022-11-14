@@ -2,14 +2,21 @@
 title: cpplatforms
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpplatforms
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_coinpaprika_model.get_all_contract_platforms
 
-```python
-def cpplatform) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
+def get_all_contract_platforms() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L397)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L398)
 
 Description: List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama ... [Source: CoinPaprika]
 
@@ -28,17 +35,15 @@ Description: List all smart contract platforms like ethereum, solana, cosmos, po
 
 
 
-
-# VIEW
-
-# cpplatforms
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_coinpaprika_view.display_all_platforms
 
-```python
-def cpplatforms(export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
+def display_all_platforms(export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L323)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L324)
 
 Description: List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama.
 
@@ -54,3 +59,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

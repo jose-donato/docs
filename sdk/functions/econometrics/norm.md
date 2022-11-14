@@ -2,14 +2,21 @@
 title: norm
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # norm
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## econometrics_model.get_normality
 
-```python
-def norm(data: pd.Series) -> DataFrame:
+```python title='openbb_terminal/econometrics/econometrics_model.py'
+def get_normality(data: pd.Series) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L110)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L111)
 
 Description: The distribution of returns and generate statistics on the relation to the normal curve.
 
@@ -29,17 +36,15 @@ Description: The distribution of returns and generate statistics on the relation
 
 
 
-
-# VIEW
-
-# norm
+</TabItem>
+<TabItem value="view" label="View">
 
 ## econometrics_view.display_norm
 
-```python
-def norm(data: pd.Series, dataset: str, column: str, plot: bool, export: str, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/econometrics/econometrics_view.py'
+def display_norm(data: pd.Series, dataset: str, column: str, plot: bool, export: str, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L135)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L136)
 
 Description: Determine the normality of a timeseries.
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

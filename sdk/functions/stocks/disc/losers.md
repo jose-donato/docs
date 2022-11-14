@@ -2,14 +2,15 @@
 title: losers
 description: OpenBB SDK Function
 ---
+
 # losers
 
 ## stocks_disc_yahoofinance_model.get_losers
 
-```python
-def loser) -> DataFrame:
+```python title='openbb_terminal/stocks/discovery/yahoofinance_model.py'
+def get_losers() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L34)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L35)
 
 Description: Get top losers. [Source: Yahoo Finance]
 

@@ -2,14 +2,21 @@
 title: cgcategories
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cgcategories
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_pycoingecko_model.get_top_crypto_categories
 
-```python
-def cgcategories(sort_filter: str) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
+def get_top_crypto_categories(sort_filter: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L156)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L157)
 
 Description: Returns top crypto categories [Source: CoinGecko]
 
@@ -28,17 +35,15 @@ Description: Returns top crypto categories [Source: CoinGecko]
 
 
 
-
-# VIEW
-
-# cgcategories
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_pycoingecko_view.display_categories
 
-```python
-def cgcategories(sortby: str, limit: int, export: str, pie: bool) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
+def display_categories(sortby: str, limit: int, export: str, pie: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L438)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L439)
 
 Description: Shows top cryptocurrency categories by market capitalization
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

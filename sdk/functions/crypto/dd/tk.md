@@ -2,14 +2,21 @@
 title: tk
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # tk
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_tokenomics
 
-```python
-def t) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_tokenomics() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L271)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L272)
 
 Description: Returns coin tokenomics
 
@@ -30,17 +37,15 @@ Description: Returns coin tokenomics
 
 
 
-
-# VIEW
-
-# tk
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_tokenomics
 
-```python
-def t) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_tokenomics() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L373)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L374)
 
 Description: Display coin tokenomics
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

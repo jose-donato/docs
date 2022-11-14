@@ -2,14 +2,21 @@
 title: tcn
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # tcn
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forecast_tcn_model.get_tcn_data
 
-```python
-def tcn(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, dropout: float, num_filters: int, weight_norm: bool, dilation_base: int, n_epochs: int, learning_rate: float, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
+```python title='openbb_terminal/forecast/tcn_model.py'
+def get_tcn_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, dropout: float, num_filters: int, weight_norm: bool, dilation_base: int, n_epochs: int, learning_rate: float, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_model.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_model.py#L20)
 
 Description: Perform TCN forecasting
 
@@ -48,17 +55,15 @@ Defaults to True. | True | False |
 
 
 
-
-# VIEW
-
-# tcn
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forecast_tcn_view.display_tcn_forecast
 
-```python
-def tcn(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, dropout: float, num_filters: int, weight_norm: bool, dilation_base: int, n_epochs: int, learning_rate: float, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/tcn_view.py'
+def display_tcn_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, dropout: float, num_filters: int, weight_norm: bool, dilation_base: int, n_epochs: int, learning_rate: float, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_view.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_view.py#L20)
 
 Description: Display TCN forecast
 
@@ -101,3 +106,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

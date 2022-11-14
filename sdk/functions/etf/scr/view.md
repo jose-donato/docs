@@ -2,14 +2,15 @@
 title: view
 description: OpenBB SDK Function
 ---
+
 # view
 
 ## etf_scr_view.view_screener
 
-```python
-def view(preset: str, num_to_show: int, sortby: str, ascend: bool, export: str) -> None:
+```python title='openbb_terminal/etf/screener/screener_view.py'
+def view_screener(preset: str, num_to_show: int, sortby: str, ascend: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_view.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_view.py#L18)
 
 Description: Display screener output
 

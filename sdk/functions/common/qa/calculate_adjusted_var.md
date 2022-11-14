@@ -2,11 +2,12 @@
 title: calculate_adjusted_var
 description: OpenBB SDK Function
 ---
+
 # calculate_adjusted_var
 
 ## common_qa_model.calculate_adjusted_var
 
-```python
+```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
 def calculate_adjusted_var(kurtosis: float, skew: float, ndp: float, std: float, mean: float) -> float:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L184)

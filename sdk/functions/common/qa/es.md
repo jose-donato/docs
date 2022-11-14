@@ -2,12 +2,19 @@
 title: es
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # es
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_model.get_es
 
-```python
-def es(data: pd.DataFrame, use_mean: bool, distribution: str, percentile: Union[float, int], portfolio: bool) -> DataFrame:
+```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
+def get_es(data: pd.DataFrame, use_mean: bool, distribution: str, percentile: Union[float, int], portfolio: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L357)
 
@@ -33,15 +40,13 @@ Description: Gets Expected Shortfall for specified stock dataframe.
 
 
 
-
-# VIEW
-
-# es
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_view.display_es
 
-```python
-def es(data: pd.DataFrame, symbol: str, use_mean: bool, distribution: str, percentile: float, portfolio: bool) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
+def display_es(data: pd.DataFrame, symbol: str, use_mean: bool, distribution: str, percentile: float, portfolio: bool) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1066)
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

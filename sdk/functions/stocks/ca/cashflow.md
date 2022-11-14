@@ -2,14 +2,15 @@
 title: cashflow
 description: OpenBB SDK Function
 ---
+
 # cashflow
 
 ## stocks_ca_marketwatch_model.get_cashflow_comparison
 
-```python
-def cashflow(similar: List[str], timeframe: str, quarter: bool) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/marketwatch_model.py'
+def get_cashflow_comparison(similar: List[str], timeframe: str, quarter: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L129)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L130)
 
 Description: Get cashflow data. [Source: Marketwatch]
 

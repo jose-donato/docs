@@ -2,11 +2,12 @@
 title: calc_gamma
 description: OpenBB SDK Function
 ---
+
 # calc_gamma
 
 ## stocks_options_hedge_model.calc_gamma
 
-```python
+```python title='openbb_terminal/stocks/options/hedge/hedge_model.py'
 def calc_gamma(asset_price: float, asset_volatility: float, strike_price: float, time_to_expiration: float, risk_free_rate: float) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_model.py#L231)

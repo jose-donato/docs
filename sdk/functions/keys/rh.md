@@ -2,12 +2,13 @@
 title: rh
 description: OpenBB SDK Function
 ---
+
 # rh
 
 ## keys_model.set_rh_key
 
-```python
-def rh(username: str, password: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_rh_key(username: str, password: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1108)
 

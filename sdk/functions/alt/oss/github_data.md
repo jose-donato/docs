@@ -2,14 +2,15 @@
 title: github_data
 description: OpenBB SDK Function
 ---
+
 # github_data
 
 ## alt_oss_github_model.get_github_data
 
-```python
-def github_data(url: str) -> None:
+```python title='openbb_terminal/alternative/oss/github_model.py'
+def get_github_data(url: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L20)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L21)
 
 Description: Get repository stats
 

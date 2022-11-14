@@ -2,14 +2,21 @@
 title: oi
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # oi
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_coinglass_model.get_open_interest_per_exchange
 
-```python
-def o) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_open_interest_per_exchange() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L148)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L149)
 
 Description: Returns open interest by exchange for a certain symbol
 
@@ -30,17 +37,15 @@ Description: Returns open interest by exchange for a certain symbol
 
 
 
-
-# VIEW
-
-# oi
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_coinglass_view.display_open_interest
 
-```python
-def o) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_open_interest() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L56)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L57)
 
 Description: Displays open interest by exchange for a certain cryptocurrency
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: cbbook
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cbbook
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_coinbase_model.get_order_book
 
-```python
-def cbbook(symbol: str) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
+def get_order_book(symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L58)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L59)
 
 Description: Get orders book for chosen trading pair. [Source: Coinbase]
 
@@ -32,17 +39,15 @@ dict with raw data |
 
 
 
-
-# VIEW
-
-# cbbook
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_coinbase_view.display_order_book
 
-```python
-def cbbook(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py'
+def display_order_book(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L22)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L23)
 
 Description: Displays a list of available currency pairs for trading. [Source: Coinbase]
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

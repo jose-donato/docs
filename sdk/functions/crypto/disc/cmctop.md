@@ -2,14 +2,21 @@
 title: cmctop
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cmctop
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_disc_coinmarketcap_model.get_cmc_top_n
 
-```python
-def cmcto) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_cmc_top_n() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L27)
 
 Description: Shows top n coins. [Source: CoinMarketCap]
 
@@ -32,17 +39,15 @@ https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyLis
 
 
 
-
-# VIEW
-
-# cmctop
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_disc_coinmarketcap_view.display_cmc_top_coins
 
-```python
-def cmcto) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_cmc_top_coins() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
 
 Description: Shows top n coins. [Source: CoinMarketCap]
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

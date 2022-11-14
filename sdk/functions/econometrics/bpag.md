@@ -2,14 +2,21 @@
 title: bpag
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # bpag
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## econometrics_regression_model.get_bpag
 
-```python
-def bpag(model: pd.DataFrame) -> tuple:
+```python title='openbb_terminal/econometrics/regression_model.py'
+def get_bpag(model: pd.DataFrame) -> tuple:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L517)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L518)
 
 Description: Calculate test statistics for heteroscedasticity
 
@@ -29,17 +36,15 @@ Description: Calculate test statistics for heteroscedasticity
 
 
 
-
-# VIEW
-
-# bpag
+</TabItem>
+<TabItem value="view" label="View">
 
 ## econometrics_regression_view.display_bpag
 
-```python
-def bpag(model: pd.DataFrame, export: str) -> None:
+```python title='openbb_terminal/econometrics/regression_view.py'
+def display_bpag(model: pd.DataFrame, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L193)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L194)
 
 Description: Show Breusch-Pagan heteroscedasticity test
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

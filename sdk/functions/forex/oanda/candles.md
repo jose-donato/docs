@@ -2,14 +2,21 @@
 title: candles
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # candles
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.get_candles_dataframe
 
-```python
-def candles(instrument: Union[str, NoneType], granularity: str, candlecount: int) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def get_candles_dataframe(instrument: Union[str, NoneType], granularity: str, candlecount: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L580)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L581)
 
 Description: Request data for candle chart.
 
@@ -31,17 +38,15 @@ Description: Request data for candle chart.
 
 
 
-
-# VIEW
-
-# candles
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.show_candles
 
-```python
-def candle) -> None:
+```python title='openbb_terminal/decorators.py'
+def show_candles() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L303)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L304)
 
 Description: Show candle chart.
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

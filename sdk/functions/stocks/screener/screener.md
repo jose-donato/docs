@@ -1,16 +1,16 @@
-
-
-
-# VIEW
+---
+title: screener
+description: OpenBB SDK Function
+---
 
 # screener
 
 ## stocks_screener_finviz_view.screener
 
-```python
+```python title='openbb_terminal/stocks/screener/finviz_view.py'
 def screener(loaded_preset: str, data_type: str, limit: int, ascend: bool, sortby: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_view.py#L126)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_view.py#L127)
 
 Description: Screener one of the following: overview, valuation, financial, ownership, performance, technical.
 

@@ -2,14 +2,21 @@
 title: change
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # change
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_glassnode_model.get_exchange_net_position_change
 
-```python
-def chang) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_exchange_net_position_change() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L521)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L522)
 
 Description: Returns 30d change of the supply held in exchange wallets of a certain symbol.
 
@@ -32,17 +39,15 @@ Description: Returns 30d change of the supply held in exchange wallets of a cert
 
 
 
-
-# VIEW
-
-# change
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_glassnode_view.display_exchange_net_position_change
 
-```python
-def chang) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_exchange_net_position_change() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L150)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L151)
 
 Description: Display 30d change of the supply held in exchange wallets.
 
@@ -65,3 +70,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

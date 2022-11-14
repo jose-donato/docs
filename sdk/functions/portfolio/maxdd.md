@@ -2,14 +2,21 @@
 title: maxdd
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # maxdd
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_model.get_maximum_drawdown
 
-```python
-def maxdd(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, is_returns: bool) -> Series:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_maximum_drawdown(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, is_returns: bool) -> Series:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1382)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1383)
 
 Description: Calculate the drawdown (MDD) of historical series.  Note that the calculation is done
 
@@ -32,17 +39,15 @@ None
 
 
 
-
-# VIEW
-
-# maxdd
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_view.display_maximum_drawdown
 
-```python
-def maxdd(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_view.py'
+def display_maximum_drawdown(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1021)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1022)
 
 Description: Display maximum drawdown curve
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

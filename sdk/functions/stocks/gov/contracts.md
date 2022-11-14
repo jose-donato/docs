@@ -2,14 +2,21 @@
 title: contracts
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # contracts
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_gov_quiverquant_model.get_contracts
 
-```python
-def contracts(symbol: str, past_transaction_days: int) -> DataFrame:
+```python title='openbb_terminal/stocks/government/quiverquant_model.py'
+def get_contracts(symbol: str, past_transaction_days: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L102)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L103)
 
 Description: Get government contracts for ticker [Source: quiverquant.com]
 
@@ -30,17 +37,15 @@ Description: Get government contracts for ticker [Source: quiverquant.com]
 
 
 
-
-# VIEW
-
-# contracts
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_gov_quiverquant_view.display_contracts
 
-```python
-def contracts(symbol: str, past_transaction_days: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/government/quiverquant_view.py'
+def display_contracts(symbol: str, past_transaction_days: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L379)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L380)
 
 Description: Show government contracts for ticker [Source: quiverquant.com]
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

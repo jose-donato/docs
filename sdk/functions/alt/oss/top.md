@@ -2,14 +2,21 @@
 title: top
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # top
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## alt_oss_github_model.get_top_repos
 
-```python
-def top(sortby: str, limit: int, categories: str) -> DataFrame:
+```python title='openbb_terminal/alternative/oss/github_model.py'
+def get_top_repos(sortby: str, limit: int, categories: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L129)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L130)
 
 Description: Get repos sorted by stars or forks. Can be filtered by categories
 
@@ -31,17 +38,15 @@ Description: Get repos sorted by stars or forks. Can be filtered by categories
 
 
 
-
-# VIEW
-
-# top
+</TabItem>
+<TabItem value="view" label="View">
 
 ## alt_oss_github_view.display_top_repos
 
-```python
-def top(sortby: str, categories: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/alternative/oss/github_view.py'
+def display_top_repos(sortby: str, categories: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L64)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L65)
 
 Description: Display repo summary [Source: https://api.github.com]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

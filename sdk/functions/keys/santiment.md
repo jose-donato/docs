@@ -2,12 +2,13 @@
 title: santiment
 description: OpenBB SDK Function
 ---
+
 # santiment
 
 ## keys_model.set_santiment_key
 
-```python
-def santiment(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_santiment_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L2092)
 

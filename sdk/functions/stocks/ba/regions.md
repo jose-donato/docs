@@ -2,14 +2,21 @@
 title: regions
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # regions
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_google_model.get_regions
 
-```python
-def regions(symbol: str) -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/google_model.py'
+def get_regions(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L43)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L44)
 
 Description: Get interest by region from google api [Source: google]
 
@@ -29,17 +36,15 @@ Description: Get interest by region from google api [Source: google]
 
 
 
-
-# VIEW
-
-# regions
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ba_google_view.display_regions
 
-```python
-def regions(symbol: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/behavioural_analysis/google_view.py'
+def display_regions(symbol: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L155)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L156)
 
 Description: Plot bars of regions based on stock's interest. [Source: Google]
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,15 @@
 title: rename
 description: OpenBB SDK Function
 ---
+
 # rename
 
 ## forecast_model.rename_column
 
-```python
-def rename(data: pd.DataFrame, old_column: str, new_column: str) -> DataFrame:
+```python title='openbb_terminal/forecast/forecast_model.py'
+def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L452)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L453)
 
 Description: Rename a column in a dataframe
 

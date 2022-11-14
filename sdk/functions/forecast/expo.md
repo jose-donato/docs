@@ -2,14 +2,21 @@
 title: expo
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # expo
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forecast_expo_model.get_expo_data
 
-```python
-def expo(data: Union[pd.Series, pd.DataFrame], target_column: str, trend: str, seasonal: str, seasonal_periods: int, dampen: str, n_predict: int, start_window: float, forecast_horizon: int) -> None:
+```python title='openbb_terminal/forecast/expo_model.py'
+def get_expo_data(data: Union[pd.Series, pd.DataFrame], target_column: str, trend: str, seasonal: str, seasonal_periods: int, dampen: str, n_predict: int, start_window: float, forecast_horizon: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/expo_model.py#L32)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/expo_model.py#L33)
 
 Description: Performs Probabilistic Exponential Smoothing forecasting
 
@@ -40,17 +47,15 @@ If not set, inferred from frequency of the series. | None | False |
 
 
 
-
-# VIEW
-
-# expo
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forecast_expo_view.display_expo_forecast
 
-```python
-def expo(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, trend: str, seasonal: str, seasonal_periods: int, dampen: str, n_predict: int, start_window: float, forecast_horizon: int, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/expo_view.py'
+def display_expo_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, trend: str, seasonal: str, seasonal_periods: int, dampen: str, n_predict: int, start_window: float, forecast_horizon: int, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/expo_view.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/expo_view.py#L20)
 
 Description: Display Probabilistic Exponential Smoothing forecast
 
@@ -86,3 +91,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

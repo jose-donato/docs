@@ -2,12 +2,13 @@
 title: ethplorer
 description: OpenBB SDK Function
 ---
+
 # ethplorer
 
 ## keys_model.set_ethplorer_key
 
-```python
-def ethplorer(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_ethplorer_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1782)
 

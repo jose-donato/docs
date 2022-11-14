@@ -2,14 +2,21 @@
 title: index
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # index
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_yfinance_model.get_indices
 
-```python
-def index(indices: list, interval: str, start_date: int, end_date: int, column: str, returns: bool) -> DataFrame:
+```python title='openbb_terminal/economy/yfinance_model.py'
+def get_indices(indices: list, interval: str, start_date: int, end_date: int, column: str, returns: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L669)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L670)
 
 Description: Get data on selected indices over time [Source: Yahoo Finance]
 
@@ -36,17 +43,15 @@ None
 
 
 
-
-# VIEW
-
-# index
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_yfinance_view.show_indices
 
-```python
-def index(indices: list, interval: str, start_date: int, end_date: int, column: str, returns: bool, raw: bool, external_axes: Union[List[axes], NoneType], export: str) -> None:
+```python title='openbb_terminal/economy/yfinance_view.py'
+def show_indices(indices: list, interval: str, start_date: int, end_date: int, column: str, returns: bool, raw: bool, external_axes: Union[List[axes], NoneType], export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_view.py#L29)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_view.py#L30)
 
 Description: Load (and show) the selected indices over time [Source: Yahoo Finance]
 
@@ -75,3 +80,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

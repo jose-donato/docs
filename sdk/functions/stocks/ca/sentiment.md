@@ -2,14 +2,21 @@
 title: sentiment
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # sentiment
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ca_finbrain_model.get_sentiments
 
-```python
-def sentiment(symbols: List[str]) -> DataFrame:
+```python title='openbb_terminal/stocks/comparison_analysis/finbrain_model.py'
+def get_sentiments(symbols: List[str]) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L46)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L47)
 
 Description: Gets Sentiment analysis from several symbols provided by FinBrain's API
 
@@ -31,17 +38,15 @@ finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
 
 
 
-
-# VIEW
-
-# sentiment
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ca_finbrain_view.display_sentiment_compare
 
-```python
-def sentiment(similar: List[str], raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/finbrain_view.py'
+def display_sentiment_compare(similar: List[str], raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L31)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L32)
 
 Description: Display sentiment for all ticker. [Source: FinBrain]
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

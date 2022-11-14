@@ -2,14 +2,21 @@
 title: wf
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # wf
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_withdrawalfees_model.get_overall_withdrawal_fees
 
-```python
-def wf(limit: int) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py'
+def get_overall_withdrawal_fees(limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L119)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L120)
 
 Description: Scrapes top coins withdrawal fees
 
@@ -29,17 +36,15 @@ Description: Scrapes top coins withdrawal fees
 
 
 
-
-# VIEW
-
-# wf
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_withdrawalfees_view.display_overall_withdrawal_fees
 
-```python
-def wf(limit: int, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py'
+def display_overall_withdrawal_fees(limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L18)
 
 Description: Top coins withdrawal fees
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: av_cash
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # av_cash
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_fa_av_model.get_cash_flow
 
-```python
-def av_cash(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
+def get_cash_flow(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L339)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L340)
 
 Description: Get cash flows for company
 
@@ -33,17 +40,15 @@ Description: Get cash flows for company
 
 
 
-
-# VIEW
-
-# av_cash
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_fa_av_view.display_cash_flow
 
-```python
-def av_cas) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_cash_flow() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L244)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L245)
 
 Description: Alpha Vantage income statement
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

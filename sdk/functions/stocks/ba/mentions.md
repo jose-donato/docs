@@ -2,14 +2,21 @@
 title: mentions
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # mentions
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_google_model.get_mentions
 
-```python
-def mentions(symbol: str) -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/google_model.py'
+def get_mentions(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L16)
 
 Description: Get interest over time from google api [Source: google]
 
@@ -29,17 +36,15 @@ Description: Get interest over time from google api [Source: google]
 
 
 
-
-# VIEW
-
-# mentions
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ba_google_view.display_mentions
 
-```python
-def mentions(symbol: str, start_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/behavioural_analysis/google_view.py'
+def display_mentions(symbol: str, start_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L25)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L26)
 
 Description: Plot weekly bars of stock's interest over time. other users watchlist. [Source: Google]
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

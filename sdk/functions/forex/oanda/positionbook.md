@@ -2,14 +2,21 @@
 title: positionbook
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # positionbook
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.positionbook_plot_data_request
 
-```python
-def positionbook(instrument: Union[str, NoneType], accountID: str) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def positionbook_plot_data_request(instrument: Union[str, NoneType], accountID: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L181)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L182)
 
 Description: Request position book data for plotting.
 
@@ -30,17 +37,15 @@ Description: Request position book data for plotting.
 
 
 
-
-# VIEW
-
-# positionbook
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.get_position_book
 
-```python
-def positionboo) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_position_book() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L117)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L118)
 
 Description: Plot a position book for an instrument if Oanda provides one.
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

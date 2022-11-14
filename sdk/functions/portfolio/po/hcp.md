@@ -2,14 +2,21 @@
 title: hcp
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # hcp
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_optimization_optimizer_model.get_hcp_portfolio
 
-```python
-def hcp(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, model: str, codependence: str, covariance: str, objective: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, a_sim: int, beta: float, b_sim: int, linkage: str, k: int, max_k: int, bins_info: str, alpha_tail: float, leaf_order: bool, d_ewma: float, value: float) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py'
+def get_hcp_portfolio(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, model: str, codependence: str, covariance: str, objective: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, a_sim: int, beta: float, b_sim: int, linkage: str, k: int, max_k: int, bins_info: str, alpha_tail: float, leaf_order: bool, d_ewma: float, value: float) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1985)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1986)
 
 Description: Builds hierarchical clustering based portfolios
 
@@ -158,17 +165,15 @@ The default is 0.94. | 0.94 | True |
 
 
 
-
-# VIEW
-
-# hcp
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_optimization_optimizer_view.display_hcp
 
-```python
-def hcp(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, model: str, codependence: str, covariance: str, objective: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, a_sim: int, beta: float, b_sim: int, linkage: str, k: int, max_k: int, bins_info: str, alpha_tail: float, leaf_order: bool, d_ewma: float, value: float, table: bool) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py'
+def display_hcp(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, model: str, codependence: str, covariance: str, objective: str, risk_measure: str, risk_free_rate: float, risk_aversion: float, alpha: float, a_sim: int, beta: float, b_sim: int, linkage: str, k: int, max_k: int, bins_info: str, alpha_tail: float, leaf_order: bool, d_ewma: float, value: float, table: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L2596)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L2597)
 
 Description: Builds a hierarchical clustering portfolio
 
@@ -312,3 +317,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

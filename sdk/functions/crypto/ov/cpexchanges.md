@@ -2,14 +2,21 @@
 title: cpexchanges
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpexchanges
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_coinpaprika_model.get_list_of_exchanges
 
-```python
-def cpexchanges(symbols: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
+def get_list_of_exchanges(symbols: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L282)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L283)
 
 Description: List exchanges from CoinPaprika API [Source: CoinPaprika]
 
@@ -32,17 +39,15 @@ reported_volume_7d ,reported_volume_30d, sessions_per_month, |
 
 
 
-
-# VIEW
-
-# cpexchanges
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_coinpaprika_view.display_all_exchanges
 
-```python
-def cpexchanges(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
+def display_all_exchanges(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L212)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L213)
 
 Description: List exchanges from CoinPaprika API. [Source: CoinPaprika]
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

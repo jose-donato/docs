@@ -2,14 +2,21 @@
 title: unemp
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # unemp
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_alphavantage_model.get_unemployment
 
-```python
-def unemp(start_year: int) -> DataFrame:
+```python title='openbb_terminal/economy/alphavantage_model.py'
+def get_unemployment(start_year: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L282)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L283)
 
 Description: Get historical unemployment for United States
 
@@ -29,17 +36,15 @@ Description: Get historical unemployment for United States
 
 
 
-
-# VIEW
-
-# unemp
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_alphavantage_view.display_unemployment
 
-```python
-def unem) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_unemployment() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L376)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L377)
 
 Description: Display US unemployment AlphaVantage
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,15 @@
 title: sidtc
 description: OpenBB SDK Function
 ---
+
 # sidtc
 
 ## stocks_dps_stockgrid_model.get_short_interest_days_to_cover
 
-```python
-def sidtc(sortby: str) -> DataFrame:
+```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py'
+def get_short_interest_days_to_cover(sortby: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L77)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L78)
 
 Description: Get short interest and days to cover. [Source: Stockgrid]
 

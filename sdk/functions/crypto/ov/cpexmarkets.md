@@ -2,14 +2,21 @@
 title: cpexmarkets
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpexmarkets
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_coinpaprika_model.get_exchanges_market
 
-```python
-def cpexmarkets(exchange_id: str, symbols: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
+def get_exchanges_market(exchange_id: str, symbols: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L346)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L347)
 
 Description: List markets by exchange ID [Source: CoinPaprika]
 
@@ -33,17 +40,15 @@ category, reported_volume_24h_share, trust_score, |
 
 
 
-
-# VIEW
-
-# cpexmarkets
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_coinpaprika_view.display_exchange_markets
 
-```python
-def cpexmarkets(exchange: str, sortby: str, ascend: bool, limit: int, links: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
+def display_exchange_markets(exchange: str, sortby: str, ascend: bool, limit: int, links: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L266)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L267)
 
 Description: Get all markets for given exchange [Source: CoinPaprika]
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,15 @@
 title: queries
 description: OpenBB SDK Function
 ---
+
 # queries
 
 ## stocks_ba_google_model.get_queries
 
-```python
-def queries(symbol: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/google_model.py'
+def get_queries(symbol: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L72)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L73)
 
 Description: Get related queries from google api [Source: google]
 

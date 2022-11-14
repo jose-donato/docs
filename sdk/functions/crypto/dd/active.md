@@ -2,14 +2,21 @@
 title: active
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # active
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_glassnode_model.get_active_addresses
 
-```python
-def activ) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_active_addresses() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L303)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L304)
 
 Description: Returns active addresses of a certain symbol
 
@@ -32,17 +39,15 @@ Description: Returns active addresses of a certain symbol
 
 
 
-
-# VIEW
-
-# active
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_glassnode_view.display_active_addresses
 
-```python
-def activ) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_active_addresses() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L31)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L32)
 
 Description: Display active addresses of a certain symbol over time
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

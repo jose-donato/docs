@@ -2,14 +2,21 @@
 title: skew
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # skew
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_rolling_model.get_skew
 
-```python
-def skew(data: pd.DataFrame, window: int) -> DataFrame:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_model.py'
+def get_skew(data: pd.DataFrame, window: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L105)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L106)
 
 Description: Skewness Indicator
 
@@ -30,17 +37,15 @@ Description: Skewness Indicator
 
 
 
-
-# VIEW
-
-# skew
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_rolling_view.display_skew
 
-```python
-def skew(symbol: str, data: pd.DataFrame, target: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_view.py'
+def display_skew(symbol: str, data: pd.DataFrame, target: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L341)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L342)
 
 Description: View rolling skew
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

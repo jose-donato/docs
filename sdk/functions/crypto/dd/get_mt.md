@@ -2,14 +2,21 @@
 title: get_mt
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # get_mt
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_available_timeseries
 
-```python
-def get_mt(only_free: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_available_timeseries(only_free: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L33)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L34)
 
 Description: Returns available messari timeseries
 
@@ -29,17 +36,15 @@ Description: Returns available messari timeseries
 
 
 
-
-# VIEW
-
-# get_mt
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_messari_timeseries_list
 
-```python
-def get_m) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_messari_timeseries_list() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L48)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L49)
 
 Description: Display messari timeseries list
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

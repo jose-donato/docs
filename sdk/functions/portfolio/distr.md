@@ -2,12 +2,19 @@
 title: distr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # distr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_model.get_distribution_returns
 
-```python
-def distr(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_distribution_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1415)
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# distr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_view.display_distribution_returns
 
-```python
-def distr(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_view.py'
+def display_distribution_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L538)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L539)
 
 Description: Display daily returns
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

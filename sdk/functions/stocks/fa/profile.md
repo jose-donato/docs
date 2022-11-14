@@ -2,14 +2,15 @@
 title: profile
 description: OpenBB SDK Function
 ---
+
 # profile
 
 ## stocks_fa_fmp_model.get_profile
 
-```python
-def profil) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_profile() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L55)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L56)
 
 Description: Get ticker profile from FMP
 

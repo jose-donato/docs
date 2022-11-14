@@ -2,14 +2,15 @@
 title: screener_data
 description: OpenBB SDK Function
 ---
+
 # screener_data
 
 ## stocks_screener_finviz_model.get_screener_data
 
-```python
-def screener_data(preset_loaded: str, data_type: str, limit: int, ascend: bool) -> None:
+```python title='openbb_terminal/stocks/screener/finviz_model.py'
+def get_screener_data(preset_loaded: str, data_type: str, limit: int, ascend: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_model.py#L75)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_model.py#L76)
 
 Description: Screener Overview
 

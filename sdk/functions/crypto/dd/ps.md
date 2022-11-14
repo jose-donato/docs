@@ -2,14 +2,21 @@
 title: ps
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ps
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_coinpaprika_model.get_tickers_info_for_coin
 
-```python
-def ps(symbol: str, quotes: str) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py'
+def get_tickers_info_for_coin(symbol: str, quotes: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L295)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L296)
 
 Description: Get all most important ticker related information for given coin id [Source: CoinPaprika]
 
@@ -31,17 +38,15 @@ Columns: Metric, Value |
 
 
 
-
-# VIEW
-
-# ps
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_coinpaprika_view.display_price_supply
 
-```python
-def ps(from_symbol: str, to_symbol: str, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py'
+def display_price_supply(from_symbol: str, to_symbol: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L303)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L304)
 
 Description: Get ticker information for single coin [Source: CoinPaprika]
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

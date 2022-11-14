@@ -2,14 +2,21 @@
 title: kurtosis
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # kurtosis
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_rolling_model.get_kurtosis
 
-```python
-def kurtosis(data: pd.DataFrame, window: int) -> DataFrame:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_model.py'
+def get_kurtosis(data: pd.DataFrame, window: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L125)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L126)
 
 Description: Kurtosis Indicator
 
@@ -30,17 +37,15 @@ Description: Kurtosis Indicator
 
 
 
-
-# VIEW
-
-# kurtosis
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_rolling_view.display_kurtosis
 
-```python
-def kurtosis(symbol: str, data: pd.DataFrame, target: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_view.py'
+def display_kurtosis(symbol: str, data: pd.DataFrame, target: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L425)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L426)
 
 Description: View rolling kurtosis
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

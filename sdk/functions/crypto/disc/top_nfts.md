@@ -2,14 +2,21 @@
 title: top_nfts
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # top_nfts
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_disc_dappradar_model.get_top_nfts
 
-```python
-def top_nfts(sortby: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/dappradar_model.py'
+def get_top_nfts(sortby: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L77)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L78)
 
 Description: Get top nft collections [Source: https://dappradar.com/]
 
@@ -29,17 +36,15 @@ Description: Get top nft collections [Source: https://dappradar.com/]
 
 
 
-
-# VIEW
-
-# top_nfts
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_disc_dappradar_view.display_top_nfts
 
-```python
-def top_nfts(limit: int, sortby: str, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/discovery/dappradar_view.py'
+def display_top_nfts(limit: int, sortby: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L20)
 
 Description: Displays top nft collections [Source: https://dappradar.com/]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

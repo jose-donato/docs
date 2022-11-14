@@ -2,14 +2,15 @@
 title: similar_dfs
 description: OpenBB SDK Function
 ---
+
 # similar_dfs
 
 ## stocks_fa_dcf_model.get_similar_dfs
 
-```python
-def similar_dfs(symbol: str, info: Dict[str, Any], n: int, no_filter: bool) -> None:
+```python title='openbb_terminal/stocks/fundamental_analysis/dcf_model.py'
+def get_similar_dfs(symbol: str, info: Dict[str, Any], n: int, no_filter: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L467)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L468)
 
 Description: Get dataframes for similar companies
 

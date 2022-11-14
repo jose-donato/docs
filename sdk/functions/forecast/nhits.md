@@ -2,14 +2,21 @@
 title: nhits
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # nhits
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forecast_nhits_model.get_nhits_data
 
-```python
-def nhits(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, past_covariates: str, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, num_stacks: int, num_blocks: int, num_layers: int, layer_widths: int, pooling_kernel_sizes: Union[Tuple[Tuple[int]], NoneType], n_freq_downsample: Union[Tuple[Tuple[int]], NoneType], dropout: float, activation: str, max_pool_1d: bool, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
+```python title='openbb_terminal/forecast/nhits_model.py'
+def get_nhits_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, past_covariates: str, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, num_stacks: int, num_blocks: int, num_layers: int, layer_widths: int, pooling_kernel_sizes: Union[Tuple[Tuple[int]], NoneType], n_freq_downsample: Union[Tuple[Tuple[int]], NoneType], dropout: float, activation: str, max_pool_1d: bool, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nhits_model.py#L21)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nhits_model.py#L22)
 
 Description: Performs Nhits forecasting
 
@@ -60,17 +67,15 @@ discarded). Defaults to True. | True | False |
 
 
 
-
-# VIEW
-
-# nhits
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forecast_nhits_view.display_nhits_forecast
 
-```python
-def nhits(data: Union[pd.Series, pd.DataFrame], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, num_stacks: int, num_blocks: int, num_layers: int, layer_widths: int, pooling_kernel_sizes: Union[Tuple[Tuple[int]], NoneType], n_freq_downsample: Union[Tuple[Tuple[int]], NoneType], dropout: float, activation: str, max_pool_1d: bool, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/nhits_view.py'
+def display_nhits_forecast(data: Union[pd.Series, pd.DataFrame], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, num_stacks: int, num_blocks: int, num_layers: int, layer_widths: int, pooling_kernel_sizes: Union[Tuple[Tuple[int]], NoneType], n_freq_downsample: Union[Tuple[Tuple[int]], NoneType], dropout: float, activation: str, max_pool_1d: bool, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nhits_view.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nhits_view.py#L20)
 
 Description: Display Nhits forecast
 
@@ -127,3 +132,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

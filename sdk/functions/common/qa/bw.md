@@ -2,14 +2,15 @@
 title: bw
 description: OpenBB SDK Function
 ---
+
 # bw
 
 ## common_qa_view.display_bw
 
-```python
-def bw(data: pd.DataFrame, target: str, symbol: str, yearly: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
+def display_bw(data: pd.DataFrame, target: str, symbol: str, yearly: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L257)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L258)
 
 Description: Show box and whisker plots
 

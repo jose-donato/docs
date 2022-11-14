@@ -2,14 +2,15 @@
 title: friend_ids
 description: OpenBB SDK Function
 ---
+
 # friend_ids
 
 ## economy_fred_model.get_series_ids
 
-```python
-def friend_id) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_series_ids() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L124)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L125)
 
 Description: Get Series IDs. [Source: FRED]
 

@@ -2,14 +2,15 @@
 title: hma
 description: OpenBB SDK Function
 ---
+
 # hma
 
 ## common_ta_overlap_model.hma
 
-```python
+```python title='openbb_terminal/common/technical_analysis/overlap_model.py'
 def hma(data: pd.Series, length: int, offset: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L90)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L91)
 
 Description: Gets hull moving average (HMA) for stock
 

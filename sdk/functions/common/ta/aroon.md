@@ -2,14 +2,21 @@
 title: aroon
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # aroon
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_trend_indicators_model.aroon
 
-```python
+```python title='openbb_terminal/common/technical_analysis/trend_indicators_model.py'
 def aroon(data: pd.DataFrame, window: int, scalar: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L55)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L56)
 
 Description: Aroon technical indicator
 
@@ -31,17 +38,15 @@ Description: Aroon technical indicator
 
 
 
-
-# VIEW
-
-# aroon
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_trend_indicators_view.display_aroon
 
-```python
-def aroon(data: pd.DataFrame, window: int, scalar: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/trend_indicators_view.py'
+def display_aroon(data: pd.DataFrame, window: int, scalar: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_view.py#L120)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_view.py#L121)
 
 Description: Plot Aroon indicator
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

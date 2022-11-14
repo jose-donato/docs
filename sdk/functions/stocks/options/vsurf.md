@@ -2,14 +2,21 @@
 title: vsurf
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # vsurf
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_yfinance_model.get_iv_surface
 
-```python
-def vsurf(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/options/yfinance_model.py'
+def get_iv_surface(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L320)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L321)
 
 Description: Gets IV surface for calls and puts for ticker
 
@@ -29,17 +36,15 @@ Description: Gets IV surface for calls and puts for ticker
 
 
 
-
-# VIEW
-
-# vsurf
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_yfinance_view.display_vol_surface
 
-```python
-def vsurf(symbol: str, export: str, z: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/options/yfinance_view.py'
+def display_vol_surface(symbol: str, export: str, z: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L1127)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L1128)
 
 Description: Display vol surface
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

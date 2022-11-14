@@ -2,14 +2,21 @@
 title: spread
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # spread
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_investingcom_model.get_spread_matrix
 
-```python
-def spread(countries: Union[str, List[str]], maturity: str, change: bool) -> DataFrame:
+```python title='openbb_terminal/economy/investingcom_model.py'
+def get_spread_matrix(countries: Union[str, List[str]], maturity: str, change: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L223)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L224)
 
 Description: Get spread matrix. [Source: Investing.com]
 
@@ -31,17 +38,15 @@ Description: Get spread matrix. [Source: Investing.com]
 
 
 
-
-# VIEW
-
-# spread
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_investingcom_view.display_spread_matrix
 
-```python
-def spread(countries: Union[str, List[str]], maturity: str, change: bool, color: str, raw: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], export: str) -> None:
+```python title='openbb_terminal/economy/investingcom_view.py'
+def display_spread_matrix(countries: Union[str, List[str]], maturity: str, change: bool, color: str, raw: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_view.py#L38)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_view.py#L39)
 
 Description: Display spread matrix. [Source: Investing.com]
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: swaps
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # swaps
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_graph_model.get_last_uni_swaps
 
-```python
-def swaps(limit: int, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/defi/graph_model.py'
+def get_last_uni_swaps(limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L295)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L296)
 
 Description: Get the last 100 swaps done on Uniswap [Source: https://thegraph.com/en/]
 
@@ -28,17 +35,15 @@ Description: Get the last 100 swaps done on Uniswap [Source: https://thegraph.co
 
 
 
-
-# VIEW
-
-# swaps
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_graph_view.display_last_uni_swaps
 
-```python
-def swaps(limit: int, sortby: str, ascend: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/graph_view.py'
+def display_last_uni_swaps(limit: int, sortby: str, ascend: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L217)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L218)
 
 Description: Displays last swaps done on Uniswap
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

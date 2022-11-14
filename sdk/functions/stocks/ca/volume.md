@@ -2,14 +2,21 @@
 title: volume
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # volume
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ca_yahoo_finance_model.get_volume
 
-```python
-def volume(similar: List[str], start_date: str) -> DataFrame:
+```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py'
+def get_volume(similar: List[str], start_date: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L121)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L122)
 
 Description: Get stock volume. [Source: Yahoo Finance]
 
@@ -30,17 +37,15 @@ None
 
 
 
-
-# VIEW
-
-# volume
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ca_yahoo_finance_view.display_volume
 
-```python
-def volume(similar: List[str], start_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py'
+def display_volume(similar: List[str], start_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L109)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L110)
 
 Description: Display stock volume. [Source: Yahoo Finance]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

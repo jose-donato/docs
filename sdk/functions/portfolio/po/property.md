@@ -2,14 +2,21 @@
 title: property
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # property
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_optimization_optimizer_model.get_property_weights
 
-```python
-def property(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, s_property: str, value: float) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py'
+def get_property_weights(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, s_property: str, value: float) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L233)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L234)
 
 Description: Calculate portfolio weights based on selected property
 
@@ -47,17 +54,15 @@ returns. | None | False |
 
 
 
-
-# VIEW
-
-# property
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_optimization_optimizer_view.display_property_weighting
 
-```python
-def property(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, s_property: str, risk_measure: Any, risk_free_rate: float, alpha: Any, value: float, table: bool) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py'
+def display_property_weighting(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, s_property: str, risk_measure: Any, risk_free_rate: float, alpha: Any, value: float, table: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L729)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L730)
 
 Description: Builds a portfolio weighted by selected property
 
@@ -110,3 +115,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

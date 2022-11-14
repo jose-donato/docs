@@ -2,14 +2,21 @@
 title: validators
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # validators
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_defi_terramoney_fcd_model.get_validators
 
-```python
-def validators(sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
+def get_validators(sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L153)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L154)
 
 Description: Get information about terra validators [Source: https://fcd.terra.dev/swagger]
 
@@ -28,17 +35,15 @@ Description: Get information about terra validators [Source: https://fcd.terra.d
 
 
 
-
-# VIEW
-
-# validators
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_defi_terramoney_fcd_view.display_validators
 
-```python
-def validators(limit: int, sortby: str, ascend: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
+def display_validators(limit: int, sortby: str, ascend: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L63)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L64)
 
 Description: Display information about terra validators [Source: https://fcd.terra.dev/swagger]
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

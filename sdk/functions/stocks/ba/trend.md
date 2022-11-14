@@ -2,14 +2,21 @@
 title: trend
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # trend
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_sentimentinvestor_model.get_trending
 
-```python
-def trend(start_date: str, hour: int, number: int) -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/sentimentinvestor_model.py'
+def get_trending(start_date: str, hour: int, number: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/sentimentinvestor_model.py#L129)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/sentimentinvestor_model.py#L130)
 
 Description: Get sentiment data on the most talked about tickers
 
@@ -32,17 +39,15 @@ Maximum 250 per api call | None | False |
 
 
 
-
-# VIEW
-
-# trend
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ba_sentimentinvestor_view.display_trending
 
-```python
-def tren) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_trending() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L146)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L147)
 
 Description: Display most talked about tickers within
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

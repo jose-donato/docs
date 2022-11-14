@@ -2,14 +2,15 @@
 title: token_decimals
 description: OpenBB SDK Function
 ---
+
 # token_decimals
 
 ## crypto_onchain_ethplorer_model.get_token_decimals
 
-```python
-def token_decimals(address: str) -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
+def get_token_decimals(address: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L175)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L176)
 
 Description: Helper methods that gets token decimals number. [Source: Ethplorer]
 

@@ -2,12 +2,13 @@
 title: cmc
 description: OpenBB SDK Function
 ---
+
 # cmc
 
 ## keys_model.set_cmc_key
 
-```python
-def cmc(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_cmc_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L683)
 

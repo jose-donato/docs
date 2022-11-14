@@ -2,14 +2,15 @@
 title: information
 description: OpenBB SDK Function
 ---
+
 # information
 
 ## portfolio_model.get_information_ratio
 
-```python
-def information(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_information_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1146)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1147)
 
 Description: Get information ratio
 

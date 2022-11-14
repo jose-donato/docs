@@ -2,11 +2,12 @@
 title: get_regression_data
 description: OpenBB SDK Function
 ---
+
 # get_regression_data
 
 ## econometrics_regression_model.get_regression_data
 
-```python
+```python title='openbb_terminal/econometrics/regression_model.py'
 def get_regression_data(regression_variables: List[tuple], data: Dict[str, pd.DataFrame], regression_type: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L75)

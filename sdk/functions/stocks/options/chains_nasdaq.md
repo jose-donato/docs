@@ -2,14 +2,21 @@
 title: chains_nasdaq
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # chains_nasdaq
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_nasdaq_model.get_chain_given_expiration
 
-```python
-def chains_nasdaq(symbol: str, expiration: str) -> DataFrame:
+```python title='openbb_terminal/stocks/options/nasdaq_model.py'
+def get_chain_given_expiration(symbol: str, expiration: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/nasdaq_model.py#L112)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/nasdaq_model.py#L113)
 
 Description: Get option chain for symbol at a given expiration
 
@@ -30,17 +37,15 @@ Description: Get option chain for symbol at a given expiration
 
 
 
-
-# VIEW
-
-# chains_nasdaq
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_nasdaq_view.display_chains
 
-```python
-def chains_nasdaq(symbol: str, expiry: str, export: str) -> None:
+```python title='openbb_terminal/stocks/options/nasdaq_view.py'
+def display_chains(symbol: str, expiry: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/nasdaq_view.py#L312)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/nasdaq_view.py#L313)
 
 Description: Display option chain for given expiration
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

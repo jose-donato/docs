@@ -2,14 +2,21 @@
 title: gh
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # gh
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_santiment_model.get_github_activity
 
-```python
-def g) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_github_activity() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L27)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L28)
 
 Description: Returns  a list of developer activity for a given coin and time interval.
 
@@ -33,17 +40,15 @@ Description: Returns  a list of developer activity for a given coin and time int
 
 
 
-
-# VIEW
-
-# gh
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_santiment_view.display_github_activity
 
-```python
-def g) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_github_activity() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L25)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L26)
 
 Description: Returns a list of github activity for a given coin and time interval.
 
@@ -65,3 +70,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

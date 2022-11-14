@@ -2,14 +2,15 @@
 title: gaintopain
 description: OpenBB SDK Function
 ---
+
 # gaintopain
 
 ## portfolio_model.get_gaintopain_ratio
 
-```python
-def gaintopain(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_gaintopain_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1098)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1099)
 
 Description: Get Pain-to-Gain ratio based on historical data
 

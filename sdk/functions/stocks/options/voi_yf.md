@@ -2,14 +2,21 @@
 title: voi_yf
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # voi_yf
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_yfinance_model.get_volume_open_interest
 
-```python
-def voi_yf(symbol: str, expiry: str) -> DataFrame:
+```python title='openbb_terminal/stocks/options/yfinance_model.py'
+def get_volume_open_interest(symbol: str, expiry: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L552)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L553)
 
 Description: Plot volume and open interest
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# voi_yf
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_yfinance_view.plot_volume_open_interest
 
-```python
-def voi_yf(symbol: str, expiry: str, min_sp: float, max_sp: float, min_vol: float, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/options/yfinance_view.py'
+def plot_volume_open_interest(symbol: str, expiry: str, min_sp: float, max_sp: float, min_vol: float, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L428)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L429)
 
 Description: Plot volume and open interest
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

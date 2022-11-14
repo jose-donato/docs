@@ -2,14 +2,21 @@
 title: ov
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ov
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## alt_covid_model.get_covid_ov
 
-```python
-def ov(country: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/alternative/covid/covid_model.py'
+def get_covid_ov(country: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L98)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L99)
 
 Description: Get historical cases and deaths by country
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# ov
+</TabItem>
+<TabItem value="view" label="View">
 
 ## alt_covid_view.display_covid_ov
 
-```python
-def ov(country: str, raw: bool, limit: int, export: str, plot: bool) -> None:
+```python title='openbb_terminal/alternative/covid/covid_view.py'
+def display_covid_ov(country: str, raw: bool, limit: int, export: str, plot: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L131)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L132)
 
 Description: Show historical cases and deaths by country
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

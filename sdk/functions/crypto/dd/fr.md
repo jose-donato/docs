@@ -2,14 +2,21 @@
 title: fr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # fr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_fundraising
 
-```python
-def f) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_fundraising() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L631)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L632)
 
 Description: Returns coin fundraising
 
@@ -29,17 +36,15 @@ Description: Returns coin fundraising
 
 
 
-
-# VIEW
-
-# fr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_fundraising
 
-```python
-def f) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_fundraising() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L626)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L627)
 
 Description: Display coin fundraising
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

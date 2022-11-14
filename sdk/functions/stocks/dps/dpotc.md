@@ -2,14 +2,21 @@
 title: dpotc
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # dpotc
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dps_finra_model.getTickerFINRAdata
 
-```python
-def dpotc(symbol: str) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/finra_model.py'
+def getTickerFINRAdata(symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L296)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L297)
 
 Description: Get all FINRA data associated with a ticker
 
@@ -29,17 +36,15 @@ Description: Get all FINRA data associated with a ticker
 
 
 
-
-# VIEW
-
-# dpotc
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dps_finra_view.darkpool_ats_otc
 
-```python
-def dpotc(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/finra_view.py'
+def darkpool_ats_otc(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L27)
 
 Description: Display barchart of dark pool (ATS) and OTC (Non ATS) data. [Source: FINRA]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,21 @@
 title: treasury
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # treasury
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_econdb_model.get_treasuries
 
-```python
-def treasury(instruments: list, maturities: list, frequency: str, start_date: str, end_date: str) -> DataFrame:
+```python title='openbb_terminal/economy/econdb_model.py'
+def get_treasuries(instruments: list, maturities: list, frequency: str, start_date: str, end_date: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L723)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L724)
 
 Description: Get U.S. Treasury rates [Source: EconDB]
 
@@ -35,17 +42,15 @@ None
 
 
 
-
-# VIEW
-
-# treasury
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_econdb_view.show_treasuries
 
-```python
-def treasury(instruments: list, maturities: list, frequency: str, start_date: str, end_date: str, raw: bool, external_axes: Union[List[axes], NoneType], export: str) -> None:
+```python title='openbb_terminal/economy/econdb_view.py'
+def show_treasuries(instruments: list, maturities: list, frequency: str, start_date: str, end_date: str, raw: bool, external_axes: Union[List[axes], NoneType], export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_view.py#L145)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_view.py#L146)
 
 Description: Display U.S. Treasury rates [Source: EconDB]
 
@@ -72,3 +77,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

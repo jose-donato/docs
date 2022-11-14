@@ -2,14 +2,21 @@
 title: cghold
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cghold
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_pycoingecko_model.get_holdings_overview
 
-```python
-def cghold(endpoint: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
+def get_holdings_overview(endpoint: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L101)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L102)
 
 Description: Returns public companies that holds ethereum or bitcoin [Source: CoinGecko]
 
@@ -30,17 +37,15 @@ Description: Returns public companies that holds ethereum or bitcoin [Source: Co
 
 
 
-
-# VIEW
-
-# cghold
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_pycoingecko_view.display_holdings_overview
 
-```python
-def cghold(symbol: str, show_bar: bool, export: str, limit: int) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
+def display_holdings_overview(symbol: str, show_bar: bool, export: str, limit: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L134)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L135)
 
 Description: Shows overview of public companies that holds ethereum or bitcoin. [Source: CoinGecko]
 
@@ -59,3 +64,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

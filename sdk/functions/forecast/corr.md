@@ -2,14 +2,21 @@
 title: corr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # corr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forecast_model.corr_df
 
-```python
-def corr(data: pd.DataFrame) -> DataFrame:
+```python title='openbb_terminal/forecast/forecast_model.py'
+def corr_df(data: pd.DataFrame) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L496)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L497)
 
 Description: Returns correlation for a given df
 
@@ -29,17 +36,15 @@ Description: Returns correlation for a given df
 
 
 
-
-# VIEW
-
-# corr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forecast_view.display_corr
 
-```python
-def corr(dataset: pd.DataFrame, export: str, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/forecast_view.py'
+def display_corr(dataset: pd.DataFrame, export: str, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L169)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L170)
 
 Description: Plot correlation coefficients for dataset features
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

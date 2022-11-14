@@ -2,14 +2,21 @@
 title: gdp
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # gdp
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_alphavantage_model.get_real_gdp
 
-```python
-def gdp(interval: str, start_year: int) -> DataFrame:
+```python title='openbb_terminal/economy/alphavantage_model.py'
+def get_real_gdp(interval: str, start_year: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L43)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L44)
 
 Description: Get annual or quarterly Real GDP for US
 
@@ -30,17 +37,15 @@ Description: Get annual or quarterly Real GDP for US
 
 
 
-
-# VIEW
-
-# gdp
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_alphavantage_view.display_real_gdp
 
-```python
-def gd) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_real_gdp() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L87)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L88)
 
 Description: Display US GDP from AlphaVantage
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

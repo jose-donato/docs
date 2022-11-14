@@ -2,14 +2,21 @@
 title: unitroot
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # unitroot
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_model.get_unitroot
 
-```python
-def unitroot(data: pd.DataFrame, fuller_reg: str, kpss_reg: str) -> DataFrame:
+```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
+def get_unitroot(data: pd.DataFrame, fuller_reg: str, kpss_reg: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L136)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L137)
 
 Description: Calculate test statistics for unit roots
 
@@ -31,17 +38,15 @@ Description: Calculate test statistics for unit roots
 
 
 
-
-# VIEW
-
-# unitroot
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_view.display_unitroot
 
-```python
-def unitroot(data: pd.DataFrame, target: str, fuller_reg: str, kpss_reg: str, export: str) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
+def display_unitroot(data: pd.DataFrame, target: str, fuller_reg: str, kpss_reg: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L802)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L803)
 
 Description: Show unit root test calculations
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

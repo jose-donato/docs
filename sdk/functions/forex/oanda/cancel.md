@@ -2,14 +2,21 @@
 title: cancel
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cancel
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.cancel_pending_order_request
 
-```python
-def cancel(orderID: str, accountID: str) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def cancel_pending_order_request(orderID: str, accountID: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L345)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L346)
 
 Description: Request cancellation of a pending order.
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# cancel
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.cancel_pending_order
 
-```python
-def cance) -> None:
+```python title='openbb_terminal/decorators.py'
+def cancel_pending_order() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L201)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L202)
 
 Description: Cancel a Pending Order.
 
@@ -55,3 +60,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

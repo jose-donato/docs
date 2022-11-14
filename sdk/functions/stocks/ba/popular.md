@@ -2,14 +2,21 @@
 title: popular
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # popular
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_reddit_model.get_popular_tickers
 
-```python
-def popula) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_popular_tickers() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L146)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L147)
 
 Description: Get popular tickers from list of subreddits [Source: reddit]
 
@@ -31,17 +38,15 @@ Description: Get popular tickers from list of subreddits [Source: reddit]
 
 
 
-
-# VIEW
-
-# popular
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ba_reddit_view.display_popular_tickers
 
-```python
-def popula) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_popular_tickers() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L183)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L184)
 
 Description: Print latest popular tickers. [Source: Reddit]
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

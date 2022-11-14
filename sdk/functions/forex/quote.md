@@ -2,14 +2,21 @@
 title: quote
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # quote
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_av_model.get_quote
 
-```python
-def quote(to_symbol: str, from_symbol: str) -> None:
+```python title='openbb_terminal/forex/av_model.py'
+def get_quote(to_symbol: str, from_symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L55)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L56)
 
 Description: Get current exchange rate quote from alpha vantage.
 
@@ -30,17 +37,15 @@ Description: Get current exchange rate quote from alpha vantage.
 
 
 
-
-# VIEW
-
-# quote
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_av_view.display_quote
 
-```python
-def quot) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_quote() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
 
 Description: Display current forex pair exchange rate.
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

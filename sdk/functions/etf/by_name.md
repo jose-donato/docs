@@ -2,14 +2,21 @@
 title: by_name
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # by_name
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## etf_stockanalysis_model.get_etfs_by_name
 
-```python
-def by_name(name_to_search: str) -> DataFrame:
+```python title='openbb_terminal/etf/stockanalysis_model.py'
+def get_etfs_by_name(name_to_search: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L133)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L134)
 
 Description: Get an ETF symbol and name based on ETF string to search. [Source: StockAnalysis]
 
@@ -29,17 +36,15 @@ Description: Get an ETF symbol and name based on ETF string to search. [Source: 
 
 
 
-
-# VIEW
-
-# by_name
+</TabItem>
+<TabItem value="view" label="View">
 
 ## etf_stockanalysis_view.display_etf_by_name
 
-```python
-def by_name(name: str, limit: int, export: str) -> None:
+```python title='openbb_terminal/etf/stockanalysis_view.py'
+def display_etf_by_name(name: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L98)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L99)
 
 Description: Display ETFs matching search string. [Source: StockAnalysis]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

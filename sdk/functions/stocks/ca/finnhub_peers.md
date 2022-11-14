@@ -2,14 +2,15 @@
 title: finnhub_peers
 description: OpenBB SDK Function
 ---
+
 # finnhub_peers
 
 ## stocks_ca_finnhub_model.get_similar_companies
 
-```python
-def finnhub_peer) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_similar_companies() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
 
 Description: Get similar companies from Finhub
 

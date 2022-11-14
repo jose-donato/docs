@@ -2,14 +2,21 @@
 title: stats
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # stats
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_nft_opensea_model.get_collection_stats
 
-```python
-def stats(slug: str) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/nft/opensea_model.py'
+def get_collection_stats(slug: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_model.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_model.py#L17)
 
 Description: Get stats of a nft collection [Source: opensea.io]
 
@@ -28,17 +35,15 @@ Description: Get stats of a nft collection [Source: opensea.io]
 
 
 
-
-# VIEW
-
-# stats
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_nft_opensea_view.display_collection_stats
 
-```python
-def stats(slug: str, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/nft/opensea_view.py'
+def display_collection_stats(slug: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_view.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_view.py#L15)
 
 Description: Display collection stats. [Source: opensea.io]
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

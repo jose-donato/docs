@@ -2,14 +2,15 @@
 title: candle
 description: OpenBB SDK Function
 ---
+
 # candle
 
 ## forex_helpers.display_candle
 
-```python
-def candle(data: pd.DataFrame, to_symbol: str, from_symbol: str, ma: Union[Iterable[int], NoneType], external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], use_matplotlib: bool, add_trend: bool, yscale: str) -> None:
+```python title='openbb_terminal/forex/forex_helper.py'
+def display_candle(data: pd.DataFrame, to_symbol: str, from_symbol: str, ma: Union[Iterable[int], NoneType], external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], use_matplotlib: bool, add_trend: bool, yscale: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L226)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L227)
 
 Description: Show candle plot for fx data.
 

@@ -2,14 +2,15 @@
 title: load
 description: OpenBB SDK Function
 ---
+
 # load
 
 ## portfolio_optimization_excel_model.load_allocation
 
-```python
-def load(excel_file: str) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/excel_model.py'
+def load_allocation(excel_file: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/excel_model.py#L53)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/excel_model.py#L54)
 
 Description: Load in the Excel file to determine the allocation that needs to be set.
 

@@ -2,14 +2,21 @@
 title: overview
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # overview
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## etf_stockanalysis_model.get_etf_overview
 
-```python
-def overview(symbol: str) -> DataFrame:
+```python title='openbb_terminal/etf/stockanalysis_model.py'
+def get_etf_overview(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L49)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L50)
 
 Description: Get overview data for selected etf
 
@@ -30,17 +37,15 @@ None
 
 
 
-
-# VIEW
-
-# overview
+</TabItem>
+<TabItem value="view" label="View">
 
 ## etf_stockanalysis_view.view_overview
 
-```python
-def overview(symbol: str, export: str) -> None:
+```python title='openbb_terminal/etf/stockanalysis_view.py'
+def view_overview(symbol: str, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L17)
 
 Description: Print etf overview information
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

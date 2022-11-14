@@ -2,12 +2,13 @@
 title: mykeys
 description: OpenBB SDK Function
 ---
+
 # mykeys
 
 ## keys_model.get_keys
 
-```python
-def mykeys(show: bool) -> DataFrame:
+```python title='openbb_terminal/keys_model.py'
+def get_keys(show: bool) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L231)
 

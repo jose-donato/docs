@@ -2,14 +2,21 @@
 title: messages
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # messages
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_stocktwits_model.get_messages
 
-```python
-def messages(symbol: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/stocktwits_model.py'
+def get_messages(symbol: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L54)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L55)
 
 Description: Get last messages for a given ticker [Source: stocktwits]
 
@@ -30,17 +37,15 @@ Description: Get last messages for a given ticker [Source: stocktwits]
 
 
 
-
-# VIEW
-
-# messages
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ba_stocktwits_view.display_messages
 
-```python
-def messages(symbol: str, limit: int) -> None:
+```python title='openbb_terminal/common/behavioural_analysis/stocktwits_view.py'
+def display_messages(symbol: str, limit: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_view.py#L36)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_view.py#L37)
 
 Description: Print up to 30 of the last messages on the board. [Source: Stocktwits]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

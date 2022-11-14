@@ -2,14 +2,21 @@
 title: apy
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # apy
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_tools_model.calculate_apy
 
-```python
-def apy(apr: float, compounding_times: int) -> None:
+```python title='openbb_terminal/cryptocurrency/tools/tools_model.py'
+def calculate_apy(apr: float, compounding_times: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_model.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_model.py#L19)
 
 Description: Converts apr into apy
 
@@ -31,17 +38,15 @@ Description: Converts apr into apy
 
 
 
-
-# VIEW
-
-# apy
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_tools_view.display_apy
 
-```python
-def apy(apr: float, compounding_times: int, narrative: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/tools/tools_view.py'
+def display_apy(apr: float, compounding_times: int, narrative: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_view.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_view.py#L16)
 
 Description: Displays APY value converted from APR
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

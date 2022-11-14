@@ -2,14 +2,15 @@
 title: summary
 description: OpenBB SDK Function
 ---
+
 # summary
 
 ## stocks_ta_finbrain_model.get_technical_summary_report
 
-```python
-def summary(symbol: str) -> str:
+```python title='openbb_terminal/stocks/technical_analysis/finbrain_model.py'
+def get_technical_summary_report(symbol: str) -> str:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finbrain_model.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finbrain_model.py#L15)
 
 Description: Get technical summary report provided by FinBrain's API
 

@@ -2,14 +2,21 @@
 title: tft
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # tft
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forecast_tft_model.get_tft_data
 
-```python
-def tft(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, hidden_size: int, lstm_layers: int, num_attention_heads: int, full_attention: bool, dropout: float, hidden_continuous_size: int, n_epochs: int, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
+```python title='openbb_terminal/forecast/tft_model.py'
+def get_tft_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, hidden_size: int, lstm_layers: int, num_attention_heads: int, full_attention: bool, dropout: float, hidden_continuous_size: int, n_epochs: int, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tft_model.py#L25)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tft_model.py#L26)
 
 Description: Performs Temporal Fusion Transformer forecasting
 
@@ -50,17 +57,15 @@ Defaults to True. | True | False |
 
 
 
-
-# VIEW
-
-# tft
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forecast_tft_view.display_tft_forecast
 
-```python
-def tft(data: Union[pd.Series, pd.DataFrame], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, hidden_size: int, lstm_layers: int, num_attention_heads: int, full_attention: bool, dropout: float, hidden_continuous_size: int, n_epochs: int, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+```python title='openbb_terminal/forecast/tft_view.py'
+def display_tft_forecast(data: Union[pd.Series, pd.DataFrame], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, hidden_size: int, lstm_layers: int, num_attention_heads: int, full_attention: bool, dropout: float, hidden_continuous_size: int, n_epochs: int, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tft_view.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tft_view.py#L20)
 
 Description: Display Temporal Fusion Transformer forecast
 
@@ -105,3 +110,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

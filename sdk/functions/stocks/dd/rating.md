@@ -2,14 +2,15 @@
 title: rating
 description: OpenBB SDK Function
 ---
+
 # rating
 
 ## stocks_dd_fmp_model.get_rating
 
-```python
-def ratin) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_rating() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
 
 Description: Get ratings for a given ticker. [Source: Financial Modeling Prep]
 

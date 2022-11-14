@@ -2,14 +2,21 @@
 title: print_insider_data
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # print_insider_data
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_insider_openinsider_model.get_print_insider_data
 
-```python
-def print_insider_data(type_insider: str, limit: int) -> None:
+```python title='openbb_terminal/stocks/insider/openinsider_model.py'
+def get_print_insider_data(type_insider: str, limit: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_model.py#L1436)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_model.py#L1437)
 
 Description: Print insider data
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# print_insider_data
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_insider_openinsider_view.print_insider_data
 
-```python
+```python title='openbb_terminal/stocks/insider/openinsider_view.py'
 def print_insider_data(type_insider: str, limit: int, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_view.py#L107)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_view.py#L108)
 
 Description: Print insider data
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

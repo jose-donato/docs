@@ -2,14 +2,21 @@
 title: hist
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # hist
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ca_yahoo_finance_model.get_historical
 
-```python
-def hist(similar: List[str], start_date: str, candle_type: str) -> DataFrame:
+```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py'
+def get_historical(similar: List[str], start_date: str, candle_type: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L30)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L31)
 
 Description: Get historical prices for all comparison stocks
 
@@ -33,17 +40,15 @@ finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
 
 
 
-
-# VIEW
-
-# hist
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ca_yahoo_finance_view.display_historical
 
-```python
-def hist(similar: List[str], start_date: str, candle_type: str, normalize: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py'
+def display_historical(similar: List[str], start_date: str, candle_type: str, normalize: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L43)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L44)
 
 Description: Display historical stock prices. [Source: Yahoo Finance]
 
@@ -66,3 +71,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

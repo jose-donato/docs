@@ -2,14 +2,15 @@
 title: info
 description: OpenBB SDK Function
 ---
+
 # info
 
 ## stocks_fa_yahoo_finance_model.get_info
 
-```python
-def info(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+def get_info(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L30)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L31)
 
 Description: Gets ticker symbol info
 

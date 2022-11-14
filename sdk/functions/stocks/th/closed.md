@@ -2,14 +2,21 @@
 title: closed
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # closed
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_th_bursa_model.get_closed
 
-```python
-def close) -> DataFrame:
+```python title='openbb_terminal/stocks/tradinghours/bursa_model.py'
+def get_closed() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L75)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L76)
 
 Description: Get closed exchanges.
 
@@ -28,17 +35,15 @@ Description: Get closed exchanges.
 
 
 
-
-# VIEW
-
-# closed
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_th_bursa_view.display_closed
 
-```python
-def close) -> None:
+```python title='openbb_terminal/stocks/tradinghours/bursa_view.py'
+def display_closed() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L63)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L64)
 
 Description: Display closed exchanges.
 
@@ -53,3 +58,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

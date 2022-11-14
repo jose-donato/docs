@@ -2,12 +2,19 @@
 title: losers
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # losers
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_disc_pycoingecko_model.get_losers
 
-```python
-def losers(interval: str, limit: int, sortby: str) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
+def get_losers(interval: str, limit: int, sortby: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L280)
 
@@ -33,17 +40,15 @@ Columns: Symbol, Name, Volume, Price, %Change_{interval}, Url |
 
 
 
-
-# VIEW
-
-# losers
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_disc_pycoingecko_view.display_losers
 
-```python
-def losers(interval: str, limit: int, export: str, sortby: str) -> None:
+```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py'
+def display_losers(interval: str, limit: int, export: str, sortby: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L145)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L146)
 
 Description: Shows Largest Losers - coins which lost the most in given period of time. [Source: CoinGecko]
 
@@ -63,3 +68,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

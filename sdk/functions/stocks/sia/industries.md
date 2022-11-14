@@ -2,14 +2,15 @@
 title: industries
 description: OpenBB SDK Function
 ---
+
 # industries
 
 ## stocks_sia_financedatabase_model.get_industries
 
-```python
-def industries(country: str, sector: str) -> list:
+```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py'
+def get_industries(country: str, sector: str) -> list:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L68)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L69)
 
 Description: Get all industries in Yahoo Finance data based on country or sector. [Source: Finance Database]
 

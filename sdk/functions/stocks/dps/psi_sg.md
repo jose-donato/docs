@@ -2,14 +2,21 @@
 title: psi_sg
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # psi_sg
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dps_stockgrid_model.get_short_interest_volume
 
-```python
-def psi_sg(symbol: str) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py'
+def get_short_interest_volume(symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L122)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L123)
 
 Description: Get price vs short interest volume. [Source: Stockgrid]
 
@@ -31,17 +38,15 @@ None
 
 
 
-
-# VIEW
-
-# psi_sg
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dps_stockgrid_view.short_interest_volume
 
-```python
-def psi_sg(symbol: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py'
+def short_interest_volume(symbol: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L122)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L123)
 
 Description: Plot price vs short interest volume. [Source: Stockgrid]
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

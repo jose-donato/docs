@@ -2,14 +2,21 @@
 title: links
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # links
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_links
 
-```python
-def link) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_links() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L185)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L186)
 
 Description: Returns asset's links
 
@@ -29,17 +36,15 @@ Description: Returns asset's links
 
 
 
-
-# VIEW
-
-# links
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_links
 
-```python
-def link) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_links() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L236)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L237)
 
 Description: Display coin links
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

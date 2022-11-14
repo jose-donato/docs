@@ -2,14 +2,21 @@
 title: qtrcontracts
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # qtrcontracts
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_gov_quiverquant_model.get_qtr_contracts
 
-```python
-def qtrcontracts(analysis: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/stocks/government/quiverquant_model.py'
+def get_qtr_contracts(analysis: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L481)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L482)
 
 Description: Analyzes quarterly contracts by ticker
 
@@ -30,17 +37,15 @@ Description: Analyzes quarterly contracts by ticker
 
 
 
-
-# VIEW
-
-# qtrcontracts
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_gov_quiverquant_view.display_qtr_contracts
 
-```python
-def qtrcontracts(analysis: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/government/quiverquant_view.py'
+def display_qtr_contracts(analysis: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L445)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L446)
 
 Description: Quarterly contracts [Source: quiverquant.com]
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

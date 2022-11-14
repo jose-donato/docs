@@ -2,14 +2,15 @@
 title: calmar
 description: OpenBB SDK Function
 ---
+
 # calmar
 
 ## portfolio_model.get_calmar_ratio
 
-```python
-def calmar(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_calmar_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1256)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1257)
 
 Description: Get calmar ratio
 

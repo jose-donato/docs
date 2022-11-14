@@ -2,14 +2,21 @@
 title: nonzero
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # nonzero
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_glassnode_model.get_non_zero_addresses
 
-```python
-def nonzer) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_non_zero_addresses() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L244)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L245)
 
 Description: Returns addresses with non-zero balance of a certain symbol
 
@@ -31,17 +38,15 @@ Description: Returns addresses with non-zero balance of a certain symbol
 
 
 
-
-# VIEW
-
-# nonzero
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_glassnode_view.display_non_zero_addresses
 
-```python
-def nonzer) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_non_zero_addresses() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L92)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L93)
 
 Description: Display addresses with non-zero balance of a certain symbol
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

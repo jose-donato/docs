@@ -2,14 +2,21 @@
 title: summary
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # summary
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## etf_yfinance_model.get_etf_summary_description
 
-```python
-def summary(name: str) -> str:
+```python title='openbb_terminal/etf/yfinance_model.py'
+def get_etf_summary_description(name: str) -> str:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L43)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L44)
 
 Description: Return summary description of ETF. [Source: Yahoo Finance]
 
@@ -30,17 +37,15 @@ None
 
 
 
-
-# VIEW
-
-# summary
+</TabItem>
+<TabItem value="view" label="View">
 
 ## etf_yfinance_view.display_etf_description
 
-```python
-def summary(name: str) -> None:
+```python title='openbb_terminal/etf/yfinance_view.py'
+def display_etf_description(name: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_view.py#L102)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_view.py#L103)
 
 Description: Display ETF description summary. [Source: Yahoo Finance]
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,12 +2,19 @@
 title: rvol
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # rvol
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## portfolio_model.get_rolling_volatility
 
-```python
-def rvol(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_rolling_volatility(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1440)
 
@@ -29,17 +36,15 @@ None
 
 
 
-
-# VIEW
-
-# rvol
+</TabItem>
+<TabItem value="view" label="View">
 
 ## portfolio_view.display_rolling_volatility
 
-```python
-def rvol(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/portfolio/portfolio_view.py'
+def display_rolling_volatility(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L786)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L787)
 
 Description: Display rolling volatility
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

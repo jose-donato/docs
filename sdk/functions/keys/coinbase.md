@@ -2,12 +2,13 @@
 title: coinbase
 description: OpenBB SDK Function
 ---
+
 # coinbase
 
 ## keys_model.set_coinbase_key
 
-```python
-def coinbase(key: str, secret: str, passphrase: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_coinbase_key(key: str, secret: str, passphrase: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1455)
 

@@ -2,14 +2,15 @@
 title: lowfloat
 description: OpenBB SDK Function
 ---
+
 # lowfloat
 
 ## stocks_disc_shortinterest_model.get_low_float
 
-```python
-def lowfloa) -> DataFrame:
+```python title='openbb_terminal/stocks/discovery/shortinterest_model.py'
+def get_low_float() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L15)
 
 Description: Returns low float DataFrame
 

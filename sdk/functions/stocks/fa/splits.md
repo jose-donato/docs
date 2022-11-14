@@ -2,14 +2,21 @@
 title: splits
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # splits
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_fa_yahoo_finance_model.get_splits
 
-```python
-def splits(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+def get_splits(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L307)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L308)
 
 Description: Get splits and reverse splits events. [Source: Yahoo Finance]
 
@@ -29,17 +36,15 @@ Description: Get splits and reverse splits events. [Source: Yahoo Finance]
 
 
 
-
-# VIEW
-
-# splits
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_fa_yahoo_finance_view.display_splits
 
-```python
-def splits(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py'
+def display_splits(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L260)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L261)
 
 Description: Display splits and reverse splits events. [Source: Yahoo Finance]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

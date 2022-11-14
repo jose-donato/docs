@@ -2,14 +2,15 @@
 title: show_available_pairs_for_given_symbol
 description: OpenBB SDK Function
 ---
+
 # show_available_pairs_for_given_symbol
 
 ## crypto_dd_binance_model.show_available_pairs_for_given_symbol
 
-```python
-def show_available_pairs_for_given_symbo) -> None:
+```python title='openbb_terminal/decorators.py'
+def show_available_pairs_for_given_symbol() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L110)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L111)
 
 Description: Return all available quoted assets for given symbol. [Source: Binance]
 

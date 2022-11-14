@@ -2,14 +2,15 @@
 title: search_index
 description: OpenBB SDK Function
 ---
+
 # search_index
 
 ## economy_yfinance_model.get_search_indices
 
-```python
-def search_index(keyword: list, limit: int) -> DataFrame:
+```python title='openbb_terminal/economy/yfinance_model.py'
+def get_search_indices(keyword: list, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L714)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L715)
 
 Description: Search indices by keyword. [Source: FinanceDatabase]
 

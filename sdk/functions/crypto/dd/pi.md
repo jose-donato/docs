@@ -2,14 +2,21 @@
 title: pi
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # pi
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_project_product_info
 
-```python
-def p) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_project_product_info() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L341)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L342)
 
 Description: Returns coin product info
 
@@ -29,17 +36,15 @@ Description: Returns coin product info
 
 
 
-
-# VIEW
-
-# pi
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_project_info
 
-```python
-def p) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_project_info() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L457)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L458)
 
 Description: Display project info
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

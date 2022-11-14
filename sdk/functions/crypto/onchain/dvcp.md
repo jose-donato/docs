@@ -2,14 +2,21 @@
 title: dvcp
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # dvcp
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_bitquery_model.get_daily_dex_volume_for_given_pair
 
-```python
-def dvcp(limit: int, symbol: str, to_symbol: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/bitquery_model.py'
+def get_daily_dex_volume_for_given_pair(limit: int, symbol: str, to_symbol: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L399)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L400)
 
 Description: Get daily volume for given pair [Source: https://graphql.bitquery.io/]
 
@@ -28,17 +35,15 @@ Description: Get daily volume for given pair [Source: https://graphql.bitquery.i
 
 
 
-
-# VIEW
-
-# dvcp
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_bitquery_view.display_daily_volume_for_given_pair
 
-```python
-def dvc) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_daily_volume_for_given_pair() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L86)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L87)
 
 Description: Display daily volume for given pair
 
@@ -61,3 +66,7 @@ Description: Display daily volume for given pair
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

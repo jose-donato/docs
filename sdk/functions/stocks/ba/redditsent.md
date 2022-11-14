@@ -2,14 +2,21 @@
 title: redditsent
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # redditsent
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_reddit_model.get_posts_about
 
-```python
-def redditsen) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_posts_about() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L868)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L869)
 
 Description: Finds posts related to a specific search term in Reddit
 
@@ -38,17 +45,15 @@ Average polarity score |
 
 
 
-
-# VIEW
-
-# redditsent
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ba_reddit_view.display_redditsent
 
-```python
-def redditsen) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_redditsent() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L387)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L388)
 
 Description: Determine Reddit sentiment about a search term
 
@@ -73,3 +78,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

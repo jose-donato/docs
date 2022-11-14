@@ -1,16 +1,16 @@
-
-
-
-# VIEW
+---
+title: load_bls
+description: OpenBB SDK Function
+---
 
 # load_bls
 
 ## portfolio_optimization_excel_model.load_bl_views
 
-```python
-def load_bls(excel_file: str) -> None:
+```python title='openbb_terminal/portfolio/portfolio_optimization/excel_model.py'
+def load_bl_views(excel_file: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/excel_model.py#L100)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/excel_model.py#L101)
 
 Description: Load a Excel file with views for Black Litterman model.
 

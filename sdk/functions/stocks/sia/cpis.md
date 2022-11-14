@@ -2,14 +2,21 @@
 title: cpis
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # cpis
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_sia_financedatabase_model.get_companies_per_industry_in_sector
 
-```python
-def cpis(sector: str, mktcap: str, exclude_exchanges: bool) -> dict:
+```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py'
+def get_companies_per_industry_in_sector(sector: str, mktcap: str, exclude_exchanges: bool) -> dict:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L308)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L309)
 
 Description: Get number of companies per industry in a specific sector (and specific market cap).
 
@@ -31,17 +38,15 @@ Description: Get number of companies per industry in a specific sector (and spec
 
 
 
-
-# VIEW
-
-# cpis
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_sia_financedatabase_view.display_companies_per_industry_in_sector
 
-```python
-def cpis(sector: str, mktcap: str, exclude_exchanges: bool, export: str, raw: bool, max_industries_to_display: int, min_pct_to_display_industry: float, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py'
+def display_companies_per_industry_in_sector(sector: str, mktcap: str, exclude_exchanges: bool, export: str, raw: bool, max_industries_to_display: int, min_pct_to_display_industry: float, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L525)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L526)
 
 Description: Display number of companies per industry in a specific sector. [Source: Finance Database]
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

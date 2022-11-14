@@ -2,14 +2,21 @@
 title: btcrb
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # btcrb
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_ov_glassnode_model.get_btc_rainbow
 
-```python
-def btcrb(start_date: str, end_date: str) -> None:
+```python title='openbb_terminal/cryptocurrency/overview/glassnode_model.py'
+def get_btc_rainbow(start_date: str, end_date: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/glassnode_model.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/glassnode_model.py#L17)
 
 Description: Get bitcoin price data
 
@@ -28,17 +35,15 @@ None
 
 
 
-
-# VIEW
-
-# btcrb
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_ov_glassnode_view.display_btc_rainbow
 
-```python
-def btcr) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_btc_rainbow() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L28)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L29)
 
 Description: Displays bitcoin rainbow chart
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

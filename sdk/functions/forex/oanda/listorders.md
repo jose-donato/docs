@@ -2,14 +2,21 @@
 title: listorders
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # listorders
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## forex_oanda_model.order_history_request
 
-```python
-def listorders(order_state: str, order_count: int, accountID: str) -> None:
+```python title='openbb_terminal/forex/oanda/oanda_model.py'
+def order_history_request(order_state: str, order_count: int, accountID: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L224)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L225)
 
 Description: Request the orders list from Oanda.
 
@@ -29,17 +36,15 @@ None
 
 
 
-
-# VIEW
-
-# listorders
+</TabItem>
+<TabItem value="view" label="View">
 
 ## forex_oanda_view.list_orders
 
-```python
-def listorder) -> None:
+```python title='openbb_terminal/decorators.py'
+def list_orders() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L155)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L156)
 
 Description: List order history.
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

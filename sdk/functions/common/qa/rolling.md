@@ -2,14 +2,21 @@
 title: rolling
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # rolling
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_qa_rolling_model.get_rolling_avg
 
-```python
-def rolling(data: pd.DataFrame, window: int) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_model.py'
+def get_rolling_avg(data: pd.DataFrame, window: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L16)
 
 Description: Return rolling mean and standard deviation
 
@@ -30,17 +37,15 @@ Description: Return rolling mean and standard deviation
 
 
 
-
-# VIEW
-
-# rolling
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_qa_rolling_view.display_mean_std
 
-```python
-def rolling(data: pd.DataFrame, target: str, symbol: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/quantitative_analysis/rolling_view.py'
+def display_mean_std(data: pd.DataFrame, target: str, symbol: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L27)
 
 Description: View mean std deviation
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

@@ -2,14 +2,15 @@
 title: stalker
 description: OpenBB SDK Function
 ---
+
 # stalker
 
 ## stocks_ba_stocktwits_model.get_stalker
 
-```python
-def stalker(user: str, limit: int) -> None:
+```python title='openbb_terminal/common/behavioural_analysis/stocktwits_model.py'
+def get_stalker(user: str, limit: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L105)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L106)
 
 Description: Gets messages from given user [Source: stocktwits]
 

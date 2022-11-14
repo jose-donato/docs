@@ -2,14 +2,15 @@
 title: future
 description: OpenBB SDK Function
 ---
+
 # future
 
 ## economy_finviz_model.get_futures
 
-```python
-def future(future_type: str, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/economy/finviz_model.py'
+def get_futures(future_type: str, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L186)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L187)
 
 Description: Get futures data. [Source: Finviz]
 

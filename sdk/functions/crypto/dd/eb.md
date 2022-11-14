@@ -2,14 +2,21 @@
 title: eb
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # eb
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_glassnode_model.get_exchange_balances
 
-```python
-def e) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_exchange_balances() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L439)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L440)
 
 Description: Returns the total amount of coins held on exchange addresses in units and percentage.
 
@@ -32,17 +39,15 @@ Description: Returns the total amount of coins held on exchange addresses in uni
 
 
 
-
-# VIEW
-
-# eb
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_glassnode_view.display_exchange_balances
 
-```python
-def e) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_exchange_balances() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L228)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L229)
 
 Description: Display total amount of coins held on exchange addresses in units and percentage.
 
@@ -66,3 +71,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

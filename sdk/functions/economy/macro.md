@@ -2,14 +2,21 @@
 title: macro
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # macro
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_econdb_model.get_aggregated_macro_data
 
-```python
-def macro(parameters: list, countries: list, transform: str, start_date: str, end_date: Any, symbol: str) -> None:
+```python title='openbb_terminal/economy/econdb_model.py'
+def get_aggregated_macro_data(parameters: list, countries: list, transform: str, start_date: str, end_date: Any, symbol: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L648)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L649)
 
 Description: This functions groups the data queried from the EconDB database [Source: EconDB]
 
@@ -37,17 +44,15 @@ None
 
 
 
-
-# VIEW
-
-# macro
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_econdb_view.show_macro_data
 
-```python
-def macro(parameters: list, countries: list, transform: str, start_date: str, end_date: str, symbol: str, raw: bool, external_axes: Union[List[axes], NoneType], export: str) -> None:
+```python title='openbb_terminal/economy/econdb_view.py'
+def show_macro_data(parameters: list, countries: list, transform: str, start_date: str, end_date: str, symbol: str, raw: bool, external_axes: Union[List[axes], NoneType], export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_view.py#L25)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_view.py#L26)
 
 Description: Show the received macro data about a company [Source: EconDB]
 
@@ -80,3 +85,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

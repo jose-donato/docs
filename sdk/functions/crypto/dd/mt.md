@@ -2,14 +2,21 @@
 title: mt
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # mt
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_messari_timeseries
 
-```python
-def m) -> None:
+```python title='openbb_terminal/decorators.py'
+def get_messari_timeseries() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L117)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L118)
 
 Description: Returns messari timeseries
 
@@ -33,17 +40,15 @@ Description: Returns messari timeseries
 
 
 
-
-# VIEW
-
-# mt
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_messari_timeseries
 
-```python
-def m) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_messari_timeseries() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L102)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L103)
 
 Description: Display messari timeseries
 
@@ -65,3 +70,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

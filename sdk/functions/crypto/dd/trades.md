@@ -3,15 +3,21 @@ title: trades
 description: OpenBB SDK Function
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # trades
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_coinbase_model.get_trades
 
-```python
-def trades(symbol: str, limit: int, side: Union[Any, NoneType]) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
+def get_trades(symbol: str, limit: int, side: Union[Any, NoneType]) -> DataFrame:
 ```
 
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L100)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L101)
 
 Description: Get last N trades for chosen trading pair. [Source: Coinbase]
 
@@ -31,17 +37,16 @@ Description: Get last N trades for chosen trading pair. [Source: Coinbase]
 
 ## Examples
 
-# VIEW
-
-# trades
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_coinbase_view.display_trades
 
-```python
-def trades(symbol: str, limit: int, side: Union[str, NoneType], export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py'
+def display_trades(symbol: str, limit: int, side: Union[str, NoneType], export: str) -> None:
 ```
 
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L50)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L51)
 
 Description: Display last N trades for chosen trading pair. [Source: Coinbase]
 
@@ -59,3 +64,6 @@ Description: Display last N trades for chosen trading pair. [Source: Coinbase]
 None
 
 ## Examples
+
+</TabItem>
+</Tabs>

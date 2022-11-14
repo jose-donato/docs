@@ -2,14 +2,21 @@
 title: lt
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # lt
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_bitquery_model.get_dex_trades_by_exchange
 
-```python
-def lt(trade_amount_currency: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/bitquery_model.py'
+def get_dex_trades_by_exchange(trade_amount_currency: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L265)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L266)
 
 Description: Get trades on Decentralized Exchanges aggregated by DEX [Source: https://graphql.bitquery.io/]
 
@@ -33,17 +40,15 @@ on server side) | None | False |
 
 
 
-
-# VIEW
-
-# lt
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_bitquery_view.display_dex_trades
 
-```python
-def l) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_dex_trades() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L21)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L22)
 
 Description: Trades on Decentralized Exchanges aggregated by DEX or Month
 
@@ -66,3 +71,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

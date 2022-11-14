@@ -2,14 +2,21 @@
 title: gwei
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # gwei
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_onchain_ethgasstation_model.get_gwei_fees
 
-```python
-def gwe) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/onchain/ethgasstation_model.py'
+def get_gwei_fees() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethgasstation_model.py#L12)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethgasstation_model.py#L13)
 
 Description: Returns the most recent Ethereum gas fees in gwei
 
@@ -31,17 +38,15 @@ Description: Returns the most recent Ethereum gas fees in gwei
 
 
 
-
-# VIEW
-
-# gwei
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_onchain_ethgasstation_view.display_gwei_fees
 
-```python
-def gwei(export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethgasstation_view.py'
+def display_gwei_fees(export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethgasstation_view.py#L13)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethgasstation_view.py#L14)
 
 Description: Current gwei fees
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

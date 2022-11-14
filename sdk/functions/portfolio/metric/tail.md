@@ -2,14 +2,15 @@
 title: tail
 description: OpenBB SDK Function
 ---
+
 # tail
 
 ## portfolio_model.get_tail_ratio
 
-```python
-def tail(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_tail_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1170)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1171)
 
 Description: Get tail ratio
 

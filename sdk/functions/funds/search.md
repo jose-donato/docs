@@ -2,14 +2,21 @@
 title: search
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # search
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## mutual_funds_investpy_model.search_funds
 
-```python
-def search(by: str, value: str) -> DataFrame:
+```python title='openbb_terminal/mutual_funds/investpy_model.py'
+def search_funds(by: str, value: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_model.py#L20)
 
 Description: Search investpy for matching funds
 
@@ -30,17 +37,15 @@ Description: Search investpy for matching funds
 
 
 
-
-# VIEW
-
-# search
+</TabItem>
+<TabItem value="view" label="View">
 
 ## mutual_funds_investpy_view.display_search
 
-```python
-def search(by: str, value: str, country: str, limit: int, sortby: str, ascend: bool) -> None:
+```python title='openbb_terminal/mutual_funds/investpy_view.py'
+def display_search(by: str, value: str, country: str, limit: int, sortby: str, ascend: bool) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_view.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/mutual_funds/investpy_view.py#L27)
 
 Description: Display results of searching for Mutual Funds
 
@@ -61,3 +66,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

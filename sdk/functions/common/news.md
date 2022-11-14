@@ -2,12 +2,19 @@
 title: news
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # news
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_feedparser_model.get_news
 
-```python
-def news(term: str, sources: str, sort: str) -> DataFrame:
+```python title='openbb_terminal/common/feedparser_model.py'
+def get_news(term: str, sources: str, sort: str) -> DataFrame:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/feedparser_model.py#L13)
 
@@ -32,17 +39,15 @@ None
 
 
 
-
-# VIEW
-
-# news
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_feedparser_view.display_news
 
-```python
-def news(term: str, sources: str, limit: int, export: str, sort: str) -> None:
+```python title='openbb_terminal/common/feedparser_view.py'
+def display_news(term: str, sources: str, limit: int, export: str, sort: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/feedparser_view.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/feedparser_view.py#L16)
 
 Description: Display news for a given term and source. [Source: Feedparser]
 
@@ -62,3 +67,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

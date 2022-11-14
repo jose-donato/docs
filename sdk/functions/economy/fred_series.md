@@ -2,14 +2,21 @@
 title: fred_series
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # fred_series
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_fred_model.get_aggregated_series_data
 
-```python
-def fred_serie) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_aggregated_series_data() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L203)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L204)
 
 Description: Get Series data. [Source: FRED]
 
@@ -32,17 +39,15 @@ None
 
 
 
-
-# VIEW
-
-# fred_series
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_fred_view.display_fred_series
 
-```python
-def fred_serie) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_fred_series() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L75)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L76)
 
 Description: Display (multiple) series from https://fred.stlouisfed.org. [Source: FRED]
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

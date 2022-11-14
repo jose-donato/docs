@@ -2,14 +2,21 @@
 title: vwap
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # vwap
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_overlap_model.vwap
 
-```python
+```python title='openbb_terminal/common/technical_analysis/overlap_model.py'
 def vwap(data: pd.Series, offset: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L138)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L139)
 
 Description: Gets volume weighted average price (VWAP)
 
@@ -31,17 +38,15 @@ None
 
 
 
-
-# VIEW
-
-# vwap
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_overlap_view.view_vwap
 
-```python
-def vwap(data: pd.DataFrame, symbol: str, start_date: str, end_date: str, offset: int, interval: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/overlap_view.py'
+def view_vwap(data: pd.DataFrame, symbol: str, start_date: str, end_date: str, offset: int, interval: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L120)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L121)
 
 Description: Plots VWMA technical indicator
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

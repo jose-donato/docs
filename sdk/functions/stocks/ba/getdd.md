@@ -2,14 +2,15 @@
 title: getdd
 description: OpenBB SDK Function
 ---
+
 # getdd
 
 ## stocks_ba_reddit_model.get_due_dilligence
 
-```python
-def getd) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_due_dilligence() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L715)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L716)
 
 Description: Gets due diligence posts from list of subreddits [Source: reddit]
 

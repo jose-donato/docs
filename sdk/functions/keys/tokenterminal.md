@@ -2,12 +2,13 @@
 title: tokenterminal
 description: OpenBB SDK Function
 ---
+
 # tokenterminal
 
 ## keys_model.set_tokenterminal_key
 
-```python
-def tokenterminal(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_tokenterminal_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L2215)
 

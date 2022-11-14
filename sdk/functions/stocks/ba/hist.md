@@ -2,14 +2,21 @@
 title: hist
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # hist
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_ba_sentimentinvestor_model.get_historical
 
-```python
-def his) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_historical() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L19)
 
 Description: Get hour-level sentiment data for the chosen symbol
 
@@ -33,17 +40,15 @@ Maximum 250 per api call | None | False |
 
 
 
-
-# VIEW
-
-# hist
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_ba_sentimentinvestor_view.display_historical
 
-```python
-def his) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_historical() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L29)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L30)
 
 Description: Display historical sentiment data of a ticker,
 
@@ -68,3 +73,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

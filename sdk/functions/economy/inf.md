@@ -2,14 +2,21 @@
 title: inf
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # inf
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_alphavantage_model.get_inflation
 
-```python
-def inf(start_year: int) -> DataFrame:
+```python title='openbb_terminal/economy/alphavantage_model.py'
+def get_inflation(start_year: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L137)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L138)
 
 Description: Get historical Inflation for United States from AlphaVantage
 
@@ -29,17 +36,15 @@ Description: Get historical Inflation for United States from AlphaVantage
 
 
 
-
-# VIEW
-
-# inf
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_alphavantage_view.display_inflation
 
-```python
-def in) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_inflation() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L201)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L202)
 
 Description: Display US Inflation from AlphaVantage
 
@@ -58,3 +63,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

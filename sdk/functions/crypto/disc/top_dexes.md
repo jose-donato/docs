@@ -2,14 +2,21 @@
 title: top_dexes
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # top_dexes
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_disc_dappradar_model.get_top_dexes
 
-```python
-def top_dexes(sortby: str, limit: int) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/dappradar_model.py'
+def get_top_dexes(sortby: str, limit: int) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L122)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L123)
 
 Description: Get top dexes by daily volume and users [Source: https://dappradar.com/]
 
@@ -29,17 +36,15 @@ Description: Get top dexes by daily volume and users [Source: https://dappradar.
 
 
 
-
-# VIEW
-
-# top_dexes
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_disc_dappradar_view.display_top_dexes
 
-```python
-def top_dexes(limit: int, export: str, sortby: str) -> None:
+```python title='openbb_terminal/cryptocurrency/discovery/dappradar_view.py'
+def display_top_dexes(limit: int, export: str, sortby: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L96)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L97)
 
 Description: Displays top decentralized exchanges [Source: https://dappradar.com/]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

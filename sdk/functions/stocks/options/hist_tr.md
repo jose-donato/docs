@@ -2,14 +2,21 @@
 title: hist_tr
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # hist_tr
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_options_tradier_model.get_historical_options
 
-```python
-def hist_t) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_historical_options() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L43)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L44)
 
 Description: Gets historical option pricing.  This inputs either ticker, expiration, strike or the OCC chain ID and processes
 
@@ -33,17 +40,15 @@ Description: Gets historical option pricing.  This inputs either ticker, expirat
 
 
 
-
-# VIEW
-
-# hist_tr
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_options_tradier_view.display_historical
 
-```python
-def hist_tr(symbol: str, expiry: str, strike: float, put: bool, raw: bool, chain_id: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/options/tradier_view.py'
+def display_historical(symbol: str, expiry: str, strike: float, put: bool, raw: bool, chain_id: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_view.py#L627)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_view.py#L628)
 
 Description: Plot historical option prices
 
@@ -66,3 +71,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

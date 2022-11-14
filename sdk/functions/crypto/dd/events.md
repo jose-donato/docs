@@ -2,14 +2,21 @@
 title: events
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # events
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_coinpaprika_model.get_coin_events_by_id
 
-```python
-def events(symbol: str, sortby: Any, ascend: bool) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py'
+def get_coin_events_by_id(symbol: str, sortby: Any, ascend: bool) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L89)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L90)
 
 Description: Get all events related to given coin like conferences, start date of futures trading etc.
 
@@ -34,17 +41,15 @@ Columns: id, date , date_to, name, description, is_conference, link, proof_image
 
 
 
-
-# VIEW
-
-# events
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_coinpaprika_view.display_events
 
-```python
-def events(symbol: str, limit: int, sortby: str, ascend: bool, links: bool, export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py'
+def display_events(symbol: str, limit: int, sortby: str, ascend: bool, links: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L136)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L137)
 
 Description: Get all events for given coin id. [Source: CoinPaprika]
 
@@ -67,3 +72,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

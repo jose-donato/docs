@@ -2,14 +2,15 @@
 title: hq
 description: OpenBB SDK Function
 ---
+
 # hq
 
 ## stocks_fa_yahoo_finance_model.get_hq
 
-```python
-def hq(symbol: str) -> str:
+```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+def get_hq(symbol: str) -> str:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L227)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L228)
 
 Description: Gets google map url for headquarter
 

@@ -2,14 +2,21 @@
 title: fib
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # fib
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## common_ta_custom_indicators_model.calculate_fib_levels
 
-```python
-def fib(data: pd.DataFrame, limit: int, start_date: Any, end_date: Any) -> None:
+```python title='openbb_terminal/common/technical_analysis/custom_indicators_model.py'
+def calculate_fib_levels(data: pd.DataFrame, limit: int, start_date: Any, end_date: Any) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_model.py#L16)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_model.py#L17)
 
 Description: Calculate Fibonacci levels
 
@@ -32,17 +39,15 @@ Description: Calculate Fibonacci levels
 
 
 
-
-# VIEW
-
-# fib
+</TabItem>
+<TabItem value="view" label="View">
 
 ## common_ta_custom_indicators_view.fibonacci_retracement
 
-```python
-def fib(data: pd.DataFrame, limit: int, start_date: Union[str, NoneType], end_date: Union[str, NoneType], symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/common/technical_analysis/custom_indicators_view.py'
+def fibonacci_retracement(data: pd.DataFrame, limit: int, start_date: Union[str, NoneType], end_date: Union[str, NoneType], symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_view.py#L28)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_view.py#L29)
 
 Description: Calculate fibonacci retracement levels
 
@@ -64,3 +69,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

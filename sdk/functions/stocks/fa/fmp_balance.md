@@ -2,14 +2,15 @@
 title: fmp_balance
 description: OpenBB SDK Function
 ---
+
 # fmp_balance
 
 ## stocks_fa_fmp_model.get_balance
 
-```python
-def fmp_balanc) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_balance() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L279)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L280)
 
 Description: Get balance sheets
 

@@ -2,14 +2,21 @@
 title: weights
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # weights
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## etf_yfinance_model.get_etf_sector_weightings
 
-```python
-def weights(name: str) -> None:
+```python title='openbb_terminal/etf/yfinance_model.py'
+def get_etf_sector_weightings(name: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L14)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L15)
 
 Description: Return sector weightings allocation of ETF. [Source: Yahoo Finance]
 
@@ -30,17 +37,15 @@ None
 
 
 
-
-# VIEW
-
-# weights
+</TabItem>
+<TabItem value="view" label="View">
 
 ## etf_yfinance_view.display_etf_weightings
 
-```python
-def weights(name: str, raw: bool, min_pct_to_display: float, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/etf/yfinance_view.py'
+def display_etf_weightings(name: str, raw: bool, min_pct_to_display: float, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_view.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_view.py#L27)
 
 Description: Display sector weightings allocation of ETF. [Source: Yahoo Finance]
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

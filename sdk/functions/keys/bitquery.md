@@ -2,12 +2,13 @@
 title: bitquery
 description: OpenBB SDK Function
 ---
+
 # bitquery
 
 ## keys_model.set_bitquery_key
 
-```python
-def bitquery(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_bitquery_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L958)
 

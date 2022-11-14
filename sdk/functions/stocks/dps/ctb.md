@@ -2,14 +2,21 @@
 title: ctb
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ctb
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dps_stocksera_model.get_cost_to_borrow
 
-```python
-def ctb(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/dark_pool_shorts/stocksera_model.py'
+def get_cost_to_borrow(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stocksera_model.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stocksera_model.py#L19)
 
 Description: Get cost to borrow of stocks [Source: Stocksera]
 
@@ -29,17 +36,15 @@ Description: Get cost to borrow of stocks [Source: Stocksera]
 
 
 
-
-# VIEW
-
-# ctb
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dps_stocksera_view.plot_cost_to_borrow
 
-```python
-def ctb(symbol: str, data: pd.DataFrame, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/stocksera_view.py'
+def plot_cost_to_borrow(symbol: str, data: pd.DataFrame, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stocksera_view.py#L29)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stocksera_view.py#L30)
 
 Description: Plots the cost to borrow of a stock. [Source: Stocksera]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

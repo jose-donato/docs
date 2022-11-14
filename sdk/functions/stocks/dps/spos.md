@@ -2,14 +2,21 @@
 title: spos
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # spos
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## stocks_dps_stockgrid_model.get_net_short_position
 
-```python
-def spos(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py'
+def get_net_short_position(symbol: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L168)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L169)
 
 Description: Get net short position. [Source: Stockgrid]
 
@@ -30,17 +37,15 @@ None
 
 
 
-
-# VIEW
-
-# spos
+</TabItem>
+<TabItem value="view" label="View">
 
 ## stocks_dps_stockgrid_view.net_short_position
 
-```python
-def spos(symbol: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py'
+def net_short_position(symbol: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L248)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L249)
 
 Description: Plot net short position. [Source: Stockgrid]
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

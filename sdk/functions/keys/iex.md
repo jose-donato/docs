@@ -2,12 +2,13 @@
 title: iex
 description: OpenBB SDK Function
 ---
+
 # iex
 
 ## keys_model.set_iex_key
 
-```python
-def iex(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_iex_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L798)
 

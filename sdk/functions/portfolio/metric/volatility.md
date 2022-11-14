@@ -2,14 +2,15 @@
 title: volatility
 description: OpenBB SDK Function
 ---
+
 # volatility
 
 ## portfolio_model.get_volatility
 
-```python
-def volatility(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
+```python title='openbb_terminal/portfolio/portfolio_model.py'
+def get_volatility(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L930)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L931)
 
 Description: Class method that retrieves volatility for portfolio and benchmark selected
 

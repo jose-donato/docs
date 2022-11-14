@@ -2,14 +2,15 @@
 title: global_deaths
 description: OpenBB SDK Function
 ---
+
 # global_deaths
 
 ## alt_covid_model.get_global_deaths
 
-```python
-def global_deaths(country: str) -> DataFrame:
+```python title='openbb_terminal/alternative/covid/covid_model.py'
+def get_global_deaths(country: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L69)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L70)
 
 Description: Get historical deaths for given country
 

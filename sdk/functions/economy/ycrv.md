@@ -2,14 +2,21 @@
 title: ycrv
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # ycrv
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## economy_investingcom_model.get_yieldcurve
 
-```python
-def ycrv(country: str) -> DataFrame:
+```python title='openbb_terminal/economy/investingcom_model.py'
+def get_yieldcurve(country: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L305)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L306)
 
 Description: Get yield curve for specified country. [Source: Investing.com]
 
@@ -29,17 +36,15 @@ Description: Get yield curve for specified country. [Source: Investing.com]
 
 
 
-
-# VIEW
-
-# ycrv
+</TabItem>
+<TabItem value="view" label="View">
 
 ## economy_investingcom_view.display_yieldcurve
 
-```python
-def ycrv(country: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], raw: bool, export: str) -> None:
+```python title='openbb_terminal/economy/investingcom_view.py'
+def display_yieldcurve(country: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], raw: bool, export: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_view.py#L207)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_view.py#L208)
 
 Description: Display yield curve for specified country. [Source: Investing.com]
 
@@ -56,3 +61,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

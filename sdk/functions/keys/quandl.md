@@ -2,12 +2,13 @@
 title: quandl
 description: OpenBB SDK Function
 ---
+
 # quandl
 
 ## keys_model.set_quandl_key
 
-```python
-def quandl(key: str, persist: bool, show_output: bool) -> str:
+```python title='openbb_terminal/keys_model.py'
+def set_quandl_key(key: str, persist: bool, show_output: bool) -> str:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L386)
 

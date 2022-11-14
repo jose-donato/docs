@@ -2,14 +2,15 @@
 title: global_cases
 description: OpenBB SDK Function
 ---
+
 # global_cases
 
 ## alt_covid_model.get_global_cases
 
-```python
-def global_cases(country: str) -> DataFrame:
+```python title='openbb_terminal/alternative/covid/covid_model.py'
+def get_global_cases(country: str) -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L25)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L26)
 
 Description: Get historical cases for given country
 

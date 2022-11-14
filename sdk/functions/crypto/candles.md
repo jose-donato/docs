@@ -2,12 +2,13 @@
 title: candles
 description: OpenBB SDK Function
 ---
+
 # candles
 
 ## crypto_helpers.plot_candles
 
-```python
-def candles(candles_df: pd.DataFrame, volume: bool, ylabel: str, title: str, external_axes: list[plt.Axes] | None, yscale: str) -> None:
+```python title='openbb_terminal/cryptocurrency/cryptocurrency_helpers.py'
+def plot_candles(candles_df: pd.DataFrame, volume: bool, ylabel: str, title: str, external_axes: list[plt.Axes] | None, yscale: str) -> None:
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L1469)
 

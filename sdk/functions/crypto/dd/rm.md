@@ -2,14 +2,21 @@
 title: rm
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # rm
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## crypto_dd_messari_model.get_roadmap
 
-```python
-def r) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_roadmap() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L224)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L225)
 
 Description: Returns coin roadmap
 
@@ -30,17 +37,15 @@ Description: Returns coin roadmap
 
 
 
-
-# VIEW
-
-# rm
+</TabItem>
+<TabItem value="view" label="View">
 
 ## crypto_dd_messari_view.display_roadmap
 
-```python
-def r) -> None:
+```python title='openbb_terminal/decorators.py'
+def display_roadmap() -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L271)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L272)
 
 Description: Display coin roadmap
 
@@ -60,3 +65,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>

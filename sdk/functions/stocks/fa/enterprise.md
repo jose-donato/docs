@@ -2,14 +2,15 @@
 title: enterprise
 description: OpenBB SDK Function
 ---
+
 # enterprise
 
 ## stocks_fa_fmp_model.get_enterprise
 
-```python
-def enterpris) -> DataFrame:
+```python title='openbb_terminal/decorators.py'
+def get_enterprise() -> DataFrame:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L130)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L131)
 
 Description: Financial Modeling Prep ticker enterprise
 

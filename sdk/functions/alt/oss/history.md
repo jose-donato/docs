@@ -2,14 +2,21 @@
 title: history
 description: OpenBB SDK Function
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # history
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 ## alt_oss_github_model.get_stars_history
 
-```python
-def history(repo: str) -> None:
+```python title='openbb_terminal/alternative/oss/github_model.py'
+def get_stars_history(repo: str) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L83)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L84)
 
 Description: Get repository star history
 
@@ -29,17 +36,15 @@ Description: Get repository star history
 
 
 
-
-# VIEW
-
-# history
+</TabItem>
+<TabItem value="view" label="View">
 
 ## alt_oss_github_view.display_star_history
 
-```python
-def history(repo: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```python title='openbb_terminal/alternative/oss/github_view.py'
+def display_star_history(repo: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L27)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L28)
 
 Description: Display repo summary [Source: https://api.github.com]
 
@@ -57,3 +62,7 @@ None
 
 ## Examples
 
+
+
+</TabItem>
+</Tabs>
