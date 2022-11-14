@@ -1,90 +1,64 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: spread
+description: OpenBB SDK Function
+---
+# spread
 
-|
+## common_qa_rolling_model.get_spread
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def spread(data: pd.DataFrame, window: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L41)
 
-.. raw:: html
+Description: Standard Deviation and Variance
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.qa.spread(
-    data: pandas.core.frame.DataFrame,
-    window: int = 14,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | DataFrame of targeted data | None | False |
+| window | int | Length of window | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Standard Deviation and Variance
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of rolling standard deviation |
 
-* **Parameters**
-
-    data: pd.DataFrame
-        DataFrame of targeted data
-    window: int
-        Length of window
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    df_sd: pd.DataFrame
-        Dataframe of rolling standard deviation
-    df_var: pd.DataFrame
-        Dataframe of rolling standard deviation
 
-|
+# VIEW
 
-.. raw:: html
+# spread
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_qa_rolling_view.display_spread
 
-{{< highlight python >}}
-common.qa.spread(
-    data: pandas.core.frame.DataFrame,
-    target: str,
-    symbol: str = '',
-    window: int = 14,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def spread(data: pd.DataFrame, target: str, symbol: str, window: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L135)
 
-.. raw:: html
+Description: View rolling spread
 
-    <p>
-    View rolling spread
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe | None | False |
+| target | str | Column in data to look at | None | False |
+| target | str | Column in data to look at | None | False |
+| symbol | str | Stock ticker | None | False |
+| window | int | Length of window | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
-    data: pd.DataFrame
-        Dataframe
-    target: str
-        Column in data to look at
-    target: str
-        Column in data to look at
-    symbol : str
-        Stock ticker
-    window : int
-        Length of window
-    export: str
-        Format to export data
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (3 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

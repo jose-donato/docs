@@ -1,77 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: vsurf
+description: OpenBB SDK Function
+---
+# vsurf
 
-|
+## stocks_options_yfinance_model.get_iv_surface
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def vsurf(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L320)
 
-.. raw:: html
+Description: Gets IV surface for calls and puts for ticker
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.vsurf(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol to get | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Gets IV surface for calls and puts for ticker
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of DTE, Strike and IV |
 
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol to get
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe of DTE, Strike and IV
 
-|
+# VIEW
 
-.. raw:: html
+# vsurf
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_options_yfinance_view.display_vol_surface
 
-{{< highlight python >}}
-stocks.options.vsurf(
-    symbol: str,
-    export: str = '',
-    z: str = 'IV',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def vsurf(symbol: str, export: str, z: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L1127)
 
-.. raw:: html
+Description: Display vol surface
 
-    <p>
-    Display vol surface
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get surface for | None | False |
+| export | str | Format to export data | None | False |
+| z | str | The variable for the Z axis | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | False |
 
-    symbol : str
-        Ticker symbol to get surface for
-    export : str
-        Format to export data
-    z : str
-        The variable for the Z axis
-    external_axes: Optional[List[plt.Axes]]
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

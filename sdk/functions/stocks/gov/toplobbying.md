@@ -1,66 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: toplobbying
+description: OpenBB SDK Function
+---
+# toplobbying
 
-|
+## stocks_gov_quiverquant_model.get_top_lobbying
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def toplobbyin) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L357)
 
-.. raw:: html
+Description: Corporate lobbying details
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.gov.toplobbying() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Corporate lobbying details
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame of top corporate lobbying |
 
-* **Returns**
+## Examples
 
-    pd.DataFrame
-        DataFrame of top corporate lobbying
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-stocks.gov.toplobbying(
-    limit: int = 10,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+# toplobbying
 
-.. raw:: html
+## stocks_gov_quiverquant_view.display_top_lobbying
 
-    <p>
-    Top lobbying tickers based on total spent
-    </p>
+```python
+def toplobbying(limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L621)
 
-* **Parameters**
+Description: Top lobbying tickers based on total spent
 
-    limit: int
-        Number of tickers to show
-    raw: bool
-        Show raw data
-    export:
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of tickers to show | None | False |
+| raw | bool | Show raw data | None | False |
+| export |  | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

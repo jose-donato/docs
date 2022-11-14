@@ -1,68 +1,57 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cgglobal
+description: OpenBB SDK Function
+---
+# cgglobal
 
-|
+## crypto_ov_pycoingecko_model.get_global_markets_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cggloba) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L450)
 
-.. raw:: html
+Description: Get global statistics about crypto markets from CoinGecko API like:
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cgglobal() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get global statistics about crypto markets from CoinGecko API like:
-        Market_Cap, Volume, Market_Cap_Percentage
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Market_Cap, Volume, Market_Cap_Percentage |
 
-    [Source: CoinGecko]
-    </p>
+## Examples
 
-* **Returns**
 
-    pandas.DataFrame
-        Market_Cap, Volume, Market_Cap_Percentage
 
-|
 
-.. raw:: html
+# VIEW
 
-    <h3>
-    > Getting charts
-    </h3>
+# cgglobal
 
-{{< highlight python >}}
-crypto.ov.cgglobal(
-    pie: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+## crypto_ov_pycoingecko_view.display_global_market_info
 
-.. raw:: html
+```python
+def cgglobal(pie: bool, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L239)
 
-    <p>
-    Shows global statistics about crypto. [Source: CoinGecko]
-        - market cap change
-        - number of markets
-        - icos
-        - number of active crypto
-        - market_cap_pct
-    </p>
+Description: Shows global statistics about crypto. [Source: CoinGecko]
 
-* **Parameters**
+## Parameters
 
-    pie: bool
-        Whether to show a pie chart
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| pie | bool | Whether to show a pie chart | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
+
+None
+
+## Examples
 

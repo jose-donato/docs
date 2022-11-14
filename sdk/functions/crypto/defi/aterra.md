@@ -1,82 +1,61 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: aterra
+description: OpenBB SDK Function
+---
+# aterra
 
-|
+## crypto_defi_terraengineer_model.get_history_asset_from_terra_address
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def aterra(asset: str, address: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L18)
 
-.. raw:: html
+Description: Returns historical data of an asset in a certain terra address
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.aterra(
-    asset: str = 'ust',
-    address: str = 'terra1tmnqgvg567ypvsvk6rwsga3srp7e3lg6u0elp8',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| asset | str | Terra asset {ust,luna,sdt} | None | False |
+| address | str | Terra address. Valid terra addresses start with 'terra' | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns historical data of an asset in a certain terra address
-    [Source: https://terra.engineer/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | historical data |
 
-* **Parameters**
-
-    asset : str
-        Terra asset {ust,luna,sdt}
-    address : str
-        Terra address. Valid terra addresses start with 'terra'
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        historical data
 
-|
+# VIEW
 
-.. raw:: html
+# aterra
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_defi_terraengineer_view.display_terra_asset_history
 
-{{< highlight python >}}
-crypto.defi.aterra(
-    asset: str = '',
-    address: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def aterra(asset: str, address: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L28)
 
-.. raw:: html
+Description: Displays the 30-day history of specified asset in terra address
 
-    <p>
-    Displays the 30-day history of specified asset in terra address
-    [Source: https://terra.engineer/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| asset | str | Terra asset {ust,luna,sdt} | None | False |
+| address | str | Terra address. Valid terra addresses start with 'terra' | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    asset : str
-        Terra asset {ust,luna,sdt}
-    address : str
-        Terra address. Valid terra addresses start with 'terra'
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

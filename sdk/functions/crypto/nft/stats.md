@@ -1,72 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: stats
+description: OpenBB SDK Function
+---
+# stats
 
-|
+## crypto_nft_opensea_model.get_collection_stats
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def stats(slug: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_model.py#L16)
 
-.. raw:: html
+Description: Get stats of a nft collection [Source: opensea.io]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.nft.stats(
-    slug: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get stats of a nft collection [Source: opensea.io]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | collection stats |
 
-* **Parameters**
-
-    slug : str
-        Opensea collection slug. If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        collection stats
 
-|
+# VIEW
 
-.. raw:: html
+# stats
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_nft_opensea_view.display_collection_stats
 
-{{< highlight python >}}
-crypto.nft.stats(
-    slug: str,
-    export: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def stats(slug: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_view.py#L14)
 
-.. raw:: html
+Description: Display collection stats. [Source: opensea.io]
 
-    <p>
-    Display collection stats. [Source: opensea.io]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| slug | str | Opensea collection slug.
+If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    slug: str
-        Opensea collection slug.
-        If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

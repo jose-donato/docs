@@ -1,80 +1,61 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: sharpe
+description: OpenBB SDK Function
+---
+# sharpe
 
-|
+## common_qa_model.get_sharpe
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def sharpe(data: pd.DataFrame, rfr: float, window: float) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L539)
 
-.. raw:: html
+Description: Calculates the sharpe ratio
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.qa.sharpe(
-    data: pandas.core.frame.DataFrame,
-    rfr: float = 0,
-    window: float = 252,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | selected dataframe column | None | False |
+| rfr | float | risk free rate | None | False |
+| window | float | length of the rolling window | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculates the sharpe ratio
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | sharpe ratio |
 
-* **Parameters**
-
-    data: pd.DataFrame
-        selected dataframe column
-    rfr: float
-        risk free rate
-    window: float
-        length of the rolling window
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    sharpe: pd.DataFrame
-        sharpe ratio
 
-|
+# VIEW
 
-.. raw:: html
+# sharpe
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_qa_view.display_sharpe
 
-{{< highlight python >}}
-common.qa.sharpe(
-    data: pandas.core.frame.DataFrame,
-    rfr: float = 0,
-    window: float = 252,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def sharpe(data: pd.DataFrame, rfr: float, window: float) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1114)
 
-.. raw:: html
+Description: Calculates the sharpe ratio
 
-    <p>
-    Calculates the sharpe ratio
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | selected dataframe column | None | False |
+| rfr | float | risk free rate | None | False |
+| window | float | length of the rolling window | None | False |
 
-    data: pd.DataFrame
-        selected dataframe column
-    rfr: float
-        risk free rate
-    window: float
-        length of the rolling window
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

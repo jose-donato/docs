@@ -1,86 +1,64 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: historical
+description: OpenBB SDK Function
+---
+# historical
 
-|
+## futures_yfinance_model.get_historical_futures
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def historical(symbols: List[str], expiry: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L78)
 
-.. raw:: html
+Description: Get historical futures [Source: Yahoo Finance]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-futures.historical(
-    symbols: List[str],
-    expiry: str = '',
-    chart: bool = False,
-) -> Dict
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbols | List[str] | List of future timeseries symbols to display | None | False |
+| expiry | str | Future expiry date with format YYYY-MM | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| Dict | None | Dictionary with sector weightings allocation | None | None |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get historical futures [Source: Yahoo Finance]
-    </p>
+None
 
-* **Parameters**
-
-    symbols: List[str]
-        List of future timeseries symbols to display
-    expiry: str
-        Future expiry date with format YYYY-MM
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Dict
-        Dictionary with sector weightings allocation
 
-|
+# VIEW
 
-.. raw:: html
+# historical
 
-    <h3>
-    > Getting charts
-    </h3>
+## futures_yfinance_view.display_historical
 
-{{< highlight python >}}
-futures.historical(
-    symbols: List[str],
-    expiry: str = '',
-    start_date: str = '2019-11-11',
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def historical(symbols: List[str], expiry: str, start_date: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L64)
 
-.. raw:: html
+Description: Display historical futures [Source: Yahoo Finance]
 
-    <p>
-    Display historical futures [Source: Yahoo Finance]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbols | List[str] | List of future timeseries symbols to display | None | False |
+| expiry | str | Future expiry date with format YYYY-MM | None | False |
+| start_date | str | Initial date like string (e.g., 2021-10-01) | None | False |
+| raw | bool | Display futures timeseries in raw format | None | False |
+| export | str | Type of format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbols: List[str]
-        List of future timeseries symbols to display
-    expiry: str
-        Future expiry date with format YYYY-MM
-    start_date : str
-        Initial date like string (e.g., 2021-10-01)
-    raw: bool
-        Display futures timeseries in raw format
-    export: str
-        Type of format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

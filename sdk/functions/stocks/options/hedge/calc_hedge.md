@@ -1,94 +1,67 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: calc_hedge
+description: OpenBB SDK Function
+---
+# calc_hedge
 
-|
+## stocks_options_hedge_model.calc_hedge
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def calc_hedge(portfolio_option_amount: float, side: str, greeks: dict, sign: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_model.py#L12)
 
-.. raw:: html
+Description: Determine the hedge position and the weights within each option and
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.hedge.calc_hedge(
-    portfolio_option_amount: float = 100,
-    side: str = 'Call',
-    greeks: dict = {'Portfolio': {'Delta': 1, 'Gamma': 9.1268e-05, 'Vega': 5.4661}, 'Option A': {'Delta': 1, 'Gamma': 9.1268e-05, 'Vega': 5.4661}, 'Option B': {'Delta': 1, 'Gamma': 9.1268e-05, 'Vega': 5.4661}}, sign: int = 1,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio_option_amount | float | Number to show | None | False |
+| side | str | Whether you have a Call or Put instrument | None | False |
+| greeks | dict | Dictionary containing delta, gamma and vega values for the portfolio and option A and B. Structure is
+as follows: {'Portfolio': {'Delta': VALUE, 'Gamma': VALUE, 'Vega': VALUE}} etc | None | False |
+| sign | int | Whether you have a long (1) or short (-1) position | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Determine the hedge position and the weights within each option and
-    underlying asset to hold a neutral portfolio
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| float | None |
 
-* **Parameters**
-
-    portfolio_option_amount: float
-        Number to show
-    side: str
-        Whether you have a Call or Put instrument
-    greeks: dict
-        Dictionary containing delta, gamma and vega values for the portfolio and option A and B. Structure is
-        as follows: {'Portfolio': {'Delta': VALUE, 'Gamma': VALUE, 'Vega': VALUE}} etc
-    sign: int
-        Whether you have a long (1) or short (-1) position
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
-
-    option A weight: float
-    option B weight: float
-    portfolio weight: float
-    is_singular: boolean
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.options.hedge.calc_hedge(
-    portfolio_option_amount: float = 100,
-    side: str = 'Call',
-    greeks: dict = {'Portfolio': {'Delta': 1, 'Gamma': 9.1268e-05, 'Vega': 5.4661}, 'Option A': {'Delta': 1, 'Gamma': 9.1268e-05, 'Vega': 5.4661}, 'Option B': {'Delta': 1, 'Gamma': 9.1268e-05, 'Vega': 5.4661}}, sign: int = 1,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Determine the hedge position and the weights within each option and
-    underlying asset to hold a neutral portfolio and show them
-    </p>
-
-* **Parameters**
-
-    portfolio_option_amount: float
-        Number to show
-    side: str
-        Whether you have a Call or Put instrument
-    greeks: dict
-        Dictionary containing delta, gamma and vega values for the portfolio and option A and B. Structure is
-        as follows: {'Portfolio': {'Delta': VALUE, 'Gamma': VALUE, 'Vega': VALUE}} etc
-    sign: int
-        Whether you have a long (1) or short (-1) position
-    chart: bool
-       Flag to display chart
 
 
-* **Returns**
+# VIEW
 
-    A table with the neutral portfolio weights.
+# calc_hedge
+
+## stocks_options_hedge_view.show_calculated_hedge
+
+```python
+def calc_hedge(portfolio_option_amount: float, side: str, greeks: dict, sign: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/hedge/hedge_view.py#L62)
+
+Description: Determine the hedge position and the weights within each option and
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio_option_amount | float | Number to show | None | False |
+| side | str | Whether you have a Call or Put instrument | None | False |
+| greeks | dict | Dictionary containing delta, gamma and vega values for the portfolio and option A and B. Structure is
+as follows: {'Portfolio': {'Delta': VALUE, 'Gamma': VALUE, 'Vega': VALUE}} etc | None | False |
+| sign | int | Whether you have a long (1) or short (-1) position | None | False |
+
+## Returns
+
+| Type | Description |
+| ---- | ----------- |
+| A table with the neutral portfolio weights. | None |
+
+## Examples
+

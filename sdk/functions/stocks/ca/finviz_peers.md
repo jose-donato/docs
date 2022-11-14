@@ -1,37 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: finviz_peers
+description: OpenBB SDK Function
+---
+# finviz_peers
 
-|
+## stocks_ca_finviz_compare_model.get_similar_companies
 
-.. raw:: html
+```python
+def finviz_peers(symbol: str, compare_list: List[str]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L24)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get similar companies from Finviz
 
-{{< highlight python >}}
-stocks.ca.finviz_peers(
-    symbol: str,
-    compare_list: List[str] = None,
-    chart: bool = False,
-) -> Tuple[List[str], str]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to find comparisons for | None | False |
+| compare_list | List[str] | List of fields to compare, ["Sector", "Industry", "Country"] | None | False |
 
-    <p>
-    Get similar companies from Finviz
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| List[str] | List of similar companies |
 
-    symbol : str
-        Ticker to find comparisons for
-    compare_list : List[str]
-        List of fields to compare, ["Sector", "Industry", "Country"]
+## Examples
 
-* **Returns**
-
-    List[str]
-        List of similar companies

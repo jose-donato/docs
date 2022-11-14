@@ -1,98 +1,68 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: lt
+description: OpenBB SDK Function
+---
+# lt
 
-|
+## crypto_onchain_bitquery_model.get_dex_trades_by_exchange
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def lt(trade_amount_currency: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L265)
 
-.. raw:: html
+Description: Get trades on Decentralized Exchanges aggregated by DEX [Source: https://graphql.bitquery.io/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.lt(
-    trade_amount_currency: str = 'USD',
-    limit: int = 90,
-    sortby: str = 'tradeAmount',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| trade_amount_currency | str | Currency of displayed trade amount. Default: USD | USD | False |
+| limit | int | Last n days to query data. Maximum 365 (bigger numbers can cause timeouts
+on server side) | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get trades on Decentralized Exchanges aggregated by DEX [Source: https://graphql.bitquery.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Trades on Decentralized Exchanges aggregated by DEX |
 
-* **Parameters**
-
-    trade_amount_currency: str
-        Currency of displayed trade amount. Default: USD
-    limit:  int
-        Last n days to query data. Maximum 365 (bigger numbers can cause timeouts
-        on server side)
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Trades on Decentralized Exchanges aggregated by DEX
 
-|
+# VIEW
 
-.. raw:: html
+# lt
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_onchain_bitquery_view.display_dex_trades
 
-{{< highlight python >}}
-crypto.onchain.lt(
-    trade_amount_currency: str = 'USD',
-    kind: str = 'dex',
-    limit: int = 20,
-    days: int = 90,
-    sortby: str = 'tradeAmount',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def l) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L21)
 
-.. raw:: html
+Description: Trades on Decentralized Exchanges aggregated by DEX or Month
 
-    <p>
-    Trades on Decentralized Exchanges aggregated by DEX or Month
-    [Source: https://graphql.bitquery.io/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| kind | str | Aggregate trades by dex or time | None | False |
+| trade_amount_currency | str | Currency of displayed trade amount. Default: USD | USD | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| days | int | Last n days to query data. Maximum 365 (bigger numbers can cause timeouts
+on server side) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    kind: str
-        Aggregate trades by dex or time
-    trade_amount_currency: str
-        Currency of displayed trade amount. Default: USD
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    days:  int
-        Last n days to query data. Maximum 365 (bigger numbers can cause timeouts
-        on server side)
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

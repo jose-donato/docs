@@ -1,63 +1,56 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: rtps
+description: OpenBB SDK Function
+---
+# rtps
 
-|
+## economy_alphavantage_model.get_sector_data
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def rtp) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L18)
 
-.. raw:: html
+Description: Get real-time performance sector data
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-economy.rtps() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get real-time performance sector data
-    </p>
+None
 
-* **Returns**
+## Examples
 
-    df_sectors : pd.Dataframe
-        Real-time performance data
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-economy.rtps(
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+# rtps
 
-.. raw:: html
+## economy_alphavantage_view.realtime_performance_sector
 
-    <p>
-    Display Real-Time Performance sector. [Source: AlphaVantage]
-    </p>
+```python
+def rtp) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L26)
 
-* **Parameters**
+Description: Display Real-Time Performance sector. [Source: AlphaVantage]
 
-    raw : bool
-        Output only raw data
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| raw | bool | Output only raw data | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,72 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: lins
+description: OpenBB SDK Function
+---
+# lins
 
-|
+## stocks_insider_finviz_model.get_last_insider_activity
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def lins(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_model.py#L15)
 
-.. raw:: html
+Description: Get last insider activity for a given stock ticker. [Source: Finviz]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ins.lins(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| pd.DataFrame | None | Latest insider trading activity | None | None |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get last insider activity for a given stock ticker. [Source: Finviz]
-    </p>
+None
 
-* **Parameters**
-
-    symbol : str
-        Stock ticker symbol
-
-    pd.DataFrame
-        Latest insider trading activity
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-stocks.ins.lins(
-    symbol: str,
-    limit: int = 10,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+# lins
 
-.. raw:: html
+## stocks_insider_finviz_view.last_insider_activity
 
-    <p>
-    Display insider activity for a given stock ticker. [Source: Finviz]
-    </p>
+```python
+def lins(symbol: str, limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_view.py#L14)
 
-* **Parameters**
+Description: Display insider activity for a given stock ticker. [Source: Finviz]
 
-    symbol : str
-        Stock ticker symbol
-    limit : int
-        Number of latest insider activity to display
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number of latest insider activity to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
+
+None
+
+## Examples
 

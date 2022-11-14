@@ -1,105 +1,69 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: news
+description: OpenBB SDK Function
+---
+# news
 
-|
+## crypto_ov_cryptopanic_model.get_news
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def news(limit: int, post_kind: str, filter_: Union[str, NoneType], region: str, source: Union[str, NoneType], symbol: Union[str, NoneType], sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_model.py#L156)
 
-.. raw:: html
+Description: Get recent posts from CryptoPanic news aggregator platform. [Source: https://cryptopanic.com/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.news(
-    limit: int = 60,
-    post_kind: str = 'news',
-    filter_: Optional[str] = None,
-    region: str = 'en',
-    source: Optional[str] = None,
-    symbol: Optional[str] = None,
-    sortby: str = 'published_at',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | number of news to fetch | None | False |
+| post_kind | str | Filter by category of news. Available values: news or media. | None | False |
+| filter_ | Optional[str] | Filter by kind of news. One from list: rising|hot|bullish|bearish|important|saved|lol | None | False |
+| region | str | Filter news by regions. Available regions are: en (English), de (Deutsch), nl (Dutch),
+es (Español), fr (Français), it (Italiano), pt (Português), ru (Русский) | None | False |
+| sortby | str | Key to sort by. | None | False |
+| ascend | bool | Sort in ascend order. | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get recent posts from CryptoPanic news aggregator platform. [Source: https://cryptopanic.com/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame with recent news from different sources filtered by provided parameters. |
 
-* **Parameters**
-
-    limit: int
-        number of news to fetch
-    post_kind: str
-        Filter by category of news. Available values: news or media.
-    filter\_: Optional[str]
-        Filter by kind of news. One from list: rising|hot|bullish|bearish|important|saved|lol
-    region: str
-        Filter news by regions. Available regions are: en (English), de (Deutsch), nl (Dutch),
-        es (Español), fr (Français), it (Italiano), pt (Português), ru (Русский)
-    sortby: str
-        Key to sort by.
-    ascend: bool
-        Sort in ascend order.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        DataFrame with recent news from different sources filtered by provided parameters.
 
-|
+# VIEW
 
-.. raw:: html
+# news
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_cryptopanic_view.display_news
 
-{{< highlight python >}}
-crypto.dd.news(
-    post_kind: str = 'news',
-    region: str = 'en',
-    filter_: Optional[str] = None,
-    source: Optional[str] = None,
-    symbol: Optional[str] = None,
-    limit: int = 25,
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def new) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
 
-.. raw:: html
+Description: Display recent posts from CryptoPanic news aggregator platform.
 
-    <p>
-    Display recent posts from CryptoPanic news aggregator platform.
-    [Source: https://cryptopanic.com/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | number of news to display | None | False |
+| post_kind | str | Filter by category of news. Available values: news or media. | None | False |
+| filter_ | Optional[str] | Filter by kind of news. One from list: rising|hot|bullish|bearish|important|saved|lol | None | False |
+| region | str | Filter news by regions. Available regions are: en (English), de (Deutsch), nl (Dutch),
+es (Español), fr (Français), it (Italiano), pt (Português), ru (Русский) | None | False |
+| ascend | bool | Sort in ascending order. | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    limit: int
-        number of news to display
-    post_kind: str
-        Filter by category of news. Available values: news or media.
-    filter\_: Optional[str]
-        Filter by kind of news. One from list: rising|hot|bullish|bearish|important|saved|lol
-    region: str
-        Filter news by regions. Available regions are: en (English), de (Deutsch), nl (Dutch),
-        es (Español), fr (Français), it (Italiano), pt (Português), ru (Русский)
-    ascend: bool
-        Sort in ascending order.
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

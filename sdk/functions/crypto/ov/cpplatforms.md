@@ -1,58 +1,56 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cpplatforms
+description: OpenBB SDK Function
+---
+# cpplatforms
 
-|
+## crypto_ov_coinpaprika_model.get_all_contract_platforms
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cpplatform) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L397)
 
-.. raw:: html
+Description: List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama ... [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cpplatforms() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama ... [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | index, platform_id |
 
-* **Returns**
+## Examples
 
-    pandas.DataFrame
-        index, platform_id
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-crypto.ov.cpplatforms(
-    export: str,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+# cpplatforms
 
-.. raw:: html
+## crypto_ov_coinpaprika_view.display_all_platforms
 
-    <p>
-    List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama.
-    [Source: CoinPaprika]
-    </p>
+```python
+def cpplatforms(export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L323)
 
-* **Parameters**
+Description: List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama.
 
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,82 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: mktcap
+description: OpenBB SDK Function
+---
+# mktcap
 
-|
+## stocks_fa_yahoo_finance_model.get_mktcap
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def mktcap(symbol: str, start_date: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L272)
 
-.. raw:: html
+Description: Get market cap over time for ticker. [Source: Yahoo Finance]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.fa.mktcap(
-    symbol: str,
-    start_date: str = '2019-11-08',
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, str]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to get market cap over time | None | False |
+| start_date | str | Start date to display market cap | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get market cap over time for ticker. [Source: Yahoo Finance]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | Dataframe of estimated market cap over time |
 
-* **Parameters**
-
-    symbol: str
-        Ticker to get market cap over time
-    start_date: str
-        Start date to display market cap
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of estimated market cap over time
-    str:
-        Currency of ticker
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.fa.mktcap(
-    symbol: str,
-    start_date: str = '2019-11-08',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display market cap over time. [Source: Yahoo Finance]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol
-    start_date: str
-        Start date to display market cap
-    export: str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Examples
 

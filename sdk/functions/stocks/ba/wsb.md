@@ -1,37 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: wsb
+description: OpenBB SDK Function
+---
+# wsb
 
-|
+## stocks_ba_reddit_model.get_wsb_community
 
-.. raw:: html
+```python
+def ws) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L606)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get wsb posts [Source: reddit]
 
-{{< highlight python >}}
-stocks.ba.wsb(
-    limit: int = 10,
-    new: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of posts to get, by default 10 | 10 | True |
+| new | bool | Flag to sort by new instead of hot, by default False | False | True |
 
-    <p>
-    Get wsb posts [Source: reddit]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of reddit submissions |
 
-    limit : int, optional
-        Number of posts to get, by default 10
-    new : bool, optional
-        Flag to sort by new instead of hot, by default False
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of reddit submissions

@@ -1,77 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: bigmac
+description: OpenBB SDK Function
+---
+# bigmac
 
-|
+## economy_nasdaq_model.get_big_mac_indices
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def bigma) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L165)
 
-.. raw:: html
+Description: Display Big Mac Index for given countries
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-economy.bigmac(
-    country_codes: List[str] = None,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country_codes | List[str] | List of country codes (ISO-3 letter country code). Codes available through economy.country_codes(). | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Display Big Mac Index for given countries
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe with Big Mac indices converted to USD equivalent. |
 
-* **Parameters**
-
-    country_codes : List[str]
-        List of country codes (ISO-3 letter country code). Codes available through economy.country_codes().
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe with Big Mac indices converted to USD equivalent.
 
-|
+# VIEW
 
-.. raw:: html
+# bigmac
 
-    <h3>
-    > Getting charts
-    </h3>
+## economy_nasdaq_view.display_big_mac_index
 
-{{< highlight python >}}
-economy.bigmac(
-    country_codes: List[str] = None,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def bigma) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L58)
 
-.. raw:: html
+Description: Display Big Mac Index for given countries
 
-    <p>
-    Display Big Mac Index for given countries
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country_codes | List[str] | List of country codes (ISO-3 letter country code). Codes available through economy.country_codes(). | None | False |
+| raw | bool | Flag to display raw data, by default False | False | True |
+| export | str | Format data, by default "" | None | True |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    country_codes : List[str]
-        List of country codes (ISO-3 letter country code). Codes available through economy.country_codes().
-    raw : bool, optional
-        Flag to display raw data, by default False
-    export : str, optional
-        Format data, by default ""
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

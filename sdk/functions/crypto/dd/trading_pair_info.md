@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: trading_pair_info
+description: OpenBB SDK Function
+---
+# trading_pair_info
 
-|
+## crypto_dd_coinbase_model.get_trading_pair_info
 
-.. raw:: html
+```python
+def trading_pair_info(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L35)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get information about chosen trading pair. [Source: Coinbase]
 
-{{< highlight python >}}
-crypto.dd.trading_pair_info(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
 
-    <p>
-    Get information about chosen trading pair. [Source: Coinbase]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Basic information about given trading pair |
 
-    symbol: str
-        Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Basic information about given trading pair

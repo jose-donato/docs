@@ -1,77 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: regions
+description: OpenBB SDK Function
+---
+# regions
 
-|
+## stocks_ba_google_model.get_regions
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def regions(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L43)
 
-.. raw:: html
+Description: Get interest by region from google api [Source: google]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ba.regions(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to look at | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get interest by region from google api [Source: google]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of interest by region |
 
-* **Parameters**
-
-    symbol: str
-        Ticker symbol to look at
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe of interest by region
 
-|
+# VIEW
 
-.. raw:: html
+# regions
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_ba_google_view.display_regions
 
-{{< highlight python >}}
-stocks.ba.regions(
-    symbol: str,
-    limit: int = 5,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def regions(symbol: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L155)
 
-.. raw:: html
+Description: Plot bars of regions based on stock's interest. [Source: Google]
 
-    <p>
-    Plot bars of regions based on stock's interest. [Source: Google]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol | None | False |
+| limit | int | Number of regions to show | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbol : str
-        Ticker symbol
-    limit: int
-        Number of regions to show
-    export: str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

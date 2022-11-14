@@ -1,74 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: wfpe
+description: OpenBB SDK Function
+---
+# wfpe
 
-|
+## crypto_ov_withdrawalfees_model.get_crypto_withdrawal_fees
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def wfpe(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L208)
 
-.. raw:: html
+Description: Scrapes coin withdrawal fees per exchange
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.wfpe(
-    symbol: str,
-    chart: bool = False,
-) -> List[Any]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Coin to check withdrawal fees. By default bitcoin | bitcoin | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Scrapes coin withdrawal fees per exchange
-    [Source: https://withdrawalfees.com/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | - str:              Overall statistics (exchanges, lowest, average and median)
+- pandas.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount |
 
-* **Parameters**
-
-    symbol: str
-        Coin to check withdrawal fees. By default bitcoin
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    List:
-        - str:              Overall statistics (exchanges, lowest, average and median)
-        - pandas.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount
 
-|
+# VIEW
 
-.. raw:: html
+# wfpe
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_ov_withdrawalfees_view.display_crypto_withdrawal_fees
 
-{{< highlight python >}}
-crypto.ov.wfpe(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def wfpe(symbol: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L85)
 
-.. raw:: html
+Description: Coin withdrawal fees per exchange
 
-    <p>
-    Coin withdrawal fees per exchange
-    [Source: https://withdrawalfees.com/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Coin to check withdrawal fees | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    symbol: str
-        Coin to check withdrawal fees
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

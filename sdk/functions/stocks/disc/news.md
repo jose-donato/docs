@@ -1,38 +1,31 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: news
+description: OpenBB SDK Function
+---
+# news
 
-|
+## stocks_disc_seeking_alpha_model.get_news
 
-.. raw:: html
+```python
+def news(news_type: str, limit: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L198)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets news. [Source: SeekingAlpha]
 
-{{< highlight python >}}
-stocks.disc.news(
-    news_type: str = 'Top-News',
-    limit: int = 5,
-    chart: bool = False,
-) -> List
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| news_type | str | From: Top-News, On-The-Move, Market-Pulse, Notable-Calls, Buybacks, Commodities, Crypto, Issuance, Global,
+Guidance, IPOs, SPACs, Politics, M-A, Consumer, Energy, Financials, Healthcare, MLPs, REITs, Technology | None | False |
+| limit | int | Number of news to display | None | False |
 
-    <p>
-    Gets news. [Source: SeekingAlpha]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| List[dict] | List of dict news |
 
-    news_type : str
-        From: Top-News, On-The-Move, Market-Pulse, Notable-Calls, Buybacks, Commodities, Crypto, Issuance, Global,
-        Guidance, IPOs, SPACs, Politics, M-A, Consumer, Energy, Financials, Healthcare, MLPs, REITs, Technology
-    limit : int
-        Number of news to display
+## Examples
 
-* **Returns**
-
-    List[dict]
-        List of dict news

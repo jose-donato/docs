@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: news
+description: OpenBB SDK Function
+---
+# news
 
-|
+## stocks_dd_finviz_model.get_news
 
-.. raw:: html
+```python
+def news(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finviz_model.py#L16)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get news from Finviz
 
-{{< highlight python >}}
-stocks.dd.news(
-    symbol: str,
-    chart: bool = False,
-) -> List[Any]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Get news from Finviz
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| List[Any] | News |
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    List[Any]
-        News

@@ -1,44 +1,34 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: binance
+description: OpenBB SDK Function
+---
+# binance
 
-|
+## keys_model.set_binance_key
 
-.. raw:: html
+```python
+def binance(key: str, secret: str, persist: bool, show_output: bool) -> str:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1323)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Set Binance key
 
-{{< highlight python >}}
-keys.binance(
-    key: str,
-    secret: str,
-    persist: bool = False,
-    show_output: bool = False,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| key | str | API key | None | False |
+| secret | str | API secret | None | False |
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
+If True, api key change will be global, i.e. it will affect terminal environment variables.
+By default, False. | None | False |
+| show_output | bool | Display status string or not. By default, False. | None | False |
 
-    <p>
-    Set Binance key
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | None |
 
-    key: str
-        API key
-    secret: str
-        API secret
-    persist: bool
-        If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
-        If True, api key change will be global, i.e. it will affect terminal environment variables.
-        By default, False.
-    show_output: bool
-        Display status string or not. By default, False.
+## Examples
 
-* **Returns**
-
-    status: str

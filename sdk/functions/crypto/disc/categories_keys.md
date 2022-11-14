@@ -1,12 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: categories_keys
+description: OpenBB SDK Function
+---
+# categories_keys
 
-|
+## crypto_disc_pycoingecko_model.get_categories_keys
 
-.. raw:: html
+```python
+def categories_key) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L114)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: None
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+
+## Returns
+
+None
+
+## Examples
 

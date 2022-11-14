@@ -1,24 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: get_ycrv_countries
+description: OpenBB SDK Function
+---
+# get_ycrv_countries
 
-|
+## economy_investingcom_model.get_ycrv_countries
 
-.. raw:: html
+```python
+def get_ycrv_countrie) -> list:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L275)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get available countries for ycrv command.
 
-{{< highlight python >}}
-economy.get_ycrv_countries() -> list
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get available countries for ycrv command.
+## Returns
 
-    Returns:
-        list: List of available countries.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| list | List of available countries. |
+
+## Examples
+

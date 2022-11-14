@@ -1,75 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: links
+description: OpenBB SDK Function
+---
+# links
 
-|
+## crypto_dd_messari_model.get_links
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def link) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L185)
 
-.. raw:: html
+Description: Returns asset's links
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.links(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check links | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns asset's links
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | asset links |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check links
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        asset links
 
-|
+# VIEW
 
-.. raw:: html
+# links
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_messari_view.display_links
 
-{{< highlight python >}}
-crypto.dd.links(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def link) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L236)
 
-.. raw:: html
+Description: Display coin links
 
-    <p>
-    Display coin links
-    [Source: https://messari.io/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check links | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbol : str
-        Crypto symbol to check links
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

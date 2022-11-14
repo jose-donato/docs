@@ -1,75 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: top_nfts
+description: OpenBB SDK Function
+---
+# top_nfts
 
-|
+## crypto_disc_dappradar_model.get_top_nfts
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def top_nfts(sortby: str, limit: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L77)
 
-.. raw:: html
+Description: Get top nft collections [Source: https://dappradar.com/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.disc.top_nfts(
-    sortby: str = '',
-    limit: int = 10,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Key by which to sort data | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get top nft collections [Source: https://dappradar.com/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | NFTs Columns: Name, Protocols, Floor Price [$], Avg Price [$], Market Cap [$], Volume [$] |
 
-* **Parameters**
-
-    sortby: str
-        Key by which to sort data
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        NFTs Columns: Name, Protocols, Floor Price [$], Avg Price [$], Market Cap [$], Volume [$]
 
-|
+# VIEW
 
-.. raw:: html
+# top_nfts
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_disc_dappradar_view.display_top_nfts
 
-{{< highlight python >}}
-crypto.disc.top_nfts(
-    limit: int = 10,
-    sortby: str = '',
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def top_nfts(limit: int, sortby: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L19)
 
-.. raw:: html
+Description: Displays top nft collections [Source: https://dappradar.com/]
 
-    <p>
-    Displays top nft collections [Source: https://dappradar.com/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

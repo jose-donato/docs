@@ -1,45 +1,33 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: var
+description: OpenBB SDK Function
+---
+# var
 
-|
+## portfolio_model.get_var
 
-.. raw:: html
+```python
+def var(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: float) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1684)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get portfolio VaR
 
-{{< highlight python >}}
-portfolio.var(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    use_mean: bool = False,
-    adjusted_var: bool = False,
-    student_t: bool = False,
-    percentile: float = 99.9,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| use_mean | bool | if one should use the data mean return | None | False |
+| adjusted_var | bool | if one should have VaR adjusted for skew and kurtosis (Cornish-Fisher-Expansion) | None | False |
+| student_t | bool | If one should use the student-t distribution | None | False |
+| percentile | float | var percentile (%) | None | False |
 
-    <p>
-    Get portfolio VaR
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | None |
 
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    use_mean: bool
-        if one should use the data mean return
-    adjusted_var: bool
-        if one should have VaR adjusted for skew and kurtosis (Cornish-Fisher-Expansion)
-    student_t: bool
-        If one should use the student-t distribution
-    percentile: float
-        var percentile (%)
+## Examples
 
-* **Returns**
-
-    pd.DataFrame

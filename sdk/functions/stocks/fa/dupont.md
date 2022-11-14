@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: dupont
+description: OpenBB SDK Function
+---
+# dupont
 
-|
+## stocks_fa_av_model.get_dupont
 
-.. raw:: html
+```python
+def dupont(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L711)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get dupont ratios
 
-{{< highlight python >}}
-stocks.fa.dupont(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Get dupont ratios
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | The dupont ratio breakdown |
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    dupont : pd.DataFrame
-        The dupont ratio breakdown

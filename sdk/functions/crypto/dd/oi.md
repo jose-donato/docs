@@ -1,79 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: oi
+description: OpenBB SDK Function
+---
+# oi
 
-|
+## crypto_dd_coinglass_model.get_open_interest_per_exchange
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def o) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L148)
 
-.. raw:: html
+Description: Returns open interest by exchange for a certain symbol
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.oi(
-    symbol: str,
-    interval: int = 0,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto Symbol to search open interest futures (e.g., BTC) | None | False |
+| interval | int | Frequency (possible values are: 0 for ALL, 2 for 1H, 1 for 4H, 4 for 12H), by default 0 | 0 | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns open interest by exchange for a certain symbol
-    [Source: https://coinglass.github.io/API-Reference/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | open interest by exchange and price |
 
-* **Parameters**
-
-    symbol : str
-        Crypto Symbol to search open interest futures (e.g., BTC)
-    interval : int
-        Frequency (possible values are: 0 for ALL, 2 for 1H, 1 for 4H, 4 for 12H), by default 0
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        open interest by exchange and price
 
-|
+# VIEW
 
-.. raw:: html
+# oi
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_coinglass_view.display_open_interest
 
-{{< highlight python >}}
-crypto.dd.oi(
-    symbol: str,
-    interval: int = 0,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def o) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L56)
 
-.. raw:: html
+Description: Displays open interest by exchange for a certain cryptocurrency
 
-    <p>
-    Displays open interest by exchange for a certain cryptocurrency
-    [Source: https://coinglass.github.io/API-Reference/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to search open interest (e.g., BTC) | None | False |
+| interval | int | Frequency (possible values are: 0 for ALL, 2 for 1H, 1 for 4H, 4 for 12H), by default 0 | 0 | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    symbol : str
-        Crypto symbol to search open interest (e.g., BTC)
-    interval : int
-        Frequency (possible values are: 0 for ALL, 2 for 1H, 1 for 4H, 4 for 12H), by default 0
-    export : str
-        Export dataframe data to csv,json,xlsx fil
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

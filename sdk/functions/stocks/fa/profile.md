@@ -1,34 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: profile
+description: OpenBB SDK Function
+---
+# profile
 
-|
+## stocks_fa_fmp_model.get_profile
 
-.. raw:: html
+```python
+def profil) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L55)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get ticker profile from FMP
 
-{{< highlight python >}}
-stocks.fa.profile(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame |  | Dataframe of ticker profile | None | False |
 
-    <p>
-    Get ticker profile from FMP
-    </p>
+## Returns
 
-* **Parameters**
+None
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of ticker profile

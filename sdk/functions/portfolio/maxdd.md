@@ -1,82 +1,62 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: maxdd
+description: OpenBB SDK Function
+---
+# maxdd
 
-|
+## portfolio_model.get_maximum_drawdown
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def maxdd(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, is_returns: bool) -> Series:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1382)
 
-.. raw:: html
+Description: Calculate the drawdown (MDD) of historical series.  Note that the calculation is done
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-portfolio.maxdd(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    is_returns: bool = False,
-    chart: bool = False,
-) -> pandas.core.series.Series
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Series of input values | None | False |
+| is_returns | bool | Flag to indicate inputs are returns | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.Series | None | Holdings series | None | None |
+| pd.Series | None | Drawdown series | None | None |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate the drawdown (MDD) of historical series.  Note that the calculation is done
-     on cumulative returns (or prices).  The definition of drawdown is
+None
 
-     DD = (current value - rolling maximum) / rolling maximum
-    </p>
-
-* **Parameters**
-
-    data: pd.Series
-        Series of input values
-    is_returns: bool
-        Flag to indicate inputs are returns
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.Series
-        Holdings series
-    pd.Series
-        Drawdown series
 
-|
+# VIEW
 
-.. raw:: html
+# maxdd
 
-    <h3>
-    > Getting charts
-    </h3>
+## portfolio_view.display_maximum_drawdown
 
-{{< highlight python >}}
-portfolio.maxdd(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def maxdd(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1021)
 
-.. raw:: html
+Description: Display maximum drawdown curve
 
-    <p>
-    Display maximum drawdown curve
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | PortfolioModel | Portfolio object | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | plt.Axes | Optional axes to display plot on | None | False |
 
-    portfolio : PortfolioModel
-        Portfolio object
-    export: str
-        Format to export data
-    external_axes: plt.Axes
-        Optional axes to display plot on
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

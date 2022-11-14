@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: last_price
+description: OpenBB SDK Function
+---
+# last_price
 
-|
+## stocks_options_tradier_model.last_price
 
-.. raw:: html
+```python
+def last_pric) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L227)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Makes api request for last price
 
-{{< highlight python >}}
-stocks.options.last_price(
-    symbol: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol | None | False |
 
-    <p>
-    Makes api request for last price
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | Last price |
 
-    symbol: str
-        Ticker symbol
+## Examples
 
-* **Returns**
-
-    float:
-        Last price

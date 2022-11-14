@@ -1,77 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: obv
+description: OpenBB SDK Function
+---
+# obv
 
-|
+## common_ta_volume_model.obv
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def obv(data: pd.DataFrame) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L89)
 
-.. raw:: html
+Description: On Balance Volume
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.obv(
-    data: pandas.core.frame.DataFrame,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of OHLC prices | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    On Balance Volume
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe with technical indicator |
 
-* **Parameters**
-
-    data: pd.DataFrame
-        Dataframe of OHLC prices
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe with technical indicator
 
-|
+# VIEW
 
-.. raw:: html
+# obv
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_ta_volume_view.display_obv
 
-{{< highlight python >}}
-common.ta.obv(
-    data: pandas.core.frame.DataFrame,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def obv(data: pd.DataFrame, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L248)
 
-.. raw:: html
+Description: Plot OBV technical indicator
 
-    <p>
-    Plot OBV technical indicator
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of ohlc prices | None | False |
+| symbol | str | Ticker | None | False |
+| export | str | Format to export data as | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    symbol : str
-        Ticker
-    export: str
-        Format to export data as
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

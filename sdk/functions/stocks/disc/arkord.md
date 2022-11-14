@@ -1,41 +1,32 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: arkord
+description: OpenBB SDK Function
+---
+# arkord
 
-|
+## stocks_disc_ark_model.get_ark_orders
 
-.. raw:: html
+```python
+def arkord(buys_only: bool, sells_only: bool, fund: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L22)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Returns ARK orders in a Dataframe
 
-{{< highlight python >}}
-stocks.disc.arkord(
-    buys_only: bool = False,
-    sells_only: bool = False,
-    fund: str = '',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| buys_only | bool | Flag to filter on buys only | None | False |
+| sells_only | bool | Flag to sort on sells only | None | False |
+| fund | str | Optional filter by fund | None | False |
 
-    <p>
-    Returns ARK orders in a Dataframe
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| DataFrame | ARK orders data frame with the following columns:
+ticker, date, shares, weight, fund, direction |
 
-    buys_only: bool
-        Flag to filter on buys only
-    sells_only: bool
-        Flag to sort on sells only
-    fund: str
-        Optional filter by fund
+## Examples
 
-* **Returns**
-
-    DataFrame
-        ARK orders data frame with the following columns:
-        ticker, date, shares, weight, fund, direction

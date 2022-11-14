@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: option_expirations
+description: OpenBB SDK Function
+---
+# option_expirations
 
-|
+## stocks_options_yfinance_model.option_expirations
 
-.. raw:: html
+```python
+def option_expirations(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L136)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get available expiration dates for given ticker
 
-{{< highlight python >}}
-stocks.options.option_expirations(
-    symbol: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get expirations for | None | False |
 
-    <p>
-    Get available expiration dates for given ticker
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| List[str] | List of of available expirations |
 
-    symbol: str
-        Ticker symbol to get expirations for
+## Examples
 
-* **Returns**
-
-    dates: List[str]
-        List of of available expirations

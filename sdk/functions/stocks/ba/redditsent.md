@@ -1,114 +1,75 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: redditsent
+description: OpenBB SDK Function
+---
+# redditsent
 
-|
+## stocks_ba_reddit_model.get_posts_about
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def redditsen) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L868)
 
-.. raw:: html
+Description: Finds posts related to a specific search term in Reddit
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ba.redditsent(
-    symbol: str,
-    limit: int = 100,
-    sortby: str = 'relevance',
-    time_frame: str = 'week',
-    full_search: bool = True,
-    subreddits: str = 'all',
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, list, float]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to search for | None | False |
+| limit | int | Number of posts to get per subreddit | None | False |
+| sortby | str | Search type
+Possibilities: "relevance", "hot", "top", "new", or "comments" | None | False |
+| time_frame | str | Relative time of post
+Possibilities: "hour", "day", "week", "month", "year", "all" | None | False |
+| full_search | bool | Enable comprehensive search for ticker | None | False |
+| subreddits | str | Comma-separated list of subreddits | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Finds posts related to a specific search term in Reddit
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | Dataframe of submissions related to the search term,
+List of polarity scores,
+Average polarity score |
 
-* **Parameters**
-
-    symbol: str
-        Ticker symbol to search for
-    limit: int
-        Number of posts to get per subreddit
-    sortby: str
-        Search type
-        Possibilities: "relevance", "hot", "top", "new", or "comments"
-    time_frame: str
-        Relative time of post
-        Possibilities: "hour", "day", "week", "month", "year", "all"
-    full_search: bool
-        Enable comprehensive search for ticker
-    subreddits: str
-        Comma-separated list of subreddits
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    tuple[pd.DataFrame, list, float]:
-        Dataframe of submissions related to the search term,
-        List of polarity scores,
-        Average polarity score
 
-|
+# VIEW
 
-.. raw:: html
+# redditsent
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_ba_reddit_view.display_redditsent
 
-{{< highlight python >}}
-stocks.ba.redditsent(
-    symbol: str,
-    sortby: str = 'relevance',
-    limit: int = 100,
-    graphic: bool = False,
-    time_frame: str = 'week',
-    full_search: bool = True,
-    subreddits: str = 'all',
-    display: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def redditsen) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L387)
 
-.. raw:: html
+Description: Determine Reddit sentiment about a search term
 
-    <p>
-    Determine Reddit sentiment about a search term
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | The ticker symbol being search for in Reddit | None | False |
+| sortby | str | Type of search | None | False |
+| limit | str | Number of posts to get at most | None | False |
+| graphic | bool | Displays box and whisker plot | None | False |
+| time_frame | str | Time frame for search | None | False |
+| full_search | bool | Enable comprehensive search for ticker | None | False |
+| subreddits | str | Comma-separated list of subreddits | None | False |
+| display | bool | Enable printing of raw sentiment values for each post | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | If supplied, expect 1 external axis | None | False |
 
-    symbol: str
-        The ticker symbol being search for in Reddit
-    sortby: str
-        Type of search
-    limit: str
-        Number of posts to get at most
-    graphic: bool
-        Displays box and whisker plot
-    time_frame: str
-        Time frame for search
-    full_search: bool
-        Enable comprehensive search for ticker
-    subreddits: str
-        Comma-separated list of subreddits
-    display: bool
-        Enable printing of raw sentiment values for each post
-    export: str
-        Format to export data
-    external_axes: Optional[List[plt.Axes]]
-        If supplied, expect 1 external axis
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

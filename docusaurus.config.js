@@ -80,7 +80,7 @@ const config = {
         gtag: {
           trackingID: "G-YN9SL785J6",
           anonymizeIP: true,
-        }
+        },
       }),
     ],
   ],
@@ -91,6 +91,11 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
     }),
 };

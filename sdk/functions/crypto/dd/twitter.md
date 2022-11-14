@@ -1,91 +1,68 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: twitter
+description: OpenBB SDK Function
+---
+# twitter
 
-|
+## crypto_dd_coinpaprika_model.get_coin_twitter_timeline
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def twitter(symbol: str, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L41)
 
-.. raw:: html
+Description: Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.twitter(
-    symbol: str = 'eth-ethereum',
-    sortby: str = 'date',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | id of coin from coinpaprika e.g. Ethereum - > 'eth-ethereum' | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid
+(see for possible values:
+https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get). | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Twitter timeline for given coin.
+Columns: date, user_name, status, retweet_count, like_count |
 
-* **Parameters**
-
-    symbol: str
-        id of coin from coinpaprika e.g. Ethereum - > 'eth-ethereum'
-    sortby: str
-        Key by which to sort data. Every column name is valid
-        (see for possible values:
-        https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get).
-    ascend: bool
-        Flag to sort data descending
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pandas.DataFrame
-        Twitter timeline for given coin.
-        Columns: date, user_name, status, retweet_count, like_count
 
-|
+# VIEW
 
-.. raw:: html
+# twitter
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_coinpaprika_view.display_twitter
 
-{{< highlight python >}}
-crypto.dd.twitter(
-    symbol: str = 'BTC',
-    limit: int = 10,
-    sortby: str = 'date',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def twitter(symbol: str, limit: int, sortby: str, ascend: bool, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L86)
 
-.. raw:: html
+Description: Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
 
-    <p>
-    Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Cryptocurrency symbol (e.g. BTC) | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid
+(see for possible values:
+https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get). | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    symbol: str
-        Cryptocurrency symbol (e.g. BTC)
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data. Every column name is valid
-        (see for possible values:
-        https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get).
-    ascend: bool
-        Flag to sort data ascending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

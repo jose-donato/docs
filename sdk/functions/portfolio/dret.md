@@ -1,85 +1,63 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: dret
+description: OpenBB SDK Function
+---
+# dret
 
-|
+## portfolio_model.get_daily_returns
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def dret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1994)
 
-.. raw:: html
+Description: Get daily returns
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-portfolio.dret(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    window: str = 'all',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| window | str | interval to compare cumulative returns and benchmark | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get daily returns
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | None |
 
-* **Parameters**
-
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    window : str
-        interval to compare cumulative returns and benchmark
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
 
-|
+# VIEW
 
-.. raw:: html
+# dret
 
-    <h3>
-    > Getting charts
-    </h3>
+## portfolio_view.display_daily_returns
 
-{{< highlight python >}}
-portfolio.dret(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    window: str = 'all',
-    raw: bool = False,
-    limit: int = 10,
-    export: str = '',
-    external_axes: Optional[matplotlib.axes._axes.Axes] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def dret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L470)
 
-.. raw:: html
+Description: Display daily returns
 
-    <p>
-    Display daily returns
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| window | str | interval to compare cumulative returns and benchmark | None | False |
+| raw | False | Display raw data from cumulative return | None | False |
+| limit | int | Last daily returns to display | None | False |
+| export | str | Export certain type of data | None | False |
+| external_axes | plt.Axes | Optional axes to display plot on | None | False |
 
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    window : str
-        interval to compare cumulative returns and benchmark
-    raw : False
-        Display raw data from cumulative return
-    limit : int
-        Last daily returns to display
-    export : str
-        Export certain type of data
-    external_axes: plt.Axes
-        Optional axes to display plot on
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

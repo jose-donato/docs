@@ -1,66 +1,55 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: closed
+description: OpenBB SDK Function
+---
+# closed
 
-|
+## stocks_th_bursa_model.get_closed
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def close) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L75)
 
-.. raw:: html
+Description: Get closed exchanges.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.th.closed() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get closed exchanges.
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Currently closed exchanges |
 
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Currently closed exchanges
 
-|
+# VIEW
 
-.. raw:: html
+# closed
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_th_bursa_view.display_closed
 
-{{< highlight python >}}
-stocks.th.closed()
-{{< /highlight >}}
+```python
+def close) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L63)
 
-.. raw:: html
+Description: Display closed exchanges.
 
-    <p>
-    Display closed exchanges.
+## Parameters
 
-    Parameters
-    ----------
-    </p>
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-* **Parameters**
+## Returns
 
-    
-    chart: bool
-       Flag to display chart
+None
+
+## Examples
 

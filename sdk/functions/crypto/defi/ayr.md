@@ -1,62 +1,55 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ayr
+description: OpenBB SDK Function
+---
+# ayr
 
-|
+## crypto_defi_terraengineer_model.get_anchor_yield_reserve
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def ay) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L61)
 
-.. raw:: html
+Description: Displays the 30-day history of the Anchor Yield Reserve.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.ayr() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Displays the 30-day history of the Anchor Yield Reserve.
-    [Source: https://terra.engineer/]
-    </p>
+None
 
-* **Returns**
+## Examples
 
-    pd.DataFrame
-        Dataframe containing historical data
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-crypto.defi.ayr(
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+# ayr
 
-.. raw:: html
+## crypto_defi_terraengineer_view.display_anchor_yield_reserve
 
-    <p>
-    Displays the 30-day history of the Anchor Yield Reserve.
-    [Source: https://terra.engineer/]
-    </p>
+```python
+def ayr(export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L84)
 
-* **Parameters**
+Description: Displays the 30-day history of the Anchor Yield Reserve.
 
-    export : str
-        Export dataframe data to csv,json,xlsx file, by default False
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| export | str | Export dataframe data to csv,json,xlsx file, by default False | False | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

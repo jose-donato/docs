@@ -1,35 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: process_candle
+description: OpenBB SDK Function
+---
+# process_candle
 
-|
+## stocks_helper.process_candle
 
-.. raw:: html
+```python
+def process_candle(data: pd.DataFrame) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L800)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Process DataFrame into candle style plot.
 
-{{< highlight python >}}
-stocks.process_candle(
-    data: pandas.core.frame.DataFrame,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | DataFrame | Stock dataframe. | None | False |
 
-    <p>
-    Process DataFrame into candle style plot.
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| DataFrame | A Panda's data frame with columns Open, High, Low, Close, Adj Close, Volume,
+date_id, OC-High, OC-Low. |
 
-    data : DataFrame
-        Stock dataframe.
+## Examples
 
-* **Returns**
-
-    DataFrame
-        A Panda's data frame with columns Open, High, Low, Close, Adj Close, Volume,
-        date_id, OC-High, OC-Low.

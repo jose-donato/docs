@@ -1,62 +1,57 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: newsletters
+description: OpenBB SDK Function
+---
+# newsletters
 
-|
+## crypto_defi_substack_model.get_newsletters
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def newsletter) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L51)
 
-.. raw:: html
+Description: Scrape all substack newsletters from url list.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.newsletters() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Scrape all substack newsletters from url list.
-    [Source: substack.com]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame with recent news from most popular DeFi related newsletters. |
 
-* **Returns**
+## Examples
 
-    pd.DataFrame
-        DataFrame with recent news from most popular DeFi related newsletters.
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-crypto.defi.newsletters(
-    limit: int = 10,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+# newsletters
 
-.. raw:: html
+## crypto_defi_substack_view.display_newsletters
 
-    <p>
-    Display DeFi related substack newsletters.
-    [Source: substack.com]
-    </p>
+```python
+def newsletters(limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_view.py#L15)
 
-* **Parameters**
+Description: Display DeFi related substack newsletters.
 
-    limit: int
-        Number of records to display
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
+
+None
+
+## Examples
 

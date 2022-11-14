@@ -1,86 +1,63 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: prices
+description: OpenBB SDK Function
+---
+# prices
 
-|
+## crypto_onchain_ethplorer_model.get_token_historical_price
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def prices(address: Any, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L537)
 
-.. raw:: html
+Description: Get token historical prices with volume and market cap, and average price. [Source: Ethplorer]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.prices(
-    address, sortby: str = 'date',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| address | str | Token e.g. 0xf3db5fa2c66b7af3eb0c0b782510816cbe4813b8 | None | False |
+| sortby | str | Key to sort by. | None | False |
+| ascend | str | Sort in descending order. | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get token historical prices with volume and market cap, and average price. [Source: Ethplorer]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | DataFrame with token historical prices. |
 
-* **Parameters**
-
-    address: str
-        Token e.g. 0xf3db5fa2c66b7af3eb0c0b782510816cbe4813b8
-    sortby: str
-        Key to sort by.
-    ascend: str
-        Sort in descending order.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame:
-        DataFrame with token historical prices.
 
-|
+# VIEW
 
-.. raw:: html
+# prices
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_onchain_ethplorer_view.display_token_historical_prices
 
-{{< highlight python >}}
-crypto.onchain.prices(
-    address: str,
-    limit: int = 30,
-    sortby: str = 'date',
-    ascend: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def price) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L333)
 
-.. raw:: html
+Description: Display token historical prices with volume and market cap, and average price.
 
-    <p>
-    Display token historical prices with volume and market cap, and average price.
-    [Source: Ethplorer]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
+| limit | int | Limit of transactions. Maximum 100 | None | False |
+| sortby | str | Key to sort by. | None | False |
+| ascend | str | Sort in descending order. | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    address: str
-        Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984
-    limit: int
-        Limit of transactions. Maximum 100
-    sortby: str
-        Key to sort by.
-    ascend: str
-        Sort in descending order.
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

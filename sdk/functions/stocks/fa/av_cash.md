@@ -1,95 +1,66 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: av_cash
+description: OpenBB SDK Function
+---
+# av_cash
 
-|
+## stocks_fa_av_model.get_cash_flow
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def av_cash(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L339)
 
-.. raw:: html
+Description: Get cash flows for company
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.fa.av_cash(
-    symbol: str,
-    limit: int = 5,
-    quarterly: bool = False,
-    ratios: bool = False,
-    plot: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number of past to get | None | False |
+| quarterly | bool | Flag to get quarterly instead of annual, by default False | False | True |
+| ratios | bool | Shows percentage change, by default False | False | False |
+| plot | bool | If the data shall be formatted ready to plot | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get cash flows for company
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of cash flow statements |
 
-* **Parameters**
-
-    symbol : str
-        Stock ticker symbol
-    limit : int
-        Number of past to get
-    quarterly : bool, optional
-        Flag to get quarterly instead of annual, by default False
-    ratios: bool
-        Shows percentage change, by default False
-    plot: bool
-        If the data shall be formatted ready to plot
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe of cash flow statements
 
-|
+# VIEW
 
-.. raw:: html
+# av_cash
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_fa_av_view.display_cash_flow
 
-{{< highlight python >}}
-stocks.fa.av_cash(
-    symbol: str,
-    limit: int = 5,
-    quarterly: bool = False,
-    ratios: bool = False,
-    plot: list = None,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def av_cas) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L244)
 
-.. raw:: html
+Description: Alpha Vantage income statement
 
-    <p>
-    Alpha Vantage income statement
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Fundamental analysis ticker symbol | None | False |
+| limit | int | Number of past statements, by default 5 | 5 | False |
+| quarterly | bool | Flag to get quarterly instead of annual, by default False | False | False |
+| ratios | bool | Shows percentage change, by default False | False | False |
+| plot | list | List of row labels to plot | None | False |
+| export | str | Format to export data | None | False |
 
-    symbol : str
-        Fundamental analysis ticker symbol
-    limit: int
-        Number of past statements, by default 5
-    quarterly: bool
-        Flag to get quarterly instead of annual, by default False
-    ratios: bool
-        Shows percentage change, by default False
-    plot: list
-        List of row labels to plot
-    export: str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

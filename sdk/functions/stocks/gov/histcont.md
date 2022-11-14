@@ -1,77 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: histcont
+description: OpenBB SDK Function
+---
+# histcont
 
-|
+## stocks_gov_quiverquant_model.get_hist_contracts
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def histcont(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L138)
 
-.. raw:: html
+Description: Get historical quarterly government contracts [Source: quiverquant.com]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.gov.histcont(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get congress trading data from | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get historical quarterly government contracts [Source: quiverquant.com]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Historical quarterly government contracts |
 
-* **Parameters**
-
-    symbol: str
-        Ticker symbol to get congress trading data from
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Historical quarterly government contracts
 
-|
+# VIEW
 
-.. raw:: html
+# histcont
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_gov_quiverquant_view.display_hist_contracts
 
-{{< highlight python >}}
-stocks.gov.histcont(
-    symbol: str,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def histcont(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L546)
 
-.. raw:: html
+Description: Show historical quarterly government contracts [Source: quiverquant.com]
 
-    <p>
-    Show historical quarterly government contracts [Source: quiverquant.com]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get congress trading data from | None | False |
+| raw | bool | Flag to display raw data | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbol: str
-        Ticker symbol to get congress trading data from
-    raw: bool
-        Flag to display raw data
-    export: str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

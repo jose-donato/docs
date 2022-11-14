@@ -1,27 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: erc20_tokens
+description: OpenBB SDK Function
+---
+# erc20_tokens
 
-|
+## crypto_onchain_bitquery_model.get_erc20_tokens
 
-.. raw:: html
+```python
+def erc20_token) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L209)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Helper method that loads ~1500 most traded erc20 token.
 
-{{< highlight python >}}
-crypto.onchain.erc20_tokens() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Helper method that loads ~1500 most traded erc20 token.
-    [Source: json file]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | ERC20 tokens with address, symbol and name |
 
-    pd.DataFrame
-        ERC20 tokens with address, symbol and name
+## Examples
+

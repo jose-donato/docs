@@ -1,40 +1,31 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: lasttrades
+description: OpenBB SDK Function
+---
+# lasttrades
 
-|
+## stocks_gov_quiverquant_model.get_last_government
 
-.. raw:: html
+```python
+def lasttrades(gov_type: str, limit: int, representative: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L163)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get last government trading [Source: quiverquant.com]
 
-{{< highlight python >}}
-stocks.gov.lasttrades(
-    gov_type: str = 'congress',
-    limit: int = -1,
-    representative: str = '',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| gov_type | str | Type of government data between: congress, senate and house | None | False |
+| limit | int | Number of days to look back | None | False |
+| representative | str | Specific representative to look at | None | False |
 
-    <p>
-    Get last government trading [Source: quiverquant.com]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Last government trading |
 
-    gov_type: str
-        Type of government data between: congress, senate and house
-    limit: int
-        Number of days to look back
-    representative: str
-        Specific representative to look at
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Last government trading

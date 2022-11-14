@@ -1,36 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: perf
+description: OpenBB SDK Function
+---
+# perf
 
-|
+## portfolio_model.get_performance_vs_benchmark
 
-.. raw:: html
+```python
+def perf(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, show_all_trades: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1580)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get portfolio performance vs the benchmark
 
-{{< highlight python >}}
-portfolio.perf(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    show_all_trades: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| show_all_trades | bool | Whether to also show all trades made and their performance (default is False) | None | False |
 
-    <p>
-    Get portfolio performance vs the benchmark
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | None |
 
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    show_all_trades: bool
-        Whether to also show all trades made and their performance (default is False)
+## Examples
 
-* **Returns**
-
-    pd.DataFrame

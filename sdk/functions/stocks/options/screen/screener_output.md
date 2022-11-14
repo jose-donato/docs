@@ -1,81 +1,61 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: screener_output
+description: OpenBB SDK Function
+---
+# screener_output
 
-|
+## stocks_options_screen_syncretism_model.get_screener_output
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def screener_output(preset: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L158)
 
-.. raw:: html
+Description: Screen options based on preset filters
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.screen.screener_output(
-    preset: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, str]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| preset | str | Chosen preset | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Screen options based on preset filters
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | DataFrame with screener data, or empty if errors |
 
-* **Parameters**
-
-    preset: str
-        Chosen preset
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
-
-    pd.DataFrame:
-        DataFrame with screener data, or empty if errors
-    str:
-        String containing error message if supplied
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.options.screen.screener_output(
-    preset: str,
-    limit: int = 20,
-    export: str = '',
-    chart: bool = False,
-) -> List
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Print the output of screener
-    </p>
-
-* **Parameters**
-
-    preset: str
-        Chosen preset
-    limit: int
-        Number of randomly sorted rows to display
-    export: str
-        Format for export file
-    chart: bool
-       Flag to display chart
 
 
-* **Returns**
+# VIEW
 
-    List
-        List of tickers screened
+# screener_output
+
+## stocks_options_screen_syncretism_view.view_screener_output
+
+```python
+def screener_output(preset: str, limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L58)
+
+Description: Print the output of screener
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| preset | str | Chosen preset | None | False |
+| limit | int | Number of randomly sorted rows to display | None | False |
+| export | str | Format for export file | None | False |
+
+## Returns
+
+| Type | Description |
+| ---- | ----------- |
+| List | List of tickers screened |
+
+## Examples
+

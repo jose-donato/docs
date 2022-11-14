@@ -1,27 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: list_of_coins
+description: OpenBB SDK Function
+---
+# list_of_coins
 
-|
+## crypto_ov_coinpaprika_model.get_list_of_coins
 
-.. raw:: html
+```python
+def list_of_coin) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L107)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get list of all available coins on CoinPaprika  [Source: CoinPaprika]
 
-{{< highlight python >}}
-crypto.ov.list_of_coins() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get list of all available coins on CoinPaprika  [Source: CoinPaprika]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Available coins on CoinPaprika
+rank, id, name, symbol, type |
 
-    pandas.DataFrame
-        Available coins on CoinPaprika
-        rank, id, name, symbol, type
+## Examples
+

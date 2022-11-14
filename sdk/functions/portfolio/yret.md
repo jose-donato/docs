@@ -1,78 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: yret
+description: OpenBB SDK Function
+---
+# yret
 
-|
+## portfolio_model.get_yearly_returns
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def yret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1850)
 
-.. raw:: html
+Description: Get yearly returns
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-portfolio.yret(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    window: str = 'all',
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| window | str | interval to compare cumulative returns and benchmark | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get yearly returns
-    </p>
+None
 
-* **Parameters**
-
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    window : str
-        interval to compare cumulative returns and benchmark
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-portfolio.yret(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    window: str = 'all',
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[matplotlib.axes._axes.Axes] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+# yret
 
-.. raw:: html
+## portfolio_view.display_yearly_returns
 
-    <p>
-    Display yearly returns
-    </p>
+```python
+def yret(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L288)
 
-* **Parameters**
+Description: Display yearly returns
 
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    window : str
-        interval to compare cumulative returns and benchmark
-    raw : False
-        Display raw data from cumulative return
-    export : str
-        Export certain type of data
-    external_axes: plt.Axes
-        Optional axes to display plot on
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| window | str | interval to compare cumulative returns and benchmark | None | False |
+| raw | False | Display raw data from cumulative return | None | False |
+| export | str | Export certain type of data | None | False |
+| external_axes | plt.Axes | Optional axes to display plot on | None | False |
+
+## Returns
+
+None
+
+## Examples
 

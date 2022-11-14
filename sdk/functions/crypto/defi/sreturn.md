@@ -1,74 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: sreturn
+description: OpenBB SDK Function
+---
+# sreturn
 
-|
+## crypto_defi_terramoney_fcd_model.get_staking_returns_history
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def sreturn(limit: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L309)
 
-.. raw:: html
+Description: Get terra blockchain staking returns history [Source: https://fcd.terra.dev/v1]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.sreturn(
-    limit: int = 200,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | The number of returns to show | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get terra blockchain staking returns history [Source: https://fcd.terra.dev/v1]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | historical staking returns |
 
-* **Parameters**
-
-    limit: int
-        The number of returns to show
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        historical staking returns
 
-|
+# VIEW
 
-.. raw:: html
+# sreturn
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_defi_terramoney_fcd_view.display_staking_returns_history
 
-{{< highlight python >}}
-crypto.defi.sreturn(
-    limit: int = 90,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def sreturn(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L253)
 
-.. raw:: html
+Description: Display terra blockchain staking returns history [Source: https://fcd.terra.dev/swagger]
 
-    <p>
-    Display terra blockchain staking returns history [Source: https://fcd.terra.dev/swagger]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    limit: int
-        Number of records to display
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

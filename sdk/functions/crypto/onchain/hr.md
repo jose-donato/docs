@@ -1,94 +1,65 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: hr
+description: OpenBB SDK Function
+---
+# hr
 
-|
+## crypto_dd_glassnode_model.get_hashrate
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def h) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L364)
 
-.. raw:: html
+Description: Returns dataframe with mean hashrate of btc or eth blockchain and symbol price
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.hr(
-    symbol: str,
-    interval: str = '24h',
-    start_date: int = 1289661490,
-    end_date: int = 1668093490,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Blockchain to check hashrate (BTC or ETH) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| interval | str | Interval frequency (e.g., 24h) | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns dataframe with mean hashrate of btc or eth blockchain and symbol price
-    [Source: https://glassnode.com]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | mean hashrate and symbol price over time |
 
-* **Parameters**
-
-    symbol : str
-        Blockchain to check hashrate (BTC or ETH)
-    start_date : int
-        Initial date timestamp (e.g., 1_614_556_800)
-    end_date : int
-        End date timestamp (e.g., 1_614_556_800)
-    interval : str
-        Interval frequency (e.g., 24h)
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        mean hashrate and symbol price over time
 
-|
+# VIEW
 
-.. raw:: html
+# hr
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_glassnode_view.display_hashrate
 
-{{< highlight python >}}
-crypto.onchain.hr(
-    symbol: str,
-    start_date: int = 1636557490,
-    end_date: int = 1668093490,
-    interval: str = '24h',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def h) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L305)
 
-.. raw:: html
+Description: Display dataframe with mean hashrate of btc or eth blockchain and symbol price.
 
-    <p>
-    Display dataframe with mean hashrate of btc or eth blockchain and symbol price.
-    [Source: https://glassnode.org]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Blockchain to check mean hashrate (BTC or ETH) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| interval | str | Interval frequency (possible values are: 24, 1w, 1month) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
-    symbol : str
-        Blockchain to check mean hashrate (BTC or ETH)
-    start_date : int
-        Initial date timestamp (e.g., 1_614_556_800)
-    end_date : int
-        End date timestamp (e.g., 1_614_556_800)
-    interval : str
-        Interval frequency (possible values are: 24, 1w, 1month)
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

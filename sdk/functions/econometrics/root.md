@@ -1,89 +1,64 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: root
+description: OpenBB SDK Function
+---
+# root
 
-|
+## econometrics_model.get_root
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def root(data: pd.Series, fuller_reg: str, kpss_reg: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L165)
 
-.. raw:: html
+Description: Calculate test statistics for unit roots
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-econometrics.root(
-    data: pandas.core.series.Series,
-    fuller_reg: str = 'c',
-    kpss_reg: str = 'c',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Series or column of DataFrame of target variable | None | False |
+| fuller_reg | str | Type of regression of ADF test | None | False |
+| kpss_reg | str | Type of regression for KPSS test | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate test statistics for unit roots
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe with results of ADF test and KPSS test |
 
-* **Parameters**
-
-    data : pd.Series
-        Series or column of DataFrame of target variable
-    fuller_reg : str
-        Type of regression of ADF test
-    kpss_reg : str
-        Type of regression for KPSS test
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe with results of ADF test and KPSS test
 
-|
+# VIEW
 
-.. raw:: html
+# root
 
-    <h3>
-    > Getting charts
-    </h3>
+## econometrics_view.display_root
 
-{{< highlight python >}}
-econometrics.root(
-    data: pandas.core.series.Series,
-    dataset: str = '',
-    column: str = '',
-    fuller_reg: str = 'c',
-    kpss_reg: str = 'c',
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def root(data: pd.Series, dataset: str, column: str, fuller_reg: str, kpss_reg: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L203)
 
-.. raw:: html
+Description: Determine the normality of a timeseries.
 
-    <p>
-    Determine the normality of a timeseries.
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Series of target variable | None | False |
+| dataset | str | Name of the dataset | None | False |
+| column | str | Name of the column | None | False |
+| fuller_reg | str | Type of regression of ADF test. Choose c, ct, ctt, or nc | None | False |
+| kpss_reg | str | Type of regression for KPSS test. Choose c or ct | None | False |
+| export | str | Format to export data. | None | False |
 
-    data : pd.Series
-        Series of target variable
-    dataset: str
-        Name of the dataset
-    column: str
-        Name of the column
-    fuller_reg : str
-        Type of regression of ADF test. Choose c, ct, ctt, or nc
-    kpss_reg : str
-        Type of regression for KPSS test. Choose c or ct
-    export: str
-        Format to export data.
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

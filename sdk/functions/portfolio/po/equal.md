@@ -1,70 +1,46 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: equal
+description: OpenBB SDK Function
+---
+# equal
 
-|
+## portfolio_optimization_optimizer_model.get_equal_weights
 
-.. raw:: html
+```python
+def equal(symbols: List[str], interval: str, start_date: str, end_date: str, log_returns: bool, freq: str, maxnan: float, threshold: float, method: str, value: float) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L163)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Equally weighted portfolio, where weight = 1/# of symbols
 
-{{< highlight python >}}
-portfolio.po.equal(
-    symbols: List[str],
-    interval: str = '3y',
-    start_date: str = '',
-    end_date: str = '',
-    log_returns: bool = False,
-    freq: str = 'D',
-    maxnan: float = 0.05,
-    threshold: float = 0,
-    method: str = 'time',
-    value: float = 1.0,
-    chart: bool = False,
-) -> Tuple
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbols | List[str] | List of portfolio stocks | None | False |
+| interval | str | interval to get stock data, by default "3mo" | None | True |
+| start_date | str | If not using interval, start date string (YYYY-MM-DD) | None | True |
+| end_date | str | If not using interval, end date string (YYYY-MM-DD). If empty use last
+weekday. | None | True |
+| log_returns | bool | If True calculate log returns, else arithmetic returns. Default value
+is False | value | True |
+| freq | str | The frequency used to calculate returns. Default value is 'D'. Possible
+values are:
 
-    <p>
-    Equally weighted portfolio, where weight = 1/# of symbols
-    </p>
+- 'D' for daily returns.
+- 'W' for weekly returns.
+- 'M' for m' for monthly returns. | value | True |
+| maxnan | float | Max percentage of nan values accepted per asset to be included in
+returns. | None | False |
+| threshold | float | Value used to replace outliers that are higher to threshold. | None | False |
+| method | str | Method used to fill nan values. Default value is 'time'. For more information see `interpolate <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.interpolate.html>`__. | value | False |
+| value | float | Amount to allocate.  Returns percentages if set to 1. | None | True |
 
-* **Parameters**
+## Returns
 
-    symbols : List[str]
-        List of portfolio stocks
-    interval : str, optional
-        interval to get stock data, by default "3mo"
-    start_date: str, optional
-        If not using interval, start date string (YYYY-MM-DD)
-    end_date: str, optional
-        If not using interval, end date string (YYYY-MM-DD). If empty use last
-        weekday.
-    log_returns: bool, optional
-        If True calculate log returns, else arithmetic returns. Default value
-        is False
-    freq: str, optional
-        The frequency used to calculate returns. Default value is 'D'. Possible
-        values are:
+| Type | Description |
+| ---- | ----------- |
+| dict | Dictionary of weights where keys are the tickers |
 
-        - 'D' for daily returns.
-        - 'W' for weekly returns.
-        - 'M' for m' for monthly returns.
+## Examples
 
-    maxnan: float
-        Max percentage of nan values accepted per asset to be included in
-        returns.
-    threshold: float
-        Value used to replace outliers that are higher to threshold.
-    method: str
-        Method used to fill nan values. Default value is 'time'. For more information see `interpolate <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.interpolate.html>`__.
-    value : float, optional
-        Amount to allocate.  Returns percentages if set to 1.
-
-* **Returns**
-
-    dict
-        Dictionary of weights where keys are the tickers

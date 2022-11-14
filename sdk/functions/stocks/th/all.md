@@ -1,66 +1,55 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: all
+description: OpenBB SDK Function
+---
+# all
 
-|
+## stocks_th_bursa_model.get_all
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def al) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L97)
 
-.. raw:: html
+Description: Get all exchanges.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.th.all() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get all exchanges.
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | All available exchanges |
 
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        All available exchanges
 
-|
+# VIEW
 
-.. raw:: html
+# all
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_th_bursa_view.display_all
 
-{{< highlight python >}}
-stocks.th.all()
-{{< /highlight >}}
+```python
+def al) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L83)
 
-.. raw:: html
+Description: Display all exchanges.
 
-    <p>
-    Display all exchanges.
+## Parameters
 
-    Parameters
-    ----------
-    </p>
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-* **Parameters**
+## Returns
 
-    
-    chart: bool
-       Flag to display chart
+None
+
+## Examples
 

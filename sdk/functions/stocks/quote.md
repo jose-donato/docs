@@ -1,29 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: quote
+description: OpenBB SDK Function
+---
+# quote
 
-|
+## stocks_views.display_quote
 
-.. raw:: html
+```python
+def quote(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_views.py#L6)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Display quote from YahooFinance
 
-{{< highlight python >}}
-stocks.quote(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Ticker quote.  [Source: YahooFinance]
-    </p>
+## Returns
 
-* **Parameters**
+None
 
-    symbol : str
-        Ticker
+## Examples
+

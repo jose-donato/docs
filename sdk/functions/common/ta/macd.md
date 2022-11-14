@@ -1,95 +1,67 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: macd
+description: OpenBB SDK Function
+---
+# macd
 
-|
+## common_ta_momentum_model.macd
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def macd(data: pd.Series, n_fast: int, n_slow: int, n_signal: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L60)
 
-.. raw:: html
+Description: Moving average convergence divergence
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.macd(
-    data: pandas.core.series.Series,
-    n_fast: int = 12,
-    n_slow: int = 26,
-    n_signal: int = 9,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Values for calculation | None | False |
+| n_fast | int | Fast period | None | False |
+| n_slow | int | Slow period | None | False |
+| n_signal | int | Signal period | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Dataframe of technical indicator | None | None |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Moving average convergence divergence
-    </p>
+None
 
-* **Parameters**
-
-    data: pd.Series
-        Values for calculation
-    n_fast : int
-        Fast period
-    n_slow : int
-        Slow period
-    n_signal : int
-        Signal period
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe of technical indicator
 
-|
+# VIEW
 
-.. raw:: html
+# macd
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_ta_momentum_view.display_macd
 
-{{< highlight python >}}
-common.ta.macd(
-    data: pandas.core.series.Series,
-    n_fast: int = 12,
-    n_slow: int = 26,
-    n_signal: int = 9,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def macd(data: pd.Series, n_fast: int, n_slow: int, n_signal: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L125)
 
-.. raw:: html
+Description: Plot MACD signal
 
-    <p>
-    Plot MACD signal
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Values to input | None | False |
+| n_fast | int | Fast period | None | False |
+| n_slow | int | Slow period | None | False |
+| n_signal | int | Signal period | None | False |
+| symbol | str | Stock ticker | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
-    data : pd.Series
-        Values to input
-    n_fast : int
-        Fast period
-    n_slow : int
-        Slow period
-    n_signal : int
-        Signal period
-    symbol : str
-        Stock ticker
-    export : str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,92 +1,66 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: vwap
+description: OpenBB SDK Function
+---
+# vwap
 
-|
+## common_ta_overlap_model.vwap
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def vwap(data: pd.Series, offset: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L138)
 
-.. raw:: html
+Description: Gets volume weighted average price (VWAP)
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.vwap(
-    data: pandas.core.series.Series,
-    offset: int = 0,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of dates and prices | None | False |
+| offset | int | Length of offset | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| df_vwap | pd.DataFrame | Dataframe with VWAP data | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Gets volume weighted average price (VWAP)
-    </p>
+None
 
-* **Parameters**
-
-    data: pd.DataFrame
-        Dataframe of dates and prices
-    offset: int
-        Length of offset
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    df_vwap: pd.DataFrame
-        Dataframe with VWAP data
 
-|
+# VIEW
 
-.. raw:: html
+# vwap
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_ta_overlap_view.view_vwap
 
-{{< highlight python >}}
-common.ta.vwap(
-    data: pandas.core.frame.DataFrame,
-    symbol: str = '',
-    start_date: str = None,
-    end_date: str = None,
-    offset: int = 0,
-    interval: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def vwap(data: pd.DataFrame, symbol: str, start_date: str, end_date: str, offset: int, interval: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L120)
 
-.. raw:: html
+Description: Plots VWMA technical indicator
 
-    <p>
-    Plots VWMA technical indicator
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of OHLC prices | None | False |
+| symbol | str | Ticker | None | False |
+| offset | int | Offset variable | None | False |
+| start_date | datetime | Start date to get data from with | None | False |
+| end_date | datetime | End date to get data from with | None | False |
+| interval | str | Interval of data | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
-    data : pd.DataFrame
-        Dataframe of OHLC prices
-    symbol : str
-        Ticker
-    offset : int
-        Offset variable
-    start_date: datetime
-        Start date to get data from with
-    end_date: datetime
-        End date to get data from with
-    interval : str
-        Interval of data
-    export : str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (3 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

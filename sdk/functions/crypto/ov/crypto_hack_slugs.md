@@ -1,27 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: crypto_hack_slugs
+description: OpenBB SDK Function
+---
+# crypto_hack_slugs
 
-|
+## crypto_ov_rekt_model.get_crypto_hack_slugs
 
-.. raw:: html
+```python
+def crypto_hack_slug) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L180)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get all crypto hack slugs
 
-{{< highlight python >}}
-crypto.ov.crypto_hack_slugs() -> List[str]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get all crypto hack slugs
-    [Source: https://rekt.news]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+|  | List with slugs |
 
-    List[str]:
-        List with slugs
+## Examples
+

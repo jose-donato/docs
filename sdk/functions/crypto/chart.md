@@ -1,87 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: chart
+description: OpenBB SDK Function
+---
+# chart
 
-|
+## crypto_helpers.plot_chart
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def chart(prices_df: pd.DataFrame, to_symbol: str, from_symbol: str, source: str, exchange: str, interval: str, external_axes: list[plt.Axes] | None, yscale: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L1417)
 
-.. raw:: html
+Description: Load data for Technical Analysis
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.chart(
-    prices_df: 'pd.DataFrame',
-    to_symbol: 'str' = '',
-    from_symbol: 'str' = '',
-    source: 'str' = '',
-    exchange: 'str' = '',
-    interval: 'str' = '',
-    external_axes: 'list[plt.Axes] | None' = None, yscale: 'str' = 'linear',
-    chart: bool = False,
-) -> 'None'
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| prices_df | pd.DataFrame | Cryptocurrency | None | False |
+| to_symbol | str | Coin (only used for chart title), by default "" | None | False |
+| from_symbol | str | Currency (only used for chart title), by default "" | None | False |
+| yscale | str | Scale for y axis of plot Either linear or log | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Load data for Technical Analysis
-    </p>
+None
 
-* **Parameters**
-
-    prices_df: pd.DataFrame
-        Cryptocurrency
-    to_symbol: str
-        Coin (only used for chart title), by default ""
-    from_symbol: str
-        Currency (only used for chart title), by default ""
-    yscale: str
-        Scale for y axis of plot Either linear or log
-    chart: bool
-       Flag to display chart
-
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.chart(
-    prices_df: 'pd.DataFrame',
-    to_symbol: 'str' = '',
-    from_symbol: 'str' = '',
-    source: 'str' = '',
-    exchange: 'str' = '',
-    interval: 'str' = '',
-    external_axes: 'list[plt.Axes] | None' = None, yscale: 'str' = 'linear',
-    chart: bool = False,
-) -> 'None'
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Load data for Technical Analysis
-    </p>
-
-* **Parameters**
-
-    prices_df: pd.DataFrame
-        Cryptocurrency
-    to_symbol: str
-        Coin (only used for chart title), by default ""
-    from_symbol: str
-        Currency (only used for chart title), by default ""
-    yscale: str
-        Scale for y axis of plot Either linear or log
-    chart: bool
-       Flag to display chart
+## Examples
 

@@ -1,27 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ugs
+description: OpenBB SDK Function
+---
+# ugs
 
-|
+## stocks_disc_yahoofinance_model.get_ugs
 
-.. raw:: html
+```python
+def ug) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L53)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get stocks with earnings growth rates better than 25% and relatively low PE and PEG ratios.
 
-{{< highlight python >}}
-stocks.disc.ugs() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get stocks with earnings growth rates better than 25% and relatively low PE and PEG ratios.
-    [Source: Yahoo Finance]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Undervalued stocks |
 
-    pd.DataFrame
-        Undervalued stocks
+## Examples
+

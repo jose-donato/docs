@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: av_metrics
+description: OpenBB SDK Function
+---
+# av_metrics
 
-|
+## stocks_fa_av_model.get_key_metrics
 
-.. raw:: html
+```python
+def av_metrics(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L100)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get key metrics from overview
 
-{{< highlight python >}}
-stocks.fa.av_metrics(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Get key metrics from overview
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of key metrics |
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of key metrics

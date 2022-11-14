@@ -1,40 +1,33 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: events
+description: OpenBB SDK Function
+---
+# events
 
-|
+## economy_investingcom_model.get_economic_calendar
 
-.. raw:: html
+```python
+def events(country: str, importance: str, category: str, start_date: str, end_date: str, limit: Any) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L372)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get economic calendar [Source: Investing.com]
 
-{{< highlight python >}}
-economy.events(
-    countries: Union[List[str], str] = '',
-    start_date: str = '2022-11-10',
-    end_date: str = '2022-11-10',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country selected. List of available countries is accessible through get_events_countries(). | None | False |
+| importance | str | Importance selected from high, medium, low or all | None | False |
+| category | str | Event category. List of available categories is accessible through get_events_categories(). | None | False |
+| start_date | datetime.date | First date to get events. | None | False |
+| end_date | datetime.date | Last date to get events. | None | False |
 
-    <p>
-    Get economic calendar for countries between specified dates
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| Tuple[pd.DataFrame, str] | Economic calendar Dataframe and detail string about country/time zone. |
 
-    countries : [List[str],str]
-        List of countries to include in calendar.  Empty returns all
-    start_date : str
-        Start date for calendar
-    end_date : str
-        End date for calendar
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Economic calendar

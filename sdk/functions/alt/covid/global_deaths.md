@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: global_deaths
+description: OpenBB SDK Function
+---
+# global_deaths
 
-|
+## alt_covid_model.get_global_deaths
 
-.. raw:: html
+```python
+def global_deaths(country: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L69)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get historical deaths for given country
 
-{{< highlight python >}}
-alt.covid.global_deaths(
-    country: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country to search for | None | False |
 
-    <p>
-    Get historical deaths for given country
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of historical deaths |
 
-    country: str
-        Country to search for
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of historical deaths

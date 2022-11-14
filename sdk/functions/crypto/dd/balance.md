@@ -1,77 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: balance
+description: OpenBB SDK Function
+---
+# balance
 
-|
+## crypto_dd_binance_model.get_balance
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def balanc) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L174)
 
-.. raw:: html
+Description: Get account holdings for asset. [Source: Binance]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.balance(
-    from_symbol: str,
-    to_symbol: str = 'USDT',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| from_symbol | str | Cryptocurrency | None | False |
+| to_symbol | str | Cryptocurrency | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get account holdings for asset. [Source: Binance]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe with account holdings for an asset |
 
-* **Parameters**
-
-    from_symbol: str
-        Cryptocurrency
-    to_symbol: str
-        Cryptocurrency
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe with account holdings for an asset
 
-|
+# VIEW
 
-.. raw:: html
+# balance
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_binance_view.display_balance
 
-{{< highlight python >}}
-crypto.dd.balance(
-    from_symbol: str,
-    to_symbol: str = 'USDT',
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def balance(from_symbol: str, to_symbol: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_view.py#L63)
 
-.. raw:: html
+Description: Get account holdings for asset. [Source: Binance]
 
-    <p>
-    Get account holdings for asset. [Source: Binance]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| from_symbol | str | Cryptocurrency | None | False |
+| to_symbol | str | Cryptocurrency | None | False |
+| export | str | Export dataframe data to csv,json,xlsx | None | False |
 
-    from_symbol: str
-        Cryptocurrency
-    to_symbol: str
-        Cryptocurrency
-    export: str
-        Export dataframe data to csv,json,xlsx
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

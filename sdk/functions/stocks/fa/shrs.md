@@ -1,37 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: shrs
+description: OpenBB SDK Function
+---
+# shrs
 
-|
+## stocks_fa_yahoo_finance_model.get_shareholders
 
-.. raw:: html
+```python
+def shrs(symbol: str, holder: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L74)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get shareholders from yahoo
 
-{{< highlight python >}}
-stocks.fa.shrs(
-    symbol: str,
-    holder: str = 'institutional',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| holder | str | Which holder to get table for | None | False |
 
-    <p>
-    Get shareholders from yahoo
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Major holders |
 
-    symbol : str
-        Stock ticker symbol
-    holder : str
-        Which holder to get table for
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Major holders

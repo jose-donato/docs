@@ -1,96 +1,67 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: change
+description: OpenBB SDK Function
+---
+# change
 
-|
+## crypto_dd_glassnode_model.get_exchange_net_position_change
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def chang) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L521)
 
-.. raw:: html
+Description: Returns 30d change of the supply held in exchange wallets of a certain symbol.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.change(
-    symbol: str,
-    exchange: str = 'binance',
-    start_date: int = 1262322000,
-    end_date: int = 1668093490,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Asset symbol to search supply (e.g., BTC) | None | False |
+| exchange | str | Exchange to check net position change (e.g., binance) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns 30d change of the supply held in exchange wallets of a certain symbol.
-    [Source: https://glassnode.com]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | supply change in exchange wallets of a certain symbol over time |
 
-* **Parameters**
-
-    symbol : str
-        Asset symbol to search supply (e.g., BTC)
-    exchange : str
-        Exchange to check net position change (e.g., binance)
-    start_date : int
-        Initial date timestamp (e.g., 1_614_556_800)
-    end_date : int
-        End date timestamp (e.g., 1_614_556_800)
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        supply change in exchange wallets of a certain symbol over time
 
-|
+# VIEW
 
-.. raw:: html
+# change
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_glassnode_view.display_exchange_net_position_change
 
-{{< highlight python >}}
-crypto.dd.change(
-    symbol: str,
-    exchange: str = 'binance',
-    start_date: int = 1577836800,
-    end_date: int = 1609459200,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def chang) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L150)
 
-.. raw:: html
+Description: Display 30d change of the supply held in exchange wallets.
 
-    <p>
-    Display 30d change of the supply held in exchange wallets.
-    [Source: https://glassnode.org]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
+| exchange | str | Exchange to check net position change (possible values are: aggregated, binance,
+bittrex, coinex, gate.io, gemini, huobi, kucoin, poloniex, bibox, bigone, bitfinex,
+hitbtc, kraken, okex, bithumb, zb.com, cobinhood, bitmex, bitstamp, coinbase, coincheck, luno) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbol : str
-        Asset to search active addresses (e.g., BTC)
-    exchange : str
-        Exchange to check net position change (possible values are: aggregated, binance,
-        bittrex, coinex, gate.io, gemini, huobi, kucoin, poloniex, bibox, bigone, bitfinex,
-        hitbtc, kraken, okex, bithumb, zb.com, cobinhood, bitmex, bitstamp, coinbase, coincheck, luno)
-    start_date : int
-        Initial date timestamp (e.g., 1_614_556_800)
-    end_date : int
-        End date timestamp (e.g., 1_614_556_800)
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

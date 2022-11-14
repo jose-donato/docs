@@ -1,32 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: global_info
+description: OpenBB SDK Function
+---
+# global_info
 
-|
+## crypto_ov_pycoingecko_model.get_global_info
 
-.. raw:: html
+```python
+def global_inf) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L414)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get global statistics about crypto from CoinGecko API like:
 
-{{< highlight python >}}
-crypto.ov.global_info() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get global statistics about crypto from CoinGecko API like:
-        - market cap change
-        - number of markets
-        - icos
-        - number of active crypto
+## Returns
 
-    [Source: CoinGecko]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Metric, Value |
 
-* **Returns**
+## Examples
 
-    pandas.DataFrame
-        Metric, Value

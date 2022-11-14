@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: analyst
+description: OpenBB SDK Function
+---
+# analyst
 
-|
+## stocks_dd_finviz_model.get_analyst_data
 
-.. raw:: html
+```python
+def analyst(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finviz_model.py#L33)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get analyst data. [Source: Finviz]
 
-{{< highlight python >}}
-stocks.dd.analyst(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Get analyst data. [Source: Finviz]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| DataFrame | Analyst price targets |
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    df_fa: DataFrame
-        Analyst price targets

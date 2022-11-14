@@ -1,37 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: fraud
+description: OpenBB SDK Function
+---
+# fraud
 
-|
+## stocks_fa_av_model.get_fraud_ratios
 
-.. raw:: html
+```python
+def fraud(symbol: str, detail: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L593)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get fraud ratios based on fundamentals
 
-{{< highlight python >}}
-stocks.fa.fraud(
-    symbol: str,
-    detail: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| detail | bool | Whether to provide extra m-score details | None | False |
 
-    <p>
-    Get fraud ratios based on fundamentals
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | The fraud ratios |
 
-    symbol : str
-        Stock ticker symbol
-    detail : bool
-        Whether to provide extra m-score details
+## Examples
 
-* **Returns**
-
-    metrics : pd.DataFrame
-        The fraud ratios

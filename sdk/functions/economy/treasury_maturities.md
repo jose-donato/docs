@@ -1,26 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: treasury_maturities
+description: OpenBB SDK Function
+---
+# treasury_maturities
 
-|
+## economy_econdb_model.get_treasury_maturities
 
-.. raw:: html
+```python
+def treasury_maturitie) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L828)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get treasury maturity options [Source: EconDB]
 
-{{< highlight python >}}
-economy.treasury_maturities() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get treasury maturity options [Source: EconDB]
-    </p>
+## Returns
 
-* **Returns**
+None
 
-    df: pd.DataFrame
-        Contains the name of the instruments and a string containing all options.
+## Examples
+

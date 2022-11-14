@@ -1,68 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: summary
+description: OpenBB SDK Function
+---
+# summary
 
-|
+## stocks_ta_finbrain_model.get_technical_summary_report
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def summary(symbol: str) -> str:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finbrain_model.py#L14)
 
-.. raw:: html
+Description: Get technical summary report provided by FinBrain's API
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ta.summary(
-    symbol: str,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get the technical summary | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get technical summary report provided by FinBrain's API
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| str | technical summary report |
 
-* **Parameters**
-
-    symbol : str
-        Ticker symbol to get the technical summary
-    chart: bool
-       Flag to display chart
-
-
-* **Returns**
-
-    report:str
-        technical summary report
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-stocks.ta.summary(
-    symbol: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Print technical summary report provided by FinBrain's API
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Ticker symbol to get the technical summary
-    chart: bool
-       Flag to display chart
+## Examples
 

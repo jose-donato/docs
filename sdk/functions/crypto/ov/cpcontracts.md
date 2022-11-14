@@ -1,86 +1,63 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cpcontracts
+description: OpenBB SDK Function
+---
+# cpcontracts
 
-|
+## crypto_ov_coinpaprika_model.get_contract_platform
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cpcontracts(platform_id: str, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L418)
 
-.. raw:: html
+Description: Gets all contract addresses for given platform [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cpcontracts(
-    platform_id: str = 'eth-ethereum',
-    sortby: str = 'active',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| platform_id | str | Blockchain platform like eth-ethereum | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascend | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Gets all contract addresses for given platform [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | id, type, active |
 
-* **Parameters**
-
-    platform_id: str
-        Blockchain platform like eth-ethereum
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascend
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pandas.DataFrame
-         id, type, active
 
-|
+# VIEW
 
-.. raw:: html
+# cpcontracts
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_ov_coinpaprika_view.display_contracts
 
-{{< highlight python >}}
-crypto.ov.cpcontracts(
-    symbol: str,
-    sortby: str = 'active',
-    ascend: bool = True,
-    limit: int = 15,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def cpcontracts(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L348)
 
-.. raw:: html
+Description: Gets all contract addresses for given platform. [Source: CoinPaprika]
 
-    <p>
-    Gets all contract addresses for given platform. [Source: CoinPaprika]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| platform | str | Blockchain platform like eth-ethereum | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    platform: str
-        Blockchain platform like eth-ethereum
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

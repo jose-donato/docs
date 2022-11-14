@@ -1,98 +1,65 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ttcp
+description: OpenBB SDK Function
+---
+# ttcp
 
-|
+## crypto_onchain_bitquery_model.get_most_traded_pairs
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def ttcp(network: str, exchange: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L657)
 
-.. raw:: html
+Description: Get most traded crypto pairs on given decentralized exchange in chosen time period.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.ttcp(
-    network: str = 'ethereum',
-    exchange: str = 'Uniswap',
-    limit: int = 90,
-    sortby: str = 'tradeAmount',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| network | str | EVM network. One from list: bsc (binance smart chain), ethereum or matic | None | False |
+| exchange |  | Decentralized exchange name | None | False |
+| limit |  | Number of days taken into calculation account. | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get most traded crypto pairs on given decentralized exchange in chosen time period.
-    [Source: https://graphql.bitquery.io/]
-    </p>
+None
 
-* **Parameters**
-
-    network: str
-        EVM network. One from list: bsc (binance smart chain), ethereum or matic
-    exchange:
-        Decentralized exchange name
-    limit:
-        Number of days taken into calculation account.
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
-
-    
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.onchain.ttcp(
-    exchange='Uniswap', days: int = 10,
-    limit: int = 10,
-    sortby: str = 'tradeAmount',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display most traded crypto pairs on given decentralized exchange in chosen time period.
-     [Source: https://graphql.bitquery.io/]
-    </p>
-
-* **Parameters**
-
-    exchange:
-        Decentralized exchange name
-    days:
-        Number of days taken into calculation account.
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
 
 
-* **Returns**
+# VIEW
 
-    pd.DataFrame
-        Most traded crypto pairs on given decentralized exchange in chosen time period.
+# ttcp
+
+## crypto_onchain_bitquery_view.display_most_traded_pairs
+
+```python
+def ttc) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L283)
+
+Description: Display most traded crypto pairs on given decentralized exchange in chosen time period.
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| exchange |  | Decentralized exchange name | None | False |
+| days |  | Number of days taken into calculation account. | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
+
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Most traded crypto pairs on given decentralized exchange in chosen time period. |
+
+## Examples
+

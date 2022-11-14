@@ -1,83 +1,62 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: holdv
+description: OpenBB SDK Function
+---
+# holdv
 
-|
+## portfolio_model.get_holdings_value
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def holdv(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1339)
 
-.. raw:: html
+Description: Get holdings of assets (absolute value)
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-portfolio.holdv(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get holdings of assets (absolute value)
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame of holdings |
 
-* **Parameters**
-
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        DataFrame of holdings
 
-|
+# VIEW
 
-.. raw:: html
+# holdv
 
-    <h3>
-    > Getting charts
-    </h3>
+## portfolio_view.display_holdings_value
 
-{{< highlight python >}}
-portfolio.holdv(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    unstack: bool = False,
-    raw: bool = False,
-    limit: int = 10,
-    export: str = '',
-    external_axes: Optional[matplotlib.axes._axes.Axes] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def holdv(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, unstack: bool, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L625)
 
-.. raw:: html
+Description: Display holdings of assets (absolute value)
 
-    <p>
-    Display holdings of assets (absolute value)
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| unstack | bool | Individual assets over time | None | False |
+| raw | bool | To display raw data | None | False |
+| limit | int | Number of past market days to display holdings | None | False |
+| export | str | Format to export plot | None | False |
+| external_axes | plt.Axes | Optional axes to display plot on | None | False |
 
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    unstack: bool
-        Individual assets over time
-    raw : bool
-        To display raw data
-    limit : int
-        Number of past market days to display holdings
-    export: str
-        Format to export plot
-    external_axes: plt.Axes
-        Optional axes to display plot on
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

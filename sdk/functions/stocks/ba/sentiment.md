@@ -1,84 +1,62 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: sentiment
+description: OpenBB SDK Function
+---
+# sentiment
 
-|
+## stocks_ba_twitter_model.get_sentiment
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def sentiment(symbol: str, n_tweets: int, n_days_past: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_model.py#L124)
 
-.. raw:: html
+Description: Get sentiments from symbol
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ba.sentiment(
-    symbol: str,
-    n_tweets: int = 15,
-    n_days_past: int = 2,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol to get sentiment for | None | False |
+| n_tweets | int | Number of tweets to get per hour | None | False |
+| n_days_past | int | Number of days to extract tweets for | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get sentiments from symbol
-    </p>
+None
 
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol to get sentiment for
-    n_tweets: int
-        Number of tweets to get per hour
-    n_days_past: int
-        Number of days to extract tweets for
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-stocks.ba.sentiment(
-    symbol: str,
-    n_tweets: int = 15,
-    n_days_past: int = 2,
-    compare: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+# sentiment
 
-.. raw:: html
+## stocks_ba_twitter_view.display_sentiment
 
-    <p>
-    Plot sentiments from symbol
-    </p>
+```python
+def sentiment(symbol: str, n_tweets: int, n_days_past: int, compare: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_view.py#L78)
 
-* **Parameters**
+Description: Plot sentiments from symbol
 
-    symbol: str
-        Stock ticker symbol to get sentiment for
-    n_tweets: int
-        Number of tweets to get per hour
-    n_days_past: int
-        Number of days to extract tweets for
-    compare: bool
-        Show corresponding change in stock price
-    export: str
-        Format to export tweet dataframe
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol to get sentiment for | None | False |
+| n_tweets | int | Number of tweets to get per hour | None | False |
+| n_days_past | int | Number of days to extract tweets for | None | False |
+| compare | bool | Show corresponding change in stock price | None | False |
+| export | str | Format to export tweet dataframe | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

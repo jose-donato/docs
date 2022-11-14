@@ -1,98 +1,68 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ftd
+description: OpenBB SDK Function
+---
+# ftd
 
-|
+## stocks_dps_sec_model.get_fails_to_deliver
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def ftd(symbol: str, start_date: str, end_date: str, limit: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_model.py#L58)
 
-.. raw:: html
+Description: Display fails-to-deliver data for a given ticker. [Source: SEC]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.dps.ftd(
-    symbol: str,
-    start_date: str = '2022-09-11',
-    end_date: str = '2022-11-10',
-    limit: int = 0,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker | None | False |
+| start_date | str | Start of data, in YYYY-MM-DD format | None | False |
+| end_date | str | End of data, in YYYY-MM-DD format | None | False |
+| limit | int | Number of latest fails-to-deliver being printed | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Fail to deliver data | None | None |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Display fails-to-deliver data for a given ticker. [Source: SEC]
-    </p>
+None
 
-* **Parameters**
-
-    symbol : str
-        Stock ticker
-    start_date : str
-        Start of data, in YYYY-MM-DD format
-    end_date : str
-        End of data, in YYYY-MM-DD format
-    limit : int
-        Number of latest fails-to-deliver being printed
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Fail to deliver data
 
-|
+# VIEW
 
-.. raw:: html
+# ftd
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_dps_sec_view.fails_to_deliver
 
-{{< highlight python >}}
-stocks.dps.ftd(
-    symbol: str,
-    data: pandas.core.frame.DataFrame,
-    start_date: str = '2022-09-11',
-    end_date: str = '2022-11-10',
-    limit: int = 0,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def ftd(symbol: str, data: pd.DataFrame, start_date: str, end_date: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_view.py#L26)
 
-.. raw:: html
+Description: Display fails-to-deliver data for a given ticker. [Source: SEC]
 
-    <p>
-    Display fails-to-deliver data for a given ticker. [Source: SEC]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker | None | False |
+| data | pd.DataFrame | Stock data | None | False |
+| start_date | str | Start of data, in YYYY-MM-DD format | None | False |
+| end_date | str | End of data, in YYYY-MM-DD format | None | False |
+| limit | int | Number of latest fails-to-deliver being printed | None | False |
+| raw | bool | Print raw data | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
-    symbol: str
-        Stock ticker
-    data: pd.DataFrame
-        Stock data
-    start_date: str
-        Start of data, in YYYY-MM-DD format
-    end_date: str
-        End of data, in YYYY-MM-DD format
-    limit : int
-        Number of latest fails-to-deliver being printed
-    raw: bool
-        Print raw data
-    export: str
-        Export dataframe data to csv,json,xlsx file
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

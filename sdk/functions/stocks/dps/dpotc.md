@@ -1,76 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: dpotc
+description: OpenBB SDK Function
+---
+# dpotc
 
-|
+## stocks_dps_finra_model.getTickerFINRAdata
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def dpotc(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L296)
 
-.. raw:: html
+Description: Get all FINRA data associated with a ticker
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.dps.dpotc(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker to get data from | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get all FINRA data associated with a ticker
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dark Pools (ATS) Data |
 
-* **Parameters**
-
-    symbol : str
-        Stock ticker to get data from
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dark Pools (ATS) Data
-    pd.DataFrame
-        OTC (Non-ATS) Data
 
-|
+# VIEW
 
-.. raw:: html
+# dpotc
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_dps_finra_view.darkpool_ats_otc
 
-{{< highlight python >}}
-stocks.dps.dpotc(
-    symbol: str,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def dpotc(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L26)
 
-.. raw:: html
+Description: Display barchart of dark pool (ATS) and OTC (Non ATS) data. [Source: FINRA]
 
-    <p>
-    Display barchart of dark pool (ATS) and OTC (Non ATS) data. [Source: FINRA]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
-    symbol : str
-        Stock ticker
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

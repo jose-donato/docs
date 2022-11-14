@@ -1,86 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: swaps
+description: OpenBB SDK Function
+---
+# swaps
 
-|
+## crypto_defi_graph_model.get_last_uni_swaps
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def swaps(limit: int, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L295)
 
-.. raw:: html
+Description: Get the last 100 swaps done on Uniswap [Source: https://thegraph.com/en/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.swaps(
-    limit: int = 100,
-    sortby: str = 'timestamp',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get the last 100 swaps done on Uniswap [Source: https://thegraph.com/en/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Last 100 swaps on Uniswap |
 
-* **Parameters**
-
-    limit: int
-        Number of swaps to return. Maximum possible number: 1000.
-    sortby: str
-        Key by which to sort data. The table can be sorted by every of its columns
-        (see https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2).
-    ascend: bool
-        Flag to sort data descending
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Last 100 swaps on Uniswap
 
-|
+# VIEW
 
-.. raw:: html
+# swaps
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_defi_graph_view.display_last_uni_swaps
 
-{{< highlight python >}}
-crypto.defi.swaps(
-    limit: int = 10,
-    sortby: str = 'timestamp',
-    ascend: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def swaps(limit: int, sortby: str, ascend: bool, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L217)
 
-.. raw:: html
+Description: Displays last swaps done on Uniswap
 
-    <p>
-    Displays last swaps done on Uniswap
-    [Source: https://thegraph.com/en/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data. The table can be sorted by every of its columns
+(see https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2). | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data. The table can be sorted by every of its columns
-        (see https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2).
-    ascend: bool
-        Flag to sort data descending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

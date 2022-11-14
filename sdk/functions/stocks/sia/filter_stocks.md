@@ -1,47 +1,33 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: filter_stocks
+description: OpenBB SDK Function
+---
+# filter_stocks
 
-|
+## stocks_sia_financedatabase_model.filter_stocks
 
-.. raw:: html
+```python
+def filter_stocks(country: str, sector: str, industry: str, marketcap: str, exclude_exchanges: bool) -> list:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L108)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Filter stocks based on country, sector, industry, market cap and exclude exchanges.
 
-{{< highlight python >}}
-stocks.sia.filter_stocks(
-    country: str = None,
-    sector: str = None,
-    industry: str = None,
-    marketcap: str = '',
-    exclude_exchanges: bool = True,
-    chart: bool = False,
-) -> list
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Search by country to find stocks matching the criteria. | None | False |
+| sector | str | Search by sector to find stocks matching the criteria. | None | False |
+| industry | str | Search by industry to find stocks matching the criteria. | None | False |
+| marketcap | str | Select stocks based on the market cap. | None | False |
+| exclude_exchanges | bool | When you wish to include different exchanges use this boolean. | None | False |
 
-    <p>
-    Filter stocks based on country, sector, industry, market cap and exclude exchanges.
-    [Source: Finance Database]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| list | List of filtered stocks |
 
-    country: str
-        Search by country to find stocks matching the criteria.
-    sector: str
-        Search by sector to find stocks matching the criteria.
-    industry: str
-        Search by industry to find stocks matching the criteria.
-    marketcap: str
-        Select stocks based on the market cap.
-    exclude_exchanges: bool
-        When you wish to include different exchanges use this boolean.
+## Examples
 
-* **Returns**
-
-    list
-        List of filtered stocks

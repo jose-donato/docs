@@ -1,82 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: fr
+description: OpenBB SDK Function
+---
+# fr
 
-|
+## crypto_dd_messari_model.get_fundraising
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def f) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L631)
 
-.. raw:: html
+Description: Returns coin fundraising
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.fr(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[str, pandas.core.frame.DataFrame, pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check fundraising | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns coin fundraising
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| str | launch summary |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check fundraising
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    str
-        launch summary
-    pd.DataFrame
-        Sales rounds
-    pd.DataFrame
-        Treasury Accounts
-    pd.DataFrame
-        Metric Value launch details
 
-|
+# VIEW
 
-.. raw:: html
+# fr
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_messari_view.display_fundraising
 
-{{< highlight python >}}
-crypto.dd.fr(
-    symbol: str,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def f) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L626)
 
-.. raw:: html
+Description: Display coin fundraising
 
-    <p>
-    Display coin fundraising
-    [Source: https://messari.io/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check coin fundraising | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbol : str
-        Crypto symbol to check coin fundraising
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

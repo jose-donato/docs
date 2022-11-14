@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: fama_raw
+description: OpenBB SDK Function
+---
+# fama_raw
 
-|
+## stocks_fa_dcf_model.get_fama_raw
 
-.. raw:: html
+```python
+def fama_ra) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L239)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get Fama French data
 
-{{< highlight python >}}
-stocks.fa.fama_raw() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get Fama French data
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Fama French data |
 
-    df : pd.DataFrame
-        Fama French data
+## Examples
+

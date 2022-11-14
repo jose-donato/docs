@@ -1,89 +1,64 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: act
+description: OpenBB SDK Function
+---
+# act
 
-|
+## stocks_insider_businessinsider_model.get_insider_activity
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def act(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/businessinsider_model.py#L16)
 
-.. raw:: html
+Description: Get insider activity. [Source: Business Insider]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ins.act(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get insider activity data from | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get insider activity. [Source: Business Insider]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Get insider activity data |
 
-* **Parameters**
-
-    symbol : str
-        Ticker symbol to get insider activity data from
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    df_insider : pd.DataFrame
-        Get insider activity data
 
-|
+# VIEW
 
-.. raw:: html
+# act
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_insider_businessinsider_view.insider_activity
 
-{{< highlight python >}}
-stocks.ins.act(
-    data: pandas.core.frame.DataFrame,
-    symbol: str,
-    start_date: str = '2019-11-06',
-    interval: str = '1440min',
-    limit: int = 10,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def act(data: pd.DataFrame, symbol: str, start_date: str, interval: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/businessinsider_view.py#L31)
 
-.. raw:: html
+Description: Display insider activity. [Source: Business Insider]
 
-    <p>
-    Display insider activity. [Source: Business Insider]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Stock dataframe | None | False |
+| symbol | str | Due diligence ticker symbol | None | False |
+| start_date | str | Start date of the stock data | None | False |
+| interval | str | Stock data interval | None | False |
+| limit | int | Number of latest days of inside activity | None | False |
+| raw | bool | Print to console | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    data: pd.DataFrame
-        Stock dataframe
-    symbol: str
-        Due diligence ticker symbol
-    start_date: str
-        Start date of the stock data
-    interval: str
-        Stock data interval
-    limit: int
-        Number of latest days of inside activity
-    raw: bool
-        Print to console
-    export: str
-        Export dataframe data to csv,json,xlsx file
-    external_axes: Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

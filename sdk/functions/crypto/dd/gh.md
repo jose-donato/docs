@@ -1,102 +1,67 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: gh
+description: OpenBB SDK Function
+---
+# gh
 
-|
+## crypto_dd_santiment_model.get_github_activity
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def g) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L27)
 
-.. raw:: html
+Description: Returns  a list of developer activity for a given coin and time interval.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.gh(
-    symbol: str,
-    dev_activity: bool = False,
-    interval: str = '1d',
-    start_date: str = '2021-11-10T10:18:10Z',
-    end_date: str = '2022-11-10T10:18:10Z',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check github activity | None | False |
+| dev_activity | bool | Whether to filter only for development activity | None | False |
+| start_date | int | Initial date like string (e.g., 2021-10-01) | None | False |
+| end_date | int | End date like string (e.g., 2021-10-01) | None | False |
+| interval | str | Interval frequency (e.g., 1d) | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns  a list of developer activity for a given coin and time interval.
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | developer activity over time |
 
-    [Source: https://santiment.net/]
-    </p>
-
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check github activity
-    dev_activity: bool
-        Whether to filter only for development activity
-    start_date : int
-        Initial date like string (e.g., 2021-10-01)
-    end_date : int
-        End date like string (e.g., 2021-10-01)
-    interval : str
-        Interval frequency (e.g., 1d)
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        developer activity over time
 
-|
+# VIEW
 
-.. raw:: html
+# gh
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_santiment_view.display_github_activity
 
-{{< highlight python >}}
-crypto.dd.gh(
-    symbol: str,
-    start_date: str = '2021-11-10T10:18:10Z',
-    dev_activity: bool = False,
-    end_date: str = '2022-11-10T10:18:10Z',
-    interval: str = '1d',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def g) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L25)
 
-.. raw:: html
+Description: Returns a list of github activity for a given coin and time interval.
 
-    <p>
-    Returns a list of github activity for a given coin and time interval.
+## Parameters
 
-    [Source: https://santiment.net/]
-    </p>
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check github activity | None | False |
+| dev_activity | bool | Whether to filter only for development activity | None | False |
+| start_date | int | Initial date like string (e.g., 2021-10-01) | None | False |
+| end_date | int | End date like string (e.g., 2021-10-01) | None | False |
+| interval | str | Interval frequency (some possible values are: 1h, 1d, 1w) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-* **Parameters**
+## Returns
 
-    symbol : str
-        Crypto symbol to check github activity
-    dev_activity: bool
-        Whether to filter only for development activity
-    start_date : int
-        Initial date like string (e.g., 2021-10-01)
-    end_date : int
-        End date like string (e.g., 2021-10-01)
-    interval : str
-        Interval frequency (some possible values are: 1h, 1d, 1w)
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+None
+
+## Examples
 

@@ -1,34 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: historical_5
+description: OpenBB SDK Function
+---
+# historical_5
 
-|
+## stocks_qa_factors_model.get_historical_5
 
-.. raw:: html
+```python
+def historical_5(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/quantitative_analysis/factors_model.py#L57)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get 5 year monthly historical performance for a ticker with dividends filtered
 
-{{< highlight python >}}
-stocks.qa.historical_5(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | A ticker symbol in string form | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| data | pd.DataFrame | A dataframe with historical information | None | False |
 
-    <p>
-    Get 5 year monthly historical performance for a ticker with dividends filtered
-    </p>
+## Returns
 
-* **Parameters**
+None
 
-    symbol : str
-        A ticker symbol in string form
+## Examples
 
-* **Returns**
-
-    data : pd.DataFrame
-        A dataframe with historical information

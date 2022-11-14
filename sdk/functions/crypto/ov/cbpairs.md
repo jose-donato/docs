@@ -1,88 +1,62 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cbpairs
+description: OpenBB SDK Function
+---
+# cbpairs
 
-|
+## crypto_ov_coinbase_model.get_trading_pairs
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cbpairs(limit: int, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_model.py#L23)
 
-.. raw:: html
+Description: Get a list of available currency pairs for trading. [Source: Coinbase]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cbpairs(
-    limit: int = 50,
-    sortby: str = 'quote_increment',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Top n of pairs | None | False |
+| sortby | str | Key to sortby data | None | False |
+| ascend | bool | Sort descending flag | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get a list of available currency pairs for trading. [Source: Coinbase]
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Available trading pairs on Coinbase |
 
-    base_min_size - min order size
-    base_max_size - max order size
-    min_market_funds -  min funds allowed in a market order.
-    max_market_funds - max funds allowed in a market order.
-    </p>
-
-* **Parameters**
-
-    limit: int
-        Top n of pairs
-    sortby: str
-        Key to sortby data
-    ascend: bool
-        Sort descending flag
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Available trading pairs on Coinbase
 
-|
+# VIEW
 
-.. raw:: html
+# cbpairs
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_ov_coinbase_view.display_trading_pairs
 
-{{< highlight python >}}
-crypto.ov.cbpairs(
-    limit: int = 20,
-    sortby: str = 'quote_increment',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def cbpair) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
 
-.. raw:: html
+Description: Displays a list of available currency pairs for trading. [Source: Coinbase]
 
-    <p>
-    Displays a list of available currency pairs for trading. [Source: Coinbase]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Top n of pairs | None | False |
+| sortby | str | Key to sortby data | None | False |
+| ascend | bool | Sort ascending flag | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    limit: int
-        Top n of pairs
-    sortby: str
-        Key to sortby data
-    ascend: bool
-        Sort ascending flag
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

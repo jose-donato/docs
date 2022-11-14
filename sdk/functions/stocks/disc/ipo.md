@@ -1,37 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ipo
+description: OpenBB SDK Function
+---
+# ipo
 
-|
+## stocks_disc_finnhub_model.get_ipo_calendar
 
-.. raw:: html
+```python
+def ip) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L15)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get IPO calendar
 
-{{< highlight python >}}
-stocks.disc.ipo(
-    start_date: str = '2022-11-05',
-    end_date: str = '2022-11-10',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| start_date | str | start date (%Y-%m-%d) to get IPO calendar | None | False |
+| end_date | str | end date (%Y-%m-%d) to get IPO calendar | None | False |
 
-    <p>
-    Get IPO calendar
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Get dataframe with economic calendar events |
 
-    start_date : str
-        start date (%Y-%m-%d) to get IPO calendar
-    end_date : str
-        end date (%Y-%m-%d) to get IPO calendar
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Get dataframe with economic calendar events

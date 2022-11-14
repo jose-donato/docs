@@ -1,37 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: polygon_peers
+description: OpenBB SDK Function
+---
+# polygon_peers
 
-|
+## stocks_ca_polygon_model.get_similar_companies
 
-.. raw:: html
+```python
+def polygon_peer) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get similar companies from Polygon
 
-{{< highlight python >}}
-stocks.ca.polygon_peers(
-    symbol: str,
-    us_only: bool = False,
-    chart: bool = False,
-) -> List[str]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to get similar companies of | None | False |
+| us_only | bool | Only stocks from the US stock exchanges | None | False |
 
-    <p>
-    Get similar companies from Polygon
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | List of similar tickers |
 
-    symbol: str
-        Ticker to get similar companies of
-    us_only: bool
-        Only stocks from the US stock exchanges
+## Examples
 
-* **Returns**
-
-    List[str]:
-        List of similar tickers

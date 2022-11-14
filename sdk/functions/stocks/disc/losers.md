@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: losers
+description: OpenBB SDK Function
+---
+# losers
 
-|
+## stocks_disc_yahoofinance_model.get_losers
 
-.. raw:: html
+```python
+def loser) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L34)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get top losers. [Source: Yahoo Finance]
 
-{{< highlight python >}}
-stocks.disc.losers() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get top losers. [Source: Yahoo Finance]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Stock Losers |
 
-    pd.DataFrame
-        Stock Losers
+## Examples
+

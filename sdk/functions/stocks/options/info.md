@@ -1,71 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: info
+description: OpenBB SDK Function
+---
+# info
 
-|
+## stocks_options_yfinance_model.get_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def info(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L278)
 
-.. raw:: html
+Description: Get info for a given ticker
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.info(
-    symbol: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | The ticker symbol to get the price for | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| price | float | The info for a given ticker | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get info for a given ticker
-    </p>
+None
 
-* **Parameters**
-
-    symbol : str
-        The ticker symbol to get the price for
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    price : float
-        The info for a given ticker
 
-|
+# VIEW
 
-.. raw:: html
+# info
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_options_barchart_view.print_options_data
 
-{{< highlight python >}}
-stocks.options.info(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def info(symbol: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/barchart_view.py#L14)
 
-.. raw:: html
+Description: Scrapes Barchart.com for the options information
 
-    <p>
-    Scrapes Barchart.com for the options information
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get options info for | None | False |
+| export | str | Format of export file | None | False |
 
-    symbol: str
-        Ticker symbol to get options info for
-    export: str
-        Format of export file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

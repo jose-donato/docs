@@ -1,68 +1,57 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: exchange
+description: OpenBB SDK Function
+---
+# exchange
 
-|
+## stocks_th_bursa_model.get_bursa
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def exchange(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L19)
 
-.. raw:: html
+Description: Get current exchange open hours.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.th.exchange(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Exchange symbol | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get current exchange open hours.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Exchange info |
 
-* **Parameters**
-
-    symbol : str
-        Exchange symbol
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Exchange info
 
-|
+# VIEW
 
-.. raw:: html
+# exchange
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_th_bursa_view.display_exchange
 
-{{< highlight python >}}
-stocks.th.exchange(
-    symbol: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def exchange(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L14)
 
-.. raw:: html
+Description: Display current exchange trading hours.
 
-    <p>
-    Display current exchange trading hours.
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Exchange symbol | None | False |
 
-    symbol : str
-        Exchange symbol
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

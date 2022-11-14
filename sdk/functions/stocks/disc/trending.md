@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: trending
+description: OpenBB SDK Function
+---
+# trending
 
-|
+## stocks_disc_seeking_alpha_model.get_trending_list
 
-.. raw:: html
+```python
+def trending(limit: int) -> list:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L99)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Returns a list of trending articles
 
-{{< highlight python >}}
-stocks.disc.trending(
-    limit: int = 5,
-    chart: bool = False,
-) -> list
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of articles | None | False |
 
-    <p>
-    Returns a list of trending articles
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| list | Trending articles list |
 
-    limit: int
-        Number of articles
+## Examples
 
-* **Returns**
-
-    list
-        Trending articles list

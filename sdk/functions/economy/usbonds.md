@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: usbonds
+description: OpenBB SDK Function
+---
+# usbonds
 
-|
+## economy_wsj_model.us_bonds
 
-.. raw:: html
+```python
+def usbond) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L150)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Scrape data for us bonds
 
-{{< highlight python >}}
-economy.usbonds() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Scrape data for us bonds
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing name, coupon rate, yield and change in yield |
 
-    bonds: pd.DataFrame
-        Dataframe containing name, coupon rate, yield and change in yield
+## Examples
+

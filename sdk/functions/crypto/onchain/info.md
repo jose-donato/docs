@@ -1,73 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: info
+description: OpenBB SDK Function
+---
+# info
 
-|
+## crypto_onchain_ethplorer_model.get_token_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def info(address: Any) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L372)
 
-.. raw:: html
+Description: Get info about ERC20 token. [Source: Ethplorer]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.info(
-    address, chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get info about ERC20 token. [Source: Ethplorer]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | DataFrame with information about provided ERC20 token. |
 
-* **Parameters**
-
-    address: str
-        Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame:
-        DataFrame with information about provided ERC20 token.
 
-|
+# VIEW
 
-.. raw:: html
+# info
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_onchain_ethplorer_view.display_token_info
 
-{{< highlight python >}}
-crypto.onchain.info(
-    address: str,
-    social: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def inf) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L205)
 
-.. raw:: html
+Description: Display info about ERC20 token. [Source: Ethplorer]
 
-    <p>
-    Display info about ERC20 token. [Source: Ethplorer]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
+| social | bool | Flag to display social media links | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    address: str
-        Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984
-    social: bool
-        Flag to display social media links
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

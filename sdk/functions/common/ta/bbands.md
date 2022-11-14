@@ -1,95 +1,66 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: bbands
+description: OpenBB SDK Function
+---
+# bbands
 
-|
+## common_ta_volatility_model.bbands
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def bbands(data: pd.DataFrame, window: int, n_std: float, mamode: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L17)
 
-.. raw:: html
+Description: Calculate Bollinger Bands
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.bbands(
-    data: pandas.core.frame.DataFrame,
-    window: int = 15,
-    n_std: float = 2,
-    mamode: str = 'ema',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of ohlc prices | None | False |
+| window | int | Length of window to calculate BB | None | False |
+| n_std | float | Number of standard deviations to show | None | False |
+| mamode | str | Method of calculating average | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate Bollinger Bands
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of bollinger band data |
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    window : int
-        Length of window to calculate BB
-    n_std : float
-        Number of standard deviations to show
-    mamode : str
-        Method of calculating average
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    df_ta: pd.DataFrame
-        Dataframe of bollinger band data
 
-|
+# VIEW
 
-.. raw:: html
+# bbands
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_ta_volatility_view.display_bbands
 
-{{< highlight python >}}
-common.ta.bbands(
-    data: pandas.core.frame.DataFrame,
-    symbol: str = '',
-    window: int = 15,
-    n_std: float = 2,
-    mamode: str = 'sma',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def bbands(data: pd.DataFrame, symbol: str, window: int, n_std: float, mamode: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L26)
 
-.. raw:: html
+Description: Show bollinger bands
 
-    <p>
-    Show bollinger bands
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of ohlc prices | None | False |
+| symbol | str | Ticker symbol | None | False |
+| window | int | Length of window to calculate BB | None | False |
+| n_std | float | Number of standard deviations to show | None | False |
+| mamode | str | Method of calculating average | None | False |
+| export | str | Format of export file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    symbol : str
-        Ticker symbol
-    window : int
-        Length of window to calculate BB
-    n_std : float
-        Number of standard deviations to show
-    mamode : str
-        Method of calculating average
-    export : str
-        Format of export file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

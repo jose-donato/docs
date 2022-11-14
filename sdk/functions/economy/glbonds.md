@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: glbonds
+description: OpenBB SDK Function
+---
+# glbonds
 
-|
+## economy_wsj_model.global_bonds
 
-.. raw:: html
+```python
+def glbond) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L193)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Scrape data for global bonds
 
-{{< highlight python >}}
-economy.glbonds() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Scrape data for global bonds
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing name, coupon rate, yield and change in yield |
 
-    bonds: pd.DataFrame
-        Dataframe containing name, coupon rate, yield and change in yield
+## Examples
+

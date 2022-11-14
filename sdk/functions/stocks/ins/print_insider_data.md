@@ -1,72 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: print_insider_data
+description: OpenBB SDK Function
+---
+# print_insider_data
 
-|
+## stocks_insider_openinsider_model.get_print_insider_data
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def print_insider_data(type_insider: str, limit: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_model.py#L1436)
 
-.. raw:: html
+Description: Print insider data
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ins.print_insider_data(
-    type_insider: str = 'lcb',
-    limit: int = 10,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | None | False |
+| limit | int | Limit of data rows to display | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Print insider data
-    </p>
+None
 
-* **Parameters**
-
-    type_insider: str
-        Insider type of data. Available types can be accessed through get_insider_types().
-    limit: int
-        Limit of data rows to display
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-stocks.ins.print_insider_data(
-    type_insider: str = 'lcb',
-    limit: int = 10,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+# print_insider_data
 
-.. raw:: html
+## stocks_insider_openinsider_view.print_insider_data
 
-    <p>
-    Print insider data
-    </p>
+```python
+def print_insider_data(type_insider: str, limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_view.py#L107)
 
-* **Parameters**
+Description: Print insider data
 
-    type_insider: str
-        Insider type of data. Available types can be accessed through get_insider_types().
-    limit: int
-        Limit of data rows to display
-    export: str
-        Export data format
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | None | False |
+| limit | int | Limit of data rows to display | None | False |
+| export | str | Export data format | None | False |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,57 +1,56 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cgdefi
+description: OpenBB SDK Function
+---
+# cgdefi
 
-|
+## crypto_ov_pycoingecko_model.get_global_defi_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cgdef) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L479)
 
-.. raw:: html
+Description: Get global statistics about Decentralized Finances [Source: CoinGecko]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cgdefi() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get global statistics about Decentralized Finances [Source: CoinGecko]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Metric, Value |
 
-* **Returns**
+## Examples
 
-    pandas.DataFrame
-        Metric, Value
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-crypto.ov.cgdefi(
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+# cgdefi
 
-.. raw:: html
+## crypto_ov_pycoingecko_view.display_global_defi_info
 
-    <p>
-    Shows global statistics about Decentralized Finances. [Source: CoinGecko]
-    </p>
+```python
+def cgdefi(export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L304)
 
-* **Parameters**
+Description: Shows global statistics about Decentralized Finances. [Source: CoinGecko]
 
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
+
+None
+
+## Examples
 

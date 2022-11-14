@@ -1,70 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: summary
+description: OpenBB SDK Function
+---
+# summary
 
-|
+## alt_oss_github_model.get_repo_summary
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def summary(repo: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L171)
 
-.. raw:: html
+Description: Get repository summary
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-alt.oss.summary(
-    repo: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| repo | str | Repo to search for Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get repository summary
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Metric, Value | None |
 
-* **Parameters**
-
-    repo : str
-            Repo to search for Format: org/repo, e.g., openbb-finance/openbbterminal
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame - Columns: Metric, Value
 
-|
+# VIEW
 
-.. raw:: html
+# summary
 
-    <h3>
-    > Getting charts
-    </h3>
+## alt_oss_github_view.display_repo_summary
 
-{{< highlight python >}}
-alt.oss.summary(
-    repo: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def summary(repo: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L122)
 
-.. raw:: html
+Description: Display repo summary [Source: https://api.github.com]
 
-    <p>
-    Display repo summary [Source: https://api.github.com]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| repo | str | Repository to display summary. Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    repo : str
-            Repository to display summary. Format: org/repo, e.g., openbb-finance/openbbterminal
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

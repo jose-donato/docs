@@ -1,40 +1,32 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ema
+description: OpenBB SDK Function
+---
+# ema
 
-|
+## common_ta_overlap_model.ema
 
-.. raw:: html
+```python
+def ema(data: pd.Series, length: int, offset: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L18)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets exponential moving average (EMA) for stock
 
-{{< highlight python >}}
-common.ta.ema(
-    data: pandas.core.series.Series,
-    length: int = 50,
-    offset: int = 0,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.Series | Dataframe of dates and prices | None | False |
+| length | int | Length of EMA window | None | False |
+| offset | int | Length of offset | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Dataframe containing prices and EMA | None | None |
 
-    <p>
-    Gets exponential moving average (EMA) for stock
-    </p>
+## Returns
 
-* **Parameters**
+None
 
-    data: pd.Series
-        Dataframe of dates and prices
-    length: int
-        Length of EMA window
-    offset: int
-        Length of offset
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe containing prices and EMA

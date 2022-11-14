@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: rtat
+description: OpenBB SDK Function
+---
+# rtat
 
-|
+## stocks_disc_nasdaq_model.get_retail_tickers
 
-.. raw:: html
+```python
+def rta) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L19)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets the top 10 retail stocks per day
 
-{{< highlight python >}}
-stocks.disc.rtat() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Gets the top 10 retail stocks per day
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of tickers |
 
-    pd.DataFrame
-        Dataframe of tickers
+## Examples
+

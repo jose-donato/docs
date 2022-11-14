@@ -1,99 +1,72 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: yf_financials
+description: OpenBB SDK Function
+---
+# yf_financials
 
-|
+## stocks_fa_yahoo_finance_model.get_financials
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def yf_financials(symbol: str, statement: str, ratios: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L327)
 
-.. raw:: html
+Description: Get cashflow statement for company
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.fa.yf_financials(
-    symbol: str,
-    statement: str,
-    ratios: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| statement | str | can be:
 
-.. raw:: html
+- cash-flow
+- financials for Income
+- balance-sheet | None | False |
+| ratios | bool | Shows percentage change | None | False |
 
-    <p>
-    Get cashflow statement for company
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of Financial statement |
 
-    symbol : str
-        Stock ticker symbol
-    statement: str
-        can be:
-
-        - cash-flow
-        - financials for Income
-        - balance-sheet
-
-    ratios: bool
-        Shows percentage change
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe of Financial statement
 
-|
+# VIEW
 
-.. raw:: html
+# yf_financials
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_fa_yahoo_finance_view.display_fundamentals
 
-{{< highlight python >}}
-stocks.fa.yf_financials(
-    symbol: str,
-    statement: str,
-    limit: int = 12,
-    ratios: bool = False,
-    plot: list = None,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def yf_financials(symbol: str, statement: str, limit: int, ratios: bool, plot: list, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L382)
 
-.. raw:: html
+Description: Display tickers balance sheet, income statement or cash-flow
 
-    <p>
-    Display tickers balance sheet, income statement or cash-flow
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| statement | str | Possible values are:
 
-    symbol: str
-        Stock ticker symbol
-    statement: str
-        Possible values are:
+- cash-flow
+- financials for Income
+- balance-sheet | None | False |
+| limit | int | Number of periods to show | None | False |
+| ratios | bool | Shows percentage change | None | False |
+| plot | list | List of row labels to plot | None | False |
+| export | str | Format to export data | None | False |
 
-        - cash-flow
-        - financials for Income
-        - balance-sheet
+## Returns
 
-    limit: int
-        Number of periods to show
-    ratios: bool
-        Shows percentage change
-    plot: list
-        List of row labels to plot
-    export: str
-        Format to export data
-    chart: bool
-       Flag to display chart
+None
+
+## Examples
 

@@ -1,88 +1,63 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: balance
+description: OpenBB SDK Function
+---
+# balance
 
-|
+## crypto_onchain_ethplorer_model.get_address_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def balance(address: str, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L195)
 
-.. raw:: html
+Description: Get info about tokens on you ethereum blockchain balance. Eth balance, balance of all tokens which
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.balance(
-    address: str,
-    sortby: str = 'index',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| address | str | Blockchain balance e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699 | None | False |
+| sortby | str | Key to sort by. | None | False |
+| ascend | str | Sort in descending order. | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get info about tokens on you ethereum blockchain balance. Eth balance, balance of all tokens which
-    have name and symbol. [Source: Ethplorer]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | DataFrame with list of tokens and their balances. |
 
-* **Parameters**
-
-    address: str
-        Blockchain balance e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699
-    sortby: str
-        Key to sort by.
-    ascend: str
-        Sort in descending order.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame:
-        DataFrame with list of tokens and their balances.
 
-|
+# VIEW
 
-.. raw:: html
+# balance
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_onchain_ethplorer_view.display_address_info
 
-{{< highlight python >}}
-crypto.onchain.balance(
-    address: str,
-    limit: int = 15,
-    sortby: str = 'index',
-    ascend: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def balanc) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L20)
 
-.. raw:: html
+Description: Display info about tokens for given ethereum blockchain balance e.g. ETH balance,
 
-    <p>
-    Display info about tokens for given ethereum blockchain balance e.g. ETH balance,
-    balance of all tokens with name and symbol. [Source: Ethplorer]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| address | str | Ethereum balance. | None | False |
+| limit | int | Limit of transactions. Maximum 100 | None | False |
+| sortby | str | Key to sort by. | None | False |
+| ascend | str | Sort in descending order. | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    address: str
-        Ethereum balance.
-    limit: int
-        Limit of transactions. Maximum 100
-    sortby: str
-        Key to sort by.
-    ascend: str
-        Sort in descending order.
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

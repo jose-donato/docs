@@ -1,63 +1,55 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: openpositions
+description: OpenBB SDK Function
+---
+# openpositions
 
-|
+## forex_oanda_model.open_positions_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def openpositions(accountID: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L377)
 
-.. raw:: html
+Description: Request information on open positions.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.openpositions(
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request information on open positions.
-    </p>
+None
 
-* **Parameters**
-
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-forex.oanda.openpositions(
-    accountID: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+# openpositions
 
-.. raw:: html
+## forex_oanda_view.get_open_positions
 
-    <p>
-    Get information about open positions.
-    </p>
+```python
+def openposition) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L221)
 
-* **Parameters**
+Description: Get information about open positions.
 
-    accountID : str
-        Oanda user account ID
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda user account ID | None | False |
+
+## Returns
+
+None
+
+## Examples
 

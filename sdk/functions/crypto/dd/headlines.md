@@ -1,84 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: headlines
+description: OpenBB SDK Function
+---
+# headlines
 
-|
+## stocks_ba_finbrain_model.get_sentiment
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def headlines(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/finbrain_model.py#L14)
 
-.. raw:: html
+Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrain]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.headlines(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get the sentiment analysis from | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Gets Sentiment analysis provided by FinBrain's API [Source: finbrain]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| DataFrame() | Empty if there was an issue with data retrieval |
 
-* **Parameters**
-
-    symbol : str
-        Ticker symbol to get the sentiment analysis from
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    DataFrame()
-        Empty if there was an issue with data retrieval
 
-|
+# VIEW
 
-.. raw:: html
+# headlines
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_crypto_finbrain_view.display_crypto_sentiment_analysis
 
-{{< highlight python >}}
-crypto.dd.headlines(
-    symbol: str,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def headlines(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/finbrain_crypto_view.py#L38)
 
-.. raw:: html
+Description: Sentiment analysis from FinBrain for Cryptocurrencies
 
-    <p>
-    Sentiment analysis from FinBrain for Cryptocurrencies
+## Parameters
 
-    FinBrain collects the news headlines from 15+ major financial news
-    sources on a daily basis and analyzes them to generate sentiment scores
-    for more than 4500 US stocks. FinBrain Technologies develops deep learning
-    algorithms for financial analysis and prediction, which currently serves
-    traders from more than 150 countries all around the world.
-    [Source:  https://finbrain.tech]
-    </p>
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Cryptocurrency | None | False |
+| raw | False | Display raw table data | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-* **Parameters**
+## Returns
 
-    symbol: str
-        Cryptocurrency
-    raw : False
-        Display raw table data
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+None
+
+## Examples
 

@@ -1,105 +1,67 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: pairs
+description: OpenBB SDK Function
+---
+# pairs
 
-|
+## crypto_defi_graph_model.get_uniswap_pool_recently_added
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def pairs(last_days: int, min_volume: int, min_liquidity: int, min_tx: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L163)
 
-.. raw:: html
+Description: Get lastly added trade-able pairs on Uniswap with parameters like:
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.pairs(
-    last_days: int = 14,
-    min_volume: int = 100,
-    min_liquidity: int = 0,
-    min_tx: int = 100,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| last_days | int | How many days back to look for added pairs. | None | False |
+| min_volume | int | Minimum volume | None | False |
+| min_liquidity | int | Minimum liquidity | None | False |
+| min_tx | int | Minimum number of transactions done in given pool. | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get lastly added trade-able pairs on Uniswap with parameters like:
-        * number of days the pair has been active,
-        * minimum trading volume,
-        * minimum liquidity,
-        * number of transactions.
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Lastly added pairs on Uniswap DEX. |
 
-    [Source: https://thegraph.com/en/]
-    </p>
-
-* **Parameters**
-
-    last_days: int
-        How many days back to look for added pairs.
-    min_volume: int
-        Minimum volume
-    min_liquidity: int
-        Minimum liquidity
-    min_tx: int
-        Minimum number of transactions done in given pool.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Lastly added pairs on Uniswap DEX.
 
-|
+# VIEW
 
-.. raw:: html
+# pairs
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_defi_graph_view.display_recently_added
 
-{{< highlight python >}}
-crypto.defi.pairs(
-    limit: int = 20,
-    days: int = 7,
-    min_volume: int = 20,
-    min_liquidity: int = 0,
-    min_tx: int = 100,
-    sortby: str = 'created',
-    ascend: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def pairs(limit: int, days: int, min_volume: int, min_liquidity: int, min_tx: int, sortby: str, ascend: bool, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L101)
 
-.. raw:: html
+Description: Displays Lastly added pairs on Uniswap DEX.
 
-    <p>
-    Displays Lastly added pairs on Uniswap DEX.
-    [Source: https://thegraph.com/en/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display | None | False |
+| days | int | Number of days the pair has been active, | None | False |
+| min_volume | int | Minimum trading volume, | None | False |
+| min_liquidity | int | Minimum liquidity | None | False |
+| min_tx | int | Minimum number of transactions | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    limit: int
-        Number of records to display
-    days: int
-        Number of days the pair has been active,
-    min_volume: int
-        Minimum trading volume,
-    min_liquidity: int
-        Minimum liquidity
-    min_tx: int
-        Minimum number of transactions
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data descending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,75 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: inv
+description: OpenBB SDK Function
+---
+# inv
 
-|
+## crypto_dd_messari_model.get_investors
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def in) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L486)
 
-.. raw:: html
+Description: Returns coin investors
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.inv(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check investors | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns coin investors
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | individuals |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check investors
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        individuals
-    pd.DataFrame
-        organizations
 
-|
+# VIEW
 
-.. raw:: html
+# inv
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_messari_view.display_investors
 
-{{< highlight python >}}
-crypto.dd.inv(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def in) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L497)
 
-.. raw:: html
+Description: Display coin investors
 
-    <p>
-    Display coin investors
-    [Source: https://messari.io/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check coin investors | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    symbol : str
-        Crypto symbol to check coin investors
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,69 +1,57 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cancel
+description: OpenBB SDK Function
+---
+# cancel
 
-|
+## forex_oanda_model.cancel_pending_order_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cancel(orderID: str, accountID: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L345)
 
-.. raw:: html
+Description: Request cancellation of a pending order.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.cancel(
-    orderID: str,
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[str, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| orderID | str | The pending order ID to cancel. | None | False |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request cancellation of a pending order.
-    </p>
+None
 
-* **Parameters**
-
-    orderID : str
-        The pending order ID to cancel.
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-forex.oanda.cancel(
-    accountID: str,
-    orderID: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+# cancel
 
-.. raw:: html
+## forex_oanda_view.cancel_pending_order
 
-    <p>
-    Cancel a Pending Order.
-    </p>
+```python
+def cance) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L201)
 
-* **Parameters**
+Description: Cancel a Pending Order.
 
-    accountID : str
-        Oanda user account ID
-    orderID : str
-        The pending order ID to cancel.
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda user account ID | None | False |
+| orderID | str | The pending order ID to cancel. | None | False |
+
+## Returns
+
+None
+
+## Examples
 

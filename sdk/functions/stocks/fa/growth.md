@@ -1,40 +1,31 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: growth
+description: OpenBB SDK Function
+---
+# growth
 
-|
+## stocks_fa_fmp_model.get_financial_growth
 
-.. raw:: html
+```python
+def growt) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L498)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get financial statement growth
 
-{{< highlight python >}}
-stocks.fa.growth(
-    symbol: str,
-    limit: int = 5,
-    quarterly: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number to get | None | False |
+| quarterly | bool | Flag to get quarterly data, by default False | False | True |
 
-    <p>
-    Get financial statement growth
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of financial statement growth |
 
-    symbol : str
-        Stock ticker symbol
-    limit : int
-        Number to get
-    quarterly : bool, optional
-        Flag to get quarterly data, by default False
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of financial statement growth

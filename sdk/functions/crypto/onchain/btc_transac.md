@@ -1,66 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: btc_transac
+description: OpenBB SDK Function
+---
+# btc_transac
 
-|
+## crypto_onchain_blockchain_model.get_btc_confirmed_transactions
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def btc_transa) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_model.py#L60)
 
-.. raw:: html
+Description: Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.btc_transac() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | BTC confirmed transactions |
 
-* **Returns**
+## Examples
 
-    pd.DataFrame
-        BTC confirmed transactions
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-crypto.onchain.btc_transac(
-    start_date: int = 1262322000,
-    end_date: int = 1668093490,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+# btc_transac
 
-.. raw:: html
+## crypto_onchain_blockchain_view.display_btc_confirmed_transactions
 
-    <p>
-    Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
-    </p>
+```python
+def btc_transac(start_date: str, end_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_view.py#L84)
 
-* **Parameters**
+Description: Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
 
-    since : int
-        Initial date timestamp (e.g., 1_609_459_200)
-    until : int
-        End date timestamp (e.g., 1_641_588_030)
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,89 +1,64 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: coins
+description: OpenBB SDK Function
+---
+# coins
 
-|
+## crypto_disc_pycoingecko_model.get_coins
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def coins(limit: int, category: str, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L120)
 
-.. raw:: html
+Description: Get N coins from CoinGecko [Source: CoinGecko]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.disc.coins(
-    limit: int = 250,
-    category: str = '',
-    sortby: str = 'Symbol',
-    ascend: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of top coins to grab from CoinGecko | None | False |
+| category | str | Category of the coins we want to retrieve | None | False |
+| sortby | str | Key to sort data | None | False |
+| ascend | bool | Sort data in ascending order | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get N coins from CoinGecko [Source: CoinGecko]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | N coins |
 
-* **Parameters**
-
-    limit: int
-        Number of top coins to grab from CoinGecko
-    category: str
-        Category of the coins we want to retrieve
-    sortby: str
-        Key to sort data
-    ascend: bool
-        Sort data in ascending order
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pandas.DataFrame
-        N coins
 
-|
+# VIEW
 
-.. raw:: html
+# coins
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_disc_pycoingecko_view.display_coins
 
-{{< highlight python >}}
-crypto.disc.coins(
-    category: str,
-    limit: int = 250,
-    sortby: str = 'Symbol',
-    export: str = '',
-    ascend: bool = False,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def coins(category: str, limit: int, sortby: str, export: str, ascend: bool) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L34)
 
-.. raw:: html
+Description: Display top coins [Source: CoinGecko]
 
-    <p>
-    Display top coins [Source: CoinGecko]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| category | str | If no category is passed it will search for all coins. (E.g., smart-contract-platform) | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key to sort data | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| ascend | bool | Sort data in ascending order | None | False |
 
-    category: str
-        If no category is passed it will search for all coins. (E.g., smart-contract-platform)
-    limit: int
-        Number of records to display
-    sortby: str
-        Key to sort data
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    ascend: bool
-        Sort data in ascending order
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

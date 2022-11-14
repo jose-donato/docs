@@ -1,40 +1,32 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: enterprise
+description: OpenBB SDK Function
+---
+# enterprise
 
-|
+## stocks_fa_fmp_model.get_enterprise
 
-.. raw:: html
+```python
+def enterpris) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L130)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Financial Modeling Prep ticker enterprise
 
-{{< highlight python >}}
-stocks.fa.enterprise(
-    symbol: str,
-    limit: int = 5,
-    quarterly: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Fundamental analysis ticker symbol | None | False |
+| limit | int | Number to get | None | False |
+| quarterly | bool | Flag to get quarterly data | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame |  | Dataframe of enterprise information | None | False |
 
-    <p>
-    Financial Modeling Prep ticker enterprise
-    </p>
+## Returns
 
-* **Parameters**
+None
 
-    symbol : str
-        Fundamental analysis ticker symbol
-    limit: int
-        Number to get
-    quarterly: bool
-        Flag to get quarterly data
+## Examples
 
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of enterprise information

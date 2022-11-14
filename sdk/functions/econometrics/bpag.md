@@ -1,70 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: bpag
+description: OpenBB SDK Function
+---
+# bpag
 
-|
+## econometrics_regression_model.get_bpag
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def bpag(model: pd.DataFrame) -> tuple:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L517)
 
-.. raw:: html
+Description: Calculate test statistics for heteroscedasticity
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-econometrics.bpag(
-    model: pandas.core.frame.DataFrame,
-    chart: bool = False,
-) -> tuple
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| model | OLS Model | Model containing residual values. | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate test statistics for heteroscedasticity
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Test results from the Breusch-Pagan Test | None |
 
-* **Parameters**
-
-    model : OLS Model
-        Model containing residual values.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Test results from the Breusch-Pagan Test
 
-|
+# VIEW
 
-.. raw:: html
+# bpag
 
-    <h3>
-    > Getting charts
-    </h3>
+## econometrics_regression_view.display_bpag
 
-{{< highlight python >}}
-econometrics.bpag(
-    model: pandas.core.frame.DataFrame,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def bpag(model: pd.DataFrame, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L193)
 
-.. raw:: html
+Description: Show Breusch-Pagan heteroscedasticity test
 
-    <p>
-    Show Breusch-Pagan heteroscedasticity test
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| model | OLS Model | Model containing residual values. | None | False |
+| export | str | Format to export data | None | False |
 
-    model : OLS Model
-        Model containing residual values.
-    export : str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

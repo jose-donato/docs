@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: info
+description: OpenBB SDK Function
+---
+# info
 
-|
+## stocks_fa_yahoo_finance_model.get_info
 
-.. raw:: html
+```python
+def info(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L30)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets ticker symbol info
 
-{{< highlight python >}}
-stocks.fa.info(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Gets ticker symbol info
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame of yfinance information |
 
-    symbol: str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        DataFrame of yfinance information

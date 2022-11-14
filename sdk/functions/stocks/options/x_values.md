@@ -1,25 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: x_values
+description: OpenBB SDK Function
+---
+# x_values
 
-|
+## stocks_options_yfinance_model.get_x_values
 
-.. raw:: html
+```python
+def x_values(current_price: float, options: List[Dict[str, int]]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L203)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Generates different price values that need to be tested
 
-{{< highlight python >}}
-stocks.options.x_values(
-    current_price: float,
-    options: List[Dict[str, int]],
-    chart: bool = False,
-) -> List[float]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Generates different price values that need to be teste
-    </p>
+## Returns
+
+None
+
+## Examples
+

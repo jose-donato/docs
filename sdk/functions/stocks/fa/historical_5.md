@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: historical_5
+description: OpenBB SDK Function
+---
+# historical_5
 
-|
+## stocks_fa_dcf_model.get_historical_5
 
-.. raw:: html
+```python
+def historical_5(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L277)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get 5 year monthly historical performance for a ticker with dividends filtered
 
-{{< highlight python >}}
-stocks.fa.historical_5(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | The ticker symbol to be analyzed | None | False |
 
-    <p>
-    Get 5 year monthly historical performance for a ticker with dividends filtered
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Historical data |
 
-    symbol: str
-        The ticker symbol to be analyzed
+## Examples
 
-* **Returns**
-
-    df: pd.DataFrame
-        Historical data

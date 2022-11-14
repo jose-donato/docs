@@ -1,39 +1,33 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: screener
+description: OpenBB SDK Function
+---
+# screener
 
-|
+## stocks_ca_finviz_compare_model.get_comparison_data
 
-.. raw:: html
+```python
+def screener(similar: List[str], data_type: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L54)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Screener Overview
 
-{{< highlight python >}}
-stocks.ca.screener(
-    similar: List[str],
-    data_type: str = 'overview',
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| similar |  | List of similar companies.
+Comparable companies can be accessed through
+finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
+| data_type | str | Data type between: overview, valuation, financial, ownership, performance, technical | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Dataframe with overview, valuation, financial, ownership, performance or technical | None | None |
 
-    <p>
-    Screener Overview
-    </p>
+## Returns
 
-* **Parameters**
+None
 
-    similar:
-        List of similar companies.
-        Comparable companies can be accessed through
-        finnhub_peers(), finviz_peers(), polygon_peers().
-    data_type : str
-        Data type between: overview, valuation, financial, ownership, performance, technical
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe with overview, valuation, financial, ownership, performance or technical

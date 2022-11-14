@@ -1,39 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: spacc
+description: OpenBB SDK Function
+---
+# spacc
 
-|
+## stocks_ba_reddit_model.get_spac_community
 
-.. raw:: html
+```python
+def spac) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L318)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get top tickers from r/SPACs [Source: reddit]
 
-{{< highlight python >}}
-stocks.ba.spacc(
-    limit: int = 10,
-    popular: bool = False,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, dict]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of posts to look at | None | False |
+| popular | bool | Search by hot instead of new | None | False |
 
-    <p>
-    Get top tickers from r/SPACs [Source: reddit]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | Dataframe of reddit submission |
 
-    limit : int
-        Number of posts to look at
-    popular : bool
-        Search by hot instead of new
+## Examples
 
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of reddit submission
-    dict:
-        Dictionary of tickers and number of mentions

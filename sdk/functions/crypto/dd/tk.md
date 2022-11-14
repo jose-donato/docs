@@ -1,81 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: tk
+description: OpenBB SDK Function
+---
+# tk
 
-|
+## crypto_dd_messari_model.get_tokenomics
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def t) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L271)
 
-.. raw:: html
+Description: Returns coin tokenomics
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.tk(
-    symbol: str,
-    coingecko_id: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check tokenomics | None | False |
+| coingecko_id | str | ID from coingecko | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns coin tokenomics
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Metric Value tokenomics |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check tokenomics
-    coingecko_id : str
-        ID from coingecko
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Metric Value tokenomics
-    pd.DataFrame
-        Circulating supply overtime
 
-|
+# VIEW
 
-.. raw:: html
+# tk
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_messari_view.display_tokenomics
 
-{{< highlight python >}}
-crypto.dd.tk(
-    symbol: str,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def t) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L373)
 
-.. raw:: html
+Description: Display coin tokenomics
 
-    <p>
-    Display coin tokenomics
-    [Source: https://messari.io/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check tokenomics | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
-    symbol : str
-        Crypto symbol to check tokenomics
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

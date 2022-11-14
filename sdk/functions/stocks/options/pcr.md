@@ -1,81 +1,61 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: pcr
+description: OpenBB SDK Function
+---
+# pcr
 
-|
+## stocks_options_alphaquery_model.get_put_call_ratio
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def pcr(symbol: str, window: int, start_date: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_model.py#L15)
 
-.. raw:: html
+Description: Gets put call ratio over last time window [Source: AlphaQuery.com]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.pcr(
-    symbol: str,
-    window: int = 30,
-    start_date: str = '2021-11-09',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to look for | None | False |
+| window | int | Window to consider, by default 30 | 30 | True |
+| start_date | str | Start date to plot, by default last 366 days | last | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Gets put call ratio over last time window [Source: AlphaQuery.com]
-    </p>
+None
 
-* **Parameters**
-
-    symbol: str
-        Ticker symbol to look for
-    window: int, optional
-        Window to consider, by default 30
-    start_date: str, optional
-        Start date to plot, by default last 366 days
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-stocks.options.pcr(
-    symbol: str,
-    window: int = 30,
-    start_date: str = '2021-11-09',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+# pcr
 
-.. raw:: html
+## stocks_options_alphaquery_view.display_put_call_ratio
 
-    <p>
-    Display put call ratio [Source: AlphaQuery.com]
-    </p>
+```python
+def pcr(symbol: str, window: int, start_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_view.py#L25)
 
-* **Parameters**
+Description: Display put call ratio [Source: AlphaQuery.com]
 
-    symbol : str
-        Stock ticker symbol
-    window : int, optional
-        Window length to look at, by default 30
-    start_date : str, optional
-        Starting date for data, by default (datetime.now() - timedelta(days=366)).strftime("%Y-%m-%d")
-    export : str, optional
-        Format to export data, by default ""
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| window | int | Window length to look at, by default 30 | 30 | True |
+| start_date | str | Starting date for data, by default (datetime.now() - timedelta(days=366)).strftime("%Y-%m-%d") | None | True |
+| export | str | Format to export data, by default "" | None | True |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

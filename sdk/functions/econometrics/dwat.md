@@ -1,79 +1,61 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: dwat
+description: OpenBB SDK Function
+---
+# dwat
 
-|
+## econometrics_regression_model.get_dwat
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def dwat(residual: pd.DataFrame) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L473)
 
-.. raw:: html
+Description: Calculate test statistics for Durbing Watson autocorrelation
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-econometrics.dwat(
-    residual: pandas.core.frame.DataFrame,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| residual | OLS Model | Model containing residual values. | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate test statistics for Durbing Watson autocorrelation
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Test statistic of the Durbin Watson test. | None |
 
-* **Parameters**
-
-    residual : OLS Model
-        Model containing residual values.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Test statistic of the Durbin Watson test.
 
-|
+# VIEW
 
-.. raw:: html
+# dwat
 
-    <h3>
-    > Getting charts
-    </h3>
+## econometrics_regression_view.display_dwat
 
-{{< highlight python >}}
-econometrics.dwat(
-    dependent_variable: pandas.core.series.Series,
-    residual: pandas.core.frame.DataFrame,
-    plot: bool = False,
-    export: str = '',
-    external_axes: Optional[List[axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def dwat(dependent_variable: pd.Series, residual: pd.DataFrame, plot: bool, export: str, external_axes: Union[List[axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L84)
 
-.. raw:: html
+Description: Show Durbin-Watson autocorrelation tests
 
-    <p>
-    Show Durbin-Watson autocorrelation tests
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| dependent_variable | pd.Series | The dependent variable. | None | False |
+| residual | OLS Model | The residual of an OLS model. | None | False |
+| plot | bool | Whether to plot the residuals | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
 
-    dependent_variable : pd.Series
-        The dependent variable.
-    residual : OLS Model
-        The residual of an OLS model.
-    plot : bool
-        Whether to plot the residuals
-    export : str
-        Format to export data
-    external_axes: Optional[List[plt.axes]]
-        External axes to plot on
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

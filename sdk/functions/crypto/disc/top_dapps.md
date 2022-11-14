@@ -1,76 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: top_dapps
+description: OpenBB SDK Function
+---
+# top_dapps
 
-|
+## crypto_disc_dappradar_model.get_top_dapps
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def top_dapps(sortby: str, limit: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L206)
 
-.. raw:: html
+Description: Get top decentralized applications by daily volume and users [Source: https://dappradar.com/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.disc.top_dapps(
-    sortby: str = '',
-    limit: int = 10,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Key by which to sort data | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get top decentralized applications by daily volume and users [Source: https://dappradar.com/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Top decentralized exchanges.
+Columns: Name, Category, Protocols, Daily Users, Daily Volume [$] |
 
-* **Parameters**
-
-    sortby: str
-        Key by which to sort data
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Top decentralized exchanges.
-        Columns: Name, Category, Protocols, Daily Users, Daily Volume [$]
 
-|
+# VIEW
 
-.. raw:: html
+# top_dapps
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_disc_dappradar_view.display_top_dapps
 
-{{< highlight python >}}
-crypto.disc.top_dapps(
-    limit: int = 10,
-    export: str = '',
-    sortby: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def top_dapps(limit: int, export: str, sortby: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L132)
 
-.. raw:: html
+Description: Displays top decentralized exchanges [Source: https://dappradar.com/]
 
-    <p>
-    Displays top decentralized exchanges [Source: https://dappradar.com/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

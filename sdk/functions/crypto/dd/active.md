@@ -1,94 +1,65 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: active
+description: OpenBB SDK Function
+---
+# active
 
-|
+## crypto_dd_glassnode_model.get_active_addresses
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def activ) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L303)
 
-.. raw:: html
+Description: Returns active addresses of a certain symbol
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.active(
-    symbol: str,
-    interval: str = '24h',
-    start_date: int = 1262322000,
-    end_date: int = 1668093490,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
+| interval | str | Interval frequency (e.g., 24h) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns active addresses of a certain symbol
-    [Source: https://glassnode.com]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | active addresses over time |
 
-* **Parameters**
-
-    symbol : str
-        Asset to search active addresses (e.g., BTC)
-    start_date : int
-        Initial date timestamp (e.g., 1_614_556_800)
-    end_date : int
-        End date timestamp (e.g., 1_614_556_800)
-    interval : str
-        Interval frequency (e.g., 24h)
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        active addresses over time
 
-|
+# VIEW
 
-.. raw:: html
+# active
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_glassnode_view.display_active_addresses
 
-{{< highlight python >}}
-crypto.dd.active(
-    symbol: str,
-    start_date: int = 1577836800,
-    end_date: int = 1609459200,
-    interval: str = '24h',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def activ) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L31)
 
-.. raw:: html
+Description: Display active addresses of a certain symbol over time
 
-    <p>
-    Display active addresses of a certain symbol over time
-    [Source: https://glassnode.org]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| interval | str | Interval frequency (possible values are: 24h, 1w, 1month) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbol : str
-        Asset to search active addresses (e.g., BTC)
-    start_date : int
-        Initial date timestamp (e.g., 1_614_556_800)
-    end_date : int
-        End date timestamp (e.g., 1_614_556_800)
-    interval : str
-        Interval frequency (possible values are: 24h, 1w, 1month)
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

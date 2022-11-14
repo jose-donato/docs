@@ -1,72 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: curve
+description: OpenBB SDK Function
+---
+# curve
 
-|
+## futures_yfinance_model.get_curve_futures
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def curve(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L117)
 
-.. raw:: html
+Description: Get curve futures [Source: Yahoo Finance]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-futures.curve(
-    symbol: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | symbol to get forward curve | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get curve futures [Source: Yahoo Finance]
-    </p>
+None
 
-* **Parameters**
-
-    symbol: str
-        symbol to get forward curve
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-futures.curve(
-    symbol: str,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+# curve
 
-.. raw:: html
+## futures_yfinance_view.display_curve
 
-    <p>
-    Display curve futures [Source: Yahoo Finance]
-    </p>
+```python
+def curve(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L227)
 
-* **Parameters**
+Description: Display curve futures [Source: Yahoo Finance]
 
-    symbol: str
-        Curve future symbol to display
-    raw: bool
-        Display futures timeseries in raw format
-    export: str
-        Type of format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Curve future symbol to display | None | False |
+| raw | bool | Display futures timeseries in raw format | None | False |
+| export | str | Type of format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,82 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: validators
+description: OpenBB SDK Function
+---
+# validators
 
-|
+## crypto_defi_terramoney_fcd_model.get_validators
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def validators(sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L153)
 
-.. raw:: html
+Description: Get information about terra validators [Source: https://fcd.terra.dev/swagger]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.validators(
-    sortby: str = 'votingPower',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get information about terra validators [Source: https://fcd.terra.dev/swagger]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | terra validators details |
 
-* **Parameters**
-
-    sortby: str
-        Key by which to sort data. Choose from:
-        validatorName, tokensAmount, votingPower, commissionRate, status, uptime
-    ascend: bool
-        Flag to sort data descending
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        terra validators details
 
-|
+# VIEW
 
-.. raw:: html
+# validators
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_defi_terramoney_fcd_view.display_validators
 
-{{< highlight python >}}
-crypto.defi.validators(
-    limit: int = 10,
-    sortby: str = 'votingPower',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def validators(limit: int, sortby: str, ascend: bool, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L63)
 
-.. raw:: html
+Description: Display information about terra validators [Source: https://fcd.terra.dev/swagger]
 
-    <p>
-    Display information about terra validators [Source: https://fcd.terra.dev/swagger]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data. Choose from:
+validatorName, tokensAmount, votingPower, commissionRate, status, uptime | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data. Choose from:
-        validatorName, tokensAmount, votingPower, commissionRate, status, uptime
-    ascend: bool
-        Flag to sort data descending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

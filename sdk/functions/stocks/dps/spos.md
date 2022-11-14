@@ -1,80 +1,62 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: spos
+description: OpenBB SDK Function
+---
+# spos
 
-|
+## stocks_dps_stockgrid_model.get_net_short_position
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def spos(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L168)
 
-.. raw:: html
+Description: Get net short position. [Source: Stockgrid]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.dps.spos(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock to get data from | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Net short position | None | None |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get net short position. [Source: Stockgrid]
-    </p>
+None
 
-* **Parameters**
-
-    symbol: str
-        Stock to get data from
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Net short position
 
-|
+# VIEW
 
-.. raw:: html
+# spos
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_dps_stockgrid_view.net_short_position
 
-{{< highlight python >}}
-stocks.dps.spos(
-    symbol: str,
-    limit: int = 84,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def spos(symbol: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L248)
 
-.. raw:: html
+Description: Plot net short position. [Source: Stockgrid]
 
-    <p>
-    Plot net short position. [Source: Stockgrid]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock to plot for | None | False |
+| limit | int | Number of last open market days to show | None | False |
+| raw | bool | Flag to print raw data instead | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
-    symbol: str
-        Stock to plot for
-    limit : int
-        Number of last open market days to show
-    raw : bool
-        Flag to print raw data instead
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,74 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: price
+description: OpenBB SDK Function
+---
+# price
 
-|
+## forex_oanda_model.fx_price_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def price(accountID: str, instrument: Union[str, NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L35)
 
-.. raw:: html
+Description: Request price for a forex pair.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.price(
-    accountID: str = 'REPLACE_ME',
-    instrument: Optional[str] = None,
-    chart: bool = False,
-) -> Union[Dict[str, str], bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request price for a forex pair.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Union[Dict[str, str], bool] | The currency pair price or False |
 
-* **Parameters**
-
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    instrument : Union[str, None]
-        The loaded currency pair, by default None
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Union[Dict[str, str], bool]
-        The currency pair price or False
 
-|
+# VIEW
 
-.. raw:: html
+# price
 
-    <h3>
-    > Getting charts
-    </h3>
+## forex_oanda_view.get_fx_price
 
-{{< highlight python >}}
-forex.oanda.price(
-    account: str,
-    instrument: Optional[str] = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def pric) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L39)
 
-.. raw:: html
+Description: View price for loaded currency pair.
 
-    <p>
-    View price for loaded currency pair.
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda account ID | None | False |
+| instrument | Union[str, None] | Instrument code or None | None | False |
 
-    accountID : str
-        Oanda account ID
-    instrument : Union[str, None]
-        Instrument code or None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

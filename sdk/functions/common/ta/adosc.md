@@ -1,95 +1,66 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: adosc
+description: OpenBB SDK Function
+---
+# adosc
 
-|
+## common_ta_volume_model.adosc
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def adosc(data: pd.DataFrame, use_open: bool, fast: int, slow: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L45)
 
-.. raw:: html
+Description: Calculate AD oscillator technical indicator
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.adosc(
-    data: pandas.core.frame.DataFrame,
-    use_open: bool = False,
-    fast: int = 3,
-    slow: int = 10,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of OHLC prices | None | False |
+| use_open | bool | Whether to use open prices | None | False |
+| fast | int | Fast value | None | False |
+| slow | int | Slow value | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate AD oscillator technical indicator
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe with technical indicator |
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe of OHLC prices
-    use_open : bool
-        Whether to use open prices
-    fast: int
-        Fast value
-    slow: int
-        Slow value
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe with technical indicator
 
-|
+# VIEW
 
-.. raw:: html
+# adosc
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_ta_volume_view.display_adosc
 
-{{< highlight python >}}
-common.ta.adosc(
-    data: pandas.core.frame.DataFrame,
-    fast: int = 3,
-    slow: int = 10,
-    use_open: bool = False,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def adosc(data: pd.DataFrame, fast: int, slow: int, use_open: bool, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L140)
 
-.. raw:: html
+Description: Display AD Osc Indicator
 
-    <p>
-    Display AD Osc Indicator
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of ohlc prices | None | False |
+| use_open | bool | Whether to use open prices in calculation | None | False |
+| fast | int | Length of fast window | None | False |
+| slow | int | Length of slow window | None | False |
+| symbol | str | Stock ticker | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    use_open : bool
-        Whether to use open prices in calculation
-    fast: int
-         Length of fast window
-    slow : int
-        Length of slow window
-    symbol : str
-        Stock ticker
-    export : str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (3 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

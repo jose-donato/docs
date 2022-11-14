@@ -1,46 +1,33 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: hist
+description: OpenBB SDK Function
+---
+# hist
 
-|
+## forex_av_model.get_historical
 
-.. raw:: html
+```python
+def hist(to_symbol: str, from_symbol: str, resolution: str, interval: int, start_date: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L96)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get historical forex data.
 
-{{< highlight python >}}
-forex.hist(
-    to_symbol: str = 'USD',
-    from_symbol: str = 'EUR',
-    resolution: str = 'd',
-    interval: int = 5,
-    start_date: str = '',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| to_symbol | str | To forex symbol | None | False |
+| from_symbol | str | From forex symbol | None | False |
+| resolution | str | Resolution of data.  Can be "i", "d", "w", "m" for intraday, daily, weekly or monthly | None | True |
+| interval | int | Interval for intraday data | None | True |
+| start_date | str | Start date for data. | None | True |
 
-    <p>
-    Get historical forex data.
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Historical data for forex pair |
 
-    to_symbol : str
-        To forex symbol
-    from_symbol : str
-        From forex symbol
-    resolution : str, optional
-        Resolution of data.  Can be "i", "d", "w", "m" for intraday, daily, weekly or monthly
-    interval : int, optional
-        Interval for intraday data
-    start_date : str, optional
-        Start date for data.
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Historical data for forex pair

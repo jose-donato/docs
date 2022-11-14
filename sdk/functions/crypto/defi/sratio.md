@@ -1,74 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: sratio
+description: OpenBB SDK Function
+---
+# sratio
 
-|
+## crypto_defi_terramoney_fcd_model.get_staking_ratio_history
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def sratio(limit: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L284)
 
-.. raw:: html
+Description: Get terra blockchain staking ratio history [Source: https://fcd.terra.dev/swagger]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.sratio(
-    limit: int = 200,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | The number of ratios to show | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get terra blockchain staking ratio history [Source: https://fcd.terra.dev/swagger]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | historical staking ratio |
 
-* **Parameters**
-
-    limit: int
-        The number of ratios to show
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        historical staking ratio
 
-|
+# VIEW
 
-.. raw:: html
+# sratio
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_defi_terramoney_fcd_view.display_staking_ratio_history
 
-{{< highlight python >}}
-crypto.defi.sratio(
-    limit: int = 90,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def sratio(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L206)
 
-.. raw:: html
+Description: Display terra blockchain staking ratio history [Source: https://fcd.terra.dev/v1]
 
-    <p>
-    Display terra blockchain staking ratio history [Source: https://fcd.terra.dev/v1]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    limit: int
-        Number of records to display
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

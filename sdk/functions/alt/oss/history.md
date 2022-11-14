@@ -1,73 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: history
+description: OpenBB SDK Function
+---
+# history
 
-|
+## alt_oss_github_model.get_stars_history
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def history(repo: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L83)
 
-.. raw:: html
+Description: Get repository star history
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-alt.oss.history(
-    repo: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| repo | str | Repo to search for Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get repository star history
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Date, Stars | None |
 
-* **Parameters**
-
-    repo : str
-            Repo to search for Format: org/repo, e.g., openbb-finance/openbbterminal
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame - Columns: Date, Stars
 
-|
+# VIEW
 
-.. raw:: html
+# history
 
-    <h3>
-    > Getting charts
-    </h3>
+## alt_oss_github_view.display_star_history
 
-{{< highlight python >}}
-alt.oss.history(
-    repo: str,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def history(repo: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L27)
 
-.. raw:: html
+Description: Display repo summary [Source: https://api.github.com]
 
-    <p>
-    Display repo summary [Source: https://api.github.com]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| repo | str | Repository to display star history. Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    repo : str
-            Repository to display star history. Format: org/repo, e.g., openbb-finance/openbbterminal
-    export : str
-            Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-            External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

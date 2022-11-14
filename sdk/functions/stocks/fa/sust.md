@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: sust
+description: OpenBB SDK Function
+---
+# sust
 
-|
+## stocks_fa_yahoo_finance_model.get_sustainability
 
-.. raw:: html
+```python
+def sust(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L137)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get sustainability metrics from yahoo
 
-{{< highlight python >}}
-stocks.fa.sust(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Get sustainability metrics from yahoo
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of sustainability metrics |
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of sustainability metrics

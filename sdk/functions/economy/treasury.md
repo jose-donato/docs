@@ -1,107 +1,74 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: treasury
+description: OpenBB SDK Function
+---
+# treasury
 
-|
+## economy_econdb_model.get_treasuries
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def treasury(instruments: list, maturities: list, frequency: str, start_date: str, end_date: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L723)
 
-.. raw:: html
+Description: Get U.S. Treasury rates [Source: EconDB]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-economy.treasury(
-    instruments: list = None,
-    maturities: list = None,
-    frequency: str = 'monthly',
-    start_date: str = '1900-01-01',
-    end_date: str = '2022-11-10',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| instruments | list | Type(s) of treasuries, nominal, inflation-adjusted (long term average) or secondary market.
+Available options can be accessed through economy.treasury_maturities(). | None | False |
+| maturities | list | Treasury maturities to get. Available options can be accessed through economy.treasury_maturities(). | None | False |
+| frequency | str | Frequency of the data, this can be annually, monthly, weekly or daily. | None | False |
+| start_date | str | Starting date, format "YEAR-MONTH-DAY", i.e. 2010-12-31. | None | False |
+| end_date | str | End date, format "YEAR-MONTH-DAY", i.e. 2020-06-05. | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| treasury_data | pd.Dataframe | Holds data of the selected types and maturities | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get U.S. Treasury rates [Source: EconDB]
-    </p>
+None
 
-* **Parameters**
-
-    instruments: list
-        Type(s) of treasuries, nominal, inflation-adjusted (long term average) or secondary market.
-        Available options can be accessed through economy.treasury_maturities().
-    maturities : list
-        Treasury maturities to get. Available options can be accessed through economy.treasury_maturities().
-    frequency : str
-        Frequency of the data, this can be annually, monthly, weekly or daily.
-    start_date : str
-        Starting date, format "YEAR-MONTH-DAY", i.e. 2010-12-31.
-    end_date : str
-        End date, format "YEAR-MONTH-DAY", i.e. 2020-06-05.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
-
-    treasury_data: pd.Dataframe
-        Holds data of the selected types and maturities
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-economy.treasury(
-    instruments: list = None,
-    maturities: list = None,
-    frequency: str = 'monthly',
-    start_date: str = '1900-01-01',
-    end_date: str = '2022-11-10',
-    raw: bool = False,
-    external_axes: Optional[List[axes]] = None,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display U.S. Treasury rates [Source: EconDB]
-    </p>
-
-* **Parameters**
-
-    instruments: list
-        Type(s) of treasuries, nominal, inflation-adjusted or secondary market.
-        Available options can be accessed through economy.treasury_maturities().
-    maturities : list
-        Treasury maturities to display. Available options can be accessed through economy.treasury_maturities().
-    frequency : str
-        Frequency of the data, this can be daily, weekly, monthly or annually
-    start_date : str
-        Starting date, format "YEAR-MONTH-DAY", i.e. 2010-12-31.
-    end_date : str
-        End date, format "YEAR-MONTH-DAY", i.e. 2020-06-05.
-    raw : bool
-        Whether to display the raw output.
-    external_axes: Optional[List[plt.axes]]
-        External axes to plot on
-    export : str
-        Export data to csv,json,xlsx or png,jpg,pdf,svg file
-    chart: bool
-       Flag to display chart
 
 
-* **Returns**
+# VIEW
 
-    Plots the Treasury Series.
+# treasury
+
+## economy_econdb_view.show_treasuries
+
+```python
+def treasury(instruments: list, maturities: list, frequency: str, start_date: str, end_date: str, raw: bool, external_axes: Union[List[axes], NoneType], export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_view.py#L145)
+
+Description: Display U.S. Treasury rates [Source: EconDB]
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| instruments | list | Type(s) of treasuries, nominal, inflation-adjusted or secondary market.
+Available options can be accessed through economy.treasury_maturities(). | None | False |
+| maturities | list | Treasury maturities to display. Available options can be accessed through economy.treasury_maturities(). | None | False |
+| frequency | str | Frequency of the data, this can be daily, weekly, monthly or annually | None | False |
+| start_date | str | Starting date, format "YEAR-MONTH-DAY", i.e. 2010-12-31. | None | False |
+| end_date | str | End date, format "YEAR-MONTH-DAY", i.e. 2020-06-05. | None | False |
+| raw | bool | Whether to display the raw output. | None | False |
+| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
+| export | str | Export data to csv,json,xlsx or png,jpg,pdf,svg file | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| Plots the Treasury Series. | None | None | None | None |
+
+## Returns
+
+None
+
+## Examples
+

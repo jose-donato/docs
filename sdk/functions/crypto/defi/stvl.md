@@ -1,65 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: stvl
+description: OpenBB SDK Function
+---
+# stvl
 
-|
+## crypto_defi_llama_model.get_defi_tvl
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def stv) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L164)
 
-.. raw:: html
+Description: Returns historical values of the total sum of TVLs from all listed protocols.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.stvl() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns historical values of the total sum of TVLs from all listed protocols.
-    [Source: https://docs.llama.fi/api]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Historical values of total sum of Total Value Locked from all listed protocols. |
 
-* **Returns**
+## Examples
 
-    pd.DataFrame
-        Historical values of total sum of Total Value Locked from all listed protocols.
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-crypto.defi.stvl(
-    limit: int = 5,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+# stvl
 
-.. raw:: html
+## crypto_defi_llama_view.display_defi_tvl
 
-    <p>
-    Displays historical values of the total sum of TVLs from all listed protocols.
-    [Source: https://docs.llama.fi/api]
-    </p>
+```python
+def stvl(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L187)
 
-* **Parameters**
+Description: Displays historical values of the total sum of TVLs from all listed protocols.
 
-    limit: int
-        Number of records to display, by default 5
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of records to display, by default 5 | 5 | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

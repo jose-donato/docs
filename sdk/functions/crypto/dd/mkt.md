@@ -1,102 +1,73 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: mkt
+description: OpenBB SDK Function
+---
+# mkt
 
-|
+## crypto_dd_coinpaprika_model.get_coin_markets_by_id
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def mkt(symbol: str, quotes: str, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L186)
 
-.. raw:: html
+Description: All markets for given coin and currency [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.mkt(
-    symbol: str = 'eth-ethereum',
-    quotes: str = 'USD',
-    sortby: str = 'pct_volume_share',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Coin Parpika identifier of coin e.g. eth-ethereum | None | False |
+| quotes | str | Comma separated list of quotes to return.
+Example: quotes=USD,BTC
+Allowed values:
+BTC, ETH, USD, EUR, PLN, KRW, GBP, CAD, JPY, RUB, TRY, NZD, AUD, CHF, UAH, HKD, SGD, NGN,
+PHP, MXN, BRL, THB, CLP, CNY, CZK, DKK, HUF, IDR, ILS, INR, MYR, NOK, PKR, SEK, TWD, ZAR,
+VND, BOB, COP, PEN, ARS, ISK | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid (see for possible values:
+https://api.coinpaprika.com/v1). | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    All markets for given coin and currency [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | All markets for given coin and currency |
 
-* **Parameters**
-
-    symbol: str
-        Coin Parpika identifier of coin e.g. eth-ethereum
-    quotes: str
-        Comma separated list of quotes to return.
-        Example: quotes=USD,BTC
-        Allowed values:
-        BTC, ETH, USD, EUR, PLN, KRW, GBP, CAD, JPY, RUB, TRY, NZD, AUD, CHF, UAH, HKD, SGD, NGN,
-        PHP, MXN, BRL, THB, CLP, CNY, CZK, DKK, HUF, IDR, ILS, INR, MYR, NOK, PKR, SEK, TWD, ZAR,
-        VND, BOB, COP, PEN, ARS, ISK
-    sortby: str
-        Key by which to sort data. Every column name is valid (see for possible values:
-        https://api.coinpaprika.com/v1).
-    ascend: bool
-        Flag to sort data ascending
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pandas.DataFrame
-        All markets for given coin and currency
 
-|
+# VIEW
 
-.. raw:: html
+# mkt
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_coinpaprika_view.display_markets
 
-{{< highlight python >}}
-crypto.dd.mkt(
-    from_symbol: str = 'BTC',
-    to_symbol: str = 'USD',
-    limit: int = 20,
-    sortby: str = 'pct_volume_share',
-    ascend: bool = True,
-    links: bool = False,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def mkt(from_symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool, links: bool, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L241)
 
-.. raw:: html
+Description: Get all markets for given coin id. [Source: CoinPaprika]
 
-    <p>
-    Get all markets for given coin id. [Source: CoinPaprika]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| from_symbol | str | Cryptocurrency symbol (e.g. BTC) | None | False |
+| to_symbol | str | Quoted currency | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid (see for possible values:
+https://api.coinpaprika.com/v1). | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| links | bool | Flag to display urls | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    from_symbol: str
-        Cryptocurrency symbol (e.g. BTC)
-    to_symbol: str
-        Quoted currency
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data. Every column name is valid (see for possible values:
-        https://api.coinpaprika.com/v1).
-    ascend: bool
-        Flag to sort data ascending
-    links: bool
-        Flag to display urls
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

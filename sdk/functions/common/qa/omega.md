@@ -1,75 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: omega
+description: OpenBB SDK Function
+---
+# omega
 
-|
+## common_qa_model.get_omega
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def omega(data: pd.DataFrame, threshold_start: float, threshold_end: float) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L638)
 
-.. raw:: html
+Description: Get the omega series
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.qa.omega(
-    data: pandas.core.frame.DataFrame,
-    threshold_start: float = 0,
-    threshold_end: float = 1.5,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | stock dataframe | None | False |
+| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get the omega series
-    </p>
+None
 
-* **Parameters**
-
-    data: pd.DataFrame
-        stock dataframe
-    threshold_start: float
-        annualized target return threshold start of plotted threshold range
-    threshold_end: float
-        annualized target return threshold end of plotted threshold range
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-common.qa.omega(
-    data: pandas.core.frame.DataFrame,
-    threshold_start: float = 0,
-    threshold_end: float = 1.5,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+# omega
 
-.. raw:: html
+## common_qa_view.display_omega
 
-    <p>
-    Displays the omega ratio
-    </p>
+```python
+def omega(data: pd.DataFrame, threshold_start: float, threshold_end: float) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1170)
 
-* **Parameters**
+Description: Displays the omega ratio
 
-    data: pd.DataFrame
-        stock dataframe
-    threshold_start: float
-        annualized target return threshold start of plotted threshold range
-    threshold_end: float
-        annualized target return threshold end of plotted threshold range
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | stock dataframe | None | False |
+| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,35 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: github_data
+description: OpenBB SDK Function
+---
+# github_data
 
-|
+## alt_oss_github_model.get_github_data
 
-.. raw:: html
+```python
+def github_data(url: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L20)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get repository stats
 
-{{< highlight python >}}
-alt.oss.github_data(
-    url: str,
-    **kwargs, chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| url | str | github api endpoint | None | False |
+| params | dict | params to pass to api endpoint | None | False |
 
-    <p>
-    Get repository stats
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| dict with data | None |
 
-    url: str
-        github api endpoint
-    params: dict
-        params to pass to api endpoint
+## Examples
 
-* **Returns**
-
-    dict with data

@@ -1,37 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: customer
+description: OpenBB SDK Function
+---
+# customer
 
-|
+## stocks_dd_csimarket_model.get_customers
 
-.. raw:: html
+```python
+def customer(symbol: str, limit: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L65)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Print customers from ticker provided
 
-{{< highlight python >}}
-stocks.dd.customer(
-    symbol: str,
-    limit: int = 50,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to select customers from | None | False |
+| limit | int | The maximum number of rows to show | None | False |
 
-    <p>
-    Print customers from ticker provided
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | A dataframe of suppliers |
 
-    symbol: str
-        Ticker to select customers from
-    limit: int
-        The maximum number of rows to show
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        A dataframe of suppliers

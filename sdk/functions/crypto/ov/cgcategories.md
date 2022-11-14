@@ -1,76 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cgcategories
+description: OpenBB SDK Function
+---
+# cgcategories
 
-|
+## crypto_ov_pycoingecko_model.get_top_crypto_categories
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cgcategories(sort_filter: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L156)
 
-.. raw:: html
+Description: Returns top crypto categories [Source: CoinGecko]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cgcategories(
-    sort_filter: str = 'market_cap_desc',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns top crypto categories [Source: CoinGecko]
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Rank, Name, Change_1h, Change_7d, Market_Cap, Volume_24h,Coins, Url |
 
-    Returns
-    -------
-    pandas.DataFrame
-       Rank, Name, Change_1h, Change_7d, Market_Cap, Volume_24h,Coins, Url
-    </p>
+## Examples
 
-* **Returns**
 
-    pandas.DataFrame
-       Rank, Name, Change_1h, Change_7d, Market_Cap, Volume_24h,Coins, Url
 
-|
 
-.. raw:: html
+# VIEW
 
-    <h3>
-    > Getting charts
-    </h3>
+# cgcategories
 
-{{< highlight python >}}
-crypto.ov.cgcategories(
-    sortby: str = 'market_cap_desc',
-    limit: int = 15,
-    export: str = '',
-    pie: bool = False,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+## crypto_ov_pycoingecko_view.display_categories
 
-.. raw:: html
+```python
+def cgcategories(sortby: str, limit: int, export: str, pie: bool) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L438)
 
-    <p>
-    Shows top cryptocurrency categories by market capitalization
+Description: Shows top cryptocurrency categories by market capitalization
 
-    The cryptocurrency category ranking is based on market capitalization. [Source: CoinGecko]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Key by which to sort data | None | False |
+| limit | int | Number of records to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| pie | bool | Whether to show the pie chart | None | False |
 
-    sortby: str
-        Key by which to sort data
-    limit: int
-        Number of records to display
-    export: str
-        Export dataframe data to csv,json,xlsx file
-    pie: bool
-        Whether to show the pie chart
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

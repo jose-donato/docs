@@ -1,44 +1,32 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: close
+description: OpenBB SDK Function
+---
+# close
 
-|
+## crypto_dd_glassnode_model.get_close_price
 
-.. raw:: html
+```python
+def clos) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L179)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Returns the price of a cryptocurrency
 
-{{< highlight python >}}
-crypto.dd.close(
-    symbol: str,
-    start_date: str = '2010-01-01',
-    end_date: str = '2022-11-10',
-    print_errors: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto to check close price (BTC or ETH) | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| print_errors | bool | Flag to print errors. Default: True | True | False |
 
-    <p>
-    Returns the price of a cryptocurrency
-    [Source: https://glassnode.com]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | price over time |
 
-    symbol : str
-        Crypto to check close price (BTC or ETH)
-    start_date : str
-        Initial date, format YYYY-MM-DD
-    end_date : str
-        Final date, format YYYY-MM-DD
-    print_errors: bool
-        Flag to print errors. Default: True
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        price over time

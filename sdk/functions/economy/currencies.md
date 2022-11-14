@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: currencies
+description: OpenBB SDK Function
+---
+# currencies
 
-|
+## economy_wsj_model.global_currencies
 
-.. raw:: html
+```python
+def currencie) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L231)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Scrape data for global currencies
 
-{{< highlight python >}}
-economy.currencies() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Scrape data for global currencies
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing name, price, net change and percent change |
 
-    currencies: pd.DataFrame
-        Dataframe containing name, price, net change and percent change
+## Examples
+

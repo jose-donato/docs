@@ -1,77 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: orderbook
+description: OpenBB SDK Function
+---
+# orderbook
 
-|
+## forex_oanda_model.orderbook_plot_data_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def orderbook(instrument: Union[str, NoneType], accountID: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L136)
 
-.. raw:: html
+Description: Request order book data for plotting.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.orderbook(
-    instrument: Optional[str] = None,
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request order book data for plotting.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Union[pd.DataFrame, bool] | Order book data or False |
 
-* **Parameters**
-
-    instrument : Union[str, None]
-        The loaded currency pair, by default None
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Union[pd.DataFrame, bool]
-        Order book data or False
 
-|
+# VIEW
 
-.. raw:: html
+# orderbook
 
-    <h3>
-    > Getting charts
-    </h3>
+## forex_oanda_view.get_order_book
 
-{{< highlight python >}}
-forex.oanda.orderbook(
-    accountID: str,
-    instrument: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def orderboo) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L79)
 
-.. raw:: html
+Description: Plot the orderbook for the instrument if Oanda provides one.
 
-    <p>
-    Plot the orderbook for the instrument if Oanda provides one.
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda user account ID | None | False |
+| instrument | str | The loaded currency pair | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    accountID : str
-        Oanda user account ID
-    instrument : str
-        The loaded currency pair
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

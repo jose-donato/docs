@@ -1,36 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: load
+description: OpenBB SDK Function
+---
+# load
 
-|
+## portfolio_optimization_excel_model.load_allocation
 
-.. raw:: html
+```python
+def load(excel_file: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/excel_model.py#L53)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Load in the Excel file to determine the allocation that needs to be set.
 
-{{< highlight python >}}
-portfolio.po.load(
-    excel_file: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| excel_file | str | The location of the Excel file that needs to be loaded. | None | False |
 
-    <p>
-    Load in the Excel file to determine the allocation that needs to be set.
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| list | Returns a list with ticker symbols |
 
-    excel_file: str
-        The location of the Excel file that needs to be loaded.
+## Examples
 
-* **Returns**
-
-    tickers: list
-        Returns a list with ticker symbols
-    categories: dictionary
-        Returns a dictionary that specifies each category

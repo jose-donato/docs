@@ -1,86 +1,65 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: gainers
+description: OpenBB SDK Function
+---
+# gainers
 
-|
+## crypto_disc_pycoingecko_model.get_gainers
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def gainers(interval: str, limit: int, sortby: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L252)
 
-.. raw:: html
+Description: Shows Largest Gainers - coins which gain the most in given period. [Source: CoinGecko]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.disc.gainers(
-    interval: str = '1h',
-    limit: int = 50,
-    sortby: str = 'market_cap_rank',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| interval | str | Time interval by which data is displayed. One from [1h, 24h, 7d, 14d, 30d, 60d, 1y] | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to
+API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation) | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Shows Largest Gainers - coins which gain the most in given period. [Source: CoinGecko]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Top Gainers  - coins which gain most in price in given period of time.
+Columns: Symbol, Name, Volume, Price, %Change_{interval}, Url |
 
-* **Parameters**
-
-    interval: str
-        Time interval by which data is displayed. One from [1h, 24h, 7d, 14d, 30d, 60d, 1y]
-    limit: int
-        Number of records to display
-    sortby: str
-        Key to sort data. The table can be sorted by every of its columns. Refer to
-        API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation)
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Top Gainers  - coins which gain most in price in given period of time.
-        Columns: Symbol, Name, Volume, Price, %Change_{interval}, Url
 
-|
+# VIEW
 
-.. raw:: html
+# gainers
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_disc_pycoingecko_view.display_gainers
 
-{{< highlight python >}}
-crypto.disc.gainers(
-    interval: str = '1h',
-    limit: int = 20,
-    sortby: str = 'market_cap_rank',
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def gainers(interval: str, limit: int, sortby: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L99)
 
-.. raw:: html
+Description: Shows Largest Gainers - coins which gain the most in given period. [Source: CoinGecko]
 
-    <p>
-    Shows Largest Gainers - coins which gain the most in given period. [Source: CoinGecko]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| interval | str | Time period by which data is displayed. One from [1h, 24h, 7d, 14d, 30d, 60d, 1y] | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to
+API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    interval: str
-        Time period by which data is displayed. One from [1h, 24h, 7d, 14d, 30d, 60d, 1y]
-    limit: int
-        Number of records to display
-    sortby: str
-        Key to sort data. The table can be sorted by every of its columns. Refer to
-        API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation)
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

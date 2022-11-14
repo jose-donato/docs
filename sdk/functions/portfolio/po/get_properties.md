@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: get_properties
+description: OpenBB SDK Function
+---
+# get_properties
 
-|
+## portfolio_optimization_optimizer_model.get_properties
 
-.. raw:: html
+```python
+def get_propertie) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L3072)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get properties to use on property optimization.
 
-{{< highlight python >}}
-portfolio.po.get_properties() -> List[str]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get properties to use on property optimization.
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+|  | List of available properties to use on property optimization. |
 
-    List[str]:
-        List of available properties to use on property optimization.
+## Examples
+

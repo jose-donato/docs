@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: score
+description: OpenBB SDK Function
+---
+# score
 
-|
+## stocks_fa_fmp_model.get_score
 
-.. raw:: html
+```python
+def scor) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L24)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets value score from fmp
 
-{{< highlight python >}}
-stocks.fa.score(
-    symbol: str,
-    chart: bool = False,
-) -> Optional[numpy.number]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Gets value score from fmp
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| np.number | Value score |
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    np.number
-        Value score

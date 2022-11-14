@@ -1,27 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: y_values
+description: OpenBB SDK Function
+---
+# y_values
 
-|
+## stocks_options_yfinance_model.get_y_values
 
-.. raw:: html
+```python
+def y_values(base: float, price: float, options: List[Dict[Any, Any]], underlying: int) -> float:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L221)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Generates y values for corresponding x values
 
-{{< highlight python >}}
-stocks.options.y_values(
-    base: float,
-    price: float,
-    options: List[Dict[Any, Any]],
-    underlying: int,
-    chart: bool = False,
-) -> float
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Generates y values for corresponding x value
-    </p>
+## Returns
+
+None
+
+## Examples
+

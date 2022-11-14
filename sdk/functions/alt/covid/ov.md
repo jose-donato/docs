@@ -1,76 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ov
+description: OpenBB SDK Function
+---
+# ov
 
-|
+## alt_covid_model.get_covid_ov
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def ov(country: str, limit: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L98)
 
-.. raw:: html
+Description: Get historical cases and deaths by country
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-alt.covid.ov(
-    country, limit: int = 100,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country to get data for | None | False |
+| limit | int | Number of raw data to show | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get historical cases and deaths by country
-    </p>
+None
 
-* **Parameters**
-
-    country: str
-        Country to get data for
-    limit: int
-        Number of raw data to show
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-alt.covid.ov(
-    country, raw: bool = False,
-    limit: int = 10,
-    export: str = '',
-    plot: bool = True,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+# ov
 
-.. raw:: html
+## alt_covid_view.display_covid_ov
 
-    <p>
-    Show historical cases and deaths by country
-    </p>
+```python
+def ov(country: str, raw: bool, limit: int, export: str, plot: bool) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L131)
 
-* **Parameters**
+Description: Show historical cases and deaths by country
 
-    country: str
-        Country to get data for
-    raw: bool
-        Flag to display raw data
-    limit: int
-        Number of raw data to show
-    export: str
-        Format to export data
-    plot: bool
-        Flag to display historical plot
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country to get data for | None | False |
+| raw | bool | Flag to display raw data | None | False |
+| limit | int | Number of raw data to show | None | False |
+| export | str | Format to export data | None | False |
+| plot | bool | Flag to display historical plot | None | False |
+
+## Returns
+
+None
+
+## Examples
 

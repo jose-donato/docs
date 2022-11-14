@@ -1,93 +1,66 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: news
+description: OpenBB SDK Function
+---
+# news
 
-|
+## common_newsapi_model.get_news
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def new) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
 
-.. raw:: html
+Description: Get news for a given term. [Source: NewsAPI]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.news(
-    query: str,
-    limit: int = 10,
-    start_date: str = '2022-11-03',
-    show_newest: bool = True,
-    sources: str = '',
-    chart: bool = False,
-) -> List[Tuple[Any, Any]]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| query | str | term to search on the news articles | None | False |
+| start_date | str | date to start searching articles from formatted YYYY-MM-DD | None | False |
+| show_newest | bool | flag to show newest articles first | None | False |
+| sources | str | sources to exclusively show news from (comma separated) | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| tables | List[Tuple] | List of tuples containing news df in first index and dict containing title of news df | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get news for a given term. [Source: NewsAPI]
-    </p>
+None
 
-* **Parameters**
-
-    query : str
-        term to search on the news articles
-    start_date: str
-        date to start searching articles from formatted YYYY-MM-DD
-    show_newest: bool
-        flag to show newest articles first
-    sources: str
-        sources to exclusively show news from (comma separated)
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    tables : List[Tuple]
-        List of tuples containing news df in first index and dict containing title of news df
 
-|
+# VIEW
 
-.. raw:: html
+# news
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_newsapi_view.display_news
 
-{{< highlight python >}}
-etf.news(
-    query: str,
-    limit: int = 3,
-    start_date: str = '2022-11-03',
-    show_newest: bool = True,
-    sources: str = '',
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def new) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L19)
 
-.. raw:: html
+Description: Display news for a given term. [Source: NewsAPI]
 
-    <p>
-    Display news for a given term. [Source: NewsAPI]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| query | str | term to search on the news articles | None | False |
+| start_date | str | date to start searching articles from formatted YYYY-MM-DD | None | False |
+| limit | int | number of articles to display | None | False |
+| show_newest | bool | flag to show newest articles first | None | False |
+| sources | str | sources to exclusively show news from | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    query : str
-        term to search on the news articles
-    start_date: str
-        date to start searching articles from formatted YYYY-MM-DD
-    limit : int
-        number of articles to display
-    show_newest: bool
-        flag to show newest articles first
-    sources: str
-        sources to exclusively show news from
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

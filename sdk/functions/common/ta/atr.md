@@ -1,91 +1,64 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: atr
+description: OpenBB SDK Function
+---
+# atr
 
-|
+## common_ta_volatility_model.atr
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def atr(data: pd.DataFrame, window: int, mamode: str, offset: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L131)
 
-.. raw:: html
+Description: Average True Range
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.atr(
-    data: pandas.core.frame.DataFrame,
-    window: int = 14,
-    mamode: str = 'ema',
-    offset: int = 0,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of ohlc prices | None | False |
+| window | int | Length of window | None | False |
+| mamode | str | Type of filter | None | False |
+| offset | int | Offset value | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Average True Range
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of atr |
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    window : int
-        Length of window
-    mamode: str
-        Type of filter
-    offset : int
-        Offset value
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe of atr
 
-|
+# VIEW
 
-.. raw:: html
+# atr
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_ta_volatility_view.display_atr
 
-{{< highlight python >}}
-common.ta.atr(
-    data: pandas.core.frame.DataFrame,
-    symbol: str = '',
-    window: int = 14,
-    mamode: str = 'sma',
-    offset: int = 0,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def atr(data: pd.DataFrame, symbol: str, window: int, mamode: str, offset: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L288)
 
-.. raw:: html
+Description: Show ATR
 
-    <p>
-    Show ATR
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of ohlc prices | None | False |
+| symbol | str | Ticker symbol | None | False |
+| window | int | Length of window to calculate upper channel | None | False |
+| export | str | Format of export file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    data : pd.DataFrame
-        Dataframe of ohlc prices
-    symbol : str
-        Ticker symbol
-    window : int
-        Length of window to calculate upper channel
-    export : str
-        Format of export file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

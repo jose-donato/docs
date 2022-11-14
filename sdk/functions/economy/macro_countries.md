@@ -1,26 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: macro_countries
+description: OpenBB SDK Function
+---
+# macro_countries
 
-|
+## economy_econdb_model.get_macro_countries
 
-.. raw:: html
+```python
+def macro_countrie) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L636)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: This function returns the available countries and respective currencies.
 
-{{< highlight python >}}
-economy.macro_countries() -> Dict[str, str]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    This function returns the available countries and respective currencies.
-    </p>
+## Returns
 
-* **Returns**
+None
 
-    Dict[str, str]
-        A dictionary with the available countries and respective currencies.
+## Examples
+

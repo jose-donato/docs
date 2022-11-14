@@ -1,26 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: fama_raw
+description: OpenBB SDK Function
+---
+# fama_raw
 
-|
+## stocks_qa_factors_model.get_fama_raw
 
-.. raw:: html
+```python
+def fama_ra) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/quantitative_analysis/factors_model.py#L19)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets base Fama French data to calculate risk
 
-{{< highlight python >}}
-stocks.qa.fama_raw() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Gets base Fama French data to calculate risk
-    </p>
+## Returns
 
-* **Returns**
+None
 
-    fama : pd.DataFrame
-        A data with fama french model information
+## Examples
+

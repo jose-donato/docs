@@ -1,25 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: get_keys_info
+description: OpenBB SDK Function
+---
+# get_keys_info
 
-|
+## keys_model.get_keys_info
 
-.. raw:: html
+```python
+def get_keys_inf) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L168)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get info on available APIs to use in set_keys.
 
-{{< highlight python >}}
-keys.get_keys_info() -> Dict[str, List[str]]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get info on available APIs to use in set_keys.
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| Dict[str, List[str]] | None |
 
-    Dictionary of expected API keys and arguments:  Dict[str, List[str]]
+## Examples
+

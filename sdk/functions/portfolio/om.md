@@ -1,79 +1,61 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: om
+description: OpenBB SDK Function
+---
+# om
 
-|
+## portfolio_model.get_omega
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def om(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, threshold_start: float, threshold_end: float) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1756)
 
-.. raw:: html
+Description: Get omega ratio
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-portfolio.om(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    threshold_start: float = 0,
-    threshold_end: float = 1.5,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get omega ratio
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | None |
 
-* **Parameters**
-
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    threshold_start: float
-        annualized target return threshold start of plotted threshold range
-    threshold_end: float
-        annualized target return threshold end of plotted threshold range
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
 
-|
+# VIEW
 
-.. raw:: html
+# om
 
-    <h3>
-    > Getting charts
-    </h3>
+## portfolio_view.display_omega
 
-{{< highlight python >}}
-portfolio.om(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    threshold_start: float = 0,
-    threshold_end: float = 1.5,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def om(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, threshold_start: float, threshold_end: float) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1685)
 
-.. raw:: html
+Description: Display omega ratio
 
-    <p>
-    Display omega ratio
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
 
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    threshold_start: float
-        annualized target return threshold start of plotted threshold range
-    threshold_end: float
-        annualized target return threshold end of plotted threshold range
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,107 +1,70 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: grhist
+description: OpenBB SDK Function
+---
+# grhist
 
-|
+## stocks_options_screen_syncretism_model.get_historical_greeks
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def grhist(symbol: str, expiry: str, strike: Union[str, float], chain_id: str, put: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L36)
 
-.. raw:: html
+Description: Get histoical option greeks
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.options.grhist(
-    symbol: str,
-    expiry: str,
-    strike: Union[str, float],
-    chain_id: str = '',
-    put: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| expiry | str | Option expiration date | None | False |
+| strike | Union[str, float] | Strike price to look for | None | False |
+| chain_id | str | OCC option symbol.  Overwrites other inputs | None | False |
+| put | bool | Is this a put option? | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get histoical option greeks
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing historical greeks |
 
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol
-    expiry: str
-        Option expiration date
-    strike: Union[str, float]
-        Strike price to look for
-    chain_id: str
-        OCC option symbol.  Overwrites other inputs
-    put: bool
-        Is this a put option?
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    df: pd.DataFrame
-        Dataframe containing historical greeks
 
-|
+# VIEW
 
-.. raw:: html
+# grhist
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_options_screen_syncretism_view.view_historical_greeks
 
-{{< highlight python >}}
-stocks.options.grhist(
-    symbol: str,
-    expiry: str,
-    strike: Union[float, str],
-    greek: str = 'Delta',
-    chain_id: str = '',
-    put: bool = False,
-    raw: bool = False,
-    limit: Union[int, str] = 20,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def grhist(symbol: str, expiry: str, strike: Union[float, str], greek: str, chain_id: str, put: bool, raw: bool, limit: Union[int, str], export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L105)
 
-.. raw:: html
+Description: Plots historical greeks for a given option. [Source: Syncretism]
 
-    <p>
-    Plots historical greeks for a given option. [Source: Syncretism]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker | None | False |
+| expiry | str | Expiration date | None | False |
+| strike | Union[str, float] | Strike price to consider | None | False |
+| greek | str | Greek variable to plot | None | False |
+| chain_id | str | OCC option chain.  Overwrites other variables | None | False |
+| put | bool | Is this a put option? | None | False |
+| raw | bool | Print to console | None | False |
+| limit | int | Number of rows to show in raw | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbol: str
-        Stock ticker
-    expiry: str
-        Expiration date
-    strike: Union[str, float]
-        Strike price to consider
-    greek: str
-        Greek variable to plot
-    chain_id: str
-        OCC option chain.  Overwrites other variables
-    put: bool
-        Is this a put option?
-    raw: bool
-        Print to console
-    limit: int
-        Number of rows to show in raw
-    export: str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: divs
+description: OpenBB SDK Function
+---
+# divs
 
-|
+## stocks_fa_yahoo_finance_model.get_dividends
 
-.. raw:: html
+```python
+def divs(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L255)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get historical dividend for ticker
 
-{{< highlight python >}}
-stocks.fa.divs(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get dividend for | None | False |
 
-    <p>
-    Get historical dividend for ticker
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+|  | Dataframe of dividends and dates |
 
-    symbol: str
-        Ticker symbol to get dividend for
+## Examples
 
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of dividends and dates

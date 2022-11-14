@@ -1,35 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: mykeys
+description: OpenBB SDK Function
+---
+# mykeys
 
-|
+## keys_model.get_keys
 
-.. raw:: html
+```python
+def mykeys(show: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L231)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get currently set API keys.
 
-{{< highlight python >}}
-keys.mykeys(
-    show: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| show | bool | Flag to choose whether to show actual keys or not.
+By default, False. | None | False |
 
-    <p>
-    Get currently set API keys.
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Currents keys |
 
-    show: bool
-        Flag to choose whether to show actual keys or not.
-        By default, False.
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Currents keys

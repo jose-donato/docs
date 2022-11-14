@@ -1,95 +1,66 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: es
+description: OpenBB SDK Function
+---
+# es
 
-|
+## common_qa_model.get_es
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def es(data: pd.DataFrame, use_mean: bool, distribution: str, percentile: Union[float, int], portfolio: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L357)
 
-.. raw:: html
+Description: Gets Expected Shortfall for specified stock dataframe.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.qa.es(
-    data: pandas.core.frame.DataFrame,
-    use_mean: bool = False,
-    distribution: str = 'normal',
-    percentile: Union[float, int] = 99.9,
-    portfolio: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Data dataframe | None | False |
+| use_mean | bool | If one should use the data mean for calculation | None | False |
+| distribution | str | Type of distribution, options: laplace, student_t, normal | None | False |
+| percentile | Union[float,int] | VaR percentile | None | False |
+| portfolio | bool | If the data is a portfolio | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Gets Expected Shortfall for specified stock dataframe.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame with Expected Shortfall per percentile |
 
-* **Parameters**
-
-    data: pd.DataFrame
-        Data dataframe
-    use_mean: bool
-        If one should use the data mean for calculation
-    distribution: str
-        Type of distribution, options: laplace, student_t, normal
-    percentile: Union[float,int]
-        VaR percentile
-    portfolio: bool
-        If the data is a portfolio
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        DataFrame with Expected Shortfall per percentile
 
-|
+# VIEW
 
-.. raw:: html
+# es
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_qa_view.display_es
 
-{{< highlight python >}}
-common.qa.es(
-    data: pandas.core.frame.DataFrame,
-    symbol: str = '',
-    use_mean: bool = False,
-    distribution: str = 'normal',
-    percentile: float = 99.9,
-    portfolio: bool = False,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def es(data: pd.DataFrame, symbol: str, use_mean: bool, distribution: str, percentile: float, portfolio: bool) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1066)
 
-.. raw:: html
+Description: Displays expected shortfall.
 
-    <p>
-    Displays expected shortfall.
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Data dataframe | None | False |
+| use_mean |  | if one should use the data mean return | None | False |
+| symbol | str | name of the data | None | False |
+| distribution | str | choose distribution to use: logistic, laplace, normal | None | False |
+| percentile | int | es percentile | None | False |
+| portfolio | bool | If the data is a portfolio | None | False |
 
-    data: pd.DataFrame
-        Data dataframe
-    use_mean:
-        if one should use the data mean return
-    symbol: str
-        name of the data
-    distribution: str
-        choose distribution to use: logistic, laplace, normal
-    percentile: int
-        es percentile
-    portfolio: bool
-        If the data is a portfolio
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

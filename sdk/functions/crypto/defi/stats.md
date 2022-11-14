@@ -1,66 +1,56 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: stats
+description: OpenBB SDK Function
+---
+# stats
 
-|
+## crypto_defi_graph_model.get_uniswap_stats
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def stat) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L123)
 
-.. raw:: html
+Description: Get base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.stats() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Uniswap DEX statistics like liquidity, volume, number of pairs, number of transactions. |
 
-    uniswapFactory id: 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f - ethereum address on which Uniswap Factory
-    smart contract was deployed. The factory contract is deployed once from the off-chain source code, and it contains
-    functions that make it possible to create exchange contracts for any ERC20 token that does not already have one.
-    It also functions as a registry of ERC20 tokens that have been added to the system, and the exchange with which they
-    are associated. More: https://docs.uniswap.org/protocol/V1/guides/connect-to-uniswap
-    We use 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f address to fetch all smart contracts that were
-    created with usage of this factory.
-    </p>
+## Examples
 
-* **Returns**
 
-    pd.DataFrame
-        Uniswap DEX statistics like liquidity, volume, number of pairs, number of transactions.
 
-|
 
-.. raw:: html
+# VIEW
 
-    <h3>
-    > Getting charts
-    </h3>
+# stats
 
-{{< highlight python >}}
-crypto.defi.stats(
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+## crypto_defi_graph_view.display_uni_stats
 
-.. raw:: html
+```python
+def stats(export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L71)
 
-    <p>
-    Displays base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
-    [Source: https://thegraph.com/en/]
-    </p>
+Description: Displays base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
 
-* **Parameters**
+## Parameters
 
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,74 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ln
+description: OpenBB SDK Function
+---
+# ln
 
-|
+## etf_financedatabase_model.get_etfs_by_name
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def ln(name: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L14)
 
-.. raw:: html
+Description: Return a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.ln(
-    name: str,
-    chart: bool = False,
-) -> Dict
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| name | str | Search by name to find ETFs matching the criteria. | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| data | Dict | Dictionary with ETFs that match a certain name | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Return a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
-    </p>
+None
 
-* **Parameters**
-
-    name: str
-        Search by name to find ETFs matching the criteria.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    data : Dict
-        Dictionary with ETFs that match a certain name
 
-|
+# VIEW
 
-.. raw:: html
+# ln
 
-    <h3>
-    > Getting charts
-    </h3>
+## etf_financedatabase_view.display_etf_by_name
 
-{{< highlight python >}}
-etf.ln(
-    name: str,
-    limit: int = 10,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def ln(name: str, limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_view.py#L17)
 
-.. raw:: html
+Description: Display a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
 
-    <p>
-    Display a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| name | str | Search by name to find ETFs matching the criteria. | None | False |
+| limit | int | Limit of ETFs to display | None | False |
+| export | str | Type of format to export data | None | False |
 
-    name: str
-        Search by name to find ETFs matching the criteria.
-    limit: int
-        Limit of ETFs to display
-    export: str
-        Type of format to export data
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

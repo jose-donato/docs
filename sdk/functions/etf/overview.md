@@ -1,71 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: overview
+description: OpenBB SDK Function
+---
+# overview
 
-|
+## etf_stockanalysis_model.get_etf_overview
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def overview(symbol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L49)
 
-.. raw:: html
+Description: Get overview data for selected etf
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-etf.overview(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| etf_symbol | str | Etf symbol to get overview for | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| df | pd.DataFrame | Dataframe of stock overview data | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get overview data for selected etf
-    </p>
+None
 
-* **Parameters**
-
-    etf_symbol : str
-        Etf symbol to get overview for
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    df : pd.DataFrame
-        Dataframe of stock overview data
 
-|
+# VIEW
 
-.. raw:: html
+# overview
 
-    <h3>
-    > Getting charts
-    </h3>
+## etf_stockanalysis_view.view_overview
 
-{{< highlight python >}}
-etf.overview(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def overview(symbol: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L16)
 
-.. raw:: html
+Description: Print etf overview information
 
-    <p>
-    Print etf overview information
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | ETF symbols to display overview for | None | False |
+| export | str | Format to export data | None | False |
 
-    symbol:str
-        ETF symbols to display overview for
-    export:str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

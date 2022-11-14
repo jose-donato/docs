@@ -1,41 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: decompose
+description: OpenBB SDK Function
+---
+# decompose
 
-|
+## common_qa_model.get_seasonal_decomposition
 
-.. raw:: html
+```python
+def decompose(data: pd.DataFrame, multiplicative: bool) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L45)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Perform seasonal decomposition
 
-{{< highlight python >}}
-common.qa.decompose(
-    data: pandas.core.frame.DataFrame,
-    multiplicative: bool = False,
-    chart: bool = False,
-) -> Tuple[Any, pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of targeted data | None | False |
+| multiplicative | bool | Boolean to indicate multiplication instead of addition | None | False |
 
-    <p>
-    Perform seasonal decomposition
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| Any | Result of statsmodels seasonal_decompose |
 
-    data : pd.DataFrame
-        Dataframe of targeted data
-    multiplicative : bool
-        Boolean to indicate multiplication instead of addition
+## Examples
 
-* **Returns**
-
-    result: Any
-        Result of statsmodels seasonal_decompose
-    cycle: pd.DataFrame
-        Filtered cycle
-    trend: pd.DataFrame
-        Filtered Trend

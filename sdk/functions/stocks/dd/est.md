@@ -1,38 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: est
+description: OpenBB SDK Function
+---
+# est
 
-|
+## stocks_dd_business_insider_model.get_estimates
 
-.. raw:: html
+```python
+def est(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L70)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get analysts' estimates for a given ticker. [Source: Business Insider]
 
-{{< highlight python >}}
-stocks.dd.est(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to get analysts' estimates | None | False |
 
-    <p>
-    Get analysts' estimates for a given ticker. [Source: Business Insider]
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Year estimates |
 
-    symbol : str
-        Ticker to get analysts' estimates
+## Examples
 
-* **Returns**
-
-    df_year_estimates : pd.DataFrame
-        Year estimates
-    df_quarter_earnings : pd.DataFrame
-        Quarter earnings estimates
-    df_quarter_revenues : pd.DataFrame
-        Quarter revenues estimates

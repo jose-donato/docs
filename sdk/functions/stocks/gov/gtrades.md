@@ -1,89 +1,64 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: gtrades
+description: OpenBB SDK Function
+---
+# gtrades
 
-|
+## stocks_gov_quiverquant_model.get_cleaned_government_trading
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def gtrades(symbol: str, gov_type: str, past_transactions_months: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L416)
 
-.. raw:: html
+Description: Government trading for specific ticker [Source: quiverquant.com]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.gov.gtrades(
-    symbol: str,
-    gov_type: str = 'congress',
-    past_transactions_months: int = 6,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get congress trading data from | None | False |
+| gov_type | str | Type of government data between: congress, senate and house | None | False |
+| past_transactions_months | int | Number of months to get transactions for | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Government trading for specific ticker [Source: quiverquant.com]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame of tickers government trading |
 
-* **Parameters**
-
-    symbol: str
-        Ticker symbol to get congress trading data from
-    gov_type: str
-        Type of government data between: congress, senate and house
-    past_transactions_months: int
-        Number of months to get transactions for
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        DataFrame of tickers government trading
 
-|
+# VIEW
 
-.. raw:: html
+# gtrades
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_gov_quiverquant_view.display_government_trading
 
-{{< highlight python >}}
-stocks.gov.gtrades(
-    symbol: str,
-    gov_type: str = 'congress',
-    past_transactions_months: int = 6,
-    raw: bool = False,
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def gtrades(symbol: str, gov_type: str, past_transactions_months: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L330)
 
-.. raw:: html
+Description: Government trading for specific ticker [Source: quiverquant.com]
 
-    <p>
-    Government trading for specific ticker [Source: quiverquant.com]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to get congress trading data from | None | False |
+| gov_type | str | Type of government data between: congress, senate and house | None | False |
+| past_transactions_months | int | Number of months to get transactions for | None | False |
+| raw | bool | Show raw output of trades | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    symbol: str
-        Ticker symbol to get congress trading data from
-    gov_type: str
-        Type of government data between: congress, senate and house
-    past_transactions_months: int
-        Number of months to get transactions for
-    raw: bool
-        Show raw output of trades
-    export: str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

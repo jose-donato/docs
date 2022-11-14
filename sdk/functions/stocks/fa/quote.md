@@ -1,34 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: quote
+description: OpenBB SDK Function
+---
+# quote
 
-|
+## stocks_fa_fmp_model.get_quote
 
-.. raw:: html
+```python
+def quot) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L83)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets ticker quote from FMP
 
-{{< highlight python >}}
-stocks.fa.quote(
-    symbol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame |  | Dataframe of ticker quote | None | False |
 
-    <p>
-    Gets ticker quote from FMP
-    </p>
+## Returns
 
-* **Parameters**
+None
 
-    symbol : str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    pd.DataFrame:
-        Dataframe of ticker quote

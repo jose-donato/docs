@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: finnhub_peers
+description: OpenBB SDK Function
+---
+# finnhub_peers
 
-|
+## stocks_ca_finnhub_model.get_similar_companies
 
-.. raw:: html
+```python
+def finnhub_peer) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get similar companies from Finhub
 
-{{< highlight python >}}
-stocks.ca.finnhub_peers(
-    symbol: str,
-    chart: bool = False,
-) -> List[str]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to find comparisons for | None | False |
 
-    <p>
-    Get similar companies from Finhub
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| List[str] | List of similar companies |
 
-    symbol : str
-        Ticker to find comparisons for
+## Examples
 
-* **Returns**
-
-    List[str]
-        List of similar companies

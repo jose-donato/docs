@@ -1,93 +1,38 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: load
+description: OpenBB SDK Function
+---
+# load
 
-|
+## stocks_helper.load
 
-.. raw:: html
+```python
+def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType], interval: int, end_date: Union[datetime.datetime, str, NoneType], prepost: bool, source: str, iexrange: str, weekly: bool, monthly: bool, verbose: bool) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L218)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Load a symbol to perform analysis using the string above as a template.
 
-{{< highlight python >}}
-stocks.load(
-    symbol: str,
-    start_date: Union[datetime.datetime, str,
-    NoneType] = datetime.datetime(
-    2019, 11, 6, 10, 18, 10, 664216, chart: bool = False,
-), interval: int = 1440,
-    end_date: Union[datetime.datetime, str,
-    NoneType] = datetime.datetime(
-    2022, 11, 10, 10, 18, 10, 664216, chart: bool = False,
-), prepost: bool = False,
-    source: str = 'YahooFinance',
-    iexrange: str = 'ytd',
-    weekly: bool = False,
-    monthly: bool = False,
-    verbose: bool = True,
-    chart: bool = False,
-)
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker to get data | None | False |
+| start_date | str or datetime | Start date to get data from with. - datetime or string format (YYYY-MM-DD) | None | True |
+| interval | int | Interval (in minutes) to get data 1, 5, 15, 30, 60 or 1440 | None | False |
+| end_date | str or datetime | End date to get data from with. - datetime or string format (YYYY-MM-DD) | None | True |
+| prepost | bool | Pre and After hours data | None | False |
+| source | str | Source of data extracted | None | False |
+| iexrange | str | Timeframe to get IEX data. | None | False |
+| weekly | bool | Flag to get weekly data | None | False |
+| monthly | bool | Flag to get monthly data | None | False |
+| verbose | bool | Display verbose information on what was the symbol that was loaded | None | False |
 
-    <p>
-    Load a symbol to perform analysis using the string above as a template.
+## Returns
 
-    Optional arguments and their descriptions are listed above.
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of data |
 
-    The default source is, yFinance (https://pypi.org/project/yfinance/).
-    Other sources:
-            -   AlphaVantage (https://www.alphavantage.co/documentation/)
-            -   IEX Cloud (https://iexcloud.io/docs/api/)
-            -   Eod Historical Data (https://eodhistoricaldata.com/financial-apis/)
+## Examples
 
-    Please note that certain analytical features are exclusive to the specific source.
-
-    To load a symbol from an exchange outside of the NYSE/NASDAQ default, use yFinance as the source and
-    add the corresponding exchange to the end of the symbol. i.e. `BNS.TO`.  Note this may be possible with
-    other paid sources check their docs.
-
-    BNS is a dual-listed stock, there are separate options chains and order books for each listing.
-    Opportunities for arbitrage may arise from momentary pricing discrepancies between listings
-    with a dynamic exchange rate as a second order opportunity in ForEx spreads.
-
-    Find the full list of supported exchanges here:
-    https://help.yahoo.com/kb/exchanges-data-providers-yahoo-finance-sln2310.html
-
-    Certain analytical features, such as VWAP, require the ticker to be loaded as intraday
-    using the `-i x` argument.  When encountering this error, simply reload the symbol using
-    the interval argument. i.e. `load -t BNS -s YYYY-MM-DD -i 1 -p` loads one-minute intervals,
-    including Pre/After Market data, using the default source, yFinance.
-
-    Certain features, such as the Prediction menu, require the symbol to be loaded as daily and not intraday.
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        Ticker to get data
-    start_date: str or datetime, optional
-        Start date to get data from with. - datetime or string format (YYYY-MM-DD)
-    interval: int
-        Interval (in minutes) to get data 1, 5, 15, 30, 60 or 1440
-    end_date: str or datetime, optional
-        End date to get data from with. - datetime or string format (YYYY-MM-DD)
-    prepost: bool
-        Pre and After hours data
-    source: str
-        Source of data extracted
-    iexrange: str
-        Timeframe to get IEX data.
-    weekly: bool
-        Flag to get weekly data
-    monthly: bool
-        Flag to get monthly data
-    verbose: bool
-        Display verbose information on what was the symbol that was loaded
-
-* **Returns**
-
-    df_stock_candidate: pd.DataFrame
-        Dataframe of data

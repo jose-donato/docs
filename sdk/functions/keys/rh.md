@@ -1,44 +1,34 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: rh
+description: OpenBB SDK Function
+---
+# rh
 
-|
+## keys_model.set_rh_key
 
-.. raw:: html
+```python
+def rh(username: str, password: str, persist: bool, show_output: bool) -> str:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1108)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Set Robinhood key
 
-{{< highlight python >}}
-keys.rh(
-    username: str,
-    password: str,
-    persist: bool = False,
-    show_output: bool = False,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| username | str | User username | None | False |
+| password | str | User password | None | False |
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
+If True, api key change will be global, i.e. it will affect terminal environment variables.
+By default, False. | None | False |
+| show_output | bool | Display status string or not. By default, False. | None | False |
 
-    <p>
-    Set Robinhood key
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | None |
 
-    username: str
-        User username
-    password: str
-        User password
-    persist: bool
-        If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
-        If True, api key change will be global, i.e. it will affect terminal environment variables.
-        By default, False.
-    show_output: bool
-        Display status string or not. By default, False.
+## Examples
 
-* **Returns**
-
-    status: str

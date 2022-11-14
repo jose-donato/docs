@@ -1,95 +1,66 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: adx
+description: OpenBB SDK Function
+---
+# adx
 
-|
+## common_ta_trend_indicators_model.adx
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def adx(data: pd.DataFrame, window: int, scalar: int, drift: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L15)
 
-.. raw:: html
+Description: ADX technical indicator
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.adx(
-    data: pandas.core.frame.DataFrame,
-    window: int = 14,
-    scalar: int = 100,
-    drift: int = 1,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe with OHLC price data | None | False |
+| window | int | Length of window | None | False |
+| scalar | int | Scalar variable | None | False |
+| drift | int | Drift variable | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    ADX technical indicator
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame with adx indicator |
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe with OHLC price data
-    window: int
-        Length of window
-    scalar: int
-        Scalar variable
-    drift: int
-        Drift variable
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        DataFrame with adx indicator
 
-|
+# VIEW
 
-.. raw:: html
+# adx
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_ta_trend_indicators_view.display_adx
 
-{{< highlight python >}}
-common.ta.adx(
-    data: pandas.core.frame.DataFrame,
-    window: int = 14,
-    scalar: int = 100,
-    drift: int = 1,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def adx(data: pd.DataFrame, window: int, scalar: int, drift: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_view.py#L29)
 
-.. raw:: html
+Description: Plot ADX indicator
 
-    <p>
-    Plot ADX indicator
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe with OHLC price data | None | False |
+| window | int | Length of window | None | False |
+| scalar | int | Scalar variable | None | False |
+| drift | int | Drift variable | None | False |
+| symbol | str | Ticker | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
-    data : pd.DataFrame
-        Dataframe with OHLC price data
-    window : int
-        Length of window
-    scalar : int
-        Scalar variable
-    drift : int
-        Drift variable
-    symbol : str
-        Ticker
-    export : str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (2 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

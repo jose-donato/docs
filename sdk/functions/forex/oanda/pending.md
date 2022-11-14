@@ -1,68 +1,57 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: pending
+description: OpenBB SDK Function
+---
+# pending
 
-|
+## forex_oanda_model.pending_orders_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def pending(accountID: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L420)
 
-.. raw:: html
+Description: Request information on pending orders.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.pending(
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request information on pending orders.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Union[pd.DataFrame, bool] | Pending orders data or False |
 
-* **Parameters**
-
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Union[pd.DataFrame, bool]
-        Pending orders data or False
 
-|
+# VIEW
 
-.. raw:: html
+# pending
 
-    <h3>
-    > Getting charts
-    </h3>
+## forex_oanda_view.get_pending_orders
 
-{{< highlight python >}}
-forex.oanda.pending(
-    accountID: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def pendin) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L239)
 
-.. raw:: html
+Description: Get information about pending orders.
 
-    <p>
-    Get information about pending orders.
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda user account ID | None | False |
 
-    accountID : str
-        Oanda user account ID
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

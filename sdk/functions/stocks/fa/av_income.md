@@ -1,46 +1,33 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: av_income
+description: OpenBB SDK Function
+---
+# av_income
 
-|
+## stocks_fa_av_model.get_income_statements
 
-.. raw:: html
+```python
+def av_income(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L161)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get income statements for company
 
-{{< highlight python >}}
-stocks.fa.av_income(
-    symbol: str,
-    limit: int = 5,
-    quarterly: bool = False,
-    ratios: bool = False,
-    plot: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number of past to get | None | False |
+| quarterly | bool | Flag to get quarterly instead of annual, by default False | False | True |
+| ratios | bool | Shows percentage change, by default False | False | False |
+| plot | bool | If the data shall be formatted ready to plot | None | False |
 
-    <p>
-    Get income statements for company
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | DataFrame of income statements |
 
-    symbol : str
-        Stock ticker symbol
-    limit : int
-        Number of past to get
-    quarterly : bool, optional
-        Flag to get quarterly instead of annual, by default False
-    ratios: bool
-        Shows percentage change, by default False
-    plot: bool
-        If the data shall be formatted ready to plot
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        DataFrame of income statements

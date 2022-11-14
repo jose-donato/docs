@@ -1,21 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: get_currency_list
+description: OpenBB SDK Function
+---
+# get_currency_list
 
-|
+## forex_av_model.get_currency_list
 
-.. raw:: html
+```python
+def get_currency_lis) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L18)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Load AV currency codes from a local file.
 
-{{< highlight python >}}
-forex.get_currency_list() -> List
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Load AV currency codes from a local file
-    </p>
+## Returns
+
+None
+
+## Examples
+

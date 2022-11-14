@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: overview
+description: OpenBB SDK Function
+---
+# overview
 
-|
+## economy_wsj_model.market_overview
 
-.. raw:: html
+```python
+def overvie) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L61)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Scrape data for market overview
 
-{{< highlight python >}}
-economy.overview() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Scrape data for market overview
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing name, price, net change and percent change |
 
-    overview: pd.DataFrame
-        Dataframe containing name, price, net change and percent change
+## Examples
+

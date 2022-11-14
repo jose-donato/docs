@@ -1,73 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: dtvl
+description: OpenBB SDK Function
+---
+# dtvl
 
-|
+## crypto_defi_llama_model.get_defi_protocol
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def dtvl(protocol: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L123)
 
-.. raw:: html
+Description: Returns information about historical tvl of a defi protocol.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.defi.dtvl(
-    protocol: str,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns information about historical tvl of a defi protocol.
-    [Source: https://docs.llama.fi/api]
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Historical tvl |
 
-    Returns
-    -------
-    pd.DataFrame
-        Historical tvl
-    </p>
+## Examples
 
-* **Returns**
 
-    pd.DataFrame
-        Historical tvl
 
-|
 
-.. raw:: html
+# VIEW
 
-    <h3>
-    > Getting charts
-    </h3>
+# dtvl
 
-{{< highlight python >}}
-crypto.defi.dtvl(
-    dapps: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+## crypto_defi_llama_view.display_historical_tvl
 
-.. raw:: html
+```python
+def dtvl(dapps: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L130)
 
-    <p>
-    Displays historical TVL of different dApps
-    [Source: https://docs.llama.fi/api]
-    </p>
+Description: Displays historical TVL of different dApps
 
-* **Parameters**
+## Parameters
 
-    dapps: str
-        dApps to search historical TVL. Should be split by , e.g.: anchor,sushiswap,pancakeswap
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| dapps | str | dApps to search historical TVL. Should be split by , e.g.: anchor,sushiswap,pancakeswap | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+## Returns
+
+None
+
+## Examples
 

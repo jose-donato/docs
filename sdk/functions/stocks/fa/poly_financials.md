@@ -1,95 +1,66 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: poly_financials
+description: OpenBB SDK Function
+---
+# poly_financials
 
-|
+## stocks_fa_polygon_model.get_financials
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def poly_financial) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L16)
 
-.. raw:: html
+Description: Get ticker financial statements from polygon
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.fa.poly_financials(
-    symbol: str,
-    statement: str,
-    quarterly: bool = False,
-    ratios: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| statement | str | Financial statement data to retrieve, can be balance, income or cash | None | False |
+| quarterly | bool | Flag to get quarterly reports, by default False | False | False |
+| ratios | bool | Shows percentage change, by default False | False | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get ticker financial statements from polygon
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Balance Sheets or Income Statements |
 
-* **Parameters**
-
-    symbol: str
-        Stock ticker symbol
-    statement: str
-        Financial statement data to retrieve, can be balance, income or cash
-    quarterly:bool
-        Flag to get quarterly reports, by default False
-    ratios: bool
-        Shows percentage change, by default False
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Balance Sheets or Income Statements
 
-|
+# VIEW
 
-.. raw:: html
+# poly_financials
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_fa_polygon_view.display_fundamentals
 
-{{< highlight python >}}
-stocks.fa.poly_financials(
-    symbol: str,
-    statement: str,
-    limit: int = 10,
-    quarterly: bool = False,
-    ratios: bool = False,
-    plot: list = None,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def poly_financial) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L25)
 
-.. raw:: html
+Description: Display tickers balance sheet or income statement
 
-    <p>
-    Display tickers balance sheet or income statement
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| statement | str | Either balance or income | None | False |
+| limit | int | Number of results to show, by default 10 | 10 | False |
+| quarterly | bool | Flag to get quarterly reports, by default False | False | False |
+| ratios | bool | Shows percentage change, by default False | False | False |
+| plot | list | List of row labels to plot | None | False |
+| export | str | Format to export data | None | False |
 
-    symbol: str
-        Stock ticker symbol
-    statement:str
-        Either balance or income
-    limit: int
-        Number of results to show, by default 10
-    quarterly: bool
-        Flag to get quarterly reports, by default False
-    ratios: bool
-        Shows percentage change, by default False
-    plot: list
-        List of row labels to plot
-    export: str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,37 +1,30 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: earnings
+description: OpenBB SDK Function
+---
+# earnings
 
-|
+## stocks_fa_av_model.get_earnings
 
-.. raw:: html
+```python
+def earnings(symbol: str, quarterly: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L429)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get earnings calendar for ticker
 
-{{< highlight python >}}
-stocks.fa.earnings(
-    symbol: str,
-    quarterly: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| quarterly | bool | Flag to get quarterly and not annual, by default False | False | True |
 
-    <p>
-    Get earnings calendar for ticker
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of earnings |
 
-    symbol : str
-        Stock ticker symbol
-    quarterly : bool, optional
-        Flag to get quarterly and not annual, by default False
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of earnings

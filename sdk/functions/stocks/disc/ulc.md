@@ -1,27 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: ulc
+description: OpenBB SDK Function
+---
+# ulc
 
-|
+## stocks_disc_yahoofinance_model.get_ulc
 
-.. raw:: html
+```python
+def ul) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L115)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get Yahoo Finance potentially undervalued large cap stocks.
 
-{{< highlight python >}}
-stocks.disc.ulc() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get Yahoo Finance potentially undervalued large cap stocks.
-    [Source: Yahoo Finance]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Most undervalued large cap stocks |
 
-    pd.DataFrame
-        Most undervalued large cap stocks
+## Examples
+

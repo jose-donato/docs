@@ -1,68 +1,57 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: opentrades
+description: OpenBB SDK Function
+---
+# opentrades
 
-|
+## forex_oanda_model.open_trades_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def opentrades(accountID: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L469)
 
-.. raw:: html
+Description: Request open trades data.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.opentrades(
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request open trades data.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Union[pd.DataFrame, bool] | Open trades data or False |
 
-* **Parameters**
-
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Union[pd.DataFrame, bool]
-        Open trades data or False
 
-|
+# VIEW
 
-.. raw:: html
+# opentrades
 
-    <h3>
-    > Getting charts
-    </h3>
+## forex_oanda_view.get_open_trades
 
-{{< highlight python >}}
-forex.oanda.opentrades(
-    accountID: str,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def opentrade) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L259)
 
-.. raw:: html
+Description: View open trades.
 
-    <p>
-    View open trades.
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda user account ID | None | False |
 
-    accountID : str
-        Oanda user account ID
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

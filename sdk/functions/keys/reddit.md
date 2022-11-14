@@ -1,53 +1,37 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: reddit
+description: OpenBB SDK Function
+---
+# reddit
 
-|
+## keys_model.set_reddit_key
 
-.. raw:: html
+```python
+def reddit(client_id: str, client_secret: str, password: str, username: str, useragent: str, persist: bool, show_output: bool) -> str:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L854)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Set Reddit key
 
-{{< highlight python >}}
-keys.reddit(
-    client_id: str,
-    client_secret: str,
-    password: str,
-    username: str,
-    useragent: str,
-    persist: bool = False,
-    show_output: bool = False,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| client_id | str | Client ID | None | False |
+| client_secret | str | Client secret | None | False |
+| password | str | User assword | None | False |
+| username | str | User username | None | False |
+| useragent | str | User useragent | None | False |
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
+If True, api key change will be global, i.e. it will affect terminal environment variables.
+By default, False. | None | False |
+| show_output | bool | Display status string or not. By default, False. | None | False |
 
-    <p>
-    Set Reddit key
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | None |
 
-    client_id: str
-        Client ID
-    client_secret: str
-        Client secret
-    password: str
-        User assword
-    username: str
-        User username
-    useragent: str
-        User useragent
-    persist: bool
-        If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
-        If True, api key change will be global, i.e. it will affect terminal environment variables.
-        By default, False.
-    show_output: bool
-        Display status string or not. By default, False.
+## Examples
 
-* **Returns**
-
-    status: str

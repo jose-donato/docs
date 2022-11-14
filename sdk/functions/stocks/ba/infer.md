@@ -1,83 +1,62 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: infer
+description: OpenBB SDK Function
+---
+# infer
 
-|
+## stocks_ba_twitter_model.load_analyze_tweets
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def infe) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L22)
 
-.. raw:: html
+Description: Load tweets from twitter API and analyzes using VADER
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-stocks.ba.infer(
-    symbol: str,
-    limit: int = 100,
-    start_date: Optional[str] = '',
-    end_date: Optional[str] = '',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker symbol to search twitter for | None | False |
+| limit | int | Number of tweets to analyze | None | False |
+| start_date | Optional[str] | If given, the start time to get tweets from | None | False |
+| end_date | Optional[str] | If given, the end time to get tweets from | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Load tweets from twitter API and analyzes using VADER
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of tweets and sentiment |
 
-* **Parameters**
-
-    symbol: str
-        Ticker symbol to search twitter for
-    limit: int
-        Number of tweets to analyze
-    start_date: Optional[str]
-        If given, the start time to get tweets from
-    end_date: Optional[str]
-        If given, the end time to get tweets from
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    df_tweet: pd.DataFrame
-        Dataframe of tweets and sentiment
 
-|
+# VIEW
 
-.. raw:: html
+# infer
 
-    <h3>
-    > Getting charts
-    </h3>
+## stocks_ba_twitter_view.display_inference
 
-{{< highlight python >}}
-stocks.ba.infer(
-    symbol: str,
-    limit: int = 100,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def infer(symbol: str, limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_view.py#L28)
 
-.. raw:: html
+Description: Infer sentiment from past n tweets
 
-    <p>
-    Infer sentiment from past n tweets
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number of tweets to analyze | None | False |
+| export | str | Format to export tweet dataframe | None | False |
 
-    symbol: str
-        Stock ticker symbol
-    limit: int
-        Number of tweets to analyze
-    export: str
-        Format to export tweet dataframe
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

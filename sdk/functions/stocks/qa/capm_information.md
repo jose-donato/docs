@@ -1,36 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: capm_information
+description: OpenBB SDK Function
+---
+# capm_information
 
-|
+## stocks_qa_factors_model.capm_information
 
-.. raw:: html
+```python
+def capm_information(symbol: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/quantitative_analysis/factors_model.py#L79)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Provides information that relates to the CAPM model
 
-{{< highlight python >}}
-stocks.qa.capm_information(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[float, float]
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | A ticker symbol in string form | None | False |
 
-    <p>
-    Provides information that relates to the CAPM model
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| float | The beta for a stock |
 
-    symbol : str
-        A ticker symbol in string form
+## Examples
 
-* **Returns**
-
-    beta : float
-        The beta for a stock
-    sys : float
-        The systematic risk for a stock

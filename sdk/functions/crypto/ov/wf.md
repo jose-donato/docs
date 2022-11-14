@@ -1,73 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: wf
+description: OpenBB SDK Function
+---
+# wf
 
-|
+## crypto_ov_withdrawalfees_model.get_overall_withdrawal_fees
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def wf(limit: int) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L119)
 
-.. raw:: html
+Description: Scrapes top coins withdrawal fees
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.wf(
-    limit: int = 100,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of coins to search, by default n=100, one page has 100 coins, so 1 page is scraped. | n | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Scrapes top coins withdrawal fees
-    [Source: https://withdrawalfees.com/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+|  | Coin, Lowest, Average, Median, Highest, Exchanges Compared |
 
-* **Parameters**
-
-    limit: int
-        Number of coins to search, by default n=100, one page has 100 coins, so 1 page is scraped.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pandas.DataFrame:
-        Coin, Lowest, Average, Median, Highest, Exchanges Compared
 
-|
+# VIEW
 
-.. raw:: html
+# wf
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_ov_withdrawalfees_view.display_overall_withdrawal_fees
 
-{{< highlight python >}}
-crypto.ov.wf(
-    limit: int = 15,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def wf(limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L17)
 
-.. raw:: html
+Description: Top coins withdrawal fees
 
-    <p>
-    Top coins withdrawal fees
-    [Source: https://withdrawalfees.com/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| limit | int | Number of coins to search | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    limit: int
-        Number of coins to search
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

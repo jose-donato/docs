@@ -1,40 +1,31 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: fmp_metrics
+description: OpenBB SDK Function
+---
+# fmp_metrics
 
-|
+## stocks_fa_fmp_model.get_key_metrics
 
-.. raw:: html
+```python
+def fmp_metric) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L414)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get key metrics
 
-{{< highlight python >}}
-stocks.fa.fmp_metrics(
-    symbol: str,
-    limit: int = 5,
-    quarterly: bool = False,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
+| limit | int | Number to get | None | False |
+| quarterly | bool | Flag to get quarterly data, by default False | False | True |
 
-    <p>
-    Get key metrics
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of key metrics |
 
-    symbol : str
-        Stock ticker symbol
-    limit : int
-        Number to get
-    quarterly : bool, optional
-        Flag to get quarterly data, by default False
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Dataframe of key metrics

@@ -1,66 +1,56 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: spectrum
+description: OpenBB SDK Function
+---
+# spectrum
 
-|
+## economy_finviz_model.get_spectrum_data
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def spectrum(group: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L167)
 
-.. raw:: html
+Description: Get group (sectors, industry or country) valuation/performance data. [Source: Finviz]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-economy.spectrum(
-    group: str = 'sector',
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| group | str | Group by category. Available groups can be accessed through get_groups(). | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get group (sectors, industry or country) valuation/performance data. [Source: Finviz]
-    </p>
+None
 
-* **Parameters**
-
-    group : str
-       Group by category. Available groups can be accessed through get_groups().
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-economy.spectrum(
-    group: str = 'sector',
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+# spectrum
 
-.. raw:: html
+## economy_finviz_view.display_spectrum
 
-    <p>
-    Display finviz spectrum in system viewer [Source: Finviz]
-    </p>
+```python
+def spectrum(group: str, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_view.py#L111)
 
-* **Parameters**
+Description: Display finviz spectrum in system viewer [Source: Finviz]
 
-    group: str
-        Group by category. Available groups can be accessed through get_groups().
-    export: str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| group | str | Group by category. Available groups can be accessed through get_groups(). | None | False |
+| export | str | Format to export data | None | False |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,27 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: coin_list
+description: OpenBB SDK Function
+---
+# coin_list
 
-|
+## crypto_disc_pycoingecko_model.get_coin_list
 
-.. raw:: html
+```python
+def coin_lis) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L330)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get list of coins available on CoinGecko [Source: CoinGecko]
 
-{{< highlight python >}}
-crypto.disc.coin_list() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Get list of coins available on CoinGecko [Source: CoinGecko]
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Coins available on CoinGecko
+Columns: id, symbol, name |
 
-    pandas.DataFrame
-        Coins available on CoinGecko
-        Columns: id, symbol, name
+## Examples
+

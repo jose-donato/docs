@@ -1,74 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: collections
+description: OpenBB SDK Function
+---
+# collections
 
-|
+## crypto_nft_pricefloor_model.get_collections
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def collection) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L23)
 
-.. raw:: html
+Description: Get nft collections [Source: https://nftpricefloor.com/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.nft.collections() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get nft collections [Source: https://nftpricefloor.com/]
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | nft collections |
 
-    Parameters
-    ----------
-    </p>
-
-* **Parameters**
-
-    
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        nft collections
 
-|
+# VIEW
 
-.. raw:: html
+# collections
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_nft_pricefloor_view.display_collections
 
-{{< highlight python >}}
-crypto.nft.collections(
-    show_fp: bool = False,
-    show_sales: bool = False,
-    limit: int = 5,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def collections(show_fp: bool, show_sales: bool, limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_view.py#L26)
 
-.. raw:: html
+Description: Display NFT collections. [Source: https://nftpricefloor.com/]
 
-    <p>
-    Display NFT collections. [Source: https://nftpricefloor.com/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| show_fp | bool | Show NFT Price Floor for top collections | None | False |
+| limit | int | Number of NFT collections to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    show_fp : bool
-        Show NFT Price Floor for top collections
-    limit: int
-        Number of NFT collections to display
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,89 +1,65 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cpmarkets
+description: OpenBB SDK Function
+---
+# cpmarkets
 
-|
+## crypto_ov_coinpaprika_model.get_coins_market_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cpmarkets(symbols: str, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L240)
 
-.. raw:: html
+Description: Returns basic coin information for all coins from CoinPaprika API [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.ov.cpmarkets(
-    symbols: str = 'USD',
-    sortby: str = 'rank',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbols | str | Comma separated quotes to return e.g quotes=USD,BTC | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascend | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns basic coin information for all coins from CoinPaprika API [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | rank, name, symbol, price, volume_24h, mcap_change_24h,
+pct_change_1h, pct_change_24h, ath_price, pct_from_ath, |
 
-* **Parameters**
-
-    symbols: str
-        Comma separated quotes to return e.g quotes=USD,BTC
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascend
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pandas.DataFrame
-        rank, name, symbol, price, volume_24h, mcap_change_24h,
-        pct_change_1h, pct_change_24h, ath_price, pct_from_ath,
 
-|
+# VIEW
 
-.. raw:: html
+# cpmarkets
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_ov_coinpaprika_view.display_all_coins_market_info
 
-{{< highlight python >}}
-crypto.ov.cpmarkets(
-    symbol: str,
-    sortby: str = 'rank',
-    ascend: bool = True,
-    limit: int = 15,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def cpmarkets(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L104)
 
-.. raw:: html
+Description: Displays basic market information for all coins from CoinPaprika API. [Source: CoinPaprika]
 
-    <p>
-    Displays basic market information for all coins from CoinPaprika API. [Source: CoinPaprika]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Quoted currency | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| links | bool | Flag to display urls | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    symbol: str
-        Quoted currency
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    links: bool
-        Flag to display urls
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

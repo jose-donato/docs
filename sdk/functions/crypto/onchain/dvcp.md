@@ -1,101 +1,63 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: dvcp
+description: OpenBB SDK Function
+---
+# dvcp
 
-|
+## crypto_onchain_bitquery_model.get_daily_dex_volume_for_given_pair
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def dvcp(limit: int, symbol: str, to_symbol: str, sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L399)
 
-.. raw:: html
+Description: Get daily volume for given pair [Source: https://graphql.bitquery.io/]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.onchain.dvcp(
-    limit: int = 100,
-    symbol: str = 'UNI',
-    to_symbol: str = 'USDT',
-    sortby: str = 'date',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get daily volume for given pair [Source: https://graphql.bitquery.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Daily volume for given pair |
 
-* **Parameters**
-
-    limit:  int
-        Last n days to query data
-    symbol: str
-        ERC20 token symbol
-    to_symbol: str
-        Quote currency.
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
-
-    pd.DataFrame
-         Daily volume for given pair
-
-|
-
-.. raw:: html
-
-    <h3>
-    > Getting charts
-    </h3>
-
-{{< highlight python >}}
-crypto.onchain.dvcp(
-    symbol: str = 'WBTC',
-    to_symbol: str = 'USDT',
-    limit: int = 20,
-    sortby: str = 'date',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
-
-.. raw:: html
-
-    <p>
-    Display daily volume for given pair
-    [Source: https://graphql.bitquery.io/]
-    </p>
-
-* **Parameters**
-
-    symbol: str
-        ERC20 token symbol or address
-    to_symbol: str
-        Quote currency.
-    limit: int
-        Number of records to display
-    sortby: str
-        Key by which to sort data
-    ascend: bool
-        Flag to sort data ascending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
 
 
-* **Returns**
+# VIEW
 
-    pd.DataFrame
-        Token volume on different decentralized exchanges
+# dvcp
+
+## crypto_onchain_bitquery_view.display_daily_volume_for_given_pair
+
+```python
+def dvc) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L86)
+
+Description: Display daily volume for given pair
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | ERC20 token symbol or address | None | False |
+| to_symbol | str | Quote currency. | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+
+## Returns
+
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Token volume on different decentralized exchanges |
+
+## Examples
+

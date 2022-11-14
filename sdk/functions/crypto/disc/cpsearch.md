@@ -1,101 +1,72 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cpsearch
+description: OpenBB SDK Function
+---
+# cpsearch
 
-|
+## crypto_disc_coinpaprika_model.get_search_results
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def cpsearch(query: str, category: Union[Any, NoneType], modifier: Union[Any, NoneType], sortby: str, ascend: bool) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py#L26)
 
-.. raw:: html
+Description: Search CoinPaprika. [Source: CoinPaprika]
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.disc.cpsearch(
-    query: str,
-    category: Optional[Any] = None,
-    modifier: Optional[Any] = None,
-    sortby: str = 'id',
-    ascend: bool = True,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| query | str | phrase for search | None | False |
+| category | Optional[Any] | one or more categories (comma separated) to search.
+Available options: currencies|exchanges|icos|people|tags
+Default: currencies,exchanges,icos,people,tags | currencies | False |
+| modifier | Optional[Any] | set modifier for search results. Available options: symbol_search -
+search only by symbol (works for currencies only) | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to
+API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Search CoinPaprika. [Source: CoinPaprika]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pandas.DataFrame | Search Results
+Columns: Metric, Value |
 
-* **Parameters**
-
-    query:  str
-        phrase for search
-    category:  Optional[Any]
-        one or more categories (comma separated) to search.
-        Available options: currencies|exchanges|icos|people|tags
-        Default: currencies,exchanges,icos,people,tags
-    modifier: Optional[Any]
-        set modifier for search results. Available options: symbol_search -
-        search only by symbol (works for currencies only)
-    sortby: str
-        Key to sort data. The table can be sorted by every of its columns. Refer to
-        API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get)
-    ascend: bool
-        Flag to sort data descending
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pandas.DataFrame
-        Search Results
-        Columns: Metric, Value
 
-|
+# VIEW
 
-.. raw:: html
+# cpsearch
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_disc_coinpaprika_view.display_search_results
 
-{{< highlight python >}}
-crypto.disc.cpsearch(
-    query: str,
-    category: str = 'all',
-    limit: int = 10,
-    sortby: str = 'id',
-    ascend: bool = True,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def cpsearch(query: str, category: str, limit: int, sortby: str, ascend: bool, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_view.py#L15)
 
-.. raw:: html
+Description: Search over CoinPaprika. [Source: CoinPaprika]
 
-    <p>
-    Search over CoinPaprika. [Source: CoinPaprika]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| query | str | Search query | None | False |
+| category | str | Categories to search: currencies|exchanges|icos|people|tags|all. Default: all | all | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to
+API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    query: str
-        Search query
-    category: str
-        Categories to search: currencies|exchanges|icos|people|tags|all. Default: all
-    limit: int
-        Number of records to display
-    sortby: str
-        Key to sort data. The table can be sorted by every of its columns. Refer to
-        API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get)
-    ascend: bool
-        Flag to sort data descending
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,79 +1,58 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: pi
+description: OpenBB SDK Function
+---
+# pi
 
-|
+## crypto_dd_messari_model.get_project_product_info
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def p) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L341)
 
-.. raw:: html
+Description: Returns coin product info
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-crypto.dd.pi(
-    symbol: str,
-    chart: bool = False,
-) -> Tuple[pandas.core.frame.DataFrame, pandas.core.frame.DataFrame, pandas.core.frame.DataFrame, pandas.core.frame.DataFrame]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check product info | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Returns coin product info
-    [Source: https://messari.io/]
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Metric, Value with project and technology details |
 
-* **Parameters**
-
-    symbol : str
-        Crypto symbol to check product info
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Metric, Value with project and technology details
-    pd.DataFrame
-        coin public repos
-    pd.DataFrame
-        coin audits
-    pd.DataFrame
-        coin known exploits/vulns
 
-|
+# VIEW
 
-.. raw:: html
+# pi
 
-    <h3>
-    > Getting charts
-    </h3>
+## crypto_dd_messari_view.display_project_info
 
-{{< highlight python >}}
-crypto.dd.pi(
-    symbol: str,
-    export: str = '',
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def p) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L457)
 
-.. raw:: html
+Description: Display project info
 
-    <p>
-    Display project info
-    [Source: https://messari.io/]
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Crypto symbol to check project info | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-    symbol : str
-        Crypto symbol to check project info
-    export : str
-        Export dataframe data to csv,json,xlsx file
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

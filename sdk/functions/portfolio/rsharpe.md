@@ -1,87 +1,64 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: rsharpe
+description: OpenBB SDK Function
+---
+# rsharpe
 
-|
+## portfolio_model.get_rolling_sharpe
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def rsharpe(portfolio: pd.DataFrame, risk_free_rate: float, window: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1471)
 
-.. raw:: html
+Description: Get rolling sharpe ratio
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-portfolio.rsharpe(
-    portfolio: pandas.core.frame.DataFrame,
-    risk_free_rate: float = 0,
-    window: str = '1y',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio_returns | pd.Series | Series of portfolio returns | None | False |
+| risk_free_rate | float | Risk free rate | None | False |
+| window | str | Rolling window to use
+Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Get rolling sharpe ratio
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Rolling sharpe ratio DataFrame |
 
-* **Parameters**
-
-    portfolio_returns : pd.Series
-        Series of portfolio returns
-    risk_free_rate : float
-        Risk free rate
-    window : str
-        Rolling window to use
-        Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Rolling sharpe ratio DataFrame
 
-|
+# VIEW
 
-.. raw:: html
+# rsharpe
 
-    <h3>
-    > Getting charts
-    </h3>
+## portfolio_view.display_rolling_sharpe
 
-{{< highlight python >}}
-portfolio.rsharpe(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    risk_free_rate: float = 0,
-    window: str = '1y',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def rsharpe(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, risk_free_rate: float, window: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L842)
 
-.. raw:: html
+Description: Display rolling sharpe
 
-    <p>
-    Display rolling sharpe
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | PortfolioModel | Portfolio object | None | False |
+| risk_free_rate | float | Value to use for risk free rate in sharpe/other calculations | None | False |
+| window | str | interval for window to consider | None | False |
+| export | str | Export to file | None | False |
+| external_axes | Optional[List[plt.Axes]] | Optional axes to display plot on | None | False |
 
-    portfolio : PortfolioModel
-        Portfolio object
-    risk_free_rate: float
-        Value to use for risk free rate in sharpe/other calculations
-    window: str
-        interval for window to consider
-    export: str
-        Export to file
-    external_axes: Optional[List[plt.Axes]]
-        Optional axes to display plot on
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

@@ -1,75 +1,59 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: listorders
+description: OpenBB SDK Function
+---
+# listorders
 
-|
+## forex_oanda_model.order_history_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def listorders(order_state: str, order_count: int, accountID: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L224)
 
-.. raw:: html
+Description: Request the orders list from Oanda.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.listorders(
-    order_state: str = 'PENDING',
-    order_count: int = 0,
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | None | False |
+| order_count | int | Limit the number of orders to retrieve | None | False |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request the orders list from Oanda.
-    </p>
+None
 
-* **Parameters**
-
-    order_state : str
-        Filter orders by a specific state ("PENDING", "CANCELLED", etc.)
-    order_count : int
-        Limit the number of orders to retrieve
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-|
 
-.. raw:: html
 
-    <h3>
-    > Getting charts
-    </h3>
+# VIEW
 
-{{< highlight python >}}
-forex.oanda.listorders(
-    accountID: str,
-    order_state: str = 'PENDING',
-    order_count: int = 0,
-    chart: bool = False,
-)
-{{< /highlight >}}
+# listorders
 
-.. raw:: html
+## forex_oanda_view.list_orders
 
-    <p>
-    List order history.
-    </p>
+```python
+def listorder) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L155)
 
-* **Parameters**
+Description: List order history.
 
-    accountID : str
-        Oanda user account ID
-    order_state : str
-        Filter orders by a specific state ("PENDING", "CANCELLED", etc.)
-    order_count : int
-        Limit the number of orders to retrieve
-    chart: bool
-       Flag to display chart
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda user account ID | None | False |
+| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | None | False |
+| order_count | int | Limit the number of orders to retrieve | None | False |
+
+## Returns
+
+None
+
+## Examples
 

@@ -1,26 +1,28 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: futures
+description: OpenBB SDK Function
+---
+# futures
 
-|
+## economy_wsj_model.top_commodities
 
-.. raw:: html
+```python
+def future) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L102)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Scrape data for top commodities
 
-{{< highlight python >}}
-economy.futures() -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Scrape data for top commodities
-    </p>
+## Returns
 
-* **Returns**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing name, price, net change and percent change |
 
-    commodities: pd.DataFrame
-        Dataframe containing name, price, net change and percent change
+## Examples
+

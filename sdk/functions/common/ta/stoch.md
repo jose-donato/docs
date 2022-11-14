@@ -1,95 +1,67 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: stoch
+description: OpenBB SDK Function
+---
+# stoch
 
-|
+## common_ta_momentum_model.stoch
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def stoch(data: pd.DataFrame, fastkperiod: int, slowdperiod: int, slowkperiod: int) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L125)
 
-.. raw:: html
+Description: Stochastic oscillator
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-common.ta.stoch(
-    data: pandas.core.frame.DataFrame,
-    fastkperiod: int = 14,
-    slowdperiod: int = 3,
-    slowkperiod: int = 3,
-    chart: bool = False,
-)
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of OHLC prices | None | False |
+| fastkperiod | int | Fast k period | None | False |
+| slowdperiod | int | Slow d period | None | False |
+| slowkperiod | int | Slow k period | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Dataframe of technical indicator | None | None |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Stochastic oscillator
-    </p>
+None
 
-* **Parameters**
-
-    data : pd.DataFrame
-        Dataframe of OHLC prices
-    fastkperiod : int
-        Fast k period
-    slowdperiod : int
-        Slow d period
-    slowkperiod : int
-        Slow k period
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    pd.DataFrame
-        Dataframe of technical indicator
 
-|
+# VIEW
 
-.. raw:: html
+# stoch
 
-    <h3>
-    > Getting charts
-    </h3>
+## common_ta_momentum_view.display_stoch
 
-{{< highlight python >}}
-common.ta.stoch(
-    data: pandas.core.frame.DataFrame,
-    fastkperiod: int = 14,
-    slowdperiod: int = 3,
-    slowkperiod: int = 3,
-    symbol: str = '',
-    export: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-) -> None
-{{< /highlight >}}
+```python
+def stoch(data: pd.DataFrame, fastkperiod: int, slowdperiod: int, slowkperiod: int, symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L306)
 
-.. raw:: html
+Description: Plot stochastic oscillator signal
 
-    <p>
-    Plot stochastic oscillator signal
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| data | pd.DataFrame | Dataframe of OHLC prices | None | False |
+| fastkperiod | int | Fast k period | None | False |
+| slowdperiod | int | Slow d period | None | False |
+| slowkperiod | int | Slow k period | None | False |
+| symbol | str | Stock ticker symbol | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
-    data : pd.DataFrame
-        Dataframe of OHLC prices
-    fastkperiod : int
-        Fast k period
-    slowdperiod : int
-        Slow d period
-    slowkperiod : int
-        Slow k period
-    symbol : str
-        Stock ticker symbol
-    export : str
-        Format to export data
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (3 axes are expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

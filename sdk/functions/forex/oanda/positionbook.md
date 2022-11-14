@@ -1,77 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: positionbook
+description: OpenBB SDK Function
+---
+# positionbook
 
-|
+## forex_oanda_model.positionbook_plot_data_request
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def positionbook(instrument: Union[str, NoneType], accountID: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L181)
 
-.. raw:: html
+Description: Request position book data for plotting.
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-forex.oanda.positionbook(
-    instrument: Optional[str] = None,
-    accountID: str = 'REPLACE_ME',
-    chart: bool = False,
-) -> Union[pandas.core.frame.DataFrame, bool]
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Request position book data for plotting.
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Union[pd.DataFrame, bool] | Position book data or False |
 
-* **Parameters**
-
-    instrument : Union[str, None]
-        The loaded currency pair, by default None
-    accountID : str, optional
-        Oanda account ID, by default cfg.OANDA_ACCOUNT
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Union[pd.DataFrame, bool]
-        Position book data or False
 
-|
+# VIEW
 
-.. raw:: html
+# positionbook
 
-    <h3>
-    > Getting charts
-    </h3>
+## forex_oanda_view.get_position_book
 
-{{< highlight python >}}
-forex.oanda.positionbook(
-    accountID: str,
-    instrument: str = '',
-    external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None,
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def positionboo) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L117)
 
-.. raw:: html
+Description: Plot a position book for an instrument if Oanda provides one.
 
-    <p>
-    Plot a position book for an instrument if Oanda provides one.
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| accountID | str | Oanda user account ID | None | False |
+| instrument | str | The loaded currency pair | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-    accountID : str
-        Oanda user account ID
-    instrument : str
-        The loaded currency pair
-    external_axes : Optional[List[plt.Axes]], optional
-        External axes (1 axis is expected in the list), by default None
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

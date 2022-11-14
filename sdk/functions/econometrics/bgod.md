@@ -1,76 +1,60 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: bgod
+description: OpenBB SDK Function
+---
+# bgod
 
-|
+## econometrics_regression_model.get_bgod
 
-To obtain charts, make sure to add :python:`chart = True` as the last parameter.
+```python
+def bgod(model: pd.DataFrame, lags: int) -> tuple:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L496)
 
-.. raw:: html
+Description: Calculate test statistics for autocorrelation
 
-    <h3>
-    > Getting data
-    </h3>
+## Parameters
 
-{{< highlight python >}}
-econometrics.bgod(
-    model: pandas.core.frame.DataFrame,
-    lags: int = 3,
-    chart: bool = False,
-) -> tuple
-{{< /highlight >}}
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| model | OLS Model | Model containing residual values. | None | False |
+| lags | int | The amount of lags. | None | False |
 
-.. raw:: html
+## Returns
 
-    <p>
-    Calculate test statistics for autocorrelation
-    </p>
+| Type | Description |
+| ---- | ----------- |
+| Test results from the Breusch-Godfrey Test | None |
 
-* **Parameters**
-
-    model : OLS Model
-        Model containing residual values.
-    lags : int
-        The amount of lags.
-    chart: bool
-       Flag to display chart
+## Examples
 
 
-* **Returns**
 
-    Test results from the Breusch-Godfrey Test
 
-|
+# VIEW
 
-.. raw:: html
+# bgod
 
-    <h3>
-    > Getting charts
-    </h3>
+## econometrics_regression_view.display_bgod
 
-{{< highlight python >}}
-econometrics.bgod(
-    model: pandas.core.frame.DataFrame,
-    lags: int = 3,
-    export: str = '',
-    chart: bool = False,
-)
-{{< /highlight >}}
+```python
+def bgod(model: pd.DataFrame, lags: int, export: str) -> None:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L146)
 
-.. raw:: html
+Description: Show Breusch-Godfrey autocorrelation test
 
-    <p>
-    Show Breusch-Godfrey autocorrelation test
-    </p>
+## Parameters
 
-* **Parameters**
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| model | OLS Model | Model containing residual values. | None | False |
+| lags | int | The amount of lags included. | None | False |
+| export | str | Format to export data | None | False |
 
-    model : OLS Model
-        Model containing residual values.
-    lags : int
-        The amount of lags included.
-    export : str
-        Format to export data
-    chart: bool
-       Flag to display chart
+## Returns
+
+None
+
+## Examples
 

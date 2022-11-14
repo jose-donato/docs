@@ -1,34 +1,29 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: hq
+description: OpenBB SDK Function
+---
+# hq
 
-|
+## stocks_fa_yahoo_finance_model.get_hq
 
-.. raw:: html
+```python
+def hq(symbol: str) -> str:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L227)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets google map url for headquarter
 
-{{< highlight python >}}
-stocks.fa.hq(
-    symbol: str,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Stock ticker symbol | None | False |
 
-    <p>
-    Gets google map url for headquarter
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | Headquarter google maps url |
 
-    symbol: str
-        Stock ticker symbol
+## Examples
 
-* **Returns**
-
-    str
-        Headquarter google maps url

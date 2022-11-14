@@ -1,35 +1,31 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: sidtc
+description: OpenBB SDK Function
+---
+# sidtc
 
-|
+## stocks_dps_stockgrid_model.get_short_interest_days_to_cover
 
-.. raw:: html
+```python
+def sidtc(sortby: str) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L77)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get short interest and days to cover. [Source: Stockgrid]
 
-{{< highlight python >}}
-stocks.dps.sidtc(
-    sortby: str = 'float',
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Field for which to sort by, where 'float': Float Short %%,
+'dtc': Days to Cover, 'si': Short Interest | None | False |
+| Returns | None | None | None | None |
+| ---------- | None | None | None | None |
+| pd.DataFrame | None | Short interest and days to cover data | None | None |
 
-    <p>
-    Get short interest and days to cover. [Source: Stockgrid]
-    </p>
+## Returns
 
-* **Parameters**
+None
 
-    sortby : str
-        Field for which to sort by, where 'float': Float Short %%,
-        'dtc': Days to Cover, 'si': Short Interest
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
-        Short interest and days to cover data

@@ -1,24 +1,26 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: dte
+description: OpenBB SDK Function
+---
+# dte
 
-|
+## stocks_options_yfinance_model.get_dte
 
-.. raw:: html
+```python
+def dte(date_value: str) -> int:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L314)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Gets days to expiration from yfinance option date
 
-{{< highlight python >}}
-stocks.options.dte(
-    date_value: str,
-    chart: bool = False,
-) -> int
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
 
-    <p>
-    Gets days to expiration from yfinance option dat
-    </p>
+## Returns
+
+None
+
+## Examples
+

@@ -1,41 +1,33 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: cmc
+description: OpenBB SDK Function
+---
+# cmc
 
-|
+## keys_model.set_cmc_key
 
-.. raw:: html
+```python
+def cmc(key: str, persist: bool, show_output: bool) -> str:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L683)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Set Coinmarketcap key
 
-{{< highlight python >}}
-keys.cmc(
-    key: str,
-    persist: bool = False,
-    show_output: bool = False,
-    chart: bool = False,
-) -> str
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| key | str | API key | None | False |
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
+If True, api key change will be global, i.e. it will affect terminal environment variables.
+By default, False. | None | False |
+| show_output | bool | Display status string or not. By default, False. | None | False |
 
-    <p>
-    Set Coinmarketcap key
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| str | None |
 
-    key: str
-        API key
-    persist: bool
-        If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
-        If True, api key change will be global, i.e. it will affect terminal environment variables.
-        By default, False.
-    show_output: bool
-        Display status string or not. By default, False.
+## Examples
 
-* **Returns**
-
-    status: str

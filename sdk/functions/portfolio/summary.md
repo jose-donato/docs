@@ -1,39 +1,31 @@
-.. role:: python(code)
-    :language: python
-    :class: highlight
+---
+title: summary
+description: OpenBB SDK Function
+---
+# summary
 
-|
+## portfolio_model.get_summary
 
-.. raw:: html
+```python
+def summary(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, risk_free_rate: float) -> DataFrame:
+```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1783)
 
-    <h3>
-    > Getting data
-    </h3>
+Description: Get summary portfolio and benchmark returns
 
-{{< highlight python >}}
-portfolio.summary(
-    portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel,
-    window: str = 'all',
-    risk_free_rate: float = 0,
-    chart: bool = False,
-) -> pandas.core.frame.DataFrame
-{{< /highlight >}}
+## Parameters
 
-.. raw:: html
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| window | str | interval to compare cumulative returns and benchmark | None | False |
+| risk_free_rate | float | Risk free rate for calculations | None | False |
 
-    <p>
-    Get summary portfolio and benchmark returns
-    </p>
+## Returns
 
-* **Parameters**
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | None |
 
-    portfolio: Portfolio
-        Portfolio object with trades loaded
-    window : str
-        interval to compare cumulative returns and benchmark
-    risk_free_rate : float
-        Risk free rate for calculations
+## Examples
 
-* **Returns**
-
-    pd.DataFrame
