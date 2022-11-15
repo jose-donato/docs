@@ -187,14 +187,6 @@ The results from data functions are not stored to memory unless explicitly instr
 obb.economy.events()
 ```
 
-
-
-Modify the syntax slightly to deliver the output into a DataFrame:
-
-```python
-economic_calendar = obb.economy.events()
-```
-
 |    | Time (GMT)   | Country        | Event                         | actual   | consensus   | previous   | Date       |
 |---:|:-------------|:---------------|:------------------------------|:---------|:------------|:-----------|:-----------|
 |  0 | 01:30        | France         | French Unemployment Rate      | 7.3%     | 7.3%        | 7.4%       | 2022-11-15 |
@@ -203,6 +195,12 @@ economic_calendar = obb.economy.events()
 |  3 | 02:00        | United Kingdom | Claimant Count Change         | 3.3K     | 17.3K       | 3.9K       | 2022-11-15 |
 |  4 | 02:00        | United Kingdom | Employment Change 3M/3M       | -52K     | -25K        | -109K      | 2022-11-15 |
 ...continued
+
+Modify the syntax slightly to deliver the output into a DataFrame:
+
+```python
+economic_calendar = obb.economy.events()
+```
 
 Defined as a variable, interacting with the results becomes a matter of manipulating tables. For example, the code block below will filter the results of the events function to display only events scheduled at a specific time.
 
@@ -220,7 +218,6 @@ events
 | 09:00 | Germany       | German Buba Balz Speaks                | -        | -           | -          | 2022-11-15 |
 | 09:00 | Germany       | German Buba Vice President Buch Speaks | -        | -           | -          | 2022-11-15 |
 ...continued
-
 
 Some functions have the built-in capability of requesting data from multiple sources. `obb.stocks.load` is one example of this type feature:
 
