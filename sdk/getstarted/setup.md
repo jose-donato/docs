@@ -2,142 +2,156 @@
 title: Installation
 sidebar_position: 1
 ---
-Please note that the installation packages for the OpenBB Terminal, EXE & DMG bundles, are currently incompatible with the OpenBB Python SDK. It must be installed via the procedure outlined below. For any operating system, installing VS Code is a recommended tool for file and container management; editing presets, routines, and portfolio files; command line operations; and ensuring the local installation is up-to-date, via GitHub.
 
-## **Installation**
+## Installation
 
-We provide an installation method (copy & paste commands) that relies on a Python virtual environment to isolate the OpenBB SDK (and/or Terminal) from the rest of the system. OpenBB recommends a [`Conda`](https://docs.conda.io/en/latest/miniconda.html) virtual Python environment because there are optional features, such as `forecast`, which depend on libraries specifically sourced from `conda-forge`. Due to this, outside of a Conda environment, some features will be unavailable. As such, the installation steps will be written under the assumption that you are using Conda. The total size of an installation will be approximately 4GB.
+The bundled installation versions of the OpenBB Terminal are currently incompatible with the OpenBB SDK. To install the OpenBB SDK, please follow the instructions below.
 
-**Important Notice:** For OpenBB Terminal versions < 1.9.1, or to upgrade a previous installation for the Forecast Menu, please take these additional steps first. Exit a Terminal session, and enter the commands below:
+**Notes:** 
 
-```python
+- Users updating from version < 1.9 will also need to remove and rebuild the existing Python virtual environment. 
+- If Anaconda3 is installed on the system, or the AARCH/ARM version of Miniconda, and its only purpose is for hosting the OpenBB platform, please uninstall prior to proceeding.
+- In MacOSX, use a bash terminal profile and not zsh.
 
-    conda clean -a -y
+### Removing the Old Environment
 
-    conda deactivate
+To prepare an existing installation for upgrading, follow these steps:
 
-    conda env remove -n obb -y
+1. Exit the OpenBB Terminal
+2. Enter: `conda deactivate`
+3. Enter: `conda env remove -n obb` (If the environment was given a name other than `obb`, replace with it)
+4. Enter: `conda clean -a` (enter Y when prompted)
+5. Enter: `conda update -n base -c -conda-forge conda` (enter Y when prompted)
 
-    conda clean -a -y
+### Python Version Support
 
-    conda update -n base -c conda-forge conda
+As part of the installation process, Python 3.9.6 will be installed. While other versions may work, the dependency tree is optimized for this version specifically. If the system targeted for installation does not have any version of Python installed, Python3 will be installed as part of [Miniconda3]. The version of Python will be updated when the OpenBB virtual environment is created during installation. While the process may feel intimidating to a new user, the majority of the work is copying and pasting the commands to run.
+
+### Install Miniconda3
+
+Miniconda is a Python package and environment manager. The installation process will create a dedicated container for the OpenBB software that isolates it from the rest of the system. Packages installed to a dedicated environment do not interfere with system or other Python environments. There are specific versions of packages, sourced only from Conda-Forge, which is why we specifically recommend installing within a freshly-made Conda Python environment. Make sure that the version of Miniconda3 installed is the x86/x64 version, no matter what CPU architecture the system has.
+
+Download and install the appropriate version of Miniconda3 for the system:
+
+[MacOSX](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg)
+
+[Windows](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)
+
+[Linux](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)
+
+**Note:** When installing Miniconda3, there will be an option to select the destination folder. To avoid cross-contamination with other versions or environment managers, install in a dedicated path like: `/Users/username/miniconda3/`
+
+### Terminal Shell Profile
+
+Open a terminal window, using a bash profile (Windows: cmd.exe) and activate the base environment:
+
+- On MacOSX, enter:
+
+```shell
+    source /path/to/miniconda3/bin/activate
+    conda init bash
 ```
 
-### **Operating System Requirements**
+- Windows/Linux, enter:
 
-The steps below are not specific to any particular O/S; however, the known minimum versions are:
+```shell
+    C:/path/to/miniconda3/Scripts/activate
+    conda init bash
+```
 
-  -  Windows 10
-  -  MacOS Catalina
+Close the terminal window and re-open it.
 
-Community members have also had successful installations with:
+### Install Git and Clone the OpenBB GitHub Repository
 
-  -  Linux (various builds)
+The base environment is confirmed to be activated when `(base)` appears in the command line, before the path. Entering `conda -V` on the command line will print the version of Conda installed. As of writing, the latest version is `22.9.0`. Navigate to a path where the files will be stored locally, such as: `/Users/username/GitHub`, then install git:
 
-        ```python
-        mkdir -p ~/miniconda3
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-        bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-        rm -rf ~/miniconda3/miniconda.sh
-        ~/miniconda3/bin/conda init bash
-        ```
+```shell
+conda install -c conda-forge git
+```
 
-  -  Raspberry Pi (similar to a Linux installation)
-  -  Some tablets with the ability to run Python and Jupyter/VS Code/Docker
+Now clone the OpenBB repo:
 
-**Additional Notes:**
+```shell
+git clone https://github.com/OpenBB-finance/OpenBBTerminal.git 
+```
 
-  -  Forecasting features are not yet GPU-enabled.
-  -  Many, but not all, of the forecast functions require the CPU to support the minimum requirements of the Intel MKL (SSSE3 + SSE4.2 instructions). There are no known work-arounds at this time.
-  -  Initiate a bash terminal shell instead of zsh or other, and Windows users should use `CMD.exe` instead of PowerShell.
-  -  Depending on the particular system, installation can be slower within an `ipykernel` session. The end result will be the same as one completed in a bash terminal shell.
+This will transfer approximately 2GB of data to the local folder. An addtional 2GB will be required for installing dependencies.
 
-### **Steps to Install**
+### Navigate into the Cloned Folder
 
-1. **Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)**
+```shell
+cd OpenBBTerminal
+```
 
-    Download the `x86_64` Miniconda for your respective system and follow along with its installation instructions. The Miniconda architecture MUST be `x86_64` in order to use certain features.
+### Create the Conda Python Environment
 
-2. **Open a Terminal Window & Install Git Within the Conda Base Environment**
+```shell
+conda env create -n obb --file build/conda/conda-3-9-env-full.yaml
+```
 
-    In VS Code, use the activity bar to view the Conda base environment. Activate it by clicking on the middle icon, "Open in Terminal".
+This will install some, but not all dependencies. It is important for this step to happen ***before*** the next steps.
 
-    ![conda activate base](https://user-images.githubusercontent.com/85772166/201504674-42c13582-3211-43d2-98c4-ff29f31788b4.png "conda activate base")
+### Activate the Environment
 
-    ```python
-    conda install -c conda-forge git -y
-    ```
+```shell
+conda activate obb
+```
 
-3. **Clone the GitHub Repo**
+**Note:** When opening new terminal windows, the `obb` environment will need to be activated every time.
 
-    ```python
-    git clone https://github.com/OpenBB-finance/OpenBBTerminal.git   
-    ```
+### Install Git (again), Within the `obb` Environment
 
-    **Note:**  The command is slightly different within a Jupyter Notebook or interactive window:
+Ensure the `obb` environment is active, and then enter:
 
-    ```python
-    conda run git clone https://github.com/OpenBB-finance/OpenBBTerminal.git
-    ```
+```shell
+conda install -c conda-forge git
+```
 
-4. **Navigate Into the Cloned Folder**
+### Install the Remaining Depedencies with Poetry
 
-    ```python
-    cd OpenBBTerminal
-    ```
-    
-    ![cd OpenBBTerminal](https://user-images.githubusercontent.com/85772166/201504723-c6fce3e6-063d-4851-b114-0d3a9c7e9833.png "cd OpenBBTerminal")
+```shell
+poetry install -E prediction
+```
 
-5. **Create Environment** (note: `obb` can be substituted for any monicker)
+This process concludes with a message, where x is the current version number:
 
-    ```python
-    conda env create -n obb --file build/conda/conda-3-9-env-full.yaml
-    ```
-    
-    ![conda env create](https://user-images.githubusercontent.com/85772166/201504757-57b8fe26-f552-4e3e-85a0-336989814e88.png "conda env create")  
+```shell
+Installing the current project: OpenBBTerminal (x.x.x)
+```
 
-6. **Activate the Environment**
+### Installation Successful
 
-    ```python
-    conda activate obb
-    ```
+The OpenBB Terminal can now be launched from the command line with, `python terminal.py`, and the SDK can be initiated in a Terminal, interactive window, or Jupyter Notebook, by entering: `from openbb_terminal.sdk import openbb`
 
-    If using VS Code, or Jupyter Labs, this is accomplished by clicking on the kernel selector, located in the right corner of the window, in the image where it says: "base".
-    
-    ![conda activate obb](https://user-images.githubusercontent.com/85772166/201504810-c65aa6a1-332f-428b-9b78-f8406788b48f.png "conda activate obb")
+## Installation Troubleshooting
 
-    There will be a pop-up dialogue requesting to install `ipykernel`, click on "Install".
+The most common problems encountered are:
 
-    ![Install ipykernel](https://user-images.githubusercontent.com/85772166/201504828-3e8a4d2f-1c5f-4512-8e87-41f11ec0603b.png "Install ipykernel")
+- "no module named: dotenv", or similar:
 
-7. **Install Git Within the `obb` Environment**
+    - Typically because the `obb` environment has not been activated for the session. `conda activate obb`
 
-    ```python
-    conda install -c conda-forge git
-    ```
+</br>
 
-8. **Install the Remaining Packages**
+- `poetry install` fails:
 
-    ```python
-    poetry install -E prediction
-    ```
+    - This can happen when the version of Conda (or old packages stored in cache are installed) is not x86/x64 architecture. If it fails regardless, try:
 
-    For an interactive window or Jupyter Notebook add `conda run` to the command.
+        - `pip install -r requirements-full.txt`
+        - then try again: `poetry install -E prediction`
 
-    ```python
-    conda run poetry install -E prediction
-    ```
+</br>
 
-    **Note:** If `poetry install` fails, try:
+- Forecasting features not installed after updating the version:
 
-    ```python
-    pip install -r requirements-full.txt
-    ```
+    - This can happen when the version of Conda (or packages remaining in cache that were unknowingly installed) is not x86/x64 architecture. This will also occur where Anaconda3 is installed as the active Python environment manager. Follow the steps under, [Removing the Old Environment](https://openbb-finance.github.io/SDK/getstarted/setup/#removing-the-old-environment).
 
-    Then, retry: `poetry install -E prediction`
+</br>
 
-A successful installation will conclude with an output message - `Installing the current project: OpenBBTerminal (version number)` - and a summary of package installations, similar to the screenshot below. It is now ready to use.
+- Can't import the OpenBB SDK to a Notebook:
 
-![Successful Install](https://user-images.githubusercontent.com/85772166/201504855-a232578c-b746-4441-9b05-75ce1767ca5a.png "Successfull Install")
+    - Ensure the selected kernel is one created during installation. For browser-based sessions, the interactive kernel will be named: `Python3 (ipykernel)`
 
-The terminal application can be launched from within a Jupyter Notebook file with the command, `run terminal.py`; however, the Terminal experience is not intended for this type of environment. Notebook files, `ipynb`, and Python scripts are best suited for working within the OpenBB SDK layer. The next section will explain how to get started.
+</br>
+
+Users continuing to experience errors should contact us, by email to, support@openbb.co. Please include basic system information, the point of failure, any steps taken prior to the failure, and any relevant screenshots or stack tracebacks.
