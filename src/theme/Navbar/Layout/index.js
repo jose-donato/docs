@@ -43,11 +43,11 @@ export default function NavbarLayout({ children }) {
     <nav
       ref={navbarRef}
       className={clsx(
-        "border-b border-grey-600",
+        "border-b border-grey-600 lg:px-12",
         {
           header_docs_terminal: pathname.startsWith("/docs/terminal"),
           header_docs_sdk: pathname.startsWith("/docs/sdk"),
-          header_docs: pathname === "/docs/"
+          header_docs: pathname === "/docs/",
         },
         "navbar",
         "navbar--fixed-top",
