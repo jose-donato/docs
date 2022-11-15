@@ -7,13 +7,15 @@ sidebar_position: 1
 
 The bundled installation versions of the OpenBB Terminal are currently incompatible with the OpenBB SDK. To install the OpenBB SDK, please follow the instructions below.
 
-**Notes:** 
+:::note
 
-- Users updating from version < 1.9 will also need to remove and rebuild the existing Python virtual environment. 
+- Users updating from version < 1.9 will also need to remove and rebuild the existing Python virtual environment.
 - If Anaconda3 is installed on the system, or the AARCH/ARM version of Miniconda, and its only purpose is for hosting the OpenBB platform, please uninstall prior to proceeding.
 - In MacOSX, use a bash terminal profile and not zsh.
+:::
 
-### Removing the Old Environment
+<details>
+ <summary><code>Removing the Old Environment</code></summary>
 
 To prepare an existing installation for upgrading, follow these steps:
 
@@ -22,6 +24,8 @@ To prepare an existing installation for upgrading, follow these steps:
 3. Enter: `conda env remove -n obb` (If the environment was given a name other than `obb`, replace with it)
 4. Enter: `conda clean -a` (enter Y when prompted)
 5. Enter: `conda update -n base -c -conda-forge conda` (enter Y when prompted)
+
+</details>
 
 ### Python Version Support
 
@@ -72,7 +76,7 @@ conda install -c conda-forge git
 Now clone the OpenBB repo:
 
 ```shell
-git clone https://github.com/OpenBB-finance/OpenBBTerminal.git 
+git clone https://github.com/OpenBB-finance/OpenBBTerminal.git
 ```
 
 This will transfer approximately 2GB of data to the local folder. An addtional 2GB will be required for installing dependencies.
@@ -131,8 +135,6 @@ The most common problems encountered are:
 
     - Typically because the `obb` environment has not been activated for the session. `conda activate obb`
 
-</br>
-
 - `poetry install` fails:
 
     - This can happen when the version of Conda (or old packages stored in cache are installed) is not x86/x64 architecture. If it fails regardless, try:
@@ -140,18 +142,12 @@ The most common problems encountered are:
         - `pip install -r requirements-full.txt`
         - then try again: `poetry install -E prediction`
 
-</br>
-
 - Forecasting features not installed after updating the version:
 
     - This can happen when the version of Conda (or packages remaining in cache that were unknowingly installed) is not x86/x64 architecture. This will also occur where Anaconda3 is installed as the active Python environment manager. Follow the steps under, [Removing the Old Environment](https://openbb-finance.github.io/SDK/getstarted/setup/#removing-the-old-environment).
 
-</br>
-
 - Can't import the OpenBB SDK to a Notebook:
 
     - Ensure the selected kernel is one created during installation. For browser-based sessions, the interactive kernel will be named: `Python3 (ipykernel)`
-
-</br>
 
 Users continuing to experience errors should contact us, by email to, support@openbb.co. Please include basic system information, the point of failure, any steps taken prior to the failure, and any relevant screenshots or stack tracebacks.

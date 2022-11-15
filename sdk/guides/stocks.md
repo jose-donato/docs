@@ -27,7 +27,7 @@ Help on Breadcrumb in module openbb_terminal.core.library.breadcrumb:
 
 <openbb_terminal.core.library.breadcrumb.Breadcrumb object>
     STOCKS Menu
-    
+
     The SDK commands of the the menu:
             <openbb>.stocks.ca
             <openbb>.stocks.search
@@ -60,12 +60,12 @@ Help on Operation in module openbb_terminal.core.library.operation:
 
 <openbb_terminal.core.library.operation.Operation object>
     Get available expiration dates for given ticker
-    
+
     Parameters
     ----------
     symbol: str
         Ticker symbol to get expirations for
-    
+
     Returns
     -------
     dates: List[str]
@@ -101,7 +101,7 @@ spy_monthly.head(3)
 |:--------------------|--------:|--------:|--------:|--------:|------------:|-----------:|
 | 1993-02-01 00:00:00 | 43.9688 | 45.125  | 42.8125 | 44.4062 |     25.6043 | 5.4176e+06 |
 | 1993-03-01 00:00:00 | 44.5625 | 45.8438 | 44.2188 | 45.1875 |     26.0548 | 3.0192e+06 |
-| 1993-04-01 00:00:00 | 45.25   | 45.25   | 43.2812 | 44.0312 |     25.508  | 2.6972e+06 | 
+| 1993-04-01 00:00:00 | 45.25   | 45.25   | 43.2812 | 44.0312 |     25.508  | 2.6972e+06 |
 ...continued
 
 That data can be passed to the `Candle` function to display as a chart.
@@ -168,15 +168,15 @@ screener_results.head(10)
 |     | Ticker   |   Market Cap | P/E     |   Fwd P/E | PEG   |   P/S |    P/B |     P/C | P/FCF   | EPS this Y         |   EPS next Y | EPS past 5Y          | EPS next 5Y   | Sales past 5Y   |   Price |   Change |   Volume |
 |----:|:---------|-------------:|:--------|----------:|:------|------:|-------:|--------:|:--------|:-------------------|-------------:|:---------------------|:--------------|:----------------|--------:|---------:|---------:|
 |  80 | LWAY     |   1.0849e+08 | 84.27   |     21.59 | 8.43  |  0.88 |   2.21 |   14.66 | 57.1    | 0.174              |      33      | 0.006999999999999999 | 0.1           | -0.008          |    6.92 |   0.0014 |     4285 |
-| 101 | OPAL     |   1.47e+09   | 89.0    |      5.06 | <NA>  |  6.96 |   1.19 | 7330.04 | <NA>    | <NA>               |       2.3524 | <NA>                 | <NA>          | <NA>            |    8.91 |   0.0011 |     3685 |
-|  58 | HROW     |   3.0484e+08 | <NA>    |     39.19 | <NA>  |  3.62 |  55.05 |    5.91 | 254.03  | -4.327             |       1.906  | 0.14300000000000002  | 0.15          | 0.294           |   11.75 |   0.0164 |    62584 |
-|  52 | HCDI     |   1.25e+07   | <NA>    |      1.68 | <NA>  |  0.15 |   0.4  |    0.57 | <NA>    | 1.198              |       1.8    | <NA>                 | <NA>          | <NA>            |    0.73 |  -0.1702 |   141323 |
-|  94 | NTIC     |   1.2064e+08 | 17.86   |     13.36 | 0.89  |  1.74 |   1.89 |   19.78 | <NA>    | 5.3260000000000005 |       1.7778 | 0.54                 | 0.2           | 0.114           |   12.51 |  -0.0636 |     7237 |
-| 114 | QRHC     |   1.6609e+08 | <NA>    |    134.77 | <NA>  |  0.72 |   2.31 |   39.55 | <NA>    | 0.648              |       1.75   | 0.165                | 0.15          | -0.033          |    8.47 |  -0.0337 |    52308 |
-|  49 | GILT     |   3.2828e+08 | 1953.33 |     30.84 | <NA>  |  1.49 |   1.35 |    4.68 | <NA>    | -1.085             |       1.7143 | 0.121                | <NA>          | -0.051          |    6.17 |   0.0529 |   104540 |
-|  57 | HPK      |   2.59e+09   | 24.47   |      3.37 | <NA>  |  5.9  |   2.65 |  115.8  | 10.51   | 1.5290000000000001 |       1.3533 | <NA>                 | <NA>          | <NA>            |   24.71 |   0.0697 |   149308 |
-|  68 | IONM     |   1.371e+07  | <NA>    |      3.74 | <NA>  |  0.56 |   0.4  |   17.14 | <NA>    | 0.887              |       1.352  | -0.055               | <NA>          | <NA>            |    0.7  |  -0.0007 |     4191 |
-| 132 | SHLS     |   3.86e+09   | 240.0   |     35.79 | 3.49  | 15.49 | 175.38 |  382.57 | <NA>    | -0.888             |       1.1304 | <NA>                 | 0.6875        | <NA>            |   22.66 |  -0.0061 |   854648 |
+| 101 | OPAL     |   1.47e+09   | 89.0    |      5.06 | N/A  |  6.96 |   1.19 | 7330.04 | N/A    | N/A               |       2.3524 | N/A                 | N/A          | N/A            |    8.91 |   0.0011 |     3685 |
+|  58 | HROW     |   3.0484e+08 | N/A    |     39.19 | N/A  |  3.62 |  55.05 |    5.91 | 254.03  | -4.327             |       1.906  | 0.14300000000000002  | 0.15          | 0.294           |   11.75 |   0.0164 |    62584 |
+|  52 | HCDI     |   1.25e+07   | N/A    |      1.68 | N/A  |  0.15 |   0.4  |    0.57 | N/A    | 1.198              |       1.8    | N/A                 | N/A          | N/A            |    0.73 |  -0.1702 |   141323 |
+|  94 | NTIC     |   1.2064e+08 | 17.86   |     13.36 | 0.89  |  1.74 |   1.89 |   19.78 | N/A    | 5.3260000000000005 |       1.7778 | 0.54                 | 0.2           | 0.114           |   12.51 |  -0.0636 |     7237 |
+| 114 | QRHC     |   1.6609e+08 | N/A    |    134.77 | N/A  |  0.72 |   2.31 |   39.55 | N/A    | 0.648              |       1.75   | 0.165                | 0.15          | -0.033          |    8.47 |  -0.0337 |    52308 |
+|  49 | GILT     |   3.2828e+08 | 1953.33 |     30.84 | N/A  |  1.49 |   1.35 |    4.68 | N/A    | -1.085             |       1.7143 | 0.121                | N/A          | -0.051          |    6.17 |   0.0529 |   104540 |
+|  57 | HPK      |   2.59e+09   | 24.47   |      3.37 | N/A  |  5.9  |   2.65 |  115.8  | 10.51   | 1.5290000000000001 |       1.3533 | N/A                 | N/A          | N/A            |   24.71 |   0.0697 |   149308 |
+|  68 | IONM     |   1.371e+07  | N/A    |      3.74 | N/A  |  0.56 |   0.4  |   17.14 | N/A    | 0.887              |       1.352  | -0.055               | N/A          | N/A            |    0.7  |  -0.0007 |     4191 |
+| 132 | SHLS     |   3.86e+09   | 240.0   |     35.79 | 3.49  | 15.49 | 175.38 |  382.57 | N/A    | -0.888             |       1.1304 | N/A                 | 0.6875        | N/A            |   22.66 |  -0.0061 |   854648 |
 ...continued
 
 Get the links for SEC filings belonging to a company:
@@ -198,9 +198,9 @@ openbb.stocks.dd.sec(symbol = 'WMT')
 | 06/21/2022    | N/A             | SC 13D   | N/A                     |           | https://www.marketwatch.com/investing/stock/wmt/financials/secfilings?docid=15900809 |
 | 06/17/2022    | N/A             | SC 13D   | N/A                     |           | https://www.marketwatch.com/investing/stock/wmt/financials
 ...continued
-  
+
 View insider activity on the stock:
-  
+
 ```python
 openbb.stocks.ins.lins(symbol = 'WMT')
 ```
@@ -212,7 +212,7 @@ openbb.stocks.ins.lins(symbol = 'WMT')
 | Sep 22 | Executive Vice President | Sale          | 4,375     | 134.38 | 587,912     | 268,183         | Furner John R.     | Sep 23 05:21 PM |
 | Sep 22 | President and CEO        | Sale          | 9,708     | 134.04 | 1,301,309   | 1,488,043       | McMillon C Douglas | Sep 23 05:18 PM |
 | Aug 25 | Director                 | Sale          | 347,542   | 135.66 | 47,145,880  | 282,330,635     | WALTON S ROBSON    | Aug 26 06:36 PM |
-...continued  
+...continued
 
 Income statements from multiple companies can be easily referenced:
 
@@ -243,7 +243,7 @@ openbb.stocks.ca.income(similar = ['WMT', 'TGT', 'AMZN'], quarter = True)
 | Non Operating Income/Expense              | -                        | 8M                       | (1.45B)                   |
 | Non-Operating Interest Income             | 31M                      | -                        | 277M                      |
 ...continued
-  
+
 Get historical fundamental ratios for a company:
 
 ```python
@@ -268,7 +268,7 @@ openbb.stocks.fa.fmp_ratios(symbol = 'WMT')
 ...continued
 
 Take just the ratio needed by filtering the index:
-  
+
 ```python
 ratios = openbb.stocks.fa.fmp_ratios(symbol = 'WMT', limit = 20)
 ratios.filter(like = 'Price earnings to growth ratio', axis = 0)
@@ -286,7 +286,7 @@ stocktwits = pd.DataFrame(stocktwits).sort_values(by = 'Watchlist Count', ascend
 tickers = stocktwits['Ticker'].to_list()
 stocktwits.head(10)
 ```
-  
+
 |    | Ticker   |   Watchlist Count | Name                           |
 |---:|:---------|------------------:|:-------------------------------|
 | 18 | NVDA     |            409301 | NVIDIA Corp                    |
@@ -300,14 +300,14 @@ stocktwits.head(10)
 |  8 | TDOC     |             38657 | Teladoc Health Inc             |
 | 16 | PENN     |             38277 | Penn National Gaming, Inc.     |
 
-Filter the results by market cap:  
+Filter the results by market cap:
 
 ```python
 screener_results = openbb.stocks.ca.screener(similar = tickers, data_type = 'overview')
 screener_results = screener_results.sort_values(by = ['Market Cap'], ascending = False)
 
 screener_results.head(5)
-```  
+```
 
 |    | Ticker   | Company                                                                           | Sector             | Industry                     | Country   |   Market Cap |    P/E |   Price |   Change |           Volume |
 |---:|:---------|:----------------------------------------------------------------------------------|:-------------------|:-----------------------------|:----------|-------------:|-------:|--------:|---------:|-----------------:|
@@ -319,7 +319,7 @@ screener_results.head(5)
   ...continued
 
 Get last price data for multiple tickers:
-  
+
 ```python
 spdr_sectors = ['SPY', 'XLE', 'XLB', 'XLI', 'XLP', 'XLY', 'XLV', 'XLF', 'XLK', 'XLC', 'XLU', 'XLRE']
 
@@ -330,7 +330,7 @@ for symbols in spdr_sectors:
     quotes.append(quote)
 
 quotes = pd.concat(quotes)
-  
+
 quotes
 ```
 

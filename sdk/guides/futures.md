@@ -1,6 +1,6 @@
 ---
 title: Introduction to Futures
-keywords: "futures, sdk, python, api, yfinance, derivatives, financial, cme, cbt, nym, cmx, commodity, commodities, rates, future, interest, derivative, softs, grains, ags, hydrocarbons, index"
+keywords: ["futures, sdk, python, api, yfinance, derivatives, financial, cme, cbt, nym, cmx, commodity, commodities, rates, future, interest, derivative, softs, grains, ags, hydrocarbons, index"]
 excerpt: "This guide introduces the Futures module, from the OpenBB SDK"
 geekdocCollapseSection: true
 ---
@@ -19,7 +19,7 @@ Help on Breadcrumb in module openbb_terminal.core.library.breadcrumb:
 
 <openbb_terminal.core.library.breadcrumb.Breadcrumb object>
     FUTURES Menu
-    
+
     The SDK commands of the the menu:
             <openbb>.futures.curve
             <openbb>.futures.historical
@@ -28,7 +28,7 @@ Help on Breadcrumb in module openbb_terminal.core.library.breadcrumb:
 
 ## How to Use
 
-Futures can be searched by description, exchange, or category. 
+Futures can be searched by description, exchange, or category.
 
 ```python
 obb.futures.search(description = 'Eurodollar')
