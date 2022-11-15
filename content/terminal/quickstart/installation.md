@@ -1,18 +1,20 @@
 ---
 sidebar_position: 1
+title: Installation
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-# Installation
-
-# Accessing the OpenBB Terminal
+### Accessing the OpenBB Terminal
 
 The OpenBB Terminal can be directly installed on your computer via our
 installation program. Within this section, you are guided through the
 installation process and how to launch the program. If you are a developer,
 please have a look here. If you struggle with the installation process, please
 don’t hesitate to reach us on Discord or visit our contact page.
+
+OpenBB Terminal is available in all major platforms. With MacOS/Windows you can easily install with the installer (instructions below). It is also available to install on Linux with Docker or from source.
 
 :::info Installation Instructions
 
@@ -82,7 +84,7 @@ Right-Click the app and select <code>Open</code>. You will see a message saying 
 
 </div>
 </TabItem>
-  <TabItem value="Linux" label="Docker (Linux or any OS that supports Docker)">Install with Docker 🍌
+  <TabItem value="docker" label="Docker">Install with Docker 🍌
   Here are the steps to get OpenBBTerminal using the Docker containers that we provide:
 
 Installing Docker and Docker Compose Pulling and running OpenBBTerminal Docker
@@ -240,7 +242,7 @@ If you're using remote docker host, you can connect with `ssh -X <FQDN/IP>`.
 Then run the previous docker command.
 
 </TabItem>
-  <TabItem value="Source" label="Source (Advanced - Any OS that supports conda)">
+  <TabItem value="Source" label="Source">
 Installing the terminal
 These steps are common in all operating systems (Windows with or without WSL, MacOS or Linux).
 
