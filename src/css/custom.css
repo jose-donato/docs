@@ -10,6 +10,10 @@
   article {
     @apply prose lg:prose-lg dark:prose-invert !max-w-none;
   }
+
+  #__docusaurus {
+    @apply dark:bg-grey-900;
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
