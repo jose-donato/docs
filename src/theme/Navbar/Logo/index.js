@@ -11,9 +11,14 @@ export default function NavbarLogo() {
       <Link to="/">
         <LetteringLogo className="text-white" />
       </Link>
-      <div className={clsx("hidden p-2 border border-grey-400 rounded h-[34px] items-center bg-grey-900 gap-3", {
-        "md:flex": pathname !== "/docs/",
-      })}>
+      <div
+        className={clsx(
+          "hidden p-2 border border-grey-400 rounded h-[34px] items-center bg-grey-900 gap-3",
+          {
+            "md:flex": pathname !== "/docs/",
+          }
+        )}
+      >
         <Link
           to="/terminal"
           className={clsx(

@@ -8,11 +8,27 @@
   }
 
   article {
-    @apply prose lg:prose-lg dark:prose-invert !max-w-none;
+    @apply prose lg:prose-lg dark:prose-invert !max-w-none lg:pl-[38px] xl:!mr-[20px];
+  }
+
+  /*.pagination {
+    @apply lg:!pl-[38px] xl:!mr-[20px];
+  }*/
+
+  article > nav {
+    @apply mt-2;
   }
 
   #__docusaurus {
     @apply dark:bg-grey-900;
+  }
+
+  article h1 {
+    @apply !text-[32px] uppercase font-bold tracking-widest;
+  }
+
+  article h2 {
+    @apply !text-[28px];
   }
 }
 

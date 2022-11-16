@@ -23,7 +23,7 @@ export default function Home(): JSX.Element {
             style={{
               backgroundImage: "url('/docs/img/sdk_bg.png')",
               backgroundRepeat: "no-repeat",
-              backgroundSize: "100% 100%",
+              backgroundSize: "100% 120%",
             }}
             to="/docs/sdk"
             className="!no-underline hover:border-white hover:!text-white relative w-full h-[238px] max-w-full p-8 rounded overflow-hidden flex flex-col items-center justify-center border border-grey-400 dark:bg-grey-900"
