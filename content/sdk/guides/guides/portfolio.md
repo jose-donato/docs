@@ -1,5 +1,5 @@
 ---
-title: Introduction to Portfolio SDK
+title: Portfolio
 keywords: ["portfolio", "attribution", "optimization", "pnl", "benchmark", "return", "volatility", "metrics", "broker", "integration", "report"]
 excerpt: "The Introduction to Portfolio explains how to use the
 menu and provides a brief description of its sub-menus"
