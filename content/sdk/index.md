@@ -24,20 +24,26 @@ effort. However, it does not have to be. Take advantage of OpenBB SDK with its
 out-of-the-box data connectors and financial analysis toolkit. So that you can
 focus on designing and building your financial reports and applications.
 
-There is static and generated data in the folder
+## What is OpenBB SDK?
 
-### features
+OpenBB SDK is a Python library that provides you with a set of tools to access
+financial data and perform financial analysis.
 
-Auto Generated (Should not be editing anything here) (SDK Reference)
+## Who uses it?
 
-### guides
+OpenBB SDK is used by financial analysts, data scientists, and developers to
+build financial applications and reports.
 
-This contains the files for the "User Guide" Section
-
-### getstarted
+### Getting Started
 
 This contains the files for the "Getting Started" Section
 
-index.md - Intro page
+### Using OpenBB SDK
 
-examples.md - Examples here
+This contains the files for the "User Guide" Section
+
+### SDK Functions
+
+Auto Generated (Should not be editing anything here) (SDK Reference)
+
+### Showcase

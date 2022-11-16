@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React from "react";
 // Recursive component rendering the toc tree
 function TOCItemTree({ toc, className, linkClassName, isChild }) {
@@ -7,11 +8,15 @@ function TOCItemTree({ toc, className, linkClassName, isChild }) {
   return (
     <ul
       className={
-        isChild ? undefined : "divide-y divide-grey-600 list-none" /*className*/
+        isChild ? "list-none ml-1 border-l border-grey-300 dark:border-grey-600 mt-2" : "border-l border-grey-300 dark:border-grey-600 list-none pl-4" /*className*/
       }
     >
-      {toc.map((heading) => (
-        <li key={heading.id} className="py-2">
+      {toc.map((heading, idx) => (
+        <li key={heading.id} className={clsx({
+          "pb-1": idx === 0,
+          "py-1": idx !== 0,
+          "pl-3": isChild
+        })}>
           {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
           <a
             href={`#${heading.id}`}

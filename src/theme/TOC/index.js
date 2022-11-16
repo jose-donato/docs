@@ -15,14 +15,13 @@ export default function TOC({ className, ...props }) {
         className
       )}
     >
-      <p className="uppercase text-sm font-bold text-grey-200 tracking-widest">
+      <p className="uppercase text-sm font-bold text-grey-600 dark:text-grey-200 tracking-widest mb-2">
         On this page
       </p>
-      <div className="border-b border-grey-600 bg-grey-600 mt-2" />
       <TOCItems
         {...props}
         linkClassName={
-          "text-grey-400 capitalize !no-underline hover:text-white"
+          "text-grey-400 capitalize !no-underline"
         }
         linkActiveClassName={"!text-white"}
       />

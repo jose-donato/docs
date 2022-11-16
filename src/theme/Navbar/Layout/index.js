@@ -34,7 +34,7 @@ export default function NavbarLayout({ children }) {
     } else if (pathname.startsWith("/sdk")) {
       document.documentElement.style.setProperty(
         "--ifm-color-primary",
-        "#e47600"
+        "#F5B166"
       );
     } else {
     }
