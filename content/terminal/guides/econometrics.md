@@ -9,8 +9,6 @@ The menu allows the user to load in his/her own dataset(s), modify the data by (
 indices, apply statistical tests (e.g. <a href="https://en.wikipedia.org/wiki/Breusch%E2%80%93Godfrey_test" target="_blank">Breusch-Godfrey autocorrelation tests</a>)
 as well as OLS regressions and Panel regressions (e.g. <a href="https://en.wikipedia.org/wiki/Random_effects_model" target="_blank">Random Effects</a> and <a href="https://en.wikipedia.org/wiki/Fixed_effects_model" target="_blank">Fixed Effects</a>)
 
-{{< toc >}}
-
 ## Accessing the Econometrics menu
 
 The Econometrics menu is called upon by typing `econometrics` which opens the following menu:
