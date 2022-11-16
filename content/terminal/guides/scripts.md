@@ -16,9 +16,9 @@ doing advanced statistical/econometric research.
 ## Explanation of scripts
 The script file below is titled *stocks_demo.openbb*. This file follows the following logic:
 
-- <b><span style="color:#EF7D00">Comments</span></b>: any text after a `#` is referred to as a comment. This is used to explain what is happening within the script
+- <b>Comments</b>: any text after a `#` is referred to as a comment. This is used to explain what is happening within the script
 and is not taking into account when running terminal commands.
-- <b><span style="color:#EF7D00">Commands</span></b>: any text **without** a `#` is being ran inside the OpenBB Terminal. E.g. on the second line it says `stocks` thus within the OpenBB Terminal
+- <b>Commands</b>: any text **without** a `#` is being ran inside the OpenBB Terminal. E.g. on the second line it says `stocks` thus within the OpenBB Terminal
 the script will enter `stocks` and run this for you.
 
 These scripts have a 1-to-1 relationship with how you would normally use the terminal. To get a better understanding of
