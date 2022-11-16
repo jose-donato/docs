@@ -20,12 +20,12 @@ usage: trans [--d-model D_MODEL] [--nhead NHEAD] [--num_encoder_layers NUM_ENCOD
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| d_model | Number of expected features in inputs. | 64 | False | None |
-| nhead | Number of head in the attention mechanism. | 4 | False | None |
-| num_encoder_layers | The number of encoder leayers in the encoder. | 3 | False | None |
-| num_decoder_layers | The number of decoder leayers in the encoder. | 3 | False | None |
-| dim_feedforward | The dimension of the feedforward model. | 512 | False | None |
-| activation | Number of LSTM layers. | relu | False | relu, gelu |
+| d_model | Number of expected features in inputs. | 64 | True | None |
+| nhead | Number of head in the attention mechanism. | 4 | True | None |
+| num_encoder_layers | The number of encoder leayers in the encoder. | 3 | True | None |
+| num_decoder_layers | The number of decoder leayers in the encoder. | 3 | True | None |
+| dim_feedforward | The dimension of the feedforward model. | 512 | True | None |
+| activation | Number of LSTM layers. | relu | True | relu, gelu |
 
 
 ## Examples
@@ -35,7 +35,7 @@ usage: trans [--d-model D_MODEL] [--nhead NHEAD] [--num_encoder_layers NUM_ENCOD
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
 2022 Jul 23, 11:01 (🦋) /forecast/ $ trans GME
-100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:23<00:00,  4.88it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:2300:00,  4.88it/s]
 Transformer model obtains MAPE: 13.11%
 
 

@@ -20,13 +20,13 @@ usage: macro [-p PARAMETERS] [-c COUNTRIES] [-t {,TPOP,TOYA,TUSD,TPGP,TNOR}] [--
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| parameters | Abbreviation(s) of the Macro Economic data | CPI | False | None |
-| countries | The country or countries you wish to show data for | united_states | False | None |
-| transform | The transformation to apply to the data | None | False | :  No transformation,  TPOP:  total percentage change on period,  TOYA:  total percentage since 1 year ago,  TUSD:  level USD,  TPGP:  Percentage of GDP,  TNOR:  Start = 100 |
-| show | Show parameters and what they represent using 'parameters' or countries and their currencies using 'countries' | None | False | parameters, countries, transform |
-| start_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | None | False | None |
-| end_date | The end date of the data (format: YEAR-MONTH-DAY, i.e. 2021-06-20) | None | False | None |
-| currency | Convert the currency of the chosen country to a specified currency. To find the currency symbols use '--show countries' | None | False | None |
+| parameters | Abbreviation(s) of the Macro Economic data | CPI | True | None |
+| countries | The country or countries you wish to show data for | united_states | True | None |
+| transform | The transformation to apply to the data |  | True | :  No transformation,  TPOP:  total percentage change on period,  TOYA:  total percentage since 1 year ago,  TUSD:  level USD,  TPGP:  Percentage of GDP,  TNOR:  Start = 100 |
+| show | Show parameters and what they represent using 'parameters' or countries and their currencies using 'countries' | None | True | parameters, countries, transform |
+| start_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | None | True | None |
+| end_date | The end date of the data (format: YEAR-MONTH-DAY, i.e. 2021-06-20) | None | True | None |
+| currency | Convert the currency of the chosen country to a specified currency. To find the currency symbols use '--show countries' | False | True | None |
 
 
 ## Examples

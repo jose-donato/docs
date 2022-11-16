@@ -20,7 +20,7 @@ usage: lobbying [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of events to show | 10 | False | None |
+| limit | Limit of events to show | 10 | True | None |
 
 
 ## Examples

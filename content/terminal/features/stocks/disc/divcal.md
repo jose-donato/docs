@@ -20,9 +20,9 @@ usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| date | Date to get format for | 2022-11-16 12:46:06.540279 | False | None |
-| sort | Column to sort by | Dividend | False | None |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| date | Date to get format for | 2022-11-16 16:02:57.462318 | True | None |
+| sort | Column to sort by | Dividend | True | None |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
 ## Examples

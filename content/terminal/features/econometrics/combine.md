@@ -20,8 +20,8 @@ usage: combine [-d {}] [-c COLUMNS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dataset | Dataset to add columns to | None | False |  |
-| columns | The columns we want to add dataset.column,dataset.column2 | None | False | None |
+| dataset | Dataset to add columns to | None | True |  |
+| columns | The columns we want to add dataset.column,dataset.column2 | None | True | None |
 
 
 ## Examples

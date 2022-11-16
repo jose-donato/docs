@@ -20,8 +20,10 @@ usage: line [--log] [--ml ML] [--ms MS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| log | Plot with y on log scale | None | False | None |
-| ml | Draw vertical line markers to highlight certain events | None | False | None |
-| ms | Draw scatter markers to highlight certain events | None | False | None |
+| log | Plot with y on log scale | False | True | None |
+| ml | Draw vertical line markers to highlight certain events |  | True | None |
+| ms | Draw scatter markers to highlight certain events |  | True | None |
 
+
+![line](https://user-images.githubusercontent.com/46355364/154307397-9c2e9325-bce6-494d-994f-a6d7db798798.png)
 

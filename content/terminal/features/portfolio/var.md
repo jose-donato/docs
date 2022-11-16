@@ -20,10 +20,10 @@ usage: var [-m] [-a] [-s] [-p PERCENTILE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| use_mean | If one should use the mean of the portfolio return | True | False | None |
-| adjusted | If the VaR should be adjusted for skew and kurtosis (Cornish-Fisher-Expansion) | None | False | None |
-| student_t | If one should use the student-t distribution | None | False | None |
-| percentile | Percentile used for VaR calculations, for example input 99.9 equals a 99.9 Percent VaR | 99.9 | False | None |
+| use_mean | If one should use the mean of the portfolio return | True | True | None |
+| adjusted | If the VaR should be adjusted for skew and kurtosis (Cornish-Fisher-Expansion) | False | True | None |
+| student_t | If one should use the student-t distribution | False | True | None |
+| percentile | Percentile used for VaR calculations, for example input 99.9 equals a 99.9 Percent VaR | 99.9 | True | None |
 
 
 ## Examples

@@ -20,7 +20,7 @@ usage: export [-t {xlsx,csv}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| type | The file type you wish to export to | xlsx | False | xlsx, csv |
+| type | The file type you wish to export to | xlsx | True | xlsx, csv |
 
 
 ## Examples

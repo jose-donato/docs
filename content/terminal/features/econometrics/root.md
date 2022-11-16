@@ -20,9 +20,9 @@ usage: root -v {} [-r {c,ct,ctt,n}] [-k {c,ct}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| column | The column and name of the database you want test unit root for | None | True |  |
-| fuller_reg | Type of regression. Can be 'c','ct','ctt','nc'. c - Constant and t - trend order | c | False | c, ct, ctt, n |
-| kpss_reg | Type of regression. Can be 'c', 'ct'. c - Constant and t - trend order | c | False | c, ct |
+| column | The column and name of the database you want test unit root for | None | False |  |
+| fuller_reg | Type of regression. Can be 'c','ct','ctt','nc'. c - Constant and t - trend order | c | True | c, ct, ctt, n |
+| kpss_reg | Type of regression. Can be 'c', 'ct'. c - Constant and t - trend order | c | True | c, ct |
 
 
 ## Examples

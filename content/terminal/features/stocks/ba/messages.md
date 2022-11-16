@@ -20,6 +20,6 @@ usage: messages [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | limit messages shown. | 30 | False | None |
+| limit | limit messages shown. | 30 | True | None |
 
 

@@ -20,8 +20,8 @@ usage: hm [-l LIMIT] [-c CATEGORY]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Display N items | 10 | False | None |
-| category | Category (e.g., stablecoins). Empty for no category | None | False | None |
+| limit | Display N items | 10 | True | None |
+| category | Category (e.g., stablecoins). Empty for no category |  | True | None |
 
 
 ## Examples

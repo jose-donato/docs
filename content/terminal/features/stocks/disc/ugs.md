@@ -20,7 +20,7 @@ usage: ugs [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of stocks to display. | 5 | False | None |
+| limit | Limit of stocks to display. | 5 | True | None |
 
 
 ## Examples

@@ -20,7 +20,7 @@ usage: whatif [-d DATE_SHARES_ACQUIRED] [-n NUM_SHARES_ACQUIRED]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| date_shares_acquired | Date at which the shares were acquired | None | False | None |
-| num_shares_acquired | Number of shares acquired | 1.0 | False | None |
+| date_shares_acquired | Date at which the shares were acquired | None | True | None |
+| num_shares_acquired | Number of shares acquired | 1.0 | True | None |
 
 

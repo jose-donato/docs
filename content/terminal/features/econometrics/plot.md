@@ -20,7 +20,7 @@ usage: plot [-v VALUES]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| values | Dataset.column values to be displayed in a plot | None | False | None |
+| values | Dataset.column values to be displayed in a plot | None | True | None |
 
 
 ## Examples

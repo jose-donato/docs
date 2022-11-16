@@ -20,13 +20,13 @@ usage: create [-a {buy,sell}] (-prod PRODUCT | -sym SYMBOL) -p PRICE (-s SIZE | 
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| action | Action wanted. | buy | False | dict_keys(['buy', 'sell']) |
-| product | Id of the product wanted. | None | False | None |
-| symbol | Symbol wanted. | None | False | None |
-| price | Price wanted. | None | True | None |
-| size | Price wanted. | None | False | None |
-| up_to | Up to price. | None | False | None |
-| duration | Duration of the Order. | gtd | False | dict_keys(['gtd', 'gtc']) |
-| type | Type of the Order. | limit | False | dict_keys(['limit', 'market', 'stop-limit', 'stop-loss']) |
+| action | Action wanted. | buy | True | dict_keys(['buy', 'sell']) |
+| product | Id of the product wanted. | None | True | None |
+| symbol | Symbol wanted. | None | True | None |
+| price | Price wanted. | None | False | None |
+| size | Price wanted. | None | True | None |
+| up_to | Up to price. | None | True | None |
+| duration | Duration of the Order. | gtd | True | dict_keys(['gtd', 'gtc']) |
+| type | Type of the Order. | limit | True | dict_keys(['limit', 'market', 'stop-limit', 'stop-loss']) |
 
 

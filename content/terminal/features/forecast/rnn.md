@@ -20,8 +20,8 @@ usage: rnn [--hidden-dim HIDDEN_DIM] [--training_length TRAINING_LENGTH]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| hidden_dim | Size for feature maps for each hidden RNN layer (h_n) | 20 | False | None |
-| training_length | The length of both input (target and covariates) and output (target) time series used during training. Generally speaking, training_length should have a higher value than input_chunk_length because otherwise during training the RNN is never run for as many iterations as it will during training. | 20 | False | None |
+| hidden_dim | Size for feature maps for each hidden RNN layer (h_n) | 20 | True | None |
+| training_length | The length of both input (target and covariates) and output (target) time series used during training. Generally speaking, training_length should have a higher value than input_chunk_length because otherwise during training the RNN is never run for as many iterations as it will during training. | 20 | True | None |
 
 
 ## Examples
@@ -31,7 +31,7 @@ usage: rnn [--hidden-dim HIDDEN_DIM] [--training_length TRAINING_LENGTH]
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
 2022 Jul 23, 11:03 (🦋) /forecast/ $ rnn GME
-100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:07<00:00, 15.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:0700:00, 15.10it/s]
 RNN model obtains MAPE: 14.67%
 
 

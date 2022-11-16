@@ -20,7 +20,7 @@ usage: rtat [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | limit of days to display | 3 | False | None |
+| limit | limit of days to display | 3 | True | None |
 
 
 ## Examples

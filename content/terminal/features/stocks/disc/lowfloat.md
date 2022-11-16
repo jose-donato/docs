@@ -20,7 +20,7 @@ usage: lowfloat [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | limit of stocks to display | 5 | False | None |
+| limit | limit of stocks to display | 5 | True | None |
 
 
 ## Examples

@@ -20,8 +20,8 @@ usage: earnings [-q] [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| b_quarter | Quarter fundamental data flag. | None | False | None |
-| limit | Number of latest info | 5 | False | None |
+| b_quarter | Quarter fundamental data flag. | False | True | None |
+| limit | Number of latest info | 5 | True | None |
 
 
 ## Examples

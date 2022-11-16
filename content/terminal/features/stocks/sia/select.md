@@ -20,6 +20,6 @@ usage: select -t TICKER
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| ticker | Stock ticker | None | True | None |
+| ticker | Stock ticker | None | False | None |
 
 

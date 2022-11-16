@@ -20,6 +20,6 @@ usage: clenow [-p PERIOD]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| period | Lookback period for regression | 90 | False | None |
+| period | Lookback period for regression | 90 | True | None |
 
 

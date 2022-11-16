@@ -20,8 +20,10 @@ usage: stoch [-k N_FASTKPERIOD] [-d N_SLOWDPERIOD] [--slowkperiod N_SLOWKPERIOD]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_fastkperiod | The time period of the fastk moving average | 14 | False | None |
-| n_slowdperiod | The time period of the slowd moving average | 3 | False | None |
-| n_slowkperiod | The time period of the slowk moving average | 3 | False | None |
+| n_fastkperiod | The time period of the fastk moving average | 14 | True | None |
+| n_slowdperiod | The time period of the slowd moving average | 3 | True | None |
+| n_slowkperiod | The time period of the slowk moving average | 3 | True | None |
 
+
+![stoch](https://user-images.githubusercontent.com/46355364/154311913-d58e58bb-d116-44dd-ae4b-44e59c25f22a.png)
 

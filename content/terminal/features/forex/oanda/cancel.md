@@ -20,6 +20,6 @@ usage: cancel -i ORDERID
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| orderID | The pending order ID to cancel. | None | True | None |
+| orderID | The pending order ID to cancel. | None | False | None |
 
 

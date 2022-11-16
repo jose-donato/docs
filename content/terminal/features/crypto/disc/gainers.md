@@ -20,9 +20,9 @@ usage: gainers [-i {14d,1h,1y,200d,24h,30d,7d}] [-l LIMIT] [-s SORTBY [SORTBY ..
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| interval | time period, one from {14d,1h,1y,200d,24h,30d,7d} | 1h | False | 14d, 1h, 1y, 200d, 24h, 30d, 7d |
-| limit | Number of records to display | 15 | False | None |
-| sortby | Sort by given column. Default: Market Cap Rank | market_cap | False | None |
+| interval | time period, one from {14d,1h,1y,200d,24h,30d,7d} | 1h | True | 14d, 1h, 1y, 200d, 24h, 30d, 7d |
+| limit | Number of records to display | 15 | True | None |
+| sortby | Sort by given column. Default: Market Cap Rank | market_cap | True | None |
 
 
 ## Examples

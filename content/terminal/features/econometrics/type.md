@@ -20,8 +20,8 @@ usage: type [-n {}] [--format {int,float,str,bool,category,date}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | Provide dataset.column series to change type or dataset to see types. | None | False |  |
-| format | Set the format for the dataset.column defined. This can be: date, int, float, str, bool or category | None | False | int, float, str, bool, category, date |
+| name | Provide dataset.column series to change type or dataset to see types. | None | True |  |
+| format | Set the format for the dataset.column defined. This can be: date, int, float, str, bool or category | None | True | int, float, str, bool, category, date |
 
 
 ## Examples

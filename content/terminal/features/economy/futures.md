@@ -20,9 +20,9 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| commodity | Obtain commodity futures from FinViz | None | False | energy, metals, meats, grains, softs |
-| sortby |  | ticker | False | dict_keys(['ticker', 'last', 'change', 'prevClose']) |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| commodity | Obtain commodity futures from FinViz |  | True | energy, metals, meats, grains, softs |
+| sortby |  | ticker | True | dict_keys(['ticker', 'last', 'change', 'prevClose']) |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
 ## Examples

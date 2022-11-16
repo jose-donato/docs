@@ -20,10 +20,10 @@ usage: tft [--lstm-layers LSTM_LAYERS] [--num-attention-heads NUM_ATTENTION_HEAD
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| lstm_layers | Number of LSTM layers. | 1 | False | None |
-| num_attention_heads | Number of attention heads. | 4 | False | None |
-| full_attention | Whether to apply a multi-head attention query. | None | False | None |
-| hidden_continuous_size | Default hidden size for processing continuous variables. | 8 | False | None |
+| lstm_layers | Number of LSTM layers. | 1 | True | None |
+| num_attention_heads | Number of attention heads. | 4 | True | None |
+| full_attention | Whether to apply a multi-head attention query. | False | True | None |
+| hidden_continuous_size | Default hidden size for processing continuous variables. | 8 | True | None |
 
 
 ## Examples
@@ -33,7 +33,7 @@ usage: tft [--lstm-layers LSTM_LAYERS] [--num-attention-heads NUM_ATTENTION_HEAD
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
 2022 Jul 23, 11:03 (🦋) /forecast/ $ tft GME
-100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:07<00:00, 15.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:0700:00, 15.10it/s]
 TFT model obtains MAPE: 44.60%
 
 

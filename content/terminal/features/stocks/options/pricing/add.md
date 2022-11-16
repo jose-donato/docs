@@ -20,8 +20,8 @@ usage: add -p PRICE -c CHANCE
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| price | Projected price of the stock at the expiration date | None | True | None |
-| chance | Chance that the stock is at a given projected price | None | True | None |
+| price | Projected price of the stock at the expiration date | None | False | None |
+| chance | Chance that the stock is at a given projected price | None | False | None |
 
 
 ## Examples

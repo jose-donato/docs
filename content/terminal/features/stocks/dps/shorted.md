@@ -20,7 +20,7 @@ usage: shorted [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of the most shorted stocks to retrieve. | 10 | False | None |
+| limit | Limit of the most shorted stocks to retrieve. | 10 | True | None |
 
 
 ## Examples

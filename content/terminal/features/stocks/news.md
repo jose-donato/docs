@@ -20,9 +20,9 @@ usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-09 12:46:06.309279 | False | None |
-| n_oldest | Show oldest articles first | True | False | None |
-| sources | Show news only from the sources specified (e.g bloomberg,reuters) | None | False | None |
+| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-09 16:02:57.128320 | True | None |
+| n_oldest | Show oldest articles first | True | True | None |
+| sources | Show news only from the sources specified (e.g bloomberg,reuters) |  | True | None |
 
 
 ## Examples
@@ -54,7 +54,7 @@ usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 │ 2022-07-04 18:55:11                                                                                                 │
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ Spis treści:1. RAPORT BIEŻĄCY2. MESSAGE (ENGLISH VERSION)3. INFORMACJE O PODMIOCIE4. PODPISY OSÓB REPREZENTUJĄCYCH  │
-│ SPÓŁKĘ KOMISJA NADZORU FINANSOWEGO <html> <head> </head> <body><font face='Times New...                             │
+│ SPÓŁKĘ KOMISJA NADZORU FINANSOWEGO html head /head bodyfont face='Times New...                             │
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ https://www.bankier.pl/wiadomosc/HUUUGE-INC-Informacja-o-kwartalnych-przychodach-ze-sprzedazy-8369875.html          │
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

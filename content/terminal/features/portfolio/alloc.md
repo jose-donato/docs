@@ -20,8 +20,8 @@ usage: alloc [-a {assets,sectors,countries,regions}] [-t]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| agg | The type of allocation aggregation you wish to do | assets | False | assets, sectors, countries, regions |
-| tables | Whether to also include the assets/sectors tables of both the benchmark and the portfolio. | None | False | None |
+| agg | The type of allocation aggregation you wish to do | assets | True | assets, sectors, countries, regions |
+| tables | Whether to also include the assets/sectors tables of both the benchmark and the portfolio. | False | True | None |
 
 
 ## Examples

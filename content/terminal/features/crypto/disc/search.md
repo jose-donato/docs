@@ -20,11 +20,11 @@ usage: search -q QUERY [QUERY ...] [-c {currencies,exchanges,icos,people,tags,al
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| query | phrase for search | None | True | None |
-| category | Categories to search: currencies|exchanges|icos|people|tags|all. Default: all | all | False | currencies, exchanges, icos, people, tags, all |
-| limit | Limit of records | 10 | False | None |
-| sortby | Sort by given column. Default: id | id | False | category, id, name |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| query | phrase for search | None | False | None |
+| category | Categories to search: currencies|exchanges|icos|people|tags|all. Default: all | all | True | currencies, exchanges, icos, people, tags, all |
+| limit | Limit of records | 10 | True | None |
+| sortby | Sort by given column. Default: id | id | True | category, id, name |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
 ## Examples

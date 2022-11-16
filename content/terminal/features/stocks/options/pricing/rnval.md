@@ -20,10 +20,10 @@ usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| put | Show puts instead of calls | None | False | None |
-| mini | Minimum strike price shown | None | False | None |
-| maxi | Maximum strike price shown | None | False | None |
-| risk | The risk-free rate to use | None | False | None |
+| put | Show puts instead of calls | False | True | None |
+| mini | Minimum strike price shown | None | True | None |
+| maxi | Maximum strike price shown | None | True | None |
+| risk | The risk-free rate to use | None | True | None |
 
 
 ## Examples

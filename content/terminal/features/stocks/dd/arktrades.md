@@ -20,8 +20,8 @@ usage: arktrades [-l LIMIT] [-s]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of rows to show | 10 | False | None |
-| show_symbol | Flag to show ticker in table | None | False | None |
+| limit | Limit of rows to show | 10 | True | None |
+| show_symbol | Flag to show ticker in table | False | True | None |
 
 
 ## Examples

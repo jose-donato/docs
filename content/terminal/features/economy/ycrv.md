@@ -20,7 +20,7 @@ usage: ycrv [-c COUNTRY] [-d DATE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| country | Yield curve for a country. Ex: united_states | united_states | False | None |
-| date | Date to get data from FRED. If not supplied, the most recent entry will be used. | None | False | None |
+| country | Yield curve for a country. Ex: united_states | united_states | True | None |
+| date | Date to get data from FRED. If not supplied, the most recent entry will be used. | None | True | None |
 
 

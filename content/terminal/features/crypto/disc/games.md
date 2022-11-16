@@ -20,8 +20,8 @@ usage: games [-l LIMIT] [-s SORTBY [SORTBY ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of records to display | 15 | False | None |
-| sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | False | None |
+| limit | Number of records to display | 15 | True | None |
+| sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | True | None |
 
 
 ## Examples

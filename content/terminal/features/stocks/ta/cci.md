@@ -20,7 +20,9 @@ usage: cci [-l N_LENGTH] [-s N_SCALAR]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_length | length | 14 | False | None |
-| n_scalar | scalar | 0.015 | False | None |
+| n_length | length | 14 | True | None |
+| n_scalar | scalar | 0.015 | True | None |
 
+
+![cci](https://user-images.githubusercontent.com/46355364/154310079-808803ca-26dd-4d45-8a02-17e51230bf2d.png)
 

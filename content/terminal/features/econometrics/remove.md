@@ -20,7 +20,7 @@ usage: remove [-n {}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | The name of the dataset you want to remove | None | False | None |
+| name | The name of the dataset you want to remove | None | True | None |
 
 
 ## Examples

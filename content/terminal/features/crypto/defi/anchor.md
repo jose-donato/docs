@@ -20,8 +20,8 @@ usage: anchor --address ADDRESS [--transactions]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| address | Terra address. Valid terra addresses start with 'terra' | None | True | None |
-| transactions | Flag to show transactions history in anchor earn | None | False | None |
+| address | Terra address. Valid terra addresses start with 'terra' | None | False | None |
+| transactions | Flag to show transactions history in anchor earn | False | True | None |
 
 
 ## Examples

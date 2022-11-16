@@ -20,9 +20,9 @@ usage: rename [-d {}] -o OLDCOL -n NEWCOL
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dataset | Dataset that will get a column renamed | None | False |  |
-| oldcol | Old column from dataset to be renamed | None | True | None |
-| newcol | New column from dataset to be renamed | None | True | None |
+| dataset | Dataset that will get a column renamed | None | True |  |
+| oldcol | Old column from dataset to be renamed | None | False | None |
+| newcol | New column from dataset to be renamed | None | False | None |
 
 
 ## Examples

@@ -20,9 +20,9 @@ usage: pipo [-d DAYS] [-s START] [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| days | Number of past days to look for IPOs. | 5 | False | None |
-| start | The starting date (format YYYY-MM-DD) to look for IPOs. When set, start date will override --days argument | None | False | None |
-| limit | Limit number of IPOs to display. | 20 | False | None |
+| days | Number of past days to look for IPOs. | 5 | True | None |
+| start | The starting date (format YYYY-MM-DD) to look for IPOs. When set, start date will override --days argument | None | True | None |
+| limit | Limit number of IPOs to display. | 20 | True | None |
 
 
 ## Examples

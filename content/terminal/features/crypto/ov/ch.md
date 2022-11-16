@@ -20,10 +20,10 @@ usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Display N items | 15 | False | None |
-| sortby | Sort by given column. Default: Amount [$] | Amount [$] | False | None |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| slug | Slug to check crypto hack (e.g., polynetwork-rekt) | None | False | None |
+| limit | Display N items | 15 | True | None |
+| sortby | Sort by given column. Default: Amount [$] | Amount [$] | True | None |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| slug | Slug to check crypto hack (e.g., polynetwork-rekt) |  | True | None |
 
 
 ## Examples

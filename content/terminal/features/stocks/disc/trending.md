@@ -20,9 +20,9 @@ usage: trending [-i N_ID] [-l LIMIT] [-d S_DATE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_id | article ID | -1 | False | None |
-| limit | limit of articles being printed | 5 | False | None |
-| s_date | starting date of articles | 2022-11-16 | False | None |
+| n_id | article ID | -1 | True | None |
+| limit | limit of articles being printed | 5 | True | None |
+| s_date | starting date of articles | 2022-11-16 | True | None |
 
 
 ## Examples

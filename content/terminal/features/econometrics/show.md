@@ -20,9 +20,9 @@ usage: show [-n {}] [-s SORTBY] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | The name of the database you want to show data for | None | False | None |
-| sortby | Sort based on a column in the DataFrame | None | False | None |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| name | The name of the database you want to show data for | None | True | None |
+| sortby | Sort based on a column in the DataFrame |  | True | None |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
 ## Examples

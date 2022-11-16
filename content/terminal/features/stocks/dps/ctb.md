@@ -20,8 +20,8 @@ usage: ctb [-n NUMBER] [--raw]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| number | Number of records to retrieve. | 20 | False | None |
-| raw | Print raw data. | None | False | None |
+| number | Number of records to retrieve. | 20 | True | None |
+| raw | Print raw data. | False | True | None |
 
 
 ## Examples

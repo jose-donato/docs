@@ -20,7 +20,9 @@ usage: sma [-l N_LENGTH] [-o N_OFFSET]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_length | Window lengths. Multiple values indicated as comma separated values. | 20, 50 | False | None |
-| n_offset | offset | None | False | None |
+| n_length | Window lengths. Multiple values indicated as comma separated values. | 20, 50 | True | None |
+| n_offset | offset | 0 | True | None |
 
+
+![sma](https://user-images.githubusercontent.com/46355364/154311791-5b130d08-55bd-406b-a68e-914a733c5191.png)
 

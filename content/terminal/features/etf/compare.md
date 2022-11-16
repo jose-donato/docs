@@ -20,7 +20,7 @@ usage: compare -e NAMES
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| names | Symbols to compare | None | True | None |
+| names | Symbols to compare | None | False | None |
 
 
 ## Examples

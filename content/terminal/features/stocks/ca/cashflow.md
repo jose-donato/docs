@@ -20,8 +20,8 @@ usage: cashflow [-q] [-t S_TIMEFRAME]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| b_quarter | Quarter financial data flag. | None | False | None |
-| s_timeframe | Specify year/quarter of the cashflow statement to be retrieved. The format for year is YYYY and for quarter is DD-MMM-YYY (for example, 30-Sep-2021). Default is last year/quarter. | None | False | None |
+| b_quarter | Quarter financial data flag. | False | True | None |
+| s_timeframe | Specify year/quarter of the cashflow statement to be retrieved. The format for year is YYYY and for quarter is DD-MMM-YYY (for example, 30-Sep-2021). Default is last year/quarter. | None | True | None |
 
 
 ## Examples

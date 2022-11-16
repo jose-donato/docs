@@ -20,10 +20,10 @@ usage: top [-c CATEGORY] [-l LIMIT] [-s SORTBY [SORTBY ...]] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| category | Category (e.g., stablecoins). Empty for no category. Only works for 'CoinGecko' source. | None | False | None |
-| limit | Limit of records | 10 | False | None |
-| sortby | Sort by given column. Default: Market Cap Rank | Market Cap Rank | False | None |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| category | Category (e.g., stablecoins). Empty for no category. Only works for 'CoinGecko' source. |  | True | None |
+| limit | Limit of records | 10 | True | None |
+| sortby | Sort by given column. Default: Market Cap Rank | Market Cap Rank | True | None |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
 ## Examples

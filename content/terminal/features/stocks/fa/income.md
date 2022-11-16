@@ -20,9 +20,9 @@ usage: income [-q] [-r] [-p PLOT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| b_quarter | Quarter fundamental data flag. | None | False | None |
-| ratios | Shows percentage change of values. | None | False | None |
-| plot | Rows to plot, comma separated. (-1 represents invalid data) | None | False | None |
+| b_quarter | Quarter fundamental data flag. | False | True | None |
+| ratios | Shows percentage change of values. | False | True | None |
+| plot | Rows to plot, comma separated. (-1 represents invalid data) | None | True | None |
 
 
 ## Examples

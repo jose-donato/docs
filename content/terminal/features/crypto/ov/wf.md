@@ -20,7 +20,7 @@ usage: wf [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit number of coins to display withdrawal fees. Default 10 | 10 | False | None |
+| limit | Limit number of coins to display withdrawal fees. Default 10 | 10 | True | None |
 
 
 ## Examples

@@ -20,9 +20,9 @@ usage: pairs [-l LIMIT] [-s {Datetime,USD,From,To}] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of records to display | 10 | False | None |
-| sortby | Sort by given column. Default: timestamp | Datetime | False | Datetime, USD, From, To |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| limit | Number of records to display | 10 | True | None |
+| sortby | Sort by given column. Default: timestamp | Datetime | True | Datetime, USD, From, To |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
 ## Examples

@@ -20,7 +20,7 @@ usage: overview [-t {indices,usbonds,glbonds,currencies}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| type | Obtain either US indices, US Bonds, Global Bonds or Currencies | None | False | indices, usbonds, glbonds, currencies |
+| type | Obtain either US indices, US Bonds, Global Bonds or Currencies |  | True | indices, usbonds, glbonds, currencies |
 
 
 ## Examples

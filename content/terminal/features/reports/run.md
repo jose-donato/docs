@@ -20,7 +20,7 @@ usage: run -f {} [-p PARAMETERS [PARAMETERS ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| file | The file to be loaded | None | True |  |
-| parameters | Report parameters with format 'name:value'. | None | False | None |
+| file | The file to be loaded | None | False |  |
+| parameters | Report parameters with format 'name:value'. | None | True | None |
 
 

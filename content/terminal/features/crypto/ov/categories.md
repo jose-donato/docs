@@ -20,9 +20,9 @@ usage: categories [-l LIMIT] [-s {Name,Market_Cap,Market_Cap_Change_24H,Top_3_Co
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | display N number of records | 15 | False | None |
-| sortby | Sort by given column. Default: market_cap_desc | Market_Cap | False | Name, Market_Cap, Market_Cap_Change_24H, Top_3_Coins, Volume_24H |
-| pie | Flag to show pie chart | None | False | None |
+| limit | display N number of records | 15 | True | None |
+| sortby | Sort by given column. Default: market_cap_desc | Market_Cap | True | Name, Market_Cap, Market_Cap_Change_24H, Top_3_Coins, Volume_24H |
+| pie | Flag to show pie chart | False | True | None |
 
 
 ## Examples

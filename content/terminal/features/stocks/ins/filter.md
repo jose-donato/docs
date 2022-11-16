@@ -20,8 +20,8 @@ usage: filter [-l LIMIT] [-u]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of datarows to display | 10 | False | None |
-| urls | Flag to show hyperlinks | None | False | None |
+| limit | Limit of datarows to display | 10 | True | None |
+| urls | Flag to show hyperlinks | False | True | None |
 
 
 ## Examples

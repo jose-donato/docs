@@ -20,10 +20,10 @@ usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| put | Shows puts instead of calls | None | False | None |
-| ask | Use ask price instead of lastPrice | None | False | None |
-| mini | Minimum strike price shown | None | False | None |
-| maxi | Maximum strike price shown | None | False | None |
+| put | Shows puts instead of calls | False | True | None |
+| ask | Use ask price instead of lastPrice | False | True | None |
+| mini | Minimum strike price shown | None | True | None |
+| maxi | Maximum strike price shown | None | True | None |
 
 
 ## Examples

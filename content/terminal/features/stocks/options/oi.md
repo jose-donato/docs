@@ -20,10 +20,10 @@ usage: oi [-m MIN] [-M MAX] [-c] [-p]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| min | Min strike to plot | -1 | False | None |
-| max | Max strike to plot | -1 | False | None |
-| calls | Flag to plot call options only | None | False | None |
-| puts | Flag to plot put options only | None | False | None |
+| min | Min strike to plot | -1 | True | None |
+| max | Max strike to plot | -1 | True | None |
+| calls | Flag to plot call options only | False | True | None |
+| puts | Flag to plot put options only | False | True | None |
 
 
 ## Examples

@@ -20,8 +20,8 @@ usage: rmv -p PRICE [-a]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| price | Price you want to remove from the list | None | True | None |
-| all | Remove all prices from the list | None | False | None |
+| price | Price you want to remove from the list | None | False | None |
+| all | Remove all prices from the list | False | True | None |
 
 
 ## Examples

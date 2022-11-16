@@ -20,9 +20,9 @@ usage: coint -t TS [-p] [-s SIGNIFICANT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| ts | The time series you wish to test co-integration on. E.g. historical.open,historical2.close. | None | True | None |
-| plot | Plot Z-Values | None | False | None |
-| significant | Show only companies that have p-values lower than this percentage | None | False | None |
+| ts | The time series you wish to test co-integration on. E.g. historical.open,historical2.close. | None | False | None |
+| plot | Plot Z-Values | False | True | None |
+| significant | Show only companies that have p-values lower than this percentage | 0 | True | None |
 
 
 ## Examples

@@ -20,7 +20,7 @@ usage: hsi [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of the top heavily shorted stocks to retrieve. | 10 | False | None |
+| limit | Limit of the top heavily shorted stocks to retrieve. | 10 | True | None |
 
 
 ## Examples

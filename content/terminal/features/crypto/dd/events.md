@@ -20,10 +20,10 @@ usage: events [-l LIMIT] [-s {date,date_to,name,description,is_conference}] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of records | 10 | False | None |
-| sortby | Sort by given column. Default: date | date | False | date, date_to, name, description, is_conference |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| urls | Flag to show urls. If you will use that flag you will see only date, name, link columns | None | False | None |
+| limit | Limit of records | 10 | True | None |
+| sortby | Sort by given column. Default: date | date | True | date, date_to, name, description, is_conference |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| urls | Flag to show urls. If you will use that flag you will see only date, name, link columns | False | True | None |
 
 
 ## Examples

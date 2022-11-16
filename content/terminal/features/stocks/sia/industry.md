@@ -20,6 +20,6 @@ usage: industry [-n NAME [NAME ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | industry to select | None | False | None |
+| name | industry to select | None | True | None |
 
 

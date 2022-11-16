@@ -20,7 +20,7 @@ usage: newsletter [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of records to display | 10 | False | None |
+| limit | Number of records to display | 10 | True | None |
 
 
 ## Examples

@@ -20,12 +20,12 @@ usage: nhits [--num-stacks NUM_STACKS] [--num-blocks NUM_BLOCKS] [--num-layers N
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| num_stacks | The number of stacks that make up the model | 3 | False | None |
-| num_blocks | The number of blocks making up every stack | 1 | False | None |
-| num_layers | The number of fully connected layers | 2 | False | None |
-| layer_widths | The number of neurons in each layer | 3 | False | None |
-| activation | The desired activation | ReLU | False | ReLU, RReLU, PReLU, Softplus, Tanh, SELU, LeakyReLU, Sigmoid |
-| maxpool1d | Whether to use max_pool_1d or AvgPool1d | None | False | None |
+| num_stacks | The number of stacks that make up the model | 3 | True | None |
+| num_blocks | The number of blocks making up every stack | 1 | True | None |
+| num_layers | The number of fully connected layers | 2 | True | None |
+| layer_widths | The number of neurons in each layer | 3 | True | None |
+| activation | The desired activation | ReLU | True | ReLU, RReLU, PReLU, Softplus, Tanh, SELU, LeakyReLU, Sigmoid |
+| maxpool1d | Whether to use max_pool_1d or AvgPool1d | False | True | None |
 
 
 ## Examples
@@ -35,9 +35,9 @@ usage: nhits [--num-stacks NUM_STACKS] [--num-blocks NUM_BLOCKS] [--num-layers N
 2022 Oct 11, 06:38 D /forecast/ $ load AAPL_20220719_201127.csv
 
 2022 Oct 11, 06:38 D /forecast/ $ nhits AAPL_20220719_201127
-Epoch 153: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:00<00:00, 183.87it/s, loss=-1.56, train_loss=-1.60, val_loss=-.954]
+Epoch 153: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:0000:00, 183.87it/s, loss=-1.56, train_loss=-1.60, val_loss=-.954]
 Predicting NHITS for 5 days
-100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:01<00:00, 92.46it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:0100:00, 92.46it/s]
 NHITS model obtains MAPE: 7.45%
 
 

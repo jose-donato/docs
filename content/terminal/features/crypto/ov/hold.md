@@ -20,8 +20,8 @@ usage: hold [-c {ethereum,bitcoin}] [-l LIMIT] [--bar]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| coin | companies with ethereum or bitcoin | bitcoin | False | ethereum, bitcoin |
-| limit | display N number of records | 5 | False | None |
-| bar | Flag to show bar chart | None | False | None |
+| coin | companies with ethereum or bitcoin | bitcoin | True | ethereum, bitcoin |
+| limit | display N number of records | 5 | True | None |
+| bar | Flag to show bar chart | False | True | None |
 
 

@@ -20,6 +20,6 @@ usage: info [--social]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| social | Flag to show social media links | None | False | None |
+| social | Flag to show social media links | False | True | None |
 
 

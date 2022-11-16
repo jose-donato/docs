@@ -20,8 +20,8 @@ usage: income [-q] [-t S_TIMEFRAME]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| b_quarter | Quarter financial data flag. | None | False | None |
-| s_timeframe | Specify yearly/quarterly timeframe. Default is last. | None | False | None |
+| b_quarter | Quarter financial data flag. | False | True | None |
+| s_timeframe | Specify yearly/quarterly timeframe. Default is last. | None | True | None |
 
 
 ## Examples

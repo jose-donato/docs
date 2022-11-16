@@ -20,6 +20,6 @@ usage: load -f FILE [FILE ...]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| file | Allocation file to be used | None | True | None |
+| file | Allocation file to be used | None | False | None |
 
 

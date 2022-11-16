@@ -20,6 +20,6 @@ usage: holdv [-u]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| unstack | Sum all assets value over time | None | False | None |
+| unstack | Sum all assets value over time | False | True | None |
 
 

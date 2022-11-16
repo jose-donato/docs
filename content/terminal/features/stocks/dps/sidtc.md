@@ -20,8 +20,8 @@ usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of tickers to display. | 10 | False | None |
-| sort_field | Field for which to sort by, where 'float': Float Short %%, 'dtc': Days to Cover, 'si': Short Interest | float | False | float, dtc, si |
+| limit | Limit of tickers to display. | 10 | True | None |
+| sort_field | Field for which to sort by, where 'float': Float Short %%, 'dtc': Days to Cover, 'si': Short Interest | float | True | float, dtc, si |
 
 
 ## Examples

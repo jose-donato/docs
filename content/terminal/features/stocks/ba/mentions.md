@@ -20,6 +20,6 @@ usage: mentions [-s START]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| start | starting date (format YYYY-MM-DD) from when we are interested in stock's mentions. | 2022-01-01 | False | None |
+| start | starting date (format YYYY-MM-DD) from when we are interested in stock's mentions. | 2022-01-01 | True | None |
 
 

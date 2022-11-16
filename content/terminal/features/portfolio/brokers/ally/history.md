@@ -20,6 +20,6 @@ usage: history [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of recent transactions to show | 15 | False | None |
+| limit | Number of recent transactions to show | 15 | True | None |
 
 

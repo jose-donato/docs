@@ -20,8 +20,8 @@ usage: collections [--fp] [--sales]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| fp | Flag to display floor price over time for top collections | None | False | None |
-| sales | Flag to display sales over time for top collections | None | False | None |
+| fp | Flag to display floor price over time for top collections | False | True | None |
+| sales | Flag to display sales over time for top collections | False | True | None |
 
 
 ## Examples

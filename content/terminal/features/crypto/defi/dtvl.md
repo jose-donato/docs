@@ -20,7 +20,7 @@ usage: dtvl -d DAPPS
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dapps | dApps to search historical TVL. Should be split by , e.g.: anchor,sushiswap,pancakeswap | None | True | None |
+| dapps | dApps to search historical TVL. Should be split by , e.g.: anchor,sushiswap,pancakeswap | None | False | None |
 
 
 ## Examples

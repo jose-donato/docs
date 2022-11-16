@@ -20,7 +20,7 @@ usage: info -s SLUG
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| slug | Opensea collection slug (e.g., mutant-ape-yacht-club) | None | True | None |
+| slug | Opensea collection slug (e.g., mutant-ape-yacht-club) | None | False | None |
 
 
 ## Examples

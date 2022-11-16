@@ -20,7 +20,7 @@ usage: dwat [-p]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| plot | Plot the residuals | None | False | None |
+| plot | Plot the residuals | False | True | None |
 
 
 ## Examples
@@ -40,7 +40,7 @@ Df Residuals:                     755   BIC:                             5688.
 Df Model:                           3                                         
 Covariance Type:            nonrobust                                         
 ===================================================================================
-                      coef    std err          t      P>|t|      [0.025      0.975]
+                      coef    std err          t      P|t|      [0.025      0.975]
 -----------------------------------------------------------------------------------
 Intercept          27.7984      2.166     12.832      0.000      23.546      32.051
 adj_close_aapl      0.8662      0.034     25.503      0.000       0.800       0.933

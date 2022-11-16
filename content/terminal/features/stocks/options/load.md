@@ -20,7 +20,7 @@ usage: load -t TICKER
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| ticker | Stock ticker | None | True | None |
+| ticker | Stock ticker | None | False | None |
 
 
 ## Examples
@@ -55,9 +55,9 @@ usage: load -t TICKER
 │     binom         shows the value of an option using binomial options pricing [Yfinance]                                                                                                                                                                                     │
 │     greeks        shows the greeks for a given option [Yfinance]                                                                                                                                                                                                             │
 │                                                                                                                                                                                                                                                                              │
-│ >   screen        screens tickers based on preset [Syncretism.io]                                                                                                                                                                                                            │
-│ >   payoff        shows payoff diagram for a selection of options [Yfinance]                                                                                                                                                                                                 │
-│ >   pricing       shows options pricing and risk neutral valuation [Yfinance]                                                                                                                                                                                                │
+│    screen        screens tickers based on preset [Syncretism.io]                                                                                                                                                                                                            │
+│    payoff        shows payoff diagram for a selection of options [Yfinance]                                                                                                                                                                                                 │
+│    pricing       shows options pricing and risk neutral valuation [Yfinance]                                                                                                                                                                                                │
 │                                                                                                                                                                                                                                                                              │
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── OpenBB Terminal ─╯
 

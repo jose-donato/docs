@@ -20,9 +20,9 @@ usage: lasttrades [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_DAYS] [-r R
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| gov |  | congress | False | congress, senate, house |
-| past_transactions_days | Past transaction days | 5 | False | None |
-| representative | Representative | None | False | None |
+| gov |  | congress | True | congress, senate, house |
+| past_transactions_days | Past transaction days | 5 | True | None |
+| representative | Representative |  | True | None |
 
 
 ## Examples

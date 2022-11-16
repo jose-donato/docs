@@ -20,10 +20,10 @@ usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | display N number records | 15 | False | None |
-| sortby | Sort by given column. Default: market_cap | Market_Cap_[$] | False | None |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| pie | Flag to show pie chart | None | False | None |
+| limit | display N number records | 15 | True | None |
+| sortby | Sort by given column. Default: market_cap | Market_Cap_[$] | True | None |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| pie | Flag to show pie chart | False | True | None |
 
 
 ## Examples

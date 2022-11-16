@@ -20,7 +20,7 @@ usage: ticker -t TICKER
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| ticker | Ticker get similar tickers from | None | True | None |
+| ticker | Ticker get similar tickers from | None | False | None |
 
 
 ## Examples

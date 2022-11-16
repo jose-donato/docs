@@ -20,9 +20,9 @@ usage: validators [-l LIMIT] [-s {validatorName,tokensAmount,votingPower,commiss
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of validators to show | 10 | False | None |
-| sortby | Sort by given column. Default: votingPower | votingPower | False | validatorName, tokensAmount, votingPower, commissionRate, status, uptime |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| limit | Number of validators to show | 10 | True | None |
+| sortby | Sort by given column. Default: votingPower | votingPower | True | validatorName, tokensAmount, votingPower, commissionRate, status, uptime |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
 ## Examples

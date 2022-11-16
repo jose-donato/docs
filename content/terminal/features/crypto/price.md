@@ -20,6 +20,6 @@ usage: price -s SYMBOL
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| symbol | Symbol of coin to load data for, ~100 symbols are available | None | True | None |
+| symbol | Symbol of coin to load data for, ~100 symbols are available | None | False | None |
 
 

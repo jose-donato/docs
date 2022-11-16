@@ -20,7 +20,7 @@ usage: sec [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | number of latest SEC filings. | 5 | False | None |
+| limit | number of latest SEC filings. | 5 | True | None |
 
 
 ## Examples

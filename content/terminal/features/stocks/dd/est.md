@@ -20,7 +20,7 @@ usage: est [-e {annualrevenue,annualearnings,quarterearnings}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| estimate | Estimates to get | annualearnings | False | annualrevenue, annualearnings, quarterearnings |
+| estimate | Estimates to get | annualearnings | True | annualrevenue, annualearnings, quarterearnings |
 
 
 ## Examples

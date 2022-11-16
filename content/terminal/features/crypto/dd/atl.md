@@ -20,7 +20,7 @@ usage: atl [--vs {usd,btc}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| vs | currency | usd | False | usd, btc |
+| vs | currency | usd | True | usd, btc |
 
 
 ## Examples

@@ -20,12 +20,12 @@ usage: calc [--put] [--sell] [-s STRIKE] [-p PREMIUM] [-m MIN] [-M MAX]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| put | Flag to calculate put option | None | False | None |
-| sell | Flag to get profit chart of selling contract | None | False | None |
-| strike | Option strike price | 10 | False | None |
-| premium | Premium price | 1 | False | None |
-| min | Min price to look at | -1 | False | None |
-| max | Max price to look at | -1 | False | None |
+| put | Flag to calculate put option | False | True | None |
+| sell | Flag to get profit chart of selling contract | False | True | None |
+| strike | Option strike price | 10 | True | None |
+| premium | Premium price | 1 | True | None |
+| min | Min price to look at | -1 | True | None |
+| max | Max price to look at | -1 | True | None |
 
 
 ## Examples

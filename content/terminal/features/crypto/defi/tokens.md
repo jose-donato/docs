@@ -20,10 +20,10 @@ usage: tokens [--skip SKIP] [--limit LIMIT] [-s {index,symbol,name,tradeVolumeUS
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| skip | Number of records to skip | None | False | None |
-| limit | Number of records to display | 20 | False | None |
-| sortby | Sort by given column. Default: index | index | False | index, symbol, name, tradeVolumeUSD, totalLiquidity, txCount |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| skip | Number of records to skip | 0 | True | None |
+| limit | Number of records to display | 20 | True | None |
+| sortby | Sort by given column. Default: index | index | True | index, symbol, name, tradeVolumeUSD, totalLiquidity, txCount |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
 ## Examples

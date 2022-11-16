@@ -20,7 +20,7 @@ usage: warnings [-d]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| b_debug | print insights into warnings calculation. | None | False | None |
+| b_debug | print insights into warnings calculation. | False | True | None |
 
 
 ## Examples
@@ -57,7 +57,7 @@ Warnings:
 
 NOT consistently high return on equity
 NOT consistently high return on assets
-5x Net Income < Long-Term Debt
+5x Net Income  Long-Term Debt
 
 ```
 

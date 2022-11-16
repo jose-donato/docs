@@ -20,7 +20,7 @@ usage: lins [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of latest inside traders. | 10 | False | None |
+| limit | Limit of latest inside traders. | 10 | True | None |
 
 
 ## Examples

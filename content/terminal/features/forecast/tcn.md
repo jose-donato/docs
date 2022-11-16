@@ -20,9 +20,9 @@ usage: tcn [--num-filters NUM_FILTERS] [--weight-norm WEIGHT_NORM] [--dilation-b
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| num_filters | The number of filters in a convolutional layer of the TCN | 3 | False | None |
-| weight_norm | Boolean value indicating whether to use weight normalization. | True | False | None |
-| dilation_base | The base of the exponent that will determine the dilation on every level. | 2 | False | None |
+| num_filters | The number of filters in a convolutional layer of the TCN | 3 | True | None |
+| weight_norm | Boolean value indicating whether to use weight normalization. | True | True | None |
+| dilation_base | The base of the exponent that will determine the dilation on every level. | 2 | True | None |
 
 
 ## Examples
@@ -32,7 +32,7 @@ usage: tcn [--num-filters NUM_FILTERS] [--weight-norm WEIGHT_NORM] [--dilation-b
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
 2022 Jul 23, 11:08 (🦋) /forecast/ $ tcn GME
-100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:01<00:00, 111.85it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 115/115 [00:0100:00, 111.85it/s]
 TCN model obtains MAPE: 19.12%
 
 

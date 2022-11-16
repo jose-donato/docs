@@ -20,8 +20,8 @@ usage: bench -b BENCHMARK [BENCHMARK ...] [-s]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| benchmark | Set the benchmark for the portfolio. By default, this is SPDR S&P 500 ETF Trust (SPY). | SPY | True | None |
-| full_shares | Whether to only make a trade with the benchmark when a full share can be bought (no partial shares). | None | False | None |
+| benchmark | Set the benchmark for the portfolio. By default, this is SPDR S&P 500 ETF Trust (SPY). | SPY | False | None |
+| full_shares | Whether to only make a trade with the benchmark when a full share can be bought (no partial shares). | False | True | None |
 
 
 ## Examples

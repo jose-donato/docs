@@ -20,7 +20,7 @@ usage: wfpe [-c COIN]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| coin | Coin to check withdrawal fees in long format (e.g., bitcoin, ethereum) | bitcoin | False | None |
+| coin | Coin to check withdrawal fees in long format (e.g., bitcoin, ethereum) | bitcoin | True | None |
 
 
 ## Examples

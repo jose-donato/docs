@@ -20,7 +20,7 @@ usage: quote -t S_TICKER [-e {BZX,EDGX,BYX,EDGA}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| s_ticker | Ticker to get data for | None | True | None |
-| exchange |  | BZX | False | BZX, EDGX, BYX, EDGA |
+| s_ticker | Ticker to get data for | None | False | None |
+| exchange |  | BZX | True | BZX, EDGX, BYX, EDGA |
 
 

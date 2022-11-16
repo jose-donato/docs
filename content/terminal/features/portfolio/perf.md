@@ -20,7 +20,7 @@ usage: performance [-t]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| show_trades | Whether to show performance on all trades in comparison to the benchmark. | None | False | None |
+| show_trades | Whether to show performance on all trades in comparison to the benchmark. | False | True | None |
 
 
 ## Examples
