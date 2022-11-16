@@ -1,5 +1,5 @@
 ---
-title: Changing Sourcces
+title: Changing Sources
 ---
 
 Some functions have the built-in capability of requesting data from multiple sources. `obb.stocks.load` is one example of this type feature:
