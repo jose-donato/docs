@@ -3,24 +3,44 @@ title: Introduction to Portfolio
 keywords: ['portfolio', 'attribution', 'optimization', 'pnl', 'benchmark', 'return', 'volatility', 'metrics', 'broker', 'integration', 'report']
 excerpt: "The Introduction to Portfolio explains how to use the 
 menu and provides a brief description of its sub-menus"
-geekdocCollapseSection: true
+
 ---
-The Portfolio menu, and its sub-menus, are dedicated to properly explaining and optimizing your own portfolio. With
-features to load your own orderbook (transactions) it is possible to compare your results to that of a <a href="https://www.investopedia.com/terms/b/benchmark.asp" target="_blank">benchmark</a>.
-For example, you are able to load both your portfolio and a benchmark (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/load/" target="_blank">load</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/bench/" target="_blank">bench</a>),
-then have the option to look into the performance compared to the benchmark asking the question "_What if I invested all my money in the benchmark instead?_" (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/perf/" target="_blank">perf</a>)
-as well as see a wide variety of statistics and metrics (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/rsharpe/" target="_blank">rsharpe</a>, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/distr/" target="_blank">distr</a>, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/var/" target="_blank">var</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/metric/" target="_blank">metric</a>).
-Next to that, with these findings you can apply optimization techniques to your portfolio through the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/po/" target="_blank">Portfolio Optimization menu</a>.
+
+The Portfolio menu, and its sub-menus, are dedicated to properly explaining and
+optimizing your own portfolio. With features to load your own orderbook
+(transactions) it is possible to compare your results to that of a
+<a href="https://www.investopedia.com/terms/b/benchmark.asp" target="_blank">benchmark</a>.
+For example, you are able to load both your portfolio and a benchmark
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/load/" target="_blank">load</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/bench/" target="_blank">bench</a>),
+then have the option to look into the performance compared to the benchmark
+asking the question "_What if I invested all my money in the benchmark
+instead?_"
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/perf/" target="_blank">perf</a>)
+as well as see a wide variety of statistics and metrics
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/rsharpe/" target="_blank">rsharpe</a>,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/distr/" target="_blank">distr</a>,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/var/" target="_blank">var</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/metric/" target="_blank">metric</a>).
+Next to that, with these findings you can apply optimization techniques to your
+portfolio through the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/po/" target="_blank">Portfolio
+Optimization menu</a>.
 
 ## How to use
 
-The Portfolio menu is called upon by typing `portfolio` which opens the following menu:
+The Portfolio menu is called upon by typing `portfolio` which opens the
+following menu:
 
 ![Portfolio Menu](https://user-images.githubusercontent.com/46355364/180178234-0cb80009-74d8-41fb-9f4c-fa393361903a.png)
 
-The first step in using this menu is loading a portfolio with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/load/" target="_blank">load</a>.
-Here, we provide an example titled "Public_Equity_Orderbook.xlsx" which can be loaded in. This file also serves as a template when you wish to fill in your own orders. This results
-in the following:
+The first step in using this menu is loading a portfolio with
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/load/" target="_blank">load</a>.
+Here, we provide an example titled "Public_Equity_Orderbook.xlsx" which can be
+loaded in. This file also serves as a template when you wish to fill in your own
+orders. This results in the following:
 
 ```
 2022 Jul 19, 10:03 (🦋) /portfolio/ $ load Public_Equity_Orderbook.xlsx
@@ -34,22 +54,28 @@ Risk Free Rate: 0
 ```
 
 Note that the Excel sheet requires the following columns:
+
 - **Date** - The date the trade occurred
 - **Name** - The name of the security
 - **Type** - The type of the security. Use Cash/Stock/Crypto/ETF as appropriate
-- **Price** - The price the security was added or removed at, on a per-unit basis
+- **Price** - The price the security was added or removed at, on a per-unit
+  basis
 - **Quantity** - How much of the security in question was added or removed
-- **Side** - Whether you bought or sold. Use Buy/Deposit/1 to add to the portfolio or Sell/Withdrawal/0 to remove from the portfolio
-a search criteria, country, sector or industry.
+- **Side** - Whether you bought or sold. Use Buy/Deposit/1 to add to the
+  portfolio or Sell/Withdrawal/0 to remove from the portfolio a search criteria,
+  country, sector or industry.
 
-Furthermore, the chosen Excel sheet above also has additional columns but these are _optional_. The OpenBB Terminal
-can figure out by itself what industry, sector, country and region belongs to the loaded in equity. You can see this in
-action by loading in the "Public_Equity_Orderbook_No_Categorization.xlsx" Excel sheet.
+Furthermore, the chosen Excel sheet above also has additional columns but these
+are _optional_. The OpenBB Terminal can figure out by itself what industry,
+sector, country and region belongs to the loaded in equity. You can see this in
+action by loading in the "Public_Equity_Orderbook_No_Categorization.xlsx" Excel
+sheet.
 
-With the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/show/" target="_blank">show</a> command
-we can show how the data has been loaded in:
+With the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/show/" target="_blank">show</a>
+command we can show how the data has been loaded in:
 
-````
+```
 2022 Jul 19, 10:03 (🦋) /portfolio/ $ show
 
 ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━┓
@@ -72,10 +98,15 @@ we can show how the data has been loaded in:
 │ 2012-10-12 00:00:00 │ DGX    │ STOCK │ Healthcare             │ Diagnostics & Research              │ United States │ North America │ 63.39  │ 6        │ 10   │ 0       │ 370.34     │ 1    │ USD      │
 ├─────────────────────┼────────┼───────┼────────────────────────┼─────────────────────────────────────┼───────────────┼───────────────┼────────┼──────────┼──────┼─────────┼────────────┼──────┼──────────┤
 <continues>
-````
+```
 
-After loading in the portfolio, it is time to select a benchmark. This is important to be able to properly compare if your decision to trade actively or deviate from an index have actually been fruitful.
-For example, let's load in the <a href="https://www.ssga.com/us/en/individual/etfs/funds/spdr-sp-500-etf-trust-spy" target="_blank">SPDR S&P 500 ETF Trust (SPY)</a> with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/bench/" target="_blank">bench</a>
+After loading in the portfolio, it is time to select a benchmark. This is
+important to be able to properly compare if your decision to trade actively or
+deviate from an index have actually been fruitful. For example, let's load in
+the
+<a href="https://www.ssga.com/us/en/individual/etfs/funds/spdr-sp-500-etf-trust-spy" target="_blank">SPDR
+S&P 500 ETF Trust (SPY)</a> with the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/bench/" target="_blank">bench</a>
 command as follows:
 
 ```
@@ -86,17 +117,21 @@ Benchmark: SPDR S&P 500 ETF Trust (SPY) (SPY)
 2022 Jul 19, 10:16 (🦋) /portfolio/ $
 ```
 
-Note that the `bench` command has a large selection of products you can choose from. Instead of taking the index directly, an ETF product is used to represent something
-that you could have actually invested in. By using the `DOWN` (⌄) arrow and pressing `ENTER` (⏎) you can select a different benchmark.
+Note that the `bench` command has a large selection of products you can choose
+from. Instead of taking the index directly, an ETF product is used to represent
+something that you could have actually invested in. By using the `DOWN` (⌄)
+arrow and pressing `ENTER` (⏎) you can select a different benchmark.
 
 ![Benchmark Selection](https://user-images.githubusercontent.com/46355364/180178291-eacebad5-79be-4c57-85a2-c75d88b0470c.png)
 
-After defining both the portfolio and the benchmark, a lot more options become available:
+After defining both the portfolio and the benchmark, a lot more options become
+available:
 
 ![Portfolio Menu after loading Portfolio and Benchmark](https://user-images.githubusercontent.com/46355364/180178329-0aca57bf-ad29-47cc-a787-298a4de4070a.png)
 
-For example, with `perf`, we can see how the portfolio performed compared to if you invested the same amount of money into the
-benchmark instead. This reflects the capabilities of you, as an investor, to outperform a passive strategy.
+For example, with `perf`, we can see how the portfolio performed compared to if
+you invested the same amount of money into the benchmark instead. This reflects
+the capabilities of you, as an investor, to outperform a passive strategy.
 
 ```
 2022 Jul 20, 08:26 (🦋) /portfolio/ $ perf
@@ -115,7 +150,8 @@ benchmark instead. This reflects the capabilities of you, as an investor, to out
 └──────────────────┴───────────┴───────────┴────────────┘
 ```
 
-Compliment this by showing the volatility of the portfolio for different time periods with `metric` as follows:
+Compliment this by showing the volatility of the portfolio for different time
+periods with `metric` as follows:
 
 ```
 2022 Jul 20, 08:27 (🦋) /portfolio/ $ metric volatility
@@ -149,9 +185,9 @@ Volatility for Portfolio and Benchmark
 ## Examples
 
 Instead of loading the "Public_Equity_Orderbook.xlsx" file, we now load in
-"Public_Equity_Orderbook_No_Categorization.xlsx" which does not include categorization of the stocks
-by industry, sector, country and region. Therefore, we let the OpenBB Terminal figure this out. This
-takes a bit longer to load.
+"Public_Equity_Orderbook_No_Categorization.xlsx" which does not include
+categorization of the stocks by industry, sector, country and region. Therefore,
+we let the OpenBB Terminal figure this out. This takes a bit longer to load.
 
 ```
 2022 Jul 21, 04:43 (🦋) /portfolio/ $ load Public_Equity_Orderbook_No_Categorization.xlsx
@@ -165,7 +201,9 @@ Portfolio: Public_Equity_Orderbook_No_Categorization.xlsx
 Risk Free Rate: 0
 ```
 
-Then we load in a benchmark again with `bench` where we select the <a href="https://investor.vanguard.com/investment-products/etfs/profile/vti" target="_blank">Vanguard Total Stock Market ETF (VTI)</a>.
+Then we load in a benchmark again with `bench` where we select the
+<a href="https://investor.vanguard.com/investment-products/etfs/profile/vti" target="_blank">Vanguard
+Total Stock Market ETF (VTI)</a>.
 
 ```
 2022 Jul 21, 04:44 (🦋) /portfolio/ $ bench Vanguard Total Stock Market ETF (VTI)
@@ -173,8 +211,8 @@ Then we load in a benchmark again with `bench` where we select the <a href="http
 Benchmark: Vanguard Total Stock Market ETF (VTI) (VTI)
 ```
 
-Then, we can show our performance compared to that of the benchmark with `perf` as well as show the rolling
-beta with `rbeta`.
+Then, we can show our performance compared to that of the benchmark with `perf`
+as well as show the rolling beta with `rbeta`.
 
 ```
 2022 Jul 21, 04:45 (🦋) /portfolio/ $ perf
@@ -197,9 +235,10 @@ beta with `rbeta`.
 
 ![Rolling Beta of the Portfolio](https://user-images.githubusercontent.com/46355364/180178392-96efb6e1-60a1-4f76-92d8-434fb3637c21.png)
 
-This helps in understanding that, even though you achieved a superior return, this also came at a
-greater risk compared to that of the benchmark. With the available functionalities you can further look
-into these results, e.g. by looking at the `summary` statistics:
+This helps in understanding that, even though you achieved a superior return,
+this also came at a greater risk compared to that of the benchmark. With the
+available functionalities you can further look into these results, e.g. by
+looking at the `summary` statistics:
 
 ```
 2022 Jul 21, 04:46 (🦋) /portfolio/ $ summary
@@ -224,9 +263,10 @@ Summary of Portfolio vs Benchmark for all period
 └───────────────────┴───────────┴───────────┘
 ```
 
-As well as look into how the allocations differ per sector and country with `alloc`. This shows that
-there is a clear difference in how the benchmark and the portfolio are constructed implying the Total Market ETF might
-not be the best benchmark for your portfolio.
+As well as look into how the allocations differ per sector and country with
+`alloc`. This shows that there is a clear difference in how the benchmark and
+the portfolio are constructed implying the Total Market ETF might not be the
+best benchmark for your portfolio.
 
 ```
 2022 Jul 21, 04:52 (🦋) /portfolio/ $ alloc sectors
@@ -263,29 +303,51 @@ not be the best benchmark for your portfolio.
 │ Ireland       │ 6.47%     │ -         │ 6.47%      │
 └───────────────┴───────────┴───────────┴────────────┘
 ```
+
 ---
-title: Introduction to Portfolio
-keywords: ['portfolio', 'attribution', 'optimization', 'pnl', 'benchmark', 'return', 'volatility', 'metrics', 'broker', 'integration', 'report']
-excerpt: "The Introduction to Portfolio explains how to use the 
-menu and provides a brief description of its sub-menus"
-geekdocCollapseSection: true
+
+title: Introduction to Portfolio keywords: ['portfolio', 'attribution',
+'optimization', 'pnl', 'benchmark', 'return', 'volatility', 'metrics', 'broker',
+'integration', 'report'] excerpt: "The Introduction to Portfolio explains how to
+use the menu and provides a brief description of its sub-menus"
+
 ---
-The Portfolio menu, and its sub-menus, are dedicated to properly explaining and optimizing your own portfolio. With
-features to load your own orderbook (transactions) it is possible to compare your results to that of a <a href="https://www.investopedia.com/terms/b/benchmark.asp" target="_blank">benchmark</a>.
-For example, you are able to load both your portfolio and a benchmark (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/load/" target="_blank">load</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/bench/" target="_blank">bench</a>),
-then have the option to look into the performance compared to the benchmark asking the question "_What if I invested all my money in the benchmark instead?_" (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/perf/" target="_blank">perf</a>)
-as well as see a wide variety of statistics and metrics (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/rsharpe/" target="_blank">rsharpe</a>, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/distr/" target="_blank">distr</a>, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/var/" target="_blank">var</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/metric/" target="_blank">metric</a>).
-Next to that, with these findings you can apply optimization techniques to your portfolio through the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/po/" target="_blank">Portfolio Optimization menu</a>.
+
+The Portfolio menu, and its sub-menus, are dedicated to properly explaining and
+optimizing your own portfolio. With features to load your own orderbook
+(transactions) it is possible to compare your results to that of a
+<a href="https://www.investopedia.com/terms/b/benchmark.asp" target="_blank">benchmark</a>.
+For example, you are able to load both your portfolio and a benchmark
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/load/" target="_blank">load</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/bench/" target="_blank">bench</a>),
+then have the option to look into the performance compared to the benchmark
+asking the question "_What if I invested all my money in the benchmark
+instead?_"
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/perf/" target="_blank">perf</a>)
+as well as see a wide variety of statistics and metrics
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/rsharpe/" target="_blank">rsharpe</a>,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/distr/" target="_blank">distr</a>,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/var/" target="_blank">var</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/metric/" target="_blank">metric</a>).
+Next to that, with these findings you can apply optimization techniques to your
+portfolio through the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/po/" target="_blank">Portfolio
+Optimization menu</a>.
 
 ## How to use
 
-The Portfolio menu is called upon by typing `portfolio` which opens the following menu:
+The Portfolio menu is called upon by typing `portfolio` which opens the
+following menu:
 
 ![Portfolio Menu](https://user-images.githubusercontent.com/46355364/180178234-0cb80009-74d8-41fb-9f4c-fa393361903a.png)
 
-The first step in using this menu is loading a portfolio with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/load/" target="_blank">load</a>.
-Here, we provide an example titled "Public_Equity_Orderbook.xlsx" which can be loaded in. This file also serves as a template when you wish to fill in your own orders. This results
-in the following:
+The first step in using this menu is loading a portfolio with
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/load/" target="_blank">load</a>.
+Here, we provide an example titled "Public_Equity_Orderbook.xlsx" which can be
+loaded in. This file also serves as a template when you wish to fill in your own
+orders. This results in the following:
 
 ```
 2022 Jul 19, 10:03 (🦋) /portfolio/ $ load Public_Equity_Orderbook.xlsx
@@ -299,22 +361,28 @@ Risk Free Rate: 0
 ```
 
 Note that the Excel sheet requires the following columns:
+
 - **Date** - The date the trade occurred
 - **Name** - The name of the security
 - **Type** - The type of the security. Use Cash/Stock/Crypto/ETF as appropriate
-- **Price** - The price the security was added or removed at, on a per-unit basis
+- **Price** - The price the security was added or removed at, on a per-unit
+  basis
 - **Quantity** - How much of the security in question was added or removed
-- **Side** - Whether you bought or sold. Use Buy/Deposit/1 to add to the portfolio or Sell/Withdrawal/0 to remove from the portfolio
-a search criteria, country, sector or industry.
+- **Side** - Whether you bought or sold. Use Buy/Deposit/1 to add to the
+  portfolio or Sell/Withdrawal/0 to remove from the portfolio a search criteria,
+  country, sector or industry.
 
-Furthermore, the chosen Excel sheet above also has additional columns but these are _optional_. The OpenBB Terminal
-can figure out by itself what industry, sector, country and region belongs to the loaded in equity. You can see this in
-action by loading in the "Public_Equity_Orderbook_No_Categorization.xlsx" Excel sheet.
+Furthermore, the chosen Excel sheet above also has additional columns but these
+are _optional_. The OpenBB Terminal can figure out by itself what industry,
+sector, country and region belongs to the loaded in equity. You can see this in
+action by loading in the "Public_Equity_Orderbook_No_Categorization.xlsx" Excel
+sheet.
 
-With the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/show/" target="_blank">show</a> command
-we can show how the data has been loaded in:
+With the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/show/" target="_blank">show</a>
+command we can show how the data has been loaded in:
 
-````
+```
 2022 Jul 19, 10:03 (🦋) /portfolio/ $ show
 
 ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━┓
@@ -337,10 +405,15 @@ we can show how the data has been loaded in:
 │ 2012-10-12 00:00:00 │ DGX    │ STOCK │ Healthcare             │ Diagnostics & Research              │ United States │ North America │ 63.39  │ 6        │ 10   │ 0       │ 370.34     │ 1    │ USD      │
 ├─────────────────────┼────────┼───────┼────────────────────────┼─────────────────────────────────────┼───────────────┼───────────────┼────────┼──────────┼──────┼─────────┼────────────┼──────┼──────────┤
 <continues>
-````
+```
 
-After loading in the portfolio, it is time to select a benchmark. This is important to be able to properly compare if your decision to trade actively or deviate from an index have actually been fruitful.
-For example, let's load in the <a href="https://www.ssga.com/us/en/individual/etfs/funds/spdr-sp-500-etf-trust-spy" target="_blank">SPDR S&P 500 ETF Trust (SPY)</a> with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/bench/" target="_blank">bench</a>
+After loading in the portfolio, it is time to select a benchmark. This is
+important to be able to properly compare if your decision to trade actively or
+deviate from an index have actually been fruitful. For example, let's load in
+the
+<a href="https://www.ssga.com/us/en/individual/etfs/funds/spdr-sp-500-etf-trust-spy" target="_blank">SPDR
+S&P 500 ETF Trust (SPY)</a> with the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/bench/" target="_blank">bench</a>
 command as follows:
 
 ```
@@ -351,17 +424,21 @@ Benchmark: SPDR S&P 500 ETF Trust (SPY) (SPY)
 2022 Jul 19, 10:16 (🦋) /portfolio/ $
 ```
 
-Note that the `bench` command has a large selection of products you can choose from. Instead of taking the index directly, an ETF product is used to represent something
-that you could have actually invested in. By using the `DOWN` (⌄) arrow and pressing `ENTER` (⏎) you can select a different benchmark.
+Note that the `bench` command has a large selection of products you can choose
+from. Instead of taking the index directly, an ETF product is used to represent
+something that you could have actually invested in. By using the `DOWN` (⌄)
+arrow and pressing `ENTER` (⏎) you can select a different benchmark.
 
 ![Benchmark Selection](https://user-images.githubusercontent.com/46355364/180178291-eacebad5-79be-4c57-85a2-c75d88b0470c.png)
 
-After defining both the portfolio and the benchmark, a lot more options become available:
+After defining both the portfolio and the benchmark, a lot more options become
+available:
 
 ![Portfolio Menu after loading Portfolio and Benchmark](https://user-images.githubusercontent.com/46355364/180178329-0aca57bf-ad29-47cc-a787-298a4de4070a.png)
 
-For example, with `perf`, we can see how the portfolio performed compared to if you invested the same amount of money into the
-benchmark instead. This reflects the capabilities of you, as an investor, to outperform a passive strategy.
+For example, with `perf`, we can see how the portfolio performed compared to if
+you invested the same amount of money into the benchmark instead. This reflects
+the capabilities of you, as an investor, to outperform a passive strategy.
 
 ```
 2022 Jul 20, 08:26 (🦋) /portfolio/ $ perf
@@ -380,7 +457,8 @@ benchmark instead. This reflects the capabilities of you, as an investor, to out
 └──────────────────┴───────────┴───────────┴────────────┘
 ```
 
-Compliment this by showing the volatility of the portfolio for different time periods with `metric` as follows:
+Compliment this by showing the volatility of the portfolio for different time
+periods with `metric` as follows:
 
 ```
 2022 Jul 20, 08:27 (🦋) /portfolio/ $ metric volatility
@@ -414,9 +492,9 @@ Volatility for Portfolio and Benchmark
 ## Examples
 
 Instead of loading the "Public_Equity_Orderbook.xlsx" file, we now load in
-"Public_Equity_Orderbook_No_Categorization.xlsx" which does not include categorization of the stocks
-by industry, sector, country and region. Therefore, we let the OpenBB Terminal figure this out. This
-takes a bit longer to load.
+"Public_Equity_Orderbook_No_Categorization.xlsx" which does not include
+categorization of the stocks by industry, sector, country and region. Therefore,
+we let the OpenBB Terminal figure this out. This takes a bit longer to load.
 
 ```
 2022 Jul 21, 04:43 (🦋) /portfolio/ $ load Public_Equity_Orderbook_No_Categorization.xlsx
@@ -430,7 +508,9 @@ Portfolio: Public_Equity_Orderbook_No_Categorization.xlsx
 Risk Free Rate: 0
 ```
 
-Then we load in a benchmark again with `bench` where we select the <a href="https://investor.vanguard.com/investment-products/etfs/profile/vti" target="_blank">Vanguard Total Stock Market ETF (VTI)</a>.
+Then we load in a benchmark again with `bench` where we select the
+<a href="https://investor.vanguard.com/investment-products/etfs/profile/vti" target="_blank">Vanguard
+Total Stock Market ETF (VTI)</a>.
 
 ```
 2022 Jul 21, 04:44 (🦋) /portfolio/ $ bench Vanguard Total Stock Market ETF (VTI)
@@ -438,8 +518,8 @@ Then we load in a benchmark again with `bench` where we select the <a href="http
 Benchmark: Vanguard Total Stock Market ETF (VTI) (VTI)
 ```
 
-Then, we can show our performance compared to that of the benchmark with `perf` as well as show the rolling
-beta with `rbeta`.
+Then, we can show our performance compared to that of the benchmark with `perf`
+as well as show the rolling beta with `rbeta`.
 
 ```
 2022 Jul 21, 04:45 (🦋) /portfolio/ $ perf
@@ -462,9 +542,10 @@ beta with `rbeta`.
 
 ![Rolling Beta of the Portfolio](https://user-images.githubusercontent.com/46355364/180178392-96efb6e1-60a1-4f76-92d8-434fb3637c21.png)
 
-This helps in understanding that, even though you achieved a superior return, this also came at a
-greater risk compared to that of the benchmark. With the available functionalities you can further look
-into these results, e.g. by looking at the `summary` statistics:
+This helps in understanding that, even though you achieved a superior return,
+this also came at a greater risk compared to that of the benchmark. With the
+available functionalities you can further look into these results, e.g. by
+looking at the `summary` statistics:
 
 ```
 2022 Jul 21, 04:46 (🦋) /portfolio/ $ summary
@@ -489,9 +570,10 @@ Summary of Portfolio vs Benchmark for all period
 └───────────────────┴───────────┴───────────┘
 ```
 
-As well as look into how the allocations differ per sector and country with `alloc`. This shows that
-there is a clear difference in how the benchmark and the portfolio are constructed implying the Total Market ETF might
-not be the best benchmark for your portfolio.
+As well as look into how the allocations differ per sector and country with
+`alloc`. This shows that there is a clear difference in how the benchmark and
+the portfolio are constructed implying the Total Market ETF might not be the
+best benchmark for your portfolio.
 
 ```
 2022 Jul 21, 04:52 (🦋) /portfolio/ $ alloc sectors

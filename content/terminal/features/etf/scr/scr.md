@@ -1,5 +1,5 @@
 ---
-geekdocCollapseSection: true
+
 ---
 
 {{< toc-tree >}}

@@ -3,22 +3,28 @@ title: Introduction to Cryptocurrency Onchain
 keywords: ['cryptocurrency', 'onchain', 'hashrate', 'erc20', 'dexes', 'ethereum']
 excerpt: "An Introduction to Cryptocurrency Onchain, within the Cryptocurrency Menu,
 with a brief overview of the features."
-geekdocCollapseSection: true
+
 ---
 
-The Cryptocurrency Onchain menu provides access to features that determine market sentiment by leveraging data from
-a blockchain ledger. This can be, among other things, blockchain hashrates (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/hr/" target="_blank">hr</a>),
-confirmed transactions (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/btcct/" target="_blank">btcct</a>) and
-top traded crypto pairs (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/ttcp/" target="_blank">ttcp</a>).
+The Cryptocurrency Onchain menu provides access to features that determine
+market sentiment by leveraging data from a blockchain ledger. This can be, among
+other things, blockchain hashrates
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/hr/" target="_blank">hr</a>),
+confirmed transactions
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/btcct/" target="_blank">btcct</a>)
+and top traded crypto pairs
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/ttcp/" target="_blank">ttcp</a>).
 
 ## How to use
 
-The Cryptocurrency Onchain menu is called upon by typing `onchain`, while inside the `crypto` menu, which opens the following menu:
+The Cryptocurrency Onchain menu is called upon by typing `onchain`, while inside
+the `crypto` menu, which opens the following menu:
 
 ![Cryptocurrency Onchain Menu](https://user-images.githubusercontent.com/46355364/178532254-8f4ef039-fab5-4ac5-afbf-584f8ce711c4.png)
 
-Alternatively, you can also type `/crypto/onchain`. Within the Cryptocurrency Onchain menu you can find features examining
-transaction data and crypto wallet balances, both of which are helpful when deciding whether to invest. E.g. we can
+Alternatively, you can also type `/crypto/onchain`. Within the Cryptocurrency
+Onchain menu you can find features examining transaction data and crypto wallet
+balances, both of which are helpful when deciding whether to invest. E.g. we can
 look into the top ERC20 token by typing `top` which returns the following table:
 
 ```
@@ -52,15 +58,20 @@ look into the top ERC20 token by typing `top` which returns the following table:
 
 ## Examples
 
-To access much of the Ethereum features, an ethereum address needs to be entered. As an example this can be
-`0x71C7656EC7ab88b098defB751B7401B5f6d8976F` which can be entered within the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/address/" target="_blank">address</a>
+To access much of the Ethereum features, an ethereum address needs to be
+entered. As an example this can be `0x71C7656EC7ab88b098defB751B7401B5f6d8976F`
+which can be entered within the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/address/" target="_blank">address</a>
 command as follows:
 
 ```
 2022 Jul 12, 08:48 (🦋) /crypto/onchain/ $ address 0x71C7656EC7ab88b098defB751B7401B5f6d8976F
 ```
 
-Which allows you to see the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/balance/" target="_blank">balance</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/hist/" target="_blank">hist</a>
+Which allows you to see the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/balance/" target="_blank">balance</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/hist/" target="_blank">hist</a>
 which returns the following for `balance`:
 
 ```
@@ -95,7 +106,6 @@ which returns the following for `balance`:
 And `hist` returns the following:
 
 ```
-
 2022 Jul 12, 08:53 (🦋) /crypto/onchain/ $ hist
 
                                              Historical Transactions Information
@@ -123,27 +133,35 @@ And `hist` returns the following:
 │ 2021-11-09 18:49:13 │ 0x0c4bf722f477dbceda0ca4ac9f02adbd813b2f80e4b613069265de5b12861115 │ USD Coin              │ 7977.07 │
 └─────────────────────┴────────────────────────────────────────────────────────────────────┴───────────────────────┴─────────┘
 ```
----
-title: Introduction to Cryptocurrency Onchain
-keywords: ['cryptocurrency', 'onchain', 'hashrate', 'erc20', 'dexes', 'ethereum']
-excerpt: "An Introduction to Cryptocurrency Onchain, within the Cryptocurrency Menu,
-with a brief overview of the features."
-geekdocCollapseSection: true
+
 ---
 
-The Cryptocurrency Onchain menu provides access to features that determine market sentiment by leveraging data from
-a blockchain ledger. This can be, among other things, blockchain hashrates (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/hr/" target="_blank">hr</a>),
-confirmed transactions (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/btcct/" target="_blank">btcct</a>) and
-top traded crypto pairs (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/ttcp/" target="_blank">ttcp</a>).
+title: Introduction to Cryptocurrency Onchain keywords: ['cryptocurrency',
+'onchain', 'hashrate', 'erc20', 'dexes', 'ethereum'] excerpt: "An Introduction
+to Cryptocurrency Onchain, within the Cryptocurrency Menu, with a brief overview
+of the features."
+
+---
+
+The Cryptocurrency Onchain menu provides access to features that determine
+market sentiment by leveraging data from a blockchain ledger. This can be, among
+other things, blockchain hashrates
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/hr/" target="_blank">hr</a>),
+confirmed transactions
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/btcct/" target="_blank">btcct</a>)
+and top traded crypto pairs
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/ttcp/" target="_blank">ttcp</a>).
 
 ## How to use
 
-The Cryptocurrency Onchain menu is called upon by typing `onchain`, while inside the `crypto` menu, which opens the following menu:
+The Cryptocurrency Onchain menu is called upon by typing `onchain`, while inside
+the `crypto` menu, which opens the following menu:
 
 ![Cryptocurrency Onchain Menu](https://user-images.githubusercontent.com/46355364/178532254-8f4ef039-fab5-4ac5-afbf-584f8ce711c4.png)
 
-Alternatively, you can also type `/crypto/onchain`. Within the Cryptocurrency Onchain menu you can find features examining
-transaction data and crypto wallet balances, both of which are helpful when deciding whether to invest. E.g. we can
+Alternatively, you can also type `/crypto/onchain`. Within the Cryptocurrency
+Onchain menu you can find features examining transaction data and crypto wallet
+balances, both of which are helpful when deciding whether to invest. E.g. we can
 look into the top ERC20 token by typing `top` which returns the following table:
 
 ```
@@ -177,15 +195,20 @@ look into the top ERC20 token by typing `top` which returns the following table:
 
 ## Examples
 
-To access much of the Ethereum features, an ethereum address needs to be entered. As an example this can be
-`0x71C7656EC7ab88b098defB751B7401B5f6d8976F` which can be entered within the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/address/" target="_blank">address</a>
+To access much of the Ethereum features, an ethereum address needs to be
+entered. As an example this can be `0x71C7656EC7ab88b098defB751B7401B5f6d8976F`
+which can be entered within the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/address/" target="_blank">address</a>
 command as follows:
 
 ```
 2022 Jul 12, 08:48 (🦋) /crypto/onchain/ $ address 0x71C7656EC7ab88b098defB751B7401B5f6d8976F
 ```
 
-Which allows you to see the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/balance/" target="_blank">balance</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/hist/" target="_blank">hist</a>
+Which allows you to see the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/balance/" target="_blank">balance</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/hist/" target="_blank">hist</a>
 which returns the following for `balance`:
 
 ```
@@ -220,7 +243,6 @@ which returns the following for `balance`:
 And `hist` returns the following:
 
 ```
-
 2022 Jul 12, 08:53 (🦋) /crypto/onchain/ $ hist
 
                                              Historical Transactions Information

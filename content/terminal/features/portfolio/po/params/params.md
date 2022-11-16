@@ -1,8 +1,10 @@
 ---
-geekdocCollapseSection: true
+
 ---
 
-This menu can be used to change the loaded parameters file and/or alter specific parameters currently set as default.
+This menu can be used to change the loaded parameters file and/or alter specific
+parameters currently set as default.
+
 ```
 ╭──────────────────────────────────────────────────────────────────────────────────────────── Portfolio - Portfolio Optimization - Parameters ────────────────────────────────────────────────────────────────────────────────────────────╮
 │                                                                                                                                                                                                                                         │

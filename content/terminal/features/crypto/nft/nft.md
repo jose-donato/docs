@@ -3,20 +3,26 @@ title: Introduction to Non Fungible Token (NFT)
 keywords: ['cryptocurrency', 'nft', 'Non Fungible Token', 'tokenomics', 'digital asset', 'art']
 excerpt: "An Introduction to Non Fungible Token (NFT), within the Cryptocurrency Menu,
 with a brief overview of the features."
-geekdocCollapseSection: true
+
 ---
 
-The Non Fungible Token (NFT) menu gives the user the ability to dive into certain NFTs (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/nft/stats/" target="_blank">stats</a>).
+The Non Fungible Token (NFT) menu gives the user the ability to dive into
+certain NFTs
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/nft/stats/" target="_blank">stats</a>).
 
 ## How to use
 
-The Non Fungible Token (NFT) menu is called upon by typing `nft`, while inside the `crypto` menu, which opens the following menu:
+The Non Fungible Token (NFT) menu is called upon by typing `nft`, while inside
+the `crypto` menu, which opens the following menu:
 
 ![Non Fungible Token (NFT) menu](https://user-images.githubusercontent.com/46355364/178734682-24b58a33-ae3d-4ef9-9f07-44fe713f6f16.png)
 
-Alternatively, you can also type `/crypto/nft`. Within the Non Fungible Token (NFT) menu you can explore the statistics of specific NFTs you are interested in.
+Alternatively, you can also type `/crypto/nft`. Within the Non Fungible Token
+(NFT) menu you can explore the statistics of specific NFTs you are interested
+in.
 
-We can look into the statistics of a specific NFT once you know the slug (e.g. <a href="https://opensea.io/collection/mutant-ape-yacht-club" target="_blank">mutant-ape-yacht-club</a>)
+We can look into the statistics of a specific NFT once you know the slug (e.g.
+<a href="https://opensea.io/collection/mutant-ape-yacht-club" target="_blank">mutant-ape-yacht-club</a>)
 with `stats` as follows:
 
 ```
@@ -63,25 +69,33 @@ with `stats` as follows:
 │ URL                            │ -                     │
 └────────────────────────────────┴───────────────────────┘
 ```
----
-title: Introduction to Non Fungible Token (NFT)
-keywords: ['cryptocurrency', 'nft', 'Non Fungible Token', 'tokenomics', 'digital asset', 'art']
-excerpt: "An Introduction to Non Fungible Token (NFT), within the Cryptocurrency Menu,
-with a brief overview of the features."
-geekdocCollapseSection: true
+
 ---
 
-The Non Fungible Token (NFT) menu gives the user the ability to dive into certain NFTs (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/nft/stats/" target="_blank">stats</a>).
+title: Introduction to Non Fungible Token (NFT) keywords: ['cryptocurrency',
+'nft', 'Non Fungible Token', 'tokenomics', 'digital asset', 'art'] excerpt: "An
+Introduction to Non Fungible Token (NFT), within the Cryptocurrency Menu, with a
+brief overview of the features."
+
+---
+
+The Non Fungible Token (NFT) menu gives the user the ability to dive into
+certain NFTs
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/nft/stats/" target="_blank">stats</a>).
 
 ## How to use
 
-The Non Fungible Token (NFT) menu is called upon by typing `nft`, while inside the `crypto` menu, which opens the following menu:
+The Non Fungible Token (NFT) menu is called upon by typing `nft`, while inside
+the `crypto` menu, which opens the following menu:
 
 ![Non Fungible Token (NFT) menu](https://user-images.githubusercontent.com/46355364/178734682-24b58a33-ae3d-4ef9-9f07-44fe713f6f16.png)
 
-Alternatively, you can also type `/crypto/nft`. Within the Non Fungible Token (NFT) menu you can explore the statistics of specific NFTs you are interested in.
+Alternatively, you can also type `/crypto/nft`. Within the Non Fungible Token
+(NFT) menu you can explore the statistics of specific NFTs you are interested
+in.
 
-We can look into the statistics of a specific NFT once you know the slug (e.g. <a href="https://opensea.io/collection/mutant-ape-yacht-club" target="_blank">mutant-ape-yacht-club</a>)
+We can look into the statistics of a specific NFT once you know the slug (e.g.
+<a href="https://opensea.io/collection/mutant-ape-yacht-club" target="_blank">mutant-ape-yacht-club</a>)
 with `stats` as follows:
 
 ```

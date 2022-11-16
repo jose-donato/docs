@@ -18,25 +18,29 @@ date: "2022-05-20"
 type: guides
 status: publish
 excerpt: "An Introduction to the Trading Hours menu, within the Stocks menu. This set of features displays the status of international markets."
-geekdocCollapseSection: true
+
 ---
 
-This set of features is for checking the operating status of markets globally. To access the Trading Hours features,
-enter `th` from the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks</a> menu.
-Alternatively, a user can access the submenu with absolute path navigation from anywhere in the Terminal: `/stocks/th`
+This set of features is for checking the operating status of markets globally.
+To access the Trading Hours features, enter `th` from the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks</a>
+menu. Alternatively, a user can access the submenu with absolute path navigation
+from anywhere in the Terminal: `/stocks/th`
 
 <a target="_blank" href="https://user-images.githubusercontent.com/46355364/170244188-17ffac5f-3345-4c40-be44-fb5128ad9612.png"><img alt="Trading Hours" src="https://user-images.githubusercontent.com/46355364/170244188-17ffac5f-3345-4c40-be44-fb5128ad9612.png"/></a>
 
 ## How to use
 
-A symbol is not required to be loaded. Once in the Trading Hours menu, the operation is simple.
-Choose from: <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/open/" target="_blank">open</a>,
+A symbol is not required to be loaded. Once in the Trading Hours menu, the
+operation is simple. Choose from:
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/open/" target="_blank">open</a>,
 <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/closed/" target="_blank">closed</a>,
-<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/all/" target="_blank">all</a> or
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/all/" target="_blank">all</a>
+or
 <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>.
 
-Below, examples are given what these commands display, note that the tables are purposely cut off to keep the
-introduction compact.
+Below, examples are given what these commands display, note that the tables are
+purposely cut off to keep the introduction compact.
 
 ```
 (🦋) /stocks/th/ $ open
@@ -115,14 +119,17 @@ introduction compact.
 <continues>
 ```
 
-Lastly, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>
+Lastly,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>
 shows the status of a single venue.
 
 <a target="_blank" href="https://user-images.githubusercontent.com/46355364/170244354-f5ab043d-0290-46ec-ba86-87cc2dc0e47a.png"><img alt="Trading Hours Autocomplete" src="https://user-images.githubusercontent.com/46355364/170244354-f5ab043d-0290-46ec-ba86-87cc2dc0e47a.png"/></a>
 
 ## Examples
 
-Below an example is given for a symbol and whether that market is open. By calling <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>
+Below an example is given for a symbol and whether that market is open. By
+calling
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>
 you can obtain more information about the exchange (e.g. enter `BO`)
 
 ```
@@ -176,32 +183,34 @@ Market open:   False
 
 ---
 
-title: Introduction to Trading Hours
-keywords: ['markets', 'trading', 'hours', 'stocks', 'time', 'global', 'world', 'location', 'open', 'close', 'exchange']
-date: "2022-05-20"
-type: guides
-status: publish
-excerpt: "An Introduction to the Trading Hours menu, within the Stocks menu. This set of features displays the status of international markets."
-geekdocCollapseSection: true
+title: Introduction to Trading Hours keywords: ['markets', 'trading', 'hours',
+'stocks', 'time', 'global', 'world', 'location', 'open', 'close', 'exchange']
+date: "2022-05-20" type: guides status: publish excerpt: "An Introduction to the
+Trading Hours menu, within the Stocks menu. This set of features displays the
+status of international markets."
 
 ---
 
-This set of features is for checking the operating status of markets globally. To access the Trading Hours features,
-enter `th` from the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks</a> menu.
-Alternatively, a user can access the submenu with absolute path navigation from anywhere in the Terminal: `/stocks/th`
+This set of features is for checking the operating status of markets globally.
+To access the Trading Hours features, enter `th` from the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks</a>
+menu. Alternatively, a user can access the submenu with absolute path navigation
+from anywhere in the Terminal: `/stocks/th`
 
 <a target="_blank" href="https://user-images.githubusercontent.com/46355364/170244188-17ffac5f-3345-4c40-be44-fb5128ad9612.png"><img alt="Trading Hours" src="https://user-images.githubusercontent.com/46355364/170244188-17ffac5f-3345-4c40-be44-fb5128ad9612.png"/></a>
 
 ## How to use
 
-A symbol is not required to be loaded. Once in the Trading Hours menu, the operation is simple.
-Choose from: <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/open/" target="_blank">open</a>,
+A symbol is not required to be loaded. Once in the Trading Hours menu, the
+operation is simple. Choose from:
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/open/" target="_blank">open</a>,
 <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/closed/" target="_blank">closed</a>,
-<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/all/" target="_blank">all</a> or
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/all/" target="_blank">all</a>
+or
 <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>.
 
-Below, examples are given what these commands display, note that the tables are purposely cut off to keep the
-introduction compact.
+Below, examples are given what these commands display, note that the tables are
+purposely cut off to keep the introduction compact.
 
 ```
 (🦋) /stocks/th/ $ open
@@ -280,14 +289,17 @@ introduction compact.
 <continues>
 ```
 
-Lastly, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>
+Lastly,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>
 shows the status of a single venue.
 
 <a target="_blank" href="https://user-images.githubusercontent.com/46355364/170244354-f5ab043d-0290-46ec-ba86-87cc2dc0e47a.png"><img alt="Trading Hours Autocomplete" src="https://user-images.githubusercontent.com/46355364/170244354-f5ab043d-0290-46ec-ba86-87cc2dc0e47a.png"/></a>
 
 ## Examples
 
-Below an example is given for a symbol and whether that market is open. By calling <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>
+Below an example is given for a symbol and whether that market is open. By
+calling
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/tradinghours/exchange/" target="_blank">exchange</a>
 you can obtain more information about the exchange (e.g. enter `BO`)
 
 ```

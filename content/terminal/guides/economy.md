@@ -3,33 +3,51 @@ title: Introduction to Economy
 keywords: ['economy', 'macro', 'index', 'treasury', 'fred', 'market']
 excerpt: "The Introduction to Economy explains how to use the 
 menu and provides a brief description of its sub-menus"
-geekdocCollapseSection: true
+
 ---
 
-The Economy menu enables you to obtain market overviews (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/overview/" target="_blank">overview</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/futures/" target="_blank">futures</a>),
-see yield curves of any country (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/ycrv/" target="_blank">ycrv</a>)
-and discover sector, industry and country performance (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/performance/" target="_blank">performance</a>).
-Next to that, the databases of <a href="https://www.econdb.com/" target="_blank">EconDB</a>, <a href="https://fred.stlouisfed.org/" target="_blank">FRED</a> and <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>
-can be accessed via <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/macro/" target="_blank">macro</a>,
-<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/fred/" target="_blank">fred</a> and
-<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/index/" target="_blank">index</a> respectively.
-All of this can also be further analysed with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/" target="_blank">Forecasting menu</a> (`forecast`) and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/qa/" target="_blank">Quantitative Techniques</a> (`qa`).
+The Economy menu enables you to obtain market overviews
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/overview/" target="_blank">overview</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/futures/" target="_blank">futures</a>),
+see yield curves of any country
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/ycrv/" target="_blank">ycrv</a>)
+and discover sector, industry and country performance
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/performance/" target="_blank">performance</a>).
+Next to that, the databases of
+<a href="https://www.econdb.com/" target="_blank">EconDB</a>,
+<a href="https://fred.stlouisfed.org/" target="_blank">FRED</a> and
+<a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a> can be
+accessed via
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/macro/" target="_blank">macro</a>,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/fred/" target="_blank">fred</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/index/" target="_blank">index</a>
+respectively. All of this can also be further analysed with
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/" target="_blank">Forecasting
+menu</a> (`forecast`) and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/qa/" target="_blank">Quantitative
+Techniques</a> (`qa`).
 
 ## How to use
 
-The Economy menu is called upon by typing `economy` which opens the following menu:
+The Economy menu is called upon by typing `economy` which opens the following
+menu:
 
 ![Economy Menu](https://user-images.githubusercontent.com/46355364/176679746-21b28263-96be-4701-9fd1-8657602e0214.png)
 
-Within the Economy menu you have a variety of options ranging from treasury rates to population growth to country financial performance.
-As this is quite extensive, the guide has two sections. The first section will discuss valuations and performance and the
-second section discusses the databases.
+Within the Economy menu you have a variety of options ranging from treasury
+rates to population growth to country financial performance. As this is quite
+extensive, the guide has two sections. The first section will discuss valuations
+and performance and the second section discusses the databases.
 
 ### Performance and valuations
 
-By using <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/overview/" target="_blank">overview</a> we can look
-into market overviews from the perspective of indices (`indices`), bonds (`usbonds` and `glbonds`), currencies (`currencies`) and in general.
-E.g. let's look at global bond performance by adding the `-t` argument:
+By using
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/overview/" target="_blank">overview</a>
+we can look into market overviews from the perspective of indices (`indices`),
+bonds (`usbonds` and `glbonds`), currencies (`currencies`) and in general. E.g.
+let's look at global bond performance by adding the `-t` argument:
 
 ```
 2022 Jun 29, 09:56 (🦋) /economy/ $ overview -t glbonds
@@ -52,11 +70,12 @@ E.g. let's look at global bond performance by adding the `-t` argument:
 └───────────────────────────────────┴──────────┴─────────┴─────────────┘
 ```
 
-Next to that, to better understand the current commodity market we can look into the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/futures/" target="_blank">futures</a>
+Next to that, to better understand the current commodity market we can look into
+the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/futures/" target="_blank">futures</a>
 of a variety of commodities. For example, let's look at a general overview:
 
 ```
-
 2022 Jun 29, 09:58 (🦋) /economy/ $ futures
 
      Futures/Commodities [Source: Wall St. Journal]
@@ -85,7 +104,8 @@ of a variety of commodities. For example, let's look at a general overview:
 └───────────────────────────┴─────────┴─────────┴───────┘
 ```
 
-Furthermore, we can look into yield curves of any country, by default this is set to the United States, but it can be any:
+Furthermore, we can look into yield curves of any country, by default this is
+set to the United States, but it can be any:
 
 ![Yield Curves Options Menu](https://user-images.githubusercontent.com/46355364/176679828-bd90df8c-bff3-42a7-8e03-897c0be99443.png)
 
@@ -93,7 +113,8 @@ Which then returns the following plot:
 
 ![Yield Curve](https://user-images.githubusercontent.com/46355364/176679949-dd8b5b47-1125-4b1c-9558-25f1d2d70ffc.png)
 
-Lastly, we can also show industry, sector and country performance with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/performance/" target="_blank">performance</a>.
+Lastly, we can also show industry, sector and country performance with
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/performance/" target="_blank">performance</a>.
 For example, looking at the `sectors` returns the following:
 
 ```
@@ -129,8 +150,10 @@ For example, looking at the `sectors` returns the following:
 
 ### Economic Databases
 
-Starting with the EconDB database (via <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/macro/" target="_blank">macro</a>)
-a large selection of Economic data can be obtained. What can be obtained is easily found by typing `macro --show parameters` which returns the following:
+Starting with the EconDB database (via
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/macro/" target="_blank">macro</a>)
+a large selection of Economic data can be obtained. What can be obtained is
+easily found by typing `macro --show parameters` which returns the following:
 
 ```
 2022 Jun 29, 10:16 (🦋) /economy/ $ macro --show parameters
@@ -181,8 +204,9 @@ As well as the available countries with `macro --show countries`:
 <continues>
 ```
 
-Then, with these parameters and countries, you can now plot macroeconomic data. For example, we can look at unemployment
-rate (`URATE`) of the Netherlands, Germany and France with the following:
+Then, with these parameters and countries, you can now plot macroeconomic data.
+For example, we can look at unemployment rate (`URATE`) of the Netherlands,
+Germany and France with the following:
 
 ```
 2022 Jun 29, 10:18 (🦋) /economy/ $ macro --countries Netherlands Germany France --parameters URATE
@@ -192,10 +216,13 @@ This returns the following graph:
 
 ![Unemployment Rates](https://user-images.githubusercontent.com/46355364/176680030-b7936018-16ae-4dce-b652-5718977e9d57.png)
 
-The FRED database similarly has a lot of macroeconomic data, do note that you need an API key to do this which is explained in more detail
-in the <a href="https://openbb-finance.github.io/OpenBBTerminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Accessing other sources of data via API keys</a> section.
+The FRED database similarly has a lot of macroeconomic data, do note that you
+need an API key to do this which is explained in more detail in the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Accessing
+other sources of data via API keys</a> section.
 
-You have the ability to query the entire FRED database with the `-q` argument. For example, down below we look for datasets that are centered around inflation.
+You have the ability to query the entire FRED database with the `-q` argument.
+For example, down below we look for datasets that are centered around inflation.
 The `-l` argument is set to show a maximum of 10 datasets:
 
 ```
@@ -278,9 +305,11 @@ The `-l` argument is set to show a maximum of 10 datasets:
 └─────────────────┴────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-With this information, we can now plot datasets, e.g. the 5-year, 10-year, 20-year and 30-year break-even inflation rates, with the following.
-Note that I added some additional series not in the above table. This is because you can recognise the structure relatively easy of the
-break-even inflation rates, the number after the `T` refers to the amount of years.
+With this information, we can now plot datasets, e.g. the 5-year, 10-year,
+20-year and 30-year break-even inflation rates, with the following. Note that I
+added some additional series not in the above table. This is because you can
+recognise the structure relatively easy of the break-even inflation rates, the
+number after the `T` refers to the amount of years.
 
 ```
 2022 Jun 29, 10:27 (🦋) /economy/ $ fred T5YIEM,T10YIEM,T20YIEM,T30YIEM
@@ -290,8 +319,9 @@ Which returns the following graph:
 
 ![Break-Even Inflation Rates](https://user-images.githubusercontent.com/46355364/176680117-6d2b53e4-4980-42e6-a46c-4da34001ad46.png)
 
-Furthermore, understanding the influence macroeconomic trends have to indices, the `index` command can be used. This has a
-large set of pre-configured indices but has the possibility to add your own if you enter the ticker.
+Furthermore, understanding the influence macroeconomic trends have to indices,
+the `index` command can be used. This has a large set of pre-configured indices
+but has the possibility to add your own if you enter the ticker.
 
 ![Index Command Menu](https://user-images.githubusercontent.com/46355364/176680206-7ad44c3a-6cd7-45de-be5a-9bbb4e3e5c9a.png)
 
@@ -299,8 +329,12 @@ Which plots the following:
 
 ![Index Plot](https://user-images.githubusercontent.com/46355364/176680336-9ce60aa4-b2f7-4199-be42-62a8d78b1f5c.png)
 
-This then all comes together within the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/plot/" target="_blank">plot</a> command where you can combine the datasets from the above commands into one graph.
-For example, it seems there is a relationship between the inflation rates and the unemployment rate (<a href="https://www.investopedia.com/articles/markets/081515/how-inflation-and-unemployment-are-related.asp" target="_blank">source</a>)
+This then all comes together within the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/plot/" target="_blank">plot</a>
+command where you can combine the datasets from the above commands into one
+graph. For example, it seems there is a relationship between the inflation rates
+and the unemployment rate
+(<a href="https://www.investopedia.com/articles/markets/081515/how-inflation-and-unemployment-are-related.asp" target="_blank">source</a>)
 which we can graphically show with:
 
 ```
@@ -317,15 +351,23 @@ Resulting in the following graph:
 
 ## Sub-menus available
 
-The Economy menu has a few sub-menus available to delve further into a specific macroeconomic indicator. To find more information about each menu, click on one of the following:
+The Economy menu has a few sub-menus available to delve further into a specific
+macroeconomic indicator. To find more information about each menu, click on one
+of the following:
 
-- <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/" target="_blank">Introduction to Forecasting menu</a>: apply advanced AI and Machine Learning models to form prediction of future macroeconomic indicators including Recurrent Neural Network (RNN),
-  Autoregressive Integrated Moving Average (ARIMA) and Monte Carlo forecasting.
-- <a href="/OpenBBTerminal/terminal/common/qa" target="_blank">Introduction to Quantitative Analysis</a>: analyse the macroeconomic indicators extensively for seasonality, rolling windows and statistical techniques.
+- <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/" target="_blank">Introduction
+  to Forecasting menu</a>: apply advanced AI and Machine Learning models to form
+  prediction of future macroeconomic indicators including Recurrent Neural
+  Network (RNN), Autoregressive Integrated Moving Average (ARIMA) and Monte
+  Carlo forecasting.
+- <a href="/OpenBBTerminal/terminal/common/qa" target="_blank">Introduction to
+  Quantitative Analysis</a>: analyse the macroeconomic indicators extensively
+  for seasonality, rolling windows and statistical techniques.
 
 ## Examples
 
-Starting off, let's looking at current performance of energy futures with `futures`.
+Starting off, let's looking at current performance of energy futures with
+`futures`.
 
 ```
 2022 Jun 30, 05:39 (🦋) /economy/ $ futures energy
@@ -348,8 +390,9 @@ Starting off, let's looking at current performance of energy futures with `futur
 └─────────────────┴───────────┴────────┴────────────┘
 ```
 
-This gives insights in the current future contracts and their (relative) performance. Here, we take a closer look at
-`Crude Oil Brent` by querying the FRED database, with `fred`, for a dataset that is relevant:
+This gives insights in the current future contracts and their (relative)
+performance. Here, we take a closer look at `Crude Oil Brent` by querying the
+FRED database, with `fred`, for a dataset that is relevant:
 
 ```
 2022 Jun 30, 05:43 (🦋) /economy/ $ fred -q oil index
@@ -378,8 +421,11 @@ This gives insights in the current future contracts and their (relative) perform
 └─────────────────┴───────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-Here, we take the `CBOE Crude OIL ETF Volatility Index` to get some understanding of how volatile oil is. Here, a period
-is defined from 2008 to 2015, showing the influence of the <a href="https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008" target="_blank">Financial Crisis of 2008</a>.
+Here, we take the `CBOE Crude OIL ETF Volatility Index` to get some
+understanding of how volatile oil is. Here, a period is defined from 2008 to
+2015, showing the influence of the
+<a href="https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008" target="_blank">Financial
+Crisis of 2008</a>.
 
 ```
 2022 Jun 30, 06:22 (🦋) /economy/ $ fred OVXCLS -s 2008-01-01 -e 2015-01-01
@@ -389,8 +435,9 @@ This plots the following graph:
 
 ![CBOE Crude OIL ETF Volatility Index](https://user-images.githubusercontent.com/46355364/176680559-2806bd91-2938-47be-8074-43b8f071aaad.png)
 
-A hypothesis could be that the more volatile the price of oil is, the lower the confidence of the consumers is. It is
-possible to visually depict this. First, let's plot the consumer confidence of Germany.
+A hypothesis could be that the more volatile the price of oil is, the lower the
+confidence of the consumers is. It is possible to visually depict this. First,
+let's plot the consumer confidence of Germany.
 
 ```
 2022 Jun 30, 07:59 (🦋) /economy/ $ macro -p CONF -c Germany -s 2008-01-01 -e 2015-01-01
@@ -398,45 +445,63 @@ possible to visually depict this. First, let's plot the consumer confidence of G
 
 ![Consumer Confidence Germany](https://user-images.githubusercontent.com/46355364/176680603-1ace9534-f18a-4362-a1c0-d28c675d9415.png)
 
-Now, combine these two graphs with the `plot` command. This helps in visually depicting a (negative) relationship.
+Now, combine these two graphs with the `plot` command. This helps in visually
+depicting a (negative) relationship.
 
 ```
 2022 Jun 30, 08:00 (🦋) /economy/ $ plot --y1 Germany_CONF --y2 OVXCLS
 ```
 
-![CBOE Crude OIL ETF Volatility Index and Consumer Confidence Germany](https://user-images.githubusercontent.com/46355364/176680645-79b8f44d-adc7-49e4-b749-80188f22850f.png)
----
-title: Introduction to Economy
-keywords: ['economy', 'macro', 'index', 'treasury', 'fred', 'market']
-excerpt: "The Introduction to Economy explains how to use the 
-menu and provides a brief description of its sub-menus"
-geekdocCollapseSection: true
+## ![CBOE Crude OIL ETF Volatility Index and Consumer Confidence Germany](https://user-images.githubusercontent.com/46355364/176680645-79b8f44d-adc7-49e4-b749-80188f22850f.png)
+
+title: Introduction to Economy keywords: ['economy', 'macro', 'index',
+'treasury', 'fred', 'market'] excerpt: "The Introduction to Economy explains how
+to use the menu and provides a brief description of its sub-menus"
+
 ---
 
-The Economy menu enables you to obtain market overviews (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/overview/" target="_blank">overview</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/futures/" target="_blank">futures</a>),
-see yield curves of any country (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/ycrv/" target="_blank">ycrv</a>)
-and discover sector, industry and country performance (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/performance/" target="_blank">performance</a>).
-Next to that, the databases of <a href="https://www.econdb.com/" target="_blank">EconDB</a>, <a href="https://fred.stlouisfed.org/" target="_blank">FRED</a> and <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>
-can be accessed via <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/macro/" target="_blank">macro</a>,
-<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/fred/" target="_blank">fred</a> and
-<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/index/" target="_blank">index</a> respectively.
-All of this can also be further analysed with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/" target="_blank">Forecasting menu</a> (`forecast`) and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/qa/" target="_blank">Quantitative Techniques</a> (`qa`).
+The Economy menu enables you to obtain market overviews
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/overview/" target="_blank">overview</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/futures/" target="_blank">futures</a>),
+see yield curves of any country
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/ycrv/" target="_blank">ycrv</a>)
+and discover sector, industry and country performance
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/performance/" target="_blank">performance</a>).
+Next to that, the databases of
+<a href="https://www.econdb.com/" target="_blank">EconDB</a>,
+<a href="https://fred.stlouisfed.org/" target="_blank">FRED</a> and
+<a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a> can be
+accessed via
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/macro/" target="_blank">macro</a>,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/fred/" target="_blank">fred</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/index/" target="_blank">index</a>
+respectively. All of this can also be further analysed with
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/" target="_blank">Forecasting
+menu</a> (`forecast`) and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/qa/" target="_blank">Quantitative
+Techniques</a> (`qa`).
 
 ## How to use
 
-The Economy menu is called upon by typing `economy` which opens the following menu:
+The Economy menu is called upon by typing `economy` which opens the following
+menu:
 
 ![Economy Menu](https://user-images.githubusercontent.com/46355364/176679746-21b28263-96be-4701-9fd1-8657602e0214.png)
 
-Within the Economy menu you have a variety of options ranging from treasury rates to population growth to country financial performance.
-As this is quite extensive, the guide has two sections. The first section will discuss valuations and performance and the
-second section discusses the databases.
+Within the Economy menu you have a variety of options ranging from treasury
+rates to population growth to country financial performance. As this is quite
+extensive, the guide has two sections. The first section will discuss valuations
+and performance and the second section discusses the databases.
 
 ### Performance and valuations
 
-By using <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/overview/" target="_blank">overview</a> we can look
-into market overviews from the perspective of indices (`indices`), bonds (`usbonds` and `glbonds`), currencies (`currencies`) and in general.
-E.g. let's look at global bond performance by adding the `-t` argument:
+By using
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/overview/" target="_blank">overview</a>
+we can look into market overviews from the perspective of indices (`indices`),
+bonds (`usbonds` and `glbonds`), currencies (`currencies`) and in general. E.g.
+let's look at global bond performance by adding the `-t` argument:
 
 ```
 2022 Jun 29, 09:56 (🦋) /economy/ $ overview -t glbonds
@@ -459,11 +524,12 @@ E.g. let's look at global bond performance by adding the `-t` argument:
 └───────────────────────────────────┴──────────┴─────────┴─────────────┘
 ```
 
-Next to that, to better understand the current commodity market we can look into the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/futures/" target="_blank">futures</a>
+Next to that, to better understand the current commodity market we can look into
+the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/futures/" target="_blank">futures</a>
 of a variety of commodities. For example, let's look at a general overview:
 
 ```
-
 2022 Jun 29, 09:58 (🦋) /economy/ $ futures
 
      Futures/Commodities [Source: Wall St. Journal]
@@ -492,7 +558,8 @@ of a variety of commodities. For example, let's look at a general overview:
 └───────────────────────────┴─────────┴─────────┴───────┘
 ```
 
-Furthermore, we can look into yield curves of any country, by default this is set to the United States, but it can be any:
+Furthermore, we can look into yield curves of any country, by default this is
+set to the United States, but it can be any:
 
 ![Yield Curves Options Menu](https://user-images.githubusercontent.com/46355364/176679828-bd90df8c-bff3-42a7-8e03-897c0be99443.png)
 
@@ -500,7 +567,8 @@ Which then returns the following plot:
 
 ![Yield Curve](https://user-images.githubusercontent.com/46355364/176679949-dd8b5b47-1125-4b1c-9558-25f1d2d70ffc.png)
 
-Lastly, we can also show industry, sector and country performance with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/performance/" target="_blank">performance</a>.
+Lastly, we can also show industry, sector and country performance with
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/performance/" target="_blank">performance</a>.
 For example, looking at the `sectors` returns the following:
 
 ```
@@ -536,8 +604,10 @@ For example, looking at the `sectors` returns the following:
 
 ### Economic Databases
 
-Starting with the EconDB database (via <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/macro/" target="_blank">macro</a>)
-a large selection of Economic data can be obtained. What can be obtained is easily found by typing `macro --show parameters` which returns the following:
+Starting with the EconDB database (via
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/macro/" target="_blank">macro</a>)
+a large selection of Economic data can be obtained. What can be obtained is
+easily found by typing `macro --show parameters` which returns the following:
 
 ```
 2022 Jun 29, 10:16 (🦋) /economy/ $ macro --show parameters
@@ -588,8 +658,9 @@ As well as the available countries with `macro --show countries`:
 <continues>
 ```
 
-Then, with these parameters and countries, you can now plot macroeconomic data. For example, we can look at unemployment
-rate (`URATE`) of the Netherlands, Germany and France with the following:
+Then, with these parameters and countries, you can now plot macroeconomic data.
+For example, we can look at unemployment rate (`URATE`) of the Netherlands,
+Germany and France with the following:
 
 ```
 2022 Jun 29, 10:18 (🦋) /economy/ $ macro --countries Netherlands Germany France --parameters URATE
@@ -599,10 +670,13 @@ This returns the following graph:
 
 ![Unemployment Rates](https://user-images.githubusercontent.com/46355364/176680030-b7936018-16ae-4dce-b652-5718977e9d57.png)
 
-The FRED database similarly has a lot of macroeconomic data, do note that you need an API key to do this which is explained in more detail
-in the <a href="https://openbb-finance.github.io/OpenBBTerminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Accessing other sources of data via API keys</a> section.
+The FRED database similarly has a lot of macroeconomic data, do note that you
+need an API key to do this which is explained in more detail in the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Accessing
+other sources of data via API keys</a> section.
 
-You have the ability to query the entire FRED database with the `-q` argument. For example, down below we look for datasets that are centered around inflation.
+You have the ability to query the entire FRED database with the `-q` argument.
+For example, down below we look for datasets that are centered around inflation.
 The `-l` argument is set to show a maximum of 10 datasets:
 
 ```
@@ -685,9 +759,11 @@ The `-l` argument is set to show a maximum of 10 datasets:
 └─────────────────┴────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-With this information, we can now plot datasets, e.g. the 5-year, 10-year, 20-year and 30-year break-even inflation rates, with the following.
-Note that I added some additional series not in the above table. This is because you can recognise the structure relatively easy of the
-break-even inflation rates, the number after the `T` refers to the amount of years.
+With this information, we can now plot datasets, e.g. the 5-year, 10-year,
+20-year and 30-year break-even inflation rates, with the following. Note that I
+added some additional series not in the above table. This is because you can
+recognise the structure relatively easy of the break-even inflation rates, the
+number after the `T` refers to the amount of years.
 
 ```
 2022 Jun 29, 10:27 (🦋) /economy/ $ fred T5YIEM,T10YIEM,T20YIEM,T30YIEM
@@ -697,8 +773,9 @@ Which returns the following graph:
 
 ![Break-Even Inflation Rates](https://user-images.githubusercontent.com/46355364/176680117-6d2b53e4-4980-42e6-a46c-4da34001ad46.png)
 
-Furthermore, understanding the influence macroeconomic trends have to indices, the `index` command can be used. This has a
-large set of pre-configured indices but has the possibility to add your own if you enter the ticker.
+Furthermore, understanding the influence macroeconomic trends have to indices,
+the `index` command can be used. This has a large set of pre-configured indices
+but has the possibility to add your own if you enter the ticker.
 
 ![Index Command Menu](https://user-images.githubusercontent.com/46355364/176680206-7ad44c3a-6cd7-45de-be5a-9bbb4e3e5c9a.png)
 
@@ -706,8 +783,12 @@ Which plots the following:
 
 ![Index Plot](https://user-images.githubusercontent.com/46355364/176680336-9ce60aa4-b2f7-4199-be42-62a8d78b1f5c.png)
 
-This then all comes together within the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/plot/" target="_blank">plot</a> command where you can combine the datasets from the above commands into one graph.
-For example, it seems there is a relationship between the inflation rates and the unemployment rate (<a href="https://www.investopedia.com/articles/markets/081515/how-inflation-and-unemployment-are-related.asp" target="_blank">source</a>)
+This then all comes together within the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/economy/plot/" target="_blank">plot</a>
+command where you can combine the datasets from the above commands into one
+graph. For example, it seems there is a relationship between the inflation rates
+and the unemployment rate
+(<a href="https://www.investopedia.com/articles/markets/081515/how-inflation-and-unemployment-are-related.asp" target="_blank">source</a>)
 which we can graphically show with:
 
 ```
@@ -724,15 +805,23 @@ Resulting in the following graph:
 
 ## Sub-menus available
 
-The Economy menu has a few sub-menus available to delve further into a specific macroeconomic indicator. To find more information about each menu, click on one of the following:
+The Economy menu has a few sub-menus available to delve further into a specific
+macroeconomic indicator. To find more information about each menu, click on one
+of the following:
 
-- <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/" target="_blank">Introduction to Forecasting menu</a>: apply advanced AI and Machine Learning models to form prediction of future macroeconomic indicators including Recurrent Neural Network (RNN),
-  Autoregressive Integrated Moving Average (ARIMA) and Monte Carlo forecasting.
-- <a href="/OpenBBTerminal/terminal/common/qa" target="_blank">Introduction to Quantitative Analysis</a>: analyse the macroeconomic indicators extensively for seasonality, rolling windows and statistical techniques.
+- <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/" target="_blank">Introduction
+  to Forecasting menu</a>: apply advanced AI and Machine Learning models to form
+  prediction of future macroeconomic indicators including Recurrent Neural
+  Network (RNN), Autoregressive Integrated Moving Average (ARIMA) and Monte
+  Carlo forecasting.
+- <a href="/OpenBBTerminal/terminal/common/qa" target="_blank">Introduction to
+  Quantitative Analysis</a>: analyse the macroeconomic indicators extensively
+  for seasonality, rolling windows and statistical techniques.
 
 ## Examples
 
-Starting off, let's looking at current performance of energy futures with `futures`.
+Starting off, let's looking at current performance of energy futures with
+`futures`.
 
 ```
 2022 Jun 30, 05:39 (🦋) /economy/ $ futures energy
@@ -755,8 +844,9 @@ Starting off, let's looking at current performance of energy futures with `futur
 └─────────────────┴───────────┴────────┴────────────┘
 ```
 
-This gives insights in the current future contracts and their (relative) performance. Here, we take a closer look at
-`Crude Oil Brent` by querying the FRED database, with `fred`, for a dataset that is relevant:
+This gives insights in the current future contracts and their (relative)
+performance. Here, we take a closer look at `Crude Oil Brent` by querying the
+FRED database, with `fred`, for a dataset that is relevant:
 
 ```
 2022 Jun 30, 05:43 (🦋) /economy/ $ fred -q oil index
@@ -785,8 +875,11 @@ This gives insights in the current future contracts and their (relative) perform
 └─────────────────┴───────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-Here, we take the `CBOE Crude OIL ETF Volatility Index` to get some understanding of how volatile oil is. Here, a period
-is defined from 2008 to 2015, showing the influence of the <a href="https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008" target="_blank">Financial Crisis of 2008</a>.
+Here, we take the `CBOE Crude OIL ETF Volatility Index` to get some
+understanding of how volatile oil is. Here, a period is defined from 2008 to
+2015, showing the influence of the
+<a href="https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008" target="_blank">Financial
+Crisis of 2008</a>.
 
 ```
 2022 Jun 30, 06:22 (🦋) /economy/ $ fred OVXCLS -s 2008-01-01 -e 2015-01-01
@@ -796,8 +889,9 @@ This plots the following graph:
 
 ![CBOE Crude OIL ETF Volatility Index](https://user-images.githubusercontent.com/46355364/176680559-2806bd91-2938-47be-8074-43b8f071aaad.png)
 
-A hypothesis could be that the more volatile the price of oil is, the lower the confidence of the consumers is. It is
-possible to visually depict this. First, let's plot the consumer confidence of Germany.
+A hypothesis could be that the more volatile the price of oil is, the lower the
+confidence of the consumers is. It is possible to visually depict this. First,
+let's plot the consumer confidence of Germany.
 
 ```
 2022 Jun 30, 07:59 (🦋) /economy/ $ macro -p CONF -c Germany -s 2008-01-01 -e 2015-01-01
@@ -805,7 +899,8 @@ possible to visually depict this. First, let's plot the consumer confidence of G
 
 ![Consumer Confidence Germany](https://user-images.githubusercontent.com/46355364/176680603-1ace9534-f18a-4362-a1c0-d28c675d9415.png)
 
-Now, combine these two graphs with the `plot` command. This helps in visually depicting a (negative) relationship.
+Now, combine these two graphs with the `plot` command. This helps in visually
+depicting a (negative) relationship.
 
 ```
 2022 Jun 30, 08:00 (🦋) /economy/ $ plot --y1 Germany_CONF --y2 OVXCLS

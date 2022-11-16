@@ -3,25 +3,39 @@ title: Introduction to Cryptocurrency Decentralized Finance (DeFi)
 keywords: ['cryptocurrency', 'defi', 'decentralized finance', 'crypto', 'dapps', 'uniswap', 'funding', 'luna', 'terra', 'blockchain']
 excerpt: "An Introduction to Cryptocurrency DeFi menu, within the Cryptocurrency Menu,
 with a brief overview of the features."
-geekdocCollapseSection: true
+
 ---
 
-The Cryptocurrency Decentralized Finance (DeFi) menu gives the user the ability to delve deeper into Uniswap statistics (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/tokens/" target="_blank">tokens</a>, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/stats/" target="_blank">stats</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/pairs/" target="_blank">pairs</a>),
-information about dApps (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/gdapps/" target="_blank">gdapps</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/stvl/" target="_blank">stvl</a>)
-as well as information about terra blockchain (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/sreturn/" target="_blank">sreturn</a>) and luna (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/lcsc/" target="_blank">lcsc</a>).
+The Cryptocurrency Decentralized Finance (DeFi) menu gives the user the ability
+to delve deeper into Uniswap statistics
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/tokens/" target="_blank">tokens</a>,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/stats/" target="_blank">stats</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/pairs/" target="_blank">pairs</a>),
+information about dApps
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/gdapps/" target="_blank">gdapps</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/stvl/" target="_blank">stvl</a>)
+as well as information about terra blockchain
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/sreturn/" target="_blank">sreturn</a>)
+and luna
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/lcsc/" target="_blank">lcsc</a>).
 
 ## How to use
 
-The Cryptocurrency Decentralized Finance (DeFi) menu is called upon by typing `defi`, while inside the `crypto` menu, which opens the following menu:
+The Cryptocurrency Decentralized Finance (DeFi) menu is called upon by typing
+`defi`, while inside the `crypto` menu, which opens the following menu:
 
 ![Cryptocurrency Decentralized Finance (DeFi) menu](https://user-images.githubusercontent.com/46355364/178734540-716f2232-20a4-4f31-b8a8-10c0badfd5dd.png)
 
-Alternatively, you can also type `/crypto/defi`. Within the Cryptocurrency Decentralized Finance (DeFi) menu you can
-find features that delve deeper in the world of decentralized finance.
+Alternatively, you can also type `/crypto/defi`. Within the Cryptocurrency
+Decentralized Finance (DeFi) menu you can find features that delve deeper in the
+world of decentralized finance.
 
 ## Examples
 
-Delving deeper in Uniswap, we can start bij looking at the tokens trade-able with `tokens`:
+Delving deeper in Uniswap, we can start bij looking at the tokens trade-able
+with `tokens`:
 
 ```txt
 2022 Jul 19, 11:04 (🦋) /crypto/defi/ $ tokens
@@ -99,7 +113,8 @@ Furthermore, we can also look at the recently added pairs with `pairs`:
 └─────────────────────┴──────────────┴───────────────┴────────────────┴───────────┴─────────┴─────────────┘
 ```
 
-When interested in dApps, it is possible to find the top DeFI dApps grouped by chain with `gdapps`:
+When interested in dApps, it is possible to find the top DeFI dApps grouped by
+chain with `gdapps`:
 
 ![top DeFI dApps grouped by chain](https://user-images.githubusercontent.com/46355364/178734582-c9b96ce5-e0d5-4913-9e7d-ced35e4118d7.png)
 
@@ -154,30 +169,47 @@ Including a list of recent dApps with `ldapps`:
 │ PancakeSwap  │ CAKE   │ Dexes        │ Binance       │ 0.02         │ 0.90          │ 5.93         │ 2.996 B │
 └──────────────┴────────┴──────────────┴───────────────┴──────────────┴───────────────┴──────────────┴─────────┘
 ```
----
-title: Introduction to Cryptocurrency Decentralized Finance (DeFi)
-keywords: ['cryptocurrency', 'defi', 'decentralized finance', 'crypto', 'dapps', 'uniswap', 'funding', 'luna', 'terra', 'blockchain']
-excerpt: "An Introduction to Cryptocurrency DeFi menu, within the Cryptocurrency Menu,
-with a brief overview of the features."
-geekdocCollapseSection: true
+
 ---
 
-The Cryptocurrency Decentralized Finance (DeFi) menu gives the user the ability to delve deeper into Uniswap statistics (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/tokens/" target="_blank">tokens</a>, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/stats/" target="_blank">stats</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/pairs/" target="_blank">pairs</a>),
-information about dApps (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/gdapps/" target="_blank">gdapps</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/stvl/" target="_blank">stvl</a>)
-as well as information about terra blockchain (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/sreturn/" target="_blank">sreturn</a>) and luna (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/lcsc/" target="_blank">lcsc</a>).
+title: Introduction to Cryptocurrency Decentralized Finance (DeFi) keywords:
+['cryptocurrency', 'defi', 'decentralized finance', 'crypto', 'dapps',
+'uniswap', 'funding', 'luna', 'terra', 'blockchain'] excerpt: "An Introduction
+to Cryptocurrency DeFi menu, within the Cryptocurrency Menu, with a brief
+overview of the features."
+
+---
+
+The Cryptocurrency Decentralized Finance (DeFi) menu gives the user the ability
+to delve deeper into Uniswap statistics
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/tokens/" target="_blank">tokens</a>,
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/stats/" target="_blank">stats</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/pairs/" target="_blank">pairs</a>),
+information about dApps
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/gdapps/" target="_blank">gdapps</a>
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/stvl/" target="_blank">stvl</a>)
+as well as information about terra blockchain
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/sreturn/" target="_blank">sreturn</a>)
+and luna
+(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/lcsc/" target="_blank">lcsc</a>).
 
 ## How to use
 
-The Cryptocurrency Decentralized Finance (DeFi) menu is called upon by typing `defi`, while inside the `crypto` menu, which opens the following menu:
+The Cryptocurrency Decentralized Finance (DeFi) menu is called upon by typing
+`defi`, while inside the `crypto` menu, which opens the following menu:
 
 ![Cryptocurrency Decentralized Finance (DeFi) menu](https://user-images.githubusercontent.com/46355364/178734540-716f2232-20a4-4f31-b8a8-10c0badfd5dd.png)
 
-Alternatively, you can also type `/crypto/defi`. Within the Cryptocurrency Decentralized Finance (DeFi) menu you can
-find features that delve deeper in the world of decentralized finance.
+Alternatively, you can also type `/crypto/defi`. Within the Cryptocurrency
+Decentralized Finance (DeFi) menu you can find features that delve deeper in the
+world of decentralized finance.
 
 ## Examples
 
-Delving deeper in Uniswap, we can start bij looking at the tokens trade-able with `tokens`:
+Delving deeper in Uniswap, we can start bij looking at the tokens trade-able
+with `tokens`:
 
 ```txt
 2022 Jul 19, 11:04 (🦋) /crypto/defi/ $ tokens
@@ -255,7 +287,8 @@ Furthermore, we can also look at the recently added pairs with `pairs`:
 └─────────────────────┴──────────────┴───────────────┴────────────────┴───────────┴─────────┴─────────────┘
 ```
 
-When interested in dApps, it is possible to find the top DeFI dApps grouped by chain with `gdapps`:
+When interested in dApps, it is possible to find the top DeFI dApps grouped by
+chain with `gdapps`:
 
 ![top DeFI dApps grouped by chain](https://user-images.githubusercontent.com/46355364/178734582-c9b96ce5-e0d5-4913-9e7d-ced35e4118d7.png)
 

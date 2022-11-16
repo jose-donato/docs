@@ -1,6 +1,5 @@
 ---
-geekdocCollapseSection: true
+
 ---
 
-**Available commands:**
-{{< toc-tree >}}
+**Available commands:** {{< toc-tree >}}

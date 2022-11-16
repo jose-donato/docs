@@ -34,26 +34,44 @@ date: "2022-06-20"
 type: guides
 status: publish
 excerpt: "This guide introduces the Fundamental Analysis menu within the Stocks menu, briefly explains the features, and provides examples in context."
-geekdocCollapseSection: true
+
 ---
 
-The Fundamental Analysis menu is a set of tools for measuring a company's intrinsic value, relative to the market price. Functions within this menu are generally microeconomic factors. The purpose is to harness data reported in financial statements and estimate the tangible value of a share. Revenue of companies with a long public history are easier to forecast, and the consensus of many analysts will indicate the level of confidence in future expectations. When people refer to "P/E ratios", "multiples", or "institutional holders", they are speaking of fundamentals. When people say, "...this stock is detached from its fundamentals!", they are talking about the balance sheet. In addition to these features, there are <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/screener/" target="_blank">screeners</a> to compare fundamentals across groups of companies.
+The Fundamental Analysis menu is a set of tools for measuring a company's
+intrinsic value, relative to the market price. Functions within this menu are
+generally microeconomic factors. The purpose is to harness data reported in
+financial statements and estimate the tangible value of a share. Revenue of
+companies with a long public history are easier to forecast, and the consensus
+of many analysts will indicate the level of confidence in future expectations.
+When people refer to "P/E ratios", "multiples", or "institutional holders", they
+are speaking of fundamentals. When people say, "...this stock is detached from
+its fundamentals!", they are talking about the balance sheet. In addition to
+these features, there are
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/screener/" target="_blank">screeners</a>
+to compare fundamentals across groups of companies.
 
 There are three API tokens (free) required to use every feature in this menu:
 
 - <a href="https://site.financialmodelingprep.com/developer/docs/" target="_blank">FMP</a>
 - <a href="https://polygon.io" target="_blank">Polygon</a>
-- <a href="https://www.alphavantage.co/support/#api-key" target="_blank">Alpha Vantage</a>
+- <a href="https://www.alphavantage.co/support/#api-key" target="_blank">Alpha
+  Vantage</a>
 
-Set the obtained tokens in the terminal with the `/keys` menu. Refer to the <a href="https://openbb-finance.github.io/OpenBBTerminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Getting Started Guide</a> for more information about this.
+Set the obtained tokens in the terminal with the `/keys` menu. Refer to the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Getting
+Started Guide</a> for more information about this.
 
 <h2>How to use the Fundamental Analysis Menu</h2>
 
-Enter the submenu from the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks Menu</a>, with a ticker loaded.
+Enter the submenu from the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks
+Menu</a>, with a ticker loaded.
 
 <img width="1166" alt="Fundamental Analysis Menu" src="https://user-images.githubusercontent.com/85772166/175221782-87f0d0df-3a50-4268-8af8-a5f1f12f3d32.png"/>
 
-Some commands offer interpretations of the data, but, the majority are statements reported to the SEC. The `data` command is a table of basic statistics, including price.
+Some commands offer interpretations of the data, but, the majority are
+statements reported to the SEC. The `data` command is a table of basic
+statistics, including price.
 
 ```
 (🦋) /stocks/fa/ $ data
@@ -153,7 +171,8 @@ Some commands offer interpretations of the data, but, the majority are statement
 ...continued...
 ```
 
-`analysis` reads SEC filings with NLP and extracts the most important statements.
+`analysis` reads SEC filings with NLP and extracts the most important
+statements.
 
 ```
 (🦋) /stocks/fa/ $ analysis
@@ -184,7 +203,9 @@ The revolving line provides for availability for general corporate purposes, wit
 In response to a Springing Lien Triggering Event (as defined in the credit agreement), we would be required to enter into certain documents that create in favor of TD Bank, N. A., as administrative agent, and the lenders party to such documents as legal, valid, and enforceable first priority lien on the collateral described therein.
 ```
 
-`warnings` uses <a href="https://www.drwealth.com/gone-fishing-with-buffett-by-sean-seah/comment-page-1/" target="_blank">Sean Seah's signals</a> to highlight certain of qualities a business.
+`warnings` uses
+<a href="https://www.drwealth.com/gone-fishing-with-buffett-by-sean-seah/comment-page-1/" target="_blank">Sean
+Seah's signals</a> to highlight certain of qualities a business.
 
 ```
 (🦋) /stocks/fa/ $ warnings
@@ -223,15 +244,22 @@ NOT consistently high return on assets
 5x Net Income < Long-Term Debt
 ```
 
-Historical market cap (`mktcap`) is a different way to look at a company's value over time. It can be useful for smoothing a profile where the number of outstanding shares is dynamic.
+Historical market cap (`mktcap`) is a different way to look at a company's value
+over time. It can be useful for smoothing a profile where the number of
+outstanding shares is dynamic.
 
 ![Historical Market Cap of Smith & Wesson](https://user-images.githubusercontent.com/85772166/175222009-30929c7b-5de9-49dd-862f-569fd8b28732.png)
 
-There are optional arguments for every command, attach the `-h` argument to show the help dialogue.
+There are optional arguments for every command, attach the `-h` argument to show
+the help dialogue.
 
 <h2>The FMP Submenu</h2>
 
-This submenu utilizes the <a href="https://site.financialmodelingprep.com/developer/docs/" target="_blank">Financial Modeling Prep</a> API exclusively. The information provided here may seem redundant at first glance; however, consulting a diverse set of sources will lead to better-informed decisions.
+This submenu utilizes the
+<a href="https://site.financialmodelingprep.com/developer/docs/" target="_blank">Financial
+Modeling Prep</a> API exclusively. The information provided here may seem
+redundant at first glance; however, consulting a diverse set of sources will
+lead to better-informed decisions.
 
 <img width="1164" alt="The Financial Modeling Prep Submenu" src="https://user-images.githubusercontent.com/85772166/175222069-bd0470ac-75b9-450b-a993-016022ef6828.png"/>
 
@@ -306,7 +334,8 @@ Use `growth` to focus on the rate of change.
 
 <h2>Examples</h2>
 
-`cal` will show the upcoming earnings date, and the averages of same-period past-performance.
+`cal` will show the upcoming earnings date, and the averages of same-period
+past-performance.
 
 ```
 (🦋) /stocks/fa/ $ cal
@@ -323,19 +352,25 @@ Use `growth` to focus on the rate of change.
 
 ![SWBI Extended Dupont](https://user-images.githubusercontent.com/85772166/175222164-1a279555-ed92-42f3-b604-37023d062278.png)
 
-Discounted cash flow statements are popular as a revenue/value forecasting tool. `dcf` will automatically prepare one as a spreadsheet, where the factors can be modified.
+Discounted cash flow statements are popular as a revenue/value forecasting tool.
+`dcf` will automatically prepare one as a spreadsheet, where the factors can be
+modified.
 
 ![Discounted cash flow statement for Smith and Wesson](https://user-images.githubusercontent.com/85772166/175222318-57037807-22e2-4a7a-9e2c-e24c2779c35b.png)
 
-Stock splits are an important part of the historical price-per-share. While they are supposed to be market cap neutral, underlying fundamentals will drive the corporate actions.
+Stock splits are an important part of the historical price-per-share. While they
+are supposed to be market cap neutral, underlying fundamentals will drive the
+corporate actions.
 
 ![Smith and Wesson splits](https://user-images.githubusercontent.com/85772166/175222380-d539c13b-4672-4f00-a3b6-12884c5c15cf.png)
 
-Sometimes a company must do a reverse-split to save its listing from collapsing share prices.
+Sometimes a company must do a reverse-split to save its listing from collapsing
+share prices.
 
 ![Aurora Cannabis reverse split](https://user-images.githubusercontent.com/85772166/175223786-6bb7e14b-09c5-43fd-b6fd-beaa4551e814.png)
 
-Use the command `shrs` to see a quick breakdown of the ownership and major shareholders.
+Use the command `shrs` to see a quick breakdown of the ownership and major
+shareholders.
 
 ```
 (🦋) /stocks/fa/ $ shrs
@@ -407,45 +442,72 @@ Use the command `shrs` to see a quick breakdown of the ownership and major share
 └────────────────────────────────────────────────────┴───────────┴───────────────┴────────┴──────────┘
 ```
 
-Financial statements default to yearly reports, adding `-q` will flag for quarterly statements with `-l n` being the number of quarters to show.
+Financial statements default to yearly reports, adding `-q` will flag for
+quarterly statements with `-l n` being the number of quarters to show.
 
 <img width="1368" alt="SWBI Quarterly Income Statements" src="https://user-images.githubusercontent.com/85772166/175222488-1f18fb94-4ec6-4ecb-bbbb-d8974b1f0358.png"/>
 
-The consistent delivery of dividends that increase over time is usually a good sign for investors. Mature companies with predictable revenue like utilities and regional banks, but also funds, pay regular dividends. `divs` will show the sixteen most recent dividend payments and the date of payment as a table. `divs -p` will display a chart of the complete dividend history. The graph below shows the dividend history of the SPDR Select Energy Sector Fund, XLE.
+The consistent delivery of dividends that increase over time is usually a good
+sign for investors. Mature companies with predictable revenue like utilities and
+regional banks, but also funds, pay regular dividends. `divs` will show the
+sixteen most recent dividend payments and the date of payment as a table.
+`divs -p` will display a chart of the complete dividend history. The graph below
+shows the dividend history of the SPDR Select Energy Sector Fund, XLE.
 
 ![XLE Historical Dividends](https://user-images.githubusercontent.com/85772166/175222538-39ec28d5-c308-438f-b014-7a98ff1726bb.png)
 
-To play a demonstration of this menu in the Terminal first, acquire and enter the three API keys named near the top of this page, then run `exe fa_demo.openbb` from the main menu.
+To play a demonstration of this menu in the Terminal first, acquire and enter
+the three API keys named near the top of this page, then run
+`exe fa_demo.openbb` from the main menu.
 
 ## Back to the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks Menu Guide</a>
 
-title: Introduction to the Fundamental Analysis Menu
-keywords: ['fundamentals', 'fundamental', 'fa', 'ratios', 'earnings', 'balance', 'income', 'cash', 'statement', 'statements', 'sec', 'multiples', 'price', 'ebitda', 'ebitdam', 'revenue', 'quarter', 'annual', 'change', 'company', 'performance', 'filing', 'filings', '10K', '8K', 'audit', 'audited']
-date: "2022-06-20"
-type: guides
-status: publish
-excerpt: "This guide introduces the Fundamental Analysis menu within the Stocks menu, briefly explains the features, and provides examples in context."
-geekdocCollapseSection: true
+title: Introduction to the Fundamental Analysis Menu keywords: ['fundamentals',
+'fundamental', 'fa', 'ratios', 'earnings', 'balance', 'income', 'cash',
+'statement', 'statements', 'sec', 'multiples', 'price', 'ebitda', 'ebitdam',
+'revenue', 'quarter', 'annual', 'change', 'company', 'performance', 'filing',
+'filings', '10K', '8K', 'audit', 'audited'] date: "2022-06-20" type: guides
+status: publish excerpt: "This guide introduces the Fundamental Analysis menu
+within the Stocks menu, briefly explains the features, and provides examples in
+context."
 
 ---
 
-The Fundamental Analysis menu is a set of tools for measuring a company's intrinsic value, relative to the market price. Functions within this menu are generally microeconomic factors. The purpose is to harness data reported in financial statements and estimate the tangible value of a share. Revenue of companies with a long public history are easier to forecast, and the consensus of many analysts will indicate the level of confidence in future expectations. When people refer to "P/E ratios", "multiples", or "institutional holders", they are speaking of fundamentals. When people say, "...this stock is detached from its fundamentals!", they are talking about the balance sheet. In addition to these features, there are <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/screener/" target="_blank">screeners</a> to compare fundamentals across groups of companies.
+The Fundamental Analysis menu is a set of tools for measuring a company's
+intrinsic value, relative to the market price. Functions within this menu are
+generally microeconomic factors. The purpose is to harness data reported in
+financial statements and estimate the tangible value of a share. Revenue of
+companies with a long public history are easier to forecast, and the consensus
+of many analysts will indicate the level of confidence in future expectations.
+When people refer to "P/E ratios", "multiples", or "institutional holders", they
+are speaking of fundamentals. When people say, "...this stock is detached from
+its fundamentals!", they are talking about the balance sheet. In addition to
+these features, there are
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/screener/" target="_blank">screeners</a>
+to compare fundamentals across groups of companies.
 
 There are three API tokens (free) required to use every feature in this menu:
 
 - <a href="https://site.financialmodelingprep.com/developer/docs/" target="_blank">FMP</a>
 - <a href="https://polygon.io" target="_blank">Polygon</a>
-- <a href="https://www.alphavantage.co/support/#api-key" target="_blank">Alpha Vantage</a>
+- <a href="https://www.alphavantage.co/support/#api-key" target="_blank">Alpha
+  Vantage</a>
 
-Set the obtained tokens in the terminal with the `/keys` menu. Refer to the <a href="https://openbb-finance.github.io/OpenBBTerminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Getting Started Guide</a> for more information about this.
+Set the obtained tokens in the terminal with the `/keys` menu. Refer to the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Getting
+Started Guide</a> for more information about this.
 
 <h2>How to use the Fundamental Analysis Menu</h2>
 
-Enter the submenu from the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks Menu</a>, with a ticker loaded.
+Enter the submenu from the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks
+Menu</a>, with a ticker loaded.
 
 <img width="1166" alt="Fundamental Analysis Menu" src="https://user-images.githubusercontent.com/85772166/175221782-87f0d0df-3a50-4268-8af8-a5f1f12f3d32.png"/>
 
-Some commands offer interpretations of the data, but, the majority are statements reported to the SEC. The `data` command is a table of basic statistics, including price.
+Some commands offer interpretations of the data, but, the majority are
+statements reported to the SEC. The `data` command is a table of basic
+statistics, including price.
 
 ```
 (🦋) /stocks/fa/ $ data
@@ -545,7 +607,8 @@ Some commands offer interpretations of the data, but, the majority are statement
 ...continued...
 ```
 
-`analysis` reads SEC filings with NLP and extracts the most important statements.
+`analysis` reads SEC filings with NLP and extracts the most important
+statements.
 
 ```
 (🦋) /stocks/fa/ $ analysis
@@ -576,7 +639,9 @@ The revolving line provides for availability for general corporate purposes, wit
 In response to a Springing Lien Triggering Event (as defined in the credit agreement), we would be required to enter into certain documents that create in favor of TD Bank, N. A., as administrative agent, and the lenders party to such documents as legal, valid, and enforceable first priority lien on the collateral described therein.
 ```
 
-`warnings` uses <a href="https://www.drwealth.com/gone-fishing-with-buffett-by-sean-seah/comment-page-1/" target="_blank">Sean Seah's signals</a> to highlight certain of qualities a business.
+`warnings` uses
+<a href="https://www.drwealth.com/gone-fishing-with-buffett-by-sean-seah/comment-page-1/" target="_blank">Sean
+Seah's signals</a> to highlight certain of qualities a business.
 
 ```
 (🦋) /stocks/fa/ $ warnings
@@ -615,15 +680,22 @@ NOT consistently high return on assets
 5x Net Income < Long-Term Debt
 ```
 
-Historical market cap (`mktcap`) is a different way to look at a company's value over time. It can be useful for smoothing a profile where the number of outstanding shares is dynamic.
+Historical market cap (`mktcap`) is a different way to look at a company's value
+over time. It can be useful for smoothing a profile where the number of
+outstanding shares is dynamic.
 
 ![Historical Market Cap of Smith & Wesson](https://user-images.githubusercontent.com/85772166/175222009-30929c7b-5de9-49dd-862f-569fd8b28732.png)
 
-There are optional arguments for every command, attach the `-h` argument to show the help dialogue.
+There are optional arguments for every command, attach the `-h` argument to show
+the help dialogue.
 
 <h2>The FMP Submenu</h2>
 
-This submenu utilizes the <a href="https://site.financialmodelingprep.com/developer/docs/" target="_blank">Financial Modeling Prep</a> API exclusively. The information provided here may seem redundant at first glance; however, consulting a diverse set of sources will lead to better-informed decisions.
+This submenu utilizes the
+<a href="https://site.financialmodelingprep.com/developer/docs/" target="_blank">Financial
+Modeling Prep</a> API exclusively. The information provided here may seem
+redundant at first glance; however, consulting a diverse set of sources will
+lead to better-informed decisions.
 
 <img width="1164" alt="The Financial Modeling Prep Submenu" src="https://user-images.githubusercontent.com/85772166/175222069-bd0470ac-75b9-450b-a993-016022ef6828.png"/>
 
@@ -698,7 +770,8 @@ Use `growth` to focus on the rate of change.
 
 <h2>Examples</h2>
 
-`cal` will show the upcoming earnings date, and the averages of same-period past-performance.
+`cal` will show the upcoming earnings date, and the averages of same-period
+past-performance.
 
 ```
 (🦋) /stocks/fa/ $ cal
@@ -715,19 +788,25 @@ Use `growth` to focus on the rate of change.
 
 ![SWBI Extended Dupont](https://user-images.githubusercontent.com/85772166/175222164-1a279555-ed92-42f3-b604-37023d062278.png)
 
-Discounted cash flow statements are popular as a revenue/value forecasting tool. `dcf` will automatically prepare one as a spreadsheet, where the factors can be modified.
+Discounted cash flow statements are popular as a revenue/value forecasting tool.
+`dcf` will automatically prepare one as a spreadsheet, where the factors can be
+modified.
 
 ![Discounted cash flow statement for Smith and Wesson](https://user-images.githubusercontent.com/85772166/175222318-57037807-22e2-4a7a-9e2c-e24c2779c35b.png)
 
-Stock splits are an important part of the historical price-per-share. While they are supposed to be market cap neutral, underlying fundamentals will drive the corporate actions.
+Stock splits are an important part of the historical price-per-share. While they
+are supposed to be market cap neutral, underlying fundamentals will drive the
+corporate actions.
 
 ![Smith and Wesson splits](https://user-images.githubusercontent.com/85772166/175222380-d539c13b-4672-4f00-a3b6-12884c5c15cf.png)
 
-Sometimes a company must do a reverse-split to save its listing from collapsing share prices.
+Sometimes a company must do a reverse-split to save its listing from collapsing
+share prices.
 
 ![Aurora Cannabis reverse split](https://user-images.githubusercontent.com/85772166/175223786-6bb7e14b-09c5-43fd-b6fd-beaa4551e814.png)
 
-Use the command `shrs` to see a quick breakdown of the ownership and major shareholders.
+Use the command `shrs` to see a quick breakdown of the ownership and major
+shareholders.
 
 ```
 (🦋) /stocks/fa/ $ shrs
@@ -799,14 +878,24 @@ Use the command `shrs` to see a quick breakdown of the ownership and major share
 └────────────────────────────────────────────────────┴───────────┴───────────────┴────────┴──────────┘
 ```
 
-Financial statements default to yearly reports, adding `-q` will flag for quarterly statements with `-l n` being the number of quarters to show.
+Financial statements default to yearly reports, adding `-q` will flag for
+quarterly statements with `-l n` being the number of quarters to show.
 
 <img width="1368" alt="SWBI Quarterly Income Statements" src="https://user-images.githubusercontent.com/85772166/175222488-1f18fb94-4ec6-4ecb-bbbb-d8974b1f0358.png"/>
 
-The consistent delivery of dividends that increase over time is usually a good sign for investors. Mature companies with predictable revenue like utilities and regional banks, but also funds, pay regular dividends. `divs` will show the sixteen most recent dividend payments and the date of payment as a table. `divs -p` will display a chart of the complete dividend history. The graph below shows the dividend history of the SPDR Select Energy Sector Fund, XLE.
+The consistent delivery of dividends that increase over time is usually a good
+sign for investors. Mature companies with predictable revenue like utilities and
+regional banks, but also funds, pay regular dividends. `divs` will show the
+sixteen most recent dividend payments and the date of payment as a table.
+`divs -p` will display a chart of the complete dividend history. The graph below
+shows the dividend history of the SPDR Select Energy Sector Fund, XLE.
 
 ![XLE Historical Dividends](https://user-images.githubusercontent.com/85772166/175222538-39ec28d5-c308-438f-b014-7a98ff1726bb.png)
 
-To play a demonstration of this menu in the Terminal first, acquire and enter the three API keys named near the top of this page, then run `exe fa_demo.openbb` from the main menu.
+To play a demonstration of this menu in the Terminal first, acquire and enter
+the three API keys named near the top of this page, then run
+`exe fa_demo.openbb` from the main menu.
 
-Back to the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks Menu Guide</a>
+Back to the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks
+Menu Guide</a>
