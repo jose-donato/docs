@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_ethplorer_model.get_top_token_holders
+## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_top_token_holders
 
 ```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_top_token_holders(address: Any, sortby: str, ascend: bool) -> DataFrame:
+def get_top_token_holders(address: Any, sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L298)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L305)
 
 Description: Get info about top token holders. [Source: Ethplorer]
 
@@ -32,7 +32,7 @@ Description: Get info about top token holders. [Source: Ethplorer]
 
 | Type | Description |
 | ---- | ----------- |
-|  | DataFrame with list of top token holders. |
+| pd.DataFrame | DataFrame with list of top token holders. |
 
 ## Examples
 
@@ -41,12 +41,12 @@ Description: Get info about top token holders. [Source: Ethplorer]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_ethplorer_view.display_top_token_holders
+## openbb_terminal.cryptocurrency.onchain.ethplorer_view.display_top_token_holders
 
-```python title='openbb_terminal/decorators.py'
-def display_top_token_holders() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_view.py'
+def display_top_token_holders(address: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L114)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L114)
 
 Description: Display info about top ERC20 token holders. [Source: Ethplorer]
 
@@ -62,7 +62,7 @@ Description: Display info about top ERC20 token holders. [Source: Ethplorer]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_coinpaprika_model.get_all_contract_platforms
+## openbb_terminal.cryptocurrency.overview.coinpaprika_model.get_all_contract_platforms
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
-def get_all_contract_platforms() -> DataFrame:
+def get_all_contract_platforms() -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L398)
 
@@ -22,14 +22,13 @@ Description: List all smart contract platforms like ethereum, solana, cosmos, po
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | index, platform_id |
+| pd.DataFrame | index, platform_id |
 
 ## Examples
 
@@ -38,10 +37,10 @@ Description: List all smart contract platforms like ethereum, solana, cosmos, po
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_coinpaprika_view.display_all_platforms
+## openbb_terminal.cryptocurrency.overview.coinpaprika_view.display_all_platforms
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
-def display_all_platforms(export: str) -> None:
+def display_all_platforms(export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L324)
 
@@ -55,7 +54,7 @@ Description: List all smart contract platforms like ethereum, solana, cosmos, po
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_glassnode_model.get_hashrate
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_model.get_hashrate
 
-```python title='openbb_terminal/decorators.py'
-def get_hashrate() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py'
+def get_hashrate(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L365)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L374)
 
 Description: Returns dataframe with mean hashrate of btc or eth blockchain and symbol price
 
@@ -42,14 +42,14 @@ Description: Returns dataframe with mean hashrate of btc or eth blockchain and s
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_glassnode_view.display_hashrate
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_view.display_hashrate
 
-```python title='openbb_terminal/decorators.py'
-def display_hashrate() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py'
+def display_hashrate(symbol: str, start_date: str, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L306)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L318)
 
-Description: Display dataframe with mean hashrate of btc or eth blockchain and symbol price.
+Description: Plots dataframe with mean hashrate of btc or eth blockchain and symbol price.
 
 ## Parameters
 
@@ -64,7 +64,7 @@ Description: Display dataframe with mean hashrate of btc or eth blockchain and s
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

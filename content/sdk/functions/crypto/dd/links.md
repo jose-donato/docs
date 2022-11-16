@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_links
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_links
 
-```python title='openbb_terminal/decorators.py'
-def get_links() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_links(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L186)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L197)
 
 Description: Returns asset's links
 
@@ -39,14 +39,14 @@ Description: Returns asset's links
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_links
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_links
 
-```python title='openbb_terminal/decorators.py'
-def display_links() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_links(symbol: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L237)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L249)
 
-Description: Display coin links
+Description: Prints table showing coin links
 
 ## Parameters
 
@@ -58,7 +58,7 @@ Description: Display coin links
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_ethplorer_model.get_address_history
+## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_address_history
 
 ```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_address_history(address: Any, sortby: str, ascend: bool) -> DataFrame:
+def get_address_history(address: Any, sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L329)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L336)
 
 Description: Get information about balance historical transactions. [Source: Ethplorer]
 
@@ -32,7 +32,7 @@ Description: Get information about balance historical transactions. [Source: Eth
 
 | Type | Description |
 | ---- | ----------- |
-|  | DataFrame with balance historical transactions (last 100) |
+| pd.DataFrame | DataFrame with balance historical transactions (last 100) |
 
 ## Examples
 
@@ -41,12 +41,12 @@ Description: Get information about balance historical transactions. [Source: Eth
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_ethplorer_view.display_address_history
+## openbb_terminal.cryptocurrency.onchain.ethplorer_view.display_address_history
 
-```python title='openbb_terminal/decorators.py'
-def display_address_history() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_view.py'
+def display_address_history(address: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L158)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L158)
 
 Description: Display information about balance historical transactions. [Source: Ethplorer]
 
@@ -62,7 +62,7 @@ Description: Display information about balance historical transactions. [Source:
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forecast_rnn_model.get_rnn_data
+## openbb_terminal.forecast.rnn_model.get_rnn_data
 
 ```python title='openbb_terminal/forecast/rnn_model.py'
-def get_rnn_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool) -> None:
+def get_rnn_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool) -> Tuple
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rnn_model.py#L21)
 
@@ -36,16 +36,14 @@ Description: Perform RNN forecasting
 | n_epochs | int | Number of epochs over which to train the model. Defaults to 100. | 100 | False |
 | learning_rate | float | Defaults to 1e-3. | 1e-3 | False |
 | model_save_name | str | Name for model. Defaults to "brnn_model". | s | False |
-| force_reset | bool | If set to True, any previously-existing model with the same name will be reset
-(all checkpoints will be discarded). Defaults to True. | True | False |
-| save_checkpoints | bool | Whether or not to automatically save the untrained model and checkpoints from training.
-Defaults to True. | True | False |
+| force_reset | bool | If set to True, any previously-existing model with the same name will be reset<br/>(all checkpoints will be discarded). Defaults to True. | True | False |
+| save_checkpoints | bool | Whether or not to automatically save the untrained model and checkpoints from training.<br/>Defaults to True. | True | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| List[TimeSeries] | Adjusted Data series |
+| Tuple[List[TimeSeries], List[TimeSeries], List[TimeSeries], Optional[float], type[RNNModel]] | Adjusted Data series,<br/>Historical forecast by best RNN model,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best RNN Model |
 
 ## Examples
 
@@ -54,10 +52,10 @@ Defaults to True. | True | False |
 </TabItem>
 <TabItem value="view" label="View">
 
-## forecast_rnn_view.display_rnn_forecast
+## openbb_terminal.forecast.rnn_view.display_rnn_forecast
 
 ```python title='openbb_terminal/forecast/rnn_view.py'
-def display_rnn_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+def display_rnn_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, n_predict: int, train_split: float, forecast_horizon: int, model_type: str, hidden_dim: int, dropout: float, batch_size: int, n_epochs: int, learning_rate: float, model_save_name: str, training_length: int, input_chunk_size: int, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Optional[datetime.datetime], end_date: Optional[datetime.datetime], naive: bool, export_pred_raw: bool, external_axes: Optional[List[axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rnn_view.py#L20)
 
@@ -80,21 +78,19 @@ Description: Display RNN forecast
 | n_epochs | int | Number of epochs over which to train the model. Defaults to 100. | 100 | False |
 | learning_rate | float | Defaults to 1e-3. | 1e-3 | False |
 | model_save_name | str | Name for model. Defaults to "brnn_model". | s | False |
-| force_reset | bool | If set to True, any previously-existing model with the same name will be reset
-(all checkpoints will be discarded). Defaults to True. | True | False |
+| force_reset | bool | If set to True, any previously-existing model with the same name will be reset<br/>(all checkpoints will be discarded). Defaults to True. | True | False |
 | save_checkpoints | bool | Whether or not to automatically save the untrained model and checkpoints from training. Defaults to True. | True | False |
 | forecast_only | bool | Whether to only show dates in the forecasting range. Defaults to False. | False | False |
 | export | str | Format to export data | None | False |
 | residuals | bool | Whether to show residuals for the model. Defaults to False. | False | False |
 | start_date | Optional[datetime] | The starting date to perform analysis, data before this is trimmed. Defaults to None. | None | False |
 | end_date | Optional[datetime] | The ending date to perform analysis, data after this is trimmed. Defaults to None. | None | False |
-| naive | bool | Whether to show the naive baseline. This just assumes the closing price will be the same
-as the previous day's closing price. Defaults to False. | False | False |
+| naive | bool | Whether to show the naive baseline. This just assumes the closing price will be the same<br/>as the previous day's closing price. Defaults to False. | False | False |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

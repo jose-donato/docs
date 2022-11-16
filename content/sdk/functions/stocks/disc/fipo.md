@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # fipo
 
-## stocks_disc_finnhub_model.get_future_ipo
+## openbb_terminal.stocks.discovery.finnhub_model.get_future_ipo
 
 ```python title='openbb_terminal/stocks/discovery/finnhub_model.py'
-def get_future_ipo(num_days_ahead: int, end_date: Union[str, NoneType]) -> None:
+def get_future_ipo(num_days_ahead: int, end_date: Optional[str]) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L103)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L115)
 
 Description: Future IPOs dates. [Source: Finnhub]
 
@@ -23,7 +23,9 @@ Description: Future IPOs dates. [Source: Finnhub]
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Get dataframe with future IPOs |
 
 ## Examples
 

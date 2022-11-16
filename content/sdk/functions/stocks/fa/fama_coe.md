@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # fama_coe
 
-## stocks_fa_dcf_model.get_fama_coe
+## openbb_terminal.stocks.fundamental_analysis.dcf_model.get_fama_coe
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/dcf_model.py'
-def get_fama_coe(symbol: str) -> float:
+def get_fama_coe(symbol: str) -> float
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L300)
 

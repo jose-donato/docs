@@ -11,25 +11,24 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## alt_oss_runa_model.get_startups
+## openbb_terminal.alternative.oss.runa_model.get_startups
 
 ```python title='openbb_terminal/alternative/oss/runa_model.py'
-def get_startups() -> DataFrame:
+def get_startups() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L103)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L104)
 
-Description: Get startups from ROSS index [Source: https://runacap.com/]
+Description: Get startups from ROSS index [Source: https://runacap.com/].
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-|  | list of startups |
+| pd.DataFrame | list of startups |
 
 ## Examples
 
@@ -38,14 +37,14 @@ Description: Get startups from ROSS index [Source: https://runacap.com/]
 </TabItem>
 <TabItem value="view" label="View">
 
-## alt_oss_runa_view.display_rossindex
+## openbb_terminal.alternative.oss.runa_view.display_rossindex
 
 ```python title='openbb_terminal/alternative/oss/runa_view.py'
-def display_rossindex(limit: int, sortby: str, ascend: bool, show_chart: bool, show_growth: bool, chart_type: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_rossindex(limit: int, sortby: str, ascend: bool, show_chart: bool, show_growth: bool, chart_type: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_view.py#L25)
 
-Description: Display list of startups from ross index [Source: https://runacap.com/]
+Description: Plots list of startups from ross index [Source: https://runacap.com/]
 
 ## Parameters
 
@@ -62,7 +61,7 @@ Description: Display list of startups from ross index [Source: https://runacap.c
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

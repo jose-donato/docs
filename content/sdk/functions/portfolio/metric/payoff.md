@@ -5,19 +5,18 @@ description: OpenBB SDK Function
 
 # payoff
 
-## portfolio_model.get_payoff_ratio
+## openbb_terminal.portfolio.portfolio_model.get_payoff_ratio
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_payoff_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
+def get_payoff_ratio(portfolio_engine: portfolio_model.PortfolioEngine) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1307)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1478)
 
 Description: Gets payoff ratio
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 

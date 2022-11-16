@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## etf_disc_wsj_model.etf_movers
+## openbb_terminal.etf.discovery.wsj_model.etf_movers
 
 ```python title='openbb_terminal/etf/discovery/wsj_model.py'
-def etf_movers(sort_type: str, export: bool) -> DataFrame:
+def etf_movers(sort_type: str, export: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_model.py#L15)
 
@@ -39,10 +39,10 @@ Description: Scrape data for top etf movers.
 </TabItem>
 <TabItem value="view" label="View">
 
-## etf_disc_wsj_view.show_top_mover
+## openbb_terminal.etf.discovery.wsj_view.show_top_mover
 
 ```python title='openbb_terminal/etf/discovery/wsj_view.py'
-def show_top_mover(sort_type: str, limit: int, export: Any) -> None:
+def show_top_mover(sort_type: str, limit: int, export: Any) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_view.py#L16)
 
@@ -58,7 +58,7 @@ Description: Show top ETF movers from wsj.com
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

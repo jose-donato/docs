@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_fa_polygon_model.get_financials
+## openbb_terminal.stocks.fundamental_analysis.polygon_model.get_financials
 
-```python title='openbb_terminal/decorators.py'
-def get_financials() -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/polygon_model.py'
+def get_financials(symbol: str, statement: str, quarterly: bool, ratios: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/polygon_model.py#L17)
 
 Description: Get ticker financial statements from polygon
 
@@ -42,12 +42,12 @@ Description: Get ticker financial statements from polygon
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_fa_polygon_view.display_fundamentals
+## openbb_terminal.stocks.fundamental_analysis.polygon_view.display_fundamentals
 
-```python title='openbb_terminal/decorators.py'
-def display_fundamentals() -> None:
+```python title='openbb_terminal/stocks/fundamental_analysis/polygon_view.py'
+def display_fundamentals(symbol: str, statement: str, limit: int, quarterly: bool, ratios: bool, plot: list, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/polygon_view.py#L26)
 
 Description: Display tickers balance sheet or income statement
 
@@ -65,7 +65,7 @@ Description: Display tickers balance sheet or income statement
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

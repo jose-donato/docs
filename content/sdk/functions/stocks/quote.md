@@ -5,23 +5,24 @@ description: OpenBB SDK Function
 
 # quote
 
-## stocks_views.display_quote
+## openbb_terminal.stocks.stocks_models.load_quote
 
-```python title='openbb_terminal/stocks/stocks_views.py'
-def display_quote(symbol: str) -> DataFrame:
+```python title='openbb_terminal/stocks/stocks_models.py'
+def load_quote(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_views.py#L6)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_models.py#L233)
 
-Description: Display quote from YahooFinance
+Description: Ticker quote.  [Source: YahooFinance]
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Ticker | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

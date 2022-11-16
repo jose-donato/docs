@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_santiment_model.get_github_activity
+## openbb_terminal.cryptocurrency.due_diligence.santiment_model.get_github_activity
 
-```python title='openbb_terminal/decorators.py'
-def get_github_activity() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/santiment_model.py'
+def get_github_activity(symbol: str, dev_activity: bool, interval: str, start_date: str, end_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L28)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_model.py#L28)
 
 Description: Returns  a list of developer activity for a given coin and time interval.
 
@@ -26,9 +26,9 @@ Description: Returns  a list of developer activity for a given coin and time int
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check github activity | None | False |
 | dev_activity | bool | Whether to filter only for development activity | None | False |
+| interval | str | Interval frequency (e.g., 1d) | None | False |
 | start_date | int | Initial date like string (e.g., 2021-10-01) | None | False |
 | end_date | int | End date like string (e.g., 2021-10-01) | None | False |
-| interval | str | Interval frequency (e.g., 1d) | None | False |
 
 ## Returns
 
@@ -43,12 +43,12 @@ Description: Returns  a list of developer activity for a given coin and time int
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_santiment_view.display_github_activity
+## openbb_terminal.cryptocurrency.due_diligence.santiment_view.display_github_activity
 
-```python title='openbb_terminal/decorators.py'
-def display_github_activity() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/santiment_view.py'
+def display_github_activity(symbol: str, start_date: str, dev_activity: bool, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L26)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_view.py#L25)
 
 Description: Returns a list of github activity for a given coin and time interval.
 
@@ -66,7 +66,7 @@ Description: Returns a list of github activity for a given coin and time interva
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

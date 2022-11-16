@@ -5,14 +5,14 @@ description: OpenBB SDK Function
 
 # spac
 
-## stocks_ba_reddit_model.get_spac
+## openbb_terminal.common.behavioural_analysis.reddit_model.get_spac
 
-```python title='openbb_terminal/decorators.py'
-def get_spac() -> None:
+```python title='openbb_terminal/common/behavioural_analysis/reddit_model.py'
+def get_spac(limit: int) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L459)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L456)
 
-Description: Get posts containing SPAC from top subreddits [Source: reddit]
+Description: Get posts containing SPAC from top subreddits [Source: reddit].
 
 ## Parameters
 
@@ -24,7 +24,7 @@ Description: Get posts containing SPAC from top subreddits [Source: reddit]
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe of reddit submissions |
+| Tuple[pd.DataFrame, dict, int] | Dataframe of reddit submission,<br/>Dictionary of tickers and counts,<br/>Number of posts found. |
 
 ## Examples
 

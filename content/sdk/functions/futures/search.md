@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## futures_yfinance_model.get_search_futures
+## openbb_terminal.futures.yfinance_model.get_search_futures
 
 ```python title='openbb_terminal/futures/yfinance_model.py'
-def get_search_futures(category: str, exchange: str, description: str) -> None:
+def get_search_futures(category: str, exchange: str, description: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L50)
 
@@ -30,7 +30,7 @@ Description: Get search futures [Source: Yahoo Finance]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
@@ -39,10 +39,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## futures_yfinance_view.display_search
+## openbb_terminal.futures.yfinance_view.display_search
 
 ```python title='openbb_terminal/futures/yfinance_view.py'
-def display_search(category: str, exchange: str, description: str, export: str) -> None:
+def display_search(category: str, exchange: str, description: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L29)
 
@@ -59,7 +59,7 @@ Description: Display search futures [Source: Yahoo Finance]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

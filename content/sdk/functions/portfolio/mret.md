@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## portfolio_model.get_monthly_returns
+## openbb_terminal.portfolio.portfolio_model.get_monthly_returns
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_monthly_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
+def get_monthly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1900)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2212)
 
 Description: Get monthly returns
 
@@ -24,14 +24,14 @@ Description: Get monthly returns
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | window | str | interval to compare cumulative returns and benchmark | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | None |
+| pd.DataFrame | DataFrame with monthly returns |
 
 ## Examples
 
@@ -40,12 +40,12 @@ Description: Get monthly returns
 </TabItem>
 <TabItem value="view" label="View">
 
-## portfolio_view.display_monthly_returns
+## openbb_terminal.portfolio.portfolio_view.display_monthly_returns
 
 ```python title='openbb_terminal/portfolio/portfolio_view.py'
-def display_monthly_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, show_vals: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+def display_monthly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str, raw: bool, show_vals: bool, export: str, external_axes: Optional[matplotlib.axes._axes.Axes]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L369)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L457)
 
 Description: Display monthly returns
 
@@ -53,7 +53,7 @@ Description: Display monthly returns
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | window | str | interval to compare cumulative returns and benchmark | None | False |
 | raw | False | Display raw data from cumulative return | None | False |
 | show_vals | False | Show values on heatmap | None | False |
@@ -62,7 +62,7 @@ Description: Display monthly returns
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

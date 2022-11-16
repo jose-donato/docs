@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_dd_marketwatch_model.get_sec_filings
+## openbb_terminal.stocks.due_diligence.marketwatch_model.get_sec_filings
 
 ```python title='openbb_terminal/stocks/due_diligence/marketwatch_model.py'
-def get_sec_filings(symbol: str) -> DataFrame:
+def get_sec_filings(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_model.py#L20)
 
@@ -39,10 +39,10 @@ Description: Get SEC filings for a given stock ticker. [Source: Market Watch]
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_dd_marketwatch_view.sec_filings
+## openbb_terminal.stocks.due_diligence.marketwatch_view.sec_filings
 
 ```python title='openbb_terminal/stocks/due_diligence/marketwatch_view.py'
-def sec_filings(symbol: str, limit: int, export: str) -> None:
+def sec_filings(symbol: str, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_view.py#L15)
 
@@ -58,7 +58,7 @@ Description: Display SEC filings for a given stock ticker. [Source: Market Watch
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

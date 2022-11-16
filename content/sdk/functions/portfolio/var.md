@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # var
 
-## portfolio_model.get_var
+## openbb_terminal.portfolio.portfolio_model.get_var
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_var(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: float) -> DataFrame:
+def get_var(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool, adjusted_var: bool, student_t: bool, percentile: float) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1685)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1945)
 
 Description: Get portfolio VaR
 
@@ -18,7 +18,7 @@ Description: Get portfolio VaR
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | use_mean | bool | if one should use the data mean return | None | False |
 | adjusted_var | bool | if one should have VaR adjusted for skew and kurtosis (Cornish-Fisher-Expansion) | None | False |
 | student_t | bool | If one should use the student-t distribution | None | False |
@@ -28,7 +28,7 @@ Description: Get portfolio VaR
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | None |
+| pd.DataFrame | DataFrame with portfolio VaR |
 
 ## Examples
 

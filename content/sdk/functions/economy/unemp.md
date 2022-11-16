@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_alphavantage_model.get_unemployment
+## openbb_terminal.economy.alphavantage_model.get_unemployment
 
 ```python title='openbb_terminal/economy/alphavantage_model.py'
-def get_unemployment(start_year: int) -> DataFrame:
+def get_unemployment(start_year: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L283)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L284)
 
 Description: Get historical unemployment for United States
 
@@ -39,12 +39,12 @@ Description: Get historical unemployment for United States
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_alphavantage_view.display_unemployment
+## openbb_terminal.economy.alphavantage_view.display_unemployment
 
-```python title='openbb_terminal/decorators.py'
-def display_unemployment() -> None:
+```python title='openbb_terminal/economy/alphavantage_view.py'
+def display_unemployment(start_year: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L377)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L377)
 
 Description: Display US unemployment AlphaVantage
 
@@ -59,7 +59,7 @@ Description: Display US unemployment AlphaVantage
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forecast_model.corr_df
+## openbb_terminal.forecast.forecast_model.corr_df
 
 ```python title='openbb_terminal/forecast/forecast_model.py'
-def corr_df(data: pd.DataFrame) -> DataFrame:
+def corr_df(data: pd.DataFrame) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L497)
 
@@ -39,10 +39,10 @@ Description: Returns correlation for a given df
 </TabItem>
 <TabItem value="view" label="View">
 
-## forecast_view.display_corr
+## openbb_terminal.forecast.forecast_view.display_corr
 
 ```python title='openbb_terminal/forecast/forecast_view.py'
-def display_corr(dataset: pd.DataFrame, export: str, external_axes: Union[List[axes], NoneType]) -> None:
+def display_corr(dataset: pd.DataFrame, export: str, external_axes: Optional[List[axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L170)
 
@@ -58,7 +58,7 @@ Description: Plot correlation coefficients for dataset features
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

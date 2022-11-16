@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## alt_oss_github_model.get_stars_history
+## openbb_terminal.alternative.oss.github_model.get_stars_history
 
 ```python title='openbb_terminal/alternative/oss/github_model.py'
-def get_stars_history(repo: str) -> None:
+def get_stars_history(repo: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L84)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L88)
 
-Description: Get repository star history
+Description: Get repository star history.
 
 ## Parameters
 
@@ -30,7 +30,7 @@ Description: Get repository star history
 
 | Type | Description |
 | ---- | ----------- |
-| Date, Stars | None |
+| pd.DataFrame | Dataframe with star history - Columns: Date, Stars |
 
 ## Examples
 
@@ -39,14 +39,14 @@ Description: Get repository star history
 </TabItem>
 <TabItem value="view" label="View">
 
-## alt_oss_github_view.display_star_history
+## openbb_terminal.alternative.oss.github_view.display_star_history
 
 ```python title='openbb_terminal/alternative/oss/github_view.py'
-def display_star_history(repo: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_star_history(repo: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L28)
 
-Description: Display repo summary [Source: https://api.github.com]
+Description: Plots repo summary [Source: https://api.github.com].
 
 ## Parameters
 
@@ -58,7 +58,7 @@ Description: Display repo summary [Source: https://api.github.com]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

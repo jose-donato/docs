@@ -11,19 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_blockchain_model.get_btc_confirmed_transactions
+## openbb_terminal.cryptocurrency.onchain.blockchain_model.get_btc_confirmed_transactions
 
 ```python title='openbb_terminal/cryptocurrency/onchain/blockchain_model.py'
-def get_btc_confirmed_transactions() -> DataFrame:
+def get_btc_confirmed_transactions() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_model.py#L61)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_model.py#L62)
 
 Description: Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
@@ -38,12 +37,12 @@ Description: Returns BTC confirmed transactions [Source: https://api.blockchain.
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_blockchain_view.display_btc_confirmed_transactions
+## openbb_terminal.cryptocurrency.onchain.blockchain_view.display_btc_confirmed_transactions
 
 ```python title='openbb_terminal/cryptocurrency/onchain/blockchain_view.py'
-def display_btc_confirmed_transactions(start_date: str, end_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_btc_confirmed_transactions(start_date: str, end_date: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_view.py#L85)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_view.py#L88)
 
 Description: Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
 
@@ -58,7 +57,7 @@ Description: Returns BTC confirmed transactions [Source: https://api.blockchain.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ca_finbrain_model.get_sentiments
+## openbb_terminal.stocks.comparison_analysis.finbrain_model.get_sentiments
 
 ```python title='openbb_terminal/stocks/comparison_analysis/finbrain_model.py'
-def get_sentiments(symbols: List[str]) -> DataFrame:
+def get_sentiments(symbols: List[str]) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L47)
 
-Description: Gets Sentiment analysis from several symbols provided by FinBrain's API
+Description: Gets Sentiment analysis from several symbols provided by FinBrain's API.
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbols | List[str] | List of tickers to get sentiment
-Comparable companies can be accessed through
-finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
+| symbols | List[str] | List of tickers to get sentiment.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
 
 ## Returns
 
@@ -41,29 +39,27 @@ finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ca_finbrain_view.display_sentiment_compare
+## openbb_terminal.stocks.comparison_analysis.finbrain_view.display_sentiment_compare
 
 ```python title='openbb_terminal/stocks/comparison_analysis/finbrain_view.py'
-def display_sentiment_compare(similar: List[str], raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_sentiment_compare(similar: List[str], raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L32)
 
-Description: Display sentiment for all ticker. [Source: FinBrain]
+Description: Display sentiment for all ticker. [Source: FinBrain].
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| similar | List[str] | Similar companies to compare income with.
-Comparable companies can be accessed through
-finviz_peers(), finnhub_peers() or polygon_peers(). | None | False |
+| similar | List[str] | Similar companies to compare income with.<br/>Comparable companies can be accessed through<br/>finviz_peers(), finnhub_peers() or polygon_peers(). | None | False |
 | raw | bool | Output raw values, by default False | False | True |
 | export | str | Format to export data | None | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

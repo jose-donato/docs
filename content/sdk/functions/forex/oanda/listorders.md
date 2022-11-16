@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forex_oanda_model.order_history_request
+## openbb_terminal.forex.oanda.oanda_model.order_history_request
 
 ```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def order_history_request(order_state: str, order_count: int, accountID: str) -> None:
+def order_history_request(order_state: str, order_count: int, accountID: str) -> Union
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L225)
 
@@ -30,7 +30,7 @@ Description: Request the orders list from Oanda.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
@@ -39,12 +39,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## forex_oanda_view.list_orders
+## openbb_terminal.forex.oanda.oanda_view.list_orders
 
-```python title='openbb_terminal/decorators.py'
-def list_orders() -> None:
+```python title='openbb_terminal/forex/oanda/oanda_view.py'
+def list_orders(accountID: str, order_state: str, order_count: int) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L156)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L156)
 
 Description: List order history.
 
@@ -58,7 +58,7 @@ Description: List order history.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

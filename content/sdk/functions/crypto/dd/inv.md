@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_investors
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_investors
 
-```python title='openbb_terminal/decorators.py'
-def get_investors() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_investors(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L487)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L494)
 
 Description: Returns coin investors
 
@@ -30,7 +30,7 @@ Description: Returns coin investors
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | individuals |
+| Tuple[pd.DataFrame, pd.DataFrame] | Individuals,<br/>Organizations |
 
 ## Examples
 
@@ -39,14 +39,14 @@ Description: Returns coin investors
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_investors
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_investors
 
-```python title='openbb_terminal/decorators.py'
-def display_investors() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_investors(symbol: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L498)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L510)
 
-Description: Display coin investors
+Description: Prints table showing coin investors
 
 ## Parameters
 
@@ -57,7 +57,7 @@ Description: Display coin investors
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

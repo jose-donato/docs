@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # rsi
 
-## forecast_model.add_rsi
+## openbb_terminal.forecast.forecast_model.add_rsi
 
 ```python title='openbb_terminal/forecast/forecast_model.py'
-def add_rsi(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
+def add_rsi(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L225)
 
@@ -26,7 +26,7 @@ Description: A momentum indicator that measures the magnitude of recent price ch
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe with added RSI column |
+| pd.DataFrame | Dataframe with added RSI column |
 
 ## Examples
 

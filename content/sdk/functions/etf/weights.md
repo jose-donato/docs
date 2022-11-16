@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## etf_yfinance_model.get_etf_sector_weightings
+## openbb_terminal.etf.yfinance_model.get_etf_sector_weightings
 
 ```python title='openbb_terminal/etf/yfinance_model.py'
-def get_etf_sector_weightings(name: str) -> None:
+def get_etf_sector_weightings(name: str) -> Dict
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L15)
 
@@ -25,13 +25,12 @@ Description: Return sector weightings allocation of ETF. [Source: Yahoo Finance]
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | name | str | ETF name | None | False |
-| Returns | None | None | None | None |
-| ---------- | None | None | None | None |
-| Dict | None | Dictionary with sector weightings allocation | None | None |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| Dict[str, Any] | Dictionary with sector weightings allocation |
 
 ## Examples
 
@@ -40,10 +39,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## etf_yfinance_view.display_etf_weightings
+## openbb_terminal.etf.yfinance_view.display_etf_weightings
 
 ```python title='openbb_terminal/etf/yfinance_view.py'
-def display_etf_weightings(name: str, raw: bool, min_pct_to_display: float, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_etf_weightings(name: str, raw: bool, min_pct_to_display: float, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_view.py#L27)
 
@@ -61,7 +60,7 @@ Description: Display sector weightings allocation of ETF. [Source: Yahoo Finance
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

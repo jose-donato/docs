@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # arktrades
 
-## stocks_dd_ark_model.get_ark_trades_by_ticker
+## openbb_terminal.stocks.due_diligence.ark_model.get_ark_trades_by_ticker
 
 ```python title='openbb_terminal/stocks/due_diligence/ark_model.py'
-def get_ark_trades_by_ticker(symbol: str) -> DataFrame:
+def get_ark_trades_by_ticker(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/ark_model.py#L19)
 

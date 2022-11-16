@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## etf_financedatabase_model.get_etfs_by_description
+## openbb_terminal.etf.financedatabase_model.get_etfs_by_description
 
 ```python title='openbb_terminal/etf/financedatabase_model.py'
-def get_etfs_by_description(description: str) -> None:
+def get_etfs_by_description(description: str) -> Dict
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L35)
 
@@ -25,13 +25,12 @@ Description: Return a selection of ETFs based on description filtered by total a
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | description | str | Search by description to find ETFs matching the criteria. | None | False |
-| Returns | None | None | None | None |
-| ---------- | None | None | None | None |
-| data | Dict | Dictionary with ETFs that match a certain description | None | False |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| Dict[str, Any] | Dictionary with ETFs that match a certain description |
 
 ## Examples
 
@@ -40,10 +39,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## etf_financedatabase_view.display_etf_by_description
+## openbb_terminal.etf.financedatabase_view.display_etf_by_description
 
 ```python title='openbb_terminal/etf/financedatabase_view.py'
-def display_etf_by_description(description: str, limit: int, export: str) -> None:
+def display_etf_by_description(description: str, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_view.py#L56)
 
@@ -59,7 +58,7 @@ Description: Display a selection of ETFs based on description filtered by total 
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

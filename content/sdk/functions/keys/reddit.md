@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # reddit
 
-## keys_model.set_reddit_key
+## openbb_terminal.keys_model.set_reddit_key
 
 ```python title='openbb_terminal/keys_model.py'
-def set_reddit_key(client_id: str, client_secret: str, password: str, username: str, useragent: str, persist: bool, show_output: bool) -> str:
+def set_reddit_key(client_id: str, client_secret: str, password: str, username: str, useragent: str, persist: bool, show_output: bool) -> str
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L854)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L874)
 
 Description: Set Reddit key
 
@@ -23,16 +23,14 @@ Description: Set Reddit key
 | password | str | User assword | None | False |
 | username | str | User username | None | False |
 | useragent | str | User useragent | None | False |
-| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
-If True, api key change will be global, i.e. it will affect terminal environment variables.
-By default, False. | None | False |
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.<br/>If True, api key change will be global, i.e. it will affect terminal environment variables.<br/>By default, False. | None | False |
 | show_output | bool | Display status string or not. By default, False. | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| str | None |
+| str | Status of key set |
 
 ## Examples
 

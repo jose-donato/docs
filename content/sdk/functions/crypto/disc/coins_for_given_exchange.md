@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # coins_for_given_exchange
 
-## crypto_disc_pycoingecko_model.get_coins_for_given_exchange
+## openbb_terminal.cryptocurrency.discovery.pycoingecko_model.get_coins_for_given_exchange
 
 ```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
-def get_coins_for_given_exchange(exchange_id: str, page: int) -> dict:
+def get_coins_for_given_exchange(exchange_id: str, page: int) -> dict
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L349)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L357)
 
 Description: Helper method to get all coins available on binance exchange [Source: CoinGecko]
 

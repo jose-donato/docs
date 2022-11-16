@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_marketcap_dominance
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_marketcap_dominance
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
-def get_marketcap_dominance(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame:
+def get_marketcap_dominance(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L81)
 
@@ -42,14 +42,14 @@ Description: Returns market dominance of a coin over time
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_marketcap_dominance
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_marketcap_dominance
 
-```python title='openbb_terminal/decorators.py'
-def display_marketcap_dominance() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_marketcap_dominance(symbol: str, start_date: str, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L175)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L181)
 
-Description: Display market dominance of a coin over time
+Description: Plots market dominance of a coin over time
 
 ## Parameters
 
@@ -64,7 +64,7 @@ Description: Display market dominance of a coin over time
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

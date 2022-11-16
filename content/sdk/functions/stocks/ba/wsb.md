@@ -5,14 +5,14 @@ description: OpenBB SDK Function
 
 # wsb
 
-## stocks_ba_reddit_model.get_wsb_community
+## openbb_terminal.common.behavioural_analysis.reddit_model.get_wsb_community
 
-```python title='openbb_terminal/decorators.py'
-def get_wsb_community() -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/reddit_model.py'
+def get_wsb_community(limit: int, new: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L607)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L602)
 
-Description: Get wsb posts [Source: reddit]
+Description: Get wsb posts [Source: reddit].
 
 ## Parameters
 

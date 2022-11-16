@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # dcf
 
-## stocks_fa_fmp_model.get_dcf
+## openbb_terminal.stocks.fundamental_analysis.fmp_model.get_dcf
 
-```python title='openbb_terminal/decorators.py'
-def get_dcf() -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/fmp_model.py'
+def get_dcf(symbol: str, limit: int, quarterly: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L173)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L173)
 
 Description: Get stocks dcf from FMP
 

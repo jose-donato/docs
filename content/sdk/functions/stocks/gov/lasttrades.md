@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # lasttrades
 
-## stocks_gov_quiverquant_model.get_last_government
+## openbb_terminal.stocks.government.quiverquant_model.get_last_government
 
 ```python title='openbb_terminal/stocks/government/quiverquant_model.py'
-def get_last_government(gov_type: str, limit: int, representative: str) -> DataFrame:
+def get_last_government(gov_type: str, limit: int, representative: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L164)
 

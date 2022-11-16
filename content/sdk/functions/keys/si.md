@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # si
 
-## keys_model.set_si_key
+## openbb_terminal.keys_model.set_si_key
 
 ```python title='openbb_terminal/keys_model.py'
-def set_si_key(key: str, persist: bool, show_output: bool) -> str:
+def set_si_key(key: str, persist: bool, show_output: bool) -> str
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1388)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1422)
 
 Description: Set Sentimentinvestor key.
 
@@ -19,16 +19,14 @@ Description: Set Sentimentinvestor key.
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | key | str | API key | None | False |
-| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
-If True, api key change will be global, i.e. it will affect terminal environment variables.
-By default, False. | None | False |
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.<br/>If True, api key change will be global, i.e. it will affect terminal environment variables.<br/>By default, False. | None | False |
 | show_output | bool | Display status string or not. By default, False. | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| str | None |
+| str | Status of key set |
 
 ## Examples
 

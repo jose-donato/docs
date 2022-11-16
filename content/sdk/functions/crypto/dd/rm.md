@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_roadmap
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_roadmap
 
-```python title='openbb_terminal/decorators.py'
-def get_roadmap() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_roadmap(symbol: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L225)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L236)
 
 Description: Returns coin roadmap
 
@@ -40,14 +40,14 @@ Description: Returns coin roadmap
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_roadmap
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_roadmap
 
-```python title='openbb_terminal/decorators.py'
-def display_roadmap() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_roadmap(symbol: str, ascend: bool, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L272)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L284)
 
-Description: Display coin roadmap
+Description: Plots coin roadmap
 
 ## Parameters
 
@@ -61,7 +61,7 @@ Description: Display coin roadmap
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

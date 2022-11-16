@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_alphavantage_model.get_gdp_capita
+## openbb_terminal.economy.alphavantage_model.get_gdp_capita
 
 ```python title='openbb_terminal/economy/alphavantage_model.py'
-def get_gdp_capita(start_year: int) -> DataFrame:
+def get_gdp_capita(start_year: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L95)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L96)
 
 Description: Real GDP per Capita for United States
 
@@ -39,12 +39,12 @@ Description: Real GDP per Capita for United States
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_alphavantage_view.display_gdp_capita
+## openbb_terminal.economy.alphavantage_view.display_gdp_capita
 
-```python title='openbb_terminal/decorators.py'
-def display_gdp_capita() -> None:
+```python title='openbb_terminal/economy/alphavantage_view.py'
+def display_gdp_capita(start_year: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L146)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L146)
 
 Description: Display US GDP per Capita from AlphaVantage
 
@@ -59,7 +59,7 @@ Description: Display US GDP per Capita from AlphaVantage
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

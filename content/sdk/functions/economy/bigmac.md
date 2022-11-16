@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_nasdaq_model.get_big_mac_indices
+## openbb_terminal.economy.nasdaq_model.get_big_mac_indices
 
-```python title='openbb_terminal/decorators.py'
-def get_big_mac_indices() -> DataFrame:
+```python title='openbb_terminal/economy/nasdaq_model.py'
+def get_big_mac_indices(country_codes: List[str]) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L166)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/nasdaq_model.py#L173)
 
 Description: Display Big Mac Index for given countries
 
@@ -39,12 +39,12 @@ Description: Display Big Mac Index for given countries
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_nasdaq_view.display_big_mac_index
+## openbb_terminal.economy.nasdaq_view.display_big_mac_index
 
-```python title='openbb_terminal/decorators.py'
-def display_big_mac_index() -> None:
+```python title='openbb_terminal/economy/nasdaq_view.py'
+def display_big_mac_index(country_codes: List[str], raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L59)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/nasdaq_view.py#L59)
 
 Description: Display Big Mac Index for given countries
 
@@ -59,7 +59,7 @@ Description: Display Big Mac Index for given countries
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

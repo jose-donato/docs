@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_dps_nyse_model.get_short_data_by_exchange
+## openbb_terminal.stocks.dark_pool_shorts.nyse_model.get_short_data_by_exchange
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/nyse_model.py'
-def get_short_data_by_exchange(symbol: str) -> DataFrame:
+def get_short_data_by_exchange(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/nyse_model.py#L15)
 
@@ -39,10 +39,10 @@ Description: Gets short data for 5 exchanges [https://ftp.nyse.com] starting at 
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_dps_nyse_view.display_short_by_exchange
+## openbb_terminal.stocks.dark_pool_shorts.nyse_view.display_short_by_exchange
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/nyse_view.py'
-def display_short_by_exchange(symbol: str, raw: bool, sortby: str, ascend: bool, mpl: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_short_by_exchange(symbol: str, raw: bool, sortby: str, ascend: bool, mpl: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/nyse_view.py#L29)
 
@@ -62,7 +62,7 @@ Description: Display short data by exchange
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

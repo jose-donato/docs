@@ -1,5 +1,0 @@
----
-
----
-
-**Available commands:** {{< toc-tree >}}

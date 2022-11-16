@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## portfolio_model.get_distribution_returns
+## openbb_terminal.portfolio.portfolio_model.get_distribution_returns
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_distribution_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> None:
+def get_distribution_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1415)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1629)
 
 Description: Display daily returns
 
@@ -24,12 +24,12 @@ Description: Display daily returns
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | window | str | interval to compare cumulative returns and benchmark | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
@@ -38,12 +38,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## portfolio_view.display_distribution_returns
+## openbb_terminal.portfolio.portfolio_view.display_distribution_returns
 
 ```python title='openbb_terminal/portfolio/portfolio_view.py'
-def display_distribution_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+def display_distribution_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str, raw: bool, export: str, external_axes: Optional[matplotlib.axes._axes.Axes]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L539)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L627)
 
 Description: Display daily returns
 
@@ -60,7 +60,7 @@ Description: Display daily returns
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

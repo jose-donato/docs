@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_withdrawalfees_model.get_overall_withdrawal_fees
+## openbb_terminal.cryptocurrency.overview.withdrawalfees_model.get_overall_withdrawal_fees
 
 ```python title='openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py'
-def get_overall_withdrawal_fees(limit: int) -> DataFrame:
+def get_overall_withdrawal_fees(limit: int) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L120)
 
@@ -30,7 +30,7 @@ Description: Scrapes top coins withdrawal fees
 
 | Type | Description |
 | ---- | ----------- |
-|  | Coin, Lowest, Average, Median, Highest, Exchanges Compared |
+| pd.DataFrame | Coin, Lowest, Average, Median, Highest, Exchanges Compared |
 
 ## Examples
 
@@ -39,10 +39,10 @@ Description: Scrapes top coins withdrawal fees
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_withdrawalfees_view.display_overall_withdrawal_fees
+## openbb_terminal.cryptocurrency.overview.withdrawalfees_view.display_overall_withdrawal_fees
 
 ```python title='openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py'
-def display_overall_withdrawal_fees(limit: int, export: str) -> None:
+def display_overall_withdrawal_fees(limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L18)
 
@@ -57,7 +57,7 @@ Description: Top coins withdrawal fees
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

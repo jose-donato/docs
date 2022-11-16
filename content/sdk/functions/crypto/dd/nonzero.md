@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_glassnode_model.get_non_zero_addresses
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_model.get_non_zero_addresses
 
-```python title='openbb_terminal/decorators.py'
-def get_non_zero_addresses() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py'
+def get_non_zero_addresses(symbol: str, start_date: str, end_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L245)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L248)
 
 Description: Returns addresses with non-zero balance of a certain symbol
 
@@ -41,14 +41,14 @@ Description: Returns addresses with non-zero balance of a certain symbol
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_glassnode_view.display_non_zero_addresses
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_view.display_non_zero_addresses
 
-```python title='openbb_terminal/decorators.py'
-def display_non_zero_addresses() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py'
+def display_non_zero_addresses(symbol: str, start_date: str, end_date: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L93)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L96)
 
-Description: Display addresses with non-zero balance of a certain symbol
+Description: Plots addresses with non-zero balance of a certain symbol
 
 ## Parameters
 
@@ -62,7 +62,7 @@ Description: Display addresses with non-zero balance of a certain symbol
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

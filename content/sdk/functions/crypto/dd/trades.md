@@ -11,59 +11,62 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_coinbase_model.get_trades
+## openbb_terminal.cryptocurrency.due_diligence.ccxt_model.get_trades
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
-def get_trades(symbol: str, limit: int, side: Union[Any, NoneType]) -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py'
+def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> DataFrame
 ```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L70)
 
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L101)
-
-Description: Get last N trades for chosen trading pair. [Source: Coinbase]
+Description: Returns trades for a coin in a given exchange
 
 ## Parameters
 
-| Name   | Type | Description                                                                                  | Default | Optional |
-| ------ | ---- | -------------------------------------------------------------------------------------------- | ------- | -------- |
-| symbol | str  | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH                                    | None    | False    |
-| limit  | int  | Last `limit` of trades. Maximum is 1000.                                                     | None    | False    |
-| side   | str  | You can chose either sell or buy side. If side is not set then all trades will be displayed. | None    | False    |
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| exchange_id | str | exchange id | None | False |
+| symbol | str | coin symbol | None | False |
+| to_symbol | str | currency to compare coin against | None | False |
 
 ## Returns
 
-| Type         | Description                             |
-| ------------ | --------------------------------------- |
-| pd.DataFrame | Last N trades for chosen trading pairs. |
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | trades for a coin in a given exchange |
 
 ## Examples
+
+
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_coinbase_view.display_trades
+## openbb_terminal.cryptocurrency.due_diligence.ccxt_view.display_trades
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py'
-def display_trades(symbol: str, limit: int, side: Union[str, NoneType], export: str) -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py'
+def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int, export: str) -> None
 ```
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L63)
 
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L51)
-
-Description: Display last N trades for chosen trading pair. [Source: Coinbase]
+Description: Prints table showing trades for a coin in a given exchange
 
 ## Parameters
 
-| Name   | Type          | Description                                                                                  | Default | Optional |
-| ------ | ------------- | -------------------------------------------------------------------------------------------- | ------- | -------- |
-| symbol | str           | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH                                    | None    | False    |
-| limit  | int           | Last `limit` of trades. Maximum is 1000.                                                     | None    | False    |
-| side   | Optional[str] | You can chose either sell or buy side. If side is not set then all trades will be displayed. | None    | False    |
-| export | str           | Export dataframe data to csv,json,xlsx file                                                  | None    | False    |
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| exchange | str | exchange id | None | False |
+| symbol | str | coin symbol | None | False |
+| to_symbol | str | currency to compare coin against | None | False |
+| limit | int | number of trades to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
+
+
 
 </TabItem>
 </Tabs>

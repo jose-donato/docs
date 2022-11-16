@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_fred_model.get_aggregated_series_data
+## openbb_terminal.economy.fred_model.get_aggregated_series_data
 
-```python title='openbb_terminal/decorators.py'
-def get_aggregated_series_data() -> DataFrame:
+```python title='openbb_terminal/economy/fred_model.py'
+def get_aggregated_series_data(series_ids: List[str], start_date: str, end_date: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L204)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L208)
 
 Description: Get Series data. [Source: FRED]
 
@@ -27,13 +27,12 @@ Description: Get Series data. [Source: FRED]
 | series_ids | List[str] | Series ID to get data from | None | False |
 | start_date | str | Start date to get data from, format yyyy-mm-dd | None | False |
 | end_date | str | End data to get from, format yyyy-mm-dd | None | False |
-| Returns | None | None | None | None |
-| ---------- | None | None | None | None |
-| pd.DataFrame | None | Series data | None | None |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Series data |
 
 ## Examples
 
@@ -42,12 +41,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_fred_view.display_fred_series
+## openbb_terminal.economy.fred_view.display_fred_series
 
-```python title='openbb_terminal/decorators.py'
-def display_fred_series() -> None:
+```python title='openbb_terminal/economy/fred_view.py'
+def display_fred_series(series_ids: List[str], start_date: str, end_date: str, limit: int, get_data: bool, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L76)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_view.py#L76)
 
 Description: Display (multiple) series from https://fred.stlouisfed.org. [Source: FRED]
 
@@ -65,7 +64,7 @@ Description: Display (multiple) series from https://fred.stlouisfed.org. [Source
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # fmp_income
 
-## stocks_fa_fmp_model.get_income
+## openbb_terminal.stocks.fundamental_analysis.fmp_model.get_income
 
-```python title='openbb_terminal/decorators.py'
-def get_income() -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/fmp_model.py'
+def get_income(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L213)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L213)
 
 Description: Get income statements
 

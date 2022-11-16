@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_fa_yahoo_finance_model.get_financials
+## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_model.get_financials
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
-def get_financials(symbol: str, statement: str, ratios: bool) -> DataFrame:
+def get_financials(symbol: str, statement: str, ratios: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L328)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L332)
 
 Description: Get cashflow statement for company
 
@@ -25,11 +25,7 @@ Description: Get cashflow statement for company
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| statement | str | can be:
-
-- cash-flow
-- financials for Income
-- balance-sheet | None | False |
+| statement | str | can be:<br/><br/>- cash-flow<br/>- financials for Income<br/>- balance-sheet | None | False |
 | ratios | bool | Shows percentage change | None | False |
 
 ## Returns
@@ -45,10 +41,10 @@ Description: Get cashflow statement for company
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_fa_yahoo_finance_view.display_fundamentals
+## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_view.display_fundamentals
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py'
-def display_fundamentals(symbol: str, statement: str, limit: int, ratios: bool, plot: list, export: str) -> None:
+def display_fundamentals(symbol: str, statement: str, limit: int, ratios: bool, plot: list, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L383)
 
@@ -59,11 +55,7 @@ Description: Display tickers balance sheet, income statement or cash-flow
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| statement | str | Possible values are:
-
-- cash-flow
-- financials for Income
-- balance-sheet | None | False |
+| statement | str | Possible values are:<br/><br/>- cash-flow<br/>- financials for Income<br/>- balance-sheet | None | False |
 | limit | int | Number of periods to show | None | False |
 | ratios | bool | Shows percentage change | None | False |
 | plot | list | List of row labels to plot | None | False |
@@ -71,7 +63,7 @@ Description: Display tickers balance sheet, income statement or cash-flow
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

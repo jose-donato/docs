@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## portfolio_model.get_holdings_percentage
+## openbb_terminal.portfolio.portfolio_model.get_holdings_percentage
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_holdings_percentage(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
+def get_holdings_percentage(portfolio_engine: portfolio_model.PortfolioEngine) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1361)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1559)
 
 Description: Get holdings of assets (in percentage)
 
@@ -24,11 +24,11 @@ Description: Get holdings of assets (in percentage)
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
@@ -37,12 +37,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## portfolio_view.display_holdings_percentage
+## openbb_terminal.portfolio.portfolio_view.display_holdings_percentage
 
 ```python title='openbb_terminal/portfolio/portfolio_view.py'
-def display_holdings_percentage(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, unstack: bool, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+def display_holdings_percentage(portfolio_engine: portfolio_model.PortfolioEngine, unstack: bool, raw: bool, limit: int, export: str, external_axes: Optional[matplotlib.axes._axes.Axes]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L704)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L793)
 
 Description: Display holdings of assets (in percentage)
 
@@ -50,7 +50,7 @@ Description: Display holdings of assets (in percentage)
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | unstack | bool | Individual assets over time | None | False |
 | raw | bool | To display raw data | None | False |
 | limit | int | Number of past market days to display holdings | None | False |
@@ -59,7 +59,7 @@ Description: Display holdings of assets (in percentage)
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

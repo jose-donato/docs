@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # mom
 
-## forecast_model.add_momentum
+## openbb_terminal.forecast.forecast_model.add_momentum
 
 ```python title='openbb_terminal/forecast/forecast_model.py'
-def add_momentum(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
+def add_momentum(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L296)
 
@@ -26,7 +26,7 @@ Description: A momentum oscillator, which measures the percentage change between
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe with added MOM column |
+| pd.DataFrame | Dataframe with added MOM column |
 
 ## Examples
 

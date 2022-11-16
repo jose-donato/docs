@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_defi_llama_model.get_grouped_defi_protocols
+## openbb_terminal.cryptocurrency.defi.llama_model.get_grouped_defi_protocols
 
 ```python title='openbb_terminal/cryptocurrency/defi/llama_model.py'
-def get_grouped_defi_protocols(limit: int) -> DataFrame:
+def get_grouped_defi_protocols(limit: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L144)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L149)
 
 Description: Display top dApps (in terms of TVL) grouped by chain.
 
@@ -39,14 +39,14 @@ Description: Display top dApps (in terms of TVL) grouped by chain.
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_defi_llama_view.display_grouped_defi_protocols
+## openbb_terminal.cryptocurrency.defi.llama_view.display_grouped_defi_protocols
 
 ```python title='openbb_terminal/cryptocurrency/defi/llama_view.py'
-def display_grouped_defi_protocols(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_grouped_defi_protocols(limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L28)
 
-Description: Display top dApps (in terms of TVL) grouped by chain.
+Description: Plots top dApps (in terms of TVL) grouped by chain.
 
 ## Parameters
 
@@ -58,7 +58,7 @@ Description: Display top dApps (in terms of TVL) grouped by chain.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # calmar
 
-## portfolio_model.get_calmar_ratio
+## openbb_terminal.portfolio.portfolio_model.get_calmar_ratio
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_calmar_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: int) -> None:
+def get_calmar_ratio(portfolio_engine: portfolio_model.PortfolioEngine, window: int) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1257)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1412)
 
 Description: Get calmar ratio
 
@@ -18,7 +18,7 @@ Description: Get calmar ratio
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | window | int | Interval used for rolling values | None | False |
 
 ## Returns

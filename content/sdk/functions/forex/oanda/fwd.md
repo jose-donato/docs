@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forex_fxempire_model.get_forward_rates
+## openbb_terminal.forex.fxempire_model.get_forward_rates
 
 ```python title='openbb_terminal/forex/fxempire_model.py'
-def get_forward_rates(to_symbol: str, from_symbol: str) -> None:
+def get_forward_rates(to_symbol: str, from_symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/fxempire_model.py#L14)
 
@@ -31,7 +31,7 @@ Description: Gets forward rates from fxempire
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | None |
+| pd.DataFrame | Dataframe containing forward rates |
 
 ## Examples
 
@@ -40,10 +40,10 @@ Description: Gets forward rates from fxempire
 </TabItem>
 <TabItem value="view" label="View">
 
-## forex_fxempire_view.display_forward_rates
+## openbb_terminal.forex.fxempire_view.display_forward_rates
 
 ```python title='openbb_terminal/forex/fxempire_view.py'
-def display_forward_rates(to_symbol: str, from_symbol: str, export: str) -> None:
+def display_forward_rates(to_symbol: str, from_symbol: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/fxempire_view.py#L14)
 
@@ -59,7 +59,7 @@ Description: Display forward rates for currency pairs
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
