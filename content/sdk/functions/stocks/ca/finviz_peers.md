@@ -5,14 +5,14 @@ description: OpenBB SDK Function
 
 # finviz_peers
 
-## stocks_ca_finviz_compare_model.get_similar_companies
+## openbb_terminal.stocks.comparison_analysis.finviz_compare_model.get_similar_companies
 
 ```python title='openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py'
-def get_similar_companies(symbol: str, compare_list: List[str]) -> None:
+def get_similar_companies(symbol: str, compare_list: List[str]) -> List
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L25)
 
-Description: Get similar companies from Finviz
+Description: Get similar companies from Finviz.
 
 ## Parameters
 

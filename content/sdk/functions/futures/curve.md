@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## futures_yfinance_model.get_curve_futures
+## openbb_terminal.futures.yfinance_model.get_curve_futures
 
 ```python title='openbb_terminal/futures/yfinance_model.py'
-def get_curve_futures(symbol: str) -> None:
+def get_curve_futures(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L118)
 
@@ -28,7 +28,9 @@ Description: Get curve futures [Source: Yahoo Finance]
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dictionary with sector weightings allocation |
 
 ## Examples
 
@@ -37,12 +39,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## futures_yfinance_view.display_curve
+## openbb_terminal.futures.yfinance_view.display_curve
 
 ```python title='openbb_terminal/futures/yfinance_view.py'
-def display_curve(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_curve(symbol: str, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L228)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L232)
 
 Description: Display curve futures [Source: Yahoo Finance]
 
@@ -57,7 +59,7 @@ Description: Display curve futures [Source: Yahoo Finance]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

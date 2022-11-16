@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forex_oanda_model.close_trades_request
+## openbb_terminal.forex.oanda.oanda_model.close_trades_request
 
 ```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def close_trades_request(orderID: str, units: Union[int, NoneType], accountID: str) -> None:
+def close_trades_request(orderID: str, units: Optional[int], accountID: str) -> Union
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L526)
 
@@ -41,12 +41,12 @@ Description: Close a trade.
 </TabItem>
 <TabItem value="view" label="View">
 
-## forex_oanda_view.close_trade
+## openbb_terminal.forex.oanda.oanda_view.close_trade
 
-```python title='openbb_terminal/decorators.py'
-def close_trade() -> None:
+```python title='openbb_terminal/forex/oanda/oanda_view.py'
+def close_trade(accountID: str, orderID: str, units: Optional[int]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L280)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L280)
 
 Description: Close a trade.
 
@@ -60,7 +60,7 @@ Description: Close a trade.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_pycoingecko_model.get_exchange_rates
+## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_exchange_rates
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_exchange_rates(sortby: str, ascend: bool) -> DataFrame:
+def get_exchange_rates(sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L389)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L398)
 
 Description: Get list of crypto, fiats, commodity exchange rates from CoinGecko API [Source: CoinGecko]
 
@@ -31,7 +31,7 @@ Description: Get list of crypto, fiats, commodity exchange rates from CoinGecko 
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Index, Name, Unit, Value, Type |
+| pd.DataFrame | Index, Name, Unit, Value, Type |
 
 ## Examples
 
@@ -40,10 +40,10 @@ Description: Get list of crypto, fiats, commodity exchange rates from CoinGecko 
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_pycoingecko_view.display_exchange_rates
+## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_exchange_rates
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_exchange_rates(sortby: str, ascend: bool, limit: int, export: str) -> None:
+def display_exchange_rates(sortby: str, ascend: bool, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L200)
 
@@ -60,7 +60,7 @@ Description: Shows  list of crypto, fiats, commodity exchange rates. [Source: Co
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

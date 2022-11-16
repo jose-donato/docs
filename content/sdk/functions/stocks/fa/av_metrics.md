@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # av_metrics
 
-## stocks_fa_av_model.get_key_metrics
+## openbb_terminal.stocks.fundamental_analysis.av_model.get_key_metrics
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
-def get_key_metrics(symbol: str) -> DataFrame:
+def get_key_metrics(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L101)
 

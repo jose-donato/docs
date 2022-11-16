@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # tob
 
-## stocks_cboe_model.get_top_of_book
+## openbb_terminal.stocks.cboe_model.get_top_of_book
 
 ```python title='openbb_terminal/stocks/cboe_model.py'
-def get_top_of_book(symbol: str, exchange: str) -> None:
+def get_top_of_book(symbol: str, exchange: str) -> Tuple
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/cboe_model.py#L12)
 

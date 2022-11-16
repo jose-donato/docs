@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_screener_yahoofinance_model.historical
+## openbb_terminal.stocks.screener.yahoofinance_model.historical
 
 ```python title='openbb_terminal/stocks/screener/yahoofinance_model.py'
-def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool) -> None:
+def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool) -> Tuple
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_model.py#L53)
 
@@ -43,10 +43,10 @@ Description: View historical price of stocks that meet preset
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_screener_yahoofinance_view.historical
+## openbb_terminal.stocks.screener.yahoofinance_view.historical
 
 ```python title='openbb_terminal/stocks/screener/yahoofinance_view.py'
-def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> List
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_view.py#L28)
 

@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_glassnode_model.get_btc_rainbow
+## openbb_terminal.cryptocurrency.overview.glassnode_model.get_btc_rainbow
 
 ```python title='openbb_terminal/cryptocurrency/overview/glassnode_model.py'
-def get_btc_rainbow(start_date: str, end_date: str) -> None:
+def get_btc_rainbow(start_date: str, end_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/glassnode_model.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/glassnode_model.py#L18)
 
 Description: Get bitcoin price data
 
@@ -29,7 +29,9 @@ Description: Get bitcoin price data
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | price over time |
 
 ## Examples
 
@@ -38,12 +40,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_glassnode_view.display_btc_rainbow
+## openbb_terminal.cryptocurrency.overview.glassnode_view.display_btc_rainbow
 
-```python title='openbb_terminal/decorators.py'
-def display_btc_rainbow() -> None:
+```python title='openbb_terminal/cryptocurrency/overview/glassnode_view.py'
+def display_btc_rainbow(start_date: str, end_date: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L29)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/glassnode_view.py#L29)
 
 Description: Displays bitcoin rainbow chart
 
@@ -51,14 +53,14 @@ Description: Displays bitcoin rainbow chart
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| start_date | int | Initial date, format YYYY-MM-DD | None | False |
-| end_date | int | Final date, format YYYY-MM-DD | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

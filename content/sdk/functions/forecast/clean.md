@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # clean
 
-## forecast_model.clean
+## openbb_terminal.forecast.forecast_model.clean
 
 ```python title='openbb_terminal/forecast/forecast_model.py'
-def clean(dataset: pd.DataFrame, fill: Union[str, NoneType], drop: Union[str, NoneType], limit: Union[int, NoneType]) -> DataFrame:
+def clean(dataset: pd.DataFrame, fill: Optional[str], drop: Optional[str], limit: Optional[int]) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L88)
 
@@ -27,7 +27,7 @@ Description: Clean up NaNs from the dataset
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe with cleaned up data |
+| pd.DataFrame | Dataframe with cleaned up data |
 
 ## Examples
 

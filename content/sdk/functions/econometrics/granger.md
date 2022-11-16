@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## econometrics_model.get_granger_causality
+## openbb_terminal.econometrics.econometrics_model.get_granger_causality
 
 ```python title='openbb_terminal/econometrics/econometrics_model.py'
-def get_granger_causality(dependent_series: Any, independent_series: Any, lags: Any) -> None:
+def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Series, lags: int) -> dict
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L208)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L210)
 
 Description: Calculate granger tests
 
@@ -30,7 +30,9 @@ Description: Calculate granger tests
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| dict | Dictionary containing results of Granger test |
 
 ## Examples
 
@@ -39,12 +41,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## econometrics_view.display_granger
+## openbb_terminal.econometrics.econometrics_view.display_granger
 
 ```python title='openbb_terminal/econometrics/econometrics_view.py'
-def display_granger(dependent_series: pd.Series, independent_series: pd.Series, lags: int, confidence_level: float, export: str) -> None:
+def display_granger(dependent_series: pd.Series, independent_series: pd.Series, lags: int, confidence_level: float, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L254)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L247)
 
 Description: Show granger tests
 
@@ -60,7 +62,7 @@ Description: Show granger tests
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

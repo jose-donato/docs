@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## etf_stockanalysis_model.get_etf_holdings
+## openbb_terminal.etf.stockanalysis_model.get_etf_holdings
 
 ```python title='openbb_terminal/etf/stockanalysis_model.py'
-def get_etf_holdings(symbol: str) -> DataFrame:
+def get_etf_holdings(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L84)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L82)
 
 Description: Get ETF holdings
 
@@ -39,10 +39,10 @@ Description: Get ETF holdings
 </TabItem>
 <TabItem value="view" label="View">
 
-## etf_stockanalysis_view.view_holdings
+## openbb_terminal.etf.stockanalysis_view.view_holdings
 
 ```python title='openbb_terminal/etf/stockanalysis_view.py'
-def view_holdings(symbol: str, limit: int, export: str) -> None:
+def view_holdings(symbol: str, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L45)
 
@@ -58,7 +58,7 @@ Description: None
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

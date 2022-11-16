@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ba_stocktwits_model.get_messages
+## openbb_terminal.common.behavioural_analysis.stocktwits_model.get_messages
 
 ```python title='openbb_terminal/common/behavioural_analysis/stocktwits_model.py'
-def get_messages(symbol: str, limit: int) -> DataFrame:
+def get_messages(symbol: str, limit: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L55)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L52)
 
-Description: Get last messages for a given ticker [Source: stocktwits]
+Description: Get last messages for a given ticker [Source: stocktwits].
 
 ## Parameters
 
@@ -40,14 +40,14 @@ Description: Get last messages for a given ticker [Source: stocktwits]
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ba_stocktwits_view.display_messages
+## openbb_terminal.common.behavioural_analysis.stocktwits_view.display_messages
 
 ```python title='openbb_terminal/common/behavioural_analysis/stocktwits_view.py'
-def display_messages(symbol: str, limit: int) -> None:
+def display_messages(symbol: str, limit: int) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_view.py#L37)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_view.py#L39)
 
-Description: Print up to 30 of the last messages on the board. [Source: Stocktwits]
+Description: Prints up to 30 of the last messages on the board. [Source: Stocktwits].
 
 ## Parameters
 
@@ -58,7 +58,7 @@ Description: Print up to 30 of the last messages on the board. [Source: Stocktwi
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

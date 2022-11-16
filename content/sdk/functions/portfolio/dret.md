@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## portfolio_model.get_daily_returns
+## openbb_terminal.portfolio.portfolio_model.get_daily_returns
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_daily_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str) -> DataFrame:
+def get_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1995)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2318)
 
 Description: Get daily returns
 
@@ -24,14 +24,14 @@ Description: Get daily returns
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | window | str | interval to compare cumulative returns and benchmark | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | None |
+| pd.DataFrame | DataFrame with daily returns |
 
 ## Examples
 
@@ -40,12 +40,12 @@ Description: Get daily returns
 </TabItem>
 <TabItem value="view" label="View">
 
-## portfolio_view.display_daily_returns
+## openbb_terminal.portfolio.portfolio_view.display_daily_returns
 
 ```python title='openbb_terminal/portfolio/portfolio_view.py'
-def display_daily_returns(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, window: str, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+def display_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str, raw: bool, limit: int, export: str, external_axes: Optional[matplotlib.axes._axes.Axes]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L471)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L558)
 
 Description: Display daily returns
 
@@ -53,7 +53,7 @@ Description: Display daily returns
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | window | str | interval to compare cumulative returns and benchmark | None | False |
 | raw | False | Display raw data from cumulative return | None | False |
 | limit | int | Last daily returns to display | None | False |
@@ -62,7 +62,7 @@ Description: Display daily returns
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

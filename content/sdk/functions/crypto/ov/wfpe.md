@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_withdrawalfees_model.get_crypto_withdrawal_fees
+## openbb_terminal.cryptocurrency.overview.withdrawalfees_model.get_crypto_withdrawal_fees
 
 ```python title='openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py'
-def get_crypto_withdrawal_fees(symbol: str) -> None:
+def get_crypto_withdrawal_fees(symbol: str) -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L209)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L207)
 
 Description: Scrapes coin withdrawal fees per exchange
 
@@ -30,8 +30,7 @@ Description: Scrapes coin withdrawal fees per exchange
 
 | Type | Description |
 | ---- | ----------- |
-|  | - str:              Overall statistics (exchanges, lowest, average and median)
-- pandas.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount |
+| List | - str: Overall statistics (exchanges, lowest, average and median)<br/>- pd.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount |
 
 ## Examples
 
@@ -40,10 +39,10 @@ Description: Scrapes coin withdrawal fees per exchange
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_withdrawalfees_view.display_crypto_withdrawal_fees
+## openbb_terminal.cryptocurrency.overview.withdrawalfees_view.display_crypto_withdrawal_fees
 
 ```python title='openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py'
-def display_crypto_withdrawal_fees(symbol: str, export: str) -> None:
+def display_crypto_withdrawal_fees(symbol: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L86)
 
@@ -58,7 +57,7 @@ Description: Coin withdrawal fees per exchange
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

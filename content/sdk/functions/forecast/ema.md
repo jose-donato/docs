@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # ema
 
-## forecast_model.add_ema
+## openbb_terminal.forecast.forecast_model.add_ema
 
 ```python title='openbb_terminal/forecast/forecast_model.py'
-def add_ema(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame:
+def add_ema(dataset: pd.DataFrame, target_column: str, period: int) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L147)
 
@@ -26,7 +26,7 @@ Description: A moving average provides an indication of the trend of the price m
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe with added EMA column |
+| pd.DataFrame | Dataframe with added EMA column |
 
 ## Examples
 

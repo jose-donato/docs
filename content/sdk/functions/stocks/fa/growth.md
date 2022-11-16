@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # growth
 
-## stocks_fa_fmp_model.get_financial_growth
+## openbb_terminal.stocks.fundamental_analysis.fmp_model.get_financial_growth
 
-```python title='openbb_terminal/decorators.py'
-def get_financial_growth() -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/fmp_model.py'
+def get_financial_growth(symbol: str, limit: int, quarterly: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L499)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L499)
 
 Description: Get financial statement growth
 

@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # arkord
 
-## stocks_disc_ark_model.get_ark_orders
+## openbb_terminal.stocks.discovery.ark_model.get_ark_orders
 
 ```python title='openbb_terminal/stocks/discovery/ark_model.py'
-def get_ark_orders(buys_only: bool, sells_only: bool, fund: str) -> DataFrame:
+def get_ark_orders(buys_only: bool, sells_only: bool, fund: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L23)
 
@@ -26,8 +26,7 @@ Description: Returns ARK orders in a Dataframe
 
 | Type | Description |
 | ---- | ----------- |
-| DataFrame | ARK orders data frame with the following columns:
-ticker, date, shares, weight, fund, direction |
+| DataFrame | ARK orders data frame with the following columns -<br/>(ticker, date, shares, weight, fund, direction) |
 
 ## Examples
 

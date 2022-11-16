@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_fa_yahoo_finance_model.get_splits
+## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_model.get_splits
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
-def get_splits(symbol: str) -> DataFrame:
+def get_splits(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L308)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L312)
 
 Description: Get splits and reverse splits events. [Source: Yahoo Finance]
 
@@ -30,7 +30,7 @@ Description: Get splits and reverse splits events. [Source: Yahoo Finance]
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe of forward and reverse splits |
+| pd.DataFrame | Dataframe of forward and reverse splits |
 
 ## Examples
 
@@ -39,12 +39,12 @@ Description: Get splits and reverse splits events. [Source: Yahoo Finance]
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_fa_yahoo_finance_view.display_splits
+## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_view.display_splits
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py'
-def display_splits(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_splits(symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L261)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L260)
 
 Description: Display splits and reverse splits events. [Source: Yahoo Finance]
 
@@ -58,7 +58,7 @@ Description: Display splits and reverse splits events. [Source: Yahoo Finance]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

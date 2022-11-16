@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_whale_alert_model.get_whales_transactions
+## openbb_terminal.cryptocurrency.onchain.whale_alert_model.get_whales_transactions
 
 ```python title='openbb_terminal/cryptocurrency/onchain/whale_alert_model.py'
-def get_whales_transactions(min_value: int, limit: int, sortby: str, ascend: bool) -> DataFrame:
+def get_whales_transactions(min_value: int, limit: int, sortby: str, ascend: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_model.py#L86)
 
@@ -42,12 +42,12 @@ Description: Whale Alert's API allows you to retrieve live and historical transa
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_whale_alert_view.display_whales_transactions
+## openbb_terminal.cryptocurrency.onchain.whale_alert_view.display_whales_transactions
 
-```python title='openbb_terminal/decorators.py'
-def display_whales_transactions() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/whale_alert_view.py'
+def display_whales_transactions(min_value: int, limit: int, sortby: str, ascend: bool, show_address: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L21)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_view.py#L21)
 
 Description: Display huge value transactions from major blockchains. [Source: https://docs.whale-alert.io/]
 
@@ -64,7 +64,7 @@ Description: Display huge value transactions from major blockchains. [Source: ht
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

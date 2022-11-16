@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_ethplorer_model.get_token_history
+## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_token_history
 
 ```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_token_history(address: Any, sortby: str, ascend: bool) -> DataFrame:
+def get_token_history(address: Any, sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L482)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L489)
 
 Description: Get info about token historical transactions. [Source: Ethplorer]
 
@@ -32,7 +32,7 @@ Description: Get info about token historical transactions. [Source: Ethplorer]
 
 | Type | Description |
 | ---- | ----------- |
-|  | DataFrame with token historical transactions. |
+| pd.DataFrame | DataFrame with token historical transactions. |
 
 ## Examples
 
@@ -41,12 +41,12 @@ Description: Get info about token historical transactions. [Source: Ethplorer]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_ethplorer_view.display_token_history
+## openbb_terminal.cryptocurrency.onchain.ethplorer_view.display_token_history
 
-```python title='openbb_terminal/decorators.py'
-def display_token_history() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_view.py'
+def display_token_history(address: str, limit: int, sortby: str, ascend: bool, hash_: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L276)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L276)
 
 Description: Display info about token history. [Source: Ethplorer]
 
@@ -63,7 +63,7 @@ Description: Display info about token history. [Source: Ethplorer]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

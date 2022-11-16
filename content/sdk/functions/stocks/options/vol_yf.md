@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_options_yfinance_model.get_vol
+## openbb_terminal.stocks.options.yfinance_model.get_vol
 
 ```python title='openbb_terminal/stocks/options/yfinance_model.py'
-def get_vol(symbol: str, expiry: str) -> DataFrame:
+def get_vol(symbol: str, expiry: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L534)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L580)
 
 Description: Plot volume
 
@@ -29,7 +29,7 @@ Description: Plot volume
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
@@ -38,10 +38,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_options_yfinance_view.plot_vol
+## openbb_terminal.stocks.options.yfinance_view.plot_vol
 
 ```python title='openbb_terminal/stocks/options/yfinance_view.py'
-def plot_vol(symbol: str, expiry: str, min_sp: float, max_sp: float, calls_only: bool, puts_only: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def plot_vol(symbol: str, expiry: str, min_sp: float, max_sp: float, calls_only: bool, puts_only: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L338)
 
@@ -62,7 +62,7 @@ Description: Plot volume
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

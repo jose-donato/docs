@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_alphavantage_model.get_inflation
+## openbb_terminal.economy.alphavantage_model.get_inflation
 
 ```python title='openbb_terminal/economy/alphavantage_model.py'
-def get_inflation(start_year: int) -> DataFrame:
+def get_inflation(start_year: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L138)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L139)
 
 Description: Get historical Inflation for United States from AlphaVantage
 
@@ -39,12 +39,12 @@ Description: Get historical Inflation for United States from AlphaVantage
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_alphavantage_view.display_inflation
+## openbb_terminal.economy.alphavantage_view.display_inflation
 
-```python title='openbb_terminal/decorators.py'
-def display_inflation() -> None:
+```python title='openbb_terminal/economy/alphavantage_view.py'
+def display_inflation(start_year: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L202)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L202)
 
 Description: Display US Inflation from AlphaVantage
 
@@ -59,7 +59,7 @@ Description: Display US Inflation from AlphaVantage
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

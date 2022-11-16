@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # available_indices
 
-## economy_yfinance_model.get_available_indices
+## openbb_terminal.economy.yfinance_model.get_available_indices
 
 ```python title='openbb_terminal/economy/yfinance_model.py'
-def get_available_indices() -> dict:
+def get_available_indices() -> Dict
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L660)
 
@@ -16,14 +16,13 @@ Description: Get available indices
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| dict | dictionary with available indices and respective detail |
+| Dict[str, Dict[str, str]] | Dictionary with available indices and respective detail |
 
 ## Examples
 

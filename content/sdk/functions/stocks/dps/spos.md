@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_dps_stockgrid_model.get_net_short_position
+## openbb_terminal.stocks.dark_pool_shorts.stockgrid_model.get_net_short_position
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py'
-def get_net_short_position(symbol: str) -> DataFrame:
+def get_net_short_position(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L169)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L167)
 
 Description: Get net short position. [Source: Stockgrid]
 
@@ -25,13 +25,12 @@ Description: Get net short position. [Source: Stockgrid]
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock to get data from | None | False |
-| Returns | None | None | None | None |
-| ---------- | None | None | None | None |
-| pd.DataFrame | None | Net short position | None | None |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Net short position |
 
 ## Examples
 
@@ -40,10 +39,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_dps_stockgrid_view.net_short_position
+## openbb_terminal.stocks.dark_pool_shorts.stockgrid_view.net_short_position
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py'
-def net_short_position(symbol: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def net_short_position(symbol: str, limit: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L249)
 
@@ -61,7 +60,7 @@ Description: Plot net short position. [Source: Stockgrid]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

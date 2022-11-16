@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # fmp_ratios
 
-## stocks_fa_fmp_model.get_key_ratios
+## openbb_terminal.stocks.fundamental_analysis.fmp_model.get_key_ratios
 
-```python title='openbb_terminal/decorators.py'
-def get_key_ratios() -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/fmp_model.py'
+def get_key_ratios(symbol: str, limit: int, quarterly: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L457)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L457)
 
 Description: Get key ratios
 

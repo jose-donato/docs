@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_options_yfinance_model.get_iv_surface
+## openbb_terminal.stocks.options.yfinance_model.get_iv_surface
 
 ```python title='openbb_terminal/stocks/options/yfinance_model.py'
-def get_iv_surface(symbol: str) -> DataFrame:
+def get_iv_surface(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L321)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L367)
 
 Description: Gets IV surface for calls and puts for ticker
 
@@ -39,10 +39,10 @@ Description: Gets IV surface for calls and puts for ticker
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_options_yfinance_view.display_vol_surface
+## openbb_terminal.stocks.options.yfinance_view.display_vol_surface
 
 ```python title='openbb_terminal/stocks/options/yfinance_view.py'
-def display_vol_surface(symbol: str, export: str, z: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_vol_surface(symbol: str, export: str, z: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L1128)
 
@@ -59,7 +59,7 @@ Description: Display vol surface
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

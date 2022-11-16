@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_options_fdscanner_model.unusual_options
+## openbb_terminal.stocks.options.fdscanner_model.unusual_options
 
 ```python title='openbb_terminal/stocks/options/fdscanner_model.py'
-def unusual_options(limit: int) -> None:
+def unusual_options(limit: int) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L19)
 
 Description: Get unusual option activity from fdscanner.com
 
@@ -30,7 +30,7 @@ Description: Get unusual option activity from fdscanner.com
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Dataframe containing options information |
+| Tuple[pd.DataFrame, pd.Timestamp] | Dataframe containing options information, Timestamp indicated when data was updated from website |
 
 ## Examples
 
@@ -39,10 +39,10 @@ Description: Get unusual option activity from fdscanner.com
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_options_fdscanner_view.display_options
+## openbb_terminal.stocks.options.fdscanner_view.display_options
 
 ```python title='openbb_terminal/stocks/options/fdscanner_view.py'
-def display_options(limit: int, sortby: str, ascend: bool, calls_only: bool, puts_only: bool, export: str) -> None:
+def display_options(limit: int, sortby: str, ascend: bool, calls_only: bool, puts_only: bool, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_view.py#L15)
 
@@ -61,7 +61,7 @@ Description: Displays the unusual options table
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

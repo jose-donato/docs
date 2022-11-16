@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## portfolio_model.get_holdings_value
+## openbb_terminal.portfolio.portfolio_model.get_holdings_value
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_holdings_value(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
+def get_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1339)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1527)
 
 Description: Get holdings of assets (absolute value)
 
@@ -24,7 +24,7 @@ Description: Get holdings of assets (absolute value)
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 
 ## Returns
 
@@ -39,12 +39,12 @@ Description: Get holdings of assets (absolute value)
 </TabItem>
 <TabItem value="view" label="View">
 
-## portfolio_view.display_holdings_value
+## openbb_terminal.portfolio.portfolio_view.display_holdings_value
 
 ```python title='openbb_terminal/portfolio/portfolio_view.py'
-def display_holdings_value(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel, unstack: bool, raw: bool, limit: int, export: str, external_axes: Union[matplotlib.axes._axes.Axes, NoneType]) -> None:
+def display_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine, unstack: bool, raw: bool, limit: int, export: str, external_axes: Optional[matplotlib.axes._axes.Axes]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L626)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L714)
 
 Description: Display holdings of assets (absolute value)
 
@@ -52,7 +52,7 @@ Description: Display holdings of assets (absolute value)
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | unstack | bool | Individual assets over time | None | False |
 | raw | bool | To display raw data | None | False |
 | limit | int | Number of past market days to display holdings | None | False |
@@ -61,7 +61,7 @@ Description: Display holdings of assets (absolute value)
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

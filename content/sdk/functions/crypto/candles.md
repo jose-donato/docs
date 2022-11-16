@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # candles
 
-## crypto_helpers.plot_candles
+## openbb_terminal.cryptocurrency.cryptocurrency_helpers.plot_candles
 
 ```python title='openbb_terminal/cryptocurrency/cryptocurrency_helpers.py'
-def plot_candles(candles_df: pd.DataFrame, volume: bool, ylabel: str, title: str, external_axes: list[plt.Axes] | None, yscale: str) -> None:
+def plot_candles(candles_df: pd.DataFrame, volume: bool, ylabel: str, title: str, external_axes: list[plt.Axes] | None, yscale: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L1469)
 
@@ -27,7 +27,7 @@ Description: Plot candle chart from dataframe. [Source: Binance]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

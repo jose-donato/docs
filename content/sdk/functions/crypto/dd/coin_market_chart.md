@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # coin_market_chart
 
-## crypto_dd_pycoingecko_model.get_coin_market_chart
+## openbb_terminal.cryptocurrency.due_diligence.pycoingecko_model.get_coin_market_chart
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py'
-def get_coin_market_chart(symbol: str, vs_currency: str, days: int) -> DataFrame:
+def get_coin_market_chart(symbol: str, vs_currency: str, days: int) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L222)
 
@@ -26,8 +26,7 @@ Description: Get prices for given coin. [Source: CoinGecko]
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Prices for given coin
-Columns: time, price, currency |
+| pd.DataFrame | Prices for given coin<br/>Columns: time, price, currency |
 
 ## Examples
 

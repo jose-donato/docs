@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # overview
 
-## economy_wsj_model.market_overview
+## openbb_terminal.economy.wsj_model.market_overview
 
 ```python title='openbb_terminal/economy/wsj_model.py'
-def market_overview() -> DataFrame:
+def market_overview() -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L62)
 
@@ -16,8 +16,7 @@ Description: Scrape data for market overview
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 

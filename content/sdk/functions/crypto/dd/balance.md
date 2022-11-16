@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_binance_model.get_balance
+## openbb_terminal.cryptocurrency.due_diligence.binance_view.get_balance
 
-```python title='openbb_terminal/decorators.py'
-def get_balance() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/binance_model.py'
+def get_balance(from_symbol: str, to_symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L175)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_model.py#L179)
 
 Description: Get account holdings for asset. [Source: Binance]
 
@@ -40,14 +40,14 @@ Description: Get account holdings for asset. [Source: Binance]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_binance_view.display_balance
+## openbb_terminal.cryptocurrency.due_diligence.binance_view.display_balance
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/binance_view.py'
-def display_balance(from_symbol: str, to_symbol: str, export: str) -> None:
+def display_balance(from_symbol: str, to_symbol: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_view.py#L64)
 
-Description: Get account holdings for asset. [Source: Binance]
+Description: Prints table showing account holdings for asset. [Source: Binance]
 
 ## Parameters
 
@@ -59,7 +59,7 @@ Description: Get account holdings for asset. [Source: Binance]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

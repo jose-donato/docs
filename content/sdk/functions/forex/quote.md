@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forex_av_model.get_quote
+## openbb_terminal.forex.av_model.get_quote
 
 ```python title='openbb_terminal/forex/av_model.py'
-def get_quote(to_symbol: str, from_symbol: str) -> None:
+def get_quote(to_symbol: str, from_symbol: str) -> Dict
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L56)
 
@@ -31,7 +31,7 @@ Description: Get current exchange rate quote from alpha vantage.
 
 | Type | Description |
 | ---- | ----------- |
-| Dict | Dictionary of exchange rate |
+| Dict[str, Any] | Dictionary of exchange rate |
 
 ## Examples
 
@@ -40,12 +40,12 @@ Description: Get current exchange rate quote from alpha vantage.
 </TabItem>
 <TabItem value="view" label="View">
 
-## forex_av_view.display_quote
+## openbb_terminal.forex.av_view.display_quote
 
-```python title='openbb_terminal/decorators.py'
-def display_quote() -> None:
+```python title='openbb_terminal/forex/av_view.py'
+def display_quote(to_symbol: str, from_symbol: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_view.py#L18)
 
 Description: Display current forex pair exchange rate.
 
@@ -58,7 +58,7 @@ Description: Display current forex pair exchange rate.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

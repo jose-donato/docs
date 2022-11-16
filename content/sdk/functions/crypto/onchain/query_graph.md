@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # query_graph
 
-## crypto_onchain_bitquery_model.query_graph
+## openbb_terminal.cryptocurrency.onchain.bitquery_model.query_graph
 
-```python title='openbb_terminal/decorators.py'
-def query_graph() -> dict:
+```python title='openbb_terminal/cryptocurrency/onchain/bitquery_model.py'
+def query_graph(url: str, query: str) -> dict
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L159)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L159)
 
 Description: Helper methods for querying graphql api. [Source: https://bitquery.io/]
 
@@ -25,7 +25,7 @@ Description: Helper methods for querying graphql api. [Source: https://bitquery.
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dictionary with response data |
+| dict | Dictionary with response data |
 
 ## Examples
 

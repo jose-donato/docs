@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ba_twitter_model.get_sentiment
+## openbb_terminal.common.behavioural_analysis.twitter_model.get_sentiment
 
 ```python title='openbb_terminal/common/behavioural_analysis/twitter_model.py'
-def get_sentiment(symbol: str, n_tweets: int, n_days_past: int) -> DataFrame:
+def get_sentiment(symbol: str, n_tweets: int, n_days_past: int) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_model.py#L125)
 
-Description: Get sentiments from symbol
+Description: Get sentiments from symbol.
 
 ## Parameters
 
@@ -30,7 +30,9 @@ Description: Get sentiments from symbol
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of sentiment |
 
 ## Examples
 
@@ -39,14 +41,14 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ba_twitter_view.display_sentiment
+## openbb_terminal.common.behavioural_analysis.twitter_view.display_sentiment
 
 ```python title='openbb_terminal/common/behavioural_analysis/twitter_view.py'
-def display_sentiment(symbol: str, n_tweets: int, n_days_past: int, compare: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_sentiment(symbol: str, n_tweets: int, n_days_past: int, compare: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_view.py#L79)
 
-Description: Plot sentiments from symbol
+Description: Plots sentiments from symbol
 
 ## Parameters
 
@@ -61,7 +63,7 @@ Description: Plot sentiments from symbol
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

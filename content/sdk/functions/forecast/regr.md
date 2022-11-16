@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forecast_regr_model.get_regression_data
+## openbb_terminal.forecast.regr_model.get_regression_data
 
 ```python title='openbb_terminal/forecast/regr_model.py'
-def get_regression_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]]) -> None:
+def get_regression_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]]) -> Tuple
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/regr_model.py#L22)
 
@@ -37,7 +37,7 @@ Description: Perform Regression Forecasting
 
 | Type | Description |
 | ---- | ----------- |
-| List[TimeSeries] | Adjusted Data series |
+| Tuple[List[TimeSeries], List[TimeSeries], List[TimeSeries], float, type[RegressionModel]] | Adjusted Data series,<br/>Historical forecast by best RNN model,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best Regression Model. |
 
 ## Examples
 
@@ -46,10 +46,10 @@ Description: Perform Regression Forecasting
 </TabItem>
 <TabItem value="view" label="View">
 
-## forecast_regr_view.display_regression
+## openbb_terminal.forecast.regr_view.display_regression
 
 ```python title='openbb_terminal/forecast/regr_view.py'
-def display_regression(data: Union[pd.Series, pd.DataFrame], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]], export: str, residuals: bool, forecast_only: bool, start_date: Union[datetime.datetime, NoneType], end_date: Union[datetime.datetime, NoneType], naive: bool, explainability_raw: bool, export_pred_raw: bool, external_axes: Union[List[axes], NoneType]) -> None:
+def display_regression(data: Union[pd.Series, pd.DataFrame], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, output_chunk_length: int, lags: Union[int, List[int]], export: str, residuals: bool, forecast_only: bool, start_date: Optional[datetime.datetime], end_date: Optional[datetime.datetime], naive: bool, explainability_raw: bool, export_pred_raw: bool, external_axes: Optional[List[axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/regr_view.py#L20)
 
@@ -73,13 +73,12 @@ Description: Display Regression Forecasting
 | forecast_only | bool | Whether to only show dates in the forecasting range. Defaults to False. | False | False |
 | start_date | Optional[datetime] | The starting date to perform analysis, data before this is trimmed. Defaults to None. | None | False |
 | end_date | Optional[datetime] | The ending date to perform analysis, data after this is trimmed. Defaults to None. | None | False |
-| naive | bool | Whether to show the naive baseline. This just assumes the closing price will be the same
-as the previous day's closing price. Defaults to False. | False | False |
+| naive | bool | Whether to show the naive baseline. This just assumes the closing price will be the same<br/>as the previous day's closing price. Defaults to False. | False | False |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

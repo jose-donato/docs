@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # fmp_cash
 
-## stocks_fa_fmp_model.get_cash
+## openbb_terminal.stocks.fundamental_analysis.fmp_model.get_cash
 
-```python title='openbb_terminal/decorators.py'
-def get_cash() -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/fmp_model.py'
+def get_cash(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L349)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L349)
 
 Description: Get cash flow
 

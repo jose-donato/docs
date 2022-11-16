@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_project_product_info
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_project_product_info
 
-```python title='openbb_terminal/decorators.py'
-def get_project_product_info() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_project_product_info(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L342)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L353)
 
 Description: Returns coin product info
 
@@ -30,7 +30,7 @@ Description: Returns coin product info
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Metric, Value with project and technology details |
+| Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame] | Metric, Value with project and technology details,<br/>Coin public repos,<br/>Coin audits,<br/>Coin known exploits/vulns |
 
 ## Examples
 
@@ -39,14 +39,14 @@ Description: Returns coin product info
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_project_info
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_project_info
 
-```python title='openbb_terminal/decorators.py'
-def display_project_info() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_project_info(symbol: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L458)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L470)
 
-Description: Display project info
+Description: Prints table showing project info
 
 ## Parameters
 
@@ -57,7 +57,7 @@ Description: Display project info
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

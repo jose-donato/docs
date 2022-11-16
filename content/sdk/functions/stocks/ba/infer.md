@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ba_twitter_model.load_analyze_tweets
+## openbb_terminal.common.behavioural_analysis.twitter_model.load_analyze_tweets
 
-```python title='openbb_terminal/decorators.py'
-def load_analyze_tweets() -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/twitter_model.py'
+def load_analyze_tweets(symbol: str, limit: int, start_date: Optional[str], end_date: Optional[str]) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L23)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_model.py#L23)
 
-Description: Load tweets from twitter API and analyzes using VADER
+Description: Load tweets from twitter API and analyzes using VADER.
 
 ## Parameters
 
@@ -42,14 +42,14 @@ Description: Load tweets from twitter API and analyzes using VADER
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ba_twitter_view.display_inference
+## openbb_terminal.common.behavioural_analysis.twitter_view.display_inference
 
 ```python title='openbb_terminal/common/behavioural_analysis/twitter_view.py'
-def display_inference(symbol: str, limit: int, export: str) -> None:
+def display_inference(symbol: str, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_view.py#L29)
 
-Description: Infer sentiment from past n tweets
+Description: Prints Inference sentiment from past n tweets.
 
 ## Parameters
 
@@ -61,7 +61,7 @@ Description: Infer sentiment from past n tweets
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

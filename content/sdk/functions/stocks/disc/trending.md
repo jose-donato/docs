@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # trending
 
-## stocks_disc_seeking_alpha_model.get_trending_list
+## openbb_terminal.stocks.discovery.seeking_alpha_model.get_trending_list
 
 ```python title='openbb_terminal/stocks/discovery/seeking_alpha_model.py'
-def get_trending_list(limit: int) -> list:
+def get_trending_list(limit: int) -> list
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L100)
 

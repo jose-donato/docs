@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # candle
 
-## stocks_helper.display_candle
+## openbb_terminal.stocks.stocks_helper.display_candle
 
 ```python title='openbb_terminal/stocks/stocks_helper.py'
-def display_candle(symbol: str, data: pd.DataFrame, use_matplotlib: bool, intraday: bool, add_trend: bool, ma: Union[Iterable[int], NoneType], asset_type: str, start_date: Union[datetime.datetime, str, NoneType], interval: int, end_date: Union[datetime.datetime, str, NoneType], prepost: bool, source: str, iexrange: str, weekly: bool, monthly: bool, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], raw: bool, yscale: str) -> None:
+def display_candle(symbol: str, data: pd.DataFrame, use_matplotlib: bool, intraday: bool, add_trend: bool, ma: Optional[Iterable[int]], asset_type: str, start_date: Union[datetime.datetime, str, NoneType], interval: int, end_date: Union[datetime.datetime, str, NoneType], prepost: bool, source: str, iexrange: str, weekly: bool, monthly: bool, external_axes: Optional[List[matplotlib.axes._axes.Axes]], raw: bool, yscale: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L433)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L438)
 
 Description: Show candle plot of loaded ticker.
 
@@ -40,7 +40,7 @@ Description: Show candle plot of loaded ticker.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

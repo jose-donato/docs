@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## econometrics_model.get_options
+## openbb_terminal.econometrics.econometrics_model.get_options
 
 ```python title='openbb_terminal/econometrics/econometrics_model.py'
-def get_options(datasets: Dict[str, pd.DataFrame], dataset_name: str) -> None:
+def get_options(datasets: Dict[str, pd.DataFrame], dataset_name: str) -> Dict
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L21)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L23)
 
 Description: Obtain columns-dataset combinations from loaded in datasets that can be used in other commands
 
@@ -31,8 +31,7 @@ Description: Obtain columns-dataset combinations from loaded in datasets that ca
 
 | Type | Description |
 | ---- | ----------- |
-| dict | A dictionary with a DataFrame for each option. With dataset_name set, only shows one
-options table. |
+| Dict[Union[str, Any], pd.DataFrame] | A dictionary with a DataFrame for each option. With dataset_name set, only shows one<br/>options table. |
 
 ## Examples
 
@@ -41,12 +40,12 @@ options table. |
 </TabItem>
 <TabItem value="view" label="View">
 
-## econometrics_view.show_options
+## openbb_terminal.econometrics.econometrics_view.show_options
 
 ```python title='openbb_terminal/econometrics/econometrics_view.py'
-def show_options(datasets: Dict[str, pd.DataFrame], dataset_name: str, export: str) -> None:
+def show_options(datasets: Dict[str, pd.DataFrame], dataset_name: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L34)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L27)
 
 Description: Plot custom data
 
@@ -60,7 +59,7 @@ Description: Plot custom data
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

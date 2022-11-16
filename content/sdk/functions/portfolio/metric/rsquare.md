@@ -5,20 +5,20 @@ description: OpenBB SDK Function
 
 # rsquare
 
-## portfolio_model.get_r2_score
+## openbb_terminal.portfolio.portfolio_model.get_r2_score
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_r2_score(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
+def get_r2_score(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L795)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L825)
 
-Description: Class method that retrieves R2 Score for portfolio and benchmark selected
+Description: Method that retrieves R2 Score for portfolio and benchmark selected
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 
 ## Returns
 

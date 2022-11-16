@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_team
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_team
 
-```python title='openbb_terminal/decorators.py'
-def get_team() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_team(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L411)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L419)
 
 Description: Returns coin team
 
@@ -30,7 +30,7 @@ Description: Returns coin team
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | individuals |
+| Tuple[pd.DataFrame, pd.DataFrame] | Individuals,<br/>Organizations |
 
 ## Examples
 
@@ -39,14 +39,14 @@ Description: Returns coin team
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_team
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_team
 
-```python title='openbb_terminal/decorators.py'
-def display_team() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_team(symbol: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L544)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L556)
 
-Description: Display coin team
+Description: Prints table showing coin team
 
 ## Parameters
 
@@ -57,7 +57,7 @@ Description: Display coin team
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

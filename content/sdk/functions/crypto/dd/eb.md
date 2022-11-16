@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_glassnode_model.get_exchange_balances
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_model.get_exchange_balances
 
-```python title='openbb_terminal/decorators.py'
-def get_exchange_balances() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py'
+def get_exchange_balances(symbol: str, exchange: str, start_date: str, end_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L440)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L452)
 
 Description: Returns the total amount of coins held on exchange addresses in units and percentage.
 
@@ -42,23 +42,21 @@ Description: Returns the total amount of coins held on exchange addresses in uni
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_glassnode_view.display_exchange_balances
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_view.display_exchange_balances
 
-```python title='openbb_terminal/decorators.py'
-def display_exchange_balances() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py'
+def display_exchange_balances(symbol: str, exchange: str, start_date: str, end_date: str, percentage: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L229)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L238)
 
-Description: Display total amount of coins held on exchange addresses in units and percentage.
+Description: Plots total amount of coins held on exchange addresses in units and percentage.
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
-| exchange | str | Exchange to check net position change (possible values are: aggregated, binance, bittrex,
-coinex, gate.io, gemini, huobi, kucoin, poloniex, bibox, bigone, bitfinex, hitbtc, kraken,
-okex, bithumb, zb.com, cobinhood, bitmex, bitstamp, coinbase, coincheck, luno) | None | False |
+| exchange | str | Exchange to check net position change (possible values are: aggregated, binance, bittrex,<br/>coinex, gate.io, gemini, huobi, kucoin, poloniex, bibox, bigone, bitfinex, hitbtc, kraken,<br/>okex, bithumb, zb.com, cobinhood, bitmex, bitstamp, coinbase, coincheck, luno) | None | False |
 | start_date | str | Initial date, format YYYY-MM-DD | None | False |
 | end_date | str | Final date, format YYYY-MM-DD | None | False |
 | percentage | bool | Show percentage instead of stacked value. | None | False |
@@ -67,7 +65,7 @@ okex, bithumb, zb.com, cobinhood, bitmex, bitstamp, coinbase, coincheck, luno) |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

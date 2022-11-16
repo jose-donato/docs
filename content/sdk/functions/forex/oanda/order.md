@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forex_oanda_model.create_order_request
+## openbb_terminal.forex.oanda.oanda_model.create_order_request
 
 ```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def create_order_request(price: int, units: int, instrument: Union[str, NoneType], accountID: str) -> None:
+def create_order_request(price: int, units: int, instrument: Optional[str], accountID: str) -> Union
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L270)
 
@@ -42,12 +42,12 @@ Description: Request creation of buy/sell trade order.
 </TabItem>
 <TabItem value="view" label="View">
 
-## forex_oanda_view.create_order
+## openbb_terminal.forex.oanda.oanda_view.create_order
 
-```python title='openbb_terminal/decorators.py'
-def create_order() -> None:
+```python title='openbb_terminal/forex/oanda/oanda_view.py'
+def create_order(accountID: str, instrument: str, price: int, units: int) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L178)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L178)
 
 Description: Create a buy/sell order.
 
@@ -62,7 +62,7 @@ Description: Create a buy/sell order.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

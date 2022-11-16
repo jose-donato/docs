@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # pipo
 
-## stocks_disc_finnhub_model.get_past_ipo
+## openbb_terminal.stocks.discovery.finnhub_model.get_past_ipo
 
-```python title='openbb_terminal/decorators.py'
-def get_past_ipo() -> None:
+```python title='openbb_terminal/stocks/discovery/finnhub_model.py'
+def get_past_ipo(num_days_behind: int, start_date: Optional[str]) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L67)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L74)
 
 Description: Past IPOs dates. [Source: Finnhub]
 
@@ -23,7 +23,9 @@ Description: Past IPOs dates. [Source: Finnhub]
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Get dataframe with past IPOs |
 
 ## Examples
 

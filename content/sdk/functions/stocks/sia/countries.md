@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # countries
 
-## stocks_sia_financedatabase_model.get_countries
+## openbb_terminal.stocks.sector_industry_analysis.financedatabase_model.get_countries
 
 ```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py'
-def get_countries(industry: str, sector: str) -> list:
+def get_countries(industry: str, sector: str) -> list
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L19)
 

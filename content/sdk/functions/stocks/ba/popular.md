@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ba_reddit_model.get_popular_tickers
+## openbb_terminal.common.behavioural_analysis.reddit_model.get_popular_tickers
 
-```python title='openbb_terminal/decorators.py'
-def get_popular_tickers() -> DataFrame:
+```python title='openbb_terminal/common/behavioural_analysis/reddit_model.py'
+def get_popular_tickers(limit: int, post_limit: int, subreddits: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L147)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L145)
 
-Description: Get popular tickers from list of subreddits [Source: reddit]
+Description: Get popular tickers from list of subreddits [Source: reddit].
 
 ## Parameters
 
@@ -41,14 +41,14 @@ Description: Get popular tickers from list of subreddits [Source: reddit]
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ba_reddit_view.display_popular_tickers
+## openbb_terminal.common.behavioural_analysis.reddit_view.display_popular_tickers
 
-```python title='openbb_terminal/decorators.py'
-def display_popular_tickers() -> None:
+```python title='openbb_terminal/common/behavioural_analysis/reddit_view.py'
+def display_popular_tickers(limit: int, post_limit: int, subreddits: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L184)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_view.py#L184)
 
-Description: Print latest popular tickers. [Source: Reddit]
+Description: Prints table showing latest popular tickers. [Source: Reddit].
 
 ## Parameters
 
@@ -61,7 +61,7 @@ Description: Print latest popular tickers. [Source: Reddit]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

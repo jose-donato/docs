@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # polygon_peers
 
-## stocks_ca_polygon_model.get_similar_companies
+## openbb_terminal.stocks.comparison_analysis.polygon_model.get_similar_companies
 
-```python title='openbb_terminal/decorators.py'
-def get_similar_companies() -> None:
+```python title='openbb_terminal/stocks/comparison_analysis/polygon_model.py'
+def get_similar_companies(symbol: str, us_only: bool) -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/polygon_model.py#L17)
 
 Description: Get similar companies from Polygon
 

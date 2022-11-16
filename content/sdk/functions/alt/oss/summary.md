@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## alt_oss_github_model.get_repo_summary
+## openbb_terminal.alternative.oss.github_model.get_repo_summary
 
 ```python title='openbb_terminal/alternative/oss/github_model.py'
-def get_repo_summary(repo: str) -> DataFrame:
+def get_repo_summary(repo: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L172)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L179)
 
-Description: Get repository summary
+Description: Get repository summary.
 
 ## Parameters
 
@@ -30,7 +30,7 @@ Description: Get repository summary
 
 | Type | Description |
 | ---- | ----------- |
-| Metric, Value | None |
+| pd.DataFrame | Dataframe with repo summary - Columns: Metric, Value |
 
 ## Examples
 
@@ -39,14 +39,14 @@ Description: Get repository summary
 </TabItem>
 <TabItem value="view" label="View">
 
-## alt_oss_github_view.display_repo_summary
+## openbb_terminal.alternative.oss.github_view.display_repo_summary
 
 ```python title='openbb_terminal/alternative/oss/github_view.py'
-def display_repo_summary(repo: str, export: str) -> None:
+def display_repo_summary(repo: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L123)
 
-Description: Display repo summary [Source: https://api.github.com]
+Description: Prints table showing repo summary [Source: https://api.github.com].
 
 ## Parameters
 
@@ -57,7 +57,7 @@ Description: Display repo summary [Source: https://api.github.com]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

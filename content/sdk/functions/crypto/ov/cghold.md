@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_pycoingecko_model.get_holdings_overview
+## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_holdings_overview
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_holdings_overview(endpoint: str) -> None:
+def get_holdings_overview(endpoint: str) -> List
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L102)
 
@@ -30,8 +30,7 @@ Description: Returns public companies that holds ethereum or bitcoin [Source: Co
 
 | Type | Description |
 | ---- | ----------- |
-|  | - str:              Overall statistics
-- pandas.DataFrame: Companies holding crypto |
+| List[Union[str, pd.DataFrame]] | - str:              Overall statistics<br/>- pd.DataFrame: Companies holding crypto |
 
 ## Examples
 
@@ -40,10 +39,10 @@ Description: Returns public companies that holds ethereum or bitcoin [Source: Co
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_pycoingecko_view.display_holdings_overview
+## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_holdings_overview
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_holdings_overview(symbol: str, show_bar: bool, export: str, limit: int) -> None:
+def display_holdings_overview(symbol: str, show_bar: bool, export: str, limit: int) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L135)
 
@@ -60,7 +59,7 @@ Description: Shows overview of public companies that holds ethereum or bitcoin. 
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

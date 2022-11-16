@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # close
 
-## crypto_dd_glassnode_model.get_close_price
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_model.get_close_price
 
-```python title='openbb_terminal/decorators.py'
-def get_close_price() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py'
+def get_close_price(symbol: str, start_date: str, end_date: str, print_errors: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L180)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L180)
 
 Description: Returns the price of a cryptocurrency
 

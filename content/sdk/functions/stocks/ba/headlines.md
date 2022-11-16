@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ba_finbrain_model.get_sentiment
+## openbb_terminal.common.behavioural_analysis.finbrain_model.get_sentiment
 
 ```python title='openbb_terminal/common/behavioural_analysis/finbrain_model.py'
-def get_sentiment(symbol: str) -> DataFrame:
+def get_sentiment(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/finbrain_model.py#L15)
 
-Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrain]
+Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrain].
 
 ## Parameters
 
@@ -30,7 +30,7 @@ Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrai
 
 | Type | Description |
 | ---- | ----------- |
-| DataFrame() | Empty if there was an issue with data retrieval |
+| pd.DataFrame | Empty if there was an issue with data retrieval |
 
 ## Examples
 
@@ -39,14 +39,14 @@ Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrai
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ba_finbrain_view.display_sentiment_analysis
+## openbb_terminal.common.behavioural_analysis.finbrain_view.display_sentiment_analysis
 
 ```python title='openbb_terminal/common/behavioural_analysis/finbrain_view.py'
-def display_sentiment_analysis(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_sentiment_analysis(symbol: str, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/finbrain_view.py#L36)
 
-Description: Sentiment analysis from FinBrain
+Description: Plots Sentiment analysis from FinBrain. Prints table if raw is True. [Source: FinBrain]
 
 ## Parameters
 
@@ -59,7 +59,7 @@ Description: Sentiment analysis from FinBrain
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

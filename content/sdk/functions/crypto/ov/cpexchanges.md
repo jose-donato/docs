@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_coinpaprika_model.get_list_of_exchanges
+## openbb_terminal.cryptocurrency.overview.coinpaprika_model.get_list_of_exchanges
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
-def get_list_of_exchanges(symbols: str, sortby: str, ascend: bool) -> DataFrame:
+def get_list_of_exchanges(symbols: str, sortby: str, ascend: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L283)
 
@@ -32,8 +32,7 @@ Description: List exchanges from CoinPaprika API [Source: CoinPaprika]
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | rank, name, currencies, markets, fiats, confidence_score, reported_volume_24h,
-reported_volume_7d ,reported_volume_30d, sessions_per_month, |
+| pd.DataFrame | rank, name, currencies, markets, fiats, confidence_score, reported_volume_24h,<br/>reported_volume_7d ,reported_volume_30d, sessions_per_month, |
 
 ## Examples
 
@@ -42,10 +41,10 @@ reported_volume_7d ,reported_volume_30d, sessions_per_month, |
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_coinpaprika_view.display_all_exchanges
+## openbb_terminal.cryptocurrency.overview.coinpaprika_view.display_all_exchanges
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
-def display_all_exchanges(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
+def display_all_exchanges(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L213)
 
@@ -64,7 +63,7 @@ Description: List exchanges from CoinPaprika API. [Source: CoinPaprika]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

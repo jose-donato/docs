@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ca_yahoo_finance_model.get_volume
+## openbb_terminal.stocks.comparison_analysis.yahoo_finance_model.get_volume
 
 ```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py'
-def get_volume(similar: List[str], start_date: str) -> DataFrame:
+def get_volume(similar: List[str], start_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L122)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L134)
 
 Description: Get stock volume. [Source: Yahoo Finance]
 
@@ -24,14 +24,14 @@ Description: Get stock volume. [Source: Yahoo Finance]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| similar | List[str] | List of similar tickers.
-Comparable companies can be accessed through
-finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Start date of comparison, by default 1 year ago | 1 | True |
+| similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe with volume for stock |
 
 ## Examples
 
@@ -40,12 +40,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ca_yahoo_finance_view.display_volume
+## openbb_terminal.stocks.comparison_analysis.yahoo_finance_view.display_volume
 
 ```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py'
-def display_volume(similar: List[str], start_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_volume(similar: List[str], start_date: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L110)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L109)
 
 Description: Display stock volume. [Source: Yahoo Finance]
 
@@ -53,16 +53,14 @@ Description: Display stock volume. [Source: Yahoo Finance]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| similar | List[str] | List of similar tickers.
-Comparable companies can be accessed through
-finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Start date of comparison, by default 1 year ago | 1 | True |
+| similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
 | export | str | Format to export historical prices, by default "" | None | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

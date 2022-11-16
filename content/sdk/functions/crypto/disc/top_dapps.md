@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_disc_dappradar_model.get_top_dapps
+## openbb_terminal.cryptocurrency.discovery.dappradar_model.get_top_dapps
 
 ```python title='openbb_terminal/cryptocurrency/discovery/dappradar_model.py'
-def get_top_dapps(sortby: str, limit: int) -> DataFrame:
+def get_top_dapps(sortby: str, limit: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L207)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L209)
 
 Description: Get top decentralized applications by daily volume and users [Source: https://dappradar.com/]
 
@@ -30,8 +30,7 @@ Description: Get top decentralized applications by daily volume and users [Sourc
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Top decentralized exchanges.
-Columns: Name, Category, Protocols, Daily Users, Daily Volume [$] |
+| pd.DataFrame | Top decentralized exchanges.<br/>Columns: Name, Category, Protocols, Daily Users, Daily Volume [$] |
 
 ## Examples
 
@@ -40,14 +39,14 @@ Columns: Name, Category, Protocols, Daily Users, Daily Volume [$] |
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_disc_dappradar_view.display_top_dapps
+## openbb_terminal.cryptocurrency.discovery.dappradar_view.display_top_dapps
 
 ```python title='openbb_terminal/cryptocurrency/discovery/dappradar_view.py'
-def display_top_dapps(limit: int, export: str, sortby: str) -> None:
+def display_top_dapps(limit: int, export: str, sortby: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L133)
 
-Description: Displays top decentralized exchanges [Source: https://dappradar.com/]
+Description: Prints table showing top decentralized exchanges [Source: https://dappradar.com/]
 
 ## Parameters
 
@@ -59,7 +58,7 @@ Description: Displays top decentralized exchanges [Source: https://dappradar.com
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

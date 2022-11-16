@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## econometrics_regression_model.get_bpag
+## openbb_terminal.econometrics.regression_model.get_bpag
 
 ```python title='openbb_terminal/econometrics/regression_model.py'
-def get_bpag(model: pd.DataFrame) -> tuple:
+def get_bpag(model: pd.DataFrame) -> tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L518)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L626)
 
 Description: Calculate test statistics for heteroscedasticity
 
@@ -30,7 +30,7 @@ Description: Calculate test statistics for heteroscedasticity
 
 | Type | Description |
 | ---- | ----------- |
-| Test results from the Breusch-Pagan Test | None |
+| Test results from the Breusch-Pagan Test |  |
 
 ## Examples
 
@@ -39,12 +39,12 @@ Description: Calculate test statistics for heteroscedasticity
 </TabItem>
 <TabItem value="view" label="View">
 
-## econometrics_regression_view.display_bpag
+## openbb_terminal.econometrics.regression_view.display_bpag
 
 ```python title='openbb_terminal/econometrics/regression_view.py'
-def display_bpag(model: pd.DataFrame, export: str) -> None:
+def display_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L194)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L182)
 
 Description: Show Breusch-Pagan heteroscedasticity test
 
@@ -52,12 +52,12 @@ Description: Show Breusch-Pagan heteroscedasticity test
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| model | OLS Model | Model containing residual values. | None | False |
+| model | OLS Model | OLS model that has been fit. | None | False |
 | export | str | Format to export data | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

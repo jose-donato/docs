@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forex_oanda_model.get_calendar_request
+## openbb_terminal.forex.oanda.oanda_model.get_calendar_request
 
 ```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def get_calendar_request(days: int, instrument: Union[str, NoneType]) -> None:
+def get_calendar_request(days: int, instrument: Optional[str]) -> Union
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L645)
 
@@ -40,12 +40,12 @@ Description: Request data of significant events calendar.
 </TabItem>
 <TabItem value="view" label="View">
 
-## forex_oanda_view.calendar
+## openbb_terminal.forex.oanda.oanda_view.calendar
 
-```python title='openbb_terminal/decorators.py'
-def calendar() -> None:
+```python title='openbb_terminal/forex/oanda/oanda_view.py'
+def calendar(instrument: str, days: int) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L393)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L393)
 
 Description: View calendar of significant events.
 
@@ -58,7 +58,7 @@ Description: View calendar of significant events.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## alt_covid_model.get_case_slopes
+## openbb_terminal.alternative.covid.covid_model.get_case_slopes
 
 ```python title='openbb_terminal/alternative/covid/covid_model.py'
-def get_case_slopes(days_back: int, limit: int, threshold: int, ascend: bool) -> DataFrame:
+def get_case_slopes(days_back: int, limit: int, threshold: int, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L153)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L163)
 
-Description: Load cases and find slope over period
+Description: Load cases and find slope over period.
 
 ## Parameters
 
@@ -42,14 +42,14 @@ Description: Load cases and find slope over period
 </TabItem>
 <TabItem value="view" label="View">
 
-## alt_covid_view.display_case_slopes
+## openbb_terminal.alternative.covid.covid_view.display_case_slopes
 
 ```python title='openbb_terminal/alternative/covid/covid_view.py'
-def display_case_slopes(days_back: int, limit: int, threshold: int, ascend: bool, export: str) -> None:
+def display_case_slopes(days_back: int, limit: int, threshold: int, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L215)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L211)
 
-Description: None
+Description: Prints table showing countries with the highest case slopes.
 
 ## Parameters
 
@@ -63,7 +63,7 @@ Description: None
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

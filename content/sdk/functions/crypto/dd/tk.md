@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_tokenomics
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_tokenomics
 
-```python title='openbb_terminal/decorators.py'
-def get_tokenomics() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L272)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L283)
 
 Description: Returns coin tokenomics
 
@@ -31,7 +31,7 @@ Description: Returns coin tokenomics
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Metric Value tokenomics |
+| Tuple[pd.DataFrame, pd.DataFrame] | Metric Value tokenomics,<br/>Circulating supply overtime |
 
 ## Examples
 
@@ -40,14 +40,14 @@ Description: Returns coin tokenomics
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_tokenomics
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_tokenomics
 
-```python title='openbb_terminal/decorators.py'
-def display_tokenomics() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_tokenomics(symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L374)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L386)
 
-Description: Display coin tokenomics
+Description: Plots coin tokenomics
 
 ## Parameters
 
@@ -59,7 +59,7 @@ Description: Display coin tokenomics
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

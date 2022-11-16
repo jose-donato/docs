@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # profile
 
-## stocks_fa_fmp_model.get_profile
+## openbb_terminal.stocks.fundamental_analysis.fmp_model.get_profile
 
-```python title='openbb_terminal/decorators.py'
-def get_profile() -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/fmp_model.py'
+def get_profile(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L56)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L56)
 
 Description: Get ticker profile from FMP
 
@@ -19,13 +19,12 @@ Description: Get ticker profile from FMP
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| Returns | None | None | None | None |
-| ---------- | None | None | None | None |
-| pd.DataFrame |  | Dataframe of ticker profile | None | False |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of ticker profile |
 
 ## Examples
 

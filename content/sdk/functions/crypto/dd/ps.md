@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_coinpaprika_model.get_tickers_info_for_coin
+## openbb_terminal.cryptocurrency.due_diligence.coinpaprika_model.get_tickers_info_for_coin
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py'
-def get_tickers_info_for_coin(symbol: str, quotes: str) -> DataFrame:
+def get_tickers_info_for_coin(symbol: str, quotes: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L296)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L298)
 
 Description: Get all most important ticker related information for given coin id [Source: CoinPaprika]
 
@@ -31,8 +31,7 @@ Description: Get all most important ticker related information for given coin id
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Most important ticker related information
-Columns: Metric, Value |
+| pd.DataFrame | Most important ticker related information<br/>Columns: Metric, Value |
 
 ## Examples
 
@@ -41,14 +40,14 @@ Columns: Metric, Value |
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_coinpaprika_view.display_price_supply
+## openbb_terminal.cryptocurrency.due_diligence.coinpaprika_view.display_price_supply
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py'
-def display_price_supply(from_symbol: str, to_symbol: str, export: str) -> None:
+def display_price_supply(from_symbol: str, to_symbol: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L304)
 
-Description: Get ticker information for single coin [Source: CoinPaprika]
+Description: Prints table showing ticker information for single coin [Source: CoinPaprika]
 
 ## Parameters
 
@@ -60,7 +59,7 @@ Description: Get ticker information for single coin [Source: CoinPaprika]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

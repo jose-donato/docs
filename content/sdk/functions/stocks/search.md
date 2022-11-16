@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # search
 
-## stocks_helper.search
+## openbb_terminal.stocks.stocks_helper.search
 
 ```python title='openbb_terminal/stocks/stocks_helper.py'
-def search(query: str, country: str, sector: str, industry: str, exchange_country: str, limit: int, export: str) -> None:
+def search(query: str, country: str, sector: str, industry: str, exchange_country: str, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L98)
 
@@ -28,7 +28,7 @@ Description: Search selected query for tickers.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

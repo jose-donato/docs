@@ -11,25 +11,24 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_pycoingecko_model.get_global_markets_info
+## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_global_markets_info
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_global_markets_info() -> DataFrame:
+def get_global_markets_info() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L451)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L460)
 
 Description: Get global statistics about crypto markets from CoinGecko API like:
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Market_Cap, Volume, Market_Cap_Percentage |
+| pd.DataFrame | Market_Cap, Volume, Market_Cap_Percentage |
 
 ## Examples
 
@@ -38,10 +37,10 @@ Description: Get global statistics about crypto markets from CoinGecko API like:
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_pycoingecko_view.display_global_market_info
+## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_global_market_info
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_global_market_info(pie: bool, export: str) -> None:
+def display_global_market_info(pie: bool, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L240)
 
@@ -56,7 +55,7 @@ Description: Shows global statistics about crypto. [Source: CoinGecko]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

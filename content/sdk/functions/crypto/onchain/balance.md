@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_ethplorer_model.get_address_info
+## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_address_info
 
 ```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_address_info(address: str, sortby: str, ascend: bool) -> DataFrame:
+def get_address_info(address: str, sortby: str, ascend: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L196)
 
@@ -32,7 +32,7 @@ Description: Get info about tokens on you ethereum blockchain balance. Eth balan
 
 | Type | Description |
 | ---- | ----------- |
-|  | DataFrame with list of tokens and their balances. |
+| pd.DataFrame | DataFrame with list of tokens and their balances. |
 
 ## Examples
 
@@ -41,12 +41,12 @@ Description: Get info about tokens on you ethereum blockchain balance. Eth balan
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_ethplorer_view.display_address_info
+## openbb_terminal.cryptocurrency.onchain.ethplorer_view.display_address_info
 
-```python title='openbb_terminal/decorators.py'
-def display_address_info() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_view.py'
+def display_address_info(address: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L21)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L21)
 
 Description: Display info about tokens for given ethereum blockchain balance e.g. ETH balance,
 
@@ -62,7 +62,7 @@ Description: Display info about tokens for given ethereum blockchain balance e.g
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -5,19 +5,18 @@ description: OpenBB SDK Function
 
 # country_codes
 
-## economy_nasdaq_model.get_country_codes
+## openbb_terminal.economy.nasdaq_model.get_country_codes
 
 ```python title='openbb_terminal/economy/nasdaq_model.py'
-def get_country_codes() -> None:
+def get_country_codes() -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/nasdaq_model.py#L108)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/nasdaq_model.py#L115)
 
 Description: Get available country codes for Bigmac index
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 

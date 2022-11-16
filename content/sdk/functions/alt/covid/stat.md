@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## alt_covid_model.get_covid_stat
+## openbb_terminal.alternative.covid.covid_model.get_covid_stat
 
 ```python title='openbb_terminal/alternative/covid/covid_model.py'
-def get_covid_stat(country: str, stat: str, limit: int) -> DataFrame:
+def get_covid_stat(country: str, stat: str, limit: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L121)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L126)
 
-Description: Show historical cases and deaths by country
+Description: Show historical cases and deaths by country.
 
 ## Parameters
 
@@ -30,7 +30,9 @@ Description: Show historical cases and deaths by country
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of data for given country and statistic |
 
 ## Examples
 
@@ -39,14 +41,14 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## alt_covid_view.display_covid_stat
+## openbb_terminal.alternative.covid.covid_view.display_covid_stat
 
 ```python title='openbb_terminal/alternative/covid/covid_view.py'
-def display_covid_stat(country: str, stat: str, raw: bool, limit: int, export: str, plot: bool) -> None:
+def display_covid_stat(country: str, stat: str, raw: bool, limit: int, export: str, plot: bool) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L172)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L169)
 
-Description: Show historical cases and deaths by country
+Description: Prints table showing historical cases and deaths by country.
 
 ## Parameters
 
@@ -61,7 +63,7 @@ Description: Show historical cases and deaths by country
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -5,19 +5,18 @@ description: OpenBB SDK Function
 
 # get_properties
 
-## portfolio_optimization_optimizer_model.get_properties
+## openbb_terminal.portfolio.portfolio_optimization.optimizer_model.get_properties
 
 ```python title='openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py'
-def get_properties() -> None:
+def get_properties() -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L3073)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L3123)
 
 Description: Get properties to use on property optimization.
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 

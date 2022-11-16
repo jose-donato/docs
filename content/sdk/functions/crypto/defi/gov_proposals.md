@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_defi_terramoney_fcd_model.get_proposals
+## openbb_terminal.cryptocurrency.defi.terramoney_fcd_model.get_proposals
 
 ```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
-def get_proposals(status: str, sortby: str, ascend: bool, limit: int) -> DataFrame:
+def get_proposals(status: str, sortby: str, ascend: bool, limit: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L196)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L197)
 
 Description: Get terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
 
@@ -42,14 +42,14 @@ Description: Get terra blockchain governance proposals list [Source: https://fcd
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_defi_terramoney_fcd_view.display_gov_proposals
+## openbb_terminal.cryptocurrency.defi.terramoney_fcd_view.display_gov_proposals
 
 ```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
-def display_gov_proposals(limit: int, status: str, sortby: str, ascend: bool, export: str) -> None:
+def display_gov_proposals(limit: int, status: str, sortby: str, ascend: bool, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L108)
 
-Description: Display terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
+Description: Prints table showing terra blockchain governance proposals list [Source: https://fcd.terra.dev/swagger]
 
 ## Parameters
 
@@ -63,7 +63,7 @@ Description: Display terra blockchain governance proposals list [Source: https:/
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # analysis
 
-## stocks_fa_eclect_us_model.get_filings_analysis
+## openbb_terminal.stocks.fundamental_analysis.eclect_us_model.get_filings_analysis
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/eclect_us_model.py'
-def get_filings_analysis(symbol: str) -> DataFrame:
+def get_filings_analysis(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/eclect_us_model.py#L18)
 

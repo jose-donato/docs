@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_insider_openinsider_model.get_print_insider_data
+## openbb_terminal.stocks.insider.openinsider_model.get_print_insider_data
 
 ```python title='openbb_terminal/stocks/insider/openinsider_model.py'
-def get_print_insider_data(type_insider: str, limit: int) -> None:
+def get_print_insider_data(type_insider: str, limit: int) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_model.py#L1437)
 
@@ -29,7 +29,9 @@ Description: Print insider data
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Open insider filtered data |
 
 ## Examples
 
@@ -38,10 +40,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_insider_openinsider_view.print_insider_data
+## openbb_terminal.stocks.insider.openinsider_view.print_insider_data
 
 ```python title='openbb_terminal/stocks/insider/openinsider_view.py'
-def print_insider_data(type_insider: str, limit: int, export: str) -> None:
+def print_insider_data(type_insider: str, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_view.py#L108)
 
@@ -57,7 +59,7 @@ Description: Print insider data
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

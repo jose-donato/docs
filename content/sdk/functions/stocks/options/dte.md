@@ -5,23 +5,22 @@ description: OpenBB SDK Function
 
 # dte
 
-## stocks_options_yfinance_model.get_dte
+## openbb_terminal.stocks.options.yfinance_model.get_dte
 
 ```python title='openbb_terminal/stocks/options/yfinance_model.py'
-def get_dte(date_value: str) -> int:
+def get_dte(date_value: str) -> int
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L315)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L361)
 
 Description: Gets days to expiration from yfinance option date
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

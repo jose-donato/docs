@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_dps_stockgrid_model.get_short_interest_volume
+## openbb_terminal.stocks.dark_pool_shorts.stockgrid_model.get_short_interest_volume
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py'
-def get_short_interest_volume(symbol: str) -> None:
+def get_short_interest_volume(symbol: str) -> Tuple
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L123)
 
@@ -25,14 +25,12 @@ Description: Get price vs short interest volume. [Source: Stockgrid]
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock to get data from | None | False |
-| Returns | None | None | None | None |
-| ---------- | None | None | None | None |
-| pd.DataFrame | None | Short interest volume data | None | None |
-| List | None | Price data | None | None |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| Tuple[pd.DataFrame, List] | Short interest volume data, Price data |
 
 ## Examples
 
@@ -41,10 +39,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_dps_stockgrid_view.short_interest_volume
+## openbb_terminal.stocks.dark_pool_shorts.stockgrid_view.short_interest_volume
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py'
-def short_interest_volume(symbol: str, limit: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def short_interest_volume(symbol: str, limit: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L123)
 
@@ -62,7 +60,7 @@ Description: Plot price vs short interest volume. [Source: Stockgrid]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
