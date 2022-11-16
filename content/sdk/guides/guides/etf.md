@@ -15,11 +15,7 @@ import pandas as pd
 %matplotlib inline
 ```
 
-The contents of the ETF module is printed with:
-
-```python
-help(openbb.etf)
-```
+Below is a brief description of each function within the ETF module:
 
 |Path |Type |Description |
 |:---------|:---------:|------------------------------:|
@@ -38,7 +34,15 @@ help(openbb.etf)
 |openbb.etf.symbols |Dictionary |Dictionary of {Ticker:Name} |
 |openbb.etf.weights |Function |Table or Pie Graph of Sector Weightings |
 
+Alternatively, the contents of the ETF module is printed with:
+
+```python
+help(openbb.etf)
+```
+
 ## Examples
+
+### ETF Categories
 
 ETFs are categorized into different buckets. Use the code block below as a way to generate a list of all categories:
 
@@ -75,11 +79,15 @@ etf_category.head(2)
 | VEA  | Vanguard FTSE Developed Markets | Vanguard FTSE Developed Markets Index Fund ETF Shares    | USD        | The investment seeks to track the performance of the FTSE Developed All Cap ex US Index.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Foreign Large Blend | Vanguard | PCX        | us_market |   150540566528 |
 |      |                                 |                                                          |            |  The fund employs an indexing investment approach designed to track the performance of the FTSE Developed All Cap ex US Index, a market-capitalization-weighted index that is made up of approximately 3865 common stocks of large-, mid-, and small-cap companies located in Canada and the major markets of Europe and the Pacific region. The adviser attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index. |                     |          |            |           |                |
 
+### ETF Tickers
+
 A list of all tickers in the specific category can be generated from the index of the above DataFrame, `etf_category`:
 
 ```python
 symbols = etf_category.index.to_list()
 ```
+
+### Performance Metrics
 
 This list of tickers can then be used for comparison analysis, or portfolio optimization. For example, comparing the performance metrics of the Foreign Large Blend category:
 
@@ -97,6 +105,8 @@ performance.head(5)
 |  7 | DEEF     |      0.0457 |       0.1061 |      -0.0612 |     -0.0997 |     -0.2099 |    -0.2071 |         0.0067 |         0.0122 |         |         8350 |         0.08 |   25    |  -0.0031 |      244 |
 | 38 | RODM     |      0.0424 |       0.1106 |      -0.0428 |     -0.1012 |     -0.2015 |    -0.1827 |         0.0141 |         0.0139 |         |       345640 |         1.05 |   24.64 |   0.0011 |   125217 |
 
+### Holdings
+
 To peer into the holdings of a specific ETF:
 
 ```python
@@ -111,6 +121,8 @@ holdings.head(5)
 |  2 | HD       | The Home Depot, Inc.            | 6.03%      |  5985297 |
 |  3 | AMGN     | Amgen Inc.                      | 5.61%      |  5985297 |
 |  4 | MCD      | McDonald's Corporation          | 5.35%      |  5985297 |
+
+### ETF Screener
 
 The ETF screener is also accessible through the SDK. Variables for the screener are set in preset files. The path to their location will depend on the type of installation and operating system; it will be similar to:
 
@@ -134,6 +146,8 @@ In this example, the configuration file is set to return results with a maximum 
 |  2 | KLNE    |     5.7  | 22.81 |      1.29 |  N/A | 250,000     |   0.08 |       0.37 | 5580           |  21.55 |       21.7  |   12    |    31.38 |  -2.79 |        5 |
 |  3 | LABD    |    97.16 | 18.61 |      1    |  N/A | 5.22        | N/A    |     N/A    |    8.12293e+06 |  22.26 |       21.35 |   15.7  |    85.28 |  -2.67 |       17 |
 |  4 | MJIN    |     2.79 | 17.45 |      0.95 |  N/A | 160,000     |   0.88 |       4.45 |  282           |  19.81 |       19.07 |    7.87 |    26.73 |  -3.23 |        2 |
+
+### Disc
 
 The current top gainers, losers, and volume for ETFs is returned with:
 
