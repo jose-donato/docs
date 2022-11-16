@@ -9,7 +9,7 @@ const config = {
   title: "OpenBB Docs",
   tagline: "OpenBB Docs",
   url: "https://docs.openbb.co", // Your website URL
-  baseUrl: "/docs/",
+  baseUrl: "/",
   projectName: "docs",
   organizationName: "jose-donato",
   trailingSlash: false,
