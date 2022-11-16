@@ -15,7 +15,7 @@ export default function NavbarLogo() {
         className={clsx(
           "hidden p-2 border border-grey-400 rounded h-[34px] items-center bg-grey-900 gap-3",
           {
-            "md:flex": pathname !== "/docs/",
+            "md:flex": pathname !== "/",
           }
         )}
       >
@@ -25,9 +25,9 @@ export default function NavbarLogo() {
             "text-xs rounded px-2 py-1 hover:text-white hover:no-underline",
             {
               "text-grey-100 bg-grey-800 ":
-                pathname.startsWith("/docs/terminal"),
+                pathname.startsWith("/terminal"),
               "text-grey-500 hover:bg-grey-800 ":
-                !pathname.startsWith("/docs/terminal"),
+                !pathname.startsWith("/terminal"),
             }
           )}
         >
@@ -38,9 +38,9 @@ export default function NavbarLogo() {
           className={clsx(
             "text-xs px-2 py-1 rounded hover:text-white hover:no-underline",
             {
-              "text-grey-100 bg-grey-800 ": pathname.startsWith("/docs/sdk"),
+              "text-grey-100 bg-grey-800 ": pathname.startsWith("/sdk"),
               "text-grey-500 hover:bg-grey-800 ":
-                !pathname.startsWith("/docs/sdk"),
+                !pathname.startsWith("/sdk"),
             }
           )}
         >

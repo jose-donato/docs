@@ -26,12 +26,12 @@ export default function NavbarLayout({ children }) {
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
 
   useEffect(() => {
-    if (pathname.startsWith("/docs/terminal")) {
+    if (pathname.startsWith("/terminal")) {
       document.documentElement.style.setProperty(
         "--ifm-color-primary",
         "#669DCB"
       );
-    } else if (pathname.startsWith("/docs/sdk")) {
+    } else if (pathname.startsWith("/sdk")) {
       document.documentElement.style.setProperty(
         "--ifm-color-primary",
         "#e47600"
@@ -45,9 +45,9 @@ export default function NavbarLayout({ children }) {
       className={clsx(
         "border-b border-grey-600 lg:px-12",
         {
-          header_docs_terminal: pathname.startsWith("/docs/terminal"),
-          header_docs_sdk: pathname.startsWith("/docs/sdk"),
-          header_docs: pathname === "/docs/",
+          header_docs_terminal: pathname.startsWith("/terminal"),
+          header_docs_sdk: pathname.startsWith("/sdk"),
+          header_docs: pathname === "/",
         },
         "navbar",
         "navbar--fixed-top",
