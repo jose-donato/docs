@@ -17,15 +17,15 @@ function ColorModeToggle({ className, value, onChange }) {
       mode:
         value === "dark"
           ? translate({
-              message: "dark mode",
-              id: "theme.colorToggle.ariaLabel.mode.dark",
-              description: "The name for the dark color mode",
-            })
+            message: "dark mode",
+            id: "theme.colorToggle.ariaLabel.mode.dark",
+            description: "The name for the dark color mode",
+          })
           : translate({
-              message: "light mode",
-              id: "theme.colorToggle.ariaLabel.mode.light",
-              description: "The name for the light color mode",
-            }),
+            message: "light mode",
+            id: "theme.colorToggle.ariaLabel.mode.light",
+            description: "The name for the light color mode",
+          }),
     }
   );
   return (
@@ -46,7 +46,7 @@ function ColorModeToggle({ className, value, onChange }) {
           )}
         >
           <button
-            className={clsx("text-sm inline-flex pb-3", {
+            className={clsx("text-sm inline-flex pb-3 hover:text-white", {
               "text-grey-400": value === "dark",
               "text-white": value !== "dark",
             })}
@@ -60,7 +60,7 @@ function ColorModeToggle({ className, value, onChange }) {
             <SunIcon className="w-4 h-4 mr-2 mt-0.5" /> Light
           </button>
           <button
-            className={clsx("text-sm inline-flex pt-3", {
+            className={clsx("text-sm inline-flex pt-3 hover:text-white", {
               "text-grey-400": value !== "dark",
               "text-white": value === "dark",
             })}

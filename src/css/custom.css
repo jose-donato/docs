@@ -30,6 +30,19 @@
   article h2 {
     @apply !text-[28px];
   }
+  thead tr {
+    @apply !bg-white dark:!bg-grey-900;
+  }
+  th {
+    @apply !font-bold uppercase tracking-widest;
+  }
+  tr {
+    @apply odd:bg-grey-50 dark:odd:bg-grey-850;
+  }
+
+  .container {
+    @apply !m-0 !max-w-none;
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
@@ -191,17 +204,6 @@ table :is(tr, td, th, thead) {
   --table-cell-color: transparent;
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid var(--docs-color-border);
-}
-
-table thead tr {
-  border-bottom: 1px solid var(--docs-color-border);
-}
-
-table th {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--docs-color-text-100);
 }
 
 .header_docs {
