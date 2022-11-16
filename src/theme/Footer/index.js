@@ -43,7 +43,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <Link to="/docs/z-guides-markdown" className="mt-10">
+      <Link to="/z-guides-markdown" className="mt-10">
         Markdown examples
       </Link>
     </footer>

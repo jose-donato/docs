@@ -20,7 +20,7 @@ usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-09 12:39:18.646131 | False | None |
+| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-09 12:46:06.309279 | False | None |
 | n_oldest | Show oldest articles first | True | False | None |
 | sources | Show news only from the sources specified (e.g bloomberg,reuters) | None | False | None |
 

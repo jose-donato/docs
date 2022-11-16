@@ -21,7 +21,7 @@ usage: pir [-e NAMES] [--filename FILENAME] [--folder FOLDER]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | names | Symbols to create a report for (e.g. pir ARKW ARKQ QQQ VOO) | None | False | None |
-| filename | Filename of the excel ETF report | ETF_report_20221116_123912 | False | None |
+| filename | Filename of the excel ETF report | ETF_report_20221116_124600 | False | None |
 | folder | Folder where the excel ETF report will be saved | C:\Users\teh_coderer\OpenBBUserData\exports | False | None |
 
 

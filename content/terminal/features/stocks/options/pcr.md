@@ -21,6 +21,6 @@ usage: pcr [-l {10,20,30,60,90,120,150,180}] [-s START]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | length | Window length to get | 30 | False | 10, 20, 30, 60, 90, 120, 150, 180 |
-| start | Start date for plot | 2021-11-15 12:39:19.255924 | False | None |
+| start | Start date for plot | 2021-11-15 12:46:06.999261 | False | None |
 
 

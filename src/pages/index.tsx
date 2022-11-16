@@ -21,11 +21,11 @@ export default function Home(): JSX.Element {
         <div className="flex flex-col md:flex-row w-full container items-center justify-center gap-6 px-6 sm:mx-0 mt-8 md:!mt-14 lg:!mt-15 md:mb-0 max-w-[1087px]">
           <Link
             style={{
-              backgroundImage: "url('/docs/img/sdk_bg.png')",
+              backgroundImage: "url('/img/sdk_bg.png')",
               backgroundRepeat: "no-repeat",
               backgroundSize: "100% 120%",
             }}
-            to="/docs/sdk"
+            to="/sdk"
             className="!no-underline hover:border-white hover:!text-white relative w-full h-[238px] max-w-full p-8 rounded overflow-hidden flex flex-col items-center justify-center border border-grey-400 dark:bg-grey-900"
           >
             <h3 className="uppercase tracking-widest font-bold text-2xl mb-2">
@@ -38,11 +38,11 @@ export default function Home(): JSX.Element {
           </Link>
           <Link
             style={{
-              backgroundImage: "url('/docs/img/terminal_bg.png')",
+              backgroundImage: "url('/img/terminal_bg.png')",
               backgroundRepeat: "no-repeat",
               backgroundSize: "100% 100%",
             }}
-            to="/docs/terminal"
+            to="/terminal"
             className="!no-underline hover:border-white hover:!text-white relative w-full h-[238px] max-w-full p-8 rounded overflow-hidden flex flex-col items-center justify-center border border-grey-400 dark:bg-grey-900"
           >
             <h3 className="uppercase tracking-widest font-bold text-2xl mb-2">

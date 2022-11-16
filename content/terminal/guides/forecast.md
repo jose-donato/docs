@@ -12,14 +12,21 @@ keywords:
     "hyperparameters",
   ]
 excerpt: "The introduction to Forecast explains how to use the menu"
-geekdocCollapseSection: true
+
 ---
 
-The forecasting menu is a machine learning toolkit that provides practitioners with high-level components that can quickly provide state-of-the-art results, be it with with classical or deep learning models, while also providing researchers with low-level components that can be mixed, matched and fine tuned to build new approaches and custom tuned models. Bring in multiple datasets and train machine learning models with unlimited external factors to see how underlying data may change future forecasting predictions and accuracy.
+The forecasting menu is a machine learning toolkit that provides practitioners
+with high-level components that can quickly provide state-of-the-art results, be
+it with with classical or deep learning models, while also providing researchers
+with low-level components that can be mixed, matched and fine tuned to build new
+approaches and custom tuned models. Bring in multiple datasets and train machine
+learning models with unlimited external factors to see how underlying data may
+change future forecasting predictions and accuracy.
 
 ## Accessing the Forecast menu
 
-The Forecast menu is called upon by typing `forecast` which opens the following menu:
+The Forecast menu is called upon by typing `forecast` which opens the following
+menu:
 
 ```
 (🦋) / $ forecast
@@ -29,9 +36,14 @@ The Forecast menu is called upon by typing `forecast` which opens the following 
 
 ## How to Use
 
-To begin any machine learning, you must first load in data. The menu supports importing both terminal datasets found in `stocks` and `cryptocurrency`, along with external datasets in the form of `.csv` that can be placed in the following location: `~/OpenBBUserData/custom_imports/forecast/`
+To begin any machine learning, you must first load in data. The menu supports
+importing both terminal datasets found in `stocks` and `cryptocurrency`, along
+with external datasets in the form of `.csv` that can be placed in the following
+location: `~/OpenBBUserData/custom_imports/forecast/`
 
-It is important to note, if you ever have troubles on running a command, please read the help commands to guide you on what is available. You can do this by trailing any command with a `-h`
+It is important to note, if you ever have troubles on running a command, please
+read the help commands to guide you on what is available. You can do this by
+trailing any command with a `-h`
 
 ```
 (🦋) /forecast/ $ <command> -h
@@ -47,9 +59,12 @@ Importing data from within the terminal can be simply done as follows:
 (🦋) /stocks/ $ forecast
 ```
 
-The menu can support loading in unlimited datasets. Once the first one is loaded, the menu options should turn blue to allow you to begin working through the menu options.
+The menu can support loading in unlimited datasets. Once the first one is
+loaded, the menu options should turn blue to allow you to begin working through
+the menu options.
 
-To load external data in the form as `.csv`, please place them into the folder shown within your terminal menu and then load them in as follows:
+To load external data in the form as `.csv`, please place them into the folder
+shown within your terminal menu and then load them in as follows:
 
 ```
 (🦋) / $ forecast
@@ -61,28 +76,48 @@ To load external data in the form as `.csv`, please place them into the folder s
 
 ### Understanding the structure of the menu
 
-The menu is broken up into three distinct sections. These sections represent the typical order of operations a machine learning professional would have to take in order to complete a project.
+The menu is broken up into three distinct sections. These sections represent the
+typical order of operations a machine learning professional would have to take
+in order to complete a project.
 
 Once data is loaded in, begin with `Exploration`.
 
-`Exploration`: Explore the datasets loaded into the menu to further understand your data and create unique new datasets by combining and analyzing features. Functions to note: `plot`, `combine`, `desc`, `corr`
+`Exploration`: Explore the datasets loaded into the menu to further understand
+your data and create unique new datasets by combining and analyzing features.
+Functions to note: `plot`, `combine`, `desc`, `corr`
 <img width="692" alt="image" src="https://user-images.githubusercontent.com/105685594/189729792-079f151e-f2b4-41bf-99d9-c83849c59170.png"/>
 
-`Feature Engineering`: Manuipulate datasets (addition, deletion, combination, mutation) of your data set to potentially improve machine learning model training, by providing new features and covariates that may leading to better performance and greater accuracy.
+`Feature Engineering`: Manuipulate datasets (addition, deletion, combination,
+mutation) of your data set to potentially improve machine learning model
+training, by providing new features and covariates that may leading to better
+performance and greater accuracy.
 <img width="694" alt="image" src="https://user-images.githubusercontent.com/105685594/189730399-fc4051f2-4d8e-4ff1-8494-44528d8f5513.png"/>
 
-`TimeSeries Forecasting`: Train state of the art models on custom datasets and experiment tuning hyperparameters. For more information on specific model implementations, please see [Darts Models](https://unit8co.github.io/darts/generated_api/darts.models.forecasting.html) for in depth documentation.
+`TimeSeries Forecasting`: Train state of the art models on custom datasets and
+experiment tuning hyperparameters. For more information on specific model
+implementations, please see
+[Darts Models](https://unit8co.github.io/darts/generated_api/darts.models.forecasting.html)
+for in depth documentation.
 <img width="694" alt="image" src="https://user-images.githubusercontent.com/105685594/189730287-1c5c8141-1801-4a35-b9e9-acb32be35c13.png"/>
 
 ## Sample workflow #1 (beginner)
 
 Let's begin by using one of the datasets we loaded in previously : `AAPL`
 
-We will be forecasting `5 Business days` ahead for the remaider of these workflows unless specified.
+We will be forecasting `5 Business days` ahead for the remaider of these
+workflows unless specified.
 
-Note: All models automatically perform Historical backtesting on the test split before providing a prediction.
+Note: All models automatically perform Historical backtesting on the test split
+before providing a prediction.
 
-Note: `MAPE` = [mean average percentage error](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error). We use MAPE as it is quite convenient and scale independent since it calculates error as a percentage instead of an absolute value. THere are many more metrics to compare time series. The metrics will compare only common slices of series when the two series are not aligned, and parallelize computation over a large number of pairs of series. More metrics will be released in future versions of the menu.
+Note: `MAPE` =
+[mean average percentage error](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error).
+We use MAPE as it is quite convenient and scale independent since it calculates
+error as a percentage instead of an absolute value. THere are many more metrics
+to compare time series. The metrics will compare only common slices of series
+when the two series are not aligned, and parallelize computation over a large
+number of pairs of series. More metrics will be released in future versions of
+the menu.
 
 ```
 (🦋) /forecast/ $ plot AAPL.close
@@ -115,7 +150,9 @@ Note: `MAPE` = [mean average percentage error](https://en.wikipedia.org/wiki/Mea
 └───────┴────────┴────────┴────────┴────────┴───────────┴──────────────┘
 ```
 
-Let's use a simple **Probabilistic Exponential Smoothing Model** to predict the close price. Keep in mind all models are perform automatic historical backtesting before providing future forecasts.
+Let's use a simple **Probabilistic Exponential Smoothing Model** to predict the
+close price. Keep in mind all models are perform automatic historical
+backtesting before providing future forecasts.
 
 Note: All models forecaste `close` by default.
 
@@ -143,13 +180,20 @@ Exponential smoothing obtains MAPE: 3.86%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/189740925-ed0fb214-8b1c-4aff-a149-517d122082c8.png"/>
 
-That looks great, but we might want to see it a little more up close. Lets set the flag for `--forecast-only`.
+That looks great, but we might want to see it a little more up close. Lets set
+the flag for `--forecast-only`.
 
 <img width="791" alt="image" src="https://user-images.githubusercontent.com/105685594/189741811-21832a87-f05f-4191-88f8-6ac30eb3d7b6.png"/>
 
-We can also play with some models that are bit more advanced. As we go down the list, models begin to become larger in parameter size and complexity. This will play a key role later on when we want to train models with `past_covariates` (aka. external factors).
+We can also play with some models that are bit more advanced. As we go down the
+list, models begin to become larger in parameter size and complexity. This will
+play a key role later on when we want to train models with `past_covariates`
+(aka. external factors).
 
-This time lets test with a **Recurrent Neural Network** which by default uses an `LSTM` backbone. We can also choose to test out a `GRU` backbone to experiment. Let's do both and see if we can improve our accuracy and reduce the overall MAPE.
+This time lets test with a **Recurrent Neural Network** which by default uses an
+`LSTM` backbone. We can also choose to test out a `GRU` backbone to experiment.
+Let's do both and see if we can improve our accuracy and reduce the overall
+MAPE.
 
 ```
 (🦋) /forecast/ $ rnn AAPL --forecast-only
@@ -179,7 +223,9 @@ RNN model obtains MAPE: 3.69%
 
 Seems like we improved the performance and reduced MAPE!
 
-Now for the second task, we would like to change the model type from `LSTM` --> `GRU`. Use the `-h` flag to understand the particular parameters one can change for RNN. (Please note that the parameters are different for each model).
+Now for the second task, we would like to change the model type from `LSTM` -->
+`GRU`. Use the `-h` flag to understand the particular parameters one can change
+for RNN. (Please note that the parameters are different for each model).
 
 ```
 (🦋) /forecast/ $ rnn -h
@@ -261,26 +307,38 @@ RNN model obtains MAPE: 3.64%
 
 Looks like we squeezed out a little bit more accuracy! Good work.
 
-The take away for this is that all models should work out of the box when forecasting for a particular Timeseries. One can switch the target by specifying a `-c` for `TARGET_COLUMN` and test out performance with multiple different models with a single command.
+The take away for this is that all models should work out of the box when
+forecasting for a particular Timeseries. One can switch the target by specifying
+a `-c` for `TARGET_COLUMN` and test out performance with multiple different
+models with a single command.
 
 ## Sample workflow #2 (advanced)
 
-To build successful models and improve accuracy over time, it is important to capture external data related to the timeseries you are training on.
-This can be seen in everyday applications:
+To build successful models and improve accuracy over time, it is important to
+capture external data related to the timeseries you are training on. This can be
+seen in everyday applications:
 
-- Observed rainfalls and known weather forecasts can help to predict hydro and solar electricity production
-- Recently-observed activity on an e-commerce website can help predict future sales.
+- Observed rainfalls and known weather forecasts can help to predict hydro and
+  solar electricity production
+- Recently-observed activity on an e-commerce website can help predict future
+  sales.
 - Making the model aware of up-coming holidays can help sales forecasting.
 
-_In fact, more often than not, strictly relying on the history of a time series to predict its future is missing a lot of valuable information._
+_In fact, more often than not, strictly relying on the history of a time series
+to predict its future is missing a lot of valuable information._
 
-**Past covariates** are time series whose past values are known at prediction time. Those series often contain values that have to be observed to be known.
+**Past covariates** are time series whose past values are known at prediction
+time. Those series often contain values that have to be observed to be known.
 
 ![image](https://user-images.githubusercontent.com/105685594/190244764-ce8cf01f-c959-4827-a326-62b0e172332d.png)
 
-If you would like to explore this topic more, please read the [blog post](https://medium.com/unit8-machine-learning-publication/time-series-forecasting-using-past-and-future-external-data-with-darts-1f0539585993) written by the authors of Darts.
+If you would like to explore this topic more, please read the
+[blog post](https://medium.com/unit8-machine-learning-publication/time-series-forecasting-using-past-and-future-external-data-with-darts-1f0539585993)
+written by the authors of Darts.
 
-Note: Only the following models can handle `past_covariates`: `BlockRNNModel`, `NBEATSModel`, `TCNModel`, `TransformerModel`, `RegressionModel` (incl. `LinearRegressionModel`), `Temporal Fusion Transformer`
+Note: Only the following models can handle `past_covariates`: `BlockRNNModel`,
+`NBEATSModel`, `TCNModel`, `TransformerModel`, `RegressionModel` (incl.
+`LinearRegressionModel`), `Temporal Fusion Transformer`
 
 In this work flow lets do the following:
 
@@ -289,7 +347,9 @@ In this work flow lets do the following:
 - perform feature engineering
 - train models with `past_covariates`
 
-Let's begin by loading in our datasets of AAPL and MSFT once again. In this work flow we are going to test if `close` price of MSFT is at all affected by the `close` of AAPL.
+Let's begin by loading in our datasets of AAPL and MSFT once again. In this work
+flow we are going to test if `close` price of MSFT is at all affected by the
+`close` of AAPL.
 
 For a refresher, we will grab data from the `stocks` menu found on the terminal.
 
@@ -304,7 +364,8 @@ For a refresher, we will grab data from the `stocks` menu found on the terminal.
 
 <img width="476" alt="image" src="https://user-images.githubusercontent.com/105685594/190245759-758e566f-ad35-49fe-8df1-7d87f5d9f935.png"/>
 
-Before we go combining them, let's train a simple `Block RNN` model on MSFT `close` price to see how to use `past_covariates`
+Before we go combining them, let's train a simple `Block RNN` model on MSFT
+`close` price to see how to use `past_covariates`
 
 Make sure to always check your current data set to know the column names:
 
@@ -371,7 +432,8 @@ With covariates:
 To use any covariates, you have 2 options:
 
 - specify specific columns with `--past-covariates`
-- specify all columns as past covariates except the one you are forecasting `--all-past-covariates`
+- specify all columns as past covariates except the one you are forecasting
+  `--all-past-covariates`
 
 ```
 (🦋) /forecast/ $ brnn MSFT --forecast-only --past-covariates volume
@@ -400,9 +462,11 @@ Block RNN model obtains MAPE: 5.10%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/190247412-fe533231-17d9-4dc6-b41f-f5a27b6c2d57.png"/>
 
-You can see here that adding in the external variable of `volume` negatively affected the accuracy.
+You can see here that adding in the external variable of `volume` negatively
+affected the accuracy.
 
-Let's add in all remaining columns from our dataset as covariates and see what happens to the accuracy.
+Let's add in all remaining columns from our dataset as covariates and see what
+happens to the accuracy.
 
 ```
 (🦋) /forecast/ $ brnn MSFT --forecast-only --all-past-covariates
@@ -435,11 +499,16 @@ Block RNN model obtains MAPE: 4.26%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/190248547-2bd7801e-4ac4-43c0-868b-9aa2f79a3c3c.png"/>
 
-**Final Result:** Using `open`, `high`, `low`, `adj_close`, `volume` as `past_covariates` improved MAPE from 4.62 --> 4.26.
+**Final Result:** Using `open`, `high`, `low`, `adj_close`, `volume` as
+`past_covariates` improved MAPE from 4.62 --> 4.26.
 
-Now that we know how to use covariates and understand their effect, why don't we also use `AAPL`'s ticker data as `past_covariates` to check whether this correlates and improves our forecasting accuracy.
+Now that we know how to use covariates and understand their effect, why don't we
+also use `AAPL`'s ticker data as `past_covariates` to check whether this
+correlates and improves our forecasting accuracy.
 
-**Remember: You can use unlimited number of `past_covariates` but they must all be combined into a single dataframe with the target forecast timeseries before training.**
+**Remember: You can use unlimited number of `past_covariates` but they must all
+be combined into a single dataframe with the target forecast timeseries before
+training.**
 
 We will combine `MSFT` and `AAPL`.
 
@@ -476,7 +545,9 @@ Dataframe has more than 10 columns. Please export to see all of the data.
 └───┴─────────────────────┴────────┴────────┴────────┴────────┴───────────┴──────────┴───────────┴───────────┴──────────┘
 ```
 
-Now we can run the same `BRNN` model with all `past_covariates` of both tickers. The output will show the model grabbing all covariates to bring into training to predict `close` of `MSFT`.
+Now we can run the same `BRNN` model with all `past_covariates` of both tickers.
+The output will show the model grabbing all covariates to bring into training to
+predict `close` of `MSFT`.
 
 ```
 (🦋) /forecast/ $ brnn MSFT --forecast-only --all-past-covariates
@@ -515,9 +586,11 @@ Block RNN model obtains MAPE: 3.93%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/190250934-61e55441-dd20-439e-bff1-a54904ecfec9.png"/>
 
-For one last experiment, we can perform some other feature engineering on `MSFT` and add it to our `past_covariates` to train on.
+For one last experiment, we can perform some other feature engineering on `MSFT`
+and add it to our `past_covariates` to train on.
 
-In this case, let's add in `Momentum` over past 10 days of `MSFT` and append it to our `past_covariates`
+In this case, let's add in `Momentum` over past 10 days of `MSFT` and append it
+to our `past_covariates`
 
 ```
 (🦋) /forecast/ $ mom MSFT
@@ -562,32 +635,43 @@ Block RNN model obtains MAPE: 3.72%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/190255025-9f32d6ff-d1d7-4cdf-80a8-2a6ff4c0617d.png"/>
 
-There we have it. Bringing in another ticker has allowed us to further improve the model accuracy. Furthermore, adding in a new feature to the dataset allowed us to improve the accuracy further.
+There we have it. Bringing in another ticker has allowed us to further improve
+the model accuracy. Furthermore, adding in a new feature to the dataset allowed
+us to improve the accuracy further.
 
 **MAPE = 4.62%** (no past covariates)
 
 **MAPE = 4.26%** (`open`,`high`,`low`,`adj_close`,`volume`)
 
-**MAPE = 3.93%** (`open`,`high`,`low`,`adj_close`,`volume`,`AAPL_open`,`AAPL_high`,`APPL_low`,`APPL_adj_close`,`APPL_volume`,`APPL_close`)
+**MAPE = 3.93%**
+(`open`,`high`,`low`,`adj_close`,`volume`,`AAPL_open`,`AAPL_high`,`APPL_low`,`APPL_adj_close`,`APPL_volume`,`APPL_close`)
 
-**MAPE = 3.72%** (`open`,`high`,`low`,`adj_close`,`volume`,`AAPL_open`,`AAPL_high`,`APPL_low`,`APPL_adj_close`,`APPL_volume`,`APPL_close`,`Momentum_10`)
+**MAPE = 3.72%**
+(`open`,`high`,`low`,`adj_close`,`volume`,`AAPL_open`,`AAPL_high`,`APPL_low`,`APPL_adj_close`,`APPL_volume`,`APPL_close`,`Momentum_10`)
 
 More workflows coming soon!
 
 ## If you have any questions or would like to request for new feature engineering or model additions, please join us on discord. Happy hacking!
 
-title: Introduction to Forecast
-keywords: ['machine learning', 'statistics', 'deep learning', 'neural networks', 'time series', 'research', 'feature engineering', 'hyperparameters']
-excerpt: "The introduction to Forecast explains how to use the menu"
-geekdocCollapseSection: true
+title: Introduction to Forecast keywords: ['machine learning', 'statistics',
+'deep learning', 'neural networks', 'time series', 'research', 'feature
+engineering', 'hyperparameters'] excerpt: "The introduction to Forecast explains
+how to use the menu"
 
 ---
 
-The forecasting menu is a machine learning toolkit that provides practitioners with high-level components that can quickly provide state-of-the-art results, be it with with classical or deep learning models, while also providing researchers with low-level components that can be mixed, matched and fine tuned to build new approaches and custom tuned models. Bring in multiple datasets and train machine learning models with unlimited external factors to see how underlying data may change future forecasting predictions and accuracy.
+The forecasting menu is a machine learning toolkit that provides practitioners
+with high-level components that can quickly provide state-of-the-art results, be
+it with with classical or deep learning models, while also providing researchers
+with low-level components that can be mixed, matched and fine tuned to build new
+approaches and custom tuned models. Bring in multiple datasets and train machine
+learning models with unlimited external factors to see how underlying data may
+change future forecasting predictions and accuracy.
 
 ## Accessing the Forecast menu
 
-The Forecast menu is called upon by typing `forecast` which opens the following menu:
+The Forecast menu is called upon by typing `forecast` which opens the following
+menu:
 
 ```
 (🦋) / $ forecast
@@ -597,9 +681,14 @@ The Forecast menu is called upon by typing `forecast` which opens the following 
 
 ## How to Use
 
-To begin any machine learning, you must first load in data. The menu supports importing both terminal datasets found in `stocks` and `cryptocurrency`, along with external datasets in the form of `.csv` that can be placed in the following location: `~/OpenBBUserData/custom_imports/forecast/`
+To begin any machine learning, you must first load in data. The menu supports
+importing both terminal datasets found in `stocks` and `cryptocurrency`, along
+with external datasets in the form of `.csv` that can be placed in the following
+location: `~/OpenBBUserData/custom_imports/forecast/`
 
-It is important to note, if you ever have troubles on running a command, please read the help commands to guide you on what is available. You can do this by trailing any command with a `-h`
+It is important to note, if you ever have troubles on running a command, please
+read the help commands to guide you on what is available. You can do this by
+trailing any command with a `-h`
 
 ```
 (🦋) /forecast/ $ <command> -h
@@ -615,9 +704,12 @@ Importing data from within the terminal can be simply done as follows:
 (🦋) /stocks/ $ forecast
 ```
 
-The menu can support loading in unlimited datasets. Once the first one is loaded, the menu options should turn blue to allow you to begin working through the menu options.
+The menu can support loading in unlimited datasets. Once the first one is
+loaded, the menu options should turn blue to allow you to begin working through
+the menu options.
 
-To load external data in the form as `.csv`, please place them into the folder shown within your terminal menu and then load them in as follows:
+To load external data in the form as `.csv`, please place them into the folder
+shown within your terminal menu and then load them in as follows:
 
 ```
 (🦋) / $ forecast
@@ -629,28 +721,48 @@ To load external data in the form as `.csv`, please place them into the folder s
 
 ### Understanding the structure of the menu
 
-The menu is broken up into three distinct sections. These sections represent the typical order of operations a machine learning professional would have to take in order to complete a project.
+The menu is broken up into three distinct sections. These sections represent the
+typical order of operations a machine learning professional would have to take
+in order to complete a project.
 
 Once data is loaded in, begin with `Exploration`.
 
-`Exploration`: Explore the datasets loaded into the menu to further understand your data and create unique new datasets by combining and analyzing features. Functions to note: `plot`, `combine`, `desc`, `corr`
+`Exploration`: Explore the datasets loaded into the menu to further understand
+your data and create unique new datasets by combining and analyzing features.
+Functions to note: `plot`, `combine`, `desc`, `corr`
 <img width="692" alt="image" src="https://user-images.githubusercontent.com/105685594/189729792-079f151e-f2b4-41bf-99d9-c83849c59170.png"/>
 
-`Feature Engineering`: Manuipulate datasets (addition, deletion, combination, mutation) of your data set to potentially improve machine learning model training, by providing new features and covariates that may leading to better performance and greater accuracy.
+`Feature Engineering`: Manuipulate datasets (addition, deletion, combination,
+mutation) of your data set to potentially improve machine learning model
+training, by providing new features and covariates that may leading to better
+performance and greater accuracy.
 <img width="694" alt="image" src="https://user-images.githubusercontent.com/105685594/189730399-fc4051f2-4d8e-4ff1-8494-44528d8f5513.png"/>
 
-`TimeSeries Forecasting`: Train state of the art models on custom datasets and experiment tuning hyperparameters. For more information on specific model implementations, please see [Darts Models](https://unit8co.github.io/darts/generated_api/darts.models.forecasting.html) for in depth documentation.
+`TimeSeries Forecasting`: Train state of the art models on custom datasets and
+experiment tuning hyperparameters. For more information on specific model
+implementations, please see
+[Darts Models](https://unit8co.github.io/darts/generated_api/darts.models.forecasting.html)
+for in depth documentation.
 <img width="694" alt="image" src="https://user-images.githubusercontent.com/105685594/189730287-1c5c8141-1801-4a35-b9e9-acb32be35c13.png"/>
 
 ## Sample workflow #1 (beginner)
 
 Let's begin by using one of the datasets we loaded in previously : `AAPL`
 
-We will be forecasting `5 Business days` ahead for the remaider of these workflows unless specified.
+We will be forecasting `5 Business days` ahead for the remaider of these
+workflows unless specified.
 
-Note: All models automatically perform Historical backtesting on the test split before providing a prediction.
+Note: All models automatically perform Historical backtesting on the test split
+before providing a prediction.
 
-Note: `MAPE` = [mean average percentage error](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error). We use MAPE as it is quite convenient and scale independent since it calculates error as a percentage instead of an absolute value. THere are many more metrics to compare time series. The metrics will compare only common slices of series when the two series are not aligned, and parallelize computation over a large number of pairs of series. More metrics will be released in future versions of the menu.
+Note: `MAPE` =
+[mean average percentage error](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error).
+We use MAPE as it is quite convenient and scale independent since it calculates
+error as a percentage instead of an absolute value. THere are many more metrics
+to compare time series. The metrics will compare only common slices of series
+when the two series are not aligned, and parallelize computation over a large
+number of pairs of series. More metrics will be released in future versions of
+the menu.
 
 ```
 (🦋) /forecast/ $ plot AAPL.close
@@ -683,7 +795,9 @@ Note: `MAPE` = [mean average percentage error](https://en.wikipedia.org/wiki/Mea
 └───────┴────────┴────────┴────────┴────────┴───────────┴──────────────┘
 ```
 
-Let's use a simple **Probabilistic Exponential Smoothing Model** to predict the close price. Keep in mind all models are perform automatic historical backtesting before providing future forecasts.
+Let's use a simple **Probabilistic Exponential Smoothing Model** to predict the
+close price. Keep in mind all models are perform automatic historical
+backtesting before providing future forecasts.
 
 Note: All models forecaste `close` by default.
 
@@ -711,13 +825,20 @@ Exponential smoothing obtains MAPE: 3.86%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/189740925-ed0fb214-8b1c-4aff-a149-517d122082c8.png"/>
 
-That looks great, but we might want to see it a little more up close. Lets set the flag for `--forecast-only`.
+That looks great, but we might want to see it a little more up close. Lets set
+the flag for `--forecast-only`.
 
 <img width="791" alt="image" src="https://user-images.githubusercontent.com/105685594/189741811-21832a87-f05f-4191-88f8-6ac30eb3d7b6.png"/>
 
-We can also play with some models that are bit more advanced. As we go down the list, models begin to become larger in parameter size and complexity. This will play a key role later on when we want to train models with `past_covariates` (aka. external factors).
+We can also play with some models that are bit more advanced. As we go down the
+list, models begin to become larger in parameter size and complexity. This will
+play a key role later on when we want to train models with `past_covariates`
+(aka. external factors).
 
-This time lets test with a **Recurrent Neural Network** which by default uses an `LSTM` backbone. We can also choose to test out a `GRU` backbone to experiment. Let's do both and see if we can improve our accuracy and reduce the overall MAPE.
+This time lets test with a **Recurrent Neural Network** which by default uses an
+`LSTM` backbone. We can also choose to test out a `GRU` backbone to experiment.
+Let's do both and see if we can improve our accuracy and reduce the overall
+MAPE.
 
 ```
 (🦋) /forecast/ $ rnn AAPL --forecast-only
@@ -747,7 +868,9 @@ RNN model obtains MAPE: 3.69%
 
 Seems like we improved the performance and reduced MAPE!
 
-Now for the second task, we would like to change the model type from `LSTM` --> `GRU`. Use the `-h` flag to understand the particular parameters one can change for RNN. (Please note that the parameters are different for each model).
+Now for the second task, we would like to change the model type from `LSTM` -->
+`GRU`. Use the `-h` flag to understand the particular parameters one can change
+for RNN. (Please note that the parameters are different for each model).
 
 ```
 (🦋) /forecast/ $ rnn -h
@@ -829,26 +952,38 @@ RNN model obtains MAPE: 3.64%
 
 Looks like we squeezed out a little bit more accuracy! Good work.
 
-The take away for this is that all models should work out of the box when forecasting for a particular Timeseries. One can switch the target by specifying a `-c` for `TARGET_COLUMN` and test out performance with multiple different models with a single command.
+The take away for this is that all models should work out of the box when
+forecasting for a particular Timeseries. One can switch the target by specifying
+a `-c` for `TARGET_COLUMN` and test out performance with multiple different
+models with a single command.
 
 ## Sample workflow #2 (advanced)
 
-To build successful models and improve accuracy over time, it is important to capture external data related to the timeseries you are training on.
-This can be seen in everyday applications:
+To build successful models and improve accuracy over time, it is important to
+capture external data related to the timeseries you are training on. This can be
+seen in everyday applications:
 
-- Observed rainfalls and known weather forecasts can help to predict hydro and solar electricity production
-- Recently-observed activity on an e-commerce website can help predict future sales.
+- Observed rainfalls and known weather forecasts can help to predict hydro and
+  solar electricity production
+- Recently-observed activity on an e-commerce website can help predict future
+  sales.
 - Making the model aware of up-coming holidays can help sales forecasting.
 
-_In fact, more often than not, strictly relying on the history of a time series to predict its future is missing a lot of valuable information._
+_In fact, more often than not, strictly relying on the history of a time series
+to predict its future is missing a lot of valuable information._
 
-**Past covariates** are time series whose past values are known at prediction time. Those series often contain values that have to be observed to be known.
+**Past covariates** are time series whose past values are known at prediction
+time. Those series often contain values that have to be observed to be known.
 
 ![image](https://user-images.githubusercontent.com/105685594/190244764-ce8cf01f-c959-4827-a326-62b0e172332d.png)
 
-If you would like to explore this topic more, please read the [blog post](https://medium.com/unit8-machine-learning-publication/time-series-forecasting-using-past-and-future-external-data-with-darts-1f0539585993) written by the authors of Darts.
+If you would like to explore this topic more, please read the
+[blog post](https://medium.com/unit8-machine-learning-publication/time-series-forecasting-using-past-and-future-external-data-with-darts-1f0539585993)
+written by the authors of Darts.
 
-Note: Only the following models can handle `past_covariates`: `BlockRNNModel`, `NBEATSModel`, `TCNModel`, `TransformerModel`, `RegressionModel` (incl. `LinearRegressionModel`), `Temporal Fusion Transformer`
+Note: Only the following models can handle `past_covariates`: `BlockRNNModel`,
+`NBEATSModel`, `TCNModel`, `TransformerModel`, `RegressionModel` (incl.
+`LinearRegressionModel`), `Temporal Fusion Transformer`
 
 In this work flow lets do the following:
 
@@ -857,7 +992,9 @@ In this work flow lets do the following:
 - perform feature engineering
 - train models with `past_covariates`
 
-Let's begin by loading in our datasets of AAPL and MSFT once again. In this work flow we are going to test if `close` price of MSFT is at all affected by the `close` of AAPL.
+Let's begin by loading in our datasets of AAPL and MSFT once again. In this work
+flow we are going to test if `close` price of MSFT is at all affected by the
+`close` of AAPL.
 
 For a refresher, we will grab data from the `stocks` menu found on the terminal.
 
@@ -872,7 +1009,8 @@ For a refresher, we will grab data from the `stocks` menu found on the terminal.
 
 <img width="476" alt="image" src="https://user-images.githubusercontent.com/105685594/190245759-758e566f-ad35-49fe-8df1-7d87f5d9f935.png"/>
 
-Before we go combining them, let's train a simple `Block RNN` model on MSFT `close` price to see how to use `past_covariates`
+Before we go combining them, let's train a simple `Block RNN` model on MSFT
+`close` price to see how to use `past_covariates`
 
 Make sure to always check your current data set to know the column names:
 
@@ -939,7 +1077,8 @@ With covariates:
 To use any covariates, you have 2 options:
 
 - specify specific columns with `--past-covariates`
-- specify all columns as past covariates except the one you are forecasting `--all-past-covariates`
+- specify all columns as past covariates except the one you are forecasting
+  `--all-past-covariates`
 
 ```
 (🦋) /forecast/ $ brnn MSFT --forecast-only --past-covariates volume
@@ -968,9 +1107,11 @@ Block RNN model obtains MAPE: 5.10%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/190247412-fe533231-17d9-4dc6-b41f-f5a27b6c2d57.png"/>
 
-You can see here that adding in the external variable of `volume` negatively affected the accuracy.
+You can see here that adding in the external variable of `volume` negatively
+affected the accuracy.
 
-Let's add in all remaining columns from our dataset as covariates and see what happens to the accuracy.
+Let's add in all remaining columns from our dataset as covariates and see what
+happens to the accuracy.
 
 ```
 (🦋) /forecast/ $ brnn MSFT --forecast-only --all-past-covariates
@@ -1003,11 +1144,16 @@ Block RNN model obtains MAPE: 4.26%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/190248547-2bd7801e-4ac4-43c0-868b-9aa2f79a3c3c.png"/>
 
-**Final Result:** Using `open`, `high`, `low`, `adj_close`, `volume` as `past_covariates` improved MAPE from 4.62 --> 4.26.
+**Final Result:** Using `open`, `high`, `low`, `adj_close`, `volume` as
+`past_covariates` improved MAPE from 4.62 --> 4.26.
 
-Now that we know how to use covariates and understand their effect, why don't we also use `AAPL`'s ticker data as `past_covariates` to check whether this correlates and improves our forecasting accuracy.
+Now that we know how to use covariates and understand their effect, why don't we
+also use `AAPL`'s ticker data as `past_covariates` to check whether this
+correlates and improves our forecasting accuracy.
 
-**Remember: You can use unlimited number of `past_covariates` but they must all be combined into a single dataframe with the target forecast timeseries before training.**
+**Remember: You can use unlimited number of `past_covariates` but they must all
+be combined into a single dataframe with the target forecast timeseries before
+training.**
 
 We will combine `MSFT` and `AAPL`.
 
@@ -1044,7 +1190,9 @@ Dataframe has more than 10 columns. Please export to see all of the data.
 └───┴─────────────────────┴────────┴────────┴────────┴────────┴───────────┴──────────┴───────────┴───────────┴──────────┘
 ```
 
-Now we can run the same `BRNN` model with all `past_covariates` of both tickers. The output will show the model grabbing all covariates to bring into training to predict `close` of `MSFT`.
+Now we can run the same `BRNN` model with all `past_covariates` of both tickers.
+The output will show the model grabbing all covariates to bring into training to
+predict `close` of `MSFT`.
 
 ```
 (🦋) /forecast/ $ brnn MSFT --forecast-only --all-past-covariates
@@ -1083,9 +1231,11 @@ Block RNN model obtains MAPE: 3.93%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/190250934-61e55441-dd20-439e-bff1-a54904ecfec9.png"/>
 
-For one last experiment, we can perform some other feature engineering on `MSFT` and add it to our `past_covariates` to train on.
+For one last experiment, we can perform some other feature engineering on `MSFT`
+and add it to our `past_covariates` to train on.
 
-In this case, let's add in `Momentum` over past 10 days of `MSFT` and append it to our `past_covariates`
+In this case, let's add in `Momentum` over past 10 days of `MSFT` and append it
+to our `past_covariates`
 
 ```
 (🦋) /forecast/ $ mom MSFT
@@ -1130,16 +1280,21 @@ Block RNN model obtains MAPE: 3.72%
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/105685594/190255025-9f32d6ff-d1d7-4cdf-80a8-2a6ff4c0617d.png"/>
 
-There we have it. Bringing in another ticker has allowed us to further improve the model accuracy. Furthermore, adding in a new feature to the dataset allowed us to improve the accuracy further.
+There we have it. Bringing in another ticker has allowed us to further improve
+the model accuracy. Furthermore, adding in a new feature to the dataset allowed
+us to improve the accuracy further.
 
 **MAPE = 4.62%** (no past covariates)
 
 **MAPE = 4.26%** (`open`,`high`,`low`,`adj_close`,`volume`)
 
-**MAPE = 3.93%** (`open`,`high`,`low`,`adj_close`,`volume`,`AAPL_open`,`AAPL_high`,`APPL_low`,`APPL_adj_close`,`APPL_volume`,`APPL_close`)
+**MAPE = 3.93%**
+(`open`,`high`,`low`,`adj_close`,`volume`,`AAPL_open`,`AAPL_high`,`APPL_low`,`APPL_adj_close`,`APPL_volume`,`APPL_close`)
 
-**MAPE = 3.72%** (`open`,`high`,`low`,`adj_close`,`volume`,`AAPL_open`,`AAPL_high`,`APPL_low`,`APPL_adj_close`,`APPL_volume`,`APPL_close`,`Momentum_10`)
+**MAPE = 3.72%**
+(`open`,`high`,`low`,`adj_close`,`volume`,`AAPL_open`,`AAPL_high`,`APPL_low`,`APPL_adj_close`,`APPL_volume`,`APPL_close`,`Momentum_10`)
 
 More workflows coming soon!
 
-If you have any questions or would like to request for new feature engineering or model additions, please join us on discord. Happy hacking!
+If you have any questions or would like to request for new feature engineering
+or model additions, please join us on discord. Happy hacking!

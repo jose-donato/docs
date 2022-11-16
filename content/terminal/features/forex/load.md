@@ -23,6 +23,6 @@ usage: load [-t TICKER] [-r {i,d,w,m}] [-i {1min,5min,15min,30min,60min,90min,1h
 | ticker | Currency pair to load. | None | False | None |
 | resolution | [Alphavantage only] Resolution of data. Can be intraday, daily, weekly or monthly | d | False | i, d, w, m |
 | interval | Interval of intraday data. Options: [YahooFinance] 1min, 2min, 5min, 15min, 30min, 60min, 90min, 1hour, 1day, 5day, 1week, 1month, 3month. [AlphaVantage] 1min, 5min, 15min, 30min, 60min | 1day | False | 1min, 5min, 15min, 30min, 60min, 90min, 1hour, 1day, 5day, 1week, 1month, 3month |
-| start_date | Start date of data. | 2021-11-16 12:39:12.842352 | False | None |
+| start_date | Start date of data. | 2021-11-16 12:46:00.527235 | False | None |
 
 

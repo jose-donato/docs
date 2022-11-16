@@ -8,8 +8,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 const config = {
   title: "OpenBB Docs",
   tagline: "OpenBB Docs",
-  url: "https://jose-donato.github.io", // Your website URL
-  baseUrl: "/docs/",
+  url: "https://docs.openbb.co", // Your website URL
+  baseUrl: "/",
   projectName: "docs",
   organizationName: "jose-donato",
   trailingSlash: false,

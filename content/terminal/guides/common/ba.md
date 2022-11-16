@@ -5,21 +5,28 @@ date: "2022-05-23"
 type: guides
 status: publish
 excerpt: "An Introduction to the Behavioural Analysis menu, within the Stocks menu."
-geekdocCollapseSection: true
+
 ---
-The Behavioural Analysis menu offers the user tools for gauging the overall public sentiment of a company online.
-The complexity of the tools range from message board scrapers to deep learning algorithms for financial analysis and prediction.
-Sentiment is particularly useful for momentum trading strategies, discovery, and general fundamental research.
-Navigate into the menu from the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks</a> menu by entering, `ba`; or, using absolute paths from anywhere in the Terminal: `/stocks/ba`
+
+The Behavioural Analysis menu offers the user tools for gauging the overall
+public sentiment of a company online. The complexity of the tools range from
+message board scrapers to deep learning algorithms for financial analysis and
+prediction. Sentiment is particularly useful for momentum trading strategies,
+discovery, and general fundamental research. Navigate into the menu from the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks</a>
+menu by entering, `ba`; or, using absolute paths from anywhere in the Terminal:
+`/stocks/ba`
 
 <img alt="The Behavioural Analysis submenu" src="https://user-images.githubusercontent.com/46355364/170242317-ae66ed0b-f2e8-4304-9231-ea833d01e0e2.png"></img>
 
 ## How to use
 
-The commands with text, representing <a href="https://openbb-finance.github.io/OpenBBTerminal/#structure-of-the-openbb-terminal" target="_blank">commands</a>,
-do not require a ticker, faded commands will turn light blue when there is a ticker loaded.
+The commands with text, representing
+<a href="https://openbb-finance.github.io/OpenBBTerminal/#structure-of-the-openbb-terminal" target="_blank">commands</a>,
+do not require a ticker, faded commands will turn light blue when there is a
+ticker loaded.
 
-````
+```
 (🦋) /stocks/ba/ $ load gme
 
 Loading Daily GME stock with starting period 2019-05-20 for analysis.
@@ -31,44 +38,54 @@ Market:   CLOSED
 Company:  GameStop Corporation
 
 (🦋) /stocks/ba/ $ ?
-````
+```
 
 <img alt="The Behavioural Analysis Menu with a loaded ticker" src="https://user-images.githubusercontent.com/46355364/170242757-3e29f690-7d29-4fe2-9e14-889c43e3142e.png"></img>
 
-Some data sources will require a valid API key, which can be obtained for free and then set using the Keys menu.
-To use all the features in this menu, obtain free API keys from these providers:
+Some data sources will require a valid API key, which can be obtained for free
+and then set using the Keys menu. To use all the features in this menu, obtain
+free API keys from these providers:
 
 - <a href="https://finnhub.io/" target="_blank">Finnhub</a><br/>
 - <a href="https://developer.twitter.com/" target="_blank">Twitter</a><br/>
 - <a href="https://old.reddit.com/prefs/apps/" target="_blank">Reddit</a><br/>
-- <a href="https://sentimentinvestor.com/" target="_blank">Sentiment Investor</a><br/>
+- <a href="https://sentimentinvestor.com/" target="_blank">Sentiment
+  Investor</a><br/>
 
-See the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Getting Started Guide</a>
-for help setting API keys in the Terminal.
+See the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Getting
+Started Guide</a> for help setting API keys in the Terminal.
 
 ## Examples
 
-As with every command, using the `-h` argument displays the help dialogue. Running the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/headlines/" target="_blank">headlines</a>
+As with every command, using the `-h` argument displays the help dialogue.
+Running the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/headlines/" target="_blank">headlines</a>
 command returns the following:
 
-````
+```
 (🦋) /stocks/ba/ $ headlines
-````
+```
+
 <img alt="headlines" src="https://user-images.githubusercontent.com/46355364/170244924-ffe6cd15-8d17-4690-bf44-d2b496dbc310.png"></img>
 
-Alternatively, running the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/snews/" target="_blank">snews</a>
+Alternatively, running the
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/snews/" target="_blank">snews</a>
 command returns the following:
 
-````
+```
 (🦋) /stocks/ba/ $ snews
-````
+```
 
 <img alt="headlines" src="https://user-images.githubusercontent.com/46355364/170243359-9d1302f0-3394-4e05-8360-0e59a1cb6e54.png"></img>
 
-The Reddit functions will return popular tickers and posts, or measure sentiment for a particular stock. An example
-would be by looking at the threads that pop up on <a href="https://www.reddit.com/r/wallstreetbets/" target="_blank">/r/wallstreetbets</a>,
-famous for the <a href="https://en.wikipedia.org/wiki/R/wallstreetbets" target="_blank">GameStop short squeeze</a>:
-
+The Reddit functions will return popular tickers and posts, or measure sentiment
+for a particular stock. An example would be by looking at the threads that pop
+up on
+<a href="https://www.reddit.com/r/wallstreetbets/" target="_blank">/r/wallstreetbets</a>,
+famous for the
+<a href="https://en.wikipedia.org/wiki/R/wallstreetbets" target="_blank">GameStop
+short squeeze</a>:
 
 (🦋) /stocks/ba/ $ wsb
 
@@ -78,33 +95,34 @@ https://old.reddit.com/r/wallstreetbets/comments/uvwq8z/daily_discussion_thread_
 Reddit Submission
 
 | Subreddit      | Flair            | Score | # Comments | Upvote % | Awards      |
-|----------------|----------------|---------|------------|----------|--------------|
+| -------------- | ---------------- | ----- | ---------- | -------- | ----------- |
 | wallstreetbets | Daily Discussion | 195   | 9168       | 88%      | 3 Silver    |
 |                |                  |       |            |          | 2 Helpful   |
 |                |                  |       |            |          | 1 Wholesome |
 |                |                  |       |            |          | 1 Got the   |
 
-
-2022-05-21 11:34:21 - Most Anticipated Earnings Releases for the week beginning May 23rd, 2022
+2022-05-21 11:34:21 - Most Anticipated Earnings Releases for the week beginning
+May 23rd, 2022
 https://old.reddit.com/r/wallstreetbets/comments/uul9fs/most_anticipated_earnings_releases_for_the_week/
 
 Reddit Submission
 
-| Subreddit      | Flair            | Score | # Comments | Upvote % | Awards      |
-|----------------|----------------|---------|------------|----------|--------------|
+| Subreddit      | Flair           | Score | # Comments | Upvote % | Awards           |
+| -------------- | --------------- | ----- | ---------- | -------- | ---------------- |
 | wallstreetbets | Earnings Thread | 960   | 1325       | 97%      | 1 Silver         |
 |                |                 |       |            |          | 5 Helpful        |
 |                |                 |       |            |          | 3 Wholesome      |
 |                |                 |       |            |          | 1 Take My Energy |
 |                |                 |       |            |          | 1 Sne            |
 
-
-
-The Behavioural Analysis menu also has the ability to scan for sentiment on multiple platforms including Twitter and Google
-with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/sentiment/" target="_blank">sentiment</a>,
+The Behavioural Analysis menu also has the ability to scan for sentiment on
+multiple platforms including Twitter and Google with
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/sentiment/" target="_blank">sentiment</a>,
 <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/infer/" target="_blank">infer</a>
-and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/queries/" target="_blank">queries</a>.
-````
+and
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/queries/" target="_blank">queries</a>.
+
+```
 (🦋) /stocks/ba/ $ sentiment -c
 From 2022-05-23 retrieving 360 tweets (15 tweets/hour)
 From 2022-05-22 retrieving 360 tweets (15 tweets/hour)
@@ -140,18 +158,23 @@ Of the last 100 tweets, 19.00 % had a higher negative sentiment
 | reddit          | 6%    |
 | gme reddit      | 6%    |
 | bb              | 5%    |
-````
-The <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/sentiment/" target="_blank">sentiment</a>
+```
+
+The
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/sentiment/" target="_blank">sentiment</a>
 command returns the following:
 
 <img alt="sentiment" src="https://user-images.githubusercontent.com/46355364/170243539-1ea3fc6a-d7ec-4991-a6bb-ed5879753328.png"></img>
 
-More advanced techniques can also be applied by using tools from <a href="https://sentimentinvestor.com" target="_blank">Sentiment Investor</a>
-that analyzes millions of messages to show the most talked about stocks by hour. This has the ability to show the
-most trending tickers with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/trend/" target="_blank">trend</a> and historical sentiment data with
+More advanced techniques can also be applied by using tools from
+<a href="https://sentimentinvestor.com" target="_blank">Sentiment Investor</a>
+that analyzes millions of messages to show the most talked about stocks by hour.
+This has the ability to show the most trending tickers with
+<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/trend/" target="_blank">trend</a>
+and historical sentiment data with
 <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/hist/" target="_blank">hist</a>.
 
-````
+```
 (🦋) /stocks/ba/ $ trend
 
 Most trending stocks at 2022-05-23 00:00
@@ -171,14 +194,16 @@ Most trending stocks at 2022-05-23 00:00
 
 
 (🦋) /stocks/ba/ $ hist -s 2022-05-01
-````
+```
 
-<a target="_blank" href="https://user-images.githubusercontent.com/46355364/170243719-fccf414b-3a89-4776-88de-e30f4eb34f89.png"><img alt="hist" src="https://user-images.githubusercontent.com/46355364/170243719-fccf414b-3a89-4776-88de-e30f4eb34f89.png"></a></img>
+<a target="_blank" href="https://user-images.githubusercontent.com/46355364/170243719-fccf414b-3a89-4776-88de-e30f4eb34f89.png"><img alt="hist" src="https://user-images.githubusercontent.com/46355364/170243719-fccf414b-3a89-4776-88de-e30f4eb34f89.png"></img></a>
 
-Inspired by the Twitter user, <a href="https://twitter.com/CramerTracker" target="_blank">@cramertracker</a>, the final
-two features follow (CNBC Talking Head) Jim Cramer stock recommendations as satire that rings true.
+Inspired by the Twitter user,
+<a href="https://twitter.com/CramerTracker" target="_blank">@cramertracker</a>,
+the final two features follow (CNBC Talking Head) Jim Cramer stock
+recommendations as satire that rings true.
 
-````
+```
 (🦋) /stocks/ba/ $ jcdr
 
 Jim Cramer Recommendations for 05/19
@@ -200,5 +225,6 @@ Jim Cramer Recommendations for 05/19
 | PLBY Group             | PLBY   | 9.06   | 9.26      | 2.16       | Sell           |
 | Raytheon Technologies  | RTX    | 90.25  | 91.87     | 1.76       | Buy            |
 | SoFi Technologies      | SOFI   | 7.75   | 7.30      | -6.16      | Buy            |
-````
-<a target="_blank" href="https://user-images.githubusercontent.com/46355364/170243863-f95dc515-c0d7-4ede-964d-f6ba41aec743.png"><img alt="Jim Cramer historical recommendations for $DKNG" src="https://user-images.githubusercontent.com/46355364/170243863-f95dc515-c0d7-4ede-964d-f6ba41aec743.png"></a></img>
+```
+
+<a target="_blank" href="https://user-images.githubusercontent.com/46355364/170243863-f95dc515-c0d7-4ede-964d-f6ba41aec743.png"><img alt="Jim Cramer historical recommendations for $DKNG" src="https://user-images.githubusercontent.com/46355364/170243863-f95dc515-c0d7-4ede-964d-f6ba41aec743.png"></img></a>
