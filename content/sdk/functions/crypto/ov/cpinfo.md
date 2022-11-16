@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_coinpaprika_model.get_coins_info
+## openbb_terminal.cryptocurrency.overview.coinpaprika_model.get_coins_info
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
-def get_coins_info(symbols: str, sortby: str, ascend: bool) -> DataFrame:
+def get_coins_info(symbols: str, sortby: str, ascend: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L201)
 
@@ -32,8 +32,7 @@ Description: Returns basic coin information for all coins from CoinPaprika API [
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | rank, name, symbol, price, volume_24h, circulating_supply, total_supply,
-max_supply, market_cap, beta_value, ath_price, |
+| pd.DataFrame | rank, name, symbol, price, volume_24h, circulating_supply, total_supply,<br/>max_supply, market_cap, beta_value, ath_price, |
 
 ## Examples
 
@@ -42,10 +41,10 @@ max_supply, market_cap, beta_value, ath_price, |
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_coinpaprika_view.display_all_coins_info
+## openbb_terminal.cryptocurrency.overview.coinpaprika_view.display_all_coins_info
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
-def display_all_coins_info(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
+def display_all_coins_info(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L159)
 
@@ -64,7 +63,7 @@ Description: Displays basic coin information for all coins from CoinPaprika API.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

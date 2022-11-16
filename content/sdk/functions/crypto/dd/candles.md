@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_coinbase_model.get_candles
+## openbb_terminal.cryptocurrency.due_diligence.coinbase_model.get_candles
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
-def get_candles(symbol: str, interval: str) -> DataFrame:
+def get_candles(symbol: str, interval: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L130)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L143)
 
 Description: Get candles for chosen trading pair and time interval. [Source: Coinbase]
 
@@ -40,14 +40,14 @@ Description: Get candles for chosen trading pair and time interval. [Source: Coi
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_coinbase_view.display_candles
+## openbb_terminal.cryptocurrency.due_diligence.coinbase_view.display_candles
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py'
-def display_candles(symbol: str, interval: str, export: str) -> None:
+def display_candles(symbol: str, interval: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L76)
 
-Description: Get candles for chosen trading pair and time interval. [Source: Coinbase]
+Description: Prints table showing candles for chosen trading pair and time interval. [Source: Coinbase]
 
 ## Parameters
 
@@ -59,7 +59,7 @@ Description: Get candles for chosen trading pair and time interval. [Source: Coi
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

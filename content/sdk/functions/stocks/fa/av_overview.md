@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # av_overview
 
-## stocks_fa_av_model.get_overview
+## openbb_terminal.stocks.fundamental_analysis.av_model.get_overview
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
-def get_overview(symbol: str) -> DataFrame:
+def get_overview(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L36)
 

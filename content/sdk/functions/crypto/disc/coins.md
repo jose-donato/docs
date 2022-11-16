@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_disc_pycoingecko_model.get_coins
+## openbb_terminal.cryptocurrency.discovery.pycoingecko_model.get_coins
 
 ```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
-def get_coins(limit: int, category: str, sortby: str, ascend: bool) -> DataFrame:
+def get_coins(limit: int, category: str, sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L121)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L128)
 
 Description: Get N coins from CoinGecko [Source: CoinGecko]
 
@@ -33,7 +33,7 @@ Description: Get N coins from CoinGecko [Source: CoinGecko]
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | N coins |
+| pd.DataFrame | N coins |
 
 ## Examples
 
@@ -42,14 +42,14 @@ Description: Get N coins from CoinGecko [Source: CoinGecko]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_disc_pycoingecko_view.display_coins
+## openbb_terminal.cryptocurrency.discovery.pycoingecko_view.display_coins
 
 ```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py'
-def display_coins(category: str, limit: int, sortby: str, export: str, ascend: bool) -> None:
+def display_coins(category: str, limit: int, sortby: str, export: str, ascend: bool) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L35)
 
-Description: Display top coins [Source: CoinGecko]
+Description: Prints table showing top coins [Source: CoinGecko]
 
 ## Parameters
 
@@ -63,7 +63,7 @@ Description: Display top coins [Source: CoinGecko]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

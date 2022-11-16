@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_messari_timeseries
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_messari_timeseries
 
-```python title='openbb_terminal/decorators.py'
-def get_messari_timeseries() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_messari_timeseries(symbol: str, timeseries_id: str, interval: str, start_date: str, end_date: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L118)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L124)
 
 Description: Returns messari timeseries
 
@@ -34,7 +34,7 @@ Description: Returns messari timeseries
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | messari timeserie over time |
+| Tuple[pd.DataFrame, str] | Messari timeseries over time,<br/>Timeseries title |
 
 ## Examples
 
@@ -43,14 +43,14 @@ Description: Returns messari timeseries
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_messari_timeseries
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_messari_timeseries
 
-```python title='openbb_terminal/decorators.py'
-def display_messari_timeseries() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_messari_timeseries(symbol: str, timeseries_id: str, start_date: str, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L103)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L103)
 
-Description: Display messari timeseries
+Description: Plots messari timeseries
 
 ## Parameters
 
@@ -66,7 +66,7 @@ Description: Display messari timeseries
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

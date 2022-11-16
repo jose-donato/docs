@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ba_stocktwits_model.get_bullbear
+## openbb_terminal.common.behavioural_analysis.stocktwits_model.get_bullbear
 
 ```python title='openbb_terminal/common/behavioural_analysis/stocktwits_model.py'
-def get_bullbear(symbol: str) -> None:
+def get_bullbear(symbol: str) -> Tuple
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L16)
 
-Description: Gets bullbear sentiment for ticker [Source: stocktwits]
+Description: Gets bullbear sentiment for ticker [Source: stocktwits].
 
 ## Parameters
 
@@ -30,7 +30,7 @@ Description: Gets bullbear sentiment for ticker [Source: stocktwits]
 
 | Type | Description |
 | ---- | ----------- |
-| int | Watchlist count |
+| Tuple[int, int, int, int] | Watchlist count,<br/>Number of cases found for ticker,<br/>Number of bullish statements,<br/>Number of bearish statements, |
 
 ## Examples
 
@@ -39,12 +39,12 @@ Description: Gets bullbear sentiment for ticker [Source: stocktwits]
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ba_stocktwits_view.display_bullbear
+## openbb_terminal.common.behavioural_analysis.stocktwits_view.display_bullbear
 
 ```python title='openbb_terminal/common/behavioural_analysis/stocktwits_view.py'
-def display_bullbear(symbol: str) -> None:
+def display_bullbear(symbol: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_view.py#L15)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_view.py#L17)
 
 Description: Print bullbear sentiment based on last 30 messages on the board.
 
@@ -56,7 +56,7 @@ Description: Print bullbear sentiment based on last 30 messages on the board.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

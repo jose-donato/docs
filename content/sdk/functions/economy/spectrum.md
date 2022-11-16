@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_finviz_model.get_spectrum_data
+## openbb_terminal.economy.finviz_model.get_spectrum_data
 
 ```python title='openbb_terminal/economy/finviz_model.py'
-def get_spectrum_data(group: str) -> None:
+def get_spectrum_data(group: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L168)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L169)
 
 Description: Get group (sectors, industry or country) valuation/performance data. [Source: Finviz]
 
@@ -28,7 +28,7 @@ Description: Get group (sectors, industry or country) valuation/performance data
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
@@ -37,12 +37,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_finviz_view.display_spectrum
+## openbb_terminal.economy.finviz_view.display_spectrum
 
 ```python title='openbb_terminal/economy/finviz_view.py'
-def display_spectrum(group: str, export: str) -> None:
+def display_spectrum(group: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_view.py#L112)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_view.py#L111)
 
 Description: Display finviz spectrum in system viewer [Source: Finviz]
 
@@ -55,7 +55,7 @@ Description: Display finviz spectrum in system viewer [Source: Finviz]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_coinbase_model.get_product_stats
+## openbb_terminal.cryptocurrency.due_diligence.coinbase_model.get_product_stats
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
-def get_product_stats(symbol: str) -> DataFrame:
+def get_product_stats(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L189)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L202)
 
 Description: Get 24 hr stats for the product. Volume is in base currency units.
 
@@ -39,14 +39,14 @@ Description: Get 24 hr stats for the product. Volume is in base currency units.
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_coinbase_view.display_stats
+## openbb_terminal.cryptocurrency.due_diligence.coinbase_view.display_stats
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py'
-def display_stats(symbol: str, export: str) -> None:
+def display_stats(symbol: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L99)
 
-Description: Get 24 hr stats for the product. Volume is in base currency units.
+Description: Prints table showing 24 hr stats for the product. Volume is in base currency units.
 
 ## Parameters
 
@@ -57,7 +57,7 @@ Description: Get 24 hr stats for the product. Volume is in base currency units.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

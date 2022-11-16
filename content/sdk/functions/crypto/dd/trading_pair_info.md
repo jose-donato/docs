@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # trading_pair_info
 
-## crypto_dd_coinbase_model.get_trading_pair_info
+## openbb_terminal.cryptocurrency.due_diligence.coinbase_model.get_trading_pair_info
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
-def get_trading_pair_info(symbol: str) -> DataFrame:
+def get_trading_pair_info(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L36)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L48)
 
 Description: Get information about chosen trading pair. [Source: Coinbase]
 

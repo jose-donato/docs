@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_coinbase_model.get_trading_pairs
+## openbb_terminal.cryptocurrency.overview.coinbase_model.get_trading_pairs
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinbase_model.py'
-def get_trading_pairs(limit: int, sortby: str, ascend: bool) -> DataFrame:
+def get_trading_pairs(limit: int, sortby: str, ascend: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_model.py#L24)
 
@@ -41,12 +41,12 @@ Description: Get a list of available currency pairs for trading. [Source: Coinba
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_coinbase_view.display_trading_pairs
+## openbb_terminal.cryptocurrency.overview.coinbase_view.display_trading_pairs
 
-```python title='openbb_terminal/decorators.py'
-def display_trading_pairs() -> None:
+```python title='openbb_terminal/cryptocurrency/overview/coinbase_view.py'
+def display_trading_pairs(limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L19)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_view.py#L19)
 
 Description: Displays a list of available currency pairs for trading. [Source: Coinbase]
 
@@ -61,7 +61,7 @@ Description: Displays a list of available currency pairs for trading. [Source: C
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

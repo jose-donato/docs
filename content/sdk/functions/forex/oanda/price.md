@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forex_oanda_model.fx_price_request
+## openbb_terminal.forex.oanda.oanda_model.fx_price_request
 
 ```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def fx_price_request(accountID: str, instrument: Union[str, NoneType]) -> None:
+def fx_price_request(accountID: str, instrument: Optional[str]) -> Union
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L36)
 
@@ -40,12 +40,12 @@ Description: Request price for a forex pair.
 </TabItem>
 <TabItem value="view" label="View">
 
-## forex_oanda_view.get_fx_price
+## openbb_terminal.forex.oanda.oanda_view.get_fx_price
 
-```python title='openbb_terminal/decorators.py'
-def get_fx_price() -> None:
+```python title='openbb_terminal/forex/oanda/oanda_view.py'
+def get_fx_price(account: str, instrument: Optional[str]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L40)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L40)
 
 Description: View price for loaded currency pair.
 
@@ -58,7 +58,7 @@ Description: View price for loaded currency pair.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

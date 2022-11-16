@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_disc_coinpaprika_model.get_search_results
+## openbb_terminal.cryptocurrency.discovery.coinpaprika_model.get_search_results
 
 ```python title='openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py'
-def get_search_results(query: str, category: Union[Any, NoneType], modifier: Union[Any, NoneType], sortby: str, ascend: bool) -> DataFrame:
+def get_search_results(query: str, category: Optional[Any], modifier: Optional[Any], sortby: str, ascend: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py#L27)
 
@@ -25,21 +25,16 @@ Description: Search CoinPaprika. [Source: CoinPaprika]
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | query | str | phrase for search | None | False |
-| category | Optional[Any] | one or more categories (comma separated) to search.
-Available options: currencies|exchanges|icos|people|tags
-Default: currencies,exchanges,icos,people,tags | currencies | False |
-| modifier | Optional[Any] | set modifier for search results. Available options: symbol_search -
-search only by symbol (works for currencies only) | None | False |
-| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to
-API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | None | False |
+| category | Optional[Any] | one or more categories (comma separated) to search.<br/>Available options: currencies|exchanges|icos|people|tags<br/>Default: currencies,exchanges,icos,people,tags | currencies | False |
+| modifier | Optional[Any] | set modifier for search results. Available options: symbol_search -<br/>search only by symbol (works for currencies only) | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | None | False |
 | ascend | bool | Flag to sort data descending | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Search Results
-Columns: Metric, Value |
+| pd.DataFrame | Search Results<br/>Columns: Metric, Value |
 
 ## Examples
 
@@ -48,14 +43,14 @@ Columns: Metric, Value |
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_disc_coinpaprika_view.display_search_results
+## openbb_terminal.cryptocurrency.discovery.coinpaprika_view.display_search_results
 
 ```python title='openbb_terminal/cryptocurrency/discovery/coinpaprika_view.py'
-def display_search_results(query: str, category: str, limit: int, sortby: str, ascend: bool, export: str) -> None:
+def display_search_results(query: str, category: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_view.py#L16)
 
-Description: Search over CoinPaprika. [Source: CoinPaprika]
+Description: Prints table showing Search over CoinPaprika. [Source: CoinPaprika]
 
 ## Parameters
 
@@ -64,14 +59,13 @@ Description: Search over CoinPaprika. [Source: CoinPaprika]
 | query | str | Search query | None | False |
 | category | str | Categories to search: currencies|exchanges|icos|people|tags|all. Default: all | all | False |
 | limit | int | Number of records to display | None | False |
-| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to
-API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | None | False |
 | ascend | bool | Flag to sort data descending | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## econometrics_model.get_root
+## openbb_terminal.econometrics.econometrics_model.get_root
 
 ```python title='openbb_terminal/econometrics/econometrics_model.py'
-def get_root(data: pd.Series, fuller_reg: str, kpss_reg: str) -> DataFrame:
+def get_root(data: pd.Series, fuller_reg: str, kpss_reg: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L166)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L168)
 
 Description: Calculate test statistics for unit roots
 
@@ -41,12 +41,12 @@ Description: Calculate test statistics for unit roots
 </TabItem>
 <TabItem value="view" label="View">
 
-## econometrics_view.display_root
+## openbb_terminal.econometrics.econometrics_view.display_root
 
 ```python title='openbb_terminal/econometrics/econometrics_view.py'
-def display_root(data: pd.Series, dataset: str, column: str, fuller_reg: str, kpss_reg: str, export: str) -> None:
+def display_root(data: pd.Series, dataset: str, column: str, fuller_reg: str, kpss_reg: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L204)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L197)
 
 Description: Determine the normality of a timeseries.
 
@@ -63,7 +63,7 @@ Description: Determine the normality of a timeseries.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

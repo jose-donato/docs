@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_pycoingecko_model.get_finance_products
+## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_finance_products
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_finance_products(sortby: str, ascend: bool) -> DataFrame:
+def get_finance_products(sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L286)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L292)
 
 Description: Get list of financial products from CoinGecko API
 
@@ -31,7 +31,7 @@ Description: Get list of financial products from CoinGecko API
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Rank,  Platform, Identifier, Supply_Rate, Borrow_Rate |
+| pd.DataFrame | Rank,  Platform, Identifier, Supply_Rate, Borrow_Rate |
 
 ## Examples
 
@@ -40,10 +40,10 @@ Description: Get list of financial products from CoinGecko API
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_pycoingecko_view.display_products
+## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_products
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_products(sortby: str, ascend: bool, limit: int, export: str) -> None:
+def display_products(sortby: str, ascend: bool, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L595)
 
@@ -60,7 +60,7 @@ Description: Shows list of financial products. [Source: CoinGecko]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

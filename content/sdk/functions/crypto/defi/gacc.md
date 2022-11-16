@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_defi_terramoney_fcd_model.get_account_growth
+## openbb_terminal.cryptocurrency.defi.terramoney_fcd_model.get_account_growth
 
 ```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
-def get_account_growth(cumulative: bool) -> DataFrame:
+def get_account_growth(cumulative: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L262)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L263)
 
 Description: Get terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
 
@@ -39,14 +39,14 @@ Description: Get terra blockchain account growth history [Source: https://fcd.te
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_defi_terramoney_fcd_view.display_account_growth
+## openbb_terminal.cryptocurrency.defi.terramoney_fcd_view.display_account_growth
 
 ```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
-def display_account_growth(kind: str, cumulative: bool, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_account_growth(kind: str, cumulative: bool, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L139)
 
-Description: Display terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
+Description: Plots terra blockchain account growth history [Source: https://fcd.terra.dev/swagger]
 
 ## Parameters
 
@@ -60,7 +60,7 @@ Description: Display terra blockchain account growth history [Source: https://fc
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,23 +11,24 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_defi_terraengineer_model.get_anchor_yield_reserve
+## openbb_terminal.cryptocurrency.defi.terraengineer_model.get_anchor_yield_reserve
 
 ```python title='openbb_terminal/cryptocurrency/defi/terraengineer_model.py'
-def get_anchor_yield_reserve() -> DataFrame:
+def get_anchor_yield_reserve() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L62)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L63)
 
 Description: Displays the 30-day history of the Anchor Yield Reserve.
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe containing historical data |
 
 ## Examples
 
@@ -36,14 +37,14 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_defi_terraengineer_view.display_anchor_yield_reserve
+## openbb_terminal.cryptocurrency.defi.terraengineer_view.display_anchor_yield_reserve
 
 ```python title='openbb_terminal/cryptocurrency/defi/terraengineer_view.py'
-def display_anchor_yield_reserve(export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_anchor_yield_reserve(export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L85)
 
-Description: Displays the 30-day history of the Anchor Yield Reserve.
+Description: Plots the 30-day history of the Anchor Yield Reserve.
 
 ## Parameters
 
@@ -54,7 +55,7 @@ Description: Displays the 30-day history of the Anchor Yield Reserve.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

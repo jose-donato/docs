@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_pycoingecko_model.get_coin_potential_returns
+## openbb_terminal.cryptocurrency.due_diligence.pycoingecko_model.get_coin_potential_returns
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py'
-def get_coin_potential_returns(main_coin: str, to_symbol: Union[str, NoneType], limit: Union[int, NoneType], price: Union[int, NoneType]) -> DataFrame:
+def get_coin_potential_returns(main_coin: str, to_symbol: Optional[str], limit: Optional[int], price: Optional[int]) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L63)
 
@@ -33,8 +33,7 @@ Description: Fetch data to calculate potential returns of a certain coin. [Sourc
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Potential returns data
-Columns: Coin, Current Price, Target Coin, Potential Price, Potential Market Cap ($), Change (%) |
+| pd.DataFrame | Potential returns data<br/>Columns: Coin, Current Price, Target Coin, Potential Price, Potential Market Cap ($), Change (%) |
 
 ## Examples
 
@@ -43,14 +42,14 @@ Columns: Coin, Current Price, Target Coin, Potential Price, Potential Market Cap
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_pycoingecko_view.display_coin_potential_returns
+## openbb_terminal.cryptocurrency.due_diligence.pycoingecko_view.display_coin_potential_returns
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/pycoingecko_view.py'
-def display_coin_potential_returns(to_symbol: str, from_symbol: Union[str, NoneType], limit: Union[int, NoneType], price: Union[int, NoneType], export: str) -> None:
+def display_coin_potential_returns(to_symbol: str, from_symbol: Optional[str], limit: Optional[int], price: Optional[int], export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_view.py#L20)
 
-Description: Displays potential returns of a certain coin. [Source: CoinGecko]
+Description: Prints table showing potential returns of a certain coin. [Source: CoinGecko]
 
 ## Parameters
 
@@ -64,7 +63,7 @@ Description: Displays potential returns of a certain coin. [Source: CoinGecko]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

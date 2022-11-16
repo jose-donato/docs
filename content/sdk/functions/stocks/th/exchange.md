@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_th_bursa_model.get_bursa
+## openbb_terminal.stocks.tradinghours.bursa_model.get_bursa
 
 ```python title='openbb_terminal/stocks/tradinghours/bursa_model.py'
-def get_bursa(symbol: str) -> DataFrame:
+def get_bursa(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L20)
 
@@ -39,10 +39,10 @@ Description: Get current exchange open hours.
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_th_bursa_view.display_exchange
+## openbb_terminal.stocks.tradinghours.bursa_view.display_exchange
 
 ```python title='openbb_terminal/stocks/tradinghours/bursa_view.py'
-def display_exchange(symbol: str) -> None:
+def display_exchange(symbol: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L15)
 
@@ -56,7 +56,7 @@ Description: Display current exchange trading hours.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

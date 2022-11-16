@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_bitquery_model.get_spread_for_crypto_pair
+## openbb_terminal.cryptocurrency.onchain.bitquery_model.get_spread_for_crypto_pair
 
 ```python title='openbb_terminal/cryptocurrency/onchain/bitquery_model.py'
-def get_spread_for_crypto_pair(symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool) -> DataFrame:
+def get_spread_for_crypto_pair(symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L724)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L725)
 
 Description: Get an average bid and ask prices, average spread for given crypto pair for chosen time period.
 
@@ -43,14 +43,14 @@ Description: Get an average bid and ask prices, average spread for given crypto 
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_bitquery_view.display_spread_for_crypto_pair
+## openbb_terminal.cryptocurrency.onchain.bitquery_view.display_spread_for_crypto_pair
 
-```python title='openbb_terminal/decorators.py'
-def display_spread_for_crypto_pair() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/bitquery_view.py'
+def display_spread_for_crypto_pair(symbol: Any, to_symbol: Any, days: int, sortby: str, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L343)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L345)
 
-Description: Display an average bid and ask prices, average spread for given crypto pair for chosen
+Description: Prints table showing an average bid and ask prices, average spread for given crypto pair for chosen
 
 ## Parameters
 

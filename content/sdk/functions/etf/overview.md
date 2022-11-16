@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## etf_stockanalysis_model.get_etf_overview
+## openbb_terminal.etf.stockanalysis_model.get_etf_overview
 
 ```python title='openbb_terminal/etf/stockanalysis_model.py'
-def get_etf_overview(symbol: str) -> DataFrame:
+def get_etf_overview(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L50)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L48)
 
 Description: Get overview data for selected etf
 
@@ -25,13 +25,12 @@ Description: Get overview data for selected etf
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | etf_symbol | str | Etf symbol to get overview for | None | False |
-| Returns | None | None | None | None |
-| ---------- | None | None | None | None |
-| df | pd.DataFrame | Dataframe of stock overview data | None | False |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Dataframe of stock overview data |
 
 ## Examples
 
@@ -40,10 +39,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## etf_stockanalysis_view.view_overview
+## openbb_terminal.etf.stockanalysis_view.view_overview
 
 ```python title='openbb_terminal/etf/stockanalysis_view.py'
-def view_overview(symbol: str, export: str) -> None:
+def view_overview(symbol: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L17)
 
@@ -58,7 +57,7 @@ Description: Print etf overview information
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

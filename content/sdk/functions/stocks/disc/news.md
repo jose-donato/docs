@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # news
 
-## stocks_disc_seeking_alpha_model.get_news
+## openbb_terminal.stocks.discovery.seeking_alpha_model.get_news
 
 ```python title='openbb_terminal/stocks/discovery/seeking_alpha_model.py'
-def get_news(news_type: str, limit: int) -> None:
+def get_news(news_type: str, limit: int) -> List
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L199)
 
@@ -18,8 +18,7 @@ Description: Gets news. [Source: SeekingAlpha]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| news_type | str | From: Top-News, On-The-Move, Market-Pulse, Notable-Calls, Buybacks, Commodities, Crypto, Issuance, Global,
-Guidance, IPOs, SPACs, Politics, M-A, Consumer, Energy, Financials, Healthcare, MLPs, REITs, Technology | None | False |
+| news_type | str | From: Top-News, On-The-Move, Market-Pulse, Notable-Calls, Buybacks, Commodities, Crypto, Issuance, Global,<br/>Guidance, IPOs, SPACs, Politics, M-A, Consumer, Energy, Financials, Healthcare, MLPs, REITs, Technology | None | False |
 | limit | int | Number of news to display | None | False |
 
 ## Returns

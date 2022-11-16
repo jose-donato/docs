@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ba_finbrain_model.get_sentiment
+## openbb_terminal.common.behavioural_analysis.finbrain_model.get_sentiment
 
 ```python title='openbb_terminal/common/behavioural_analysis/finbrain_model.py'
-def get_sentiment(symbol: str) -> DataFrame:
+def get_sentiment(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/finbrain_model.py#L15)
 
-Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrain]
+Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrain].
 
 ## Parameters
 
@@ -30,7 +30,7 @@ Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrai
 
 | Type | Description |
 | ---- | ----------- |
-| DataFrame() | Empty if there was an issue with data retrieval |
+| pd.DataFrame | Empty if there was an issue with data retrieval |
 
 ## Examples
 
@@ -39,10 +39,10 @@ Description: Gets Sentiment analysis provided by FinBrain's API [Source: finbrai
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_crypto_finbrain_view.display_crypto_sentiment_analysis
+## openbb_terminal.cryptocurrency.due_diligence.finbrain_crypto_view.display_crypto_sentiment_analysis
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/finbrain_crypto_view.py'
-def display_crypto_sentiment_analysis(symbol: str, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_crypto_sentiment_analysis(symbol: str, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/finbrain_crypto_view.py#L39)
 
@@ -59,7 +59,7 @@ Description: Sentiment analysis from FinBrain for Cryptocurrencies
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

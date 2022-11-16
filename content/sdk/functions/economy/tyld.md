@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_alphavantage_model.get_treasury_yield
+## openbb_terminal.economy.alphavantage_model.get_treasury_yield
 
 ```python title='openbb_terminal/economy/alphavantage_model.py'
-def get_treasury_yield(interval: str, maturity: str, start_date: str) -> DataFrame:
+def get_treasury_yield(interval: str, maturity: str, start_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L229)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L230)
 
 Description: Get historical yield for a given maturity
 
@@ -41,12 +41,12 @@ Description: Get historical yield for a given maturity
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_alphavantage_view.display_treasury_yield
+## openbb_terminal.economy.alphavantage_view.display_treasury_yield
 
-```python title='openbb_terminal/decorators.py'
-def display_treasury_yield() -> None:
+```python title='openbb_terminal/economy/alphavantage_view.py'
+def display_treasury_yield(interval: str, maturity: str, start_date: str, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L315)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L315)
 
 Description: Display historical treasury yield for given maturity
 
@@ -63,7 +63,7 @@ Description: Display historical treasury yield for given maturity
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

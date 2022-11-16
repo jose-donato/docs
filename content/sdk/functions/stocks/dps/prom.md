@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_dps_finra_model.getATSdata
+## openbb_terminal.stocks.dark_pool_shorts.finra_model.getATSdata
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/finra_model.py'
-def getATSdata(limit: int, tier_ats: str) -> None:
+def getATSdata(limit: int, tier_ats: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L216)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L214)
 
 Description: Get all FINRA ATS data, and parse most promising tickers based on linear regression
 
@@ -31,7 +31,7 @@ Description: Get all FINRA ATS data, and parse most promising tickers based on l
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Dark Pools (ATS) Data |
+| Tuple[pd.DataFrame, Dict] | Dark Pools (ATS) Data, Tickers from Dark Pools with better regression slope |
 
 ## Examples
 
@@ -40,10 +40,10 @@ Description: Get all FINRA ATS data, and parse most promising tickers based on l
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_dps_finra_view.darkpool_otc
+## openbb_terminal.stocks.dark_pool_shorts.finra_view.darkpool_otc
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/finra_view.py'
-def darkpool_otc(input_limit: int, limit: int, tier: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def darkpool_otc(input_limit: int, limit: int, tier: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L189)
 
@@ -53,17 +53,15 @@ Description: Display dark pool (ATS) data of tickers with growing trades activit
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| input_limit | int | Number of tickers to filter from entire ATS data based on
-the sum of the total weekly shares quantity | None | False |
-| limit | int | Number of tickers to display from most promising with
-better linear regression slope | None | False |
+| input_limit | int | Number of tickers to filter from entire ATS data based on<br/>the sum of the total weekly shares quantity | None | False |
+| limit | int | Number of tickers to display from most promising with<br/>better linear regression slope | None | False |
 | tier | str | Tier to process data from: T1, T2 or OTCE | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

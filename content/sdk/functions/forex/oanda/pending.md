@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## forex_oanda_model.pending_orders_request
+## openbb_terminal.forex.oanda.oanda_model.pending_orders_request
 
 ```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def pending_orders_request(accountID: str) -> None:
+def pending_orders_request(accountID: str) -> Union
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L421)
 
@@ -39,12 +39,12 @@ Description: Request information on pending orders.
 </TabItem>
 <TabItem value="view" label="View">
 
-## forex_oanda_view.get_pending_orders
+## openbb_terminal.forex.oanda.oanda_view.get_pending_orders
 
-```python title='openbb_terminal/decorators.py'
-def get_pending_orders() -> None:
+```python title='openbb_terminal/forex/oanda/oanda_view.py'
+def get_pending_orders(accountID: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L240)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L240)
 
 Description: Get information about pending orders.
 
@@ -56,7 +56,7 @@ Description: Get information about pending orders.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

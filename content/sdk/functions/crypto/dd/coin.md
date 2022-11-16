@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # coin
 
-## crypto_dd_coinpaprika_model.get_coin
+## openbb_terminal.cryptocurrency.due_diligence.coinpaprika_model.get_coin
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py'
-def get_coin(symbol: str) -> dict:
+def get_coin(symbol: str) -> dict
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L23)
 

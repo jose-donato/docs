@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # load
 
-## forex_helpers.load
+## openbb_terminal.forex.forex_helper.load
 
 ```python title='openbb_terminal/forex/forex_helper.py'
-def load(to_symbol: str, from_symbol: str, resolution: str, interval: str, start_date: str, source: str, verbose: bool) -> DataFrame:
+def load(to_symbol: str, from_symbol: str, resolution: str, interval: str, start_date: str, source: str, verbose: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L97)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L95)
 
 Description: Load forex for two given symbols.
 

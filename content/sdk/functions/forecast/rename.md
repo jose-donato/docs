@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # rename
 
-## forecast_model.rename_column
+## openbb_terminal.forecast.forecast_model.rename_column
 
 ```python title='openbb_terminal/forecast/forecast_model.py'
-def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> DataFrame:
+def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L453)
 

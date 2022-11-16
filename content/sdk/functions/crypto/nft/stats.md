@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_nft_opensea_model.get_collection_stats
+## openbb_terminal.cryptocurrency.nft.opensea_model.get_collection_stats
 
 ```python title='openbb_terminal/cryptocurrency/nft/opensea_model.py'
-def get_collection_stats(slug: str) -> DataFrame:
+def get_collection_stats(slug: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_model.py#L17)
 
@@ -24,6 +24,7 @@ Description: Get stats of a nft collection [Source: opensea.io]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+| slug | str | Opensea collection slug. If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club | None | False |
 
 ## Returns
 
@@ -38,26 +39,25 @@ Description: Get stats of a nft collection [Source: opensea.io]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_nft_opensea_view.display_collection_stats
+## openbb_terminal.cryptocurrency.nft.opensea_view.display_collection_stats
 
 ```python title='openbb_terminal/cryptocurrency/nft/opensea_view.py'
-def display_collection_stats(slug: str, export: str) -> None:
+def display_collection_stats(slug: str, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_view.py#L15)
 
-Description: Display collection stats. [Source: opensea.io]
+Description: Prints table showing collection stats. [Source: opensea.io]
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| slug | str | Opensea collection slug.
-If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club | None | False |
+| slug | str | Opensea collection slug.<br/>If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

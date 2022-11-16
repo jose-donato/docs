@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_ethplorer_model.get_token_info
+## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_token_info
 
 ```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_token_info(address: Any) -> DataFrame:
+def get_token_info(address: Any) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L373)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L380)
 
 Description: Get info about ERC20 token. [Source: Ethplorer]
 
@@ -30,7 +30,7 @@ Description: Get info about ERC20 token. [Source: Ethplorer]
 
 | Type | Description |
 | ---- | ----------- |
-|  | DataFrame with information about provided ERC20 token. |
+| pd.DataFrame | DataFrame with information about provided ERC20 token. |
 
 ## Examples
 
@@ -39,12 +39,12 @@ Description: Get info about ERC20 token. [Source: Ethplorer]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_ethplorer_view.display_token_info
+## openbb_terminal.cryptocurrency.onchain.ethplorer_view.display_token_info
 
-```python title='openbb_terminal/decorators.py'
-def display_token_info() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_view.py'
+def display_token_info(address: str, social: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L206)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L206)
 
 Description: Display info about ERC20 token. [Source: Ethplorer]
 
@@ -58,7 +58,7 @@ Description: Display info about ERC20 token. [Source: Ethplorer]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

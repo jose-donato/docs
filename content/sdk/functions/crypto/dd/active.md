@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_glassnode_model.get_active_addresses
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_model.get_active_addresses
 
-```python title='openbb_terminal/decorators.py'
-def get_active_addresses() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py'
+def get_active_addresses(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L304)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L310)
 
 Description: Returns active addresses of a certain symbol
 
@@ -42,14 +42,14 @@ Description: Returns active addresses of a certain symbol
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_glassnode_view.display_active_addresses
+## openbb_terminal.cryptocurrency.due_diligence.glassnode_view.display_active_addresses
 
-```python title='openbb_terminal/decorators.py'
-def display_active_addresses() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py'
+def display_active_addresses(symbol: str, start_date: str, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L32)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L32)
 
-Description: Display active addresses of a certain symbol over time
+Description: Plots active addresses of a certain symbol over time
 
 ## Parameters
 
@@ -64,7 +64,7 @@ Description: Display active addresses of a certain symbol over time
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

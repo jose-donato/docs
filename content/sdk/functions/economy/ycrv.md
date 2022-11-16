@@ -11,26 +11,26 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_investingcom_model.get_yieldcurve
+## openbb_terminal.economy.fred_model.get_yield_curve
 
-```python title='openbb_terminal/economy/investingcom_model.py'
-def get_yieldcurve(country: str) -> DataFrame:
+```python title='openbb_terminal/economy/fred_model.py'
+def get_yield_curve(date: datetime.datetime) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L306)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L255)
 
-Description: Get yield curve for specified country. [Source: Investing.com]
+Description: Gets yield curve data from FRED
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| country | str | Country to display yield curve. List of available countries is accessible through get_ycrv_countries(). | None | False |
+| date | datetime | Date to get curve for.  If None, gets most recent date | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Country yield curve |
+| Tuple[pd.DataFrame, datetime] | Dataframe of yields and maturities,<br/>Date for which the yield curve is obtained |
 
 ## Examples
 
@@ -39,25 +39,25 @@ Description: Get yield curve for specified country. [Source: Investing.com]
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_investingcom_view.display_yieldcurve
+## openbb_terminal.economy.fred_view.display_yield_curve
 
-```python title='openbb_terminal/economy/investingcom_view.py'
-def display_yieldcurve(country: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType], raw: bool, export: str) -> None:
+```python title='openbb_terminal/economy/fred_view.py'
+def display_yield_curve(date: datetime.datetime, external_axes: Optional[List[matplotlib.axes._axes.Axes]], raw: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_view.py#L208)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_view.py#L187)
 
-Description: Display yield curve for specified country. [Source: Investing.com]
+Description: Display yield curve based on US Treasury rates for a specified date.
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| country | str | Country to display yield curve. List of available countries is accessible through get_ycrv_countries(). | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| date | datetime | Date to get yield curve for | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes to plot data on | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

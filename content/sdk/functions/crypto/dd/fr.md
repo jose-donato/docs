@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_fundraising
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_fundraising
 
-```python title='openbb_terminal/decorators.py'
-def get_fundraising() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_fundraising(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L632)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L637)
 
 Description: Returns coin fundraising
 
@@ -30,7 +30,7 @@ Description: Returns coin fundraising
 
 | Type | Description |
 | ---- | ----------- |
-| str | launch summary |
+| Tuple[str, pd.DataFrame, pd.DataFrame, pd.DataFrame] | Launch summary,<br/>Sales rounds,<br/>Treasury Accounts,<br/>Metric Value launch details |
 
 ## Examples
 
@@ -39,12 +39,12 @@ Description: Returns coin fundraising
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_fundraising
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_fundraising
 
-```python title='openbb_terminal/decorators.py'
-def display_fundraising() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_fundraising(symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L627)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L639)
 
 Description: Display coin fundraising
 
@@ -58,7 +58,7 @@ Description: Display coin fundraising
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_ba_reddit_model.get_posts_about
+## openbb_terminal.common.behavioural_analysis.reddit_model.get_posts_about
 
-```python title='openbb_terminal/decorators.py'
-def get_posts_about() -> None:
+```python title='openbb_terminal/common/behavioural_analysis/reddit_model.py'
+def get_posts_about(symbol: str, limit: int, sortby: str, time_frame: str, full_search: bool, subreddits: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L869)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L864)
 
-Description: Finds posts related to a specific search term in Reddit
+Description: Finds posts related to a specific search term in Reddit.
 
 ## Parameters
 
@@ -26,10 +26,8 @@ Description: Finds posts related to a specific search term in Reddit
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to search for | None | False |
 | limit | int | Number of posts to get per subreddit | None | False |
-| sortby | str | Search type
-Possibilities: "relevance", "hot", "top", "new", or "comments" | None | False |
-| time_frame | str | Relative time of post
-Possibilities: "hour", "day", "week", "month", "year", "all" | None | False |
+| sortby | str | Search type (Possibilities: "relevance", "hot", "top", "new", or "comments") | None | False |
+| time_frame | str | Relative time of post (Possibilities: "hour", "day", "week", "month", "year", "all") | None | False |
 | full_search | bool | Enable comprehensive search for ticker | None | False |
 | subreddits | str | Comma-separated list of subreddits | None | False |
 
@@ -37,9 +35,7 @@ Possibilities: "hour", "day", "week", "month", "year", "all" | None | False |
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe of submissions related to the search term,
-List of polarity scores,
-Average polarity score |
+|  | Dataframe of submissions related to the search term,<br/>List of polarity scores,<br/>Average polarity score. |
 
 ## Examples
 
@@ -48,14 +44,14 @@ Average polarity score |
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_ba_reddit_view.display_redditsent
+## openbb_terminal.common.behavioural_analysis.reddit_view.display_redditsent
 
-```python title='openbb_terminal/decorators.py'
-def display_redditsent() -> None:
+```python title='openbb_terminal/common/behavioural_analysis/reddit_view.py'
+def display_redditsent(symbol: str, sortby: str, limit: int, graphic: bool, time_frame: str, full_search: bool, subreddits: str, display: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L388)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_view.py#L388)
 
-Description: Determine Reddit sentiment about a search term
+Description: Plots Reddit sentiment about a search term. Prints table showing if display is True.
 
 ## Parameters
 
@@ -74,7 +70,7 @@ Description: Determine Reddit sentiment about a search term
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -5,14 +5,14 @@ description: OpenBB SDK Function
 
 # spacc
 
-## stocks_ba_reddit_model.get_spac_community
+## openbb_terminal.common.behavioural_analysis.reddit_model.get_spac_community
 
-```python title='openbb_terminal/decorators.py'
-def get_spac_community() -> None:
+```python title='openbb_terminal/common/behavioural_analysis/reddit_model.py'
+def get_spac_community(limit: int, popular: bool) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L319)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L317)
 
-Description: Get top tickers from r/SPACs [Source: reddit]
+Description: Get top tickers from r/SPACs [Source: reddit].
 
 ## Parameters
 
@@ -25,7 +25,7 @@ Description: Get top tickers from r/SPACs [Source: reddit]
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe of reddit submission |
+| Tuple[pd.DataFrame, dict] | Dataframe of reddit submission,<br/>Dictionary of tickers and number of mentions. |
 
 ## Examples
 

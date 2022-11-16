@@ -11,25 +11,24 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_disc_pycoingecko_model.get_trending_coins
+## openbb_terminal.cryptocurrency.discovery.pycoingecko_model.get_trending_coins
 
 ```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
-def get_trending_coins() -> DataFrame:
+def get_trending_coins() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L309)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L317)
 
 Description: Returns trending coins [Source: CoinGecko]
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-|  | Trending Coins |
+| pd.DataFrame | Trending Coins |
 
 ## Examples
 
@@ -38,14 +37,14 @@ Description: Returns trending coins [Source: CoinGecko]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_disc_pycoingecko_view.display_trending
+## openbb_terminal.cryptocurrency.discovery.pycoingecko_view.display_trending
 
 ```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py'
-def display_trending(export: str) -> None:
+def display_trending(export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L192)
 
-Description: Display trending coins [Source: CoinGecko]
+Description: Prints table showing trending coins [Source: CoinGecko]
 
 ## Parameters
 
@@ -55,7 +54,7 @@ Description: Display trending coins [Source: CoinGecko]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

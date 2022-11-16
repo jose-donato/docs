@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_dd_finnhub_model.get_rating_over_time
+## openbb_terminal.stocks.due_diligence.finnhub_model.get_rating_over_time
 
-```python title='openbb_terminal/decorators.py'
-def get_rating_over_time() -> DataFrame:
+```python title='openbb_terminal/stocks/due_diligence/finnhub_model.py'
+def get_rating_over_time(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finnhub_model.py#L17)
 
 Description: Get rating over time data. [Source: Finnhub]
 
@@ -39,12 +39,12 @@ Description: Get rating over time data. [Source: Finnhub]
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_dd_finnhub_view.rating_over_time
+## openbb_terminal.stocks.due_diligence.finnhub_view.rating_over_time
 
-```python title='openbb_terminal/decorators.py'
-def rating_over_time() -> None:
+```python title='openbb_terminal/stocks/due_diligence/finnhub_view.py'
+def rating_over_time(symbol: str, limit: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L75)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finnhub_view.py#L75)
 
 Description: Rating over time (monthly). [Source: Finnhub]
 
@@ -60,7 +60,7 @@ Description: Rating over time (monthly). [Source: Finnhub]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

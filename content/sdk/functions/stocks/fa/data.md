@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # data
 
-## stocks_fa_finviz_model.get_data
+## openbb_terminal.stocks.fundamental_analysis.finviz_model.get_data
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/finviz_model.py'
-def get_data(symbol: str) -> DataFrame:
+def get_data(symbol: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/finviz_model.py#L15)
 

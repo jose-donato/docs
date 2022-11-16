@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_ethplorer_model.get_token_historical_price
+## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_token_historical_price
 
 ```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_token_historical_price(address: Any, sortby: str, ascend: bool) -> DataFrame:
+def get_token_historical_price(address: Any, sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L538)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L545)
 
 Description: Get token historical prices with volume and market cap, and average price. [Source: Ethplorer]
 
@@ -32,7 +32,7 @@ Description: Get token historical prices with volume and market cap, and average
 
 | Type | Description |
 | ---- | ----------- |
-|  | DataFrame with token historical prices. |
+| pd.DataFrame | DataFrame with token historical prices. |
 
 ## Examples
 
@@ -41,12 +41,12 @@ Description: Get token historical prices with volume and market cap, and average
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_ethplorer_view.display_token_historical_prices
+## openbb_terminal.cryptocurrency.onchain.ethplorer_view.display_token_historical_prices
 
-```python title='openbb_terminal/decorators.py'
-def display_token_historical_prices() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_view.py'
+def display_token_historical_prices(address: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L334)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L334)
 
 Description: Display token historical prices with volume and market cap, and average price.
 
@@ -62,7 +62,7 @@ Description: Display token historical prices with volume and market cap, and ave
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

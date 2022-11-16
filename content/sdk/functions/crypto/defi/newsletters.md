@@ -11,19 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_defi_substack_model.get_newsletters
+## openbb_terminal.cryptocurrency.defi.substack_model.get_newsletters
 
 ```python title='openbb_terminal/cryptocurrency/defi/substack_model.py'
-def get_newsletters() -> DataFrame:
+def get_newsletters() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L52)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L54)
 
 Description: Scrape all substack newsletters from url list.
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
@@ -38,14 +37,14 @@ Description: Scrape all substack newsletters from url list.
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_defi_substack_view.display_newsletters
+## openbb_terminal.cryptocurrency.defi.substack_view.display_newsletters
 
 ```python title='openbb_terminal/cryptocurrency/defi/substack_view.py'
-def display_newsletters(limit: int, export: str) -> None:
+def display_newsletters(limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_view.py#L16)
 
-Description: Display DeFi related substack newsletters.
+Description: Prints table showing DeFi related substack newsletters.
 
 ## Parameters
 
@@ -56,7 +55,7 @@ Description: Display DeFi related substack newsletters.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

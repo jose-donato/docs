@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # load
 
-## common_model.load
+## openbb_terminal.common.common_model.load
 
 ```python title='openbb_terminal/common/common_model.py'
-def load(file: str, data_files: Union[Dict[Any, Any], NoneType], data_examples: Union[Dict[Any, Any], NoneType]) -> DataFrame:
+def load(file: str, data_files: Optional[Dict[Any, Any]], data_examples: Optional[Dict[Any, Any]]) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/common_model.py#L53)
 
@@ -26,7 +26,7 @@ Description: Load custom file into dataframe.
 
 | Type | Description |
 | ---- | ----------- |
-|  | Dataframe with custom data |
+| pd.DataFrame | Dataframe with custom data |
 
 ## Examples
 

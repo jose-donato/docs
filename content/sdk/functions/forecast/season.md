@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # season
 
-## forecast_view.display_seasonality
+## openbb_terminal.forecast.forecast_view.display_seasonality
 
 ```python title='openbb_terminal/forecast/forecast_view.py'
-def display_seasonality(data: pd.DataFrame, column: str, export: str, m: Union[int, NoneType], max_lag: int, alpha: float, external_axes: Union[List[axes], NoneType]) -> None:
+def display_seasonality(data: pd.DataFrame, column: str, export: str, m: Optional[int], max_lag: int, alpha: float, external_axes: Optional[List[axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L120)
 
@@ -28,7 +28,7 @@ Description: Plot seasonality from a dataset
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

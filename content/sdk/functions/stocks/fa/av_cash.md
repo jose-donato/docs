@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_fa_av_model.get_cash_flow
+## openbb_terminal.stocks.fundamental_analysis.av_model.get_cash_flow
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
-def get_cash_flow(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame:
+def get_cash_flow(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L340)
 
@@ -43,12 +43,12 @@ Description: Get cash flows for company
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_fa_av_view.display_cash_flow
+## openbb_terminal.stocks.fundamental_analysis.av_view.display_cash_flow
 
-```python title='openbb_terminal/decorators.py'
-def display_cash_flow() -> None:
+```python title='openbb_terminal/stocks/fundamental_analysis/av_view.py'
+def display_cash_flow(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: list, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L245)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_view.py#L245)
 
 Description: Alpha Vantage income statement
 
@@ -65,7 +65,7 @@ Description: Alpha Vantage income statement
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

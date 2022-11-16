@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## economy_alphavantage_model.get_sector_data
+## openbb_terminal.economy.alphavantage_model.get_sector_data
 
 ```python title='openbb_terminal/economy/alphavantage_model.py'
-def get_sector_data() -> DataFrame:
+def get_sector_data() -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L19)
 
@@ -22,12 +22,13 @@ Description: Get real-time performance sector data
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.Dataframe | Real-time performance data |
 
 ## Examples
 
@@ -36,12 +37,12 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## economy_alphavantage_view.realtime_performance_sector
+## openbb_terminal.economy.alphavantage_view.realtime_performance_sector
 
-```python title='openbb_terminal/decorators.py'
-def realtime_performance_sector() -> None:
+```python title='openbb_terminal/economy/alphavantage_view.py'
+def realtime_performance_sector(raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L27)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L27)
 
 Description: Display Real-Time Performance sector. [Source: AlphaVantage]
 
@@ -55,7 +56,7 @@ Description: Display Real-Time Performance sector. [Source: AlphaVantage]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

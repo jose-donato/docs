@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # news
 
-## stocks_dd_finviz_model.get_news
+## openbb_terminal.stocks.due_diligence.finviz_model.get_news
 
 ```python title='openbb_terminal/stocks/due_diligence/finviz_model.py'
-def get_news(symbol: str) -> None:
+def get_news(symbol: str) -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finviz_model.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finviz_model.py#L16)
 
 Description: Get news from Finviz
 

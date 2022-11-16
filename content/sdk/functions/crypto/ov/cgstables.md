@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_pycoingecko_model.get_stable_coins
+## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_stable_coins
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_stable_coins(limit: int, sortby: str, ascend: bool) -> DataFrame:
+def get_stable_coins(limit: int, sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L185)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L191)
 
 Description: Returns top stable coins [Source: CoinGecko]
 
@@ -32,7 +32,7 @@ Description: Returns top stable coins [Source: CoinGecko]
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Rank, Name, Symbol, Price, Change_24h, Exchanges, Market_Cap, Change_30d, Url |
+| pd.DataFrame | Rank, Name, Symbol, Price, Change_24h, Exchanges, Market_Cap, Change_30d, Url |
 
 ## Examples
 
@@ -41,10 +41,10 @@ Description: Returns top stable coins [Source: CoinGecko]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_pycoingecko_view.display_stablecoins
+## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_stablecoins
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_stablecoins(limit: int, export: str, sortby: str, ascend: bool, pie: bool) -> None:
+def display_stablecoins(limit: int, export: str, sortby: str, ascend: bool, pie: bool) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L337)
 
@@ -62,7 +62,7 @@ Description: Shows stablecoins data [Source: CoinGecko]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_disc_dappradar_model.get_top_games
+## openbb_terminal.cryptocurrency.discovery.dappradar_model.get_top_games
 
 ```python title='openbb_terminal/cryptocurrency/discovery/dappradar_model.py'
-def get_top_games(sortby: str, limit: int) -> DataFrame:
+def get_top_games(sortby: str, limit: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L164)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L165)
 
 Description: Get top blockchain games by daily volume and users [Source: https://dappradar.com/]
 
@@ -40,14 +40,14 @@ Description: Get top blockchain games by daily volume and users [Source: https:/
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_disc_dappradar_view.display_top_games
+## openbb_terminal.cryptocurrency.discovery.dappradar_view.display_top_games
 
 ```python title='openbb_terminal/cryptocurrency/discovery/dappradar_view.py'
-def display_top_games(limit: int, export: str, sortby: str) -> None:
+def display_top_games(limit: int, export: str, sortby: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L61)
 
-Description: Displays top blockchain games [Source: https://dappradar.com/]
+Description: Prints table showing top blockchain games [Source: https://dappradar.com/]
 
 ## Parameters
 
@@ -59,7 +59,7 @@ Description: Displays top blockchain games [Source: https://dappradar.com/]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

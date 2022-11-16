@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # fmp_balance
 
-## stocks_fa_fmp_model.get_balance
+## openbb_terminal.stocks.fundamental_analysis.fmp_model.get_balance
 
-```python title='openbb_terminal/decorators.py'
-def get_balance() -> DataFrame:
+```python title='openbb_terminal/stocks/fundamental_analysis/fmp_model.py'
+def get_balance(symbol: str, limit: int, quarterly: bool, ratios: bool, plot: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L280)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L280)
 
 Description: Get balance sheets
 

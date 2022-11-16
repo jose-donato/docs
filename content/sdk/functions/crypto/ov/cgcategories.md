@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_pycoingecko_model.get_top_crypto_categories
+## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_top_crypto_categories
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_top_crypto_categories(sort_filter: str) -> DataFrame:
+def get_top_crypto_categories(sort_filter: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L157)
 
@@ -24,12 +24,13 @@ Description: Returns top crypto categories [Source: CoinGecko]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+| sort_filter | str | Can be one of - "market_cap_desc", "market_cap_asc", "name_desc", "name_asc",<br/>"market_cap_change_24h_desc", "market_cap_change_24h_asc" | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Rank, Name, Change_1h, Change_7d, Market_Cap, Volume_24h,Coins, Url |
+| pd.DataFrame | Rank, Name, Change_1h, Change_7d, Market_Cap, Volume_24h,Coins, Url |
 
 ## Examples
 
@@ -38,10 +39,10 @@ Description: Returns top crypto categories [Source: CoinGecko]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_pycoingecko_view.display_categories
+## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_categories
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_categories(sortby: str, limit: int, export: str, pie: bool) -> None:
+def display_categories(sortby: str, limit: int, export: str, pie: bool) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L439)
 
@@ -58,7 +59,7 @@ Description: Shows top cryptocurrency categories by market capitalization
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

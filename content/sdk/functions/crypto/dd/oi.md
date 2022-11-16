@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_coinglass_model.get_open_interest_per_exchange
+## openbb_terminal.cryptocurrency.due_diligence.coinglass_model.get_open_interest_per_exchange
 
-```python title='openbb_terminal/decorators.py'
-def get_open_interest_per_exchange() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinglass_model.py'
+def get_open_interest_per_exchange(symbol: str, interval: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L149)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinglass_model.py#L149)
 
 Description: Returns open interest by exchange for a certain symbol
 
@@ -40,14 +40,14 @@ Description: Returns open interest by exchange for a certain symbol
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_coinglass_view.display_open_interest
+## openbb_terminal.cryptocurrency.due_diligence.coinglass_view.display_open_interest
 
-```python title='openbb_terminal/decorators.py'
-def display_open_interest() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/coinglass_view.py'
+def display_open_interest(symbol: str, interval: int, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L57)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinglass_view.py#L57)
 
-Description: Displays open interest by exchange for a certain cryptocurrency
+Description: Plots open interest by exchange for a certain cryptocurrency
 
 ## Parameters
 
@@ -59,7 +59,7 @@ Description: Displays open interest by exchange for a certain cryptocurrency
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

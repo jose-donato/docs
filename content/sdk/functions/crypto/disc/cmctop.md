@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_disc_coinmarketcap_model.get_cmc_top_n
+## openbb_terminal.cryptocurrency.discovery.coinmarketcap_model.get_cmc_top_n
 
-```python title='openbb_terminal/decorators.py'
-def get_cmc_top_n() -> DataFrame:
+```python title='openbb_terminal/cryptocurrency/discovery/coinmarketcap_model.py'
+def get_cmc_top_n(sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L27)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinmarketcap_model.py#L27)
 
 Description: Shows top n coins. [Source: CoinMarketCap]
 
@@ -24,9 +24,7 @@ Description: Shows top n coins. [Source: CoinMarketCap]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to
-Coin Market Cap:s API documentation, see:
-https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>Coin Market Cap:s API documentation, see:<br/>https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest | None | False |
 | ascend | bool | Whether to sort ascending or descending | None | False |
 
 ## Returns
@@ -42,29 +40,27 @@ https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyLis
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_disc_coinmarketcap_view.display_cmc_top_coins
+## openbb_terminal.cryptocurrency.discovery.coinmarketcap_view.display_cmc_top_coins
 
-```python title='openbb_terminal/decorators.py'
-def display_cmc_top_coins() -> None:
+```python title='openbb_terminal/cryptocurrency/discovery/coinmarketcap_view.py'
+def display_cmc_top_coins(limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinmarketcap_view.py#L17)
 
-Description: Shows top n coins. [Source: CoinMarketCap]
+Description: Prints table showing top n coins. [Source: CoinMarketCap]
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | None | False |
-| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to
-Coin Market Cap:s API documentation, see:
-https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>Coin Market Cap:s API documentation, see:<br/>https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest | None | False |
 | ascend | bool | Flag to sort data ascending | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

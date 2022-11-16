@@ -11,14 +11,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## alt_oss_github_model.get_top_repos
+## openbb_terminal.alternative.oss.github_model.get_top_repos
 
 ```python title='openbb_terminal/alternative/oss/github_model.py'
-def get_top_repos(sortby: str, limit: int, categories: str) -> DataFrame:
+def get_top_repos(sortby: str, limit: int, categories: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L130)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L135)
 
-Description: Get repos sorted by stars or forks. Can be filtered by categories
+Description: Get repos sorted by stars or forks. Can be filtered by categories.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ Description: Get repos sorted by stars or forks. Can be filtered by categories
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame with list of repos | None |
+| pd.DataFrame | Dataframe with repos |
 
 ## Examples
 
@@ -41,14 +41,14 @@ Description: Get repos sorted by stars or forks. Can be filtered by categories
 </TabItem>
 <TabItem value="view" label="View">
 
-## alt_oss_github_view.display_top_repos
+## openbb_terminal.alternative.oss.github_view.display_top_repos
 
 ```python title='openbb_terminal/alternative/oss/github_view.py'
-def display_top_repos(sortby: str, categories: str, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_top_repos(sortby: str, categories: str, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L65)
 
-Description: Display repo summary [Source: https://api.github.com]
+Description: Plots repo summary [Source: https://api.github.com].
 
 ## Parameters
 
@@ -62,7 +62,7 @@ Description: Display repo summary [Source: https://api.github.com]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

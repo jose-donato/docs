@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # ohlc_historical
 
-## crypto_dd_coinpaprika_model.get_ohlc_historical
+## openbb_terminal.cryptocurrency.due_diligence.coinpaprika_model.get_ohlc_historical
 
 ```python title='openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py'
-def get_ohlc_historical(symbol: str, quotes: str, days: int) -> DataFrame:
+def get_ohlc_historical(symbol: str, quotes: str, days: int) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L247)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L249)
 
 Description: Open/High/Low/Close values with volume and market_cap. [Source: CoinPaprika]
 
@@ -26,7 +26,7 @@ Description: Open/High/Low/Close values with volume and market_cap. [Source: Coi
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Open/High/Low/Close values with volume and market_cap. |
+| pd.DataFrame | Open/High/Low/Close values with volume and market_cap. |
 
 ## Examples
 

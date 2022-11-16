@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_cryptopanic_model.get_news
+## openbb_terminal.cryptocurrency.overview.cryptopanic_model.get_news
 
 ```python title='openbb_terminal/cryptocurrency/overview/cryptopanic_model.py'
-def get_news(limit: int, post_kind: str, filter_: Union[str, NoneType], region: str, source: Union[str, NoneType], symbol: Union[str, NoneType], sortby: str, ascend: bool) -> DataFrame:
+def get_news(limit: int, post_kind: str, filter_: Optional[str], region: str, source: Optional[str], symbol: Optional[str], sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_model.py#L157)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_model.py#L158)
 
 Description: Get recent posts from CryptoPanic news aggregator platform. [Source: https://cryptopanic.com/]
 
@@ -27,8 +27,7 @@ Description: Get recent posts from CryptoPanic news aggregator platform. [Source
 | limit | int | number of news to fetch | None | False |
 | post_kind | str | Filter by category of news. Available values: news or media. | None | False |
 | filter_ | Optional[str] | Filter by kind of news. One from list: rising|hot|bullish|bearish|important|saved|lol | None | False |
-| region | str | Filter news by regions. Available regions are: en (English), de (Deutsch), nl (Dutch),
-es (Español), fr (Français), it (Italiano), pt (Português), ru (Русский) | None | False |
+| region | str | Filter news by regions. Available regions are: en (English), de (Deutsch), nl (Dutch),<br/>es (Español), fr (Français), it (Italiano), pt (Português), ru (Русский) | None | False |
 | sortby | str | Key to sort by. | None | False |
 | ascend | bool | Sort in ascend order. | None | False |
 
@@ -45,12 +44,12 @@ es (Español), fr (Français), it (Italiano), pt (Português), ru (Русски�
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_cryptopanic_view.display_news
+## openbb_terminal.cryptocurrency.overview.cryptopanic_view.display_news
 
-```python title='openbb_terminal/decorators.py'
-def display_news() -> None:
+```python title='openbb_terminal/cryptocurrency/overview/cryptopanic_view.py'
+def display_news(post_kind: str, region: str, filter_: Optional[str], limit: int, sortby: str, ascend: bool, links: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L17)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_view.py#L17)
 
 Description: Display recent posts from CryptoPanic news aggregator platform.
 
@@ -61,8 +60,7 @@ Description: Display recent posts from CryptoPanic news aggregator platform.
 | limit | int | number of news to display | None | False |
 | post_kind | str | Filter by category of news. Available values: news or media. | None | False |
 | filter_ | Optional[str] | Filter by kind of news. One from list: rising|hot|bullish|bearish|important|saved|lol | None | False |
-| region | str | Filter news by regions. Available regions are: en (English), de (Deutsch), nl (Dutch),
-es (Español), fr (Français), it (Italiano), pt (Português), ru (Русский) | None | False |
+| region | str | Filter news by regions. Available regions are: en (English), de (Deutsch), nl (Dutch),<br/>es (Español), fr (Français), it (Italiano), pt (Português), ru (Русский) | None | False |
 | sortby | str | Key to sort by. | None | False |
 | ascend | bool | Sort in ascending order. | None | False |
 | links | bool | Show urls for news | None | False |
@@ -70,7 +68,7 @@ es (Español), fr (Français), it (Italiano), pt (Português), ru (Русски�
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

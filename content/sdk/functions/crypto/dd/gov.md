@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_dd_messari_model.get_governance
+## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_governance
 
-```python title='openbb_terminal/decorators.py'
-def get_governance() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
+def get_governance(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L561)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L567)
 
 Description: Returns coin governance
 
@@ -30,7 +30,7 @@ Description: Returns coin governance
 
 | Type | Description |
 | ---- | ----------- |
-| str | governance summary |
+| Tuple[str, pd.DataFrame] | Governance summary,<br/>Metric Value with governance details |
 
 ## Examples
 
@@ -39,14 +39,14 @@ Description: Returns coin governance
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_dd_messari_view.display_governance
+## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_governance
 
-```python title='openbb_terminal/decorators.py'
-def display_governance() -> None:
+```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
+def display_governance(symbol: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L590)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L602)
 
-Description: Display coin governance
+Description: Prints table showing coin governance
 
 ## Parameters
 
@@ -57,7 +57,7 @@ Description: Display coin governance
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # customer
 
-## stocks_dd_csimarket_model.get_customers
+## openbb_terminal.stocks.due_diligence.csimarket_model.get_customers
 
 ```python title='openbb_terminal/stocks/due_diligence/csimarket_model.py'
-def get_customers(symbol: str, limit: int) -> DataFrame:
+def get_customers(symbol: str, limit: int) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L66)
 

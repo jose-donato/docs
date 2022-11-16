@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # earnings
 
-## stocks_fa_av_model.get_earnings
+## openbb_terminal.stocks.fundamental_analysis.av_model.get_earnings
 
 ```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
-def get_earnings(symbol: str, quarterly: bool) -> DataFrame:
+def get_earnings(symbol: str, quarterly: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L430)
 

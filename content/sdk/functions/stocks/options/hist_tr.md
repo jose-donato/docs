@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_options_tradier_model.get_historical_options
+## openbb_terminal.stocks.options.tradier_model.get_historical_options
 
-```python title='openbb_terminal/decorators.py'
-def get_historical_options() -> DataFrame:
+```python title='openbb_terminal/stocks/options/tradier_model.py'
+def get_historical_options(symbol: str, expiry: str, strike: float, put: bool, chain_id: Optional[str]) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L44)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L44)
 
 Description: Gets historical option pricing.  This inputs either ticker, expiration, strike or the OCC chain ID and processes
 
@@ -43,10 +43,10 @@ Description: Gets historical option pricing.  This inputs either ticker, expirat
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_options_tradier_view.display_historical
+## openbb_terminal.stocks.options.tradier_view.display_historical
 
 ```python title='openbb_terminal/stocks/options/tradier_view.py'
-def display_historical(symbol: str, expiry: str, strike: float, put: bool, raw: bool, chain_id: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_historical(symbol: str, expiry: str, strike: float, put: bool, raw: bool, chain_id: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_view.py#L628)
 
@@ -67,7 +67,7 @@ Description: Plot historical option prices
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

@@ -5,30 +5,28 @@ description: OpenBB SDK Function
 
 # events
 
-## economy_investingcom_model.get_economic_calendar
+## openbb_terminal.economy.nasdaq_model.get_economic_calendar
 
-```python title='openbb_terminal/economy/investingcom_model.py'
-def get_economic_calendar(country: str, importance: str, category: str, start_date: str, end_date: str, limit: Any) -> None:
+```python title='openbb_terminal/economy/nasdaq_model.py'
+def get_economic_calendar(countries: Union[List[str], str], start_date: str, end_date: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L373)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/nasdaq_model.py#L21)
 
-Description: Get economic calendar [Source: Investing.com]
+Description: Get economic calendar for countries between specified dates
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| country | str | Country selected. List of available countries is accessible through get_events_countries(). | None | False |
-| importance | str | Importance selected from high, medium, low or all | None | False |
-| category | str | Event category. List of available categories is accessible through get_events_categories(). | None | False |
-| start_date | datetime.date | First date to get events. | None | False |
-| end_date | datetime.date | Last date to get events. | None | False |
+| countries | [List[str],str] | List of countries to include in calendar.  Empty returns all | None | False |
+| start_date | str | Start date for calendar | None | False |
+| end_date | str | End date for calendar | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| Tuple[pd.DataFrame, str] | Economic calendar Dataframe and detail string about country/time zone. |
+| pd.DataFrame | Economic calendar |
 
 ## Examples
 

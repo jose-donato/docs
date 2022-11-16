@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_defi_terramoney_fcd_model.get_staking_account_info
+## openbb_terminal.cryptocurrency.defi.terramoney_fcd_model.get_staking_account_info
 
 ```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
-def get_staking_account_info(address: str) -> None:
+def get_staking_account_info(address: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L104)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L105)
 
 Description: Get staking info for provided terra account [Source: https://fcd.terra.dev/swagger]
 
@@ -30,7 +30,7 @@ Description: Get staking info for provided terra account [Source: https://fcd.te
 
 | Type | Description |
 | ---- | ----------- |
-|  | luna delegations and summary report for given address |
+| Tuple[pd.DataFrame, str] | luna delegations and summary report for given address |
 
 ## Examples
 
@@ -39,14 +39,14 @@ Description: Get staking info for provided terra account [Source: https://fcd.te
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_defi_terramoney_fcd_view.display_account_staking_info
+## openbb_terminal.cryptocurrency.defi.terramoney_fcd_view.display_account_staking_info
 
 ```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
-def display_account_staking_info(address: str, limit: int, export: str) -> None:
+def display_account_staking_info(address: str, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L32)
 
-Description: Display staking info for provided terra account address [Source: https://fcd.terra.dev/swagger]
+Description: Prints table showing staking info for provided terra account address [Source: https://fcd.terra.dev/swagger]
 
 ## Parameters
 
@@ -58,7 +58,7 @@ Description: Display staking info for provided terra account address [Source: ht
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

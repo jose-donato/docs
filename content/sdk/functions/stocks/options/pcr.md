@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_options_alphaquery_model.get_put_call_ratio
+## openbb_terminal.stocks.options.alphaquery_model.get_put_call_ratio
 
 ```python title='openbb_terminal/stocks/options/alphaquery_model.py'
-def get_put_call_ratio(symbol: str, window: int, start_date: str) -> DataFrame:
+def get_put_call_ratio(symbol: str, window: int, start_date: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_model.py#L16)
 
@@ -26,11 +26,13 @@ Description: Gets put call ratio over last time window [Source: AlphaQuery.com]
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to look for | None | False |
 | window | int | Window to consider, by default 30 | 30 | True |
-| start_date | str | Start date to plot, by default last 366 days | last | True |
+| start_date | str | Start date to plot  (e.g., 2021-10-01), by default last 366 days | last | True |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | Put call ratio |
 
 ## Examples
 
@@ -39,10 +41,10 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_options_alphaquery_view.display_put_call_ratio
+## openbb_terminal.stocks.options.alphaquery_view.display_put_call_ratio
 
 ```python title='openbb_terminal/stocks/options/alphaquery_view.py'
-def display_put_call_ratio(symbol: str, window: int, start_date: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_put_call_ratio(symbol: str, window: int, start_date: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_view.py#L26)
 
@@ -60,7 +62,7 @@ Description: Display put call ratio [Source: AlphaQuery.com]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

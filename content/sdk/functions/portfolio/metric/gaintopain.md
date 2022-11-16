@@ -5,12 +5,12 @@ description: OpenBB SDK Function
 
 # gaintopain
 
-## portfolio_model.get_gaintopain_ratio
+## openbb_terminal.portfolio.portfolio_model.get_gaintopain_ratio
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_gaintopain_ratio(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> None:
+def get_gaintopain_ratio(portfolio_engine: portfolio_model.PortfolioEngine) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1099)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1207)
 
 Description: Get Pain-to-Gain ratio based on historical data
 
@@ -18,7 +18,7 @@ Description: Get Pain-to-Gain ratio based on historical data
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | Portfolio | Portfolio object with trades loaded | None | False |
+| portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 
 ## Returns
 

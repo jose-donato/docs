@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_pycoingecko_model.get_indexes
+## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_indexes
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_indexes(sortby: str, ascend: bool) -> DataFrame:
+def get_indexes(sortby: str, ascend: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L319)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L325)
 
 Description: Get list of crypto indexes from CoinGecko API [Source: CoinGecko]
 
@@ -24,12 +24,14 @@ Description: Get list of crypto indexes from CoinGecko API [Source: CoinGecko]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | Name, Id, Market, Last, MultiAsset |
+| pd.DataFrame | Name, Id, Market, Last, MultiAsset |
 
 ## Examples
 
@@ -38,10 +40,10 @@ Description: Get list of crypto indexes from CoinGecko API [Source: CoinGecko]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_pycoingecko_view.display_indexes
+## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_indexes
 
 ```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_indexes(sortby: str, ascend: bool, limit: int, export: str) -> None:
+def display_indexes(sortby: str, ascend: bool, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L635)
 
@@ -58,7 +60,7 @@ Description: Shows list of crypto indexes. [Source: CoinGecko]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

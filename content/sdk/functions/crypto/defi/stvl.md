@@ -11,19 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_defi_llama_model.get_defi_tvl
+## openbb_terminal.cryptocurrency.defi.llama_model.get_defi_tvl
 
 ```python title='openbb_terminal/cryptocurrency/defi/llama_model.py'
-def get_defi_tvl() -> DataFrame:
+def get_defi_tvl() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L165)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L170)
 
 Description: Returns historical values of the total sum of TVLs from all listed protocols.
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 
@@ -38,14 +37,14 @@ Description: Returns historical values of the total sum of TVLs from all listed 
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_defi_llama_view.display_defi_tvl
+## openbb_terminal.cryptocurrency.defi.llama_view.display_defi_tvl
 
 ```python title='openbb_terminal/cryptocurrency/defi/llama_view.py'
-def display_defi_tvl(limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_defi_tvl(limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L188)
 
-Description: Displays historical values of the total sum of TVLs from all listed protocols.
+Description: Plots historical values of the total sum of TVLs from all listed protocols.
 
 ## Parameters
 
@@ -57,7 +56,7 @@ Description: Displays historical values of the total sum of TVLs from all listed
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

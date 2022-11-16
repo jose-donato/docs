@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_sia_financedatabase_model.get_companies_per_sector_in_country
+## openbb_terminal.stocks.sector_industry_analysis.financedatabase_model.get_companies_per_sector_in_country
 
 ```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py'
-def get_companies_per_sector_in_country(country: str, mktcap: str, exclude_exchanges: bool) -> dict:
+def get_companies_per_sector_in_country(country: str, mktcap: str, exclude_exchanges: bool) -> dict
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L205)
 
@@ -41,10 +41,10 @@ Description: Get number of companies per sector in a specific country (and speci
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_sia_financedatabase_view.display_companies_per_sector_in_country
+## openbb_terminal.stocks.sector_industry_analysis.financedatabase_view.display_companies_per_sector_in_country
 
 ```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py'
-def display_companies_per_sector_in_country(country: str, mktcap: str, exclude_exchanges: bool, export: str, raw: bool, max_sectors_to_display: int, min_pct_to_display_sector: float, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_companies_per_sector_in_country(country: str, mktcap: str, exclude_exchanges: bool, export: str, raw: bool, max_sectors_to_display: int, min_pct_to_display_sector: float, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L238)
 
@@ -65,7 +65,7 @@ Description: Display number of companies per sector in a specific country (and m
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

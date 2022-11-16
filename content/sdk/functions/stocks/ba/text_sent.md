@@ -5,14 +5,14 @@ description: OpenBB SDK Function
 
 # text_sent
 
-## stocks_ba_reddit_model.get_sentiment
+## openbb_terminal.common.behavioural_analysis.reddit_model.get_sentiment
 
-```python title='openbb_terminal/decorators.py'
-def get_sentiment() -> float:
+```python title='openbb_terminal/common/behavioural_analysis/reddit_model.py'
+def get_sentiment(post_data: List[str]) -> float
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L1056)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L1049)
 
-Description: Find the sentiment of a post and related comments
+Description: Find the sentiment of a post and related comments.
 
 ## Parameters
 

@@ -5,19 +5,18 @@ description: OpenBB SDK Function
 
 # skew
 
-## portfolio_model.get_skewness
+## openbb_terminal.portfolio.portfolio_model.get_skewness
 
 ```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_skewness(portfolio: openbb_terminal.portfolio.portfolio_model.PortfolioModel) -> DataFrame:
+def get_skewness(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L825)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L865)
 
-Description: Class method that retrieves skewness for portfolio and benchmark selected
+Description: Method that retrieves skewness for portfolio and benchmark selected
 
 ## Parameters
 
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
+This function does not take any parameters.
 
 ## Returns
 

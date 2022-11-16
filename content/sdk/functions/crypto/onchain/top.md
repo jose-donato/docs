@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_onchain_ethplorer_model.get_top_tokens
+## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_top_tokens
 
 ```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_top_tokens(sortby: str, ascend: bool) -> DataFrame:
+def get_top_tokens(sortby: str, ascend: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L268)
 
@@ -24,12 +24,14 @@ Description: Get top 50 tokens. [Source: Ethplorer]
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
+| sortby | str | Key to sort by. | None | False |
+| ascend | str | Sort in descending order. | None | False |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-|  | DataFrame with list of top 50 tokens. |
+| pd.DataFrame | DataFrame with list of top 50 tokens. |
 
 ## Examples
 
@@ -38,12 +40,12 @@ Description: Get top 50 tokens. [Source: Ethplorer]
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_onchain_ethplorer_view.display_top_tokens
+## openbb_terminal.cryptocurrency.onchain.ethplorer_view.display_top_tokens
 
-```python title='openbb_terminal/decorators.py'
-def display_top_tokens() -> None:
+```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_view.py'
+def display_top_tokens(limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L70)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L70)
 
 Description: Display top ERC20 tokens [Source: Ethplorer]
 
@@ -58,7 +60,7 @@ Description: Display top ERC20 tokens [Source: Ethplorer]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

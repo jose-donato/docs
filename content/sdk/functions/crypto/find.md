@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # find
 
-## crypto_helpers.find
+## openbb_terminal.cryptocurrency.cryptocurrency_helpers.find
 
 ```python title='openbb_terminal/cryptocurrency/cryptocurrency_helpers.py'
-def find(query: str, source: str, key: str, limit: int, export: str) -> None:
+def find(query: str, source: str, key: str, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L997)
 
@@ -26,7 +26,7 @@ Description: Find similar coin by coin name,symbol or id.
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

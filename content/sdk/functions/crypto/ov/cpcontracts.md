@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## crypto_ov_coinpaprika_model.get_contract_platform
+## openbb_terminal.cryptocurrency.overview.coinpaprika_model.get_contract_platform
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
-def get_contract_platform(platform_id: str, sortby: str, ascend: bool) -> DataFrame:
+def get_contract_platform(platform_id: str, sortby: str, ascend: bool) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L419)
 
@@ -32,7 +32,7 @@ Description: Gets all contract addresses for given platform [Source: CoinPaprika
 
 | Type | Description |
 | ---- | ----------- |
-| pandas.DataFrame | id, type, active |
+| pd.DataFrame | id, type, active |
 
 ## Examples
 
@@ -41,10 +41,10 @@ Description: Gets all contract addresses for given platform [Source: CoinPaprika
 </TabItem>
 <TabItem value="view" label="View">
 
-## crypto_ov_coinpaprika_view.display_contracts
+## openbb_terminal.cryptocurrency.overview.coinpaprika_view.display_contracts
 
 ```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
-def display_contracts(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None:
+def display_contracts(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L349)
 
@@ -62,7 +62,7 @@ Description: Gets all contract addresses for given platform. [Source: CoinPaprik
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

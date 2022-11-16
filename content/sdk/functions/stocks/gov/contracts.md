@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_gov_quiverquant_model.get_contracts
+## openbb_terminal.stocks.government.quiverquant_model.get_contracts
 
 ```python title='openbb_terminal/stocks/government/quiverquant_model.py'
-def get_contracts(symbol: str, past_transaction_days: int) -> DataFrame:
+def get_contracts(symbol: str, past_transaction_days: int) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L103)
 
@@ -40,10 +40,10 @@ Description: Get government contracts for ticker [Source: quiverquant.com]
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_gov_quiverquant_view.display_contracts
+## openbb_terminal.stocks.government.quiverquant_view.display_contracts
 
 ```python title='openbb_terminal/stocks/government/quiverquant_view.py'
-def display_contracts(symbol: str, past_transaction_days: int, raw: bool, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_contracts(symbol: str, past_transaction_days: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L380)
 
@@ -61,7 +61,7 @@ Description: Show government contracts for ticker [Source: quiverquant.com]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

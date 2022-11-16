@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_dps_finra_model.getTickerFINRAdata
+## openbb_terminal.stocks.dark_pool_shorts.finra_model.getTickerFINRAdata
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/finra_model.py'
-def getTickerFINRAdata(symbol: str) -> None:
+def getTickerFINRAdata(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L297)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L293)
 
 Description: Get all FINRA data associated with a ticker
 
@@ -30,7 +30,7 @@ Description: Get all FINRA data associated with a ticker
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Dark Pools (ATS) Data |
+| Tuple[pd.DataFrame, pd.DataFrame] | Dark Pools (ATS) Data, OTC (Non-ATS) Data |
 
 ## Examples
 
@@ -39,10 +39,10 @@ Description: Get all FINRA data associated with a ticker
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_dps_finra_view.darkpool_ats_otc
+## openbb_terminal.stocks.dark_pool_shorts.finra_view.darkpool_ats_otc
 
 ```python title='openbb_terminal/stocks/dark_pool_shorts/finra_view.py'
-def darkpool_ats_otc(symbol: str, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def darkpool_ats_otc(symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L27)
 
@@ -58,7 +58,7 @@ Description: Display barchart of dark pool (ATS) and OTC (Non ATS) data. [Source
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

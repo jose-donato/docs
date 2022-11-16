@@ -11,12 +11,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_dps_quandl_model.get_short_interest
+## openbb_terminal.stocks.dark_pool_shorts.quandl_model.get_short_interest
 
-```python title='openbb_terminal/decorators.py'
-def get_short_interest() -> DataFrame:
+```python title='openbb_terminal/stocks/dark_pool_shorts/quandl_model.py'
+def get_short_interest(symbol: str, nyse: bool) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L18)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_model.py#L18)
 
 Description: Plots the short interest of a stock. This corresponds to the
 
@@ -26,13 +26,12 @@ Description: Plots the short interest of a stock. This corresponds to the
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ticker to get short interest from | None | False |
 | nyse | bool | data from NYSE if true, otherwise NASDAQ | None | False |
-| Returns | None | None | None | None |
-| ---------- | None | None | None | None |
-| pd.DataFrame | None | short interest volume data | None | None |
 
 ## Returns
 
-None
+| Type | Description |
+| ---- | ----------- |
+| pd.DataFrame | short interest volume data |
 
 ## Examples
 
@@ -41,14 +40,14 @@ None
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_dps_quandl_view.short_interest
+## openbb_terminal.stocks.dark_pool_shorts.quandl_view.short_interest
 
-```python title='openbb_terminal/decorators.py'
-def short_interest() -> None:
+```python title='openbb_terminal/stocks/dark_pool_shorts/quandl_view.py'
+def short_interest(symbol: str, nyse: bool, limit: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/decorators.py#L97)
+[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_view.py#L96)
 
-Description: Plots the short interest of a stock. This corresponds to the
+Description: Plot the short interest of a stock. This corresponds to the
 
 ## Parameters
 
@@ -63,7 +62,7 @@ Description: Plots the short interest of a stock. This corresponds to the
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 

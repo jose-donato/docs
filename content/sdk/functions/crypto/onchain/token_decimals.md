@@ -5,10 +5,10 @@ description: OpenBB SDK Function
 
 # token_decimals
 
-## crypto_onchain_ethplorer_model.get_token_decimals
+## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_token_decimals
 
 ```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_token_decimals(address: str) -> None:
+def get_token_decimals(address: str) -> Optional
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L176)
 
@@ -24,7 +24,7 @@ Description: Helper methods that gets token decimals number. [Source: Ethplorer]
 
 | Type | Description |
 | ---- | ----------- |
-|  | DataFrame with list of tokens and their balances. |
+| Optional[int] | Number of decimals for given token. |
 
 ## Examples
 

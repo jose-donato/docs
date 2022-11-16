@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## stocks_options_chartexchange_model.get_option_history
+## openbb_terminal.stocks.options.chartexchange_model.get_option_history
 
 ```python title='openbb_terminal/stocks/options/chartexchange_model.py'
-def get_option_history(symbol: str, date: str, call: bool, price: str) -> DataFrame:
+def get_option_history(symbol: str, date: str, call: bool, price: str) -> DataFrame
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/chartexchange_model.py#L19)
 
@@ -42,10 +42,10 @@ Description: Historic prices for a specific option [chartexchange]
 </TabItem>
 <TabItem value="view" label="View">
 
-## stocks_options_chartexchange_view.display_raw
+## openbb_terminal.stocks.options.chartexchange_view.display_raw
 
 ```python title='openbb_terminal/stocks/options/chartexchange_view.py'
-def display_raw(symbol: str, expiry: str, call: bool, price: float, limit: int, export: str, external_axes: Union[List[matplotlib.axes._axes.Axes], NoneType]) -> None:
+def display_raw(symbol: str, expiry: str, call: bool, price: float, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
 [Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/chartexchange_view.py#L59)
 
@@ -65,7 +65,7 @@ Description: Return raw stock data[chartexchange]
 
 ## Returns
 
-None
+This function does not return anything
 
 ## Examples
 
