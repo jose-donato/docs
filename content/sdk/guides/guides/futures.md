@@ -1,5 +1,5 @@
 ---
-title: Introduction to Futures SDK
+title: Futures
 keywords:
   [
     "forex",

@@ -1,5 +1,5 @@
 ---
-title: Introduction to Keys SDK
+title: Keys
 keywords:
   [
     "api",

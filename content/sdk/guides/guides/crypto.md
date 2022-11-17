@@ -1,5 +1,5 @@
 ---
-title: Introduction to Cryptocurrency SDK
+title: Cryptocurrency
 keywords: ["crypto", "web3", "nft", "blockchain", "cryptocurrency"]
 excerpt: "The Introduction to Cryptocurrency explains how to use the Cryptocurrency and provides a brief description of its sub-menus"
 
