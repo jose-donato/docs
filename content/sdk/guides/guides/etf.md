@@ -15,7 +15,6 @@ The examples provided below will assume that the following import block is inclu
 ```python
 from openbb_terminal.sdk import openbb
 import pandas as pd
-%matplotlib inline
 ```
 ​
 A brief description below highlights the main Functions and Modules available in the ETF SDK
