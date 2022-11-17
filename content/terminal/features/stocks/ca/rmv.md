@@ -20,6 +20,6 @@ usage: rmv [-s L_SIMILAR]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| l_similar | Tickers to remove from similar list | None | False | None |
+| l_similar | Tickers to remove from similar list |  | True | None |
 
 

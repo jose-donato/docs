@@ -20,6 +20,6 @@ usage: sector [-m MIN]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| min | Minimum positive float to display sector | 5 | False | None |
+| min | Minimum positive float to display sector | 5 | True | None |
 
 

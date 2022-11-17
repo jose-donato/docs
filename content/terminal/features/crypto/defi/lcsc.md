@@ -20,6 +20,6 @@ usage: lcsc [-d DAYS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| days | Number of days to display. Default: 30 days | 30 | False | None |
+| days | Number of days to display. Default: 30 days | 30 | True | None |
 
 

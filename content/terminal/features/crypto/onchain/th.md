@@ -20,9 +20,9 @@ usage: th [-l LIMIT] [-s {value}] [-r] [--hash]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | display N number records | 10 | False | None |
-| sortby | Sort by given column. Default: value | value | False | value |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| hash | Flag to show transaction hash | True | False | None |
+| limit | display N number records | 10 | True | None |
+| sortby | Sort by given column. Default: value | value | True | value |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| hash | Flag to show transaction hash | True | True | None |
 
 

@@ -20,6 +20,6 @@ usage: candle [--log]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| logy | Plot with y axis on log scale | None | False | None |
+| logy | Plot with y axis on log scale | False | True | None |
 
 

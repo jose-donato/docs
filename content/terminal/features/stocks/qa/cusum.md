@@ -20,7 +20,9 @@ usage: cusum [-t THRESHOLD] [-d DRIFT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| threshold | threshold | None | False | None |
-| drift | drift | None | False | None |
+| threshold | threshold | 0.0 | True | None |
+| drift | drift | 0.0 | True | None |
 
+
+![cusum](https://user-images.githubusercontent.com/46355364/154306207-d68f53f4-2f9a-4c1a-8e0e-b83d49938759.png)
 

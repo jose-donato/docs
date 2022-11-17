@@ -20,6 +20,6 @@ usage: exchange [-n EXCHANGE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| exchange | Exchange short name | None | False | None |
+| exchange | Exchange short name | None | True | None |
 
 

@@ -20,6 +20,6 @@ usage: heatmap [-t {day,week,month,3month,6month,year,ytd}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| timeframe | Timeframe to get heatmap data for | day | False | day, week, month, 3month, 6month, year, ytd |
+| timeframe | Timeframe to get heatmap data for | day | True | day, week, month, 3month, 6month, year, ytd |
 
 

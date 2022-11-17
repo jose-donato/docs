@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## anchor
 
-### Description: 
+### Description
 
-Displays anchor protocol earnings data of a certain terra address --transactions flag can be passed to show history of previous transactions [Source: https://cryptosaurio.com/]
+Displays anchor protocol earnings data of a certain terra address --transactions flag can be passed to show history of previous transactions [Source: <https://cryptosaurio.com/>]
 
-### Usage: 
+### Usage
+
 ```python
 usage: anchor --address ADDRESS [--transactions]
 ```
@@ -20,17 +21,13 @@ usage: anchor --address ADDRESS [--transactions]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| address | Terra address. Valid terra addresses start with 'terra' | None | True | None |
-| transactions | Flag to show transactions history in anchor earn | None | False | None |
-
+| address | Terra address. Valid terra addresses start with 'terra' | None | False | None |
+| transactions | Flag to show transactions history in anchor earn | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Mar 18, 14:29 (✨) /crypto/defi/ $ anchor terra13kc0x8kr3sq8226myf4nmanmn2mrk9s5s9wsnz --transactions
-
+2022 Mar 18, 14:29 (🦋) /crypto/defi/ $ anchor terra13kc0x8kr3sq8226myf4nmanmn2mrk9s5s9wsnz --transactions
 ```
 
 ![anchor](https://user-images.githubusercontent.com/43375532/159065235-e8fb189d-f670-4391-a7fc-064640b9607d.png)
-

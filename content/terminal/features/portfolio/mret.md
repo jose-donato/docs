@@ -20,7 +20,7 @@ usage: mret [-p {3y,5y,10y,all}] [-s]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| period | Period to select start end of the year returns | all | False | 3y, 5y, 10y, all |
-| show_vals | Show monthly returns on heatmap | None | False | None |
+| period | Period to select start end of the year returns | all | True | 3y, 5y, 10y, all |
+| show_vals | Show monthly returns on heatmap | False | True | None |
 
 

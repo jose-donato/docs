@@ -20,7 +20,9 @@ usage: quantile [-w N_WINDOW] [-q F_QUANTILE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_window | window length | 14 | False | None |
-| f_quantile | quantile | 0.5 | False | None |
+| n_window | window length | 14 | True | None |
+| f_quantile | quantile | 0.5 | True | None |
 
+
+![quantile](https://user-images.githubusercontent.com/46355364/154307976-868e98e1-5a30-43c7-92fc-f221d09c5bd2.png)
 

@@ -20,6 +20,6 @@ usage: cancel id
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| id | Order's id. | None | True | None |
+| id | Order's id. | None | False | None |
 
 

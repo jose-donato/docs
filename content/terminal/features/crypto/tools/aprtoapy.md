@@ -20,8 +20,8 @@ usage: aprtoapy [--apr APR] [-c COMPOUNDING] [-n]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| apr | APR value in percentage to convert | 100 | False | None |
-| compounding | Number of compounded periods in a year. 12 means compounding monthly | 12 | False | None |
-| narrative | Flag to show narrative instead of dataframe | None | False | None |
+| apr | APR value in percentage to convert | 100 | True | None |
+| compounding | Number of compounded periods in a year. 12 means compounding monthly | 12 | True | None |
+| narrative | Flag to show narrative instead of dataframe | False | True | None |
 
 

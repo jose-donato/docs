@@ -20,7 +20,7 @@ usage: arg [-a ARGUMENT ARGUMENT] [-s]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| argument | Set a value for an argument | None | False | None |
-| show | Show the available arguments, the options and a description. | None | False | None |
+| argument | Set a value for an argument | None | True | None |
+| show | Show the available arguments, the options and a description. | False | True | None |
 
 

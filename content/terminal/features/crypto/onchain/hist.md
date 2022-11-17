@@ -20,8 +20,8 @@ usage: hist [-l LIMIT] [-s {timestamp,transactionHash,token,value}] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | display N number records | 10 | False | None |
-| sortby | Sort by given column. Default: timestamp | timestamp | False | timestamp, transactionHash, token, value |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| limit | display N number records | 10 | True | None |
+| sortby | Sort by given column. Default: timestamp | timestamp | True | timestamp, transactionHash, token, value |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 

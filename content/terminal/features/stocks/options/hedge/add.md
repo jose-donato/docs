@@ -20,15 +20,14 @@ usage: add [-p] [-s] -i {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| put | Buy a put instead of a call | None | False | None |
-| short | Short the option instead of buying it | None | False | None |
-| identifier | The identifier of the option as found in the list command | None | True | range(0, 76) |
+| put | Buy a put instead of a call | False | True | None |
+| short | Short the option instead of buying it | False | True | None |
+| identifier | The identifier of the option as found in the list command | None | False | range(0, 76) |
 
 
 ## Examples
 
 ```python
-
 2022 May 10, 09:17 (🦋) /stocks/options/hedge/ $ add 25
 ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃                    ┃ Positions ┃
@@ -50,6 +49,5 @@ usage: add [-p] [-s] -i {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
 ┡━━━━━━╇━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━┩
 │ Call │ Long │ 147.00 │ 1.00e-05           │
 └──────┴──────┴────────┴────────────────────┘
-
 ```
 

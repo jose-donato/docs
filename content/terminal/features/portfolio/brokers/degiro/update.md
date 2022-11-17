@@ -20,7 +20,7 @@ usage: update -p PRICE id
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| id | Order's id. | None | True | None |
-| price | Price wanted. | None | True | None |
+| id | Order's id. | None | False | None |
+| price | Price wanted. | None | False | None |
 
 

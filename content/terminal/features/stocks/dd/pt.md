@@ -20,7 +20,9 @@ usage: pt [--raw] [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| raw | Only output raw data | None | False | None |
-| limit | Limit of latest price targets from analysts to print. | 10 | False | None |
+| raw | Only output raw data | False | True | None |
+| limit | Limit of latest price targets from analysts to print. | 10 | True | None |
 
+
+![pt](https://user-images.githubusercontent.com/46355364/154235470-58ed232e-116e-442a-bffe-8e855eba3bda.png)
 

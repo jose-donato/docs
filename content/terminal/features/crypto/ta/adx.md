@@ -20,8 +20,10 @@ usage: adx [-l N_LENGTH] [-s N_SCALAR] [-d N_DRIFT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_length | length | 14 | False | None |
-| n_scalar | scalar | 100 | False | None |
-| n_drift | drift | 1 | False | None |
+| n_length | length | 14 | True | None |
+| n_scalar | scalar | 100 | True | None |
+| n_drift | drift | 1 | True | None |
 
+
+![adx](https://user-images.githubusercontent.com/46355364/154309667-c67f6078-822f-452d-9853-ffffa9172670.png)
 

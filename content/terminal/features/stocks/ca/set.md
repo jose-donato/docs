@@ -20,6 +20,6 @@ usage: set [-s L_SIMILAR]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| l_similar | similar companies to compare with. | None | False | None |
+| l_similar | similar companies to compare with. |  | True | None |
 
 

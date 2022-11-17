@@ -20,8 +20,8 @@ usage: ema [-l LENGTH] [--spy] [--no_bench]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| length | EMA period to consider | 20 | False | None |
-| spy | Flag to add spy hold comparison | None | False | None |
-| no_bench | Flag to not show buy and hold comparison | None | False | None |
+| length | EMA period to consider | 20 | True | None |
+| spy | Flag to add spy hold comparison | False | True | None |
+| no_bench | Flag to not show buy and hold comparison | False | True | None |
 
 

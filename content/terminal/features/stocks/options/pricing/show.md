@@ -7,26 +7,24 @@ description: OpenBB Terminal Function
 
 ## show
 
-### Description: 
+### Description
 
 Display prices
 
-### Usage: 
+### Usage
+
 ```python
 usage: show
 ```
 
-
-
 ## Examples
 
 ```python
+2022 Feb 16, 09:45 (🦋) /stocks/options/pricing/ $ add -p 100 -c 0.5
 
-2022 Feb 16, 09:45 (✨) /stocks/options/pricing/ $ add -p 100 -c 0.5
+2022 Feb 16, 09:46 (🦋) /stocks/options/pricing/ $ add -p 200 -c 0.5
 
-2022 Feb 16, 09:46 (✨) /stocks/options/pricing/ $ add -p 200 -c 0.5
-
-2022 Feb 16, 09:46 (✨) /stocks/options/pricing/ $ show
+2022 Feb 16, 09:46 (🦋) /stocks/options/pricing/ $ show
 Estimated price(s) of AAPL at 2022-05-20
 ┏━━━━━━━━┳━━━━━━━━┓
 ┃ Price  ┃ Chance ┃
@@ -35,6 +33,4 @@ Estimated price(s) of AAPL at 2022-05-20
 ├────────┼────────┤
 │ 200.00 │ 0.50   │
 └────────┴────────┘
-
 ```
-

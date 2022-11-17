@@ -20,6 +20,6 @@ usage: ds [-p {uniswap-v3,uniswap-v2,sushiswap,curve}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| platform | Ethereum platform to check fees/number of users over time | curve | False | uniswap-v3, uniswap-v2, sushiswap, curve |
+| platform | Ethereum platform to check fees/number of users over time | curve | True | uniswap-v3, uniswap-v2, sushiswap, curve |
 
 

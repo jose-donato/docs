@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## pools
 
-### Description: 
+### Description
 
-Display uniswap pools by volume. [Source: https://thegraph.com/en/]
+Display uniswap pools by volume. [Source: <https://thegraph.com/en/>]
 
-### Usage: 
+### Usage
+
 ```python
 usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,token1.symbol,volumeUSD,txCount}] [-r]
 ```
@@ -20,16 +21,14 @@ usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,tok
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of records to display | 10 | False | None |
-| sortby | Sort by given column. Default: volumeUSD | volumeUSD | False | volumeUSD, token0.name, token0.symbol, token1.name, token1.symbol, volumeUSD, txCount |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-
+| limit | Number of records to display | 10 | True | None |
+| sortby | Sort by given column. Default: volumeUSD | volumeUSD | True | volumeUSD, token0.name, token0.symbol, token1.name, token1.symbol, volumeUSD, txCount |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 06:28 (✨) /crypto/defi/ $ pools
+2022 Feb 15, 06:28 (🦋) /crypto/defi/ $ pools
                                            Uniswap Pools
 ┌───────────────────────┬───────────────┬───────────────────┬───────────────┬───────────┬─────────┐
 │ token0.name           │ token0.symbol │ token1.name       │ token1.symbol │ volumeUSD │ txCount │
@@ -54,6 +53,4 @@ usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,tok
 ├───────────────────────┼───────────────┼───────────────────┼───────────────┼───────────┼─────────┤
 │ DSLA                  │ DSLA          │ Wrapped Ether     │ WETH          │ 97.5M     │ 37901   │
 └───────────────────────┴───────────────┴───────────────────┴───────────────┴───────────┴─────────┘
-
 ```
-

@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## load
 
-### Description: 
+### Description
 
 Load a ticker into option menu
 
-### Usage: 
+### Usage
+
 ```python
 usage: load -t TICKER
 ```
@@ -20,16 +21,14 @@ usage: load -t TICKER
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| ticker | Stock ticker | None | True | None |
-
+| ticker | Stock ticker | None | False | None |
 
 ## Examples
 
 ```python
+2022 Feb 16, 09:13 (🦋) /stocks/options/ $ load TSLA
 
-2022 Feb 16, 09:13 (✨) /stocks/options/ $ load TSLA
-
-2022 Feb 16, 09:13 (✨) /stocks/options/ $ ?
+2022 Feb 16, 09:13 (🦋) /stocks/options/ $ ?
 ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── Stocks - Options ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │                                                                                                                                                                                                                                                                              │
 │     unu           show unusual options activity [Fdscanner.com]                                                                                                                                                                                                              │
@@ -55,11 +54,9 @@ usage: load -t TICKER
 │     binom         shows the value of an option using binomial options pricing [Yfinance]                                                                                                                                                                                     │
 │     greeks        shows the greeks for a given option [Yfinance]                                                                                                                                                                                                             │
 │                                                                                                                                                                                                                                                                              │
-│ >   screen        screens tickers based on preset [Syncretism.io]                                                                                                                                                                                                            │
-│ >   payoff        shows payoff diagram for a selection of options [Yfinance]                                                                                                                                                                                                 │
-│ >   pricing       shows options pricing and risk neutral valuation [Yfinance]                                                                                                                                                                                                │
+│    screen        screens tickers based on preset [Syncretism.io]                                                                                                                                                                                                            │
+│    payoff        shows payoff diagram for a selection of options [Yfinance]                                                                                                                                                                                                 │
+│    pricing       shows options pricing and risk neutral valuation [Yfinance]                                                                                                                                                                                                │
 │                                                                                                                                                                                                                                                                              │
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── OpenBB Terminal ─╯
-
 ```
-

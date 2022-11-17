@@ -45,10 +45,35 @@
   }
 }
 
+@layer components {
+  .divider {
+    @apply mx-auto my-8 h-[1px] w-full bg-grey-600/50;
+  }
+  .tw-transition {
+    @apply transition duration-150 ease-out;
+  }
+  ._btn-common {
+    @apply inline-flex w-full items-center justify-center gap-2 rounded-[4px] py-2 px-6 text-center !no-underline transition duration-150 ease-out md:w-fit;
+  }
+  ._btn {
+    @apply _btn-common bg-grey-100 text-grey-800 hover:bg-white focus:outline focus:outline-2 focus:outline-grey-500 active:bg-grey-200 hover:active:text-grey-900 disabled:bg-grey-300 disabled:text-grey-500 active:disabled:bg-grey-300 active:disabled:text-grey-500;
+  }
+  ._btn-secondary {
+    @apply _btn-common border border-grey-300 text-grey-300 outline-offset-0 hover:border-white hover:text-white focus:outline focus:outline-2 focus:outline-grey-500 active:border-white active:bg-grey-800 active:text-white disabled:border-grey-500 disabled:bg-transparent disabled:text-grey-500;
+  }
+  ._btn-tertiary {
+    @apply _btn-common bg-grey-900 text-grey-50 hover:bg-grey-800 hover:text-white focus:bg-grey-900 focus:outline focus:outline-2 focus:outline-grey-500 active:bg-grey-700 active:text-white disabled:bg-grey-500 disabled:text-grey-700;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
 
 * {
   font-family: "Fira Code", monospace !important;
+}
+
+.pagination-nav__link {
+  border-radius: 4px !important;
 }
 
 .breadcrumbs__link > svg {
@@ -244,4 +269,13 @@ table :is(tr, td, th, thead) {
     rgba(16, 16, 17, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151415", endColorstr="#101011", GradientType=1);
+}
+
+pre[class*="language-"] {
+  line-height: 1 !important;
+}
+
+.token{
+  font-family: "Fira Mono", monospace !important;
+  line-height: 1 !important;
 }

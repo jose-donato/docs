@@ -20,7 +20,7 @@ usage: divs [-l LIMIT] [-p]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of previous dividends to show | 16 | False | None |
-| plot | Plots changes in dividend over time | None | False | None |
+| limit | Number of previous dividends to show | 16 | True | None |
+| plot | Plots changes in dividend over time | False | True | None |
 
 

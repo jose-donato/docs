@@ -20,7 +20,7 @@ usage: sinfo -a ADDRESS [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| address | Terra address. Valid terra addresses start with 'terra' | None | True | None |
-| limit | Number of delegations | 10 | False | None |
+| address | Terra address. Valid terra addresses start with 'terra' | None | False | None |
+| limit | Number of delegations | 10 | True | None |
 
 

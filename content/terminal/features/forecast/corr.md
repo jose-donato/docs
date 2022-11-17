@@ -21,12 +21,9 @@ usage: corr
 ## Examples
 
 ```python
-
 (🦋) /forecast/ $ load TSLA.csv
 
 (🦋) /forecast/ $ corr TSLA
 TODO: screen shot
-
-
 ```
 

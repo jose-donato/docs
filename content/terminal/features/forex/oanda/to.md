@@ -20,6 +20,6 @@ usage: to -n TO_SYMBOL
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| to_symbol | To currency | None | True | None |
+| to_symbol | To currency | None | False | None |
 
 

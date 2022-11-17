@@ -20,8 +20,8 @@ usage: show [-pf PORTFOLIOS] [-ct CATEGORIES] [-v LONG_ALLOCATION]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| portfolios | Show selected saved portfolios | None | False | None |
-| categories | Show selected categories | None | False | None |
-| long_allocation | Amount to allocate to portfolio | 1 | False | None |
+| portfolios | Show selected saved portfolios |  | True | None |
+| categories | Show selected categories |  | True | None |
+| long_allocation | Amount to allocate to portfolio | 1 | True | None |
 
 

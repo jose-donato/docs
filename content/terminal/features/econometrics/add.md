@@ -13,26 +13,25 @@ Add columns to your dataframe with the option to use formulas. E.g. newdatasetco
 
 ### Usage: 
 ```python
-usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,>,<,>=,<=,==} -c CRITERIAORDATASETCOL
+usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,,,=,=,==} -c CRITERIAORDATASETCOL
 ```
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| newdatasetcol | New dataset column to be added with format: dataset.column | None | True | None |
-| basedatasetcol | Base dataset column to be used as base with format: dataset.column | None | True | None |
-| sign | Sign to be applied to the base dataset column | None | True | div, mul, add, sub, mod, pow, >, <, >=, <=, == |
-| criteriaordatasetcol | Either dataset column to be applied on top of base dataset or criteria | None | True | None |
+| newdatasetcol | New dataset column to be added with format: dataset.column | None | False | None |
+| basedatasetcol | Base dataset column to be used as base with format: dataset.column | None | False | None |
+| sign | Sign to be applied to the base dataset column | None | False | div, mul, add, sub, mod, pow, , , =, =, == |
+| criteriaordatasetcol | Either dataset column to be applied on top of base dataset or criteria | None | False | None |
 
 
 ## Examples
 
 ```python
-
 2022 May 31, 04:50 (🦋) /econometrics/ $ load wage_panel -a wp
 
-2022 May 31, 04:49 (🦋) /econometrics/ $ add -n wp.after_1990 -b wp.year -s > -c 1990
+2022 May 31, 04:49 (🦋) /econometrics/ $ add -n wp.after_1990 -b wp.year -s  -c 1990
 
 2022 May 31, 04:49 (🦋) /econometrics/ $ show wp
 
@@ -61,7 +60,7 @@ usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,>,<,>=
 │ 9 │ 17 │ 1981 │ 0     │ 5     │ 0    │ 2804  │ 0       │ 13   │ 0     │ 1.52  │ 25      │ 2          │ False      │
 └───┴────┴──────┴───────┴───────┴──────┴───────┴─────────┴──────┴───────┴───────┴─────────┴────────────┴────────────┘
 
-2022 May 31, 04:49 (🦋) /econometrics/ $ add -n wp.after_1985 -b wp.year -s > -c 1985
+2022 May 31, 04:49 (🦋) /econometrics/ $ add -n wp.after_1985 -b wp.year -s  -c 1985
 
 2022 May 31, 04:50 (🦋) /econometrics/ $ show wp
 
@@ -89,6 +88,5 @@ usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,>,<,>=
 ├───┼────┼──────┼───────┼───────┼──────┼───────┼─────────┼──────┼───────┼───────┼─────────┼────────────┼────────────┼────────────┤
 │ 9 │ 17 │ 1981 │ 0     │ 5     │ 0    │ 2804  │ 0       │ 13   │ 0     │ 1.52  │ 25      │ 2          │ False      │ False      │
 └───┴────┴──────┴───────┴───────┴──────┴───────┴─────────┴──────┴───────┴───────┴─────────┴────────────┴────────────┴────────────┘
-
 ```
 

@@ -20,6 +20,6 @@ usage: sector [-n NAME [NAME ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | sector to select | None | False | None |
+| name | sector to select | None | True | None |
 
 

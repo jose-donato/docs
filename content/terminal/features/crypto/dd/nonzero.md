@@ -20,7 +20,9 @@ usage: nonzero [-s SINCE] [-u UNTIL]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| since | Initial date. Default: 2 years ago | 2020-11-16 | False | None |
-| until | Final date. Default: 1 year ago | 2021-11-14 | False | None |
+| since | Initial date. Default: 2 years ago | 2020-11-16 | True | None |
+| until | Final date. Default: 1 year ago | 2021-11-14 | True | None |
 
+
+![nonzero](https://user-images.githubusercontent.com/46355364/154064344-5b7825c8-9243-47ba-9930-0f5f7e3282a4.png)
 

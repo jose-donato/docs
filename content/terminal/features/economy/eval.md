@@ -20,6 +20,6 @@ usage: eval [-q QUERY [QUERY ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| query | Query to evaluate on loaded datasets | None | False | None |
+| query | Query to evaluate on loaded datasets | None | True | None |
 
 

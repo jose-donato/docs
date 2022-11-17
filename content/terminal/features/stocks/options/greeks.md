@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## greeks
 
-### Description: 
+### Description
 
 The greeks for a given option.
 
-### Usage: 
+### Usage
+
 ```python
 usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 ```
@@ -20,19 +21,17 @@ usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dividend | The dividend continuous rate | None | False | None |
-| risk_free | The risk free rate | None | False | None |
-| put | Whether the option is a put. | None | False | None |
-| min | Minimum strike price to show. | None | False | None |
-| max | Maximum strike price to show. | None | False | None |
-| all | Whether to show all greeks. | None | False | None |
-
+| dividend | The dividend continuous rate | 0 | True | None |
+| risk_free | The risk free rate | None | True | None |
+| put | Whether the option is a put. | False | True | None |
+| min | Minimum strike price to show. | None | True | None |
+| max | Maximum strike price to show. | None | True | None |
+| all | Whether to show all greeks. | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 08:52 (✨) /stocks/options/ $ greeks -a
+2022 Feb 16, 08:52 (🦋) /stocks/options/ $ greeks -a
                                             Greeks
 ┏━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━┳━━━━━━━┳━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
 ┃ Strike  ┃ Implied Vol ┃ Delta ┃ Gamma ┃ Vega ┃ Theta ┃ Rho  ┃ Phi   ┃ Charm ┃ Vanna ┃ Vomma ┃
@@ -183,6 +182,4 @@ usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 ├─────────┼─────────────┼───────┼───────┼──────┼───────┼──────┼───────┼───────┼───────┼───────┤
 │ 1475.00 │ 0.25        │ 0.00  │ 0.00  │ 0.00 │ 0.00  │ 0.00 │ -0.00 │ -0.00 │ 0.00  │ 0.00  │
 └─────────┴─────────────┴───────┴───────┴──────┴───────┴──────┴───────┴───────┴───────┴───────┘
-
 ```
-

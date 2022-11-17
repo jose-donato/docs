@@ -20,6 +20,6 @@ usage: shrs [--holder {major,institutional,mutualfund}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| holder | Table of holders to get | institutional | False | major, institutional, mutualfund |
+| holder | Table of holders to get | institutional | True | major, institutional, mutualfund |
 
 

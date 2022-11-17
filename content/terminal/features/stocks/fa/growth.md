@@ -20,7 +20,7 @@ usage: growth [-l LIMIT] [-q]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of latest years/quarters. | 5 | False | None |
-| b_quarter | Quarter fundamental data flag. | None | False | None |
+| limit | Limit of latest years/quarters. | 5 | True | None |
+| b_quarter | Quarter fundamental data flag. | False | True | None |
 
 

@@ -7,14 +7,14 @@ description: OpenBB Terminal Function
 
 ## deaths
 
-### Description: 
+### Description:
 
 Show historical deaths by country.
 
-### Usage: 
+### Usage:
+
 ```python
 usage: deaths
 ```
 
-
-
+![deaths](https://user-images.githubusercontent.com/46355364/153897766-73a8e2ee-c4e6-40d3-a65d-8b116efdacfa.png)

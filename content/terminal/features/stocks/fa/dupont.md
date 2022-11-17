@@ -20,6 +20,6 @@ usage: dupont [--raw]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| raw | Print raw data. | None | False | None |
+| raw | Print raw data. | False | True | None |
 
 

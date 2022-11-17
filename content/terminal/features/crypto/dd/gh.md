@@ -20,9 +20,9 @@ usage: gh [-i INTERVAL] [-d DEV] [-s START] [-end END]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| interval | Frequency interval. Default: 1d | 1d | False | None |
-| dev | Filter only for development activity. Default: False | None | False | None |
-| start | Initial date. Default: A year ago | 2021-11-16 | False | None |
-| end | End date. Default: Today | 2022-11-16 | False | None |
+| interval | Frequency interval. Default: 1d | 1d | True | None |
+| dev | Filter only for development activity. Default: False | False | True | None |
+| start | Initial date. Default: A year ago | 2021-11-16 | True | None |
+| end | End date. Default: Today | 2022-11-16 | True | None |
 
 

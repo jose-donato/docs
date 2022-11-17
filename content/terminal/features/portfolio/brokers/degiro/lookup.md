@@ -20,8 +20,8 @@ usage: lookup [-l LIMIT] [-o OFFSET] search_text
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| search_text | Name of the company or a text. | None | True | None |
-| limit | Number of result expected (0 for unlimited). | 10 | False | None |
-| offset | To use an offset. | None | False | None |
+| search_text | Name of the company or a text. | None | False | None |
+| limit | Number of result expected (0 for unlimited). | 10 | True | None |
+| offset | To use an offset. | 0 | True | None |
 
 

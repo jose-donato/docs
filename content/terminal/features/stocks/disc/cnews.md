@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## cnews
 
-### Description: 
+### Description
 
 Customized news. [Source: Seeking Alpha]
 
-### Usage: 
+### Usage
+
 ```python
 usage: cnews [-t {top-news,on-the-move,market-pulse,notable-calls,buybacks,commodities,crypto,issuance,global,guidance,ipos,spacs,politics,m-a,consumer,energy,financials,healthcare,mlps,reits,technology}] [-l LIMIT]
 ```
@@ -20,15 +21,13 @@ usage: cnews [-t {top-news,on-the-move,market-pulse,notable-calls,buybacks,commo
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| s_type | number of news to display | Top-News | False | top-news, on-the-move, market-pulse, notable-calls, buybacks, commodities, crypto, issuance, global, guidance, ipos, spacs, politics, m-a, consumer, energy, financials, healthcare, mlps, reits, technology |
-| limit | limit of news to display | 5 | False | None |
-
+| s_type | number of news to display | Top-News | True | top-news, on-the-move, market-pulse, notable-calls, buybacks, commodities, crypto, issuance, global, guidance, ipos, spacs, politics, m-a, consumer, energy, financials, healthcare, mlps, reits, technology |
+| limit | limit of news to display | 5 | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 03:52 (✨) /stocks/disc/ $ cnews
+2022 Feb 16, 03:52 (🦋) /stocks/disc/ $ cnews
 2022-02-15 19:04:21 - 3800509 - ViacomCBS earnings call: A flood of content feeding transformation to Paramount
 https://seekingalpha.com/news/3800509-viacomcbs-earnings-call-a-flood-of-content-feeding-transformation-to-paramount
 
@@ -47,7 +46,7 @@ https://seekingalpha.com/news/3800380-viacomcbs-dips-as-profits-dip-despite-reve
 2022-02-15 16:14:20 - 3800378 - Wynn Resorts trades lower after earnings, Encore Boston sale
 https://seekingalpha.com/news/3800378-wynn-resorts-trades-lower-after-earnings-encore-boston-sale
 
-2022 Feb 16, 03:52 (✨) /stocks/disc/ $ cnews -t buybacks
+2022 Feb 16, 03:52 (🦋) /stocks/disc/ $ cnews -t buybacks
 2022-02-15 16:24:36 - 3800409 - DHI launches new $15M in stock repurchase program
 https://seekingalpha.com/news/3800409-dhi-launches-new-15m-in-stock-repurchase-program
 
@@ -65,6 +64,4 @@ https://seekingalpha.com/news/3800020-middlefield-banc-corp-declares-0_17-divide
 
 2022-02-15 07:26:40 - 3799989 - LGI Homes expands stock repurchase program by $200M
 https://seekingalpha.com/news/3799989-lgi-homes-expands-stock-repurchase-program-by-200m
-
 ```
-

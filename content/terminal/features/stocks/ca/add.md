@@ -20,6 +20,6 @@ usage: add [-s L_SIMILAR]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| l_similar | Tickers to add to similar list | None | False | None |
+| l_similar | Tickers to add to similar list |  | True | None |
 
 

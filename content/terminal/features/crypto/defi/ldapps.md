@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## ldapps
 
-### Description: 
+### Description
 
-Display information about listed dApps on DeFi Llama. [Source: https://docs.llama.fi/api]
+Display information about listed dApps on DeFi Llama. [Source: <https://docs.llama.fi/api>]
 
-### Usage: 
+### Usage
+
 ```python
 usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,change_7d,name}] [-r] [--desc]
 ```
@@ -20,17 +21,15 @@ usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,cha
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of records to display | 10 | False | None |
-| sortby | Sort by given column. Default: tvl | tvl | False | tvl, symbol, category, chains, change_1h, change_1d, change_7d, name |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| description | Flag to display description of protocol | None | False | None |
-
+| limit | Number of records to display | 10 | True | None |
+| sortby | Sort by given column. Default: tvl | tvl | True | tvl, symbol, category, chains, change_1h, change_1d, change_7d, name |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| description | Flag to display description of protocol | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 06:24 (✨) /crypto/defi/ $ ldapps
+2022 Feb 15, 06:24 (🦋) /crypto/defi/ $ ldapps
 ┌──────────────────────────┬────────┬──────────┬──────────────────────────────────────────────────┬───────────────┬───────────────┬───────────────┬──────────┐
 │ Name                     │ Symbol │ Category │ Chains                                           │ Change 1H (%) │ Change 1D (%) │ Change 7D (%) │ TVL ($)  │
 ├──────────────────────────┼────────┼──────────┼──────────────────────────────────────────────────┼───────────────┼───────────────┼───────────────┼──────────┤
@@ -57,6 +56,4 @@ usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,cha
 │                          │        │          │ Arbitrum, Harmony, OKExChain, Polygon, Telos,    │               │               │               │          │
 │                          │        │          │ Heco, xDai, Kucoin, Syscoin                      │               │               │               │          │
 └──────────────────────────┴────────┴──────────┴──────────────────────────────────────────────────┴───────────────┴───────────────┴───────────────┴──────────┘
-
 ```
-

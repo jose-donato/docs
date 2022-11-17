@@ -20,16 +20,14 @@ usage: plot [-v VALUES]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| values | Dataset.column values to be displayed in a plot. Use comma to separate multiple | None | False | None |
+| values | Dataset.column values to be displayed in a plot. Use comma to separate multiple | None | True | None |
 
 
 ## Examples
 
 ```python
-
 (🦋) /forecast/ $ load aapl.csv
 
 (🦋) /forecast/ $ plot appl.close
-
 ```
 

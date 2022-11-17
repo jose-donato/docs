@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## pick
 
-### Description: 
+### Description
 
 Change target variable
 
-### Usage: 
+### Usage
+
 ```python
 usage: pick [-t {Open,High,Low,Close,Adj Close,Volume,date_id,OC_High,OC_Low,Returns,LogRet}]
 ```
@@ -20,6 +21,20 @@ usage: pick [-t {Open,High,Low,Close,Adj Close,Volume,date_id,OC_High,OC_Low,Ret
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| target | Select variable to analyze | None | False | Open, High, Low, Close, Adj Close, Volume, date_id, OC_High, OC_Low, Returns, LogRet |
+| target | Select variable to analyze | None | True | Open, High, Low, Close, Adj Close, Volume, date_id, OC_High, OC_Low, Returns, LogRet |
+
+## Examples
+
+```python
+2022 Feb 16, 11:12 (🦋) /stocks/qa/ $ load tsla
+
+Loading Daily TSLA stock with starting period 2019-02-11 for analysis.
+
+Datetime: 2022 Feb 16 11:12
+Timezone: America/New_York
+Currency: USD
+Market:   CLOSED
 
 
+2022 Feb 16, 11:12 (🦋) /stocks/qa/ $ pick adjclose
+```

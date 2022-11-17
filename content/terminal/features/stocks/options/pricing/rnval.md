@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## rnval
 
-### Description: 
+### Description
 
 The risk neutral value of the options
 
-### Usage: 
+### Usage
+
 ```python
 usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 ```
@@ -20,21 +21,19 @@ usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| put | Show puts instead of calls | None | False | None |
-| mini | Minimum strike price shown | None | False | None |
-| maxi | Maximum strike price shown | None | False | None |
-| risk | The risk-free rate to use | None | False | None |
-
+| put | Show puts instead of calls | False | True | None |
+| mini | Minimum strike price shown | None | True | None |
+| maxi | Maximum strike price shown | None | True | None |
+| risk | The risk-free rate to use | None | True | None |
 
 ## Examples
 
 ```python
+2022 Feb 16, 09:45 (🦋) /stocks/options/pricing/ $ add -p 100 -c 0.5
 
-2022 Feb 16, 09:45 (✨) /stocks/options/pricing/ $ add -p 100 -c 0.5
+2022 Feb 16, 09:46 (🦋) /stocks/options/pricing/ $ add -p 200 -c 0.5
 
-2022 Feb 16, 09:46 (✨) /stocks/options/pricing/ $ add -p 200 -c 0.5
-
-2022 Feb 16, 09:46 (✨) /stocks/options/pricing/ $ show
+2022 Feb 16, 09:46 (🦋) /stocks/options/pricing/ $ show
 Estimated price(s) of AAPL at 2022-05-20
 ┏━━━━━━━━┳━━━━━━━━┓
 ┃ Price  ┃ Chance ┃
@@ -43,7 +42,7 @@ Estimated price(s) of AAPL at 2022-05-20
 ├────────┼────────┤
 │ 200.00 │ 0.50   │
 └────────┴────────┘
-2022 Feb 16, 09:46 (✨) /stocks/options/pricing/ $ rnval
+2022 Feb 16, 09:46 (🦋) /stocks/options/pricing/ $ rnval
             Risk Neutral Values
 ┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┓
 ┃ Strike ┃ Last Price ┃ Value ┃ Difference ┃
@@ -84,6 +83,4 @@ Estimated price(s) of AAPL at 2022-05-20
 ├────────┼────────────┼───────┼────────────┤
 │ 210.00 │ 0.70       │ 0.00  │ 0.70       │
 └────────┴────────────┴───────┴────────────┘
-
 ```
-
