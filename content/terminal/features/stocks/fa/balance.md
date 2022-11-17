@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## balance
 
-### Description: 
+### Description
 
 Prints a complete balance sheet statement over time. This can be either quarterly or annually. The following fields are expected: Accepted date, Account payables, Accumulated other comprehensive income loss, Cash and cash equivalents, Cash and short term investments, Common stock, Deferred revenue, Deferred revenue non current, Deferred tax liabilities non current, Filling date, Final link, Goodwill, Goodwill and intangible assets, Intangible assets, Inventory, Link, Long term debt, Long term investments, Net debt, Net receivables, Other assets, Other current assets, Other current liabilities, Other liabilities, Other non current assets, Other non current liabilities, Othertotal stockholders equity, Period, Property plant equipment net, Retained earnings, Short term debt, Short term investments, Tax assets, Tax payables, Total assets, Total current assets, Total current liabilities, Total debt, Total investments, Total liabilities, Total liabilities and stockholders equity, Total non current assets, Total non current liabilities, and Total stockholders equity. [Source: Alpha Vantage]
 
-### Usage: 
+### Usage
+
 ```python
 usage: balance [-q] [-r] [-p PLOT]
 ```
@@ -20,16 +21,14 @@ usage: balance [-q] [-r] [-p PLOT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| b_quarter | Quarter fundamental data flag. | None | False | None |
-| ratios | Shows percentage change of values. | None | False | None |
-| plot | Rows to plot, comma separated. (-1 represents invalid data) | None | False | None |
-
+| b_quarter | Quarter fundamental data flag. | False | True | None |
+| ratios | Shows percentage change of values. | False | True | None |
+| plot | Rows to plot, comma separated. (-1 represents invalid data) | None | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 04:44 (✨) /stocks/fa/ $ balance -l 4
+2022 Feb 16, 04:44 (🦋) /stocks/fa/ $ balance -l 4
                                        MU Balance Sheet
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
 ┃                                        ┃ 2018-08-30 ┃ 2019-08-29 ┃ 2020-09-03 ┃ 2021-09-02 ┃
@@ -109,7 +108,7 @@ usage: balance [-q] [-r] [-p PLOT]
 │ commonStockSharesOutstanding           │ 1.161 B    │ 1.106 B    │ 1.113 B    │ 1.119 B    │
 └────────────────────────────────────────┴────────────┴────────────┴────────────┴────────────┘
 
-2022 Feb 16, 04:44 (✨) /stocks/fa/ $ balance -l 4 -q
+2022 Feb 16, 04:44 (🦋) /stocks/fa/ $ balance -l 4 -q
                                        MU Balance Sheet
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
 ┃                                        ┃ 2021-03-04 ┃ 2021-06-03 ┃ 2021-09-02 ┃ 2021-12-02 ┃
@@ -188,6 +187,4 @@ usage: balance [-q] [-r] [-p PLOT]
 ├────────────────────────────────────────┼────────────┼────────────┼────────────┼────────────┤
 │ commonStockSharesOutstanding           │ 1.121 B    │ 1.120 B    │ 1.119 B    │ 1.120 B    │
 └────────────────────────────────────────┴────────────┴────────────┴────────────┴────────────┘
-
 ```
-

@@ -20,6 +20,6 @@ usage: save -f FILE
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| file | Filename to be saved | None | True | None |
+| file | Filename to be saved | None | False | None |
 
 

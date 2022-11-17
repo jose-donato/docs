@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## toppm
 
-### Description: 
+### Description
 
 Print top officer purchases of the month. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: toppm [-l LIMIT]
 ```
@@ -20,14 +21,12 @@ usage: toppm [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of datarows to display | 10 | False | None |
-
+| limit | Limit of datarows to display | 10 | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 08:23 (✨) /stocks/ins/ $ toppm
+2022 Feb 16, 08:23 (🦋) /stocks/ins/ $ toppm
                                                                                  Insider Data
 ┏━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
 ┃ X ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name        ┃ Insider Name        ┃ Title      ┃ Trade Type   ┃ Price   ┃ Qty        ┃ Owned      ┃ Diff Own ┃ Value        ┃
@@ -65,6 +64,4 @@ usage: toppm [-l LIMIT]
 └───┴─────────────┴────────────┴────────┴─────────────────────┴─────────────────────┴────────────┴──────────────┴─────────┴────────────┴────────────┴──────────┴──────────────┘
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
-

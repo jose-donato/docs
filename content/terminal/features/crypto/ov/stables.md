@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## stables
 
-### Description: 
+### Description
 
 Shows stablecoins by market capitalization. Stablecoins are cryptocurrencies that attempt to peg their market value to some external reference like the U.S. dollar or to a commodity's price such as gold. You can display only N number of coins with --limit parameter. You can sort data by {} with --sortby
 
-### Usage: 
+### Usage
+
 ```python
 usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 ```
@@ -20,17 +21,15 @@ usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | display N number records | 15 | False | None |
-| sortby | Sort by given column. Default: market_cap | Market_Cap_[$] | False | None |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| pie | Flag to show pie chart | None | False | None |
-
+| limit | display N number records | 15 | True | None |
+| sortby | Sort by given column. Default: market_cap | Market_Cap_[$] | True | None |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| pie | Flag to show pie chart | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 08:16 (✨) /crypto/ov/ $ stables
+2022 Feb 15, 08:16 (🦋) /crypto/ov/ $ stables
 
 First 15 stablecoins have a total 182.582 B dollars of market cap.
 
@@ -68,6 +67,4 @@ First 15 stablecoins have a total 182.582 B dollars of market cap.
 ├─────────┼──────────────────────┼───────────┼────────────────┼─────────────────┼────────────────┼───────────────┼────────────┼──────────────────────────┤
 │ husd    │ HUSD                 │ 1.005     │ 263.061 M      │ 236             │ 0.686          │ 0.524         │ 35.886 M   │ 0.144                    │
 └─────────┴──────────────────────┴───────────┴────────────────┴─────────────────┴────────────────┴───────────────┴────────────┴──────────────────────────┘
-
 ```
-

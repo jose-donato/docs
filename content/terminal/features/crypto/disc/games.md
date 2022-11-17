@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## games
 
-### Description: 
+### Description
 
-Shows top blockchain games [Source: https://dappradar.com/] Accepts --sort {Name,Daily Users,Daily Volume [$]} to sort by column
+Shows top blockchain games [Source: <https://dappradar.com/>] Accepts --sort {Name,Daily Users,Daily Volume [$]} to sort by column
 
-### Usage: 
+### Usage
+
 ```python
 usage: games [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
@@ -20,15 +21,13 @@ usage: games [-l LIMIT] [-s SORTBY [SORTBY ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of records to display | 15 | False | None |
-| sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | False | None |
-
+| limit | Number of records to display | 15 | True | None |
+| sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 06:53 (✨) /crypto/disc/ $ games
+2022 Feb 15, 06:53 (🦋) /crypto/disc/ $ games
                Top Blockchain Games
 ┌───────────────┬─────────────┬──────────────────┐
 │ Name          │ Daily Users │ Daily Volume [$] │
@@ -53,6 +52,4 @@ usage: games [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ├───────────────┼─────────────┼──────────────────┤
 │ Magic Eden    │ 40.2K       │ 18.5M            │
 └───────────────┴─────────────┴──────────────────┘
-
 ```
-

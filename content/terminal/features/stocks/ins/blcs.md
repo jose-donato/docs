@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## blcs
 
-### Description: 
+### Description
 
 Print latest CEO/CFO sales 100k. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: blcs [-l LIMIT]
 ```
@@ -20,14 +21,12 @@ usage: blcs [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of datarows to display | 10 | False | None |
-
+| limit | Limit of datarows to display | 10 | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 07:47 (✨) /stocks/ins/ $ blcs
+2022 Feb 16, 07:47 (🦋) /stocks/ins/ $ blcs
                                                                                 Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━┓
 ┃ X  ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name         ┃ Insider Name         ┃ Title      ┃ Trade Type  ┃ Price   ┃ Qty     ┃ Owned      ┃ Diff Own ┃ Value       ┃
@@ -66,6 +65,4 @@ usage: blcs [-l LIMIT]
 └────┴─────────────┴────────────┴────────┴──────────────────────┴──────────────────────┴────────────┴─────────────┴─────────┴─────────┴────────────┴──────────┴─────────────┘
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
-

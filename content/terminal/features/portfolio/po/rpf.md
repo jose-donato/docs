@@ -20,6 +20,6 @@ usage: rpf [-pf PORTFOLIOS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| portfolios | portfolios to be removed from the saved portfolios | None | False | None |
+| portfolios | portfolios to be removed from the saved portfolios |  | True | None |
 
 

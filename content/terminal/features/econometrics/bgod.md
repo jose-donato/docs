@@ -20,13 +20,12 @@ usage: bgod [-l LAGS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| lags | The lags for the Breusch-Godfrey test | 3 | False | None |
+| lags | The lags for the Breusch-Godfrey test | 3 | True | None |
 
 
 ## Examples
 
 ```python
-
 2022 Jun 01, 06:29 (🦋) /econometrics/ $ load longley -a ll
 
 2022 Jun 01, 06:29 (🦋) /econometrics/ $ ols -d ll.totemp -i ll.gnpdefl,ll.gnp,ll.unemp,ll.armed,ll.pop,ll.year
@@ -42,7 +41,7 @@ Df Residuals:                      10   BIC:                                    
 Df Model:                           6                                                  
 Covariance Type:            nonrobust                                                  
 ==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
+                 coef    std err          t      P|t|      [0.025      0.975]
 ------------------------------------------------------------------------------
 ll.gnpdefl   -52.9936    129.545     -0.409      0.691    -341.638     235.650
 ll.gnp         0.0711      0.030      2.356      0.040       0.004       0.138
@@ -64,7 +63,7 @@ Notes:
 strong multicollinearity or other numerical problems.
 
 Warnings:
-kurtosistest only valid for n>=20 ... continuing anyway, n=16
+kurtosistest only valid for n=20 ... continuing anyway, n=16
 
 2022 Jun 01, 06:29 (🦋) /econometrics/ $ bgod
 
@@ -82,6 +81,5 @@ Breusch-Godfrey autocorrelation test [Lags: 3]
 └──────────┴─────────────────┘
 
 The result 0.02 indicates no existence of autocorrelation.
-
 ```
 

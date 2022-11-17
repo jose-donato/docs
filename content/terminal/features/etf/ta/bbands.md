@@ -20,8 +20,10 @@ usage: bbands [-l N_LENGTH] [-s N_STD] [-m S_MAMODE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_length | length | 15 | False | None |
-| n_std | std | 2 | False | None |
-| s_mamode | mamode | sma | False | None |
+| n_length | length | 15 | True | None |
+| n_std | std | 2 | True | None |
+| s_mamode | mamode | sma | True | None |
 
+
+![bbands](https://user-images.githubusercontent.com/46355364/154309951-116f3c31-342d-4ceb-b489-8b0ba78eb3a0.png)
 

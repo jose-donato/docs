@@ -20,6 +20,6 @@ usage: demark [-m MIN_TO_SHOW]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| min_to_show | Minimum value of indicator to show (declutters plot). | 5 | False | None |
+| min_to_show | Minimum value of indicator to show (declutters plot). | 5 | True | None |
 
 

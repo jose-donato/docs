@@ -20,7 +20,7 @@ usage: fraud [-e] [-d]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| exp | Shows an explanation for the metrics | None | False | None |
-| detail | Shows the details for calculating the mscore | None | False | None |
+| exp | Shows an explanation for the metrics | False | True | None |
+| detail | Shows the details for calculating the mscore | False | True | None |
 
 

@@ -20,6 +20,6 @@ usage: sh -r REPO
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| repo | Repository to search for star history. Format: org/repo, e.g., openbb-finance/openbbterminal | None | True | None |
+| repo | Repository to search for star history. Format: org/repo, e.g., openbb-finance/openbbterminal | None | False | None |
 
 

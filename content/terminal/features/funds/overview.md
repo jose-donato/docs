@@ -20,6 +20,6 @@ usage: overview [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of search results to show | 10 | False | None |
+| limit | Number of search results to show | 10 | True | None |
 
 

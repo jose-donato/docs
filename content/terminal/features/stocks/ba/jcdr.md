@@ -20,6 +20,6 @@ usage: jcdr [-i]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| inverse | Show inverse recommendation | None | False | None |
+| inverse | Show inverse recommendation | False | True | None |
 
 

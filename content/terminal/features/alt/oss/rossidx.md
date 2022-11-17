@@ -20,10 +20,10 @@ usage: rossidx [-s SORTBY [SORTBY ...]] [-r] [-c] [-g] [-t {stars,forks}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| sortby | Sort startups by column | Stars AGR [%] | False | None |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| show_chart | Flag to show chart | None | False | None |
-| show_growth | Flag to show growth chart | None | False | None |
-| chart_type | Chart type: {stars, forks} | stars | False | stars, forks |
+| sortby | Sort startups by column | Stars AGR [%] | True | None |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| show_chart | Flag to show chart | False | True | None |
+| show_growth | Flag to show growth chart | False | True | None |
+| chart_type | Chart type: {stars, forks} | stars | True | stars, forks |
 
 

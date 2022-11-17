@@ -20,8 +20,8 @@ usage: atr [-l N_LENGTH] [-m {ema,sma,wma,hma,zlma}] [-o N_OFFSET]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_length | Window length | 14 | False | None |
-| s_mamode | mamode | ema | False | ema, sma, wma, hma, zlma |
-| n_offset | offset | None | False | None |
+| n_length | Window length | 14 | True | None |
+| s_mamode | mamode | ema | True | ema, sma, wma, hma, zlma |
+| n_offset | offset | 0 | True | None |
 
 

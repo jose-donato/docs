@@ -20,9 +20,11 @@ usage: hr [-c {BTC,ETH}] [-i {24h,1w,1month}] [-s SINCE] [-u UNTIL]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| coin | Coin to check hashrate (BTC or ETH) | BTC | False | BTC, ETH |
-| interval | Frequency interval. Default: 24h | 24h | False | 24h, 1w, 1month |
-| since | Initial date. Default: 2021-11-16 | 2021-11-16 | False | None |
-| until | Final date. Default: 2022-11-16 | 2022-11-16 | False | None |
+| coin | Coin to check hashrate (BTC or ETH) | BTC | True | BTC, ETH |
+| interval | Frequency interval. Default: 24h | 24h | True | 24h, 1w, 1month |
+| since | Initial date. Default: 2021-11-16 | 2021-11-16 | True | None |
+| until | Final date. Default: 2022-11-16 | 2022-11-16 | True | None |
 
+
+![hr](https://user-images.githubusercontent.com/46355364/154067420-9fdd9324-c4f2-4bb4-91c1-4c675e4b45d1.png)
 

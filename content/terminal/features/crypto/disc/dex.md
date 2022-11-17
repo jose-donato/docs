@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## dex
 
-### Description: 
+### Description
 
-Shows top decentralized exchanges [Source: https://dappradar.com/] Accepts --sort {Name,Daily Users,Daily Volume [$]} to sort by column
+Shows top decentralized exchanges [Source: <https://dappradar.com/>] Accepts --sort {Name,Daily Users,Daily Volume [$]} to sort by column
 
-### Usage: 
+### Usage
+
 ```python
 usage: dex [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
@@ -20,15 +21,13 @@ usage: dex [-l LIMIT] [-s SORTBY [SORTBY ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Number of records to display | 15 | False | None |
-| sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | False | None |
-
+| limit | Number of records to display | 15 | True | None |
+| sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 06:52 (✨) /crypto/disc/ $ dex
+2022 Feb 15, 06:52 (🦋) /crypto/disc/ $ dex
            Top Decentralized Exchanges
 ┌───────────────┬─────────────┬──────────────────┐
 │ Name          │ Daily Users │ Daily Volume [$] │
@@ -53,6 +52,4 @@ usage: dex [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ├───────────────┼─────────────┼──────────────────┤
 │ Magic Eden    │ 40.2K       │ 18.5M            │
 └───────────────┴─────────────┴──────────────────┘
-
 ```
-

@@ -20,8 +20,8 @@ usage: ex [-l LIMIT] [-s {id,name,adjusted_volume_24h_share,fiats}] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of records | 10 | False | None |
-| sortby | Sort by given column. Default: date | adjusted_volume_24h_share | False | id, name, adjusted_volume_24h_share, fiats |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
+| limit | Limit of records | 10 | True | None |
+| sortby | Sort by given column. Default: date | adjusted_volume_24h_share | True | id, name, adjusted_volume_24h_share, fiats |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 

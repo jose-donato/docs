@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## lobbying
 
-### Description: 
+### Description
 
 Lobbying details [Source: www.quiverquant.com]
 
-### Usage: 
+### Usage
+
 ```python
 usage: lobbying [-l LIMIT]
 ```
@@ -20,14 +21,12 @@ usage: lobbying [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of events to show | 10 | False | None |
-
+| limit | Limit of events to show | 10 | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 07:27 (✨) /stocks/gov/ $ lobbying
+2022 Feb 16, 07:27 (🦋) /stocks/gov/ $ lobbying
 2021-01-21: TESLA INC N/A
 
 2020-10-20: TESLA INC N/A
@@ -53,6 +52,4 @@ usage: lobbying [-l LIMIT]
 
 2019-10-21: TESLA INC $150000
         Discussions regarding electric vehicle manufacturing and sales policies,charging infrastructure and regulation (S.2302, America's Transportation and Infrastruction Act;H.R.2616/S.674, Clean Corridors Act) Issues impacting autonomous vehicles
-
 ```
-

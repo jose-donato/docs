@@ -20,6 +20,6 @@ usage: period [-n {Annual,Quarterly,Trailing,annual,quarterly,trailing}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | period to select | None | False | Annual, Quarterly, Trailing, annual, quarterly, trailing |
+| name | period to select | None | True | Annual, Quarterly, Trailing, annual, quarterly, trailing |
 
 

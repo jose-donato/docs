@@ -20,16 +20,15 @@ usage: load -t TICKER [-s START] [-e END] [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| ticker | ETF ticker | None | True | None |
-| start | The starting date (format YYYY-MM-DD) of the ETF | 2021-11-15 | False | None |
-| end | The ending date (format YYYY-MM-DD) of the ETF | 2022-11-16 | False | None |
-| limit | Limit of holdings to display | 5 | False | None |
+| ticker | ETF ticker | None | False | None |
+| start | The starting date (format YYYY-MM-DD) of the ETF | 2021-11-15 | True | None |
+| end | The ending date (format YYYY-MM-DD) of the ETF | 2022-11-16 | True | None |
+| limit | Limit of holdings to display | 5 | True | None |
 
 
 ## Examples
 
 ```python
-
 2022 Jun 21, 09:18 (🦋) /etf/ $ load voo
 Top company holdings found: AAPL, MSFT, AMZN, GOOGL, TSLA
 
@@ -44,9 +43,9 @@ Top company holdings found: AAPL, MSFT, AMZN, GOOGL, TSLA
 │ Symbol: VOO                                                                                                                                                                                                        │
 │ Major holdings: AAPL, MSFT, AMZN, GOOGL, TSLA                                                                                                                                                                      │
 │                                                                                                                                                                                                                    │
-│ >   ca                 comparison analysis,          get similar, historical, correlation, financials                                                                                                              │
-│ >   disc               discover ETFs,                gainers/decliners/active                                                                                                                                      │
-│ >   scr                screener ETFs,                overview/performance, using preset filters                                                                                                                    │
+│    ca                 comparison analysis,          get similar, historical, correlation, financials                                                                                                              │
+│    disc               discover ETFs,                gainers/decliners/active                                                                                                                                      │
+│    scr                screener ETFs,                overview/performance, using preset filters                                                                                                                    │
 │                                                                                                                                                                                                                    │
 │     overview           get overview                                                    [StockAnalysis]                                                                                                             │
 │     holdings           top company holdings                                            [StockAnalysis]                                                                                                             │
@@ -58,10 +57,9 @@ Top company holdings found: AAPL, MSFT, AMZN, GOOGL, TSLA
 │     pir                create (multiple) passive investor excel report(s)              [PassiveInvestor]                                                                                                           │
 │     compare            compare multiple different ETFs                                 [StockAnalysis]                                                                                                             │
 │                                                                                                                                                                                                                    │
-│ >   ta                 technical analysis,           ema, macd, rsi, adx, bbands, obv                                                                                                                              │
-│ >   pred               prediction techniques,        regression, arima, rnn, lstm                                                                                                                                  │
+│    ta                 technical analysis,           ema, macd, rsi, adx, bbands, obv                                                                                                                              │
+│    pred               prediction techniques,        regression, arima, rnn, lstm                                                                                                                                  │
 │                                                                                                                                                                                                                    │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── OpenBB Terminal v1.3.0 (https://openbb.co) ─╯
-
 ```
 

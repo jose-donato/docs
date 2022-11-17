@@ -20,6 +20,6 @@ usage: country [-n NAME [NAME ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | country to select | None | False | None |
+| name | country to select | None | True | None |
 
 

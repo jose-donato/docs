@@ -20,6 +20,6 @@ usage: file -f FILE [FILE ...]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| file | Parameter file to be used | None | True | None |
+| file | Parameter file to be used | None | False | None |
 
 

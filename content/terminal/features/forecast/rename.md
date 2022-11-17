@@ -20,15 +20,14 @@ usage: rename [-d {}] -o OLDCOL -n NEWCOL
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dataset | Dataset that will get a column renamed | None | False |  |
-| oldcol | Old column from dataset to be renamed | None | True | None |
-| newcol | New column from dataset to be renamed | None | True | None |
+| dataset | Dataset that will get a column renamed | None | True |  |
+| oldcol | Old column from dataset to be renamed | None | False | None |
+| newcol | New column from dataset to be renamed | None | False | None |
 
 
 ## Examples
 
 ```python
-
 2022 Jul 23, 10:16 (🦋) /forecast/ $ show AAPL
 AAPL dataset has shape (row, column): (759, 7)
 
@@ -86,6 +85,5 @@ AAPL dataset has shape (row, column): (759, 7)
 ├───┼────────────┼───────┼───────┼───────┼──────────┼───────────┼──────────┤
 │ 9 │ 2019-07-26 │ 51.87 │ 52.43 │ 51.78 │ 51.94    │ 50.69     │ 70475600 │
 └───┴────────────┴───────┴───────┴───────┴──────────┴───────────┴──────────┘
-
 ```
 

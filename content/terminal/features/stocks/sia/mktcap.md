@@ -20,6 +20,6 @@ usage: mktcap [-n {Nano,Micro,Small,Mid,Large,Mega,nano,micro,small,mid,large,me
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | market cap to select | None | False | Nano, Micro, Small, Mid, Large, Mega, nano, micro, small, mid, large, mega |
+| name | market cap to select | None | True | Nano, Micro, Small, Mid, Large, Mega, nano, micro, small, mid, large, mega |
 
 

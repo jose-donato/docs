@@ -20,14 +20,13 @@ usage: alloc [-a {assets,sectors,countries,regions}] [-t]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| agg | The type of allocation aggregation you wish to do | assets | False | assets, sectors, countries, regions |
-| tables | Whether to also include the assets/sectors tables of both the benchmark and the portfolio. | None | False | None |
+| agg | The type of allocation aggregation you wish to do | assets | True | assets, sectors, countries, regions |
+| tables | Whether to also include the assets/sectors tables of both the benchmark and the portfolio. | False | True | None |
 
 
 ## Examples
 
 ```python
-
 022 May 12, 06:23 (🦋) /portfolio/ $ alloc assets
 Portfolio vs. Benchmark - Top 10 Assets Allocation
 ┏━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┓
@@ -98,6 +97,5 @@ Portfolio vs. Benchmark - Top 10 Assets Allocation
 ├───────────────┼───────────┼───────────┼────────────┤
 │ Asia          │ 14.96%    │ 7.00e-04  │ 14.89%     │
 └───────────────┴───────────┴───────────┴────────────┘
-
 ```
 

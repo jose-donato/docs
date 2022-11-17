@@ -20,16 +20,14 @@ usage: attrib [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-t {relative,absolute}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| period | Period in which to calculate attribution | all | False | mtd, qtd, ytd, 3m, 6m, 1y, 3y, 5y, 10y, all |
-| type | Select between relative or absolute attribution values | relative | False | relative, absolute |
-| raw | View raw attribution values in a table | None | False | None |
+| period | Period in which to calculate attribution | all | True | mtd, qtd, ytd, 3m, 6m, 1y, 3y, 5y, 10y, all |
+| type | Select between relative or absolute attribution values | relative | True | relative, absolute |
+| raw | View raw attribution values in a table | False | True | None |
 
 
 ## Examples
 
 ```python
-
 2022 Nov 03, 23:37 (🦋) /portfolio/ $ attrib -p 3m
-
 ```
 

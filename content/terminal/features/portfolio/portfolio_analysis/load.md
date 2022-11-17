@@ -20,10 +20,10 @@ usage: load [-s] [-c] [--no_last_price] [--nan] [-p {}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| sector | Add sector to dataframe | None | False | None |
-| country | Add country to dataframe | None | False | None |
-| last_price | Don't add last price from yfinance | True | False | None |
-| show_nan | Show nan entries | None | False | None |
-| path | Path to portfolio file | my_portfolio.csv | False |  |
+| sector | Add sector to dataframe | False | True | None |
+| country | Add country to dataframe | False | True | None |
+| last_price | Don't add last price from yfinance | True | True | None |
+| show_nan | Show nan entries | False | True | None |
+| path | Path to portfolio file | my_portfolio.csv | True |  |
 
 

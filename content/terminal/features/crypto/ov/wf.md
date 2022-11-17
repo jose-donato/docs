@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## wf
 
-### Description: 
+### Description
 
-Display top coins withdrawal fees [Source: https://withdrawalfees.com/]
+Display top coins withdrawal fees [Source: <https://withdrawalfees.com/>]
 
-### Usage: 
+### Usage
+
 ```python
 usage: wf [-l LIMIT]
 ```
@@ -20,14 +21,12 @@ usage: wf [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit number of coins to display withdrawal fees. Default 10 | 10 | False | None |
-
+| limit | Limit number of coins to display withdrawal fees. Default 10 | 10 | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 08:21 (✨) /crypto/ov/ $ wf
+2022 Feb 15, 08:21 (🦋) /crypto/ov/ $ wf
 
 Withdrawal fees on exchanges:
                                      Top Withdrawal Fees
@@ -54,6 +53,4 @@ Withdrawal fees on exchanges:
 ├──────────────┼──────────────┼─────────┼────────┼──────────────────────┼────────────────────┤
 │ Avalanche    │ FREE         │ $1.77   │ $0.88  │ $8.83 (0.1 AVAX)     │ 15                 │
 └──────────────┴──────────────┴─────────┴────────┴──────────────────────┴────────────────────┘
-
 ```
-

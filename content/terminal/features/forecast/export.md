@@ -20,13 +20,12 @@ usage: export [-t {xlsx,csv}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| type | The file type you wish to export to | xlsx | False | xlsx, csv |
+| type | The file type you wish to export to | xlsx | True | xlsx, csv |
 
 
 ## Examples
 
 ```python
-
 (🦋) /forecast/ $ load aapl
 
 (🦋) /forecast/ $ ema aapl
@@ -34,6 +33,5 @@ Successfully added 'EMA_10' to 'aapl' dataset
 
 (🦋) /forecast/ $ export aapl
 Saved file: .../OpenBBTerminal/exports/forecast/aapl_20220711_151219.xlsx
-
 ```
 

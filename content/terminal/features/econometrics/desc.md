@@ -20,13 +20,12 @@ usage: desc -n {}
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | The name of the dataset.column you want to show the descriptive statistics | None | True |  |
+| name | The name of the dataset.column you want to show the descriptive statistics | None | False |  |
 
 
 ## Examples
 
 ```python
-
 2022 Jun 01, 06:50 (🦋) /econometrics/ $ load anes96
 
 2022 Jun 01, 06:51 (🦋) /econometrics/ $ desc anes96
@@ -74,6 +73,5 @@ Statistics for dataset: 'anes96'
 ├───────┼────────┤
 │ max   │ 7.00   │
 └───────┴────────┘
-
 ```
 

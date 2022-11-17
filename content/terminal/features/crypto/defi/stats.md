@@ -7,22 +7,20 @@ description: OpenBB Terminal Function
 
 ## stats
 
-### Description: 
+### Description
 
-Display base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
+Display base statistics about Uniswap DEX. [Source: <https://thegraph.com/en/>]
 
-### Usage: 
+### Usage
+
 ```python
 usage: stats
 ```
 
-
-
 ## Examples
 
 ```python
-
-2022 Feb 15, 06:33 (✨) /crypto/defi/ $ stats
+2022 Feb 15, 06:33 (🦋) /crypto/defi/ $ stats
  Uniswap DEX Base Statistics
 ┌───────────────────┬────────┐
 │ Metric            │ Value  │
@@ -37,6 +35,4 @@ usage: stats
 ├───────────────────┼────────┤
 │ totalLiquidityETH │ 1.1M   │
 └───────────────────┴────────┘
-
 ```
-

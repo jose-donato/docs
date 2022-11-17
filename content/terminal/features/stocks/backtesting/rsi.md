@@ -20,11 +20,11 @@ usage: rsi [-p PERIODS] [-u HIGH] [-l LOW] [--spy] [--no_bench] [--no_short]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| periods | Number of periods for RSI calculation | 14 | False | None |
-| high | High (upper) RSI Level | 70 | False | None |
-| low | Low RSI Level | 30 | False | None |
-| spy | Flag to add spy hold comparison | None | False | None |
-| no_bench | Flag to not show buy and hold comparison | None | False | None |
-| shortable | Flag that disables the short sell | True | False | None |
+| periods | Number of periods for RSI calculation | 14 | True | None |
+| high | High (upper) RSI Level | 70 | True | None |
+| low | Low RSI Level | 30 | True | None |
+| spy | Flag to add spy hold comparison | False | True | None |
+| no_bench | Flag to not show buy and hold comparison | False | True | None |
+| shortable | Flag that disables the short sell | True | True | None |
 
 

@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## lasttrades
 
-### Description: 
+### Description
 
 Last government trades. [Source: www.quiverquant.com]
 
-### Usage: 
+### Usage
+
 ```python
 usage: lasttrades [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_DAYS] [-r REPRESENTATIVE]
 ```
@@ -20,16 +21,14 @@ usage: lasttrades [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_DAYS] [-r R
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| gov |  | congress | False | congress, senate, house |
-| past_transactions_days | Past transaction days | 5 | False | None |
-| representative | Representative | None | False | None |
-
+| gov |  | congress | True | congress, senate, house |
+| past_transactions_days | Past transaction days | 5 | True | None |
+| representative | Representative |  | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 07:24 (✨) /stocks/gov/ $ lasttrades
+2022 Feb 16, 07:24 (🦋) /stocks/gov/ $ lasttrades
 
 Last transactions for CONGRESS
 
@@ -93,6 +92,4 @@ Last transactions for CONGRESS
 ├──────────────────┼────────┼───────────────────────────┼─────────────┼───────────────────────┼─────────────────┼─────────────┤
 │ 2022-01-31       │ NVDA   │ Thomas R. Carper          │ Purchase    │ $1,001 - $15,000      │ Senate          │ 2022-02-03  │
 └──────────────────┴────────┴───────────────────────────┴─────────────┴───────────────────────┴─────────────────┴─────────────┘
-
 ```
-
