@@ -16,7 +16,6 @@ import RedditIcon from '@site/src/components/Icons/Reddit';
 import DiscordIcon from '@site/src/components/Icons/Discord';
 import YoutubeIcon from '@site/src/components/Icons/Youtube';
 import ChevronRightIcon from '@site/src/components/Icons/ChevronRight';
-import ExternalLinkIcon from '@site/src/components/Icons/ExternalLink';
 import clsx from 'clsx';
 const nFormatter = (num, digits) => {
   const si = [
@@ -46,18 +45,18 @@ function Footer() {
       .then((data) => setStars(data.stargazers_count))
   }, [])
   return (
-    <footer className="border-t border-grey-600/50 lg:px-12 py-14">
+    <footer className="border-t dark:border-grey-600/50 lg:px-12 py-14 bg-white dark:bg-grey-900 z-10">
       <div className="flex w-full flex-col justify-between gap-10 md:flex-row md:items-start">
         <div className="ml-2 mb-2 space-y-10 md:m-0">
           <Link
             aria-label="Home"
             to="/"
-            className="text-white hover:text-gray-50"
+            className="hover:text-grey-700 dark:text-white dark:hover:text-gray-50"
           >
             <LetteringLogo className="h-[14px] w-[140px]" />
           </Link>
           <a
-            className="flex h-[32px] w-[172px] rounded-md border border-white bg-white text-xs hover:no-underline"
+            className="flex h-[32px] w-[172px] rounded-md border border-grey-300 hover:bg-grey-100 dark:border-white bg-white text-xs hover:no-underline"
             href="https://github.com/OpenBB-finance/OpenBBTerminal"
             target="_blank"
             rel="noreferrer"
@@ -69,7 +68,7 @@ function Footer() {
               />
               Star us
             </span>
-            <span className="inline-flex w-[40%] items-center justify-center rounded-r-md bg-grey-900 text-grey-500 hover:text-grey-400">
+            <span className="inline-flex w-[40%] items-center justify-center rounded-r-md bg-grey-900 text-grey-500">
               {nFormatter(stars, 1) ?? "12.5k"}
             </span>
           </a>
@@ -89,18 +88,17 @@ function Footer() {
                         <li key={submenu.href}>
                           {submenu.href.startsWith("https://") ? (
                             <a
-                              className="whitespace-nowrap inline-flex w-full items-center gap-2 text-sm text-grey-400 hover:text-white"
+                              className="whitespace-nowrap inline-flex w-full items-center gap-2 text-sm text-grey-400 dark:hover:text-white"
                               target="_blank"
                               rel="noreferrer"
                               href={submenu.href}
                             >
                               {submenu.label}
-                              <ExternalLinkIcon className="w-4" />
                             </a>
                           ) : (
                             <Link
                               to={submenu.href}
-                              className="text-sm font-thin text-grey-400 hover:text-white"
+                              className="text-sm font-thin text-grey-400 dark:hover:text-white"
                             >
                               {submenu.label}
                             </Link>
@@ -120,13 +118,13 @@ function Footer() {
         <div className="flex flex-col items-start justify-end gap-4 self-start font-light text-grey-500 md:flex-row md:items-center">
           <p className="text-sm">{`© ${new Date().getFullYear()} OpenBB`}</p>
           <div className="_divider-x hidden h-[20px] border-[0.5px] md:block" />
-          <Link to="/legal/privacy-policy" className="text-sm hover:text-white">
+          <Link to="/legal/privacy-policy" className="text-sm dark:hover:text-white">
             Privacy Policy
           </Link>
           <div className="_divider-x hidden h-[20px] border-[0.5px] md:block" />
           <Link
             to="/legal/terms-of-service"
-            className="text-sm hover:text-white"
+            className="text-sm dark:hover:text-white"
           >
             Terms
           </Link>
@@ -134,7 +132,7 @@ function Footer() {
         <div className="mt-4 mb-10 grid grid-cols-4 gap-4 self-start md:my-0 md:grid-cols-8 md:self-end">
           <a
             aria-label="GitHub Link"
-            className="_btn h-8 w-8 p-0"
+            className="_btn !h-8 !w-8 p-0"
             target="_blank"
             rel="noreferrer"
             href="https://github.com/OpenBB-finance/OpenBBTerminal"
@@ -143,7 +141,7 @@ function Footer() {
           </a>
           <a
             aria-label="LinkedIn Link"
-            className="_btn h-8 w-8 p-0"
+            className="_btn !h-8 !w-8 p-0"
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/company/openbb-finance/"
@@ -152,7 +150,7 @@ function Footer() {
           </a>
           <a
             aria-label="Twitter Link"
-            className="_btn h-8 w-8 p-0"
+            className="_btn !h-8 !w-8 p-0"
             target="_blank"
             rel="noreferrer"
             href="https://twitter.com/openbb_finance"
@@ -161,7 +159,7 @@ function Footer() {
           </a>
           <a
             aria-label="Instagram Link"
-            className="_btn h-8 w-8 p-0"
+            className="_btn !h-8 !w-8 p-0"
             target="_blank"
             rel="noreferrer"
             href="https://www.instagram.com/openbb.finance/"
@@ -170,7 +168,7 @@ function Footer() {
           </a>
           <a
             aria-label="Tiktok Link"
-            className="_btn h-8 w-8 p-0"
+            className="_btn !h-8 !w-8 p-0"
             target="_blank"
             rel="noreferrer"
             href="https://www.tiktok.com/@openbb"
@@ -179,7 +177,7 @@ function Footer() {
           </a>
           <a
             aria-label="Reddit Link"
-            className="_btn h-8 w-8 p-0"
+            className="_btn !h-8 !w-8 p-0"
             target="_blank"
             rel="noreferrer"
             href="https://www.reddit.com/r/openbb/"
@@ -188,7 +186,7 @@ function Footer() {
           </a>
           <a
             aria-label="Discord Link"
-            className="_btn h-8 w-8 p-0"
+            className="_btn !h-8 !w-8 p-0"
             target="_blank"
             rel="noreferrer"
             href="https://discord.gg/xPHTuHCmuV"
@@ -197,7 +195,7 @@ function Footer() {
           </a>
           <a
             aria-label="Youtube Link"
-            className="_btn h-8 w-8 p-0"
+            className="_btn !h-8 !w-8 p-0"
             target="_blank"
             rel="noreferrer noopener"
             href="https://www.youtube.com/channel/UCaeFEx-W16IuxRsHlM1ywBQ"
@@ -248,7 +246,6 @@ function Submenu({ label, submenu }) {
               key={menu.href}
             >
               {menu.label}
-              <ExternalLinkIcon className="w-4" />
             </a>
           ) : (
             <Link

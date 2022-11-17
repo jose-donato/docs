@@ -43,6 +43,10 @@
   .container {
     @apply !m-0 !max-w-none;
   }
+
+  img {
+    @apply border-grey-600/40 rounded shadow;
+  }
 }
 
 @layer components {
@@ -278,4 +282,9 @@ pre[class*="language-"] {
 .token{
   font-family: "Fira Mono", monospace !important;
   line-height: 1 !important;
+}
+
+.theme-admonition-info {
+  border-color: #004466 !important;
+  background-color: #2A2A2A !important;
 }
