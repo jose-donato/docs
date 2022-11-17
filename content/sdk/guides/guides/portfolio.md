@@ -1,5 +1,5 @@
 ---
-title: Introduction to Portfolio SDK
+title: Portfolio
 keywords: ["portfolio", "attribution", "optimization", "pnl", "benchmark", "return", "volatility", "metrics", "broker", "integration", "report"]
 excerpt: "The Introduction to Portfolio explains how to use the
 menu and provides a brief description of its sub-menus"
@@ -105,13 +105,13 @@ P.get_orderbook()
 
 This returns the following (a portion of the data):
 
-|    | Date       | Type  | Ticker | Side |  Price | Quantity | Fees | Investment | Currency | Sector            | Industry               | Country       | Region        |
-| -: | :--------- | :---- | :----- | :--- | -----: | -------: | ---: | ---------: | :------- | :---------------- | :--------------------- | :------------ | :------------ |
-| 38 | 2022-05-02 | STOCK | YUM    | Buy  | 115.76 |       11 |   40 |    1313.36 | USD      | Consumer Cyclical | Restaurants            | United States | North America |
-| 37 | 2022-04-12 | STOCK | DGX    | Buy  | 137.27 |       10 |   30 |     1402.7 | USD      | Healthcare        | Diagnostics & Research | United States | North America |
-| 36 | 2022-03-04 | STOCK | TSM    | Buy  | 105.06 |       30 |    0 |     3151.8 | USD      | Technology        | Semiconductors         | Taiwan        | Asia          |
-| 35 | 2022-02-02 | STOCK | BABA   | Buy  | 122.88 |       30 |    0 |     3686.4 | USD      | Consumer Cyclical | Internet Retail        | China         | Asia          |
-| 34 | 2021-12-28 | STOCK | NKE    | Buy  | 166.42 |       13 |   20 |    2183.46 | USD      | Consumer Cyclical | Footwear & Accessories | Germany       | Europe        |
+|     | Date       | Type  | Ticker | Side |  Price | Quantity | Fees | Investment | Currency | Sector            | Industry               | Country       | Region        |
+| --: | :--------- | :---- | :----- | :--- | -----: | -------: | ---: | ---------: | :------- | :---------------- | :--------------------- | :------------ | :------------ |
+|  38 | 2022-05-02 | STOCK | YUM    | Buy  | 115.76 |       11 |   40 |    1313.36 | USD      | Consumer Cyclical | Restaurants            | United States | North America |
+|  37 | 2022-04-12 | STOCK | DGX    | Buy  | 137.27 |       10 |   30 |     1402.7 | USD      | Healthcare        | Diagnostics & Research | United States | North America |
+|  36 | 2022-03-04 | STOCK | TSM    | Buy  | 105.06 |       30 |    0 |     3151.8 | USD      | Technology        | Semiconductors         | Taiwan        | Asia          |
+|  35 | 2022-02-02 | STOCK | BABA   | Buy  | 122.88 |       30 |    0 |     3686.4 | USD      | Consumer Cyclical | Internet Retail        | China         | Asia          |
+|  34 | 2021-12-28 | STOCK | NKE    | Buy  | 166.42 |       13 |   20 |    2183.46 | USD      | Consumer Cyclical | Footwear & Accessories | Germany       | Europe        |
 
 With the portfolio and benchmark loaded in, we can see how the portfolio
 performed compared to if you invested the same amount of money into the
