@@ -3,15 +3,11 @@ title: movers
 description: OpenBB Terminal Function
 ---
 
-# Ally
-
-## movers
-
-### Description: 
+# movers
 
 Get stock movers
 
-### Usage: 
+### Usage 
 ```python
 usage: movers [-t {toplosers,toppctlosers,topvolume,topactive,topgainers,toppctgainers}] [-e {A,N,Q,U,V}] [-l LIMIT]
 ```

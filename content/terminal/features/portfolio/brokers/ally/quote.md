@@ -3,15 +3,11 @@ title: quote
 description: OpenBB Terminal Function
 ---
 
-# Ally
-
-## quote
-
-### Description: 
+# quote
 
 Get stock quote
 
-### Usage: 
+### Usage 
 ```python
 usage: quote [-t TICKER]
 ```

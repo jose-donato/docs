@@ -3,15 +3,11 @@ title: technical
 description: OpenBB Terminal Function
 ---
 
-# Screener
-
-## technical
-
-### Description: 
+# technical
 
 Prints technical data of the companies that meet the pre-set filtering.
 
-### Usage: 
+### Usage 
 ```python
 usage: technical [-p Desired preset.] [-l LIMIT] [-r] [-s SORT [SORT ...]]
 ```

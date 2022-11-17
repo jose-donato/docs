@@ -3,16 +3,11 @@ title: add
 description: OpenBB Terminal Function
 ---
 
-# Pricing
-
-## add
-
-### Description
+# add
 
 Adds a price to the list
 
-### Usage
-
+### Usage 
 ```python
 usage: add -p PRICE -c CHANCE
 ```
@@ -23,6 +18,7 @@ usage: add -p PRICE -c CHANCE
 | ---- | ----------- | ------- | -------- | ------- |
 | price | Projected price of the stock at the expiration date | None | False | None |
 | chance | Chance that the stock is at a given projected price | None | False | None |
+
 
 ## Examples
 
@@ -41,3 +37,4 @@ Estimated price(s) of AAPL at 2022-05-20
 │ 175.00 │ 0.50   │
 └────────┴────────┘
 ```
+

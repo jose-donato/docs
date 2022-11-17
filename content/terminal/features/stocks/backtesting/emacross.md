@@ -3,15 +3,11 @@ title: emacross
 description: OpenBB Terminal Function
 ---
 
-# Backtesting
-
-## emacross
-
-### Description: 
+# emacross
 
 Cross between a long and a short Exponential Moving Average.
 
-### Usage: 
+### Usage 
 ```python
 usage: emacross [-l LONG] [-s SHORT] [--spy] [--no_bench] [--no_short]
 ```

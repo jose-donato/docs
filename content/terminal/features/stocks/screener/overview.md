@@ -3,15 +3,11 @@ title: overview
 description: OpenBB Terminal Function
 ---
 
-# Screener
-
-## overview
-
-### Description: 
+# overview
 
 Prints overview data of the companies that meet the pre-set filtering.
 
-### Usage: 
+### Usage 
 ```python
 usage: overview [-p Desired preset.] [-l LIMIT] [-r] [-s SORT [SORT ...]]
 ```

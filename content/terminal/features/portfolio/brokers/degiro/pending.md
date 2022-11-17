@@ -3,18 +3,17 @@ title: pending
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## pending
-
-### Description: 
+# pending
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: pending
 ```
 
+## Parameters
+
+This command has no parameters
 
 

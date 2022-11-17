@@ -3,15 +3,11 @@ title: financial
 description: OpenBB Terminal Function
 ---
 
-# Screener
-
-## financial
-
-### Description: 
+# financial
 
 Prints financial data of the companies that meet the pre-set filtering.
 
-### Usage: 
+### Usage 
 ```python
 usage: financial [-p Desired preset.] [-l LIMIT] [-r] [-s SORT [SORT ...]]
 ```

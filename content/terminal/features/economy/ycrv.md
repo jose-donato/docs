@@ -3,15 +3,11 @@ title: ycrv
 description: OpenBB Terminal Function
 ---
 
-# Economy
-
-## ycrv
-
-### Description: 
+# ycrv
 
 Generate country yield curve. The yield curve shows the bond rates at different maturities.
 
-### Usage: 
+### Usage 
 ```python
 usage: ycrv [-c COUNTRY] [-d DATE]
 ```

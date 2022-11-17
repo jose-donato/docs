@@ -3,15 +3,11 @@ title: history
 description: OpenBB Terminal Function
 ---
 
-# Coinbase
-
-## history
-
-### Description: 
+# history
 
 Display account history
 
-### Usage: 
+### Usage 
 ```python
 usage: history [-a ACCOUNT] [-l LIMIT]
 ```

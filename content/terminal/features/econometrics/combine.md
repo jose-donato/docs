@@ -3,15 +3,11 @@ title: combine
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## combine
-
-### Description: 
+# combine
 
 The columns you want to add to a dataset. The first argument is the dataset to add columns inand the remaining could be: datasetX.column2,datasetY.column3
 
-### Usage: 
+### Usage 
 ```python
 usage: combine [-d {}] [-c COLUMNS]
 ```

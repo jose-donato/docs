@@ -3,15 +3,11 @@ title: historical
 description: OpenBB Terminal Function
 ---
 
-# Futures
-
-## historical
-
-### Description: 
+# historical
 
 Display futures historical. [Source: YahooFinance]
 
-### Usage: 
+### Usage 
 ```python
 usage: historical -t TICKER [-s START] [-e EXPIRY]
 ```
@@ -21,7 +17,7 @@ usage: historical -t TICKER [-s START] [-e EXPIRY]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | Future ticker to display timeseries separated by comma when multiple, e.g.: BLK,QI |  | False | None |
-| start | Initial date. Default: 3 years ago | 2019-11-17 19:58:42.799430 | True | None |
+| start | Initial date. Default: 3 years ago | 2019-11-18 12:17:12.491319 | True | None |
 | expiry | Select future expiry date with format YYYY-MM |  | True | None |
 
 

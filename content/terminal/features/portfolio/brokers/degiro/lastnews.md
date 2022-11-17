@@ -3,15 +3,11 @@ title: lastnews
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## lastnews
-
-### Description: 
+# lastnews
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: lastnews [-l LIMIT]
 ```

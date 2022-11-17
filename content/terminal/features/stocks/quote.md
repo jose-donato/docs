@@ -3,15 +3,11 @@ title: quote
 description: OpenBB Terminal Function
 ---
 
-# Stocks
-
-## quote
-
-### Description: 
+# quote
 
 Current quote for stock ticker
 
-### Usage: 
+### Usage 
 ```python
 usage: quote -t S_TICKER
 ```

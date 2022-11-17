@@ -3,15 +3,11 @@ title: voi
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## voi
-
-### Description: 
+# voi
 
 Plots Volume + Open Interest of calls vs puts.
 
-### Usage: 
+### Usage 
 ```python
 usage: voi [-v MIN_VOL] [-m MIN_SP] [-M MAX_SP]
 ```

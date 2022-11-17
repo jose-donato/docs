@@ -3,15 +3,11 @@ title: orders
 description: OpenBB Terminal Function
 ---
 
-# Coinbase
-
-## orders
-
-### Description: 
+# orders
 
 List your current open orders
 
-### Usage: 
+### Usage 
 ```python
 usage: orders [-l LIMIT] [-s {product_id,side,price,size,type,created_at,status}] [-r]
 ```

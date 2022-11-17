@@ -3,15 +3,11 @@ title: view
 description: OpenBB Terminal Function
 ---
 
-# Portfolio_Analysis
-
-## view
-
-### Description: 
+# view
 
 Show available portfolios to load.
 
-### Usage: 
+### Usage 
 ```python
 usage: view [-format {csv,json,xlsx,all}]
 ```

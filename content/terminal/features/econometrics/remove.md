@@ -3,16 +3,11 @@ title: remove
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## remove
-
-### Description
+# remove
 
 Remove a dataset from the loaded dataset list
 
-### Usage
-
+### Usage 
 ```python
 usage: remove [-n {}]
 ```
@@ -23,8 +18,10 @@ usage: remove [-n {}]
 | ---- | ----------- | ------- | -------- | ------- |
 | name | The name of the dataset you want to remove | None | True | None |
 
+
 ## Examples
 
 ```python
 2022 Feb 24, 04:37 (🦋) /econometrics/ $ remove thesis
 ```
+

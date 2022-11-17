@@ -3,15 +3,11 @@ title: run
 description: OpenBB Terminal Function
 ---
 
-# Reports
-
-## run
-
-### Description: 
+# run
 
 Run a notebook from this folder: 'C:\Users\teh_coderer\OpenBBUserData\reports\custom reports'.
 
-### Usage: 
+### Usage 
 ```python
 usage: run -f {} [-p PARAMETERS [PARAMETERS ...]]
 ```

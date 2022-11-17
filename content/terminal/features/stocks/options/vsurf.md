@@ -3,15 +3,11 @@ title: vsurf
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## vsurf
-
-### Description: 
+# vsurf
 
 Plot 3D volatility surface.
 
-### Usage: 
+### Usage 
 ```python
 usage: vsurf [-z {IV,OI,LP}]
 ```

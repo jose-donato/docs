@@ -3,15 +3,11 @@ title: spectrum
 description: OpenBB Terminal Function
 ---
 
-# Economy
-
-## spectrum
-
-### Description: 
+# spectrum
 
 View group (sectors, industry or country) spectrum data. [Source: Finviz]
 
-### Usage: 
+### Usage 
 ```python
 usage: spectrum [-g {sector,industry,basic_materials,communication_services,consumer_cyclical,consumer_defensive,energy,financial,healthcare,industrials,real_Estate,technology,utilities,country,capitalization}]
 ```

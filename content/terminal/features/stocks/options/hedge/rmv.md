@@ -3,15 +3,11 @@ title: rmv
 description: OpenBB Terminal Function
 ---
 
-# Hedge
-
-## rmv
-
-### Description: 
+# rmv
 
 Remove one of the options to be shown in the hedge.
 
-### Usage: 
+### Usage 
 ```python
 usage: rmv [-o OPTION [OPTION ...]] [-a]
 ```

@@ -3,15 +3,11 @@ title: pick
 description: OpenBB Terminal Function
 ---
 
-# Hedge
-
-## pick
-
-### Description: 
+# pick
 
 This function plots option hedge diagrams
 
-### Usage: 
+### Usage 
 ```python
 usage: pick -p PICK [PICK ...] [-a AMOUNT]
 ```

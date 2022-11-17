@@ -3,15 +3,11 @@ title: desc
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## desc
-
-### Description: 
+# desc
 
 Show the descriptive statistics of the dataset
 
-### Usage: 
+### Usage 
 ```python
 usage: desc -n {}
 ```

@@ -3,15 +3,11 @@ title: holdp
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## holdp
-
-### Description: 
+# holdp
 
 Display holdings of assets (in percentage)
 
-### Usage: 
+### Usage 
 ```python
 usage: holdp [-u]
 ```

@@ -3,15 +3,11 @@ title: list
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## list
-
-### Description: 
+# list
 
 List order history
 
-### Usage: 
+### Usage 
 ```python
 usage: list [-s STATE] [-l LIMIT]
 ```

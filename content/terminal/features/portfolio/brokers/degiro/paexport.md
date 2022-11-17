@@ -3,15 +3,11 @@ title: paexport
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## paexport
-
-### Description: 
+# paexport
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: paexport -s START [-e END] [-c CURRENCY]
 ```
@@ -21,7 +17,7 @@ usage: paexport -s START [-e END] [-c CURRENCY]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | start | Start date. | None | False | None |
-| end | End date. | 2022-11-16 19:58:42.921836 | True | None |
+| end | End date. | 2022-11-17 12:17:12.585832 | True | None |
 | currency | Used currency. | USD | True | None |
 
 

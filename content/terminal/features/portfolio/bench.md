@@ -3,15 +3,11 @@ title: bench
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## bench
-
-### Description: 
+# bench
 
 Load in a benchmark from a selected list or set your own based on the ticker.
 
-### Usage: 
+### Usage 
 ```python
 usage: bench -b BENCHMARK [BENCHMARK ...] [-s]
 ```

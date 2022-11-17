@@ -3,18 +3,17 @@ title: edebt
 description: OpenBB Terminal Function
 ---
 
-# Economy
-
-## edebt
-
-### Description: 
+# edebt
 
 National debt statistics for various countries. [Source: Wikipedia]
 
-### Usage: 
+### Usage 
 ```python
 usage: edebt
 ```
 
+## Parameters
+
+This command has no parameters
 
 

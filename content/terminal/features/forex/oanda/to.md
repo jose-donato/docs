@@ -3,15 +3,11 @@ title: to
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## to
-
-### Description: 
+# to
 
 Select the "to" currency symbol in a forex pair
 
-### Usage: 
+### Usage 
 ```python
 usage: to -n TO_SYMBOL
 ```

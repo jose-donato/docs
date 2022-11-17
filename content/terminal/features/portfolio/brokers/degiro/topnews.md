@@ -3,18 +3,17 @@ title: topnews
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## topnews
-
-### Description: 
+# topnews
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: topnews
 ```
 
+## Parameters
+
+This command has no parameters
 
 

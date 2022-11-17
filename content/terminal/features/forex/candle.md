@@ -3,15 +3,11 @@ title: candle
 description: OpenBB Terminal Function
 ---
 
-# Forex
-
-## candle
-
-### Description: 
+# candle
 
 Show candle for loaded fx data
 
-### Usage: 
+### Usage 
 ```python
 usage: candle [-p] [--sort {adjclose,open,close,high,low,volume,logret}] [-r] [--raw] [-t] [--ma MOV_AVG] [--log]
 ```

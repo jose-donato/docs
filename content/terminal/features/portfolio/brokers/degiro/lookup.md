@@ -3,15 +3,11 @@ title: lookup
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## lookup
-
-### Description: 
+# lookup
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: lookup [-l LIMIT] [-o OFFSET] search_text
 ```

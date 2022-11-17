@@ -3,15 +3,11 @@ title: holdv
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## holdv
-
-### Description: 
+# holdv
 
 Display holdings of assets (absolute value)
 
-### Usage: 
+### Usage 
 ```python
 usage: holdv [-u]
 ```

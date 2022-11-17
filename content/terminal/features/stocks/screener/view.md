@@ -3,15 +3,11 @@ title: view
 description: OpenBB Terminal Function
 ---
 
-# Screener
-
-## view
-
-### Description: 
+# view
 
 View available presets under presets folder.
 
-### Usage: 
+### Usage 
 ```python
 usage: view [-p Desired preset.]
 ```

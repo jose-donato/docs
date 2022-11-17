@@ -3,15 +3,11 @@ title: order
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## order
-
-### Description: 
+# order
 
 Create order
 
-### Usage: 
+### Usage 
 ```python
 usage: order -u UNITS -p PRICE
 ```

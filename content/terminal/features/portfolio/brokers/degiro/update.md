@@ -3,15 +3,11 @@ title: update
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## update
-
-### Description: 
+# update
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: update -p PRICE id
 ```

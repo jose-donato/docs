@@ -3,15 +3,11 @@ title: valuation
 description: OpenBB Terminal Function
 ---
 
-# Screener
-
-## valuation
-
-### Description: 
+# valuation
 
 Prints valuation data of the companies that meet the pre-set filtering.
 
-### Usage: 
+### Usage 
 ```python
 usage: valuation [-p Desired preset.] [-l LIMIT] [-r] [-s SORT [SORT ...]]
 ```

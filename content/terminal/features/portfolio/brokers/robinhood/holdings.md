@@ -3,18 +3,17 @@ title: holdings
 description: OpenBB Terminal Function
 ---
 
-# Robinhood
-
-## holdings
-
-### Description: 
+# holdings
 
 Display info about your trading accounts on Robinhood
 
-### Usage: 
+### Usage 
 ```python
 usage: holdings
 ```
 
+## Parameters
+
+This command has no parameters
 
 

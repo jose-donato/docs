@@ -3,15 +3,11 @@ title: attrib
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## attrib
-
-### Description: 
+# attrib
 
 Displays sector attribution of the portfolio compared to the S&P 500
 
-### Usage: 
+### Usage 
 ```python
 usage: attrib [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-t {relative,absolute}] [--raw [RAW]]
 ```
