@@ -16,7 +16,7 @@ Plot additional charts
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L3725)]
 
 ```python
-def additional_plots(weights: Any, data: pd.DataFrame, category: Dict = None, title_opt: str = "", freq: str = "D", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, a_sim: float = 100, beta: float = None, b_sim: float = None, pie: bool = False, hist: bool = False, dd: bool = False, rc_chart: bool = False, heat: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def additional_plots(weights: Dict, data: pd.DataFrame, category: Dict = None, title_opt: str = "", freq: str = "D", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, a_sim: float = 100, beta: float = None, b_sim: float = None, pie: bool = False, hist: bool = False, dd: bool = False, rc_chart: bool = False, heat: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ## Parameters
 
@@ -53,7 +53,7 @@ Plot additional charts
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L3725)]
 
 ```python
-def additional_plots(weights: Any, data: pd.DataFrame, category: Dict = None, title_opt: str = "", freq: str = "D", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, a_sim: float = 100, beta: float = None, b_sim: float = None, pie: bool = False, hist: bool = False, dd: bool = False, rc_chart: bool = False, heat: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def additional_plots(weights: Dict, data: pd.DataFrame, category: Dict = None, title_opt: str = "", freq: str = "D", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, a_sim: float = 100, beta: float = None, b_sim: float = None, pie: bool = False, hist: bool = False, dd: bool = False, rc_chart: bool = False, heat: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ## Parameters
 
