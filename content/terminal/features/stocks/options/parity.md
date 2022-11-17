@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## parity
 
-### Description: 
+### Description
 
 Shows whether options are over or under valued
 
-### Usage: 
+### Usage
+
 ```python
 usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 ```
@@ -20,19 +21,17 @@ usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| put | Shows puts instead of calls | None | False | None |
-| ask | Use ask price instead of lastPrice | None | False | None |
-| mini | Minimum strike price shown | None | False | None |
-| maxi | Maximum strike price shown | None | False | None |
-
+| put | Shows puts instead of calls | False | True | None |
+| ask | Use ask price instead of lastPrice | False | True | None |
+| mini | Minimum strike price shown | None | True | None |
+| maxi | Maximum strike price shown | None | True | None |
 
 ## Examples
 
 ```python
+2022 Feb 16, 09:17 (🦋) /stocks/options/ $ load TSLA
 
-2022 Feb 16, 09:17 (✨) /stocks/options/ $ load TSLA
-
-2022 Feb 16, 09:18 (✨) /stocks/options/ $ parity -m 900 -M 950
+2022 Feb 16, 09:18 (🦋) /stocks/options/ $ parity -m 900 -M 950
 Warning: Low volume options may be difficult to trade.
 ┏━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
 ┃ Strike ┃ Call Difference ┃
@@ -59,6 +58,4 @@ Warning: Low volume options may be difficult to trade.
 ├────────┼─────────────────┤
 │ 950.00 │ -3.23           │
 └────────┴─────────────────┘
-
 ```
-

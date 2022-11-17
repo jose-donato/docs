@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## es
 
-### Description: 
+### Description
 
 Provides Expected Shortfall (short: ES) of the selected portfolio.
 
-### Usage: 
+### Usage
+
 ```python
 usage: es [-m] [-d {laplace,student_t,logistic,normal}] [-p PERCENTILE]
 ```
@@ -20,16 +21,14 @@ usage: es [-m] [-d {laplace,student_t,logistic,normal}] [-p PERCENTILE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| use_mean | If one should use the mean of the portfolios return | True | False | None |
-| distribution | Distribution used for the calculations | normal | False | laplace, student_t, logistic, normal |
-| percentile | Percentile used for ES calculations, for example input 99.9 equals a 99.9 Percent Expected Shortfall | 99.9 | False | None |
-
+| use_mean | If one should use the mean of the portfolios return | True | True | None |
+| distribution | Distribution used for the calculations | normal | True | laplace, student_t, logistic, normal |
+| percentile | Percentile used for ES calculations, for example input 99.9 equals a 99.9 Percent Expected Shortfall | 99.9 | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 25, 03:09 (✨) /portfolio/ $ es
+2022 Feb 25, 03:09 (🦋) /portfolio/ $ es
     Portfolio Expected Shortfall
 ┏━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
 ┃       ┃ ES:     ┃ Historical ES: ┃
@@ -42,6 +41,4 @@ usage: es [-m] [-d {laplace,student_t,logistic,normal}] [-p PERCENTILE]
 ├───────┼─────────┼────────────────┤
 │ 99.9% │ -0.0391 │ -0.0277        │
 └───────┴─────────┴────────────────┘
-
 ```
-

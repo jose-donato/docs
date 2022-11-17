@@ -20,12 +20,14 @@ usage: candle [-p] [--sort {adjclose,open,close,high,low,volume,returns,logret}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| plotly | Flag to show interactive plotly chart | True | False | None |
-| sort | Choose a column to sort by. Only works when raw data is displayed. | None | False | adjclose, open, close, high, low, volume, returns, logret |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| raw | Shows raw data instead of chart. | None | False | None |
-| trendlines | Flag to add high and low trends to candle | None | False | None |
-| mov_avg | Add moving average in number of days to plot and separate by a comma. Value for ma (moving average) keyword needs to be greater than 1. | None | False | None |
-| logy | Plot with y axis on log scale | None | False | None |
+| plotly | Flag to show interactive plotly chart | True | True | None |
+| sort | Choose a column to sort by. Only works when raw data is displayed. |  | True | adjclose, open, close, high, low, volume, returns, logret |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| raw | Shows raw data instead of chart. | False | True | None |
+| trendlines | Flag to add high and low trends to candle | False | True | None |
+| mov_avg | Add moving average in number of days to plot and separate by a comma. Value for ma (moving average) keyword needs to be greater than 1. | None | True | None |
+| logy | Plot with y axis on log scale | False | True | None |
 
+
+![candle](https://user-images.githubusercontent.com/46355364/154072214-f4b49833-157f-44a7-be2d-d558ffc6f945.png)
 

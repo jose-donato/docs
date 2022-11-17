@@ -20,6 +20,6 @@ usage: alswe [--focus {all,country,sector,holding}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| focus | The focus of the funds exposure/allocation | all | False | all, country, sector, holding |
+| focus | The focus of the funds exposure/allocation | all | True | all, country, sector, holding |
 
 

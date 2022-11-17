@@ -20,9 +20,9 @@ usage: address [-a] [-t] [-tx] --address ADDRESS
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| account | Account address | None | False | None |
-| token | ERC20 token address | None | False | None |
-| transaction | Transaction hash | None | False | None |
-| address | Ethereum address | None | True | None |
+| account | Account address | False | True | None |
+| token | ERC20 token address | False | True | None |
+| transaction | Transaction hash | False | True | None |
+| address | Ethereum address | False | False | None |
 
 

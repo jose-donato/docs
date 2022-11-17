@@ -20,18 +20,17 @@ usage: events [-c COUNTRY] [-s START_DATE] [-e END_DATE] [-d SPEC_DATE] [-i {hig
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| country | Display calendar for specific country. | None | False | None |
-| start_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | 2022-11-16 | False | None |
-| end_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | 2022-11-16 | False | None |
-| spec_date | Get a specific date for events. Overrides start and end dates. | None | False | None |
-| importance | Event importance classified as high, medium, low or all. | None | False | high, medium, low, all |
-| category | [INVESTING source only] Event category. | None | False | employment, credit, balance, economic_activity, central_banks, bonds, inflation, confidence_index |
+| country | Display calendar for specific country. |  | True | None |
+| start_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | 2022-11-16 | True | None |
+| end_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | 2022-11-16 | True | None |
+| spec_date | Get a specific date for events. Overrides start and end dates. | None | True | None |
+| importance | Event importance classified as high, medium, low or all. | None | True | high, medium, low, all |
+| category | [INVESTING source only] Event category. | None | True | employment, credit, balance, economic_activity, central_banks, bonds, inflation, confidence_index |
 
 
 ## Examples
 
 ```python
-
 2022 Oct 20, 15:19 (🦋) /economy/ $ events -c united_kingdom,spain -s 2022-10-20 -e 2022-11-05 -l 15
 
                                                 Economic Calendar
@@ -68,6 +67,5 @@ usage: events [-c COUNTRY] [-s START_DATE] [-e END_DATE] [-d SPEC_DATE] [-i {hig
 ├────────────┼────────────────┼────────────────────────────────────┼────────┼───────────┼──────────┼────────────┤
 │ 14:00      │ United Kingdom │ BoE MPC Member Mann                │ -      │ -         │ -        │ 2022-10-22 │
 └────────────┴────────────────┴────────────────────────────────────┴────────┴───────────┴──────────┴────────────┘
-
 ```
 

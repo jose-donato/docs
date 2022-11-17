@@ -245,3 +245,12 @@ table :is(tr, td, th, thead) {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151415", endColorstr="#101011", GradientType=1);
 }
+
+pre[class*="language-"] {
+  line-height: 1 !important;
+}
+
+.token{
+  font-family: "Fira Mono", monospace !important;
+  line-height: 1 !important;
+}

@@ -20,7 +20,9 @@ usage: zlma [-l N_LENGTH] [-o N_OFFSET]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_length | Window lengths. Multiple values indicated as comma separated values. | 20 | False | None |
-| n_offset | offset | None | False | None |
+| n_length | Window lengths. Multiple values indicated as comma separated values. | 20 | True | None |
+| n_offset | offset | 0 | True | None |
 
+
+![zlma](https://user-images.githubusercontent.com/46355364/154312786-bc60268b-9da9-4fd9-bed6-fc95f5560075.png)
 

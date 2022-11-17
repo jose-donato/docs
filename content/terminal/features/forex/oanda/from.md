@@ -20,6 +20,6 @@ usage: from -n FROM_SYMBOL
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| from_symbol | From currency | None | True | None |
+| from_symbol | From currency | None | False | None |
 
 

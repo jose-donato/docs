@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## tispw
 
-### Description: 
+### Description
 
 Print top insider sales of the week. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: tispw [-l LIMIT]
 ```
@@ -20,14 +21,12 @@ usage: tispw [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of datarows to display | 10 | False | None |
-
+| limit | Limit of datarows to display | 10 | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 08:20 (✨) /stocks/ins/ $ tispw
+2022 Feb 16, 08:20 (🦋) /stocks/ins/ $ tispw
                                                                                     Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
 ┃ X  ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name         ┃ Insider Name         ┃ Title      ┃ Trade Type  ┃ Price     ┃ Qty        ┃ Owned       ┃ Diff Own ┃ Value         ┃
@@ -69,6 +68,4 @@ usage: tispw [-l LIMIT]
 A: Amended filing
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
-

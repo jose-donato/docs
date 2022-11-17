@@ -20,7 +20,7 @@ usage: list [-s STATE] [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| state | List orders that have a specific state. | ALL | False | None |
-| limit | Limit the number of orders to retrieve. | 20 | False | None |
+| state | List orders that have a specific state. | ALL | True | None |
+| limit | Limit the number of orders to retrieve. | 20 | True | None |
 
 

@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## arkord
 
-### Description: 
+### Description
 
-Orders by ARK Investment Management LLC - https://ark-funds.com/. [Source: https://cathiesark.com]
+Orders by ARK Investment Management LLC - <https://ark-funds.com/>. [Source: <https://cathiesark.com>]
 
-### Usage: 
+### Usage
+
 ```python
 usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,shares}] [-r] [-b] [-c] [--fund {ARKK,ARKF,ARKW,ARKQ,ARKG,ARKX,}]
 ```
@@ -20,19 +21,17 @@ usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,share
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of stocks to display. | 10 | False | None |
-| sort_col | Column to sort by | None | False | date, volume, open, high, close, low, total, weight, shares |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| buys_only | Flag to look at buys only | None | False | None |
-| sells_only | Flag to look at sells only | None | False | None |
-| fund | Filter by fund | None | False | ARKK, ARKF, ARKW, ARKQ, ARKG, ARKX,  |
-
+| limit | Limit of stocks to display. | 10 | True | None |
+| sort_col | Column to sort by |  | True | date, volume, open, high, close, low, total, weight, shares |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| buys_only | Flag to look at buys only | False | True | None |
+| sells_only | Flag to look at sells only | False | True | None |
+| fund | Filter by fund |  | True | ARKK, ARKF, ARKW, ARKQ, ARKG, ARKX,  |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 03:49 (✨) /stocks/disc/ $ arkord
+2022 Feb 16, 03:49 (🦋) /stocks/disc/ $ arkord
 
                                       Orders by ARK Investment Management LLC
 ┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━┳━━━━━━━━┓
@@ -59,7 +58,7 @@ usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,share
 │ 2022-02-15 │ MKFG   │ Buy       │ 1057800 │ 4.55  │ 4.67  │ 4.73  │ 4.54  │ 22131.13   │ ARKX │ 0.0057 │ 4739   │
 └────────────┴────────┴───────────┴─────────┴───────┴───────┴───────┴───────┴────────────┴──────┴────────┴────────┘
 
-2022 Feb 16, 03:50 (✨) /stocks/disc/ $ arkord -b --fund ARKK
+2022 Feb 16, 03:50 (🦋) /stocks/disc/ $ arkord -b --fund ARKK
 
                                          Orders by ARK Investment Management LLC
 ┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━┳━━━━━━━━━┓
@@ -85,6 +84,4 @@ usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,share
 ├────────────┼────────┼───────────┼──────────┼────────┼────────┼────────┼────────┼─────────────┼──────┼────────┼─────────┤
 │ 2022-02-10 │ DNA    │ Buy       │ 13850600 │ 5.64   │ 5.76   │ 6.30   │ 5.60   │ 12554836.34 │ ARKK │ 0.1017 │ 2179659 │
 └────────────┴────────┴───────────┴──────────┴────────┴────────┴────────┴────────┴─────────────┴──────┴────────┴─────────┘
-
 ```
-

@@ -7,22 +7,20 @@ description: OpenBB Terminal Function
 
 ## sust
 
-### Description: 
+### Description
 
 Print sustainability values of the company. The following fields are expected: Palmoil, Controversialweapons, Gambling, Socialscore, Nuclear, Furleather, Alcoholic, Gmo, Catholic, Socialpercentile, Peercount, Governancescore, Environmentpercentile, Animaltesting, Tobacco, Total ESG, Highestcontroversy, ESG Performance, Coal, Pesticides, Adult, Percentile, Peergroup, Smallarms, Environmentscore, Governancepercentile, Militarycontract. [Source: Yahoo Finance]
 
-### Usage: 
+### Usage
+
 ```python
 usage: sust
 ```
 
-
-
 ## Examples
 
 ```python
-
-2022 Feb 16, 09:01 (✨) /stocks/fa/ $ sust
+2022 Feb 16, 09:01 (🦋) /stocks/fa/ $ sust
          Ticker Sustainability
 ┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 ┃                        ┃ Value       ┃
@@ -81,6 +79,4 @@ usage: sust
 ├────────────────────────┼─────────────┤
 │ Military contract      │ False       │
 └────────────────────────┴─────────────┘
-
 ```
-

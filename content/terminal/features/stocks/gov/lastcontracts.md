@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## lastcontracts
 
-### Description: 
+### Description
 
 Last government contracts. [Source: www.quiverquant.com]
 
-### Usage: 
+### Usage
+
 ```python
 usage: lastcontracts [-p PAST_TRANSACTION_DAYS] [-l LIMIT] [-s]
 ```
@@ -20,16 +21,14 @@ usage: lastcontracts [-p PAST_TRANSACTION_DAYS] [-l LIMIT] [-s]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| past_transaction_days | Past transaction days | 2 | False | None |
-| limit | Limit of contracts to display | 20 | False | None |
-| sum | Flag to show total amount of contracts. | None | False | None |
-
+| past_transaction_days | Past transaction days | 2 | True | None |
+| limit | Limit of contracts to display | 20 | True | None |
+| sum | Flag to show total amount of contracts. | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 07:22 (✨) /stocks/gov/ $ lastcontracts
+2022 Feb 16, 07:22 (🦋) /stocks/gov/ $ lastcontracts
                                                         Last Government Contracts
 ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ Date                ┃ Ticker ┃ Amount    ┃ Description                                        ┃ Agency                                ┃
@@ -93,6 +92,4 @@ usage: lastcontracts [-p PAST_TRANSACTION_DAYS] [-l LIMIT] [-s]
 │                     │        │           │ (M-21-31 ENTERPRISE LOGGING ONBOARDING SUPPORT)    │                                       │
 │                     │        │           │ SERVICES.                                          │                                       │
 └─────────────────────┴────────┴───────────┴────────────────────────────────────────────────────┴───────────────────────────────────────┘
-
 ```
-

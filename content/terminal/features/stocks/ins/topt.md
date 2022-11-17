@@ -20,6 +20,6 @@ usage: topt [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of datarows to display | 10 | False | None |
+| limit | Limit of datarows to display | 10 | True | None |
 
 

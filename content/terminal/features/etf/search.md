@@ -20,7 +20,7 @@ usage: search -n NAME [NAME ...] [-d DESCRIPTION [DESCRIPTION ...]]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | Name to look for ETFs | None | True | None |
-| description | Name to look for ETFs | None | False | None |
+| name | Name to look for ETFs |  | False | None |
+| description | Name to look for ETFs |  | True | None |
 
 

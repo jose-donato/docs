@@ -20,14 +20,8 @@ usage: fp -s SLUG
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| slug | NFT floor price collection slug (e.g., bored-ape-yacht-club) | None | True | None |
+| slug | NFT floor price collection slug (e.g., bored-ape-yacht-club) | None | False | None |
 
-
-## Examples
-
-```python
-['\n\n![fp command](https://user-images.githubusercontent.com/43375532/186253073-e50643be-391f-4aa4-949b-946b2d000f38.png)\n']
-```
 
 ![fp command](https://user-images.githubusercontent.com/43375532/186253073-e50643be-391f-4aa4-949b-946b2d000f38.png)
 

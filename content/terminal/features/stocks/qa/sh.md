@@ -20,7 +20,9 @@ usage: sh [-r RFR] [-w WINDOW]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| rfr | Risk free return | None | False | None |
-| window | Rolling window length | 1 | False | None |
+| rfr | Risk free return | 0 | True | None |
+| window | Rolling window length | 1 | True | None |
 
+
+![image](https://user-images.githubusercontent.com/75195383/163530426-77abe5ac-9c21-43e5-a975-5a37c7eb452f.png)
 

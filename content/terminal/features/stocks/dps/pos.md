@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## pos
 
-### Description: 
+### Description
 
 Get dark pool short positions. [Source: Stockgrid]
 
-### Usage: 
+### Usage
+
 ```python
 usage: pos [-l LIMIT] [-s {sv,sv_pct,nsv,nsv_dollar,dpp,dpp_dollar}] [-r]
 ```
@@ -20,16 +21,14 @@ usage: pos [-l LIMIT] [-s {sv,sv_pct,nsv,nsv_dollar,dpp,dpp_dollar}] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of tickers to display. | 10 | False | None |
-| sort_field | Field for which to sort by, where 'sv': Short Vol. [1M], 'sv_pct': Short Vol. %%, 'nsv': Net Short Vol. [1M], 'nsv_dollar': Net Short Vol. ($100M), 'dpp': DP Position [1M], 'dpp_dollar': DP Position ($1B) | dpp_dollar | False | sv, sv_pct, nsv, nsv_dollar, dpp, dpp_dollar |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-
+| limit | Limit of tickers to display. | 10 | True | None |
+| sort_field | Field for which to sort by, where 'sv': Short Vol. [1M], 'sv_pct': Short Vol. %%, 'nsv': Net Short Vol. [1M], 'nsv_dollar': Net Short Vol. ($100M), 'dpp': DP Position [1M], 'dpp_dollar': DP Position ($1B) | dpp_dollar | True | sv, sv_pct, nsv, nsv_dollar, dpp, dpp_dollar |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 08:51 (✨) /stocks/dps/ $ pos
+2022 Feb 15, 08:51 (🦋) /stocks/dps/ $ pos
                                                       Data for: 2022-02-14
 ┌────────┬─────────────────┬──────────────┬─────────────────────┬────────────────────────┬──────────────────┬───────────────────┐
 │ Ticker │ Short Vol. [1M] │ Short Vol. % │ Net Short Vol. [1M] │ Net Short Vol. ($100M) │ DP Position [1M] │ DP Position ($1B) │
@@ -54,6 +53,4 @@ usage: pos [-l LIMIT] [-s {sv,sv_pct,nsv,nsv_dollar,dpp,dpp_dollar}] [-r]
 ├────────┼─────────────────┼──────────────┼─────────────────────┼────────────────────────┼──────────────────┼───────────────────┤
 │ SMH    │ 1.04            │ 62.44        │ 0.41                │ 1.10                   │ 13.29            │ 3.67              │
 └────────┴─────────────────┴──────────────┴─────────────────────┴────────────────────────┴──────────────────┴───────────────────┘
-
 ```
-

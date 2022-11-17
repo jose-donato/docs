@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## upcoming
 
-### Description: 
+### Description
 
 Upcoming earnings release dates. [Source: Seeking Alpha]
 
-### Usage: 
+### Usage
+
 ```python
 usage: upcoming [-l LIMIT] [-p N_PAGES]
 ```
@@ -20,15 +21,13 @@ usage: upcoming [-l LIMIT] [-p N_PAGES]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of upcoming earnings release dates to display. | 1 | False | None |
-| n_pages | Number of pages to read upcoming earnings from in Seeking Alpha website. | 10 | False | None |
-
+| limit | Limit of upcoming earnings release dates to display. | 1 | True | None |
+| n_pages | Number of pages to read upcoming earnings from in Seeking Alpha website. | 10 | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 04:17 (✨) /stocks/disc/ $ upcoming
+2022 Feb 16, 04:17 (🦋) /stocks/disc/ $ upcoming
 
             Upcoming Earnings Releases
 ┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -266,6 +265,4 @@ usage: upcoming [-l LIMIT] [-p N_PAGES]
 ├───────┼─────────────────────────────────────────┤
 │ GOGL  │ Golden Ocean Group Limited              │
 └───────┴─────────────────────────────────────────┘
-
 ```
-

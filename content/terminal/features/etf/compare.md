@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## compare
 
-### Description: 
+### Description
 
 Compare selected ETFs [Source: StockAnalysis]
 
-### Usage: 
+### Usage
+
 ```python
 usage: compare -e NAMES
 ```
@@ -20,14 +21,12 @@ usage: compare -e NAMES
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| names | Symbols to compare | None | True | None |
-
+| names | Symbols to compare | None | False | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 04:24 (✨) /etf/ $ compare VOO,SPY
+2022 Feb 15, 04:24 (🦋) /etf/ $ compare VOO,SPY
                ETF Comparisons
 ┌────────────────┬────────────┬─────────────┐
 │                │ VOO        │ SPY         │
@@ -60,6 +59,4 @@ usage: compare -e NAMES
 ├────────────────┼────────────┼─────────────┤
 │ Holdings       │ 510        │ 507         │
 └────────────────┴────────────┴─────────────┘
-
 ```
-

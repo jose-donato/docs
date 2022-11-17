@@ -20,8 +20,10 @@ usage: macd [--fast N_FAST] [--slow N_SLOW] [--signal N_SIGNAL]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_fast | The short period. | 12 | False | None |
-| n_slow | The long period. | 26 | False | None |
-| n_signal | The signal period. | 9 | False | None |
+| n_fast | The short period. | 12 | True | None |
+| n_slow | The long period. | 26 | True | None |
+| n_signal | The signal period. | 9 | True | None |
 
+
+![macd](https://user-images.githubusercontent.com/46355364/154311220-d18eb93e-76b3-4abb-b9c6-86484f462c55.png)
 

@@ -20,13 +20,12 @@ usage: delete [--delete DELETE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| delete | The columns you want to delete from a dataset. Use format: dataset.column or multiple with dataset.column,datasetb.column2 | None | False | None |
+| delete | The columns you want to delete from a dataset. Use format: dataset.column or multiple with dataset.column,datasetb.column2 | None | True | None |
 
 
 ## Examples
 
 ```python
-
 (🦋) /forecast/ $ load TSLA.csv
 
 (🦋) /forecast/ $ roc TSLA
@@ -89,6 +88,5 @@ TSLA dataset has shape (row, column): (611, 7)
 ├───┼────────────┼────────┼────────┼────────┼────────┼───────────┼───────────┤
 │ 9 │ 2020-01-15 │ 105.95 │ 107.57 │ 103.36 │ 103.70 │ 103.70    │ 86844000  │
 └───┴────────────┴────────┴────────┴────────┴────────┴───────────┴───────────┘
-
 ```
 

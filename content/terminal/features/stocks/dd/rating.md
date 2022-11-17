@@ -20,6 +20,6 @@ usage: rating [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | limit of last days to display ratings | 10 | False | None |
+| limit | limit of last days to display ratings | 10 | True | None |
 
 

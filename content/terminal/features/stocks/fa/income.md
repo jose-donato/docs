@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## income
 
-### Description: 
+### Description
 
 Prints a complete income statement over time. This can be either quarterly or annually. The following fields are expected: Accepted date, Cost and expenses, Cost of revenue, Depreciation and amortization, Ebitda, Ebitda Ratio, Eps, EPS Diluted, Filling date, Final link, General and administrative expenses, Gross profit, Gross profit ratio, Income before tax, Income before tax ratio, Income tax expense, Interest expense, Link, Net income, Net income ratio, Operating expenses, Operating income, Operating income ratio, Other expenses, Period, Research and development expenses, Revenue, Selling and marketing expenses, Total other income expenses net, Weighted average shs out, Weighted average shs out dil [Source: Alpha Vantage]
 
-### Usage: 
+### Usage
+
 ```python
 usage: income [-q] [-r] [-p PLOT]
 ```
@@ -20,16 +21,14 @@ usage: income [-q] [-r] [-p PLOT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| b_quarter | Quarter fundamental data flag. | None | False | None |
-| ratios | Shows percentage change of values. | None | False | None |
-| plot | Rows to plot, comma separated. (-1 represents invalid data) | None | False | None |
-
+| b_quarter | Quarter fundamental data flag. | False | True | None |
+| ratios | Shows percentage change of values. | False | True | None |
+| plot | Rows to plot, comma separated. (-1 represents invalid data) | None | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 06:23 (✨) /stocks/fa/ $ income -l 5
+2022 Feb 16, 06:23 (🦋) /stocks/fa/ $ income -l 5
                                         MSFT Income Statement
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
 ┃                                   ┃ 2017-06-30 ┃ 2018-06-30 ┃ 2019-06-30 ┃ 2020-06-30 ┃ 2021-06-30 ┃
@@ -84,6 +83,4 @@ usage: income [-q] [-r] [-p PLOT]
 ├───────────────────────────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 │ netIncome                         │ 25.489 B   │ 16.571 B   │ 39.240 B   │ 44.281 B   │ 61.271 B   │
 └───────────────────────────────────┴────────────┴────────────┴────────────┴────────────┴────────────┘
-
 ```
-

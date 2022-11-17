@@ -20,6 +20,6 @@ usage: balance [--vs VS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| vs | Quote currency (what to view coin vs) | USDT | False | None |
+| vs | Quote currency (what to view coin vs) | USDT | True | None |
 
 

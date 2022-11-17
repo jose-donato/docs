@@ -20,15 +20,14 @@ usage: rename [-d {}] -o OLDCOL -n NEWCOL
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dataset | Dataset that will get a column renamed | None | False |  |
-| oldcol | Old column from dataset to be renamed | None | True | None |
-| newcol | New column from dataset to be renamed | None | True | None |
+| dataset | Dataset that will get a column renamed | None | True |  |
+| oldcol | Old column from dataset to be renamed | None | False | None |
+| newcol | New column from dataset to be renamed | None | False | None |
 
 
 ## Examples
 
 ```python
-
 2022 May 31, 04:57 (🦋) /econometrics/ $ load wage_panel -a wp
 
 2022 May 31, 04:58 (🦋) /econometrics/ $ rename wp -o year -n date
@@ -59,6 +58,5 @@ usage: rename [-d {}] -o OLDCOL -n NEWCOL
 ├───┼───────┼─────────┼───────┼───────┼──────┼─────────┼─────────┼───────┼───────┼───────┼─────────┼────────────┤
 │ 9 │ 17.00 │ 1981.00 │ 0.00  │ 5.00  │ 0.00 │ 2804.00 │ 0.00    │ 13.00 │ 0.00  │ 1.52  │ 25.00   │ 2.00       │
 └───┴───────┴─────────┴───────┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
-
 ```
 

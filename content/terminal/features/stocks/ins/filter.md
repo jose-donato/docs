@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## filter
 
-### Description: 
+### Description
 
 Print open insider filtered data using loaded preset. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: filter [-l LIMIT] [-u]
 ```
@@ -20,15 +21,13 @@ usage: filter [-l LIMIT] [-u]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of datarows to display | 10 | False | None |
-| urls | Flag to show hyperlinks | None | False | None |
-
+| limit | Limit of datarows to display | 10 | True | None |
+| urls | Flag to show hyperlinks | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 16, 07:51 (✨) /stocks/ins/ $ filter
+2022 Feb 16, 07:51 (🦋) /stocks/ins/ $ filter
                                                                                   Insider filtered
 ┏━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ X ┃ Trading Date ┃ Ticker ┃ Insider               ┃ Title                        ┃ Price   ┃ Quantity    ┃ Owned       ┃ Delta Own ┃ Value           ┃ Company                    ┃
@@ -55,6 +54,4 @@ M: Multiple transactions in filing; earliest reported transaction date & weighte
 
 S - Sale: Sale of securities on an exchange or to another person
 S - Sale+OE: Sale of securities on an exchange or to another person (after option exercise)
-
 ```
-

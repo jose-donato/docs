@@ -20,7 +20,7 @@ usage: account [--all] [-c CURRENCY]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| all | Flag to display all your account | None | False | None |
-| currency | Currency to display value in. | USD | False | None |
+| all | Flag to display all your account | False | True | None |
+| currency | Currency to display value in. | USD | True | None |
 
 

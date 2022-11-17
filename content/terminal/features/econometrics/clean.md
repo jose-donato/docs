@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## clean
 
-### Description: 
+### Description
 
 Clean a dataset by filling and dropping NaN values.
 
-### Usage: 
+### Usage
+
 ```python
 usage: clean [-n {}] [--fill {rfill,cfill,rbfill,cbfill,rffill,bffill}] [-d {rdrop,cdrop}]
 ```
@@ -20,16 +21,15 @@ usage: clean [-n {}] [--fill {rfill,cfill,rbfill,cbfill,rffill,bffill}] [-d {rdr
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| name | The name of the dataset you want to clean up | None | False | None |
-| fill | The method of filling NaNs. This has options to fill rows (rfill, rbfill, rffill) or fill columns (cfill, cbfill, cffill). Furthermore, it has the option to forward fill and backward fill (up to --limit) which refer to how many rows/columns can be set equal to the last non-NaN value | None | False | rfill, cfill, rbfill, cbfill, rffill, bffill |
-| drop | The method of dropping NaNs. This either has the option rdrop (drop rows that contain NaNs) or cdrop (drop columns that contain NaNs) | None | False | rdrop, cdrop |
-
+| name | The name of the dataset you want to clean up | None | True | None |
+| fill | The method of filling NaNs. This has options to fill rows (rfill, rbfill, rffill) or fill columns (cfill, cbfill, cffill). Furthermore, it has the option to forward fill and backward fill (up to --limit) which refer to how many rows/columns can be set equal to the last non-NaN value |  | True | rfill, cfill, rbfill, cbfill, rffill, bffill |
+| drop | The method of dropping NaNs. This either has the option rdrop (drop rows that contain NaNs) or cdrop (drop columns that contain NaNs) |  | True | rdrop, cdrop |
 
 ## Examples
 
 ```python
 txt
-2022 Feb 24, 04:58 (✨) /econometrics/ $ show thesis
+2022 Feb 24, 04:58 (🦋) /econometrics/ $ show thesis
                                                                                 thesis
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
 ┃                                                ┃ current_assets ┃ assets  ┃ debt   ┃ depr_amor ┃ income ┃ current_liabilities ┃ revenue ┃ equity ┃ interest_expense ┃
@@ -54,6 +54,4 @@ txt
 ├────────────────────────────────────────────────┼────────────────┼─────────┼────────┼───────────┼────────┼─────────────────────┼─────────┼────────┼──────────────────┤
 │ ('AAR Corp', Timestamp('2018-04-01 00:00:00')) │ 942.70         │ 1524.70 │ 177.20 │ 9.10      │ 18.10  │ 333.30              │ 473.50  │ 936.30 │ 2.20             │
 └────────────────────────────────────────────────┴────────────────┴─────────┴────────┴───────────┴────────┴─────────────────────┴─────────┴────────┴──────────────────┘
-
 ```
-

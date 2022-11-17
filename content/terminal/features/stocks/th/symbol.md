@@ -20,6 +20,6 @@ usage: symbol [-n SYMBOL]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| symbol | Symbol | None | False | None |
+| symbol | Symbol | None | True | None |
 
 

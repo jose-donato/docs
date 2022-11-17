@@ -20,7 +20,7 @@ usage: sbc -c CATEGORY [CATEGORY ...] [-l LIMIT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| category | Category to look for | None | True | None |
-| limit | Limit of ETFs to display | 5 | False | None |
+| category | Category to look for | None | False | None |
+| limit | Limit of ETFs to display | 5 | True | None |
 
 

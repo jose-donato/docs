@@ -20,7 +20,7 @@ usage: pick -p PICK [PICK ...] [-a AMOUNT]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| pick | Choose what you would like to pick | None | True | None |
-| amount | Choose the amount invested | 1000 | False | None |
+| pick | Choose what you would like to pick | None | False | None |
+| amount | Choose the amount invested | 1000 | True | None |
 
 

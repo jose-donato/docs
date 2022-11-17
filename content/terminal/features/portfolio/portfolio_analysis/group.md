@@ -20,7 +20,7 @@ usage: group [-g {}] [-a]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| group | Column to group by | Ticker | False | Index([], dtype='object') |
-| allocation | Add allocation column in % to dataframe | None | False | None |
+| group | Column to group by | Ticker | True | Index([], dtype='object') |
+| allocation | Add allocation column in % to dataframe | False | True | None |
 
 

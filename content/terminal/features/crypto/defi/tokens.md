@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## tokens
 
-### Description: 
+### Description
 
-Display tokens trade-able on Uniswap DEX [Source: https://thegraph.com/en/]
+Display tokens trade-able on Uniswap DEX [Source: <https://thegraph.com/en/>]
 
-### Usage: 
+### Usage
+
 ```python
 usage: tokens [--skip SKIP] [--limit LIMIT] [-s {index,symbol,name,tradeVolumeUSD,totalLiquidity,txCount}] [-r]
 ```
@@ -20,17 +21,15 @@ usage: tokens [--skip SKIP] [--limit LIMIT] [-s {index,symbol,name,tradeVolumeUS
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| skip | Number of records to skip | None | False | None |
-| limit | Number of records to display | 20 | False | None |
-| sortby | Sort by given column. Default: index | index | False | index, symbol, name, tradeVolumeUSD, totalLiquidity, txCount |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-
+| skip | Number of records to skip | 0 | True | None |
+| limit | Number of records to display | 20 | True | None |
+| sortby | Sort by given column. Default: index | index | True | index, symbol, name, tradeVolumeUSD, totalLiquidity, txCount |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 06:36 (✨) /crypto/defi/ $ tokens
+2022 Feb 15, 06:36 (🦋) /crypto/defi/ $ tokens
                                  UniSwarp DEX Trade-able Tokens
 ┌───────┬──────────────┬────────────────────────────┬────────────────┬────────────────┬─────────┐
 │ index │ symbol       │ name                       │ tradeVolumeUSD │ totalLiquidity │ txCount │
@@ -75,6 +74,4 @@ usage: tokens [--skip SKIP] [--limit LIMIT] [-s {index,symbol,name,tradeVolumeUS
 ├───────┼──────────────┼────────────────────────────┼────────────────┼────────────────┼─────────┤
 │ 19    │ TCAD         │ TrueCAD                    │ 6.5K           │ 599            │ 141     │
 └───────┴──────────────┴────────────────────────────┴────────────────┴────────────────┴─────────┘
-
 ```
-

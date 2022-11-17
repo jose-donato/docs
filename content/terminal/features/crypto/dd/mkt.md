@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## mkt
 
-### Description: 
+### Description
 
 Get all markets found for given coin. You can display only N number of markets with --limt parameter. You can sort data by pct_volume_share, exchange, pair, trust_score, volume, price --sort parameter and also with --reverse flag to sort ascending. You can use additional flag --urls to see urls for each market Displays: exchange, pair, trust_score, volume, price, pct_volume_share,
 
-### Usage: 
+### Usage
+
 ```python
 usage: mkt [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD,SGD,NGN,PHP,MXN,BRL,THB,CLP,CNY,CZK,DKK,HUF,IDR,ILS,INR,MYR,NOK,PKR,SEK,TWD,ZAR,VND,BOB,COP,PEN,ARS,ISK}] [-l LIMIT] [-s {pct_volume_share,exchange,pair,trust_score,volume,price}] [-r] [-u]
 ```
@@ -20,18 +21,16 @@ usage: mkt [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HK
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| vs | Quoted currency. Default USD | USD | False | BTC, ETH, USD, EUR, PLN, KRW, GBP, CAD, JPY, RUB, TRY, NZD, AUD, CHF, UAH, HKD, SGD, NGN, PHP, MXN, BRL, THB, CLP, CNY, CZK, DKK, HUF, IDR, ILS, INR, MYR, NOK, PKR, SEK, TWD, ZAR, VND, BOB, COP, PEN, ARS, ISK |
-| limit | Limit of records | 20 | False | None |
-| sortby | Sort by given column. Default: pct_volume_share | pct_volume_share | False | pct_volume_share, exchange, pair, trust_score, volume, price |
-| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | None | False | None |
-| urls | Flag to show urls. If you will use that flag you will see only: exchange, pair, trust_score, market_url columns | None | False | None |
-
+| vs | Quoted currency. Default USD | USD | True | BTC, ETH, USD, EUR, PLN, KRW, GBP, CAD, JPY, RUB, TRY, NZD, AUD, CHF, UAH, HKD, SGD, NGN, PHP, MXN, BRL, THB, CLP, CNY, CZK, DKK, HUF, IDR, ILS, INR, MYR, NOK, PKR, SEK, TWD, ZAR, VND, BOB, COP, PEN, ARS, ISK |
+| limit | Limit of records | 20 | True | None |
+| sortby | Sort by given column. Default: pct_volume_share | pct_volume_share | True | pct_volume_share, exchange, pair, trust_score, volume, price |
+| reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+| urls | Flag to show urls. If you will use that flag you will see only: exchange, pair, trust_score, market_url columns | False | True | None |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 07:41 (✨) /crypto/dd/ $ mkt
+2022 Feb 15, 07:41 (🦋) /crypto/dd/ $ mkt
                                           All Markets
 ┌─────────────────────┬──────────┬─────────────┬──────────────────┬───────────┬────────────────┐
 │ exchange            │ pair     │ trust_score │ pct_volume_share │ usd_price │ usd_volume     │
@@ -76,6 +75,4 @@ usage: mkt [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HK
 ├─────────────────────┼──────────┼─────────────┼──────────────────┼───────────┼────────────────┤
 │ DigiFinex           │ BTC/USDT │ high        │ 0.31             │ 44394.03  │ 339944185.15   │
 └─────────────────────┴──────────┴─────────────┴──────────────────┴───────────┴────────────────┘
-
 ```
-

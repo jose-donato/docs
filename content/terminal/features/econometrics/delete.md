@@ -20,13 +20,12 @@ usage: delete [-d DELETE]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| delete | The columns you want to delete from a dataset. Use format: dataset.column or multiple with dataset.column,dataset.column2 | None | False | None |
+| delete | The columns you want to delete from a dataset. Use format: dataset.column or multiple with dataset.column,dataset.column2 | None | True | None |
 
 
 ## Examples
 
 ```python
-
 2022 May 31, 04:53 (🦋) /econometrics/ $ load wage_panel -a wp
 
 2022 May 31, 04:53 (🦋) /econometrics/ $ show wp
@@ -84,6 +83,5 @@ usage: delete [-d DELETE]
 ├───┼───────┼──────┼─────────┼─────────┼───────┼───────┼───────┼─────────┼────────────┤
 │ 9 │ 17.00 │ 0.00 │ 2804.00 │ 0.00    │ 13.00 │ 0.00  │ 1.52  │ 25.00   │ 2.00       │
 └───┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
-
 ```
 

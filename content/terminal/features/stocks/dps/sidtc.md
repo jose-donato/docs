@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## sidtc
 
-### Description: 
+### Description
 
 Print short interest and days to cover. [Source: Stockgrid]
 
-### Usage: 
+### Usage
+
 ```python
 usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 ```
@@ -20,15 +21,13 @@ usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| limit | Limit of tickers to display. | 10 | False | None |
-| sort_field | Field for which to sort by, where 'float': Float Short %%, 'dtc': Days to Cover, 'si': Short Interest | float | False | float, dtc, si |
-
+| limit | Limit of tickers to display. | 10 | True | None |
+| sort_field | Field for which to sort by, where 'float': Float Short %%, 'dtc': Days to Cover, 'si': Short Interest | float | True | float, dtc, si |
 
 ## Examples
 
 ```python
-
-2022 Feb 15, 11:07 (✨) /stocks/dps/ $ sidtc
+2022 Feb 15, 11:07 (🦋) /stocks/dps/ $ sidtc
                       Data for: 2022-01-31
 ┌────────┬───────────────┬───────────────┬─────────────────────┐
 │ Ticker │ Float Short % │ Days to Cover │ Short Interest [1M] │
@@ -53,6 +52,4 @@ usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 ├────────┼───────────────┼───────────────┼─────────────────────┤
 │ AXDX   │ 18.75         │ 19.71         │ 7.00                │
 └────────┴───────────────┴───────────────┴─────────────────────┘
-
 ```
-

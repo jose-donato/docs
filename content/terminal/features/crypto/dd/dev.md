@@ -7,22 +7,20 @@ description: OpenBB Terminal Function
 
 ## dev
 
-### Description: 
+### Description
 
 Developers data for loaded coin. If the development data is available you can see how the code development of given coin is going on. There are some statistics that shows number of stars, forks, subscribers, pull requests, commits, merges, contributors on github.
 
-### Usage: 
+### Usage
+
 ```python
 usage: dev
 ```
 
-
-
 ## Examples
 
 ```python
-
-2022 Feb 15, 07:13 (✨) /crypto/dd/ $ dev
+2022 Feb 15, 07:13 (🦋) /crypto/dd/ $ dev
    Developers Data for Loaded Coin
 ┌───────────────────────────┬───────┐
 │ Metric                    │ Value │
@@ -43,6 +41,4 @@ usage: dev
 ├───────────────────────────┼───────┤
 │ Commit Count 4 Weeks      │ 266   │
 └───────────────────────────┴───────┘
-
 ```
-
