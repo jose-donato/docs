@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # info
 
-## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_model.get_info
+Gets ticker symbol info
 
-```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L31)]
+
+```python
 def get_info(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L31)
-
-Description: Gets ticker symbol info
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Gets ticker symbol info
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of yfinance information |
-
-## Examples
 

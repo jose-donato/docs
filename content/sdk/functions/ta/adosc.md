@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.technical_analysis.volume_model.adosc
+Calculate AD oscillator technical indicator
 
-```python title='openbb_terminal/common/technical_analysis/volume_model.py'
-def adosc(data: pd.DataFrame, use_open: bool, fast: int, slow: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L46)]
+
+```python
+def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int = 10) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L46)
-
-Description: Calculate AD oscillator technical indicator
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
-| use_open | bool | Whether to use open prices | None | False |
-| fast | int | Fast value | None | False |
-| slow | int | Slow value | None | False |
+| use_open | bool | Whether to use open prices | False | True |
+| fast | int | Fast value | 3 | True |
+| slow | int | Slow value | 10 | True |
 
 ## Returns
 
@@ -35,39 +33,33 @@ Description: Calculate AD oscillator technical indicator
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with technical indicator |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.technical_analysis.volume_view.display_adosc
+Plots AD Osc Indicator
 
-```python title='openbb_terminal/common/technical_analysis/volume_view.py'
-def display_adosc(data: pd.DataFrame, fast: int, slow: int, use_open: bool, symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L141)]
+
+```python
+def display_adosc(data: pd.DataFrame, fast: int = 3, slow: int = 10, use_open: bool = False, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L141)
-
-Description: Plots AD Osc Indicator
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| use_open | bool | Whether to use open prices in calculation | None | False |
-| fast | int | Length of fast window | None | False |
-| slow | int | Length of slow window | None | False |
-| symbol | str | Stock ticker | None | False |
-| export | str | Format to export data | None | False |
+| use_open | bool | Whether to use open prices in calculation | False | True |
+| fast | int | Length of fast window | 3 | True |
+| slow | int | Length of slow window | 10 | True |
+| symbol | str | Stock ticker |  | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

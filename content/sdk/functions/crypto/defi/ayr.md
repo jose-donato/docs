@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.terraengineer_model.get_anchor_yield_reserve
+Displays the 30-day history of the Anchor Yield Reserve.
 
-```python title='openbb_terminal/cryptocurrency/defi/terraengineer_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L63)]
+
+```python
 def get_anchor_yield_reserve() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L63)
-
-Description: Displays the 30-day history of the Anchor Yield Reserve.
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,34 +28,28 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing historical data |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.terraengineer_view.display_anchor_yield_reserve
+Plots the 30-day history of the Anchor Yield Reserve.
 
-```python title='openbb_terminal/cryptocurrency/defi/terraengineer_view.py'
-def display_anchor_yield_reserve(export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L85)]
+
+```python
+def display_anchor_yield_reserve(export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L85)
-
-Description: Plots the 30-day history of the Anchor Yield Reserve.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| export | str | Export dataframe data to csv,json,xlsx file, by default False | False | False |
+| export | str | Export dataframe data to csv,json,xlsx file, by default False |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

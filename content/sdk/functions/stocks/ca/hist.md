@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.comparison_analysis.yahoo_finance_model.get_historical
+Get historical prices for all comparison stocks
 
-```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py'
-def get_historical(similar: List[str], start_date: str, candle_type: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L31)]
+
+```python
+def get_historical(similar: List[str], start_date: str = None, candle_type: str = "a") -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L31)
-
-Description: Get historical prices for all comparison stocks
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
-| candle_type | str | Candle variable to compare, by default "a" for Adjusted Close. Possible values are: o, h, l, c, a, v, r | None | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
+| candle_type | str | Candle variable to compare, by default "a" for Adjusted Close. Possible values are: o, h, l, c, a, v, r | a | True |
 
 ## Returns
 
@@ -34,38 +32,32 @@ Description: Get historical prices for all comparison stocks
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing candle type variable for each ticker |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.comparison_analysis.yahoo_finance_view.display_historical
+Display historical stock prices. [Source: Yahoo Finance]
 
-```python title='openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py'
-def display_historical(similar: List[str], start_date: str, candle_type: str, normalize: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L43)]
+
+```python
+def display_historical(similar: List[str], start_date: str = None, candle_type: str = "a", normalize: bool = True, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L44)
-
-Description: Display historical stock prices. [Source: Yahoo Finance]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
-| candle_type | str | OHLCA column to use or R to use daily returns calculated from Adjusted Close, by default "a" for Adjusted Close | None | True |
-| normalize | bool | Boolean to normalize all stock prices using MinMax defaults True | s | True |
-| export | str | Format to export historical prices, by default "" | None | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
+| candle_type | str | OHLCA column to use or R to use daily returns calculated from Adjusted Close, by default "a" for Adjusted Close | a | True |
+| normalize | bool | Boolean to normalize all stock prices using MinMax defaults True | True | True |
+| export | str | Format to export historical prices, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

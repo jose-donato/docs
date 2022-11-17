@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # lowfloat
 
-## openbb_terminal.stocks.discovery.shortinterest_model.get_low_float
+Returns low float DataFrame
 
-```python title='openbb_terminal/stocks/discovery/shortinterest_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L15)]
+
+```python
 def get_low_float() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L15)
-
-Description: Returns low float DataFrame
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | DataFrame | Low float DataFrame with the following columns:<br/>Ticker, Company, Exchange, ShortInt, Float, Outstd, Industry |
-
-## Examples
 

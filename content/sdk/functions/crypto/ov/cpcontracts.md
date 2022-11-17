@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.coinpaprika_model.get_contract_platform
+Gets all contract addresses for given platform [Source: CoinPaprika]
 
-```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
-def get_contract_platform(platform_id: str, sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L401)]
+
+```python
+def get_contract_platform(platform_id: str = "eth-ethereum", sortby: str = "active", ascend: bool = True) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L419)
-
-Description: Gets all contract addresses for given platform [Source: CoinPaprika]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| platform_id | str | Blockchain platform like eth-ethereum | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascend | None | False |
+| platform_id | str | Blockchain platform like eth-ethereum | eth-ethereum | True |
+| sortby | str | Key by which to sort data | active | True |
+| ascend | bool | Flag to sort data ascend | True | True |
 
 ## Returns
 
@@ -34,37 +32,31 @@ Description: Gets all contract addresses for given platform [Source: CoinPaprika
 | ---- | ----------- |
 | pd.DataFrame | id, type, active |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.coinpaprika_view.display_contracts
+Gets all contract addresses for given platform. [Source: CoinPaprika]
 
-```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
-def display_contracts(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L349)]
+
+```python
+def display_contracts(symbol: str, sortby: str = "active", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L349)
-
-Description: Gets all contract addresses for given platform. [Source: CoinPaprika]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| platform | str | Blockchain platform like eth-ethereum | None | False |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| platform | str | Blockchain platform like eth-ethereum | None | True |
+| limit | int | Number of records to display | 15 | True |
+| sortby | str | Key by which to sort data | active | True |
+| ascend | bool | Flag to sort data ascending | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

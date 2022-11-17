@@ -11,54 +11,46 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forex.oanda.oanda_model.cancel_pending_order_request
+Request cancellation of a pending order.
 
-```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def cancel_pending_order_request(orderID: str, accountID: str) -> Union
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L346)]
+
+```python
+def cancel_pending_order_request(orderID: str, accountID: str = "REPLACE_ME") -> Union
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L346)
-
-Description: Request cancellation of a pending order.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | orderID | str | The pending order ID to cancel. | None | False |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forex.oanda.oanda_view.cancel_pending_order
+Cancel a Pending Order.
 
-```python title='openbb_terminal/forex/oanda/oanda_view.py'
-def cancel_pending_order(accountID: str, orderID: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L197)]
+
+```python
+def cancel_pending_order(accountID: str, orderID: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L202)
-
-Description: Cancel a Pending Order.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
-| orderID | str | The pending order ID to cancel. | None | False |
+| orderID | str | The pending order ID to cancel. |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.terramoney_fcd_model.get_staking_ratio_history
+Get terra blockchain staking ratio history [Source: https://fcd.terra.dev/swagger]
 
-```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
-def get_staking_ratio_history(limit: int) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L287)]
+
+```python
+def get_staking_ratio_history(limit: int = 200) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L287)
-
-Description: Get terra blockchain staking ratio history [Source: https://fcd.terra.dev/swagger]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | The number of ratios to show | None | False |
+| limit | int | The number of ratios to show | 200 | True |
 
 ## Returns
 
@@ -32,35 +30,29 @@ Description: Get terra blockchain staking ratio history [Source: https://fcd.ter
 | ---- | ----------- |
 | pd.DataFrame | historical staking ratio |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.terramoney_fcd_view.display_staking_ratio_history
+Plots terra blockchain staking ratio history [Source: https://fcd.terra.dev/v1]
 
-```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
-def display_staking_ratio_history(limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L207)]
+
+```python
+def display_staking_ratio_history(limit: int = 90, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L207)
-
-Description: Plots terra blockchain staking ratio history [Source: https://fcd.terra.dev/v1]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 90 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

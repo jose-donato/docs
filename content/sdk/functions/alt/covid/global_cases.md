@@ -12,35 +12,40 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_global_cases(country: str) -> DataFrame
 ```
-
 ## Parameters
 
-| Name    | Type | Description           | Default | Optional |
-| ------- | ---- | --------------------- | ------- | -------- |
-| country | str  | Country to search for | None    | False    |
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country to search for | None | False |
 
 ## Returns
 
-| Type         | Description                   |
-| ------------ | ----------------------------- |
+| Type | Description |
+| ---- | ----------- |
 | pd.DataFrame | Dataframe of historical cases |
 
 ## Examples
 
 Dataframe of historical cases for United States
 
+
 ```python
 df = get_global_cases("United States")
 ```
 
+## Examples
+
 Dataframe of historical cases for Portugal
+
 
 ```python
 df = get_global_cases("Portugal")
 ```
 
-Dataframe of historical cases for Spain
+## Examples
 
+Dataframe of historical cases for Spain
 ```python
 df = get_global_cases("Spain")
 ```
+

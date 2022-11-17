@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # dupont
 
-## openbb_terminal.stocks.fundamental_analysis.av_model.get_dupont
+Get dupont ratios
 
-```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L712)]
+
+```python
 def get_dupont(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L712)
-
-Description: Get dupont ratios
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get dupont ratios
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The dupont ratio breakdown |
-
-## Examples
 

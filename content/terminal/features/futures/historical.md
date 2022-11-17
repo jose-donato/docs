@@ -17,7 +17,7 @@ usage: historical -t TICKER [-s START] [-e EXPIRY]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | Future ticker to display timeseries separated by comma when multiple, e.g.: BLK,QI |  | False | None |
-| start | Initial date. Default: 3 years ago | 2019-11-18 12:17:12.491319 | True | None |
+| start | Initial date. Default: 3 years ago | 2019-11-18 15:42:05.880579 | True | None |
 | expiry | Select future expiry date with format YYYY-MM |  | True | None |
 
 

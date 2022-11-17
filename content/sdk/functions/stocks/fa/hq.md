@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # hq
 
-## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_model.get_hq
+Gets google map url for headquarter
 
-```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L228)]
+
+```python
 def get_hq(symbol: str) -> str
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L228)
-
-Description: Gets google map url for headquarter
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Gets google map url for headquarter
 | Type | Description |
 | ---- | ----------- |
 | str | Headquarter google maps url |
-
-## Examples
 

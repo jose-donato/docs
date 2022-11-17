@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.terramoney_fcd_model.get_staking_account_info
+Get staking info for provided terra account [Source: https://fcd.terra.dev/swagger]
 
-```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py'
-def get_staking_account_info(address: str) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L105)]
+
+```python
+def get_staking_account_info(address: str = "") -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L105)
-
-Description: Get staking info for provided terra account [Source: https://fcd.terra.dev/swagger]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| address | str | terra blockchain address e.g. terra1jvwelvs7rdk6j3mqdztq5tya99w8lxk6l9hcqg | None | False |
+| address | str | terra blockchain address e.g. terra1jvwelvs7rdk6j3mqdztq5tya99w8lxk6l9hcqg |  | True |
 
 ## Returns
 
@@ -32,35 +30,29 @@ Description: Get staking info for provided terra account [Source: https://fcd.te
 | ---- | ----------- |
 | Tuple[pd.DataFrame, str] | luna delegations and summary report for given address |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.terramoney_fcd_view.display_account_staking_info
+Prints table showing staking info for provided terra account address [Source: https://fcd.terra.dev/swagger]
 
-```python title='openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py'
-def display_account_staking_info(address: str, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L32)]
+
+```python
+def display_account_staking_info(address: str = "", limit: int = 10, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L32)
-
-Description: Prints table showing staking info for provided terra account address [Source: https://fcd.terra.dev/swagger]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| address | str | terra blockchain address e.g. terra1jvwelvs7rdk6j3mqdztq5tya99w8lxk6l9hcqg | None | False |
-| limit | int | Number of records to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| address | str | terra blockchain address e.g. terra1jvwelvs7rdk6j3mqdztq5tya99w8lxk6l9hcqg |  | True |
+| limit | int | Number of records to display | 10 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

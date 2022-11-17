@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.insider.openinsider_model.get_print_insider_data
+Print insider data
 
-```python title='openbb_terminal/stocks/insider/openinsider_model.py'
-def get_print_insider_data(type_insider: str, limit: int) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_model.py#L1437)]
+
+```python
+def get_print_insider_data(type_insider: str = "lcb", limit: int = 10) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_model.py#L1437)
-
-Description: Print insider data
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | None | False |
-| limit | int | Limit of data rows to display | None | False |
+| type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | lcb | True |
+| limit | int | Limit of data rows to display | 10 | True |
 
 ## Returns
 
@@ -33,35 +31,29 @@ Description: Print insider data
 | ---- | ----------- |
 | pd.DataFrame | Open insider filtered data |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.insider.openinsider_view.print_insider_data
+Print insider data
 
-```python title='openbb_terminal/stocks/insider/openinsider_view.py'
-def print_insider_data(type_insider: str, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_view.py#L108)]
+
+```python
+def print_insider_data(type_insider: str = "lcb", limit: int = 10, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_view.py#L108)
-
-Description: Print insider data
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | None | False |
-| limit | int | Limit of data rows to display | None | False |
-| export | str | Export data format | None | False |
+| type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | lcb | True |
+| limit | int | Limit of data rows to display | 10 | True |
+| export | str | Export data format |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.etf.discovery.wsj_model.etf_movers
+Scrape data for top etf movers.
 
-```python title='openbb_terminal/etf/discovery/wsj_model.py'
-def etf_movers(sort_type: str, export: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_model.py#L15)]
+
+```python
+def etf_movers(sort_type: str = "gainers", export: bool = False) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_model.py#L15)
-
-Description: Scrape data for top etf movers.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sort_type | str | Data to get. Can be "gainers", "decliners" or "active" | None | False |
+| sort_type | str | Data to get. Can be "gainers", "decliners" or "active" | gainers | True |
 
 ## Returns
 
@@ -32,35 +30,29 @@ Description: Scrape data for top etf movers.
 | ---- | ----------- |
 | pd.DataFrame | Datafame containing the name, price, change and the volume of the etf |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.etf.discovery.wsj_view.show_top_mover
+Show top ETF movers from wsj.com
 
-```python title='openbb_terminal/etf/discovery/wsj_view.py'
-def show_top_mover(sort_type: str, limit: int, export: Any) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_view.py#L16)]
+
+```python
+def show_top_mover(sort_type: str = "gainers", limit: int = 10, export: Any = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_view.py#L16)
-
-Description: Show top ETF movers from wsj.com
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sort_type | str | What to show. Either Gainers, Decliners or Activity | None | False |
-| limit | int | Number of etfs to show | None | False |
-| export | str | Format to export data | None | False |
+| sort_type | str | What to show. Either Gainers, Decliners or Activity | gainers | True |
+| limit | int | Number of etfs to show | 10 | True |
+| export | str | Format to export data |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # historical_5
 
-## openbb_terminal.stocks.quantitative_analysis.factors_model.get_historical_5
+Get 5 year monthly historical performance for a ticker with dividends filtered
 
-```python title='openbb_terminal/stocks/quantitative_analysis/factors_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/quantitative_analysis/factors_model.py#L58)]
+
+```python
 def get_historical_5(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/quantitative_analysis/factors_model.py#L58)
-
-Description: Get 5 year monthly historical performance for a ticker with dividends filtered
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get 5 year monthly historical performance for a ticker with dividen
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | A dataframe with historical information |
-
-## Examples
 

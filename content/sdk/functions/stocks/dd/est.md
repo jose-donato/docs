@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # est
 
-## openbb_terminal.stocks.due_diligence.business_insider_model.get_estimates
+Get analysts' estimates for a given ticker. [Source: Business Insider]
 
-```python title='openbb_terminal/stocks/due_diligence/business_insider_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L71)]
+
+```python
 def get_estimates(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L71)
-
-Description: Get analysts' estimates for a given ticker. [Source: Business Insider]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get analysts' estimates for a given ticker. [Source: Business Insid
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Year estimates |
-
-## Examples
 

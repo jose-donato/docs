@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.futures.yfinance_model.get_curve_futures
+Get curve futures [Source: Yahoo Finance]
 
-```python title='openbb_terminal/futures/yfinance_model.py'
-def get_curve_futures(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L118)]
+
+```python
+def get_curve_futures(symbol: str = "") -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L118)
-
-Description: Get curve futures [Source: Yahoo Finance]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | symbol to get forward curve | None | False |
+| symbol | str | symbol to get forward curve |  | True |
 
 ## Returns
 
@@ -32,36 +30,30 @@ Description: Get curve futures [Source: Yahoo Finance]
 | ---- | ----------- |
 | pd.DataFrame | Dictionary with sector weightings allocation |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.futures.yfinance_view.display_curve
+Display curve futures [Source: Yahoo Finance]
 
-```python title='openbb_terminal/futures/yfinance_view.py'
-def display_curve(symbol: str, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L232)]
+
+```python
+def display_curve(symbol: str, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L232)
-
-Description: Display curve futures [Source: Yahoo Finance]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Curve future symbol to display | None | False |
-| raw | bool | Display futures timeseries in raw format | None | False |
-| export | str | Type of format to export data | None | False |
+| raw | bool | Display futures timeseries in raw format | False | True |
+| export | str | Type of format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

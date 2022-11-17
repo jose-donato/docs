@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.behavioural_analysis.stocktwits_model.get_messages
+Get last messages for a given ticker [Source: stocktwits].
 
-```python title='openbb_terminal/common/behavioural_analysis/stocktwits_model.py'
-def get_messages(symbol: str, limit: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L52)]
+
+```python
+def get_messages(symbol: str, limit: int = 30) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L52)
-
-Description: Get last messages for a given ticker [Source: stocktwits].
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| limit | int | Number of messages to get | None | False |
+| limit | int | Number of messages to get | 30 | True |
 
 ## Returns
 
@@ -33,34 +31,28 @@ Description: Get last messages for a given ticker [Source: stocktwits].
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of messages |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.behavioural_analysis.stocktwits_view.display_messages
+Prints up to 30 of the last messages on the board. [Source: Stocktwits].
 
-```python title='openbb_terminal/common/behavioural_analysis/stocktwits_view.py'
-def display_messages(symbol: str, limit: int) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_view.py#L38)]
+
+```python
+def display_messages(symbol: str, limit: int = 30) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_view.py#L39)
-
-Description: Prints up to 30 of the last messages on the board. [Source: Stocktwits].
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| limit | int | Number of messages to get | None | False |
+| limit | int | Number of messages to get | 30 | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

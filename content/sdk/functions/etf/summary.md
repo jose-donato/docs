@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.etf.yfinance_model.get_etf_summary_description
+Return summary description of ETF. [Source: Yahoo Finance]
 
-```python title='openbb_terminal/etf/yfinance_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L44)]
+
+```python
 def get_etf_summary_description(name: str) -> str
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_model.py#L44)
-
-Description: Return summary description of ETF. [Source: Yahoo Finance]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,22 +30,18 @@ Description: Return summary description of ETF. [Source: Yahoo Finance]
 | ---- | ----------- |
 | str | Summary description of the ETF |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.etf.yfinance_view.display_etf_description
+Display ETF description summary. [Source: Yahoo Finance]
 
-```python title='openbb_terminal/etf/yfinance_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_view.py#L101)]
+
+```python
 def display_etf_description(name: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/yfinance_view.py#L103)
-
-Description: Display ETF description summary. [Source: Yahoo Finance]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,8 +51,6 @@ Description: Display ETF description summary. [Source: Yahoo Finance]
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

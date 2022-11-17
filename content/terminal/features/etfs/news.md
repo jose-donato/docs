@@ -17,7 +17,7 @@ usage: news [-l LIMIT] [-d N_START_DATE] [-o] [-s SOURCES]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest news being printed. | 5 | True | None |
-| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-10 12:17:11.670013 | True | None |
+| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-10 15:42:05.265580 | True | None |
 | n_oldest | Show oldest articles first | True | True | None |
 | sources | Show news only from the sources specified (e.g bbc yahoo.com) |  | True | None |
 

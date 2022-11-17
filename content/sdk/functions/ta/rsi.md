@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.technical_analysis.momentum_model.rsi
+Relative strength index
 
-```python title='openbb_terminal/common/technical_analysis/momentum_model.py'
-def rsi(data: pd.Series, window: int, scalar: float, drift: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L93)]
+
+```python
+def rsi(data: pd.Series, window: int = 14, scalar: float = 100, drift: int = 1) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L93)
-
-Description: Relative strength index
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Dataframe of prices | None | False |
-| window | int | Length of window | None | False |
-| scalar | float | Scalar variable | None | False |
-| drift | int | Drift variable | None | False |
+| window | int | Length of window | 14 | True |
+| scalar | float | Scalar variable | 100 | True |
+| drift | int | Drift variable | 1 | True |
 
 ## Returns
 
@@ -35,39 +33,33 @@ Description: Relative strength index
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.technical_analysis.momentum_view.display_rsi
+Plots RSI Indicator
 
-```python title='openbb_terminal/common/technical_analysis/momentum_view.py'
-def display_rsi(data: pd.Series, window: int, scalar: float, drift: int, symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L219)]
+
+```python
+def display_rsi(data: pd.Series, window: int = 14, scalar: float = 100.0, drift: int = 1, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L219)
-
-Description: Plots RSI Indicator
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Values to input | None | False |
-| window | int | Length of window | None | False |
-| scalar | float | Scalar variable | None | False |
-| drift | int | Drift variable | None | False |
-| symbol | str | Stock ticker | None | False |
-| export | str | Format to export data | None | False |
+| window | int | Length of window | 14 | True |
+| scalar | float | Scalar variable | 100.0 | True |
+| drift | int | Drift variable | 1 | True |
+| symbol | str | Stock ticker |  | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

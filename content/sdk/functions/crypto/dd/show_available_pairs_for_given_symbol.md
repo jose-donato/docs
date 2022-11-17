@@ -5,26 +5,22 @@ description: OpenBB SDK Function
 
 # show_available_pairs_for_given_symbol
 
-## openbb_terminal.cryptocurrency.due_diligence.coinbase_model.show_available_pairs_for_given_symbol
+Return all available quoted assets for given symbol. [Source: Coinbase]
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
-def show_available_pairs_for_given_symbol(symbol: str) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L21)]
+
+```python
+def show_available_pairs_for_given_symbol(symbol: str = "ETH") -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L21)
-
-Description: Return all available quoted assets for given symbol. [Source: Coinbase]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | Uppercase symbol of coin e.g BTC, ETH, UNI, LUNA, DOT ... | None | False |
+| symbol | str | Uppercase symbol of coin e.g BTC, ETH, UNI, LUNA, DOT ... | ETH | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[str, list] | Symbol and list of available pairs |
-
-## Examples
 

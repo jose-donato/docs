@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # earnings
 
-## openbb_terminal.stocks.fundamental_analysis.av_model.get_earnings
+Get earnings calendar for ticker
 
-```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
-def get_earnings(symbol: str, quarterly: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L430)]
+
+```python
+def get_earnings(symbol: str, quarterly: bool = False) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L430)
-
-Description: Get earnings calendar for ticker
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,6 +24,4 @@ Description: Get earnings calendar for ticker
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of earnings |
-
-## Examples
 

@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # stalker
 
-## openbb_terminal.common.behavioural_analysis.stocktwits_model.get_stalker
+Gets messages from given user [Source: stocktwits].
 
-```python title='openbb_terminal/common/behavioural_analysis/stocktwits_model.py'
-def get_stalker(user: str, limit: int) -> List
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L103)]
+
+```python
+def get_stalker(user: str, limit: int = 30) -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L103)
-
-Description: Gets messages from given user [Source: stocktwits].
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,6 +24,4 @@ Description: Gets messages from given user [Source: stocktwits].
 | Type | Description |
 | ---- | ----------- |
 | List[Dict[str, Any]] | List of posts |
-
-## Examples
 

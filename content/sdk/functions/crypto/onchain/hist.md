@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.onchain.ethplorer_model.get_address_history
+Get information about balance historical transactions. [Source: Ethplorer]
 
-```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_model.py'
-def get_address_history(address: Any, sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L336)]
+
+```python
+def get_address_history(address: Any, sortby: str = "timestamp", ascend: bool = True) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L336)
-
-Description: Get information about balance historical transactions. [Source: Ethplorer]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Blockchain balance e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699 | None | False |
-| sortby | str | Key to sort by. | None | False |
-| ascend | str | Sort in ascending order. | None | False |
+| sortby | str | Key to sort by. | timestamp | True |
+| ascend | str | Sort in ascending order. | True | True |
 
 ## Returns
 
@@ -34,37 +32,31 @@ Description: Get information about balance historical transactions. [Source: Eth
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with balance historical transactions (last 100) |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.onchain.ethplorer_view.display_address_history
+Display information about balance historical transactions. [Source: Ethplorer]
 
-```python title='openbb_terminal/cryptocurrency/onchain/ethplorer_view.py'
-def display_address_history(address: str, limit: int, sortby: str, ascend: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L158)]
+
+```python
+def display_address_history(address: str, limit: int = 10, sortby: str = "timestamp", ascend: bool = True, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L158)
-
-Description: Display information about balance historical transactions. [Source: Ethplorer]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Ethereum blockchain balance e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699 | None | False |
-| limit | int | Limit of transactions. Maximum 100 | None | False |
-| sortby | str | Key to sort by. | None | False |
-| ascend | str | Sort in ascending order. | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Limit of transactions. Maximum 100 | 10 | True |
+| sortby | str | Key to sort by. | timestamp | True |
+| ascend | str | Sort in ascending order. | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

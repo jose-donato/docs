@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.technical_analysis.finviz_model.get_finviz_image
+Get finviz image for given ticker
 
-```python title='openbb_terminal/stocks/technical_analysis/finviz_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_model.py#L16)]
+
+```python
 def get_finviz_image(symbol: str) -> bytes
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_model.py#L16)
-
-Description: Get finviz image for given ticker
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,22 +30,18 @@ Description: Get finviz image for given ticker
 | ---- | ----------- |
 | bytes | Image in byte format |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.technical_analysis.finviz_view.view
+View finviz image for ticker
 
-```python title='openbb_terminal/stocks/technical_analysis/finviz_view.py'
-def view(symbol: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_view.py#L22)]
+
+```python
+def view(symbol: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_view.py#L22)
-
-Description: View finviz image for ticker
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,8 +52,6 @@ Description: View finviz image for ticker
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

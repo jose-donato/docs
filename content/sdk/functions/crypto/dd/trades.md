@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.due_diligence.ccxt_model.get_trades
+Returns trades for a coin in a given exchange
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L70)]
+
+```python
 def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L70)
-
-Description: Returns trades for a coin in a given exchange
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -34,22 +32,18 @@ Description: Returns trades for a coin in a given exchange
 | ---- | ----------- |
 | pd.DataFrame | trades for a coin in a given exchange |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.due_diligence.ccxt_view.display_trades
+Prints table showing trades for a coin in a given exchange
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py'
-def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L63)]
+
+```python
+def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int = 10, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L63)
-
-Description: Prints table showing trades for a coin in a given exchange
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,14 +51,12 @@ Description: Prints table showing trades for a coin in a given exchange
 | exchange | str | exchange id | None | False |
 | symbol | str | coin symbol | None | False |
 | to_symbol | str | currency to compare coin against | None | False |
-| limit | int | number of trades to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | number of trades to display | 10 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

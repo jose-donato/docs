@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.sector_industry_analysis.financedatabase_model.get_companies_per_sector_in_country
+Get number of companies per sector in a specific country (and specific market cap). [Source: Finance Database]
 
-```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py'
-def get_companies_per_sector_in_country(country: str, mktcap: str, exclude_exchanges: bool) -> dict
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L205)]
+
+```python
+def get_companies_per_sector_in_country(country: str = "United States", mktcap: str = "Large", exclude_exchanges: bool = True) -> dict
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L205)
-
-Description: Get number of companies per sector in a specific country (and specific market cap). [Source: Finance Database]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| country | str | Select country to get number of companies by each sector | None | False |
-| mktcap | str | Select market cap of companies to consider from Small, Mid and Large | None | False |
-| exclude_exchanges | bool | Exclude international exchanges | None | False |
+| country | str | Select country to get number of companies by each sector | United States | True |
+| mktcap | str | Select market cap of companies to consider from Small, Mid and Large | Large | True |
+| exclude_exchanges | bool | Exclude international exchanges | True | True |
 
 ## Returns
 
@@ -34,40 +32,34 @@ Description: Get number of companies per sector in a specific country (and speci
 | ---- | ----------- |
 | dict | Dictionary of sectors and number of companies in a specific country |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.sector_industry_analysis.financedatabase_view.display_companies_per_sector_in_country
+Display number of companies per sector in a specific country (and market cap). [Source: Finance Database]
 
-```python title='openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py'
-def display_companies_per_sector_in_country(country: str, mktcap: str, exclude_exchanges: bool, export: str, raw: bool, max_sectors_to_display: int, min_pct_to_display_sector: float, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L238)]
+
+```python
+def display_companies_per_sector_in_country(country: str = "United States", mktcap: str = "Large", exclude_exchanges: bool = True, export: str = "", raw: bool = False, max_sectors_to_display: int = 15, min_pct_to_display_sector: float = 0.015, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L238)
-
-Description: Display number of companies per sector in a specific country (and market cap). [Source: Finance Database]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| country | str | Select country to get number of companies by each sector | None | False |
-| mktcap | str | Select market cap of companies to consider from Small, Mid and Large | None | False |
-| exclude_exchanges | bool | Exclude international exchanges | None | False |
-| export | str | Format to export data as | None | False |
-| raw | bool | Output all raw data | None | False |
-| max_sectors_to_display | int | Maximum number of sectors to display | None | False |
-| min_pct_to_display_sector | float | Minimum percentage to display sector | None | False |
+| country | str | Select country to get number of companies by each sector | United States | True |
+| mktcap | str | Select market cap of companies to consider from Small, Mid and Large | Large | True |
+| exclude_exchanges | bool | Exclude international exchanges | True | True |
+| export | str | Format to export data as |  | True |
+| raw | bool | Output all raw data | False | True |
+| max_sectors_to_display | int | Maximum number of sectors to display | 15 | True |
+| min_pct_to_display_sector | float | Minimum percentage to display sector | 0.015 | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forex.oanda.oanda_model.open_trades_request
+Request open trades data.
 
-```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def open_trades_request(accountID: str) -> Union
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L470)]
+
+```python
+def open_trades_request(accountID: str = "REPLACE_ME") -> Union
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L470)
-
-Description: Request open trades data.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
 ## Returns
 
@@ -32,22 +30,18 @@ Description: Request open trades data.
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Open trades data or False |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forex.oanda.oanda_view.get_open_trades
+View open trades.
 
-```python title='openbb_terminal/forex/oanda/oanda_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L252)]
+
+```python
 def get_open_trades(accountID: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L260)
-
-Description: View open trades.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,8 +51,6 @@ Description: View open trades.
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # show
 
-## openbb_terminal.portfolio.portfolio_model.get_transactions
+Get portfolio transactions
 
-```python title='openbb_terminal/portfolio/portfolio_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2401)]
+
+```python
 def get_transactions(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2401)
-
-Description: Get portfolio transactions
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get portfolio transactions
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Portfolio transactions |
-
-## Examples
 

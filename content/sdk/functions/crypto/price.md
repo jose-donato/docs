@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # price
 
-## openbb_terminal.cryptocurrency.pyth_model.get_price
+Returns price and confidence interval from pyth live feed. [Source: Pyth]
 
-```python title='openbb_terminal/cryptocurrency/pyth_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/pyth_model.py#L78)]
+
+```python
 def get_price(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/pyth_model.py#L78)
-
-Description: Returns price and confidence interval from pyth live feed. [Source: Pyth]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Returns price and confidence interval from pyth live feed. [Source:
 | Type | Description |
 | ---- | ----------- |
 | Tuple[float, float, float] | Price of the asset,<br/>Confidence level,<br/>Previous price of the asset |
-
-## Examples
 

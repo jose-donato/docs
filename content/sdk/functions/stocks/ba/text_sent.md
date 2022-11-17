@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # text_sent
 
-## openbb_terminal.common.behavioural_analysis.reddit_model.get_sentiment
+Find the sentiment of a post and related comments.
 
-```python title='openbb_terminal/common/behavioural_analysis/reddit_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L1049)]
+
+```python
 def get_sentiment(post_data: List[str]) -> float
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L1049)
-
-Description: Find the sentiment of a post and related comments.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Find the sentiment of a post and related comments.
 | Type | Description |
 | ---- | ----------- |
 | float | A number in the range [-1, 1] representing sentiment |
-
-## Examples
 

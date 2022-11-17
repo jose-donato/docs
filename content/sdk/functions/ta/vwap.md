@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.technical_analysis.overlap_model.vwap
+Gets volume weighted average price (VWAP)
 
-```python title='openbb_terminal/common/technical_analysis/overlap_model.py'
-def vwap(data: pd.Series, offset: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L139)]
+
+```python
+def vwap(data: pd.Series, offset: int = 0) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L139)
-
-Description: Gets volume weighted average price (VWAP)
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of dates and prices | None | False |
-| offset | int | Length of offset | None | False |
+| offset | int | Length of offset | 0 | True |
 
 ## Returns
 
@@ -33,40 +31,34 @@ Description: Gets volume weighted average price (VWAP)
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with VWAP data |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.technical_analysis.overlap_view.view_vwap
+Plots VWMA technical indicator
 
-```python title='openbb_terminal/common/technical_analysis/overlap_view.py'
-def view_vwap(data: pd.DataFrame, symbol: str, start_date: str, end_date: str, offset: int, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L121)]
+
+```python
+def view_vwap(data: pd.DataFrame, symbol: str = "", start_date: str = None, end_date: str = None, offset: int = 0, interval: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L121)
-
-Description: Plots VWMA technical indicator
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
-| symbol | str | Ticker | None | False |
-| offset | int | Offset variable | None | False |
-| start_date | datetime | Start date to get data from with | None | False |
-| end_date | datetime | End date to get data from with | None | False |
-| interval | str | Interval of data | None | False |
-| export | str | Format to export data | None | False |
+| symbol | str | Ticker |  | True |
+| offset | int | Offset variable | 0 | True |
+| start_date | datetime | Start date to get data from with | None | True |
+| end_date | datetime | End date to get data from with | None | True |
+| interval | str | Interval of data |  | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

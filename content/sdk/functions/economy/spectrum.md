@@ -11,53 +11,45 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.economy.finviz_model.get_spectrum_data
+Get group (sectors, industry or country) valuation/performance data. [Source: Finviz]
 
-```python title='openbb_terminal/economy/finviz_model.py'
-def get_spectrum_data(group: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L168)]
+
+```python
+def get_spectrum_data(group: str = "sector") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L169)
-
-Description: Get group (sectors, industry or country) valuation/performance data. [Source: Finviz]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| group | str | Group by category. Available groups can be accessed through get_groups(). | None | False |
+| group | str | Group by category. Available groups can be accessed through get_groups(). | sector | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.economy.finviz_view.display_spectrum
+Display finviz spectrum in system viewer [Source: Finviz]
 
-```python title='openbb_terminal/economy/finviz_view.py'
-def display_spectrum(group: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_view.py#L111)]
+
+```python
+def display_spectrum(group: str = "sector", export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_view.py#L111)
-
-Description: Display finviz spectrum in system viewer [Source: Finviz]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| group | str | Group by category. Available groups can be accessed through get_groups(). | None | False |
-| export | str | Format to export data | None | False |
+| group | str | Group by category. Available groups can be accessed through get_groups(). | sector | True |
+| export | str | Format to export data |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

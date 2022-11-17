@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.nft.nftpricefloor_model.get_floor_price
+Get nft collections [Source: https://nftpricefloor.com/]
 
-```python title='openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L46)]
+
+```python
 def get_floor_price(slug: Any) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L46)
-
-Description: Get nft collections [Source: https://nftpricefloor.com/]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,37 +30,31 @@ Description: Get nft collections [Source: https://nftpricefloor.com/]
 | ---- | ----------- |
 | pd.DataFrame | nft collections |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.nft.nftpricefloor_view.display_floor_price
+Display NFT collection floor price over time. [Source: https://nftpricefloor.com/]
 
-```python title='openbb_terminal/cryptocurrency/nft/nftpricefloor_view.py'
-def display_floor_price(slug: str, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]], raw: bool) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_view.py#L88)]
+
+```python
+def display_floor_price(slug: str, limit: int = 10, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None, raw: bool = False) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_view.py#L88)
-
-Description: Display NFT collection floor price over time. [Source: https://nftpricefloor.com/]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | slug | str | NFT collection slug | None | False |
-| raw | bool | Flag to display raw data | None | False |
-| limit | int | Number of raw data to show | None | False |
-| export | str | Format to export data | None | False |
+| raw | bool | Flag to display raw data | False | True |
+| limit | int | Number of raw data to show | 10 | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

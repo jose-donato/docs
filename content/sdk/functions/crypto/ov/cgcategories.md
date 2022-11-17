@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_top_crypto_categories
+Returns top crypto categories [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_top_crypto_categories(sort_filter: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L157)]
+
+```python
+def get_top_crypto_categories(sort_filter: str = "market_cap_desc") -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L157)
-
-Description: Returns top crypto categories [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sort_filter | str | Can be one of - "market_cap_desc", "market_cap_asc", "name_desc", "name_asc",<br/>"market_cap_change_24h_desc", "market_cap_change_24h_asc" | None | False |
+| sort_filter | str | Can be one of - "market_cap_desc", "market_cap_asc", "name_desc", "name_asc",<br/>"market_cap_change_24h_desc", "market_cap_change_24h_asc" | market_cap_desc | True |
 
 ## Returns
 
@@ -32,36 +30,30 @@ Description: Returns top crypto categories [Source: CoinGecko]
 | ---- | ----------- |
 | pd.DataFrame | Rank, Name, Change_1h, Change_7d, Market_Cap, Volume_24h,Coins, Url |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_categories
+Shows top cryptocurrency categories by market capitalization
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_categories(sortby: str, limit: int, export: str, pie: bool) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L433)]
+
+```python
+def display_categories(sortby: str = "market_cap_desc", limit: int = 15, export: str = "", pie: bool = False) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L439)
-
-Description: Shows top cryptocurrency categories by market capitalization
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key by which to sort data | None | False |
-| limit | int | Number of records to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
-| pie | bool | Whether to show the pie chart | None | False |
+| sortby | str | Key by which to sort data | market_cap_desc | True |
+| limit | int | Number of records to display | 15 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| pie | bool | Whether to show the pie chart | False | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

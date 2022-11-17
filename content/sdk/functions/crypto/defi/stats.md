@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.graph_model.get_uniswap_stats
+Get base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
 
-```python title='openbb_terminal/cryptocurrency/defi/graph_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L124)]
+
+```python
 def get_uniswap_stats() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L124)
-
-Description: Get base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,33 +28,27 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | Uniswap DEX statistics like liquidity, volume, number of pairs, number of transactions. |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.graph_view.display_uni_stats
+Prints table showing base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
 
-```python title='openbb_terminal/cryptocurrency/defi/graph_view.py'
-def display_uni_stats(export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L72)]
+
+```python
+def display_uni_stats(export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L72)
-
-Description: Prints table showing base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

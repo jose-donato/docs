@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.technical_analysis.momentum_model.macd
+Moving average convergence divergence
 
-```python title='openbb_terminal/common/technical_analysis/momentum_model.py'
-def macd(data: pd.Series, n_fast: int, n_slow: int, n_signal: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L61)]
+
+```python
+def macd(data: pd.Series, n_fast: int = 12, n_slow: int = 26, n_signal: int = 9) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L61)
-
-Description: Moving average convergence divergence
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Values for calculation | None | False |
-| n_fast | int | Fast period | None | False |
-| n_slow | int | Slow period | None | False |
-| n_signal | int | Signal period | None | False |
+| n_fast | int | Fast period | 12 | True |
+| n_slow | int | Slow period | 26 | True |
+| n_signal | int | Signal period | 9 | True |
 
 ## Returns
 
@@ -35,39 +33,33 @@ Description: Moving average convergence divergence
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.technical_analysis.momentum_view.display_macd
+Plots MACD signal
 
-```python title='openbb_terminal/common/technical_analysis/momentum_view.py'
-def display_macd(data: pd.Series, n_fast: int, n_slow: int, n_signal: int, symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L126)]
+
+```python
+def display_macd(data: pd.Series, n_fast: int = 12, n_slow: int = 26, n_signal: int = 9, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L126)
-
-Description: Plots MACD signal
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Values to input | None | False |
-| n_fast | int | Fast period | None | False |
-| n_slow | int | Slow period | None | False |
-| n_signal | int | Signal period | None | False |
-| symbol | str | Stock ticker | None | False |
-| export | str | Format to export data | None | False |
+| n_fast | int | Fast period | 12 | True |
+| n_slow | int | Slow period | 26 | True |
+| n_signal | int | Signal period | 9 | True |
+| symbol | str | Stock ticker |  | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

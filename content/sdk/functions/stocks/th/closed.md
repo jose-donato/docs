@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.tradinghours.bursa_model.get_closed
+Get closed exchanges.
 
-```python title='openbb_terminal/stocks/tradinghours/bursa_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L76)]
+
+```python
 def get_closed() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L76)
-
-Description: Get closed exchanges.
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,22 +28,18 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | Currently closed exchanges |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.tradinghours.bursa_view.display_closed
+Display closed exchanges.
 
-```python title='openbb_terminal/stocks/tradinghours/bursa_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L64)]
+
+```python
 def display_closed() -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L64)
-
-Description: Display closed exchanges.
-
 ## Parameters
 
 This function does not take any parameters.
@@ -53,8 +47,6 @@ This function does not take any parameters.
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

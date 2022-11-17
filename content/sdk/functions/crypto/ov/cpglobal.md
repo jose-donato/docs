@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.coinpaprika_model.get_global_market
+Return data frame with most important global crypto statistics like:
 
-```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L72)]
+
+```python
 def get_global_market() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L72)
-
-Description: Return data frame with most important global crypto statistics like:
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,33 +28,27 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | Most important global crypto statistics<br/>Metric, Value |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.coinpaprika_view.display_global_market
+Return data frame with most important global crypto statistics like:
 
-```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
-def display_global_market(export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L74)]
+
+```python
+def display_global_market(export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L74)
-
-Description: Return data frame with most important global crypto statistics like:
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.quantitative_analysis.rolling_model.get_spread
+Standard Deviation and Variance
 
-```python title='openbb_terminal/common/quantitative_analysis/rolling_model.py'
-def get_spread(data: pd.DataFrame, window: int) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L41)]
+
+```python
+def get_spread(data: pd.DataFrame, window: int = 14) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L41)
-
-Description: Standard Deviation and Variance
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | DataFrame of targeted data | None | False |
-| window | int | Length of window | None | False |
+| window | int | Length of window | 14 | True |
 
 ## Returns
 
@@ -33,22 +31,18 @@ Description: Standard Deviation and Variance
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dataframe of rolling standard deviation,<br/>Dataframe of rolling variance |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.quantitative_analysis.rolling_view.display_spread
+Plots rolling spread
 
-```python title='openbb_terminal/common/quantitative_analysis/rolling_view.py'
-def display_spread(data: pd.DataFrame, target: str, symbol: str, window: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L135)]
+
+```python
+def display_spread(data: pd.DataFrame, target: str, symbol: str = "", window: int = 14, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L136)
-
-Description: Plots rolling spread
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,16 +50,14 @@ Description: Plots rolling spread
 | data | pd.DataFrame | Dataframe | None | False |
 | target | str | Column in data to look at | None | False |
 | target | str | Column in data to look at | None | False |
-| symbol | str | Stock ticker | None | False |
-| window | int | Length of window | None | False |
-| export | str | Format to export data | None | False |
+| symbol | str | Stock ticker |  | True |
+| window | int | Length of window | 14 | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

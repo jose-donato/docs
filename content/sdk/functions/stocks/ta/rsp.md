@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.technical_analysis.rsp_model.get_rsp
+Relative strength percentile [Source: https://github.com/skyte/relative-strength]
 
-```python title='openbb_terminal/stocks/technical_analysis/rsp_model.py'
-def get_rsp(s_ticker: str) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_model.py#L16)]
+
+```python
+def get_rsp(s_ticker: str = "") -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_model.py#L16)
-
-Description: Relative strength percentile [Source: https://github.com/skyte/relative-strength]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| s_ticker | str | Stock Ticker | None | False |
+| s_ticker | str | Stock Ticker |  | True |
 
 ## Returns
 
@@ -32,35 +30,29 @@ Description: Relative strength percentile [Source: https://github.com/skyte/rela
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame] | Dataframe of stock percentile, Dataframe of industry percentile,<br/>Raw stock dataframe for export, Raw industry dataframe for export |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.technical_analysis.rsp_view.display_rsp
+Display Relative Strength Percentile [Source: https://github.com/skyte/relative-strength]
 
-```python title='openbb_terminal/stocks/technical_analysis/rsp_view.py'
-def display_rsp(s_ticker: str, export: str, tickers_show: bool) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_view.py#L20)]
+
+```python
+def display_rsp(s_ticker: str = "", export: str = "", tickers_show: bool = False) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_view.py#L20)
-
-Description: Display Relative Strength Percentile [Source: https://github.com/skyte/relative-strength]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| s_ticker | str | Stock ticker | None | False |
-| export | str | Format of export file | None | False |
-| tickers_show | bool | Boolean to check if tickers in the same industry as the stock should be shown | None | False |
+| s_ticker | str | Stock ticker |  | True |
+| export | str | Format of export file |  | True |
+| tickers_show | bool | Boolean to check if tickers in the same industry as the stock should be shown | False | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

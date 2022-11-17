@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # active
 
-## openbb_terminal.stocks.discovery.yahoofinance_model.get_active
+Get stocks ordered in descending order by intraday trade volume. [Source: Yahoo Finance]
 
-```python title='openbb_terminal/stocks/discovery/yahoofinance_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L97)]
+
+```python
 def get_active() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L97)
-
-Description: Get stocks ordered in descending order by intraday trade volume. [Source: Yahoo Finance]
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most active stocks |
-
-## Examples
 

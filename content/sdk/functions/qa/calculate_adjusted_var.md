@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # calculate_adjusted_var
 
-## openbb_terminal.common.quantitative_analysis.qa_model.calculate_adjusted_var
+Calculates VaR, which is adjusted for skew and kurtosis (Cornish-Fischer-Expansion)
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L182)]
+
+```python
 def calculate_adjusted_var(kurtosis: float, skew: float, ndp: float, std: float, mean: float) -> float
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L182)
-
-Description: Calculates VaR, which is adjusted for skew and kurtosis (Cornish-Fischer-Expansion)
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -29,6 +27,4 @@ Description: Calculates VaR, which is adjusted for skew and kurtosis (Cornish-Fi
 | Type | Description |
 | ---- | ----------- |
 | float | Real adjusted VaR |
-
-## Examples
 

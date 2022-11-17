@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # signal
 
-## openbb_terminal.forecast.forecast_model.add_signal
+A price signal based on short/long term price.
 
-```python title='openbb_terminal/forecast/forecast_model.py'
-def add_signal(dataset: pd.DataFrame, target_column: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L362)]
+
+```python
+def add_signal(dataset: pd.DataFrame, target_column: str = "close") -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L362)
-
-Description: A price signal based on short/long term price.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: A price signal based on short/long term price.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with added signal column |
-
-## Examples
 

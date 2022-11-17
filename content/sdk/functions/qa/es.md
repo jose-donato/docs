@@ -11,24 +11,22 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.quantitative_analysis.qa_model.get_es
+Gets Expected Shortfall for specified stock dataframe.
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
-def get_es(data: pd.DataFrame, use_mean: bool, distribution: str, percentile: Union[float, int], portfolio: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L355)]
+
+```python
+def get_es(data: pd.DataFrame, use_mean: bool = False, distribution: str = "normal", percentile: Union[float, int] = 99.9, portfolio: bool = False) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L355)
-
-Description: Gets Expected Shortfall for specified stock dataframe.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Data dataframe | None | False |
-| use_mean | bool | If one should use the data mean for calculation | None | False |
-| distribution | str | Type of distribution, options: laplace, student_t, normal | None | False |
-| percentile | Union[float,int] | VaR percentile | None | False |
-| portfolio | bool | If the data is a portfolio | None | False |
+| use_mean | bool | If one should use the data mean for calculation | False | True |
+| distribution | str | Type of distribution, options: laplace, student_t, normal | normal | True |
+| percentile | Union[float,int] | VaR percentile | 99.9 | True |
+| portfolio | bool | If the data is a portfolio | False | True |
 
 ## Returns
 
@@ -36,38 +34,32 @@ Description: Gets Expected Shortfall for specified stock dataframe.
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with Expected Shortfall per percentile |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.quantitative_analysis.qa_view.display_es
+Prints table showing expected shortfall.
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
-def display_es(data: pd.DataFrame, symbol: str, use_mean: bool, distribution: str, percentile: float, portfolio: bool) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1066)]
+
+```python
+def display_es(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, distribution: str = "normal", percentile: float = 99.9, portfolio: bool = False) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1066)
-
-Description: Prints table showing expected shortfall.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Data dataframe | None | False |
-| use_mean |  | if one should use the data mean return | None | False |
-| symbol | str | name of the data | None | False |
-| distribution | str | choose distribution to use: logistic, laplace, normal | None | False |
-| percentile | int | es percentile | None | False |
-| portfolio | bool | If the data is a portfolio | None | False |
+| use_mean |  | if one should use the data mean return | False | True |
+| symbol | str | name of the data |  | True |
+| distribution | str | choose distribution to use: logistic, laplace, normal | normal | True |
+| percentile | int | es percentile | 99.9 | True |
+| portfolio | bool | If the data is a portfolio | False | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

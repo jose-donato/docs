@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # get_events_countries
 
-## openbb_terminal.economy.investingcom_model.get_events_countries
+Get available countries for events command.
 
-```python title='openbb_terminal/economy/investingcom_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L297)]
+
+```python
 def get_events_countries() -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L297)
-
-Description: Get available countries for events command.
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of available countries. |
-
-## Examples
 

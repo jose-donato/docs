@@ -5,23 +5,19 @@ description: OpenBB SDK Function
 
 # ols
 
-## openbb_terminal.econometrics.regression_model.get_ols
+Performs an OLS regression on timeseries data. [Source: Statsmodels]
 
-```python title='openbb_terminal/econometrics/regression_model.py'
-def get_ols(regression_variables: List[Tuple], data: Dict[str, pd.DataFrame], show_regression: bool, export: str) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L177)]
+
+```python
+def get_ols(Y: pd.DataFrame, X: pd.DataFrame) -> Any
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L178)
-
-Description: Performs an OLS regression on timeseries data. [Source: Statsmodels]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| regression_variables | list | The regressions variables entered where the first variable is<br/>the dependent variable. | None | False |
-| data | dict | A dictionary containing the datasets. | None | False |
-| show_regression | bool | Whether to show the regression results table. | None | False |
-| export | str | Format to export data | None | False |
+| Y | pd.DataFrame | Dependent variable series. | None | False |
+| X | pd.DataFrame | Dataframe of independent variables series. | None | False |
 
 ## Returns
 
@@ -33,11 +29,13 @@ Description: Performs an OLS regression on timeseries data. [Source: Statsmodels
 
 SDK Snippet:
 ```python
-from openbb_terminal.sdk import openbb
+import openbb_terminal.sdk as openbb
 df = openbb.econometrics.load("wage_panel")
 OLS_model = openbb.econometrics.OLS(df["lwage"], df[["educ", "exper", "expersq"]])
 print(OLS_model.summary())`
 ```
+
+## Examples
 
 Results:
 ```python

@@ -11,57 +11,49 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.futures.yfinance_model.get_search_futures
+Get search futures [Source: Yahoo Finance]
 
-```python title='openbb_terminal/futures/yfinance_model.py'
-def get_search_futures(category: str, exchange: str, description: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L50)]
+
+```python
+def get_search_futures(category: str = "", exchange: str = "", description: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L50)
-
-Description: Get search futures [Source: Yahoo Finance]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| category | str | Select the category where the future exists | None | False |
-| exchange | str | Select the exchange where the future exists | None | False |
-| description | str | Select the description where the future exists | None | False |
+| category | str | Select the category where the future exists |  | True |
+| exchange | str | Select the exchange where the future exists |  | True |
+| description | str | Select the description where the future exists |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.futures.yfinance_view.display_search
+Display search futures [Source: Yahoo Finance]
 
-```python title='openbb_terminal/futures/yfinance_view.py'
-def display_search(category: str, exchange: str, description: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L29)]
+
+```python
+def display_search(category: str = "", exchange: str = "", description: str = "", export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L29)
-
-Description: Display search futures [Source: Yahoo Finance]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| category | str | Select the category where the future exists | None | False |
-| exchange | str | Select the exchange where the future exists | None | False |
-| description | str | Select the description of the future | None | False |
-| export | str | Type of format to export data | None | False |
+| category | str | Select the category where the future exists |  | True |
+| exchange | str | Select the exchange where the future exists |  | True |
+| description | str | Select the description of the future |  | True |
+| export | str | Type of format to export data |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # global_info
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_global_info
+Get global statistics about crypto from CoinGecko API like:
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L424)]
+
+```python
 def get_global_info() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L424)
-
-Description: Get global statistics about crypto from CoinGecko API like:
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Metric, Value |
-
-## Examples
 

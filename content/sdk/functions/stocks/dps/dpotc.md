@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.dark_pool_shorts.finra_model.getTickerFINRAdata
+Get all FINRA data associated with a ticker
 
-```python title='openbb_terminal/stocks/dark_pool_shorts/finra_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L293)]
+
+```python
 def getTickerFINRAdata(symbol: str) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L293)
-
-Description: Get all FINRA data associated with a ticker
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,35 +30,29 @@ Description: Get all FINRA data associated with a ticker
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dark Pools (ATS) Data, OTC (Non-ATS) Data |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.dark_pool_shorts.finra_view.darkpool_ats_otc
+Display barchart of dark pool (ATS) and OTC (Non ATS) data. [Source: FINRA]
 
-```python title='openbb_terminal/stocks/dark_pool_shorts/finra_view.py'
-def darkpool_ats_otc(symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L27)]
+
+```python
+def darkpool_ats_otc(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L27)
-
-Description: Display barchart of dark pool (ATS) and OTC (Non ATS) data. [Source: FINRA]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

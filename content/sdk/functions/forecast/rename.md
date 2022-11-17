@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # rename
 
-## openbb_terminal.forecast.forecast_model.rename_column
+Rename a column in a dataframe
 
-```python title='openbb_terminal/forecast/forecast_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L453)]
+
+```python
 def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L453)
-
-Description: Rename a column in a dataframe
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,6 +25,4 @@ Description: Rename a column in a dataframe
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The dataframe with the renamed column |
-
-## Examples
 

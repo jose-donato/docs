@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_exchange_rates
+Get list of crypto, fiats, commodity exchange rates from CoinGecko API [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_exchange_rates(sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L398)]
+
+```python
+def get_exchange_rates(sortby: str = "Name", ascend: bool = False) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L398)
-
-Description: Get list of crypto, fiats, commodity exchange rates from CoinGecko API [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
+| sortby | str | Key by which to sort data | Name | True |
+| ascend | bool | Flag to sort data ascending | False | True |
 
 ## Returns
 
@@ -33,36 +31,30 @@ Description: Get list of crypto, fiats, commodity exchange rates from CoinGecko 
 | ---- | ----------- |
 | pd.DataFrame | Index, Name, Unit, Value, Type |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_exchange_rates
+Shows  list of crypto, fiats, commodity exchange rates. [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_exchange_rates(sortby: str, ascend: bool, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L200)]
+
+```python
+def display_exchange_rates(sortby: str = "Name", ascend: bool = False, limit: int = 15, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L200)
-
-Description: Shows  list of crypto, fiats, commodity exchange rates. [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 15 | True |
+| sortby | str | Key by which to sort data | Name | True |
+| ascend | bool | Flag to sort data ascending | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

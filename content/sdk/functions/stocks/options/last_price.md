@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # last_price
 
-## openbb_terminal.stocks.options.tradier_model.last_price
+Makes api request for last price
 
-```python title='openbb_terminal/stocks/options/tradier_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L275)]
+
+```python
 def last_price(symbol: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L275)
-
-Description: Makes api request for last price
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Makes api request for last price
 | Type | Description |
 | ---- | ----------- |
 |  | Last price |
-
-## Examples
 

@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # av_metrics
 
-## openbb_terminal.stocks.fundamental_analysis.av_model.get_key_metrics
+Get key metrics from overview
 
-```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L101)]
+
+```python
 def get_key_metrics(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L101)
-
-Description: Get key metrics from overview
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get key metrics from overview
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of key metrics |
-
-## Examples
 

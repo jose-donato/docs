@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forecast.forecast_model.describe_df
+Returns statistics for a given df
 
-```python title='openbb_terminal/forecast/forecast_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L480)]
+
+```python
 def describe_df(data: pd.DataFrame) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L480)
-
-Description: Returns statistics for a given df
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,22 +30,18 @@ Description: Returns statistics for a given df
 | ---- | ----------- |
 | pd.DataFrame | The df with the new data |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forecast.forecast_view.describe_df
+None
 
-```python title='openbb_terminal/forecast/forecast_view.py'
-def describe_df(data: pd.DataFrame, name: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L257)]
+
+```python
+def describe_df(data: pd.DataFrame, name: str = "", export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L257)
-
-Description: None
-
 ## Parameters
 
 This function does not take any parameters.
@@ -55,8 +49,6 @@ This function does not take any parameters.
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

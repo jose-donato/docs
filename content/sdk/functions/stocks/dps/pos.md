@@ -5,27 +5,23 @@ description: OpenBB SDK Function
 
 # pos
 
-## openbb_terminal.stocks.dark_pool_shorts.stockgrid_model.get_dark_pool_short_positions
+Get dark pool short positions. [Source: Stockgrid]
 
-```python title='openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py'
-def get_dark_pool_short_positions(sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L20)]
+
+```python
+def get_dark_pool_short_positions(sortby: str = "dpp_dollar", ascend: bool = False) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L20)
-
-Description: Get dark pool short positions. [Source: Stockgrid]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Field for which to sort by, where 'sv': Short Vol. [1M],<br/>'sv_pct': Short Vol. %%, 'nsv': Net Short Vol. [1M],<br/>'nsv_dollar': Net Short Vol. ($100M), 'dpp': DP Position [1M],<br/>'dpp_dollar': DP Position ($1B) | None | False |
-| ascend | bool | Data in ascending order | None | False |
+| sortby | str | Field for which to sort by, where 'sv': Short Vol. [1M],<br/>'sv_pct': Short Vol. %%, 'nsv': Net Short Vol. [1M],<br/>'nsv_dollar': Net Short Vol. ($100M), 'dpp': DP Position [1M],<br/>'dpp_dollar': DP Position ($1B) | dpp_dollar | True |
+| ascend | bool | Data in ascending order | False | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dark pool short position data |
-
-## Examples
 

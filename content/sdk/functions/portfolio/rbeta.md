@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.portfolio.portfolio_model.get_rolling_beta
+Get rolling beta using portfolio and benchmark returns
 
-```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1799)]
+
+```python
+def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "1y") -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1799)
-
-Description: Get rolling beta using portfolio and benchmark returns
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | PortfolioEngine | PortfolioEngine object | None | False |
-| window | string | Interval used for rolling values.<br/>Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y. | None | False |
+| portfolio | PortfolioEngine | PortfolioEngine object | None | True |
+| window | string | Interval used for rolling values.<br/>Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y. | 1y | True |
 
 ## Returns
 
@@ -33,36 +31,30 @@ Description: Get rolling beta using portfolio and benchmark returns
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of the portfolio's rolling beta |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.portfolio.portfolio_view.display_rolling_beta
+Display rolling beta
 
-```python title='openbb_terminal/portfolio/portfolio_view.py'
-def display_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1050)]
+
+```python
+def display_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "1y", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1051)
-
-Description: Display rolling beta
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | PortfolioEngine | PortfolioEngine object | None | False |
-| window | str | interval for window to consider<br/>Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y. | None | False |
-| export | str | Export to file | None | False |
-| external_axes | Optional[List[plt.Axes]] | Optional axes to display plot on | None | False |
+| portfolio | PortfolioEngine | PortfolioEngine object | None | True |
+| window | str | interval for window to consider<br/>Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y. | 1y | True |
+| export | str | Export to file |  | True |
+| external_axes | Optional[List[plt.Axes]] | Optional axes to display plot on | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.options.fdscanner_model.unusual_options
+Get unusual option activity from fdscanner.com
 
-```python title='openbb_terminal/stocks/options/fdscanner_model.py'
-def unusual_options(limit: int) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L19)]
+
+```python
+def unusual_options(limit: int = 100) -> Tuple
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L19)
-
-Description: Get unusual option activity from fdscanner.com
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number to show | None | False |
+| limit | int | Number to show | 100 | True |
 
 ## Returns
 
@@ -32,38 +30,32 @@ Description: Get unusual option activity from fdscanner.com
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.Timestamp] | Dataframe containing options information, Timestamp indicated when data was updated from website |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.options.fdscanner_view.display_options
+Displays the unusual options table
 
-```python title='openbb_terminal/stocks/options/fdscanner_view.py'
-def display_options(limit: int, sortby: str, ascend: bool, calls_only: bool, puts_only: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_view.py#L15)]
+
+```python
+def display_options(limit: int = 20, sortby: str = "Vol/OI", ascend: bool = False, calls_only: bool = False, puts_only: bool = False, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_view.py#L15)
-
-Description: Displays the unusual options table
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of rows to show | None | False |
-| sortby | str | Data column to sort on | None | False |
-| ascend | bool | Whether to sort in ascend order | None | False |
-| calls_only | bool | Flag to only show calls | None | False |
-| puts_only | bool | Flag to show puts only | None | False |
-| export | str | File type to export | None | False |
+| limit | int | Number of rows to show | 20 | True |
+| sortby | str | Data column to sort on | Vol/OI | True |
+| ascend | bool | Whether to sort in ascend order | False | True |
+| calls_only | bool | Flag to only show calls | False | True |
+| puts_only | bool | Flag to show puts only | False | True |
+| export | str | File type to export |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

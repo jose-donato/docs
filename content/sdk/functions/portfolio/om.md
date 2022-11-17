@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.portfolio.portfolio_model.get_omega
+Get omega ratio
 
-```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float, threshold_end: float) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2034)]
+
+```python
+def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float = 0, threshold_end: float = 1.5) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2034)
-
-Description: Get omega ratio
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
-| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
-| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
+| threshold_start | float | annualized target return threshold start of plotted threshold range | 0 | True |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | 1.5 | True |
 
 ## Returns
 
@@ -34,35 +32,29 @@ Description: Get omega ratio
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with portfolio omega ratio |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.portfolio.portfolio_view.display_omega
+Display omega ratio
 
-```python title='openbb_terminal/portfolio/portfolio_view.py'
-def display_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float, threshold_end: float) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1802)]
+
+```python
+def display_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float = 0, threshold_end: float = 1.5) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1803)
-
-Description: Display omega ratio
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
-| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
-| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
+| threshold_start | float | annualized target return threshold start of plotted threshold range | 0 | True |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | 1.5 | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -5,26 +5,22 @@ description: OpenBB SDK Function
 
 # load
 
-## openbb_terminal.portfolio.portfolio_optimization.excel_model.load_allocation
+Load in the Excel file to determine the allocation that needs to be set.
 
-```python title='openbb_terminal/portfolio/portfolio_optimization/excel_model.py'
-def load_allocation(excel_file: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/excel_model.py#L54)]
+
+```python
+def load_allocation(excel_file: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/excel_model.py#L54)
-
-Description: Load in the Excel file to determine the allocation that needs to be set.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| excel_file | str | The location of the Excel file that needs to be loaded. | None | False |
+| excel_file | str | The location of the Excel file that needs to be loaded. |  | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | list | Returns a list with ticker symbols |
-
-## Examples
 

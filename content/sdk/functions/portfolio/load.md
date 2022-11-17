@@ -5,29 +5,25 @@ description: OpenBB SDK Function
 
 # load
 
-## openbb_terminal.portfolio.portfolio_model.generate_portfolio
+Get PortfolioEngine object
 
-```python title='openbb_terminal/portfolio/portfolio_model.py'
-def generate_portfolio(transactions_file_path: str, benchmark_symbol: str, full_shares: bool, risk_free_rate: float) -> PortfolioEngine
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2360)]
+
+```python
+def generate_portfolio(transactions_file_path: str, benchmark_symbol: str = "SPY", full_shares: bool = False, risk_free_rate: float = 0) -> PortfolioEngine
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2360)
-
-Description: Get PortfolioEngine object
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | transactions_file_path | str | Path to transactions file | None | False |
-| benchmark_symbol | str | Benchmark ticker to download data | None | False |
-| full_shares | bool | Whether to mimic the portfolio trades exactly (partial shares) or round down the<br/>quantity to the nearest number | None | False |
-| risk_free_rate | float | Risk free rate in float format | None | False |
+| benchmark_symbol | str | Benchmark ticker to download data | SPY | True |
+| full_shares | bool | Whether to mimic the portfolio trades exactly (partial shares) or round down the<br/>quantity to the nearest number | False | True |
+| risk_free_rate | float | Risk free rate in float format | 0 | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations |
-
-## Examples
 

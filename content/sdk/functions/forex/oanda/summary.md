@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forex.oanda.oanda_model.account_summary_request
+Request Oanda account summary.
 
-```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def account_summary_request(accountID: str) -> Union
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L74)]
+
+```python
+def account_summary_request(accountID: str = "REPLACE_ME") -> Union
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L74)
-
-Description: Request Oanda account summary.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
 ## Returns
 
@@ -32,22 +30,18 @@ Description: Request Oanda account summary.
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Account summary data or False |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forex.oanda.oanda_view.get_account_summary
+Print Oanda account summary.
 
-```python title='openbb_terminal/forex/oanda/oanda_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L62)]
+
+```python
 def get_account_summary(accountID: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L63)
-
-Description: Print Oanda account summary.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,8 +51,6 @@ Description: Print Oanda account summary.
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_marketcap_dominance
+Returns market dominance of a coin over time
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
-def get_marketcap_dominance(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L81)]
+
+```python
+def get_marketcap_dominance(symbol: str, interval: str = "1d", start_date: str = None, end_date: str = None) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L81)
-
-Description: Returns market dominance of a coin over time
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check market cap dominance | None | False |
-| interval | str | Interval frequency (possible values are: 5m, 15m, 30m, 1h, 1d, 1w) | None | False |
-| start_date | int | Initial date like string (e.g., 2021-10-01) | None | False |
-| end_date | int | End date like string (e.g., 2021-10-01) | None | False |
+| interval | str | Interval frequency (possible values are: 5m, 15m, 30m, 1h, 1d, 1w) | 1d | True |
+| start_date | int | Initial date like string (e.g., 2021-10-01) | None | True |
+| end_date | int | End date like string (e.g., 2021-10-01) | None | True |
 
 ## Returns
 
@@ -35,38 +33,32 @@ Description: Returns market dominance of a coin over time
 | ---- | ----------- |
 | pd.DataFrame | market dominance percentage over time |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_marketcap_dominance
+Plots market dominance of a coin over time
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
-def display_marketcap_dominance(symbol: str, start_date: str, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L181)]
+
+```python
+def display_marketcap_dominance(symbol: str, start_date: str = None, end_date: str = None, interval: str = "1d", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L181)
-
-Description: Plots market dominance of a coin over time
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check market cap dominance | None | False |
-| start_date | int | Initial date like string (e.g., 2021-10-01) | None | False |
-| end_date | int | End date like string (e.g., 2021-10-01) | None | False |
-| interval | str | Interval frequency (possible values are: 5m, 15m, 30m, 1h, 1d, 1w) | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| start_date | int | Initial date like string (e.g., 2021-10-01) | None | True |
+| end_date | int | End date like string (e.g., 2021-10-01) | None | True |
+| interval | str | Interval frequency (possible values are: 5m, 15m, 30m, 1h, 1d, 1w) | 1d | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

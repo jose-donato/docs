@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # process_candle
 
-## openbb_terminal.stocks.stocks_helper.process_candle
+Process DataFrame into candle style plot.
 
-```python title='openbb_terminal/stocks/stocks_helper.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L825)]
+
+```python
 def process_candle(data: pd.DataFrame) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L810)
-
-Description: Process DataFrame into candle style plot.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Process DataFrame into candle style plot.
 | Type | Description |
 | ---- | ----------- |
 | DataFrame | A Panda's data frame with columns Open, High, Low, Close, Adj Close, Volume,<br/>date_id, OC-High, OC-Low. |
-
-## Examples
 

@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # usbonds
 
-## openbb_terminal.economy.wsj_model.us_bonds
+Scrape data for us bonds
 
-```python title='openbb_terminal/economy/wsj_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L161)]
+
+```python
 def us_bonds() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L151)
-
-Description: Scrape data for us bonds
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing name, coupon rate, yield and change in yield |
-
-## Examples
 

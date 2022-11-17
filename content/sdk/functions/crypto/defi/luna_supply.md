@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.smartstake_model.get_luna_supply_stats
+Get supply history of the Terra ecosystem
 
-```python title='openbb_terminal/cryptocurrency/defi/smartstake_model.py'
-def get_luna_supply_stats(supply_type: str, days: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_model.py#L14)]
+
+```python
+def get_luna_supply_stats(supply_type: str = "lunaSupplyChallengeStats", days: int = 30) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_model.py#L14)
-
-Description: Get supply history of the Terra ecosystem
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| supply_type | str | Supply type to unpack json | None | False |
-| days | int | Day count to fetch data | None | False |
+| supply_type | str | Supply type to unpack json | lunaSupplyChallengeStats | True |
+| days | int | Day count to fetch data | 30 | True |
 
 ## Returns
 
@@ -33,37 +31,31 @@ Description: Get supply history of the Terra ecosystem
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of supply history data |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.smartstake_view.display_luna_circ_supply_change
+Plots and prints table showing Luna circulating supply stats
 
-```python title='openbb_terminal/cryptocurrency/defi/smartstake_view.py'
-def display_luna_circ_supply_change(days: int, export: str, supply_type: str, limit: int, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_view.py#L29)]
+
+```python
+def display_luna_circ_supply_change(days: int = 30, export: str = "", supply_type: str = "lunaSupplyChallengeStats", limit: int = 5, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_view.py#L29)
-
-Description: Plots and prints table showing Luna circulating supply stats
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| days | int | Number of days | None | False |
-| supply_type | str | Supply type to unpack json | None | False |
-| export | str | Export type | None | False |
-| limit | int | Number of results display on the terminal<br/>Default: 5 | 5 | False |
+| days | int | Number of days | 30 | True |
+| supply_type | str | Supply type to unpack json | lunaSupplyChallengeStats | True |
+| export | str | Export type |  | True |
+| limit | int | Number of results display on the terminal<br/>Default: 5 | 5 | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -10,8 +10,8 @@ Display Top DeFi Vaults. [Source: https://coindix.com/]
 ### Usage 
 ```python
 usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,heco,okex,cronos,arbitrum,eth,harmony,fuse,defichain,solana,optimism,kusama,metis,osmosis}]
-              [-p {aave,acryptos,alpaca,anchor,autofarm,balancer,bancor,beefy,belt,compound,convex,cream,curve,defichain,geist,lido,liquity,mirror,pancakeswap,raydium,sushi,tarot,traderjoe,tulip,ubeswap,uniswap,venus,yearn,osmosis,tulip}] [-k {lp,single,noimploss,stable}]
-              [-t LIMIT] [-s {name,chain,protocol,apy,tvl,link}] [-r] [-l]
+              [-p {aave,acryptos,alpaca,anchor,autofarm,balancer,bancor,beefy,belt,compound,convex,cream,curve,defichain,geist,lido,liquity,mirror,pancakeswap,raydium,sushi,tarot,traderjoe,tulip,ubeswap,uniswap,venus,yearn,osmosis,tulip}] [-k {lp,single,noimploss,stable}] [-t LIMIT]
+              [-s {name,chain,protocol,apy,tvl,link}] [-r] [-l]
 ```
 
 ## Parameters

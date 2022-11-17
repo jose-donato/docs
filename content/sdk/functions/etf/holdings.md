@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.etf.stockanalysis_model.get_etf_holdings
+Get ETF holdings
 
-```python title='openbb_terminal/etf/stockanalysis_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L82)]
+
+```python
 def get_etf_holdings(symbol: str) -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L82)
-
-Description: Get ETF holdings
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,35 +30,29 @@ Description: Get ETF holdings
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of holdings |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.etf.stockanalysis_view.view_holdings
+None
 
-```python title='openbb_terminal/etf/stockanalysis_view.py'
-def view_holdings(symbol: str, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L45)]
+
+```python
+def view_holdings(symbol: str, limit: int = 10, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L45)
-
-Description: None
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ETF symbol to show holdings for | None | False |
-| limit | int | Number of holdings to show | None | False |
-| export | str | Format to export data | None | False |
+| limit | int | Number of holdings to show | 10 | True |
+| export | str | Format to export data |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

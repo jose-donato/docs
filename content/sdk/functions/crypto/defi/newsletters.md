@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.substack_model.get_newsletters
+Scrape all substack newsletters from url list.
 
-```python title='openbb_terminal/cryptocurrency/defi/substack_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L54)]
+
+```python
 def get_newsletters() -> DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L54)
-
-Description: Scrape all substack newsletters from url list.
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,34 +28,28 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with recent news from most popular DeFi related newsletters. |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.substack_view.display_newsletters
+Prints table showing DeFi related substack newsletters.
 
-```python title='openbb_terminal/cryptocurrency/defi/substack_view.py'
-def display_newsletters(limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_view.py#L16)]
+
+```python
+def display_newsletters(limit: int = 10, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_view.py#L16)
-
-Description: Prints table showing DeFi related substack newsletters.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 10 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

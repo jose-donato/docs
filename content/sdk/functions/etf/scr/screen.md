@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.etf.screener.screener_model.etf_screener
+Screens the etfs pulled from my repo (https://github.com/jmaslek/etf_scraper),
 
-```python title='openbb_terminal/etf/screener/screener_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_model.py#L43)]
+
+```python
 def etf_screener(preset: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_model.py#L43)
-
-Description: Screens the etfs pulled from my repo (https://github.com/jmaslek/etf_scraper),
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,22 +30,18 @@ Description: Screens the etfs pulled from my repo (https://github.com/jmaslek/et
 | ---- | ----------- |
 | pd.DataFrame | Screened dataframe |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.etf.screener.screener_view.view_screener
+Display screener output
 
-```python title='openbb_terminal/etf/screener/screener_view.py'
-def view_screener(preset: str, num_to_show: int, sortby: str, ascend: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_view.py#L18)]
+
+```python
+def view_screener(preset: str, num_to_show: int, sortby: str, ascend: bool, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_view.py#L18)
-
-Description: Display screener output
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,13 +50,11 @@ Description: Display screener output
 | num_to_show | int | Number of etfs to show | None | False |
 | sortby | str | Column to sort by | None | False |
 | ascend | bool | Ascend when sorted | None | False |
-| export | str | Output format of export | None | False |
+| export | str | Output format of export |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

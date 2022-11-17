@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.technical_analysis.finbrain_model.get_technical_summary_report
+Get technical summary report provided by FinBrain's API
 
-```python title='openbb_terminal/stocks/technical_analysis/finbrain_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finbrain_model.py#L15)]
+
+```python
 def get_technical_summary_report(symbol: str) -> str
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finbrain_model.py#L15)
-
-Description: Get technical summary report provided by FinBrain's API
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,22 +30,18 @@ Description: Get technical summary report provided by FinBrain's API
 | ---- | ----------- |
 | str | technical summary report |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.technical_analysis.finbrain_view.technical_summary_report
+Print technical summary report provided by FinBrain's API
 
-```python title='openbb_terminal/stocks/technical_analysis/finbrain_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finbrain_view.py#L14)]
+
+```python
 def technical_summary_report(symbol: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finbrain_view.py#L14)
-
-Description: Print technical summary report provided by FinBrain's API
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,8 +51,6 @@ Description: Print technical summary report provided by FinBrain's API
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 
