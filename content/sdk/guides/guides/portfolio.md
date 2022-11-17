@@ -37,25 +37,38 @@ which returns the following:
 ```
 PORTFOLIO Menu
 
-The SDK commands of the the menu:
-	<openbb>.portfolio.holdv
-	<openbb>.portfolio.holdp
-	<openbb>.portfolio.yret
-	<openbb>.portfolio.mret
-	<openbb>.portfolio.dret
-	<openbb>.portfolio.max_drawdown_ratio
-	<openbb>.portfolio.distr
-	<openbb>.portfolio.maxdd
-	<openbb>.portfolio.rvol
-	<openbb>.portfolio.rsharpe
-	<openbb>.portfolio.rsortino
-	<openbb>.portfolio.rbeta
-	<openbb>.portfolio.summary
-	<openbb>.portfolio.skew
-	<openbb>.portfolio.kurtosis
-	<openbb>.portfolio.volatility
-	<openbb>.portfolio.sharpe
-<continues>
+
+A brief description below highlights the main Functions and Modules available in the ETF SDK
+
+| Path                       |    Type    |                                  Description |
+| :------------------------- | :--------: | -------------------------------------------: |
+| openbb.portfolio.summary          |  Function  |        Chart OHLC + Volume + Moving Averages |
+| openbb.portfolio.po            | Sub-Module |         Best/Worst/Highest Volume ETFs Today |
+| openbb.portfolio.dret |  Function  |                           Lookup by Category |
+| openbb.portfolio.holdp     |  Function  |                               Lookup by Name |
+| openbb.portfolio.yret        |  Function  |                         Holdings and Weights |
+| openbb.portfolio.rbeta              |  Function  |                        Lookup by Description |
+| openbb.portfolio.rsharpe            |  Function  |                    Get Historical Price Data |
+| openbb.portfolio.distr              |  Function  | Lookup by Name (More Details Than `by_name`) |
+| openbb.portfolio.om            |  Function  |                  News Headlines for a Ticker |
+| openbb.portfolio.es        |  Function  |                  Basic Statistics for an ETF |
+| openbb.portfolio.perf             | Function |                                 ETF Screener |
+| openbb.portfolio.rsort         |  Function  |       Text Description and Summary of an ETF |
+| openbb.portfolio.bench         | Function |                  Dictionary of {Ticker:Name} |
+| openbb.portfolio.metric         |  Sub-Module  |      Table or Pie Graph of Sector Weightings |
+| openbb.portfolio.alloc         |  Function  |      Table or Pie Graph of Sector Weightings |
+| openbb.portfolio.rvol         |  Function  |      Table or Pie Graph of Sector Weightings |
+| openbb.portfolio.var         |  Function  |      Table or Pie Graph of Sector Weightings |
+| openbb.portfolio.load         |  Function  |      Table or Pie Graph of Sector Weightings |
+| openbb.portfolio.show         |  Function  |      Table or Pie Graph of Sector Weightings |
+| openbb.portfolio.mret         |  Function  |      Table or Pie Graph of Sector Weightings |
+| openbb.portfolio.holdv         |  Function  |      Table or Pie Graph of Sector Weightings |
+
+Alteratively you can print the contents of the Porfolio SDK with:
+​
+
+```python
+help(openbb.portfolio)
 ```
 
 The first step in using this menu is loading a portfolio. Here, we provide an
