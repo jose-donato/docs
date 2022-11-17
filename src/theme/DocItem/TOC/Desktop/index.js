@@ -4,6 +4,8 @@ import { useDoc } from "@docusaurus/theme-common/internal";
 import TOC from "@theme/TOC";
 export default function DocItemTOCDesktop() {
   const { toc, frontMatter } = useDoc();
+
+  console.log(toc)
   /*const [currentToc, setCurrentToc] = useState(toc);
   useEffect(() => {
     const modelElements = document.getElementsByClassName("tabs__item");
