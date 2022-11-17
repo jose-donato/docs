@@ -41,10 +41,10 @@ def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", li
 
 Prints table showing an average bid and ask prices, average spread for given crypto pair for chosen
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L345)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L346)]
 
 ```python
-def display_spread_for_crypto_pair(symbol: Any = "WETH", to_symbol: Any = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
+def display_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
 ## Parameters
 

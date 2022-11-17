@@ -16,7 +16,7 @@ Get information about balance historical transactions. [Source: Ethplorer]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L336)]
 
 ```python
-def get_address_history(address: Any, sortby: str = "timestamp", ascend: bool = True) -> pd.DataFrame
+def get_address_history(address: str, sortby: str = "timestamp", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

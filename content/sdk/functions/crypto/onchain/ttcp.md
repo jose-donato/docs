@@ -44,14 +44,14 @@ Prints table showing most traded crypto pairs on given decentralized exchange in
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L286)]
 
 ```python
-def display_most_traded_pairs(exchange: Any = "Uniswap", days: int = 10, limit: int = 10, sortby: str = "tradeAmount", ascend: bool = True, export: str = "") -> None
+def display_most_traded_pairs(exchange: str = "Uniswap", days: int = 10, limit: int = 10, sortby: str = "tradeAmount", ascend: bool = True, export: str = "") -> None
 ```
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| exchange |  | Decentralized exchange name | Uniswap | True |
-| days |  | Number of days taken into calculation account. | 10 | True |
+| exchange | str | Decentralized exchange name | Uniswap | True |
+| days | int | Number of days taken into calculation account. | 10 | True |
 | sortby | str | Key by which to sort data | tradeAmount | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |

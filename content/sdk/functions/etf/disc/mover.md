@@ -40,7 +40,7 @@ Show top ETF movers from wsj.com
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_view.py#L16)]
 
 ```python
-def show_top_mover(sort_type: str = "gainers", limit: int = 10, export: Any = "") -> None
+def show_top_mover(sort_type: str = "gainers", limit: int = 10, export: str = "") -> None
 ```
 ## Parameters
 

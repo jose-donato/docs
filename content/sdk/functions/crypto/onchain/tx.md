@@ -16,7 +16,7 @@ Get info about transaction. [Source: Ethplorer]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L444)]
 
 ```python
-def get_tx_info(tx_hash: Any) -> pd.DataFrame
+def get_tx_info(tx_hash: str) -> pd.DataFrame
 ```
 ## Parameters
 

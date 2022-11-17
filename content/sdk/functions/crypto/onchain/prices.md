@@ -16,7 +16,7 @@ Get token historical prices with volume and market cap, and average price. [Sour
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L545)]
 
 ```python
-def get_token_historical_price(address: Any, sortby: str = "date", ascend: bool = False) -> pd.DataFrame
+def get_token_historical_price(address: str, sortby: str = "date", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

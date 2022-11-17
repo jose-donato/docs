@@ -16,7 +16,7 @@ Get info about token historical transactions. [Source: Ethplorer]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L489)]
 
 ```python
-def get_token_history(address: Any, sortby: str = "timestamp", ascend: bool = False) -> pd.DataFrame
+def get_token_history(address: str, sortby: str = "timestamp", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 
