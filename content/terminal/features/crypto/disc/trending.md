@@ -7,21 +7,20 @@ description: OpenBB Terminal Function
 
 ## trending
 
-### Description: 
+### Description
 
 Discover trending coins (Top-7) on CoinGecko in the last 24 hours
 
-### Usage: 
+### Usage
+
 ```python
 usage: trending
 ```
 
-
-
 ## Examples
 
 ```python
-2022 Feb 15, 06:45 (✨) /crypto/disc/ $ trending
+2022 Feb 15, 06:45 (🦋) /crypto/disc/ $ trending
                  Trending coins on CoinGecko
 ┌────────────────────┬────────────────────┬─────────────────┐
 │ Symbol             │ Name               │ Market Cap Rank │
@@ -41,4 +40,3 @@ usage: trending
 │ doge-dash          │ Doge Dash          │ 950             │
 └────────────────────┴────────────────────┴─────────────────┘
 ```
-

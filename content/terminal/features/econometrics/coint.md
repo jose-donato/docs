@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## coint
 
-### Description: 
+### Description
 
 Show co-integration between two timeseries
 
-### Usage: 
+### Usage
+
 ```python
 usage: coint -t TS [-p] [-s SIGNIFICANT]
 ```
@@ -24,11 +25,10 @@ usage: coint -t TS [-p] [-s SIGNIFICANT]
 | plot | Plot Z-Values | False | True | None |
 | significant | Show only companies that have p-values lower than this percentage | 0 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 24, 06:03 (✨) /econometrics/ $ coint msft.adj_close,aapl.adj_close,tsla.adj_close,googl.adj_close -p
+2022 Feb 24, 06:03 (🦋) /econometrics/ $ coint msft.adj_close,aapl.adj_close,tsla.adj_close,googl.adj_close -p
                                   Cointegration Tests
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━┓
 ┃ Pairs                          ┃ Constant ┃ Gamma ┃ Alpha ┃ Dickey-Fuller ┃ P Value ┃
@@ -48,4 +48,3 @@ usage: coint -t TS [-p] [-s SIGNIFICANT]
 ```
 
 ![error_terms_cointegrations](https://user-images.githubusercontent.com/46355364/155514964-dd75cf17-91ae-4326-96e8-45d9a2c7b24a.png)
-

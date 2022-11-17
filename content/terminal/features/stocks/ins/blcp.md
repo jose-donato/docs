@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## blcp
 
-### Description: 
+### Description
 
 Print latest CEO/CFO purchases 25k. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: blcp [-l LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: blcp [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 07:45 (✨) /stocks/ins/ $ blcp
+2022 Feb 16, 07:45 (🦋) /stocks/ins/ $ blcp
                                                                                   Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
 ┃ X  ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name         ┃ Insider Name        ┃ Title      ┃ Trade Type   ┃ Price  ┃ Qty        ┃ Owned      ┃ Diff Own ┃ Value        ┃
@@ -64,4 +64,3 @@ usage: blcp [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
-

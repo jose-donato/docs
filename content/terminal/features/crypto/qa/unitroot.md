@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## unitroot
 
-### Description: 
+### Description
 
 Unit root test / stationarity (ADF, KPSS)
 
-### Usage: 
+### Usage
+
 ```python
 usage: unitroot [-r {c,ct,ctt,nc}] [-k {c,ct}]
 ```
@@ -23,11 +24,10 @@ usage: unitroot [-r {c,ct,ctt,nc}] [-k {c,ct}]
 | fuller_reg | Type of regression. Can be ‘c’,’ct’,’ctt’,’nc’ 'c' - Constant and t - trend order | c | True | c, ct, ctt, nc |
 | kpss_reg | Type of regression. Can be ‘c’,’ct' | c | True | c, ct |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 11:16 (✨) /stocks/qa/ $ unitroot
+2022 Feb 16, 11:16 (🦋) /stocks/qa/ $ unitroot
          Unit Root Calculation
 ┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┓
 ┃                ┃ ADF        ┃ KPSS   ┃
@@ -43,4 +43,3 @@ usage: unitroot [-r {c,ct,ctt,nc}] [-k {c,ct}]
 │ ICBest         │ -3339.2013 │        │
 └────────────────┴────────────┴────────┘
 ```
-

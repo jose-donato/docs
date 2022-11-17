@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## tippm
 
-### Description: 
+### Description
 
 Print top insider purchases of the month. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: tippm [-l LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: tippm [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 08:15 (✨) /stocks/ins/ $ tippm
+2022 Feb 16, 08:15 (🦋) /stocks/ins/ $ tippm
                                                                                   Insider Data
 ┏━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
 ┃ X ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name         ┃ Insider Name         ┃ Title      ┃ Trade Type   ┃ Price  ┃ Qty         ┃ Owned      ┃ Diff Own ┃ Value        ┃
@@ -64,4 +64,3 @@ usage: tippm [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
-

@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## swaps
 
-### Description: 
+### Description
 
-Display last swaps done on Uniswap DEX. [Source: https://thegraph.com/en/]
+Display last swaps done on Uniswap DEX. [Source: <https://thegraph.com/en/>]
 
-### Usage: 
+### Usage
+
 ```python
 usage: pairs [-l LIMIT] [-s {Datetime,USD,From,To}] [-r]
 ```
@@ -24,11 +25,10 @@ usage: pairs [-l LIMIT] [-s {Datetime,USD,From,To}] [-r]
 | sortby | Sort by given column. Default: timestamp | Datetime | True | Datetime, USD, From, To |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 15, 06:34 (✨) /crypto/defi/ $ swaps
+2022 Feb 15, 06:34 (🦋) /crypto/defi/ $ swaps
                                Last Uniswap Swaps
 ┌─────────────────────────────────────┬─────────┬────────┬─────────────────────┐
 │ timestamp                           │ token0  │ token1 │ amountUSD           │
@@ -54,4 +54,3 @@ usage: pairs [-l LIMIT] [-s {Datetime,USD,From,To}] [-r]
 │ 13146.79479655147014131543533949295 │ WETH    │ MIND   │ 2022-02-15 12:34:16 │
 └─────────────────────────────────────┴─────────┴────────┴─────────────────────┘
 ```
-

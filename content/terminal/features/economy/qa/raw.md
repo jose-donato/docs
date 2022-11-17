@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## raw
 
-### Description: 
+### Description
 
 Print raw data to console
 
-### Usage: 
+### Usage
+
 ```python
 usage: raw [-l LIMIT] [-r] [-s SORTBY]
 ```
@@ -24,11 +25,10 @@ usage: raw [-l LIMIT] [-r] [-s SORTBY]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | sortby | The column to sort by | None | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 11:05 (✨) /stocks/qa/ $ raw
+2022 Feb 16, 11:05 (🦋) /stocks/qa/ $ raw
         Raw Data
 ┏━━━━━━━━━━━━┳━━━━━━━━━━┓
 ┃            ┃ Adjclose ┃
@@ -74,4 +74,3 @@ usage: raw [-l LIMIT] [-r] [-s SORTBY]
 │ 2022-02-15 │ 922.430  │
 └────────────┴──────────┘
 ```
-

@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## blip
 
-### Description: 
+### Description
 
 Print latest insider purchases 25k. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: blip [-l LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: blip [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 07:47 (✨) /stocks/ins/ $ blip
+2022 Feb 16, 07:47 (🦋) /stocks/ins/ $ blip
                                                                                 Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
 ┃ X  ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name      ┃ Insider Name         ┃ Title     ┃ Trade Type   ┃ Price  ┃ Qty        ┃ Owned      ┃ Diff Own ┃ Value        ┃
@@ -66,4 +66,3 @@ usage: blip [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
-

@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## rtat
 
-### Description: 
+### Description
 
 Tracking over $30B USD/day of individual investors trades, RTAT gives a daily view into retail activity and sentiment for over 9,500 US traded stocks, ADRs, and ETPs
 
-### Usage: 
+### Usage
+
 ```python
 usage: rtat [-l LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: rtat [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of days to display | 3 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 04:12 (✨) /stocks/disc/ $ rtat
+2022 Feb 16, 04:12 (🦋) /stocks/disc/ $ rtat
      2022-02-11 Top Retail:
 ┏━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃ Ticker ┃ Activity ┃ Sentiment ┃
@@ -102,4 +102,3 @@ usage: rtat [-l LIMIT]
 │ AAPL   │ 0.03     │ -2        │
 └────────┴──────────┴───────────┘
 ```
-

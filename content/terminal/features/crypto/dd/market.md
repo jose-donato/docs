@@ -7,21 +7,20 @@ description: OpenBB Terminal Function
 
 ## market
 
-### Description: 
+### Description
 
 Market data for loaded coin. There you find metrics like: Market Cap, Supply, Circulating Supply, Price, Volume and many others.
 
-### Usage: 
+### Usage
+
 ```python
 usage: market
 ```
 
-
-
 ## Examples
 
 ```python
-2022 Feb 15, 07:41 (✨) /crypto/dd/ $ market
+2022 Feb 15, 07:41 (🦋) /crypto/dd/ $ market
                          Market Data
 ┌──────────────────────────────────────────┬─────────────────┐
 │ Metric                                   │ Value           │
@@ -79,4 +78,3 @@ usage: market
 │ Circulating Supply To Total Supply Ratio │ 0.90            │
 └──────────────────────────────────────────┴─────────────────┘
 ```
-

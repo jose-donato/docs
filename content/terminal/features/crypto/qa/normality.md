@@ -7,21 +7,20 @@ description: OpenBB Terminal Function
 
 ## normality
 
-### Description: 
+### Description
 
 Normality tests
 
-### Usage: 
+### Usage
+
 ```python
 usage: normality
 ```
 
-
-
 ## Examples
 
 ```python
-2022 Feb 16, 11:11 (✨) /stocks/qa/ $ normality
+2022 Feb 16, 11:11 (🦋) /stocks/qa/ $ normality
             Normality Statistics
 ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┓
 ┃                    ┃ Statistic ┃ p-value ┃
@@ -37,4 +36,3 @@ usage: normality
 │ Kolmogorov-Smirnov │ 0.4680    │ 0.0000  │
 └────────────────────┴───────────┴─────────┘
 ```
-

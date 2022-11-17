@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## show
 
-### Description: 
+### Description
 
 Show a portion of the DataFrame
 
-### Usage: 
+### Usage
+
 ```python
 usage: show [-n {}] [-s SORTBY] [-r]
 ```
@@ -24,15 +25,14 @@ usage: show [-n {}] [-s SORTBY] [-r]
 | sortby | Sort based on a column in the DataFrame |  | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Mar 04, 05:57 (✨) /econometrics/ $ load longley -a ll
+2022 Mar 04, 05:57 (🦋) /econometrics/ $ load longley -a ll
 
-2022 Mar 04, 05:57 (✨) /econometrics/ $ index ll -i year -d
+2022 Mar 04, 05:57 (🦋) /econometrics/ $ index ll -i year -d
 
-2022 Mar 04, 05:57 (✨) /econometrics/ $ show ll -s unemp
+2022 Mar 04, 05:57 (🦋) /econometrics/ $ show ll -s unemp
 
                     Dataset ll | Showing 10 of 16 rows
 ┏━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━┓
@@ -59,9 +59,9 @@ usage: show [-n {}] [-s SORTBY] [-r]
 │ 1955.0 │ 66019.00 │ 101.20  │ 397469.00 │ 2904.00 │ 3048.00 │ 117388.00 │
 └────────┴──────────┴─────────┴───────────┴─────────┴─────────┴───────────┘
 
-2022 Mar 04, 05:57 (✨) /econometrics/ $ load wage_panel -a wp
+2022 Mar 04, 05:57 (🦋) /econometrics/ $ load wage_panel -a wp
 
-2022 Mar 04, 05:58 (✨) /econometrics/ $ show
+2022 Mar 04, 05:58 (🦋) /econometrics/ $ show
                     Dataset ll | Showing 10 of 16 rows
 ┏━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━┓
 ┃        ┃ totemp   ┃ gnpdefl ┃ gnp       ┃ unemp   ┃ armed   ┃ pop       ┃
@@ -112,4 +112,3 @@ usage: show [-n {}] [-s SORTBY] [-r]
 │ 9 │ 17.00 │ 1981.00 │ 0.00  │ 5.00  │ 0.00 │ 2804.00 │ 0.00    │ 13.00 │ 0.00  │ 1.52  │ 25.00   │ 2.00       │
 └───┴───────┴─────────┴───────┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
 ```
-

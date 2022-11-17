@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## lcb
 
-### Description: 
+### Description
 
 Print latest cluster buys. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: lcb [-l LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: lcb [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 07:52 (✨) /stocks/ins/ $ lcb
+2022 Feb 16, 07:52 (🦋) /stocks/ins/ $ lcb
                                                                                  Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
 ┃ X  ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name         ┃ Industry             ┃ Title ┃ Trade Type   ┃ Price  ┃ Qty         ┃ Owned      ┃ Diff Own ┃ Value         ┃
@@ -69,4 +69,3 @@ usage: lcb [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
-

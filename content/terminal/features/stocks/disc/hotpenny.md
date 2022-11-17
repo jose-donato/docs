@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## hotpenny
 
-### Description: 
+### Description
 
 Provides top penny stocks from various websites. [Source: Yfinance]
 
-### Usage: 
+### Usage
+
 ```python
 usage: hotpenny [-l LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: hotpenny [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of stocks to display | 5 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 04:04 (✨) /stocks/disc/ $ hotpenny
+2022 Feb 16, 04:04 (🦋) /stocks/disc/ $ hotpenny
                         Top Penny Stocks
 ┏━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
 ┃       ┃ Price  ┃ Change ┃ $ Volume     ┃ Volume    ┃ # Trades ┃
@@ -40,4 +40,3 @@ usage: hotpenny [-l LIMIT]
 │ RHHBY │ $46.92 │ 1.49%  │ $56,390,274  │ 1,201,629 │ 2,463    │
 └───────┴────────┴────────┴──────────────┴───────────┴──────────┘
 ```
-

@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## futures
 
-### Description: 
+### Description
 
 Futures/Commodities from Wall St. Journal and FinViz.
 
-### Usage: 
+### Usage
+
 ```python
 usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,prevClose}] [-r]
 ```
@@ -24,11 +25,10 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 | sortby |  | ticker | True | dict_keys(['ticker', 'last', 'change', 'prevClose']) |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Mar 15, 07:02 (✨) /economy/ $ futures
+2022 Mar 15, 07:02 (🦋) /economy/ $ futures
      Futures/Commodities [Source: Wall St. Journal]
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━┓
 ┃                           ┃ Price   ┃ Chg     ┃ %Chg  ┃
@@ -54,7 +54,7 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 │ Bloomberg Commodity Index │ 121.16  │ -2.64   │ -2.13 │
 └───────────────────────────┴─────────┴─────────┴───────┘
 
-2022 Mar 15, 07:03 (✨) /economy/ $ futures energy
+2022 Mar 15, 07:03 (🦋) /economy/ $ futures energy
             Future Table [Source: FinViz]
 ┏━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┓
 ┃                 ┃ prevClose ┃ last   ┃ change (%) ┃
@@ -72,7 +72,7 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 │ Crude Oil WTI   │ 103.01    │ 97.14  │ -5.70      │
 └─────────────────┴───────────┴────────┴────────────┘
 
-2022 Mar 15, 07:04 (✨) /economy/ $ futures metals
+2022 Mar 15, 07:04 (🦋) /economy/ $ futures metals
          Future Table [Source: FinViz]
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┓
 ┃           ┃ prevClose ┃ last    ┃ change (%) ┃
@@ -88,7 +88,7 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 │ Gold      │ 1960.80   │ 1930.30 │ -1.56      │
 └───────────┴───────────┴─────────┴────────────┘
 
-2022 Mar 15, 07:04 (✨) /economy/ $ futures meats
+2022 Mar 15, 07:04 (🦋) /economy/ $ futures meats
            Future Table [Source: FinViz]
 ┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┓
 ┃               ┃ prevClose ┃ last   ┃ change (%) ┃
@@ -100,7 +100,7 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 │ Feeder Cattle │ 157.97    │ 162.43 │ 2.82       │
 └───────────────┴───────────┴────────┴────────────┘
 
-2022 Mar 15, 07:04 (✨) /economy/ $ futures grains
+2022 Mar 15, 07:04 (🦋) /economy/ $ futures grains
            Future Table [Source: FinViz]
 ┏━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┓
 ┃              ┃ prevClose ┃ last    ┃ change (%) ┃
@@ -122,7 +122,7 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 │ Canola       │ 1139.10   │ 1113.40 │ -2.26      │
 └──────────────┴───────────┴─────────┴────────────┘
 
-2022 Mar 15, 07:04 (✨) /economy/ $ futures softs
+2022 Mar 15, 07:04 (🦋) /economy/ $ futures softs
            Future Table [Source: FinViz]
 ┏━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┓
 ┃              ┃ prevClose ┃ last    ┃ change (%) ┃
@@ -140,4 +140,3 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 │ Cocoa        │ 2611.00   │ 2556.00 │ -2.11      │
 └──────────────┴───────────┴─────────┴────────────┘
 ```
-

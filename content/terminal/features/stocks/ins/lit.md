@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## lit
 
-### Description: 
+### Description
 
 Print latest insider trading. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: lit [-l LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: lit [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 07:58 (✨) /stocks/ins/ $ lit
+2022 Feb 16, 07:58 (🦋) /stocks/ins/ $ lit
                                                                                 Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
 ┃ X  ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name      ┃ Insider Name         ┃ Title      ┃ Trade Type   ┃ Price  ┃ Qty        ┃ Owned     ┃ Diff Own ┃ Value        ┃
@@ -67,4 +67,3 @@ usage: lit [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
-

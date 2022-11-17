@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## exrates
 
-### Description: 
+### Description
 
 Shows list of crypto, fiats, commodity exchange rates from CoinGecko You can look on only N number of records with --limit, You can sort by Index, Name, Unit, Value, Type, and also use --reverse flag to sort descending.
 
-### Usage: 
+### Usage
+
 ```python
 usage: exrates [-l LIMIT] [-s {Index,Name,Unit,Value,Type}] [-r]
 ```
@@ -24,11 +25,10 @@ usage: exrates [-l LIMIT] [-s {Index,Name,Unit,Value,Type}] [-r]
 | sortby | Sort by given column. Default: Index | Index | True | Index, Name, Unit, Value, Type |
 | reverse | Data is sorted in ascending order by default. Reverse flag will sort it in an descending way. Only works when raw data is displayed. | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 15, 08:12 (✨) /crypto/ov/ $ exrates
+2022 Feb 15, 08:12 (🦋) /crypto/ov/ $ exrates
                            Exchange Rates
 ┌───────┬─────────────────────────────┬──────┬────────────┬────────┐
 │ Index │ Name                        │ Unit │ Value      │ Type   │
@@ -64,4 +64,3 @@ usage: exrates [-l LIMIT] [-s {Index,Name,Unit,Value,Type}] [-r]
 │ 15    │ Australian Dollar           │ A$   │ 61998.28   │ fiat   │
 └───────┴─────────────────────────────┴──────┴────────────┴────────┘
 ```
-

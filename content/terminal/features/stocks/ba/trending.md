@@ -7,21 +7,20 @@ description: OpenBB Terminal Function
 
 ## trending
 
-### Description: 
+### Description
 
 Stocks trending. [Source: Stocktwits]
 
-### Usage: 
+### Usage
+
 ```python
 usage: trending
 ```
 
-
-
 ## Examples
 
 ```python
-2022 Feb 16, 10:50 (✨) /stocks/ba/ $ trending
+2022 Feb 16, 10:50 (🦋) /stocks/ba/ $ trending
                                Trending Stocks
 ┏━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ Ticker ┃ Watchlist Count ┃ Name                                           ┃
@@ -87,4 +86,3 @@ usage: trending
 │ GNRC   │ 3090            │ Generac Holdings Inc.                          │
 └────────┴─────────────────┴────────────────────────────────────────────────┘
 ```
-

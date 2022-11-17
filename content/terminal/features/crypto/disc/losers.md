@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## losers
 
-### Description: 
+### Description
 
 Shows Largest Losers - coins which price dropped the most in given period You can use parameter --interval to set which timeframe are you interested in: {14d,1h,1y,200d,24h,30d,7d} You can look on only N number of records with --limit, You can sort by {Symbol,Name,Price [$],Market Cap,Market Cap Rank,Volume [$]} with --sort.
 
-### Usage: 
+### Usage
+
 ```python
 usage: losers [-i {14d,1h,1y,200d,24h,30d,7d}] [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
@@ -24,11 +25,10 @@ usage: losers [-i {14d,1h,1y,200d,24h,30d,7d}] [-l LIMIT] [-s SORTBY [SORTBY ...
 | limit | Number of records to display | 15 | True | None |
 | sortby | Sort by given column. Default: Market Cap Rank | Market Cap | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 15, 06:43 (✨) /crypto/disc/ $ losers
+2022 Feb 15, 06:43 (🦋) /crypto/disc/ $ losers
 ┌────────┬─────────────────┬───────────┬────────────────┬─────────────────┬────────────┬───────────────┐
 │ Symbol │ Name            │ Price [$] │ Market Cap [$] │ Market Cap Rank │ Volume [$] │ Change 1h [%] │
 ├────────┼─────────────────┼───────────┼────────────────┼─────────────────┼────────────┼───────────────┤
@@ -63,4 +63,3 @@ usage: losers [-i {14d,1h,1y,200d,24h,30d,7d}] [-l LIMIT] [-s SORTBY [SORTBY ...
 │ xrp    │ XRP             │ 0.84      │ 39.9B          │ 6               │ 3.2B       │ 0.29          │
 └────────┴─────────────────┴───────────┴────────────────┴─────────────────┴────────────┴───────────────┘
 ```
-

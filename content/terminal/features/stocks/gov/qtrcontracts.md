@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## qtrcontracts
 
-### Description: 
+### Description
 
 Look at government contracts [Source: www.quiverquant.com]
 
-### Usage: 
+### Usage
+
 ```python
 usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 ```
@@ -24,11 +25,10 @@ usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 | analysis | Analysis to look at contracts. 'Total' shows summed contracts. 'Upmom' shows highest sloped contacts while 'downmom' shows highest decreasing slopes. | total | True | total, upmom, downmom |
 | raw | Print raw data. | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 07:33 (✨) /stocks/gov/ $ qtrcontracts -l 20
+2022 Feb 16, 07:33 (🦋) /stocks/gov/ $ qtrcontracts -l 20
    Quarterly Contracts
 ┏━━━━━━┳━━━━━━━━━━━━━━━━━┓
 ┃      ┃ Total           ┃
@@ -74,4 +74,3 @@ usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 │ PW   │ 4466721029.89   │
 └──────┴─────────────────┘
 ```
-

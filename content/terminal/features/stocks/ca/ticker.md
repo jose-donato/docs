@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## ticker
 
-### Description: 
+### Description
 
 Set ticker to extract similar from
 
-### Usage: 
+### Usage
+
 ```python
 usage: ticker -t TICKER
 ```
@@ -22,11 +23,9 @@ usage: ticker -t TICKER
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | Ticker get similar tickers from | None | False | None |
 
-
 ## Examples
 
 ```python
 text
-2022 Feb 15, 08:33 (✨) /stocks/ca/ $ ticker AAPL
+2022 Feb 15, 08:33 (🦋) /stocks/ca/ $ ticker AAPL
 ```
-

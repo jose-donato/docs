@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## load
 
-### Description: 
+### Description
 
-Load stock ticker to perform analysis on. When the data source is syf', an Indian ticker can be loaded by using '.NS' at the end, e.g. 'SBIN.NS'. See available market in https://help.yahoo.com/kb/exchanges-data-providers-yahoo-finance-sln2310.html.
+Load stock ticker to perform analysis on. When the data source is syf', an Indian ticker can be loaded by using '.NS' at the end, e.g. 'SBIN.NS'. See available market in <https://help.yahoo.com/kb/exchanges-data-providers-yahoo-finance-sln2310.html>.
 
-### Usage: 
+### Usage
+
 ```python
 usage: load -t TICKER [-s START] [-e END] [-i {1,5,15,30,60}] [-p] [-f FILEPATH] [-m] [-w] [-r {ytd,1y,2y,5y,6m}]
 ```
@@ -30,12 +31,11 @@ usage: load -t TICKER [-s START] [-e END] [-i {1,5,15,30,60}] [-p] [-f FILEPATH]
 | weekly | Load weekly data | False | True | None |
 | iexrange | Range for using the iexcloud api. Longer range requires more tokens in account | ytd | True | ytd, 1y, 2y, 5y, 6m |
 
-
 ## Examples
 
 ```python
 txt
-2022 Feb 16, 08:29 (✨) /stocks/ $ load TSLA
+2022 Feb 16, 08:29 (🦋) /stocks/ $ load TSLA
 
 Loading Daily TSLA stock with starting period 2019-02-11 for analysis.
 
@@ -44,7 +44,7 @@ Timezone: America/New_York
 Currency: USD
 Market:   OPEN
 
-2022 Feb 16, 08:30 (✨) /stocks/ $ load AAPL
+2022 Feb 16, 08:30 (🦋) /stocks/ $ load AAPL
 
 Loading Daily AAPL stock with starting period 2019-02-11 for analysis.
 
@@ -53,7 +53,7 @@ Timezone: America/New_York
 Currency: USD
 Market:   OPEN
 
-2022 Feb 16, 08:30 (✨) /stocks/ $ load AMZN
+2022 Feb 16, 08:30 (🦋) /stocks/ $ load AMZN
 
 Loading Daily AMZN stock with starting period 2019-02-11 for analysis.
 
@@ -62,4 +62,3 @@ Timezone: America/New_York
 Currency: USD
 Market:   OPEN
 ```
-

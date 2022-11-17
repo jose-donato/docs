@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## spac
 
-### Description: 
+### Description
 
 Show other users SPACs announcement. [Source: Reddit]
 
-### Usage: 
+### Usage
+
 ```python
 usage: spac [-l N_LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: spac [-l N_LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | n_limit | limit of posts with SPACs retrieved. | 5 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 10:42 (✨) /stocks/ba/ $ spac
+2022 Feb 16, 10:42 (🦋) /stocks/ba/ $ spac
 2022-02-15 22:31:56 - 2020 vs 2021
 https://old.reddit.com/r/wallstreetbets/comments/stfcdu/2020_vs_2021/
 
@@ -45,4 +45,3 @@ https://old.reddit.com/r/Superstonk/comments/sq1qv8/in_q4_citadel_advisors_llc_b
 The following stock tickers have been mentioned more than once across the previous SPACs:
 3 GME, 2 POST, 2 FTCV
 ```
-

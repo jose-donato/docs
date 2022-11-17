@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## ch
 
-### Description: 
+### Description
 
-Display list of major crypto-related hacks [Source: https://rekt.news] Can be sorted by {Platform,Date,Amount [$],Audit,Slug,URL} with --sortby and reverse the display order with --reverse Show only N elements with --limit Accepts --slug or -s to check individual crypto hack (e.g., -s polynetwork-rekt)
+Display list of major crypto-related hacks [Source: <https://rekt.news>] Can be sorted by {Platform,Date,Amount [$],Audit,Slug,URL} with --sortby and reverse the display order with --reverse Show only N elements with --limit Accepts --slug or -s to check individual crypto hack (e.g., -s polynetwork-rekt)
 
-### Usage: 
+### Usage
+
 ```python
 usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 ```
@@ -25,11 +26,10 @@ usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | slug | Slug to check crypto hack (e.g., polynetwork-rekt) |  | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 15, 08:16 (✨) /crypto/ov/ $ ch
+2022 Feb 15, 08:16 (🦋) /crypto/ov/ $ ch
                                                             Major Crypto Hacks
 ┌────────────────────────┬────────────┬────────────┬────────────────────────┬────────────────────┬───────────────────────────────────────┐
 │ Platform               │ Date       │ Amount [$] │ Audit                  │ Slug               │ URL                                   │
@@ -65,4 +65,3 @@ usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 │ Alpha Finance - REKT   │ 2021-02-13 │ 37.500 M   │ Quantstamp, Peckshield │ alpha-finance-rekt │ https://rekt.news/alpha-finance-rekt/ │
 └────────────────────────┴────────────┴────────────┴────────────────────────┴────────────────────┴───────────────────────────────────────┘
 ```
-

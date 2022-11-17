@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## blop
 
-### Description: 
+### Description
 
 Print latest officer purchases 25k. [Source: OpenInsider]
 
-### Usage: 
+### Usage
+
 ```python
 usage: blop [-l LIMIT]
 ```
@@ -22,11 +23,10 @@ usage: blop [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 07:49 (✨) /stocks/ins/ $ blop
+2022 Feb 16, 07:49 (🦋) /stocks/ins/ $ blop
                                                                                   Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
 ┃ X  ┃ Filing Date ┃ Trade Date ┃ Ticker ┃ Company Name         ┃ Insider Name        ┃ Title      ┃ Trade Type   ┃ Price  ┃ Qty        ┃ Owned      ┃ Diff Own ┃ Value        ┃
@@ -65,4 +65,3 @@ usage: blop [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
-

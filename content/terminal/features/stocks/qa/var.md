@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## var
 
-### Description: 
+### Description
 
 Provides value at risk (short: VaR) of the selected stock.
 
-### Usage: 
+### Usage
+
 ```python
 usage: var [-m] [-a] [-s] [-p PERCENTILE] [-d DATA_RANGE]
 ```
@@ -26,11 +27,10 @@ usage: var [-m] [-a] [-s] [-p PERCENTILE] [-d DATA_RANGE]
 | percentile | Percentile used for VaR calculations, for example input 99.9 equals a 99.9 Percent VaR | 99.9 | True | None |
 | data_range | Number of rows you want to use VaR over, ex: if you are using days, 30 would show VaR for the last 30 TRADING days | 0 | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 11:18 (✨) /stocks/qa/ $ var
+2022 Feb 16, 11:18 (🦋) /stocks/qa/ $ var
           FB Value at Risk
 ┏━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
 ┃       ┃ VaR:    ┃ Historical VaR: ┃
@@ -44,4 +44,3 @@ usage: var [-m] [-a] [-s] [-p PERCENTILE] [-d DATA_RANGE]
 │ 99.9% │ -0.0719 │ -0.1719         │
 └───────┴─────────┴─────────────────┘
 ```
-

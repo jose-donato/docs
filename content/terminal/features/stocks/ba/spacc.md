@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## spacc
 
-### Description: 
+### Description
 
 Print other users SPACs announcement under subreddit 'SPACs'. [Source: Reddit]
 
-### Usage: 
+### Usage
+
 ```python
 usage: spacc [-l N_LIMIT] [-p]
 ```
@@ -23,11 +24,10 @@ usage: spacc [-l N_LIMIT] [-p]
 | n_limit | limit of posts with SPACs retrieved | 10 | True | None |
 | b_popular | popular flag, if true the posts retrieved are based on score rather than time | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 10:43 (✨) /stocks/ba/ $ spacc
+2022 Feb 16, 10:43 (🦋) /stocks/ba/ $ spacc
 2022-02-16 11:35:01 - I scraped r/SPACs for the top ticker mentions in the last 24H. Here are the results (Wednesday February 16, 2022)
 https://old.reddit.com/r/SPACs/comments/sttsnl/i_scraped_rspacs_for_the_top_ticker_mentions_in/
 
@@ -43,4 +43,3 @@ https://old.reddit.com/r/SPACs/comments/st52xb/did_ibkr_resolve_my_spac_redempti
 The following stock tickers have been mentioned more than once across the previous SPACs:
 8 CCAC, 6 IBKR, 3 CLBT, 3 SLDP, 2 VIAC, 2 CND
 ```
-

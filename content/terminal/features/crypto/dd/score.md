@@ -7,21 +7,20 @@ description: OpenBB Terminal Function
 
 ## score
 
-### Description: 
+### Description
 
 In this view you can find different kind of scores for loaded coin. Those scores represents different rankings, sentiment metrics, some user stats and others. You will see CoinGecko scores, Developer Scores, Community Scores, Sentiment, Reddit scores and many others.
 
-### Usage: 
+### Usage
+
 ```python
 usage: score
 ```
 
-
-
 ## Examples
 
 ```python
-2022 Feb 15, 07:47 (✨) /crypto/dd/ $ score
+2022 Feb 15, 07:47 (🦋) /crypto/dd/ $ score
 
         Different Scores for Loaded Coin
 ┌─────────────────────────────────┬────────────┐
@@ -62,4 +61,3 @@ usage: score
 │ Bing Matches                    │            │
 └─────────────────────────────────┴────────────┘
 ```
-

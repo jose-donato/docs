@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## arktrades
 
-### Description: 
+### Description
 
 Get trades for ticker across all ARK funds.
 
-### Usage: 
+### Usage
+
 ```python
 usage: arktrades [-l LIMIT] [-s]
 ```
@@ -23,11 +24,10 @@ usage: arktrades [-l LIMIT] [-s]
 | limit | Limit of rows to show | 10 | True | None |
 | show_symbol | Flag to show ticker in table | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 04:23 (✨) /stocks/dd/ $ arktrades
+2022 Feb 16, 04:23 (🦋) /stocks/dd/ $ arktrades
                                                   ARK Trades
 ┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 ┃            ┃ shares ┃ weight ┃ fund ┃ direction ┃ everything.profile.companyName ┃ Close ($) ┃ Total ($1M) ┃
@@ -53,4 +53,3 @@ usage: arktrades [-l LIMIT] [-s]
 │ 2020-10-30 │ 128557 │ 0.50   │ ARKG │ Sell      │ Apple Inc.                     │ 108.86    │ 13.99       │
 └────────────┴────────┴────────┴──────┴───────────┴────────────────────────────────┴───────────┴─────────────┘
 ```
-

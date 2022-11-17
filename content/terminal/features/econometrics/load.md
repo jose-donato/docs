@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## load
 
-### Description: 
+### Description
 
 Load dataset (from previous export, custom imports or StatsModels).
 
-### Usage: 
+### Usage
+
 ```python
 usage: load [-f FILE] [-a ALIAS] [-e]
 ```
@@ -22,15 +23,14 @@ usage: load [-f FILE] [-a ALIAS] [-e]
 | ---- | ----------- | ------- | -------- | ------- |
 | file | File to load data in (can be custom import, may have been exported before or can be from Statsmodels) | None | True | None |
 | alias | Alias name to give to the dataset | None | True | None |
-| examples | Use this argument to show examples of Statsmodels to load in. See: https://www.statsmodels.org/devel/datasets/index.html | False | True | None |
-
+| examples | Use this argument to show examples of Statsmodels to load in. See: <https://www.statsmodels.org/devel/datasets/index.html> | False | True | None |
 
 ## Examples
 
 ```python
-2022 Feb 28, 04:19 (✨) /econometrics/ $ load MSFT_20220221_140503.xlsx -a msft
+2022 Feb 28, 04:19 (🦋) /econometrics/ $ load MSFT_20220221_140503.xlsx -a msft
 
-2022 Feb 28, 04:20 (✨) /econometrics/ $ show msft
+2022 Feb 28, 04:20 (🦋) /econometrics/ $ show msft
                                          msft
 ┏━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
 ┃   ┃ date                ┃ open   ┃ high   ┃ low    ┃ close  ┃ adj_close ┃ volume   ┃
@@ -56,4 +56,3 @@ usage: load [-f FILE] [-a ALIAS] [-e]
 │ 9 │ 2019-03-04 00:00:00 │ 113.02 │ 113.25 │ 110.80 │ 112.26 │ 108.79    │ 26608000 │
 └───┴─────────────────────┴────────┴────────┴────────┴────────┴───────────┴──────────┘
 ```
-

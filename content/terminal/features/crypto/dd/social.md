@@ -7,21 +7,20 @@ description: OpenBB Terminal Function
 
 ## social
 
-### Description: 
+### Description
 
 Shows social media corresponding to loaded coin. You can find there name of telegram channel, urls to twitter, reddit, bitcointalk, facebook and discord.
 
-### Usage: 
+### Usage
+
 ```python
 usage: social
 ```
 
-
-
 ## Examples
 
 ```python
-2022 Feb 15, 07:47 (✨) /crypto/dd/ $ social
+2022 Feb 15, 07:47 (🦋) /crypto/dd/ $ social
           Social Media for Loaded Coin
 ┌───────────┬───────────────────────────────────┐
 │ Metric    │ Value                             │
@@ -35,4 +34,3 @@ usage: social
 │ Facebook  │ bitcoins                          │
 └───────────┴───────────────────────────────────┘
 ```
-

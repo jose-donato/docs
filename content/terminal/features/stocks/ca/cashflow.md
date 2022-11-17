@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## cashflow
 
-### Description: 
+### Description
 
 Prints either yearly or quarterly cashflow statement the company, and compares it against similar companies.
 
-### Usage: 
+### Usage
+
 ```python
 usage: cashflow [-q] [-t S_TIMEFRAME]
 ```
@@ -23,11 +24,10 @@ usage: cashflow [-q] [-t S_TIMEFRAME]
 | b_quarter | Quarter financial data flag. | False | True | None |
 | s_timeframe | Specify year/quarter of the cashflow statement to be retrieved. The format for year is YYYY and for quarter is DD-MMM-YYY (for example, 30-Sep-2021). Default is last year/quarter. | None | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 15, 08:35 (✨) /stocks/ca/ $ cashflow
+2022 Feb 15, 08:35 (🦋) /stocks/ca/ $ cashflow
 Other available yearly timeframes are: 2017, 2018, 2019, 2020, 2021
 
                            Cashflow Comparison
@@ -71,4 +71,3 @@ Other available yearly timeframes are: 2017, 2018, 2019, 2020, 2021
 │ Net Operating Cash Flow / Sales        │ 28.44%   │ 21.36%  │ 45.65%  │
 └────────────────────────────────────────┴──────────┴─────────┴─────────┘
 ```
-

@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## greeks
 
-### Description: 
+### Description
 
 The greeks for a given option.
 
-### Usage: 
+### Usage
+
 ```python
 usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 ```
@@ -27,11 +28,10 @@ usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 | max | Maximum strike price to show. | None | True | None |
 | all | Whether to show all greeks. | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 08:52 (✨) /stocks/options/ $ greeks -a
+2022 Feb 16, 08:52 (🦋) /stocks/options/ $ greeks -a
                                             Greeks
 ┏━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━┳━━━━━━━┳━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
 ┃ Strike  ┃ Implied Vol ┃ Delta ┃ Gamma ┃ Vega ┃ Theta ┃ Rho  ┃ Phi   ┃ Charm ┃ Vanna ┃ Vomma ┃
@@ -183,4 +183,3 @@ usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 │ 1475.00 │ 0.25        │ 0.00  │ 0.00  │ 0.00 │ 0.00  │ 0.00 │ -0.00 │ -0.00 │ 0.00  │ 0.00  │
 └─────────┴─────────────┴───────┴───────┴──────┴───────┴──────┴───────┴───────┴───────┴───────┘
 ```
-

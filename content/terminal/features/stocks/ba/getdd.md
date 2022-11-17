@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## getdd
 
-### Description: 
+### Description
 
 Print top stock's due diligence from other users. [Source: Reddit]
 
-### Usage: 
+### Usage
+
 ```python
 usage: getdd [-l LIMIT] [-d DAYS] [-a]
 ```
@@ -24,11 +25,10 @@ usage: getdd [-l LIMIT] [-d DAYS] [-a]
 | days | number of prior days to look for. | 3 | True | None |
 | all | search through all flairs (apart from Yolo and Meme), otherwise we focus on specific flairs: DD, technical analysis, Catalyst, News, Advice, Chart | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 16, 10:18 (✨) /stocks/ba/ $ getdd -d 50
+2022 Feb 16, 10:18 (🦋) /stocks/ba/ $ getdd -d 50
 2022-02-15 17:51:11 - $ATVI free money even if MSFT deal falls through.
 https://old.reddit.com/r/wallstreetbets/comments/st8s1i/atvi_free_money_even_if_msft_deal_falls_through/
 
@@ -44,4 +44,3 @@ https://old.reddit.com/r/wallstreetbets/comments/sn90qs/if_you_cannot_beat_them_
 2022-02-03 20:01:06 - Thoughts on only buying large market cap stocks (Top 100, 100 billion market cap+, and significant index weighting)?
 https://old.reddit.com/r/stocks/comments/sjsqhu/thoughts_on_only_buying_large_market_cap_stocks/
 ```
-

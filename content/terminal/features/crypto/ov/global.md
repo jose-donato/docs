@@ -7,11 +7,12 @@ description: OpenBB Terminal Function
 
 ## global
 
-### Description: 
+### Description
 
 Shows global statistics about Crypto Market
 
-### Usage: 
+### Usage
+
 ```python
 usage: global [--pie]
 ```
@@ -22,11 +23,10 @@ usage: global [--pie]
 | ---- | ----------- | ------- | -------- | ------- |
 | pie | Flag to show pie chart with market cap distribution. Works only with CoinGecko source | False | True | None |
 
-
 ## Examples
 
 ```python
-2022 Feb 15, 08:13 (✨) /crypto/ov/ $ global
+2022 Feb 15, 08:13 (🦋) /crypto/ov/ $ global
                  Global Statistics
 ┌──────────────────────────────────────┬──────────┐
 │ Metric                               │ Value    │
@@ -50,4 +50,3 @@ usage: global [--pie]
 │ Altcoin Market Cap In Pct            │ 41.59    │
 └──────────────────────────────────────┴──────────┘
 ```
-
