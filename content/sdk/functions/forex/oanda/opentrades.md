@@ -16,7 +16,7 @@ Request open trades data.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L470)]
 
 ```python
-def open_trades_request(accountID: str = "REPLACE_ME") -> Union
+def open_trades_request(accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

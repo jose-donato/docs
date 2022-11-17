@@ -16,7 +16,7 @@ Gets historical option pricing.  This inputs either ticker, expiration, strike o
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L44)]
 
 ```python
-def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: bool = False, chain_id: Optional[str] = None) -> DataFrame
+def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: bool = False, chain_id: Optional[str] = None) -> pd.DataFrame
 ```
 ## Parameters
 

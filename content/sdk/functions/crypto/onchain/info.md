@@ -16,7 +16,7 @@ Get info about ERC20 token. [Source: Ethplorer]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L380)]
 
 ```python
-def get_token_info(address: Any) -> DataFrame
+def get_token_info(address: Any) -> pd.DataFrame
 ```
 ## Parameters
 

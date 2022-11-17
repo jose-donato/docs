@@ -16,7 +16,7 @@ Historic prices for a specific option [chartexchange]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/chartexchange_model.py#L19)]
 
 ```python
-def get_option_history(symbol: str = "GME", date: str = "2021-02-05", call: bool = True, price: str = "90") -> DataFrame
+def get_option_history(symbol: str = "GME", date: str = "2021-02-05", call: bool = True, price: str = "90") -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Scrape data for global bonds
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L204)]
 
 ```python
-def global_bonds() -> DataFrame
+def global_bonds() -> pd.DataFrame
 ```
 ## Parameters
 

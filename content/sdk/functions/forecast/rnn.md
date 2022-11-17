@@ -16,7 +16,7 @@ Perform RNN forecasting
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rnn_model.py#L21)]
 
 ```python
-def get_rnn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, train_split: float = 0.85, forecast_horizon: int = 5, model_type: str = "LSTM", hidden_dim: int = 20, dropout: float = 0.0, batch_size: int = 16, n_epochs: int = 100, learning_rate: float = 0.001, model_save_name: str = "rnn_model", training_length: int = 20, input_chunk_size: int = 14, force_reset: bool = True, save_checkpoints: bool = True) -> Tuple
+def get_rnn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, train_split: float = 0.85, forecast_horizon: int = 5, model_type: str = "LSTM", hidden_dim: int = 20, dropout: float = 0.0, batch_size: int = 16, n_epochs: int = 100, learning_rate: float = 0.001, model_save_name: str = "rnn_model", training_length: int = 20, input_chunk_size: int = 14, force_reset: bool = True, save_checkpoints: bool = True) -> Tuple[Optional[List[type[darts.timeseries.TimeSeries]]], Optional[List[type[darts.timeseries.TimeSeries]]], Optional[List[type[darts.timeseries.TimeSeries]]], Optional[float], Optional[type[darts.models.forecasting.rnn_model.RNNModel]]]
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Calculate Fibonacci levels
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_model.py#L17)]
 
 ```python
-def calculate_fib_levels(data: pd.DataFrame, limit: int = 120, start_date: Any = None, end_date: Any = None) -> Tuple
+def calculate_fib_levels(data: pd.DataFrame, limit: int = 120, start_date: Any = None, end_date: Any = None) -> Tuple[pd.DataFrame, pandas._libs.tslibs.timestamps.Timestamp, pandas._libs.tslibs.timestamps.Timestamp, float, float]
 ```
 ## Parameters
 

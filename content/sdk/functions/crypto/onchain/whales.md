@@ -16,7 +16,7 @@ Whale Alert's API allows you to retrieve live and historical transaction data fr
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_model.py#L86)]
 
 ```python
-def get_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: str = "date", ascend: bool = False) -> DataFrame
+def get_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: str = "date", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

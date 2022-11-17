@@ -16,7 +16,7 @@ Returns information about listed DeFi protocols, their current TVL and changes t
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L35)]
 
 ```python
-def get_defi_protocols(limit: int = 100, sortby: str = "", ascend: bool = False, description: bool = False, drop_chain: bool = True) -> DataFrame
+def get_defi_protocols(limit: int = 100, sortby: str = "", ascend: bool = False, description: bool = False, drop_chain: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

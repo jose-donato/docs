@@ -16,7 +16,7 @@ Request data for candle chart.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L581)]
 
 ```python
-def get_candles_dataframe(instrument: Optional[str] = None, granularity: str = "D", candlecount: int = 180) -> Union
+def get_candles_dataframe(instrument: Optional[str] = None, granularity: str = "D", candlecount: int = 180) -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

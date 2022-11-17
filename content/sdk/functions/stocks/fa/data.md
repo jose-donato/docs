@@ -10,7 +10,7 @@ Get fundamental data from finviz
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/finviz_model.py#L15)]
 
 ```python
-def get_data(symbol: str) -> DataFrame
+def get_data(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

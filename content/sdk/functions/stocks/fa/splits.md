@@ -16,7 +16,7 @@ Get splits and reverse splits events. [Source: Yahoo Finance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L312)]
 
 ```python
-def get_splits(symbol: str) -> DataFrame
+def get_splits(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Method that retrieves maximum drawdown ratio for portfolio and benchmark selecte
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1158)]
 
 ```python
-def get_maximum_drawdown_ratio(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
+def get_maximum_drawdown_ratio(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.DataFrame
 ```
 ## Parameters
 

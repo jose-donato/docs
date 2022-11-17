@@ -16,7 +16,7 @@ Get repos sorted by stars or forks. Can be filtered by categories.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L135)]
 
 ```python
-def get_top_repos(sortby: str, limit: int = 50, categories: str = "") -> DataFrame
+def get_top_repos(sortby: str, limit: int = 50, categories: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

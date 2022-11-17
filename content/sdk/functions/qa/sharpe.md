@@ -16,7 +16,7 @@ Calculates the sharpe ratio
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L537)]
 
 ```python
-def get_sharpe(data: pd.DataFrame, rfr: float = 0, window: float = 252) -> DataFrame
+def get_sharpe(data: pd.DataFrame, rfr: float = 0, window: float = 252) -> pd.DataFrame
 ```
 ## Parameters
 

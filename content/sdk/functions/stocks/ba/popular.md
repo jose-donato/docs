@@ -16,7 +16,7 @@ Get popular tickers from list of subreddits [Source: reddit].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L145)]
 
 ```python
-def get_popular_tickers(limit: int = 10, post_limit: int = 50, subreddits: str = "") -> DataFrame
+def get_popular_tickers(limit: int = 10, post_limit: int = 50, subreddits: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

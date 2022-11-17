@@ -16,7 +16,7 @@ Get terra blockchain account growth history [Source: https://fcd.terra.dev/swagg
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L263)]
 
 ```python
-def get_account_growth(cumulative: bool = True) -> DataFrame
+def get_account_growth(cumulative: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

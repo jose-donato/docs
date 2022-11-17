@@ -16,7 +16,7 @@ Get base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L124)]
 
 ```python
-def get_uniswap_stats() -> DataFrame
+def get_uniswap_stats() -> pd.DataFrame
 ```
 ## Parameters
 

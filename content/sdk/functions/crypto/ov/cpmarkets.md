@@ -16,7 +16,7 @@ Returns basic coin information for all coins from CoinPaprika API [Source: CoinP
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L223)]
 
 ```python
-def get_coins_market_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = True) -> DataFrame
+def get_coins_market_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

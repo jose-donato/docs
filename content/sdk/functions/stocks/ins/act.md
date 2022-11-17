@@ -16,7 +16,7 @@ Get insider activity. [Source: Business Insider]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/businessinsider_model.py#L17)]
 
 ```python
-def get_insider_activity(symbol: str) -> DataFrame
+def get_insider_activity(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

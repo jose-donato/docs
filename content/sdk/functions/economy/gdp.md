@@ -16,7 +16,7 @@ Get annual or quarterly Real GDP for US
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L44)]
 
 ```python
-def get_real_gdp(interval: str = "q", start_year: int = 2010) -> DataFrame
+def get_real_gdp(interval: str = "q", start_year: int = 2010) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Search indices by keyword. [Source: FinanceDatabase]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L725)]
 
 ```python
-def get_search_indices(keyword: list, limit: int = 10) -> DataFrame
+def get_search_indices(keyword: list, limit: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Returns coin fundraising
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L637)]
 
 ```python
-def get_fundraising(symbol: str) -> Tuple
+def get_fundraising(symbol: str) -> Tuple[str, pd.DataFrame, pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get all events related to given coin like conferences, start date of futures tra
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L74)]
 
 ```python
-def get_coin_events_by_id(symbol: str = "BTC", sortby: Any = "date", ascend: bool = False) -> DataFrame
+def get_coin_events_by_id(symbol: str = "BTC", sortby: Any = "date", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

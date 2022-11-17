@@ -16,7 +16,7 @@ Scrape all substack newsletters from url list.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L54)]
 
 ```python
-def get_newsletters() -> DataFrame
+def get_newsletters() -> pd.DataFrame
 ```
 ## Parameters
 

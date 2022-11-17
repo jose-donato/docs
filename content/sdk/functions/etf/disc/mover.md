@@ -16,7 +16,7 @@ Scrape data for top etf movers.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/discovery/wsj_model.py#L15)]
 
 ```python
-def etf_movers(sort_type: str = "gainers", export: bool = False) -> DataFrame
+def etf_movers(sort_type: str = "gainers", export: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Returns asset's links
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L197)]
 
 ```python
-def get_links(symbol: str) -> DataFrame
+def get_links(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

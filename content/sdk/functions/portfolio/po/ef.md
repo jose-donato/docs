@@ -16,7 +16,7 @@ Get efficient frontier
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1514)]
 
 ```python
-def get_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, value: float = 1.0, value_short: float = 0.0, n_portfolios: int = 100, seed: int = 123) -> Tuple
+def get_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, value: float = 1.0, value_short: float = 0.0, n_portfolios: int = 100, seed: int = 123) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, Optional[pd.DataFrame], numpy.ndarray[Any, numpy.dtype[numpy.floating]], numpy.ndarray[Any, numpy.dtype[numpy.floating]], riskfolio.Portfolio.Portfolio]
 ```
 ## Parameters
 

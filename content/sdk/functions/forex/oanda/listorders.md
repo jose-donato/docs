@@ -16,7 +16,7 @@ Request the orders list from Oanda.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L225)]
 
 ```python
-def order_history_request(order_state: str = "PENDING", order_count: int = 0, accountID: str = "REPLACE_ME") -> Union
+def order_history_request(order_state: str = "PENDING", order_count: int = 0, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

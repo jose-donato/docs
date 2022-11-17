@@ -10,7 +10,7 @@ Perform seasonal decomposition
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L46)]
 
 ```python
-def get_seasonal_decomposition(data: pd.DataFrame, multiplicative: bool = False) -> Tuple
+def get_seasonal_decomposition(data: pd.DataFrame, multiplicative: bool = False) -> Tuple[statsmodels.tsa.seasonal.DecomposeResult, pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

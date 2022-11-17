@@ -16,7 +16,7 @@ Keltner Channels
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L88)]
 
 ```python
-def kc(data: pd.DataFrame, window: int = 20, scalar: float = 2, mamode: str = "ema", offset: int = 0) -> DataFrame
+def kc(data: pd.DataFrame, window: int = 20, scalar: float = 2, mamode: str = "ema", offset: int = 0) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Request Oanda account summary.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L74)]
 
 ```python
-def account_summary_request(accountID: str = "REPLACE_ME") -> Union
+def account_summary_request(accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

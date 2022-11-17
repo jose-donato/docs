@@ -10,7 +10,7 @@ Function to take in the requests.get and return a DataFrame
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L238)]
 
 ```python
-def process_chains(response: requests.models.Response) -> DataFrame
+def process_chains(response: requests.models.Response) -> pd.DataFrame
 ```
 ## Parameters
 

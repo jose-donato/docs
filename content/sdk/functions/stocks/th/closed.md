@@ -16,7 +16,7 @@ Get closed exchanges.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L76)]
 
 ```python
-def get_closed() -> DataFrame
+def get_closed() -> pd.DataFrame
 ```
 ## Parameters
 

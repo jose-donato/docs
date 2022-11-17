@@ -16,7 +16,7 @@ Get terra blockchain governance proposals list [Source: https://fcd.terra.dev/sw
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L197)]
 
 ```python
-def get_proposals(status: str = "", sortby: str = "id", ascend: bool = True, limit: int = 10) -> DataFrame
+def get_proposals(status: str = "", sortby: str = "id", ascend: bool = True, limit: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

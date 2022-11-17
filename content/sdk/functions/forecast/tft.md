@@ -16,7 +16,7 @@ Performs Temporal Fusion Transformer forecasting
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tft_model.py#L26)]
 
 ```python
-def get_tft_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, hidden_size: int = 16, lstm_layers: int = 1, num_attention_heads: int = 4, full_attention: bool = False, dropout: float = 0.1, hidden_continuous_size: int = 8, n_epochs: int = 200, batch_size: int = 32, model_save_name: str = "tft_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple
+def get_tft_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, hidden_size: int = 16, lstm_layers: int = 1, num_attention_heads: int = 4, full_attention: bool = False, dropout: float = 0.1, hidden_continuous_size: int = 8, n_epochs: int = 200, batch_size: int = 32, model_save_name: str = "tft_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple[Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[float], Optional[type[darts.models.forecasting.tft_model.TFTModel]]]
 ```
 ## Parameters
 

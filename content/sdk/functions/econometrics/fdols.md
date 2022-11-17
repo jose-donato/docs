@@ -10,7 +10,7 @@ First differencing is an alternative to using fixed effects when there might be 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L408)]
 
 ```python
-def get_fdols(Y: pd.DataFrame, X: pd.DataFrame) -> Any
+def get_fdols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 ```
 ## Parameters
 

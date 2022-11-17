@@ -16,7 +16,7 @@ Get government contracts for ticker [Source: quiverquant.com]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L103)]
 
 ```python
-def get_contracts(symbol: str, past_transaction_days: int = 10) -> DataFrame
+def get_contracts(symbol: str, past_transaction_days: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

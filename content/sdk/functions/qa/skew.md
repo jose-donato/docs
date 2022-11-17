@@ -16,7 +16,7 @@ Skewness Indicator
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L103)]
 
 ```python
-def get_skew(data: pd.DataFrame, window: int = 14) -> DataFrame
+def get_skew(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 ```
 ## Parameters
 

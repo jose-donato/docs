@@ -16,7 +16,7 @@ Search CoinPaprika. [Source: CoinPaprika]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py#L27)]
 
 ```python
-def get_search_results(query: str, category: Optional[Any] = None, modifier: Optional[Any] = None, sortby: str = "id", ascend: bool = True) -> DataFrame
+def get_search_results(query: str, category: Optional[Any] = None, modifier: Optional[Any] = None, sortby: str = "id", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

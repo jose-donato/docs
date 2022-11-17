@@ -10,7 +10,7 @@ Display portfolio sector allocation compared to the benchmark
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2537)]
 
 ```python
-def get_sectors_allocation(portfolio_engine: Any = None, limit: int = 10, tables: bool = False, recalculate: bool = False) -> None
+def get_sectors_allocation(portfolio_engine: portfolio_model.PortfolioEngine = None, limit: int = 10, tables: bool = False, recalculate: bool = False) -> None
 ```
 ## Parameters
 

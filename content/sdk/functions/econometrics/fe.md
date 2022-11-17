@@ -10,7 +10,7 @@ When effects are correlated with the regressors the RE and BE estimators are not
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L357)]
 
 ```python
-def get_fe(Y: pd.DataFrame, X: pd.DataFrame, entity_effects: bool = False, time_effects: bool = False) -> Any
+def get_fe(Y: pd.DataFrame, X: pd.DataFrame, entity_effects: bool = False, time_effects: bool = False) -> None
 ```
 ## Parameters
 

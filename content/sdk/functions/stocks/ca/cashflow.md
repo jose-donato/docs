@@ -10,7 +10,7 @@ Get cashflow data. [Source: Marketwatch]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L140)]
 
 ```python
-def get_cashflow_comparison(similar: List[str], timeframe: str = "2021", quarter: bool = False) -> DataFrame
+def get_cashflow_comparison(similar: List[str], timeframe: str = "2021", quarter: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

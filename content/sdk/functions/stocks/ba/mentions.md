@@ -16,7 +16,7 @@ Get interest over time from google api [Source: google].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L16)]
 
 ```python
-def get_mentions(symbol: str) -> DataFrame
+def get_mentions(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

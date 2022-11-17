@@ -10,7 +10,7 @@ Display portfolio asset allocation compared to the benchmark
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2493)]
 
 ```python
-def get_assets_allocation(portfolio_engine: portfolio_model.PortfolioEngine, tables: bool = False, limit: int = 10, recalculate: bool = False) -> Union
+def get_assets_allocation(portfolio_engine: portfolio_model.PortfolioEngine, tables: bool = False, limit: int = 10, recalculate: bool = False) -> Union[pd.DataFrame, Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]]
 ```
 ## Parameters
 

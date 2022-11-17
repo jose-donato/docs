@@ -16,7 +16,7 @@ Returns open interest by exchange for a certain symbol
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinglass_model.py#L149)]
 
 ```python
-def get_open_interest_per_exchange(symbol: str, interval: int = 0) -> DataFrame
+def get_open_interest_per_exchange(symbol: str, interval: int = 0) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Shows Largest Losers - coins which lose the most in given period. [Source: CoinG
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L288)]
 
 ```python
-def get_losers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap_rank") -> DataFrame
+def get_losers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap_rank") -> pd.DataFrame
 ```
 ## Parameters
 

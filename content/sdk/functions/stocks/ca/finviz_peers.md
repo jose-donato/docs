@@ -10,7 +10,7 @@ Get similar companies from Finviz.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L25)]
 
 ```python
-def get_similar_companies(symbol: str, compare_list: List[str] = None) -> List
+def get_similar_companies(symbol: str, compare_list: List[str] = None) -> List[str]
 ```
 ## Parameters
 

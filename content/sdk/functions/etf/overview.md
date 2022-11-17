@@ -16,7 +16,7 @@ Get overview data for selected etf
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L48)]
 
 ```python
-def get_etf_overview(symbol: str) -> DataFrame
+def get_etf_overview(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

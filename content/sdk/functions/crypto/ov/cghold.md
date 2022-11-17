@@ -16,7 +16,7 @@ Returns public companies that holds ethereum or bitcoin [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L102)]
 
 ```python
-def get_holdings_overview(endpoint: str = "bitcoin") -> List
+def get_holdings_overview(endpoint: str = "bitcoin") -> List[Union[str, pd.DataFrame]]
 ```
 ## Parameters
 

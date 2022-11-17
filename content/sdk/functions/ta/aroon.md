@@ -16,7 +16,7 @@ Aroon technical indicator
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L56)]
 
 ```python
-def aroon(data: pd.DataFrame, window: int = 25, scalar: int = 100) -> DataFrame
+def aroon(data: pd.DataFrame, window: int = 25, scalar: int = 100) -> pd.DataFrame
 ```
 ## Parameters
 

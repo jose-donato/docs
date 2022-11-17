@@ -16,7 +16,7 @@ Get staking info for provided terra account [Source: https://fcd.terra.dev/swagg
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L105)]
 
 ```python
-def get_staking_account_info(address: str = "") -> Tuple
+def get_staking_account_info(address: str = "") -> Tuple[pd.DataFrame, str]
 ```
 ## Parameters
 

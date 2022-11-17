@@ -10,7 +10,7 @@ Get IPO calendar
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L16)]
 
 ```python
-def get_ipo_calendar(start_date: str = None, end_date: str = None) -> DataFrame
+def get_ipo_calendar(start_date: str = None, end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

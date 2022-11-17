@@ -16,7 +16,7 @@ Request creation of buy/sell trade order.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L270)]
 
 ```python
-def create_order_request(price: int = 0, units: int = 0, instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union
+def create_order_request(price: int = 0, units: int = 0, instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

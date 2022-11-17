@@ -16,7 +16,7 @@ Builds a maximal diversification portfolio
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1108)]
 
 ```python
-def get_max_diversification_portfolio(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0) -> Tuple
+def get_max_diversification_portfolio(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
 ## Parameters
 

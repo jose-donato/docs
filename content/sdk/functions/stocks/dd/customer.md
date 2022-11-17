@@ -10,7 +10,7 @@ Print customers from ticker provided
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L66)]
 
 ```python
-def get_customers(symbol: str, limit: int = 50) -> DataFrame
+def get_customers(symbol: str, limit: int = 50) -> pd.DataFrame
 ```
 ## Parameters
 

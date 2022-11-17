@@ -16,7 +16,7 @@ Get bitcoin price data
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/glassnode_model.py#L18)]
 
 ```python
-def get_btc_rainbow(start_date: str = "2010-01-01", end_date: str = None) -> DataFrame
+def get_btc_rainbow(start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

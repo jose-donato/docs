@@ -16,7 +16,7 @@ Fetch data to calculate potential returns of a certain coin. [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L63)]
 
 ```python
-def get_coin_potential_returns(main_coin: str, to_symbol: Optional[str] = None, limit: Optional[int] = None, price: Optional[int] = None) -> DataFrame
+def get_coin_potential_returns(main_coin: str, to_symbol: Optional[str] = None, limit: Optional[int] = None, price: Optional[int] = None) -> pd.DataFrame
 ```
 ## Parameters
 

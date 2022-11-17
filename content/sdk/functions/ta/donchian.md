@@ -16,7 +16,7 @@ Calculate Donchian Channels
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L53)]
 
 ```python
-def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20) -> DataFrame
+def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20) -> pd.DataFrame
 ```
 ## Parameters
 

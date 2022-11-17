@@ -16,7 +16,7 @@ Show historical cases and deaths by country.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L136)]
 
 ```python
-def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> DataFrame
+def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

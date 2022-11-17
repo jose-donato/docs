@@ -16,7 +16,7 @@ Get top buy government trading [Source: quiverquant.com]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L227)]
 
 ```python
-def get_government_buys(gov_type: str = "congress", past_transactions_months: int = 6) -> DataFrame
+def get_government_buys(gov_type: str = "congress", past_transactions_months: int = 6) -> pd.DataFrame
 ```
 ## Parameters
 

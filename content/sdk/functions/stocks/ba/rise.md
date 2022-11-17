@@ -10,7 +10,7 @@ Get top rising related queries with this stock's query [Source: google].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L106)]
 
 ```python
-def get_rise(symbol: str, limit: int = 10) -> DataFrame
+def get_rise(symbol: str, limit: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

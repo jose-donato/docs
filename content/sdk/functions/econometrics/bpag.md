@@ -16,7 +16,7 @@ Calculate test statistics for heteroscedasticity
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L561)]
 
 ```python
-def get_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper) -> DataFrame
+def get_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper) -> pd.DataFrame
 ```
 ## Parameters
 

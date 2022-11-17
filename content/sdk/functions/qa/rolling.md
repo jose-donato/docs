@@ -16,7 +16,7 @@ Return rolling mean and standard deviation
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L16)]
 
 ```python
-def get_rolling_avg(data: pd.DataFrame, window: int = 14) -> Tuple
+def get_rolling_avg(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

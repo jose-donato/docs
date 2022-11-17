@@ -16,7 +16,7 @@ Get most traded crypto pairs on given decentralized exchange in chosen time peri
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L658)]
 
 ```python
-def get_most_traded_pairs(network: str = "ethereum", exchange: str = "Uniswap", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> DataFrame
+def get_most_traded_pairs(network: str = "ethereum", exchange: str = "Uniswap", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Returns market dominance of a coin over time
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L81)]
 
 ```python
-def get_marketcap_dominance(symbol: str, interval: str = "1d", start_date: str = None, end_date: str = None) -> DataFrame
+def get_marketcap_dominance(symbol: str, interval: str = "1d", start_date: str = None, end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

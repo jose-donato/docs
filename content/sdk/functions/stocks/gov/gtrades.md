@@ -16,7 +16,7 @@ Government trading for specific ticker [Source: quiverquant.com]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L416)]
 
 ```python
-def get_cleaned_government_trading(symbol: str, gov_type: str = "congress", past_transactions_months: int = 6) -> DataFrame
+def get_cleaned_government_trading(symbol: str, gov_type: str = "congress", past_transactions_months: int = 6) -> pd.DataFrame
 ```
 ## Parameters
 

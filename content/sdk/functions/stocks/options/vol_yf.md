@@ -16,7 +16,7 @@ Plot volume
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L580)]
 
 ```python
-def get_vol(symbol: str, expiry: str) -> DataFrame
+def get_vol(symbol: str, expiry: str) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get twitter timeline for given coin id. Not more than last 50 tweets [Source: Co
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L23)]
 
 ```python
-def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend: bool = True) -> DataFrame
+def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Returns information about historical tvl of a defi protocol.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L124)]
 
 ```python
-def get_defi_protocol(protocol: str) -> DataFrame
+def get_defi_protocol(protocol: str) -> pd.DataFrame
 ```
 ## Parameters
 

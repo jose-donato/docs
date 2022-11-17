@@ -16,7 +16,7 @@ Get a list of available currency pairs for trading. [Source: Coinbase]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_model.py#L24)]
 
 ```python
-def get_trading_pairs(limit: int = 50, sortby: str = "quote_increment", ascend: bool = True) -> DataFrame
+def get_trading_pairs(limit: int = 50, sortby: str = "quote_increment", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

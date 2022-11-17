@@ -16,7 +16,7 @@ Perform Linear Regression Forecasting
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/linregr_model.py#L22)]
 
 ```python
-def get_linear_regression_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, output_chunk_length: int = 5, lags: Union[int, List[int]] = 14, random_state: Optional[int] = None) -> Tuple
+def get_linear_regression_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, output_chunk_length: int = 5, lags: Union[int, List[int]] = 14, random_state: Optional[int] = None) -> Tuple[List[darts.timeseries.TimeSeries], List[darts.timeseries.TimeSeries], List[darts.timeseries.TimeSeries], float, darts.models.forecasting.linear_regression_model.LinearRegressionModel]
 ```
 ## Parameters
 

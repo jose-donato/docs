@@ -10,7 +10,7 @@ Get list of trades on Decentralized Exchanges monthly aggregated.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L333)]
 
 ```python
-def get_dex_trades_monthly(trade_amount_currency: str = "USD", limit: int = 90, ascend: bool = True) -> DataFrame
+def get_dex_trades_monthly(trade_amount_currency: str = "USD", limit: int = 90, ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

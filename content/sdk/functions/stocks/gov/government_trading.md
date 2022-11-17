@@ -10,7 +10,7 @@ Returns the most recent transactions by members of government
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L25)]
 
 ```python
-def get_government_trading(gov_type: str = "congress", symbol: str = "") -> DataFrame
+def get_government_trading(gov_type: str = "congress", symbol: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

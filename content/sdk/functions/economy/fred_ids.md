@@ -10,7 +10,7 @@ Get Series IDs. [Source: FRED]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L126)]
 
 ```python
-def get_series_ids(search_query: str, limit: int = -1) -> DataFrame
+def get_series_ids(search_query: str, limit: int = -1) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Calculate Bollinger Bands
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L18)]
 
 ```python
-def bbands(data: pd.DataFrame, window: int = 15, n_std: float = 2, mamode: str = "ema") -> DataFrame
+def bbands(data: pd.DataFrame, window: int = 15, n_std: float = 2, mamode: str = "ema") -> pd.DataFrame
 ```
 ## Parameters
 

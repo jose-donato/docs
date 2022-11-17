@@ -10,7 +10,7 @@ Get currently set API keys.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L233)]
 
 ```python
-def get_keys(show: bool = False) -> DataFrame
+def get_keys(show: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

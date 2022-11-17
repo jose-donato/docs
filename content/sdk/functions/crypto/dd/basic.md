@@ -16,7 +16,7 @@ Basic coin information [Source: CoinPaprika]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L379)]
 
 ```python
-def basic_coin_info(symbol: str = "BTC") -> DataFrame
+def basic_coin_info(symbol: str = "BTC") -> pd.DataFrame
 ```
 ## Parameters
 

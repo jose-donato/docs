@@ -16,7 +16,7 @@ Get correlation sentiments across similar companies. [Source: FinBrain].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L125)]
 
 ```python
-def get_sentiment_correlation(similar: List[str]) -> Tuple
+def get_sentiment_correlation(similar: List[str]) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

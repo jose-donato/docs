@@ -16,7 +16,7 @@ Get list of tokens trade-able on Uniswap DEX. [Source: https://thegraph.com/en/]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L81)]
 
 ```python
-def get_uni_tokens(skip: int = 0, limit: int = 100, sortby: str = "index", ascend: bool = False) -> DataFrame
+def get_uni_tokens(skip: int = 0, limit: int = 100, sortby: str = "index", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Kurtosis Indicator
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L123)]
 
 ```python
-def get_kurtosis(data: pd.DataFrame, window: int = 14) -> DataFrame
+def get_kurtosis(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 ```
 ## Parameters
 

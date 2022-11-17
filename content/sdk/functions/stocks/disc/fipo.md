@@ -10,7 +10,7 @@ Future IPOs dates. [Source: Finnhub]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L115)]
 
 ```python
-def get_future_ipo(num_days_ahead: int = 5, end_date: Optional[str] = None) -> DataFrame
+def get_future_ipo(num_days_ahead: int = 5, end_date: Optional[str] = None) -> pd.DataFrame
 ```
 ## Parameters
 

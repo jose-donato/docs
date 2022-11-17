@@ -16,7 +16,7 @@ Get altcoin index overtime
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/blockchaincenter_model.py#L19)]
 
 ```python
-def get_altcoin_index(period: int = 30, start_date: str = "2010-01-01", end_date: str = None) -> DataFrame
+def get_altcoin_index(period: int = 30, start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Get portfolio VaR
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1945)]
 
 ```python
-def get_var(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: float = 99.9) -> DataFrame
+def get_var(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: float = 99.9) -> pd.DataFrame
 ```
 ## Parameters
 

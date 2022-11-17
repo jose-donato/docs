@@ -10,7 +10,7 @@ Get prices for given coin. [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L222)]
 
 ```python
-def get_coin_market_chart(symbol: str = "", vs_currency: str = "usd", days: int = 30) -> DataFrame
+def get_coin_market_chart(symbol: str = "", vs_currency: str = "usd", days: int = 30, kwargs: Any) -> pd.DataFrame
 ```
 ## Parameters
 

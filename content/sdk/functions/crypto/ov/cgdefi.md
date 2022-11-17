@@ -16,7 +16,7 @@ Get global statistics about Decentralized Finances [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L489)]
 
 ```python
-def get_global_defi_info() -> DataFrame
+def get_global_defi_info() -> pd.DataFrame
 ```
 ## Parameters
 

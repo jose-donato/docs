@@ -16,7 +16,7 @@ Get list of financial platforms from CoinGecko API [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L266)]
 
 ```python
-def get_financial_platforms(sortby: str = "Name", ascend: bool = True) -> DataFrame
+def get_financial_platforms(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

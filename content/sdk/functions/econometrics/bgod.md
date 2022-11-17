@@ -16,7 +16,7 @@ Calculate test statistics for autocorrelation
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L536)]
 
 ```python
-def get_bgod(model: pd.DataFrame, lags: int = 3) -> Tuple
+def get_bgod(model: pd.DataFrame, lags: int = 3) -> Tuple[float, float, float, float]
 ```
 ## Parameters
 

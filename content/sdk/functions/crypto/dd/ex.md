@@ -16,7 +16,7 @@ Get all exchanges for given coin id. [Source: CoinPaprika]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L137)]
 
 ```python
-def get_coin_exchanges_by_id(symbol: str = "BTC", sortby: str = "adjusted_volume_24h_share", ascend: bool = True) -> DataFrame
+def get_coin_exchanges_by_id(symbol: str = "BTC", sortby: str = "adjusted_volume_24h_share", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

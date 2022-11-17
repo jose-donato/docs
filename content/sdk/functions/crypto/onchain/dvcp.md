@@ -16,7 +16,7 @@ Get daily volume for given pair [Source: https://graphql.bitquery.io/]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L400)]
 
 ```python
-def get_daily_dex_volume_for_given_pair(limit: int = 100, symbol: str = "UNI", to_symbol: str = "USDT", sortby: str = "date", ascend: bool = True) -> DataFrame
+def get_daily_dex_volume_for_given_pair(limit: int = 100, symbol: str = "UNI", to_symbol: str = "USDT", sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Returns ARK orders in a Dataframe
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L23)]
 
 ```python
-def get_ark_orders(buys_only: bool = False, sells_only: bool = False, fund: str = "") -> DataFrame
+def get_ark_orders(buys_only: bool = False, sells_only: bool = False, fund: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

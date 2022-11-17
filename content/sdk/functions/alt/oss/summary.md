@@ -16,7 +16,7 @@ Get repository summary.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L179)]
 
 ```python
-def get_repo_summary(repo: str) -> DataFrame
+def get_repo_summary(repo: str) -> pd.DataFrame
 ```
 ## Parameters
 

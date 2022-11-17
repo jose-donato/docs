@@ -10,7 +10,7 @@ Get treasury maturity options [Source: EconDB]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L850)]
 
 ```python
-def get_treasury_maturities() -> DataFrame
+def get_treasury_maturities() -> pd.DataFrame
 ```
 ## Parameters
 

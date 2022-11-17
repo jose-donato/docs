@@ -43,7 +43,7 @@ Screener one of the following: overview, valuation, financial, ownership, perfor
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_view.py#L127)]
 
 ```python
-def screener(loaded_preset: str = "top_gainers", data_type: str = "overview", limit: int = 10, ascend: bool = False, sortby: str = "", export: str = "") -> List
+def screener(loaded_preset: str = "top_gainers", data_type: str = "overview", limit: int = 10, ascend: bool = False, sortby: str = "", export: str = "") -> List[str]
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Returns historical data of an asset in a certain terra address
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L19)]
 
 ```python
-def get_history_asset_from_terra_address(asset: str = "ust", address: str = "terra1tmnqgvg567ypvsvk6rwsga3srp7e3lg6u0elp8") -> DataFrame
+def get_history_asset_from_terra_address(asset: str = "ust", address: str = "terra1tmnqgvg567ypvsvk6rwsga3srp7e3lg6u0elp8") -> pd.DataFrame
 ```
 ## Parameters
 

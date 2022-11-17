@@ -16,7 +16,7 @@ Get the omega series
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L639)]
 
 ```python
-def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: float = 1.5) -> DataFrame
+def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: float = 1.5) -> pd.DataFrame
 ```
 ## Parameters
 

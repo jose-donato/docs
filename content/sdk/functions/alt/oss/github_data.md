@@ -10,7 +10,7 @@ Get repository stats.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L21)]
 
 ```python
-def get_github_data(url: str) -> Optional
+def get_github_data(url: str, kwargs: Any) -> Optional[Dict[str, Any]]
 ```
 ## Parameters
 

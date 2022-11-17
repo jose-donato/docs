@@ -16,7 +16,7 @@ Calculate portfolio weights based on selected property
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L237)]
 
 ```python
-def get_property_weights(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", s_property: str = "marketCap", value: float = 1.0) -> Tuple
+def get_property_weights(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", s_property: str = "marketCap", value: float = 1.0) -> Tuple[Optional[Dict[str, Any]], Optional[pd.DataFrame]]
 ```
 ## Parameters
 
@@ -50,7 +50,7 @@ Builds a portfolio weighted by selected property
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L729)]
 
 ```python
-def display_property_weighting(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", s_property: str = "marketCap", risk_measure: Any = "mv", risk_free_rate: float = 0, alpha: Any = 0.05, value: float = 1, table: bool = False) -> Dict
+def display_property_weighting(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", s_property: str = "marketCap", risk_measure: Any = "mv", risk_free_rate: float = 0, alpha: Any = 0.05, value: float = 1, table: bool = False) -> Dict[str, float]
 ```
 ## Parameters
 

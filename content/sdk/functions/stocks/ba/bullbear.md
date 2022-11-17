@@ -16,7 +16,7 @@ Gets bullbear sentiment for ticker [Source: stocktwits].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L16)]
 
 ```python
-def get_bullbear(symbol: str) -> Tuple
+def get_bullbear(symbol: str) -> Tuple[int, int, int, int]
 ```
 ## Parameters
 

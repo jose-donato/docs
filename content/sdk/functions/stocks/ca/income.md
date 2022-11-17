@@ -16,7 +16,7 @@ Get income data. [Source: Marketwatch].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L74)]
 
 ```python
-def get_income_comparison(similar: List[str], timeframe: str = "2021", quarter: bool = False) -> DataFrame
+def get_income_comparison(similar: List[str], timeframe: str = "2021", quarter: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

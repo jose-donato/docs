@@ -16,7 +16,7 @@ Returns coin roadmap
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L236)]
 
 ```python
-def get_roadmap(symbol: str, ascend: bool = True) -> DataFrame
+def get_roadmap(symbol: str, ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

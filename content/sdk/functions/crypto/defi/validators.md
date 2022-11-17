@@ -16,7 +16,7 @@ Get information about terra validators [Source: https://fcd.terra.dev/swagger]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L155)]
 
 ```python
-def get_validators(sortby: str = "votingPower", ascend: bool = True) -> DataFrame
+def get_validators(sortby: str = "votingPower", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

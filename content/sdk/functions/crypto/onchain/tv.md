@@ -16,7 +16,7 @@ Get token volume on different Decentralized Exchanges. [Source: https://graphql.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L513)]
 
 ```python
-def get_token_volume_on_dexes(symbol: str = "UNI", trade_amount_currency: str = "USD", sortby: str = "tradeAmount", ascend: bool = True) -> DataFrame
+def get_token_volume_on_dexes(symbol: str = "UNI", trade_amount_currency: str = "USD", sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

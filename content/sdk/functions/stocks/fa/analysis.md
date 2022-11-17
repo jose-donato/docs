@@ -10,7 +10,7 @@ Save time reading SEC filings with the help of machine learning. [Source: https:
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/eclect_us_model.py#L18)]
 
 ```python
-def get_filings_analysis(symbol: str) -> DataFrame
+def get_filings_analysis(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

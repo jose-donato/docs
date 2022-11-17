@@ -16,7 +16,7 @@ Shows top n coins. [Source: CoinMarketCap]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinmarketcap_model.py#L27)]
 
 ```python
-def get_cmc_top_n(sortby: str = "CMC_Rank", ascend: bool = True) -> DataFrame
+def get_cmc_top_n(sortby: str = "CMC_Rank", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

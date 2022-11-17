@@ -16,7 +16,7 @@ Converts apr into apy
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_model.py#L19)]
 
 ```python
-def calculate_apy(apr: float, compounding_times: int) -> Tuple
+def calculate_apy(apr: float, compounding_times: int) -> Tuple[pd.DataFrame, str]
 ```
 ## Parameters
 

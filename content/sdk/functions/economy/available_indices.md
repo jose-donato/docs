@@ -10,7 +10,7 @@ Get available indices
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L660)]
 
 ```python
-def get_available_indices() -> Dict
+def get_available_indices() -> Dict[str, Dict[str, str]]
 ```
 ## Parameters
 

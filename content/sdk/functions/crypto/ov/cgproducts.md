@@ -16,7 +16,7 @@ Get list of financial products from CoinGecko API
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L292)]
 
 ```python
-def get_finance_products(sortby: str = "Name", ascend: bool = True) -> DataFrame
+def get_finance_products(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

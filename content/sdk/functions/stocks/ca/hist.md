@@ -16,7 +16,7 @@ Get historical prices for all comparison stocks
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L31)]
 
 ```python
-def get_historical(similar: List[str], start_date: str = None, candle_type: str = "a") -> DataFrame
+def get_historical(similar: List[str], start_date: str = None, candle_type: str = "a") -> pd.DataFrame
 ```
 ## Parameters
 

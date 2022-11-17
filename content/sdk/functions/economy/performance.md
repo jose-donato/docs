@@ -10,7 +10,7 @@ Get group (sectors, industry or country) performance data. [Source: Finviz]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L112)]
 
 ```python
-def get_performance_data(group: str = "sector", sortby: str = "Name", ascend: bool = True) -> DataFrame
+def get_performance_data(group: str = "sector", sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

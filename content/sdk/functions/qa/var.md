@@ -16,7 +16,7 @@ Gets value at risk for specified stock dataframe.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L224)]
 
 ```python
-def get_var(data: pd.DataFrame, use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: Union[int, float] = 99.9, portfolio: bool = False) -> DataFrame
+def get_var(data: pd.DataFrame, use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: Union[int, float] = 99.9, portfolio: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

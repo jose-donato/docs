@@ -16,7 +16,7 @@ Get nft collections [Source: https://nftpricefloor.com/]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L24)]
 
 ```python
-def get_collections() -> DataFrame
+def get_collections() -> pd.DataFrame
 ```
 ## Parameters
 

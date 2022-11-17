@@ -16,7 +16,7 @@ The distribution of returns and generate statistics on the relation to the norma
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L113)]
 
 ```python
-def get_normality(data: pd.Series) -> DataFrame
+def get_normality(data: pd.Series) -> pd.DataFrame
 ```
 ## Parameters
 

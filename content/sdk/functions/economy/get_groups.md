@@ -10,7 +10,7 @@ Get group available
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L60)]
 
 ```python
-def get_groups() -> List
+def get_groups() -> List[str]
 ```
 ## Parameters
 

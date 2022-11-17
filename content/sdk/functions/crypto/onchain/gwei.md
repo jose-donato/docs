@@ -16,7 +16,7 @@ Returns the most recent Ethereum gas fees in gwei
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethgasstation_model.py#L13)]
 
 ```python
-def get_gwei_fees() -> DataFrame
+def get_gwei_fees() -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get Consumer Price Index from Alpha Vantage
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L182)]
 
 ```python
-def get_cpi(interval: str = "m", start_year: int = 2010) -> DataFrame
+def get_cpi(interval: str = "m", start_year: int = 2010) -> pd.DataFrame
 ```
 ## Parameters
 

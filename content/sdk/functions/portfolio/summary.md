@@ -10,7 +10,7 @@ Get portfolio and benchmark returns summary
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2070)]
 
 ```python
-def get_summary(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all", risk_free_rate: float = 0) -> DataFrame
+def get_summary(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all", risk_free_rate: float = 0) -> pd.DataFrame
 ```
 ## Parameters
 

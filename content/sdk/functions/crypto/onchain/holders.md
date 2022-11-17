@@ -16,7 +16,7 @@ Get info about top token holders. [Source: Ethplorer]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L305)]
 
 ```python
-def get_top_token_holders(address: Any, sortby: str = "balance", ascend: bool = True) -> DataFrame
+def get_top_token_holders(address: Any, sortby: str = "balance", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

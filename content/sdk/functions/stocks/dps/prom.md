@@ -16,7 +16,7 @@ Get all FINRA ATS data, and parse most promising tickers based on linear regress
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L214)]
 
 ```python
-def getATSdata(limit: int = 1000, tier_ats: str = "T1") -> Tuple
+def getATSdata(limit: int = 1000, tier_ats: str = "T1") -> Tuple[pd.DataFrame, Dict]
 ```
 ## Parameters
 

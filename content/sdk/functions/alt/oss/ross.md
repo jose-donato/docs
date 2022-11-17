@@ -16,7 +16,7 @@ Get startups from ROSS index [Source: https://runacap.com/].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L104)]
 
 ```python
-def get_startups() -> DataFrame
+def get_startups() -> pd.DataFrame
 ```
 ## Parameters
 

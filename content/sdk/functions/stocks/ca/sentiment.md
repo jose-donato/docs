@@ -16,7 +16,7 @@ Gets Sentiment analysis from several symbols provided by FinBrain's API.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L47)]
 
 ```python
-def get_sentiments(symbols: List[str]) -> DataFrame
+def get_sentiments(symbols: List[str]) -> pd.DataFrame
 ```
 ## Parameters
 

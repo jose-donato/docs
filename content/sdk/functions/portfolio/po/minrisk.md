@@ -16,7 +16,7 @@ Builds a maximal return/risk ratio portfolio
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L667)]
 
 ```python
-def get_min_risk(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, risk_aversion: float = 1, alpha: float = 0.05, target_return: float = -1, target_risk: float = -1, mean: str = "hist", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0.0) -> Tuple
+def get_min_risk(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, risk_aversion: float = 1, alpha: float = 0.05, target_return: float = -1, target_risk: float = -1, mean: str = "hist", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0.0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
 ## Parameters
 

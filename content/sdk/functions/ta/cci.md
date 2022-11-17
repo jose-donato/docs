@@ -16,7 +16,7 @@ Commodity channel index
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L20)]
 
 ```python
-def cci(data: pd.DataFrame, window: int = 14, scalar: float = 0.0015) -> DataFrame
+def cci(data: pd.DataFrame, window: int = 14, scalar: float = 0.0015) -> pd.DataFrame
 ```
 ## Parameters
 

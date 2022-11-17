@@ -16,7 +16,7 @@ Get Series data. [Source: FRED]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L208)]
 
 ```python
-def get_aggregated_series_data(series_ids: List[str], start_date: str = None, end_date: str = None) -> Tuple
+def get_aggregated_series_data(series_ids: List[str], start_date: str = None, end_date: str = None) -> Tuple[pd.DataFrame, dict]
 ```
 ## Parameters
 

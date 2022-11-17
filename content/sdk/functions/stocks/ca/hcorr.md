@@ -16,7 +16,7 @@ Get historical price correlation. [Source: Yahoo Finance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L98)]
 
 ```python
-def get_correlation(similar: List[str], start_date: str = None, candle_type: str = "a") -> Tuple
+def get_correlation(similar: List[str], start_date: str = None, candle_type: str = "a") -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

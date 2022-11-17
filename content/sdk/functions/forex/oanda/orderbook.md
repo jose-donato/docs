@@ -16,7 +16,7 @@ Request order book data for plotting.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L137)]
 
 ```python
-def orderbook_plot_data_request(instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union
+def orderbook_plot_data_request(instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

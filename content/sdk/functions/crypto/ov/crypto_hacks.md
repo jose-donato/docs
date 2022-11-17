@@ -16,7 +16,7 @@ Get major crypto-related hacks
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L93)]
 
 ```python
-def get_crypto_hacks(sortby: str = "Platform", ascend: bool = False) -> DataFrame
+def get_crypto_hacks(sortby: str = "Platform", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get SEC filings for a given stock ticker. [Source: Market Watch]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_model.py#L20)]
 
 ```python
-def get_sec_filings(symbol: str) -> DataFrame
+def get_sec_filings(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

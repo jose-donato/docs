@@ -16,7 +16,7 @@ Returns trending coins [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L317)]
 
 ```python
-def get_trending_coins() -> DataFrame
+def get_trending_coins() -> pd.DataFrame
 ```
 ## Parameters
 

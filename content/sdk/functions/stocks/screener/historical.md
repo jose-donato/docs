@@ -16,7 +16,7 @@ View historical price of stocks that meet preset
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_model.py#L53)]
 
 ```python
-def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-21", type_candle: str = "a", normalize: bool = True) -> Tuple
+def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-21", type_candle: str = "a", normalize: bool = True) -> Tuple[pd.DataFrame, List[str], bool]
 ```
 ## Parameters
 
@@ -44,7 +44,7 @@ View historical price of stocks that meet preset
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_view.py#L28)]
 
 ```python
-def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-21", type_candle: str = "a", normalize: bool = True, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> List
+def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-21", type_candle: str = "a", normalize: bool = True, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> List[str]
 ```
 ## Parameters
 

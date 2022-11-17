@@ -16,7 +16,7 @@ Get sentiments from symbol.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_model.py#L125)]
 
 ```python
-def get_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2) -> DataFrame
+def get_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2) -> pd.DataFrame
 ```
 ## Parameters
 

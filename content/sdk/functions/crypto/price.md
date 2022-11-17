@@ -10,7 +10,7 @@ Returns price and confidence interval from pyth live feed. [Source: Pyth]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/pyth_model.py#L78)]
 
 ```python
-def get_price(symbol: str) -> Tuple
+def get_price(symbol: str) -> Tuple[float, float, float]
 ```
 ## Parameters
 

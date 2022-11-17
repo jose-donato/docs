@@ -16,7 +16,7 @@ Get list of crypto derivatives from CoinGecko API [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L350)]
 
 ```python
-def get_derivatives(sortby: str = "Rank", ascend: bool = False) -> DataFrame
+def get_derivatives(sortby: str = "Rank", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

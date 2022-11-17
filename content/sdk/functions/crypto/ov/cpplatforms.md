@@ -16,7 +16,7 @@ List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusam
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L380)]
 
 ```python
-def get_all_contract_platforms() -> DataFrame
+def get_all_contract_platforms() -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Close a trade.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L526)]
 
 ```python
-def close_trades_request(orderID: str, units: Optional[int] = 0, accountID: str = "REPLACE_ME") -> Union
+def close_trades_request(orderID: str, units: Optional[int] = 0, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

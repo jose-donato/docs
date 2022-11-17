@@ -16,7 +16,7 @@ Returns anchor protocol earnings data of a certain terra address
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/cryptosaurio_model.py#L17)]
 
 ```python
-def get_anchor_data(address: str = "") -> Tuple
+def get_anchor_data(address: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, str]
 ```
 ## Parameters
 

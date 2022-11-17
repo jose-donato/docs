@@ -16,7 +16,7 @@ Get tradingview recommendation based on technical indicators
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_model.py#L56)]
 
 ```python
-def get_tradingview_recommendation(symbol: str, screener: str = "america", exchange: str = "", interval: str = "") -> DataFrame
+def get_tradingview_recommendation(symbol: str, screener: str = "america", exchange: str = "", interval: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

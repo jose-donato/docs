@@ -16,7 +16,7 @@ Perform NBEATS Forecasting
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nbeats_model.py#L21)]
 
 ```python
-def get_NBEATS_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, num_stacks: int = 10, num_blocks: int = 3, num_layers: int = 4, layer_widths: int = 512, batch_size: int = 800, n_epochs: int = 100, learning_rate: float = 0.001, model_save_name: str = "nbeats_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple
+def get_NBEATS_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, num_stacks: int = 10, num_blocks: int = 3, num_layers: int = 4, layer_widths: int = 512, batch_size: int = 800, n_epochs: int = 100, learning_rate: float = 0.001, model_save_name: str = "nbeats_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple[Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[float], Optional[type[darts.models.forecasting.nbeats.NBEATSModel]]]
 ```
 ## Parameters
 

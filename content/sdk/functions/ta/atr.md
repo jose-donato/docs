@@ -16,7 +16,7 @@ Average True Range
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L132)]
 
 ```python
-def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int = 0) -> DataFrame
+def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int = 0) -> pd.DataFrame
 ```
 ## Parameters
 

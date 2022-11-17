@@ -16,7 +16,7 @@ Gets yield curve data from FRED
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L255)]
 
 ```python
-def get_yield_curve(date: datetime.datetime = None) -> Tuple
+def get_yield_curve(date: datetime.datetime = None) -> Tuple[pd.DataFrame, datetime.datetime]
 ```
 ## Parameters
 

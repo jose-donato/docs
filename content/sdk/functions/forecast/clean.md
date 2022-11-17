@@ -10,7 +10,7 @@ Clean up NaNs from the dataset
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L88)]
 
 ```python
-def clean(dataset: pd.DataFrame, fill: Optional[str] = None, drop: Optional[str] = None, limit: Optional[int] = None) -> DataFrame
+def clean(dataset: pd.DataFrame, fill: Optional[str] = None, drop: Optional[str] = None, limit: Optional[int] = None) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Get dupont ratios
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L712)]
 
 ```python
-def get_dupont(symbol: str) -> DataFrame
+def get_dupont(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

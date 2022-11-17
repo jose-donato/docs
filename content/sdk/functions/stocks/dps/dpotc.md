@@ -16,7 +16,7 @@ Get all FINRA data associated with a ticker
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L293)]
 
 ```python
-def getTickerFINRAdata(symbol: str) -> Tuple
+def getTickerFINRAdata(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

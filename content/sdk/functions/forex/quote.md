@@ -10,7 +10,7 @@ Get current exchange rate quote from alpha vantage.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L56)]
 
 ```python
-def get_quote(to_symbol: str = "USD", from_symbol: str = "EUR") -> Dict
+def get_quote(to_symbol: str = "USD", from_symbol: str = "EUR") -> Dict[str, Any]
 ```
 ## Parameters
 

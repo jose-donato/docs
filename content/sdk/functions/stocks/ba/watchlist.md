@@ -16,7 +16,7 @@ Get reddit users watchlists [Source: reddit].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L40)]
 
 ```python
-def get_watchlists(limit: int = 5) -> Tuple
+def get_watchlists(limit: int = 5) -> Tuple[List[praw.models.reddit.submission.Submission], dict, int]
 ```
 ## Parameters
 

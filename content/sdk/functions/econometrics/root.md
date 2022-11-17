@@ -16,7 +16,7 @@ Calculate test statistics for unit roots
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L168)]
 
 ```python
-def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> DataFrame
+def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.DataFrame
 ```
 ## Parameters
 

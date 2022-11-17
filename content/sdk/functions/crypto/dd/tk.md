@@ -16,7 +16,7 @@ Returns coin tokenomics
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L283)]
 
 ```python
-def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple
+def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

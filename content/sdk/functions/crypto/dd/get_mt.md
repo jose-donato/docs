@@ -16,7 +16,7 @@ Returns available messari timeseries
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L34)]
 
 ```python
-def get_available_timeseries(only_free: bool = True) -> DataFrame
+def get_available_timeseries(only_free: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

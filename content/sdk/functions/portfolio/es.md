@@ -10,7 +10,7 @@ Get portfolio expected shortfall
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1992)]
 
 ```python
-def get_es(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool = False, distribution: str = "normal", percentile: float = 99.9) -> DataFrame
+def get_es(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool = False, distribution: str = "normal", percentile: float = 99.9) -> pd.DataFrame
 ```
 ## Parameters
 

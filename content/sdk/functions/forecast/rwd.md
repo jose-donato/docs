@@ -16,7 +16,7 @@ Performs Random Walk with Drift forecasting
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/rwd_model.py#L27)]
 
 ```python
-def get_rwd_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, start_window: float = 0.85, forecast_horizon: int = 5) -> Tuple
+def get_rwd_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, start_window: float = 0.85, forecast_horizon: int = 5) -> Tuple[List[numpy.ndarray], List[numpy.ndarray], List[numpy.ndarray], Optional[float], statsforecast.core.StatsForecast]
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Returns active addresses of a certain symbol
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L310)]
 
 ```python
-def get_active_addresses(symbol: str, interval: str = "24h", start_date: str = "2010-01-01", end_date: str = None) -> DataFrame
+def get_active_addresses(symbol: str, interval: str = "24h", start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

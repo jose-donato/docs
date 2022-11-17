@@ -16,7 +16,7 @@ Load tweets from twitter API and analyzes using VADER.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_model.py#L23)]
 
 ```python
-def load_analyze_tweets(symbol: str, limit: int = 100, start_date: Optional[str] = "", end_date: Optional[str] = "") -> DataFrame
+def load_analyze_tweets(symbol: str, limit: int = 100, start_date: Optional[str] = "", end_date: Optional[str] = "") -> pd.DataFrame
 ```
 ## Parameters
 

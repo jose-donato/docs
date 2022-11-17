@@ -16,7 +16,7 @@ Get top dexes by daily volume and users [Source: https://dappradar.com/]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L124)]
 
 ```python
-def get_top_dexes(sortby: str = "", limit: int = 10) -> DataFrame
+def get_top_dexes(sortby: str = "", limit: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

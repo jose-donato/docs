@@ -16,7 +16,7 @@ Screen options based on preset filters
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L159)]
 
 ```python
-def get_screener_output(preset: str) -> Tuple
+def get_screener_output(preset: str) -> Tuple[pd.DataFrame, str]
 ```
 ## Parameters
 

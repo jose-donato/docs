@@ -16,7 +16,7 @@ Returns trades for a coin in a given exchange
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L70)]
 
 ```python
-def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> DataFrame
+def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

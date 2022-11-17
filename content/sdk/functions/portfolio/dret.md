@@ -16,7 +16,7 @@ Get daily returns
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2318)]
 
 ```python
-def get_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all") -> DataFrame
+def get_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all") -> pd.DataFrame
 ```
 ## Parameters
 

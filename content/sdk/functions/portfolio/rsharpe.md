@@ -16,7 +16,7 @@ Get rolling sharpe ratio
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1704)]
 
 ```python
-def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float = 0, window: str = "1y") -> DataFrame
+def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float = 0, window: str = "1y") -> pd.DataFrame
 ```
 ## Parameters
 

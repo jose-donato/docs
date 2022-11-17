@@ -10,7 +10,7 @@ Get last government trading [Source: quiverquant.com]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L164)]
 
 ```python
-def get_last_government(gov_type: str = "congress", limit: int = -1, representative: str = "") -> DataFrame
+def get_last_government(gov_type: str = "congress", limit: int = -1, representative: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

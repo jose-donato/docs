@@ -16,7 +16,7 @@ Displays the 30-day history of the Anchor Yield Reserve.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L63)]
 
 ```python
-def get_anchor_yield_reserve() -> DataFrame
+def get_anchor_yield_reserve() -> pd.DataFrame
 ```
 ## Parameters
 

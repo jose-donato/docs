@@ -16,7 +16,7 @@ Center of gravity
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L189)]
 
 ```python
-def cg(values: pd.Series, window: int) -> DataFrame
+def cg(values: pd.Series, window: int) -> pd.DataFrame
 ```
 ## Parameters
 

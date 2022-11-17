@@ -16,7 +16,7 @@ Request cancellation of a pending order.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L346)]
 
 ```python
-def cancel_pending_order_request(orderID: str, accountID: str = "REPLACE_ME") -> Union
+def cancel_pending_order_request(orderID: str, accountID: str = "REPLACE_ME") -> Union[str, bool]
 ```
 ## Parameters
 

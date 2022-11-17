@@ -10,7 +10,7 @@ Returns all available pairs on Binance in DataFrame format. DataFrame has 3 colu
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_model.py#L58)]
 
 ```python
-def get_all_binance_trading_pairs() -> DataFrame
+def get_all_binance_trading_pairs() -> pd.DataFrame
 ```
 ## Parameters
 

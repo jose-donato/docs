@@ -16,7 +16,7 @@ Returns coin product info
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L353)]
 
 ```python
-def get_project_product_info(symbol: str) -> Tuple
+def get_project_product_info(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

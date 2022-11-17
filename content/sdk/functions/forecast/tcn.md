@@ -16,7 +16,7 @@ Perform TCN forecasting
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_model.py#L20)]
 
 ```python
-def get_tcn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, dropout: float = 0.1, num_filters: int = 6, weight_norm: bool = True, dilation_base: int = 2, n_epochs: int = 100, learning_rate: float = 0.001, batch_size: int = 800, model_save_name: str = "tcn_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple
+def get_tcn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, dropout: float = 0.1, num_filters: int = 6, weight_norm: bool = True, dilation_base: int = 2, n_epochs: int = 100, learning_rate: float = 0.001, batch_size: int = 800, model_save_name: str = "tcn_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple[List[Optional[darts.timeseries.TimeSeries]], List[Optional[darts.timeseries.TimeSeries]], List[Optional[darts.timeseries.TimeSeries]], Optional[float], Optional[type[darts.models.forecasting.tcn_model.TCNModel]]]
 ```
 ## Parameters
 

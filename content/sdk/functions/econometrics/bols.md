@@ -10,7 +10,7 @@ The between estimator is an alternative, usually less efficient estimator, can c
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L320)]
 
 ```python
-def get_bols(Y: pd.DataFrame, X: pd.DataFrame) -> Any
+def get_bols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 ```
 ## Parameters
 

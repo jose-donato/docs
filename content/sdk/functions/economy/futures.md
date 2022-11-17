@@ -10,7 +10,7 @@ Scrape data for top commodities
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L108)]
 
 ```python
-def top_commodities() -> DataFrame
+def top_commodities() -> pd.DataFrame
 ```
 ## Parameters
 

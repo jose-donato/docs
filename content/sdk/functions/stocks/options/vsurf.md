@@ -16,7 +16,7 @@ Gets IV surface for calls and puts for ticker
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L367)]
 
 ```python
-def get_iv_surface(symbol: str) -> DataFrame
+def get_iv_surface(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

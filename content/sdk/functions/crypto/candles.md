@@ -10,7 +10,7 @@ Plot candle chart from dataframe. [Source: Binance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L910)]
 
 ```python
-def plot_candles(candles_df: pd.DataFrame, volume: bool = True, ylabel: str = "", title: str = "", external_axes: list[plt.Axes] | None = None, yscale: str = "linear") -> None
+def plot_candles(candles_df: pd.DataFrame, volume: bool = True, ylabel: str = "", title: str = "", external_axes: Optional[list[matplotlib.axes._axes.Axes]] = None, yscale: str = "linear") -> None
 ```
 ## Parameters
 

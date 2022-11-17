@@ -16,7 +16,7 @@ Get repository star history.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L88)]
 
 ```python
-def get_stars_history(repo: str) -> DataFrame
+def get_stars_history(repo: str) -> pd.DataFrame
 ```
 ## Parameters
 

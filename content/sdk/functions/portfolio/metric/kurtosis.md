@@ -10,7 +10,7 @@ Method that retrieves kurtosis for portfolio and benchmark selected
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L912)]
 
 ```python
-def get_kurtosis(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
+def get_kurtosis(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.DataFrame
 ```
 ## Parameters
 

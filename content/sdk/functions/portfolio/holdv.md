@@ -16,7 +16,7 @@ Get holdings of assets (absolute value)
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1527)]
 
 ```python
-def get_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
+def get_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.DataFrame
 ```
 ## Parameters
 

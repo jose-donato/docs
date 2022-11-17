@@ -16,7 +16,7 @@ Get historical yield for a given maturity
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L230)]
 
 ```python
-def get_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: str = "2010-01-01") -> DataFrame
+def get_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: str = "2010-01-01") -> pd.DataFrame
 ```
 ## Parameters
 

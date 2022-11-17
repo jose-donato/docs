@@ -10,7 +10,7 @@ Helper method that return all trading pairs on binance. Methods ause this data f
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_model.py#L21)]
 
 ```python
-def _get_trading_pairs() -> List
+def _get_trading_pairs() -> List[dict]
 ```
 ## Parameters
 

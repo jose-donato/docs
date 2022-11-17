@@ -16,7 +16,7 @@ Get ETF holdings
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L82)]
 
 ```python
-def get_etf_holdings(symbol: str) -> DataFrame
+def get_etf_holdings(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

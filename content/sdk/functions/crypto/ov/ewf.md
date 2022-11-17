@@ -16,7 +16,7 @@ Scrapes exchange withdrawal fees
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L182)]
 
 ```python
-def get_overall_exchange_withdrawal_fees() -> DataFrame
+def get_overall_exchange_withdrawal_fees() -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Performs MSTL forecasting
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/mstl_model.py#L26)]
 
 ```python
-def get_mstl_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", seasonal_periods: int = 7, n_predict: int = 5, start_window: float = 0.85, forecast_horizon: int = 5) -> Tuple
+def get_mstl_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", seasonal_periods: int = 7, n_predict: int = 5, start_window: float = 0.85, forecast_horizon: int = 5) -> Tuple[Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[float], Optional[statsforecast.core.StatsForecast]]
 ```
 ## Parameters
 

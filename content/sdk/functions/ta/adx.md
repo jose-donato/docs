@@ -16,7 +16,7 @@ ADX technical indicator
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L16)]
 
 ```python
-def adx(data: pd.DataFrame, window: int = 14, scalar: int = 100, drift: int = 1) -> DataFrame
+def adx(data: pd.DataFrame, window: int = 14, scalar: int = 100, drift: int = 1) -> pd.DataFrame
 ```
 ## Parameters
 

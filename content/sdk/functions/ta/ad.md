@@ -16,7 +16,7 @@ Calculate AD technical indicator
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L17)]
 
 ```python
-def ad(data: pd.DataFrame, use_open: bool = False) -> DataFrame
+def ad(data: pd.DataFrame, use_open: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

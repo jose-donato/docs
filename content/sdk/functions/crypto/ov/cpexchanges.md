@@ -16,7 +16,7 @@ List exchanges from CoinPaprika API [Source: CoinPaprika]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L265)]
 
 ```python
-def get_list_of_exchanges(symbols: str = "USD", sortby: str = "rank", ascend: bool = True) -> DataFrame
+def get_list_of_exchanges(symbols: str = "USD", sortby: str = "rank", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

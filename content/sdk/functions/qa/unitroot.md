@@ -16,7 +16,7 @@ Calculate test statistics for unit roots
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L135)]
 
 ```python
-def get_unitroot(data: pd.DataFrame, fuller_reg: str = "c", kpss_reg: str = "c") -> DataFrame
+def get_unitroot(data: pd.DataFrame, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.DataFrame
 ```
 ## Parameters
 

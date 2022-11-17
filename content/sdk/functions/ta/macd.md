@@ -16,7 +16,7 @@ Moving average convergence divergence
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L61)]
 
 ```python
-def macd(data: pd.Series, n_fast: int = 12, n_slow: int = 26, n_signal: int = 9) -> DataFrame
+def macd(data: pd.Series, n_fast: int = 12, n_slow: int = 26, n_signal: int = 9) -> pd.DataFrame
 ```
 ## Parameters
 

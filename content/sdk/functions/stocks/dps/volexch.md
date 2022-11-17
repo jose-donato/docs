@@ -16,7 +16,7 @@ Gets short data for 5 exchanges [https://ftp.nyse.com] starting at 1/1/2021
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/nyse_model.py#L15)]
 
 ```python
-def get_short_data_by_exchange(symbol: str) -> DataFrame
+def get_short_data_by_exchange(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

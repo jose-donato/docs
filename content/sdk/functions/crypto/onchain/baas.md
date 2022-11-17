@@ -16,7 +16,7 @@ Get an average bid and ask prices, average spread for given crypto pair for chos
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L725)]
 
 ```python
-def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True) -> DataFrame
+def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

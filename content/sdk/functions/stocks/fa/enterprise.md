@@ -10,7 +10,7 @@ Financial Modeling Prep ticker enterprise
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L131)]
 
 ```python
-def get_enterprise(symbol: str, limit: int = 5, quarterly: bool = False) -> DataFrame
+def get_enterprise(symbol: str, limit: int = 5, quarterly: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get trades on Decentralized Exchanges aggregated by DEX [Source: https://graphql
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L266)]
 
 ```python
-def get_dex_trades_by_exchange(trade_amount_currency: str = "USD", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> DataFrame
+def get_dex_trades_by_exchange(trade_amount_currency: str = "USD", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

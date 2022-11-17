@@ -16,7 +16,7 @@ Get stock volume. [Source: Yahoo Finance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L134)]
 
 ```python
-def get_volume(similar: List[str], start_date: str = None) -> DataFrame
+def get_volume(similar: List[str], start_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

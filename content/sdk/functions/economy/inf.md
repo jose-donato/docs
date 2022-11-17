@@ -16,7 +16,7 @@ Get historical Inflation for United States from AlphaVantage
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L139)]
 
 ```python
-def get_inflation(start_year: int = 2010) -> DataFrame
+def get_inflation(start_year: int = 2010) -> pd.DataFrame
 ```
 ## Parameters
 

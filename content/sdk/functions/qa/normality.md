@@ -16,7 +16,7 @@ Look at the distribution of returns and generate statistics on the relation to t
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L81)]
 
 ```python
-def get_normality(data: pd.DataFrame) -> DataFrame
+def get_normality(data: pd.DataFrame) -> pd.DataFrame
 ```
 ## Parameters
 

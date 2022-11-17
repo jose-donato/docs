@@ -16,7 +16,7 @@ Calculate the drawdown (MDD) of historical series.  Note that the calculation is
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1590)]
 
 ```python
-def get_maximum_drawdown(portfolio_engine: portfolio_model.PortfolioEngine, is_returns: bool = False) -> Series
+def get_maximum_drawdown(portfolio_engine: portfolio_model.PortfolioEngine, is_returns: bool = False) -> pd.Series
 ```
 ## Parameters
 

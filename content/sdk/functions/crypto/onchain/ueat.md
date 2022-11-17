@@ -16,7 +16,7 @@ Get number of unique ethereum addresses which made a transaction in given time i
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L584)]
 
 ```python
-def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> DataFrame
+def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

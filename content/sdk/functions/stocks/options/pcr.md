@@ -16,7 +16,7 @@ Gets put call ratio over last time window [Source: AlphaQuery.com]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_model.py#L16)]
 
 ```python
-def get_put_call_ratio(symbol: str, window: int = 30, start_date: str = None) -> DataFrame
+def get_put_call_ratio(symbol: str, window: int = 30, start_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

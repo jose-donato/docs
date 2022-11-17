@@ -10,7 +10,7 @@ Gets weighted moving average (WMA) for stock
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L67)]
 
 ```python
-def wma(data: pd.Series, length: int = 50, offset: int = 0) -> DataFrame
+def wma(data: pd.Series, length: int = 50, offset: int = 0) -> pd.DataFrame
 ```
 ## Parameters
 

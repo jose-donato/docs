@@ -16,7 +16,7 @@ Overlay Median & Quantile
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L72)]
 
 ```python
-def get_quantile(data: pd.DataFrame, window: int = 14, quantile_pct: float = 0.5) -> Tuple
+def get_quantile(data: pd.DataFrame, window: int = 14, quantile_pct: float = 0.5) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

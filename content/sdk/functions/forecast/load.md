@@ -10,7 +10,7 @@ Load custom file into dataframe.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/common_model.py#L53)]
 
 ```python
-def load(file: str, data_files: Optional[Dict[Any, Any]] = None, data_examples: Optional[Dict[Any, Any]] = None) -> DataFrame
+def load(file: str, data_files: Optional[Dict[Any, Any]] = None, data_examples: Optional[Dict[Any, Any]] = None) -> pd.DataFrame
 ```
 ## Parameters
 

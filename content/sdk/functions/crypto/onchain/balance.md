@@ -16,7 +16,7 @@ Get info about tokens on you ethereum blockchain balance. Eth balance, balance o
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L196)]
 
 ```python
-def get_address_info(address: str, sortby: str = "index", ascend: bool = False) -> DataFrame
+def get_address_info(address: str, sortby: str = "index", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

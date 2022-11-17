@@ -16,7 +16,7 @@ Returns coin investors
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L494)]
 
 ```python
-def get_investors(symbol: str) -> Tuple
+def get_investors(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

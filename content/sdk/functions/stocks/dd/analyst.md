@@ -10,7 +10,7 @@ Get analyst data. [Source: Finviz]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finviz_model.py#L33)]
 
 ```python
-def get_analyst_data(symbol: str) -> DataFrame
+def get_analyst_data(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

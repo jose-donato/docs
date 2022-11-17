@@ -16,7 +16,7 @@ Get histoical option greeks
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L37)]
 
 ```python
-def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], chain_id: str = "", put: bool = False) -> DataFrame
+def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], chain_id: str = "", put: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

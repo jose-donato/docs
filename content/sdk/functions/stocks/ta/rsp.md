@@ -16,7 +16,7 @@ Relative strength percentile [Source: https://github.com/skyte/relative-strength
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_model.py#L16)]
 
 ```python
-def get_rsp(s_ticker: str = "") -> Tuple
+def get_rsp(s_ticker: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

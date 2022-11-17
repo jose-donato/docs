@@ -10,7 +10,7 @@ Get wsb posts [Source: reddit].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L602)]
 
 ```python
-def get_wsb_community(limit: int = 10, new: bool = False) -> DataFrame
+def get_wsb_community(limit: int = 10, new: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

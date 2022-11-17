@@ -10,7 +10,7 @@ Return all available quoted assets for given symbol. [Source: Coinbase]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L21)]
 
 ```python
-def show_available_pairs_for_given_symbol(symbol: str = "ETH") -> Tuple
+def show_available_pairs_for_given_symbol(symbol: str = "ETH") -> Tuple[str, list]
 ```
 ## Parameters
 

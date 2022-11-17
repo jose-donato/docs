@@ -16,7 +16,7 @@ Returns messari timeseries
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L124)]
 
 ```python
-def get_messari_timeseries(symbol: str, timeseries_id: str, interval: str = "1d", start_date: str = None, end_date: str = None) -> Tuple
+def get_messari_timeseries(symbol: str, timeseries_id: str, interval: str = "1d", start_date: str = None, end_date: str = None) -> Tuple[pd.DataFrame, str]
 ```
 ## Parameters
 

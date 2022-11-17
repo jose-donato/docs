@@ -16,7 +16,7 @@ Analyzes quarterly contracts by ticker
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L482)]
 
 ```python
-def get_qtr_contracts(analysis: str = "total", limit: int = 5) -> DataFrame
+def get_qtr_contracts(analysis: str = "total", limit: int = 5) -> pd.DataFrame
 ```
 ## Parameters
 

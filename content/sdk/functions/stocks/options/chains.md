@@ -10,7 +10,7 @@ Get Option Chain For A Stock.  No greek data is returned
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/options_sdk_helper.py#L14)]
 
 ```python
-def get_full_option_chain(symbol: str, source: str = "Nasdaq", expiration: Optional[str] = None) -> DataFrame
+def get_full_option_chain(symbol: str, source: str = "Nasdaq", expiration: Optional[str] = None) -> pd.DataFrame
 ```
 ## Parameters
 

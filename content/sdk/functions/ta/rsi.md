@@ -16,7 +16,7 @@ Relative strength index
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L93)]
 
 ```python
-def rsi(data: pd.Series, window: int = 14, scalar: float = 100, drift: int = 1) -> DataFrame
+def rsi(data: pd.Series, window: int = 14, scalar: float = 100, drift: int = 1) -> pd.DataFrame
 ```
 ## Parameters
 

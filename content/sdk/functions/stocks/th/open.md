@@ -16,7 +16,7 @@ Get open exchanges.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L54)]
 
 ```python
-def get_open() -> DataFrame
+def get_open() -> pd.DataFrame
 ```
 ## Parameters
 

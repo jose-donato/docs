@@ -16,7 +16,7 @@ Get price vs short interest volume. [Source: Stockgrid]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L123)]
 
 ```python
-def get_short_interest_volume(symbol: str) -> Tuple
+def get_short_interest_volume(symbol: str) -> Tuple[pd.DataFrame, List]
 ```
 ## Parameters
 

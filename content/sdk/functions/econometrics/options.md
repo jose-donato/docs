@@ -16,7 +16,7 @@ Obtain columns-dataset combinations from loaded in datasets that can be used in 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L23)]
 
 ```python
-def get_options(datasets: Dict[str, pd.DataFrame], dataset_name: str = "") -> Dict
+def get_options(datasets: Dict[str, pd.DataFrame], dataset_name: str = "") -> Dict[Union[str, Any], pd.DataFrame]
 ```
 ## Parameters
 

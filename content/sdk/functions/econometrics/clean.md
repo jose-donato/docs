@@ -10,7 +10,7 @@ Clean up NaNs from the dataset
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L65)]
 
 ```python
-def clean(dataset: pd.DataFrame, fill: str = "", drop: str = "", limit: Optional[int] = None) -> DataFrame
+def clean(dataset: pd.DataFrame, fill: str = "", drop: str = "", limit: Optional[int] = None) -> pd.DataFrame
 ```
 ## Parameters
 

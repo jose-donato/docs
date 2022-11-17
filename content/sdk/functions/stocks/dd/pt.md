@@ -16,7 +16,7 @@ Get analysts' price targets for a given stock. [Source: Business Insider]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L20)]
 
 ```python
-def get_price_target_from_analysts(symbol: str) -> DataFrame
+def get_price_target_from_analysts(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

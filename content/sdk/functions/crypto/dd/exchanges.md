@@ -10,7 +10,7 @@ Helper method to get all the exchanges supported by ccxt
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L10)]
 
 ```python
-def get_exchanges() -> List
+def get_exchanges() -> List[str]
 ```
 ## Parameters
 

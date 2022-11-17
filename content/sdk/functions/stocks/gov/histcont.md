@@ -16,7 +16,7 @@ Get historical quarterly government contracts [Source: quiverquant.com]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L139)]
 
 ```python
-def get_hist_contracts(symbol: str) -> DataFrame
+def get_hist_contracts(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

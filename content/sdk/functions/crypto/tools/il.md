@@ -16,7 +16,7 @@ Calculates Impermanent Loss in a custom liquidity pool
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_model.py#L57)]
 
 ```python
-def calculate_il(price_changeA: float, price_changeB: float, proportion: float, initial_pool_value: float) -> Tuple
+def calculate_il(price_changeA: float, price_changeB: float, proportion: float, initial_pool_value: float) -> Tuple[pd.DataFrame, str]
 ```
 ## Parameters
 

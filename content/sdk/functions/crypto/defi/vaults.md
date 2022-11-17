@@ -16,7 +16,7 @@ Get DeFi Vaults Information. DeFi Vaults are pools of funds with an assigned str
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/coindix_model.py#L107)]
 
 ```python
-def get_defi_vaults(chain: Optional[str] = None, protocol: Optional[str] = None, kind: Optional[str] = None, ascend: bool = True, sortby: str = "apy") -> DataFrame
+def get_defi_vaults(chain: Optional[str] = None, protocol: Optional[str] = None, kind: Optional[str] = None, ascend: bool = True, sortby: str = "apy") -> pd.DataFrame
 ```
 ## Parameters
 

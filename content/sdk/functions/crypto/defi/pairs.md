@@ -16,7 +16,7 @@ Get lastly added trade-able pairs on Uniswap with parameters like:
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L164)]
 
 ```python
-def get_uniswap_pool_recently_added(last_days: int = 14, min_volume: int = 100, min_liquidity: int = 0, min_tx: int = 100) -> DataFrame
+def get_uniswap_pool_recently_added(last_days: int = 14, min_volume: int = 100, min_liquidity: int = 0, min_tx: int = 100) -> pd.DataFrame
 ```
 ## Parameters
 

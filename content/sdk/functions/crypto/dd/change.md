@@ -16,7 +16,7 @@ Returns 30d change of the supply held in exchange wallets of a certain symbol.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L538)]
 
 ```python
-def get_exchange_net_position_change(symbol: str, exchange: str = "binance", start_date: str = "2010-01-01", end_date: str = None) -> DataFrame
+def get_exchange_net_position_change(symbol: str, exchange: str = "binance", start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

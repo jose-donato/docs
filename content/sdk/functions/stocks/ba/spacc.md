@@ -10,7 +10,7 @@ Get top tickers from r/SPACs [Source: reddit].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L317)]
 
 ```python
-def get_spac_community(limit: int = 10, popular: bool = False) -> Tuple
+def get_spac_community(limit: int = 10, popular: bool = False) -> Tuple[pd.DataFrame, dict]
 ```
 ## Parameters
 

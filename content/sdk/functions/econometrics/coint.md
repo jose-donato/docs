@@ -16,7 +16,7 @@ Calculate cointegration tests between variable number of input series
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L249)]
 
 ```python
-def get_coint_df() -> Union
+def get_coint_df(datasets: pd.Series, return_z: bool = False) -> Union[pd.DataFrame, Dict]
 ```
 ## Parameters
 
@@ -41,7 +41,7 @@ Estimates long-run and short-run cointegration relationship for series y and x a
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L314)]
 
 ```python
-def display_cointegration_test() -> None
+def display_cointegration_test(datasets: pd.Series, significant: bool = False, plot: bool = True, export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
 ## Parameters
 

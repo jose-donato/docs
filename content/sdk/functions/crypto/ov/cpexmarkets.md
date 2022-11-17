@@ -16,7 +16,7 @@ List markets by exchange ID [Source: CoinPaprika]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L329)]
 
 ```python
-def get_exchanges_market(exchange_id: str = "binance", symbols: str = "USD", sortby: str = "pair", ascend: bool = True) -> DataFrame
+def get_exchanges_market(exchange_id: str = "binance", symbols: str = "USD", sortby: str = "pair", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

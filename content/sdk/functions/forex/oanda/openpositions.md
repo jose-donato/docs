@@ -16,7 +16,7 @@ Request information on open positions.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L378)]
 
 ```python
-def open_positions_request(accountID: str = "REPLACE_ME") -> Union
+def open_positions_request(accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

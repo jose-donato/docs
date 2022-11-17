@@ -16,7 +16,7 @@ Get global statistics about crypto markets from CoinGecko API like:
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L460)]
 
 ```python
-def get_global_markets_info() -> DataFrame
+def get_global_markets_info() -> pd.DataFrame
 ```
 ## Parameters
 

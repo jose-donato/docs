@@ -10,7 +10,7 @@ Get sustainability metrics from yahoo
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L138)]
 
 ```python
-def get_sustainability(symbol: str) -> DataFrame
+def get_sustainability(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

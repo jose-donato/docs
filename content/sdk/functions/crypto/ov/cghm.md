@@ -16,7 +16,7 @@ Get N coins from CoinGecko [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L128)]
 
 ```python
-def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", ascend: bool = False) -> DataFrame
+def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

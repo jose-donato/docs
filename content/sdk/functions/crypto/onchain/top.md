@@ -16,7 +16,7 @@ Get top 50 tokens. [Source: Ethplorer]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L268)]
 
 ```python
-def get_top_tokens(sortby: str = "rank", ascend: bool = False) -> DataFrame
+def get_top_tokens(sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

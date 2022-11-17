@@ -16,7 +16,7 @@ Get account holdings for asset. [Source: Binance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_model.py#L179)]
 
 ```python
-def get_balance(from_symbol: str, to_symbol: str = "USDT") -> DataFrame
+def get_balance(from_symbol: str, to_symbol: str = "USDT") -> pd.DataFrame
 ```
 ## Parameters
 

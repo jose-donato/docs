@@ -16,7 +16,7 @@ Shows Largest Gainers - coins which gain the most in given period. [Source: Coin
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L260)]
 
 ```python
-def get_gainers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap_rank") -> DataFrame
+def get_gainers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap_rank") -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Get the top US indices
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L16)]
 
 ```python
-def us_indices() -> DataFrame
+def us_indices() -> pd.DataFrame
 ```
 ## Parameters
 

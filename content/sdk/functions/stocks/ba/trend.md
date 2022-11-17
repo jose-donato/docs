@@ -16,7 +16,7 @@ Get sentiment data on the most talked about tickers
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/sentimentinvestor_model.py#L136)]
 
 ```python
-def get_trending(start_date: str = None, hour: int = 0, number: int = 10) -> DataFrame
+def get_trending(start_date: str = None, hour: int = 0, number: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

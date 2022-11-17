@@ -16,7 +16,7 @@ Get current exchange open hours.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L20)]
 
 ```python
-def get_bursa(symbol: str) -> DataFrame
+def get_bursa(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Get available country codes for Bigmac index
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/nasdaq_model.py#L115)]
 
 ```python
-def get_country_codes() -> List
+def get_country_codes() -> List[str]
 ```
 ## Parameters
 

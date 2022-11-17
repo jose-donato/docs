@@ -16,7 +16,7 @@ Returns  a list of developer activity for a given coin and time interval.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_model.py#L28)]
 
 ```python
-def get_github_activity(symbol: str, dev_activity: bool = False, interval: str = "1d", start_date: str = None, end_date: str = None) -> DataFrame
+def get_github_activity(symbol: str, dev_activity: bool = False, interval: str = "1d", start_date: str = None, end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get omega ratio
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2034)]
 
 ```python
-def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float = 0, threshold_end: float = 1.5) -> DataFrame
+def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float = 0, threshold_end: float = 1.5) -> pd.DataFrame
 ```
 ## Parameters
 

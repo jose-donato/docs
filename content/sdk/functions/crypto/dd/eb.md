@@ -16,7 +16,7 @@ Returns the total amount of coins held on exchange addresses in units and percen
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L452)]
 
 ```python
-def get_exchange_balances(symbol: str, exchange: str = "binance", start_date: str = "2010-01-01", end_date: str = None) -> DataFrame
+def get_exchange_balances(symbol: str, exchange: str = "binance", start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

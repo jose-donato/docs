@@ -16,7 +16,7 @@ Display fails-to-deliver data for a given ticker. [Source: SEC]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_model.py#L59)]
 
 ```python
-def get_fails_to_deliver(symbol: str, start_date: str = None, end_date: str = None, limit: int = 0) -> DataFrame
+def get_fails_to_deliver(symbol: str, start_date: str = None, end_date: str = None, limit: int = 0) -> pd.DataFrame
 ```
 ## Parameters
 

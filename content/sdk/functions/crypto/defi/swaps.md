@@ -16,7 +16,7 @@ Get the last 100 swaps done on Uniswap [Source: https://thegraph.com/en/]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L296)]
 
 ```python
-def get_last_uni_swaps(limit: int = 100, sortby: str = "timestamp", ascend: bool = False) -> DataFrame
+def get_last_uni_swaps(limit: int = 100, sortby: str = "timestamp", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

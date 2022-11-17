@@ -16,7 +16,7 @@ Print summary statistics
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L25)]
 
 ```python
-def get_summary(data: pd.DataFrame) -> DataFrame
+def get_summary(data: pd.DataFrame) -> pd.DataFrame
 ```
 ## Parameters
 

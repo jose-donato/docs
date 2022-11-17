@@ -16,7 +16,7 @@ Gets Sentiment analysis provided by FinBrain's API [Source: finbrain].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/finbrain_model.py#L15)]
 
 ```python
-def get_sentiment(symbol: str) -> DataFrame
+def get_sentiment(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

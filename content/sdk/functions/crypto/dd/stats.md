@@ -16,7 +16,7 @@ Get 24 hr stats for the product. Volume is in base currency units.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L202)]
 
 ```python
-def get_product_stats(symbol: str) -> DataFrame
+def get_product_stats(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

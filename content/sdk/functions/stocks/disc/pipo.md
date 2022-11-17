@@ -10,7 +10,7 @@ Past IPOs dates. [Source: Finnhub]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L74)]
 
 ```python
-def get_past_ipo(num_days_behind: int = 5, start_date: Optional[str] = None) -> DataFrame
+def get_past_ipo(num_days_behind: int = 5, start_date: Optional[str] = None) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Get portfolio transactions
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2401)]
 
 ```python
-def get_transactions(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
+def get_transactions(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.DataFrame
 ```
 ## Parameters
 

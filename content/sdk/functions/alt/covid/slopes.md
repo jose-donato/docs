@@ -16,7 +16,7 @@ Load cases and find slope over period.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L173)]
 
 ```python
-def get_case_slopes(days_back: int = 30, limit: int = 50, threshold: int = 10000, ascend: bool = False) -> DataFrame
+def get_case_slopes(days_back: int = 30, limit: int = 50, threshold: int = 10000, ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

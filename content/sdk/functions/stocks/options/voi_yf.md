@@ -16,7 +16,7 @@ Plot volume and open interest
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L599)]
 
 ```python
-def get_volume_open_interest(symbol: str, expiry: str) -> DataFrame
+def get_volume_open_interest(symbol: str, expiry: str) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Gets Expected Shortfall for specified stock dataframe.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L355)]
 
 ```python
-def get_es(data: pd.DataFrame, use_mean: bool = False, distribution: str = "normal", percentile: Union[float, int] = 99.9, portfolio: bool = False) -> DataFrame
+def get_es(data: pd.DataFrame, use_mean: bool = False, distribution: str = "normal", percentile: Union[float, int] = 99.9, portfolio: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

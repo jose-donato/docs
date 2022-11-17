@@ -10,7 +10,7 @@ Get portfolio performance vs the benchmark
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1833)]
 
 ```python
-def get_performance_vs_benchmark(portfolio_engine: portfolio_model.PortfolioEngine, show_all_trades: bool = False) -> DataFrame
+def get_performance_vs_benchmark(portfolio_engine: portfolio_model.PortfolioEngine, show_all_trades: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

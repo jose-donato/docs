@@ -16,7 +16,7 @@ Returns orderbook for a coin in a given exchange
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L46)]
 
 ```python
-def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> Dict
+def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> Dict[str, Any]
 ```
 ## Parameters
 

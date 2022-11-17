@@ -16,7 +16,7 @@ Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_model.py#L62)]
 
 ```python
-def get_btc_confirmed_transactions() -> DataFrame
+def get_btc_confirmed_transactions() -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Returns statistics for a given df
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L480)]
 
 ```python
-def describe_df(data: pd.DataFrame) -> DataFrame
+def describe_df(data: pd.DataFrame) -> pd.DataFrame
 ```
 ## Parameters
 

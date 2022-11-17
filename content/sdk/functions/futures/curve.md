@@ -16,7 +16,7 @@ Get curve futures [Source: Yahoo Finance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L118)]
 
 ```python
-def get_curve_futures(symbol: str = "") -> DataFrame
+def get_curve_futures(symbol: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

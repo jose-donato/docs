@@ -16,7 +16,7 @@ Returns crypto {borrow,supply} interest rates for cryptocurrencies across severa
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_model.py#L267)]
 
 ```python
-def get_rates(rate_type: str = "borrow") -> DataFrame
+def get_rates(rate_type: str = "borrow") -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get rolling sortino
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1750)]
 
 ```python
-def get_rolling_sortino(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float = 0, window: str = "1y") -> DataFrame
+def get_rolling_sortino(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float = 0, window: str = "1y") -> pd.DataFrame
 ```
 ## Parameters
 

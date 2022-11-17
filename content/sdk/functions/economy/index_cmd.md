@@ -16,7 +16,7 @@ Get data on selected indices over time [Source: Yahoo Finance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L672)]
 
 ```python
-def get_indices(indices: list, interval: str = "1d", start_date: int = None, end_date: int = None, column: str = "Adj Close", returns: bool = False) -> DataFrame
+def get_indices(indices: list, interval: str = "1d", start_date: int = None, end_date: int = None, column: str = "Adj Close", returns: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

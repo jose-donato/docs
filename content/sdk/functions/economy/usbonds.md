@@ -10,7 +10,7 @@ Scrape data for us bonds
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L161)]
 
 ```python
-def us_bonds() -> DataFrame
+def us_bonds() -> pd.DataFrame
 ```
 ## Parameters
 

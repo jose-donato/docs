@@ -16,7 +16,7 @@ Fisher Transform
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L165)]
 
 ```python
-def fisher(data: pd.DataFrame, window: int = 14) -> DataFrame
+def fisher(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 ```
 ## Parameters
 

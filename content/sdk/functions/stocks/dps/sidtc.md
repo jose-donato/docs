@@ -10,7 +10,7 @@ Get short interest and days to cover. [Source: Stockgrid]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L78)]
 
 ```python
-def get_short_interest_days_to_cover(sortby: str = "float") -> DataFrame
+def get_short_interest_days_to_cover(sortby: str = "float") -> pd.DataFrame
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get U.S. Treasury rates [Source: EconDB]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L737)]
 
 ```python
-def get_treasuries(instruments: list = None, maturities: list = None, frequency: str = "monthly", start_date: str = "1900-01-01", end_date: str = None) -> DataFrame
+def get_treasuries(instruments: list = None, maturities: list = None, frequency: str = "monthly", start_date: str = "1900-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Get futures data. [Source: Finviz]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L187)]
 
 ```python
-def get_futures(future_type: str = "Indices", sortby: str = "ticker", ascend: bool = False) -> DataFrame
+def get_futures(future_type: str = "Indices", sortby: str = "ticker", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

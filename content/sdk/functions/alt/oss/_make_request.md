@@ -10,7 +10,7 @@ Helper method to scrap.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L67)]
 
 ```python
-def _make_request(url: str) -> Optional
+def _make_request(url: str) -> Optional[bs4.BeautifulSoup]
 ```
 ## Parameters
 

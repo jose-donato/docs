@@ -16,7 +16,7 @@ Get rolling beta using portfolio and benchmark returns
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1799)]
 
 ```python
-def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "1y") -> DataFrame
+def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "1y") -> pd.DataFrame
 ```
 ## Parameters
 

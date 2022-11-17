@@ -10,7 +10,7 @@ Provides information that relates to the CAPM model
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/quantitative_analysis/factors_model.py#L80)]
 
 ```python
-def capm_information(symbol: str) -> Tuple
+def capm_information(symbol: str) -> Tuple[float, float]
 ```
 ## Parameters
 

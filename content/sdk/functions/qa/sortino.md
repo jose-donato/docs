@@ -16,7 +16,7 @@ Calculates the sortino ratio
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L562)]
 
 ```python
-def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 252, adjusted: bool = False) -> DataFrame
+def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 252, adjusted: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

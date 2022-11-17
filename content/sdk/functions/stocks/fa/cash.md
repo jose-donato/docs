@@ -10,7 +10,7 @@ Get Cash Flow.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/sdk_helpers.py#L140)]
 
 ```python
-def get_cash_flow(symbol: str, quarterly: bool = False, ratios: bool = False, source: str = "YahooFinance", limit: int = 10) -> DataFrame
+def get_cash_flow(symbol: str, quarterly: bool = False, ratios: bool = False, source: str = "YahooFinance", limit: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

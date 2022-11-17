@@ -16,7 +16,7 @@ Returns top crypto categories [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L157)]
 
 ```python
-def get_top_crypto_categories(sort_filter: str = "market_cap_desc") -> DataFrame
+def get_top_crypto_categories(sort_filter: str = "market_cap_desc") -> pd.DataFrame
 ```
 ## Parameters
 

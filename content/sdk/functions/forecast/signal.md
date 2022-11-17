@@ -10,7 +10,7 @@ A price signal based on short/long term price.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L362)]
 
 ```python
-def add_signal(dataset: pd.DataFrame, target_column: str = "close") -> DataFrame
+def add_signal(dataset: pd.DataFrame, target_column: str = "close") -> pd.DataFrame
 ```
 ## Parameters
 

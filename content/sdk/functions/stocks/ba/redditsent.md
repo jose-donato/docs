@@ -16,7 +16,7 @@ Finds posts related to a specific search term in Reddit.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L864)]
 
 ```python
-def get_posts_about(symbol: str, limit: int = 100, sortby: str = "relevance", time_frame: str = "week", full_search: bool = True, subreddits: str = "all") -> Tuple
+def get_posts_about(symbol: str, limit: int = 100, sortby: str = "relevance", time_frame: str = "week", full_search: bool = True, subreddits: str = "all") -> Tuple[pd.DataFrame, list, float]
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Get news for a given term. [Source: NewsAPI]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/newsapi_model.py#L18)]
 
 ```python
-def get_news(query: str, limit: int = 10, start_date: str = None, show_newest: bool = True, sources: str = "") -> List
+def get_news(query: str, limit: int = 10, start_date: str = None, show_newest: bool = True, sources: str = "") -> List[Tuple[pd.DataFrame, Any]]
 ```
 ## Parameters
 

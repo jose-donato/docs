@@ -16,7 +16,7 @@ Scrapes coin withdrawal fees per exchange
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L207)]
 
 ```python
-def get_crypto_withdrawal_fees(symbol: str) -> List
+def get_crypto_withdrawal_fees(symbol: str) -> List[Any]
 ```
 ## Parameters
 

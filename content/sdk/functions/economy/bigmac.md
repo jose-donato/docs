@@ -16,7 +16,7 @@ Display Big Mac Index for given countries
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/nasdaq_model.py#L173)]
 
 ```python
-def get_big_mac_indices(country_codes: List[str] = None) -> DataFrame
+def get_big_mac_indices(country_codes: List[str] = None) -> pd.DataFrame
 ```
 ## Parameters
 

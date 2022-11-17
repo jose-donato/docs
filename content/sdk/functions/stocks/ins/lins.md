@@ -16,7 +16,7 @@ Get last insider activity for a given stock ticker. [Source: Finviz]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_model.py#L16)]
 
 ```python
-def get_last_insider_activity(symbol: str) -> DataFrame
+def get_last_insider_activity(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

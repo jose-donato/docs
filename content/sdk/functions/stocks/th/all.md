@@ -16,7 +16,7 @@ Get all exchanges.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L98)]
 
 ```python
-def get_all() -> DataFrame
+def get_all() -> pd.DataFrame
 ```
 ## Parameters
 

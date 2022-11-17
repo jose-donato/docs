@@ -16,7 +16,7 @@ Corporate lobbying details
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L358)]
 
 ```python
-def get_top_lobbying() -> DataFrame
+def get_top_lobbying() -> pd.DataFrame
 ```
 ## Parameters
 

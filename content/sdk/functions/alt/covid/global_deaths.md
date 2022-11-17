@@ -10,7 +10,7 @@ Get historical deaths for given country.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L73)]
 
 ```python
-def get_global_deaths(country: str) -> DataFrame
+def get_global_deaths(country: str) -> pd.DataFrame
 ```
 ## Parameters
 

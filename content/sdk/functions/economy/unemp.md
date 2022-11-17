@@ -16,7 +16,7 @@ Get historical unemployment for United States
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L284)]
 
 ```python
-def get_unemployment(start_year: int = 2010) -> DataFrame
+def get_unemployment(start_year: int = 2010) -> pd.DataFrame
 ```
 ## Parameters
 

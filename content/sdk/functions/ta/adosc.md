@@ -16,7 +16,7 @@ Calculate AD oscillator technical indicator
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L46)]
 
 ```python
-def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int = 10) -> DataFrame
+def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int = 10) -> pd.DataFrame
 ```
 ## Parameters
 

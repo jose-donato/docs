@@ -10,7 +10,7 @@ Returns today hot penny stocks
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/shortinterest_model.py#L38)]
 
 ```python
-def get_today_hot_penny_stocks() -> DataFrame
+def get_today_hot_penny_stocks() -> pd.DataFrame
 ```
 ## Parameters
 

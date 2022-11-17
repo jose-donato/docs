@@ -16,7 +16,7 @@ Standard Deviation and Variance
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L41)]
 
 ```python
-def get_spread(data: pd.DataFrame, window: int = 14) -> Tuple
+def get_spread(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ## Parameters
 

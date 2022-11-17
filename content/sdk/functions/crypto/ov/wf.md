@@ -16,7 +16,7 @@ Scrapes top coins withdrawal fees
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L120)]
 
 ```python
-def get_overall_withdrawal_fees(limit: int = 100) -> DataFrame
+def get_overall_withdrawal_fees(limit: int = 100) -> pd.DataFrame
 ```
 ## Parameters
 

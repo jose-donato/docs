@@ -16,7 +16,7 @@ Get candles for chosen trading pair and time interval. [Source: Coinbase]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L143)]
 
 ```python
-def get_candles(symbol: str, interval: str = "24h") -> DataFrame
+def get_candles(symbol: str, interval: str = "24h") -> pd.DataFrame
 ```
 ## Parameters
 

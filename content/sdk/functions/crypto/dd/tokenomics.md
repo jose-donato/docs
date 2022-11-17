@@ -10,7 +10,7 @@ Get tokenomics for given coin. [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L253)]
 
 ```python
-def get_coin_tokenomics(symbol: str = "") -> DataFrame
+def get_coin_tokenomics(symbol: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

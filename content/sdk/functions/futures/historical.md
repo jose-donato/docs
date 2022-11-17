@@ -16,7 +16,7 @@ Get historical futures [Source: Yahoo Finance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L79)]
 
 ```python
-def get_historical_futures(symbols: List[str], expiry: str = "") -> DataFrame
+def get_historical_futures(symbols: List[str], expiry: str = "") -> pd.DataFrame
 ```
 ## Parameters
 

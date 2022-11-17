@@ -16,7 +16,7 @@ All markets for given coin and currency [Source: CoinPaprika]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L176)]
 
 ```python
-def get_coin_markets_by_id(symbol: str = "BTC", quotes: str = "USD", sortby: str = "pct_volume_share", ascend: bool = True) -> DataFrame
+def get_coin_markets_by_id(symbol: str = "BTC", quotes: str = "USD", sortby: str = "pct_volume_share", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

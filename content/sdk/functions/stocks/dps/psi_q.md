@@ -16,7 +16,7 @@ Plots the short interest of a stock. This corresponds to the
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_model.py#L18)]
 
 ```python
-def get_short_interest(symbol: str, nyse: bool = False) -> DataFrame
+def get_short_interest(symbol: str, nyse: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

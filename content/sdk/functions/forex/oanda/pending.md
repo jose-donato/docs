@@ -16,7 +16,7 @@ Request information on pending orders.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L421)]
 
 ```python
-def pending_orders_request(accountID: str = "REPLACE_ME") -> Union
+def pending_orders_request(accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Request price for a forex pair.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L36)]
 
 ```python
-def fx_price_request(accountID: str = "REPLACE_ME", instrument: Optional[str] = None) -> Union
+def fx_price_request(accountID: str = "REPLACE_ME", instrument: Optional[str] = None) -> Union[Dict[str, str], bool]
 ```
 ## Parameters
 

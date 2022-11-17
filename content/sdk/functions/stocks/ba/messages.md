@@ -16,7 +16,7 @@ Get last messages for a given ticker [Source: stocktwits].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L52)]
 
 ```python
-def get_messages(symbol: str, limit: int = 30) -> DataFrame
+def get_messages(symbol: str, limit: int = 30) -> pd.DataFrame
 ```
 ## Parameters
 

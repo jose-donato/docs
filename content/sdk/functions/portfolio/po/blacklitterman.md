@@ -16,7 +16,7 @@ Builds a maximal diversification portfolio
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1340)]
 
 ```python
-def get_black_litterman_portfolio(symbols: List[str], benchmark: Dict, p_views: List, q_views: List, interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", objective: str = "Sharpe", risk_free_rate: float = 0, risk_aversion: float = 1, delta: float = None, equilibrium: bool = True, optimize: bool = True, value: float = 1.0, value_short: float = 0) -> Tuple
+def get_black_litterman_portfolio(symbols: List[str], benchmark: Dict, p_views: List, q_views: List, interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", objective: str = "Sharpe", risk_free_rate: float = 0, risk_aversion: float = 1, delta: float = None, equilibrium: bool = True, optimize: bool = True, value: float = 1.0, value_short: float = 0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
 ## Parameters
 

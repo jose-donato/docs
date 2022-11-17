@@ -10,7 +10,7 @@ Method that retrieves R2 Score for portfolio and benchmark selected
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L825)]
 
 ```python
-def get_r2_score(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
+def get_r2_score(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.DataFrame
 ```
 ## Parameters
 

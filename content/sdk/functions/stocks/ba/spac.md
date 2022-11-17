@@ -10,7 +10,7 @@ Get posts containing SPAC from top subreddits [Source: reddit].
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L456)]
 
 ```python
-def get_spac(limit: int = 5) -> Tuple
+def get_spac(limit: int = 5) -> Tuple[pd.DataFrame, dict, int]
 ```
 ## Parameters
 

@@ -16,7 +16,7 @@ Based on the regression type, this function decides what regression to run.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L34)]
 
 ```python
-def get_regressions_results(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str = "OLS", entity_effects: bool = False, time_effects: bool = False) -> Any
+def get_regressions_results(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str = "OLS", entity_effects: bool = False, time_effects: bool = False) -> None
 ```
 ## Parameters
 

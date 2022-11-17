@@ -16,7 +16,7 @@ Display top dApps (in terms of TVL) grouped by chain.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L149)]
 
 ```python
-def get_grouped_defi_protocols(limit: int = 50) -> DataFrame
+def get_grouped_defi_protocols(limit: int = 50) -> pd.DataFrame
 ```
 ## Parameters
 

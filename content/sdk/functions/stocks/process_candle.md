@@ -10,7 +10,7 @@ Process DataFrame into candle style plot.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L825)]
 
 ```python
-def process_candle(data: pd.DataFrame) -> DataFrame
+def process_candle(data: pd.DataFrame) -> pd.DataFrame
 ```
 ## Parameters
 

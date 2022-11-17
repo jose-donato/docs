@@ -16,7 +16,7 @@ On Balance Volume
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L90)]
 
 ```python
-def obv(data: pd.DataFrame) -> DataFrame
+def obv(data: pd.DataFrame) -> pd.DataFrame
 ```
 ## Parameters
 

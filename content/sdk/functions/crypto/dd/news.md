@@ -16,7 +16,7 @@ Get recent posts from CryptoPanic news aggregator platform. [Source: https://cry
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_model.py#L158)]
 
 ```python
-def get_news(limit: int = 60, post_kind: str = "news", filter_: Optional[str] = None, region: str = "en", source: Optional[str] = None, symbol: Optional[str] = None, sortby: str = "published_at", ascend: bool = True) -> DataFrame
+def get_news(limit: int = 60, post_kind: str = "news", filter_: Optional[str] = None, region: str = "en", source: Optional[str] = None, symbol: Optional[str] = None, sortby: str = "published_at", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

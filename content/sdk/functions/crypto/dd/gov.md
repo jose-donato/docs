@@ -16,7 +16,7 @@ Returns coin governance
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L567)]
 
 ```python
-def get_governance(symbol: str) -> Tuple
+def get_governance(symbol: str) -> Tuple[str, pd.DataFrame]
 ```
 ## Parameters
 

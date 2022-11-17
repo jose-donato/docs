@@ -16,7 +16,7 @@ Get all most important ticker related information for given coin id [Source: Coi
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L290)]
 
 ```python
-def get_tickers_info_for_coin(symbol: str = "BTC", quotes: str = "USD") -> DataFrame
+def get_tickers_info_for_coin(symbol: str = "BTC", quotes: str = "USD") -> pd.DataFrame
 ```
 ## Parameters
 

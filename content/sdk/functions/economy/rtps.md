@@ -16,7 +16,7 @@ Get real-time performance sector data
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L19)]
 
 ```python
-def get_sector_data() -> DataFrame
+def get_sector_data() -> pd.DataFrame
 ```
 ## Parameters
 

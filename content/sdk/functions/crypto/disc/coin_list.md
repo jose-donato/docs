@@ -10,7 +10,7 @@ Get list of coins available on CoinGecko [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L339)]
 
 ```python
-def get_coin_list() -> DataFrame
+def get_coin_list() -> pd.DataFrame
 ```
 ## Parameters
 

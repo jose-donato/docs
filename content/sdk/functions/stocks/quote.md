@@ -10,7 +10,7 @@ Ticker quote.  [Source: YahooFinance]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_model.py#L233)]
 
 ```python
-def load_quote(symbol: str) -> DataFrame
+def load_quote(symbol: str) -> pd.DataFrame
 ```
 ## Parameters
 

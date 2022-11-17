@@ -16,7 +16,7 @@ Returns correlation for a given df
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L497)]
 
 ```python
-def corr_df(data: pd.DataFrame) -> DataFrame
+def corr_df(data: pd.DataFrame) -> pd.DataFrame
 ```
 ## Parameters
 

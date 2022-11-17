@@ -16,7 +16,7 @@ Request data of significant events calendar.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L645)]
 
 ```python
-def get_calendar_request(days: int = 14, instrument: Optional[str] = None) -> Union
+def get_calendar_request(days: int = 14, instrument: Optional[str] = None) -> Union[pd.DataFrame, bool]
 ```
 ## Parameters
 

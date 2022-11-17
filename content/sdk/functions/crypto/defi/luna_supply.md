@@ -16,7 +16,7 @@ Get supply history of the Terra ecosystem
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_model.py#L14)]
 
 ```python
-def get_luna_supply_stats(supply_type: str = "lunaSupplyChallengeStats", days: int = 30) -> DataFrame
+def get_luna_supply_stats(supply_type: str = "lunaSupplyChallengeStats", days: int = 30) -> pd.DataFrame
 ```
 ## Parameters
 

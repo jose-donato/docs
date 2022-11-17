@@ -16,7 +16,7 @@ Get unusual option activity from fdscanner.com
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L19)]
 
 ```python
-def unusual_options(limit: int = 100) -> Tuple
+def unusual_options(limit: int = 100) -> Tuple[pd.DataFrame, pandas._libs.tslibs.timestamps.Timestamp]
 ```
 ## Parameters
 

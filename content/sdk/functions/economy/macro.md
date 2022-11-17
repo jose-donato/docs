@@ -16,7 +16,7 @@ This functions groups the data queried from the EconDB database [Source: EconDB]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L656)]
 
 ```python
-def get_aggregated_macro_data(parameters: list = None, countries: list = None, transform: str = "", start_date: str = "1900-01-01", end_date: str = None, symbol: str = "") -> Tuple
+def get_aggregated_macro_data(parameters: list = None, countries: list = None, transform: str = "", start_date: str = "1900-01-01", end_date: str = None, symbol: str = "") -> Tuple[pd.DataFrame, Dict[Any, Dict[Any, Any]], str]
 ```
 ## Parameters
 

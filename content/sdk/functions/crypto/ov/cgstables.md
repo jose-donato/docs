@@ -16,7 +16,7 @@ Returns top stable coins [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L191)]
 
 ```python
-def get_stable_coins(limit: int = 20, sortby: str = "rank", ascend: bool = False) -> DataFrame
+def get_stable_coins(limit: int = 20, sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 

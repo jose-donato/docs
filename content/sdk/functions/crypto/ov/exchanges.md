@@ -16,7 +16,7 @@ Get list of top exchanges from CoinGecko API [Source: CoinGecko]
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L218)]
 
 ```python
-def get_exchanges(sortby: str = "Rank", ascend: bool = True) -> DataFrame
+def get_exchanges(sortby: str = "Rank", ascend: bool = True) -> pd.DataFrame
 ```
 ## Parameters
 

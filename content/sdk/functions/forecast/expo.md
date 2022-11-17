@@ -16,7 +16,7 @@ Performs Probabilistic Exponential Smoothing forecasting
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/expo_model.py#L34)]
 
 ```python
-def get_expo_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", trend: str = "A", seasonal: str = "A", seasonal_periods: int = 7, dampen: str = "F", n_predict: int = 5, start_window: float = 0.85, forecast_horizon: int = 5) -> Tuple
+def get_expo_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", trend: str = "A", seasonal: str = "A", seasonal_periods: int = 7, dampen: str = "F", n_predict: int = 5, start_window: float = 0.85, forecast_horizon: int = 5) -> Tuple[List[darts.timeseries.TimeSeries], List[darts.timeseries.TimeSeries], List[darts.timeseries.TimeSeries], Union[float, numpy.ndarray, NoneType], darts.models.forecasting.exponential_smoothing.ExponentialSmoothing]
 ```
 ## Parameters
 

@@ -10,7 +10,7 @@ Get economic calendar for countries between specified dates
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/nasdaq_model.py#L21)]
 
 ```python
-def get_economic_calendar(countries: Union[List[str], str] = "", start_date: str = None, end_date: str = None) -> DataFrame
+def get_economic_calendar(countries: Union[List[str], str] = "", start_date: str = None, end_date: str = None) -> pd.DataFrame
 ```
 ## Parameters
 

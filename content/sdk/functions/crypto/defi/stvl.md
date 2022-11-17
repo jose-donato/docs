@@ -16,7 +16,7 @@ Returns historical values of the total sum of TVLs from all listed protocols.
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L170)]
 
 ```python
-def get_defi_tvl() -> DataFrame
+def get_defi_tvl() -> pd.DataFrame
 ```
 ## Parameters
 

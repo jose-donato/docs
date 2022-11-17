@@ -16,7 +16,7 @@ Get list of crypto, fiats, commodity exchange rates from CoinGecko API [Source: 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L398)]
 
 ```python
-def get_exchange_rates(sortby: str = "Name", ascend: bool = False) -> DataFrame
+def get_exchange_rates(sortby: str = "Name", ascend: bool = False) -> pd.DataFrame
 ```
 ## Parameters
 
