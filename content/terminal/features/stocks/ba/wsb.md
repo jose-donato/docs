@@ -27,7 +27,6 @@ usage: wsb [-l N_LIMIT] [--new]
 ## Examples
 
 ```python
-
 2022 Feb 16, 10:52 (✨) /stocks/ba/ $ wsb
 2022-02-16 11:00:14 - Daily Discussion Thread for February 16, 2022
 https://old.reddit.com/r/wallstreetbets/comments/stt7n0/daily_discussion_thread_for_february_16_2022/
@@ -58,6 +57,5 @@ https://old.reddit.com/r/wallstreetbets/comments/stwxa9/make_gme_not_war/
 
 2022-02-16 11:24:54 - Free Money Hack - Can’t Go Tits Up
 https://old.reddit.com/r/wallstreetbets/comments/sttmmb/free_money_hack_cant_go_tits_up/
-
 ```
 

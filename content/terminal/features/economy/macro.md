@@ -22,7 +22,7 @@ usage: macro [-p PARAMETERS] [-c COUNTRIES] [-t {,TPOP,TOYA,TUSD,TPGP,TNOR}] [--
 | ---- | ----------- | ------- | -------- | ------- |
 | parameters | Abbreviation(s) of the Macro Economic data | CPI | True | None |
 | countries | The country or countries you wish to show data for | united_states | True | None |
-| transform | The transformation to apply to the data |  | True | :  No transformation,  TPOP:  total percentage change on period,  TOYA:  total percentage since 1 year ago,  TUSD:  level USD,  TPGP:  Percentage of GDP,  TNOR:  Start = 100 |
+| transform | The transformation to apply to the data |  | True | ,  TPOP,  TOYA,  TUSD,  TPGP,  TNOR |
 | show | Show parameters and what they represent using 'parameters' or countries and their currencies using 'countries' | None | True | parameters, countries, transform |
 | start_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | None | True | None |
 | end_date | The end date of the data (format: YEAR-MONTH-DAY, i.e. 2021-06-20) | None | True | None |
@@ -32,9 +32,7 @@ usage: macro [-p PARAMETERS] [-c COUNTRIES] [-t {,TPOP,TOYA,TUSD,TPGP,TNOR}] [--
 ## Examples
 
 ```python
-
 2022 Mar 15, 07:20 (✨) /economy/ $ macro -p CONF -c netherlands,germany,france -s 2005-01-01 -e 2022-01-01
-
 ```
 
 ![macro conf netherlands germany france](https://user-images.githubusercontent.com/46355364/159249787-a030cd2c-0b29-4522-a1a9-db0245d55d9f.png)

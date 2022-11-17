@@ -28,7 +28,6 @@ usage: es [-m] [-d {laplace,student_t,logistic,normal}] [-p PERCENTILE]
 ## Examples
 
 ```python
-
 2022 Feb 25, 06:50 (✨) /stocks/qa/ $ es
       TSLA Expected Shortfall
 ┏━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
@@ -42,6 +41,5 @@ usage: es [-m] [-d {laplace,student_t,logistic,normal}] [-p PERCENTILE]
 ├───────┼─────────┼────────────────┤
 │ 99.9% │ -0.1444 │ -0.2106        │
 └───────┴─────────┴────────────────┘
-
 ```
 

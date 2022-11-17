@@ -32,7 +32,7 @@ usage: blacklitterman [-bm BENCHMARK] [-o {MinRisk,Utility,Sharpe,MaxRet}] [-pv 
 | optimize | If True Black Litterman estimates are used as inputs of mean variance model, if False returns equilibrium weights from Black Litterman model | True | True | None |
 | short_allocation | Amount to allocate to portfolio in short positions | 0.0 | True | None |
 | file | Upload an Excel file with views for Black Litterman model |  | True | None |
-| ==SUPPRESS== | sensitivity analysis | None | True | sa:  ArgumentParser(prog='blacklitterman sa', usage=None, description=None, formatter_class=class 'argparse.HelpFormatter', conflict_handler='error', add_help=True) |
+| ==SUPPRESS== | sensitivity analysis | None | True | sa |
 | download | Create a template to design Black Litterman model views |  | True | None |
 | nan_fill_method | Method used to fill nan values in time series, by default time. Possible values are: 'linear': linear interpolation 'time': linear interpolation based on time index 'nearest': use nearest value to replace nan values 'zero': spline of zeroth order 'slinear': spline of first order 'quadratic': spline of second order 'cubic': spline of third order 'barycentric': builds a polynomial that pass for all points | time | True | None |
 | categories | Show selected categories |  | True | None |
@@ -51,7 +51,6 @@ usage: blacklitterman [-bm BENCHMARK] [-o {MinRisk,Utility,Sharpe,MaxRet}] [-pv 
 ## Examples
 
 ```python
-
 2022 Apr 26, 01:25 (🦋) /portfolio/po/ $ add AAPL,MSFT,JP,BA
 2022 Apr 26, 01:26 (🦋) /portfolio/po/ $ maxsharpe
 
@@ -72,6 +71,5 @@ usage: blacklitterman [-bm BENCHMARK] [-o {MinRisk,Utility,Sharpe,MaxRet}] [-pv 
 Annual (by 252) expected return: 45.46%
 Annual (by √252) volatility: 34.16%
 Sharpe ratio: 1.3209
-
 ```
 

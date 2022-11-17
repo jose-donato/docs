@@ -25,7 +25,7 @@ usage: maxdiv [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,s
 | covariance | Method used to estimate covariance matrix. Possible values are 'hist': historical method 'ewma1': exponential weighted moving average with adjust=True 'ewma2': exponential weighted moving average with adjust=False 'ledoit': Ledoit and Wolf shrinkage method 'oas': oracle shrinkage method 'shrunk': scikit-learn shrunk method 'gl': graphical lasso method 'jlogo': j-logo covariance 'fixed': takes average of eigenvalues above max Marchenko Pastour limit 'spectral': makes zero eigenvalues above max Marchenko Pastour limit 'shrink': Lopez de Prado's book shrinkage method | hist | True | hist, ewma1, ewma2, ledoit, oas, shrunk, gl, jlogo, fixed, spectral, shrink |
 | smoothing_factor_ewma | Smoothing factor for ewma estimators | 0.94 | True | None |
 | short_allocation | Amount to allocate to portfolio in short positions | 0.0 | True | None |
-| ==SUPPRESS== | sensitivity analysis | None | True | sa:  ArgumentParser(prog='maxdiv sa', usage=None, description=None, formatter_class=class 'argparse.HelpFormatter', conflict_handler='error', add_help=True) |
+| ==SUPPRESS== | sensitivity analysis | None | True | sa |
 | nan_fill_method | Method used to fill nan values in time series, by default time. Possible values are: 'linear': linear interpolation 'time': linear interpolation based on time index 'nearest': use nearest value to replace nan values 'zero': spline of zeroth order 'slinear': spline of first order 'quadratic': spline of second order 'cubic': spline of third order 'barycentric': builds a polynomial that pass for all points | time | True | None |
 | categories | Show selected categories |  | True | None |
 | historic_period | Period to get yfinance data from. Possible frequency strings are: 'd': means days, for example '252d' means 252 days 'w': means weeks, for example '52w' means 52 weeks 'mo': means months, for example '12mo' means 12 months 'y': means years, for example '1y' means 1 year 'ytd': downloads data from beginning of year to today 'max': downloads all data available for each asset | 3y | True | None |
@@ -42,7 +42,6 @@ usage: maxdiv [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,s
 ## Examples
 
 ```python
-
 2022 Apr 05, 14:18 (🦋) /portfolio/po/ $ maxdiv
 
  [3 Years] Display a maximal diversification portfolio
@@ -69,6 +68,5 @@ usage: maxdiv [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,s
 Annual (by 252) expected return: 24.68%
 Annual (by √252) volatility: 26.16%
 Sharpe ratio: 0.9435
-
 ```
 

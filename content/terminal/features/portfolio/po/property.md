@@ -42,7 +42,6 @@ usage: property -pr
 ## Examples
 
 ```python
-
 2022 Apr 05, 15:02 (🦋) /portfolio/po/ $ property -pr trailingEps
 
  [3 Years] Weighted Portfolio based on trailingEps
@@ -69,6 +68,5 @@ usage: property -pr
 Annual (by 252) expected return: 33.74%
 Annual (by √252) volatility: 30.25%
 Sharpe ratio: 1.1094
-
 ```
 

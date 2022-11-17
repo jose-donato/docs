@@ -21,7 +21,6 @@ usage: stats
 ## Examples
 
 ```python
-
 2022 Feb 15, 06:33 (✨) /crypto/defi/ $ stats
  Uniswap DEX Base Statistics
 ┌───────────────────┬────────┐
@@ -37,6 +36,5 @@ usage: stats
 ├───────────────────┼────────┤
 │ totalLiquidityETH │ 1.1M   │
 └───────────────────┴────────┘
-
 ```
 

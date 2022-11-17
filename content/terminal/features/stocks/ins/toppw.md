@@ -26,7 +26,6 @@ usage: toppw [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 08:23 (✨) /stocks/ins/ $ toppw
                                                                                   Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
@@ -65,6 +64,5 @@ usage: toppw [-l LIMIT]
 └────┴─────────────┴────────────┴────────┴──────────────────────┴─────────────────────┴────────────┴──────────────┴────────┴────────────┴────────────┴──────────┴──────────────┘
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
 

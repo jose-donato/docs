@@ -28,7 +28,6 @@ usage: validators [-l LIMIT] [-s {validatorName,tokensAmount,votingPower,commiss
 ## Examples
 
 ```python
-
 2022 Feb 15, 06:36 (✨) /crypto/defi/ $ validators
 ┌──────────────────────────────────────────────┬─────────────────────┬───────────────┬────────────────┬───────────────────┬────────┬──────────┐
 │ Account address                              │ Validator name      │ Tokens amount │ Voting power % │ Commission rate % │ Status │ Uptime % │
@@ -53,6 +52,5 @@ usage: validators [-l LIMIT] [-s {validatorName,tokensAmount,votingPower,commiss
 ├──────────────────────────────────────────────┼─────────────────────┼───────────────┼────────────────┼───────────────────┼────────┼──────────┤
 │ terra1h6rf7y2ar5vz64q8rchz5443s3tqnswrpxe69f │ Staked              │ 6.3M          │ 2.08           │ 10.00             │ active │ 100.00   │
 └──────────────────────────────────────────────┴─────────────────────┴───────────────┴────────────────┴───────────────────┴────────┴──────────┘
-
 ```
 

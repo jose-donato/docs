@@ -28,7 +28,6 @@ usage: popular [-l LIMIT] [-n NUM] [-s S_SUBREDDIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 10:31 (✨) /stocks/ba/ $ popular
 Search for latest tickers for 50 'Superstonk' posts
   217 potential tickers found.
@@ -73,6 +72,5 @@ Search for latest tickers for 50 'wallstreetbets' posts
 ├──────────┼────────┼────────────────────────────────────────────────────────┼──────────────────────┼────────┼─────────┼────────────┼──────────────────────────────────────┤
 │ 3        │ RESN   │ Resonant Inc.                                          │ Technology           │ 4.35   │ -1.01%  │ 185.06%    │ https://finviz.com/quote.ashx?t=RESN │
 └──────────┴────────┴────────────────────────────────────────────────────────┴──────────────────────┴────────┴─────────┴────────────┴──────────────────────────────────────┘
-
 ```
 

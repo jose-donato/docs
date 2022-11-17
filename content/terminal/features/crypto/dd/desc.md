@@ -27,7 +27,6 @@ usage: desc -p
 ## Examples
 
 ```python
-
 2022 Aug 28, 19:09 (🦋) /crypto/dd/ $ desc cardano
 HOW
    Validators process transactions and receive fees from users (supply-side revenue).
@@ -49,6 +48,5 @@ BUSINESS MODEL
 
 GITHUB CONTRIBUTORS
    533
-
 ```
 

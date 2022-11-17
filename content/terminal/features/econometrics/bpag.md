@@ -21,7 +21,6 @@ usage: bpag
 ## Examples
 
 ```python
-
 2022 Jun 01, 06:29 (🦋) /econometrics/ $ load longley -a ll
 
 2022 Jun 01, 06:29 (🦋) /econometrics/ $ ols -d ll.totemp -i ll.gnpdefl,ll.gnp,ll.unemp,ll.armed,ll.pop,ll.year
@@ -77,6 +76,5 @@ Breusch-Pagan heteroscedasticity test
 └──────────┴───────────────┘
 
 The result 0.16 indicates the existence of heteroscedasticity. Consider taking the log or a rate for the dependent variable.
-
 ```
 

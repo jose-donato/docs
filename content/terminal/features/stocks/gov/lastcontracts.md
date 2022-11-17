@@ -28,7 +28,6 @@ usage: lastcontracts [-p PAST_TRANSACTION_DAYS] [-l LIMIT] [-s]
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:22 (✨) /stocks/gov/ $ lastcontracts
                                                         Last Government Contracts
 ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -93,6 +92,5 @@ usage: lastcontracts [-p PAST_TRANSACTION_DAYS] [-l LIMIT] [-s]
 │                     │        │           │ (M-21-31 ENTERPRISE LOGGING ONBOARDING SUPPORT)    │                                       │
 │                     │        │           │ SERVICES.                                          │                                       │
 └─────────────────────┴────────┴───────────┴────────────────────────────────────────────────────┴───────────────────────────────────────┘
-
 ```
 

@@ -39,7 +39,6 @@ usage: equal [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-m
 ## Examples
 
 ```python
-
 2022 Apr 05, 14:52 (🦋) /portfolio/po/ $ equal
 
  [3 Years] Equally Weighted Portfolio
@@ -66,6 +65,5 @@ usage: equal [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-m
 Annual (by 252) expected return: 35.70%
 Annual (by √252) volatility: 29.50%
 Sharpe ratio: 1.2041
-
 ```
 

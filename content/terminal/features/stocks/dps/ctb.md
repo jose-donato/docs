@@ -27,7 +27,6 @@ usage: ctb [-n NUMBER] [--raw]
 ## Examples
 
 ```python
-
 2022 Apr 07, 09:47 (�) /stocks/dps/ $ ctb
       Highest Cost to Borrow
 ┌─────────┬───────────┬───────────┐
@@ -73,6 +72,5 @@ usage: ctb [-n NUMBER] [--raw]
 ├─────────┼───────────┼───────────┤
 │ MH PRA  │ 202.1235% │ 100000    │
 └─────────┴───────────┴───────────┘
-
 ```
 

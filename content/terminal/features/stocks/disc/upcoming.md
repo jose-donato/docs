@@ -27,7 +27,6 @@ usage: upcoming [-l LIMIT] [-p N_PAGES]
 ## Examples
 
 ```python
-
 2022 Feb 16, 04:17 (✨) /stocks/disc/ $ upcoming
 
             Upcoming Earnings Releases
@@ -266,6 +265,5 @@ usage: upcoming [-l LIMIT] [-p N_PAGES]
 ├───────┼─────────────────────────────────────────┤
 │ GOGL  │ Golden Ocean Group Limited              │
 └───────┴─────────────────────────────────────────┘
-
 ```
 

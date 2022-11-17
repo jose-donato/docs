@@ -31,7 +31,6 @@ usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,share
 ## Examples
 
 ```python
-
 2022 Feb 16, 03:49 (✨) /stocks/disc/ $ arkord
 
                                       Orders by ARK Investment Management LLC
@@ -85,6 +84,5 @@ usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,share
 ├────────────┼────────┼───────────┼──────────┼────────┼────────┼────────┼────────┼─────────────┼──────┼────────┼─────────┤
 │ 2022-02-10 │ DNA    │ Buy       │ 13850600 │ 5.64   │ 5.76   │ 6.30   │ 5.60   │ 12554836.34 │ ARKK │ 0.1017 │ 2179659 │
 └────────────┴────────┴───────────┴──────────┴────────┴────────┴────────┴────────┴─────────────┴──────┴────────┴─────────┘
-
 ```
 

@@ -30,7 +30,7 @@ usage: maxutil [-ra RISK_AVERSION] [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hi
 | covariance | Method used to estimate covariance matrix. Possible values are 'hist': historical method 'ewma1': exponential weighted moving average with adjust=True 'ewma2': exponential weighted moving average with adjust=False 'ledoit': Ledoit and Wolf shrinkage method 'oas': oracle shrinkage method 'shrunk': scikit-learn shrunk method 'gl': graphical lasso method 'jlogo': j-logo covariance 'fixed': takes average of eigenvalues above max Marchenko Pastour limit 'spectral': makes zero eigenvalues above max Marchenko Pastour limit 'shrink': Lopez de Prado's book shrinkage method | hist | True | hist, ewma1, ewma2, ledoit, oas, shrunk, gl, jlogo, fixed, spectral, shrink |
 | smoothing_factor_ewma | Smoothing factor for ewma estimators | 0.94 | True | None |
 | short_allocation | Amount to allocate to portfolio in short positions | 0.0 | True | None |
-| ==SUPPRESS== | sensitivity analysis | None | True | sa:  ArgumentParser(prog='maxutil sa', usage=None, description=None, formatter_class=class 'argparse.HelpFormatter', conflict_handler='error', add_help=True) |
+| ==SUPPRESS== | sensitivity analysis | None | True | sa |
 | risk_measure | Risk measure used to optimize the portfolio. Possible values are: 'MV' : Variance 'MAD' : Mean Absolute Deviation 'MSV' : Semi Variance (Variance of negative returns) 'FLPM' : First Lower Partial Moment 'SLPM' : Second Lower Partial Moment 'CVaR' : Conditional Value at Risk 'EVaR' : Entropic Value at Risk 'WR' : Worst Realization 'ADD' : Average Drawdown of uncompounded returns 'UCI' : Ulcer Index of uncompounded returns 'CDaR' : Conditional Drawdown at Risk of uncompounded returns 'EDaR' : Entropic Drawdown at Risk of uncompounded returns 'MDD' : Maximum Drawdown of uncompounded returns | MV | True | MV, MAD, MSV, FLPM, SLPM, CVaR, EVaR, WR, ADD, UCI, CDaR, EDaR, MDD |
 | nan_fill_method | Method used to fill nan values in time series, by default time. Possible values are: 'linear': linear interpolation 'time': linear interpolation based on time index 'nearest': use nearest value to replace nan values 'zero': spline of zeroth order 'slinear': spline of first order 'quadratic': spline of second order 'cubic': spline of third order 'barycentric': builds a polynomial that pass for all points | time | True | None |
 | categories | Show selected categories |  | True | None |
@@ -50,7 +50,6 @@ usage: maxutil [-ra RISK_AVERSION] [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hi
 ## Examples
 
 ```python
-
 2022 Apr 05, 13:21 (🦋) /portfolio/po/ $ maxutil
 
  [3 Years] Display a maximal risk averse utility function
@@ -78,6 +77,5 @@ usage: maxutil [-ra RISK_AVERSION] [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hi
 Annual (by 252) expected return: 124.85%
 Annual (by √252) volatility: 68.44%
 Sharpe ratio: 1.8215
-
 ```
 

@@ -28,7 +28,6 @@ usage: recom [-s {australia,brazil,cfd,crypto,euronext,forex,france,germany,hong
 ## Examples
 
 ```python
-
 2022 Feb 16, 11:31 (✨) /stocks/ta/ $ recom
                Ticker Recommendation
 ┏━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━┳━━━━━━┳━━━━━━━━━┓
@@ -50,6 +49,5 @@ usage: recom [-s {australia,brazil,cfd,crypto,euronext,forex,france,germany,hong
 ├─────────┼────────────────┼─────┼──────┼─────────┤
 │ 1 min   │ SELL           │ 6   │ 11   │ 9       │
 └─────────┴────────────────┴─────┴──────┴─────────┘
-
 ```
 

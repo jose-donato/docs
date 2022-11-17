@@ -21,7 +21,6 @@ usage: headlines
 ## Examples
 
 ```python
-
 2022 Feb 16, 10:20 (✨) /stocks/ba/ $ headlines
 
 FinBrain Ticker Sentiment
@@ -48,7 +47,6 @@ FinBrain Ticker Sentiment
 ├────────────┼───────────┤
 │ 2022-02-16 │ 0.329     │
 └────────────┴───────────┘
-
 ```
 
 ![headlines](https://user-images.githubusercontent.com/46355364/154296211-b0380095-5f84-4bae-955e-9ef96c9704af.png)

@@ -27,7 +27,6 @@ usage: stalker [-u S_USER] [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 10:44 (✨) /stocks/ba/ $ stalker
 
 ------------------------------------------------------------------------------
@@ -200,7 +199,5 @@ https://newsfilter.io/a/bea839aee3a4f30dc384c7a90e21c701
 $ALKT Texans Credit Union Partners with Alkami to Amplify Its Digital Banking Experience
 
 https://newsfilter.io/a/198d92eb6e1c481b825b830659af8698
-
-
 ```
 

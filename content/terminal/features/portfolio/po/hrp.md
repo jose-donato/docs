@@ -37,7 +37,7 @@ usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 | alpha_tail | Significance level for lower tail dependence index, only used when when codependence value is 'tail' | 0.05 | True | None |
 | leaf_order | Indicates if the cluster are ordered so that the distance between successive leaves is minimal | True | True | None |
 | smoothing_factor_ewma | Smoothing factor for ewma estimators | 0.94 | True | None |
-| ==SUPPRESS== | sensitivity analysis | None | True | sa:  ArgumentParser(prog='hrp sa', usage=None, description=None, formatter_class=class 'argparse.HelpFormatter', conflict_handler='error', add_help=True) |
+| ==SUPPRESS== | sensitivity analysis | None | True | sa |
 | nan_fill_method | Method used to fill nan values in time series, by default time. Possible values are: 'linear': linear interpolation 'time': linear interpolation based on time index 'nearest': use nearest value to replace nan values 'zero': spline of zeroth order 'slinear': spline of first order 'quadratic': spline of second order 'cubic': spline of third order 'barycentric': builds a polynomial that pass for all points | time | True | None |
 | categories | Show selected categories |  | True | None |
 | historic_period | Period to get yfinance data from. Possible frequency strings are: 'd': means days, for example '252d' means 252 days 'w': means weeks, for example '52w' means 52 weeks 'mo': means months, for example '12mo' means 12 months 'y': means years, for example '1y' means 1 year 'ytd': downloads data from beginning of year to today 'max': downloads all data available for each asset | 3y | True | None |
@@ -56,7 +56,6 @@ usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 ## Examples
 
 ```python
-
 2022 Apr 05, 14:20 (🦋) /portfolio/po/ $ hrp
 
  [3 Years] Hierarchical risk parity portfolio using pearson codependence,
@@ -84,6 +83,5 @@ single linkage and volatility as risk measure
 Annual (by 252) expected return: 28.03%
 Annual (by √252) volatility: 25.35%
 Sharpe ratio: 1.0982
-
 ```
 

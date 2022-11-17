@@ -21,7 +21,6 @@ usage: score
 ## Examples
 
 ```python
-
 2022 Feb 15, 07:47 (✨) /crypto/dd/ $ score
 
         Different Scores for Loaded Coin
@@ -62,6 +61,5 @@ usage: score
 ├─────────────────────────────────┼────────────┤
 │ Bing Matches                    │            │
 └─────────────────────────────────┴────────────┘
-
 ```
 

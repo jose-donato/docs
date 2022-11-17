@@ -26,7 +26,6 @@ usage: queries [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 10:38 (✨) /stocks/ba/ $ queries
  Top AMZN's related queries
 ┏━━━━━━━━━━━━━━━━━━┳━━━━━━━┓
@@ -52,6 +51,5 @@ usage: queries [-l LIMIT]
 ├──────────────────┼───────┤
 │ goog             │ 9%    │
 └──────────────────┴───────┘
-
 ```
 

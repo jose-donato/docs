@@ -26,7 +26,6 @@ usage: bgod [-l LAGS]
 ## Examples
 
 ```python
-
 2022 Jun 01, 06:29 (🦋) /econometrics/ $ load longley -a ll
 
 2022 Jun 01, 06:29 (🦋) /econometrics/ $ ols -d ll.totemp -i ll.gnpdefl,ll.gnp,ll.unemp,ll.armed,ll.pop,ll.year
@@ -82,6 +81,5 @@ Breusch-Godfrey autocorrelation test [Lags: 3]
 └──────────┴─────────────────┘
 
 The result 0.02 indicates no existence of autocorrelation.
-
 ```
 

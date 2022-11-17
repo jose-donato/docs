@@ -26,7 +26,6 @@ usage: load -t TICKER
 ## Examples
 
 ```python
-
 2022 Feb 16, 09:13 (✨) /stocks/options/ $ load TSLA
 
 2022 Feb 16, 09:13 (✨) /stocks/options/ $ ?
@@ -60,6 +59,5 @@ usage: load -t TICKER
 │    pricing       shows options pricing and risk neutral valuation [Yfinance]                                                                                                                                                                                                │
 │                                                                                                                                                                                                                                                                              │
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── OpenBB Terminal ─╯
-
 ```
 

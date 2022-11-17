@@ -26,10 +26,8 @@ usage: plot [-v VALUES]
 ## Examples
 
 ```python
-
 (🦋) /forecast/ $ load aapl.csv
 
 (🦋) /forecast/ $ plot appl.close
-
 ```
 

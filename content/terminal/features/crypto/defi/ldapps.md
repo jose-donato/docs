@@ -29,7 +29,6 @@ usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,cha
 ## Examples
 
 ```python
-
 2022 Feb 15, 06:24 (✨) /crypto/defi/ $ ldapps
 ┌──────────────────────────┬────────┬──────────┬──────────────────────────────────────────────────┬───────────────┬───────────────┬───────────────┬──────────┐
 │ Name                     │ Symbol │ Category │ Chains                                           │ Change 1H (%) │ Change 1D (%) │ Change 7D (%) │ TVL ($)  │
@@ -57,6 +56,5 @@ usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,cha
 │                          │        │          │ Arbitrum, Harmony, OKExChain, Polygon, Telos,    │               │               │               │          │
 │                          │        │          │ Heco, xDai, Kucoin, Syscoin                      │               │               │               │          │
 └──────────────────────────┴────────┴──────────┴──────────────────────────────────────────────────┴───────────────┴───────────────┴───────────────┴──────────┘
-
 ```
 

@@ -26,7 +26,6 @@ usage: tispw [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 08:20 (✨) /stocks/ins/ $ tispw
                                                                                     Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
@@ -69,6 +68,5 @@ usage: tispw [-l LIMIT]
 A: Amended filing
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
 

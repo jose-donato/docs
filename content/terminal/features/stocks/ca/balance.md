@@ -27,7 +27,6 @@ usage: balance [-q] [-t S_TIMEFRAME]
 ## Examples
 
 ```python
-
 2022 Feb 15, 08:35 (✨) /stocks/ca/ $ balance
 
 Other available yearly timeframes are: 2017, 2018, 2019, 2020, 2021
@@ -108,6 +107,5 @@ Other available yearly timeframes are: 2017, 2018, 2019, 2020, 2021
 ├──────────────────────────────────────┼─────────┼────────┼─────────┤
 │ Total Assets Growth                  │ 8.37%   │ 19.14% │ 10.78%  │
 └──────────────────────────────────────┴─────────┴────────┴─────────┘
-
 ```
 

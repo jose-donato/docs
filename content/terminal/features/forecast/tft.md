@@ -29,7 +29,6 @@ usage: tft [--lstm-layers LSTM_LAYERS] [--num-attention-heads NUM_ATTENTION_HEAD
 ## Examples
 
 ```python
-
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
 2022 Jul 23, 11:03 (🦋) /forecast/ $ tft GME
@@ -52,7 +51,6 @@ TFT model obtains MAPE: 44.60%
 ├─────────────────────┼────────────┤
 │ 2022-07-25 00:00:00 │ $ 165.82   │
 └─────────────────────┴────────────┘
-
 ```
 
 ![tft](https://user-images.githubusercontent.com/72827203/180615444-47bcdd54-0693-4415-9617-ed3a571b26c6.png)

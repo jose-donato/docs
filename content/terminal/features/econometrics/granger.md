@@ -28,7 +28,6 @@ usage: granger [-t Available time series] [-l LAGS] [-c CONFIDENCE]
 ## Examples
 
 ```python
-
 2022 Jun 01, 06:35 (🦋) /econometrics/ $ load strikes
 
 2022 Jun 01, 06:36 (🦋) /econometrics/ $ granger strikes.duration,strikes.iprod
@@ -47,6 +46,5 @@ Granger Causality Test [Y: strikes.duration | X: strikes.iprod | Lags: 3]
 └──────────────┴────────┴─────────┴───────┴──────┘
 
 As the p-value of the F-test is 0.495, we can not reject the null hypothesis at the 0.05 confidence level.
-
 ```
 

@@ -27,7 +27,6 @@ usage: add -p PRICE -c CHANCE
 ## Examples
 
 ```python
-
 2022 Feb 16, 09:42 (✨) /stocks/options/pricing/ $ add -p 175 -c 0.5
 
 2022 Feb 16, 09:43 (✨) /stocks/options/pricing/ $ add -p 165 -c 0.5
@@ -41,6 +40,5 @@ Estimated price(s) of AAPL at 2022-05-20
 ├────────┼────────┤
 │ 175.00 │ 0.50   │
 └────────┴────────┘
-
 ```
 

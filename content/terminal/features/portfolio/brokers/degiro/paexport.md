@@ -21,7 +21,7 @@ usage: paexport -s START [-e END] [-c CURRENCY]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | start | Start date. | None | False | None |
-| end | End date. | 2022-11-16 16:02:52.001624 | True | None |
+| end | End date. | 2022-11-16 19:58:42.921836 | True | None |
 | currency | Used currency. | USD | True | None |
 
 

@@ -29,9 +29,7 @@ usage: plot [-p] [-x {ltd,s,lp,b,a,c,pc,v,oi,iv}] [-y {ltd,s,lp,b,a,c,pc,v,oi,iv
 ## Examples
 
 ```python
-
 2022 Feb 16, 09:37 (✨) /stocks/options/ $ plot -p -x s -y iv
-
 ```
 
 ![plot](https://user-images.githubusercontent.com/46355364/154287325-97de8945-a44c-418d-9e88-5123ee70469f.png)

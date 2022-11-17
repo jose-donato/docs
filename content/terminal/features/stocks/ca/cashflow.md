@@ -27,7 +27,6 @@ usage: cashflow [-q] [-t S_TIMEFRAME]
 ## Examples
 
 ```python
-
 2022 Feb 15, 08:35 (✨) /stocks/ca/ $ cashflow
 Other available yearly timeframes are: 2017, 2018, 2019, 2020, 2021
 
@@ -71,6 +70,5 @@ Other available yearly timeframes are: 2017, 2018, 2019, 2020, 2021
 ├────────────────────────────────────────┼──────────┼─────────┼─────────┤
 │ Net Operating Cash Flow / Sales        │ 28.44%   │ 21.36%  │ 45.65%  │
 └────────────────────────────────────────┴──────────┴─────────┴─────────┘
-
 ```
 

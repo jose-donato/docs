@@ -30,7 +30,6 @@ usage: search -q QUERY [QUERY ...] [-c {currencies,exchanges,icos,people,tags,al
 ## Examples
 
 ```python
-
 2022 Feb 15, 06:51 (✨) /crypto/disc/ $ search -q bitcoin
                       CoinPaprika Results
 ┌─────────────────────────┬──────────────────────┬────────────┐
@@ -56,6 +55,5 @@ usage: search -q QUERY [QUERY ...] [-c {currencies,exchanges,icos,people,tags,al
 ├─────────────────────────┼──────────────────────┼────────────┤
 │ bct-bitcointrust        │ BitcoinTrust         │ currencies │
 └─────────────────────────┴──────────────────────┴────────────┘
-
 ```
 

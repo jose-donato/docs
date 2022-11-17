@@ -28,7 +28,6 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 ## Examples
 
 ```python
-
 2022 Mar 15, 07:02 (✨) /economy/ $ futures
      Futures/Commodities [Source: Wall St. Journal]
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━┓
@@ -140,6 +139,5 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 ├──────────────┼───────────┼─────────┼────────────┤
 │ Cocoa        │ 2611.00   │ 2556.00 │ -2.11      │
 └──────────────┴───────────┴─────────┴────────────┘
-
 ```
 

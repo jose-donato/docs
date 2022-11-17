@@ -28,6 +28,5 @@ usage: ticker -t TICKER
 ```python
 text
 2022 Feb 15, 08:33 (✨) /stocks/ca/ $ ticker AAPL
-
 ```
 

@@ -26,7 +26,6 @@ usage: load [-c {Open,High,Low,Close,Adj Close,Volume,date_id,OC_High,OC_Low,Ret
 ## Examples
 
 ```python
-
 2022 Feb 16, 11:12 (✨) /stocks/qa/ $ load tsla
 
 Loading Daily TSLA stock with starting period 2019-02-11 for analysis.
@@ -38,6 +37,5 @@ Market:   CLOSED
 
 
 2022 Feb 16, 11:12 (✨) /stocks/qa/ $ pick adjclose
-
 ```
 

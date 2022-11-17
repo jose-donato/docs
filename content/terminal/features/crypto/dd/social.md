@@ -21,7 +21,6 @@ usage: social
 ## Examples
 
 ```python
-
 2022 Feb 15, 07:47 (✨) /crypto/dd/ $ social
           Social Media for Loaded Coin
 ┌───────────┬───────────────────────────────────┐
@@ -35,6 +34,5 @@ usage: social
 ├───────────┼───────────────────────────────────┤
 │ Facebook  │ bitcoins                          │
 └───────────┴───────────────────────────────────┘
-
 ```
 

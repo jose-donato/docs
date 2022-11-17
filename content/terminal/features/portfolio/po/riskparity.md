@@ -26,7 +26,7 @@ usage: riskparity [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,CDaR,EDaR,UCI}] [-rc RISK
 | risk_contribution | vector of risk contribution constraint | None | True | None |
 | target_return | Constraint on minimum level of portfolio's return | -1 | True | None |
 | smoothing_factor_ewma | Smoothing factor for ewma estimators | 0.94 | True | None |
-| ==SUPPRESS== | sensitivity analysis | None | True | sa:  ArgumentParser(prog='riskparity sa', usage=None, description=None, formatter_class=class 'argparse.HelpFormatter', conflict_handler='error', add_help=True) |
+| ==SUPPRESS== | sensitivity analysis | None | True | sa |
 | nan_fill_method | Method used to fill nan values in time series, by default time. Possible values are: 'linear': linear interpolation 'time': linear interpolation based on time index 'nearest': use nearest value to replace nan values 'zero': spline of zeroth order 'slinear': spline of first order 'quadratic': spline of second order 'cubic': spline of third order 'barycentric': builds a polynomial that pass for all points | time | True | None |
 | categories | Show selected categories |  | True | None |
 | historic_period | Period to get yfinance data from. Possible frequency strings are: 'd': means days, for example '252d' means 252 days 'w': means weeks, for example '52w' means 52 weeks 'mo': means months, for example '12mo' means 12 months 'y': means years, for example '1y' means 1 year 'ytd': downloads data from beginning of year to today 'max': downloads all data available for each asset | 3y | True | None |
@@ -45,7 +45,6 @@ usage: riskparity [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,CDaR,EDaR,UCI}] [-rc RISK
 ## Examples
 
 ```python
-
 2022 Apr 05, 14:45 (🦋) /portfolio/po/ $ riskparity
 
  [3 Years] Risk parity portfolio based on risk budgeting approach
@@ -73,6 +72,5 @@ using volatility as risk measure
 Annual (by 252) expected return: 28.99%
 Annual (by √252) volatility: 26.60%
 Sharpe ratio: 1.0829
-
 ```
 

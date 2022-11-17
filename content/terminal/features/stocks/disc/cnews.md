@@ -27,7 +27,6 @@ usage: cnews [-t {top-news,on-the-move,market-pulse,notable-calls,buybacks,commo
 ## Examples
 
 ```python
-
 2022 Feb 16, 03:52 (✨) /stocks/disc/ $ cnews
 2022-02-15 19:04:21 - 3800509 - ViacomCBS earnings call: A flood of content feeding transformation to Paramount
 https://seekingalpha.com/news/3800509-viacomcbs-earnings-call-a-flood-of-content-feeding-transformation-to-paramount
@@ -65,6 +64,5 @@ https://seekingalpha.com/news/3800020-middlefield-banc-corp-declares-0_17-divide
 
 2022-02-15 07:26:40 - 3799989 - LGI Homes expands stock repurchase program by $200M
 https://seekingalpha.com/news/3799989-lgi-homes-expands-stock-repurchase-program-by-200m
-
 ```
 

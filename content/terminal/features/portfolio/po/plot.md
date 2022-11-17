@@ -45,8 +45,6 @@ usage: plot [-pf PORTFOLIOS] [-pi] [-hi] [-dd] [-rc] [-he] [-rm {MV,MAD,MSV,FLPM
 ## Examples
 
 ```python
-
 2022 Apr 26, 02:19 (🦋) /portfolio/po/ $ plot -pf maxsharpe_0 -pi -hi -dd -rc -he
-
 ```
 

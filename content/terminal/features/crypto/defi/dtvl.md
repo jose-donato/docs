@@ -26,7 +26,6 @@ usage: dtvl -d DAPPS
 ## Examples
 
 ```python
-
 0.exchange
 1bch
 1inch-network
@@ -1094,7 +1093,6 @@ zookeeper
 zoomswap
 zunami
 zyxswap
-
 ```
 
 ![dtvl](https://user-images.githubusercontent.com/46355364/154051510-e048f525-e9d3-4eae-a0c9-dbea62843310.png)

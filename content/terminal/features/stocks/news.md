@@ -20,7 +20,7 @@ usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-09 16:02:57.128320 | True | None |
+| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-09 19:58:48.071838 | True | None |
 | n_oldest | Show oldest articles first | True | True | None |
 | sources | Show news only from the sources specified (e.g bloomberg,reuters) |  | True | None |
 
@@ -28,7 +28,6 @@ usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 ## Examples
 
 ```python
-
 2022 Jul 04, 16:54 (🦋) /stocks/ $ news
 543 news articles for Apple+Inc. were found since 2022-06-27
 
@@ -72,6 +71,5 @@ usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ https://www.thepennyhoarder.com/save-money/carpool-apps/                                                            │
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-
 ```
 

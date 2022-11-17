@@ -26,7 +26,6 @@ usage: ps [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD
 ## Examples
 
 ```python
-
 2022 Feb 15, 07:46 (✨) /crypto/dd/ $ ps
                   Coin Information
 ┌────────────────────────────┬─────────────────────┐
@@ -86,6 +85,5 @@ usage: ps [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD
 ├────────────────────────────┼─────────────────────┤
 │ usd_percent_from_price_ath │ -35.370             │
 └────────────────────────────┴─────────────────────┘
-
 ```
 

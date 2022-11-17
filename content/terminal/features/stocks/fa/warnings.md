@@ -26,7 +26,6 @@ usage: warnings [-d]
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:14 (✨) /stocks/fa/ $ warnings
 
                                                   Sean Seah Warnings
@@ -58,6 +57,5 @@ Warnings:
 NOT consistently high return on equity
 NOT consistently high return on assets
 5x Net Income  Long-Term Debt
-
 ```
 

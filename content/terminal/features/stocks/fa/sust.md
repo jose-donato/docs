@@ -21,7 +21,6 @@ usage: sust
 ## Examples
 
 ```python
-
 2022 Feb 16, 09:01 (✨) /stocks/fa/ $ sust
          Ticker Sustainability
 ┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
@@ -81,6 +80,5 @@ usage: sust
 ├────────────────────────┼─────────────┤
 │ Military contract      │ False       │
 └────────────────────────┴─────────────┘
-
 ```
 

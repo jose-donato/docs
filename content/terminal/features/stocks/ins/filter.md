@@ -27,7 +27,6 @@ usage: filter [-l LIMIT] [-u]
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:51 (✨) /stocks/ins/ $ filter
                                                                                   Insider filtered
 ┏━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -55,6 +54,5 @@ M: Multiple transactions in filing; earliest reported transaction date & weighte
 
 S - Sale: Sale of securities on an exchange or to another person
 S - Sale+OE: Sale of securities on an exchange or to another person (after option exercise)
-
 ```
 

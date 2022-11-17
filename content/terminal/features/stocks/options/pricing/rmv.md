@@ -27,7 +27,6 @@ usage: rmv -p PRICE [-a]
 ## Examples
 
 ```python
-
 2022 Feb 16, 09:44 (✨) /stocks/options/pricing/ $ rmv -p 165
 
 2022 Feb 16, 09:44 (✨) /stocks/options/pricing/ $ show
@@ -37,6 +36,5 @@ Estimated price(s) of AAPL at 2022-05-20
 ┡━━━━━━━━╇━━━━━━━━┩
 │ 175.00 │ 0.50   │
 └────────┴────────┘
-
 ```
 

@@ -27,7 +27,6 @@ usage: unitroot [-r {c,ct,ctt,nc}] [-k {c,ct}]
 ## Examples
 
 ```python
-
 2022 Feb 16, 11:16 (✨) /stocks/qa/ $ unitroot
          Unit Root Calculation
 ┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┓
@@ -43,6 +42,5 @@ usage: unitroot [-r {c,ct,ctt,nc}] [-k {c,ct}]
 ├────────────────┼────────────┼────────┤
 │ ICBest         │ -3339.2013 │        │
 └────────────────┴────────────┴────────┘
-
 ```
 

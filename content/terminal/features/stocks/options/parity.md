@@ -29,7 +29,6 @@ usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 ## Examples
 
 ```python
-
 2022 Feb 16, 09:17 (✨) /stocks/options/ $ load TSLA
 
 2022 Feb 16, 09:18 (✨) /stocks/options/ $ parity -m 900 -M 950
@@ -59,6 +58,5 @@ Warning: Low volume options may be difficult to trade.
 ├────────┼─────────────────┤
 │ 950.00 │ -3.23           │
 └────────┴─────────────────┘
-
 ```
 

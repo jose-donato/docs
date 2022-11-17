@@ -27,7 +27,6 @@ usage: headlines
 ## Examples
 
 ```python
-
 2022 Feb 15, 07:52 (✨) /crypto/ $ headlines
 
 date
@@ -41,7 +40,6 @@ date
 2022-02-13     0.02
 2022-02-14    0.103
 2022-02-15    0.158
-
 ```
 
 ![headlines](https://user-images.githubusercontent.com/46355364/154066006-d281a8c8-bd25-4355-9cd5-3affd4477bd6.png)

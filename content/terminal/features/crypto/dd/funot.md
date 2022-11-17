@@ -28,8 +28,6 @@ usage: funot [-m {twitter_followers,gmv_annualized,market_cap,take_rate,revenue,
 ## Examples
 
 ```python
-
 2022 Aug 28, 19:08 (🦋) /crypto/dd/ $ funot -m revenue -p solana
-
 ```
 

@@ -29,7 +29,6 @@ usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 ## Examples
 
 ```python
-
 2022 Mar 15, 07:08 (✨) /economy/ $ fred -q treasuries
                                                                     Search results for treasuries                                                                    
 ┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -61,7 +60,6 @@ usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 │           │ 10-Year Constant Maturity, Inflation-Indexed    │ http://www.federalreserve.gov/releases/h15/current/h15.pdf and http://www.treasury.gov/resource-    │
 │           │                                                 │ center/data-chart-center/interest-rates/Pages/yieldmethod.aspx.                                     │
 └───────────┴─────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────┘
-
 ```
 
 ![fred](https://user-images.githubusercontent.com/46355364/158575129-1d4b26de-8bd8-49b3-b1b9-e349afaf8a50.png)

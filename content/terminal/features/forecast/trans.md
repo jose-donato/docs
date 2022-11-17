@@ -31,7 +31,6 @@ usage: trans [--d-model D_MODEL] [--nhead NHEAD] [--num_encoder_layers NUM_ENCOD
 ## Examples
 
 ```python
-
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
 2022 Jul 23, 11:01 (🦋) /forecast/ $ trans GME
@@ -54,7 +53,6 @@ Transformer model obtains MAPE: 13.11%
 ├─────────────────────┼────────────┤
 │ 2022-07-25 00:00:00 │ $ 130.62   │
 └─────────────────────┴────────────┘
-
 ```
 
 ![trans](https://user-images.githubusercontent.com/72827203/180615423-948cc67c-cead-4e13-9cab-c348bc4c86ab.png)

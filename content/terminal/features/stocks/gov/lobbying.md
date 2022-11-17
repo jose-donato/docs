@@ -26,7 +26,6 @@ usage: lobbying [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:27 (✨) /stocks/gov/ $ lobbying
 2021-01-21: TESLA INC N/A
 
@@ -53,6 +52,5 @@ usage: lobbying [-l LIMIT]
 
 2019-10-21: TESLA INC $150000
         Discussions regarding electric vehicle manufacturing and sales policies,charging infrastructure and regulation (S.2302, America's Transportation and Infrastruction Act;H.R.2616/S.674, Clean Corridors Act) Issues impacting autonomous vehicles
-
 ```
 

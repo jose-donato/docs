@@ -28,7 +28,6 @@ usage: getdd [-l LIMIT] [-d DAYS] [-a]
 ## Examples
 
 ```python
-
 2022 Feb 16, 10:18 (✨) /stocks/ba/ $ getdd -d 50
 2022-02-15 17:51:11 - $ATVI free money even if MSFT deal falls through.
 https://old.reddit.com/r/wallstreetbets/comments/st8s1i/atvi_free_money_even_if_msft_deal_falls_through/
@@ -44,6 +43,5 @@ https://old.reddit.com/r/wallstreetbets/comments/sn90qs/if_you_cannot_beat_them_
 
 2022-02-03 20:01:06 - Thoughts on only buying large market cap stocks (Top 100, 100 billion market cap+, and significant index weighting)?
 https://old.reddit.com/r/stocks/comments/sjsqhu/thoughts_on_only_buying_large_market_cap_stocks/
-
 ```
 

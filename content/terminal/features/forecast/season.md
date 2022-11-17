@@ -29,12 +29,9 @@ usage: season [-v VALUES] [-m M] [--max_lag MAX_LAG] [-a ALPHA]
 ## Examples
 
 ```python
-
 (🦋) /forecast/ $ load TSLA.csv
 
 (🦋) /forecast/ $ season TSLA.volume
 TODO: screen shot
-
-
 ```
 

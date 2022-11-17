@@ -27,7 +27,6 @@ usage: rnn [--hidden-dim HIDDEN_DIM] [--training_length TRAINING_LENGTH]
 ## Examples
 
 ```python
-
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
 2022 Jul 23, 11:03 (🦋) /forecast/ $ rnn GME
@@ -50,7 +49,6 @@ RNN model obtains MAPE: 14.67%
 ├─────────────────────┼────────────┤
 │ 2022-07-25 00:00:00 │ $ 152.29   │
 └─────────────────────┴────────────┘
-
 ```
 
 ![rnn](https://user-images.githubusercontent.com/72827203/180615355-5c30635a-be63-4b9a-836d-9feb3d3ac263.png)

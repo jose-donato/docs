@@ -28,8 +28,6 @@ usage: attrib [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-t {relative,absolute}]
 ## Examples
 
 ```python
-
 2022 Nov 03, 23:37 (🦋) /portfolio/ $ attrib -p 3m
-
 ```
 

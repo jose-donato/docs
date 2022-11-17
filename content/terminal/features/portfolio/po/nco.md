@@ -34,7 +34,7 @@ usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 | alpha_tail | Significance level for lower tail dependence index, only used when when codependence value is 'tail' | 0.05 | True | None |
 | leaf_order | indicates if the cluster are ordered so that the distance between successive leaves is minimal | True | True | None |
 | smoothing_factor_ewma | Smoothing factor for ewma estimators | 0.94 | True | None |
-| ==SUPPRESS== | sensitivity analysis | None | True | sa:  ArgumentParser(prog='nco sa', usage=None, description=None, formatter_class=class 'argparse.HelpFormatter', conflict_handler='error', add_help=True) |
+| ==SUPPRESS== | sensitivity analysis | None | True | sa |
 | risk_measure | Risk measure used to optimize the portfolio. Possible values are: 'MV' : Variance 'MAD' : Mean Absolute Deviation 'MSV' : Semi Variance (Variance of negative returns) 'FLPM' : First Lower Partial Moment 'SLPM' : Second Lower Partial Moment 'CVaR' : Conditional Value at Risk 'EVaR' : Entropic Value at Risk 'WR' : Worst Realization 'ADD' : Average Drawdown of uncompounded returns 'UCI' : Ulcer Index of uncompounded returns 'CDaR' : Conditional Drawdown at Risk of uncompounded returns 'EDaR' : Entropic Drawdown at Risk of uncompounded returns 'MDD' : Maximum Drawdown of uncompounded returns | MV | True | MV, MAD, MSV, FLPM, SLPM, CVaR, EVaR, WR, ADD, UCI, CDaR, EDaR, MDD |
 | nan_fill_method | Method used to fill nan values in time series, by default time. Possible values are: 'linear': linear interpolation 'time': linear interpolation based on time index 'nearest': use nearest value to replace nan values 'zero': spline of zeroth order 'slinear': spline of first order 'quadratic': spline of second order 'cubic': spline of third order 'barycentric': builds a polynomial that pass for all points | time | True | None |
 | categories | Show selected categories |  | True | None |
@@ -54,7 +54,6 @@ usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 ## Examples
 
 ```python
-
 2022 Apr 05, 14:34 (🦋) /portfolio/po/ $ nco
 
  [3 Years] Nested clustered optimization using pearson codependence,
@@ -82,6 +81,5 @@ single linkage and volatility as risk measure
 Annual (by 252) expected return: 15.58%
 Annual (by √252) volatility: 22.42%
 Sharpe ratio: 0.6868
-
 ```
 

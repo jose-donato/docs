@@ -26,7 +26,6 @@ usage: blis [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:48 (✨) /stocks/ins/ $ blis
                                                                                Insider Data
 ┏━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━┓
@@ -69,6 +68,5 @@ usage: blis [-l LIMIT]
 └───┴─────────────┴────────────┴────────┴──────────────────────┴──────────────────────┴────────────┴─────────────┴─────────┴─────────┴───────────┴──────────┴─────────────┘
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
 

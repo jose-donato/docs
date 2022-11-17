@@ -26,7 +26,6 @@ usage: lit [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:58 (✨) /stocks/ins/ $ lit
                                                                                 Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
@@ -67,6 +66,5 @@ usage: lit [-l LIMIT]
 └────┴─────────────┴────────────┴────────┴───────────────────┴──────────────────────┴────────────┴──────────────┴────────┴────────────┴───────────┴──────────┴──────────────┘
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
 

@@ -27,7 +27,6 @@ usage: rmv [-o OPTION [OPTION ...]] [-a]
 ## Examples
 
 ```python
-
 2022 May 10, 09:32 (🦋) /stocks/options/hedge/ $ rmv Option A
           Current Option Positions           
 ┏━━━━━━┳━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┓
@@ -35,6 +34,5 @@ usage: rmv [-o OPTION [OPTION ...]] [-a]
 ┡━━━━━━╇━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━┩
 │ Call │ Long │ 155.00 │ 0.06               │
 └──────┴──────┴────────┴────────────────────┘
-
 ```
 

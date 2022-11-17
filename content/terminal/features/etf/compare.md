@@ -26,7 +26,6 @@ usage: compare -e NAMES
 ## Examples
 
 ```python
-
 2022 Feb 15, 04:24 (✨) /etf/ $ compare VOO,SPY
                ETF Comparisons
 ┌────────────────┬────────────┬─────────────┐
@@ -60,6 +59,5 @@ usage: compare -e NAMES
 ├────────────────┼────────────┼─────────────┤
 │ Holdings       │ 510        │ 507         │
 └────────────────┴────────────┴─────────────┘
-
 ```
 

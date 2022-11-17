@@ -29,7 +29,6 @@ usage: nbeats [--num_stacks NUM_STACKS] [--num_blocks NUM_BLOCKS] [--num_layers 
 ## Examples
 
 ```python
-
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
 2022 Jul 23, 11:03 (🦋) /forecast/ $ nbeats GME
@@ -52,7 +51,6 @@ NBEATS model obtains MAPE: 23.53%
 ├─────────────────────┼────────────┤
 │ 2022-07-25 00:00:00 │ $ 154.24   │
 └─────────────────────┴────────────┘
-
 ```
 
 ![nbeats](https://user-images.githubusercontent.com/72827203/180615396-d29126ae-ad75-4f84-9f67-2121dc4e695a.png)

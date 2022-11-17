@@ -27,7 +27,6 @@ usage: bench -b BENCHMARK [BENCHMARK ...] [-s]
 ## Examples
 
 ```python
-
 2022 May 10, 09:53 (🦋) /portfolio/ $ bench Vanguard FTSE Developed Markets ETF (VEA)
 
 Benchmark: Vanguard Developed Markets Index Fund (VEA)

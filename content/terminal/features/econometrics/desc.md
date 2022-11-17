@@ -26,7 +26,6 @@ usage: desc -n {}
 ## Examples
 
 ```python
-
 2022 Jun 01, 06:50 (🦋) /econometrics/ $ load anes96
 
 2022 Jun 01, 06:51 (🦋) /econometrics/ $ desc anes96
@@ -74,6 +73,5 @@ Statistics for dataset: 'anes96'
 ├───────┼────────┤
 │ max   │ 7.00   │
 └───────┴────────┘
-
 ```
 

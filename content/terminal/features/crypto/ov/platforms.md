@@ -21,7 +21,6 @@ usage: platforms
 ## Examples
 
 ```python
-
 2022 Feb 15, 08:19 (✨) /crypto/ov/ $ platforms
       Smart Contract Platforms
 ┌───────┬───────────────────────────┐
@@ -109,6 +108,5 @@ usage: platforms
 ├───────┼───────────────────────────┤
 │ 41    │ slx-solex-finance         │
 └───────┴───────────────────────────┘
-
 ```
 

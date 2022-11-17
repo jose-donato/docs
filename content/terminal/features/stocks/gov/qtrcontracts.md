@@ -28,7 +28,6 @@ usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:33 (✨) /stocks/gov/ $ qtrcontracts -l 20
    Quarterly Contracts
 ┏━━━━━━┳━━━━━━━━━━━━━━━━━┓
@@ -74,6 +73,5 @@ usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 ├──────┼─────────────────┤
 │ PW   │ 4466721029.89   │
 └──────┴─────────────────┘
-
 ```
 

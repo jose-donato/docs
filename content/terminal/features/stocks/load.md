@@ -61,6 +61,5 @@ Datetime: 2022 Feb 16 08:30
 Timezone: America/New_York
 Currency: USD
 Market:   OPEN
-
 ```
 

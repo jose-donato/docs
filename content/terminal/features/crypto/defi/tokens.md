@@ -29,7 +29,6 @@ usage: tokens [--skip SKIP] [--limit LIMIT] [-s {index,symbol,name,tradeVolumeUS
 ## Examples
 
 ```python
-
 2022 Feb 15, 06:36 (✨) /crypto/defi/ $ tokens
                                  UniSwarp DEX Trade-able Tokens
 ┌───────┬──────────────┬────────────────────────────┬────────────────┬────────────────┬─────────┐
@@ -75,6 +74,5 @@ usage: tokens [--skip SKIP] [--limit LIMIT] [-s {index,symbol,name,tradeVolumeUS
 ├───────┼──────────────┼────────────────────────────┼────────────────┼────────────────┼─────────┤
 │ 19    │ TCAD         │ TrueCAD                    │ 6.5K           │ 599            │ 141     │
 └───────┴──────────────┴────────────────────────────┴────────────────┴────────────────┴─────────┘
-
 ```
 

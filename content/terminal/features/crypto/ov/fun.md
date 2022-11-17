@@ -31,8 +31,6 @@ usage: fun -m {twitter_followers,gmv_annualized,market_cap,take_rate,revenue,rev
 ## Examples
 
 ```python
-
 2022 Aug 28, 20:02 (🦋) /crypto/ov/ $ fun -m market_cap -c Blockchain
-
 ```
 

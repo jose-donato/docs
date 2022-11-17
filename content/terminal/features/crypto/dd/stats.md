@@ -13,20 +13,19 @@ Display coin stats
 
 ### Usage: 
 ```python
-usage: stats [--vs {USDT,USD,EUR,GBP,USDC,USD}]
+usage: stats [--vs {USD,USD,USDC,GBP,EUR,USDT}]
 ```
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| vs | Quote currency (what to view coin vs) | USDT | True | USDT, USD, EUR, GBP, USDC, USD |
+| vs | Quote currency (what to view coin vs) | USDT | True | USD, USD, USDC, GBP, EUR, USDT |
 
 
 ## Examples
 
 ```python
-
 2022 Feb 15, 07:47 (✨) /crypto/dd/ $ stats
 
        24 hr Product Stats
@@ -45,6 +44,5 @@ usage: stats [--vs {USDT,USD,EUR,GBP,USDC,USD}]
 ├──────────────┼────────────────┤
 │ volume_30day │ 22665.06104665 │
 └──────────────┴────────────────┘
-
 ```
 

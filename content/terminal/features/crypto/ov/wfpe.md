@@ -26,7 +26,6 @@ usage: wfpe [-c COIN]
 ## Examples
 
 ```python
-
 2022 Feb 15, 08:21 (✨) /crypto/ov/ $ wfpe
 
 
@@ -114,6 +113,5 @@ bitcoin is available on 38 exchanges with alowest fee of FREE(0 BTC), average of
 ├─────────────────────┼───────────────────────┼───────────────────────────┤
 │ Coinone             │ $66.40 (0.0015 BTC)   │ $4.43 (0.0001 BTC)        │
 └─────────────────────┴───────────────────────┴───────────────────────────┘
-
 ```
 

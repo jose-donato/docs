@@ -26,7 +26,6 @@ usage: tippw [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 08:16 (✨) /stocks/ins/ $ tippw
                                                                                   Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
@@ -65,6 +64,5 @@ usage: tippw [-l LIMIT]
 └────┴─────────────┴────────────┴────────┴──────────────────────┴─────────────────────┴────────────┴──────────────┴────────┴────────────┴────────────┴──────────┴──────────────┘
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
 

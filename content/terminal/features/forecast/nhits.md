@@ -31,7 +31,6 @@ usage: nhits [--num-stacks NUM_STACKS] [--num-blocks NUM_BLOCKS] [--num-layers N
 ## Examples
 
 ```python
-
 2022 Oct 11, 06:38 D /forecast/ $ load AAPL_20220719_201127.csv
 
 2022 Oct 11, 06:38 D /forecast/ $ nhits AAPL_20220719_201127
@@ -56,7 +55,6 @@ NHITS model obtains MAPE: 7.45%
 ├────────────┼────────────┤
 │ 2022-07-25 │ 123.72     │
 └────────────┴────────────┘
-
 ```
 
 ![nbeats](https://user-images.githubusercontent.com/72827203/195015203-3644fe8c-e1f7-49ab-9595-a19b474948cc.png)

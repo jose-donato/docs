@@ -28,7 +28,6 @@ usage: lasttrades [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_DAYS] [-r R
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:24 (✨) /stocks/gov/ $ lasttrades
 
 Last transactions for CONGRESS
@@ -93,6 +92,5 @@ Last transactions for CONGRESS
 ├──────────────────┼────────┼───────────────────────────┼─────────────┼───────────────────────┼─────────────────┼─────────────┤
 │ 2022-01-31       │ NVDA   │ Thomas R. Carper          │ Purchase    │ $1,001 - $15,000      │ Senate          │ 2022-02-03  │
 └──────────────────┴────────┴───────────────────────────┴─────────────┴───────────────────────┴─────────────────┴─────────────┘
-
 ```
 

@@ -26,7 +26,6 @@ usage: blip [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 07:47 (✨) /stocks/ins/ $ blip
                                                                                 Insider Data
 ┏━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┓
@@ -66,6 +65,5 @@ usage: blip [-l LIMIT]
 └────┴─────────────┴────────────┴────────┴───────────────────┴──────────────────────┴───────────┴──────────────┴────────┴────────────┴────────────┴──────────┴──────────────┘
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
-
 ```
 

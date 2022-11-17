@@ -20,6 +20,6 @@ usage: view [-p {etf_config.ini}]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| preset | View specific custom preset |  | True | etf_config.ini:  C:\Users\teh_coderer\Documents\GitHub\OpenBBTerminalMine\openbb_terminal\etf\screener\presets\etf_config.ini |
+| preset | View specific custom preset |  | True | etf_config.ini |
 
 

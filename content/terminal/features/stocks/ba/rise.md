@@ -26,7 +26,6 @@ usage: rise [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 16, 10:40 (✨) /stocks/ba/ $ rise
 Top rising AAPL's related queries
 ┏━━━━━━━━━━━━━━━━━┳━━━━━━━━┓
@@ -52,6 +51,5 @@ Top rising AAPL's related queries
 ├─────────────────┼────────┤
 │ bynd stock      │ 47450  │
 └─────────────────┴────────┘
-
 ```
 

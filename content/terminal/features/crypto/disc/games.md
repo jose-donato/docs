@@ -27,7 +27,6 @@ usage: games [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ## Examples
 
 ```python
-
 2022 Feb 15, 06:53 (✨) /crypto/disc/ $ games
                Top Blockchain Games
 ┌───────────────┬─────────────┬──────────────────┐
@@ -53,6 +52,5 @@ usage: games [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ├───────────────┼─────────────┼──────────────────┤
 │ Magic Eden    │ 40.2K       │ 18.5M            │
 └───────────────┴─────────────┴──────────────────┘
-
 ```
 

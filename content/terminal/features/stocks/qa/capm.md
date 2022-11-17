@@ -21,7 +21,6 @@ usage: capm
 ## Examples
 
 ```python
-
 2022 Feb 16, 11:01 (✨) /stocks/qa/ $ load tsla
 
 Loading Daily TSLA stock with starting period 2019-02-11 for analysis.
@@ -36,6 +35,5 @@ Market:   CLOSED
 Beta:                   2.02
 Systematic Risk:        23.09%
 Unsystematic Risk:      76.91%
-
 ```
 

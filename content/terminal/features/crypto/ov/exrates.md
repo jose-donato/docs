@@ -28,7 +28,6 @@ usage: exrates [-l LIMIT] [-s {Index,Name,Unit,Value,Type}] [-r]
 ## Examples
 
 ```python
-
 2022 Feb 15, 08:12 (✨) /crypto/ov/ $ exrates
                            Exchange Rates
 ┌───────┬─────────────────────────────┬──────┬────────────┬────────┐
@@ -64,6 +63,5 @@ usage: exrates [-l LIMIT] [-s {Index,Name,Unit,Value,Type}] [-r]
 ├───────┼─────────────────────────────┼──────┼────────────┼────────┤
 │ 15    │ Australian Dollar           │ A$   │ 61998.28   │ fiat   │
 └───────┴─────────────────────────────┴──────┴────────────┴────────┘
-
 ```
 

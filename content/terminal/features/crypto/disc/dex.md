@@ -27,7 +27,6 @@ usage: dex [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ## Examples
 
 ```python
-
 2022 Feb 15, 06:52 (✨) /crypto/disc/ $ dex
            Top Decentralized Exchanges
 ┌───────────────┬─────────────┬──────────────────┐
@@ -53,6 +52,5 @@ usage: dex [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ├───────────────┼─────────────┼──────────────────┤
 │ Magic Eden    │ 40.2K       │ 18.5M            │
 └───────────────┴─────────────┴──────────────────┘
-
 ```
 

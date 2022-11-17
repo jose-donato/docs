@@ -28,7 +28,6 @@ usage: exp [-i {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18}]
 ## Examples
 
 ```python
-
 2022 Feb 16, 08:50 (✨) /stocks/options/ $ exp
 
 Available expiry dates:
@@ -56,6 +55,5 @@ Available expiry dates:
 
 2022 Feb 16, 08:50 (✨) /stocks/options/ $ exp 7
 Expiration set to 2022-04-14
-
 ```
 

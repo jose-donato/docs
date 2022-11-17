@@ -28,7 +28,6 @@ usage: indexes [-l LIMIT] [-s {Rank,Name,Id,Market,Last,MultiAsset}] [-r]
 ## Examples
 
 ```python
-
 2022 Feb 15, 08:13 (✨) /crypto/ov/ $ indexes
                                        Crypto Indexes
 ┌──────┬─────────────────────────────┬────────┬───────────────────────┬───────┬────────────┐
@@ -64,6 +63,5 @@ usage: indexes [-l LIMIT] [-s {Rank,Name,Id,Market,Last,MultiAsset}] [-r]
 ├──────┼─────────────────────────────┼────────┼───────────────────────┼───────┼────────────┤
 │ 15   │ Ronin                       │ RON    │ FTX (Derivatives)     │ 2.83  │ False      │
 └──────┴─────────────────────────────┴────────┴───────────────────────┴───────┴────────────┘
-
 ```
 

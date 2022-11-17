@@ -28,7 +28,6 @@ usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,tok
 ## Examples
 
 ```python
-
 2022 Feb 15, 06:28 (✨) /crypto/defi/ $ pools
                                            Uniswap Pools
 ┌───────────────────────┬───────────────┬───────────────────┬───────────────┬───────────┬─────────┐
@@ -54,6 +53,5 @@ usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,tok
 ├───────────────────────┼───────────────┼───────────────────┼───────────────┼───────────┼─────────┤
 │ DSLA                  │ DSLA          │ Wrapped Ether     │ WETH          │ 97.5M     │ 37901   │
 └───────────────────────┴───────────────┴───────────────────┴───────────────┴───────────┴─────────┘
-
 ```
 

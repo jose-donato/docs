@@ -34,7 +34,6 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
 ## Examples
 
 ```python
-
 2022 May 26, 07:19 (�) /crypto/defi/ $ vaults
 
                            Top DeFi Vaults
@@ -61,7 +60,5 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
 ├──────────────────────┼───────────┼──────────┼───────────┼──────────┤
 │ ROWAN-OSMO           │ Osmosis   │ Osmosis  │ 228.72 %  │ 1.834 M  │
 └──────────────────────┴───────────┴──────────┴───────────┴──────────┘
-
-
 ```
 

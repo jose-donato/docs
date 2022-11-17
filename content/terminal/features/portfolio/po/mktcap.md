@@ -39,7 +39,6 @@ usage: mktcap [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-
 ## Examples
 
 ```python
-
 2022 Apr 05, 14:53 (🦋) /portfolio/po/ $ mktcap
 
  [3 Years] Weighted Portfolio based on marketCap
@@ -66,6 +65,5 @@ usage: mktcap [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-
 Annual (by 252) expected return: 47.78%
 Annual (by √252) volatility: 30.44%
 Sharpe ratio: 1.5636
-
 ```
 

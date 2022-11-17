@@ -28,7 +28,6 @@ usage: raw [-l LIMIT] [-r] [-s SORTBY]
 ## Examples
 
 ```python
-
 2022 Feb 16, 11:05 (✨) /stocks/qa/ $ raw
         Raw Data
 ┏━━━━━━━━━━━━┳━━━━━━━━━━┓
@@ -74,6 +73,5 @@ usage: raw [-l LIMIT] [-r] [-s SORTBY]
 ├────────────┼──────────┤
 │ 2022-02-15 │ 922.430  │
 └────────────┴──────────┘
-
 ```
 

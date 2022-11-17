@@ -30,7 +30,6 @@ usage: var [-m] [-a] [-s] [-p PERCENTILE] [-d DATA_RANGE]
 ## Examples
 
 ```python
-
 2022 Feb 16, 11:18 (✨) /stocks/qa/ $ var
           FB Value at Risk
 ┏━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
@@ -44,6 +43,5 @@ usage: var [-m] [-a] [-s] [-p PERCENTILE] [-d DATA_RANGE]
 ├───────┼─────────┼─────────────────┤
 │ 99.9% │ -0.0719 │ -0.1719         │
 └───────┴─────────┴─────────────────┘
-
 ```
 

@@ -28,7 +28,6 @@ usage: sto [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 ## Examples
 
 ```python
-
 (🦋) /forecast/ $ load TSLA.csv
 
 (🦋) /forecast/ $ show TSLA
@@ -93,6 +92,5 @@ TSLA dataset has shape (row, column): (611, 9)
 (🦋) /forecast/ $ clean TSLA
 Namespace(drop='', fill='', help=False, limit=5, target_dataset='TSLA')
 Successfully cleaned 'TSLA' dataset
-
 ```
 

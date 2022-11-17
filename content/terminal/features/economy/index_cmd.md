@@ -33,9 +33,7 @@ usage: index [-i INDICES] [--show] [--interval {1m,2m,5m,15m,30m,60m,90m,1h,1d,5
 ## Examples
 
 ```python
-
 2022 Mar 15, 07:29 (✨) /economy/ $ index nasdaq,dowjones
-
 ```
 
 ![index nasdaq dowjones](https://user-images.githubusercontent.com/46355364/158573612-f2e4b04c-b833-4899-9817-62e40b9fe1d2.png)

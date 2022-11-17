@@ -21,7 +21,6 @@ usage: normality
 ## Examples
 
 ```python
-
 2022 Feb 16, 11:11 (✨) /stocks/qa/ $ normality
             Normality Statistics
 ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┓
@@ -37,6 +36,5 @@ usage: normality
 ├────────────────────┼───────────┼─────────┤
 │ Kolmogorov-Smirnov │ 0.4680    │ 0.0000  │
 └────────────────────┴───────────┴─────────┘
-
 ```
 

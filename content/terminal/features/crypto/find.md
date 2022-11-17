@@ -29,7 +29,6 @@ usage: find -c COIN [-k {id,symbol,name}] [-l LIMIT] [-s SKIP]
 ## Examples
 
 ```python
-
 2022 Feb 15, 07:52 (✨) /crypto/ $ find -c btc
                                  Similar Coins
 ┌───────┬────────┬──────────────────────────────┬──────────────────────────────┐
@@ -90,6 +89,5 @@ usage: find -c COIN [-k {id,symbol,name}] [-l LIMIT] [-s SKIP]
 ├───────┼───────┼───────┤
 │ 5     │ bxbtc │ bxBTC │
 └───────┴───────┴───────┘
-
 ```
 

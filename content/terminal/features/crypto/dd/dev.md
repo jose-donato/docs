@@ -21,7 +21,6 @@ usage: dev
 ## Examples
 
 ```python
-
 2022 Feb 15, 07:13 (✨) /crypto/dd/ $ dev
    Developers Data for Loaded Coin
 ┌───────────────────────────┬───────┐
@@ -43,6 +42,5 @@ usage: dev
 ├───────────────────────────┼───────┤
 │ Commit Count 4 Weeks      │ 266   │
 └───────────────────────────┴───────┘
-
 ```
 

@@ -28,7 +28,6 @@ usage: twitter [-l LIMIT] [-s {date,user_name,status,retweet_count,like_count}] 
 ## Examples
 
 ```python
-
 2022 Feb 15, 07:49 (✨) /crypto/dd/ $ twitter
                                                                Twitter Timeline
 ┌────────────┬────────────────┬──────────────────────────────────────────────────────────────────────────────────┬───────────────┬────────────┐
@@ -70,6 +69,5 @@ usage: twitter [-l LIMIT] [-s {date,user_name,status,retweet_count,like_count}] 
 │ 2020-08-01 │ bitcoincoreorg │ Bitcoin Core 0.20.1 was released It is available from https://t.co/Uy9NJ11mih    │ 216           │ 544        │
 │ 13:15:33   │                │ (main website update pending) Release mail: https://t.co/95MXgRvN7Z              │               │            │
 └────────────┴────────────────┴──────────────────────────────────────────────────────────────────────────────────┴───────────────┴────────────┘
-
 ```
 

@@ -26,7 +26,6 @@ usage: infer [-l LIMIT]
 ## Examples
 
 ```python
-
 2022 Feb 19, 13:05 (✨) /stocks/ba/ $ infer
 From: 2022-02-19 17:08:20
 To:   2022-02-19 18:04:18
@@ -36,6 +35,5 @@ The summed compound sentiment of AAPL is: 13.2
 The average compound sentiment of AAPL is: 0.13
 Of the last 100 tweets, 45.00 % had a higher positive sentiment
 Of the last 100 tweets, 18.00 % had a higher negative sentiment
-
 ```
 

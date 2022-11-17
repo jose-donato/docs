@@ -40,6 +40,5 @@ Searching through subreddits for posts.
 Analyzing each post...
 100%|███████████████████████████████████████████████████████████████████████| 10/10 [00:0400:00,  2.07it/s]
 Sentiment Analysis for Google is 0.7552
-
 ```
 
