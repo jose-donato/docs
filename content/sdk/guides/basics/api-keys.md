@@ -40,12 +40,15 @@ The required fields for each source will vary, print the docstring for each to k
 
 ```python
 help(openbb.keys.reddit)
+```
 
-Help on Operation in module openbb_terminal.core.library.operation:
 
-<openbb_terminal.core.library.operation.Operation object>
+```py
+    Help on Operation in module openbb_terminal.core.library.operation:
+
+    <openbb_terminal.core.library.operation.Operation object>
     Set Reddit key
-    
+
     Parameters
     ----------
     client_id: str
@@ -64,15 +67,16 @@ Help on Operation in module openbb_terminal.core.library.operation:
         By default, False.
     show_output: bool
         Display status string or not. By default, False.
-    
+
     Returns
     -------
     str
         Status of key set
 ```
 
+
 <details>
-  <summary><code>API Reference</code> <code>(expand to see list of API key references)</code></summary>
+  <summary>API Reference (expand to see list of API key references)</summary>
 
 | Key Name   | Description                              | URL                                                                                |
 | :--------- | :--------------------------------------- | :--------------------------------------------------------------------------------- |
@@ -119,8 +123,6 @@ from openbb_terminal import config_terminal as cfg
 
 Values can then be passed to a request URL as a variable, `f"{cfg.API_KEY_QUANDL}"`
 
-![Quandl Get Request](https://user-images.githubusercontent.com/85772166/201581632-b02bcb6b-b54c-4d8c-814a-7adf69c6db60.png "Quandl Get Request")
-
 The code block below will authorize Quandl to request data from Nasdaq Data Link. The series in the example is for the historical price of gold.
 
 ```python
@@ -144,5 +146,5 @@ To make a backup file containing all stored keys, use the code block below.
 
 ```python
 df_keys = openbb.keys.mykeys(show = True)
-df_keys.to_excel('backup.xlsx)
+df_keys.to_csv('backup.csv')
 ```
