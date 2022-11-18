@@ -12,6 +12,7 @@ A Weighted Moving Average puts more weight on recent data and less on past data.
 usage: wma [-l N_LENGTH] [-o N_OFFSET]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: wma [-l N_LENGTH] [-o N_OFFSET]
 | n_offset | offset | 0 | True | None |
 
 
+---
 ![wma](https://user-images.githubusercontent.com/46355364/154312618-43430406-97c1-4740-87be-2414de9a1c06.png)
 

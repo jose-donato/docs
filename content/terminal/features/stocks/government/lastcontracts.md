@@ -12,6 +12,7 @@ Last government contracts. [Source: www.quiverquant.com]
 usage: lastcontracts [-p PAST_TRANSACTION_DAYS] [-l LIMIT] [-s]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: lastcontracts [-p PAST_TRANSACTION_DAYS] [-l LIMIT] [-s]
 | sum | Flag to show total amount of contracts. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

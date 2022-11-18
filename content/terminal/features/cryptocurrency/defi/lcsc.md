@@ -12,6 +12,7 @@ Display Luna circulating supply changes stats. [Source: Smartstake.io] Follow th
 usage: lcsc [-d DAYS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: lcsc [-d DAYS]
 | days | Number of days to display. Default: 30 days | 30 | True | None |
 
 
+---

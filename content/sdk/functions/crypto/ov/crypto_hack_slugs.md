@@ -12,13 +12,16 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_crypto_hack_slugs() -> List[str]
 ```
+---
 ## Parameters
 
 This function does not take any parameters.
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List with slugs |
 
+---

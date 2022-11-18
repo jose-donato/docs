@@ -12,13 +12,15 @@ Display github activity over time for a given coin. Github activity includes the
 usage: gh [-i INTERVAL] [-d DEV] [-s START] [-end END]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | interval | Frequency interval. Default: 1d | 1d | True | None |
 | dev | Filter only for development activity. Default: False | False | True | None |
-| start | Initial date. Default: A year ago | 2021-11-17 | True | None |
-| end | End date. Default: Today | 2022-11-17 | True | None |
+| start | Initial date. Default: A year ago | 2021-11-18 | True | None |
+| end | End date. Default: Today | 2022-11-18 | True | None |
 
 
+---

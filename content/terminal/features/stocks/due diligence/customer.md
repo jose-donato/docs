@@ -12,8 +12,10 @@ List of customers from ticker provided. [Source: CSIMarket]
 usage: customer
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,6 +12,7 @@ See existing sectors, or set sector if arg specified
 usage: sector [-n NAME [NAME ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: sector [-n NAME [NAME ...]]
 | name | sector to select | None | True | None |
 
 
+---

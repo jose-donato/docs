@@ -12,6 +12,7 @@ Get all exchange markets found for given exchange You can display only N number 
 usage: exmarkets [-e EXCHANGE] [-l LIMIT] [-s {pair,base_currency_name,quote_currency_name,category,reported_volume_24h_share,trust_score,market_url}] [-r] [-u]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,6 +24,7 @@ usage: exmarkets [-e EXCHANGE] [-l LIMIT] [-s {pair,base_currency_name,quote_cur
 | urls | Flag to show urls. If you will use that flag you will see only: exchange, pair, trust_score, market_url columns | False | True | None |
 
 
+---
 ## Examples
 
 ```python

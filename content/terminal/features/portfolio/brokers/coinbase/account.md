@@ -12,6 +12,7 @@ Display info about your trading accounts on Coinbase
 usage: account [--all] [-c CURRENCY]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: account [--all] [-c CURRENCY]
 | currency | Currency to display value in. | USD | True | None |
 
 
+---

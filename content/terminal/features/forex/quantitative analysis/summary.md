@@ -12,11 +12,13 @@ Summary statistics
 usage: summary
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

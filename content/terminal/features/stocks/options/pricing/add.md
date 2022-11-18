@@ -12,6 +12,7 @@ Adds a price to the list
 usage: add -p PRICE -c CHANCE
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: add -p PRICE -c CHANCE
 | chance | Chance that the stock is at a given projected price | None | False | None |
 
 
+---
 ## Examples
 
 ```python

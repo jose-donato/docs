@@ -12,6 +12,7 @@ Plot in-depth sentiment predicted from tweets from last days that contain pre-de
 usage: sentiment [-l LIMIT] [-d N_DAYS_PAST] [-c]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: sentiment [-l LIMIT] [-d N_DAYS_PAST] [-c]
 | compare | show corresponding change in stock price | False | True | None |
 
 
+---
 ## Examples
 
 ```python

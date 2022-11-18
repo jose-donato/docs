@@ -14,6 +14,7 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
               [-s {name,chain,protocol,apy,tvl,link}] [-r] [-l]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -27,6 +28,7 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
 | link | Flag to show vault link | True | True | None |
 
 
+---
 ## Examples
 
 ```python

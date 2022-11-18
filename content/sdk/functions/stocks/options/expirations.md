@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_option_expirations(symbol: str, source: str = "Nasdaq") -> List
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_option_expirations(symbol: str, source: str = "Nasdaq") -> List
 | symbol | str | Symbol to get chain for | None | False |
 | source | str | Source to get data from, by default "Nasdaq" | Nasdaq | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of full option chain. |
 
+---

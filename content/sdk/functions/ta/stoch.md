@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowkperiod: int = 3) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,12 +28,14 @@ def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowk
 | slowdperiod | int | Slow d period | 3 | True |
 | slowkperiod | int | Slow k period | 3 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
 
+---
 
 
 </TabItem>
@@ -45,6 +48,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowkperiod: int = 3, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,10 +61,12 @@ def display_stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

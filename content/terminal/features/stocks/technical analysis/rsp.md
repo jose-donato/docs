@@ -12,6 +12,7 @@ IBD Style Relative Strength Percentile Ranking of Stocks (i.e. 0-100 Score). Ran
 usage: rsp [-t]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,5 +20,6 @@ usage: rsp [-t]
 | disp_tickers | Show other tickers in the industry the stock is part of | False | True | None |
 
 
+---
 ![image](https://user-images.githubusercontent.com/85685255/185147757-26b7f2f6-9a51-4ed5-832c-bc7a3ba98a89.png)
 

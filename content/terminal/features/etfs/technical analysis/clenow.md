@@ -12,6 +12,7 @@ Calculates the Clenow Volatility Adjusted Momentum.
 usage: clenow [-p PERIOD]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: clenow [-p PERIOD]
 | period | Lookback period for regression | 90 | True | None |
 
 
+---

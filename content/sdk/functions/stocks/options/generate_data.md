@@ -12,11 +12,14 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def generate_data(current_price: float, options: List[Dict[str, int]], underlying: int) -> Tuple[List[float], List[float], List[float]]
 ```
+---
 ## Parameters
 
 This function does not take any parameters.
 
+---
 ## Returns
 
 This function does not return anything
 
+---

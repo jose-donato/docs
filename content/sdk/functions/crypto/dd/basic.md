@@ -18,18 +18,21 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def basic_coin_info(symbol: str = "BTC") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Metric, Value |
 
+---
 
 
 </TabItem>
@@ -42,6 +45,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_basic(symbol: str = "BTC", export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -49,10 +53,12 @@ def display_basic(symbol: str = "BTC", export: str = "") -> None
 | symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
 | export | str | Export dataframe data to csv,json,xlsx |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

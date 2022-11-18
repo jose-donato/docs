@@ -12,6 +12,7 @@ Gets historical quotes for given option chain
 usage: hist -s STRIKE [-p] [-c CHAIN_ID]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: hist -s STRIKE [-p] [-c CHAIN_ID]
 | chain_id | OCC option symbol | None | True | None |
 
 
+---
 ## Examples
 
 ```python

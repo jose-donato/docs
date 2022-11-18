@@ -12,6 +12,7 @@ Yearly estimates and quarter earnings/revenues. [Source: Business Insider]
 usage: est [-e {annualrevenue,annualearnings,quarterearnings}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: est [-e {annualrevenue,annualearnings,quarterearnings}]
 | estimate | Estimates to get | annualearnings | True | annualrevenue, annualearnings, quarterearnings |
 
 
+---
 ## Examples
 
 ```python

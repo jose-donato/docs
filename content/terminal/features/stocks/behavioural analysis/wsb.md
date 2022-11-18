@@ -12,6 +12,7 @@ Print what WSB gang are up to in subreddit wallstreetbets. [Source: Reddit]
 usage: wsb [-l N_LIMIT] [--new]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: wsb [-l N_LIMIT] [--new]
 | b_new | new flag, if true the posts retrieved are based on being more recent rather than their score. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

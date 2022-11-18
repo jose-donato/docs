@@ -12,11 +12,13 @@ Prints an overview about the company. The following fields are expected: Symbol,
 usage: overview
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

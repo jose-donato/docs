@@ -18,18 +18,21 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_technical_summary_report(symbol: str) -> str
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get the technical summary | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | str | technical summary report |
 
+---
 
 
 </TabItem>
@@ -42,16 +45,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def technical_summary_report(symbol: str) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get the technical summary | None | False |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

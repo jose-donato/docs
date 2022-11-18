@@ -12,11 +12,13 @@ Shows global DeFi statistics DeFi or Decentralized Finance refers to financial s
 usage: defi
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

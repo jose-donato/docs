@@ -12,6 +12,7 @@ M-score: ------------------------------------------------ The Beneish model is a
 usage: fraud [-e] [-d]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: fraud [-e] [-d]
 | detail | Shows the details for calculating the mscore | False | True | None |
 
 
+---

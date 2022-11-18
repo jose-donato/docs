@@ -12,6 +12,7 @@ Print top stocks being more heavily shorted. HighShortInterest.com provides a co
 usage: hsi [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: hsi [-l LIMIT]
 | limit | Limit of the top heavily shorted stocks to retrieve. | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

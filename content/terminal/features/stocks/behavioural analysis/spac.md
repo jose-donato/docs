@@ -12,6 +12,7 @@ Show other users SPACs announcement. [Source: Reddit]
 usage: spac [-l N_LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: spac [-l N_LIMIT]
 | n_limit | limit of posts with SPACs retrieved. | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Show overview of funds from selected country.
 usage: overview [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: overview [-l LIMIT]
 | limit | Number of search results to show | 10 | True | None |
 
 
+---

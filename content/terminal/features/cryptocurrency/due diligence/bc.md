@@ -12,11 +12,13 @@ Blockchain explorers URLs for loaded coin. Those are sites like etherescan.io or
 usage: bc
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

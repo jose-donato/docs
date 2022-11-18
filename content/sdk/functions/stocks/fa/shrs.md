@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_shareholders(symbol: str, holder: str = "institutional") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_shareholders(symbol: str, holder: str = "institutional") -> pd.DataFrame
 | symbol | str | Stock ticker symbol | None | False |
 | holder | str | Which holder to get table for | institutional | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Major holders |
 
+---

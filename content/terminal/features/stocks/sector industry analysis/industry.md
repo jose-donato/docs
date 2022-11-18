@@ -12,6 +12,7 @@ See existing industries, or set industry if arg specified
 usage: industry [-n NAME [NAME ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: industry [-n NAME [NAME ...]]
 | name | industry to select | None | True | None |
 
 
+---

@@ -12,8 +12,10 @@ Plot historical data.
 usage: plot
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

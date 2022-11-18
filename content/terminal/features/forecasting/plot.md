@@ -12,6 +12,7 @@ Plot data based on the index
 usage: plot [-v VALUES]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: plot [-v VALUES]
 | values | Dataset.column values to be displayed in a plot. Use comma to separate multiple | None | True | None |
 
 
+---
 ## Examples
 
 ```python

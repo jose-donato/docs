@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def clean(dataset: pd.DataFrame, fill: Optional[str] = None, drop: Optional[str] = None, limit: Optional[int] = None) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,9 +22,11 @@ def clean(dataset: pd.DataFrame, fill: Optional[str] = None, drop: Optional[str]
 | drop | Optional[str] | The method of dropping NaNs | None | True |
 | limit | Optional[int] | The maximum limit you wish to apply that can be forward or backward filled | None | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with cleaned up data |
 
+---

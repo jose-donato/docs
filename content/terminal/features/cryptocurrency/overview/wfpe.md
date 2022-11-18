@@ -12,6 +12,7 @@ Coin withdrawal fees per exchange [Source: https://withdrawalfees.com/]
 usage: wfpe [-c COIN]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: wfpe [-c COIN]
 | coin | Coin to check withdrawal fees in long format (e.g., bitcoin, ethereum) | bitcoin | True | None |
 
 
+---
 ## Examples
 
 ```python

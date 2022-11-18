@@ -12,6 +12,7 @@ List your current open orders
 usage: orders [-l LIMIT] [-s {product_id,side,price,size,type,created_at,status}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: orders [-l LIMIT] [-s {product_id,side,price,size,type,created_at,status}
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---

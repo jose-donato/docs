@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_es(data: pd.DataFrame, use_mean: bool = False, distribution: str = "normal", percentile: Union[float, int] = 99.9, portfolio: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,12 +29,14 @@ def get_es(data: pd.DataFrame, use_mean: bool = False, distribution: str = "norm
 | percentile | Union[float,int] | VaR percentile | 99.9 | True |
 | portfolio | bool | If the data is a portfolio | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with Expected Shortfall per percentile |
 
+---
 
 
 </TabItem>
@@ -46,6 +49,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_es(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, distribution: str = "normal", percentile: float = 99.9, portfolio: bool = False) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,10 +61,12 @@ def display_es(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, dis
 | percentile | int | es percentile | 99.9 | True |
 | portfolio | bool | If the data is a portfolio | False | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

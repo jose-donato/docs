@@ -12,6 +12,7 @@ Add Average True Range to dataset of specific stock ticker.
 usage: atr [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: atr [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 | low_col | Low column name to use for Average True Range. | low | True | None |
 
 
+---
 ## Examples
 
 ```python

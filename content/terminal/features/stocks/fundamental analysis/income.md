@@ -12,6 +12,7 @@ Prints a complete income statement over time. This can be either quarterly or an
 usage: income [-q] [-r] [-p PLOT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: income [-q] [-r] [-p PLOT]
 | plot | Rows to plot, comma separated. (-1 represents invalid data) | None | True | None |
 
 
+---
 ## Examples
 
 ```python

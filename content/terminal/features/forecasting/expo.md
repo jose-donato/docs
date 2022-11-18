@@ -12,6 +12,7 @@ Perform Probabilistic Exponential Smoothing forecast: https://unit8co.github.io/
 usage: expo [--trend {N,A,M}] [--dampen DAMPEN]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: expo [--trend {N,A,M}] [--dampen DAMPEN]
 | dampen | Dampening | F | True | None |
 
 
+---
 ## Examples
 
 ```python

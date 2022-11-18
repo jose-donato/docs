@@ -12,11 +12,13 @@ Display exchange withdrawal fees [Source: https://withdrawalfees.com/]
 usage: ewf
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

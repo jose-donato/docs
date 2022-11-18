@@ -12,6 +12,7 @@ The Relative Strength Index (RSI) calculates a ratio of the recent upward price 
 usage: rsi [-l N_LENGTH] [-s N_SCALAR] [-d N_DRIFT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: rsi [-l N_LENGTH] [-s N_SCALAR] [-d N_DRIFT]
 | n_drift | drift | 1 | True | None |
 
 
+---
 ![rsi](https://user-images.githubusercontent.com/46355364/154311651-99e67e12-1677-43a9-92d9-5998d99fd0db.png)
 

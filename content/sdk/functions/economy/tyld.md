@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: str = "2010-01-01") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: s
 | start_date | str | Start date for data.  Should be in YYYY-MM-DD format, by default "2010-01-01" | 2010-01-01 | True |
 | maturity | str | Maturity timeline.  Can be "3mo","5y","10y" or "30y", by default "10y" | 10y | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical yields |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: str = "2010-01-01", raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,10 +59,12 @@ def display_treasury_yield(interval: str = "m", maturity: str = "10y", start_dat
 | export | str | Format to export data, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

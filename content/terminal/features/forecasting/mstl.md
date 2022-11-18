@@ -12,11 +12,13 @@ Perform Multiple Seasonalities and Trend using Loess (MSTL) forecast: https://ni
 usage: mstl
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

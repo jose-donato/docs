@@ -12,6 +12,7 @@ Prints information about inside traders. The following fields are expected: Date
 usage: lins [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: lins [-l LIMIT]
 | limit | Limit of latest inside traders. | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

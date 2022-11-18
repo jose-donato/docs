@@ -12,6 +12,7 @@ Display info about ERC20 token. e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 
 usage: info [--social]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: info [--social]
 | social | Flag to show social media links | False | True | None |
 
 
+---

@@ -12,8 +12,10 @@ Prints information about, among other things, the industry, sector exchange and 
 usage: profile
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,9 +21,11 @@ def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> pd.Da
 | old_column | str | The column that will have its name changed | None | False |
 | new_column | str | The name to update to | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The dataframe with the renamed column |
 
+---

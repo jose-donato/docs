@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_contracts(symbol: str, past_transaction_days: int = 10) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,12 +26,14 @@ def get_contracts(symbol: str, past_transaction_days: int = 10) -> pd.DataFrame
 | symbol | str | Ticker to get congress trading data from | None | False |
 | past_transaction_days | int | Number of days to get transactions for | 10 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most recent transactions by members of U.S. Congress |
 
+---
 
 
 </TabItem>
@@ -43,6 +46,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_contracts(symbol: str, past_transaction_days: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,10 +57,12 @@ def display_contracts(symbol: str, past_transaction_days: int = 10, raw: bool = 
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

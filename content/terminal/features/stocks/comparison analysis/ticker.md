@@ -12,6 +12,7 @@ Set ticker to extract similar from
 usage: ticker -t TICKER
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: ticker -t TICKER
 | ticker | Ticker get similar tickers from | None | False | None |
 
 
+---
 ## Examples
 
 ```python

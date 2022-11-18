@@ -12,11 +12,13 @@ Screener filter output from https://ops.syncretism.io/index.html. Where: CS: Con
 usage: scr [-p {3DTE_Degenerate.ini,Highest_IV.ini,Highest_OI.ini,Highest_Volume.ini,high_IV.ini,Long_FAANGM.ini,SPY_ATM_Calls.ini,SPY_ATM_Poots.ini,template.ini,TSLA_Calls_90Days.ini,TSLA_Poots.ini}] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| preset | Filter presets | high_IV | True | 3DTE_Degenerate.ini,  Highest_IV.ini,  Highest_OI.ini,  Highest_Volume.ini,  high_IV.ini,  Long_FAANGM.ini,  SPY_ATM_Calls.ini,  SPY_ATM_Poots.ini,  template.ini,  TSLA_Calls_90Days.ini,  TSLA_Poots.ini |
+| preset | Filter presets | high_IV | True | 3DTE_Degenerate.ini, Highest_IV.ini, Highest_OI.ini, Highest_Volume.ini, high_IV.ini, Long_FAANGM.ini, SPY_ATM_Calls.ini, SPY_ATM_Poots.ini, template.ini, TSLA_Calls_90Days.ini, TSLA_Poots.ini |
 | limit | Limit of random entries to display. Default shows all | 10 | True | None |
 
 
+---

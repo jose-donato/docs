@@ -12,6 +12,7 @@ Add columns to your dataframe with the option to use formulas. E.g. newdatasetco
 usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,,,=,=,==} -c CRITERIAORDATASETCOL
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,,,=,=,
 | criteriaordatasetcol | Either dataset column to be applied on top of base dataset or criteria | None | False | None |
 
 
+---
 ## Examples
 
 ```python

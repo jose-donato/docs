@@ -12,6 +12,7 @@ Calculate profit or loss for given option settings.
 usage: calc [--put] [--sell] [-s STRIKE] [-p PREMIUM] [-m MIN] [-M MAX]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -24,6 +25,7 @@ usage: calc [--put] [--sell] [-s STRIKE] [-p PREMIUM] [-m MIN] [-M MAX]
 | max | Max price to look at | -1 | True | None |
 
 
+---
 ## Examples
 
 ```python

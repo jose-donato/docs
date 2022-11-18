@@ -12,8 +12,10 @@ Display info about your trading accounts on Robinhood
 usage: holdings
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

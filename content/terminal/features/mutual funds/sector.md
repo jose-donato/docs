@@ -12,6 +12,7 @@ Show fund sector weighting.
 usage: sector [-m MIN]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: sector [-m MIN]
 | min | Minimum positive float to display sector | 5 | True | None |
 
 
+---

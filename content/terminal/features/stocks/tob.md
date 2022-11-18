@@ -12,6 +12,7 @@ Get top of book for loaded ticker from selected exchange
 usage: quote -t S_TICKER [-e {BZX,EDGX,BYX,EDGA}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: quote -t S_TICKER [-e {BZX,EDGX,BYX,EDGA}]
 | exchange |  | BZX | True | BZX, EDGX, BYX, EDGA |
 
 
+---

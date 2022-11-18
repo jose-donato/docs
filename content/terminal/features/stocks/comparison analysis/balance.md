@@ -12,6 +12,7 @@ Prints either yearly or quarterly balance statement the company, and compares it
 usage: balance [-q] [-t S_TIMEFRAME]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: balance [-q] [-t S_TIMEFRAME]
 | s_timeframe | Specify yearly/quarterly timeframe. Default is last. | None | True | None |
 
 
+---
 ## Examples
 
 ```python

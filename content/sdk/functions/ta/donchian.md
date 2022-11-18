@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20)
 | upper_length | int | Length of window to calculate upper channel | 20 | True |
 | lower_length | int | Length of window to calculate lower channel | 20 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of upper and lower channels |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_donchian(data: pd.DataFrame, symbol: str = "", upper_length: int = 20, lower_length: int = 20, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,10 +59,12 @@ def display_donchian(data: pd.DataFrame, symbol: str = "", upper_length: int = 2
 | export | str | Format of export file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

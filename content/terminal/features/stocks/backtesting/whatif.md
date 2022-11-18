@@ -12,6 +12,7 @@ Displays what if scenario of having bought X shares at date Y
 usage: whatif [-d DATE_SHARES_ACQUIRED] [-n NUM_SHARES_ACQUIRED]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: whatif [-d DATE_SHARES_ACQUIRED] [-n NUM_SHARES_ACQUIRED]
 | num_shares_acquired | Number of shares acquired | 1.0 | True | None |
 
 
+---

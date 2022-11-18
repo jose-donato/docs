@@ -12,6 +12,7 @@ Prints the growth of several financial statement items and ratios over time. Thi
 usage: growth [-l LIMIT] [-q]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: growth [-l LIMIT] [-q]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 
 
+---

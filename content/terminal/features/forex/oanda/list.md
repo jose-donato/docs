@@ -12,6 +12,7 @@ List order history
 usage: list [-s STATE] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: list [-s STATE] [-l LIMIT]
 | limit | Limit the number of orders to retrieve. | 20 | True | None |
 
 
+---

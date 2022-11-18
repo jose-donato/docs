@@ -12,6 +12,7 @@ Search ETF by name [Source: FinanceDatabase/StockAnalysis.com]
 usage: search -n NAME [NAME ...] [-d DESCRIPTION [DESCRIPTION ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: search -n NAME [NAME ...] [-d DESCRIPTION [DESCRIPTION ...]]
 | description | Name to look for ETFs |  | True | None |
 
 
+---

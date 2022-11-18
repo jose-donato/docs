@@ -12,6 +12,7 @@ Display balance
 usage: balance [--vs VS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: balance [--vs VS]
 | vs | Quote currency (what to view coin vs) | USDT | True | None |
 
 
+---

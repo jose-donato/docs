@@ -12,6 +12,7 @@ Tool to calculate APY from APR value. Compouding periods, i.e., the number of ti
 usage: aprtoapy [--apr APR] [-c COMPOUNDING] [-n]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: aprtoapy [--apr APR] [-c COMPOUNDING] [-n]
 | narrative | Flag to show narrative instead of dataframe | False | True | None |
 
 
+---

@@ -12,11 +12,13 @@ Add exponential moving average to dataset based on specific column.
 usage: ema
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

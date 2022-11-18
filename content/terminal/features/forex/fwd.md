@@ -12,8 +12,10 @@ Get forward rates for loaded pair.
 usage: fwd
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

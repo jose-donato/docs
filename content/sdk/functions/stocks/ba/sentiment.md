@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2) -> pd.D
 | n_tweets | int | Number of tweets to get per hour | 15 | True |
 | n_days_past | int | Number of days to extract tweets for | 2 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of sentiment |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2, compare: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,10 +59,12 @@ def display_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2, com
 | export | str | Format to export tweet dataframe |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

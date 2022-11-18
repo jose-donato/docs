@@ -12,8 +12,10 @@ Display asset's fundraising details [Source: https://messari.io]
 usage: fr
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType] = None, interval: str = "1440", exchange: str = "binance", vs_currency: str = "usdt", end_date: datetime.datetime | str | None = None, source: str = "CCXT") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -24,9 +25,11 @@ def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType] = None
 | end_date | str or datetime | End date to get data from with. - datetime or string format (YYYY-MM-DD) | None | True |
 | source | str | The source of the data<br/>Choose from: CCXT, CoinGecko, YahooFinance | CCXT | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe consisting of price and volume data |
 
+---

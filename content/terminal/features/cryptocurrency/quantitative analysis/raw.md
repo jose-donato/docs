@@ -12,6 +12,7 @@ Print raw data to console
 usage: raw [-l LIMIT] [-r] [-s {open,high,low,close,adjclose,volume,date_id,oc_high,oc_low,returns,logret}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: raw [-l LIMIT] [-r] [-s {open,high,low,close,adjclose,volume,date_id,oc_h
 | sortby | The column to sort by | None | True | open, high, low, close, adjclose, volume, date_id, oc_high, oc_low, returns, logret |
 
 
+---
 ## Examples
 
 ```python

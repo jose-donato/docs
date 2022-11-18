@@ -12,6 +12,7 @@ description: OpenBB Terminal Function
 usage: companynews -s SYMBOL [-l LIMIT] [-o OFFSET] [-lang LANGUAGES]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: companynews -s SYMBOL [-l LIMIT] [-o OFFSET] [-lang LANGUAGES]
 | languages | Languages of news to display. | en,fr | True | None |
 
 
+---

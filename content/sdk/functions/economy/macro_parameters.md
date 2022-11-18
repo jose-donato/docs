@@ -12,13 +12,16 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_macro_parameters() -> Dict[str, Dict[str, str]]
 ```
+---
 ## Parameters
 
 This function does not take any parameters.
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, Dict[str, str]] | A dictionary with the available macro parameters. |
 
+---

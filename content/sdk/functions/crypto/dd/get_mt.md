@@ -18,18 +18,21 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_available_timeseries(only_free: bool = True) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | only_free | bool | Display only timeseries available for free | True | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | available timeseries |
 
+---
 
 
 </TabItem>
@@ -42,6 +45,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_messari_timeseries_list(limit: int = 10, query: str = "", only_free: bool = True, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -51,10 +55,12 @@ def display_messari_timeseries_list(limit: int = 10, query: str = "", only_free:
 | only_free | bool | Display only timeseries available for free | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

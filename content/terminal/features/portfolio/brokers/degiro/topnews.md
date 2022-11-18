@@ -12,8 +12,10 @@ description: OpenBB Terminal Function
 usage: topnews
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,15 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_filings_analysis(symbol: str) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to see analysis of filings | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | str | Analysis of filings text |
 
+---

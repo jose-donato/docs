@@ -12,11 +12,13 @@ Perform Automatic ETS (Error, Trend, Seasonality) forecast: https://nixtla.githu
 usage: autoets
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

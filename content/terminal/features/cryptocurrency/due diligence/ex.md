@@ -12,6 +12,7 @@ Get all exchanges found for given coin. You can display only top N number of exc
 usage: ex [-l LIMIT] [-s {id,name,adjusted_volume_24h_share,fiats}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: ex [-l LIMIT] [-s {id,name,adjusted_volume_24h_share,fiats}] [-r]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---

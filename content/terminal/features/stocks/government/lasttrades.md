@@ -12,6 +12,7 @@ Last government trades. [Source: www.quiverquant.com]
 usage: lasttrades [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_DAYS] [-r REPRESENTATIVE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: lasttrades [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_DAYS] [-r R
 | representative | Representative |  | True | None |
 
 
+---
 ## Examples
 
 ```python

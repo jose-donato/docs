@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.
 | fuller_reg | str | Type of regression of ADF test | c | True |
 | kpss_reg | str | Type of regression for KPSS test | c | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with results of ADF test and KPSS test |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_root(data: pd.Series, dataset: str = "", column: str = "", fuller_reg: str = "c", kpss_reg: str = "c", export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,10 +59,12 @@ def display_root(data: pd.Series, dataset: str = "", column: str = "", fuller_re
 | kpss_reg | str | Type of regression for KPSS test. Choose c or ct | c | True |
 | export | str | Format to export data. |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

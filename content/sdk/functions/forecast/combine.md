@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def combine_dfs(df1: pd.DataFrame, df2: pd.DataFrame, column: str, dataset: str = "") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,9 +22,11 @@ def combine_dfs(df1: pd.DataFrame, df2: pd.DataFrame, column: str, dataset: str 
 | column | str | The column to transfer | None | False |
 | dataset | str | A name for df2 (shows in name of new column) |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The new dataframe |
 
+---

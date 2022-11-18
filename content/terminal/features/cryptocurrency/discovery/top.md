@@ -12,6 +12,7 @@ Display N coins from the data source, if the data source is CoinGecko it can rec
 usage: top [-c CATEGORY] [-l LIMIT] [-s SORTBY [SORTBY ...]] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: top [-c CATEGORY] [-l LIMIT] [-s SORTBY [SORTBY ...]] [-r]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

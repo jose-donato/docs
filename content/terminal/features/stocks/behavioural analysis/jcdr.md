@@ -12,6 +12,7 @@ Show daily cramer recommendation
 usage: jcdr [-i]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: jcdr [-i]
 | inverse | Show inverse recommendation | False | True | None |
 
 
+---

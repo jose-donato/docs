@@ -18,18 +18,21 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_collection_stats(slug: str) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | slug | str | Opensea collection slug. If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | collection stats |
 
+---
 
 
 </TabItem>
@@ -42,6 +45,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_collection_stats(slug: str, export: str) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -49,10 +53,12 @@ def display_collection_stats(slug: str, export: str) -> None
 | slug | str | Opensea collection slug.<br/>If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

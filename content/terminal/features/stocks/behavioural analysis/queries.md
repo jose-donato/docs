@@ -12,6 +12,7 @@ Print top related queries with this stock's query. [Source: Google]
 usage: queries [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: queries [-l LIMIT]
 | limit | limit of top related queries to print. | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

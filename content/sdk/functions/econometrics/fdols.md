@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_fdols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_fdols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 | regression_variables | list | The regressions variables entered where the first variable is<br/>the dependent variable. | None | True |
 | data | dict | A dictionary containing the datasets. | None | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[DataFrame, Any, List[Any], Any] | The dataset used,<br/>Dependent variable,<br/>Independent variable,<br/>First Difference OLS model |
 
+---

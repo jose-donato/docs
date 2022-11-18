@@ -12,8 +12,10 @@ Compare results between all activated Panel regression models
 usage: compare
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

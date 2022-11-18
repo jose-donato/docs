@@ -12,8 +12,10 @@ Print some information about your account.
 usage: summary
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,8 +12,10 @@ Show fund equity holdings.
 usage: equity
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,6 +12,7 @@ Display summary of portfolio vs benchmark
 usage: summary [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-r RISK_FREE_RATE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: summary [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-r RISK_FREE_RATE]
 | risk_free_rate | Set risk free rate for calculations. | 0 | True | None |
 
 
+---

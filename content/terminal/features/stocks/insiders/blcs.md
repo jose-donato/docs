@@ -12,6 +12,7 @@ Print latest CEO/CFO sales 100k. [Source: OpenInsider]
 usage: blcs [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: blcs [-l LIMIT]
 | limit | Limit of datarows to display | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

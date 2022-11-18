@@ -12,6 +12,7 @@ Load your portfolio transactions.
 usage: load -f FILE [-n NAME] [-r RISK_FREE_RATE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: load -f FILE [-n NAME] [-r RISK_FREE_RATE]
 | risk_free_rate | Set the risk free rate. | 0 | True | None |
 
 
+---
 ## Examples
 
 ```python

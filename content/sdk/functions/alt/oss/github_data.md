@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_github_data(url: str, kwargs: Any) -> Optional[Dict[str, Any]]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_github_data(url: str, kwargs: Any) -> Optional[Dict[str, Any]]
 | url | str | github api endpoint | None | False |
 | params | dict | params to pass to api endpoint | None | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, Any] | Dictionary with data |
 
+---

@@ -12,6 +12,7 @@ Select the exchange you want see open hours for
 usage: exchange [-n EXCHANGE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: exchange [-n EXCHANGE]
 | exchange | Exchange short name | None | True | None |
 
 
+---

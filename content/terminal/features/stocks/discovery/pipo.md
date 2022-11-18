@@ -12,6 +12,7 @@ Past IPOs dates. [Source: https://finnhub.io]
 usage: pipo [-d DAYS] [-s START] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: pipo [-d DAYS] [-s START] [-l LIMIT]
 | limit | Limit number of IPOs to display. | 20 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType] = None, interval: int = 1440, end_date: Union[datetime.datetime, str, NoneType] = None, prepost: bool = False, source: str = "YahooFinance", iexrange: str = "ytd", weekly: bool = False, monthly: bool = False, verbose: bool = True) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,9 +28,11 @@ def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType] = None
 | monthly | bool | Flag to get monthly data | False | True |
 | verbose | bool | Display verbose information on what was the symbol that was loaded | True | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of data |
 
+---

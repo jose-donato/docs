@@ -12,6 +12,7 @@ Histogram with density and rug
 usage: hist [-b N_BINS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,5 +20,6 @@ usage: hist [-b N_BINS]
 | n_bins |  | 15 | True | None |
 
 
+---
 ![hist](https://user-images.githubusercontent.com/46355364/154306947-aaba936a-ac07-40e2-a5a6-bf1fab460cd0.png)
 

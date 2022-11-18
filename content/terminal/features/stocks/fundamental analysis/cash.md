@@ -12,6 +12,7 @@ Prints a complete cash flow statement over time. This can be either quarterly or
 usage: cash [-l LIMIT] [-q] [-r] [-p PLOT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: cash [-l LIMIT] [-q] [-r] [-p PLOT]
 | plot | Rows to plot. (-1 represents invalid data) | None | True | None |
 
 
+---
 ## Examples
 
 ```python

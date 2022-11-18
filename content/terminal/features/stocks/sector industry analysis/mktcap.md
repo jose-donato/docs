@@ -12,6 +12,7 @@ Set mktcap to nano, micro, small, mid, large or mega
 usage: mktcap [-n {Nano,Micro,Small,Mid,Large,Mega,nano,micro,small,mid,large,mega}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: mktcap [-n {Nano,Micro,Small,Mid,Large,Mega,nano,micro,small,mid,large,me
 | name | market cap to select | None | True | Nano, Micro, Small, Mid, Large, Mega, nano, micro, small, mid, large, mega |
 
 
+---

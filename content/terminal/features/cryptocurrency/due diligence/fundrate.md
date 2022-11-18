@@ -12,8 +12,10 @@ Displays funding rate by exchange for a certain asset [Source: https://coinglass
 usage: fundrate
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,6 +12,7 @@ Displays crypto {borrow,supply} interest rates for cryptocurrencies across sever
 usage: cr [-t {borrow,supply}] [-c CRYPTOS] [-p PLATFORMS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: cr [-t {borrow,supply}] [-c CRYPTOS] [-p PLATFORMS]
 | platforms | Platforms to search interest rates in separated by comma. Default: BlockFi,Ledn,SwissBorg,Youhodler. Options: MakerDao,Compound,Poloniex,Bitfinex,dYdX,CompoundV2,Linen,Hodlonaut,InstaDapp,Zerion,Argent,DeFiSaver,MakerDaoV2,Ddex,AaveStable,AaveVariable,YearnFinance,BlockFi,Nexo,CryptoCom,Soda,Coinbase,SaltLending,Ledn,Bincentive,Inlock,Bitwala,Zipmex,Vauld,Delio,Yield,Vesper,Reflexer,SwissBorg,MushroomsFinance,ElementFi,Maple,CoinRabbit,WirexXAccounts,Youhodler,YieldApp,NotionalFinance,IconFi | BlockFi,Ledn,SwissBorg,Youhodler | True | None |
 
 
+---

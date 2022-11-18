@@ -12,6 +12,7 @@ Shows top decentralized applications [Source: https://dappradar.com/] Accepts --
 usage: dapps [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: dapps [-l LIMIT] [-s SORTBY [SORTBY ...]]
 | sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | True | None |
 
 
+---
 ## Examples
 
 ```python

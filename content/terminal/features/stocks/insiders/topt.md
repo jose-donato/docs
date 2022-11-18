@@ -12,6 +12,7 @@ Print top officer purchases of the day. [Source: OpenInsider]
 usage: topt [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: topt [-l LIMIT]
 | limit | Limit of datarows to display | 10 | True | None |
 
 
+---

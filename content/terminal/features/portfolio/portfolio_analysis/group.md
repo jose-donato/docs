@@ -12,6 +12,7 @@ Displays portfolio grouped by a given column
 usage: group [-g {}] [-a]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: group [-g {}] [-a]
 | allocation | Add allocation column in % to dataframe | False | True | None |
 
 
+---

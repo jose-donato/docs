@@ -12,6 +12,7 @@ Search over CoinPaprika API You can display only N number of results with --limi
 usage: search -q QUERY [QUERY ...] [-c {currencies,exchanges,icos,people,tags,all}] [-l LIMIT] [-s {category,id,name}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,6 +24,7 @@ usage: search -q QUERY [QUERY ...] [-c {currencies,exchanges,icos,people,tags,al
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

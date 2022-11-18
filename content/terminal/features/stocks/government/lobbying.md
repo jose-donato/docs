@@ -12,6 +12,7 @@ Lobbying details [Source: www.quiverquant.com]
 usage: lobbying [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: lobbying [-l LIMIT]
 | limit | Limit of events to show | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

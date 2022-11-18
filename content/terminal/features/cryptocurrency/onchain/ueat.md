@@ -12,6 +12,7 @@ Display number of unique ethereum addresses which made a transaction in given ti
 usage: ueat [-l LIMIT] [-s {date,uniqueSenders,transactions,averageGasPrice,mediumGasPrice,maximumGasPrice}] [-i {day,month,week}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: ueat [-l LIMIT] [-s {date,uniqueSenders,transactions,averageGasPrice,medi
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---

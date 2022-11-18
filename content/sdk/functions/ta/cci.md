@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def cci(data: pd.DataFrame, window: int = 14, scalar: float = 0.0015) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,12 +29,14 @@ def cci(data: pd.DataFrame, window: int = 14, scalar: float = 0.0015) -> pd.Data
 | window | int | Length of window | 14 | True |
 | scalar | float | Scalar variable | 0.0015 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
 
+---
 
 
 </TabItem>
@@ -46,6 +49,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_cci(data: pd.DataFrame, window: int = 14, scalar: float = 0.0015, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,10 +61,12 @@ def display_cci(data: pd.DataFrame, window: int = 14, scalar: float = 0.0015, sy
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

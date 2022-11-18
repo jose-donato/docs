@@ -12,6 +12,7 @@ Display history for given ethereum blockchain balance. e.g. 0x3cD751E6b0078Be393
 usage: hist [-l LIMIT] [-s {timestamp,transactionHash,token,value}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: hist [-l LIMIT] [-s {timestamp,transactionHash,token,value}] [-r]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---

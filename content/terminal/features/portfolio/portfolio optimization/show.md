@@ -12,6 +12,7 @@ Show selected saved portfolios
 usage: show [-pf PORTFOLIOS] [-ct CATEGORIES] [-v LONG_ALLOCATION]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: show [-pf PORTFOLIOS] [-ct CATEGORIES] [-v LONG_ALLOCATION]
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 
 
+---

@@ -12,8 +12,10 @@ Get current exchange rate quote
 usage: quote
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

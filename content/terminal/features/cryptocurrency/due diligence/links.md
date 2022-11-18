@@ -12,8 +12,10 @@ Display asset's links [Source: https://messari.io]
 usage: links
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

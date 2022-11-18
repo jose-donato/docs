@@ -12,6 +12,7 @@ Customized news. [Source: Seeking Alpha]
 usage: cnews [-t {top-news,on-the-move,market-pulse,notable-calls,buybacks,commodities,crypto,issuance,global,guidance,ipos,spacs,politics,m-a,consumer,energy,financials,healthcare,mlps,reits,technology}] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: cnews [-t {top-news,on-the-move,market-pulse,notable-calls,buybacks,commo
 | limit | limit of news to display | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_comparison(regressions: Dict, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_comparison(regressions: Dict, export: str = "") -> None
 | regressions | Dict | Dictionary with regression results. | None | False |
 | export | str | Format to export data |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | dict | Returns a PanelModelComparison which shows an overview of the different regression results. |
 
+---

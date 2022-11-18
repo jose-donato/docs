@@ -12,6 +12,7 @@ Prints in-depth ratios of a company over time. This can be either quarterly or a
 usage: ratios [-l LIMIT] [-q]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: ratios [-l LIMIT] [-q]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 
 
+---

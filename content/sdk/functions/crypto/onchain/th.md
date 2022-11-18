@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_token_history(address: str, sortby: str = "timestamp", ascend: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_token_history(address: str, sortby: str = "timestamp", ascend: bool = Fa
 | sortby | str | Key to sort by. | timestamp | True |
 | ascend | str | Sort in descending order. | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with token historical transactions. |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_token_history(address: str, limit: int = 10, sortby: str = "timestamp", ascend: bool = False, hash_: bool = False, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,10 +59,12 @@ def display_token_history(address: str, limit: int = 10, sortby: str = "timestam
 | hash_ | bool, | Flag to show transaction hash. | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

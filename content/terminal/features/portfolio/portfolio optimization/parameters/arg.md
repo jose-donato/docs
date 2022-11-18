@@ -12,6 +12,7 @@ Set a different value for one of the available arguments.
 usage: arg [-a ARGUMENT ARGUMENT] [-s]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: arg [-a ARGUMENT ARGUMENT] [-s]
 | show | Show the available arguments, the options and a description. | False | True | None |
 
 
+---

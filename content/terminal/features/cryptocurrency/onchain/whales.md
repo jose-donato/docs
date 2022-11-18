@@ -12,6 +12,7 @@ Display crypto whales transactions. [Source: https://docs.whale-alert.io/]
 usage: whales [-m MIN] [-l LIMIT] [-s {date,symbol,blockchain,amount,amount_usd,from,to}] [-r] [-a]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,3 +24,4 @@ usage: whales [-m MIN] [-l LIMIT] [-s {date,symbol,blockchain,amount,amount_usd,
 | address | Flag to show addresses of transaction | False | True | None |
 
 
+---

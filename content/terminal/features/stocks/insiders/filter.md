@@ -12,6 +12,7 @@ Print open insider filtered data using loaded preset. [Source: OpenInsider]
 usage: filter [-l LIMIT] [-u]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: filter [-l LIMIT] [-u]
 | urls | Flag to show hyperlinks | False | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Clean a dataset by filling and dropping NaN values.
 usage: clean [-n {}] [--fill {rfill,cfill,rbfill,cbfill,rffill,bffill}] [-d {rdrop,cdrop}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: clean [-n {}] [--fill {rfill,cfill,rbfill,cbfill,rffill,bffill}] [-d {rdr
 | drop | The method of dropping NaNs. This either has the option rdrop (drop rows that contain NaNs) or cdrop (drop columns that contain NaNs) |  | True | rdrop, cdrop |
 
 
+---
 ## Examples
 
 ```python

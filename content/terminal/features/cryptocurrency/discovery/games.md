@@ -12,6 +12,7 @@ Shows top blockchain games [Source: https://dappradar.com/] Accepts --sort {Name
 usage: games [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: games [-l LIMIT] [-s SORTBY [SORTBY ...]]
 | sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | True | None |
 
 
+---
 ## Examples
 
 ```python

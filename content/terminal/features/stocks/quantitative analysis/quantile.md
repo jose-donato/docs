@@ -12,6 +12,7 @@ The quantiles are values which divide the distribution such that there is a give
 usage: quantile [-w N_WINDOW] [-q F_QUANTILE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: quantile [-w N_WINDOW] [-q F_QUANTILE]
 | f_quantile | quantile | 0.5 | True | None |
 
 
+---
 ![quantile](https://user-images.githubusercontent.com/46355364/154307976-868e98e1-5a30-43c7-92fc-f221d09c5bd2.png)
 

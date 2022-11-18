@@ -12,6 +12,7 @@ Displays staking info of a certain terra address. [Source: https://fcd.terra.dev
 usage: sinfo -a ADDRESS [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: sinfo -a ADDRESS [-l LIMIT]
 | limit | Number of delegations | 10 | True | None |
 
 
+---

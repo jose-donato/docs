@@ -12,6 +12,7 @@ View available presets under presets folder.
 usage: view [-p {etf_config.ini}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: view [-p {etf_config.ini}]
 | preset | View specific custom preset |  | True | etf_config.ini |
 
 
+---

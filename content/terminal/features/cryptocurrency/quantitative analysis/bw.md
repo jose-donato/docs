@@ -12,6 +12,7 @@ Box and Whisker plot
 usage: bw [-y]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,5 +20,6 @@ usage: bw [-y]
 | year | Flag to show yearly bw plot | False | True | None |
 
 
+---
 ![bw](https://user-images.githubusercontent.com/46355364/154305545-0f99fe4b-07e1-4714-8762-da3569023578.png)
 

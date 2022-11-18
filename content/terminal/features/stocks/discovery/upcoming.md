@@ -12,6 +12,7 @@ Upcoming earnings release dates. [Source: Seeking Alpha]
 usage: upcoming [-l LIMIT] [-p N_PAGES]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: upcoming [-l LIMIT] [-p N_PAGES]
 | n_pages | Number of pages to read upcoming earnings from in Seeking Alpha website. | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

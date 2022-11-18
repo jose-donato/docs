@@ -12,6 +12,7 @@ Search by category [Source: FinanceDatabase/StockAnalysis.com]
 usage: sbc -c CATEGORY [CATEGORY ...] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: sbc -c CATEGORY [CATEGORY ...] [-l LIMIT]
 | limit | Limit of ETFs to display | 5 | True | None |
 
 
+---

@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_fails_to_deliver(symbol: str, start_date: str = None, end_date: str = None, limit: int = 0) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,12 +28,14 @@ def get_fails_to_deliver(symbol: str, start_date: str = None, end_date: str = No
 | end_date | str | End of data, in YYYY-MM-DD format | None | True |
 | limit | int | Number of latest fails-to-deliver being printed | 0 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Fail to deliver data |
 
+---
 
 
 </TabItem>
@@ -45,6 +48,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def fails_to_deliver(symbol: str, data: pd.DataFrame = None, start_date: str = None, end_date: str = None, limit: int = 0, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,10 +62,12 @@ def fails_to_deliver(symbol: str, data: pd.DataFrame = None, start_date: str = N
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_last_uni_swaps(limit: int = 100, sortby: str = "timestamp", ascend: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_last_uni_swaps(limit: int = 100, sortby: str = "timestamp", ascend: bool
 | sortby | str | Key by which to sort data. The table can be sorted by every of its columns<br/>(see https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2). | timestamp | True |
 | ascend | bool | Flag to sort data descending | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Last 100 swaps on Uniswap |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_last_uni_swaps(limit: int = 10, sortby: str = "timestamp", ascend: bool = False, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,10 +57,12 @@ def display_last_uni_swaps(limit: int = 10, sortby: str = "timestamp", ascend: b
 | ascend | bool | Flag to sort data descending | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

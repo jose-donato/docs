@@ -12,6 +12,7 @@ Displays sector attribution of the portfolio compared to the S&P 500
 usage: attrib [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-t {relative,absolute}] [--raw [RAW]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: attrib [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-t {relative,absolute}]
 | raw | View raw attribution values in a table | False | True | None |
 
 
+---
 ## Examples
 
 ```python

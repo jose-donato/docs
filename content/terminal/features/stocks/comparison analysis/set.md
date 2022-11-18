@@ -12,6 +12,7 @@ Select similar companies to compare with.
 usage: set [-s L_SIMILAR]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: set [-s L_SIMILAR]
 | l_similar | similar companies to compare with. |  | True | None |
 
 
+---

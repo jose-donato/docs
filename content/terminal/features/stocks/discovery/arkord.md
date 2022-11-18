@@ -12,6 +12,7 @@ Orders by ARK Investment Management LLC - https://ark-funds.com/. [Source: https
 usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,shares}] [-r] [-b] [-c] [--fund {ARKK,ARKF,ARKW,ARKQ,ARKG,ARKX,}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -24,6 +25,7 @@ usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,share
 | fund | Filter by fund |  | True | ARKK, ARKF, ARKW, ARKQ, ARKG, ARKX,  |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ description: OpenBB Terminal Function
 usage: update -p PRICE id
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: update -p PRICE id
 | price | Price wanted. | None | False | None |
 
 
+---

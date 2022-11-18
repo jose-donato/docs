@@ -12,6 +12,7 @@ Select the symbol you wish to trade
 usage: symbol [-n SYMBOL]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: symbol [-n SYMBOL]
 | symbol | Symbol | None | True | None |
 
 
+---

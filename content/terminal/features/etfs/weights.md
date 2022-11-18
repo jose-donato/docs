@@ -12,6 +12,7 @@ Look at ETF sector holdings
 usage: weights [-m MIN] [--raw]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: weights [-m MIN] [--raw]
 | raw | Only output raw data | False | True | None |
 
 
+---
 ![weights](https://user-images.githubusercontent.com/46355364/154034921-2195b3c0-d251-4ec2-8fc0-87605115bee0.png)
 

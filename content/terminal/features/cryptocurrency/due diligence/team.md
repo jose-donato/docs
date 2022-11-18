@@ -12,8 +12,10 @@ Display asset's team [Source: https://messari.io]
 usage: team
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

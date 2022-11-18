@@ -12,6 +12,7 @@ Sean Seah warnings. Check: Consistent historical earnings per share; Consistentl
 usage: warnings [-d]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: warnings [-d]
 | b_debug | print insights into warnings calculation. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

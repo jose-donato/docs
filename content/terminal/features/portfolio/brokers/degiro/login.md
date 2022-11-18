@@ -12,6 +12,7 @@ description: OpenBB Terminal Function
 usage: login [-otp ONE_TIME_PASSWORD]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: login [-otp ONE_TIME_PASSWORD]
 | one_time_password | One-time-password for 2FA. | None | True | None |
 
 
+---

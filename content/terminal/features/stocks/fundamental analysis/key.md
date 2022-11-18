@@ -12,11 +12,13 @@ Gives main key metrics about the company (it's a subset of the Overview data fro
 usage: key
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

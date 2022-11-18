@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def filter_stocks(country: str = None, sector: str = None, industry: str = None, marketcap: str = "", exclude_exchanges: bool = True) -> list
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -22,9 +23,11 @@ def filter_stocks(country: str = None, sector: str = None, industry: str = None,
 | marketcap | str | Select stocks based on the market cap. |  | True |
 | exclude_exchanges | bool | When you wish to include different exchanges use this boolean. | True | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | list | List of filtered stocks |
 
+---

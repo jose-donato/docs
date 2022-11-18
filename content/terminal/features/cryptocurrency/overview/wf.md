@@ -12,6 +12,7 @@ Display top coins withdrawal fees [Source: https://withdrawalfees.com/]
 usage: wf [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: wf [-l LIMIT]
 | limit | Limit number of coins to display withdrawal fees. Default 10 | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

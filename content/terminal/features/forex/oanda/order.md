@@ -12,6 +12,7 @@ Create order
 usage: order -u UNITS -p PRICE
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: order -u UNITS -p PRICE
 | price | The price to set for the limit order. | None | False | None |
 
 
+---

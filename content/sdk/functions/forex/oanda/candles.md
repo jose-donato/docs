@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_candles_dataframe(instrument: Optional[str] = None, granularity: str = "D", candlecount: int = 180) -> Union[pd.DataFrame, bool]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_candles_dataframe(instrument: Optional[str] = None, granularity: str = "
 | granularity | str | Data granularity, by default "D" | D | True |
 | candlecount | int | Limit for the number of data points, by default 180 | 180 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Candle chart data or False |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def show_candles(instrument: str = "", granularity: str = "D", candlecount: int = 180, additional_charts: Optional[Dict[str, bool]] = None, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,10 +58,12 @@ def show_candles(instrument: str = "", granularity: str = "D", candlecount: int 
 | additional_charts | Dict[str, bool] | A dictionary of flags to include additional charts | None | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

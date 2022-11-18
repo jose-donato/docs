@@ -12,6 +12,7 @@ All time high data for loaded coin
 usage: ath [--vs {usd,btc}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: ath [--vs {usd,btc}]
 | vs | currency | usd | True | usd, btc |
 
 
+---
 ## Examples
 
 ```python

@@ -12,8 +12,10 @@ National debt statistics for various countries. [Source: Wikipedia]
 usage: edebt
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

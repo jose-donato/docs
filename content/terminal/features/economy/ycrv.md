@@ -12,6 +12,7 @@ Generate country yield curve. The yield curve shows the bond rates at different 
 usage: ycrv [-c COUNTRY] [-d DATE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: ycrv [-c COUNTRY] [-d DATE]
 | date | Date to get data from FRED. If not supplied, the most recent entry will be used. | None | True | None |
 
 
+---

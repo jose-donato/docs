@@ -12,6 +12,7 @@ Strategy where stock is bought when Price  EMA(l)
 usage: ema [-l LENGTH] [--spy] [--no_bench]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: ema [-l LENGTH] [--spy] [--no_bench]
 | no_bench | Flag to not show buy and hold comparison | False | True | None |
 
 
+---

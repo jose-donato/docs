@@ -12,6 +12,7 @@ Future IPOs dates. [Source: https://finnhub.io]
 usage: fipo [-d DAYS] [-s END] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: fipo [-d DAYS] [-s END] [-l LIMIT]
 | limit | Limit number of IPOs to display. | 20 | True | None |
 
 
+---
 ## Examples
 
 ```python

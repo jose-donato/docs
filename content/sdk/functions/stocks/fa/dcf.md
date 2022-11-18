@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_dcf(symbol: str, limit: int = 5, quarterly: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,9 +21,11 @@ def get_dcf(symbol: str, limit: int = 5, quarterly: bool = False) -> pd.DataFram
 | limit | int | Number to get | 5 | True |
 | quarterly | bool | Flag to get quarterly data, by default False | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of dcf data |
 
+---

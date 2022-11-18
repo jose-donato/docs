@@ -12,6 +12,7 @@ This function plots option hedge diagrams
 usage: pick -p PICK [PICK ...] [-a AMOUNT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: pick -p PICK [PICK ...] [-a AMOUNT]
 | amount | Choose the amount invested | 1000 | True | None |
 
 
+---

@@ -12,11 +12,13 @@ Stocks trending. [Source: Stocktwits]
 usage: trending
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

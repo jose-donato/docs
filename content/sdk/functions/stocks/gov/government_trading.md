@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_government_trading(gov_type: str = "congress", symbol: str = "") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_government_trading(gov_type: str = "congress", symbol: str = "") -> pd.D
 | gov_type | str | Type of government data between:<br/>'congress', 'senate', 'house', 'contracts', 'quarter-contracts' and 'corporate-lobbying' | congress | True |
 | symbol | str | Ticker symbol to get congress trading data from |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most recent transactions by members of U.S. Congress |
 
+---

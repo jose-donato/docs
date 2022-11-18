@@ -12,6 +12,7 @@ Account transaction history
 usage: history [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: history [-l LIMIT]
 | limit | Number of recent transactions to show | 15 | True | None |
 
 
+---

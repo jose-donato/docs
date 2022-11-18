@@ -9,10 +9,11 @@ Plot selected charts for portfolios
 
 ### Usage 
 ```python
-usage: plot [-pf PORTFOLIOS] [-pi] [-hi] [-dd] [-rc] [-he] [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-mt NAN_FILL_METHOD] [-ct CATEGORIES] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE]
-            [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION]
+usage: plot [-pf PORTFOLIOS] [-pi] [-hi] [-dd] [-rc] [-he] [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-mt NAN_FILL_METHOD] [-ct CATEGORIES] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE] [-a SIGNIFICANCE_LEVEL]
+            [-v LONG_ALLOCATION]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -38,6 +39,7 @@ usage: plot [-pf PORTFOLIOS] [-pi] [-hi] [-dd] [-rc] [-he] [-rm {MV,MAD,MSV,FLPM
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 
 
+---
 ## Examples
 
 ```python

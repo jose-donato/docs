@@ -12,6 +12,7 @@ This command gets unusual options from fdscanner.com
 usage: unu [-l LIMIT] [-s {Strike,Vol/OI,Vol,OI,Bid,Ask,Exp,Ticker} [{Strike,Vol/OI,Vol,OI,Bid,Ask,Exp,Ticker} ...]] [-r] [-p] [-c]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,6 +24,7 @@ usage: unu [-l LIMIT] [-s {Strike,Vol/OI,Vol,OI,Bid,Ask,Exp,Ticker} [{Strike,Vol
 | calls_only | Flag to show calls only | False | True | None |
 
 
+---
 ## Examples
 
 ```python

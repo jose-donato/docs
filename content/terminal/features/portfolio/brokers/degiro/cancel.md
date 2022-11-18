@@ -12,6 +12,7 @@ description: OpenBB Terminal Function
 usage: cancel id
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: cancel id
 | id | Order's id. | None | False | None |
 
 
+---

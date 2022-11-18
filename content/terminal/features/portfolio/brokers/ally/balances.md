@@ -12,8 +12,10 @@ Account balance details
 usage: balances
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

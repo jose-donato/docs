@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def load(to_symbol: str, from_symbol: str, resolution: str = "d", interval: str = "1day", start_date: str = None, source: str = "YahooFinance", verbose: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -24,9 +25,11 @@ def load(to_symbol: str, from_symbol: str, resolution: str = "d", interval: str 
 | source | str | Where to get data from, by default "YahooFinance" | YahooFinance | True |
 | verbose | bool | Display verbose information on what was the pair that was loaded, by default True | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The loaded data |
 
+---

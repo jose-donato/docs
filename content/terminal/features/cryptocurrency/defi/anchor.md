@@ -12,6 +12,7 @@ Displays anchor protocol earnings data of a certain terra address --transactions
 usage: anchor --address ADDRESS [--transactions]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: anchor --address ADDRESS [--transactions]
 | transactions | Flag to show transactions history in anchor earn | False | True | None |
 
 
+---
 ## Examples
 
 ```python

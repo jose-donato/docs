@@ -12,6 +12,7 @@ Get similar companies from selected data source (default: Finviz) to compare wit
 usage: get [-u] [-n] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: get [-u] [-n] [-l LIMIT]
 | limit | Limit of stocks to retrieve. | 10 | True | None |
 
 
+---

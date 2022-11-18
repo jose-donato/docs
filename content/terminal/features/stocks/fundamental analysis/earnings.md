@@ -12,6 +12,7 @@ Print earnings dates and reported EPS of the company. The following fields are e
 usage: earnings [-q] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: earnings [-q] [-l LIMIT]
 | limit | Number of latest info | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

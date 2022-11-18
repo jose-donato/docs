@@ -12,6 +12,7 @@ Top sells for government trading. [Source: www.quiverquant.com]
 usage: topsells [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_MONTHS] [-l LIMIT] [--raw]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,5 +23,6 @@ usage: topsells [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_MONTHS] [-l L
 | raw | Print raw data. | False | True | None |
 
 
+---
 ![topsells](https://user-images.githubusercontent.com/46355364/154266942-4ee9c83a-39be-4aab-8a06-01b6850f5bd9.png)
 

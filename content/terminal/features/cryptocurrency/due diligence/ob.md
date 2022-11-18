@@ -14,6 +14,7 @@ usage: ob
           [--vs VS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: ob
 | vs | Quote currency (what to view coin vs) | usdt | True | None |
 
 
+---

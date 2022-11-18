@@ -12,6 +12,7 @@ Display Candle Data
 usage: candles [-g GRANULARITY] [-l CANDLECOUNT] [-a] [-b] [-c] [-e] [-o] [-r] [-s] [-v]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -28,3 +29,4 @@ usage: candles [-g GRANULARITY] [-l CANDLECOUNT] [-a] [-b] [-c] [-e] [-o] [-r] [
 | vwap | Adds vwap (Volume Weighted Average Price) to the chart | False | True | None |
 
 
+---

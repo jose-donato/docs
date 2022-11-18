@@ -12,8 +12,10 @@ Opens company's website. [Source: Yahoo Finance]
 usage: web
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

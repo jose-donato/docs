@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_unitroot(data: pd.DataFrame, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_unitroot(data: pd.DataFrame, fuller_reg: str = "c", kpss_reg: str = "c")
 | fuller_reg | str | Type of regression of ADF test. Can be ‘c’,’ct’,’ctt’,’nc’ 'c' - Constant and t - trend order | c | True |
 | kpss_reg | str | Type of regression for KPSS test.  Can be ‘c’,’ct' | c | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with results of ADF test and KPSS test |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_unitroot(data: pd.DataFrame, target: str, fuller_reg: str = "c", kpss_reg: str = "c", export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,10 +58,12 @@ def display_unitroot(data: pd.DataFrame, target: str, fuller_reg: str = "c", kps
 | kpss_reg | str | Type of regression for KPSS test. Can be ‘c’,’ct' | c | True |
 | export | str | Format for exporting data |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

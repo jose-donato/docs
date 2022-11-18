@@ -12,6 +12,7 @@ NFT Collections [Source: https://nftpricefloor.com/]
 usage: collections [--fp] [--sales]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: collections [--fp] [--sales]
 | sales | Flag to display sales over time for top collections | False | True | None |
 
 
+---
 ## Examples
 
 ```python

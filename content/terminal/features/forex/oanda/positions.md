@@ -12,8 +12,10 @@ Get information about open positions.
 usage: positions
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,6 +12,7 @@ Export dataset to Excel
 usage: export [-t {xlsx,csv}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: export [-t {xlsx,csv}]
 | type | The file type you wish to export to | xlsx | True | xlsx, csv |
 
 
+---
 ## Examples
 
 ```python

@@ -12,11 +12,13 @@ Perform a linear regression forecast: https://unit8co.github.io/darts/generated_
 usage: linregr
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

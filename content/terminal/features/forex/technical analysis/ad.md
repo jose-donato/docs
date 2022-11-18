@@ -12,6 +12,7 @@ The Accumulation/Distribution Line is similar to the On Balance Volume (OBV), wh
 usage: ad [--open]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,5 +20,6 @@ usage: ad [--open]
 | b_use_open | uses open value of data | False | True | None |
 
 
+---
 ![ad](https://user-images.githubusercontent.com/46355364/154309283-9512c6c0-dda3-4348-9350-105238676479.png)
 

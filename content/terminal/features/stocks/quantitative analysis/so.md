@@ -12,6 +12,7 @@ Provides the sortino ratio of the selected stock.
 usage: so [-t TARGET_RETURN] [-a] [-w WINDOW]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: so [-t TARGET_RETURN] [-a] [-w WINDOW]
 | window | Rolling window length | 1 | True | None |
 
 
+---
 ![image](https://user-images.githubusercontent.com/75195383/163530572-e527bc75-7ecd-44e3-b971-83b9a0662d0d.png)
 

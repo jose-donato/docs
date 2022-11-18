@@ -12,6 +12,7 @@ Create custom data column from loaded datasets. Can be mathematical expressions 
 usage: eval [-q QUERY [QUERY ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: eval [-q QUERY [QUERY ...]]
 | query | Query to evaluate on loaded datasets | None | True | None |
 
 
+---

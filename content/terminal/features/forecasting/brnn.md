@@ -12,6 +12,7 @@ Perform BRNN forecast (Vanilla RNN, LSTM, GRU): https://unit8co.github.io/darts/
 usage: brnn [--n-rnn-layers N_RNN_LAYERS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: brnn [--n-rnn-layers N_RNN_LAYERS]
 | n_rnn_layers | Number of layers in the RNN module. | 1 | True | None |
 
 
+---
 ## Examples
 
 ```python

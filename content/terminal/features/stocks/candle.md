@@ -12,6 +12,7 @@ Shows historic data for a stock
 usage: candle [-p] [--sort {adjclose,open,close,high,low,volume,returns,logret}] [-r] [--raw] [-t] [--ma MOV_AVG] [--log]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -25,5 +26,6 @@ usage: candle [-p] [--sort {adjclose,open,close,high,low,volume,returns,logret}]
 | logy | Plot with y axis on log scale | False | True | None |
 
 
+---
 ![candle](https://user-images.githubusercontent.com/46355364/154072214-f4b49833-157f-44a7-be2d-d558ffc6f945.png)
 

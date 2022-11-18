@@ -12,6 +12,7 @@ Perform NBEATS forecast (Neural Bayesian Estimation of Time Series): https://uni
 usage: nbeats [--num_stacks NUM_STACKS] [--num_blocks NUM_BLOCKS] [--num_layers NUM_LAYERS] [--layer_widths LAYER_WIDTHS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: nbeats [--num_stacks NUM_STACKS] [--num_blocks NUM_BLOCKS] [--num_layers 
 | layer_widths | Determines the number of neurons that make up each fully connected layer in each block of every stack | 512 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Shows global statistics about Crypto Market
 usage: global [--pie]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: global [--pie]
 | pie | Flag to show pie chart with market cap distribution. Works only with CoinGecko source | False | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Shows overview of public companies that holds ethereum or bitcoin. You can find 
 usage: hold [-c {ethereum,bitcoin}] [-l LIMIT] [--bar]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: hold [-c {ethereum,bitcoin}] [-l LIMIT] [--bar]
 | bar | Flag to show bar chart | False | True | None |
 
 
+---

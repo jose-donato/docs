@@ -12,6 +12,7 @@ Historical Portfolio Info
 usage: history [-s {day,week,month,3month,year,5year,all}] [-i {5minute,10minute,hour,day,week}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: history [-s {day,week,month,3month,year,5year,all}] [-i {5minute,10minute
 | interval | Interval to look at portfolio | day | True | 5minute, 10minute, hour, day, week |
 
 
+---

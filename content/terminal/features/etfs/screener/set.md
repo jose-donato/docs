@@ -12,6 +12,7 @@ Set preset.
 usage: set [-p {etf_config.ini}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: set [-p {etf_config.ini}]
 | preset | Filter presets | template | True | etf_config.ini |
 
 
+---

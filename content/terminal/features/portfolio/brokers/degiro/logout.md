@@ -12,8 +12,10 @@ description: OpenBB Terminal Function
 usage: logout
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

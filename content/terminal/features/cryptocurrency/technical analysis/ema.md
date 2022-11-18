@@ -12,6 +12,7 @@ The Exponential Moving Average is a staple of technical analysis and is used in 
 usage: ema [-l N_LENGTH] [-o N_OFFSET]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: ema [-l N_LENGTH] [-o N_OFFSET]
 | n_offset | offset | 0 | True | None |
 
 
+---
 ![ema](https://user-images.githubusercontent.com/46355364/154310578-6f4a51a8-3667-497c-9c50-7ff16e256fb6.png)
 

@@ -12,6 +12,7 @@ Display DeFi related substack newsletters. [Source: substack.com]
 usage: newsletter [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: newsletter [-l LIMIT]
 | limit | Number of records to display | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

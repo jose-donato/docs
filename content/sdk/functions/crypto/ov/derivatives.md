@@ -1,12 +1,12 @@
 ---
-title: cgderivatives
+title: derivatives
 description: OpenBB SDK Function
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# cgderivatives
+# derivatives
 
 <Tabs>
 <TabItem value="model" label="Model" default>
@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_derivatives(sortby: str = "Rank", ascend: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,12 +26,14 @@ def get_derivatives(sortby: str = "Rank", ascend: bool = False) -> pd.DataFrame
 | sortby | str | Key by which to sort data | Rank | True |
 | ascend | bool | Flag to sort data descending | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rank, Market, Symbol, Price, Pct_Change_24h, Contract_Type, Basis, Spread,<br/>Funding_Rate, Volume_24h, |
 
+---
 
 
 </TabItem>
@@ -43,6 +46,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_derivatives(sortby: str = "Rank", ascend: bool = False, limit: int = 15, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,10 +56,12 @@ def display_derivatives(sortby: str = "Rank", ascend: bool = False, limit: int =
 | ascend | bool | Flag to sort data descending | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

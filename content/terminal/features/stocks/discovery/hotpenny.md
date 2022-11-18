@@ -12,6 +12,7 @@ Provides top penny stocks from various websites. [Source: Yfinance]
 usage: hotpenny [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: hotpenny [-l LIMIT]
 | limit | limit of stocks to display | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,11 +12,13 @@ Normality tests
 usage: normality
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Show countries with highest slopes.
 usage: slopes [-d DAYS] [-r] [-t THRESHOLD]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: slopes [-d DAYS] [-r] [-t THRESHOLD]
 | threshold | Threshold for total cases over period | 10000 | True | None |
 
 
+---

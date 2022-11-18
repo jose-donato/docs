@@ -12,6 +12,7 @@ Load a ticker into option menu
 usage: load -t TICKER
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: load -t TICKER
 | ticker | Stock ticker | None | False | None |
 
 
+---
 ## Examples
 
 ```python

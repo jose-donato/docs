@@ -12,6 +12,7 @@ Companies per Sectors based on Country and Market Cap
 usage: cps [-M MAX_SECTORS_TO_DISPLAY] [-m MIN_PCT_TO_DISPLAY_SECTOR] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: cps [-M MAX_SECTORS_TO_DISPLAY] [-m MIN_PCT_TO_DISPLAY_SECTOR] [-r]
 | raw | Output all raw data | False | True | None |
 
 
+---
 ![CPS](https://user-images.githubusercontent.com/46355364/153896194-512699a7-ce52-4cbd-869e-89397bc96dc4.png)
 

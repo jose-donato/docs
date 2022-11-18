@@ -12,6 +12,7 @@ Obtain any set of indices and plot them together. With the -si argument the majo
 usage: index [-i INDICES] [--show] [--interval {1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo}] [-s START_DATE] [-e END_DATE] [-c COLUMN] [-q QUERY] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -26,6 +27,7 @@ usage: index [-i INDICES] [--show] [--interval {1m,2m,5m,15m,30m,60m,90m,1h,1d,5
 | returns | Flag to show compounded returns over interval. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

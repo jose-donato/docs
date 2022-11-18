@@ -12,8 +12,10 @@ View TradingView for technical analysis. [Source: TradingView]
 usage: tv
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

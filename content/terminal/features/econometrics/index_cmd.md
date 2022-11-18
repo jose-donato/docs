@@ -12,6 +12,7 @@ Set a (multi) index for the dataset
 usage: index -n {} [-i INDEX] [-a] [-d]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: index -n {} [-i INDEX] [-a] [-d]
 | drop | Whether to drop the column(s) the index is set for. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

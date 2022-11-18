@@ -12,6 +12,7 @@ Load dataset (from previous export, custom imports or StatsModels).
 usage: load [-f FILE] [-a ALIAS] [-e]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: load [-f FILE] [-a ALIAS] [-e]
 | examples | Use this argument to show examples of Statsmodels to load in. See: https://www.statsmodels.org/devel/datasets/index.html | False | True | None |
 
 
+---
 ## Examples
 
 ```python

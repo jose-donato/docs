@@ -12,8 +12,10 @@ description: OpenBB Terminal Function
 usage: hold
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

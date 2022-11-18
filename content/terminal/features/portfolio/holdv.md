@@ -12,6 +12,7 @@ Display holdings of assets (absolute value)
 usage: holdv [-u]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: holdv [-u]
 | unstack | Sum all assets value over time | False | True | None |
 
 
+---

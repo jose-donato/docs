@@ -12,11 +12,13 @@ Prints screener data of similar companies. [Source: Finviz]
 usage: overview
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

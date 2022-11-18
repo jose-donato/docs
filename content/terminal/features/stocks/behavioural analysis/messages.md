@@ -12,6 +12,7 @@ Print up to 30 of the last messages on the board. [Source: Stocktwits]
 usage: messages [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: messages [-l LIMIT]
 | limit | limit messages shown. | 30 | True | None |
 
 
+---

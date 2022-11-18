@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend:
 | sortby | str | Key by which to sort data. Every column name is valid<br/>(see for possible values:<br/>https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get). | date | True |
 | ascend | bool | Flag to sort data descending | True | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Twitter timeline for given coin.<br/>Columns: date, user_name, status, retweet_count, like_count |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_twitter(symbol: str = "BTC", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,10 +58,12 @@ def display_twitter(symbol: str = "BTC", limit: int = 10, sortby: str = "date", 
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

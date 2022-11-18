@@ -12,8 +12,10 @@ List of suppliers from ticker provided. [Source: CSIMarket]
 usage: supplier
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

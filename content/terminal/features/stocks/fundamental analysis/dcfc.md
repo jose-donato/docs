@@ -12,6 +12,7 @@ Prints the discounted cash flow of a company over time including the DCF of toda
 usage: dcfc [-l LIMIT] [-q]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: dcfc [-l LIMIT] [-q]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 
 
+---

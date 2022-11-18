@@ -12,6 +12,7 @@ Print top insider sales of the day. [Source: OpenInsider]
 usage: tist [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: tist [-l LIMIT]
 | limit | Limit of datarows to display | 10 | True | None |
 
 
+---

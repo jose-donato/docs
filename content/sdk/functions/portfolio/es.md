@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_es(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool = False, distribution: str = "normal", percentile: float = 99.9) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,9 +22,11 @@ def get_es(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool = F
 | distribution | str | choose distribution to use: logistic, laplace, normal | normal | True |
 | percentile | float | es percentile (%) | 99.9 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with portfolio expected shortfall |
 
+---

@@ -12,6 +12,7 @@ Load address for further analysis. You can analyze account address, token addres
 usage: address [-a] [-t] [-tx] --address ADDRESS
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: address [-a] [-t] [-tx] --address ADDRESS
 | address | Ethereum address | False | False | None |
 
 
+---

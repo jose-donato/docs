@@ -12,6 +12,7 @@ Print up to 25 top losers. [Source: Yahoo Finance]
 usage: losers [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: losers [-l LIMIT]
 | limit | Limit of stocks to display. | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Companies per Industry based on Sector and Market Cap
 usage: cpis [-M MAX_INDUSTRIES_TO_DISPLAY] [-m MIN_PCT_TO_DISPLAY_INDUSTRY] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: cpis [-M MAX_INDUSTRIES_TO_DISPLAY] [-m MIN_PCT_TO_DISPLAY_INDUSTRY] [-r]
 | raw | Output all raw data | False | True | None |
 
 
+---
 ![CPIS](https://user-images.githubusercontent.com/46355364/153896896-9e102f13-28ee-4abf-9277-a7c2ecfd08ab.png)
 

@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_seasonal_decomposition(data: pd.DataFrame, multiplicative: bool = False) -> Tuple[statsmodels.tsa.seasonal.DecomposeResult, pd.DataFrame, pd.DataFrame]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_seasonal_decomposition(data: pd.DataFrame, multiplicative: bool = False)
 | data | pd.DataFrame | Dataframe of targeted data | None | False |
 | multiplicative | bool | Boolean to indicate multiplication instead of addition | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[DecomposeResult, pd.DataFrame, pd.DataFrame] | DecomposeResult class from statsmodels (observed, seasonal, trend, residual, and weights),<br/>Filtered cycle DataFrame,<br/>Filtered trend DataFrame |
 
+---

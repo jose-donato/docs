@@ -12,6 +12,7 @@ See existing countries, or set country if arg specified
 usage: country [-n NAME [NAME ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: country [-n NAME [NAME ...]]
 | name | country to select | None | True | None |
 
 
+---

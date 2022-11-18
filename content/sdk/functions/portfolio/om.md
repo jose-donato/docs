@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float = 0, threshold_end: float = 1.5) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start
 | threshold_start | float | annualized target return threshold start of plotted threshold range | 0 | True |
 | threshold_end | float | annualized target return threshold end of plotted threshold range | 1.5 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with portfolio omega ratio |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float = 0, threshold_end: float = 1.5) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,10 +56,12 @@ def display_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_s
 | threshold_start | float | annualized target return threshold start of plotted threshold range | 0 | True |
 | threshold_end | float | annualized target return threshold end of plotted threshold range | 1.5 | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

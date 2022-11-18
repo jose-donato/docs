@@ -12,8 +12,10 @@ Calendar earnings of the company. Including revenue and earnings estimates. [Sou
 usage: cal
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

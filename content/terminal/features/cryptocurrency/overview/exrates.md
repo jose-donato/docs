@@ -12,6 +12,7 @@ Shows list of crypto, fiats, commodity exchange rates from CoinGecko You can loo
 usage: exrates [-l LIMIT] [-s {Index,Name,Unit,Value,Type}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: exrates [-l LIMIT] [-s {Index,Name,Unit,Value,Type}] [-r]
 | reverse | Data is sorted in ascending order by default. Reverse flag will sort it in an descending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

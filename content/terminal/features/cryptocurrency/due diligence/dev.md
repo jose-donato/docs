@@ -12,11 +12,13 @@ Developers data for loaded coin. If the development data is available you can se
 usage: dev
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

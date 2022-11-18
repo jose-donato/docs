@@ -12,8 +12,10 @@ Print management team. Namely: Name, Title, Information from google and (potenti
 usage: mgmt
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

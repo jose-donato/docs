@@ -12,11 +12,13 @@ Perform Theta forecast: https://unit8co.github.io/darts/generated_api/darts.mode
 usage: theta
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

@@ -12,11 +12,13 @@ Perform Automatic Statistical Forecast (select best statistical model from AutoA
 usage: autoselect
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

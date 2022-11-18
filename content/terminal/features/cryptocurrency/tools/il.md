@@ -12,6 +12,7 @@ Tool to calculate Impermanent Loss in a custom liquidity pool. Users can provide
 usage: il [-a PRICECHANGEA] [-b PRICECHANGEB] [-p PROPORTION] [-v VALUE] [-n]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,3 +24,4 @@ usage: il [-a PRICECHANGEA] [-b PRICECHANGEB] [-p PROPORTION] [-v VALUE] [-n]
 | narrative | Flag to show narrative instead of dataframe | False | True | None |
 
 
+---

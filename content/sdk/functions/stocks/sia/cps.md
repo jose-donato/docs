@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_companies_per_sector_in_country(country: str = "United States", mktcap: str = "Large", exclude_exchanges: bool = True) -> dict
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_companies_per_sector_in_country(country: str = "United States", mktcap: 
 | mktcap | str | Select market cap of companies to consider from Small, Mid and Large | Large | True |
 | exclude_exchanges | bool | Exclude international exchanges | True | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary of sectors and number of companies in a specific country |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_companies_per_sector_in_country(country: str = "United States", mktcap: str = "Large", exclude_exchanges: bool = True, export: str = "", raw: bool = False, max_sectors_to_display: int = 15, min_pct_to_display_sector: float = 0.015, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,10 +61,12 @@ def display_companies_per_sector_in_country(country: str = "United States", mktc
 | min_pct_to_display_sector | float | Minimum percentage to display sector | 0.015 | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

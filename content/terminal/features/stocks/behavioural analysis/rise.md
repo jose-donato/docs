@@ -12,6 +12,7 @@ Print top rising related queries with this stock's query. [Source: Google]
 usage: rise [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: rise [-l LIMIT]
 | limit | limit of top rising related queries to print. | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python
