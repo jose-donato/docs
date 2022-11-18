@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_open_interest_per_exchange(symbol: str, interval: int = 0) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,12 +26,14 @@ def get_open_interest_per_exchange(symbol: str, interval: int = 0) -> pd.DataFra
 | symbol | str | Crypto Symbol to search open interest futures (e.g., BTC) | None | False |
 | interval | int | Frequency (possible values are: 0 for ALL, 2 for 1H, 1 for 4H, 4 for 12H), by default 0 | 0 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | open interest by exchange and price |
 
+---
 
 
 </TabItem>
@@ -43,6 +46,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_open_interest(symbol: str, interval: int = 0, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -51,10 +55,12 @@ def display_open_interest(symbol: str, interval: int = 0, export: str = "") -> N
 | interval | int | Frequency (possible values are: 0 for ALL, 2 for 1H, 1 for 4H, 4 for 12H), by default 0 | 0 | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

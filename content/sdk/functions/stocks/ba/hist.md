@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_historical(symbol: str, start_date: str = None, end_date: str = None, number: int = 100) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,12 +28,14 @@ def get_historical(symbol: str, start_date: str = None, end_date: str = None, nu
 | end_date | str | End date like string or unix timestamp (e.g. 12-21-2021) | None | True |
 | number | int | Number of results returned by API call<br/>Maximum 250 per api call | 100 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical sentiment |
 
+---
 
 
 </TabItem>
@@ -45,6 +48,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_historical(symbol: str, start_date: str = None, end_date: str = None, number: int = 100, raw: bool = False, limit: int = 10, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,10 +62,12 @@ def display_historical(symbol: str, start_date: str = None, end_date: str = None
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

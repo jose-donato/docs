@@ -12,6 +12,7 @@ Compare selected ETFs [Source: StockAnalysis]
 usage: compare -e NAMES
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: compare -e NAMES
 | names | Symbols to compare | None | False | None |
 
 
+---
 ## Examples
 
 ```python

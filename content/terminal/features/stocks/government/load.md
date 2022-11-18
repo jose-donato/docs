@@ -12,6 +12,7 @@ Load stock ticker to perform analysis on. When the data source is syf', an India
 usage: load -t TICKER [-s START] [-e END] [-i {1,5,15,30,60}] [-p] [-f FILEPATH] [-m] [-w] [-r {ytd,1y,2y,5y,6m}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -27,3 +28,4 @@ usage: load -t TICKER [-s START] [-e END] [-i {1,5,15,30,60}] [-p] [-f FILEPATH]
 | iexrange | Range for using the iexcloud api. Longer range requires more tokens in account | ytd | True | ytd, 1y, 2y, 5y, 6m |
 
 
+---

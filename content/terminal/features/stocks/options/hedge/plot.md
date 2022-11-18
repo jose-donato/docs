@@ -12,8 +12,10 @@ This function plots option payoff diagrams
 usage: plot
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

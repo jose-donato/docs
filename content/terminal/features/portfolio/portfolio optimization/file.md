@@ -12,6 +12,7 @@ Select parameter file to use
 usage: file -f FILE [FILE ...]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: file -f FILE [FILE ...]
 | file | Parameter file to be used | None | False | None |
 
 
+---

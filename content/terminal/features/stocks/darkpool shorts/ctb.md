@@ -12,6 +12,7 @@ Show cost to borrow of stocks. [Source: Stocksera/Interactive Broker]
 usage: ctb [-n NUMBER] [--raw]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: ctb [-n NUMBER] [--raw]
 | raw | Print raw data. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

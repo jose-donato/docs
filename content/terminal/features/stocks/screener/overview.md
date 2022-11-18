@@ -12,6 +12,7 @@ Prints overview data of the companies that meet the pre-set filtering.
 usage: overview [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: overview [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 | sort | Sort elements of the table. | Ticker | True | ticker, company, sector, industry, country, marketcap, p/e, price, change, volume |
 
 
+---

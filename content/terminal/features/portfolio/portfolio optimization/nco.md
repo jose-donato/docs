@@ -15,6 +15,7 @@ usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
            {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -47,6 +48,7 @@ usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 | name | Save portfolio with personalized or default name | NCO_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ The column you want to rename from a dataset.
 usage: rename [-d {}] -o OLDCOL -n NEWCOL
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: rename [-d {}] -o OLDCOL -n NEWCOL
 | newcol | New column from dataset to be renamed | None | False | None |
 
 
+---
 ## Examples
 
 ```python

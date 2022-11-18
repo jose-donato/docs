@@ -12,6 +12,7 @@ Shows Largest Gainers - coins which gain the most in given period. You can use p
 usage: gainers [-i {14d,1h,1y,200d,24h,30d,7d}] [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: gainers [-i {14d,1h,1y,200d,24h,30d,7d}] [-l LIMIT] [-s SORTBY [SORTBY ..
 | sortby | Sort by given column. Default: Market Cap Rank | market_cap | True | None |
 
 
+---
 ## Examples
 
 ```python

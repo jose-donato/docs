@@ -12,6 +12,7 @@ Provides Expected Shortfall (short: ES) of the selected stock.
 usage: es [-m] [-d {laplace,student_t,logistic,normal}] [-p PERCENTILE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: es [-m] [-d {laplace,student_t,logistic,normal}] [-p PERCENTILE]
 | percentile | Percentile used for ES calculations, for example input 99.9 equals a 99.9 Percent Expected Shortfall | 99.9 | True | None |
 
 
+---
 ## Examples
 
 ```python

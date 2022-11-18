@@ -12,6 +12,7 @@ Print other users SPACs announcement under subreddit 'SPACs'. [Source: Reddit]
 usage: spacc [-l N_LIMIT] [-p]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: spacc [-l N_LIMIT] [-p]
 | b_popular | popular flag, if true the posts retrieved are based on score rather than time | False | True | None |
 
 
+---
 ## Examples
 
 ```python

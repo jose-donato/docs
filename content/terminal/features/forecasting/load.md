@@ -12,6 +12,7 @@ Load custom dataset (from previous export, custom imports).
 usage: load [-f FILE] [-a ALIAS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: load [-f FILE] [-a ALIAS]
 | alias | Alias name to give to the dataset | None | True | None |
 
 
+---
 ## Examples
 
 ```python

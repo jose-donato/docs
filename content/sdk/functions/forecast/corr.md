@@ -18,18 +18,21 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def corr_df(data: pd.DataFrame) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | The df to produce statistics for | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The df with the new data |
 
+---
 
 
 </TabItem>
@@ -42,6 +45,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_corr(dataset: pd.DataFrame, export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -50,10 +54,12 @@ def display_corr(dataset: pd.DataFrame, export: str = "", external_axes: Optiona
 | export | str | Format to export image |  | True |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

@@ -12,6 +12,7 @@ Unit root test / stationarity (ADF, KPSS)
 usage: unitroot [-r {c,ct,ctt,nc}] [-k {c,ct}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: unitroot [-r {c,ct,ctt,nc}] [-k {c,ct}]
 | kpss_reg | Type of regression. Can be ‘c’,’ct' | c | True | c, ct |
 
 
+---
 ## Examples
 
 ```python

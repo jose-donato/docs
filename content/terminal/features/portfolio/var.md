@@ -12,6 +12,7 @@ Provides value at risk (short: VaR) of the selected portfolio.
 usage: var [-m] [-a] [-s] [-p PERCENTILE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: var [-m] [-a] [-s] [-p PERCENTILE]
 | percentile | Percentile used for VaR calculations, for example input 99.9 equals a 99.9 Percent VaR | 99.9 | True | None |
 
 
+---
 ## Examples
 
 ```python

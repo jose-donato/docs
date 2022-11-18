@@ -12,6 +12,7 @@ Prints ownership data of the companies that meet the pre-set filtering.
 usage: ownership [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: ownership [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 | sort | Sort elements of the table. | Ticker | True | ticker, marketcap, outstanding, float, insiderown, insidertrans, instown, insttrans, floatshort, shortratio, avgvolume, price, change, volume |
 
 
+---

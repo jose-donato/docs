@@ -12,6 +12,7 @@ Print top insider sales of the month. [Source: OpenInsider]
 usage: tispm [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: tispm [-l LIMIT]
 | limit | Limit of datarows to display | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

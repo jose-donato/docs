@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_regression_data(regression_variables: List[tuple], data: Dict[str, pd.DataFrame], regression_type: str = "") -> Tuple[pd.DataFrame, Any, List[Any]]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,9 +21,11 @@ def get_regression_data(regression_variables: List[tuple], data: Dict[str, pd.Da
 | data | dict | A dictionary containing the datasets. | None | False |
 | regression_type | str | The type of regression that is executed. |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[DataFrame, Any, List[Any]] | The dataset used,<br/>Dependent variable,<br/>Independent variable,<br/>OLS model. |
 
+---

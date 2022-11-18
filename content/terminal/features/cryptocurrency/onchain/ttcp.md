@@ -14,6 +14,7 @@ usage: ttcp [-l LIMIT]
             [-d DAYS] [-s {base,quoted,trades,tradeAmount}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -25,3 +26,4 @@ usage: ttcp [-l LIMIT]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---

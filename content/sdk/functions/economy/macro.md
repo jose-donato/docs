@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_aggregated_macro_data(parameters: list = None, countries: list = None, transform: str = "", start_date: str = "1900-01-01", end_date: str = None, symbol: str = "") -> Tuple[pd.DataFrame, Dict[Any, Dict[Any, Any]], str]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -29,12 +30,14 @@ def get_aggregated_macro_data(parameters: list = None, countries: list = None, t
 | end_date | str | The end date, format "YEAR-MONTH-DAY", i.e. 2020-06-05. | None | True |
 | symbol | str | In what currency you wish to convert all values. |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, Dict[Any, Dict[Any, Any]], str] | A DataFrame with the requested macro data of all chosen countries,<br/>A dictionary containing the units of each country's parameter (e.g. EUR),<br/>A string denomination which can be Trillions, Billions, Millions, Thousands |
 
+---
 
 
 </TabItem>
@@ -47,6 +50,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def show_macro_data(parameters: list = None, countries: list = None, transform: str = "", start_date: str = "1900-01-01", end_date: str = None, symbol: str = "", raw: bool = False, external_axes: Optional[List[axes]] = None, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -61,12 +65,14 @@ def show_macro_data(parameters: list = None, countries: list = None, transform: 
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 | export | str | Export data to csv,json,xlsx or png,jpg,pdf,svg file |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Plots the Series. |  |
 
+---
 
 
 </TabItem>

@@ -12,6 +12,7 @@ Print short interest and days to cover. [Source: Stockgrid]
 usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 | sort_field | Field for which to sort by, where 'float': Float Short %%, 'dtc': Days to Cover, 'si': Short Interest | float | True | float, dtc, si |
 
 
+---
 ## Examples
 
 ```python

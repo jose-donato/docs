@@ -12,6 +12,7 @@ Based on specific ratios, prints information whether the company is a (strong) b
 usage: rating [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: rating [-l LIMIT]
 | limit | limit of last days to display ratings | 10 | True | None |
 
 
+---

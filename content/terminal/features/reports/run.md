@@ -12,6 +12,7 @@ Run a notebook from this folder: 'C:\Users\teh_coderer\OpenBBUserData\reports\cu
 usage: run -f {} [-p PARAMETERS [PARAMETERS ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: run -f {} [-p PARAMETERS [PARAMETERS ...]]
 | parameters | Report parameters with format 'name:value'. | None | True | None |
 
 
+---

@@ -12,11 +12,13 @@ Show transactions table
 usage: show
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

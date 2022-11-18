@@ -14,6 +14,7 @@ usage: maxdiv [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,s
               {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -35,6 +36,7 @@ usage: maxdiv [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,s
 | name | Save portfolio with personalized or default name | MAXDIV_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

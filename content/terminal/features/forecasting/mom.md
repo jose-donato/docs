@@ -12,11 +12,13 @@ Add momentum to dataset based on specific column.
 usage: mom
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

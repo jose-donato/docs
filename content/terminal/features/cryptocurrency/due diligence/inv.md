@@ -12,8 +12,10 @@ Display asset's investors [Source: https://messari.io]
 usage: inv
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_news(term: str = "", sources: str = "", sort: str = "published") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,9 +21,11 @@ def get_news(term: str = "", sources: str = "", sort: str = "published") -> pd.D
 | sources | str | sources to exclusively show news from (separated by commas) |  | True |
 | sort | str | the column to sort by | published | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | term to search on the news articles |
 
+---

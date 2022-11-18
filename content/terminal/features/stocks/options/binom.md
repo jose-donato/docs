@@ -12,6 +12,7 @@ Gives the option value using binomial option valuation
 usage: binom [-s STRIKE] [-p] [-e] [-x] [--plot] [-v VOLATILITY]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -24,6 +25,7 @@ usage: binom [-s STRIKE] [-p] [-e] [-x] [--plot] [-v VOLATILITY]
 | volatility | Underlying asset annualized volatility. Historical volatility used if not supplied. | None | True | None |
 
 
+---
 ## Examples
 
 ```python

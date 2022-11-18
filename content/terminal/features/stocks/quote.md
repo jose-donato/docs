@@ -12,6 +12,7 @@ Current quote for stock ticker
 usage: quote -t S_TICKER
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: quote -t S_TICKER
 | s_ticker | stocks/QUOTE_ticker | None | False | None |
 
 
+---

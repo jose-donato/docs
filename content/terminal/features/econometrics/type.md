@@ -12,6 +12,7 @@ Show the type of the columns of the dataset and/or change the type of the column
 usage: type [-n {}] [--format {int,float,str,bool,category,date}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: type [-n {}] [--format {int,float,str,bool,category,date}]
 | format | Set the format for the dataset.column defined. This can be: date, int, float, str, bool or category | None | True | int, float, str, bool, category, date |
 
 
+---
 ## Examples
 
 ```python

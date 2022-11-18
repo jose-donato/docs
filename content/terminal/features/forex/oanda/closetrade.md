@@ -12,6 +12,7 @@ Close a trade by id.
 usage: closetrade [-i ORDERID] [-u UNITS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: closetrade [-i ORDERID] [-u UNITS]
 | units | The number of units on the trade to close. If not set it defaults to all units. | None | True | None |
 
 
+---

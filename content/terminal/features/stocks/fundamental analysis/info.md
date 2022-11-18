@@ -12,11 +12,13 @@ Print information about the company. The following fields are expected: Zip, Sec
 usage: info
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

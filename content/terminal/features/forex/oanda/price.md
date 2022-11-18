@@ -12,8 +12,10 @@ Get price for selected instrument.
 usage: price
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

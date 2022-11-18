@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> pd.DataFrame
 | symbol | str | coin symbol | None | False |
 | to_symbol | str | currency to compare coin against | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | trades for a coin in a given exchange |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int = 10, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,10 +58,12 @@ def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int = 10, 
 | limit | int | number of trades to display | 10 | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

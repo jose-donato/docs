@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_top_tokens(sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,12 +26,14 @@ def get_top_tokens(sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 | sortby | str | Key to sort by. | rank | True |
 | ascend | str | Sort in descending order. | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with list of top 50 tokens. |
 
+---
 
 
 </TabItem>
@@ -43,6 +46,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_top_tokens(limit: int = 15, sortby: str = "rank", ascend: bool = True, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,10 +56,12 @@ def display_top_tokens(limit: int = 15, sortby: str = "rank", ascend: bool = Tru
 | ascend | str | Sort in descending order. | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

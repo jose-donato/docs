@@ -12,6 +12,7 @@ description: OpenBB Terminal Function
 usage: lookup [-l LIMIT] [-o OFFSET] search_text
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: lookup [-l LIMIT] [-o OFFSET] search_text
 | offset | To use an offset. | 0 | True | None |
 
 
+---

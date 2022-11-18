@@ -12,6 +12,7 @@ Prints valuation data of the companies that meet the pre-set filtering.
 usage: valuation [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: valuation [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 | sort | Sort elements of the table. | Ticker | True | ticker, marketcap, p/e, fwdp/e, peg, p/s, p/b, p/c, p/fcf, epsthisy, epsnexty, epspast5y, epsnext5y, salespast5y, price, change, volume |
 
 
+---

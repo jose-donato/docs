@@ -18,16 +18,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def open_positions_request(accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>
@@ -40,16 +43,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_open_positions(accountID: str) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

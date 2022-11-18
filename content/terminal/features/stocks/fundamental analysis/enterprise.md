@@ -12,6 +12,7 @@ Prints stock price, number of shares, market capitalization and enterprise value
 usage: enterprise [-l LIMIT] [-q]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: enterprise [-l LIMIT] [-q]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

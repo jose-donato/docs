@@ -12,6 +12,7 @@ Print up to 25 small cap stocks with earnings growth rates better than 25%. [Sou
 usage: asc [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: asc [-l LIMIT]
 | limit | Limit of stocks to display. | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

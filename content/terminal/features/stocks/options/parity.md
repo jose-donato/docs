@@ -12,6 +12,7 @@ Shows whether options are over or under valued
 usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 | maxi | Maximum strike price shown | None | True | None |
 
 
+---
 ## Examples
 
 ```python

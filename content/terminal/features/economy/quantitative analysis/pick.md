@@ -12,6 +12,7 @@ Load a FRED series to current selection
 usage: load [-c {Open,High,Low,Close,Adj Close,Volume,date_id,OC_High,OC_Low,Returns,LogRet}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: load [-c {Open,High,Low,Close,Adj Close,Volume,date_id,OC_High,OC_Low,Ret
 | column | Which loaded source to get data from | None | True | Open, High, Low, Close, Adj Close, Volume, date_id, OC_High, OC_Low, Returns, LogRet |
 
 
+---
 ## Examples
 
 ```python

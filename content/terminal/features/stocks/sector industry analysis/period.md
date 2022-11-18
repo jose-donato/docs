@@ -12,6 +12,7 @@ Set period between annual, quarterly and trailing
 usage: period [-n {Annual,Quarterly,Trailing,annual,quarterly,trailing}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: period [-n {Annual,Quarterly,Trailing,annual,quarterly,trailing}]
 | name | period to select | None | True | Annual, Quarterly, Trailing, annual, quarterly, trailing |
 
 
+---

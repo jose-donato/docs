@@ -12,11 +12,13 @@ Display base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
 usage: stats
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

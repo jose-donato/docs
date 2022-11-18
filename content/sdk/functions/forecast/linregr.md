@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_linear_regression_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, output_chunk_length: int = 5, lags: Union[int, List[int]] = 14, random_state: Optional[int] = None) -> Tuple[List[darts.timeseries.TimeSeries], List[darts.timeseries.TimeSeries], List[darts.timeseries.TimeSeries], float, darts.models.forecasting.linear_regression_model.LinearRegressionModel]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,12 +33,14 @@ def get_linear_regression_data(data: Union[pd.Series, pd.DataFrame], target_colu
 | lags | Union[int, List[int]] | lagged target values to predict the next time step | 14 | True |
 | random_state | Optional[int] | The state for the model | None | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[List[TimeSeries], List[TimeSeries], List[TimeSeries], float, LinearRegressionModel] | Adjusted Data series,<br/>Historical forecast by best RNN model,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best Linear Regression Model. |
 
+---
 
 
 </TabItem>
@@ -50,6 +53,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_linear_regression(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", dataset_name: str = "", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, output_chunk_length: int = 1, lags: Union[int, List[int]] = 72, export: str = "", residuals: bool = False, forecast_only: bool = False, start_date: Optional[datetime.datetime] = None, end_date: Optional[datetime.datetime] = None, naive: bool = False, explainability_raw: bool = False, export_pred_raw: bool = False, external_axes: Optional[List[axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -71,10 +75,12 @@ def display_linear_regression(data: Union[pd.Series, pd.DataFrame], target_colum
 | naive | bool | Whether to show the naive baseline. This just assumes the closing price will be the<br/>same as the previous day's closing price. Defaults to False. | False | True |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

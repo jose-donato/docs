@@ -5,20 +5,45 @@ description: OpenBB SDK Function
 
 # futures
 
-Scrape data for top commodities
+Get futures data.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L108)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/sdk_helpers.py#L8)]
 
 ```python
-def top_commodities() -> pd.DataFrame
+def futures(source: Any = "WSJ", future_type: str = "Indices") -> pd.DataFrame
 ```
+---
 ## Parameters
 
-This function does not take any parameters.
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| source | str | Data source for futures data.  From the following: WSJ, Finviz | WSJ | True |
+| future_type | str | (Finviz only) Future type to get.  Can be: Indices, Energy, Metals, Meats, Grains, Softs, Bonds, Currencies. | Indices | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | Dataframe containing name, price, net change and percent change |
+| pd.DataFrame | Dataframe of futures data. |
 
+---
+## Examples
+
+
+To sort by the largest percent change:
+```python
+from openbb_terminal.sdk import openbb
+wsj_futures = openbb.economy.futures()
+```
+
+---
+## Examples
+
+
+FinViz provides different options for future types.  We can get Meats with the following command:
+```python
+futures_sorted = openbb.economy.futures().sort_values(by="%Chg", ascending=False)
+```
+
+---

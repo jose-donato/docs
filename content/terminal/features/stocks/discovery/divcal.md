@@ -12,6 +12,7 @@ Get dividend calendar for selected date
 usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

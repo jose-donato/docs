@@ -12,6 +12,7 @@ Monthly returns
 usage: mret [-p {3y,5y,10y,all}] [-s]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: mret [-p {3y,5y,10y,all}] [-s]
 | show_vals | Show monthly returns on heatmap | False | True | None |
 
 
+---

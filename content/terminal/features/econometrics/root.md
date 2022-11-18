@@ -12,6 +12,7 @@ Show unit root tests of a column of a dataset
 usage: root -v {} [-r {c,ct,ctt,n}] [-k {c,ct}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: root -v {} [-r {c,ct,ctt,n}] [-k {c,ct}]
 | kpss_reg | Type of regression. Can be 'c', 'ct'. c - Constant and t - trend order | c | True | c, ct |
 
 
+---
 ## Examples
 
 ```python

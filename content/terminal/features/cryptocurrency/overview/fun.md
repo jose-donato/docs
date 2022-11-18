@@ -12,6 +12,7 @@ Display fundamental metrics overview [Source: Token Terminal]
 usage: fun -m {twitter_followers,gmv_annualized,market_cap,take_rate,revenue,revenue_protocol,tvl,pe,pe_circulating,ps,ps_circulating} [-c {Asset Management,Blockchain,DeFi,Exchange,Gaming,Insurance,Interoperability,Lending,NFT,Other,Prediction Market,Stablecoin}] [-t {24h,7d,30d,90d,180d,365d}] [-r] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,6 +24,7 @@ usage: fun -m {twitter_followers,gmv_annualized,market_cap,take_rate,revenue,rev
 | limit | Display N items | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

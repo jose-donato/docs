@@ -12,6 +12,7 @@ Get daily transactions for certain symbols in ethereum blockchain [Source: https
 usage: ds [-p {uniswap-v3,uniswap-v2,sushiswap,curve}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: ds [-p {uniswap-v3,uniswap-v2,sushiswap,curve}]
 | platform | Ethereum platform to check fees/number of users over time | curve | True | uniswap-v3, uniswap-v2, sushiswap, curve |
 
 
+---

@@ -12,8 +12,10 @@ Get information about open trades.
 usage: trades
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

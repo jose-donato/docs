@@ -12,15 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def load_bl_views(excel_file: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | excel_file | str | The location of the Excel file that needs to be loaded. |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | list | Returns a list with p_views matrix |
 
+---

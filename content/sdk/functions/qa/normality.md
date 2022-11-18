@@ -18,18 +18,21 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_normality(data: pd.DataFrame) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of targeted data | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing statistics of normality |
 
+---
 
 
 </TabItem>
@@ -42,6 +45,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_normality(data: pd.DataFrame, target: str, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -50,10 +54,12 @@ def display_normality(data: pd.DataFrame, target: str, export: str = "") -> None
 | target | str | Column in data to look at | None | False |
 | export | str | Format to export data |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

@@ -12,6 +12,7 @@ Print up to 25 undervalued stocks with revenue and earnings growth in excess of 
 usage: ugs [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: ugs [-l LIMIT]
 | limit | Limit of stocks to display. | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

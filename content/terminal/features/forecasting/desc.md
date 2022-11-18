@@ -12,11 +12,13 @@ Show descriptive statistics of a dataset
 usage: desc
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

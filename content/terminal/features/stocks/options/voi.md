@@ -12,6 +12,7 @@ Plots Volume + Open Interest of calls vs puts.
 usage: voi [-v MIN_VOL] [-m MIN_SP] [-M MAX_SP]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: voi [-v MIN_VOL] [-m MIN_SP] [-M MAX_SP]
 | max_sp | maximum strike price to consider in the plot. | -1 | True | None |
 
 
+---
 ![voi](https://user-images.githubusercontent.com/46355364/154290408-ae5d50ff-74ea-4705-b8ea-e4eebc842bb6.png)
 

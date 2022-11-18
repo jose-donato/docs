@@ -12,6 +12,7 @@ Bollinger Bands consist of three lines. The middle band is a simple moving avera
 usage: bbands [-l N_LENGTH] [-s N_STD] [-m {ema,sma,wma,hma,zlma}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: bbands [-l N_LENGTH] [-s N_STD] [-m {ema,sma,wma,hma,zlma}]
 | s_mamode | mamode | sma | True | ema, sma, wma, hma, zlma |
 
 
+---
 ![bbands](https://user-images.githubusercontent.com/46355364/154309951-116f3c31-342d-4ceb-b489-8b0ba78eb3a0.png)
 

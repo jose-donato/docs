@@ -12,6 +12,7 @@ Show allocation of a swedish fund.
 usage: alswe [--focus {all,country,sector,holding}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: alswe [--focus {all,country,sector,holding}]
 | focus | The focus of the funds exposure/allocation | all | True | all, country, sector, holding |
 
 
+---

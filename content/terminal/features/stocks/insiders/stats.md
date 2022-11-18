@@ -12,6 +12,7 @@ Open insider filtered data using selected ticker. [Source: OpenInsider]
 usage: stats [-l LIMIT] [-u]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: stats [-l LIMIT] [-u]
 | urls | Flag to show hyperlinks | False | True | None |
 
 
+---

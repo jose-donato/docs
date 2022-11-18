@@ -12,13 +12,16 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_marketcap() -> list
 ```
+---
 ## Parameters
 
 This function does not take any parameters.
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | list | List of possible market caps |
 
+---

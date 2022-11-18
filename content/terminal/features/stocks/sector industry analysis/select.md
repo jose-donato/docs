@@ -12,6 +12,7 @@ Select stock ticker and alter the industry, sector, country and market cap accor
 usage: select -t TICKER
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: select -t TICKER
 | ticker | Stock ticker | None | False | None |
 
 
+---

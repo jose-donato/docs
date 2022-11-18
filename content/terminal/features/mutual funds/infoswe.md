@@ -12,8 +12,10 @@ Show fund info of a swedish fund.
 usage: infoswe
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

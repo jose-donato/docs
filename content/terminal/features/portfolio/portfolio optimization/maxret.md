@@ -14,6 +14,7 @@ usage: maxret [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-cv
               {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -41,6 +42,7 @@ usage: maxret [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-cv
 | name | Save portfolio with personalized or default name | MAXRET_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

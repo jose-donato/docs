@@ -12,6 +12,7 @@ Perform TCN forecast: https://unit8co.github.io/darts/generated_api/darts.models
 usage: tcn [--num-filters NUM_FILTERS] [--weight-norm WEIGHT_NORM] [--dilation-base DILATION_BASE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: tcn [--num-filters NUM_FILTERS] [--weight-norm WEIGHT_NORM] [--dilation-b
 | dilation_base | The base of the exponent that will determine the dilation on every level. | 2 | True | None |
 
 
+---
 ## Examples
 
 ```python

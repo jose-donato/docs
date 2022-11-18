@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def kc(data: pd.DataFrame, window: int = 20, scalar: float = 2, mamode: str = "ema", offset: int = 0) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,12 +29,14 @@ def kc(data: pd.DataFrame, window: int = 20, scalar: float = 2, mamode: str = "e
 | mamode | str | Type of filter | ema | True |
 | offset | int | Offset value | 0 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of rolling kc |
 
+---
 
 
 </TabItem>
@@ -46,6 +49,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def view_kc(data: pd.DataFrame, window: int = 20, scalar: float = 2, mamode: str = "ema", offset: int = 0, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -59,10 +63,12 @@ def view_kc(data: pd.DataFrame, window: int = 20, scalar: float = 2, mamode: str
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

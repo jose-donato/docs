@@ -12,6 +12,7 @@ Prints technical data of the companies that meet the pre-set filtering.
 usage: technical [-p Desired preset.] [-l LIMIT] [-r] [-s {ticker,beta,atr,sma20,sma50,sma200,52whigh,52wlow,rsi,price,change,fromopen,gap,volume}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: technical [-p Desired preset.] [-l LIMIT] [-r] [-s {ticker,beta,atr,sma20
 | sort | Sort elements of the table. | Ticker | True | ticker, beta, atr, sma20, sma50, sma200, 52whigh, 52wlow, rsi, price, change, fromopen, gap, volume |
 
 
+---

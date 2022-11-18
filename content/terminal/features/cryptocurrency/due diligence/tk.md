@@ -12,8 +12,10 @@ Display asset's tokenomics [Source: https://messari.io]
 usage: tk
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

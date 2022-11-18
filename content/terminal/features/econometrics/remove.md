@@ -12,6 +12,7 @@ Remove a dataset from the loaded dataset list
 usage: remove [-n {}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: remove [-n {}]
 | name | The name of the dataset you want to remove | None | True | None |
 
 
+---
 ## Examples
 
 ```python

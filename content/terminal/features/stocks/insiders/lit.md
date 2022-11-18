@@ -12,6 +12,7 @@ Print latest insider trading. [Source: OpenInsider]
 usage: lit [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: lit [-l LIMIT]
 | limit | Limit of datarows to display | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

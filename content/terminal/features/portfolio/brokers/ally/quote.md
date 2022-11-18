@@ -12,6 +12,7 @@ Get stock quote
 usage: quote [-t TICKER]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: quote [-t TICKER]
 | ticker | Ticker to get quote for. Can be in form of 'tick1,tick2...' | None | True | None |
 
 
+---

@@ -12,6 +12,7 @@ The Stochastic Oscillator measures where the close is in relation to the recent 
 usage: stoch [-k N_FASTKPERIOD] [-d N_SLOWDPERIOD] [--slowkperiod N_SLOWKPERIOD]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: stoch [-k N_FASTKPERIOD] [-d N_SLOWDPERIOD] [--slowkperiod N_SLOWKPERIOD]
 | n_slowkperiod | The time period of the slowk moving average | 3 | True | None |
 
 
+---
 ![stoch](https://user-images.githubusercontent.com/46355364/154311913-d58e58bb-d116-44dd-ae4b-44e59c25f22a.png)
 

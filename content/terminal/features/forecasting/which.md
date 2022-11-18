@@ -12,11 +12,13 @@ Show library versions of required packages.
 usage: which
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

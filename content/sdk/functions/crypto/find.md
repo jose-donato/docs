@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def find(query: str, source: str = "CoinGecko", key: str = "symbol", limit: int = 10, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -22,7 +23,9 @@ def find(query: str, source: str = "CoinGecko", key: str = "symbol", limit: int 
 | limit | int | Number of records to display | 10 | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---

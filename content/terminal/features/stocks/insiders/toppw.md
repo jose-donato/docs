@@ -12,6 +12,7 @@ Print top officer purchases of the week. [Source: OpenInsider]
 usage: toppw [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: toppw [-l LIMIT]
 | limit | Limit of datarows to display | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

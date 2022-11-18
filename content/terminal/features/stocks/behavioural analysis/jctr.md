@@ -12,8 +12,10 @@ Show cramer recommendation for loaded ticker
 usage: jctr
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

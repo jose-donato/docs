@@ -12,6 +12,7 @@ Display list of major crypto-related hacks [Source: https://rekt.news] Can be so
 usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 | slug | Slug to check crypto hack (e.g., polynetwork-rekt) |  | True | None |
 
 
+---
 ## Examples
 
 ```python

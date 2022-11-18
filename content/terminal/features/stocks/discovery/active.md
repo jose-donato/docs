@@ -12,6 +12,7 @@ Print up to 25 top most actively traded intraday tickers. [Source: Yahoo Finance
 usage: active [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: active [-l LIMIT]
 | limit | Limit of stocks to display. | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

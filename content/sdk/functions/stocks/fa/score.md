@@ -12,15 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_score(symbol: str) -> Optional[numpy.number]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | np.number | Value score |
 
+---

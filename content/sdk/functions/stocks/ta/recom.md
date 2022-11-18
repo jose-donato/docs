@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_tradingview_recommendation(symbol: str, screener: str = "america", exchange: str = "", interval: str = "") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,12 +28,14 @@ def get_tradingview_recommendation(symbol: str, screener: str = "america", excha
 | exchange | str | Exchange based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html |  | True |
 | interval | str | Interval time to check technical indicators and correspondent recommendation |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of tradingview recommendations based on technical indicators |
 
+---
 
 
 </TabItem>
@@ -45,6 +48,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def print_recommendation(symbol: str, screener: str = "america", exchange: str = "", interval: str = "", export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,10 +59,12 @@ def print_recommendation(symbol: str, screener: str = "america", exchange: str =
 | interval | str | Interval time to check technical indicators and correspondent recommendation |  | True |
 | export | str | Format of export file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

@@ -12,6 +12,7 @@ Print Major, institutional and mutualfunds shareholders. [Source: Yahoo Finance]
 usage: shrs [--holder {major,institutional,mutualfund}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: shrs [--holder {major,institutional,mutualfund}]
 | holder | Table of holders to get | institutional | True | major, institutional, mutualfund |
 
 
+---

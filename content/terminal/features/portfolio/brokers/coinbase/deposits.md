@@ -12,6 +12,7 @@ Display a list of deposits for your account.
 usage: deposits [-t {internal_deposit,deposit}] [-l LIMIT] [-s {created_at,amount}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: deposits [-t {internal_deposit,deposit}] [-l LIMIT] [-s {created_at,amoun
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---

@@ -14,6 +14,7 @@ usage: riskparity [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,CDaR,EDaR,UCI}] [-rc RISK
                   {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -38,6 +39,7 @@ usage: riskparity [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,CDaR,EDaR,UCI}] [-rc RISK
 | name | Save portfolio with personalized or default name | RP_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

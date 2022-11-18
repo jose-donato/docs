@@ -12,6 +12,7 @@ Display information about listed dApps on DeFi Llama. [Source: https://docs.llam
 usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,change_7d,name}] [-r] [--desc]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,cha
 | description | Flag to display description of protocol | False | True | None |
 
 
+---
 ## Examples
 
 ```python

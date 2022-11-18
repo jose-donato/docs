@@ -12,11 +12,13 @@ Add rate of change to dataset based on specific column.
 usage: roc
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Shows a plot for the given x and y variables
 usage: plot [-p] [-x {ltd,s,lp,b,a,c,pc,v,oi,iv}] [-y {ltd,s,lp,b,a,c,pc,v,oi,iv}] [-c {smile}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: plot [-p] [-x {ltd,s,lp,b,a,c,pc,v,oi,iv}] [-y {ltd,s,lp,b,a,c,pc,v,oi,iv
 | custom | Choose from already created graphs | None | True | smile |
 
 
+---
 ## Examples
 
 ```python

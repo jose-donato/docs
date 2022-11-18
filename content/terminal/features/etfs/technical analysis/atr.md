@@ -12,6 +12,7 @@ Averge True Range is used to measure volatility, especially volatility caused by
 usage: atr [-l N_LENGTH] [-m {ema,sma,wma,hma,zlma}] [-o N_OFFSET]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: atr [-l N_LENGTH] [-m {ema,sma,wma,hma,zlma}] [-o N_OFFSET]
 | n_offset | offset | 0 | True | None |
 
 
+---

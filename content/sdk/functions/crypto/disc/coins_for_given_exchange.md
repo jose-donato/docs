@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_coins_for_given_exchange(exchange_id: str = "binance", page: int = 1) -> dict
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_coins_for_given_exchange(exchange_id: str = "binance", page: int = 1) ->
 | exchange_id | str | id of exchange | binance | True |
 | page | int | number of page. One page contains 100 records | 1 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | dict | dictionary with all trading pairs on binance |
 
+---

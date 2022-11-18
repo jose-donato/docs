@@ -12,6 +12,7 @@ Prints financial data of the companies that meet the pre-set filtering.
 usage: financial [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: financial [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 | sort | Sort elements of the table. | Ticker | True | ticker, marketcap, dividend, roa, roe, roi, currr, quickr, ltdebt/eq, debt/eq, grossm, operm, profitm, earnings, price, change, volume |
 
 
+---

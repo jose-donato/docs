@@ -12,8 +12,10 @@ Display analysis of SEC filings based on NLP model. [Source: https://eclect.us]
 usage: analysis
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

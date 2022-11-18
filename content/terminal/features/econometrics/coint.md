@@ -12,6 +12,7 @@ Show co-integration between two timeseries
 usage: coint -t TS [-p] [-s SIGNIFICANT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: coint -t TS [-p] [-s SIGNIFICANT]
 | significant | Show only companies that have p-values lower than this percentage | 0 | True | None |
 
 
+---
 ## Examples
 
 ```python

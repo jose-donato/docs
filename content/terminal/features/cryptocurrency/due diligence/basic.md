@@ -12,11 +12,13 @@ Get basic information for coin. Like: name, symbol, rank, type, description, pla
 usage: basic
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

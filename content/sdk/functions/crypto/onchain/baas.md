@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,12 +29,14 @@ def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", li
 | sortby | str | Key by which to sort data | date | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Average bid and ask prices, spread for given crypto pair for chosen time period |
 
+---
 
 
 </TabItem>
@@ -46,6 +49,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,12 +61,14 @@ def display_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT"
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Average bid and ask prices, spread for given crypto pair for chosen time period |
 
+---
 
 
 </TabItem>

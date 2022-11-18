@@ -18,16 +18,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_headlines_sentiment(symbol: str) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker of company | None | False |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>
@@ -40,6 +43,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_stock_price_headlines_sentiment(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -48,10 +52,12 @@ def display_stock_price_headlines_sentiment(symbol: str, export: str = "", exter
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

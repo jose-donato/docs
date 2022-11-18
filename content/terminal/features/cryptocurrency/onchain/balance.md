@@ -12,6 +12,7 @@ Display info about tokens on given ethereum blockchain balance. [Source: Ethplor
 usage: balance [-l LIMIT] [-s {index,balance,tokenName,tokenSymbol}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: balance [-l LIMIT] [-s {index,balance,tokenName,tokenSymbol}] [-r]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---

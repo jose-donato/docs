@@ -12,6 +12,7 @@ A discounted cash flow statement looks to analyze the value of a company. To do 
 usage: dcf [-a] [--no-ratios] [--no-filter] [-p PREDICTION] [-s SIMILAR] [-g]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -24,6 +25,7 @@ usage: dcf [-a] [--no-ratios] [--no-filter] [-p PREDICTION] [-s SIMILAR] [-g]
 | growth | Whether to replace a linear regression estimate with a growth estimate. | False | True | None |
 
 
+---
 ![dcf financials](https://user-images.githubusercontent.com/46355364/154241001-42be82e5-f001-4fd1-bcf4-cd55c7cef358.png)
 
 ![dcf free cash flows](https://user-images.githubusercontent.com/46355364/154241130-f52c580e-710d-4cac-a8f3-f9bfece7865a.png)

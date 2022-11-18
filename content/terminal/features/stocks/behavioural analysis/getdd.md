@@ -12,6 +12,7 @@ Print top stock's due diligence from other users. [Source: Reddit]
 usage: getdd [-l LIMIT] [-d DAYS] [-a]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: getdd [-l LIMIT] [-d DAYS] [-a]
 | all | search through all flairs (apart from Yolo and Meme), otherwise we focus on specific flairs: DD, technical analysis, Catalyst, News, Advice, Chart | False | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_sharpe_ratio(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float = 0) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_sharpe_ratio(portfolio_engine: portfolio_model.PortfolioEngine, risk_fre
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | risk_free_rate | float | Risk free rate value | 0 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with sharpe ratio for portfolio and benchmark for different periods |
 
+---

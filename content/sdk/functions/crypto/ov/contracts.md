@@ -1,12 +1,12 @@
 ---
-title: cpcontracts
+title: contracts
 description: OpenBB SDK Function
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# cpcontracts
+# contracts
 
 <Tabs>
 <TabItem value="model" label="Model" default>
@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_contract_platform(platform_id: str = "eth-ethereum", sortby: str = "active", ascend: bool = True) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_contract_platform(platform_id: str = "eth-ethereum", sortby: str = "acti
 | sortby | str | Key by which to sort data | active | True |
 | ascend | bool | Flag to sort data ascend | True | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | id, type, active |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_contracts(symbol: str, sortby: str = "active", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,10 +58,12 @@ def display_contracts(symbol: str, sortby: str = "active", ascend: bool = True, 
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

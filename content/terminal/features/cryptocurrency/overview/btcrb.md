@@ -12,6 +12,7 @@ Display bitcoin rainbow chart overtime including halvings. [Price data from sour
 usage: btcrb [-s SINCE] [-u UNTIL]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: btcrb [-s SINCE] [-u UNTIL]
 | until | Final date. Default is current date | 2022-11-18 | True | None |
 
 
+---
 ![btcrb](https://user-images.githubusercontent.com/46355364/154068553-f40e8a63-dd69-4508-a0f1-d91cfd5e6e9b.png)
 

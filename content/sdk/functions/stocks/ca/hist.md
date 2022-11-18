@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_historical(similar: List[str], start_date: str = None, candle_type: str = "a") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_historical(similar: List[str], start_date: str = None, candle_type: str 
 | start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
 | candle_type | str | Candle variable to compare, by default "a" for Adjusted Close. Possible values are: o, h, l, c, a, v, r | a | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing candle type variable for each ticker |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_historical(similar: List[str], start_date: str = None, candle_type: str = "a", normalize: bool = True, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,10 +59,12 @@ def display_historical(similar: List[str], start_date: str = None, candle_type: 
 | export | str | Format to export historical prices, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

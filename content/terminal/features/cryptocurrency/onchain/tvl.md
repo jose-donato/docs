@@ -12,6 +12,7 @@ Total value locked (TVL) metric - Ethereum ERC20 [Source:https://docs.flipsidecr
 usage: tvl [-u USERADDRESS] [-a ADDRESSNAME] [-s SYMBOL] [-i INTERVAL]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: tvl [-u USERADDRESS] [-a ADDRESSNAME] [-s SYMBOL] [-i INTERVAL]
 | interval | Interval in months | 12 | True | None |
 
 
+---

@@ -12,6 +12,7 @@ Plot interest over time of words/sentences versus stock price. [Source: Google]
 usage: interest [-s START] [-w WORDS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: interest [-s START] [-w WORDS]
 | words | Select multiple sentences/words separated by commas. E.g. COVID,WW3,NFT | None | True | None |
 
 
+---
 ![interest](https://user-images.githubusercontent.com/25267873/157575723-23c55e4e-9e87-4647-b8fa-8ed9643f471f.png)
 

@@ -12,6 +12,7 @@ Shows top cryptocurrency categories by market capitalization. It includes catego
 usage: categories [-l LIMIT] [-s {Name,Market_Cap,Market_Cap_Change_24H,Top_3_Coins,Volume_24H}] [--pie]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: categories [-l LIMIT] [-s {Name,Market_Cap,Market_Cap_Change_24H,Top_3_Co
 | pie | Flag to show pie chart | False | True | None |
 
 
+---
 ## Examples
 
 ```python

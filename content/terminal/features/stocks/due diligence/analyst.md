@@ -12,11 +12,13 @@ Print analyst prices and ratings of the company. The following fields are expect
 usage: analyst
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

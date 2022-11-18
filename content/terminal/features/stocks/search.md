@@ -12,6 +12,7 @@ Show companies matching the search query
 usage: search [-q QUERY [QUERY ...]] [-c country_name] [-s SECTOR [SECTOR ...]] [-i INDUSTRY [INDUSTRY ...]] [-e country_name]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,3 +24,4 @@ usage: search [-q QUERY [QUERY ...]] [-c country_name] [-s SECTOR [SECTOR ...]] 
 | exchange_country | Search by a specific exchange country to find stocks matching the criteria |  | True | united_states, argentina, austria, australia, belgium, brazil, canada, chile, china, czech_republic, denmark, egypt, estonia, europe, finland, france, germany, greece, hong_kong, hungary, iceland, india, indonesia, ireland, israel, italy, japan, latvia, lithuania, malaysia, mexico, netherlands, new_zealand, norway, portugal, qatar, russia, singapore, south_africa, south_korea, spain, saudi_arabia, sweden, switzerland, taiwan, thailand, turkey, united_kingdom, venezuela |
 
 
+---

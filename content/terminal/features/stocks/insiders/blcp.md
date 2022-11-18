@@ -12,6 +12,7 @@ Print latest CEO/CFO purchases 25k. [Source: OpenInsider]
 usage: blcp [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: blcp [-l LIMIT]
 | limit | Limit of datarows to display | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

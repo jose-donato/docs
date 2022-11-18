@@ -12,6 +12,7 @@ Prints a complete balance sheet statement over time. This can be either quarterl
 usage: balance [-q] [-r] [-p PLOT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: balance [-q] [-r] [-p PLOT]
 | plot | Rows to plot, comma separated. (-1 represents invalid data) | None | True | None |
 
 
+---
 ## Examples
 
 ```python

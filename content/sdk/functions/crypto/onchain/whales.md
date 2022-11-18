@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: str = "date", ascend: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,12 +28,14 @@ def get_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: s
 | sortby | str | Key to sort by. | date | True |
 | ascend | str | Sort in ascending order. | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Crypto wales transactions |
 
+---
 
 
 </TabItem>
@@ -45,6 +48,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: str = "date", ascend: bool = False, show_address: bool = False, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,10 +60,12 @@ def display_whales_transactions(min_value: int = 800000, limit: int = 100, sortb
 | show_address | bool | Flag to show addresses of transactions. | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

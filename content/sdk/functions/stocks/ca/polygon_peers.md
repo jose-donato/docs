@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_similar_companies(symbol: str, us_only: bool = False) -> List[str]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +20,11 @@ def get_similar_companies(symbol: str, us_only: bool = False) -> List[str]
 | symbol | str | Ticker to get similar companies of | None | False |
 | us_only | bool | Only stocks from the US stock exchanges | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 |  | List of similar tickers |
 
+---

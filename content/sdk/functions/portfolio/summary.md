@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_summary(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all", risk_free_rate: float = 0) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,9 +21,11 @@ def get_summary(portfolio_engine: portfolio_model.PortfolioEngine, window: str =
 | window | str | interval to compare cumulative returns and benchmark | all | True |
 | risk_free_rate | float | Risk free rate for calculations | 0 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with portfolio and benchmark returns summary |
 
+---

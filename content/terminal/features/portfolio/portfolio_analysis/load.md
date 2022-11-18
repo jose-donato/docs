@@ -12,6 +12,7 @@ Function to get portfolio from predefined csv/json/xlsx file inside portfolios f
 usage: load [-s] [-c] [--no_last_price] [--nan] [-p {}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,3 +24,4 @@ usage: load [-s] [-c] [--no_last_price] [--nan] [-p {}]
 | path | Path to portfolio file | my_portfolio.csv | True | None |
 
 
+---

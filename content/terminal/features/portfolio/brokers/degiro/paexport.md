@@ -12,6 +12,7 @@ description: OpenBB Terminal Function
 usage: paexport -s START [-e END] [-c CURRENCY]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: paexport -s START [-e END] [-c CURRENCY]
 | currency | Used currency. | USD | True | None |
 
 
+---

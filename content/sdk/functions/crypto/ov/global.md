@@ -1,12 +1,12 @@
 ---
-title: cgglobal
+title: global
 description: OpenBB SDK Function
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# cgglobal
+# global
 
 <Tabs>
 <TabItem value="model" label="Model" default>
@@ -18,16 +18,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_global_markets_info() -> pd.DataFrame
 ```
+---
 ## Parameters
 
 This function does not take any parameters.
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Market_Cap, Volume, Market_Cap_Percentage |
 
+---
 
 
 </TabItem>
@@ -40,6 +43,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_global_market_info(pie: bool = False, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -47,10 +51,12 @@ def display_global_market_info(pie: bool = False, export: str = "") -> None
 | pie | bool | Whether to show a pie chart | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

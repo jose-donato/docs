@@ -12,6 +12,7 @@ Shows stablecoins by market capitalization. Stablecoins are cryptocurrencies tha
 usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 | pie | Flag to show pie chart | False | True | None |
 
 
+---
 ## Examples
 
 ```python

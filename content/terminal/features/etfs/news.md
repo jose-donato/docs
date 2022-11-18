@@ -12,6 +12,7 @@ Prints latest news about ETF, including date, title and web link. [Source: News 
 usage: news [-l LIMIT] [-d N_START_DATE] [-o] [-s SOURCES]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: news [-l LIMIT] [-d N_START_DATE] [-o] [-s SOURCES]
 | sources | Show news only from the sources specified (e.g bbc yahoo.com) |  | True | None |
 
 
+---

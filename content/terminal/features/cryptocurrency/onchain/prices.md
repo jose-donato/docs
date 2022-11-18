@@ -12,6 +12,7 @@ description: OpenBB Terminal Function
 usage: prices [-l LIMIT] [-s {date,cap,volumeConverted,open,high,close,low}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: prices [-l LIMIT] [-s {date,cap,volumeConverted,open,high,close,low}] [-r
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---

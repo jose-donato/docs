@@ -12,6 +12,7 @@ Perform TFT forecast (Temporal Fusion Transformer): https://unit8co.github.io/da
 usage: tft [--lstm-layers LSTM_LAYERS] [--num-attention-heads NUM_ATTENTION_HEADS] [--full-attention] [--hidden-continuous-size HIDDEN_CONTINUOUS_SIZE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: tft [--lstm-layers LSTM_LAYERS] [--num-attention-heads NUM_ATTENTION_HEAD
 | hidden_continuous_size | Default hidden size for processing continuous variables. | 8 | True | None |
 
 
+---
 ## Examples
 
 ```python

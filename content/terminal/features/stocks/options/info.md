@@ -12,11 +12,13 @@ Display option data [Source: Barchart.com]
 usage: info
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

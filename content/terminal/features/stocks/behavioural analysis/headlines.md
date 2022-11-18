@@ -12,11 +12,13 @@ FinBrain collects the news headlines from 15+ major financial news sources on a 
 usage: headlines
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

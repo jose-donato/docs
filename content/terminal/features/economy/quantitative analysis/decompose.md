@@ -12,6 +12,7 @@ Decompose time series as: - Additive Time Series = Level + CyclicTrend + Residua
 usage: decompose [-m]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: decompose [-m]
 | multiplicative | decompose using multiplicative model instead of additive | False | True | None |
 
 
+---
 ## Examples
 
 ```python

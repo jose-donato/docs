@@ -12,6 +12,7 @@ Display account history
 usage: history [-a ACCOUNT] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: history [-a ACCOUNT] [-l LIMIT]
 | limit | Limit parameter. | 20 | True | None |
 
 
+---

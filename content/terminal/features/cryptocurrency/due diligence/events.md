@@ -12,6 +12,7 @@ Show information about most important coins events. Most of coins doesn't have a
 usage: events [-l LIMIT] [-s {date,date_to,name,description,is_conference}] [-r] [-u]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: events [-l LIMIT] [-s {date,date_to,name,description,is_conference}] [-r]
 | urls | Flag to show urls. If you will use that flag you will see only date, name, link columns | False | True | None |
 
 
+---
 ## Examples
 
 ```python

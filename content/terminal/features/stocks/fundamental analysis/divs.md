@@ -12,6 +12,7 @@ Historical dividends for a company
 usage: divs [-l LIMIT] [-p]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: divs [-l LIMIT] [-p]
 | plot | Plots changes in dividend over time | False | True | None |
 
 
+---

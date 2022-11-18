@@ -12,6 +12,7 @@ The word aroon is Sanskrit for "dawn's early light." The Aroon indicator attempt
 usage: aroon [-l N_LENGTH] [-s N_SCALAR] [-o N_OFFSET]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: aroon [-l N_LENGTH] [-s N_SCALAR] [-o N_OFFSET]
 | n_offset | offset | 0 | True | None |
 
 
+---
 ![aroon](https://user-images.githubusercontent.com/46355364/154309825-f8ccc98b-31ac-43fc-a251-66f6f41545a5.png)
 

@@ -12,6 +12,7 @@ The Fisher Transform is a technical indicator created by John F. Ehlers that con
 usage: fisher [-l N_LENGTH]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,5 +20,6 @@ usage: fisher [-l N_LENGTH]
 | n_length | length | 14 | True | None |
 
 
+---
 ![fisher](https://user-images.githubusercontent.com/46355364/154310853-0abf6cea-71ca-4f07-b009-282c58ab9cfc.png)
 

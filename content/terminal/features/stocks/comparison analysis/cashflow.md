@@ -12,6 +12,7 @@ Prints either yearly or quarterly cashflow statement the company, and compares i
 usage: cashflow [-q] [-t S_TIMEFRAME]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: cashflow [-q] [-t S_TIMEFRAME]
 | s_timeframe | Specify year/quarter of the cashflow statement to be retrieved. The format for year is YYYY and for quarter is DD-MMM-YYY (for example, 30-Sep-2021). Default is last year/quarter. | None | True | None |
 
 
+---
 ## Examples
 
 ```python

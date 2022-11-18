@@ -5,23 +5,36 @@ description: OpenBB SDK Function
 
 # quote
 
-Get current exchange rate quote from alpha vantage.
+Get forex quote.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L56)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/sdk_helpers.py#L9)]
 
 ```python
-def get_quote(to_symbol: str = "USD", from_symbol: str = "EUR") -> Dict[str, Any]
+def quote(symbol: str, source: str = "YahooFinance") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| to_symbol | str | To forex symbol | USD | True |
-| from_symbol | str | From forex symbol | EUR | True |
+| symbol | str | Forex symbol to get quote for. | None | False |
+| source | str | Source to get quote from, by default "YahooFinance" | YahooFinance | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
-| Dict[str, Any] | Dictionary of exchange rate |
+| pd.DataFrame | DataFrame of quote data. |
 
+---
+## Examples
+
+
+This also supports AlphaVantage and will handle different conventions
+```python
+from openbb_terminal.sdk import openbb
+EUR_USD_quote = openbb.forex.quote("EURUSD")
+```
+
+---

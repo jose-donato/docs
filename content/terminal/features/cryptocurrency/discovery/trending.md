@@ -12,11 +12,13 @@ Discover trending coins (Top-7) on CoinGecko in the last 24 hours
 usage: trending
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ The columns you want to add to a dataset. The first argument is the dataset to a
 usage: combine [-d {}] [-c COLUMNS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: combine [-d {}] [-c COLUMNS]
 | columns | The columns we want to add dataset.column,dataset.column2 | None | True | None |
 
 
+---
 ## Examples
 
 ```python

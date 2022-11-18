@@ -12,6 +12,7 @@ Shows performance of each trade and total performance of the portfolio versus th
 usage: performance [-t]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: performance [-t]
 | show_trades | Whether to show performance on all trades in comparison to the benchmark. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

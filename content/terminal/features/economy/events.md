@@ -12,6 +12,7 @@ Economic calendar. If no start or end dates, default is the current day high imp
 usage: events [-c COUNTRY] [-s START_DATE] [-e END_DATE] [-d SPEC_DATE] [-i {high,medium,low,all}] [--categories {employment,credit,balance,economic_activity,central_banks,bonds,inflation,confidence_index}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -24,6 +25,7 @@ usage: events [-c COUNTRY] [-s START_DATE] [-e END_DATE] [-d SPEC_DATE] [-i {hig
 | category | [INVESTING source only] Event category. | None | True | employment, credit, balance, economic_activity, central_banks, bonds, inflation, confidence_index |
 
 
+---
 ## Examples
 
 ```python

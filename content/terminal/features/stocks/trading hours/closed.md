@@ -12,8 +12,10 @@ Show currently closed exchanges
 usage: exchange
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

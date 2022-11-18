@@ -12,6 +12,7 @@ Remove similar tickers to compare with.
 usage: rmv [-s L_SIMILAR]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: rmv [-s L_SIMILAR]
 | l_similar | Tickers to remove from similar list |  | True | None |
 
 
+---

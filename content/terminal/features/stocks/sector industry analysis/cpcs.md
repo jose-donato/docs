@@ -12,6 +12,7 @@ Companies per Country based on Sector and Market Cap
 usage: cpcs [-M MAX_COUNTRIES_TO_DISPLAY] [-m MIN_PCT_TO_DISPLAY_COUNTRY] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: cpcs [-M MAX_COUNTRIES_TO_DISPLAY] [-m MIN_PCT_TO_DISPLAY_COUNTRY] [-r]
 | raw | Output all raw data | False | True | None |
 
 
+---
 ![CPCS](https://user-images.githubusercontent.com/46355364/153896494-5c0c9c00-aa2a-45cb-8a93-cfaa908b35df.png)
 

@@ -12,6 +12,7 @@ Print up to the last 30 messages of a user. [Source: Stocktwits]
 usage: stalker [-u S_USER] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: stalker [-u S_USER] [-l LIMIT]
 | limit | limit messages shown. | 30 | True | None |
 
 
+---
 ## Examples
 
 ```python

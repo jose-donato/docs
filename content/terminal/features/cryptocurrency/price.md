@@ -12,6 +12,7 @@ Display price and interval of confidence in real-time. [Source: Pyth]
 usage: price -s SYMBOL
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: price -s SYMBOL
 | symbol | Symbol of coin to load data for, ~100 symbols are available | None | False | None |
 
 
+---

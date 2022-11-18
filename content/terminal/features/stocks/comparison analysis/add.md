@@ -12,6 +12,7 @@ Add similar tickers to compare with.
 usage: add [-s L_SIMILAR]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: add [-s L_SIMILAR]
 | l_similar | Tickers to add to similar list |  | True | None |
 
 
+---

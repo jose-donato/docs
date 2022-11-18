@@ -12,6 +12,7 @@ Show your allocation to each asset or sector compared to the benchmark.
 usage: alloc [-a {assets,sectors,countries,regions}] [-t]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: alloc [-a {assets,sectors,countries,regions}] [-t]
 | tables | Whether to also include the assets/sectors tables of both the benchmark and the portfolio. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Performs an OLS regression on timeseries data.
 usage: ols -d DEPENDENT -i INDEPENDENT [--no-output]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: ols -d DEPENDENT -i INDEPENDENT [--no-output]
 | no_output | Hide the output of the regression | False | True | None |
 
 
+---

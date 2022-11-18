@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_ols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,12 +20,14 @@ def get_ols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 | Y | pd.DataFrame | Dependent variable series. | None | False |
 | X | pd.DataFrame | Dataframe of independent variables series. | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | statsmodels.regression.linear_model.RegressionResultsWrapper | Regression model wrapper from statsmodels. |
 
+---
 ## Examples
 
 SDK Snippet:
@@ -35,6 +38,7 @@ OLS_model = openbb.econometrics.OLS(df["lwage"], df[["educ", "exper", "expersq"]
 print(OLS_model.summary())`
 ```
 
+---
 ## Examples
 
 Results:
@@ -67,3 +71,4 @@ Notes:
 [2] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
 
+---

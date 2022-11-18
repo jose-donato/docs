@@ -12,6 +12,7 @@ Removes a price from the list
 usage: rmv -p PRICE [-a]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: rmv -p PRICE [-a]
 | all | Remove all prices from the list | False | True | None |
 
 
+---
 ## Examples
 
 ```python

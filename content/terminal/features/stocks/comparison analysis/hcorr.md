@@ -12,6 +12,7 @@ Correlation heatmap based on historical price comparison between similar compani
 usage: hcorr [-t {o,h,l,c,a,r}] [-s START] [--display-full-matrix]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: hcorr [-t {o,h,l,c,a,r}] [-s START] [--display-full-matrix]
 | display_full_matrix | Display all matrix values, rather than masking off half. | False | True | None |
 
 
+---
 ![hcorr](https://user-images.githubusercontent.com/46355364/154073186-45336f5f-85e1-4cb9-9307-9694295b1f80.png)
 

@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.Dat
 | stat | str | Statistic to get.  Either "cases", "deaths" or "rates" | cases | True |
 | limit | int | Number of raw data to show | 10 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of data for given country and statistic |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_covid_stat(country: str, stat: str = "cases", raw: bool = False, limit: int = 10, export: str = "", plot: bool = True) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,10 +59,12 @@ def display_covid_stat(country: str, stat: str = "cases", raw: bool = False, lim
 | export | str | Format to export data |  | True |
 | plot | bool | Flag to plot data | True | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

@@ -12,6 +12,7 @@ Get historical data.
 usage: load --fund FUND [FUND ...] [-n] [-s START] [-e END]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: load --fund FUND [FUND ...] [-n] [-s START] [-e END]
 | end | The ending date (format YYYY-MM-DD) of the fund | 2022-11-18 | True | None |
 
 
+---

@@ -12,6 +12,7 @@ Show the descriptive statistics of the dataset
 usage: desc -n {}
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: desc -n {}
 | name | The name of the dataset.column you want to show the descriptive statistics | None | False | None |
 
 
+---
 ## Examples
 
 ```python

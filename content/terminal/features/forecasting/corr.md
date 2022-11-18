@@ -12,11 +12,13 @@ Plot correlation coefficients.
 usage: corr
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

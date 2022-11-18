@@ -12,6 +12,7 @@ Display metric of choice for different periods
 usage: metric [-m {volatility,sharpe,sortino,maxdrawdown,rsquare,skew,kurtosis,gaintopain,trackerr,information,tail,commonsense,jensens,calmar,kelly,payoff,profitfactor}] [-r RISK_FREE_RATE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: metric [-m {volatility,sharpe,sortino,maxdrawdown,rsquare,skew,kurtosis,g
 | risk_free_rate | Set risk free rate for calculations. | 0 | True | None |
 
 
+---

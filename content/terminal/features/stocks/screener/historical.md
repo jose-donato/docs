@@ -12,6 +12,7 @@ Historical price comparison between similar companies [Source: Yahoo Finance]
 usage: historical [-l LIMIT] [-n] [-s START] [-t {o,h,l,c,a}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: historical [-l LIMIT] [-n] [-s START] [-t {o,h,l,c,a}]
 | type_candle | type of candles: o-open, h-high, l-low, c-close, a-adjusted close. | a | True | o, h, l, c, a |
 
 
+---

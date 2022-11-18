@@ -12,6 +12,7 @@ Prints a list of the key metrics of a company over time. This can be either quar
 usage: metrics [-l LIMIT] [-q]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: metrics [-l LIMIT] [-q]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 
 
+---

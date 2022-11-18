@@ -12,6 +12,7 @@ Print top insider purchases of the week. [Source: OpenInsider]
 usage: tippw [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: tippw [-l LIMIT]
 | limit | Limit of datarows to display | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

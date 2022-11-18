@@ -12,6 +12,7 @@ Display uniswap pools by volume. [Source: https://thegraph.com/en/]
 usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,token1.symbol,volumeUSD,txCount}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,tok
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

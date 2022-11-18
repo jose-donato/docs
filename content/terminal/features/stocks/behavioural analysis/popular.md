@@ -12,6 +12,7 @@ Print latest popular tickers. [Source: Reddit]
 usage: popular [-l LIMIT] [-n NUM] [-s S_SUBREDDIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: popular [-l LIMIT] [-n NUM] [-s S_SUBREDDIT]
 | s_subreddit | Subreddits to look for tickers, e.g. pennystocks,stocks. Default: pennystocks, RobinHoodPennyStocks, Daytrading, StockMarket, stocks, investing, wallstreetbets | None | True | None |
 
 
+---
 ## Examples
 
 ```python

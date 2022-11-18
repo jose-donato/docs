@@ -12,15 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def check_presets(preset_dict: dict) -> str
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | preset_dict | dict | Defined presets from configparser | None | False |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | str | String of all errors accumulated |
 
+---

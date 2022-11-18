@@ -12,6 +12,7 @@ The CCI is designed to detect beginning and ending market trends. The range of 1
 usage: cci [-l N_LENGTH] [-s N_SCALAR]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: cci [-l N_LENGTH] [-s N_SCALAR]
 | n_scalar | scalar | 0.015 | True | None |
 
 
+---
 ![cci](https://user-images.githubusercontent.com/46355364/154310079-808803ca-26dd-4d45-8a02-17e51230bf2d.png)
 

@@ -12,6 +12,7 @@ Show last 10 tweets for given coin. You can display only N number of tweets with
 usage: twitter [-l LIMIT] [-s {date,user_name,status,retweet_count,like_count}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: twitter [-l LIMIT] [-s {date,user_name,status,retweet_count,like_count}] 
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

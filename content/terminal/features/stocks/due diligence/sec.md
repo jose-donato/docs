@@ -12,6 +12,7 @@ Prints SEC filings of the company. The following fields are expected: Filing Dat
 usage: sec [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: sec [-l LIMIT]
 | limit | number of latest SEC filings. | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_coint_df(datasets: pd.Series, return_z: bool = False) -> Union[pd.DataFrame, Dict]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,12 +26,14 @@ def get_coint_df(datasets: pd.Series, return_z: bool = False) -> Union[pd.DataFr
 | datasets | pd.Series | Input series to test cointegration for | None | False |
 | return_z | bool | Flag to return the z data to plot | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame,Dict] | Dataframe with results of cointegration tests or a Dict of the z results |
 
+---
 
 
 </TabItem>
@@ -43,6 +46,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_cointegration_test(datasets: pd.Series, significant: bool = False, plot: bool = True, export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,10 +57,12 @@ def display_cointegration_test(datasets: pd.Series, significant: bool = False, p
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

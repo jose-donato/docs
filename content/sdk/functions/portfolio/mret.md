@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_monthly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,12 +26,14 @@ def get_monthly_returns(portfolio_engine: portfolio_model.PortfolioEngine, windo
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | window | str | interval to compare cumulative returns and benchmark | all | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with monthly returns |
 
+---
 
 
 </TabItem>
@@ -43,6 +46,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_monthly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all", raw: bool = False, show_vals: bool = False, export: str = "", external_axes: Optional[matplotlib.axes._axes.Axes] = None) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,10 +58,12 @@ def display_monthly_returns(portfolio_engine: portfolio_model.PortfolioEngine, w
 | export | str | Export certain type of data |  | True |
 | external_axes | plt.Axes | Optional axes to display plot on | None | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

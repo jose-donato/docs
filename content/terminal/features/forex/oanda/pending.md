@@ -12,8 +12,10 @@ Get information about pending orders.
 usage: pending
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

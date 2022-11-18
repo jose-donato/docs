@@ -14,6 +14,7 @@ usage: maxdecorr [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectra
                  {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -35,6 +36,7 @@ usage: maxdecorr [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectra
 | name | Save portfolio with personalized or default name | MAXDECORR_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

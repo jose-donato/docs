@@ -12,6 +12,7 @@ Change target variable
 usage: pick [-t {Open,High,Low,Close,Adj Close,Volume,date_id,OC_High,OC_Low,Returns,LogRet}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: pick [-t {Open,High,Low,Close,Adj Close,Volume,date_id,OC_High,OC_Low,Ret
 | target | Select variable to analyze | None | True | Open, High, Low, Close, Adj Close, Volume, date_id, OC_High, OC_Low, Returns, LogRet |
 
 
+---
 ## Examples
 
 ```python

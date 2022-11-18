@@ -12,6 +12,7 @@ Cross between a long and a short Exponential Moving Average.
 usage: emacross [-l LONG] [-s SHORT] [--spy] [--no_bench] [--no_short]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,3 +24,4 @@ usage: emacross [-l LONG] [-s SHORT] [--spy] [--no_bench] [--no_short]
 | shortable | Flag that disables the short sell | True | True | None |
 
 
+---

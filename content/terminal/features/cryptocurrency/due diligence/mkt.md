@@ -12,6 +12,7 @@ Get all markets found for given coin. You can display only N number of markets w
 usage: mkt [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD,SGD,NGN,PHP,MXN,BRL,THB,CLP,CNY,CZK,DKK,HUF,IDR,ILS,INR,MYR,NOK,PKR,SEK,TWD,ZAR,VND,BOB,COP,PEN,ARS,ISK}] [-l LIMIT] [-s {pct_volume_share,exchange,pair,trust_score,volume,price}] [-r] [-u]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,6 +24,7 @@ usage: mkt [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HK
 | urls | Flag to show urls. If you will use that flag you will see only: exchange, pair, trust_score, market_url columns | False | True | None |
 
 
+---
 ## Examples
 
 ```python

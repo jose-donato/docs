@@ -12,11 +12,13 @@ Add rsi to dataset based on specific column.
 usage: rsi
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

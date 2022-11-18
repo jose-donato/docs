@@ -12,6 +12,7 @@ The Hull Moving Average solves the age old dilemma of making a moving average mo
 usage: hma [-l N_LENGTH] [-o N_OFFSET]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: hma [-l N_LENGTH] [-o N_OFFSET]
 | n_offset | offset | 0 | True | None |
 
 
+---
 ![hma](https://user-images.githubusercontent.com/46355364/154310988-2e97c166-a3b9-49ae-abcd-2c1b37309072.png)
 

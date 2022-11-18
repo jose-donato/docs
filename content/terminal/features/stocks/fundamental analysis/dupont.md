@@ -12,6 +12,7 @@ The extended dupont deconstructs return on equity to allow investors to understa
 usage: dupont [--raw]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: dupont [--raw]
 | raw | Print raw data. | False | True | None |
 
 
+---

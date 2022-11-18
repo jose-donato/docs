@@ -14,6 +14,7 @@ usage: blacklitterman [-bm BENCHMARK] [-o {MinRisk,Utility,Sharpe,MaxRet}] [-pv 
                       {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -44,6 +45,7 @@ usage: blacklitterman [-bm BENCHMARK] [-o {MinRisk,Utility,Sharpe,MaxRet}] [-pv 
 | name | Save portfolio with personalized or default name | BL_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

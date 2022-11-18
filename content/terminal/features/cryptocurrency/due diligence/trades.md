@@ -14,6 +14,7 @@ usage: trades
               [--vs VS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: trades
 | vs | Quote currency (what to view coin vs) | usdt | True | None |
 
 
+---

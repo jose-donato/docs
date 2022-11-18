@@ -12,6 +12,7 @@ Show a portion of the DataFrame
 usage: show [-n {}] [-s SORTBY [SORTBY ...]] [-r] [--limit-col LIMIT_COL]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: show [-n {}] [-s SORTBY [SORTBY ...]] [-r] [--limit-col LIMIT_COL]
 | limit_col | Set the number of columns to display when showing the dataset | 10 | True | None |
 
 
+---
 ## Examples
 
 ```python

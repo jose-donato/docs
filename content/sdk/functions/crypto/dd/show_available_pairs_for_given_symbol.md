@@ -12,15 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def show_available_pairs_for_given_symbol(symbol: str = "ETH") -> Tuple[str, list]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Uppercase symbol of coin e.g BTC, ETH, UNI, LUNA, DOT ... | ETH | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[str, list] | Symbol and list of available pairs |
 
+---

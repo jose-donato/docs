@@ -12,6 +12,7 @@ The column you want to delete from a dataset.
 usage: delete [--delete DELETE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: delete [--delete DELETE]
 | delete | The columns you want to delete from a dataset. Use format: dataset.column or multiple with dataset.column,datasetb.column2 | None | True | None |
 
 
+---
 ## Examples
 
 ```python

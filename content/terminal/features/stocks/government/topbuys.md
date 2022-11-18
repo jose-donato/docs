@@ -12,6 +12,7 @@ Top buys for government trading. [Source: www.quiverquant.com]
 usage: topbuys [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_MONTHS] [-l LIMIT] [--raw]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,5 +23,6 @@ usage: topbuys [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_MONTHS] [-l LI
 | raw | Print raw data. | False | True | None |
 
 
+---
 ![topbuys](https://user-images.githubusercontent.com/46355364/154266344-944b0c5b-f7b0-4fdb-a020-a93565f6c13c.png)
 

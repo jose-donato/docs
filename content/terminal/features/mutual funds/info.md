@@ -12,8 +12,10 @@ Get fund information.
 usage: info
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

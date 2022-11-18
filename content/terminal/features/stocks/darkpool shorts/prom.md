@@ -12,6 +12,7 @@ Display dark pool (ATS) data of tickers with growing trades activity using linea
 usage: prom [-n N_NUM] [-l LIMIT] [-t {T1,T2,OTCE}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: prom [-n N_NUM] [-l LIMIT] [-t {T1,T2,OTCE}]
 | tier | Tier to process data from. |  | True | T1, T2, OTCE |
 
 
+---
 ![prom](https://user-images.githubusercontent.com/46355364/154076323-2d031477-a70d-4065-b649-c8493fecdcbc.png)
 

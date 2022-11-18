@@ -12,6 +12,7 @@ Get a broad selection of macro data from one or multiple countries. This include
 usage: macro [-p PARAMETERS] [-c COUNTRIES] [-t {,TPOP,TOYA,TUSD,TPGP,TNOR}] [--show {parameters,countries,transform}] [-s START_DATE] [-e END_DATE] [--convert CURRENCY]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -25,6 +26,7 @@ usage: macro [-p PARAMETERS] [-c COUNTRIES] [-t {,TPOP,TOYA,TUSD,TPGP,TNOR}] [--
 | currency | Convert the currency of the chosen country to a specified currency. To find the currency symbols use '--show countries' | False | True | None |
 
 
+---
 ## Examples
 
 ```python

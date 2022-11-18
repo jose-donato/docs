@@ -12,6 +12,7 @@ description: OpenBB Terminal Function
 usage: lastnews [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: lastnews [-l LIMIT]
 | limit | Number of news to display. | 10 | True | None |
 
 
+---

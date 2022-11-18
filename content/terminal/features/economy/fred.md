@@ -12,6 +12,7 @@ Query the FRED database and plot data based on the Series ID. [Source: FRED]
 usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 | query | Query the FRED database to obtain Series IDs given the query search term. | None | True | None |
 
 
+---
 ## Examples
 
 ```python

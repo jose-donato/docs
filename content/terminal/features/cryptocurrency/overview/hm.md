@@ -12,6 +12,7 @@ Display cryptocurrencies heatmap with daily percentage change [Source: https://c
 usage: hm [-l LIMIT] [-c CATEGORY]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: hm [-l LIMIT] [-c CATEGORY]
 | category | Category (e.g., stablecoins). Empty for no category |  | True | None |
 
 
+---
 ## Examples
 
 ```python

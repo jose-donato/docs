@@ -12,6 +12,7 @@ Get similar companies to compare with using sklearn TSNE.
 usage: tsne [-r LR] [-l LIMIT] [-p]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: tsne [-r LR] [-l LIMIT] [-p]
 | no_plot |  | False | True | None |
 
 
+---
 ![tsne](https://user-images.githubusercontent.com/46355364/154074416-af8c7d2a-fa2f-461f-8522-933cf6e3543b.png)
 

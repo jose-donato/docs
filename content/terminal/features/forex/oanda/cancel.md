@@ -12,6 +12,7 @@ Cancel a Pending Order.
 usage: cancel -i ORDERID
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: cancel -i ORDERID
 | orderID | The pending order ID to cancel. | None | False | None |
 
 
+---

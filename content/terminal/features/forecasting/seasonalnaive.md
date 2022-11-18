@@ -12,11 +12,13 @@ Perform SeasonalNaive forecasting: https://nixtla.github.io/statsforecast/models
 usage: seasonalnaive
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

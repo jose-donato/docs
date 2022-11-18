@@ -12,6 +12,7 @@ Display holdings of assets (in percentage)
 usage: holdp [-u]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: holdp [-u]
 | unstack | Sum all assets percentage over time | False | True | None |
 
 
+---

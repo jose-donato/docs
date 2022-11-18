@@ -12,6 +12,7 @@ Plot volume. Volume refers to the number of contracts traded today.
 usage: vol [-m MIN] [-M MAX] [-c] [-p]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,5 +23,6 @@ usage: vol [-m MIN] [-M MAX] [-c] [-p]
 | puts | Flag to plot put options only | False | True | None |
 
 
+---
 ![vol](https://user-images.githubusercontent.com/46355364/154291303-c23edf53-4242-4d9b-a45e-22ce8a633aa8.png)
 

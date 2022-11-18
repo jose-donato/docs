@@ -14,6 +14,7 @@ usage: maxsharpe [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [
                  {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -41,6 +42,7 @@ usage: maxsharpe [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [
 | name | Save portfolio with personalized or default name | MAXSHARPE_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

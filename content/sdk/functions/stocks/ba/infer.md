@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def load_analyze_tweets(symbol: str, limit: int = 100, start_date: Optional[str] = "", end_date: Optional[str] = "") -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,12 +28,14 @@ def load_analyze_tweets(symbol: str, limit: int = 100, start_date: Optional[str]
 | start_date | Optional[str] | If given, the start time to get tweets from |  | True |
 | end_date | Optional[str] | If given, the end time to get tweets from |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of tweets and sentiment |
 
+---
 
 
 </TabItem>
@@ -45,6 +48,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_inference(symbol: str, limit: int = 100, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,10 +57,12 @@ def display_inference(symbol: str, limit: int = 100, export: str = "") -> None
 | limit | int | Number of tweets to analyze | 100 | True |
 | export | str | Format to export tweet dataframe |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

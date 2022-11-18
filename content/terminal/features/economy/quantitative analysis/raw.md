@@ -12,6 +12,7 @@ Print raw data to console
 usage: raw [-l LIMIT] [-r] [-s SORTBY]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: raw [-l LIMIT] [-r] [-s SORTBY]
 | sortby | The column to sort by | None | True | None |
 
 
+---
 ## Examples
 
 ```python

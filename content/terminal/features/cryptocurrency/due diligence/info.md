@@ -12,11 +12,13 @@ Shows basic information about loaded coin like: Name, Symbol, Description, Marke
 usage: info
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Get stock movers
 usage: movers [-t {toplosers,toppctlosers,topvolume,topactive,topgainers,toppctgainers}] [-e {A,N,Q,U,V}] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,3 +22,4 @@ usage: movers [-t {toplosers,toppctlosers,topvolume,topactive,topgainers,toppctg
 | limit | Number to show | 15 | True | None |
 
 
+---

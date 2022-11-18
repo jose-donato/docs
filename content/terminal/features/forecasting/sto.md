@@ -12,6 +12,7 @@ Add in Stochastic Oscillator %K and %D
 usage: sto [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: sto [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 | low_col | Low column name to use for Stochastic Oscillator | low | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Remove one of the options to be shown in the hedge.
 usage: rmv [-o OPTION [OPTION ...]] [-a]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: rmv [-o OPTION [OPTION ...]] [-a]
 | all | remove all of the options | False | True | None |
 
 
+---
 ## Examples
 
 ```python

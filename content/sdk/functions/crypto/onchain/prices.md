@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_token_historical_price(address: str, sortby: str = "date", ascend: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_token_historical_price(address: str, sortby: str = "date", ascend: bool 
 | sortby | str | Key to sort by. | date | True |
 | ascend | str | Sort in descending order. | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with token historical prices. |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_token_historical_prices(address: str, limit: int = 30, sortby: str = "date", ascend: bool = False, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,10 +58,12 @@ def display_token_historical_prices(address: str, limit: int = 30, sortby: str =
 | ascend | str | Sort in descending order. | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

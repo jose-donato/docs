@@ -12,6 +12,7 @@ Shows Largest Losers - coins which price dropped the most in given period You ca
 usage: losers [-i {14d,1h,1y,200d,24h,30d,7d}] [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: losers [-i {14d,1h,1y,200d,24h,30d,7d}] [-l LIMIT] [-s SORTBY [SORTBY ...
 | sortby | Sort by given column. Default: Market Cap Rank | Market Cap | True | None |
 
 
+---
 ## Examples
 
 ```python

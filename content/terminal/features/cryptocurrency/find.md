@@ -12,6 +12,7 @@ Find similar coin by name, symbol, or id. If you don't remember exact name or id
 usage: find -c COIN [-k {id,symbol,name}] [-l LIMIT] [-s SKIP]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: find -c COIN [-k {id,symbol,name}] [-l LIMIT] [-s SKIP]
 | skip | Skip n of records | 0 | True | None |
 
 
+---
 ## Examples
 
 ```python

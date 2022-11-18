@@ -12,6 +12,7 @@ Display active blockchain addresses over time [Source: https://glassnode.org]
 usage: active [-i {24h,1w,1month}] [-s SINCE] [-u UNTIL]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: active [-i {24h,1w,1month}] [-s SINCE] [-u UNTIL]
 | until | Final date. Default: Today | 2022-11-18 | True | None |
 
 
+---
 ![active](https://user-images.githubusercontent.com/46355364/154058739-e30fed47-c86f-4aef-a699-1bc69180c607.png)
 

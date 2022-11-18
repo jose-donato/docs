@@ -12,6 +12,7 @@ Display github activity over time for a given coin. Github activity includes the
 usage: gh [-i INTERVAL] [-d DEV] [-s START] [-end END]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: gh [-i INTERVAL] [-d DEV] [-s START] [-end END]
 | end | End date. Default: Today | 2022-11-18 | True | None |
 
 
+---

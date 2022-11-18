@@ -12,6 +12,7 @@ Trending news articles. [Source: Seeking Alpha]
 usage: trending [-i N_ID] [-l LIMIT] [-d S_DATE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: trending [-i N_ID] [-l LIMIT] [-d S_DATE]
 | s_date | starting date of articles | 2022-11-18 | True | None |
 
 
+---
 ## Examples
 
 ```python

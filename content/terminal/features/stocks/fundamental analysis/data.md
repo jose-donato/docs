@@ -12,8 +12,10 @@ Print several metrics about the company. The following fields are expected: Comp
 usage: data
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

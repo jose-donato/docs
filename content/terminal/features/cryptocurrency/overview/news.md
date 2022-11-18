@@ -12,6 +12,7 @@ Display recent news from CryptoPanic aggregator platform. [Source: https://crypt
 usage: news [-l LIMIT] [-k {news,media}] [--filter {rising,hot,bullish,bearish,important,saved,lol}] [-r {en,de,es,fr,nl,it,pt,ru}] [-s {published_at,domain,title,negative_votes,positive_votes}] [--reverse] [-u]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -25,3 +26,4 @@ usage: news [-l LIMIT] [-k {news,media}] [--filter {rising,hot,bullish,bearish,i
 | urls | Flag to show urls column. | False | True | None |
 
 
+---

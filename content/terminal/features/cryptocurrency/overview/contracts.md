@@ -14,6 +14,7 @@ usage: contracts
                  [-l LIMIT] [-s {id,type,active}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -24,6 +25,7 @@ usage: contracts
 | reverse | Data is sorted in ascending order by default. Reverse flag will sort it in an descending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

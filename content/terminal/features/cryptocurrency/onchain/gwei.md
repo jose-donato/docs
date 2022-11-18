@@ -12,8 +12,10 @@ Display ETH gas fees [Source: https://ethgasstation.info]
 usage: onchain
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

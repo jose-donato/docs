@@ -13,6 +13,7 @@ usage: plot [-pf PORTFOLIOS] [-pi] [-hi] [-dd] [-rc] [-he] [-rm {MV,MAD,MSV,FLPM
             [-v LONG_ALLOCATION]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -38,6 +39,7 @@ usage: plot [-pf PORTFOLIOS] [-pi] [-hi] [-dd] [-rc] [-he] [-rm {MV,MAD,MSV,FLPM
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 
 
+---
 ## Examples
 
 ```python

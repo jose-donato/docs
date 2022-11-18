@@ -12,6 +12,7 @@ Futures/Commodities from Wall St. Journal and FinViz.
 usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,prevClose}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

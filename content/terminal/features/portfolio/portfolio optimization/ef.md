@@ -13,6 +13,7 @@ usage: ef [-vs SHORT_ALLOCATION] [-n AMOUNT_PORTFOLIOS] [-se RANDOM_SEED] [-t] [
           [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -36,6 +37,7 @@ usage: ef [-vs SHORT_ALLOCATION] [-n AMOUNT_PORTFOLIOS] [-se RANDOM_SEED] [-t] [
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 
 
+---
 ## Examples
 
 ```python

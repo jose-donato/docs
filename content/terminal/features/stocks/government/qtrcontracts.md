@@ -12,6 +12,7 @@ Look at government contracts [Source: www.quiverquant.com]
 usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 | raw | Print raw data. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

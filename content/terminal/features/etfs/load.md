@@ -12,6 +12,7 @@ Load ETF ticker to perform analysis on.
 usage: load -t TICKER [-s START] [-e END] [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: load -t TICKER [-s START] [-e END] [-l LIMIT]
 | limit | Limit of holdings to display | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

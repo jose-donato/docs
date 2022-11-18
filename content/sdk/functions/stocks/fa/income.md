@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_income_statement(symbol: str, quarterly: bool = False, ratios: bool = False, source: str = "YahooFinance", limit: int = 10) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -22,12 +23,14 @@ def get_income_statement(symbol: str, quarterly: bool = False, ratios: bool = Fa
 | ratios | bool | Flag to return data as a percent change. | False | True |
 | limit | int | Number of statements to return (free tiers may be limited to 5 years) | 10 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of income statement |
 
+---
 ## Examples
 
 
@@ -37,3 +40,4 @@ from openbb_terminal.sdk import openbb
 income_statement = openbb.stocks.fa.income("AAPL", source="YahooFinance)
 ```
 
+---

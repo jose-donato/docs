@@ -12,11 +12,13 @@ Displays top ETF/Mutual fund gainers from wsj.com/market-data
 usage: gainers
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

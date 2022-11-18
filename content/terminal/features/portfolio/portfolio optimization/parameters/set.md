@@ -12,6 +12,7 @@ Select one of the portfolio optimization models
 usage: set -m {maxsharpe,minrisk,maxutil,maxret,maxdiv,maxdecorr,ef,riskparity,relriskparity,hrp,herc,nco}
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,3 +20,4 @@ usage: set -m {maxsharpe,minrisk,maxutil,maxret,maxdiv,maxdecorr,ef,riskparity,r
 | model | Frequency used to calculate returns | None | False | maxsharpe, minrisk, maxutil, maxret, maxdiv, maxdecorr, ef, riskparity, relriskparity, hrp, herc, nco |
 
 
+---

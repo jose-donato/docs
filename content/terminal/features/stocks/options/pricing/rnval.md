@@ -12,6 +12,7 @@ The risk neutral value of the options
 usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +23,7 @@ usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 | risk | The risk-free rate to use | None | True | None |
 
 
+---
 ## Examples
 
 ```python

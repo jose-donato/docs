@@ -12,6 +12,7 @@ Print top stocks with lowest float. LowFloat.com provides a convenient sorted da
 usage: lowfloat [-l LIMIT]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,6 +20,7 @@ usage: lowfloat [-l LIMIT]
 | limit | limit of stocks to display | 5 | True | None |
 
 
+---
 ## Examples
 
 ```python

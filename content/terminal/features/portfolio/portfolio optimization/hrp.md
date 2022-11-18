@@ -15,6 +15,7 @@ usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
            {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -48,6 +49,7 @@ usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 | name | Save portfolio with personalized or default name | _HRP0 | True | None |
 
 
+---
 ## Examples
 
 ```python

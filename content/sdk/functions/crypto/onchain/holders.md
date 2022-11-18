@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_top_token_holders(address: str, sortby: str = "balance", ascend: bool = True) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,12 +27,14 @@ def get_top_token_holders(address: str, sortby: str = "balance", ascend: bool = 
 | sortby | str | Key to sort by. | balance | True |
 | ascend | str | Sort in descending order. | True | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with list of top token holders. |
 
+---
 
 
 </TabItem>
@@ -44,6 +47,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_top_token_holders(address: str, limit: int = 10, sortby: str = "balance", ascend: bool = True, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,10 +58,12 @@ def display_top_token_holders(address: str, limit: int = 10, sortby: str = "bala
 | ascend | str | Sort in descending order. | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

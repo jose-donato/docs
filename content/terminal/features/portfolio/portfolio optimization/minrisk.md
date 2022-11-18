@@ -14,6 +14,7 @@ usage: minrisk [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-c
                {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -41,6 +42,7 @@ usage: minrisk [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-c
 | name | Save portfolio with personalized or default name | MINRISK_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

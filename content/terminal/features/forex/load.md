@@ -12,6 +12,7 @@ Load historical exchange rate data.Available data sources are Alpha Advantage an
 usage: load [-t TICKER] [-r {i,d,w,m}] [-i {1min,5min,15min,30min,60min,90min,1hour,1day,5day,1week,1month,3month}] [-s START_DATE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,3 +23,4 @@ usage: load [-t TICKER] [-r {i,d,w,m}] [-i {1min,5min,15min,30min,60min,90min,1h
 | start_date | Start date of data. | datetime.now() - timedelta(days=365) | True | None |
 
 
+---

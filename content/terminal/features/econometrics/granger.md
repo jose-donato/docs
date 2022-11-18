@@ -12,6 +12,7 @@ Show Granger causality between two timeseries
 usage: granger [-t Available time series] [-l LAGS] [-c CONFIDENCE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: granger [-t Available time series] [-l LAGS] [-c CONFIDENCE]
 | confidence | Set the confidence level | 0.05 | True | None |
 
 
+---
 ## Examples
 
 ```python

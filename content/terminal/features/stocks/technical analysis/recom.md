@@ -12,6 +12,7 @@ Print tradingview recommendation based on technical indicators. [Source: Trading
 usage: recom [-s {australia,brazil,cfd,crypto,euronext,forex,france,germany,hongkong,india,indonesia,malaysia,philippines,russia,ksa,rsa,korea,spain,sweden,taiwan,thailand,turkey,uk,america,vietnam}] [-e EXCHANGE] [-i {1m,5m,15m,1h,4h,1d,1W,1M}]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: recom [-s {australia,brazil,cfd,crypto,euronext,forex,france,germany,hong
 | interval | Interval, that corresponds to the recommendation given by tradingview based on technical indicators. See https://python-tradingview-ta.readthedocs.io/en/latest/usage.html |  | True | 1m, 5m, 15m, 1h, 4h, 1d, 1W, 1M |
 
 
+---
 ## Examples
 
 ```python

@@ -12,6 +12,7 @@ Displays Lastly added pairs on Uniswap DEX. [Source: https://thegraph.com/en/]
 usage: pairs [-l LIMIT] [-v VOL] [-tx TX] [--days DAYS] [-s {created,pair,token0,token1,volumeUSD,txCount,totalSupply}] [-r]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -24,6 +25,7 @@ usage: pairs [-l LIMIT] [-v VOL] [-tx TX] [--days DAYS] [-s {created,pair,token0
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 
 
+---
 ## Examples
 
 ```python

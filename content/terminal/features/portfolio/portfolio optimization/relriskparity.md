@@ -13,6 +13,7 @@ usage: relriskparity [-ve {A,B,C}] [-rc RISK_CONTRIBUTION] [-pf PENAL_FACTOR] [-
                      {sa} ...
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -36,6 +37,7 @@ usage: relriskparity [-ve {A,B,C}] [-rc RISK_CONTRIBUTION] [-pf PENAL_FACTOR] [-
 | name | Save portfolio with personalized or default name | RRP_0 | True | None |
 
 
+---
 ## Examples
 
 ```python

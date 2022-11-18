@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_property_weights(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", s_property: str = "marketCap", value: float = 1.0) -> Tuple[Optional[Dict[str, Any]], Optional[pd.DataFrame]]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -34,12 +35,14 @@ def get_property_weights(symbols: List[str], interval: str = "3y", start_date: s
 | s_property | str | Property to weight portfolio by | marketCap | True |
 | value | float | Amount of money to allocate | 1.0 | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Dict[str, Any], pd.DataFrame] | Dictionary of portfolio weights or allocations |
 
+---
 
 
 </TabItem>
@@ -52,6 +55,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_property_weighting(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", s_property: str = "marketCap", risk_measure: str = "mv", risk_free_rate: float = 0, alpha: float = 0.05, value: float = 1, table: bool = False) -> Dict[str, float]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -72,10 +76,12 @@ def display_property_weighting(symbols: List[str], interval: str = "3y", start_d
 | value | float | Amount to allocate to portfolio, by default 1.0 | 1 | True |
 | table | bool | True if plot table weights, by default False | False | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

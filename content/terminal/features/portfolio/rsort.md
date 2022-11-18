@@ -12,6 +12,7 @@ Show rolling sortino portfolio vs benchmark
 usage: rsort [-p {mtd,qtd,ytd,all,3m,6m,1y,3y,5y,10y}] [-r RISK_FREE_RATE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,3 +21,4 @@ usage: rsort [-p {mtd,qtd,ytd,all,3m,6m,1y,3y,5y,10y}] [-r RISK_FREE_RATE]
 | risk_free_rate | Set risk free rate for calculations. | 0 | True | None |
 
 
+---

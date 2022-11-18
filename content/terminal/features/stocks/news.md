@@ -12,6 +12,7 @@ latest news of the company
 usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +22,7 @@ usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 | sources | Show news only from the sources specified (e.g bloomberg,reuters) |  | True | None |
 
 
+---
 ## Examples
 
 ```python

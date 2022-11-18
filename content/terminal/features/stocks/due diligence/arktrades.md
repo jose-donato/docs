@@ -12,6 +12,7 @@ Get trades for ticker across all ARK funds.
 usage: arktrades [-l LIMIT] [-s]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +21,7 @@ usage: arktrades [-l LIMIT] [-s]
 | show_symbol | Flag to show ticker in table | False | True | None |
 
 
+---
 ## Examples
 
 ```python

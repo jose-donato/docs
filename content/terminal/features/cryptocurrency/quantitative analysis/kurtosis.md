@@ -12,6 +12,7 @@ Kurtosis is a measure of the "tailedness" of the probability distribution of a r
 usage: kurtosis [-w N_WINDOW]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -19,5 +20,6 @@ usage: kurtosis [-w N_WINDOW]
 | n_window | window length | 14 | True | None |
 
 
+---
 ![kurtosis](https://user-images.githubusercontent.com/46355364/154307174-68671146-9551-4c2f-a179-db1d4b20b992.png)
 

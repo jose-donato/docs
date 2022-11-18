@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_balance_comparison(similar: List[str], timeframe: str = "2021", quarter: bool = False) -> pd.DataFrame
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,9 +22,11 @@ def get_balance_comparison(similar: List[str], timeframe: str = "2021", quarter:
 | quarter | bool | Whether to use quarterly statements, by default False | False | True |
 | export | str | Format to export data | None | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of balance comparisons |
 
+---

@@ -12,11 +12,13 @@ Displays selected option
 usage: sop
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---
 ## Examples
 
 ```python

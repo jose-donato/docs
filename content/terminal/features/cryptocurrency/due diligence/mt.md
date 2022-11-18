@@ -12,6 +12,7 @@ Display messari timeseries [Source: https://messari.io]
 usage: mt [--list] [-t TIMESERIES] [-i {5m,15m,30m,1h,1d,1w}] [-s START] [-end END] [--include-paid] [-q QUERY [QUERY ...]]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -25,3 +26,4 @@ usage: mt [--list] [-t TIMESERIES] [-i {5m,15m,30m,1h,1d,1w}] [-s START] [-end E
 | query | Query to search across all messari timeseries |  | True | None |
 
 
+---

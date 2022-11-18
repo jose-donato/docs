@@ -12,6 +12,7 @@ Provides value at risk (short: VaR) of the selected stock.
 usage: var [-m] [-a] [-s] [-p PERCENTILE] [-d DATA_RANGE]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,6 +24,7 @@ usage: var [-m] [-a] [-s] [-p PERCENTILE] [-d DATA_RANGE]
 | data_range | Number of rows you want to use VaR over, ex: if you are using days, 30 would show VaR for the last 30 TRADING days | 0 | True | None |
 
 
+---
 ## Examples
 
 ```python

@@ -14,6 +14,7 @@ usage: load -c COIN [-s START]
             [-e END] [-i {1,5,15,30,60,240,1440,10080,43200}] [--vs VS]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -26,3 +27,4 @@ usage: load -c COIN [-s START]
 | vs | Quote currency (what to view coin vs). e.g., usdc, usdt, ... if source is ccxt, usd, eur, ... otherwise | usdt | True | None |
 
 
+---

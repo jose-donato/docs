@@ -12,6 +12,7 @@ Historical price comparison between similar companies.
 usage: historical [-t {o,h,l,c,a}] [-n] [-s START]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,5 +22,6 @@ usage: historical [-t {o,h,l,c,a}] [-n] [-s START]
 | start | The starting date (format YYYY-MM-DD) of the stock | 2021-11-17 | True | None |
 
 
+---
 ![historical](https://user-images.githubusercontent.com/46355364/154073378-935eddd4-167e-48e8-9e3d-34029e5ba42f.png)
 

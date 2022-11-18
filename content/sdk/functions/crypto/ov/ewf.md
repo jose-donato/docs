@@ -18,16 +18,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_overall_exchange_withdrawal_fees() -> pd.DataFrame
 ```
+---
 ## Parameters
 
 This function does not take any parameters.
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Exchange, Coins, Lowest, Average, Median, Highest |
 
+---
 
 
 </TabItem>
@@ -40,16 +43,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_overall_exchange_withdrawal_fees(export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>

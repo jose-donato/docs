@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_regressions_results(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str = "OLS", entity_effects: bool = False, time_effects: bool = False) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,12 +29,14 @@ def get_regressions_results(Y: pd.DataFrame, X: pd.DataFrame, regression_type: s
 | entity_effects | bool | Whether to apply Fixed Effects on entities. | False | True |
 | time_effects | bool | Whether to apply Fixed Effects on time. | False | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Any | A regression model |
 
+---
 ## Examples
 
                     PooledOLS Estimation Summary
@@ -74,6 +77,7 @@ pooled_ols_model = openbb.econometrics.panel(Y,X,"POLS")
 print(pooled_ols_model.summary)
 ```
 
+---
 
 
 </TabItem>
@@ -86,6 +90,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_panel(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str = "OLS", entity_effects: bool = False, time_effects: bool = False, export: str = "") -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -97,12 +102,14 @@ def display_panel(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str = "OLS"
 | time_effects | bool | Whether to apply Fixed Effects on time. | False | True |
 | export | str | Format to export data |  | True |
 
+---
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | The dataset used, the dependent variable, the independent variable and |  |
 
+---
 
 
 </TabItem>

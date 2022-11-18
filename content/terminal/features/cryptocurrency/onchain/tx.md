@@ -12,8 +12,10 @@ Display info ERC20 token transaction on ethereum blockchain. e.g. 0x9dc7b43ad428
 usage: tx
 ```
 
+---
 ## Parameters
 
 This command has no parameters
 
 
+---

@@ -12,6 +12,7 @@ Display BTC circulating supply [Source: https://api.blockchain.info/]
 usage: btccp [-s SINCE] [-u UNTIL]
 ```
 
+---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,5 +21,6 @@ usage: btccp [-s SINCE] [-u UNTIL]
 | until | Final date. Default: 2021-01-01 | 2022-11-18 | True | None |
 
 
+---
 ![btccp](https://user-images.githubusercontent.com/46355364/154067527-0916ab9d-4690-4077-9037-a2665f9fc593.png)
 

@@ -18,6 +18,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def order_history_request(order_state: str = "PENDING", order_count: int = 0, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,10 +27,12 @@ def order_history_request(order_state: str = "PENDING", order_count: int = 0, ac
 | order_count | int | Limit the number of orders to retrieve | 0 | True |
 | accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>
@@ -42,6 +45,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def list_orders(accountID: str, order_state: str = "PENDING", order_count: int = 0) -> None
 ```
+---
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -50,10 +54,12 @@ def list_orders(accountID: str, order_state: str = "PENDING", order_count: int =
 | order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | PENDING | True |
 | order_count | int | Limit the number of orders to retrieve | 0 | True |
 
+---
 ## Returns
 
 This function does not return anything
 
+---
 
 
 </TabItem>
