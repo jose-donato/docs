@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Returns statistics for a given df
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L480)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L480)]
 
 ```python
-def describe_df(data: pd.DataFrame) -> DataFrame
+def describe_df(data: pd.DataFrame) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def describe_df(data: pd.DataFrame) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | The df to produce statistics for | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def describe_df(data: pd.DataFrame) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The df with the new data |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def describe_df(data: pd.DataFrame) -> DataFrame
 
 None
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L257)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L257)]
 
 ```python
-def describe_df(data: pd.DataFrame, name: str, export: str) -> None
+def describe_df(data: pd.DataFrame, name: str = "", export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -63,10 +61,6 @@ This function does not take any parameters.
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

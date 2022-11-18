@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Calculates the sharpe ratio
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L537)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L537)]
 
 ```python
-def get_sharpe(data: pd.DataFrame, rfr: float, window: float) -> DataFrame
+def get_sharpe(data: pd.DataFrame, rfr: float = 0, window: float = 252) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,8 +26,9 @@ def get_sharpe(data: pd.DataFrame, rfr: float, window: float) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | selected dataframe column | None | False |
-| rfr | float | risk free rate | None | False |
-| window | float | length of the rolling window | None | False |
+| rfr | float | risk free rate | 0 | True |
+| window | float | length of the rolling window | 252 | True |
+
 
 ---
 
@@ -35,11 +37,6 @@ def get_sharpe(data: pd.DataFrame, rfr: float, window: float) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | sharpe ratio |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,11 +46,12 @@ def get_sharpe(data: pd.DataFrame, rfr: float, window: float) -> DataFrame
 
 Plots Calculated the sharpe ratio
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1114)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1114)]
 
 ```python
-def display_sharpe(data: pd.DataFrame, rfr: float, window: float) -> None
+def display_sharpe(data: pd.DataFrame, rfr: float = 0, window: float = 252) -> None
 ```
+
 ---
 
 ## Parameters
@@ -61,18 +59,15 @@ def display_sharpe(data: pd.DataFrame, rfr: float, window: float) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | selected dataframe column | None | False |
-| rfr | float | risk free rate | None | False |
-| window | float | length of the rolling window | None | False |
+| rfr | float | risk free rate | 0 | True |
+| window | float | length of the rolling window | 252 | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

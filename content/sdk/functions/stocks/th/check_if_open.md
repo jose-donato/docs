@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Check if market open helper function
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L156)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L156)]
 
 ```python
 def check_if_open(bursa: pd.DataFrame, exchange: str) -> bool
 ```
+
 ---
 
 ## Parameters
@@ -23,10 +24,6 @@ This function does not take any parameters.
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

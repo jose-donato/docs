@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Returns coin fundraising
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L637)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L637)]
 
 ```python
-def get_fundraising(symbol: str) -> None
+def get_fundraising(symbol: str) -> Tuple[str, pd.DataFrame, pd.DataFrame, pd.DataFrame]
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_fundraising(symbol: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check fundraising | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_fundraising(symbol: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | Tuple[str, pd.DataFrame, pd.DataFrame, pd.DataFrame] | Launch summary,<br/>Sales rounds,<br/>Treasury Accounts,<br/>Metric Value launch details |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_fundraising(symbol: str) -> None
 
 Display coin fundraising
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L639)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L639)]
 
 ```python
-def display_fundraising(symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_fundraising(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,18 +57,15 @@ def display_fundraising(symbol: str, export: str, external_axes: Optional[List[m
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check coin fundraising | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

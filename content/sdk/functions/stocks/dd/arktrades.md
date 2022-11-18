@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Gets a dataframe of ARK trades for ticker
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/ark_model.py#L19)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/ark_model.py#L19)]
 
 ```python
-def get_ark_trades_by_ticker(symbol: str) -> DataFrame
+def get_ark_trades_by_ticker(symbol: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -20,6 +21,7 @@ def get_ark_trades_by_ticker(symbol: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to get trades for | None | False |
 
+
 ---
 
 ## Returns
@@ -27,10 +29,5 @@ def get_ark_trades_by_ticker(symbol: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of trades |
-
----
-
-## Examples
-
 ---
 

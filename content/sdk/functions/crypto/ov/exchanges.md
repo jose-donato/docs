@@ -13,19 +13,21 @@ import TabItem from '@theme/TabItem';
 
 Get list of top exchanges from CoinGecko API [Source: CoinGecko]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L218)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L218)]
 
 ```python
-def get_exchanges(sortby: str, ascend: bool) -> DataFrame
+def get_exchanges(sortby: str = "Rank", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
+| sortby | str | Key by which to sort data | Rank | True |
+| ascend | bool | Flag to sort data descending | True | True |
+
 
 ---
 
@@ -34,11 +36,6 @@ def get_exchanges(sortby: str, ascend: bool) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Trust_Score, Id, Name, Country, Year_Established, Trade_Volume_24h_BTC, Url |
-
----
-
-## Examples
-
 ---
 
 
@@ -48,32 +45,30 @@ def get_exchanges(sortby: str, ascend: bool) -> DataFrame
 
 Shows list of top exchanges from CoinGecko. [Source: CoinGecko]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L499)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L499)]
 
 ```python
-def display_exchanges(sortby: str, ascend: bool, limit: int, links: bool, export: str) -> None
+def display_exchanges(sortby: str = "Rank", ascend: bool = False, limit: int = 15, links: bool = False, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
-| links | bool | Flag to display urls | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 15 | True |
+| sortby | str | Key by which to sort data | Rank | True |
+| ascend | bool | Flag to sort data descending | False | True |
+| links | bool | Flag to display urls | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

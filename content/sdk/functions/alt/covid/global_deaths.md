@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get historical deaths for given country.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L70)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L73)]
 
 ```python
-def get_global_deaths(country: str) -> DataFrame
+def get_global_deaths(country: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -20,6 +21,7 @@ def get_global_deaths(country: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to search for | None | False |
 
+
 ---
 
 ## Returns
@@ -27,10 +29,5 @@ def get_global_deaths(country: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical deaths |
-
----
-
-## Examples
-
 ---
 

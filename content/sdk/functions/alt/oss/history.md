@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get repository star history.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L88)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L88)]
 
 ```python
-def get_stars_history(repo: str) -> DataFrame
+def get_stars_history(repo: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_stars_history(repo: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | repo | str | Repo to search for Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_stars_history(repo: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with star history - Columns: Date, Stars |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_stars_history(repo: str) -> DataFrame
 
 Plots repo summary [Source: https://api.github.com].
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L28)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L28)]
 
 ```python
-def display_star_history(repo: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_star_history(repo: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,18 +57,15 @@ def display_star_history(repo: str, export: str, external_axes: Optional[List[ma
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | repo | str | Repository to display star history. Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

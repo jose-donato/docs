@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Makes api request for last price
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L275)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L275)]
 
 ```python
 def last_price(symbol: str) -> None
 ```
+
 ---
 
 ## Parameters
@@ -20,6 +21,7 @@ def last_price(symbol: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol | None | False |
 
+
 ---
 
 ## Returns
@@ -27,10 +29,5 @@ def last_price(symbol: str) -> None
 | Type | Description |
 | ---- | ----------- |
 |  | Last price |
-
----
-
-## Examples
-
 ---
 

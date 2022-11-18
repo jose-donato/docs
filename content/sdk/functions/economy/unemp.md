@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get historical unemployment for United States
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L284)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L284)]
 
 ```python
-def get_unemployment(start_year: int) -> DataFrame
+def get_unemployment(start_year: int = 2010) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_unemployment(start_year: int) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | start_year | int | Start year for plot, by default 2010 | 2010 | True |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_unemployment(start_year: int) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical yields |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_unemployment(start_year: int) -> DataFrame
 
 Display US unemployment AlphaVantage
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L377)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L377)]
 
 ```python
-def display_unemployment(start_year: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_unemployment(start_year: int = 2010, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -60,18 +58,15 @@ def display_unemployment(start_year: int, raw: bool, export: str, external_axes:
 | ---- | ---- | ----------- | ------- | -------- |
 | start_year | int | Start year for plot, by default 2010 | 2010 | True |
 | raw | bool | Flag to show raw data, by default False | False | True |
-| export | str | Format to export data, by default "" | None | True |
+| export | str | Format to export data, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

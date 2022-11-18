@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get interest by region from google api [Source: google].
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L44)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L44)]
 
 ```python
-def get_regions(symbol: str) -> DataFrame
+def get_regions(symbol: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_regions(symbol: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to look at | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_regions(symbol: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of interest by region |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_regions(symbol: str) -> DataFrame
 
 Plots bars of regions based on stock's interest. [Source: Google].
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L156)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L156)]
 
 ```python
-def display_regions(symbol: str, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_regions(symbol: str, limit: int = 5, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,19 +57,16 @@ def display_regions(symbol: str, limit: int, export: str, external_axes: Optiona
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol | None | False |
-| limit | int | Number of regions to show | None | False |
-| export | str | Format to export data | None | False |
+| limit | int | Number of regions to show | 5 | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get all market cap division in Yahoo Finance data. [Source: Finance Database]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L97)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L97)]
 
 ```python
 def get_marketcap() -> list
 ```
+
 ---
 
 ## Parameters
@@ -25,10 +26,5 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | list | List of possible market caps |
-
----
-
-## Examples
-
 ---
 

@@ -13,22 +13,24 @@ import TabItem from '@theme/TabItem';
 
 Commodity channel index
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L20)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L20)]
 
 ```python
-def cci(data: pd.DataFrame, window: int, scalar: float) -> DataFrame
+def cci(data: pd.DataFrame, window: int = 14, scalar: float = 0.0015) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| high_vals | pd.Series | High values | None | False |
-| low_values | pd.Series | Low values | None | False |
-| close-values | pd.Series | Close values | None | False |
-| window | int | Length of window | None | False |
-| scalar | float | Scalar variable | None | False |
+| high_vals | pd.Series | High values | None | True |
+| low_values | pd.Series | Low values | None | True |
+| close-values | pd.Series | Close values | None | True |
+| window | int | Length of window | 14 | True |
+| scalar | float | Scalar variable | 0.0015 | True |
+
 
 ---
 
@@ -37,11 +39,6 @@ def cci(data: pd.DataFrame, window: int, scalar: float) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
-
----
-
-## Examples
-
 ---
 
 
@@ -51,11 +48,12 @@ def cci(data: pd.DataFrame, window: int, scalar: float) -> DataFrame
 
 Plots CCI Indicator
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L34)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L34)]
 
 ```python
-def display_cci(data: pd.DataFrame, window: int, scalar: float, symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_cci(data: pd.DataFrame, window: int = 14, scalar: float = 0.0015, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -63,21 +61,18 @@ def display_cci(data: pd.DataFrame, window: int, scalar: float, symbol: str, exp
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC | None | False |
-| window | int | Length of window | None | False |
-| scalar | float | Scalar variable | None | False |
-| symbol | str | Stock ticker | None | False |
-| export | str | Format to export data | None | False |
+| window | int | Length of window | 14 | True |
+| scalar | float | Scalar variable | 0.0015 | True |
+| symbol | str | Stock ticker |  | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

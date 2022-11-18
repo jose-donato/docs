@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Scrape all substack newsletters from url list.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L54)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_model.py#L54)]
 
 ```python
-def get_newsletters() -> DataFrame
+def get_newsletters() -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -31,11 +32,6 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with recent news from most popular DeFi related newsletters. |
-
----
-
-## Examples
-
 ---
 
 
@@ -45,29 +41,27 @@ This function does not take any parameters.
 
 Prints table showing DeFi related substack newsletters.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_view.py#L16)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/substack_view.py#L16)]
 
 ```python
-def display_newsletters(limit: int, export: str) -> None
+def display_newsletters(limit: int = 10, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 10 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

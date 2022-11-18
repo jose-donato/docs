@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Search CoinPaprika. [Source: CoinPaprika]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py#L27)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_model.py#L27)]
 
 ```python
-def get_search_results(query: str, category: Optional[Any], modifier: Optional[Any], sortby: str, ascend: bool) -> DataFrame
+def get_search_results(query: str, category: Optional[Any] = None, modifier: Optional[Any] = None, sortby: str = "id", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,10 +26,11 @@ def get_search_results(query: str, category: Optional[Any], modifier: Optional[A
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | query | str | phrase for search | None | False |
-| category | Optional[Any] | one or more categories (comma separated) to search.<br/>Available options: currencies|exchanges|icos|people|tags<br/>Default: currencies,exchanges,icos,people,tags | currencies | False |
-| modifier | Optional[Any] | set modifier for search results. Available options: symbol_search -<br/>search only by symbol (works for currencies only) | None | False |
-| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
+| category | Optional[Any] | one or more categories (comma separated) to search.<br/>Available options: currencies|exchanges|icos|people|tags<br/>Default: currencies,exchanges,icos,people,tags | None | True |
+| modifier | Optional[Any] | set modifier for search results. Available options: symbol_search -<br/>search only by symbol (works for currencies only) | None | True |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | id | True |
+| ascend | bool | Flag to sort data descending | True | True |
+
 
 ---
 
@@ -37,11 +39,6 @@ def get_search_results(query: str, category: Optional[Any], modifier: Optional[A
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Search Results<br/>Columns: Metric, Value |
-
----
-
-## Examples
-
 ---
 
 
@@ -51,11 +48,12 @@ def get_search_results(query: str, category: Optional[Any], modifier: Optional[A
 
 Prints table showing Search over CoinPaprika. [Source: CoinPaprika]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_view.py#L16)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/coinpaprika_view.py#L16)]
 
 ```python
-def display_search_results(query: str, category: str, limit: int, sortby: str, ascend: bool, export: str) -> None
+def display_search_results(query: str, category: str = "all", limit: int = 10, sortby: str = "id", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -63,21 +61,18 @@ def display_search_results(query: str, category: str, limit: int, sortby: str, a
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | query | str | Search query | None | False |
-| category | str | Categories to search: currencies|exchanges|icos|people|tags|all. Default: all | all | False |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| category | str | Categories to search: currencies|exchanges|icos|people|tags|all. Default: all | all | True |
+| limit | int | Number of records to display | 10 | True |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | id | True |
+| ascend | bool | Flag to sort data descending | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

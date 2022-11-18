@@ -13,18 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Display top dApps (in terms of TVL) grouped by chain.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L149)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L149)]
 
 ```python
-def get_grouped_defi_protocols(limit: int) -> DataFrame
+def get_grouped_defi_protocols(limit: int = 50) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of top dApps to display | None | False |
+| limit | int | Number of top dApps to display | 50 | True |
+
 
 ---
 
@@ -33,11 +35,6 @@ def get_grouped_defi_protocols(limit: int) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Information about DeFi protocols grouped by chain |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,30 +44,28 @@ def get_grouped_defi_protocols(limit: int) -> DataFrame
 
 Plots top dApps (in terms of TVL) grouped by chain.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L28)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L28)]
 
 ```python
-def display_grouped_defi_protocols(limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_grouped_defi_protocols(limit: int = 50, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| num | int | Number of top dApps to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| num | int | Number of top dApps to display | None | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Calculate test statistics for heteroscedasticity
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L561)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L562)]
 
 ```python
-def get_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper) -> DataFrame
+def get_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper
 | ---- | ---- | ----------- | ------- | -------- |
 | model | OLS Model | Model containing residual values. | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Test results from the Breusch-Pagan Test |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper
 
 Show Breusch-Pagan heteroscedasticity test
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L182)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L182)]
 
 ```python
-def display_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper, export: str) -> None
+def display_bpag(model: statsmodels.regression.linear_model.RegressionResultsWrapper, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,17 +57,14 @@ def display_bpag(model: statsmodels.regression.linear_model.RegressionResultsWra
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | model | OLS Model | OLS model that has been fit. | None | False |
-| export | str | Format to export data | None | False |
+| export | str | Format to export data |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

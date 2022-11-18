@@ -13,22 +13,24 @@ import TabItem from '@theme/TabItem';
 
 Get an average bid and ask prices, average spread for given crypto pair for chosen time period.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L725)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L725)]
 
 ```python
-def get_spread_for_crypto_pair(symbol: str, to_symbol: str, limit: int, sortby: str, ascend: bool) -> DataFrame
+def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Last n days to query data | None | False |
-| symbol | str | ERC20 token symbol | None | False |
-| to_symbol | str | Quoted currency. | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
+| symbol | str | ERC20 token symbol | WETH | True |
+| to_symbol | str | Quoted currency. | USDT | True |
+| limit | int | Last n days to query data | 10 | True |
+| sortby | str | Key by which to sort data | date | True |
+| ascend | bool | Flag to sort data ascending | True | True |
+
 
 ---
 
@@ -37,11 +39,6 @@ def get_spread_for_crypto_pair(symbol: str, to_symbol: str, limit: int, sortby: 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Average bid and ask prices, spread for given crypto pair for chosen time period |
-
----
-
-## Examples
-
 ---
 
 
@@ -51,23 +48,25 @@ def get_spread_for_crypto_pair(symbol: str, to_symbol: str, limit: int, sortby: 
 
 Prints table showing an average bid and ask prices, average spread for given crypto pair for chosen
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L345)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L346)]
 
 ```python
-def display_spread_for_crypto_pair(symbol: Any, to_symbol: Any, days: int, sortby: str, ascend: bool, export: str) -> None
+def display_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| days | int | Last n days to query data | None | False |
-| symbol | str | ERC20 token symbol | None | False |
-| to_symbol | str | Quoted currency. | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| symbol | str | ERC20 token symbol | WETH | True |
+| to_symbol | str | Quoted currency. | USDT | True |
+| limit | int | Last n days to query data | 10 | True |
+| sortby | str | Key by which to sort data | date | True |
+| ascend | bool | Flag to sort data ascending | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
@@ -76,11 +75,6 @@ def display_spread_for_crypto_pair(symbol: Any, to_symbol: Any, days: int, sortb
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Average bid and ask prices, spread for given crypto pair for chosen time period |
-
----
-
-## Examples
-
 ---
 
 

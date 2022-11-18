@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get Yahoo Finance potentially undervalued large cap stocks.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L116)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L116)]
 
 ```python
-def get_ulc() -> DataFrame
+def get_ulc() -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,10 +26,5 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most undervalued large cap stocks |
-
----
-
-## Examples
-
 ---
 

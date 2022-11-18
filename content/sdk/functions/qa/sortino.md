@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Calculates the sortino ratio
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L562)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L562)]
 
 ```python
-def get_sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> DataFrame
+def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 252, adjusted: bool = False) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,9 +26,10 @@ def get_sortino(data: pd.DataFrame, target_return: float, window: float, adjuste
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | selected dataframe | None | False |
-| target_return | float | target return of the asset | None | False |
-| window | float | length of the rolling window | None | False |
-| adjusted | bool | adjust the sortino ratio | None | False |
+| target_return | float | target return of the asset | 0 | True |
+| window | float | length of the rolling window | 252 | True |
+| adjusted | bool | adjust the sortino ratio | False | True |
+
 
 ---
 
@@ -36,11 +38,6 @@ def get_sortino(data: pd.DataFrame, target_return: float, window: float, adjuste
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | sortino ratio |
-
----
-
-## Examples
-
 ---
 
 
@@ -50,11 +47,12 @@ def get_sortino(data: pd.DataFrame, target_return: float, window: float, adjuste
 
 Plots the sortino ratio
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1139)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1139)]
 
 ```python
 def display_sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> None
 ```
+
 ---
 
 ## Parameters
@@ -66,15 +64,12 @@ def display_sortino(data: pd.DataFrame, target_return: float, window: float, adj
 | window | float | length of the rolling window | None | False |
 | adjusted | bool | adjust the sortino ratio | None | False |
 
+
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

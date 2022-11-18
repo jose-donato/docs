@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Returns trades for a coin in a given exchange
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L70)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L70)]
 
 ```python
-def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> DataFrame
+def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -28,6 +29,7 @@ def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> DataFrame
 | symbol | str | coin symbol | None | False |
 | to_symbol | str | currency to compare coin against | None | False |
 
+
 ---
 
 ## Returns
@@ -35,11 +37,6 @@ def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | trades for a coin in a given exchange |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,11 +46,12 @@ def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> DataFrame
 
 Prints table showing trades for a coin in a given exchange
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L63)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L63)]
 
 ```python
-def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int, export: str) -> None
+def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int = 10, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -63,18 +61,15 @@ def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int, expor
 | exchange | str | exchange id | None | False |
 | symbol | str | coin symbol | None | False |
 | to_symbol | str | currency to compare coin against | None | False |
-| limit | int | number of trades to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | number of trades to display | 10 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

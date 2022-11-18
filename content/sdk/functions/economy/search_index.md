@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Search indices by keyword. [Source: FinanceDatabase]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L719)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L725)]
 
 ```python
-def get_search_indices(keyword: list, limit: int) -> DataFrame
+def get_search_indices(keyword: list, limit: int = 10) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -19,7 +20,8 @@ def get_search_indices(keyword: list, limit: int) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | keyword | list | The keyword you wish to search for. This can include spaces. | None | False |
-| limit | int | The amount of views you want to show, by default this is set to 10. | this | False |
+| limit | int | The amount of views you want to show, by default this is set to 10. | 10 | True |
+
 
 ---
 
@@ -28,10 +30,5 @@ def get_search_indices(keyword: list, limit: int) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Dataframe with the available options. |
-
----
-
-## Examples
-
 ---
 

@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get shareholders from yahoo
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L75)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L75)]
 
 ```python
-def get_shareholders(symbol: str, holder: str) -> DataFrame
+def get_shareholders(symbol: str, holder: str = "institutional") -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -19,7 +20,8 @@ def get_shareholders(symbol: str, holder: str) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| holder | str | Which holder to get table for | None | False |
+| holder | str | Which holder to get table for | institutional | True |
+
 
 ---
 
@@ -28,10 +30,5 @@ def get_shareholders(symbol: str, holder: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Major holders |
-
----
-
-## Examples
-
 ---
 

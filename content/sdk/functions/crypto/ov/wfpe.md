@@ -13,18 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Scrapes coin withdrawal fees per exchange
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L207)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L207)]
 
 ```python
-def get_crypto_withdrawal_fees(symbol: str) -> None
+def get_crypto_withdrawal_fees(symbol: str) -> List[Any]
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | Coin to check withdrawal fees. By default bitcoin | bitcoin | False |
+| symbol | str | Coin to check withdrawal fees. By default bitcoin | None | False |
+
 
 ---
 
@@ -33,11 +35,6 @@ def get_crypto_withdrawal_fees(symbol: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | List | - str: Overall statistics (exchanges, lowest, average and median)<br/>- pd.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_crypto_withdrawal_fees(symbol: str) -> None
 
 Coin withdrawal fees per exchange
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L86)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L86)]
 
 ```python
-def display_crypto_withdrawal_fees(symbol: str, export: str) -> None
+def display_crypto_withdrawal_fees(symbol: str, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,17 +57,14 @@ def display_crypto_withdrawal_fees(symbol: str, export: str) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Coin to check withdrawal fees | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

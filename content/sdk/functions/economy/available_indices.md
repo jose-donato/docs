@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get available indices
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L660)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L660)]
 
 ```python
-def get_available_indices() -> None
+def get_available_indices() -> Dict[str, Dict[str, str]]
 ```
+
 ---
 
 ## Parameters
@@ -25,10 +26,5 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, Dict[str, str]] | Dictionary with available indices and respective detail |
-
----
-
-## Examples
-
 ---
 

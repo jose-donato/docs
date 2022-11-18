@@ -7,18 +7,20 @@ description: OpenBB SDK Function
 
 Gets dividend calendar for given date.  Date represents Ex-Dividend Date
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/nasdaq_model.py#L52)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/nasdaq_model.py#L52)]
 
 ```python
-def get_dividend_cal(date: str) -> DataFrame
+def get_dividend_cal(date: str = None) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| date | datetime | Date to get for in format YYYY-MM-DD | None | False |
+| date | datetime | Date to get for in format YYYY-MM-DD | None | True |
+
 
 ---
 
@@ -27,10 +29,5 @@ def get_dividend_cal(date: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of dividend calendar |
-
----
-
-## Examples
-
 ---
 

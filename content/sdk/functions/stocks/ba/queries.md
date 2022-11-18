@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get related queries from google api [Source: google].
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L73)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L73)]
 
 ```python
-def get_queries(symbol: str, limit: int) -> DataFrame
+def get_queries(symbol: str, limit: int = 10) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -19,7 +20,8 @@ def get_queries(symbol: str, limit: int) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol to compare | None | False |
-| limit | int | Number of queries to show | None | False |
+| limit | int | Number of queries to show | 10 | True |
+
 
 ---
 
@@ -28,10 +30,5 @@ def get_queries(symbol: str, limit: int) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of related queries |
-
----
-
-## Examples
-
 ---
 

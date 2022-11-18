@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get top losers. [Source: Yahoo Finance]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L35)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L35)]
 
 ```python
-def get_losers() -> DataFrame
+def get_losers() -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,10 +26,5 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Stock Losers |
-
----
-
-## Examples
-
 ---
 

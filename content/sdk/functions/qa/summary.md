@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Print summary statistics
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L25)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L25)]
 
 ```python
-def get_summary(data: pd.DataFrame) -> DataFrame
+def get_summary(data: pd.DataFrame) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_summary(data: pd.DataFrame) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe to get summary statistics for | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_summary(data: pd.DataFrame) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Summary statistics |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_summary(data: pd.DataFrame) -> DataFrame
 
 Prints table showing summary statistics
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L53)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L53)]
 
 ```python
-def display_summary(data: pd.DataFrame, export: str) -> None
+def display_summary(data: pd.DataFrame, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,17 +57,14 @@ def display_summary(data: pd.DataFrame, export: str) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | DataFrame to get statistics of | None | False |
-| export | str | Format to export data | None | False |
+| export | str | Format to export data |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get income data. [Source: Marketwatch].
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L74)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L74)]
 
 ```python
-def get_income_comparison(similar: List[str], timeframe: str, quarter: bool) -> DataFrame
+def get_income_comparison(similar: List[str], timeframe: str = "2021", quarter: bool = False) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,9 +26,10 @@ def get_income_comparison(similar: List[str], timeframe: str, quarter: bool) -> 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of tickers to compare.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| timeframe | str | Column header to compare | None | False |
+| timeframe | str | Column header to compare | 2021 | True |
 | quarter | bool | Whether to use quarterly statements, by default False | False | True |
 | export | str | Format to export data | None | True |
+
 
 ---
 
@@ -36,11 +38,6 @@ def get_income_comparison(similar: List[str], timeframe: str, quarter: bool) -> 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of income statements |
-
----
-
-## Examples
-
 ---
 
 
@@ -50,11 +47,12 @@ def get_income_comparison(similar: List[str], timeframe: str, quarter: bool) -> 
 
 Display income data. [Source: Marketwatch].
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_view.py#L23)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_view.py#L23)]
 
 ```python
-def display_income_comparison(symbols: List[str], timeframe: str, quarter: bool, export: str) -> None
+def display_income_comparison(symbols: List[str], timeframe: str = "2021", quarter: bool = False, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -62,19 +60,16 @@ def display_income_comparison(symbols: List[str], timeframe: str, quarter: bool,
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of tickers to compare. Enter tickers you want to see as shown below:<br/>["TSLA", "AAPL", "NFLX", "BBY"]<br/>You can also get a list of comparable peers with<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| timeframe | str | What year to look at | None | False |
+| timeframe | str | What year to look at | 2021 | True |
 | quarter | bool | Whether to use quarterly statements, by default False | False | True |
-| export | str | Format to export data | None | True |
+| export | str | Format to export data |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Plots the short interest of a stock. This corresponds to the
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_model.py#L18)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_model.py#L18)]
 
 ```python
-def get_short_interest(symbol: str, nyse: bool) -> DataFrame
+def get_short_interest(symbol: str, nyse: bool = False) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,7 +26,8 @@ def get_short_interest(symbol: str, nyse: bool) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ticker to get short interest from | None | False |
-| nyse | bool | data from NYSE if true, otherwise NASDAQ | None | False |
+| nyse | bool | data from NYSE if true, otherwise NASDAQ | False | True |
+
 
 ---
 
@@ -34,11 +36,6 @@ def get_short_interest(symbol: str, nyse: bool) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | short interest volume data |
-
----
-
-## Examples
-
 ---
 
 
@@ -48,11 +45,12 @@ def get_short_interest(symbol: str, nyse: bool) -> DataFrame
 
 Plot the short interest of a stock. This corresponds to the
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_view.py#L96)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_view.py#L96)]
 
 ```python
-def short_interest(symbol: str, nyse: bool, limit: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def short_interest(symbol: str, nyse: bool = False, limit: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -60,21 +58,18 @@ def short_interest(symbol: str, nyse: bool, limit: int, raw: bool, export: str, 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ticker to get short interest from | None | False |
-| nyse | bool | data from NYSE if true, otherwise NASDAQ | None | False |
-| limit | int | Number of past days to show short interest | None | False |
-| raw | bool | Flag to print raw data instead | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| nyse | bool | data from NYSE if true, otherwise NASDAQ | False | True |
+| limit | int | Number of past days to show short interest | 10 | True |
+| raw | bool | Flag to print raw data instead | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

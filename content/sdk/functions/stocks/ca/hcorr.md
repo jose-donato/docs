@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get historical price correlation. [Source: Yahoo Finance]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L98)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L98)]
 
 ```python
-def get_correlation(similar: List[str], start_date: str, candle_type: str) -> None
+def get_correlation(similar: List[str], start_date: str = None, candle_type: str = "a") -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
+
 ---
 
 ## Parameters
@@ -25,8 +26,9 @@ def get_correlation(similar: List[str], start_date: str, candle_type: str) -> No
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
-| candle_type | str | OHLCA column to use for candles or R for returns, by default "a" for Adjusted Close | None | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
+| candle_type | str | OHLCA column to use for candles or R for returns, by default "a" for Adjusted Close | a | True |
+
 
 ---
 
@@ -35,11 +37,6 @@ def get_correlation(similar: List[str], start_date: str, candle_type: str) -> No
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dataframe with correlation matrix, Dataframe with historical prices for all comparison stocks |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,11 +46,12 @@ def get_correlation(similar: List[str], start_date: str, candle_type: str) -> No
 
 Correlation heatmap based on historical price comparison
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L159)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L159)]
 
 ```python
-def display_correlation(similar: List[str], start_date: str, candle_type: str, display_full_matrix: bool, raw: bool, external_axes: Optional[List[matplotlib.axes._axes.Axes]], export: str) -> None
+def display_correlation(similar: List[str], start_date: str = None, candle_type: str = "a", display_full_matrix: bool = False, raw: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -61,22 +59,19 @@ def display_correlation(similar: List[str], start_date: str, candle_type: str, d
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
-| candle_type | str | OHLCA column to use for candles or R for returns, by default "a" for Adjusted Close | None | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
+| candle_type | str | OHLCA column to use for candles or R for returns, by default "a" for Adjusted Close | a | True |
 | display_full_matrix | bool | Optionally display all values in the matrix, rather than masking off half, by default False | False | True |
-| raw | bool | Whether to display raw data | None | True |
+| raw | bool | Whether to display raw data | False | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-| export | str | Format to export correlation prices, by default "" | None | True |
+| export | str | Format to export correlation prices, by default "" |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

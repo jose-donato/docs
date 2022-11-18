@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Calculate test statistics for autocorrelation
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L536)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L537)]
 
 ```python
-def get_bgod(model: pd.DataFrame, lags: int) -> None
+def get_bgod(model: pd.DataFrame, lags: int = 3) -> Tuple[float, float, float, float]
 ```
+
 ---
 
 ## Parameters
@@ -25,7 +26,8 @@ def get_bgod(model: pd.DataFrame, lags: int) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | model | OLS Model | OLS model that has been fit. | None | False |
-| lags | int | The amount of lags. | None | False |
+| lags | int | The amount of lags. | 3 | True |
+
 
 ---
 
@@ -34,11 +36,6 @@ def get_bgod(model: pd.DataFrame, lags: int) -> None
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Test results from the Breusch-Godfrey Test |
-
----
-
-## Examples
-
 ---
 
 
@@ -48,11 +45,12 @@ def get_bgod(model: pd.DataFrame, lags: int) -> None
 
 Show Breusch-Godfrey autocorrelation test
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L141)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L141)]
 
 ```python
-def display_bgod(model: statsmodels.regression.linear_model.RegressionResultsWrapper, lags: int, export: str) -> None
+def display_bgod(model: statsmodels.regression.linear_model.RegressionResultsWrapper, lags: int = 3, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -60,18 +58,15 @@ def display_bgod(model: statsmodels.regression.linear_model.RegressionResultsWra
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | model | OLS Model | OLS model that has been fit. | None | False |
-| lags | int | The amount of lags included. | None | False |
-| export | str | Format to export data | None | False |
+| lags | int | The amount of lags included. | 3 | True |
+| export | str | Format to export data |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

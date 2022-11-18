@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get repository summary.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L179)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L179)]
 
 ```python
-def get_repo_summary(repo: str) -> DataFrame
+def get_repo_summary(repo: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_repo_summary(repo: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | repo | str | Repo to search for Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_repo_summary(repo: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with repo summary - Columns: Metric, Value |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_repo_summary(repo: str) -> DataFrame
 
 Prints table showing repo summary [Source: https://api.github.com].
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L123)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L123)]
 
 ```python
-def display_repo_summary(repo: str, export: str) -> None
+def display_repo_summary(repo: str, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,17 +57,14 @@ def display_repo_summary(repo: str, export: str) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | repo | str | Repository to display summary. Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get stock volume. [Source: Yahoo Finance]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L134)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L134)]
 
 ```python
-def get_volume(similar: List[str], start_date: str) -> DataFrame
+def get_volume(similar: List[str], start_date: str = None) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,7 +26,8 @@ def get_volume(similar: List[str], start_date: str) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
+
 
 ---
 
@@ -34,11 +36,6 @@ def get_volume(similar: List[str], start_date: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with volume for stock |
-
----
-
-## Examples
-
 ---
 
 
@@ -48,11 +45,12 @@ def get_volume(similar: List[str], start_date: str) -> DataFrame
 
 Display stock volume. [Source: Yahoo Finance]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L107)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L107)]
 
 ```python
-def display_volume(similar: List[str], start_date: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_volume(similar: List[str], start_date: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -60,19 +58,16 @@ def display_volume(similar: List[str], start_date: str, export: str, external_ax
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
-| export | str | Format to export historical prices, by default "" | None | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
+| export | str | Format to export historical prices, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 
