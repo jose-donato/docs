@@ -45,7 +45,7 @@ function Footer() {
       .then((data) => setStars(data.stargazers_count))
   }, [])
   return (
-    <footer className="border-t dark:border-grey-600/50 lg:px-12 py-14 bg-white dark:bg-grey-900 z-10">
+    <footer className="border-t dark:border-grey-600/50 lg:px-12 py-14 bg-white dark:bg-grey-900 z-10 overflow-hidden">
       <div className="flex w-full flex-col justify-between gap-10 md:flex-row md:items-start">
         <div className="ml-2 mb-2 space-y-10 md:m-0">
           <Link
@@ -113,7 +113,7 @@ function Footer() {
           })}
         </div>
       </div>
-      <div className="divider" />
+      <hr />
       <div className="flex w-full flex-col items-center justify-between gap-4 md:flex-row md:gap-0">
         <div className="flex flex-col items-start justify-end gap-4 self-start font-light text-grey-500 md:flex-row md:items-center">
           <p className="text-sm">{`© ${new Date().getFullYear()} OpenBB`}</p>

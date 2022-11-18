@@ -14,8 +14,8 @@ export default function Home(): JSX.Element {
   return (
     <Layout description="Documentation for free and open source OpenBB products.">
       <main className="relative h-[75vh] flex flex-col items-center justify-center overflow-hidden">
-        <DarkBlueRadialGradient className="absolute -top-20 -left-20 2xl:-top-60 2xl:-left-[800px] xl:opacity-50" />
-        <RubyRedRadialGradient className="absolute -top-20 -right-20 2xl:-top-60 2xl:-right-[800px] xl:opacity-50" />
+        <DarkBlueRadialGradient className="absolute w-[200px] h-[200px] xl:w-[800px] xl:h-[800px] -top-20 -left-20 2xl:-top-60 2xl:-left-[800px] xl:opacity-50" />
+        <RubyRedRadialGradient className="absolute w-[200px] h-[200px] xl:w-[800px] xl:h-[800px] -top-20 -right-20 2xl:-top-60 2xl:-right-[800px] xl:opacity-50" />
         <div className="flex mx-auto flex-col items-center justify-center w-full max-w-[906px]">
           <div className="z-10 flex flex-col items-center justify-center w-full h-full">
             <h1 className="mx-6 font-bold text-3xl lg:text-4xl leading-10 text-center mb-4 tracking-widest uppercase">
