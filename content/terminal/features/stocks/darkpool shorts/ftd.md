@@ -16,8 +16,8 @@ usage: ftd [-s START] [-e END] [-n N_NUM] [--raw]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| start | start of datetime to see FTD | 2022-09-18 | True | None |
-| end | end of datetime to see FTD | 2022-11-17 | True | None |
+| start | start of datetime to see FTD | 2022-09-19 | True | None |
+| end | end of datetime to see FTD | 2022-11-18 | True | None |
 | n_num | number of latest fails-to-deliver being printed | 0 | True | None |
 | raw | Print raw data. | False | True | None |
 

@@ -17,7 +17,7 @@ usage: hcorr [-t {o,h,l,c,a,r}] [-s START] [--display-full-matrix]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | type_candle | Candle data to use: o-open, h-high, l-low, c-close, a-adjusted close, r-returns. | a | True | o, h, l, c, a, r |
-| start | The starting date (format YYYY-MM-DD) of the stock | 2021-11-16 | True | None |
+| start | The starting date (format YYYY-MM-DD) of the stock | 2021-11-17 | True | None |
 | display_full_matrix | Display all matrix values, rather than masking off half. | False | True | None |
 
 

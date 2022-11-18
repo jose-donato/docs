@@ -12,6 +12,7 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_series_notes(search_query: str, limit: int = -1) -> pd.DataFrame
 ```
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -24,4 +25,3 @@ def get_series_notes(search_query: str, limit: int = -1) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of matched series |
-

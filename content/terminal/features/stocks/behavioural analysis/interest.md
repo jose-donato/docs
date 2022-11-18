@@ -16,7 +16,7 @@ usage: interest [-s START] [-w WORDS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| start | starting date (format YYYY-MM-DD) of interest | 2020-11-15 | True | None |
+| start | starting date (format YYYY-MM-DD) of interest | 2020-11-16 | True | None |
 | words | Select multiple sentences/words separated by commas. E.g. COVID,WW3,NFT | None | True | None |
 
 

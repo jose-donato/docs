@@ -16,7 +16,7 @@ usage: fib [-p PERIOD] [--start START] [--end END]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| period | Days to look back for retracement | 120 | True | None |
+| period | Days to look back for retracement | 120 | True | range(1, 960) |
 | start | Starting date to select | None | True | None |
 | end | Ending date to select | None | True | None |
 
