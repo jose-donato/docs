@@ -13,21 +13,19 @@ import TabItem from '@theme/TabItem';
 
 Returns historical data of an asset in a certain terra address
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L19)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L19)
 
 ```python
-def get_history_asset_from_terra_address(asset: str = "ust", address: str = "terra1tmnqgvg567ypvsvk6rwsga3srp7e3lg6u0elp8") -> pd.DataFrame
+def get_history_asset_from_terra_address(asset: str, address: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| asset | str | Terra asset {ust,luna,sdt} | ust | True |
-| address | str | Terra address. Valid terra addresses start with 'terra' | terra1tmnqgvg567ypvsvk6rwsga3srp7e3lg6u0elp8 | True |
-
+| asset | str | Terra asset {ust,luna,sdt} | None | False |
+| address | str | Terra address. Valid terra addresses start with 'terra' | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def get_history_asset_from_terra_address(asset: str = "ust", address: str = "ter
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | historical data |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,29 +48,31 @@ def get_history_asset_from_terra_address(asset: str = "ust", address: str = "ter
 
 Plots the 30-day history of specified asset in terra address
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L29)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L29)
 
 ```python
-def display_terra_asset_history(asset: str = "", address: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_terra_asset_history(asset: str, address: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| asset | str | Terra asset {ust,luna,sdt} |  | True |
-| address | str | Terra address. Valid terra addresses start with 'terra' |  | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| asset | str | Terra asset {ust,luna,sdt} | None | False |
+| address | str | Terra address. Valid terra addresses start with 'terra' | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Gets base Fama French data to calculate risk
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/quantitative_analysis/factors_model.py#L20)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/quantitative_analysis/factors_model.py#L20)
 
 ```python
-def get_fama_raw() -> pd.DataFrame
+def get_fama_raw() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | A data with fama french model information |
+
+---
+
+## Examples
+
 ---
 

@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Calculate Donchian Channels
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L53)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L53)
 
 ```python
-def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20) -> pd.DataFrame
+def donchian(data: pd.DataFrame, upper_length: int, lower_length: int) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,9 +25,8 @@ def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20)
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| upper_length | int | Length of window to calculate upper channel | 20 | True |
-| lower_length | int | Length of window to calculate lower channel | 20 | True |
-
+| upper_length | int | Length of window to calculate upper channel | None | False |
+| lower_length | int | Length of window to calculate lower channel | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20)
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of upper and lower channels |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,12 +49,11 @@ def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20)
 
 Plots donchian channels
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L112)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L112)
 
 ```python
-def display_donchian(data: pd.DataFrame, symbol: str = "", upper_length: int = 20, lower_length: int = 20, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_donchian(data: pd.DataFrame, symbol: str, upper_length: int, lower_length: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -59,18 +61,21 @@ def display_donchian(data: pd.DataFrame, symbol: str = "", upper_length: int = 2
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| symbol | str | Ticker symbol |  | True |
-| upper_length | int | Length of window to calculate upper channel | 20 | True |
-| lower_length | int | Length of window to calculate lower channel | 20 | True |
-| export | str | Format of export file |  | True |
+| symbol | str | Ticker symbol | None | False |
+| upper_length | int | Length of window to calculate upper channel | None | False |
+| lower_length | int | Length of window to calculate lower channel | None | False |
+| export | str | Format of export file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

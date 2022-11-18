@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get stats of a nft collection [Source: opensea.io]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_model.py#L17)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_model.py#L17)
 
 ```python
-def get_collection_stats(slug: str) -> pd.DataFrame
+def get_collection_stats(slug: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_collection_stats(slug: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | slug | str | Opensea collection slug. If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_collection_stats(slug: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | collection stats |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_collection_stats(slug: str) -> pd.DataFrame
 
 Prints table showing collection stats. [Source: opensea.io]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_view.py#L15)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_view.py#L15)
 
 ```python
 def display_collection_stats(slug: str, export: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -59,12 +61,15 @@ def display_collection_stats(slug: str, export: str) -> None
 | slug | str | Opensea collection slug.<br/>If the name of the collection is Mutant Ape Yacht Club the slug is mutant-ape-yacht-club | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
-
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

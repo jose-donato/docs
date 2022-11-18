@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get Fama French data
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L240)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L240)
 
 ```python
-def get_fama_raw() -> pd.DataFrame
+def get_fama_raw() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Fama French data |
+
+---
+
+## Examples
+
 ---
 

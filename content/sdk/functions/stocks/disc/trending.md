@@ -7,20 +7,18 @@ description: OpenBB SDK Function
 
 Returns a list of trending articles
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L100)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L100)
 
 ```python
-def get_trending_list(limit: int = 5) -> list
+def get_trending_list(limit: int) -> list
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of articles | 5 | True |
-
+| limit | int | Number of articles | None | False |
 
 ---
 
@@ -29,5 +27,10 @@ def get_trending_list(limit: int = 5) -> list
 | Type | Description |
 | ---- | ----------- |
 | list | Trending articles list |
+
+---
+
+## Examples
+
 ---
 

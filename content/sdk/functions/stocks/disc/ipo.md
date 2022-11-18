@@ -7,21 +7,19 @@ description: OpenBB SDK Function
 
 Get IPO calendar
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L16)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L16)
 
 ```python
-def get_ipo_calendar(start_date: str = None, end_date: str = None) -> pd.DataFrame
+def get_ipo_calendar(start_date: str, end_date: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| start_date | str | Initial date, format YYYY-MM-DD | None | True |
-| end_date | str | Final date, format YYYY-MM-DD | None | True |
-
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 
 ---
 
@@ -30,5 +28,10 @@ def get_ipo_calendar(start_date: str = None, end_date: str = None) -> pd.DataFra
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Get dataframe with IPO calendar events |
+
+---
+
+## Examples
+
 ---
 

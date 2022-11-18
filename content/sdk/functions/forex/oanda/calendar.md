@@ -13,21 +13,19 @@ import TabItem from '@theme/TabItem';
 
 Request data of significant events calendar.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L645)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L645)
 
 ```python
-def get_calendar_request(days: int = 14, instrument: Optional[str] = None) -> Union[pd.DataFrame, bool]
+def get_calendar_request(days: int, instrument: Optional[str]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
-| days | int | Number of days in advance | 14 | True |
-
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
+| days | int | Number of days in advance | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def get_calendar_request(days: int = 14, instrument: Optional[str] = None) -> Un
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Calendar events data or False |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,12 +48,11 @@ def get_calendar_request(days: int = 14, instrument: Optional[str] = None) -> Un
 
 View calendar of significant events.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L383)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L383)
 
 ```python
-def calendar(instrument: str, days: int = 7) -> None
+def calendar(instrument: str, days: int) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,14 +60,17 @@ def calendar(instrument: str, days: int = 7) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instrument | str | The loaded currency pair | None | False |
-| days | int | Number of days in advance | 7 | True |
-
+| days | int | Number of days in advance | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Calculate Bollinger Bands
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L18)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L18)
 
 ```python
-def bbands(data: pd.DataFrame, window: int = 15, n_std: float = 2, mamode: str = "ema") -> pd.DataFrame
+def bbands(data: pd.DataFrame, window: int, n_std: float, mamode: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,10 +25,9 @@ def bbands(data: pd.DataFrame, window: int = 15, n_std: float = 2, mamode: str =
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| window | int | Length of window to calculate BB | 15 | True |
-| n_std | float | Number of standard deviations to show | 2 | True |
-| mamode | str | Method of calculating average | ema | True |
-
+| window | int | Length of window to calculate BB | None | False |
+| n_std | float | Number of standard deviations to show | None | False |
+| mamode | str | Method of calculating average | None | False |
 
 ---
 
@@ -38,6 +36,11 @@ def bbands(data: pd.DataFrame, window: int = 15, n_std: float = 2, mamode: str =
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of bollinger band data |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,12 +50,11 @@ def bbands(data: pd.DataFrame, window: int = 15, n_std: float = 2, mamode: str =
 
 Plots bollinger bands
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L27)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L27)
 
 ```python
-def display_bbands(data: pd.DataFrame, symbol: str = "", window: int = 15, n_std: float = 2, mamode: str = "sma", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_bbands(data: pd.DataFrame, symbol: str, window: int, n_std: float, mamode: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,19 +62,22 @@ def display_bbands(data: pd.DataFrame, symbol: str = "", window: int = 15, n_std
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| symbol | str | Ticker symbol |  | True |
-| window | int | Length of window to calculate BB | 15 | True |
-| n_std | float | Number of standard deviations to show | 2 | True |
-| mamode | str | Method of calculating average | sma | True |
-| export | str | Format of export file |  | True |
+| symbol | str | Ticker symbol | None | False |
+| window | int | Length of window to calculate BB | None | False |
+| n_std | float | Number of standard deviations to show | None | False |
+| mamode | str | Method of calculating average | None | False |
+| export | str | Format of export file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

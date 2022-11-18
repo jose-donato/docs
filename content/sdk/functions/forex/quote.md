@@ -3,25 +3,29 @@ title: quote
 description: OpenBB SDK Function
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # quote
 
-Get forex quote.
+<Tabs>
+<TabItem value="model" label="Model" default>
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/sdk_helpers.py#L9)]
+Get current exchange rate quote from alpha vantage.
+
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L56)
 
 ```python
-def quote(symbol: str, source: str = "YahooFinance") -> pd.DataFrame
+def get_quote(to_symbol: str, from_symbol: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | Forex symbol to get quote for. | None | False |
-| source | str | Source to get quote from, by default "YahooFinance" | YahooFinance | True |
-
+| to_symbol | str | To forex symbol | None | False |
+| from_symbol | str | From forex symbol | None | False |
 
 ---
 
@@ -29,16 +33,48 @@ def quote(symbol: str, source: str = "YahooFinance") -> pd.DataFrame
 
 | Type | Description |
 | ---- | ----------- |
-| pd.DataFrame | DataFrame of quote data. |
+| Dict[str, Any] | Dictionary of exchange rate |
+
 ---
 
 ## Examples
 
-This also supports AlphaVantage and will handle different conventions
+---
+
+
+
+</TabItem>
+<TabItem value="view" label="View">
+
+Display current forex pair exchange rate.
+
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_view.py#L18)
+
 ```python
-from openbb_terminal.sdk import openbb
-EUR_USD_quote = openbb.forex.quote("EURUSD")
+def display_quote(to_symbol: str, from_symbol: str) -> None
 ```
+---
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| to_symbol | str | To symbol | None | False |
+| from_symbol | str | From forex symbol | None | False |
 
 ---
 
+## Returns
+
+This function does not return anything
+
+---
+
+## Examples
+
+---
+
+
+
+</TabItem>
+</Tabs>

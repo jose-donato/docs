@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get calendar earnings for ticker symbol
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L179)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L179)
 
 ```python
-def get_calendar_earnings(symbol: str) -> pd.DataFrame
+def get_calendar_earnings(symbol: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_calendar_earnings(symbol: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_calendar_earnings(symbol: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of calendar earnings |
+
+---
+
+## Examples
+
 ---
 

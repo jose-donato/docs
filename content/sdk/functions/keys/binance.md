@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Set Binance key
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1355)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1355)
 
 ```python
-def set_binance_key(key: str, secret: str, persist: bool = False, show_output: bool = False) -> str
+def set_binance_key(key: str, secret: str, persist: bool, show_output: bool) -> str
 ```
-
 ---
 
 ## Parameters
@@ -21,9 +20,8 @@ def set_binance_key(key: str, secret: str, persist: bool = False, show_output: b
 | ---- | ---- | ----------- | ------- | -------- |
 | key | str | API key | None | False |
 | secret | str | API secret | None | False |
-| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.<br/>If True, api key change will be global, i.e. it will affect terminal environment variables.<br/>By default, False. | False | True |
-| show_output | bool | Display status string or not. By default, False. | False | True |
-
+| persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.<br/>If True, api key change will be global, i.e. it will affect terminal environment variables.<br/>By default, False. | None | False |
+| show_output | bool | Display status string or not. By default, False. | None | False |
 
 ---
 
@@ -32,5 +30,10 @@ def set_binance_key(key: str, secret: str, persist: bool = False, show_output: b
 | Type | Description |
 | ---- | ----------- |
 | str | Status of key set |
+
+---
+
+## Examples
+
 ---
 

@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Calculate test statistics for Durbin Watson autocorrelation
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L496)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L495)
 
 ```python
 def get_dwat(model: statsmodels.regression.linear_model.RegressionResultsWrapper) -> float
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_dwat(model: statsmodels.regression.linear_model.RegressionResultsWrapper
 | ---- | ---- | ----------- | ------- | -------- |
 | model | statsmodels.regression.linear_model.RegressionResultsWrapper | Previously fit statsmodels OLS. | None | False |
 
-
 ---
 
 ## Returns
@@ -35,9 +33,11 @@ def get_dwat(model: statsmodels.regression.linear_model.RegressionResultsWrapper
 | Type | Description |
 | ---- | ----------- |
 | float | Test statistic of the Durbin Watson test. |
+
 ---
 
 ## Examples
+
 SDK Snippet:
 ```python
 from openbb_terminal.sdk import openbb
@@ -61,12 +61,11 @@ Result:
 
 Show Durbin-Watson autocorrelation tests
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L81)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L81)
 
 ```python
-def display_dwat(model: statsmodels.regression.linear_model.RegressionResultsWrapper, dependent_variable: pd.Series, plot: bool = True, export: str = "", external_axes: Optional[List[axes]] = None) -> None
+def display_dwat(model: statsmodels.regression.linear_model.RegressionResultsWrapper, dependent_variable: pd.Series, plot: bool, export: str, external_axes: Optional[List[axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -75,16 +74,19 @@ def display_dwat(model: statsmodels.regression.linear_model.RegressionResultsWra
 | ---- | ---- | ----------- | ------- | -------- |
 | model | OLS Model | A fit statsmodels OLS model. | None | False |
 | dependent_variable | pd.Series | The dependent variable for plotting | None | False |
-| plot | bool | Whether to plot the residuals | True | True |
-| export | str | Format to export data |  | True |
-| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
-
+| plot | bool | Whether to plot the residuals | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Checks option screener preset values
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L251)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L251)
 
 ```python
 def check_presets(preset_dict: dict) -> str
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def check_presets(preset_dict: dict) -> str
 | ---- | ---- | ----------- | ------- | -------- |
 | preset_dict | dict | Defined presets from configparser | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def check_presets(preset_dict: dict) -> str
 | Type | Description |
 | ---- | ----------- |
 | str | String of all errors accumulated |
+
+---
+
+## Examples
+
 ---
 

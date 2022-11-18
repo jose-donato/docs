@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Load tweets from twitter API and analyzes using VADER.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_model.py#L23)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_model.py#L23)
 
 ```python
-def load_analyze_tweets(symbol: str, limit: int = 100, start_date: Optional[str] = "", end_date: Optional[str] = "") -> pd.DataFrame
+def load_analyze_tweets(symbol: str, limit: int, start_date: Optional[str], end_date: Optional[str]) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,10 +25,9 @@ def load_analyze_tweets(symbol: str, limit: int = 100, start_date: Optional[str]
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to search twitter for | None | False |
-| limit | int | Number of tweets to analyze | 100 | True |
-| start_date | Optional[str] | If given, the start time to get tweets from |  | True |
-| end_date | Optional[str] | If given, the end time to get tweets from |  | True |
-
+| limit | int | Number of tweets to analyze | None | False |
+| start_date | Optional[str] | If given, the start time to get tweets from | None | False |
+| end_date | Optional[str] | If given, the end time to get tweets from | None | False |
 
 ---
 
@@ -38,6 +36,11 @@ def load_analyze_tweets(symbol: str, limit: int = 100, start_date: Optional[str]
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of tweets and sentiment |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,12 +50,11 @@ def load_analyze_tweets(symbol: str, limit: int = 100, start_date: Optional[str]
 
 Prints Inference sentiment from past n tweets.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_view.py#L29)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_view.py#L29)
 
 ```python
-def display_inference(symbol: str, limit: int = 100, export: str = "") -> None
+def display_inference(symbol: str, limit: int, export: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,15 +62,18 @@ def display_inference(symbol: str, limit: int = 100, export: str = "") -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| limit | int | Number of tweets to analyze | 100 | True |
-| export | str | Format to export tweet dataframe |  | True |
-
+| limit | int | Number of tweets to analyze | None | False |
+| export | str | Format to export tweet dataframe | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

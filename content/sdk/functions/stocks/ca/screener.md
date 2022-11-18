@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Screener Overview.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L53)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L53)
 
 ```python
-def get_comparison_data(similar: List[str], data_type: str = "overview") -> None
+def get_comparison_data(similar: List[str], data_type: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -20,8 +19,7 @@ def get_comparison_data(similar: List[str], data_type: str = "overview") -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar |  | List of similar companies.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| data_type | str | Data type between: overview, valuation, financial, ownership, performance, technical | overview | True |
-
+| data_type | str | Data type between: overview, valuation, financial, ownership, performance, technical | None | False |
 
 ---
 
@@ -30,5 +28,10 @@ def get_comparison_data(similar: List[str], data_type: str = "overview") -> None
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with overview, valuation, financial, ownership, performance or technical |
+
+---
+
+## Examples
+
 ---
 

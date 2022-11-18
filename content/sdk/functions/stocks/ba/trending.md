@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get trending tickers from stocktwits [Source: stocktwits].
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L79)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/stocktwits_model.py#L79)
 
 ```python
-def get_trending() -> pd.DataFrame
+def get_trending() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of trending tickers and watchlist count |
+
+---
+
+## Examples
+
 ---
 

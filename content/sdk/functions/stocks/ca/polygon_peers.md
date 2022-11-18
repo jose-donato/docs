@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get similar companies from Polygon
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/polygon_model.py#L17)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/polygon_model.py#L17)
 
 ```python
-def get_similar_companies(symbol: str, us_only: bool = False) -> List[str]
+def get_similar_companies(symbol: str, us_only: bool) -> None
 ```
-
 ---
 
 ## Parameters
@@ -20,8 +19,7 @@ def get_similar_companies(symbol: str, us_only: bool = False) -> List[str]
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to get similar companies of | None | False |
-| us_only | bool | Only stocks from the US stock exchanges | False | True |
-
+| us_only | bool | Only stocks from the US stock exchanges | None | False |
 
 ---
 
@@ -30,5 +28,10 @@ def get_similar_companies(symbol: str, us_only: bool = False) -> List[str]
 | Type | Description |
 | ---- | ----------- |
 |  | List of similar tickers |
+
+---
+
+## Examples
+
 ---
 

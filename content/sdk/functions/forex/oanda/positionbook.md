@@ -13,21 +13,19 @@ import TabItem from '@theme/TabItem';
 
 Request position book data for plotting.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L182)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L182)
 
 ```python
-def positionbook_plot_data_request(instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
+def positionbook_plot_data_request(instrument: Optional[str], accountID: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
-
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
 ---
 
@@ -36,6 +34,11 @@ def positionbook_plot_data_request(instrument: Optional[str] = None, accountID: 
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Position book data or False |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,12 +48,11 @@ def positionbook_plot_data_request(instrument: Optional[str] = None, accountID: 
 
 Plot a position book for an instrument if Oanda provides one.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L116)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L116)
 
 ```python
-def get_position_book(accountID: str, instrument: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def get_position_book(accountID: str, instrument: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,15 +60,18 @@ def get_position_book(accountID: str, instrument: str = "", external_axes: Optio
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
-| instrument | str | The loaded currency pair |  | True |
+| instrument | str | The loaded currency pair | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

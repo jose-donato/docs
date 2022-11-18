@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Returns coin tokenomics
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L283)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L283)
 
 ```python
-def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.DataFrame]
+def get_tokenomics(symbol: str, coingecko_id: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -28,7 +27,6 @@ def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.Dat
 | symbol | str | Crypto symbol to check tokenomics | None | False |
 | coingecko_id | str | ID from coingecko | None | False |
 
-
 ---
 
 ## Returns
@@ -36,6 +34,11 @@ def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.Dat
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Metric Value tokenomics,<br/>Circulating supply overtime |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,12 +48,11 @@ def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.Dat
 
 Plots coin tokenomics
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L386)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L386)
 
 ```python
-def display_tokenomics(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_tokenomics(symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,15 +60,18 @@ def display_tokenomics(symbol: str, export: str = "", external_axes: Optional[Li
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check tokenomics | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

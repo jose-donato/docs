@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Returns coin roadmap
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L236)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L236)
 
 ```python
-def get_roadmap(symbol: str, ascend: bool = True) -> pd.DataFrame
+def get_roadmap(symbol: str, ascend: bool) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,8 +25,7 @@ def get_roadmap(symbol: str, ascend: bool = True) -> pd.DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check roadmap | None | False |
-| ascend | bool | reverse order | True | True |
-
+| ascend | bool | reverse order | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def get_roadmap(symbol: str, ascend: bool = True) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | roadmap |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,12 +48,11 @@ def get_roadmap(symbol: str, ascend: bool = True) -> pd.DataFrame
 
 Plots coin roadmap
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L284)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L284)
 
 ```python
-def display_roadmap(symbol: str, ascend: bool = True, limit: int = 5, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_roadmap(symbol: str, ascend: bool, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,17 +60,20 @@ def display_roadmap(symbol: str, ascend: bool = True, limit: int = 5, export: st
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check roadmap | None | False |
-| ascend | bool | reverse order | True | True |
-| limit | int | number to show | 5 | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| ascend | bool | reverse order | None | False |
+| limit | int | number to show | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

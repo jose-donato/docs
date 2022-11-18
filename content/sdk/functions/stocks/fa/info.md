@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Gets ticker symbol info
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L31)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L31)
 
 ```python
-def get_info(symbol: str) -> pd.DataFrame
+def get_info(symbol: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_info(symbol: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_info(symbol: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of yfinance information |
+
+---
+
+## Examples
+
 ---
 

@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get current exchange open hours.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L20)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L20)
 
 ```python
-def get_bursa(symbol: str) -> pd.DataFrame
+def get_bursa(symbol: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_bursa(symbol: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Exchange symbol | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_bursa(symbol: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Exchange info |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_bursa(symbol: str) -> pd.DataFrame
 
 Display current exchange trading hours.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L15)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L15)
 
 ```python
 def display_exchange(symbol: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,12 +60,15 @@ def display_exchange(symbol: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Exchange symbol | None | False |
 
-
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

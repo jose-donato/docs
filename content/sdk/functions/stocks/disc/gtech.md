@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get technology stocks with revenue and earnings growth in excess of 25%. [Source: Yahoo Finance]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L76)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L76)
 
 ```python
-def get_gtech() -> pd.DataFrame
+def get_gtech() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Growth technology stocks |
+
+---
+
+## Examples
+
 ---
 

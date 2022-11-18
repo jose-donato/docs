@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Scrape data for us bonds
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L161)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L151)
 
 ```python
-def us_bonds() -> pd.DataFrame
+def us_bonds() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing name, coupon rate, yield and change in yield |
+
+---
+
+## Examples
+
 ---
 

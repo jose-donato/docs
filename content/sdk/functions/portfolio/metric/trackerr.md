@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get tracking error
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1238)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1238)
 
 ```python
-def get_tracking_error(portfolio_engine: portfolio_model.PortfolioEngine, window: int = 252) -> None
+def get_tracking_error(portfolio_engine: portfolio_model.PortfolioEngine, window: int) -> None
 ```
-
 ---
 
 ## Parameters
@@ -20,8 +19,7 @@ def get_tracking_error(portfolio_engine: portfolio_model.PortfolioEngine, window
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
-| window | int | Interval used for rolling values | 252 | True |
-
+| window | int | Interval used for rolling values | None | False |
 
 ---
 
@@ -30,5 +28,10 @@ def get_tracking_error(portfolio_engine: portfolio_model.PortfolioEngine, window
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of tracking errors during different time windows |
+
+---
+
+## Examples
+
 ---
 

@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get info for a given ticker
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L325)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L325)
 
 ```python
 def get_info(symbol: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_info(symbol: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | The ticker symbol to get the price for | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_info(symbol: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | float | The info for a given ticker |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_info(symbol: str) -> None
 
 Scrapes Barchart.com for the options information
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/barchart_view.py#L15)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/barchart_view.py#L15)
 
 ```python
-def print_options_data(symbol: str, export: str = "") -> None
+def print_options_data(symbol: str, export: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -57,14 +59,17 @@ def print_options_data(symbol: str, export: str = "") -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get options info for | None | False |
-| export | str | Format of export file |  | True |
-
+| export | str | Format of export file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

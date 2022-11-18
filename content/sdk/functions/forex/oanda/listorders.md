@@ -13,28 +13,30 @@ import TabItem from '@theme/TabItem';
 
 Request the orders list from Oanda.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L225)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L225)
 
 ```python
-def order_history_request(order_state: str = "PENDING", order_count: int = 0, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
+def order_history_request(order_state: str, order_count: int, accountID: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | PENDING | True |
-| order_count | int | Limit the number of orders to retrieve | 0 | True |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
-
+| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | None | False |
+| order_count | int | Limit the number of orders to retrieve | None | False |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 
@@ -45,12 +47,11 @@ This function does not return anything
 
 List order history.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L153)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L153)
 
 ```python
-def list_orders(accountID: str, order_state: str = "PENDING", order_count: int = 0) -> None
+def list_orders(accountID: str, order_state: str, order_count: int) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,15 +59,18 @@ def list_orders(accountID: str, order_state: str = "PENDING", order_count: int =
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
-| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | PENDING | True |
-| order_count | int | Limit the number of orders to retrieve | 0 | True |
-
+| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | None | False |
+| order_count | int | Limit the number of orders to retrieve | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

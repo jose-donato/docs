@@ -13,20 +13,18 @@ import TabItem from '@theme/TabItem';
 
 Get top decentralized applications by daily volume and users [Source: https://dappradar.com/]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L209)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L209)
 
 ```python
-def get_top_dapps(sortby: str = "", limit: int = 10) -> pd.DataFrame
+def get_top_dapps(sortby: str, limit: int) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key by which to sort data |  | True |
-
+| sortby | str | Key by which to sort data | None | False |
 
 ---
 
@@ -35,6 +33,11 @@ def get_top_dapps(sortby: str = "", limit: int = 10) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Top decentralized exchanges.<br/>Columns: Name, Category, Protocols, Daily Users, Daily Volume [$] |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,28 +47,30 @@ def get_top_dapps(sortby: str = "", limit: int = 10) -> pd.DataFrame
 
 Prints table showing top decentralized exchanges [Source: https://dappradar.com/]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L133)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L133)
 
 ```python
-def display_top_dapps(limit: int = 10, export: str = "", sortby: str = "") -> None
+def display_top_dapps(limit: int, export: str, sortby: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | 10 | True |
-| sortby | str | Key by which to sort data |  | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

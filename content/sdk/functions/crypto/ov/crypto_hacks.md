@@ -13,21 +13,19 @@ import TabItem from '@theme/TabItem';
 
 Get major crypto-related hacks
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L93)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L93)
 
 ```python
-def get_crypto_hacks(sortby: str = "Platform", ascend: bool = False) -> pd.DataFrame
+def get_crypto_hacks(sortby: str, ascend: bool) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | Platform | True |
-| ascend | bool | Flag to sort data ascending | False | True |
-
+| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def get_crypto_hacks(sortby: str = "Platform", ascend: bool = False) -> pd.DataF
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Hacks with columns {Platform,Date,Amount [$],Audited,Slug,URL} |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,30 +48,32 @@ def get_crypto_hacks(sortby: str = "Platform", ascend: bool = False) -> pd.DataF
 
 Display list of major crypto-related hacks. If slug is passed
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_view.py#L18)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_view.py#L18)
 
 ```python
-def display_crypto_hacks(limit: int = 15, sortby: str = "Platform", ascend: bool = False, slug: str = "polyntwork-rekt", export: str = "") -> None
+def display_crypto_hacks(limit: int, sortby: str, ascend: bool, slug: str, export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| slug | str | Crypto hack slug to check (e.g., polynetwork-rekt) | polyntwork-rekt | True |
-| limit | int | Number of hacks to search | 15 | True |
-| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | Platform | True |
-| ascend | bool | Flag to sort data ascending | False | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| slug | str | Crypto hack slug to check (e.g., polynetwork-rekt) | None | False |
+| limit | int | Number of hacks to search | None | False |
+| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

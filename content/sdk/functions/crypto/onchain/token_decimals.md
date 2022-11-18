@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Helper methods that gets token decimals number. [Source: Ethplorer]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L176)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L176)
 
 ```python
-def get_token_decimals(address: str) -> Optional[int]
+def get_token_decimals(address: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_token_decimals(address: str) -> Optional[int]
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Blockchain balance e.g. 0x1f9840a85d5af5bf1d1762f925bdaddc4201f984 | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_token_decimals(address: str) -> Optional[int]
 | Type | Description |
 | ---- | ----------- |
 | Optional[int] | Number of decimals for given token. |
+
+---
+
+## Examples
+
 ---
 

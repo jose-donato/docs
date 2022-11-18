@@ -13,22 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L23)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L23)
 
 ```python
-def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend: bool = True) -> pd.DataFrame
+def get_coin_twitter_timeline(symbol: str, sortby: str, ascend: bool) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
-| sortby | str | Key by which to sort data. Every column name is valid<br/>(see for possible values:<br/>https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get). | date | True |
-| ascend | bool | Flag to sort data descending | True | True |
-
+| symbol | str | Cryptocurrency symbol (e.g. BTC) | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid<br/>(see for possible values:<br/>https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get). | None | False |
+| ascend | bool | Flag to sort data descending | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend:
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Twitter timeline for given coin.<br/>Columns: date, user_name, status, retweet_count, like_count |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,30 +49,32 @@ def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend:
 
 Prints table showing twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L86)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L86)
 
 ```python
-def display_twitter(symbol: str = "BTC", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
+def display_twitter(symbol: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
-| limit | int | Number of records to display | 10 | True |
-| sortby | str | Key by which to sort data. Every column name is valid<br/>(see for possible values:<br/>https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get). | date | True |
-| ascend | bool | Flag to sort data ascending | True | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| symbol | str | Cryptocurrency symbol (e.g. BTC) | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid<br/>(see for possible values:<br/>https://api.coinpaprika.com/docs#tag/Coins/paths/~1coins~1%7Bcoin_id%7D~1twitter/get). | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

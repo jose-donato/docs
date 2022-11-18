@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Average True Range
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L132)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L132)
 
 ```python
-def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int = 0) -> pd.DataFrame
+def atr(data: pd.DataFrame, window: int, mamode: str, offset: int) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,10 +25,9 @@ def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int =
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| window | int | Length of window | 14 | True |
-| mamode | str | Type of filter | ema | True |
-| offset | int | Offset value | 0 | True |
-
+| window | int | Length of window | None | False |
+| mamode | str | Type of filter | None | False |
+| offset | int | Offset value | None | False |
 
 ---
 
@@ -38,6 +36,11 @@ def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int =
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of atr |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,12 +50,11 @@ def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int =
 
 Plots ATR
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L289)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L289)
 
 ```python
-def display_atr(data: pd.DataFrame, symbol: str = "", window: int = 14, mamode: str = "sma", offset: int = 0, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_atr(data: pd.DataFrame, symbol: str, window: int, mamode: str, offset: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,17 +62,20 @@ def display_atr(data: pd.DataFrame, symbol: str = "", window: int = 14, mamode: 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| symbol | str | Ticker symbol |  | True |
-| window | int | Length of window to calculate upper channel | 14 | True |
-| export | str | Format of export file |  | True |
+| symbol | str | Ticker symbol | None | False |
+| window | int | Length of window to calculate upper channel | None | False |
+| export | str | Format of export file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

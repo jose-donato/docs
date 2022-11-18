@@ -13,20 +13,18 @@ import TabItem from '@theme/TabItem';
 
 Returns anchor protocol earnings data of a certain terra address
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/cryptosaurio_model.py#L17)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/cryptosaurio_model.py#L17)
 
 ```python
-def get_anchor_data(address: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, str]
+def get_anchor_data(address: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| address | str | Terra address. Valid terra addresses start with 'terra' |  | True |
-
+| address | str | Terra address. Valid terra addresses start with 'terra' | None | False |
 
 ---
 
@@ -35,6 +33,11 @@ def get_anchor_data(address: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, str]
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame, str] | - pd.DataFrame: Earnings over time in UST<br/>- pd.DataFrame: History of transactions<br/>- str:              Overall statistics |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,30 +47,32 @@ def get_anchor_data(address: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, str]
 
 Plots anchor protocol earnings data of a certain terra address
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/cryptosaurio_view.py#L25)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/cryptosaurio_view.py#L25)
 
 ```python
-def display_anchor_data(address: str = "", export: str = "", show_transactions: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_anchor_data(address: str, export: str, show_transactions: bool, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| asset | str | Terra asset {ust,luna,sdt} | None | True |
-| address | str | Terra address. Valid terra addresses start with 'terra' |  | True |
-| show_transactions | bool | Flag to show history of transactions in Anchor protocol for address. Default False | False | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| asset | str | Terra asset {ust,luna,sdt} | None | False |
+| address | str | Terra address. Valid terra addresses start with 'terra' | None | False |
+| show_transactions | bool | Flag to show history of transactions in Anchor protocol for address. Default False | False | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

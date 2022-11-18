@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Calculate Fibonacci levels
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_model.py#L17)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_model.py#L17)
 
 ```python
-def calculate_fib_levels(data: pd.DataFrame, limit: int = 120, start_date: Any = None, end_date: Any = None) -> Tuple[pd.DataFrame, pandas._libs.tslibs.timestamps.Timestamp, pandas._libs.tslibs.timestamps.Timestamp, float, float]
+def calculate_fib_levels(data: pd.DataFrame, limit: int, start_date: Any, end_date: Any) -> None
 ```
-
 ---
 
 ## Parameters
@@ -26,10 +25,9 @@ def calculate_fib_levels(data: pd.DataFrame, limit: int = 120, start_date: Any =
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of prices | None | False |
-| limit | int | Days to look back for retracement | 120 | True |
-| start_date | Any | Custom start date for retracement | None | True |
-| end_date | Any | Custom end date for retracement | None | True |
-
+| limit | int | Days to look back for retracement | None | False |
+| start_date | Any | Custom start date for retracement | None | False |
+| end_date | Any | Custom end date for retracement | None | False |
 
 ---
 
@@ -38,6 +36,11 @@ def calculate_fib_levels(data: pd.DataFrame, limit: int = 120, start_date: Any =
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of fib levels |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,12 +50,11 @@ def calculate_fib_levels(data: pd.DataFrame, limit: int = 120, start_date: Any =
 
 Plots Calculated fibonacci retracement levels
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_view.py#L29)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/custom_indicators_view.py#L29)
 
 ```python
-def fibonacci_retracement(data: pd.DataFrame, limit: int = 120, start_date: Optional[str] = None, end_date: Optional[str] = None, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def fibonacci_retracement(data: pd.DataFrame, limit: int, start_date: Optional[str], end_date: Optional[str], symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,19 +62,22 @@ def fibonacci_retracement(data: pd.DataFrame, limit: int = 120, start_date: Opti
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | OHLC data | None | False |
-| limit | int | Days to lookback | 120 | True |
-| start_date | Optional[str, None] | User picked date for starting retracement | None | True |
-| end_date | Optional[str, None] | User picked date for ending retracement | None | True |
-| symbol | str | Ticker symbol |  | True |
-| export | str | Format to export data |  | True |
+| limit | int | Days to lookback | None | False |
+| start_date | Optional[str, None] | User picked date for starting retracement | None | False |
+| end_date | Optional[str, None] | User picked date for ending retracement | None | False |
+| symbol | str | Ticker symbol | None | False |
+| export | str | Format to export data | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

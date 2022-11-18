@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get similar companies from Finhub.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finnhub_model.py#L17)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finnhub_model.py#L17)
 
 ```python
-def get_similar_companies(symbol: str) -> List[str]
+def get_similar_companies(symbol: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_similar_companies(symbol: str) -> List[str]
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to find comparisons for | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_similar_companies(symbol: str) -> List[str]
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of similar companies |
+
+---
+
+## Examples
+
 ---
 

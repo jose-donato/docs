@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get stocks with highest cost to borrow [Source: Interactive Broker]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/ibkr_model.py#L16)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/ibkr_model.py#L16)
 
 ```python
-def get_cost_to_borrow() -> pd.DataFrame
+def get_cost_to_borrow() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Cost to borrow |
+
+---
+
+## Examples
+
 ---
 

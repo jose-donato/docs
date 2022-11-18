@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get correlation sentiments across similar companies. [Source: FinBrain].
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L125)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L125)
 
 ```python
-def get_sentiment_correlation(similar: List[str]) -> Tuple[pd.DataFrame, pd.DataFrame]
+def get_sentiment_correlation(similar: List[str]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_sentiment_correlation(similar: List[str]) -> Tuple[pd.DataFrame, pd.Data
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | Similar companies to compare income with.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_sentiment_correlation(similar: List[str]) -> Tuple[pd.DataFrame, pd.Data
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame,pd.DataFrame] | Contains sentiment analysis from several tickers |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_sentiment_correlation(similar: List[str]) -> Tuple[pd.DataFrame, pd.Data
 
 Plot correlation sentiments heatmap across similar companies. [Source: FinBrain].
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L121)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L121)
 
 ```python
-def display_sentiment_correlation(similar: List[str], raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_sentiment_correlation(similar: List[str], raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,15 +60,18 @@ def display_sentiment_correlation(similar: List[str], raw: bool = False, export:
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | Similar companies to compare income with.<br/>Comparable companies can be accessed through<br/>finviz_peers(), finnhub_peers() or polygon_peers(). | None | False |
 | raw | bool | Output raw values, by default False | False | True |
-| export | str | Format to export data |  | True |
+| export | str | Format to export data | None | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get company managers from Business Insider
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/business_insider_model.py#L19)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/business_insider_model.py#L19)
 
 ```python
-def get_management(symbol: str) -> pd.DataFrame
+def get_management(symbol: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_management(symbol: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_management(symbol: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of managers |
+
+---
+
+## Examples
+
 ---
 

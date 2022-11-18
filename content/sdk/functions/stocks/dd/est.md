@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get analysts' estimates for a given ticker. [Source: Business Insider]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L71)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/business_insider_model.py#L71)
 
 ```python
-def get_estimates(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]
+def get_estimates(symbol: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_estimates(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to get analysts' estimates | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_estimates(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Year estimates |
+
+---
+
+## Examples
+
 ---
 

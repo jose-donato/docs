@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 The distribution of returns and generate statistics on the relation to the normal curve.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L113)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L113)
 
 ```python
-def get_normality(data: pd.Series) -> pd.DataFrame
+def get_normality(data: pd.Series) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_normality(data: pd.Series) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | A series or column of a DataFrame to test normality for | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_normality(data: pd.Series) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing statistics of normality |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_normality(data: pd.Series) -> pd.DataFrame
 
 Determine the normality of a timeseries.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L129)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L129)
 
 ```python
-def display_norm(data: pd.Series, dataset: str = "", column: str = "", plot: bool = True, export: str = "", external_axes: Optional[List[axes]] = None) -> None
+def display_norm(data: pd.Series, dataset: str, column: str, plot: bool, export: str, external_axes: Optional[List[axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -57,18 +59,21 @@ def display_norm(data: pd.Series, dataset: str = "", column: str = "", plot: boo
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Series of custom data | None | False |
-| dataset | str | Dataset name |  | True |
-| column | str | Column for y data |  | True |
-| plot | bool | Whether you wish to plot a histogram | True | True |
-| export | str | Format to export data. |  | True |
-| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
-
+| dataset | str | Dataset name | None | False |
+| column | str | Column for y data | None | False |
+| plot | bool | Whether you wish to plot a histogram | None | False |
+| export | str | Format to export data. | None | False |
+| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

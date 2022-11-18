@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Clean up NaNs from the dataset
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L65)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L65)
 
 ```python
-def clean(dataset: pd.DataFrame, fill: str = "", drop: str = "", limit: Optional[int] = None) -> pd.DataFrame
+def clean(dataset: pd.DataFrame, fill: str, drop: str, limit: Optional[int]) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -20,10 +19,9 @@ def clean(dataset: pd.DataFrame, fill: str = "", drop: str = "", limit: Optional
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | dataset | pd.DataFrame | The dataset you wish to clean | None | False |
-| fill | str | The method of filling NaNs. Choose from:<br/>rfill, cfill, rbfill, cbfill, rffill, cffill |  | True |
-| drop | str | The method of dropping NaNs. Choose from:<br/>rdrop, cdrop |  | True |
-| limit | int | The maximum limit you wish to apply that can be forward or backward filled | None | True |
-
+| fill | str | The method of filling NaNs. Choose from:<br/>rfill, cfill, rbfill, cbfill, rffill, cffill | None | False |
+| drop | str | The method of dropping NaNs. Choose from:<br/>rdrop, cdrop | None | False |
+| limit | int | The maximum limit you wish to apply that can be forward or backward filled | None | False |
 
 ---
 
@@ -32,5 +30,10 @@ def clean(dataset: pd.DataFrame, fill: str = "", drop: str = "", limit: Optional
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with cleaned up data |
+
+---
+
+## Examples
+
 ---
 

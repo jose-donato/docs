@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Gets website of company from yfinance
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L210)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L210)
 
 ```python
 def get_website(symbol: str) -> str
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_website(symbol: str) -> str
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_website(symbol: str) -> str
 | Type | Description |
 | ---- | ----------- |
 | str | Company website |
+
+---
+
+## Examples
+
 ---
 

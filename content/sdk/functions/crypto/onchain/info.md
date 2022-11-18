@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get info about ERC20 token. [Source: Ethplorer]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L380)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L380)
 
 ```python
-def get_token_info(address: Any) -> pd.DataFrame
+def get_token_info(address: Any) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_token_info(address: Any) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_token_info(address: Any) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with information about provided ERC20 token. |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_token_info(address: Any) -> pd.DataFrame
 
 Display info about ERC20 token. [Source: Ethplorer]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L206)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L206)
 
 ```python
-def display_token_info(address: str, social: bool = False, export: str = "") -> None
+def display_token_info(address: str, social: bool, export: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -57,15 +59,18 @@ def display_token_info(address: str, social: bool = False, export: str = "") -> 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
-| social | bool | Flag to display social media links | False | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| social | bool | Flag to display social media links | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

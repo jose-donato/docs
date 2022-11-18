@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Displays the 30-day history of the Anchor Yield Reserve.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L63)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L63)
 
 ```python
-def get_anchor_yield_reserve() -> pd.DataFrame
+def get_anchor_yield_reserve() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -32,6 +31,11 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing historical data |
+
+---
+
+## Examples
+
 ---
 
 
@@ -41,27 +45,29 @@ This function does not take any parameters.
 
 Plots the 30-day history of the Anchor Yield Reserve.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L85)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L85)
 
 ```python
-def display_anchor_yield_reserve(export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_anchor_yield_reserve(export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| export | str | Export dataframe data to csv,json,xlsx file, by default False |  | True |
+| export | str | Export dataframe data to csv,json,xlsx file, by default False | False | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Calculate test statistics for unit roots
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L168)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L168)
 
 ```python
-def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.DataFrame
+def get_root(data: pd.Series, fuller_reg: str, kpss_reg: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,9 +25,8 @@ def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Series or column of DataFrame of target variable | None | False |
-| fuller_reg | str | Type of regression of ADF test | c | True |
-| kpss_reg | str | Type of regression for KPSS test | c | True |
-
+| fuller_reg | str | Type of regression of ADF test | None | False |
+| kpss_reg | str | Type of regression for KPSS test | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with results of ADF test and KPSS test |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,12 +49,11 @@ def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.
 
 Determine the normality of a timeseries.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L197)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L197)
 
 ```python
-def display_root(data: pd.Series, dataset: str = "", column: str = "", fuller_reg: str = "c", kpss_reg: str = "c", export: str = "") -> None
+def display_root(data: pd.Series, dataset: str, column: str, fuller_reg: str, kpss_reg: str, export: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -59,18 +61,21 @@ def display_root(data: pd.Series, dataset: str = "", column: str = "", fuller_re
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Series of target variable | None | False |
-| dataset | str | Name of the dataset |  | True |
-| column | str | Name of the column |  | True |
-| fuller_reg | str | Type of regression of ADF test. Choose c, ct, ctt, or nc | c | True |
-| kpss_reg | str | Type of regression for KPSS test. Choose c or ct | c | True |
-| export | str | Format to export data. |  | True |
-
+| dataset | str | Name of the dataset | None | False |
+| column | str | Name of the column | None | False |
+| fuller_reg | str | Type of regression of ADF test. Choose c, ct, ctt, or nc | None | False |
+| kpss_reg | str | Type of regression for KPSS test. Choose c or ct | None | False |
+| export | str | Format to export data. | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

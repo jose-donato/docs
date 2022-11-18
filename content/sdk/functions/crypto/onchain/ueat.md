@@ -13,23 +13,21 @@ import TabItem from '@theme/TabItem';
 
 Get number of unique ethereum addresses which made a transaction in given time interval.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L584)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L584)
 
 ```python
-def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
+def get_ethereum_unique_senders(interval: str, limit: int, sortby: str, ascend: bool) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| interval | str | Time interval in which count unique ethereum addresses which made transaction. day,<br/>month or week. | day | True |
-| limit | int | Number of records for data query. | 90 | True |
-| sortby | str | Key by which to sort data | tradeAmount | True |
-| ascend | bool | Flag to sort data ascending | True | True |
-
+| interval | str | Time interval in which count unique ethereum addresses which made transaction. day,<br/>month or week. | None | False |
+| limit | int | Number of records for data query. | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
 ---
 
@@ -38,6 +36,11 @@ def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Unique ethereum addresses which made a transaction |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,24 +50,22 @@ def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: 
 
 Prints table showing number of unique ethereum addresses which made a transaction in given time interval
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L225)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L225)
 
 ```python
-def display_ethereum_unique_senders(interval: str = "days", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
+def display_ethereum_unique_senders(interval: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| interval | str | Time interval in which ethereum address made transaction. month, week or day | days | True |
-| limit | int | Number of records to display. It's calculated base on provided interval.<br/>If interval is month then calculation is made in the way: limit * 30 = time period,<br/>in case if interval is set to week, then time period is calculated as limit * 7.<br/>For better user experience maximum time period in days is equal to 90. | 10 | True |
-| sortby | str | Key by which to sort data | date | True |
-| ascend | bool | Flag to sort data ascending | True | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| interval | str | Time interval in which ethereum address made transaction. month, week or day | None | False |
+| limit | int | Number of records to display. It's calculated base on provided interval.<br/>If interval is month then calculation is made in the way: limit * 30 = time period,<br/>in case if interval is set to week, then time period is calculated as limit * 7.<br/>For better user experience maximum time period in days is equal to 90. | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
@@ -73,6 +74,11 @@ def display_ethereum_unique_senders(interval: str = "days", limit: int = 10, sor
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Number of unique ethereum addresses which made a transaction in given time interval |
+
+---
+
+## Examples
+
 ---
 
 

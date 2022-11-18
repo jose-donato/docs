@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Returns dataframe with mean hashrate of btc or eth blockchain and symbol price
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L374)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L374)
 
 ```python
-def get_hashrate(symbol: str, interval: str = "24h", start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
+def get_hashrate(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,10 +25,9 @@ def get_hashrate(symbol: str, interval: str = "24h", start_date: str = "2010-01-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Blockchain to check hashrate (BTC or ETH) | None | False |
-| start_date | str | Initial date, format YYYY-MM-DD | 2010-01-01 | True |
-| end_date | str | Final date, format YYYY-MM-DD | None | True |
-| interval | str | Interval frequency (e.g., 24h) | 24h | True |
-
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| interval | str | Interval frequency (e.g., 24h) | None | False |
 
 ---
 
@@ -38,6 +36,11 @@ def get_hashrate(symbol: str, interval: str = "24h", start_date: str = "2010-01-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | mean hashrate and symbol price over time |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,12 +50,11 @@ def get_hashrate(symbol: str, interval: str = "24h", start_date: str = "2010-01-
 
 Plots dataframe with mean hashrate of btc or eth blockchain and symbol price.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L318)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L318)
 
 ```python
-def display_hashrate(symbol: str, start_date: str = "2010-01-01", end_date: str = None, interval: str = "24h", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_hashrate(symbol: str, start_date: str, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,18 +62,21 @@ def display_hashrate(symbol: str, start_date: str = "2010-01-01", end_date: str 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Blockchain to check mean hashrate (BTC or ETH) | None | False |
-| start_date | str | Initial date, format YYYY-MM-DD | 2010-01-01 | True |
-| end_date | str | Final date, format YYYY-MM-DD | None | True |
-| interval | str | Interval frequency (possible values are: 24, 1w, 1month) | 24h | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| interval | str | Interval frequency (possible values are: 24, 1w, 1month) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

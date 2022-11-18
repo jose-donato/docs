@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Rename a column in a dataframe
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L453)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L453)
 
 ```python
-def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> pd.DataFrame
+def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -23,7 +22,6 @@ def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> pd.Da
 | old_column | str | The column that will have its name changed | None | False |
 | new_column | str | The name to update to | None | False |
 
-
 ---
 
 ## Returns
@@ -31,5 +29,10 @@ def rename_column(data: pd.DataFrame, old_column: str, new_column: str) -> pd.Da
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The dataframe with the renamed column |
+
+---
+
+## Examples
+
 ---
 

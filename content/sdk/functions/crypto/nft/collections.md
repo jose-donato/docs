@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get nft collections [Source: https://nftpricefloor.com/]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L24)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L24)
 
 ```python
-def get_collections() -> pd.DataFrame
+def get_collections() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -32,6 +31,11 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | nft collections |
+
+---
+
+## Examples
+
 ---
 
 
@@ -41,28 +45,30 @@ This function does not take any parameters.
 
 Display NFT collections. [Source: https://nftpricefloor.com/]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_view.py#L27)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_view.py#L27)
 
 ```python
-def display_collections(show_fp: bool = False, show_sales: bool = False, limit: int = 5, export: str = "") -> None
+def display_collections(show_fp: bool, show_sales: bool, limit: int, export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| show_fp | bool | Show NFT Price Floor for top collections | False | True |
-| limit | int | Number of NFT collections to display | 5 | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| show_fp | bool | Show NFT Price Floor for top collections | None | False |
+| limit | int | Number of NFT collections to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

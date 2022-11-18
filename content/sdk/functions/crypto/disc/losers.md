@@ -13,22 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Shows Largest Losers - coins which lose the most in given period. [Source: CoinGecko]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L288)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L288)
 
 ```python
-def get_losers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap_rank") -> pd.DataFrame
+def get_losers(interval: str, limit: int, sortby: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| interval | str | Time interval by which data is displayed. One from [1h, 24h, 7d, 14d, 30d, 60d, 1y] | 1h | True |
-| limit | int | Number of records to display | 50 | True |
-| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation) | market_cap_rank | True |
-
+| interval | str | Time interval by which data is displayed. One from [1h, 24h, 7d, 14d, 30d, 60d, 1y] | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation) | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def get_losers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap_
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Top Losers  - coins which lost most in price in given period of time.<br/>Columns: Symbol, Name, Volume, Price, %Change_{interval}, Url |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,29 +49,31 @@ def get_losers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap_
 
 Prints table showing Largest Losers - coins which lost the most in given period of time. [Source: CoinGecko]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L146)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L146)
 
 ```python
-def display_losers(interval: str = "1h", limit: int = 20, export: str = "", sortby: str = "Market Cap Rank") -> None
+def display_losers(interval: str, limit: int, export: str, sortby: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| interval | str | Time period by which data is displayed. One from [1h, 24h, 7d, 14d, 30d, 60d, 1y] | 1h | True |
-| limit | int | Number of records to display | 20 | True |
-| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation) | Market Cap Rank | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| interval | str | Time period by which data is displayed. One from [1h, 24h, 7d, 14d, 30d, 60d, 1y] | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

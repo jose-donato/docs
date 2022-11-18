@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get the omega series
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L639)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L639)
 
 ```python
-def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: float = 1.5) -> pd.DataFrame
+def get_omega(data: pd.DataFrame, threshold_start: float, threshold_end: float) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,9 +25,8 @@ def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: flo
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | stock dataframe | None | False |
-| threshold_start | float | annualized target return threshold start of plotted threshold range | 0 | True |
-| threshold_end | float | annualized target return threshold end of plotted threshold range | 1.5 | True |
-
+| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: flo
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | omega series |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,12 +49,11 @@ def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: flo
 
 Plots the omega ratio
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1172)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1172)
 
 ```python
-def display_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: float = 1.5) -> None
+def display_omega(data: pd.DataFrame, threshold_start: float, threshold_end: float) -> None
 ```
-
 ---
 
 ## Parameters
@@ -59,15 +61,18 @@ def display_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end:
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | stock dataframe | None | False |
-| threshold_start | float | annualized target return threshold start of plotted threshold range | 0 | True |
-| threshold_end | float | annualized target return threshold end of plotted threshold range | 1.5 | True |
-
+| threshold_start | float | annualized target return threshold start of plotted threshold range | None | False |
+| threshold_end | float | annualized target return threshold end of plotted threshold range | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

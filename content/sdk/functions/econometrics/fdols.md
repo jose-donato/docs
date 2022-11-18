@@ -7,21 +7,19 @@ description: OpenBB SDK Function
 
 First differencing is an alternative to using fixed effects when there might be correlation.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L409)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L408)
 
 ```python
 def get_fdols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| regression_variables | list | The regressions variables entered where the first variable is<br/>the dependent variable. | None | True |
-| data | dict | A dictionary containing the datasets. | None | True |
-
+| regression_variables | list | The regressions variables entered where the first variable is<br/>the dependent variable. | None | False |
+| data | dict | A dictionary containing the datasets. | None | False |
 
 ---
 
@@ -30,5 +28,10 @@ def get_fdols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 | Type | Description |
 | ---- | ----------- |
 | Tuple[DataFrame, Any, List[Any], Any] | The dataset used,<br/>Dependent variable,<br/>Independent variable,<br/>First Difference OLS model |
+
+---
+
+## Examples
+
 ---
 

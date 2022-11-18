@@ -13,22 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Get altcoin index overtime
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/blockchaincenter_model.py#L19)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/blockchaincenter_model.py#L19)
 
 ```python
-def get_altcoin_index(period: int = 30, start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
+def get_altcoin_index(period: int, start_date: str, end_date: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| period | int | Number of days {30,90,365} to check performance of coins and calculate the altcoin index.<br/>E.g., 365 checks yearly performance, 90 will check seasonal performance (90 days),<br/>30 will check monthly performance (30 days). | 30 | True |
-| start_date | str | Initial date, format YYYY-MM-DD | 2010-01-01 | True |
-| end_date | str | Final date, format YYYY-MM-DD | None | True |
-
+| period | int | Number of days {30,90,365} to check performance of coins and calculate the altcoin index.<br/>E.g., 365 checks yearly performance, 90 will check seasonal performance (90 days),<br/>30 will check monthly performance (30 days). | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def get_altcoin_index(period: int = 30, start_date: str = "2010-01-01", end_date
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Date, Value (Altcoin Index) |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,30 +49,32 @@ def get_altcoin_index(period: int = 30, start_date: str = "2010-01-01", end_date
 
 Displays altcoin index overtime
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/blockchaincenter_view.py#L27)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/blockchaincenter_view.py#L27)
 
 ```python
-def display_altcoin_index(period: int = 365, start_date: str = "2010-01-01", end_date: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_altcoin_index(period: int, start_date: str, end_date: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| start_date | str | Initial date, format YYYY-MM-DD | 2010-01-01 | True |
-| end_date | str | Final date, format YYYY-MM-DD | None | True |
-| period | int | Number of days to check the performance of coins and calculate the altcoin index.<br/>E.g., 365 will check yearly performance , 90 will check seasonal performance (90 days),<br/>30 will check monthly performance (30 days). | 365 | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| start_date | str | Initial date, format YYYY-MM-DD | None | False |
+| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| period | int | Number of days to check the performance of coins and calculate the altcoin index.<br/>E.g., 365 will check yearly performance , 90 will check seasonal performance (90 days),<br/>30 will check monthly performance (30 days). | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

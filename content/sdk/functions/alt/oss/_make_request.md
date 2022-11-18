@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Helper method to scrap.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L67)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L67)
 
 ```python
-def _make_request(url: str) -> Optional[bs4.BeautifulSoup]
+def _make_request(url: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def _make_request(url: str) -> Optional[bs4.BeautifulSoup]
 | ---- | ---- | ----------- | ------- | -------- |
 | url | str | url to scrape | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def _make_request(url: str) -> Optional[bs4.BeautifulSoup]
 | Type | Description |
 | ---- | ----------- |
 | Union[BeautifulSoup, None] | BeautifulSoup object or None |
+
+---
+
+## Examples
+
 ---
 

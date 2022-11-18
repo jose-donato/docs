@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get top of book bid and ask for ticker on exchange [CBOE.com]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/cboe_model.py#L12)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/cboe_model.py#L12)
 
 ```python
-def get_top_of_book(symbol: str, exchange: str = "BZX") -> Tuple[pd.DataFrame, pd.DataFrame]
+def get_top_of_book(symbol: str, exchange: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -20,8 +19,7 @@ def get_top_of_book(symbol: str, exchange: str = "BZX") -> Tuple[pd.DataFrame, p
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to get | None | False |
-| exchange | str | Exchange to look at.  Can be `BZX`,`EDGX`, `BYX`, `EDGA` | BZX | True |
-
+| exchange | str | Exchange to look at.  Can be `BZX`,`EDGX`, `BYX`, `EDGA` | None | False |
 
 ---
 
@@ -30,5 +28,10 @@ def get_top_of_book(symbol: str, exchange: str = "BZX") -> Tuple[pd.DataFrame, p
 | Type | Description |
 | ---- | ----------- |
 | pd.DatatFrame | Dataframe of Bids |
+
+---
+
+## Examples
+
 ---
 

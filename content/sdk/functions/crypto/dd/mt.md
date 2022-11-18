@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Returns messari timeseries
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L124)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L124)
 
 ```python
-def get_messari_timeseries(symbol: str, timeseries_id: str, interval: str = "1d", start_date: str = None, end_date: str = None) -> Tuple[pd.DataFrame, str]
+def get_messari_timeseries(symbol: str, timeseries_id: str, interval: str, start_date: str, end_date: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -27,10 +26,9 @@ def get_messari_timeseries(symbol: str, timeseries_id: str, interval: str = "1d"
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check messari timeseries | None | False |
 | timeseries_id | str | Messari timeserie id | None | False |
-| interval | str | Interval frequency (possible values are: 5m, 15m, 30m, 1h, 1d, 1w) | 1d | True |
-| start | int | Initial date like string (e.g., 2021-10-01) | None | True |
-| end | int | End date like string (e.g., 2021-10-01) | None | True |
-
+| interval | str | Interval frequency (possible values are: 5m, 15m, 30m, 1h, 1d, 1w) | None | False |
+| start | int | Initial date like string (e.g., 2021-10-01) | None | False |
+| end | int | End date like string (e.g., 2021-10-01) | None | False |
 
 ---
 
@@ -39,6 +37,11 @@ def get_messari_timeseries(symbol: str, timeseries_id: str, interval: str = "1d"
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, str] | Messari timeseries over time,<br/>Timeseries title |
+
+---
+
+## Examples
+
 ---
 
 
@@ -48,12 +51,11 @@ def get_messari_timeseries(symbol: str, timeseries_id: str, interval: str = "1d"
 
 Plots messari timeseries
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L103)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L103)
 
 ```python
-def display_messari_timeseries(symbol: str, timeseries_id: str, start_date: str = None, end_date: str = None, interval: str = "1d", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_messari_timeseries(symbol: str, timeseries_id: str, start_date: str, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -62,18 +64,21 @@ def display_messari_timeseries(symbol: str, timeseries_id: str, start_date: str 
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check market cap dominance | None | False |
 | timeseries_id | str | Obtained by api.crypto.dd.get_mt command | None | False |
-| start_date | int | Initial date like string (e.g., 2021-10-01) | None | True |
-| end_date | int | End date like string (e.g., 2021-10-01) | None | True |
-| interval | str | Interval frequency (possible values are: 5m, 15m, 30m, 1h, 1d, 1w) | 1d | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| start_date | int | Initial date like string (e.g., 2021-10-01) | None | False |
+| end_date | int | End date like string (e.g., 2021-10-01) | None | False |
+| interval | str | Interval frequency (possible values are: 5m, 15m, 30m, 1h, 1d, 1w) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

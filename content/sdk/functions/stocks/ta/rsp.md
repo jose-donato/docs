@@ -13,20 +13,18 @@ import TabItem from '@theme/TabItem';
 
 Relative strength percentile [Source: https://github.com/skyte/relative-strength]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_model.py#L16)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_model.py#L16)
 
 ```python
-def get_rsp(s_ticker: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]
+def get_rsp(s_ticker: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| s_ticker | str | Stock Ticker |  | True |
-
+| s_ticker | str | Stock Ticker | None | False |
 
 ---
 
@@ -35,6 +33,11 @@ def get_rsp(s_ticker: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFram
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame] | Dataframe of stock percentile, Dataframe of industry percentile,<br/>Raw stock dataframe for export, Raw industry dataframe for export |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,28 +47,30 @@ def get_rsp(s_ticker: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFram
 
 Display Relative Strength Percentile [Source: https://github.com/skyte/relative-strength]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_view.py#L20)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/rsp_view.py#L20)
 
 ```python
-def display_rsp(s_ticker: str = "", export: str = "", tickers_show: bool = False) -> None
+def display_rsp(s_ticker: str, export: str, tickers_show: bool) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| s_ticker | str | Stock ticker |  | True |
-| export | str | Format of export file |  | True |
-| tickers_show | bool | Boolean to check if tickers in the same industry as the stock should be shown | False | True |
-
+| s_ticker | str | Stock ticker | None | False |
+| export | str | Format of export file | None | False |
+| tickers_show | bool | Boolean to check if tickers in the same industry as the stock should be shown | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

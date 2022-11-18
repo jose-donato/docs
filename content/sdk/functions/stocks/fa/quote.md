@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Gets ticker quote from FMP
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L84)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L84)
 
 ```python
-def get_quote(symbol: str) -> pd.DataFrame
+def get_quote(symbol: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_quote(symbol: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_quote(symbol: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of ticker quote |
+
+---
+
+## Examples
+
 ---
 

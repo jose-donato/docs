@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Scrapes exchange withdrawal fees
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L182)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L182)
 
 ```python
-def get_overall_exchange_withdrawal_fees() -> pd.DataFrame
+def get_overall_exchange_withdrawal_fees() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -32,6 +31,11 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Exchange, Coins, Lowest, Average, Median, Highest |
+
+---
+
+## Examples
+
 ---
 
 
@@ -41,26 +45,28 @@ This function does not take any parameters.
 
 Exchange withdrawal fees
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L53)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L53)
 
 ```python
-def display_overall_exchange_withdrawal_fees(export: str = "") -> None
+def display_overall_exchange_withdrawal_fees(export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

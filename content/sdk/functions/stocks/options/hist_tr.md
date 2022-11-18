@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Gets historical option pricing.  This inputs either ticker, expiration, strike or the OCC chain ID and processes
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L44)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L44)
 
 ```python
-def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: bool = False, chain_id: Optional[str] = None) -> pd.DataFrame
+def get_historical_options(symbol: str, expiry: str, strike: float, put: bool, chain_id: Optional[str]) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,10 +26,9 @@ def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: boo
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 | expiry | str | Option expiration date | None | False |
-| strike | int | Option strike price | 0 | True |
-| put | bool | Is this a put option? | False | True |
-| chain_id | Optional[str] | OCC chain ID | None | True |
-
+| strike | int | Option strike price | None | False |
+| put | bool | Is this a put option? | None | False |
+| chain_id | Optional[str] | OCC chain ID | None | False |
 
 ---
 
@@ -39,6 +37,11 @@ def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: boo
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical option prices |
+
+---
+
+## Examples
+
 ---
 
 
@@ -48,12 +51,11 @@ def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: boo
 
 Plot historical option prices
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_view.py#L627)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_view.py#L627)
 
 ```python
-def display_historical(symbol: str, expiry: str, strike: float = 0, put: bool = False, raw: bool = False, chain_id: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_historical(symbol: str, expiry: str, strike: float, put: bool, raw: bool, chain_id: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -62,19 +64,22 @@ def display_historical(symbol: str, expiry: str, strike: float = 0, put: bool = 
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 | expiry | str | Expiry date of option | None | False |
-| strike | float | Option strike price | 0 | True |
-| put | bool | Is this a put option? | False | True |
-| raw | bool | Print raw data | False | True |
-| chain_id | str | OCC option symbol | None | True |
-| export | str | Format of export file |  | True |
+| strike | float | Option strike price | None | False |
+| put | bool | Is this a put option? | None | False |
+| raw | bool | Print raw data | None | False |
+| chain_id | str | OCC option symbol | None | False |
+| export | str | Format of export file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

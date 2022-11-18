@@ -13,22 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Get rolling sharpe ratio
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1704)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1704)
 
 ```python
-def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float = 0, window: str = "1y") -> pd.DataFrame
+def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float, window: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio_returns | pd.Series | Series of portfolio returns | None | True |
-| risk_free_rate | float | Risk free rate | 0 | True |
-| window | str | Rolling window to use<br/>Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y | 1y | True |
-
+| portfolio_returns | pd.Series | Series of portfolio returns | None | False |
+| risk_free_rate | float | Risk free rate | None | False |
+| window | str | Rolling window to use<br/>Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float = 0
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rolling sharpe ratio DataFrame |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,30 +49,32 @@ def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float = 0
 
 Display rolling sharpe
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L932)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L932)
 
 ```python
-def display_rolling_sharpe(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float = 0, window: str = "1y", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_rolling_sharpe(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float, window: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | PortfolioEngine | PortfolioEngine object | None | True |
-| risk_free_rate | float | Value to use for risk free rate in sharpe/other calculations | 0 | True |
-| window | str | interval for window to consider | 1y | True |
-| export | str | Export to file |  | True |
-| external_axes | Optional[List[plt.Axes]] | Optional axes to display plot on | None | True |
-
+| portfolio | PortfolioEngine | PortfolioEngine object | None | False |
+| risk_free_rate | float | Value to use for risk free rate in sharpe/other calculations | None | False |
+| window | str | interval for window to consider | None | False |
+| export | str | Export to file | None | False |
+| external_axes | Optional[List[plt.Axes]] | Optional axes to display plot on | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

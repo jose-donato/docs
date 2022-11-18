@@ -13,20 +13,18 @@ import TabItem from '@theme/TabItem';
 
 Get staking info for provided terra account [Source: https://fcd.terra.dev/swagger]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L105)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L105)
 
 ```python
-def get_staking_account_info(address: str = "") -> Tuple[pd.DataFrame, str]
+def get_staking_account_info(address: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| address | str | terra blockchain address e.g. terra1jvwelvs7rdk6j3mqdztq5tya99w8lxk6l9hcqg |  | True |
-
+| address | str | terra blockchain address e.g. terra1jvwelvs7rdk6j3mqdztq5tya99w8lxk6l9hcqg | None | False |
 
 ---
 
@@ -35,6 +33,11 @@ def get_staking_account_info(address: str = "") -> Tuple[pd.DataFrame, str]
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, str] | luna delegations and summary report for given address |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,28 +47,30 @@ def get_staking_account_info(address: str = "") -> Tuple[pd.DataFrame, str]
 
 Prints table showing staking info for provided terra account address [Source: https://fcd.terra.dev/swagger]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L32)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L32)
 
 ```python
-def display_account_staking_info(address: str = "", limit: int = 10, export: str = "") -> None
+def display_account_staking_info(address: str, limit: int, export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| address | str | terra blockchain address e.g. terra1jvwelvs7rdk6j3mqdztq5tya99w8lxk6l9hcqg |  | True |
-| limit | int | Number of records to display | 10 | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| address | str | terra blockchain address e.g. terra1jvwelvs7rdk6j3mqdztq5tya99w8lxk6l9hcqg | None | False |
+| limit | int | Number of records to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

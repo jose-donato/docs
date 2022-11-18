@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get last insider activity for a given stock ticker. [Source: Finviz]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_model.py#L16)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_model.py#L16)
 
 ```python
-def get_last_insider_activity(symbol: str) -> pd.DataFrame
+def get_last_insider_activity(symbol: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_last_insider_activity(symbol: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_last_insider_activity(symbol: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Latest insider trading activity |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_last_insider_activity(symbol: str) -> pd.DataFrame
 
 Display insider activity for a given stock ticker. [Source: Finviz]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_view.py#L15)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_view.py#L15)
 
 ```python
-def last_insider_activity(symbol: str, limit: int = 10, export: str = "") -> None
+def last_insider_activity(symbol: str, limit: int, export: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -57,15 +59,18 @@ def last_insider_activity(symbol: str, limit: int = 10, export: str = "") -> Non
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| limit | int | Number of latest insider activity to display | 10 | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| limit | int | Number of latest insider activity to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

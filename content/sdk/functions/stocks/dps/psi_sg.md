@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get price vs short interest volume. [Source: Stockgrid]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L121)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_model.py#L123)
 
 ```python
-def get_short_interest_volume(symbol: str) -> Tuple[pd.DataFrame, List]
+def get_short_interest_volume(symbol: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_short_interest_volume(symbol: str) -> Tuple[pd.DataFrame, List]
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock to get data from | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_short_interest_volume(symbol: str) -> Tuple[pd.DataFrame, List]
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, List] | Short interest volume data, Price data |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_short_interest_volume(symbol: str) -> Tuple[pd.DataFrame, List]
 
 Plot price vs short interest volume. [Source: Stockgrid]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L123)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/stockgrid_view.py#L123)
 
 ```python
-def short_interest_volume(symbol: str, limit: int = 84, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def short_interest_volume(symbol: str, limit: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -57,17 +59,20 @@ def short_interest_volume(symbol: str, limit: int = 84, raw: bool = False, expor
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock to plot for | None | False |
-| limit | int | Number of last open market days to show | 84 | True |
-| raw | bool | Flag to print raw data instead | False | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| limit | int | Number of last open market days to show | None | False |
+| raw | bool | Flag to print raw data instead | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

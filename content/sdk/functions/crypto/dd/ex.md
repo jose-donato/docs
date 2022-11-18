@@ -13,22 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Get all exchanges for given coin id. [Source: CoinPaprika]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L137)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L137)
 
 ```python
-def get_coin_exchanges_by_id(symbol: str = "BTC", sortby: str = "adjusted_volume_24h_share", ascend: bool = True) -> pd.DataFrame
+def get_coin_exchanges_by_id(symbol: str, sortby: str, ascend: bool) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
-| sortby | str | Key by which to sort data. Every column name is valid (see for possible values:<br/>https://api.coinpaprika.com/v1). | adjusted_volume_24h_share | True |
-| ascend | bool | Flag to sort data ascending | True | True |
-
+| symbol | str | Cryptocurrency symbol (e.g. BTC) | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid (see for possible values:<br/>https://api.coinpaprika.com/v1). | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def get_coin_exchanges_by_id(symbol: str = "BTC", sortby: str = "adjusted_volume
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | All exchanges for given coin<br/>Columns: id, name, adjusted_volume_24h_share, fiats |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,30 +49,32 @@ def get_coin_exchanges_by_id(symbol: str = "BTC", sortby: str = "adjusted_volume
 
 Prints table showing all exchanges for given coin id. [Source: CoinPaprika]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L185)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L185)
 
 ```python
-def display_exchanges(symbol: str = "btc", limit: int = 10, sortby: str = "adjusted_volume_24h_share", ascend: bool = True, export: str = "") -> None
+def display_exchanges(symbol: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | Cryptocurrency symbol (e.g. BTC) | btc | True |
-| limit | int | Number of records to display | 10 | True |
-| sortby | str | Key by which to sort data. Every column name is valid (see for possible values:<br/>https://api.coinpaprika.com/v1). | adjusted_volume_24h_share | True |
-| ascend | bool | Flag to sort data ascending | True | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| symbol | str | Cryptocurrency symbol (e.g. BTC) | None | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data. Every column name is valid (see for possible values:<br/>https://api.coinpaprika.com/v1). | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

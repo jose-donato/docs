@@ -13,23 +13,21 @@ import TabItem from '@theme/TabItem';
 
 Get token volume on different Decentralized Exchanges. [Source: https://graphql.bitquery.io/]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L513)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L513)
 
 ```python
-def get_token_volume_on_dexes(symbol: str = "UNI", trade_amount_currency: str = "USD", sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
+def get_token_volume_on_dexes(symbol: str, trade_amount_currency: str, sortby: str, ascend: bool) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | ERC20 token symbol. | UNI | True |
-| trade_amount_currency | str | Currency to display trade amount in. | USD | True |
-| sortby | str | Key by which to sort data | tradeAmount | True |
-| ascend | bool | Flag to sort data ascending | True | True |
-
+| symbol | str | ERC20 token symbol. | None | False |
+| trade_amount_currency | str | Currency to display trade amount in. | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
 
 ---
 
@@ -38,6 +36,11 @@ def get_token_volume_on_dexes(symbol: str = "UNI", trade_amount_currency: str = 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Token volume on Decentralized Exchanges |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,25 +50,23 @@ def get_token_volume_on_dexes(symbol: str = "UNI", trade_amount_currency: str = 
 
 Prints table showing token volume on different Decentralized Exchanges.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L160)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L160)
 
 ```python
-def display_dex_volume_for_token(symbol: str = "WBTC", trade_amount_currency: str = "USD", limit: int = 10, sortby: str = "tradeAmount", ascend: bool = True, export: str = "") -> None
+def display_dex_volume_for_token(symbol: str, trade_amount_currency: str, limit: int, sortby: str, ascend: bool, export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | ERC20 token symbol or address | WBTC | True |
-| trade_amount_currency | str | Currency of displayed trade amount. Default: USD | USD | True |
-| limit | int | Number of records to display | 10 | True |
-| sortby | str | Key by which to sort data | tradeAmount | True |
-| ascend | bool | Flag to sort data ascending | True | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| symbol | str | ERC20 token symbol or address | None | False |
+| trade_amount_currency | str | Currency of displayed trade amount. Default: USD | USD | False |
+| limit | int | Number of records to display | None | False |
+| sortby | str | Key by which to sort data | None | False |
+| ascend | bool | Flag to sort data ascending | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
@@ -74,6 +75,11 @@ def display_dex_volume_for_token(symbol: str = "WBTC", trade_amount_currency: st
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Token volume on different decentralized exchanges |
+
+---
+
+## Examples
+
 ---
 
 

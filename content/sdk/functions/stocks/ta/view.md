@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get finviz image for given ticker
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_model.py#L16)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_model.py#L16)
 
 ```python
 def get_finviz_image(symbol: str) -> bytes
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_finviz_image(symbol: str) -> bytes
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_finviz_image(symbol: str) -> bytes
 | Type | Description |
 | ---- | ----------- |
 | bytes | Image in byte format |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_finviz_image(symbol: str) -> bytes
 
 View finviz image for ticker
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_view.py#L22)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_view.py#L22)
 
 ```python
-def view(symbol: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def view(symbol: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -59,12 +61,15 @@ def view(symbol: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]] 
 | symbol | str | Stock ticker symbol | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
-
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

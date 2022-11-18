@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get all crypto hack slugs
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L182)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L182)
 
 ```python
-def get_crypto_hack_slugs() -> List[str]
+def get_crypto_hack_slugs() -> None
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List with slugs |
+
+---
+
+## Examples
+
 ---
 

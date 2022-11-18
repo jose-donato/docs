@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Fetch data to calculate potential returns of a certain coin. [Source: CoinGecko]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L63)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L63)
 
 ```python
-def get_coin_potential_returns(main_coin: str, to_symbol: Optional[str] = None, limit: Optional[int] = None, price: Optional[int] = None) -> pd.DataFrame
+def get_coin_potential_returns(main_coin: str, to_symbol: Optional[str], limit: Optional[int], price: Optional[int]) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,10 +25,9 @@ def get_coin_potential_returns(main_coin: str, to_symbol: Optional[str] = None, 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | main_coin | str | Coin loaded to check potential returns for (e.g., algorand) | None | False |
-| to_symbol | str | None | Coin to compare main_coin with (e.g., bitcoin) | None | True |
-| limit | int | None | Number of coins with highest market cap to compare main_coin with (e.g., 5) | None | True |
-| price | None | Target price of main_coin to check potential returns (e.g., 5) | None | True |
-
+| to_symbol | str | None | Coin to compare main_coin with (e.g., bitcoin) | None | False |
+| limit | int | None | Number of coins with highest market cap to compare main_coin with (e.g., 5) | None | False |
+| price | None | Target price of main_coin to check potential returns (e.g., 5) | None | None |
 
 ---
 
@@ -38,6 +36,11 @@ def get_coin_potential_returns(main_coin: str, to_symbol: Optional[str] = None, 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Potential returns data<br/>Columns: Coin, Current Price, Target Coin, Potential Price, Potential Market Cap ($), Change (%) |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,12 +50,11 @@ def get_coin_potential_returns(main_coin: str, to_symbol: Optional[str] = None, 
 
 Prints table showing potential returns of a certain coin. [Source: CoinGecko]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_view.py#L20)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_view.py#L20)
 
 ```python
-def display_coin_potential_returns(to_symbol: str, from_symbol: Optional[str] = None, limit: Optional[int] = None, price: Optional[int] = None, export: str = "") -> None
+def display_coin_potential_returns(to_symbol: str, from_symbol: Optional[str], limit: Optional[int], price: Optional[int], export: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,17 +62,20 @@ def display_coin_potential_returns(to_symbol: str, from_symbol: Optional[str] = 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | to_symbol | str | Coin loaded to check potential returns for (e.g., algorand) | None | False |
-| from_symbol | str | None | Coin to compare main_coin with (e.g., bitcoin) | None | True |
-| limit | int | None | Number of coins with highest market cap to compare main_coin with (e.g., 5) | None | True |
-| price | None | Target price of main_coin to check potential returns (e.g., 5) | None | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| from_symbol | str | None | Coin to compare main_coin with (e.g., bitcoin) | None | False |
+| limit | int | None | Number of coins with highest market cap to compare main_coin with (e.g., 5) | None | False |
+| price | None | Target price of main_coin to check potential returns (e.g., 5) | None | None |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

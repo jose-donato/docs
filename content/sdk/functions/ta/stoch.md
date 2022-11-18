@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Stochastic oscillator
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L126)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L126)
 
 ```python
-def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowkperiod: int = 3) -> None
+def stoch(data: pd.DataFrame, fastkperiod: int, slowdperiod: int, slowkperiod: int) -> None
 ```
-
 ---
 
 ## Parameters
@@ -26,10 +25,9 @@ def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowk
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
-| fastkperiod | int | Fast k period | 14 | True |
-| slowdperiod | int | Slow d period | 3 | True |
-| slowkperiod | int | Slow k period | 3 | True |
-
+| fastkperiod | int | Fast k period | None | False |
+| slowdperiod | int | Slow d period | None | False |
+| slowkperiod | int | Slow k period | None | False |
 
 ---
 
@@ -38,6 +36,11 @@ def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowk
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,12 +50,11 @@ def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowk
 
 Plots stochastic oscillator signal
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L307)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L307)
 
 ```python
-def display_stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowkperiod: int = 3, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_stoch(data: pd.DataFrame, fastkperiod: int, slowdperiod: int, slowkperiod: int, symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,19 +62,22 @@ def display_stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
-| fastkperiod | int | Fast k period | 14 | True |
-| slowdperiod | int | Slow d period | 3 | True |
-| slowkperiod | int | Slow k period | 3 | True |
-| symbol | str | Stock ticker symbol |  | True |
-| export | str | Format to export data |  | True |
+| fastkperiod | int | Fast k period | None | False |
+| slowdperiod | int | Slow d period | None | False |
+| slowkperiod | int | Slow k period | None | False |
+| symbol | str | Stock ticker symbol | None | False |
+| export | str | Format to export data | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

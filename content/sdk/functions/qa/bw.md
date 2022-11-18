@@ -3,28 +3,32 @@ title: bw
 description: OpenBB SDK Function
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # bw
+
+<Tabs>
+<TabItem value="model" label="Model" default>
 
 Plots box and whisker plots
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L258)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L258)
 
 ```python
-def display_bw(data: pd.DataFrame, target: str, symbol: str = "", yearly: bool = True, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_bw(data: pd.DataFrame, target: str, symbol: str, yearly: bool, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | Name of dataset |  | True |
+| symbol | str | Name of dataset | None | False |
 | data | pd.DataFrame | Dataframe to look at | None | False |
 | target | str | Data column to look at | None | False |
-| yearly | bool | Flag to indicate yearly accumulation | True | True |
+| yearly | bool | Flag to indicate yearly accumulation | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
@@ -34,3 +38,47 @@ This function does not return anything
 
 ---
 
+## Examples
+
+---
+
+
+
+</TabItem>
+<TabItem value="view" label="View">
+
+Plots box and whisker plots
+
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L258)
+
+```python
+def display_bw(data: pd.DataFrame, target: str, symbol: str, yearly: bool, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+```
+---
+
+## Parameters
+
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| symbol | str | Name of dataset | None | False |
+| data | pd.DataFrame | Dataframe to look at | None | False |
+| target | str | Data column to look at | None | False |
+| yearly | bool | Flag to indicate yearly accumulation | None | False |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+---
+
+## Returns
+
+This function does not return anything
+
+---
+
+## Examples
+
+---
+
+
+
+</TabItem>
+</Tabs>

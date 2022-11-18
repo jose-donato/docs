@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get list of categories keys
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L115)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L115)
 
 ```python
-def get_categories_keys() -> List[str]
+def get_categories_keys() -> None
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of categories keys |
+
+---
+
+## Examples
+
 ---
 

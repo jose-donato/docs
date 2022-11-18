@@ -7,22 +7,20 @@ description: OpenBB SDK Function
 
 Get news for a given term and source. [Source: Feedparser]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/feedparser_model.py#L13)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/feedparser_model.py#L13)
 
 ```python
-def get_news(term: str = "", sources: str = "", sort: str = "published") -> pd.DataFrame
+def get_news(term: str, sources: str, sort: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| term | str | term to search on the news articles |  | True |
-| sources | str | sources to exclusively show news from (separated by commas) |  | True |
-| sort | str | the column to sort by | published | True |
-
+| term | str | term to search on the news articles | None | False |
+| sources | str | sources to exclusively show news from (separated by commas) | None | False |
+| sort | str | the column to sort by | None | False |
 
 ---
 
@@ -31,5 +29,10 @@ def get_news(term: str = "", sources: str = "", sort: str = "published") -> pd.D
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | term to search on the news articles |
+
+---
+
+## Examples
+
 ---
 

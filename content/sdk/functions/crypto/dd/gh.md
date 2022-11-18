@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Returns  a list of developer activity for a given coin and time interval.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_model.py#L28)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_model.py#L28)
 
 ```python
-def get_github_activity(symbol: str, dev_activity: bool = False, interval: str = "1d", start_date: str = None, end_date: str = None) -> pd.DataFrame
+def get_github_activity(symbol: str, dev_activity: bool, interval: str, start_date: str, end_date: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,11 +25,10 @@ def get_github_activity(symbol: str, dev_activity: bool = False, interval: str =
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check github activity | None | False |
-| dev_activity | bool | Whether to filter only for development activity | False | True |
-| interval | str | Interval frequency (e.g., 1d) | 1d | True |
-| start_date | int | Initial date like string (e.g., 2021-10-01) | None | True |
-| end_date | int | End date like string (e.g., 2021-10-01) | None | True |
-
+| dev_activity | bool | Whether to filter only for development activity | None | False |
+| interval | str | Interval frequency (e.g., 1d) | None | False |
+| start_date | int | Initial date like string (e.g., 2021-10-01) | None | False |
+| end_date | int | End date like string (e.g., 2021-10-01) | None | False |
 
 ---
 
@@ -39,6 +37,11 @@ def get_github_activity(symbol: str, dev_activity: bool = False, interval: str =
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | developer activity over time |
+
+---
+
+## Examples
+
 ---
 
 
@@ -48,12 +51,11 @@ def get_github_activity(symbol: str, dev_activity: bool = False, interval: str =
 
 Returns a list of github activity for a given coin and time interval.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_view.py#L25)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_view.py#L25)
 
 ```python
-def display_github_activity(symbol: str, start_date: str = None, dev_activity: bool = False, end_date: str = None, interval: str = "1d", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_github_activity(symbol: str, start_date: str, dev_activity: bool, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -61,19 +63,22 @@ def display_github_activity(symbol: str, start_date: str = None, dev_activity: b
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check github activity | None | False |
-| dev_activity | bool | Whether to filter only for development activity | False | True |
-| start_date | int | Initial date like string (e.g., 2021-10-01) | None | True |
-| end_date | int | End date like string (e.g., 2021-10-01) | None | True |
-| interval | str | Interval frequency (some possible values are: 1h, 1d, 1w) | 1d | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| dev_activity | bool | Whether to filter only for development activity | None | False |
+| start_date | int | Initial date like string (e.g., 2021-10-01) | None | False |
+| end_date | int | End date like string (e.g., 2021-10-01) | None | False |
+| interval | str | Interval frequency (some possible values are: 1h, 1d, 1w) | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

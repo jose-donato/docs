@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get all exchanges.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L98)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_model.py#L98)
 
 ```python
-def get_all() -> pd.DataFrame
+def get_all() -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -32,6 +31,11 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | All available exchanges |
+
+---
+
+## Examples
+
 ---
 
 
@@ -41,12 +45,11 @@ This function does not take any parameters.
 
 Display all exchanges.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L84)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/tradinghours/bursa_view.py#L84)
 
 ```python
 def display_all() -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,6 +61,10 @@ This function does not take any parameters.
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

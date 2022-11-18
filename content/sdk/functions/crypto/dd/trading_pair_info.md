@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get information about chosen trading pair. [Source: Coinbase]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L48)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L48)
 
 ```python
-def get_trading_pair_info(symbol: str) -> pd.DataFrame
+def get_trading_pair_info(symbol: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -21,7 +20,6 @@ def get_trading_pair_info(symbol: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
 
-
 ---
 
 ## Returns
@@ -29,5 +27,10 @@ def get_trading_pair_info(symbol: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Basic information about given trading pair |
+
+---
+
+## Examples
+
 ---
 

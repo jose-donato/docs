@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Gets due diligence posts from list of subreddits [Source: reddit].
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L711)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L711)
 
 ```python
-def get_due_dilligence(symbol: str, limit: int = 5, n_days: int = 3, show_all_flairs: bool = False) -> pd.DataFrame
+def get_due_dilligence(symbol: str, limit: int, n_days: int, show_all_flairs: bool) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -20,10 +19,9 @@ def get_due_dilligence(symbol: str, limit: int = 5, n_days: int = 3, show_all_fl
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker | None | False |
-| limit | int | Number of posts to get | 5 | True |
-| n_days | int | Number of days back to get posts | 3 | True |
-| show_all_flairs | bool | Search through all flairs (apart from Yolo and Meme) | False | True |
-
+| limit | int | Number of posts to get | None | False |
+| n_days | int | Number of days back to get posts | None | False |
+| show_all_flairs | bool | Search through all flairs (apart from Yolo and Meme) | None | False |
 
 ---
 
@@ -32,5 +30,10 @@ def get_due_dilligence(symbol: str, limit: int = 5, n_days: int = 3, show_all_fl
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of submissions |
+
+---
+
+## Examples
+
 ---
 

@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get holdings of assets (absolute value)
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1527)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1527)
 
 ```python
-def get_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.DataFrame
+def get_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of holdings |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.
 
 Display holdings of assets (absolute value)
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L713)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L713)
 
 ```python
-def display_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine, unstack: bool = False, raw: bool = False, limit: int = 10, export: str = "", external_axes: Optional[matplotlib.axes._axes.Axes] = None) -> None
+def display_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine, unstack: bool, raw: bool, limit: int, export: str, external_axes: Optional[matplotlib.axes._axes.Axes]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -57,18 +59,21 @@ def display_holdings_value(portfolio_engine: portfolio_model.PortfolioEngine, un
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
-| unstack | bool | Individual assets over time | False | True |
-| raw | bool | To display raw data | False | True |
-| limit | int | Number of past market days to display holdings | 10 | True |
-| export | str | Format to export plot |  | True |
-| external_axes | plt.Axes | Optional axes to display plot on | None | True |
-
+| unstack | bool | Individual assets over time | None | False |
+| raw | bool | To display raw data | None | False |
+| limit | int | Number of past market days to display holdings | None | False |
+| export | str | Format to export plot | None | False |
+| external_axes | plt.Axes | Optional axes to display plot on | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

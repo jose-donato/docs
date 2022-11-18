@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get available countries for ycrv command.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L285)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L285)
 
 ```python
-def get_ycrv_countries() -> List[str]
+def get_ycrv_countries() -> None
 ```
-
 ---
 
 ## Parameters
@@ -26,5 +25,10 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of available countries. |
+
+---
+
+## Examples
+
 ---
 

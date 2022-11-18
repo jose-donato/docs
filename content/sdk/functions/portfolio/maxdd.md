@@ -13,21 +13,19 @@ import TabItem from '@theme/TabItem';
 
 Calculate the drawdown (MDD) of historical series.  Note that the calculation is done
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1590)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1590)
 
 ```python
-def get_maximum_drawdown(portfolio_engine: portfolio_model.PortfolioEngine, is_returns: bool = False) -> pd.Series
+def get_maximum_drawdown(portfolio_engine: portfolio_model.PortfolioEngine, is_returns: bool) -> Series
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| data | pd.Series | Series of input values | None | True |
-| is_returns | bool | Flag to indicate inputs are returns | False | True |
-
+| data | pd.Series | Series of input values | None | False |
+| is_returns | bool | Flag to indicate inputs are returns | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def get_maximum_drawdown(portfolio_engine: portfolio_model.PortfolioEngine, is_r
 | Type | Description |
 | ---- | ----------- |
 | pd.Series | Holdings series |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,28 +48,30 @@ def get_maximum_drawdown(portfolio_engine: portfolio_model.PortfolioEngine, is_r
 
 Display maximum drawdown curve
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1111)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1111)
 
 ```python
-def display_maximum_drawdown(portfolio_engine: portfolio_model.PortfolioEngine, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_maximum_drawdown(portfolio_engine: portfolio_model.PortfolioEngine, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| portfolio | PortfolioEngine | PortfolioEngine object | None | True |
-| export | str | Format to export data |  | True |
-| external_axes | plt.Axes | Optional axes to display plot on | None | True |
-
+| portfolio | PortfolioEngine | PortfolioEngine object | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | plt.Axes | Optional axes to display plot on | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

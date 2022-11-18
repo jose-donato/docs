@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get historical futures [Source: Yahoo Finance]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L79)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L79)
 
 ```python
-def get_historical_futures(symbols: List[str], expiry: str = "") -> pd.DataFrame
+def get_historical_futures(symbols: List[str], expiry: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,8 +25,7 @@ def get_historical_futures(symbols: List[str], expiry: str = "") -> pd.DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of future timeseries symbols to display | None | False |
-| expiry | str | Future expiry date with format YYYY-MM |  | True |
-
+| expiry | str | Future expiry date with format YYYY-MM | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def get_historical_futures(symbols: List[str], expiry: str = "") -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dictionary with sector weightings allocation |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,12 +48,11 @@ def get_historical_futures(symbols: List[str], expiry: str = "") -> pd.DataFrame
 
 Display historical futures [Source: Yahoo Finance]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L65)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L65)
 
 ```python
-def display_historical(symbols: List[str], expiry: str = "", start_date: str = None, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_historical(symbols: List[str], expiry: str, start_date: str, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,18 +60,21 @@ def display_historical(symbols: List[str], expiry: str = "", start_date: str = N
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of future timeseries symbols to display | None | False |
-| expiry | str | Future expiry date with format YYYY-MM |  | True |
-| start_date | str | Initial date like string (e.g., 2021-10-01) | None | True |
-| raw | bool | Display futures timeseries in raw format | False | True |
-| export | str | Type of format to export data |  | True |
+| expiry | str | Future expiry date with format YYYY-MM | None | False |
+| start_date | str | Initial date like string (e.g., 2021-10-01) | None | False |
+| raw | bool | Display futures timeseries in raw format | None | False |
+| export | str | Type of format to export data | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

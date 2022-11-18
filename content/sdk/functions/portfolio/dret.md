@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get daily returns
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2318)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2318)
 
 ```python
-def get_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all") -> pd.DataFrame
+def get_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,8 +25,7 @@ def get_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window:
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
-| window | str | interval to compare cumulative returns and benchmark | all | True |
-
+| window | str | interval to compare cumulative returns and benchmark | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def get_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window:
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with daily returns |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,12 +48,11 @@ def get_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window:
 
 Display daily returns
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L557)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L557)
 
 ```python
-def display_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all", raw: bool = False, limit: int = 10, export: str = "", external_axes: Optional[matplotlib.axes._axes.Axes] = None) -> None
+def display_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str, raw: bool, limit: int, export: str, external_axes: Optional[matplotlib.axes._axes.Axes]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,18 +60,21 @@ def display_daily_returns(portfolio_engine: portfolio_model.PortfolioEngine, win
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
-| window | str | interval to compare cumulative returns and benchmark | all | True |
-| raw | False | Display raw data from cumulative return | False | True |
-| limit | int | Last daily returns to display | 10 | True |
-| export | str | Export certain type of data |  | True |
-| external_axes | plt.Axes | Optional axes to display plot on | None | True |
-
+| window | str | interval to compare cumulative returns and benchmark | None | False |
+| raw | False | Display raw data from cumulative return | None | False |
+| limit | int | Last daily returns to display | None | False |
+| export | str | Export certain type of data | None | False |
+| external_axes | plt.Axes | Optional axes to display plot on | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

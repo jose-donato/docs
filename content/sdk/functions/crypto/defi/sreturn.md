@@ -13,20 +13,18 @@ import TabItem from '@theme/TabItem';
 
 Get terra blockchain staking returns history [Source: https://fcd.terra.dev/v1]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L312)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L312)
 
 ```python
-def get_staking_returns_history(limit: int = 200) -> None
+def get_staking_returns_history(limit: int) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | The number of returns to show | 200 | True |
-
+| limit | int | The number of returns to show | None | False |
 
 ---
 
@@ -35,6 +33,11 @@ def get_staking_returns_history(limit: int = 200) -> None
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | historical staking returns |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,28 +47,30 @@ def get_staking_returns_history(limit: int = 200) -> None
 
 Plots terra blockchain staking returns history [Source: https://fcd.terra.dev/swagger]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L254)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L254)
 
 ```python
-def display_staking_returns_history(limit: int = 90, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_staking_returns_history(limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | 90 | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| limit | int | Number of records to display | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

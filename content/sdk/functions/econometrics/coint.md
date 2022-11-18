@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Calculate cointegration tests between variable number of input series
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L249)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L249)
 
 ```python
-def get_coint_df(datasets: pd.Series, return_z: bool = False) -> Union[pd.DataFrame, Dict]
+def get_coint_df() -> None
 ```
-
 ---
 
 ## Parameters
@@ -26,8 +25,7 @@ def get_coint_df(datasets: pd.Series, return_z: bool = False) -> Union[pd.DataFr
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | datasets | pd.Series | Input series to test cointegration for | None | False |
-| return_z | bool | Flag to return the z data to plot | False | True |
-
+| return_z | bool | Flag to return the z data to plot | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def get_coint_df(datasets: pd.Series, return_z: bool = False) -> Union[pd.DataFr
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame,Dict] | Dataframe with results of cointegration tests or a Dict of the z results |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,12 +48,11 @@ def get_coint_df(datasets: pd.Series, return_z: bool = False) -> Union[pd.DataFr
 
 Estimates long-run and short-run cointegration relationship for series y and x and apply
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L314)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L314)
 
 ```python
-def display_cointegration_test(datasets: pd.Series, significant: bool = False, plot: bool = True, export: str = "", external_axes: Optional[List[axes]] = None) -> None
+def display_cointegration_test() -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,17 +60,20 @@ def display_cointegration_test(datasets: pd.Series, significant: bool = False, p
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | datasets | pd.Series | Variable number of series to test for cointegration | None | False |
-| significant | float | Show only companies that have p-values lower than this percentage | False | True |
-| plot | bool | Whether you wish to plot the z-values of all pairs. | True | True |
-| export | str | Format to export data |  | True |
-| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
-
+| significant | float | Show only companies that have p-values lower than this percentage | None | False |
+| plot | bool | Whether you wish to plot the z-values of all pairs. | None | False |
+| export | str | Format to export data | None | False |
+| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

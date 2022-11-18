@@ -13,20 +13,18 @@ import TabItem from '@theme/TabItem';
 
 Returns crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_model.py#L267)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_model.py#L267)
 
 ```python
-def get_rates(rate_type: str = "borrow") -> pd.DataFrame
+def get_rates(rate_type: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | borrow | True |
-
+| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | supply | False |
 
 ---
 
@@ -35,6 +33,11 @@ def get_rates(rate_type: str = "borrow") -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | crypto interest rates per platform |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,30 +47,32 @@ def get_rates(rate_type: str = "borrow") -> pd.DataFrame
 
 Displays crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_view.py#L24)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_view.py#L24)
 
 ```python
-def display_crypto_rates(symbols: str, platforms: str, rate_type: str = "borrow", limit: int = 10, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_crypto_rates(symbols: str, platforms: str, rate_type: str, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | borrow | True |
-| symbols | str | Crypto separated by commas. Default: BTC,ETH,USDT,USDC | None | False |
-| platforms | str | Platforms separated by commas. Default: BlockFi,Ledn,SwissBorg,Youhodler | None | False |
-| limit | int | Number of records to show | 10 | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
-
+| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | supply | False |
+| symbols | str | Crypto separated by commas. Default: BTC,ETH,USDT,USDC | BTC | False |
+| platforms | str | Platforms separated by commas. Default: BlockFi,Ledn,SwissBorg,Youhodler | BlockFi | False |
+| limit | int | Number of records to show | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

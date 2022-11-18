@@ -13,20 +13,18 @@ import TabItem from '@theme/TabItem';
 
 Get unusual option activity from fdscanner.com
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L19)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L19)
 
 ```python
-def unusual_options(limit: int = 100) -> Tuple[pd.DataFrame, pandas._libs.tslibs.timestamps.Timestamp]
+def unusual_options(limit: int) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number to show | 100 | True |
-
+| limit | int | Number to show | None | False |
 
 ---
 
@@ -35,6 +33,11 @@ def unusual_options(limit: int = 100) -> Tuple[pd.DataFrame, pandas._libs.tslibs
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.Timestamp] | Dataframe containing options information, Timestamp indicated when data was updated from website |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,31 +47,33 @@ def unusual_options(limit: int = 100) -> Tuple[pd.DataFrame, pandas._libs.tslibs
 
 Displays the unusual options table
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_view.py#L15)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_view.py#L15)
 
 ```python
-def display_options(limit: int = 20, sortby: str = "Vol/OI", ascend: bool = False, calls_only: bool = False, puts_only: bool = False, export: str = "") -> None
+def display_options(limit: int, sortby: str, ascend: bool, calls_only: bool, puts_only: bool, export: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of rows to show | 20 | True |
-| sortby | str | Data column to sort on | Vol/OI | True |
-| ascend | bool | Whether to sort in ascend order | False | True |
-| calls_only | bool | Flag to only show calls | False | True |
-| puts_only | bool | Flag to show puts only | False | True |
-| export | str | File type to export |  | True |
-
+| limit | int | Number of rows to show | None | False |
+| sortby | str | Data column to sort on | None | False |
+| ascend | bool | Whether to sort in ascend order | None | False |
+| calls_only | bool | Flag to only show calls | None | False |
+| puts_only | bool | Flag to show puts only | None | False |
+| export | str | File type to export | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

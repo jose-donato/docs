@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Show historical cases and deaths by country.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L136)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L126)
 
 ```python
-def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.DataFrame
+def get_covid_stat(country: str, stat: str, limit: int) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,9 +25,8 @@ def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.Dat
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to get data for | None | False |
-| stat | str | Statistic to get.  Either "cases", "deaths" or "rates" | cases | True |
-| limit | int | Number of raw data to show | 10 | True |
-
+| stat | str | Statistic to get.  Either "cases", "deaths" or "rates" | None | False |
+| limit | int | Number of raw data to show | None | False |
 
 ---
 
@@ -37,6 +35,11 @@ def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.Dat
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of data for given country and statistic |
+
+---
+
+## Examples
+
 ---
 
 
@@ -46,12 +49,11 @@ def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.Dat
 
 Prints table showing historical cases and deaths by country.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L172)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L168)
 
 ```python
-def display_covid_stat(country: str, stat: str = "cases", raw: bool = False, limit: int = 10, export: str = "", plot: bool = True) -> None
+def display_covid_stat(country: str, stat: str, raw: bool, limit: int, export: str, plot: bool) -> None
 ```
-
 ---
 
 ## Parameters
@@ -59,18 +61,21 @@ def display_covid_stat(country: str, stat: str = "cases", raw: bool = False, lim
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to get data for | None | False |
-| stat | str | Statistic to get.  Either "cases", "deaths" or "rates" | cases | True |
-| raw | bool | Flag to display raw data | False | True |
-| limit | int | Number of raw data to show | 10 | True |
-| export | str | Format to export data |  | True |
-| plot | bool | Flag to plot data | True | True |
-
+| stat | str | Statistic to get.  Either "cases", "deaths" or "rates" | None | False |
+| raw | bool | Flag to display raw data | None | False |
+| limit | int | Number of raw data to show | None | False |
+| export | str | Format to export data | None | False |
+| plot | bool | Flag to plot data | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

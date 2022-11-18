@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Calculate AD technical indicator
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L17)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L17)
 
 ```python
-def ad(data: pd.DataFrame, use_open: bool = False) -> pd.DataFrame
+def ad(data: pd.DataFrame, use_open: bool) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -26,8 +25,7 @@ def ad(data: pd.DataFrame, use_open: bool = False) -> pd.DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of prices with OHLC and Volume | None | False |
-| use_open | bool | Whether to use open prices | False | True |
-
+| use_open | bool | Whether to use open prices | None | False |
 
 ---
 
@@ -36,6 +34,11 @@ def ad(data: pd.DataFrame, use_open: bool = False) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with technical indicator |
+
+---
+
+## Examples
+
 ---
 
 
@@ -45,12 +48,11 @@ def ad(data: pd.DataFrame, use_open: bool = False) -> pd.DataFrame
 
 Plots AD technical indicator
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L28)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L28)
 
 ```python
-def display_ad(data: pd.DataFrame, use_open: bool = False, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_ad(data: pd.DataFrame, use_open: bool, symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,17 +60,20 @@ def display_ad(data: pd.DataFrame, use_open: bool = False, symbol: str = "", exp
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| use_open | bool | Whether to use open prices in calculation | False | True |
-| symbol | str | Ticker symbol |  | True |
-| export | str | Format to export data as |  | True |
+| use_open | bool | Whether to use open prices in calculation | None | False |
+| symbol | str | Ticker symbol | None | False |
+| export | str | Format to export data as | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

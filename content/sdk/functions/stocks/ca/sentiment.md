@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Gets Sentiment analysis from several symbols provided by FinBrain's API.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L47)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L47)
 
 ```python
-def get_sentiments(symbols: List[str]) -> pd.DataFrame
+def get_sentiments(symbols: List[str]) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_sentiments(symbols: List[str]) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of tickers to get sentiment.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_sentiments(symbols: List[str]) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Contains sentiment analysis from several tickers |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_sentiments(symbols: List[str]) -> pd.DataFrame
 
 Display sentiment for all ticker. [Source: FinBrain].
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L32)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L32)
 
 ```python
-def display_sentiment_compare(similar: List[str], raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_sentiment_compare(similar: List[str], raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,15 +60,18 @@ def display_sentiment_compare(similar: List[str], raw: bool = False, export: str
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | Similar companies to compare income with.<br/>Comparable companies can be accessed through<br/>finviz_peers(), finnhub_peers() or polygon_peers(). | None | False |
 | raw | bool | Output raw values, by default False | False | True |
-| export | str | Format to export data |  | True |
+| export | str | Format to export data | None | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

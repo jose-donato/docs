@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get Option Chain Expirations
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/options_sdk_helper.py#L63)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/options_sdk_helper.py#L63)
 
 ```python
-def get_option_expirations(symbol: str, source: str = "Nasdaq") -> List
+def get_option_expirations(symbol: str, source: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -20,8 +19,7 @@ def get_option_expirations(symbol: str, source: str = "Nasdaq") -> List
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Symbol to get chain for | None | False |
-| source | str | Source to get data from, by default "Nasdaq" | Nasdaq | True |
-
+| source | str | Source to get data from, by default "Nasdaq" | None | True |
 
 ---
 
@@ -30,5 +28,10 @@ def get_option_expirations(symbol: str, source: str = "Nasdaq") -> List
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of full option chain. |
+
+---
+
+## Examples
+
 ---
 

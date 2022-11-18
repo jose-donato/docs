@@ -13,24 +13,22 @@ import TabItem from '@theme/TabItem';
 
 View historical price of stocks that meet preset
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_model.py#L53)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_model.py#L53)
 
 ```python
-def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-22", type_candle: str = "a", normalize: bool = True) -> Tuple[pd.DataFrame, List[str], bool]
+def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| preset_loaded | str | Preset loaded to filter for tickers | top_gainers | True |
-| limit | int | Number of stocks to display | 10 | True |
-| start_date | str | Start date to display historical data, in YYYY-MM-DD format | 2022-05-22 | True |
-| type_candle | str | Type of candle to display | a | True |
-| normalize | bool | Boolean to normalize all stock prices using MinMax | True | True |
-
+| preset_loaded | str | Preset loaded to filter for tickers | None | False |
+| limit | int | Number of stocks to display | None | False |
+| start_date | str | Start date to display historical data, in YYYY-MM-DD format | None | False |
+| type_candle | str | Type of candle to display | None | False |
+| normalize | bool | Boolean to normalize all stock prices using MinMax | None | False |
 
 ---
 
@@ -39,6 +37,11 @@ def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of the screener |
+
+---
+
+## Examples
+
 ---
 
 
@@ -48,26 +51,24 @@ def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: 
 
 View historical price of stocks that meet preset
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_view.py#L28)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_view.py#L28)
 
 ```python
-def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-22", type_candle: str = "a", normalize: bool = True, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> List[str]
+def historical(preset_loaded: str, limit: int, start_date: str, type_candle: str, normalize: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| preset_loaded | str | Preset loaded to filter for tickers | top_gainers | True |
-| limit | int | Number of stocks to display | 10 | True |
-| start_date | str | Start date to display historical data, in YYYY-MM-DD format | 2022-05-22 | True |
-| type_candle | str | Type of candle to display | a | True |
-| normalize | bool | Boolean to normalize all stock prices using MinMax | True | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| preset_loaded | str | Preset loaded to filter for tickers | None | False |
+| limit | int | Number of stocks to display | None | False |
+| start_date | str | Start date to display historical data, in YYYY-MM-DD format | None | False |
+| type_candle | str | Type of candle to display | None | False |
+| normalize | bool | Boolean to normalize all stock prices using MinMax | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
@@ -76,6 +77,11 @@ def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: 
 | Type | Description |
 | ---- | ----------- |
 | list[str] | List of stocks |
+
+---
+
+## Examples
+
 ---
 
 

@@ -13,23 +13,21 @@ import TabItem from '@theme/TabItem';
 
 Request creation of buy/sell trade order.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L270)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L270)
 
 ```python
-def create_order_request(price: int = 0, units: int = 0, instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
+def create_order_request(price: int, units: int, instrument: Optional[str], accountID: str) -> None
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
-| price | int | The price to set for the limit order. | 0 | True |
-| units | int | The number of units to place in the order request. | 0 | True |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
-
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
+| price | int | The price to set for the limit order. | None | False |
+| units | int | The number of units to place in the order request. | None | False |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
 
 ---
 
@@ -38,6 +36,11 @@ def create_order_request(price: int = 0, units: int = 0, instrument: Optional[st
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Orders data or False |
+
+---
+
+## Examples
+
 ---
 
 
@@ -47,12 +50,11 @@ def create_order_request(price: int = 0, units: int = 0, instrument: Optional[st
 
 Create a buy/sell order.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L174)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L174)
 
 ```python
-def create_order(accountID: str, instrument: str = "", price: int = 0, units: int = 0) -> None
+def create_order(accountID: str, instrument: str, price: int, units: int) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,16 +62,19 @@ def create_order(accountID: str, instrument: str = "", price: int = 0, units: in
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
-| instrument | str | The loaded currency pair |  | True |
-| price | int | The price to set for the limit order. | 0 | True |
-| units | int | The number of units to place in the order request. | 0 | True |
-
+| instrument | str | The loaded currency pair | None | False |
+| price | int | The price to set for the limit order. | None | False |
+| units | int | The number of units to place in the order request. | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

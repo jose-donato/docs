@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Screens the etfs pulled from my repo (https://github.com/jmaslek/etf_scraper),
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_model.py#L43)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_model.py#L43)
 
 ```python
 def etf_screener(preset: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def etf_screener(preset: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | preset | str | Screener to use from presets | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def etf_screener(preset: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Screened dataframe |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def etf_screener(preset: str) -> None
 
 Display screener output
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_view.py#L18)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/screener/screener_view.py#L18)
 
 ```python
-def view_screener(preset: str, num_to_show: int, sortby: str, ascend: bool, export: str = "") -> None
+def view_screener(preset: str, num_to_show: int, sortby: str, ascend: bool, export: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -60,14 +62,17 @@ def view_screener(preset: str, num_to_show: int, sortby: str, ascend: bool, expo
 | num_to_show | int | Number of etfs to show | None | False |
 | sortby | str | Column to sort by | None | False |
 | ascend | bool | Ascend when sorted | None | False |
-| export | str | Output format of export |  | True |
-
+| export | str | Output format of export | None | False |
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

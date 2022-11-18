@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Get top rising related queries with this stock's query [Source: google].
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L106)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L106)
 
 ```python
-def get_rise(symbol: str, limit: int = 10) -> pd.DataFrame
+def get_rise(symbol: str, limit: int) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -20,8 +19,7 @@ def get_rise(symbol: str, limit: int = 10) -> pd.DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| limit | int | Number of queries to show | 10 | True |
-
+| limit | int | Number of queries to show | None | False |
 
 ---
 
@@ -30,5 +28,10 @@ def get_rise(symbol: str, limit: int = 10) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing rising related queries |
+
+---
+
+## Examples
+
 ---
 

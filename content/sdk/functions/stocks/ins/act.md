@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Get insider activity. [Source: Business Insider]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/businessinsider_model.py#L17)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/businessinsider_model.py#L17)
 
 ```python
-def get_insider_activity(symbol: str) -> pd.DataFrame
+def get_insider_activity(symbol: str) -> DataFrame
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_insider_activity(symbol: str) -> pd.DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get insider activity data from | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_insider_activity(symbol: str) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Insider activity data |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_insider_activity(symbol: str) -> pd.DataFrame
 
 Display insider activity. [Source: Business Insider]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/businessinsider_view.py#L32)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/businessinsider_view.py#L32)
 
 ```python
-def insider_activity(data: pd.DataFrame, symbol: str, start_date: str = None, interval: str = "1440min", limit: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def insider_activity(data: pd.DataFrame, symbol: str, start_date: str, interval: str, limit: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -58,19 +60,22 @@ def insider_activity(data: pd.DataFrame, symbol: str, start_date: str = None, in
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Stock dataframe | None | False |
 | symbol | str | Due diligence ticker symbol | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 3 years back | None | True |
-| interval | str | Stock data interval | 1440min | True |
-| limit | int | Number of latest days of inside activity | 10 | True |
-| raw | bool | Print to console | False | True |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 3 years back | 3 | False |
+| interval | str | Stock data interval | None | False |
+| limit | int | Number of latest days of inside activity | None | False |
+| raw | bool | Print to console | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 

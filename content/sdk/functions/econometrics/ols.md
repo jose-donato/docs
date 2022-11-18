@@ -7,12 +7,11 @@ description: OpenBB SDK Function
 
 Performs an OLS regression on timeseries data. [Source: Statsmodels]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L178)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L177)
 
 ```python
 def get_ols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 ```
-
 ---
 
 ## Parameters
@@ -22,7 +21,6 @@ def get_ols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 | Y | pd.DataFrame | Dependent variable series. | None | False |
 | X | pd.DataFrame | Dataframe of independent variables series. | None | False |
 
-
 ---
 
 ## Returns
@@ -30,9 +28,11 @@ def get_ols(Y: pd.DataFrame, X: pd.DataFrame) -> None
 | Type | Description |
 | ---- | ----------- |
 | statsmodels.regression.linear_model.RegressionResultsWrapper | Regression model wrapper from statsmodels. |
+
 ---
 
 ## Examples
+
 SDK Snippet:
 ```python
 import openbb_terminal.sdk as openbb

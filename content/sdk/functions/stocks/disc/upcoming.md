@@ -7,20 +7,18 @@ description: OpenBB SDK Function
 
 Returns a DataFrame with upcoming earnings
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L41)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L41)
 
 ```python
-def get_next_earnings(limit: int = 10) -> pd.DataFrame
+def get_next_earnings(limit: int) -> DataFrame
 ```
-
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of pages | 10 | True |
-
+| limit | int | Number of pages | None | False |
 
 ---
 
@@ -29,5 +27,10 @@ def get_next_earnings(limit: int = 10) -> pd.DataFrame
 | Type | Description |
 | ---- | ----------- |
 | DataFrame | Upcoming earnings DataFrame |
+
+---
+
+## Examples
+
 ---
 

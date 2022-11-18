@@ -13,12 +13,11 @@ import TabItem from '@theme/TabItem';
 
 Returns coin fundraising
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L637)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L637)
 
 ```python
-def get_fundraising(symbol: str) -> Tuple[str, pd.DataFrame, pd.DataFrame, pd.DataFrame]
+def get_fundraising(symbol: str) -> None
 ```
-
 ---
 
 ## Parameters
@@ -27,7 +26,6 @@ def get_fundraising(symbol: str) -> Tuple[str, pd.DataFrame, pd.DataFrame, pd.Da
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check fundraising | None | False |
 
-
 ---
 
 ## Returns
@@ -35,6 +33,11 @@ def get_fundraising(symbol: str) -> Tuple[str, pd.DataFrame, pd.DataFrame, pd.Da
 | Type | Description |
 | ---- | ----------- |
 | Tuple[str, pd.DataFrame, pd.DataFrame, pd.DataFrame] | Launch summary,<br/>Sales rounds,<br/>Treasury Accounts,<br/>Metric Value launch details |
+
+---
+
+## Examples
+
 ---
 
 
@@ -44,12 +47,11 @@ def get_fundraising(symbol: str) -> Tuple[str, pd.DataFrame, pd.DataFrame, pd.Da
 
 Display coin fundraising
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L639)]
+Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L639)
 
 ```python
-def display_fundraising(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
+def display_fundraising(symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
 ```
-
 ---
 
 ## Parameters
@@ -57,15 +59,18 @@ def display_fundraising(symbol: str, export: str = "", external_axes: Optional[L
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check coin fundraising | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| export | str | Export dataframe data to csv,json,xlsx file | None | False |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
-
 
 ---
 
 ## Returns
 
 This function does not return anything
+
+---
+
+## Examples
 
 ---
 
