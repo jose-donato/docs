@@ -8,18 +8,26 @@ description: OpenBB SDK Function
 Get an ETF symbol and name based on ETF string to search. [Source: StockAnalysis]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L132)]
+
 ```python
 def get_etfs_by_name(name_to_search: str) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | name_to_search | str | ETF name to match | None | False |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Dataframe with symbols and names |
 ---
+

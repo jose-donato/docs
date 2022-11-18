@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # watchlist
 
 Print other users watchlist. [Source: Reddit]
-### Usage 
+
+### Usage
+
 ```python
 usage: watchlist [-l LIMIT]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of posts with watch lists retrieved. | 5 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 10:52 (🦋) /stocks/ba/ $ watchlist
 2022-02-16 14:16:31 - Morning Update for Wednesday, 2/16/22
@@ -34,3 +41,6 @@ https://old.reddit.com/r/stocks/comments/srtwxi/looking_for_a_platform_that_disp
 2022-02-11 17:31:13 - Clear Blue Technologies $CBLU.V $CBUTF QUICK LOOK, watchlist + portfolio addition 👀👀 👨🏽‍💻👩🏾‍💻
 https://old.reddit.com/r/RobinHoodPennyStocks/comments/sq4t5o/clear_blue_technologies_cbluv_cbutf_quick_look/
 ```
+
+---
+

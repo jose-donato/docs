@@ -8,18 +8,26 @@ description: OpenBB SDK Function
 Load a Excel file with views for Black Litterman model.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/excel_model.py#L101)]
+
 ```python
 def load_bl_views(excel_file: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | excel_file | str | The location of the Excel file that needs to be loaded. |  | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | list | Returns a list with p_views matrix |
 ---
+

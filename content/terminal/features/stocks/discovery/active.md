@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # active
 
 Print up to 25 top most actively traded intraday tickers. [Source: Yahoo Finance]
-### Usage 
+
+### Usage
+
 ```python
 usage: active [-l LIMIT]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of stocks to display. | 5 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 03:46 (🦋) /stocks/disc/ $ active -l 25
                                                                  Most Active Stocks
@@ -74,3 +81,6 @@ usage: active [-l LIMIT]
 │ MSFT   │ Microsoft Corporation                │ 300.47           │ 5.47   │ +1.85%   │ 27.379M  │ 35.818M           │ 2.253T     │ 32.00          │
 └────────┴──────────────────────────────────────┴──────────────────┴────────┴──────────┴──────────┴───────────────────┴────────────┴────────────────┘
 ```
+
+---
+

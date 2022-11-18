@@ -6,19 +6,26 @@ description: OpenBB Terminal Function
 # trending
 
 Trending news articles. [Source: Seeking Alpha]
-### Usage 
+
+### Usage
+
 ```python
 usage: trending [-i N_ID] [-l LIMIT] [-d S_DATE]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | n_id | article ID | -1 | True | None |
 | limit | limit of articles being printed | 5 | True | None |
 | s_date | starting date of articles | 2022-11-18 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 04:13 (🦋) /stocks/disc/ $ trending -i 10
 2010-03-21 08:33:21   Deutsche Bank's Marc Greenberg can't justify the BUD deal. But he says Bud Light Lime is the...
@@ -56,3 +63,6 @@ https://seekingalpha.com/news/3800529-golden-ocean-raises-dividend-by-6-to-090sh
 2022-02-15 17:35:20 - 3800169 - Matterport Q4 2021 Earnings Preview
 https://seekingalpha.com/news/3800169-matterport-q4-2021-earnings-preview
 ```
+
+---
+

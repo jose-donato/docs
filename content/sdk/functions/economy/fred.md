@@ -14,23 +14,31 @@ import TabItem from '@theme/TabItem';
 Get Series data. [Source: FRED]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L208)]
+
 ```python
 def get_aggregated_series_data(series_ids: List[str], start_date: str = None, end_date: str = None) -> Tuple[pd.DataFrame, dict]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | series_ids | List[str] | Series ID to get data from | None | False |
 | start_date | str | Start date to get data from, format yyyy-mm-dd | None | True |
 | end_date | str | End data to get from, format yyyy-mm-dd | None | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Series data |
 ---
+
 
 
 </TabItem>
@@ -39,11 +47,15 @@ def get_aggregated_series_data(series_ids: List[str], start_date: str = None, en
 Display (multiple) series from https://fred.stlouisfed.org. [Source: FRED]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_view.py#L76)]
+
 ```python
 def display_fred_series(series_ids: List[str], start_date: str = None, end_date: str = None, limit: int = 10, get_data: bool = False, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | series_ids | List[str] | FRED Series ID from https://fred.stlouisfed.org. For multiple series use: series1,series2,series3 | None | False |
@@ -54,10 +66,15 @@ def display_fred_series(series_ids: List[str], start_date: str = None, end_date:
 | export | str | Export data to csv,json,xlsx or png,jpg,pdf,svg file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # ulc
 
 Print up to 25 potentially undervalued large cap stocks. [Source: Yahoo Finance]
-### Usage 
+
+### Usage
+
 ```python
 usage: ulc [-l LIMIT]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of stocks to display. | 5 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 04:15 (🦋) /stocks/disc/ $ ulc -l 25
                                                             Undervalued Large Cap Stocks
@@ -74,3 +81,6 @@ usage: ulc [-l LIMIT]
 │ DOW    │ Dow Inc.                             │ 61.86            │ 1.03   │ +1.69%   │ 4.025M  │ 5.732M            │ 45.513B    │ 7.38           │
 └────────┴──────────────────────────────────────┴──────────────────┴────────┴──────────┴─────────┴───────────────────┴────────────┴────────────────┘
 ```
+
+---
+

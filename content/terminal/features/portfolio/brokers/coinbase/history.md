@@ -6,14 +6,20 @@ description: OpenBB Terminal Function
 # history
 
 Display account history
-### Usage 
+
+### Usage
+
 ```python
 usage: history [-a ACCOUNT] [-l LIMIT]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | account | Symbol of coin of account or id | BTC | True | None |
 | limit | Limit parameter. | 20 | True | None |
 ---
+

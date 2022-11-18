@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Returns market dominance of a coin over time
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L81)]
+
 ```python
 def get_marketcap_dominance(symbol: str, interval: str = "1d", start_date: str = None, end_date: str = None) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check market cap dominance | None | False |
@@ -26,12 +30,16 @@ def get_marketcap_dominance(symbol: str, interval: str = "1d", start_date: str =
 | start_date | int | Initial date like string (e.g., 2021-10-01) | None | True |
 | end_date | int | End date like string (e.g., 2021-10-01) | None | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | market dominance percentage over time |
 ---
+
 
 
 </TabItem>
@@ -40,11 +48,15 @@ def get_marketcap_dominance(symbol: str, interval: str = "1d", start_date: str =
 Plots market dominance of a coin over time
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L181)]
+
 ```python
 def display_marketcap_dominance(symbol: str, start_date: str = None, end_date: str = None, interval: str = "1d", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check market cap dominance | None | False |
@@ -54,10 +66,15 @@ def display_marketcap_dominance(symbol: str, start_date: str = None, end_date: s
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

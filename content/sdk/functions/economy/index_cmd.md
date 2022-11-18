@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Get data on selected indices over time [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L672)]
+
 ```python
 def get_indices(indices: list, interval: str = "1d", start_date: int = None, end_date: int = None, column: str = "Adj Close", returns: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | indices | list | A list of indices to get data. Available indices can be accessed through economy.available_indices(). | None | False |
@@ -28,12 +32,16 @@ def get_indices(indices: list, interval: str = "1d", start_date: int = None, end
 | column | str | Which column to load in, by default "Adjusted Close". | Adj Close | True |
 | returns | bool | Flag to show cumulative returns on index | False | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Dataframe with historical data on selected indices. |
 ---
+
 
 
 </TabItem>
@@ -42,11 +50,15 @@ def get_indices(indices: list, interval: str = "1d", start_date: int = None, end
 Load (and show) the selected indices over time [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_view.py#L30)]
+
 ```python
 def show_indices(indices: list, interval: str = "1d", start_date: int = None, end_date: int = None, column: str = "Adj Close", returns: bool = False, raw: bool = False, external_axes: Optional[List[axes]] = None, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | indices | list | A list of indices you wish to load (and plot).<br/>Available indices can be accessed through economy.available_indices(). | None | False |
@@ -59,12 +71,16 @@ def show_indices(indices: list, interval: str = "1d", start_date: int = None, en
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 | export | str | Export data to csv,json,xlsx or png,jpg,pdf,svg file |  | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | Plots the Series. |  |
 ---
+
 
 
 </TabItem>

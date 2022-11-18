@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Get U.S. Treasury rates [Source: EconDB]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L737)]
+
 ```python
 def get_treasuries(instruments: list = None, maturities: list = None, frequency: str = "monthly", start_date: str = "1900-01-01", end_date: str = None) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instruments | list | Type(s) of treasuries, nominal, inflation-adjusted (long term average) or secondary market.<br/>Available options can be accessed through economy.treasury_maturities(). | None | True |
@@ -27,12 +31,16 @@ def get_treasuries(instruments: list = None, maturities: list = None, frequency:
 | start_date | str | Starting date, format "YEAR-MONTH-DAY", i.e. 2010-12-31. | 1900-01-01 | True |
 | end_date | str | End date, format "YEAR-MONTH-DAY", i.e. 2020-06-05. | None | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Holds data of the selected types and maturities |
 ---
+
 
 
 </TabItem>
@@ -41,11 +49,15 @@ def get_treasuries(instruments: list = None, maturities: list = None, frequency:
 Display U.S. Treasury rates [Source: EconDB]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_view.py#L145)]
+
 ```python
 def show_treasuries(instruments: list = None, maturities: list = None, frequency: str = "monthly", start_date: str = "1900-01-01", end_date: str = None, raw: bool = False, external_axes: Optional[List[axes]] = None, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instruments | list | Type(s) of treasuries, nominal, inflation-adjusted or secondary market.<br/>Available options can be accessed through economy.treasury_maturities(). | None | True |
@@ -57,12 +69,16 @@ def show_treasuries(instruments: list = None, maturities: list = None, frequency
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 | export | str | Export data to csv,json,xlsx or png,jpg,pdf,svg file |  | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | Plots the Treasury Series. |  |
 ---
+
 
 
 </TabItem>

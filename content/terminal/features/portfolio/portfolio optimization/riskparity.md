@@ -6,14 +6,19 @@ description: OpenBB Terminal Function
 # riskparity
 
 Build a risk parity portfolio based on risk budgeting approach
-### Usage 
+
+### Usage
+
 ```python
 usage: riskparity [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,CDaR,EDaR,UCI}] [-rc RISK_CONTRIBUTION] [-tr TARGET_RETURN] [-de SMOOTHING_FACTOR_EWMA] [-mt NAN_FILL_METHOD] [-ct CATEGORIES] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE]
                   [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION] [--name NAME]
                   {sa} ...
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | risk_measure | Risk measure used to optimize the portfolio. Possible values are: 'MV' : Variance 'MAD' : Mean Absolute Deviation 'MSV' : Semi Variance (Variance of negative returns) 'FLPM' : First Lower Partial Moment 'SLPM' : Second Lower Partial Moment 'CVaR' : Conditional Value at Risk 'EVaR' : Entropic Value at Risk 'UCI' : Ulcer Index of uncompounded returns 'CDaR' : Conditional Drawdown at Risk of uncompounded returns 'EDaR' : Entropic Drawdown at Risk of uncompounded returns | MV | True | MV, MAD, MSV, FLPM, SLPM, CVaR, EVaR, CDaR, EDaR, UCI |
@@ -35,7 +40,9 @@ usage: riskparity [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,CDaR,EDaR,UCI}] [-rc RISK
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | RP_0 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Apr 05, 14:45 (🦋) /portfolio/po/ $ riskparity
 
@@ -65,3 +72,6 @@ Annual (by 252) expected return: 28.99%
 Annual (by √252) volatility: 26.60%
 Sharpe ratio: 1.0829
 ```
+
+---
+

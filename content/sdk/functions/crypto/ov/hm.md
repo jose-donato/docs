@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Get N coins from CoinGecko [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L128)]
+
 ```python
 def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", ascend: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of top coins to grab from CoinGecko | 250 | True |
@@ -26,12 +30,16 @@ def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", asce
 | sortby | str | Key to sort data | Symbol | True |
 | ascend | bool | Sort data in ascending order | False | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | N coins |
 ---
+
 
 
 </TabItem>
@@ -40,11 +48,15 @@ def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", asce
 Shows cryptocurrencies heatmap [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L36)]
+
 ```python
 def display_crypto_heatmap(category: str = "", limit: int = 15, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | caterogy | str | Category (e.g., stablecoins). Empty for no category (default: ) | None | True |
@@ -52,10 +64,15 @@ def display_crypto_heatmap(category: str = "", limit: int = 15, export: str = ""
 | export | str | Export dataframe data to csv,json,xlsx |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

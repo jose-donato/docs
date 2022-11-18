@@ -14,22 +14,30 @@ import TabItem from '@theme/TabItem';
 Calculate AD technical indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L17)]
+
 ```python
 def ad(data: pd.DataFrame, use_open: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of prices with OHLC and Volume | None | False |
 | use_open | bool | Whether to use open prices | False | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with technical indicator |
 ---
+
 
 
 </TabItem>
@@ -38,11 +46,15 @@ def ad(data: pd.DataFrame, use_open: bool = False) -> pd.DataFrame
 Plots AD technical indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L28)]
+
 ```python
 def display_ad(data: pd.DataFrame, use_open: bool = False, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
@@ -51,10 +63,15 @@ def display_ad(data: pd.DataFrame, use_open: bool = False, symbol: str = "", exp
 | export | str | Format to export data as |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

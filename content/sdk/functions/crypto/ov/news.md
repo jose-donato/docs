@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Get recent posts from CryptoPanic news aggregator platform. [Source: https://cryptopanic.com/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_model.py#L158)]
+
 ```python
 def get_news(limit: int = 60, post_kind: str = "news", filter_: Optional[str] = None, region: str = "en", source: Optional[str] = None, symbol: Optional[str] = None, sortby: str = "published_at", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | number of news to fetch | 60 | True |
@@ -28,12 +32,16 @@ def get_news(limit: int = 60, post_kind: str = "news", filter_: Optional[str] = 
 | sortby | str | Key to sort by. | published_at | True |
 | ascend | bool | Sort in ascend order. | True | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with recent news from different sources filtered by provided parameters. |
 ---
+
 
 
 </TabItem>
@@ -42,11 +50,15 @@ def get_news(limit: int = 60, post_kind: str = "news", filter_: Optional[str] = 
 Display recent posts from CryptoPanic news aggregator platform.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/cryptopanic_view.py#L17)]
+
 ```python
 def display_news(post_kind: str = "news", region: str = "en", filter_: Optional[str] = None, limit: int = 25, sortby: str = "published_at", ascend: bool = False, links: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | number of news to display | 25 | True |
@@ -58,10 +70,15 @@ def display_news(post_kind: str = "news", region: str = "en", filter_: Optional[
 | links | bool | Show urls for news | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # atl
 
 All time low data for loaded coin
-### Usage 
+
+### Usage
+
 ```python
 usage: atl [--vs {usd,btc}]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | vs | currency | usd | True | usd, btc |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 07:05 (🦋) /crypto/dd/ $ atl
                             Coin Lows
@@ -32,3 +39,6 @@ usage: atl [--vs {usd,btc}]
 │ All Time Low Change Percentage USD │ 65317.50                 │
 └────────────────────────────────────┴──────────────────────────┘
 ```
+
+---
+

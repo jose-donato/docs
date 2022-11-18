@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # regr
 
 Perform a regression forecast: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.regression_model.html
-### Usage 
+
+### Usage
+
 ```python
 usage: regr
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
@@ -39,5 +47,8 @@ Regression model obtains MAPE: 12.34%
 │ 2022-07-25 00:00:00 │ $ 134.24   │
 └─────────────────────┴────────────┘
 ```
+
 ![regr](https://user-images.githubusercontent.com/72827203/180615346-82fae367-d0cc-4d78-be30-b947a83df909.png)
+
+---
 

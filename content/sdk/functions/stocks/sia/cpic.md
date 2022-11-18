@@ -14,23 +14,31 @@ import TabItem from '@theme/TabItem';
 Get number of companies per industry in a specific country (and specific market cap).
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L255)]
+
 ```python
 def get_companies_per_industry_in_country(country: str = "United States", mktcap: str = "Large", exclude_exchanges: bool = True) -> dict
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Select country to get number of companies by each industry | United States | True |
 | mktcap | str | Select market cap of companies to consider from Small, Mid and Large | Large | True |
 | exclude_exchanges | bool | Exclude international exchanges | True | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary of industries and number of companies in a specific country |
 ---
+
 
 
 </TabItem>
@@ -39,11 +47,15 @@ def get_companies_per_industry_in_country(country: str = "United States", mktcap
 Display number of companies per industry in a specific country. [Source: Finance Database]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L376)]
+
 ```python
 def display_companies_per_industry_in_country(country: str = "United States", mktcap: str = "Large", exclude_exchanges: bool = True, export: str = "", raw: bool = False, max_industries_to_display: int = 15, min_pct_to_display_industry: float = 0.015, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Select country to get number of companies by each industry | United States | True |
@@ -55,10 +67,15 @@ def display_companies_per_industry_in_country(country: str = "United States", mk
 | min_pct_to_display_industry | float | Minimum percentage to display industry | 0.015 | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

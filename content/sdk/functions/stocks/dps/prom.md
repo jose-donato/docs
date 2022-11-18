@@ -14,22 +14,30 @@ import TabItem from '@theme/TabItem';
 Get all FINRA ATS data, and parse most promising tickers based on linear regression
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L214)]
+
 ```python
 def getATSdata(limit: int = 1000, tier_ats: str = "T1") -> Tuple[pd.DataFrame, Dict]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of tickers to filter from entire ATS data based on the sum of the total weekly shares quantity | 1000 | True |
 | tier_ats | int | Tier to process data from: T1, T2 or OTCE | T1 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, Dict] | Dark Pools (ATS) Data, Tickers from Dark Pools with better regression slope |
 ---
+
 
 
 </TabItem>
@@ -38,11 +46,15 @@ def getATSdata(limit: int = 1000, tier_ats: str = "T1") -> Tuple[pd.DataFrame, D
 Display dark pool (ATS) data of tickers with growing trades activity. [Source: FINRA]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L188)]
+
 ```python
 def darkpool_otc(input_limit: int = 1000, limit: int = 10, tier: str = "T1", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | input_limit | int | Number of tickers to filter from entire ATS data based on<br/>the sum of the total weekly shares quantity | 1000 | True |
@@ -51,10 +63,15 @@ def darkpool_otc(input_limit: int = 1000, limit: int = 10, tier: str = "T1", exp
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # news
 
 Prints latest news about ETF, including date, title and web link. [Source: News API]
-### Usage 
+
+### Usage
+
 ```python
 usage: news [-l LIMIT] [-d N_START_DATE] [-o] [-s SOURCES]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest news being printed. | 5 | True | None |
@@ -19,3 +24,4 @@ usage: news [-l LIMIT] [-d N_START_DATE] [-o] [-s SOURCES]
 | n_oldest | Show oldest articles first | True | True | None |
 | sources | Show news only from the sources specified (e.g bbc yahoo.com) |  | True | None |
 ---
+

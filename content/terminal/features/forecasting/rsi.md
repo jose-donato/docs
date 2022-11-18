@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # rsi
 
 Add rsi to dataset based on specific column.
-### Usage 
+
+### Usage
+
 ```python
 usage: rsi
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 (🦋) /forecast/ $ show TSLA
 TSLA dataset has shape (row, column): (611, 7)
@@ -107,3 +115,6 @@ TSLA dataset has shape (row, column): (601, 8)
 │ 9 │ 2020-01-30 │ 126.48 │ 130.18 │ 123.60 │ 128.16 │ 128.16    │ 145028500 │ 85.87  │
 └───┴────────────┴────────┴────────┴────────┴────────┴───────────┴───────────┴────────┘
 ```
+
+---
+

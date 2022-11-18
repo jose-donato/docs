@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # events
 
 Economic calendar. If no start or end dates, default is the current day high importance events.
-### Usage 
+
+### Usage
+
 ```python
 usage: events [-c COUNTRY] [-s START_DATE] [-e END_DATE] [-d SPEC_DATE] [-i {high,medium,low,all}] [--categories {employment,credit,balance,economic_activity,central_banks,bonds,inflation,confidence_index}]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | country | Display calendar for specific country. |  | True | None |
@@ -21,7 +26,9 @@ usage: events [-c COUNTRY] [-s START_DATE] [-e END_DATE] [-d SPEC_DATE] [-i {hig
 | importance | Event importance classified as high, medium, low or all. | None | True | high, medium, low, all |
 | category | [INVESTING source only] Event category. | None | True | employment, credit, balance, economic_activity, central_banks, bonds, inflation, confidence_index |
 ---
+
 ## Examples
+
 ```python
 2022 Oct 20, 15:19 (🦋) /economy/ $ events -c united_kingdom,spain -s 2022-10-20 -e 2022-11-05 -l 15
 
@@ -60,3 +67,6 @@ usage: events [-c COUNTRY] [-s START_DATE] [-e END_DATE] [-d SPEC_DATE] [-i {hig
 │ 14:00      │ United Kingdom │ BoE MPC Member Mann                │ -      │ -         │ -        │ 2022-10-22 │
 └────────────┴────────────────┴────────────────────────────────────┴────────┴───────────┴──────────┴────────────┘
 ```
+
+---
+

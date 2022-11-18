@@ -6,19 +6,26 @@ description: OpenBB Terminal Function
 # pairs
 
 Shows available trading pairs on Coinbase
-### Usage 
+
+### Usage
+
 ```python
 usage: pairs [-l LIMIT] [-s {id,display_name,base_currency,quote_currency,base_min_size,base_max_size,min_market_funds,max_market_funds}] [-r]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number of pairs =10 | 15 | True | None |
 | sortby | Sort by given column. Default: id | id | True | id, display_name, base_currency, quote_currency, base_min_size, base_max_size, min_market_funds, max_market_funds |
 | reverse | Data is sorted in ascending order by default. Reverse flag will sort it in an descending way. Only works when raw data is displayed. | False | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 08:09 (🦋) /crypto/ov/ $ pairs
                                                     Available Pairs for Trading
@@ -56,3 +63,6 @@ usage: pairs [-l LIMIT] [-s {id,display_name,base_currency,quote_currency,base_m
 │ ADA-USDC  │ ADA/USDC     │ ADA           │ USDC           │ 0.5           │ 580 K         │ 1                │ 800 K            │
 └───────────┴──────────────┴───────────────┴────────────────┴───────────────┴───────────────┴──────────────────┴──────────────────┘
 ```
+
+---
+

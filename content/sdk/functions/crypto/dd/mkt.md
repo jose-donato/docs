@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 All markets for given coin and currency [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L176)]
+
 ```python
 def get_coin_markets_by_id(symbol: str = "BTC", quotes: str = "USD", sortby: str = "pct_volume_share", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
@@ -26,12 +30,16 @@ def get_coin_markets_by_id(symbol: str = "BTC", quotes: str = "USD", sortby: str
 | sortby | str | Key by which to sort data. Every column name is valid (see for possible values:<br/>https://api.coinpaprika.com/v1). | pct_volume_share | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | All markets for given coin and currency |
 ---
+
 
 
 </TabItem>
@@ -40,11 +48,15 @@ def get_coin_markets_by_id(symbol: str = "BTC", quotes: str = "USD", sortby: str
 Prints table showing all markets for given coin id. [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L230)]
+
 ```python
 def display_markets(from_symbol: str = "BTC", to_symbol: str = "USD", limit: int = 20, sortby: str = "pct_volume_share", ascend: bool = True, links: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | from_symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
@@ -55,10 +67,15 @@ def display_markets(from_symbol: str = "BTC", to_symbol: str = "USD", limit: int
 | links | bool | Flag to display urls | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

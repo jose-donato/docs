@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # stables
 
 Shows stablecoins by market capitalization. Stablecoins are cryptocurrencies that attempt to peg their market value to some external reference like the U.S. dollar or to a commodity's price such as gold. You can display only N number of coins with --limit parameter. You can sort data by {} with --sortby
-### Usage 
+
+### Usage
+
 ```python
 usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number records | 15 | True | None |
@@ -19,7 +24,9 @@ usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | pie | Flag to show pie chart | False | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 08:16 (🦋) /crypto/ov/ $ stables
 
@@ -60,3 +67,6 @@ First 15 stablecoins have a total 182.582 B dollars of market cap.
 │ husd    │ HUSD                 │ 1.005     │ 263.061 M      │ 236             │ 0.686          │ 0.524         │ 35.886 M   │ 0.144                    │
 └─────────┴──────────────────────┴───────────┴────────────────┴─────────────────┴────────────────┴───────────────┴────────────┴──────────────────────────┘
 ```
+
+---
+

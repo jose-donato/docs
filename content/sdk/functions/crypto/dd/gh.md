@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Returns  a list of developer activity for a given coin and time interval.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_model.py#L28)]
+
 ```python
 def get_github_activity(symbol: str, dev_activity: bool = False, interval: str = "1d", start_date: str = None, end_date: str = None) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check github activity | None | False |
@@ -27,12 +31,16 @@ def get_github_activity(symbol: str, dev_activity: bool = False, interval: str =
 | start_date | int | Initial date like string (e.g., 2021-10-01) | None | True |
 | end_date | int | End date like string (e.g., 2021-10-01) | None | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | developer activity over time |
 ---
+
 
 
 </TabItem>
@@ -41,11 +49,15 @@ def get_github_activity(symbol: str, dev_activity: bool = False, interval: str =
 Returns a list of github activity for a given coin and time interval.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/santiment_view.py#L25)]
+
 ```python
 def display_github_activity(symbol: str, start_date: str = None, dev_activity: bool = False, end_date: str = None, interval: str = "1d", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check github activity | None | False |
@@ -56,10 +68,15 @@ def display_github_activity(symbol: str, start_date: str = None, dev_activity: b
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

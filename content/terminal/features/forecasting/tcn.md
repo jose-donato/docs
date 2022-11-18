@@ -6,19 +6,26 @@ description: OpenBB Terminal Function
 # tcn
 
 Perform TCN forecast: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.tcn_model.html
-### Usage 
+
+### Usage
+
 ```python
 usage: tcn [--num-filters NUM_FILTERS] [--weight-norm WEIGHT_NORM] [--dilation-base DILATION_BASE]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | num_filters | The number of filters in a convolutional layer of the TCN | 3 | True | None |
 | weight_norm | Boolean value indicating whether to use weight normalization. | True | True | None |
 | dilation_base | The base of the exponent that will determine the dilation on every level. | 2 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
@@ -43,5 +50,8 @@ TCN model obtains MAPE: 19.12%
 │ 2022-07-25 00:00:00 │ $ 154.55   │
 └─────────────────────┴────────────┘
 ```
+
 ![tcn](https://user-images.githubusercontent.com/72827203/180615408-ac6f9289-c3e9-486f-b262-701ef1906373.png)
+
+---
 

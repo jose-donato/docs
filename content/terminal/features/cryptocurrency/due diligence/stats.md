@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # stats
 
 Display coin stats
-### Usage 
+
+### Usage
+
 ```python
-usage: stats [--vs {USDT,GBP,USD,USD,USDC,EUR}]
+usage: stats [--vs {USDT,USD,GBP,USD,EUR,USDC}]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| vs | Quote currency (what to view coin vs) | USDT | True | USDT, GBP, USD, USD, USDC, EUR |
+| vs | Quote currency (what to view coin vs) | USDT | True | USDT, USD, GBP, USD, EUR, USDC |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 07:47 (🦋) /crypto/dd/ $ stats
 
@@ -37,3 +44,6 @@ usage: stats [--vs {USDT,GBP,USD,USD,USDC,EUR}]
 │ volume_30day │ 22665.06104665 │
 └──────────────┴────────────────┘
 ```
+
+---
+

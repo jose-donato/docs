@@ -6,14 +6,19 @@ description: OpenBB Terminal Function
 # vaults
 
 Display Top DeFi Vaults. [Source: https://coindix.com/]
-### Usage 
+
+### Usage
+
 ```python
 usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,heco,okex,cronos,arbitrum,eth,harmony,fuse,defichain,solana,optimism,kusama,metis,osmosis}]
               [-p {aave,acryptos,alpaca,anchor,autofarm,balancer,bancor,beefy,belt,compound,convex,cream,curve,defichain,geist,lido,liquity,mirror,pancakeswap,raydium,sushi,tarot,traderjoe,tulip,ubeswap,uniswap,venus,yearn,osmosis,tulip}] [-k {lp,single,noimploss,stable}] [-t LIMIT]
               [-s {name,chain,protocol,apy,tvl,link}] [-r] [-l]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | chain | Blockchain name e.g. ethereum, terra | None | True | ethereum, polygon, avalanche, bsc, terra, fantom, moonriver, celo, heco, okex, cronos, arbitrum, eth, harmony, fuse, defichain, solana, optimism, kusama, metis, osmosis |
@@ -24,7 +29,9 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | link | Flag to show vault link | True | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 May 26, 07:19 (�) /crypto/defi/ $ vaults
 
@@ -53,3 +60,6 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
 │ ROWAN-OSMO           │ Osmosis   │ Osmosis  │ 228.72 %  │ 1.834 M  │
 └──────────────────────┴───────────┴──────────┴───────────┴──────────┘
 ```
+
+---
+

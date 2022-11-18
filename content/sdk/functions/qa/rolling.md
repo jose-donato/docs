@@ -14,22 +14,30 @@ import TabItem from '@theme/TabItem';
 Return rolling mean and standard deviation
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L16)]
+
 ```python
 def get_rolling_avg(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of target data | None | False |
 | window | int | Length of rolling window | 14 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dataframe of rolling mean,<br/>Dataframe of rolling standard deviation |
 ---
+
 
 
 </TabItem>
@@ -38,11 +46,15 @@ def get_rolling_avg(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame,
 Plots mean std deviation
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L26)]
+
 ```python
 def display_mean_std(data: pd.DataFrame, target: str, symbol: str = "", window: int = 14, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe | None | False |
@@ -52,10 +64,15 @@ def display_mean_std(data: pd.DataFrame, target: str, symbol: str = "", window: 
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

@@ -6,19 +6,26 @@ description: OpenBB Terminal Function
 # valuation
 
 View group (sectors, industry or country) valuation data. [Source: Finviz]
-### Usage 
+
+### Usage
+
 ```python
 usage: valuation [-g {sector,industry,basic_materials,communication_services,consumer_cyclical,consumer_defensive,energy,financial,healthcare,industrials,real_Estate,technology,utilities,country,capitalization}] [-s {Name,MarketCap,P/E,FwdP/E,PEG,P/S,P/B,P/C,P/FCF,EPSpast5Y,EPSnext5Y,Salespast5Y,Change,Volume}] [-r]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | group | Data group (sectors, industry or country) | sector | True | sector, industry, basic_materials, communication_services, consumer_cyclical, consumer_defensive, energy, financial, healthcare, industrials, real_Estate, technology, utilities, country, capitalization |
 | sortby | Column to sort by | Name | True | Name, MarketCap, P/E, FwdP/E, PEG, P/S, P/B, P/C, P/FCF, EPSpast5Y, EPSnext5Y, Salespast5Y, Change, Volume |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 05:44 (🦋) /economy/ $ valuation
                                                                   Group Valuation Data
@@ -48,3 +55,6 @@ usage: valuation [-g {sector,industry,basic_materials,communication_services,con
 │ Basic Materials        │ 2168.52   │ 11.80 │ 11.73  │ 0.81 │ 1.63 │ 2.23 │ 12.24 │ 16.83 │ 0.26      │ 0.15      │ 0.08        │ -0.01  │ 514.01      │
 └────────────────────────┴───────────┴───────┴────────┴──────┴──────┴──────┴───────┴───────┴───────────┴───────────┴─────────────┴────────┴─────────────┘
 ```
+
+---
+

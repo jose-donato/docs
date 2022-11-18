@@ -6,11 +6,18 @@ description: OpenBB Terminal Function
 # pending
 
 
-### Usage 
+
+### Usage
+
 ```python
 usage: pending
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+

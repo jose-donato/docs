@@ -6,18 +6,25 @@ description: OpenBB Terminal Function
 # combine
 
 Combine two entire datasets, or add specific columns. Add specificcolumns with the syntax: datasetX.column2,datasetY.column3
-### Usage 
+
+### Usage
+
 ```python
 usage: combine [--dataset {--columns,-c}] [-c COLUMNS]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | dataset | Dataset to add columns to | None | True | --columns, -c |
 | columns | The columns we want to add dataset.column,datasetb.column2 | None | True | None |
 ---
+
 ## Examples
+
 ```python
 (🦋) /forecast/ $ load TSLA.csv
 
@@ -53,3 +60,6 @@ TSLA dataset has shape (row, column): (611, 8)
 │ 9 │ 2020-01-15 │ 105.95 │ 107.57 │ 103.36 │ 103.70 │ 103.70    │ 86844000  │ 1281432800.00 │
 └───┴────────────┴────────┴────────┴────────┴────────┴───────────┴───────────┴───────────────┘
 ```
+
+---
+

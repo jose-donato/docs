@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Builds a maximal decorrelation portfolio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1223)]
+
 ```python
 def get_max_decorrelation_portfolio(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio stocks | None | False |
@@ -35,12 +39,16 @@ def get_max_decorrelation_portfolio(symbols: List[str], interval: str = "3y", st
 | value | float | Amount of money to allocate. The default is 1. | 1.0 | True |
 | value_short | float | Amount to allocate to portfolio in short positions. The default is 0. | 0 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
 ---
+
 
 
 </TabItem>
@@ -49,11 +57,15 @@ def get_max_decorrelation_portfolio(symbols: List[str], interval: str = "3y", st
 Builds a maximal decorrelation portfolio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L1819)]
+
 ```python
 def display_max_decorr(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0.0, table: bool = False) -> Dict
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -71,10 +83,15 @@ def display_max_decorr(symbols: List[str], interval: str = "3y", start_date: str
 | value_short | float | Amount to allocate to portfolio in short positions, by default 0.0 | 0.0 | True |
 | table | bool | True if plot table weights, by default False | False | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # gainers
 
 Displays top ETF/Mutual fund gainers from wsj.com/market-data
-### Usage 
+
+### Usage
+
 ```python
 usage: gainers
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 04:25 (🦋) /etf/disc/ $ gainers
                                           ETF Movers
@@ -42,3 +50,6 @@ This command has no parameters
 │ ProShares UltraShort Oil & Gas                              │ 29.74 │ 1.17 │ 4.10 │ 122.5K │
 └─────────────────────────────────────────────────────────────┴───────┴──────┴──────┴────────┘
 ```
+
+---
+

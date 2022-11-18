@@ -14,23 +14,31 @@ import TabItem from '@theme/TabItem';
 Government trading for specific ticker [Source: quiverquant.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L416)]
+
 ```python
 def get_cleaned_government_trading(symbol: str, gov_type: str = "congress", past_transactions_months: int = 6) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get congress trading data from | None | False |
 | gov_type | str | Type of government data between: congress, senate and house | congress | True |
 | past_transactions_months | int | Number of months to get transactions for | 6 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of tickers government trading |
 ---
+
 
 
 </TabItem>
@@ -39,11 +47,15 @@ def get_cleaned_government_trading(symbol: str, gov_type: str = "congress", past
 Government trading for specific ticker [Source: quiverquant.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L331)]
+
 ```python
 def display_government_trading(symbol: str, gov_type: str = "congress", past_transactions_months: int = 6, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get congress trading data from | None | False |
@@ -53,10 +65,15 @@ def display_government_trading(symbol: str, gov_type: str = "congress", past_tra
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

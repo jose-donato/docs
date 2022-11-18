@@ -8,15 +8,23 @@ description: OpenBB SDK Function
 Get treasury maturity options [Source: EconDB]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L850)]
+
 ```python
 def get_treasury_maturities() -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 This function does not take any parameters.
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Contains the name of the instruments and a string containing all options. |
 ---
+

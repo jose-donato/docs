@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # lip
 
 Print latest insider purchases. [Source: OpenInsider]
-### Usage 
+
+### Usage
+
 ```python
 usage: lip [-l LIMIT]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 07:55 (🦋) /stocks/ins/ $ lip
                                                                                 Insider Data
@@ -58,3 +65,6 @@ usage: lip [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
+
+---
+

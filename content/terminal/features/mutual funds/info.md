@@ -6,11 +6,18 @@ description: OpenBB Terminal Function
 # info
 
 Get fund information.
-### Usage 
+
+### Usage
+
 ```python
 usage: info
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+

@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # seasonalnaive
 
 Perform SeasonalNaive forecasting: https://nixtla.github.io/statsforecast/models.html#seasonalnaive
-### Usage 
+
+### Usage
+
 ```python
 usage: seasonalnaive
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 2022 Nov 07, 19:24 (🦋) /stocks/ $ forecast
 
@@ -40,3 +48,6 @@ SeasonalNaive obtains MAPE: 4.26%
 │ 2022-11-11 │ 150.65     │
 └────────────┴────────────┘
 ```
+
+---
+

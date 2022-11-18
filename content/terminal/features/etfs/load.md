@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # load
 
 Load ETF ticker to perform analysis on.
-### Usage 
+
+### Usage
+
 ```python
 usage: load -t TICKER [-s START] [-e END] [-l LIMIT]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | ETF ticker | None | False | None |
@@ -19,7 +24,9 @@ usage: load -t TICKER [-s START] [-e END] [-l LIMIT]
 | end | The ending date (format YYYY-MM-DD) of the ETF | 2022-11-18 | True | None |
 | limit | Limit of holdings to display | 5 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Jun 21, 09:18 (🦋) /etf/ $ load voo
 Top company holdings found: AAPL, MSFT, AMZN, GOOGL, TSLA
@@ -54,3 +61,6 @@ Top company holdings found: AAPL, MSFT, AMZN, GOOGL, TSLA
 │                                                                                                                                                                                                                    │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── OpenBB Terminal v1.3.0 (https://openbb.co) ─╯
 ```
+
+---
+

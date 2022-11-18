@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # active
 
 Displays most active ETF/Mutual funds from wsj.com/market-data
-### Usage 
+
+### Usage
+
 ```python
 usage: active
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 04:26 (🦋) /etf/disc/ $ active
                                       ETF Movers
@@ -42,3 +50,6 @@ This command has no parameters
 │ ProShares UltraPro Short S&P 500                  │ 15.27  │ 0.15  │ 0.99  │ 58.8M  │
 └───────────────────────────────────────────────────┴────────┴───────┴───────┴────────┘
 ```
+
+---
+

@@ -6,11 +6,18 @@ description: OpenBB Terminal Function
 # summary
 
 Print ETF description summary
-### Usage 
+
+### Usage
+
 ```python
 usage: summary
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+

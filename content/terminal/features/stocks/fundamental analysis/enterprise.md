@@ -6,18 +6,25 @@ description: OpenBB Terminal Function
 # enterprise
 
 Prints stock price, number of shares, market capitalization and enterprise value over time. The following fields are expected: Add total debt, Enterprise value, Market capitalization, Minus cash and cash equivalents, Number of shares, Stock price, and Symbol. [Source: Financial Modeling Prep]
-### Usage 
+
+### Usage
+
 ```python
 usage: enterprise [-l LIMIT] [-q]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest years/quarters. | 5 | True | None |
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 05:26 (🦋) /stocks/fa/ $ enterprise -l 10
                                                                      GOOGL Enterprise
@@ -39,3 +46,6 @@ usage: enterprise [-l LIMIT] [-q]
 │ Enterprise value                │ 241.658 B │ 405.157 B │ 356.187 B │ 516.233 B │ 566.632 B │ 821.633 B │ 759.511 B │ 1.003 T   │ 1.217 T   │ 1.788 T   │
 └─────────────────────────────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┘
 ```
+
+---
+

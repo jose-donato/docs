@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # news
 
 Display recent news from CryptoPanic aggregator platform. [Source: https://cryptopanic.com/]
-### Usage 
+
+### Usage
+
 ```python
 usage: news [-l LIMIT] [-k {news,media}] [--filter {rising,hot,bullish,bearish,important,saved,lol}] [-r {en,de,es,fr,nl,it,pt,ru}] [-s {published_at,domain,title,negative_votes,positive_votes}] [--reverse] [-u]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number records | 20 | True | None |
@@ -22,3 +27,4 @@ usage: news [-l LIMIT] [-k {news,media}] [--filter {rising,hot,bullish,bearish,i
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | urls | Flag to show urls column. | False | True | None |
 ---
+

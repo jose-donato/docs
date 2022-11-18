@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # decliners
 
 Displays top ETF/Mutual fund decliners from wsj.com/market-data
-### Usage 
+
+### Usage
+
 ```python
 usage: decliners
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 04:26 (🦋) /etf/disc/ $ decliners
                                           ETF Movers
@@ -42,3 +50,6 @@ This command has no parameters
 │ Direxion Daily Energy Bull 2X Shares                     │ 44.98  │ -2.12  │ -4.50 │ 8.8M   │
 └──────────────────────────────────────────────────────────┴────────┴────────┴───────┴────────┘
 ```
+
+---
+

@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Get income data. [Source: Marketwatch].
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_model.py#L74)]
+
 ```python
 def get_income_comparison(similar: List[str], timeframe: str = "2021", quarter: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of tickers to compare.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
@@ -26,12 +30,16 @@ def get_income_comparison(similar: List[str], timeframe: str = "2021", quarter: 
 | quarter | bool | Whether to use quarterly statements, by default False | False | True |
 | export | str | Format to export data | None | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of income statements |
 ---
+
 
 
 </TabItem>
@@ -40,11 +48,15 @@ def get_income_comparison(similar: List[str], timeframe: str = "2021", quarter: 
 Display income data. [Source: Marketwatch].
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/marketwatch_view.py#L23)]
+
 ```python
 def display_income_comparison(symbols: List[str], timeframe: str = "2021", quarter: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of tickers to compare. Enter tickers you want to see as shown below:<br/>["TSLA", "AAPL", "NFLX", "BBY"]<br/>You can also get a list of comparable peers with<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
@@ -52,10 +64,15 @@ def display_income_comparison(symbols: List[str], timeframe: str = "2021", quart
 | quarter | bool | Whether to use quarterly statements, by default False | False | True |
 | export | str | Format to export data |  | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

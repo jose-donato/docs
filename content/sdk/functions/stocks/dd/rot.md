@@ -14,21 +14,29 @@ import TabItem from '@theme/TabItem';
 Get rating over time data. [Source: Finnhub]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finnhub_model.py#L17)]
+
 ```python
 def get_rating_over_time(symbol: str) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get ratings from | None | False |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Get dataframe with ratings |
 ---
+
 
 
 </TabItem>
@@ -37,11 +45,15 @@ def get_rating_over_time(symbol: str) -> pd.DataFrame
 Rating over time (monthly). [Source: Finnhub]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finnhub_view.py#L75)]
+
 ```python
 def rating_over_time(symbol: str, limit: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | ticker | str | Ticker to get ratings from | None | True |
@@ -50,10 +62,15 @@ def rating_over_time(symbol: str, limit: int = 10, raw: bool = False, export: st
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

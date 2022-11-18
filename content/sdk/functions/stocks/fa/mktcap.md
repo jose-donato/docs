@@ -14,22 +14,30 @@ import TabItem from '@theme/TabItem';
 Get market cap over time for ticker. [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L273)]
+
 ```python
 def get_mktcap(symbol: str, start_date: str = None) -> Tuple[pd.DataFrame, str]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to get market cap over time | None | False |
 | start_date | str | Initial date (e.g., 2021-10-01). Defaults to 3 years back | None | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of estimated market cap over time |
 ---
+
 
 
 </TabItem>
@@ -38,11 +46,15 @@ def get_mktcap(symbol: str, start_date: str = None) -> Tuple[pd.DataFrame, str]
 Display market cap over time. [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L335)]
+
 ```python
 def display_mktcap(symbol: str, start_date: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
@@ -50,10 +62,15 @@ def display_mktcap(symbol: str, start_date: str = None, export: str = "", extern
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

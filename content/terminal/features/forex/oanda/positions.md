@@ -6,11 +6,18 @@ description: OpenBB Terminal Function
 # positions
 
 Get information about open positions.
-### Usage 
+
+### Usage
+
 ```python
 usage: positions
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+

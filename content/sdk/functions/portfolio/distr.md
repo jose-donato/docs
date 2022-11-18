@@ -14,20 +14,29 @@ import TabItem from '@theme/TabItem';
 Display daily returns
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1629)]
+
 ```python
 def get_distribution_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 | window | str | interval to compare cumulative returns and benchmark | all | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>
@@ -36,11 +45,15 @@ This function does not return anything
 Display daily returns
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L626)]
+
 ```python
 def display_distribution_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all", raw: bool = False, export: str = "", external_axes: Optional[matplotlib.axes._axes.Axes] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_returns | pd.Series | Returns of the portfolio | None | True |
@@ -50,10 +63,15 @@ def display_distribution_returns(portfolio_engine: portfolio_model.PortfolioEngi
 | export | str | Export certain type of data |  | True |
 | external_axes | plt.Axes | Optional axes to display plot on | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

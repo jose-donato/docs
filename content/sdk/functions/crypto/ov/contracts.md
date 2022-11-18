@@ -14,23 +14,31 @@ import TabItem from '@theme/TabItem';
 Gets all contract addresses for given platform [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L401)]
+
 ```python
 def get_contract_platform(platform_id: str = "eth-ethereum", sortby: str = "active", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | platform_id | str | Blockchain platform like eth-ethereum | eth-ethereum | True |
 | sortby | str | Key by which to sort data | active | True |
 | ascend | bool | Flag to sort data ascend | True | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | id, type, active |
 ---
+
 
 
 </TabItem>
@@ -39,11 +47,15 @@ def get_contract_platform(platform_id: str = "eth-ethereum", sortby: str = "acti
 Gets all contract addresses for given platform. [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L349)]
+
 ```python
 def display_contracts(symbol: str, sortby: str = "active", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | platform | str | Blockchain platform like eth-ethereum | None | True |
@@ -52,10 +64,15 @@ def display_contracts(symbol: str, sortby: str = "active", ascend: bool = True, 
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

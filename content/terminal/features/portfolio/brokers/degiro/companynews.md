@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # companynews
 
 
-### Usage 
+
+### Usage
+
 ```python
 usage: companynews -s SYMBOL [-l LIMIT] [-o OFFSET] [-lang LANGUAGES]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | symbol | ISIN code of the company. | None | False | None |
@@ -19,3 +24,4 @@ usage: companynews -s SYMBOL [-l LIMIT] [-o OFFSET] [-lang LANGUAGES]
 | offset | Offset of news to display. | 0 | True | None |
 | languages | Languages of news to display. | en,fr | True | None |
 ---
+

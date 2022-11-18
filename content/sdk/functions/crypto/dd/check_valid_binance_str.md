@@ -8,15 +8,23 @@ description: OpenBB SDK Function
 Check if symbol is in defined binance. [Source: Binance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_model.py#L96)]
+
 ```python
 def check_valid_binance_str(symbol: str) -> str
 ```
+
 ---
+
 ## Parameters
+
 This function does not take any parameters.
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | str | Symbol |
 ---
+

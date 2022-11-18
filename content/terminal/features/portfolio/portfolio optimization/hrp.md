@@ -6,15 +6,20 @@ description: OpenBB Terminal Function
 # hrp
 
 Builds a hierarchical risk parity portfolio
-### Usage 
+
+### Usage
+
 ```python
 usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,tail}] [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,shrink}] [-rm {MV,MAD,GMD,MSV,VaR,CVaR,TG,EVaR,RG,CVRG,TGRG,WR,FLPM,SLPM,MDD,ADD,DaR,CDaR,EDaR,UCI,MDD_Rel,ADD_Rel,DaR_Rel,CDaR_Rel,EDaR_Rel,UCI_Rel}]
            [-as CVAR_SIMULATIONS_LOSSES] [-b CVAR_SIGNIFICANCE] [-bs CVAR_SIMULATIONS_GAINS] [-lk {single,complete,average,weighted,centroid,median,ward,dbht}] [-k AMOUNT_CLUSTERS] [-mk MAX_CLUSTERS] [-bi AMOUNT_BINS] [-at ALPHA_TAIL] [-lo LEAF_ORDER] [-de SMOOTHING_FACTOR_EWMA] [-mt NAN_FILL_METHOD] [-ct CATEGORIES]
            [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE] [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION] [--name NAME]
            {sa} ...
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | co_dependence | The codependence or similarity matrix used to build the distance metric and clusters. Possible values are: 'pearson': pearson correlation matrix 'spearman': spearman correlation matrix 'abs_pearson': absolute value of pearson correlation matrix 'abs_spearman': absolute value of spearman correlation matrix 'distance': distance correlation matrix 'mutual_info': mutual information codependence matrix 'tail': tail index codependence matrix | pearson | True | pearson, spearman, abs_pearson, abs_spearman, distance, mutual_info, tail |
@@ -45,7 +50,9 @@ usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | _HRP0 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Apr 05, 14:20 (🦋) /portfolio/po/ $ hrp
 
@@ -75,3 +82,6 @@ Annual (by 252) expected return: 28.03%
 Annual (by √252) volatility: 25.35%
 Sharpe ratio: 1.0982
 ```
+
+---
+

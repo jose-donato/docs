@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # pick
 
 Load a FRED series to current selection
-### Usage 
+
+### Usage
+
 ```python
 usage: load [-c {Open,High,Low,Close,Adj Close,Volume,date_id,OC_High,OC_Low,Returns,LogRet}]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | column | Which loaded source to get data from | None | True | Open, High, Low, Close, Adj Close, Volume, date_id, OC_High, OC_Low, Returns, LogRet |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 11:12 (🦋) /stocks/qa/ $ load tsla
 
@@ -30,3 +37,6 @@ Market:   CLOSED
 
 2022 Feb 16, 11:12 (🦋) /stocks/qa/ $ pick adjclose
 ```
+
+---
+

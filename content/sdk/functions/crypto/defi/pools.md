@@ -14,18 +14,26 @@ import TabItem from '@theme/TabItem';
 Get uniswap pools by volume. [Source: https://thegraph.com/en/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L253)]
+
 ```python
 def get_uni_pools_by_volume() -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 This function does not take any parameters.
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Trade-able pairs listed on Uniswap by top volume. |
 ---
+
 
 
 </TabItem>
@@ -34,11 +42,15 @@ This function does not take any parameters.
 Prints table showing uniswap pools by volume.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L170)]
+
 ```python
 def display_uni_pools(limit: int = 20, sortby: str = "volumeUSD", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 20 | True |
@@ -46,10 +58,15 @@ def display_uni_pools(limit: int = 20, sortby: str = "volumeUSD", ascend: bool =
 | ascend | bool | Flag to sort data descending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

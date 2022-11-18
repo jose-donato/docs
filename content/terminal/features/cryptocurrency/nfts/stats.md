@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # stats
 
 Display stats about an opensea nft collection. e.g. alien-frens [Source: https://nftpricefloor.com/]
-### Usage 
+
+### Usage
+
 ```python
 usage: info -s SLUG
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | slug | Opensea collection slug (e.g., mutant-ape-yacht-club) | None | False | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 07:56 (🦋) /crypto/nft/ $ stats mutant-ape-yacht-club
                      Collection Stats
@@ -60,3 +67,6 @@ usage: info -s SLUG
 │ URL                            │ -                     │
 └────────────────────────────────┴───────────────────────┘
 ```
+
+---
+

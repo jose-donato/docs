@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # arkord
 
 Orders by ARK Investment Management LLC - https://ark-funds.com/. [Source: https://cathiesark.com]
-### Usage 
+
+### Usage
+
 ```python
 usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,shares}] [-r] [-b] [-c] [--fund {ARKK,ARKF,ARKW,ARKQ,ARKG,ARKX,}]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of stocks to display. | 10 | True | None |
@@ -21,7 +26,9 @@ usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,share
 | sells_only | Flag to look at sells only | False | True | None |
 | fund | Filter by fund |  | True | ARKK, ARKF, ARKW, ARKQ, ARKG, ARKX,  |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 03:49 (🦋) /stocks/disc/ $ arkord
 
@@ -77,3 +84,6 @@ usage: arkord [-l LIMIT] [-s {date,volume,open,high,close,low,total,weight,share
 │ 2022-02-10 │ DNA    │ Buy       │ 13850600 │ 5.64   │ 5.76   │ 6.30   │ 5.60   │ 12554836.34 │ ARKK │ 0.1017 │ 2179659 │
 └────────────┴────────┴───────────┴──────────┴────────┴────────┴────────┴────────┴─────────────┴──────┴────────┴─────────┘
 ```
+
+---
+

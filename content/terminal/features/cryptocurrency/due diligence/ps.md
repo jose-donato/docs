@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # ps
 
 Get price and supply related metrics for given coin.
-### Usage 
+
+### Usage
+
 ```python
 usage: ps [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD,SGD,NGN,PHP,MXN,BRL,THB,CLP,CNY,CZK,DKK,HUF,IDR,ILS,INR,MYR,NOK,PKR,SEK,TWD,ZAR,VND,BOB,COP,PEN,ARS,ISK}]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | vs | Quoted currency. Default USD | USD | True | BTC, ETH, USD, EUR, PLN, KRW, GBP, CAD, JPY, RUB, TRY, NZD, AUD, CHF, UAH, HKD, SGD, NGN, PHP, MXN, BRL, THB, CLP, CNY, CZK, DKK, HUF, IDR, ILS, INR, MYR, NOK, PKR, SEK, TWD, ZAR, VND, BOB, COP, PEN, ARS, ISK |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 07:46 (🦋) /crypto/dd/ $ ps
                   Coin Information
@@ -78,3 +85,6 @@ usage: ps [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD
 │ usd_percent_from_price_ath │ -35.370             │
 └────────────────────────────┴─────────────────────┘
 ```
+
+---
+

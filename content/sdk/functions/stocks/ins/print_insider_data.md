@@ -14,22 +14,30 @@ import TabItem from '@theme/TabItem';
 Print insider data
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_model.py#L1437)]
+
 ```python
 def get_print_insider_data(type_insider: str = "lcb", limit: int = 10) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | lcb | True |
 | limit | int | Limit of data rows to display | 10 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Open insider filtered data |
 ---
+
 
 
 </TabItem>
@@ -38,21 +46,30 @@ def get_print_insider_data(type_insider: str = "lcb", limit: int = 10) -> None
 Print insider data
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/openinsider_view.py#L108)]
+
 ```python
 def print_insider_data(type_insider: str = "lcb", limit: int = 10, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | type_insider | str | Insider type of data. Available types can be accessed through get_insider_types(). | lcb | True |
 | limit | int | Limit of data rows to display | 10 | True |
 | export | str | Export data format |  | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

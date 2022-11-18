@@ -6,13 +6,19 @@ description: OpenBB Terminal Function
 # cancel
 
 Cancel a Pending Order.
-### Usage 
+
+### Usage
+
 ```python
 usage: cancel -i ORDERID
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | orderID | The pending order ID to cancel. | None | False | None |
 ---
+

@@ -14,21 +14,29 @@ import TabItem from '@theme/TabItem';
 Returns anchor protocol earnings data of a certain terra address
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/cryptosaurio_model.py#L17)]
+
 ```python
 def get_anchor_data(address: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, str]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Terra address. Valid terra addresses start with 'terra' |  | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame, str] | - pd.DataFrame: Earnings over time in UST<br/>- pd.DataFrame: History of transactions<br/>- str:              Overall statistics |
 ---
+
 
 
 </TabItem>
@@ -37,11 +45,15 @@ def get_anchor_data(address: str = "") -> Tuple[pd.DataFrame, pd.DataFrame, str]
 Plots anchor protocol earnings data of a certain terra address
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/cryptosaurio_view.py#L25)]
+
 ```python
 def display_anchor_data(address: str = "", export: str = "", show_transactions: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | asset | str | Terra asset {ust,luna,sdt} | None | True |
@@ -50,10 +62,15 @@ def display_anchor_data(address: str = "", export: str = "", show_transactions: 
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

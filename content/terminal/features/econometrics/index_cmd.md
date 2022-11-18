@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # index
 
 Set a (multi) index for the dataset
-### Usage 
+
+### Usage
+
 ```python
 usage: index -n {} [-i INDEX] [-a] [-d]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | name | Name of dataset to select index from | None | False | None |
@@ -19,7 +24,9 @@ usage: index -n {} [-i INDEX] [-a] [-d]
 | adjustment | Whether to allow for making adjustments to the dataset to align it with the use case for Timeseries and Panel Data regressions | False | True | None |
 | drop | Whether to drop the column(s) the index is set for. | False | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Jun 01, 06:39 (🦋) /econometrics/ $ load wage_panel -a wp
 
@@ -80,3 +87,6 @@ Successfully updated 'wp' index to be 'nr, year'
 │ (17, 1981) │ 17.00 │ 1981.00 │ 0.00  │ 5.00  │ 0.00 │ 2804.00 │ 0.00    │ 13.00 │ 0.00  │ 1.52  │ 25.00   │ 2.00       │
 └────────────┴───────┴─────────┴───────┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
 ```
+
+---
+

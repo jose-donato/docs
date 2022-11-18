@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Get most traded crypto pairs on given decentralized exchange in chosen time period.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L658)]
+
 ```python
 def get_most_traded_pairs(network: str = "ethereum", exchange: str = "Uniswap", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | network | str | EVM network. One from list: bsc (binance smart chain), ethereum or matic | ethereum | True |
@@ -27,12 +31,16 @@ def get_most_traded_pairs(network: str = "ethereum", exchange: str = "Uniswap", 
 | sortby | str | Key by which to sort data | tradeAmount | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most traded crypto pairs on given decentralized exchange in chosen time period. |
 ---
+
 
 
 </TabItem>
@@ -41,11 +49,15 @@ def get_most_traded_pairs(network: str = "ethereum", exchange: str = "Uniswap", 
 Prints table showing most traded crypto pairs on given decentralized exchange in chosen time period.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L286)]
+
 ```python
 def display_most_traded_pairs(exchange: str = "Uniswap", days: int = 10, limit: int = 10, sortby: str = "tradeAmount", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | exchange | str | Decentralized exchange name | Uniswap | True |
@@ -54,12 +66,16 @@ def display_most_traded_pairs(exchange: str = "Uniswap", days: int = 10, limit: 
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most traded crypto pairs on given decentralized exchange in chosen time period. |
 ---
+
 
 
 </TabItem>

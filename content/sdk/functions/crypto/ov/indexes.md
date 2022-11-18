@@ -14,22 +14,30 @@ import TabItem from '@theme/TabItem';
 Get list of crypto indexes from CoinGecko API [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L325)]
+
 ```python
 def get_indexes(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sortby | str | Key by which to sort data | Name | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Name, Id, Market, Last, MultiAsset |
 ---
+
 
 
 </TabItem>
@@ -38,11 +46,15 @@ def get_indexes(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 Shows list of crypto indexes. [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L625)]
+
 ```python
 def display_indexes(sortby: str = "Name", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 15 | True |
@@ -50,10 +62,15 @@ def display_indexes(sortby: str = "Name", ascend: bool = True, limit: int = 15, 
 | ascend | bool | Flag to sort data descending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

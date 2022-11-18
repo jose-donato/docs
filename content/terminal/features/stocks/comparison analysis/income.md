@@ -6,18 +6,25 @@ description: OpenBB Terminal Function
 # income
 
 Prints either yearly or quarterly income statement the company, and compares it against similar companies.
-### Usage 
+
+### Usage
+
 ```python
 usage: income [-q] [-t S_TIMEFRAME]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | b_quarter | Quarter financial data flag. | False | True | None |
 | s_timeframe | Specify yearly/quarterly timeframe. Default is last. | None | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 08:39 (🦋) /stocks/ca/ $ historical
 
@@ -144,3 +151,6 @@ Other available yearly timeframes are: 2017, 2018, 2019, 2020, 2021
 │ EBITDA Margin                             │ 32.87%  │ 35.34%  │ 17.48%  │ 48.08%  │
 └───────────────────────────────────────────┴─────────┴─────────┴─────────┴─────────┘
 ```
+
+---
+

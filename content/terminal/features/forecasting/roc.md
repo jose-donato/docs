@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # roc
 
 Add rate of change to dataset based on specific column.
-### Usage 
+
+### Usage
+
 ```python
 usage: roc
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 (🦋) /forecast/ $ show TSLA
 TSLA dataset has shape (row, column): (611, 7)
@@ -75,3 +83,6 @@ TSLA dataset has shape (row, column): (611, 8)
 │ 9 │ 2020-01-15 │ 105.95 │ 107.57 │ 103.36 │ 103.70 │ 103.70    │ 86844000  │ 20.51  │
 └───┴────────────┴────────┴────────┴────────┴────────┴───────────┴───────────┴────────┘
 ```
+
+---
+

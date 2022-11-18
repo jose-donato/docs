@@ -6,11 +6,18 @@ description: OpenBB Terminal Function
 # tv
 
 View TradingView for technical analysis. [Source: TradingView]
-### Usage 
+
+### Usage
+
 ```python
 usage: tv
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+

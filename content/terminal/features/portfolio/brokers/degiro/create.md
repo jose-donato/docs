@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # create
 
 
-### Usage 
+
+### Usage
+
 ```python
 usage: create [-a {buy,sell}] (-prod PRODUCT | -sym SYMBOL) -p PRICE (-s SIZE | -up UP_TO) [-d {gtd,gtc}] [-t {limit,market,stop-limit,stop-loss}]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | action | Action wanted. | buy | True | buy, sell |
@@ -23,3 +28,4 @@ usage: create [-a {buy,sell}] (-prod PRODUCT | -sym SYMBOL) -p PRICE (-s SIZE | 
 | duration | Duration of the Order. | gtd | True | gtd, gtc |
 | type | Type of the Order. | limit | True | limit, market, stop-limit, stop-loss |
 ---
+

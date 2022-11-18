@@ -14,19 +14,28 @@ import TabItem from '@theme/TabItem';
 Get holdings of assets (in percentage)
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1559)]
+
 ```python
 def get_holdings_percentage(portfolio_engine: portfolio_model.PortfolioEngine) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>
@@ -35,11 +44,15 @@ This function does not return anything
 Display holdings of assets (in percentage)
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L792)]
+
 ```python
 def display_holdings_percentage(portfolio_engine: portfolio_model.PortfolioEngine, unstack: bool = False, raw: bool = False, limit: int = 10, export: str = "", external_axes: Optional[matplotlib.axes._axes.Axes] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
@@ -49,10 +62,15 @@ def display_holdings_percentage(portfolio_engine: portfolio_model.PortfolioEngin
 | export | str | Format to export plot |  | True |
 | external_axes | plt.Axes | Optional axes to display plot on | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

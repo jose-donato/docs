@@ -6,11 +6,18 @@ description: OpenBB Terminal Function
 # open
 
 Show currently open exchanges
-### Usage 
+
+### Usage
+
 ```python
 usage: exchange
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+

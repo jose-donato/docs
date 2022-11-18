@@ -6,19 +6,26 @@ description: OpenBB Terminal Function
 # hist
 
 Gets historical quotes for given option chain
-### Usage 
+
+### Usage
+
 ```python
 usage: hist -s STRIKE [-p] [-c CHAIN_ID]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | strike | Strike price to look at | None | False | None |
 | put | Flag for showing put option | False | True | None |
 | chain_id | OCC option symbol | None | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 09:07 (🦋) /stocks/options/ $ hist -s 3300 -p
                                              AMZN raw data
@@ -100,3 +107,6 @@ usage: hist -s STRIKE [-p] [-c CHAIN_ID]
 │ 36 │ 2021-11-19 │ 169.00 │ 174.20 │ 169.00 │ 174.20 │ 0.00   │ 22.00  │ 22.00         │ 1.22         │
 └────┴────────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────────────┴──────────────┘
 ```
+
+---
+

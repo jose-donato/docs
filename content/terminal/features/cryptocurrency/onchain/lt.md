@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # lt
 
 Display Trades on Decentralized Exchanges aggregated by DEX or Month [Source: https://graphql.bitquery.io/]
-### Usage 
+
+### Usage
+
 ```python
 usage: lt [-k {dex,time}] [-vs {ETH,USD,BTC,USDT}] [-l LIMIT] [-d DAYS] [-s {exchange,trades,tradeAmount}] [-r]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | kind | Aggregate trades by dex or time Default: dex | dex | True | dex, time |
@@ -21,3 +26,4 @@ usage: lt [-k {dex,time}] [-vs {ETH,USD,BTC,USDT}] [-l LIMIT] [-d DAYS] [-s {exc
 | sortby | Sort by given column. Default: tradeAmount. For monthly trades date. | tradeAmount | True | exchange, trades, tradeAmount |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 ---
+

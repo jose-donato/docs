@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Builds a maximal return/risk ratio portfolio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L814)]
+
 ```python
 def get_max_util(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, risk_aversion: float = 1, alpha: float = 0.05, target_return: float = -1, target_risk: float = -1, mean: str = "hist", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0.0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -41,12 +45,16 @@ def get_max_util(symbols: List[str], interval: str = "3y", start_date: str = "",
 | value | float | Amount to allocate to portfolio in long positions, by default 1.0 | 1.0 | True |
 | value_short | float | Amount to allocate to portfolio in short positions, by default 0.0 | 0.0 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
 ---
+
 
 
 </TabItem>
@@ -55,11 +63,15 @@ def get_max_util(symbols: List[str], interval: str = "3y", start_date: str = "",
 Builds a maximal risk averse utility portfolio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L1369)]
+
 ```python
 def display_max_util(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, risk_aversion: float = 1, alpha: float = 0.05, target_return: float = -1, target_risk: float = -1, mean: str = "hist", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0.0, table: bool = False) -> Dict
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -84,10 +96,15 @@ def display_max_util(symbols: List[str], interval: str = "3y", start_date: str =
 | value_short | float | Amount to allocate to portfolio in short positions, by default 0.0 | 0.0 | True |
 | table | bool | True if plot table weights, by default False | False | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

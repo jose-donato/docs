@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # platforms
 
 List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusama
-### Usage 
+
+### Usage
+
 ```python
 usage: platforms
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 08:19 (🦋) /crypto/ov/ $ platforms
       Smart Contract Platforms
@@ -104,3 +112,6 @@ This command has no parameters
 │ 41    │ slx-solex-finance         │
 └───────┴───────────────────────────┘
 ```
+
+---
+

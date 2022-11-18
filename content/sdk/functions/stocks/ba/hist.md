@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Get hour-level sentiment data for the chosen symbol.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/sentimentinvestor_model.py#L19)]
+
 ```python
 def get_historical(symbol: str, start_date: str = None, end_date: str = None, number: int = 100) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to view sentiment data | None | False |
@@ -26,12 +30,16 @@ def get_historical(symbol: str, start_date: str = None, end_date: str = None, nu
 | end_date | str | End date like string or unix timestamp (e.g. 12-21-2021) | None | True |
 | number | int | Number of results returned by API call<br/>Maximum 250 per api call | 100 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical sentiment |
 ---
+
 
 
 </TabItem>
@@ -40,11 +48,15 @@ def get_historical(symbol: str, start_date: str = None, end_date: str = None, nu
 Display historical sentiment data of a ticker,
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/sentimentinvestor_view.py#L30)]
+
 ```python
 def display_historical(symbol: str, start_date: str = None, end_date: str = None, number: int = 100, raw: bool = False, limit: int = 10, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to view sentiment data | None | False |
@@ -56,10 +68,15 @@ def display_historical(symbol: str, start_date: str = None, end_date: str = None
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

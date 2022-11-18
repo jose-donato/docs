@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Screener Overview
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_model.py#L76)]
+
 ```python
 def get_screener_data(preset_loaded: str = "top_gainers", data_type: str = "overview", limit: int = 10, ascend: bool = False) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | preset_loaded | str | Loaded preset filter | top_gainers | True |
@@ -26,12 +30,16 @@ def get_screener_data(preset_loaded: str = "top_gainers", data_type: str = "over
 | limit | int | Limit of stocks filtered with presets to print | 10 | True |
 | ascend | bool | Ascended order of stocks filtered to print | False | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with loaded filtered stocks |
 ---
+
 
 
 </TabItem>
@@ -40,11 +48,15 @@ def get_screener_data(preset_loaded: str = "top_gainers", data_type: str = "over
 Screener one of the following: overview, valuation, financial, ownership, performance, technical.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_view.py#L127)]
+
 ```python
 def screener(loaded_preset: str = "top_gainers", data_type: str = "overview", limit: int = 10, ascend: bool = False, sortby: str = "", export: str = "") -> List[str]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | loaded_preset | str | Preset loaded to filter for tickers | top_gainers | True |
@@ -54,12 +66,16 @@ def screener(loaded_preset: str = "top_gainers", data_type: str = "overview", li
 | sortby | str | Column to sort table by |  | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of stocks that meet preset criteria |
 ---
+
 
 
 </TabItem>

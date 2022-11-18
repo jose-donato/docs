@@ -8,11 +8,15 @@ description: OpenBB SDK Function
 Adds the given column of df2 to df1
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L397)]
+
 ```python
 def combine_dfs(df1: pd.DataFrame, df2: pd.DataFrame, column: str, dataset: str = "") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | df1 | pd.DataFrame | The dataframe to add a column to | None | False |
@@ -20,9 +24,13 @@ def combine_dfs(df1: pd.DataFrame, df2: pd.DataFrame, column: str, dataset: str 
 | column | str | The column to transfer | None | False |
 | dataset | str | A name for df2 (shows in name of new column) |  | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The new dataframe |
 ---
+

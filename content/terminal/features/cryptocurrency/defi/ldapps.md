@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # ldapps
 
 Display information about listed dApps on DeFi Llama. [Source: https://docs.llama.fi/api]
-### Usage 
+
+### Usage
+
 ```python
 usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,change_7d,name}] [-r] [--desc]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of records to display | 10 | True | None |
@@ -19,7 +24,9 @@ usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,cha
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | description | Flag to display description of protocol | False | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 15, 06:24 (🦋) /crypto/defi/ $ ldapps
 ┌──────────────────────────┬────────┬──────────┬──────────────────────────────────────────────────┬───────────────┬───────────────┬───────────────┬──────────┐
@@ -49,3 +56,6 @@ usage: ldapps [-l LIMIT] [-s {tvl,symbol,category,chains,change_1h,change_1d,cha
 │                          │        │          │ Heco, xDai, Kucoin, Syscoin                      │               │               │               │          │
 └──────────────────────────┴────────┴──────────┴──────────────────────────────────────────────────┴───────────────┴───────────────┴───────────────┴──────────┘
 ```
+
+---
+

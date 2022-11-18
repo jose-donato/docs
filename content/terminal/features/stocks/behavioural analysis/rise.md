@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # rise
 
 Print top rising related queries with this stock's query. [Source: Google]
-### Usage 
+
+### Usage
+
 ```python
 usage: rise [-l LIMIT]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of top rising related queries to print. | 10 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 10:40 (🦋) /stocks/ba/ $ rise
 Top rising AAPL's related queries
@@ -44,3 +51,6 @@ Top rising AAPL's related queries
 │ bynd stock      │ 47450  │
 └─────────────────┴────────┘
 ```
+
+---
+

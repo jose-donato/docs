@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 Performs Nhits forecasting
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nhits_model.py#L22)]
+
 ```python
 def get_nhits_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, train_split: float = 0.85, past_covariates: str = None, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, num_stacks: int = 3, num_blocks: int = 1, num_layers: int = 2, layer_widths: int = 512, pooling_kernel_sizes: Optional[Tuple[Tuple[int]]] = None, n_freq_downsample: Optional[Tuple[Tuple[int]]] = None, dropout: float = 0.1, activation: str = "ReLU", max_pool_1d: bool = True, batch_size: int = 32, n_epochs: int = 100, learning_rate: float = 0.001, model_save_name: str = "brnn_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple[Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[float], Optional[type[darts.models.forecasting.nhits.NHiTSModel]]]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
@@ -45,12 +49,16 @@ def get_nhits_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "c
 | force_reset | bool | If set to True, any previously-existing model with the same name will be reset (all checkpoints will be<br/>discarded). Defaults to True. | True | True |
 | save_checkpoints | bool | Whether or not to automatically save the untrained model and checkpoints from training. Defaults to True. | True | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | Tuple[List[TimeSeries], List[TimeSeries], List[TimeSeries], Optional[float], type[NHiTSModel]] | Adjusted Data series,<br/>Historical forecast by best RNN model,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best BRNN Model. |
 ---
+
 
 
 </TabItem>
@@ -59,11 +67,15 @@ def get_nhits_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "c
 Display Nhits forecast
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/nhits_view.py#L20)]
+
 ```python
 def display_nhits_forecast(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", dataset_name: str = "", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, num_stacks: int = 3, num_blocks: int = 1, num_layers: int = 2, layer_widths: int = 512, pooling_kernel_sizes: Optional[Tuple[Tuple[int]]] = None, n_freq_downsample: Optional[Tuple[Tuple[int]]] = None, dropout: float = 0.1, activation: str = "ReLU", max_pool_1d: bool = True, batch_size: int = 32, n_epochs: int = 100, learning_rate: float = 0.001, model_save_name: str = "rnn_model", force_reset: bool = True, save_checkpoints: bool = True, export: str = "", residuals: bool = False, forecast_only: bool = False, start_date: Optional[datetime.datetime] = None, end_date: Optional[datetime.datetime] = None, naive: bool = False, export_pred_raw: bool = False, external_axes: Optional[List[axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
@@ -98,10 +110,15 @@ def display_nhits_forecast(data: Union[pd.Series, pd.DataFrame], target_column: 
 | naive | bool | Whether to show the naive baseline. This just assumes the closing price will be the same<br/>as the previous day's closing price. Defaults to False. | False | True |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

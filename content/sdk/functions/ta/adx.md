@@ -14,11 +14,15 @@ import TabItem from '@theme/TabItem';
 ADX technical indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L16)]
+
 ```python
 def adx(data: pd.DataFrame, window: int = 14, scalar: int = 100, drift: int = 1) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe with OHLC price data | None | False |
@@ -26,12 +30,16 @@ def adx(data: pd.DataFrame, window: int = 14, scalar: int = 100, drift: int = 1)
 | scalar | int | Scalar variable | 100 | True |
 | drift | int | Drift variable | 1 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with adx indicator |
 ---
+
 
 
 </TabItem>
@@ -40,11 +48,15 @@ def adx(data: pd.DataFrame, window: int = 14, scalar: int = 100, drift: int = 1)
 Plots ADX indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_view.py#L30)]
+
 ```python
 def display_adx(data: pd.DataFrame, window: int = 14, scalar: int = 100, drift: int = 1, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe with OHLC price data | None | False |
@@ -55,10 +67,15 @@ def display_adx(data: pd.DataFrame, window: int = 14, scalar: int = 100, drift: 
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

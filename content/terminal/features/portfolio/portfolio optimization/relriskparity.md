@@ -6,13 +6,18 @@ description: OpenBB Terminal Function
 # relriskparity
 
 Build a relaxed risk parity portfolio based on least squares approach
-### Usage 
+
+### Usage
+
 ```python
 usage: relriskparity [-ve {A,B,C}] [-rc RISK_CONTRIBUTION] [-pf PENAL_FACTOR] [-tr TARGET_RETURN] [-de SMOOTHING_FACTOR_EWMA] [-mt NAN_FILL_METHOD] [-ct CATEGORIES] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-v LONG_ALLOCATION] [--name NAME]
                      {sa} ...
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | risk_parity_model | version of relaxed risk parity model: Possible values are: 'A': risk parity without regularization and penalization constraints 'B': with regularization constraint but without penalization constraint 'C': with regularization and penalization constraints | A | True | A, B, C |
@@ -33,7 +38,9 @@ usage: relriskparity [-ve {A,B,C}] [-rc RISK_CONTRIBUTION] [-pf PENAL_FACTOR] [-
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | RRP_0 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Apr 05, 14:08 (🦋) /portfolio/po/ $ relriskparity
 
@@ -62,3 +69,6 @@ Annual (by 252) expected return: 28.99%
 Annual (by √252) volatility: 26.60%
 Sharpe ratio: 1.0899
 ```
+
+---
+

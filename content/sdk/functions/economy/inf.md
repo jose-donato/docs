@@ -14,21 +14,29 @@ import TabItem from '@theme/TabItem';
 Get historical Inflation for United States from AlphaVantage
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L139)]
+
 ```python
 def get_inflation(start_year: int = 2010) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | start_year | int | Start year for plot, by default 2010 | 2010 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of inflation rates |
 ---
+
 
 
 </TabItem>
@@ -37,11 +45,15 @@ def get_inflation(start_year: int = 2010) -> pd.DataFrame
 Display US Inflation from AlphaVantage
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L202)]
+
 ```python
 def display_inflation(start_year: int = 2010, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | start_year | int | Start year for plot, by default 2010 | 2010 | True |
@@ -49,10 +61,15 @@ def display_inflation(start_year: int = 2010, raw: bool = False, export: str = "
 | export | str | Format to export data, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

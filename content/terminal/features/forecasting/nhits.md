@@ -6,12 +6,17 @@ description: OpenBB Terminal Function
 # nhits
 
 Perform nhits forecast: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.tft_model.html
-### Usage 
+
+### Usage
+
 ```python
 usage: nhits [--num-stacks NUM_STACKS] [--num-blocks NUM_BLOCKS] [--num-layers NUM_LAYERS] [--layer_widths LAYER_WIDTHS] [--activation {ReLU,RReLU,PReLU,Softplus,Tanh,SELU,LeakyReLU,Sigmoid}] [--max_pool_1d]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | num_stacks | The number of stacks that make up the model | 3 | True | None |
@@ -21,7 +26,9 @@ usage: nhits [--num-stacks NUM_STACKS] [--num-blocks NUM_BLOCKS] [--num-layers N
 | activation | The desired activation | ReLU | True | ReLU, RReLU, PReLU, Softplus, Tanh, SELU, LeakyReLU, Sigmoid |
 | maxpool1d | Whether to use max_pool_1d or AvgPool1d | False | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Oct 11, 06:38 D /forecast/ $ load AAPL_20220719_201127.csv
 
@@ -48,5 +55,8 @@ NHITS model obtains MAPE: 7.45%
 │ 2022-07-25 │ 123.72     │
 └────────────┴────────────┘
 ```
+
 ![nbeats](https://user-images.githubusercontent.com/72827203/195015203-3644fe8c-e1f7-49ab-9595-a19b474948cc.png)
+
+---
 

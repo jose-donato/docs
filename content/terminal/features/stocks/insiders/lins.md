@@ -6,17 +6,24 @@ description: OpenBB Terminal Function
 # lins
 
 Prints information about inside traders. The following fields are expected: Date, Relationship, Transaction, #Shares, Cost, Value ($), #Shares Total, Insider Trading, SEC Form 4. [Source: Finviz]
-### Usage 
+
+### Usage
+
 ```python
 usage: lins [-l LIMIT]
 ```
+
 ---
+
 ## Parameters
+
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest inside traders. | 10 | True | None |
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 07:54 (🦋) /stocks/ins/ $ lins
                                                                 Insider Activity
@@ -44,3 +51,6 @@ usage: lins [-l LIMIT]
 │ Aug 06 │ Senior Vice President        │ Sale        │ 14,877    │ 145.99 │ 2,171,893   │ 136,118       │ O'BRIEN DEIRDRE    │ Aug 09 06:30 PM │
 └────────┴──────────────────────────────┴─────────────┴───────────┴────────┴─────────────┴───────────────┴────────────────────┴─────────────────┘
 ```
+
+---
+

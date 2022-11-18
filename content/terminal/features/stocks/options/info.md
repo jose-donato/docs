@@ -6,15 +6,23 @@ description: OpenBB Terminal Function
 # info
 
 Display option data [Source: Barchart.com]
-### Usage 
+
+### Usage
+
 ```python
 usage: info
 ```
+
 ---
+
 ## Parameters
+
 This command has no parameters
+
 ---
+
 ## Examples
+
 ```python
 2022 Feb 16, 09:09 (🦋) /stocks/options/ $ info
                 Options Information
@@ -46,3 +54,6 @@ This command has no parameters
 │ Open Int (30-Day)     │  721,047                │
 └───────────────────────┴─────────────────────────┘
 ```
+
+---
+

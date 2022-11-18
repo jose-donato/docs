@@ -14,23 +14,31 @@ import TabItem from '@theme/TabItem';
 Get rolling sortino
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1750)]
+
 ```python
 def get_rolling_sortino(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float = 0, window: str = "1y") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio | PortfolioEngine | PortfolioEngine object | None | True |
 | window | str | interval for window to consider<br/>Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y | 1y | True |
 | risk_free_rate | float | Value to use for risk free rate in sharpe/other calculations | 0 | True |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rolling sortino ratio DataFrame |
 ---
+
 
 
 </TabItem>
@@ -39,11 +47,15 @@ def get_rolling_sortino(portfolio_engine: portfolio_model.PortfolioEngine, risk_
 Display rolling sortino
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L991)]
+
 ```python
 def display_rolling_sortino(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float = 0, window: str = "1y", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio | PortfolioEngine | PortfolioEngine object | None | True |
@@ -52,10 +64,15 @@ def display_rolling_sortino(portfolio_engine: portfolio_model.PortfolioEngine, r
 | export | str | Export to file |  | True |
 | external_axes | Optional[List[plt.Axes]] | Optional axes to display plot on | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>

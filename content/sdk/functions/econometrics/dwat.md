@@ -14,21 +14,29 @@ import TabItem from '@theme/TabItem';
 Calculate test statistics for Durbin Watson autocorrelation
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L496)]
+
 ```python
 def get_dwat(model: statsmodels.regression.linear_model.RegressionResultsWrapper) -> float
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | model | statsmodels.regression.linear_model.RegressionResultsWrapper | Previously fit statsmodels OLS. | None | False |
 
+
 ---
+
 ## Returns
+
 | Type | Description |
 | ---- | ----------- |
 | float | Test statistic of the Durbin Watson test. |
 ---
+
 ## Examples
 SDK Snippet:
 ```python
@@ -39,7 +47,6 @@ model = openbb.econometrics.ols(Y,X)
 durbin_watson_value = openbb.econometrics.dwat(model)
 ```
 
----
 Result:
 ```python
 0.96
@@ -48,17 +55,22 @@ Result:
 ---
 
 
+
 </TabItem>
 <TabItem value="view" label="View">
 
 Show Durbin-Watson autocorrelation tests
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L81)]
+
 ```python
 def display_dwat(model: statsmodels.regression.linear_model.RegressionResultsWrapper, dependent_variable: pd.Series, plot: bool = True, export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
+
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | model | OLS Model | A fit statsmodels OLS model. | None | False |
@@ -67,10 +79,15 @@ def display_dwat(model: statsmodels.regression.linear_model.RegressionResultsWra
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
+
 ---
+
 ## Returns
+
 This function does not return anything
+
 ---
+
 
 
 </TabItem>
