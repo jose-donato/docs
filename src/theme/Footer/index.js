@@ -45,7 +45,7 @@ function Footer() {
       .then((data) => setStars(data.stargazers_count))
   }, [])
   return (
-    <footer className="border-t dark:border-grey-600/50 lg:px-12 py-14 bg-white dark:bg-grey-900 z-10 overflow-hidden">
+    <footer className="px-4 border-t dark:border-grey-600/50 lg:px-12 py-14 bg-white dark:bg-grey-900 z-10 overflow-hidden">
       <div className="flex w-full flex-col justify-between gap-10 md:flex-row md:items-start">
         <div className="ml-2 mb-2 space-y-10 md:m-0">
           <Link

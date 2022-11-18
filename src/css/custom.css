@@ -103,8 +103,7 @@
   }
 }
 
-/* max 400px */
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .aa-DetachedSearchButtonPlaceholder {
     display: none;
   }
@@ -166,7 +165,10 @@
 }
 
 .aa-DetachedSearchButton {
+  margin-top: -1px !important;
   padding-right: 20px !important;
+  border-color: #a2a2a2ff !important;
+  color: #a2a2a2ff !important;
 }
 
 .aa-DetachedSearchButton:hover {

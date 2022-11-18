@@ -13,11 +13,11 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout description="Documentation for free and open source OpenBB products.">
-      <main className="relative h-[75vh] flex flex-col items-center justify-center overflow-hidden">
-        <DarkBlueRadialGradient className="absolute w-[200px] h-[200px] xl:w-[800px] xl:h-[800px] -top-20 -left-20 2xl:-top-60 2xl:-left-[800px] xl:opacity-50" />
-        <RubyRedRadialGradient className="absolute w-[200px] h-[200px] xl:w-[800px] xl:h-[800px] -top-20 -right-20 2xl:-top-60 2xl:-right-[800px] xl:opacity-50" />
+      <main className="relative min-h-[75vh] py-20 md:py-0 flex flex-col items-center justify-center overflow-hidden">
+        <DarkBlueRadialGradient className="absolute opacity-40 -left-[1000px] w-[1600px] h-[1600px] lg:-left-[1000px] lg:opacity-40 -top-20 xl:-top-60 xl:-left-[800px] 2xl:opacity-50" />
+        <RubyRedRadialGradient className="absolute opacity-40 -right-[1000px] w-[1600px] h-[1600px] lg:-right-[1000px] lg:opacity-40 -top-20 xl:-top-60 xl:-right-[800px] 2xl:opacity-50" />
         <div className="flex mx-auto flex-col items-center justify-center w-full max-w-[906px]">
-          <div className="z-10 flex flex-col items-center justify-center w-full h-full">
+          <div className="z-10 flex flex-col items-center justify-center w-full h-full mb-10 md:mb-0">
             <h1 className="mx-6 font-bold text-3xl lg:text-4xl leading-10 text-center mb-4 tracking-widest uppercase">
               OpenBB Documentation
             </h1>
