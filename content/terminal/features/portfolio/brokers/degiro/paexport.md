@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # paexport
 
 
-
 ### Usage 
 ```python
 usage: paexport -s START [-e END] [-c CURRENCY]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | start | Start date. | None | False | None |

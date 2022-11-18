@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get daily volume for given pair [Source: https://graphql.bitquery.io/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L400)]
-
 ```python
 def get_daily_dex_volume_for_given_pair(limit: int = 100, symbol: str = "UNI", to_symbol: str = "USDT", sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Last n days to query data | 100 | True |
@@ -31,11 +29,9 @@ def get_daily_dex_volume_for_given_pair(limit: int = 100, symbol: str = "UNI", t
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Daily volume for given pair |
-
 ---
 
 
@@ -45,13 +41,11 @@ def get_daily_dex_volume_for_given_pair(limit: int = 100, symbol: str = "UNI", t
 Prints table showing daily volume for given pair
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L87)]
-
 ```python
 def display_daily_volume_for_given_pair(symbol: str = "WBTC", to_symbol: str = "USDT", limit: int = 20, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ERC20 token symbol or address | WBTC | True |
@@ -63,11 +57,9 @@ def display_daily_volume_for_given_pair(symbol: str = "WBTC", to_symbol: str = "
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Token volume on different decentralized exchanges |
-
 ---
 
 

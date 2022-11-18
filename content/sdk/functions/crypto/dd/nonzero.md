@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns addresses with non-zero balance of a certain symbol
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L248)]
-
 ```python
 def get_non_zero_addresses(symbol: str, start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search (e.g., BTC) | None | False |
@@ -29,11 +27,9 @@ def get_non_zero_addresses(symbol: str, start_date: str = "2010-01-01", end_date
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | addresses with non-zero balances |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_non_zero_addresses(symbol: str, start_date: str = "2010-01-01", end_date
 Plots addresses with non-zero balance of a certain symbol
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L96)]
-
 ```python
 def display_non_zero_addresses(symbol: str, start_date: str = "2010-01-01", end_date: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search (e.g., BTC) | None | False |
@@ -60,9 +54,7 @@ def display_non_zero_addresses(symbol: str, start_date: str = "2010-01-01", end_
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

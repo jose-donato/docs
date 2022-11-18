@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # show
 
 Show a portion of the DataFrame
-
 ### Usage 
 ```python
 usage: show [-n {}] [-s SORTBY [SORTBY ...]] [-r] [--limit-col LIMIT_COL]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | name | The name of the database you want to show data for | None | True | None |
@@ -22,7 +20,6 @@ usage: show [-n {}] [-s SORTBY [SORTBY ...]] [-r] [--limit-col LIMIT_COL]
 | limit_col | Set the number of columns to display when showing the dataset | 10 | True | None |
 ---
 ## Examples
-
 ```python
 (🦋) /forecast/ $ load aapl.csv
 
@@ -55,4 +52,3 @@ aapl dataset has shape (row, column): (759, 7)
 │ 9 │ 2019-06-21 │ 49.70 │ 50.21 │ 49.54 │ 49.69 │ 48.50     │ 191202400 │
 └───┴────────────┴───────┴───────┴───────┴───────┴───────────┴───────────┘
 ```
-

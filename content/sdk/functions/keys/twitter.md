@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Set Twitter key
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1048)]
-
 ```python
 def set_twitter_key(key: str, secret: str, access_token: str, persist: bool = False, show_output: bool = False) -> str
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | key | str | API key | None | False |
@@ -25,9 +23,7 @@ def set_twitter_key(key: str, secret: str, access_token: str, persist: bool = Fa
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | str | Status of key set |
-
 ---

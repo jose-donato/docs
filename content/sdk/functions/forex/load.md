@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Load forex for two given symbols.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/forex_helper.py#L95)]
-
 ```python
 def load(to_symbol: str, from_symbol: str, resolution: str = "d", interval: str = "1day", start_date: str = None, source: str = "YahooFinance", verbose: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | to_symbol | str | The from currency symbol. Ex: USD, EUR, GBP, YEN | None | False |
@@ -27,9 +25,7 @@ def load(to_symbol: str, from_symbol: str, resolution: str = "d", interval: str 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The loaded data |
-
 ---

@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # update
 
 
-
 ### Usage 
 ```python
 usage: update -p PRICE id
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | id | Order's id. | None | False | None |

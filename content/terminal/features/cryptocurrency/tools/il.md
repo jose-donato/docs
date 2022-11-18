@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # il
 
 Tool to calculate Impermanent Loss in a custom liquidity pool. Users can provide percentages increases for two tokens (and their weight in the liquidity pool) and verify the impermanent loss that can occur.
-
 ### Usage 
 ```python
 usage: il [-a PRICECHANGEA] [-b PRICECHANGEB] [-p PROPORTION] [-v VALUE] [-n]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | priceChangeA | Token A price change in percentage | 0 | True | None |

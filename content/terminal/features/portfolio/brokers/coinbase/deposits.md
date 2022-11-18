@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # deposits
 
 Display a list of deposits for your account.
-
 ### Usage 
 ```python
 usage: deposits [-t {internal_deposit,deposit}] [-l LIMIT] [-s {created_at,amount}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | type | Deposit type. Either: internal_deposits (transfer between portfolios) or deposit | deposit | True | internal_deposit, deposit |

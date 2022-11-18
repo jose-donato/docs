@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Screener Overview
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_model.py#L76)]
-
 ```python
 def get_screener_data(preset_loaded: str = "top_gainers", data_type: str = "overview", limit: int = 10, ascend: bool = False) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | preset_loaded | str | Loaded preset filter | top_gainers | True |
@@ -30,11 +28,9 @@ def get_screener_data(preset_loaded: str = "top_gainers", data_type: str = "over
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with loaded filtered stocks |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_screener_data(preset_loaded: str = "top_gainers", data_type: str = "over
 Screener one of the following: overview, valuation, financial, ownership, performance, technical.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/finviz_view.py#L127)]
-
 ```python
 def screener(loaded_preset: str = "top_gainers", data_type: str = "overview", limit: int = 10, ascend: bool = False, sortby: str = "", export: str = "") -> List[str]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | loaded_preset | str | Preset loaded to filter for tickers | top_gainers | True |
@@ -62,11 +56,9 @@ def screener(loaded_preset: str = "top_gainers", data_type: str = "overview", li
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of stocks that meet preset criteria |
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Gets historical option pricing.  This inputs either ticker, expiration, strike or the OCC chain ID and processes
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_model.py#L44)]
-
 ```python
 def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: bool = False, chain_id: Optional[str] = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
@@ -31,11 +29,9 @@ def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: boo
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical option prices |
-
 ---
 
 
@@ -45,13 +41,11 @@ def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: boo
 Plot historical option prices
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/tradier_view.py#L627)]
-
 ```python
 def display_historical(symbol: str, expiry: str, strike: float = 0, put: bool = False, raw: bool = False, chain_id: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
@@ -65,9 +59,7 @@ def display_historical(symbol: str, expiry: str, strike: float = 0, put: bool = 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

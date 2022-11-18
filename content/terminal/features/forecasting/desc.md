@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # desc
 
 Show descriptive statistics of a dataset
-
 ### Usage 
 ```python
 usage: desc
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 (🦋) /forecast/ $ load TSLA.csv
 
@@ -44,4 +41,3 @@ This command has no parameters
 │ max   │ 1234.41 │ 1243.49 │ 1217.00 │ 1229.91 │ 1229.91   │ 304694000.00 │
 └───────┴─────────┴─────────┴─────────┴─────────┴───────────┴──────────────┘
 ```
-

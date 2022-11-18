@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # list
 
 List order history
-
 ### Usage 
 ```python
 usage: list [-s STATE] [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | state | List orders that have a specific state. | ALL | True | None |

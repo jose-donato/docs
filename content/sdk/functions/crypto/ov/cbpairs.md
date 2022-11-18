@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get a list of available currency pairs for trading. [Source: Coinbase]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_model.py#L24)]
-
 ```python
 def get_trading_pairs(limit: int = 50, sortby: str = "quote_increment", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Top n of pairs | 50 | True |
@@ -29,11 +27,9 @@ def get_trading_pairs(limit: int = 50, sortby: str = "quote_increment", ascend: 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Available trading pairs on Coinbase |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_trading_pairs(limit: int = 50, sortby: str = "quote_increment", ascend: 
 Displays a list of available currency pairs for trading. [Source: Coinbase]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_view.py#L19)]
-
 ```python
 def display_trading_pairs(limit: int = 20, sortby: str = "quote_increment", ascend: bool = True, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Top n of pairs | 20 | True |
@@ -59,9 +53,7 @@ def display_trading_pairs(limit: int = 20, sortby: str = "quote_increment", asce
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

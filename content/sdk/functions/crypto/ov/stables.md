@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns top stable coins [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L191)]
-
 ```python
 def get_stable_coins(limit: int = 20, sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | How many rows to show | 20 | True |
@@ -29,11 +27,9 @@ def get_stable_coins(limit: int = 20, sortby: str = "rank", ascend: bool = False
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rank, Name, Symbol, Price, Change_24h, Exchanges, Market_Cap, Change_30d, Url |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_stable_coins(limit: int = 20, sortby: str = "rank", ascend: bool = False
 Shows stablecoins data [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L331)]
-
 ```python
 def display_stablecoins(limit: int = 15, export: str = "", sortby: str = "rank", ascend: bool = False, pie: bool = False) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 15 | True |
@@ -60,9 +54,7 @@ def display_stablecoins(limit: int = 15, export: str = "", sortby: str = "rank",
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get top 50 tokens. [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L268)]
-
 ```python
 def get_top_tokens(sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sortby | str | Key to sort by. | rank | True |
@@ -28,11 +26,9 @@ def get_top_tokens(sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with list of top 50 tokens. |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_top_tokens(sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 Display top ERC20 tokens [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L70)]
-
 ```python
 def display_top_tokens(limit: int = 15, sortby: str = "rank", ascend: bool = True, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Limit of transactions. Maximum 100 | 15 | True |
@@ -58,9 +52,7 @@ def display_top_tokens(limit: int = 15, sortby: str = "rank", ascend: bool = Tru
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

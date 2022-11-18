@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get rolling sharpe ratio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1704)]
-
 ```python
 def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float = 0, window: str = "1y") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_returns | pd.Series | Series of portfolio returns | None | True |
@@ -29,11 +27,9 @@ def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float = 0
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rolling sharpe ratio DataFrame |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_rolling_sharpe(portfolio_engine: pd.DataFrame, risk_free_rate: float = 0
 Display rolling sharpe
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L932)]
-
 ```python
 def display_rolling_sharpe(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float = 0, window: str = "1y", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio | PortfolioEngine | PortfolioEngine object | None | True |
@@ -60,9 +54,7 @@ def display_rolling_sharpe(portfolio_engine: portfolio_model.PortfolioEngine, ri
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

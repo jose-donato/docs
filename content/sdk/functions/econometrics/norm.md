@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 The distribution of returns and generate statistics on the relation to the normal curve.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L113)]
-
 ```python
 def get_normality(data: pd.Series) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | A series or column of a DataFrame to test normality for | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing statistics of normality |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_normality(data: pd.Series) -> pd.DataFrame
 Determine the normality of a timeseries.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L129)]
-
 ```python
 def display_norm(data: pd.Series, dataset: str = "", column: str = "", plot: bool = True, export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Series of custom data | None | False |
@@ -59,9 +53,7 @@ def display_norm(data: pd.Series, dataset: str = "", column: str = "", plot: boo
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

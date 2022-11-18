@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns coin tokenomics
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L283)]
-
 ```python
 def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check tokenomics | None | False |
@@ -28,11 +26,9 @@ def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.Dat
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Metric Value tokenomics,<br/>Circulating supply overtime |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.Dat
 Plots coin tokenomics
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L386)]
-
 ```python
 def display_tokenomics(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check tokenomics | None | False |
@@ -57,9 +51,7 @@ def display_tokenomics(symbol: str, export: str = "", external_axes: Optional[Li
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

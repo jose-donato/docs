@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get stock volume. [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L134)]
-
 ```python
 def get_volume(similar: List[str], start_date: str = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
@@ -28,11 +26,9 @@ def get_volume(similar: List[str], start_date: str = None) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with volume for stock |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_volume(similar: List[str], start_date: str = None) -> pd.DataFrame
 Display stock volume. [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L107)]
-
 ```python
 def display_volume(similar: List[str], start_date: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
@@ -58,9 +52,7 @@ def display_volume(similar: List[str], start_date: str = None, export: str = "",
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

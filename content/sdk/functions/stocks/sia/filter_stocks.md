@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Filter stocks based on country, sector, industry, market cap and exclude exchanges.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L109)]
-
 ```python
 def filter_stocks(country: str = None, sector: str = None, industry: str = None, marketcap: str = "", exclude_exchanges: bool = True) -> list
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Search by country to find stocks matching the criteria. | None | True |
@@ -25,9 +23,7 @@ def filter_stocks(country: str = None, sector: str = None, industry: str = None,
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | list | List of filtered stocks |
-
 ---

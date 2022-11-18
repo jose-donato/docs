@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get list of tokens trade-able on Uniswap DEX. [Source: https://thegraph.com/en/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L81)]
-
 ```python
 def get_uni_tokens(skip: int = 0, limit: int = 100, sortby: str = "index", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | skip | int | Skip n number of records. | 0 | True |
@@ -30,11 +28,9 @@ def get_uni_tokens(skip: int = 0, limit: int = 100, sortby: str = "index", ascen
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Uniswap tokens with trading volume, transaction count, liquidity. |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_uni_tokens(skip: int = 0, limit: int = 100, sortby: str = "index", ascen
 Prints table showing tokens trade-able on Uniswap DEX.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L18)]
-
 ```python
 def display_uni_tokens(skip: int = 0, limit: int = 20, sortby: str = "index", ascend: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | skip | int | Number of records to skip | 0 | True |
@@ -61,9 +55,7 @@ def display_uni_tokens(skip: int = 0, limit: int = 20, sortby: str = "index", as
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

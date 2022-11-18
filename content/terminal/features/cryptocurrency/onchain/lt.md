@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # lt
 
 Display Trades on Decentralized Exchanges aggregated by DEX or Month [Source: https://graphql.bitquery.io/]
-
 ### Usage 
 ```python
 usage: lt [-k {dex,time}] [-vs {ETH,USD,BTC,USDT}] [-l LIMIT] [-d DAYS] [-s {exchange,trades,tradeAmount}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | kind | Aggregate trades by dex or time Default: dex | dex | True | dex, time |

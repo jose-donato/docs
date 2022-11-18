@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # hist
 
 Display history for given ethereum blockchain balance. e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699 [Source: Ethplorer]
-
 ### Usage 
 ```python
 usage: hist [-l LIMIT] [-s {timestamp,transactionHash,token,value}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number records | 10 | True | None |

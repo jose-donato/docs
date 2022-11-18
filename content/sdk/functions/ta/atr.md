@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Average True Range
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L132)]
-
 ```python
 def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int = 0) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
@@ -30,11 +28,9 @@ def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int =
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of atr |
-
 ---
 
 
@@ -44,13 +40,11 @@ def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int =
 Plots ATR
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L289)]
-
 ```python
 def display_atr(data: pd.DataFrame, symbol: str = "", window: int = 14, mamode: str = "sma", offset: int = 0, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
@@ -61,9 +55,7 @@ def display_atr(data: pd.DataFrame, symbol: str = "", window: int = 14, mamode: 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

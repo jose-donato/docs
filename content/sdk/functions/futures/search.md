@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get search futures [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L50)]
-
 ```python
 def get_search_futures(category: str = "", exchange: str = "", description: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | category | str | Select the category where the future exists |  | True |
@@ -23,7 +21,5 @@ def get_search_futures(category: str = "", exchange: str = "", description: str 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---

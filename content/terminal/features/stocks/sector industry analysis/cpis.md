@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # cpis
 
 Companies per Industry based on Sector and Market Cap
-
 ### Usage 
 ```python
 usage: cpis [-M MAX_INDUSTRIES_TO_DISPLAY] [-m MIN_PCT_TO_DISPLAY_INDUSTRY] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | max_industries_to_display | Maximum number of industries to display | 15 | True | None |

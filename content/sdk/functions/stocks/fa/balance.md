@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get balance sheet.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/sdk_helpers.py#L77)]
-
 ```python
 def get_balance_sheet(symbol: str, quarterly: bool = False, ratios: bool = False, source: str = "YahooFinance", limit: int = 10) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Symbol to get balance sheet for | None | False |
@@ -25,14 +23,11 @@ def get_balance_sheet(symbol: str, quarterly: bool = False, ratios: bool = False
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of balance sheet |
-
 ---
 ## Examples
-
 
 If you have a premium AlphaVantage key, you can use the quarterly flag to get quarterly statements
 ```python

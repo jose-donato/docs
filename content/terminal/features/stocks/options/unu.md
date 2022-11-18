@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # unu
 
 This command gets unusual options from fdscanner.com
-
 ### Usage 
 ```python
 usage: unu [-l LIMIT] [-s {Strike,Vol/OI,Vol,OI,Bid,Ask,Exp,Ticker} [{Strike,Vol/OI,Vol,OI,Bid,Ask,Exp,Ticker} ...]] [-r] [-p] [-c]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of options to show. Each scraped page gives 20 results. | 20 | True | None |
@@ -23,7 +21,6 @@ usage: unu [-l LIMIT] [-s {Strike,Vol/OI,Vol,OI,Bid,Ask,Exp,Ticker} [{Strike,Vol
 | calls_only | Flag to show calls only | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 09:51 (🦋) /stocks/options/ $ unu
                       Last Updated: 2022-02-15 16:37:03 (EST)
@@ -71,4 +68,3 @@ usage: unu [-l LIMIT] [-s {Strike,Vol/OI,Vol,OI,Bid,Ask,Exp,Ticker} [{Strike,Vol
 │ GPS    │ 2022-02-25 │ 15.50  │ Put  │ 13.10  │ 2716.00  │ 208.00 │ 0.49  │ 0.53  │
 └────────┴────────────┴────────┴──────┴────────┴──────────┴────────┴───────┴───────┘
 ```
-

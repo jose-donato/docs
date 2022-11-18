@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Request data for candle chart.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L581)]
-
 ```python
 def get_candles_dataframe(instrument: Optional[str] = None, granularity: str = "D", candlecount: int = 180) -> Union[pd.DataFrame, bool]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instrument | str | Loaded currency pair code | None | True |
@@ -29,11 +27,9 @@ def get_candles_dataframe(instrument: Optional[str] = None, granularity: str = "
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Candle chart data or False |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_candles_dataframe(instrument: Optional[str] = None, granularity: str = "
 Show candle chart.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L294)]
-
 ```python
 def show_candles(instrument: str = "", granularity: str = "D", candlecount: int = 180, additional_charts: Optional[Dict[str, bool]] = None, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instrument | str | The loaded currency pair |  | True |
@@ -60,9 +54,7 @@ def show_candles(instrument: str = "", granularity: str = "D", candlecount: int 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

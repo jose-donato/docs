@@ -6,7 +6,6 @@ description: OpenBB Terminal Function
 # vaults
 
 Display Top DeFi Vaults. [Source: https://coindix.com/]
-
 ### Usage 
 ```python
 usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,heco,okex,cronos,arbitrum,eth,harmony,fuse,defichain,solana,optimism,kusama,metis,osmosis}]
@@ -15,7 +14,6 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | chain | Blockchain name e.g. ethereum, terra | None | True | ethereum, polygon, avalanche, bsc, terra, fantom, moonriver, celo, heco, okex, cronos, arbitrum, eth, harmony, fuse, defichain, solana, optimism, kusama, metis, osmosis |
@@ -27,7 +25,6 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
 | link | Flag to show vault link | True | True | None |
 ---
 ## Examples
-
 ```python
 2022 May 26, 07:19 (�) /crypto/defi/ $ vaults
 
@@ -56,4 +53,3 @@ usage: vaults [-c {ethereum,polygon,avalanche,bsc,terra,fantom,moonriver,celo,he
 │ ROWAN-OSMO           │ Osmosis   │ Osmosis  │ 228.72 %  │ 1.834 M  │
 └──────────────────────┴───────────┴──────────┴───────────┴──────────┘
 ```
-

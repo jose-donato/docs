@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Aroon technical indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_model.py#L56)]
-
 ```python
 def aroon(data: pd.DataFrame, window: int = 25, scalar: int = 100) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe with OHLC price data | None | False |
@@ -29,11 +27,9 @@ def aroon(data: pd.DataFrame, window: int = 25, scalar: int = 100) -> pd.DataFra
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with aroon indicator |
-
 ---
 
 
@@ -43,13 +39,11 @@ def aroon(data: pd.DataFrame, window: int = 25, scalar: int = 100) -> pd.DataFra
 Plots Aroon indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/trend_indicators_view.py#L121)]
-
 ```python
 def display_aroon(data: pd.DataFrame, window: int = 25, scalar: int = 100, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe with OHLC price data | None | False |
@@ -61,9 +55,7 @@ def display_aroon(data: pd.DataFrame, window: int = 25, scalar: int = 100, symbo
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get futures data. [Source: Finviz]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L187)]
-
 ```python
 def get_futures(future_type: str = "Indices", sortby: str = "ticker", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | future_type | str | From the following: Indices, Energy, Metals, Meats, Grains, Softs, Bonds, Currencies | Indices | True |
@@ -23,9 +21,7 @@ def get_futures(future_type: str = "Indices", sortby: str = "ticker", ascend: bo
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Indices, Energy, Metals, Meats, Grains, Softs, Bonds, Currencies |
-
 ---

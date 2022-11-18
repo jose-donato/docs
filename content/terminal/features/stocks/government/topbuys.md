@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # topbuys
 
 Top buys for government trading. [Source: www.quiverquant.com]
-
 ### Usage 
 ```python
 usage: topbuys [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_MONTHS] [-l LIMIT] [--raw]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | gov |  | congress | True | congress, senate, house |

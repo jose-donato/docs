@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Analyzes quarterly contracts by ticker
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L482)]
-
 ```python
 def get_qtr_contracts(analysis: str = "total", limit: int = 5) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | analysis | str | How to analyze.  Either gives total amount or sorts by high/low momentum. | total | True |
@@ -28,11 +26,9 @@ def get_qtr_contracts(analysis: str = "total", limit: int = 5) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with tickers and total amount if total selected. |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_qtr_contracts(analysis: str = "total", limit: int = 5) -> pd.DataFrame
 Quarterly contracts [Source: quiverquant.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L446)]
-
 ```python
 def display_qtr_contracts(analysis: str = "total", limit: int = 5, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | analysis | str | Analysis to perform.  Either 'total', 'upmom' 'downmom' | total | True |
@@ -59,9 +53,7 @@ def display_qtr_contracts(analysis: str = "total", limit: int = 5, raw: bool = F
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

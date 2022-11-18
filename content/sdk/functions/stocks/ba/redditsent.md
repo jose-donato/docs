@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Finds posts related to a specific search term in Reddit.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L864)]
-
 ```python
 def get_posts_about(symbol: str, limit: int = 100, sortby: str = "relevance", time_frame: str = "week", full_search: bool = True, subreddits: str = "all") -> Tuple[pd.DataFrame, list, float]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to search for | None | False |
@@ -32,11 +30,9 @@ def get_posts_about(symbol: str, limit: int = 100, sortby: str = "relevance", ti
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 |  | Dataframe of submissions related to the search term,<br/>List of polarity scores,<br/>Average polarity score. |
-
 ---
 
 
@@ -46,13 +42,11 @@ def get_posts_about(symbol: str, limit: int = 100, sortby: str = "relevance", ti
 Plots Reddit sentiment about a search term. Prints table showing if display is True.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_view.py#L392)]
-
 ```python
 def display_redditsent(symbol: str, sortby: str = "relevance", limit: int = 100, graphic: bool = False, time_frame: str = "week", full_search: bool = True, subreddits: str = "all", display: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | The ticker symbol being search for in Reddit | None | False |
@@ -68,9 +62,7 @@ def display_redditsent(symbol: str, sortby: str = "relevance", limit: int = 100,
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

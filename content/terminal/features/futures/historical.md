@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # historical
 
 Display futures historical. [Source: YahooFinance]
-
 ### Usage 
 ```python
 usage: historical -t TICKER [-s START] [-e EXPIRY]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | Future ticker to display timeseries separated by comma when multiple, e.g.: BLK,QI |  | False | None |

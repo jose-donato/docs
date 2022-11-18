@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Gets volume weighted average price (VWAP)
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L139)]
-
 ```python
 def vwap(data: pd.Series, offset: int = 0) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of dates and prices | None | False |
@@ -28,11 +26,9 @@ def vwap(data: pd.Series, offset: int = 0) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with VWAP data |
-
 ---
 
 
@@ -42,13 +38,11 @@ def vwap(data: pd.Series, offset: int = 0) -> pd.DataFrame
 Plots VWMA technical indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_view.py#L121)]
-
 ```python
 def view_vwap(data: pd.DataFrame, symbol: str = "", start_date: str = None, end_date: str = None, offset: int = 0, interval: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
@@ -62,9 +56,7 @@ def view_vwap(data: pd.DataFrame, symbol: str = "", start_date: str = None, end_
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

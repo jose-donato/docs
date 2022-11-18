@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Request the orders list from Oanda.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L225)]
-
 ```python
 def order_history_request(order_state: str = "PENDING", order_count: int = 0, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | PENDING | True |
@@ -29,9 +27,7 @@ def order_history_request(order_state: str = "PENDING", order_count: int = 0, ac
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 
@@ -41,13 +37,11 @@ This function does not return anything
 List order history.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L153)]
-
 ```python
 def list_orders(accountID: str, order_state: str = "PENDING", order_count: int = 0) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
@@ -56,9 +50,7 @@ def list_orders(accountID: str, order_state: str = "PENDING", order_count: int =
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

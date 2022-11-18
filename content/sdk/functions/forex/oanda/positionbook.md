@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Request position book data for plotting.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L182)]
-
 ```python
 def positionbook_plot_data_request(instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
@@ -28,11 +26,9 @@ def positionbook_plot_data_request(instrument: Optional[str] = None, accountID: 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Position book data or False |
-
 ---
 
 
@@ -42,13 +38,11 @@ def positionbook_plot_data_request(instrument: Optional[str] = None, accountID: 
 Plot a position book for an instrument if Oanda provides one.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L116)]
-
 ```python
 def get_position_book(accountID: str, instrument: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
@@ -57,9 +51,7 @@ def get_position_book(accountID: str, instrument: str = "", external_axes: Optio
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns coin roadmap
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L236)]
-
 ```python
 def get_roadmap(symbol: str, ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check roadmap | None | False |
@@ -28,11 +26,9 @@ def get_roadmap(symbol: str, ascend: bool = True) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | roadmap |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_roadmap(symbol: str, ascend: bool = True) -> pd.DataFrame
 Plots coin roadmap
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L284)]
-
 ```python
 def display_roadmap(symbol: str, ascend: bool = True, limit: int = 5, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check roadmap | None | False |
@@ -59,9 +53,7 @@ def display_roadmap(symbol: str, ascend: bool = True, limit: int = 5, export: st
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

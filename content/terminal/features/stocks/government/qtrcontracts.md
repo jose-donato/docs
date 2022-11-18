@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # qtrcontracts
 
 Look at government contracts [Source: www.quiverquant.com]
-
 ### Usage 
 ```python
 usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of tickers to get | 5 | True | None |
@@ -21,7 +19,6 @@ usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 | raw | Print raw data. | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 07:33 (🦋) /stocks/gov/ $ qtrcontracts -l 20
    Quarterly Contracts
@@ -69,4 +66,3 @@ usage: qtrcontracts [-l LIMIT] [-a {total,upmom,downmom}] [--raw]
 │ PW   │ 4466721029.89   │
 └──────┴─────────────────┘
 ```
-

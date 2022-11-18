@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # grhist
 
 Plot historical option greeks.
-
 ### Usage 
 ```python
 usage: grhist -s STRIKE [-p] [-g {iv,gamma,theta,vega,delta,rho,premium}] [-c CHAIN_ID] [-r] [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | strike | Strike price to look at | None | False | None |

@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Gets IV surface for calls and puts for ticker
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L367)]
-
 ```python
 def get_iv_surface(symbol: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol to get | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of DTE, Strike and IV |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_iv_surface(symbol: str) -> pd.DataFrame
 Display vol surface
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L1128)]
-
 ```python
 def display_vol_surface(symbol: str, export: str = "", z: str = "IV", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get surface for | None | False |
@@ -57,9 +51,7 @@ def display_vol_surface(symbol: str, export: str = "", z: str = "IV", external_a
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

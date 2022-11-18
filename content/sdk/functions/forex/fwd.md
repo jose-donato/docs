@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Gets forward rates from fxempire
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/fxempire_model.py#L14)]
-
 ```python
 def get_forward_rates(to_symbol: str = "USD", from_symbol: str = "EUR") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | to_symbol | str | To currency | USD | True |
@@ -22,9 +20,7 @@ def get_forward_rates(to_symbol: str = "USD", from_symbol: str = "EUR") -> pd.Da
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing forward rates |
-
 ---

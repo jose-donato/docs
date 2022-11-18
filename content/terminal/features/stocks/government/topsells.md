@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # topsells
 
 Top sells for government trading. [Source: www.quiverquant.com]
-
 ### Usage 
 ```python
 usage: topsells [-g {congress,senate,house}] [-p PAST_TRANSACTIONS_MONTHS] [-l LIMIT] [--raw]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | gov |  | congress | True | congress, senate, house |

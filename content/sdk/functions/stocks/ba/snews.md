@@ -14,22 +14,18 @@ import TabItem from '@theme/TabItem';
 Get headlines sentiment using VADER model over time. [Source: Finnhub]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/behavioural_analysis/finnhub_model.py#L97)]
-
 ```python
 def get_headlines_sentiment(symbol: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker of company | None | False |
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 
@@ -39,13 +35,11 @@ This function does not return anything
 Display stock price and headlines sentiment using VADER model over time. [Source: Finnhub]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/behavioural_analysis/finnhub_view.py#L27)]
-
 ```python
 def display_stock_price_headlines_sentiment(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker of company | None | False |
@@ -54,9 +48,7 @@ def display_stock_price_headlines_sentiment(symbol: str, export: str = "", exter
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

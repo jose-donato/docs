@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get info about tokens on you ethereum blockchain balance. Eth balance, balance of all tokens which
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L196)]
-
 ```python
 def get_address_info(address: str, sortby: str = "index", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Blockchain balance e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699 | None | False |
@@ -29,11 +27,9 @@ def get_address_info(address: str, sortby: str = "index", ascend: bool = False) 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with list of tokens and their balances. |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_address_info(address: str, sortby: str = "index", ascend: bool = False) 
 Display info about tokens for given ethereum blockchain balance e.g. ETH balance,
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L21)]
-
 ```python
 def display_address_info(address: str, limit: int = 15, sortby: str = "index", ascend: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Ethereum balance. | None | False |
@@ -60,9 +54,7 @@ def display_address_info(address: str, limit: int = 15, sortby: str = "index", a
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

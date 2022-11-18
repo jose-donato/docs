@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # trans
 
 Perform Transformer Forecast: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.transformer_model.html
-
 ### Usage 
 ```python
 usage: trans [--d-model D_MODEL] [--nhead NHEAD] [--num_encoder_layers NUM_ENCODER_LAYERS] [--num_decoder_layers NUM_DECODER_LAYERS] [--dim_feedforward DIM_FEEDFORWARD] [--activation {relu,gelu}]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | d_model | Number of expected features in inputs. | 64 | True | None |
@@ -24,7 +22,6 @@ usage: trans [--d-model D_MODEL] [--nhead NHEAD] [--num_encoder_layers NUM_ENCOD
 | activation | Number of LSTM layers. | relu | True | relu, gelu |
 ---
 ## Examples
-
 ```python
 2022 Jul 23, 10:36 (🦋) /forecast/ $ load GME_20220719_123734.csv -a GME
 
@@ -49,6 +46,5 @@ Transformer model obtains MAPE: 13.11%
 │ 2022-07-25 00:00:00 │ $ 130.62   │
 └─────────────────────┴────────────┘
 ```
-
 ![trans](https://user-images.githubusercontent.com/72827203/180615423-948cc67c-cead-4e13-9cab-c348bc4c86ab.png)
 

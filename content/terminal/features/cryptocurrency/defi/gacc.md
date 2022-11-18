@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # gacc
 
 Displays terra blockchain account growth history. [Source: https://fcd.terra.dev/swagger]
-
 ### Usage 
 ```python
 usage: gacc [-l LIMIT] [--cumulative] [-k {active,total}]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of days to show | 90 | True | None |

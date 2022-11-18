@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Screener Overview.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finviz_compare_model.py#L53)]
-
 ```python
 def get_comparison_data(similar: List[str], data_type: str = "overview") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar |  | List of similar companies.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
@@ -22,9 +20,7 @@ def get_comparison_data(similar: List[str], data_type: str = "overview") -> None
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with overview, valuation, financial, ownership, performance or technical |
-
 ---

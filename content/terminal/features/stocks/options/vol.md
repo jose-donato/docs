@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # vol
 
 Plot volume. Volume refers to the number of contracts traded today.
-
 ### Usage 
 ```python
 usage: vol [-m MIN] [-M MAX] [-c] [-p]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | min | Min strike to plot | -1 | True | None |

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get data on selected indices over time [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_model.py#L672)]
-
 ```python
 def get_indices(indices: list, interval: str = "1d", start_date: int = None, end_date: int = None, column: str = "Adj Close", returns: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | indices | list | A list of indices to get data. Available indices can be accessed through economy.available_indices(). | None | False |
@@ -32,11 +30,9 @@ def get_indices(indices: list, interval: str = "1d", start_date: int = None, end
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Dataframe with historical data on selected indices. |
-
 ---
 
 
@@ -46,13 +42,11 @@ def get_indices(indices: list, interval: str = "1d", start_date: int = None, end
 Load (and show) the selected indices over time [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/yfinance_view.py#L30)]
-
 ```python
 def show_indices(indices: list, interval: str = "1d", start_date: int = None, end_date: int = None, column: str = "Adj Close", returns: bool = False, raw: bool = False, external_axes: Optional[List[axes]] = None, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | indices | list | A list of indices you wish to load (and plot).<br/>Available indices can be accessed through economy.available_indices(). | None | False |
@@ -67,11 +61,9 @@ def show_indices(indices: list, interval: str = "1d", start_date: int = None, en
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Plots the Series. |  |
-
 ---
 
 

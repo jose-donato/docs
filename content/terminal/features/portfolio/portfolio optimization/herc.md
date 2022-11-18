@@ -6,7 +6,6 @@ description: OpenBB Terminal Function
 # herc
 
 Builds a hierarchical equal risk contribution portfolio
-
 ### Usage 
 ```python
 usage: herc [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,tail}] [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,shrink}] [-rm {MV,MAD,GMD,MSV,VaR,CVaR,TG,EVaR,RG,CVRG,TGRG,WR,FLPM,SLPM,MDD,ADD,DaR,CDaR,EDaR,UCI,MDD_Rel,ADD_Rel,DaR_Rel,CDaR_Rel,EDaR_Rel,UCI_Rel}]
@@ -16,7 +15,6 @@ usage: herc [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | co_dependence | The codependence or similarity matrix used to build the distance metric and clusters. Possible values are: 'pearson': pearson correlation matrix 'spearman': spearman correlation matrix 'abs_pearson': absolute value of pearson correlation matrix 'abs_spearman': absolute value of spearman correlation matrix 'distance': distance correlation matrix 'mutual_info': mutual information codependence matrix 'tail': tail index codependence matrix | pearson | True | pearson, spearman, abs_pearson, abs_spearman, distance, mutual_info, tail |
@@ -48,7 +46,6 @@ usage: herc [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info
 | name | Save portfolio with personalized or default name | HERC_0 | True | None |
 ---
 ## Examples
-
 ```python
 2022 Apr 05, 14:40 (🦋) /portfolio/po/ $ herc
 
@@ -78,4 +75,3 @@ Annual (by 252) expected return: 18.09%
 Annual (by √252) volatility: 24.19%
 Sharpe ratio: 0.7401
 ```
-

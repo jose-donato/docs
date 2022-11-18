@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Center of gravity
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L189)]
-
 ```python
 def cg(values: pd.Series, window: int) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | values | pd.DataFrame | Data to use with close being titled values | None | False |
@@ -28,11 +26,9 @@ def cg(values: pd.Series, window: int) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
-
 ---
 
 
@@ -42,13 +38,11 @@ def cg(values: pd.Series, window: int) -> pd.DataFrame
 Plots center of gravity Indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L499)]
-
 ```python
 def display_cg(data: pd.Series, window: int = 14, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Series of values | None | False |
@@ -59,9 +53,7 @@ def display_cg(data: pd.Series, window: int = 14, symbol: str = "", export: str 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

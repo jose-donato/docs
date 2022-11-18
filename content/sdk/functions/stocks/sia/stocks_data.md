@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get stocks data based on a list of stocks and the finance key. The function searches for the
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/stockanalysis_model.py#L84)]
-
 ```python
 def get_stocks_data(symbols: List[str] = None, finance_key: str = "ncf", stocks_data: dict = None, period: str = "annual", symbol: str = "USD") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | list | A list of tickers that will be used to collect data for. | None | True |
@@ -25,9 +23,7 @@ def get_stocks_data(symbols: List[str] = None, finance_key: str = "ncf", stocks_
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary of filtered stocks data separated by financial statement |
-
 ---

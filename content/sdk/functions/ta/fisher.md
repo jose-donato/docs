@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Fisher Transform
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L165)]
-
 ```python
 def fisher(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
@@ -28,11 +26,9 @@ def fisher(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
-
 ---
 
 
@@ -42,13 +38,11 @@ def fisher(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 Plots Fisher Indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L406)]
-
 ```python
 def display_fisher(data: pd.DataFrame, window: int = 14, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
@@ -59,9 +53,7 @@ def display_fisher(data: pd.DataFrame, window: int = 14, symbol: str = "", expor
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

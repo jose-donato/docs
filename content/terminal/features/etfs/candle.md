@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # candle
 
 Shows historic data for an ETF
-
 ### Usage 
 ```python
 usage: candle [-p] [--sort {adjclose,open,close,high,low,volume,returns,logret}] [-r] [--raw] [-n NUM] [-t] [--ma MOV_AVG]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | plotly | Flag to show interactive plotly chart. | True | True | None |

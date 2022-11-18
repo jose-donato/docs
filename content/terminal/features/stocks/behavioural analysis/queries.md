@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # queries
 
 Print top related queries with this stock's query. [Source: Google]
-
 ### Usage 
 ```python
 usage: queries [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of top related queries to print. | 10 | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 10:38 (🦋) /stocks/ba/ $ queries
  Top AMZN's related queries
@@ -47,4 +44,3 @@ usage: queries [-l LIMIT]
 │ goog             │ 9%    │
 └──────────────────┴───────┘
 ```
-

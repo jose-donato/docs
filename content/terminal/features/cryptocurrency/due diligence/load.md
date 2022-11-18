@@ -6,7 +6,6 @@ description: OpenBB Terminal Function
 # load
 
 Load crypto currency to perform analysis on. Yahoo Finance is used as default source. Other sources can be used such as 'ccxt' or 'cg' with --source. If you select 'ccxt', you can then select any exchange with --exchange. You can also select a specific interval with --interval.
-
 ### Usage 
 ```python
 usage: load -c COIN [-s START]
@@ -15,7 +14,6 @@ usage: load -c COIN [-s START]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | coin | Coin to get. Must be coin symbol (e.g., btc, eth) | None | False | None |

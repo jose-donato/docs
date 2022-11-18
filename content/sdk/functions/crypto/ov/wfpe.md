@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Scrapes coin withdrawal fees per exchange
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L207)]
-
 ```python
 def get_crypto_withdrawal_fees(symbol: str) -> List[Any]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Coin to check withdrawal fees. By default bitcoin | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | List | - str: Overall statistics (exchanges, lowest, average and median)<br/>- pd.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_crypto_withdrawal_fees(symbol: str) -> List[Any]
 Coin withdrawal fees per exchange
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L86)]
-
 ```python
 def display_crypto_withdrawal_fees(symbol: str, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Coin to check withdrawal fees | None | False |
@@ -55,9 +49,7 @@ def display_crypto_withdrawal_fees(symbol: str, export: str = "") -> None
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

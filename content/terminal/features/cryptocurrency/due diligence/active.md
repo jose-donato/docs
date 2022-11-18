@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # active
 
 Display active blockchain addresses over time [Source: https://glassnode.org]
-
 ### Usage 
 ```python
 usage: active [-i {24h,1w,1month}] [-s SINCE] [-u UNTIL]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | interval | Frequency interval. Default: 24h | 24h | True | 24h, 1w, 1month |

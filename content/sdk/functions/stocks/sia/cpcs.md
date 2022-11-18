@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get number of companies per country in a specific sector (and specific market cap).
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L360)]
-
 ```python
 def get_companies_per_country_in_sector(sector: str = "Technology", mktcap: str = "Large", exclude_exchanges: bool = True) -> dict
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sector | str | Select sector to get number of companies by each country | Technology | True |
@@ -29,11 +27,9 @@ def get_companies_per_country_in_sector(sector: str = "Technology", mktcap: str 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary of countries and number of companies in a specific sector |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_companies_per_country_in_sector(sector: str = "Technology", mktcap: str 
 Display number of companies per country in a specific sector. [Source: Finance Database]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_view.py#L675)]
-
 ```python
 def display_companies_per_country_in_sector(sector: str = "Technology", mktcap: str = "Large", exclude_exchanges: bool = True, export: str = "", raw: bool = False, max_countries_to_display: int = 15, min_pct_to_display_country: float = 0.015, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sector | str | Select sector to get number of companies by each country | Technology | True |
@@ -63,9 +57,7 @@ def display_companies_per_country_in_sector(sector: str = "Technology", mktcap: 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

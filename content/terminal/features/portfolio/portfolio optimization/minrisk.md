@@ -6,7 +6,6 @@ description: OpenBB Terminal Function
 # minrisk
 
 Minimizes portfolio's risk
-
 ### Usage 
 ```python
 usage: minrisk [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,shrink}] [-de SMOOTHING_FACTOR_EWMA] [-vs SHORT_ALLOCATION] [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-mt NAN_FILL_METHOD] [-ct CATEGORIES]
@@ -15,7 +14,6 @@ usage: minrisk [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-c
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | target_return | Constraint on minimum level of portfolio's return | -1 | True | None |
@@ -41,7 +39,6 @@ usage: minrisk [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-c
 | name | Save portfolio with personalized or default name | MINRISK_0 | True | None |
 ---
 ## Examples
-
 ```python
 2022 Apr 05, 13:45 (🦋) /portfolio/po/ $ minrisk
 
@@ -71,4 +68,3 @@ Annual (by 252) expected return: 11.77%
 Annual (by √252) volatility: 22.03%
 Sharpe ratio: 0.5256
 ```
-

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Gets Expected Shortfall for specified stock dataframe.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L355)]
-
 ```python
 def get_es(data: pd.DataFrame, use_mean: bool = False, distribution: str = "normal", percentile: Union[float, int] = 99.9, portfolio: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Data dataframe | None | False |
@@ -31,11 +29,9 @@ def get_es(data: pd.DataFrame, use_mean: bool = False, distribution: str = "norm
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with Expected Shortfall per percentile |
-
 ---
 
 
@@ -45,13 +41,11 @@ def get_es(data: pd.DataFrame, use_mean: bool = False, distribution: str = "norm
 Prints table showing expected shortfall.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1066)]
-
 ```python
 def display_es(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, distribution: str = "normal", percentile: float = 99.9, portfolio: bool = False) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Data dataframe | None | False |
@@ -63,9 +57,7 @@ def display_es(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, dis
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

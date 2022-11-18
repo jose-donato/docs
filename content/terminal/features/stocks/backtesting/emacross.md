@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # emacross
 
 Cross between a long and a short Exponential Moving Average.
-
 ### Usage 
 ```python
 usage: emacross [-l LONG] [-s SHORT] [--spy] [--no_bench] [--no_short]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | long | Long EMA period | 50 | True | None |

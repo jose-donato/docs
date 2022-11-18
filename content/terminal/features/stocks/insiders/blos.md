@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # blos
 
 Print latest officer sales 100k. [Source: OpenInsider]
-
 ### Usage 
 ```python
 usage: blos [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 07:51 (🦋) /stocks/ins/ $ blos
                                                                                Insider Data
@@ -65,4 +62,3 @@ usage: blos [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
-

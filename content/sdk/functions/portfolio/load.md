@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get PortfolioEngine object
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2360)]
-
 ```python
 def generate_portfolio(transactions_file_path: str, benchmark_symbol: str = "SPY", full_shares: bool = False, risk_free_rate: float = 0) -> portfolio_model.PortfolioEngine
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | transactions_file_path | str | Path to transactions file | None | False |
@@ -24,9 +22,7 @@ def generate_portfolio(transactions_file_path: str, benchmark_symbol: str = "SPY
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations |
-
 ---

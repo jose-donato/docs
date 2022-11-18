@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # autoces
 
 Perform Automatic Complex Exponential Smoothing forecast: https://nixtla.github.io/statsforecast/models.html#autoces
-
 ### Usage 
 ```python
 usage: autoces
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 2022 Nov 07, 16:42 (🦋) /stocks/ $ forecast
 
@@ -43,4 +40,3 @@ AutoCES obtains MAPE: 3.09%
 │ 2022-11-11 │ 139.01     │
 └────────────┴────────────┘
 ```
-

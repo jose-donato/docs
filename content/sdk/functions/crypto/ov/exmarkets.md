@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 List markets by exchange ID [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L329)]
-
 ```python
 def get_exchanges_market(exchange_id: str = "binance", symbols: str = "USD", sortby: str = "pair", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | exchange_id | str | identifier of exchange e.g for Binance Exchange -> binance | binance | True |
@@ -30,11 +28,9 @@ def get_exchanges_market(exchange_id: str = "binance", symbols: str = "USD", sor
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | pair, base_currency_name, quote_currency_name, market_url,<br/>category, reported_volume_24h_share, trust_score, |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_exchanges_market(exchange_id: str = "binance", symbols: str = "USD", sor
 Get all markets for given exchange [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L267)]
-
 ```python
 def display_exchange_markets(exchange: str = "binance", sortby: str = "pair", ascend: bool = True, limit: int = 15, links: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | exchange | str | Exchange identifier e.g Binance | binance | True |
@@ -62,9 +56,7 @@ def display_exchange_markets(exchange: str = "binance", sortby: str = "pair", as
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

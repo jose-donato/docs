@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Gets value at risk for specified stock dataframe.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L224)]
-
 ```python
 def get_var(data: pd.DataFrame, use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: Union[int, float] = 99.9, portfolio: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Data dataframe | None | False |
@@ -32,11 +30,9 @@ def get_var(data: pd.DataFrame, use_mean: bool = False, adjusted_var: bool = Fal
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with Value at Risk per percentile |
-
 ---
 
 
@@ -46,13 +42,11 @@ def get_var(data: pd.DataFrame, use_mean: bool = False, adjusted_var: bool = Fal
 Prints table showing VaR of dataframe.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1006)]
-
 ```python
 def display_var(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: float = 99.9, data_range: int = 0, portfolio: bool = False) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Dataframe | Data dataframe | None | False |
@@ -66,9 +60,7 @@ def display_var(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, ad
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

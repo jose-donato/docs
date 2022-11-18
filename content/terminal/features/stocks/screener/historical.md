@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # historical
 
 Historical price comparison between similar companies [Source: Yahoo Finance]
-
 ### Usage 
 ```python
 usage: historical [-l LIMIT] [-n] [-s START] [-t {o,h,l,c,a}]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of the most shorted stocks to retrieve. | 10 | True | None |

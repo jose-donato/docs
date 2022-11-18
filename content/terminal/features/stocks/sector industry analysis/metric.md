@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # metric
 
 Visualize a particular metric with the filters selected
-
 ### Usage 
 ```python
 usage: metric -m {roa,roe,cr,qr,de,tc,tcs,tr,rps,rg,eg,pm,gp,gm,ocf,om,fcf,td,ebitda,ebitdam,rec,mc,fte,er,bv,ss,pb,beta,fs,peg,ev,fpe} [-l LIMIT] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | metric | Metric to visualize | None | False | roa, roe, cr, qr, de, tc, tcs, tr, rps, rg, eg, pm, gp, gm, ocf, om, fcf, td, ebitda, ebitdam, rec, mc, fte, er, bv, ss, pb, beta, fs, peg, ev, fpe |

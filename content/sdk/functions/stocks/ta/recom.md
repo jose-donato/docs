@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get tradingview recommendation based on technical indicators
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_model.py#L56)]
-
 ```python
 def get_tradingview_recommendation(symbol: str, screener: str = "america", exchange: str = "", interval: str = "") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get the recommendation from tradingview based on technical indicators | None | False |
@@ -30,11 +28,9 @@ def get_tradingview_recommendation(symbol: str, screener: str = "america", excha
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of tradingview recommendations based on technical indicators |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_tradingview_recommendation(symbol: str, screener: str = "america", excha
 Print tradingview recommendation based on technical indicators
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_view.py#L17)]
-
 ```python
 def print_recommendation(symbol: str, screener: str = "america", exchange: str = "", interval: str = "", export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get tradingview recommendation based on technical indicators | None | False |
@@ -61,9 +55,7 @@ def print_recommendation(symbol: str, screener: str = "america", exchange: str =
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

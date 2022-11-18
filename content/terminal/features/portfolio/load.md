@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # load
 
 Load your portfolio transactions.
-
 ### Usage 
 ```python
 usage: load -f FILE [-n NAME] [-r RISK_FREE_RATE]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | file | The file to be loaded | None | False | None |
@@ -21,7 +19,6 @@ usage: load -f FILE [-n NAME] [-r RISK_FREE_RATE]
 | risk_free_rate | Set the risk free rate. | 0 | True | None |
 ---
 ## Examples
-
 ```python
 2022 May 13, 05:00 (🦋) /portfolio/ $ load Public_Equity_Orderbook.xlsx
 
@@ -113,4 +110,3 @@ Risk Free Rate: 0.00%
 │ 2022-05-02 │ YUM   │ STOCK │ Consumer Cyclical      │ Restaurants                         │ United States │ North America │ 115.76   │ 11       │ 40   │ 0       │ 1273.36    │ 1    │ USD      │
 └────────────┴───────┴───────┴────────────────────────┴─────────────────────────────────────┴───────────────┴───────────────┴──────────┴──────────┴──────┴─────────┴────────────┴──────┴──────────┘
 ```
-

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Performs Theta forecasting
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/theta_model.py#L29)]
-
 ```python
 def get_theta_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", seasonal: str = "M", seasonal_periods: int = 7, n_predict: int = 5, start_window: float = 0.85, forecast_horizon: int = 5) -> Tuple[Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[float], Optional[float], Optional[type[darts.models.forecasting.theta.Theta]]]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, np.ndarray] | Input data. | None | False |
@@ -33,11 +31,9 @@ def get_theta_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "c
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[List[TimeSeries], List[TimeSeries], List[TimeSeries], float, float, type[Theta]] | Adjusted Data series,<br/>Historical forecast by best theta,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best Theta,<br/>Theta Model. |
-
 ---
 
 
@@ -47,13 +43,11 @@ def get_theta_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "c
 Display Theta forecast
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/theta_view.py#L21)]
-
 ```python
 def display_theta_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str = "close", dataset_name: str = "", seasonal: str = "M", seasonal_periods: int = 7, n_predict: int = 5, start_window: float = 0.85, forecast_horizon: int = 5, export: str = "", residuals: bool = False, forecast_only: bool = False, start_date: Optional[datetime.datetime] = None, end_date: Optional[datetime.datetime] = None, naive: bool = False, export_pred_raw: bool = False, external_axes: Optional[List[axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, np.array] | Data to forecast | None | False |
@@ -74,9 +68,7 @@ def display_theta_forecast(data: Union[pd.DataFrame, pd.Series], target_column: 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

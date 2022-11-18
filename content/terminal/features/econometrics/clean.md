@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # clean
 
 Clean a dataset by filling and dropping NaN values.
-
 ### Usage 
 ```python
 usage: clean [-n {}] [--fill {rfill,cfill,rbfill,cbfill,rffill,bffill}] [-d {rdrop,cdrop}]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | name | The name of the dataset you want to clean up | None | True | None |
@@ -21,7 +19,6 @@ usage: clean [-n {}] [--fill {rfill,cfill,rbfill,cbfill,rffill,bffill}] [-d {rdr
 | drop | The method of dropping NaNs. This either has the option rdrop (drop rows that contain NaNs) or cdrop (drop columns that contain NaNs) |  | True | rdrop, cdrop |
 ---
 ## Examples
-
 ```python
 txt
 2022 Feb 24, 04:58 (🦋) /econometrics/ $ show thesis
@@ -50,4 +47,3 @@ txt
 │ ('AAR Corp', Timestamp('2018-04-01 00:00:00')) │ 942.70         │ 1524.70 │ 177.20 │ 9.10      │ 18.10  │ 333.30              │ 473.50  │ 936.30 │ 2.20             │
 └────────────────────────────────────────────────┴────────────────┴─────────┴────────┴───────────┴────────┴─────────────────────┴─────────┴────────┴──────────────────┘
 ```
-

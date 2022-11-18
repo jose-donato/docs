@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Returns the price of a cryptocurrency
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L180)]
-
 ```python
 def get_close_price(symbol: str, start_date: str = "2010-01-01", end_date: str = None, print_errors: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto to check close price (BTC or ETH) | None | False |
@@ -24,9 +22,7 @@ def get_close_price(symbol: str, start_date: str = "2010-01-01", end_date: str =
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | price over time |
-
 ---

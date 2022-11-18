@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Performs Block RNN forecasting
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/brnn_model.py#L22)]
-
 ```python
 def get_brnn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, train_split: float = 0.85, past_covariates: str = None, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, model_type: str = "LSTM", n_rnn_layers: int = 1, dropout: float = 0.0, batch_size: int = 32, n_epochs: int = 100, learning_rate: float = 0.001, model_save_name: str = "brnn_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple[Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[List[darts.timeseries.TimeSeries]], Optional[float], Optional[type[darts.models.forecasting.forecasting_model.GlobalForecastingModel]]]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
@@ -43,11 +41,9 @@ def get_brnn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "cl
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | E501 | Adjusted Data series,<br/>Historical forecast by best RNN model,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best BRNN Model. |
-
 ---
 
 
@@ -57,13 +53,11 @@ def get_brnn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "cl
 Display BRNN forecast
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/brnn_view.py#L20)]
-
 ```python
 def display_brnn_forecast(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", dataset_name: str = "", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, model_type: str = "LSTM", n_rnn_layers: int = 1, dropout: float = 0.0, batch_size: int = 16, n_epochs: int = 100, learning_rate: float = 0.001, model_save_name: str = "rnn_model", force_reset: bool = True, save_checkpoints: bool = True, export: str = "", residuals: bool = False, forecast_only: bool = False, start_date: Optional[datetime.datetime] = None, end_date: Optional[datetime.datetime] = None, naive: bool = False, export_pred_raw: bool = False, external_axes: Optional[List[axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
@@ -94,9 +88,7 @@ def display_brnn_forecast(data: Union[pd.Series, pd.DataFrame], target_column: s
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

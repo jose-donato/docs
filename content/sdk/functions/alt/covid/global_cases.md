@@ -8,27 +8,22 @@ description: OpenBB SDK Function
 Get historical cases for given country.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L26)]
-
 ```python
 def get_global_cases(country: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to search for | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical cases |
-
 ---
 ## Examples
-
 Dataframe of historical cases for United States
 
 

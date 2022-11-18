@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # plot
 
 Plot data based on the index
-
 ### Usage 
 ```python
 usage: plot [-v VALUES]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | values | Dataset.column values to be displayed in a plot | None | True | None |
 ---
 ## Examples
-
 ```python
 2022 Jun 01, 06:45 (🦋) /econometrics/ $ load macrodata -a us_macro
 
@@ -55,6 +52,5 @@ Successfully updated 'us_macro' index to be 'year'
 
 2022 Jun 01, 06:44 (🦋) /econometrics/ $ plot us_macro.unemp
 ```
-
 ![unemp_data_us](https://user-images.githubusercontent.com/46355364/156058283-3888c6a8-a9a7-41c6-a091-b94b7946679b.png)
 

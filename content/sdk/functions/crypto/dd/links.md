@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Returns asset's links
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L197)]
-
 ```python
 def get_links(symbol: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check links | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | asset links |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_links(symbol: str) -> pd.DataFrame
 Prints table showing coin links
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L249)]
-
 ```python
 def display_links(symbol: str, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check links | None | False |
@@ -56,9 +50,7 @@ def display_links(symbol: str, export: str = "") -> None
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

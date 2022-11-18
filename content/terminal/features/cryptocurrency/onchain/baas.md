@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # baas
 
 Display average bid, ask prices, spread for given crypto pair for chosen time period [Source: https://graphql.bitquery.io/]
-
 ### Usage 
 ```python
 usage: baas [-c COIN] [-vs VS] [-l LIMIT] [-s {date,baseCurrency,quoteCurrency,dailySpread,averageBidPrice,averageAskPrice}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | coin | ERC20 token symbol or address. | None | True | None |

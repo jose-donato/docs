@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # dwat
 
 Show autocorrelation tests from Durbin-Watson. Needs OLS to be run in advance with independent and dependent variables
-
 ### Usage 
 ```python
 usage: dwat [-p]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | plot | Plot the residuals | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 24, 05:59 (🦋) /econometrics/ $ ols -d adj_close-msft -i adj_close-aapl -i adj_close-googl -i adj_close-tsla
                             OLS Regression Results
@@ -56,6 +53,5 @@ strong multicollinearity or other numerical problems.
 The result 0.04 is outside the range 1.5 and 2.5 and therefore autocorrelation can be problematic.
 Please consider lags of the dependent or independent variable.
 ```
-
 ![durbin_watson example](https://user-images.githubusercontent.com/46355364/155514788-caaa65a2-1f5f-41d0-8db2-06e682d5a53e.png)
 

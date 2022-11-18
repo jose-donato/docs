@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Gets news. [Source: SeekingAlpha]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L199)]
-
 ```python
 def get_news(news_type: str = "Top-News", limit: int = 5) -> List
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | news_type | str | From: Top-News, On-The-Move, Market-Pulse, Notable-Calls, Buybacks, Commodities, Crypto, Issuance, Global,<br/>Guidance, IPOs, SPACs, Politics, M-A, Consumer, Energy, Financials, Healthcare, MLPs, REITs, Technology | Top-News | True |
@@ -22,9 +20,7 @@ def get_news(news_type: str = "Top-News", limit: int = 5) -> List
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | List[dict] | List of dict news |
-
 ---

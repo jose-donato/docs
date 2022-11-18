@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get supply history of the Terra ecosystem
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_model.py#L14)]
-
 ```python
 def get_luna_supply_stats(supply_type: str = "lunaSupplyChallengeStats", days: int = 30) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | supply_type | str | Supply type to unpack json | lunaSupplyChallengeStats | True |
@@ -28,11 +26,9 @@ def get_luna_supply_stats(supply_type: str = "lunaSupplyChallengeStats", days: i
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of supply history data |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_luna_supply_stats(supply_type: str = "lunaSupplyChallengeStats", days: i
 Plots and prints table showing Luna circulating supply stats
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/smartstake_view.py#L29)]
-
 ```python
 def display_luna_circ_supply_change(days: int = 30, export: str = "", supply_type: str = "lunaSupplyChallengeStats", limit: int = 5, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | days | int | Number of days | 30 | True |
@@ -59,9 +53,7 @@ def display_luna_circ_supply_change(days: int = 30, export: str = "", supply_typ
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

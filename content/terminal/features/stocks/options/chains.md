@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # chains
 
 Display option chains
-
 ### Usage 
 ```python
 usage: chains [-c] [-p] [-m MIN_SP] [-M MAX_SP] [-d TO_DISPLAY]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | calls | Flag to show calls only | False | True | None |

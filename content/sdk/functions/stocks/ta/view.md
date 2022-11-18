@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get finviz image for given ticker
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_model.py#L16)]
-
 ```python
 def get_finviz_image(symbol: str) -> bytes
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | bytes | Image in byte format |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_finviz_image(symbol: str) -> bytes
 View finviz image for ticker
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/finviz_view.py#L22)]
-
 ```python
 def view(symbol: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
@@ -55,9 +49,7 @@ def view(symbol: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]] 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

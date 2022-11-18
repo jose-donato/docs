@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Calculate test statistics for unit roots
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L135)]
-
 ```python
 def get_unitroot(data: pd.DataFrame, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | DataFrame of target variable | None | False |
@@ -29,11 +27,9 @@ def get_unitroot(data: pd.DataFrame, fuller_reg: str = "c", kpss_reg: str = "c")
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with results of ADF test and KPSS test |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_unitroot(data: pd.DataFrame, fuller_reg: str = "c", kpss_reg: str = "c")
 Prints table showing unit root test calculations
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L803)]
-
 ```python
 def display_unitroot(data: pd.DataFrame, target: str, fuller_reg: str = "c", kpss_reg: str = "c", export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | DataFrame | None | False |
@@ -60,9 +54,7 @@ def display_unitroot(data: pd.DataFrame, target: str, fuller_reg: str = "c", kps
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

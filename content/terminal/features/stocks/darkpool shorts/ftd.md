@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # ftd
 
 Prints latest fails-to-deliver data. [Source: SEC]
-
 ### Usage 
 ```python
 usage: ftd [-s START] [-e END] [-n N_NUM] [--raw]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | start | start of datetime to see FTD | 2022-09-19 | True | None |

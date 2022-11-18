@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns basic coin information for all coins from CoinPaprika API [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L183)]
-
 ```python
 def get_coins_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | str | Comma separated quotes to return e.g quotes=USD,BTC | USD | True |
@@ -29,11 +27,9 @@ def get_coins_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = Tr
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | rank, name, symbol, price, volume_24h, circulating_supply, total_supply,<br/>max_supply, market_cap, beta_value, ath_price, |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_coins_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = Tr
 Displays basic coin information for all coins from CoinPaprika API. [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L159)]
-
 ```python
 def display_all_coins_info(symbol: str, sortby: str = "rank", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Quoted currency | None | False |
@@ -61,9 +55,7 @@ def display_all_coins_info(symbol: str, sortby: str = "rank", ascend: bool = Tru
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

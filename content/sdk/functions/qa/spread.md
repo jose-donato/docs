@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Standard Deviation and Variance
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L41)]
-
 ```python
 def get_spread(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | DataFrame of targeted data | None | False |
@@ -28,11 +26,9 @@ def get_spread(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame, pd.D
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dataframe of rolling standard deviation,<br/>Dataframe of rolling variance |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_spread(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame, pd.D
 Plots rolling spread
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L135)]
-
 ```python
 def display_spread(data: pd.DataFrame, target: str, symbol: str = "", window: int = 14, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe | None | False |
@@ -61,9 +55,7 @@ def display_spread(data: pd.DataFrame, target: str, symbol: str = "", window: in
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Equally weighted portfolio, where weight = 1/# of symbols
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L167)]
-
 ```python
 def get_equal_weights(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", value: float = 1.0) -> Tuple[Dict[str, float], pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio stocks | None | False |
@@ -30,9 +28,7 @@ def get_equal_weights(symbols: List[str], interval: str = "3y", start_date: str 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Dict[str, float], pd.DataFrame] | Dictionary of weights where keys are the tickers, dataframe of stock returns |
-
 ---

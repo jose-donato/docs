@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Display fails-to-deliver data for a given ticker. [Source: SEC]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_model.py#L59)]
-
 ```python
 def get_fails_to_deliver(symbol: str, start_date: str = None, end_date: str = None, limit: int = 0) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker | None | False |
@@ -30,11 +28,9 @@ def get_fails_to_deliver(symbol: str, start_date: str = None, end_date: str = No
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Fail to deliver data |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_fails_to_deliver(symbol: str, start_date: str = None, end_date: str = No
 Display fails-to-deliver data for a given ticker. [Source: SEC]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/sec_view.py#L28)]
-
 ```python
 def fails_to_deliver(symbol: str, data: pd.DataFrame = None, start_date: str = None, end_date: str = None, limit: int = 0, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker | None | False |
@@ -64,9 +58,7 @@ def fails_to_deliver(symbol: str, data: pd.DataFrame = None, start_date: str = N
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

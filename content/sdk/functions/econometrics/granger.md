@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Calculate granger tests
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L210)]
-
 ```python
 def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Series, lags: int = 3) -> dict
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | dependent_series | Series | The series you want to test Granger Causality for. | None | False |
@@ -29,11 +27,9 @@ def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Se
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary containing results of Granger test |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Se
 Show granger tests
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L247)]
-
 ```python
 def display_granger(dependent_series: pd.Series, independent_series: pd.Series, lags: int = 3, confidence_level: float = 0.05, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | dependent_series | Series | The series you want to test Granger Causality for. | None | False |
@@ -60,9 +54,7 @@ def display_granger(dependent_series: pd.Series, independent_series: pd.Series, 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

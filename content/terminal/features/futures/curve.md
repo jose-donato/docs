@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # curve
 
 Display futures curve. [Source: YahooFinance]
-
 ### Usage 
 ```python
 usage: curve -t Futures symbol
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | Future curve to be selected |  | False | None |

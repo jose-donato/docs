@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # signal
 
 Add price signal to dataset based on closing price. 1 if the signal is that short term price will go up as compared to the long term. 0 if the signal is that short term price will go down as compared to the long term.
-
 ### Usage 
 ```python
 usage: signal
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 (🦋) /forecast/ $ show TSLA
 TSLA dataset has shape (row, column): (611, 7)
@@ -118,4 +115,3 @@ TSLA dataset has shape (row, column): (611, 8)
 │ 29 │ 2020-02-13 │ 148.37 │ 163.60 │ 147.00 │ 160.80 │ 160.80    │ 131446500 │ 1.00   │
 └────┴────────────┴────────┴────────┴────────┴────────┴───────────┴───────────┴────────┘
 ```
-

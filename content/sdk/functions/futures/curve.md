@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get curve futures [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_model.py#L118)]
-
 ```python
 def get_curve_futures(symbol: str = "") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | symbol to get forward curve |  | True |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dictionary with sector weightings allocation |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_curve_futures(symbol: str = "") -> pd.DataFrame
 Display curve futures [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/futures/yfinance_view.py#L232)]
-
 ```python
 def display_curve(symbol: str, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Curve future symbol to display | None | False |
@@ -57,9 +51,7 @@ def display_curve(symbol: str, raw: bool = False, export: str = "", external_axe
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

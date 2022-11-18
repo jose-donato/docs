@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get interest over time from google api [Source: google].
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_model.py#L16)]
-
 ```python
 def get_mentions(symbol: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of interest over time |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_mentions(symbol: str) -> pd.DataFrame
 Plots weekly bars of stock's interest over time. other users watchlist. [Source: Google].
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/google_view.py#L26)]
-
 ```python
 def display_mentions(symbol: str, start_date: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol | None | False |
@@ -57,9 +51,7 @@ def display_mentions(symbol: str, start_date: str = "", export: str = "", extern
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

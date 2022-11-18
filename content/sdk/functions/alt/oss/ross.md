@@ -14,22 +14,17 @@ import TabItem from '@theme/TabItem';
 Get startups from ROSS index [Source: https://runacap.com/].
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L104)]
-
 ```python
 def get_startups() -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 This function does not take any parameters.
-
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | list of startups |
-
 ---
 
 
@@ -39,13 +34,11 @@ This function does not take any parameters.
 Plots list of startups from ross index [Source: https://runacap.com/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_view.py#L25)]
-
 ```python
 def display_rossindex(limit: int = 10, sortby: str = "Stars AGR [%]", ascend: bool = False, show_chart: bool = False, show_growth: bool = True, chart_type: str = "stars", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of startups to search | 10 | True |
@@ -59,9 +52,7 @@ def display_rossindex(limit: int = 10, sortby: str = "Stars AGR [%]", ascend: bo
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Calculate AD oscillator technical indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L46)]
-
 ```python
 def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int = 10) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
@@ -30,11 +28,9 @@ def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int =
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with technical indicator |
-
 ---
 
 
@@ -44,13 +40,11 @@ def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int =
 Plots AD Osc Indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L141)]
-
 ```python
 def display_adosc(data: pd.DataFrame, fast: int = 3, slow: int = 10, use_open: bool = False, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
@@ -63,9 +57,7 @@ def display_adosc(data: pd.DataFrame, fast: int = 3, slow: int = 10, use_open: b
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

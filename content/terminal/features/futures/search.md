@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # search
 
 Search futures. [Source: YahooFinance]
-
 ### Usage 
 ```python
 usage: search [-e {NYB,CMX,CME,CBT,NYM}] [-c {metals,agriculture,index,hydrocarbon,bonds,currency}] [-d DESCRIPTION [DESCRIPTION ...]]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | exchange | Select the exchange where the future exists |  | True | NYB, CMX, CME, CBT, NYM |

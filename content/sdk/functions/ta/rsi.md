@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Relative strength index
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L93)]
-
 ```python
 def rsi(data: pd.Series, window: int = 14, scalar: float = 100, drift: int = 1) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Dataframe of prices | None | False |
@@ -30,11 +28,9 @@ def rsi(data: pd.Series, window: int = 14, scalar: float = 100, drift: int = 1) 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
-
 ---
 
 
@@ -44,13 +40,11 @@ def rsi(data: pd.Series, window: int = 14, scalar: float = 100, drift: int = 1) 
 Plots RSI Indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L219)]
-
 ```python
 def display_rsi(data: pd.Series, window: int = 14, scalar: float = 100.0, drift: int = 1, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Values to input | None | False |
@@ -63,9 +57,7 @@ def display_rsi(data: pd.Series, window: int = 14, scalar: float = 100.0, drift:
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns orderbook for a coin in a given exchange
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L46)]
-
 ```python
 def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> Dict[str, Any]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | exchange | str | exchange id | None | False |
@@ -29,11 +27,9 @@ def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> Dict[str, Any]
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, Any] | With bids and asks |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> Dict[str, Any]
 Plots order book for a coin in a given exchange
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L19)]
-
 ```python
 def display_order_book(exchange: str, symbol: str, to_symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | exchange | str | exchange id | None | False |
@@ -59,9 +53,7 @@ def display_order_book(exchange: str, symbol: str, to_symbol: str, export: str =
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

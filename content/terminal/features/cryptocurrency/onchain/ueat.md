@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # ueat
 
 Display number of unique ethereum addresses which made a transaction in given time interval, [Source: https://graphql.bitquery.io/]
-
 ### Usage 
 ```python
 usage: ueat [-l LIMIT] [-s {date,uniqueSenders,transactions,averageGasPrice,mediumGasPrice,maximumGasPrice}] [-i {day,month,week}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number records. (Maximum available time period is 90 days.Depending on chosen time period, display N records will be recalculated. E.g.For interval: month, and number: 10, period of calculation equals to 300, but because of max days limit: 90, it will only return last 3 months (3 records). | 10 | True | None |

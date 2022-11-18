@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Request order book data for plotting.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L137)]
-
 ```python
 def orderbook_plot_data_request(instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
@@ -28,11 +26,9 @@ def orderbook_plot_data_request(instrument: Optional[str] = None, accountID: str
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Order book data or False |
-
 ---
 
 
@@ -42,13 +38,11 @@ def orderbook_plot_data_request(instrument: Optional[str] = None, accountID: str
 Plot the orderbook for the instrument if Oanda provides one.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L79)]
-
 ```python
 def get_order_book(accountID: str, instrument: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
@@ -57,9 +51,7 @@ def get_order_book(accountID: str, instrument: str = "", external_axes: Optional
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

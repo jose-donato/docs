@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # redditsent
 
 Determine general Reddit sentiment about a ticker. [Source: Reddit]
-
 ### Usage 
 ```python
 usage: redditsent [-s {relevance,hot,top,new,comments}] [-c COMPANY] [--subreddits SUBREDDITS] [-l LIMIT] [-t {hour,day,week,month,year,all}] [--full] [-g] [-d]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | sort | search sorting type | relevance | True | relevance, hot, top, new, comments |
@@ -26,7 +24,6 @@ usage: redditsent [-s {relevance,hot,top,new,comments}] [-c COMPANY] [--subreddi
 | display | Print table of sentiment values | False | True | None |
 ---
 ## Examples
-
 ```python
 txt
 redditsent -c Google --subreddits tech,stocks --full
@@ -36,4 +33,3 @@ Analyzing each post...
 100%|███████████████████████████████████████████████████████████████████████| 10/10 [00:0400:00,  2.07it/s]
 Sentiment Analysis for Google is 0.7552
 ```
-

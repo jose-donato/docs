@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # historical
 
 Historical price comparison between similar companies.
-
 ### Usage 
 ```python
 usage: historical [-t {o,h,l,c,a}] [-n] [-s START]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | type_candle | Candle data to use: o-open, h-high, l-low, c-close, a-adjusted close. | a | True | o, h, l, c, a |

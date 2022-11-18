@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get list of crypto, fiats, commodity exchange rates from CoinGecko API [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L398)]
-
 ```python
 def get_exchange_rates(sortby: str = "Name", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sortby | str | Key by which to sort data | Name | True |
@@ -28,11 +26,9 @@ def get_exchange_rates(sortby: str = "Name", ascend: bool = False) -> pd.DataFra
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Index, Name, Unit, Value, Type |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_exchange_rates(sortby: str = "Name", ascend: bool = False) -> pd.DataFra
 Shows  list of crypto, fiats, commodity exchange rates. [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L200)]
-
 ```python
 def display_exchange_rates(sortby: str = "Name", ascend: bool = False, limit: int = 15, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 15 | True |
@@ -58,9 +52,7 @@ def display_exchange_rates(sortby: str = "Name", ascend: bool = False, limit: in
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

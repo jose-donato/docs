@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # delete
 
 The column you want to delete from a dataset.
-
 ### Usage 
 ```python
 usage: delete [--delete DELETE]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | delete | The columns you want to delete from a dataset. Use format: dataset.column or multiple with dataset.column,datasetb.column2 | None | True | None |
 ---
 ## Examples
-
 ```python
 (🦋) /forecast/ $ load TSLA.csv
 
@@ -84,4 +81,3 @@ TSLA dataset has shape (row, column): (611, 7)
 │ 9 │ 2020-01-15 │ 105.95 │ 107.57 │ 103.36 │ 103.70 │ 103.70    │ 86844000  │
 └───┴────────────┴────────┴────────┴────────┴────────┴───────────┴───────────┘
 ```
-

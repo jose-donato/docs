@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Load crypto currency to get data for
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/cryptocurrency_helpers.py#L489)]
-
 ```python
 def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType] = None, interval: str = "1440", exchange: str = "binance", vs_currency: str = "usdt", end_date: datetime.datetime | str | None = None, source: str = "CCXT") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Coin to get | None | False |
@@ -27,9 +25,7 @@ def load(symbol: str, start_date: Union[datetime.datetime, str, NoneType] = None
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe consisting of price and volume data |
-
 ---

@@ -14,22 +14,17 @@ import TabItem from '@theme/TabItem';
 Corporate lobbying details
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L358)]
-
 ```python
 def get_top_lobbying() -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 This function does not take any parameters.
-
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of top corporate lobbying |
-
 ---
 
 
@@ -39,13 +34,11 @@ This function does not take any parameters.
 Top lobbying tickers based on total spent
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L622)]
-
 ```python
 def display_top_lobbying(limit: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of tickers to show | 10 | True |
@@ -55,9 +48,7 @@ def display_top_lobbying(limit: int = 10, raw: bool = False, export: str = "", e
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

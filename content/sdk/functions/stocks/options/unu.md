@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get unusual option activity from fdscanner.com
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_model.py#L19)]
-
 ```python
 def unusual_options(limit: int = 100) -> Tuple[pd.DataFrame, pandas._libs.tslibs.timestamps.Timestamp]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number to show | 100 | True |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.Timestamp] | Dataframe containing options information, Timestamp indicated when data was updated from website |
-
 ---
 
 
@@ -41,13 +37,11 @@ def unusual_options(limit: int = 100) -> Tuple[pd.DataFrame, pandas._libs.tslibs
 Displays the unusual options table
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/fdscanner_view.py#L15)]
-
 ```python
 def display_options(limit: int = 20, sortby: str = "Vol/OI", ascend: bool = False, calls_only: bool = False, puts_only: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of rows to show | 20 | True |
@@ -59,9 +53,7 @@ def display_options(limit: int = 20, sortby: str = "Vol/OI", ascend: bool = Fals
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

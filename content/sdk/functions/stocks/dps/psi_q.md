@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Plots the short interest of a stock. This corresponds to the
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_model.py#L18)]
-
 ```python
 def get_short_interest(symbol: str, nyse: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ticker to get short interest from | None | False |
@@ -28,11 +26,9 @@ def get_short_interest(symbol: str, nyse: bool = False) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | short interest volume data |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_short_interest(symbol: str, nyse: bool = False) -> pd.DataFrame
 Plot the short interest of a stock. This corresponds to the
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/quandl_view.py#L96)]
-
 ```python
 def short_interest(symbol: str, nyse: bool = False, limit: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ticker to get short interest from | None | False |
@@ -60,9 +54,7 @@ def short_interest(symbol: str, nyse: bool = False, limit: int = 10, raw: bool =
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

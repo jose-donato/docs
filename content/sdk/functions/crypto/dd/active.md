@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns active addresses of a certain symbol
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L310)]
-
 ```python
 def get_active_addresses(symbol: str, interval: str = "24h", start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
@@ -30,11 +28,9 @@ def get_active_addresses(symbol: str, interval: str = "24h", start_date: str = "
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | active addresses over time |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_active_addresses(symbol: str, interval: str = "24h", start_date: str = "
 Plots active addresses of a certain symbol over time
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L32)]
-
 ```python
 def display_active_addresses(symbol: str, start_date: str = "2010-01-01", end_date: str = None, interval: str = "24h", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
@@ -62,9 +56,7 @@ def display_active_addresses(symbol: str, start_date: str = "2010-01-01", end_da
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

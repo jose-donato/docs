@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # cash
 
 Prints a complete cash flow statement over time. This can be either quarterly or annually. The following fields are expected: Accepted date, Accounts payables, Accounts receivables, Acquisitions net, Capital expenditure, Cash at beginning of period, Cash at end of period, Change in working capital, Common stock issued, Common stock repurchased, Debt repayment, Deferred income tax, Depreciation and amortization, Dividends paid, Effect of forex changes on cash, Filling date, Final link, Free cash flow, Inventory, Investments in property plant and equipment, Link, Net cash provided by operating activities, Net cash used for investing activities, Net cash used provided by financing activities, Net change in cash, Net income, Operating cash flow, Other financing activities, Other investing activities, Other non cash items, Other working capital, Period, Purchases of investments, Sales maturities of investments, Stock based compensation. [Source: Alpha Vantage]
-
 ### Usage 
 ```python
 usage: cash [-l LIMIT] [-q] [-r] [-p PLOT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of latest years/quarters. | 5 | True | None |
@@ -22,7 +20,6 @@ usage: cash [-l LIMIT] [-q] [-r] [-p PLOT]
 | plot | Rows to plot. (-1 represents invalid data) | None | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 04:52 (🦋) /stocks/fa/ $ cash -l 4
                                                 FB Balance Sheet
@@ -148,4 +145,3 @@ usage: cash [-l LIMIT] [-q] [-r] [-p PLOT]
 │ netIncome                                                 │ 9.497 B    │ 10.394 B   │ 9.194 B    │ 10.285 B   │
 └───────────────────────────────────────────────────────────┴────────────┴────────────┴────────────┴────────────┘
 ```
-

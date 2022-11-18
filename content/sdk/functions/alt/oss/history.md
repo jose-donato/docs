@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get repository star history.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L88)]
-
 ```python
 def get_stars_history(repo: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | repo | str | Repo to search for Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with star history - Columns: Date, Stars |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_stars_history(repo: str) -> pd.DataFrame
 Plots repo summary [Source: https://api.github.com].
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L28)]
-
 ```python
 def display_star_history(repo: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | repo | str | Repository to display star history. Format: org/repo, e.g., openbb-finance/openbbterminal | None | False |
@@ -56,9 +50,7 @@ def display_star_history(repo: str, export: str = "", external_axes: Optional[Li
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

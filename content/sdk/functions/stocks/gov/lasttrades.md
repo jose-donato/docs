@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get last government trading [Source: quiverquant.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L164)]
-
 ```python
 def get_last_government(gov_type: str = "congress", limit: int = -1, representative: str = "") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | gov_type | str | Type of government data between: congress, senate and house | congress | True |
@@ -23,9 +21,7 @@ def get_last_government(gov_type: str = "congress", limit: int = -1, representat
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Last government trading |
-
 ---

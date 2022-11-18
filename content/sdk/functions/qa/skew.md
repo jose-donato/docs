@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Skewness Indicator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L103)]
-
 ```python
 def get_skew(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of targeted data | None | False |
@@ -28,11 +26,9 @@ def get_skew(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of rolling skew |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_skew(data: pd.DataFrame, window: int = 14) -> pd.DataFrame
 Plots rolling skew
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L341)]
-
 ```python
 def display_skew(symbol: str, data: pd.DataFrame, target: str, window: int = 14, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker | None | False |
@@ -60,9 +54,7 @@ def display_skew(symbol: str, data: pd.DataFrame, target: str, window: int = 14,
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

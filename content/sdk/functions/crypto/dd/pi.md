@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Returns coin product info
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L353)]
-
 ```python
 def get_project_product_info(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check product info | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame] | Metric, Value with project and technology details,<br/>Coin public repos,<br/>Coin audits,<br/>Coin known exploits/vulns |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_project_product_info(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame, p
 Prints table showing project info
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L470)]
-
 ```python
 def display_project_info(symbol: str, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check project info | None | False |
@@ -55,9 +49,7 @@ def display_project_info(symbol: str, export: str = "") -> None
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

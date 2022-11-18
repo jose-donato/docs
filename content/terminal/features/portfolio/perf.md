@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # perf
 
 Shows performance of each trade and total performance of the portfolio versus the benchmark.
-
 ### Usage 
 ```python
 usage: performance [-t]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | show_trades | Whether to show performance on all trades in comparison to the benchmark. | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 May 12, 06:22 (🦋) /portfolio/ $ perf -t
             Portfolio vs. Benchmark - Totals
@@ -120,4 +117,3 @@ usage: performance [-t]
 │ 2022-05-02 00:00:00 │ YUM   │ 1197.90         │ -5.93%             │ 1194.00         │ -6.23%             │ 0.31%    │
 └─────────────────────┴───────┴─────────────────┴────────────────────┴─────────────────┴────────────────────┴──────────┘
 ```
-

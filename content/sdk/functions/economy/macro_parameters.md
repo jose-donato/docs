@@ -8,20 +8,15 @@ description: OpenBB SDK Function
 This function returns the available macro parameters with detail.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L632)]
-
 ```python
 def get_macro_parameters() -> Dict[str, Dict[str, str]]
 ```
 ---
 ## Parameters
-
 This function does not take any parameters.
-
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, Dict[str, str]] | A dictionary with the available macro parameters. |
-
 ---

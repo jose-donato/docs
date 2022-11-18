@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get fraud ratios based on fundamentals
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L594)]
-
 ```python
 def get_fraud_ratios(symbol: str, detail: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
@@ -22,9 +20,7 @@ def get_fraud_ratios(symbol: str, detail: bool = False) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The fraud ratios |
-
 ---

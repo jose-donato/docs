@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get futures data.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/sdk_helpers.py#L8)]
-
 ```python
 def futures(source: Any = "WSJ", future_type: str = "Indices") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | source | str | Data source for futures data.  From the following: WSJ, Finviz | WSJ | True |
@@ -22,14 +20,11 @@ def futures(source: Any = "WSJ", future_type: str = "Indices") -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of futures data. |
-
 ---
 ## Examples
-
 
 To sort by the largest percent change:
 ```python

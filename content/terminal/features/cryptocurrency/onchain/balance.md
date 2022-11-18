@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # balance
 
 Display info about tokens on given ethereum blockchain balance. [Source: Ethplorer]
-
 ### Usage 
 ```python
 usage: balance [-l LIMIT] [-s {index,balance,tokenName,tokenSymbol}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number records | 10 | True | None |

@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # list
 
 Lists available calls and puts.
-
 ### Usage 
 ```python
 usage: list
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 2022 May 10, 09:21 (🦋) /stocks/options/hedge/ $ list
     Available Calls and Puts    
@@ -143,4 +140,3 @@ This command has no parameters
 │ 58         │ -      │ 250.00 │
 └────────────┴────────┴────────┘
 ```
-

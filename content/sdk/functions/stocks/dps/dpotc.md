@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get all FINRA data associated with a ticker
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L293)]
-
 ```python
 def getTickerFINRAdata(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker to get data from | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dark Pools (ATS) Data, OTC (Non-ATS) Data |
-
 ---
 
 
@@ -41,13 +37,11 @@ def getTickerFINRAdata(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 Display barchart of dark pool (ATS) and OTC (Non ATS) data. [Source: FINRA]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L27)]
-
 ```python
 def darkpool_ats_otc(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker | None | False |
@@ -56,9 +50,7 @@ def darkpool_ats_otc(symbol: str, export: str = "", external_axes: Optional[List
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

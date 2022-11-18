@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Search selected query for tickers.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_helper.py#L98)]
-
 ```python
 def search(query: str = "", country: str = "", sector: str = "", industry: str = "", exchange_country: str = "", limit: int = 0, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | query | str | The search term used to find company tickers |  | True |
@@ -27,7 +25,5 @@ def search(query: str = "", country: str = "", sector: str = "", industry: str =
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---

@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # add
 
 Add columns to your dataframe with the option to use formulas. E.g. newdatasetcol = basedatasetcol sign criteriaordatasetcol thesis.high_revenue = thesis.revenue  1000 dataset.debt_ratio = dataset.debt div dataset2.assets
-
 ### Usage 
 ```python
 usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,,,=,=,==} -c CRITERIAORDATASETCOL
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | newdatasetcol | New dataset column to be added with format: dataset.column | None | False | None |
@@ -22,7 +20,6 @@ usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,,,=,=,
 | criteriaordatasetcol | Either dataset column to be applied on top of base dataset or criteria | None | False | None |
 ---
 ## Examples
-
 ```python
 2022 May 31, 04:50 (🦋) /econometrics/ $ load wage_panel -a wp
 
@@ -84,4 +81,3 @@ usage: add -n NEWDATASETCOL -b BASEDATASETCOL -s {div,mul,add,sub,mod,pow,,,=,=,
 │ 9 │ 17 │ 1981 │ 0     │ 5     │ 0    │ 2804  │ 0       │ 13   │ 0     │ 1.52  │ 25      │ 2          │ False      │ False      │
 └───┴────┴──────┴───────┴───────┴──────┴───────┴─────────┴──────┴───────┴───────┴─────────┴────────────┴────────────┴────────────┘
 ```
-

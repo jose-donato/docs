@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Builds a maximal diversification portfolio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1340)]
-
 ```python
 def get_black_litterman_portfolio(symbols: List[str], benchmark: Dict, p_views: List, q_views: List, interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", objective: str = "Sharpe", risk_free_rate: float = 0, risk_aversion: float = 1, delta: float = None, equilibrium: bool = True, optimize: bool = True, value: float = 1.0, value_short: float = 0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio stocks | None | False |
@@ -46,11 +44,9 @@ def get_black_litterman_portfolio(symbols: List[str], benchmark: Dict, p_views: 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
-
 ---
 
 
@@ -60,13 +56,11 @@ def get_black_litterman_portfolio(symbols: List[str], benchmark: Dict, p_views: 
 Builds a black litterman portfolio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L1934)]
-
 ```python
 def display_black_litterman(symbols: List[str], p_views: List, q_views: List, interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", benchmark: Dict = None, objective: str = "Sharpe", risk_free_rate: float = 0, risk_aversion: float = 1, delta: float = None, equilibrium: bool = True, optimize: bool = True, value: float = 1.0, value_short: float = 0, table: bool = False) -> Dict
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -93,9 +87,7 @@ def display_black_litterman(symbols: List[str], p_views: List, q_views: List, in
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

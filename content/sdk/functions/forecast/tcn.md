@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Perform TCN forecasting
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_model.py#L20)]
-
 ```python
 def get_tcn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, dropout: float = 0.1, num_filters: int = 6, weight_norm: bool = True, dilation_base: int = 2, n_epochs: int = 100, learning_rate: float = 0.001, batch_size: int = 800, model_save_name: str = "tcn_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple[List[Optional[darts.timeseries.TimeSeries]], List[Optional[darts.timeseries.TimeSeries]], List[Optional[darts.timeseries.TimeSeries]], Optional[float], Optional[type[darts.models.forecasting.tcn_model.TCNModel]]]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
@@ -44,11 +42,9 @@ def get_tcn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "clo
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[List[TimeSeries], List[TimeSeries], List[TimeSeries], Optional[float], type[TCNModel]] | Adjusted Data series,<br/>Historical forecast by best RNN model,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best TCN Model. |
-
 ---
 
 
@@ -58,13 +54,11 @@ def get_tcn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "clo
 Display TCN forecast
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_view.py#L20)]
-
 ```python
 def display_tcn_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str = "close", dataset_name: str = "", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, dropout: float = 0.1, num_filters: int = 6, weight_norm: bool = True, dilation_base: int = 2, n_epochs: int = 100, learning_rate: float = 0.001, batch_size: int = 800, model_save_name: str = "tcn_model", force_reset: bool = True, save_checkpoints: bool = True, export: str = "", residuals: bool = False, forecast_only: bool = False, start_date: Optional[datetime.datetime] = None, end_date: Optional[datetime.datetime] = None, naive: bool = False, export_pred_raw: bool = False, external_axes: Optional[List[axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
@@ -96,9 +90,7 @@ def display_tcn_forecast(data: Union[pd.DataFrame, pd.Series], target_column: st
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

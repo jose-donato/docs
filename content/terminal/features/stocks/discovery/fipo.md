@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # fipo
 
 Future IPOs dates. [Source: https://finnhub.io]
-
 ### Usage 
 ```python
 usage: fipo [-d DAYS] [-s END] [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | days | Number of days in the future to look for IPOs. | 5 | True | None |
@@ -21,7 +19,6 @@ usage: fipo [-d DAYS] [-s END] [-l LIMIT]
 | limit | Limit number of IPOs to display. | 20 | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 03:59 (🦋) /stocks/disc/ $ fipo
                                                        Future IPO Dates
@@ -31,4 +28,3 @@ usage: fipo [-d DAYS] [-s END] [-l LIMIT]
 │ 2022-02-16 │ NASDAQ Capital │ SMART FOR LIFE, INC. │ 1800000          │ 9.00-11.00 │ expected │ SMFL   │ 22770000           │
 └────────────┴────────────────┴──────────────────────┴──────────────────┴────────────┴──────────┴────────┴────────────────────┘
 ```
-

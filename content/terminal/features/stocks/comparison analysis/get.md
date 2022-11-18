@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # get
 
 Get similar companies from selected data source (default: Finviz) to compare with.
-
 ### Usage 
 ```python
 usage: get [-u] [-n] [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | us_only | Show only stocks from the US stock exchanges. Works only with Polygon | False | True | None |

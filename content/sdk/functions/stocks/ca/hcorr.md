@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get historical price correlation. [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L98)]
-
 ```python
 def get_correlation(similar: List[str], start_date: str = None, candle_type: str = "a") -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
@@ -29,11 +27,9 @@ def get_correlation(similar: List[str], start_date: str = None, candle_type: str
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dataframe with correlation matrix, Dataframe with historical prices for all comparison stocks |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_correlation(similar: List[str], start_date: str = None, candle_type: str
 Correlation heatmap based on historical price comparison
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L159)]
-
 ```python
 def display_correlation(similar: List[str], start_date: str = None, candle_type: str = "a", display_full_matrix: bool = False, raw: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
@@ -62,9 +56,7 @@ def display_correlation(similar: List[str], start_date: str = None, candle_type:
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

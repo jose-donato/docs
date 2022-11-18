@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 This functions groups the data queried from the EconDB database [Source: EconDB]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L656)]
-
 ```python
 def get_aggregated_macro_data(parameters: list = None, countries: list = None, transform: str = "", start_date: str = "1900-01-01", end_date: str = None, symbol: str = "") -> Tuple[pd.DataFrame, Dict[Any, Dict[Any, Any]], str]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | parameters | list | The type of data you wish to download. Available parameters can be accessed through economy.macro_parameters(). | None | True |
@@ -32,11 +30,9 @@ def get_aggregated_macro_data(parameters: list = None, countries: list = None, t
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, Dict[Any, Dict[Any, Any]], str] | A DataFrame with the requested macro data of all chosen countries,<br/>A dictionary containing the units of each country's parameter (e.g. EUR),<br/>A string denomination which can be Trillions, Billions, Millions, Thousands |
-
 ---
 
 
@@ -46,13 +42,11 @@ def get_aggregated_macro_data(parameters: list = None, countries: list = None, t
 Show the received macro data about a company [Source: EconDB]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_view.py#L25)]
-
 ```python
 def show_macro_data(parameters: list = None, countries: list = None, transform: str = "", start_date: str = "1900-01-01", end_date: str = None, symbol: str = "", raw: bool = False, external_axes: Optional[List[axes]] = None, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | parameters | list | The type of data you wish to display. Available parameters can be accessed through get_macro_parameters(). | None | True |
@@ -67,11 +61,9 @@ def show_macro_data(parameters: list = None, countries: list = None, transform: 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Plots the Series. |  |
-
 ---
 
 

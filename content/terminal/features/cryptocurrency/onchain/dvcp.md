@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # dvcp
 
 Display daily volume for given crypto pair [Source: https://graphql.bitquery.io/]
-
 ### Usage 
 ```python
 usage: dvcp -c COIN [-vs VS] [-d DAYS] [-s {date,exchange,base,quote,open,high,low,close,tradeAmount,trades}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | coin | ERC20 token symbol or address. | None | False | None |

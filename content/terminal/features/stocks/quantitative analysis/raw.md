@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # raw
 
 Print raw data to console
-
 ### Usage 
 ```python
 usage: raw [-l LIMIT] [-r] [-s {open,high,low,close,adjclose,volume,date_id,oc_high,oc_low,returns,logret,logprice}]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number to show | 20 | True | None |
@@ -21,7 +19,6 @@ usage: raw [-l LIMIT] [-r] [-s {open,high,low,close,adjclose,volume,date_id,oc_h
 | sortby | The column to sort by | None | True | open, high, low, close, adjclose, volume, date_id, oc_high, oc_low, returns, logret, logprice |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 11:05 (🦋) /stocks/qa/ $ raw
         Raw Data
@@ -69,4 +66,3 @@ usage: raw [-l LIMIT] [-r] [-s {open,high,low,close,adjclose,volume,date_id,oc_h
 │ 2022-02-15 │ 922.430  │
 └────────────┴──────────┘
 ```
-

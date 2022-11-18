@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # fred
 
 Query the FRED database and plot data based on the Series ID. [Source: FRED]
-
 ### Usage 
 ```python
 usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | parameter | Series ID of the Macro Economic data from FRED |  | True | None |
@@ -22,7 +20,6 @@ usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 | query | Query the FRED database to obtain Series IDs given the query search term. | None | True | None |
 ---
 ## Examples
-
 ```python
 2022 Mar 15, 07:08 (🦋) /economy/ $ fred -q treasuries
                                                                     Search results for treasuries
@@ -56,6 +53,5 @@ usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 │           │                                                 │ center/data-chart-center/interest-rates/Pages/yieldmethod.aspx.                                     │
 └───────────┴─────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
 ![fred](https://user-images.githubusercontent.com/46355364/158575129-1d4b26de-8bd8-49b3-b1b9-e349afaf8a50.png)
 

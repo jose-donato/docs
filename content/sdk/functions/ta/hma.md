@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Gets hull moving average (HMA) for stock
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L91)]
-
 ```python
 def hma(data: pd.Series, length: int = 50, offset: int = 0) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Dataframe of dates and prices | None | False |
@@ -23,9 +21,7 @@ def hma(data: pd.Series, length: int = 50, offset: int = 0) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing prices and HMA |
-
 ---

@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get historical quarterly government contracts [Source: quiverquant.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L139)]
-
 ```python
 def get_hist_contracts(symbol: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get congress trading data from | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Historical quarterly government contracts |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_hist_contracts(symbol: str) -> pd.DataFrame
 Show historical quarterly government contracts [Source: quiverquant.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L547)]
-
 ```python
 def display_hist_contracts(symbol: str, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get congress trading data from | None | False |
@@ -57,9 +51,7 @@ def display_hist_contracts(symbol: str, raw: bool = False, export: str = "", ext
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

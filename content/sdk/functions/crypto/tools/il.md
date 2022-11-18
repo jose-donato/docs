@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Calculates Impermanent Loss in a custom liquidity pool
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_model.py#L57)]
-
 ```python
 def calculate_il(price_changeA: float, price_changeB: float, proportion: float, initial_pool_value: float) -> Tuple[pd.DataFrame, str]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | price_changeA | float | price change of crypto A in percentage | None | False |
@@ -30,11 +28,9 @@ def calculate_il(price_changeA: float, price_changeB: float, proportion: float, 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, str] | - pd.DataFrame: dataframe with results<br/>- str: narrative version of results |
-
 ---
 
 
@@ -44,13 +40,11 @@ def calculate_il(price_changeA: float, price_changeB: float, proportion: float, 
 Displays Impermanent Loss in a custom liquidity pool
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_view.py#L56)]
-
 ```python
 def display_il(price_changeA: int, price_changeB: int, proportion: int, initial_pool_value: int, narrative: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | price_changeA | float | price change of crypto A in percentage | None | False |
@@ -62,9 +56,7 @@ def display_il(price_changeA: int, price_changeB: int, proportion: int, initial_
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

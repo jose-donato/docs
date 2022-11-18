@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Gets put call ratio over last time window [Source: AlphaQuery.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_model.py#L16)]
-
 ```python
 def get_put_call_ratio(symbol: str, window: int = 30, start_date: str = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to look for | None | False |
@@ -29,11 +27,9 @@ def get_put_call_ratio(symbol: str, window: int = 30, start_date: str = None) ->
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Put call ratio |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_put_call_ratio(symbol: str, window: int = 30, start_date: str = None) ->
 Display put call ratio [Source: AlphaQuery.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_view.py#L26)]
-
 ```python
 def display_put_call_ratio(symbol: str, window: int = 30, start_date: str = "2021-11-17", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
@@ -60,9 +54,7 @@ def display_put_call_ratio(symbol: str, window: int = 30, start_date: str = "202
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

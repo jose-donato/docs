@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # ch
 
 Display list of major crypto-related hacks [Source: https://rekt.news] Can be sorted by {Platform,Date,Amount [$],Audit,Slug,URL} with --sortby and reverse the display order with --reverse Show only N elements with --limit Accepts --slug or -s to check individual crypto hack (e.g., -s polynetwork-rekt)
-
 ### Usage 
 ```python
 usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Display N items | 15 | True | None |
@@ -22,7 +20,6 @@ usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 | slug | Slug to check crypto hack (e.g., polynetwork-rekt) |  | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 08:16 (🦋) /crypto/ov/ $ ch
                                                             Major Crypto Hacks
@@ -60,4 +57,3 @@ usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 │ Alpha Finance - REKT   │ 2021-02-13 │ 37.500 M   │ Quantstamp, Peckshield │ alpha-finance-rekt │ https://rekt.news/alpha-finance-rekt/ │
 └────────────────────────┴────────────┴────────────┴────────────────────────┴────────────────────┴───────────────────────────────────────┘
 ```
-

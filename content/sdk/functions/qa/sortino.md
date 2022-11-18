@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Calculates the sortino ratio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L562)]
-
 ```python
 def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 252, adjusted: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | selected dataframe | None | False |
@@ -30,11 +28,9 @@ def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 25
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | sortino ratio |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 25
 Plots the sortino ratio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1139)]
-
 ```python
 def display_sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | selected dataframe | None | False |
@@ -60,9 +54,7 @@ def display_sortino(data: pd.DataFrame, target_return: float, window: float, adj
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

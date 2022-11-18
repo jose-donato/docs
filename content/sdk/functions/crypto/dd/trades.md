@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns trades for a coin in a given exchange
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L70)]
-
 ```python
 def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | exchange_id | str | exchange id | None | False |
@@ -29,11 +27,9 @@ def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | trades for a coin in a given exchange |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_trades(exchange_id: str, symbol: str, to_symbol: str) -> pd.DataFrame
 Prints table showing trades for a coin in a given exchange
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L63)]
-
 ```python
 def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int = 10, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | exchange | str | exchange id | None | False |
@@ -60,9 +54,7 @@ def display_trades(exchange: str, symbol: str, to_symbol: str, limit: int = 10, 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

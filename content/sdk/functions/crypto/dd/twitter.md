@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_model.py#L23)]
-
 ```python
 def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
@@ -29,11 +27,9 @@ def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend:
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Twitter timeline for given coin.<br/>Columns: date, user_name, status, retweet_count, like_count |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_coin_twitter_timeline(symbol: str = "BTC", sortby: str = "date", ascend:
 Prints table showing twitter timeline for given coin id. Not more than last 50 tweets [Source: CoinPaprika]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinpaprika_view.py#L86)]
-
 ```python
 def display_twitter(symbol: str = "BTC", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
@@ -60,9 +54,7 @@ def display_twitter(symbol: str = "BTC", limit: int = 10, sortby: str = "date", 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

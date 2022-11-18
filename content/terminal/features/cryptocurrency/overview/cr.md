@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # cr
 
 Displays crypto {borrow,supply} interest rates for cryptocurrencies across several platforms. You can select rate type with --type {borrow,supply} You can display only N number of platforms with --limit parameter.
-
 ### Usage 
 ```python
 usage: cr [-t {borrow,supply}] [-c CRYPTOS] [-p PLATFORMS]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | type | Select interest rate type | supply | True | borrow, supply |

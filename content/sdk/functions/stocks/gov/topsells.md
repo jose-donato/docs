@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get top sell government trading [Source: quiverquant.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L287)]
-
 ```python
 def get_government_sells(gov_type: str = "congress", past_transactions_months: int = 6) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | gov_type | str | Type of government data between: congress, senate and house | congress | True |
@@ -28,11 +26,9 @@ def get_government_sells(gov_type: str = "congress", past_transactions_months: i
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of top government sell trading |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_government_sells(gov_type: str = "congress", past_transactions_months: i
 Top sell government trading [Source: quiverquant.com]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L151)]
-
 ```python
 def display_government_sells(gov_type: str = "congress", past_transactions_months: int = 6, limit: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | gov_type | str | Type of government data between: congress, senate and house | congress | True |
@@ -60,9 +54,7 @@ def display_government_sells(gov_type: str = "congress", past_transactions_month
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

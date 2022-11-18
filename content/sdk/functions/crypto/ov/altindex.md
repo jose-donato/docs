@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get altcoin index overtime
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/blockchaincenter_model.py#L19)]
-
 ```python
 def get_altcoin_index(period: int = 30, start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | period | int | Number of days {30,90,365} to check performance of coins and calculate the altcoin index.<br/>E.g., 365 checks yearly performance, 90 will check seasonal performance (90 days),<br/>30 will check monthly performance (30 days). | 30 | True |
@@ -29,11 +27,9 @@ def get_altcoin_index(period: int = 30, start_date: str = "2010-01-01", end_date
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Date, Value (Altcoin Index) |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_altcoin_index(period: int = 30, start_date: str = "2010-01-01", end_date
 Displays altcoin index overtime
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/blockchaincenter_view.py#L27)]
-
 ```python
 def display_altcoin_index(period: int = 365, start_date: str = "2010-01-01", end_date: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | start_date | str | Initial date, format YYYY-MM-DD | 2010-01-01 | True |
@@ -60,9 +54,7 @@ def display_altcoin_index(period: int = 365, start_date: str = "2010-01-01", end
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

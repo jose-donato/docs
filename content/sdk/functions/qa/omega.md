@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get the omega series
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L639)]
-
 ```python
 def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: float = 1.5) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | stock dataframe | None | False |
@@ -29,11 +27,9 @@ def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: flo
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | omega series |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: flo
 Plots the omega ratio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1172)]
-
 ```python
 def display_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end: float = 1.5) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | stock dataframe | None | False |
@@ -58,9 +52,7 @@ def display_omega(data: pd.DataFrame, threshold_start: float = 0, threshold_end:
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

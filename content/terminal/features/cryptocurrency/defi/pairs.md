@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # pairs
 
 Displays Lastly added pairs on Uniswap DEX. [Source: https://thegraph.com/en/]
-
 ### Usage 
 ```python
 usage: pairs [-l LIMIT] [-v VOL] [-tx TX] [--days DAYS] [-s {created,pair,token0,token1,volumeUSD,txCount,totalSupply}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of records to display | 10 | True | None |
@@ -24,7 +22,6 @@ usage: pairs [-l LIMIT] [-v VOL] [-tx TX] [--days DAYS] [-s {created,pair,token0
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 06:27 (🦋) /crypto/defi/ $ pairs
                                                    Latest Added Pairs on Uniswap DEX
@@ -52,4 +49,3 @@ usage: pairs [-l LIMIT] [-v VOL] [-tx TX] [--days DAYS] [-s {created,pair,token0
 │ 2022-02-13 17:56:36 │ McDonalds/WETH │ McDonalds Metaverse                  │ Wrapped Ether      │ 2.6M      │ 208     │ 1.9M        │
 └─────────────────────┴────────────────┴──────────────────────────────────────┴────────────────────┴───────────┴─────────┴─────────────┘
 ```
-

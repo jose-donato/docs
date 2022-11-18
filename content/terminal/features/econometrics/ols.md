@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # ols
 
 Performs an OLS regression on timeseries data.
-
 ### Usage 
 ```python
 usage: ols -d DEPENDENT -i INDEPENDENT [--no-output]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | dependent | The dependent variable on the regression you would like to perform | None | False | None |

@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # closetrade
 
 Close a trade by id.
-
 ### Usage 
 ```python
 usage: closetrade [-i ORDERID] [-u UNITS]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | orderID | The Trade ID to close. | None | True | None |

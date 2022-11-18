@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # slopes
 
 Show countries with highest slopes.
-
 ### Usage 
 ```python
 usage: slopes [-d DAYS] [-r] [-t THRESHOLD]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | days | Number of days back to look | 30 | True | None |

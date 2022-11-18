@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get efficient frontier
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1514)]
-
 ```python
 def get_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, value: float = 1.0, value_short: float = 0.0, n_portfolios: int = 100, seed: int = 123) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, Optional[pd.DataFrame], numpy.ndarray[Any, numpy.dtype[numpy.floating]], numpy.ndarray[Any, numpy.dtype[numpy.floating]], riskfolio.Portfolio.Portfolio]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -42,11 +40,9 @@ def get_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_d
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[ | pd.DataFrame,<br/>pd.DataFrame,<br/>pd.DataFrame,<br/>pd.DataFrame,<br/>Optional[pd.DataFrame],<br/>NDArray[floating],<br/>NDArray[floating],<br/>rp.Portfolio, |
-
 ---
 
 
@@ -56,13 +52,11 @@ def get_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_d
 Display efficient frontier
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L2074)]
-
 ```python
 def display_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, value: float = 1.0, value_short: float = 0.0, n_portfolios: int = 100, seed: int = 123, tangency: bool = False, plot_tickers: bool = True, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -87,9 +81,7 @@ def display_ef(symbols: List[str], interval: str = "3y", start_date: str = "", e
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

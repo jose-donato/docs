@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # candle
 
 Show candle for loaded fx data
-
 ### Usage 
 ```python
 usage: candle [-p] [--sort {adjclose,open,close,high,low,volume,logret}] [-r] [--raw] [-t] [--ma MOV_AVG] [--log]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | plotly | Flag to show interactive plotly chart | True | True | None |

@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get portfolio and benchmark returns summary
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2070)]
-
 ```python
 def get_summary(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all", risk_free_rate: float = 0) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
@@ -23,9 +21,7 @@ def get_summary(portfolio_engine: portfolio_model.PortfolioEngine, window: str =
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with portfolio and benchmark returns summary |
-
 ---

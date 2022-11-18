@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Perform Linear Regression Forecasting
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/linregr_model.py#L22)]
-
 ```python
 def get_linear_regression_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, output_chunk_length: int = 5, lags: Union[int, List[int]] = 14, random_state: Optional[int] = None) -> Tuple[List[darts.timeseries.TimeSeries], List[darts.timeseries.TimeSeries], List[darts.timeseries.TimeSeries], float, darts.models.forecasting.linear_regression_model.LinearRegressionModel]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
@@ -35,11 +33,9 @@ def get_linear_regression_data(data: Union[pd.Series, pd.DataFrame], target_colu
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[List[TimeSeries], List[TimeSeries], List[TimeSeries], float, LinearRegressionModel] | Adjusted Data series,<br/>Historical forecast by best RNN model,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best Linear Regression Model. |
-
 ---
 
 
@@ -49,13 +45,11 @@ def get_linear_regression_data(data: Union[pd.Series, pd.DataFrame], target_colu
 Display Linear Regression Forecasting
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/linregr_view.py#L20)]
-
 ```python
 def display_linear_regression(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", dataset_name: str = "", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, output_chunk_length: int = 1, lags: Union[int, List[int]] = 72, export: str = "", residuals: bool = False, forecast_only: bool = False, start_date: Optional[datetime.datetime] = None, end_date: Optional[datetime.datetime] = None, naive: bool = False, explainability_raw: bool = False, export_pred_raw: bool = False, external_axes: Optional[List[axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
@@ -77,9 +71,7 @@ def display_linear_regression(data: Union[pd.Series, pd.DataFrame], target_colum
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

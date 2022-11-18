@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Set Degiro key
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1195)]
-
 ```python
 def set_degiro_key(username: str, password: str, secret: str = "", persist: bool = False, show_output: bool = False) -> str
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | username | str | User username | None | False |
@@ -25,9 +23,7 @@ def set_degiro_key(username: str, password: str, secret: str = "", persist: bool
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | str | Status of key set |
-
 ---

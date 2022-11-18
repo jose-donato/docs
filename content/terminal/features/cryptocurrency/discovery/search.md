@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # search
 
 Search over CoinPaprika API You can display only N number of results with --limit parameter. You can sort data by id, name , category --sort parameter and also with --reverse flag to sort descending. To choose category in which you are searching for use --cat/-c parameter. Available categories: currencies|exchanges|icos|people|tags|all Displays: id, name, category
-
 ### Usage 
 ```python
 usage: search -q QUERY [QUERY ...] [-c {currencies,exchanges,icos,people,tags,all}] [-l LIMIT] [-s {category,id,name}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | query | phrase for search | None | False | None |
@@ -23,7 +21,6 @@ usage: search -q QUERY [QUERY ...] [-c {currencies,exchanges,icos,people,tags,al
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 06:51 (🦋) /crypto/disc/ $ search -q bitcoin
                       CoinPaprika Results
@@ -51,4 +48,3 @@ usage: search -q QUERY [QUERY ...] [-c {currencies,exchanges,icos,people,tags,al
 │ bct-bitcointrust        │ BitcoinTrust         │ currencies │
 └─────────────────────────┴──────────────────────┴────────────┘
 ```
-

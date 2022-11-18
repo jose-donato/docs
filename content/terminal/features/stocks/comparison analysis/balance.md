@@ -6,21 +6,18 @@ description: OpenBB Terminal Function
 # balance
 
 Prints either yearly or quarterly balance statement the company, and compares it against similar companies.
-
 ### Usage 
 ```python
 usage: balance [-q] [-t S_TIMEFRAME]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | b_quarter | Quarter financial data flag. | False | True | None |
 | s_timeframe | Specify yearly/quarterly timeframe. Default is last. | None | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 08:35 (🦋) /stocks/ca/ $ balance
 
@@ -103,4 +100,3 @@ Other available yearly timeframes are: 2017, 2018, 2019, 2020, 2021
 │ Total Assets Growth                  │ 8.37%   │ 19.14% │ 10.78%  │
 └──────────────────────────────────────┴─────────┴────────┴─────────┘
 ```
-

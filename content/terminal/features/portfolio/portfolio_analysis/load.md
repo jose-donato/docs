@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # load
 
 Function to get portfolio from predefined csv/json/xlsx file inside portfolios folder
-
 ### Usage 
 ```python
 usage: load [-s] [-c] [--no_last_price] [--nan] [-p {}]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | sector | Add sector to dataframe | False | True | None |

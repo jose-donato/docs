@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Set Reddit key
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L874)]
-
 ```python
 def set_reddit_key(client_id: str, client_secret: str, password: str, username: str, useragent: str, persist: bool = False, show_output: bool = False) -> str
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | client_id | str | Client ID | None | False |
@@ -27,9 +25,7 @@ def set_reddit_key(client_id: str, client_secret: str, password: str, username: 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | str | Status of key set |
-
 ---

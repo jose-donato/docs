@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get historical yield for a given maturity
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L230)]
-
 ```python
 def get_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: str = "2010-01-01") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | interval | str | Interval for data.  Can be "d","w","m" for daily, weekly or monthly, by default "m" | m | True |
@@ -29,11 +27,9 @@ def get_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: s
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical yields |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: s
 Display historical treasury yield for given maturity
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L315)]
-
 ```python
 def display_treasury_yield(interval: str = "m", maturity: str = "10y", start_date: str = "2010-01-01", raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | interval | str | Interval for data.  Can be "d","w","m" for daily, weekly or monthly, by default "m" | m | True |
@@ -61,9 +55,7 @@ def display_treasury_yield(interval: str = "m", maturity: str = "10y", start_dat
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

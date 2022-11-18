@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Calculate test statistics for unit roots
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L168)]
-
 ```python
 def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Series or column of DataFrame of target variable | None | False |
@@ -29,11 +27,9 @@ def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with results of ADF test and KPSS test |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_root(data: pd.Series, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.
 Determine the normality of a timeseries.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L197)]
-
 ```python
 def display_root(data: pd.Series, dataset: str = "", column: str = "", fuller_reg: str = "c", kpss_reg: str = "c", export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Series of target variable | None | False |
@@ -61,9 +55,7 @@ def display_root(data: pd.Series, dataset: str = "", column: str = "", fuller_re
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

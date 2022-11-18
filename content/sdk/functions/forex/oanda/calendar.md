@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Request data of significant events calendar.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L645)]
-
 ```python
 def get_calendar_request(days: int = 14, instrument: Optional[str] = None) -> Union[pd.DataFrame, bool]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
@@ -28,11 +26,9 @@ def get_calendar_request(days: int = 14, instrument: Optional[str] = None) -> Un
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Calendar events data or False |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_calendar_request(days: int = 14, instrument: Optional[str] = None) -> Un
 View calendar of significant events.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L383)]
-
 ```python
 def calendar(instrument: str, days: int = 7) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instrument | str | The loaded currency pair | None | False |
@@ -56,9 +50,7 @@ def calendar(instrument: str, days: int = 7) -> None
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

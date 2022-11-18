@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get information about balance historical transactions. [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L336)]
-
 ```python
 def get_address_history(address: str, sortby: str = "timestamp", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Blockchain balance e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699 | None | False |
@@ -29,11 +27,9 @@ def get_address_history(address: str, sortby: str = "timestamp", ascend: bool = 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with balance historical transactions (last 100) |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_address_history(address: str, sortby: str = "timestamp", ascend: bool = 
 Display information about balance historical transactions. [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L158)]
-
 ```python
 def display_address_history(address: str, limit: int = 10, sortby: str = "timestamp", ascend: bool = True, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Ethereum blockchain balance e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699 | None | False |
@@ -60,9 +54,7 @@ def display_address_history(address: str, limit: int = 10, sortby: str = "timest
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Calculate test statistics for autocorrelation
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L537)]
-
 ```python
 def get_bgod(model: pd.DataFrame, lags: int = 3) -> Tuple[float, float, float, float]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | model | OLS Model | OLS model that has been fit. | None | False |
@@ -28,11 +26,9 @@ def get_bgod(model: pd.DataFrame, lags: int = 3) -> Tuple[float, float, float, f
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Test results from the Breusch-Godfrey Test |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_bgod(model: pd.DataFrame, lags: int = 3) -> Tuple[float, float, float, f
 Show Breusch-Godfrey autocorrelation test
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L141)]
-
 ```python
 def display_bgod(model: statsmodels.regression.linear_model.RegressionResultsWrapper, lags: int = 3, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | model | OLS Model | OLS model that has been fit. | None | False |
@@ -57,9 +51,7 @@ def display_bgod(model: statsmodels.regression.linear_model.RegressionResultsWra
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

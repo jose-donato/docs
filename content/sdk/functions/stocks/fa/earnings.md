@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get earnings data.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/sdk_helpers.py#L203)]
-
 ```python
 def earnings(symbol: str, source: str = "YahooFinance", quarterly: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker | None | False |
@@ -23,14 +21,11 @@ def earnings(symbol: str, source: str = "YahooFinance", quarterly: bool = False)
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of earnings |
-
 ---
 ## Examples
-
 
 To obtain quarterly earnings, use the quarterly flag with AlphaVantage
 ```python

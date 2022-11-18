@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # overview
 
 Get overview data for selected etf
-
 ### Usage 
 ```python
 usage: overview
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 04:14 (🦋) /etf/ $ overview
    ETF Overview Information
@@ -53,4 +50,3 @@ This command has no parameters
 │ Holdings       │ 510        │
 └────────────────┴────────────┘
 ```
-

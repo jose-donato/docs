@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # norm
 
 Test whether the used data is normally distributed.
-
 ### Usage 
 ```python
 usage: norm -v {} [-p]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | column | The dataset.column you want to test normality for | None | False | None |

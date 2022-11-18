@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Display finviz spectrum in system viewer [Source: Finviz]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_view.py#L111)]
-
 ```python
 def display_spectrum(group: str = "sector", export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | group | str | Group by category. Available groups can be accessed through get_groups(). | sector | True |
@@ -22,7 +20,5 @@ def display_spectrum(group: str = "sector", export: str = "") -> None
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---

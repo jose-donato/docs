@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get U.S. Treasury rates [Source: EconDB]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_model.py#L737)]
-
 ```python
 def get_treasuries(instruments: list = None, maturities: list = None, frequency: str = "monthly", start_date: str = "1900-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instruments | list | Type(s) of treasuries, nominal, inflation-adjusted (long term average) or secondary market.<br/>Available options can be accessed through economy.treasury_maturities(). | None | True |
@@ -31,11 +29,9 @@ def get_treasuries(instruments: list = None, maturities: list = None, frequency:
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Holds data of the selected types and maturities |
-
 ---
 
 
@@ -45,13 +41,11 @@ def get_treasuries(instruments: list = None, maturities: list = None, frequency:
 Display U.S. Treasury rates [Source: EconDB]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/econdb_view.py#L145)]
-
 ```python
 def show_treasuries(instruments: list = None, maturities: list = None, frequency: str = "monthly", start_date: str = "1900-01-01", end_date: str = None, raw: bool = False, external_axes: Optional[List[axes]] = None, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | instruments | list | Type(s) of treasuries, nominal, inflation-adjusted or secondary market.<br/>Available options can be accessed through economy.treasury_maturities(). | None | True |
@@ -65,11 +59,9 @@ def show_treasuries(instruments: list = None, maturities: list = None, frequency
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Plots the Treasury Series. |  |
-
 ---
 
 

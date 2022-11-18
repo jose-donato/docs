@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # dtvl
 
 Displays historical TVL of different dApps. [Source: https://docs.llama.fi/api]
-
 ### Usage 
 ```python
 usage: dtvl -d DAPPS
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | dapps | dApps to search historical TVL. Should be split by , e.g.: anchor,sushiswap,pancakeswap | None | False | None |
 ---
 ## Examples
-
 ```python
 0.exchange
 1bch
@@ -1089,6 +1086,5 @@ zoomswap
 zunami
 zyxswap
 ```
-
 ![dtvl](https://user-images.githubusercontent.com/46355364/154051510-e048f525-e9d3-4eae-a0c9-dbea62843310.png)
 

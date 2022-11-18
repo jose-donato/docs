@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get rolling beta using portfolio and benchmark returns
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L1799)]
-
 ```python
 def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "1y") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio | PortfolioEngine | PortfolioEngine object | None | True |
@@ -28,11 +26,9 @@ def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of the portfolio's rolling beta |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: 
 Display rolling beta
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1050)]
-
 ```python
 def display_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "1y", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio | PortfolioEngine | PortfolioEngine object | None | True |
@@ -58,9 +52,7 @@ def display_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, wind
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

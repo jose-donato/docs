@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # news
 
 Display most recent news on the given coin from CryptoPanic aggregator platform. [Source: https://cryptopanic.com/]
-
 ### Usage 
 ```python
 usage: news [-l LIMIT] [-k {news,media}] [--filter {rising,hot,bullish,bearish,important,saved,lol}] [-r {en,de,es,fr,nl,it,pt,ru}] [-s {published_at,domain,title,negative_votes,positive_votes}] [--reverse] [-u]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number records | 10 | True | None |
@@ -25,7 +23,6 @@ usage: news [-l LIMIT] [-k {news,media}] [--filter {rising,hot,bullish,bearish,i
 | urls | Flag to disable urls. Hides column with URL. | True | True | None |
 ---
 ## Examples
-
 ```python
 2022 Apr 25, 09:49 (🦋) /crypto/dd/ $ news
                                              Most Recent News
@@ -39,4 +36,3 @@ usage: news [-l LIMIT] [-k {news,media}] [--filter {rising,hot,bullish,bearish,i
 │              │ House with Crypto                           │                                            │
 ├──────────────┼─────────────────────────────────────────────┼────────────────────────────────────────────
 ```
-

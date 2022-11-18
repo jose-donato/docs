@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # atr
 
 Add Average True Range to dataset of specific stock ticker.
-
 ### Usage 
 ```python
 usage: atr [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | close_col | Close column name to use for Average True Range. | close | True | None |
@@ -21,7 +19,6 @@ usage: atr [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 | low_col | Low column name to use for Average True Range. | low | True | None |
 ---
 ## Examples
-
 ```python
 (🦋) /forecast/ $ load aapl_20220628_113243.csv
 
@@ -56,4 +53,3 @@ aapl_20220628_113243 dataset has shape (row, column): (759, 9)
 │ 9 │ 9          │ 2019-06-21 │ 49.70 │ 50.21 │ 49.54 │ 49.69 │ 48.50     │ 191202400 │ 0.68       │
 └───┴────────────┴────────────┴───────┴───────┴───────┴───────┴───────────┴───────────┴────────────┘
 ```
-

@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # panel
 
 Performs regression analysis on Panel Data. There are a multitude of options to select from to fit the needs of restrictions of the dataset.
-
 ### Usage 
 ```python
 usage: panel -d DEPENDENT -i INDEPENDENT [-r {pols,re,bols,fe,fdols,POLS,RE,BOLS,FE,FDOLS}] [-e] [-t]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | dependent | The dependent variable on the regression you would like to perform | None | False | None |

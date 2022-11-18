@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # whales
 
 Display crypto whales transactions. [Source: https://docs.whale-alert.io/]
-
 ### Usage 
 ```python
 usage: whales [-m MIN] [-l LIMIT] [-s {date,symbol,blockchain,amount,amount_usd,from,to}] [-r] [-a]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | min | Minimum value of transactions. | 1000000 | True | None |

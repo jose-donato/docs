@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Based on the regression type, this function decides what regression to run.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L34)]
-
 ```python
 def get_regressions_results(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str = "OLS", entity_effects: bool = False, time_effects: bool = False) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | Y | pd.DataFrame | Dataframe containing the dependent variable. | None | False |
@@ -31,14 +29,11 @@ def get_regressions_results(Y: pd.DataFrame, X: pd.DataFrame, regression_type: s
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Any | A regression model |
-
 ---
 ## Examples
-
 SDK Snippet:
 ```python
 from openbb_terminal.sdk import openbb
@@ -91,13 +86,11 @@ union          0.1777     0.0172     10.344     0.0000      0.1441      0.2114
 Based on the regression type, this function decides what regression to run.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_view.py#L23)]
-
 ```python
 def display_panel(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str = "OLS", entity_effects: bool = False, time_effects: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | dict | A dictionary containing the datasets. | None | True |
@@ -109,11 +102,9 @@ def display_panel(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str = "OLS"
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | The dataset used, the dependent variable, the independent variable and |  |
-
 ---
 
 

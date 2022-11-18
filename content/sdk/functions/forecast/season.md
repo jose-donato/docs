@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Plot seasonality from a dataset
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L120)]
-
 ```python
 def display_seasonality(data: pd.DataFrame, column: str = "close", export: str = "", m: Optional[int] = None, max_lag: int = 24, alpha: float = 0.05, external_axes: Optional[List[axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | The dataframe to plot | None | False |
@@ -27,7 +25,5 @@ def display_seasonality(data: pd.DataFrame, column: str = "close", export: str =
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---

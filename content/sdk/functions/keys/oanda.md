@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Set Oanda key
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1278)]
-
 ```python
 def set_oanda_key(account: str, access_token: str, account_type: str = "", persist: bool = False, show_output: bool = False) -> str
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | account | str | User account | None | False |
@@ -25,9 +23,7 @@ def set_oanda_key(account: str, access_token: str, account_type: str = "", persi
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | str | Status of key set |
-
 ---

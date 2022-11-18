@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # rnval
 
 The risk neutral value of the options
-
 ### Usage 
 ```python
 usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | put | Show puts instead of calls | False | True | None |
@@ -22,7 +20,6 @@ usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 | risk | The risk-free rate to use | None | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 09:45 (🦋) /stocks/options/pricing/ $ add -p 100 -c 0.5
 
@@ -79,4 +76,3 @@ Estimated price(s) of AAPL at 2022-05-20
 │ 210.00 │ 0.70       │ 0.00  │ 0.70       │
 └────────┴────────────┴───────┴────────────┘
 ```
-

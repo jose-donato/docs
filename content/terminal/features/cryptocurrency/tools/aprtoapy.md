@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # aprtoapy
 
 Tool to calculate APY from APR value. Compouding periods, i.e., the number of times compounded per year can be defined with -c argument.
-
 ### Usage 
 ```python
 usage: aprtoapy [--apr APR] [-c COMPOUNDING] [-n]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | apr | APR value in percentage to convert | 100 | True | None |

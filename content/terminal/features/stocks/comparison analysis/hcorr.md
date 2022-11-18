@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # hcorr
 
 Correlation heatmap based on historical price comparison between similar companies.
-
 ### Usage 
 ```python
 usage: hcorr [-t {o,h,l,c,a,r}] [-s START] [--display-full-matrix]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | type_candle | Candle data to use: o-open, h-high, l-low, c-close, a-adjusted close, r-returns. | a | True | o, h, l, c, a, r |

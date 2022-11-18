@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Close a trade.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L526)]
-
 ```python
 def close_trades_request(orderID: str, units: Optional[int] = 0, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | orderID | str | ID of the order to close | None | False |
@@ -29,11 +27,9 @@ def close_trades_request(orderID: str, units: Optional[int] = 0, accountID: str 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Close trades data or False |
-
 ---
 
 
@@ -43,13 +39,11 @@ def close_trades_request(orderID: str, units: Optional[int] = 0, accountID: str 
 Close a trade.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L271)]
-
 ```python
 def close_trade(accountID: str, orderID: str = "", units: Optional[int] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
@@ -58,9 +52,7 @@ def close_trade(accountID: str, orderID: str = "", units: Optional[int] = None) 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Builds a hierarchical risk parity portfolio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L2511)]
-
 ```python
 def get_herc(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", codependence: str = "pearson", covariance: str = "hist", objective: str = "minrisk", risk_measure: str = "mv", risk_free_rate: float = 0.0, risk_aversion: float = 1.0, alpha: float = 0.05, a_sim: int = 100, beta: float = None, b_sim: int = None, linkage: str = "single", k: int = 0, max_k: int = 10, bins_info: str = "KN", alpha_tail: float = 0.05, leaf_order: bool = True, d_ewma: float = 0.94, value: float = 1.0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -55,11 +53,9 @@ def get_herc(symbols: List[str], interval: str = "3y", start_date: str = "", end
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
-
 ---
 
 
@@ -69,13 +65,11 @@ def get_herc(symbols: List[str], interval: str = "3y", start_date: str = "", end
 Builds a hierarchical equal risk contribution portfolio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L3099)]
-
 ```python
 def display_herc(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", codependence: str = "pearson", covariance: str = "hist", risk_measure: str = "mv", risk_free_rate: float = 0.0, risk_aversion: float = 1.0, alpha: float = 0.05, a_sim: int = 100, beta: float = None, b_sim: int = None, linkage: str = "ward", k: int = 0, max_k: int = 10, bins_info: str = "KN", alpha_tail: float = 0.05, leaf_order: bool = True, d_ewma: float = 0.94, value: float = 1.0, table: bool = False) -> Dict
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -110,9 +104,7 @@ def display_herc(symbols: List[str], interval: str = "3y", start_date: str = "",
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

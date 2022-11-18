@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Converts apr into apy
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_model.py#L19)]
-
 ```python
 def calculate_apy(apr: float, compounding_times: int) -> Tuple[pd.DataFrame, str]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | apr | float | value in percentage | None | False |
@@ -28,11 +26,9 @@ def calculate_apy(apr: float, compounding_times: int) -> Tuple[pd.DataFrame, str
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, str] | - pd.DataFrame: dataframe with results<br/>- str: narrative version of results |
-
 ---
 
 
@@ -42,13 +38,11 @@ def calculate_apy(apr: float, compounding_times: int) -> Tuple[pd.DataFrame, str
 Displays APY value converted from APR
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/tools/tools_view.py#L16)]
-
 ```python
 def display_apy(apr: float, compounding_times: int, narrative: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | apr | float | value in percentage | None | False |
@@ -58,9 +52,7 @@ def display_apy(apr: float, compounding_times: int, narrative: bool = False, exp
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

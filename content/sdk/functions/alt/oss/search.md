@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get repos sorted by stars or forks. Can be filtered by categories.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L56)]
-
 ```python
 def search_repos(sortby: str = "stars", page: int = 1, categories: str = "") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sortby | str | Sort repos by {stars, forks} | stars | True |
@@ -23,9 +21,7 @@ def search_repos(sortby: str = "stars", page: int = 1, categories: str = "") -> 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with repos |
-
 ---

@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # show
 
 Show a portion of the DataFrame
-
 ### Usage 
 ```python
 usage: show [-n {}] [-s SORTBY] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | name | The name of the database you want to show data for | None | True | None |
@@ -21,7 +19,6 @@ usage: show [-n {}] [-s SORTBY] [-r]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Mar 04, 05:57 (🦋) /econometrics/ $ load longley -a ll
 
@@ -107,4 +104,3 @@ usage: show [-n {}] [-s SORTBY] [-r]
 │ 9 │ 17.00 │ 1981.00 │ 0.00  │ 5.00  │ 0.00 │ 2804.00 │ 0.00    │ 13.00 │ 0.00  │ 1.52  │ 25.00   │ 2.00       │
 └───┴───────┴─────────┴───────┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
 ```
-

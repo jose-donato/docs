@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # rwd
 
 Perform Random Walk with Drift forecast: https://nixtla.github.io/statsforecast/models.html#randomwalkwithdrift
-
 ### Usage 
 ```python
 usage: rwd
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 2022 Nov 07, 18:43 (🦋) /stocks/ $ load AAPL
 
@@ -45,4 +42,3 @@ RWD obtains MAPE: 2.98%
 │ 2022-11-11 │ 138.85     │
 └────────────┴────────────┘
 ```
-

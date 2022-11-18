@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get terra blockchain staking ratio history [Source: https://fcd.terra.dev/swagger]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_model.py#L287)]
-
 ```python
 def get_staking_ratio_history(limit: int = 200) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | The number of ratios to show | 200 | True |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | historical staking ratio |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_staking_ratio_history(limit: int = 200) -> None
 Plots terra blockchain staking ratio history [Source: https://fcd.terra.dev/v1]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terramoney_fcd_view.py#L207)]
-
 ```python
 def display_staking_ratio_history(limit: int = 90, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 90 | True |
@@ -56,9 +50,7 @@ def display_staking_ratio_history(limit: int = 90, export: str = "", external_ax
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

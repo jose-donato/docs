@@ -14,22 +14,17 @@ import TabItem from '@theme/TabItem';
 Return data frame with most important global crypto statistics like:
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L72)]
-
 ```python
 def get_global_market() -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 This function does not take any parameters.
-
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most important global crypto statistics<br/>Metric, Value |
-
 ---
 
 
@@ -39,22 +34,18 @@ This function does not take any parameters.
 Return data frame with most important global crypto statistics like:
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L74)]
-
 ```python
 def display_global_market(export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

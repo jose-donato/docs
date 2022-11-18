@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 A momentum oscillator, which measures the percentage change between the current
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L296)]
-
 ```python
 def add_momentum(dataset: pd.DataFrame, target_column: str = "close", period: int = 10) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | dataset | pd.DataFrame | The dataset you wish to calculate with | None | False |
@@ -23,9 +21,7 @@ def add_momentum(dataset: pd.DataFrame, target_column: str = "close", period: in
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with added MOM column |
-
 ---

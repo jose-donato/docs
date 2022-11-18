@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Load cases and find slope over period.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L173)]
-
 ```python
 def get_case_slopes(days_back: int = 30, limit: int = 50, threshold: int = 10000, ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | days_back | int | Number of historical days to consider | 30 | True |
@@ -30,11 +28,9 @@ def get_case_slopes(days_back: int = 30, limit: int = 50, threshold: int = 10000
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing slopes |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_case_slopes(days_back: int = 30, limit: int = 50, threshold: int = 10000
 Prints table showing countries with the highest case slopes.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L220)]
-
 ```python
 def display_case_slopes(days_back: int = 30, limit: int = 10, threshold: int = 10000, ascend: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | days_back | int | Number of historical days to get slope for | 30 | True |
@@ -61,9 +55,7 @@ def display_case_slopes(days_back: int = 30, limit: int = 10, threshold: int = 1
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

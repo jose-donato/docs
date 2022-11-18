@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get repository stats.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L21)]
-
 ```python
 def get_github_data(url: str, kwargs: Any) -> Optional[Dict[str, Any]]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | url | str | github api endpoint | None | False |
@@ -22,9 +20,7 @@ def get_github_data(url: str, kwargs: Any) -> Optional[Dict[str, Any]]
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, Any] | Dictionary with data |
-
 ---

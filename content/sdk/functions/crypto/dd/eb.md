@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Returns the total amount of coins held on exchange addresses in units and percentage.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L452)]
-
 ```python
 def get_exchange_balances(symbol: str, exchange: str = "binance", start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
@@ -30,11 +28,9 @@ def get_exchange_balances(symbol: str, exchange: str = "binance", start_date: st
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | total amount of coins in units/percentage and symbol price over time |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_exchange_balances(symbol: str, exchange: str = "binance", start_date: st
 Plots total amount of coins held on exchange addresses in units and percentage.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L238)]
-
 ```python
 def display_exchange_balances(symbol: str, exchange: str = "binance", start_date: str = "2010-01-01", end_date: str = None, percentage: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
@@ -63,9 +57,7 @@ def display_exchange_balances(symbol: str, exchange: str = "binance", start_date
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get info about transaction. [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L444)]
-
 ```python
 def get_tx_info(tx_hash: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | tx_hash | str | Transaction hash e.g. 0x9dc7b43ad4288c624fdd236b2ecb9f2b81c93e706b2ffd1d19b112c1df7849e6 | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with information about ERC20 token transaction. |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_tx_info(tx_hash: str) -> pd.DataFrame
 Display info about transaction. [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L249)]
-
 ```python
 def display_tx_info(tx_hash: str, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | tx_hash | str | Transaction hash e.g. 0x9dc7b43ad4288c624fdd236b2ecb9f2b81c93e706b2ffd1d19b112c1df7849e6 | None | False |
@@ -55,9 +49,7 @@ def display_tx_info(tx_hash: str, export: str = "") -> None
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

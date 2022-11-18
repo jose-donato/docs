@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # events
 
 Show information about most important coins events. Most of coins doesn't have any events. You can display only top N number of events with --limit parameter. You can sort data by id, date , date_to, name, description, is_conference --sort parameter and also with --reverse flag to sort ascending. You can use additional flag --urls to see urls for each event Displays: date , date_to, name, description, is_conference, link, proof_image_link
-
 ### Usage 
 ```python
 usage: events [-l LIMIT] [-s {date,date_to,name,description,is_conference}] [-r] [-u]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of records | 10 | True | None |
@@ -22,7 +20,6 @@ usage: events [-l LIMIT] [-s {date,date_to,name,description,is_conference}] [-r]
 | urls | Flag to show urls. If you will use that flag you will see only date, name, link columns | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 07:14 (🦋) /crypto/dd/ $ events
                                                                                           All Events
@@ -53,4 +50,3 @@ usage: events [-l LIMIT] [-s {date,date_to,name,description,is_conference}] [-r]
 │ 12:00:00   │            │                                                                                                        │                                         │               │
 └────────────┴────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────┴───────────────┘
 ```
-

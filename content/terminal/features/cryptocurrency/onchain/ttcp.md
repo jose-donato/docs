@@ -6,7 +6,6 @@ description: OpenBB Terminal Function
 # ttcp
 
 Display most traded crypto pairs on given decentralized exchange in chosen time period. [Source: https://graphql.bitquery.io/]
-
 ### Usage 
 ```python
 usage: ttcp [-l LIMIT]
@@ -15,7 +14,6 @@ usage: ttcp [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number records | 10 | True | None |

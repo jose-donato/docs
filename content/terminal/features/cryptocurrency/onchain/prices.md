@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # prices
 
 "Display token historical prices. e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 [Source: Ethplorer]
-
 ### Usage 
 ```python
 usage: prices [-l LIMIT] [-s {date,cap,volumeConverted,open,high,close,low}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | display N number records | 10 | True | None |

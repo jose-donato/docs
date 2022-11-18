@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get list of financial platforms from CoinGecko API [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L266)]
-
 ```python
 def get_financial_platforms(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sortby | str | Key by which to sort data | Name | True |
@@ -28,11 +26,9 @@ def get_financial_platforms(sortby: str = "Name", ascend: bool = True) -> pd.Dat
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rank, Name, Category, Centralized, Url |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_financial_platforms(sortby: str = "Name", ascend: bool = True) -> pd.Dat
 Shows list of financial platforms. [Source: CoinGecko]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L549)]
-
 ```python
 def display_platforms(sortby: str = "Name", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 15 | True |
@@ -58,9 +52,7 @@ def display_platforms(sortby: str = "Name", ascend: bool = True, limit: int = 15
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

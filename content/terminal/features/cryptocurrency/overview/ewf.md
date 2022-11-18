@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # ewf
 
 Display exchange withdrawal fees [Source: https://withdrawalfees.com/]
-
 ### Usage 
 ```python
 usage: ewf
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 08:20 (🦋) /crypto/ov/ $ ewf
 
@@ -103,4 +100,3 @@ Withdrawal fees per exchange:
 │ Coinsbit            │ 580   │ FREE           │ $302866468285.59 │ $3.94  │ $175505321255000.00 │
 └─────────────────────┴───────┴────────────────┴──────────────────┴────────┴─────────────────────┘
 ```
-

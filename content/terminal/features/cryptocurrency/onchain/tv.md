@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # tv
 
 Display token volume on different Decentralized Exchanges. [Source: https://graphql.bitquery.io/]
-
 ### Usage 
 ```python
 usage: tv -c COIN [-vs {ETH,USD,BTC,USDT}] [-l LIMIT] [-s {exchange,trades,tradeAmount}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | coin | ERC20 token symbol or address. | None | False | None |

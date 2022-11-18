@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Whale Alert's API allows you to retrieve live and historical transaction data from major blockchains.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_model.py#L86)]
-
 ```python
 def get_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: str = "date", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | min_value | int | Minimum value of trade to track. | 800000 | True |
@@ -30,11 +28,9 @@ def get_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: s
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Crypto wales transactions |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: s
 Display huge value transactions from major blockchains. [Source: https://docs.whale-alert.io/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_view.py#L21)]
-
 ```python
 def display_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: str = "date", ascend: bool = False, show_address: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | min_value | int | Minimum value of trade to track. | 800000 | True |
@@ -62,9 +56,7 @@ def display_whales_transactions(min_value: int = 800000, limit: int = 100, sortb
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

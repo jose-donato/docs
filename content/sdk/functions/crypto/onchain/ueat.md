@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get number of unique ethereum addresses which made a transaction in given time interval.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L584)]
-
 ```python
 def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | interval | str | Time interval in which count unique ethereum addresses which made transaction. day,<br/>month or week. | day | True |
@@ -30,11 +28,9 @@ def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Unique ethereum addresses which made a transaction |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: 
 Prints table showing number of unique ethereum addresses which made a transaction in given time interval
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L225)]
-
 ```python
 def display_ethereum_unique_senders(interval: str = "days", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | interval | str | Time interval in which ethereum address made transaction. month, week or day | days | True |
@@ -61,11 +55,9 @@ def display_ethereum_unique_senders(interval: str = "days", limit: int = 10, sor
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Number of unique ethereum addresses which made a transaction in given time interval |
-
 ---
 
 

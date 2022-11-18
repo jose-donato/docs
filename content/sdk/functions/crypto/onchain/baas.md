@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get an average bid and ask prices, average spread for given crypto pair for chosen time period.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L725)]
-
 ```python
 def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ERC20 token symbol | WETH | True |
@@ -31,11 +29,9 @@ def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", li
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Average bid and ask prices, spread for given crypto pair for chosen time period |
-
 ---
 
 
@@ -45,13 +41,11 @@ def get_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", li
 Prints table showing an average bid and ask prices, average spread for given crypto pair for chosen
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L346)]
-
 ```python
 def display_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ERC20 token symbol | WETH | True |
@@ -63,11 +57,9 @@ def display_spread_for_crypto_pair(symbol: str = "WETH", to_symbol: str = "USDT"
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Average bid and ask prices, spread for given crypto pair for chosen time period |
-
 ---
 
 

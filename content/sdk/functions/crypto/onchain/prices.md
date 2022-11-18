@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get token historical prices with volume and market cap, and average price. [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L545)]
-
 ```python
 def get_token_historical_price(address: str, sortby: str = "date", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Token e.g. 0xf3db5fa2c66b7af3eb0c0b782510816cbe4813b8 | None | False |
@@ -29,11 +27,9 @@ def get_token_historical_price(address: str, sortby: str = "date", ascend: bool 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with token historical prices. |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_token_historical_price(address: str, sortby: str = "date", ascend: bool 
 Display token historical prices with volume and market cap, and average price.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L334)]
-
 ```python
 def display_token_historical_prices(address: str, limit: int = 30, sortby: str = "date", ascend: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
@@ -60,9 +54,7 @@ def display_token_historical_prices(address: str, limit: int = 30, sortby: str =
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

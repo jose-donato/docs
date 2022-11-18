@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # movers
 
 Get stock movers
-
 ### Usage 
 ```python
 usage: movers [-t {toplosers,toppctlosers,topvolume,topactive,topgainers,toppctgainers}] [-e {A,N,Q,U,V}] [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | list_type | List to get movers of | topactive | True | toplosers, toppctlosers, topvolume, topactive, topgainers, toppctgainers |

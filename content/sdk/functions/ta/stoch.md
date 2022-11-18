@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Stochastic oscillator
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_model.py#L126)]
-
 ```python
 def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowkperiod: int = 3) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
@@ -30,11 +28,9 @@ def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowk
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
-
 ---
 
 
@@ -44,13 +40,11 @@ def stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowk
 Plots stochastic oscillator signal
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/momentum_view.py#L307)]
-
 ```python
 def display_stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 3, slowkperiod: int = 3, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
@@ -63,9 +57,7 @@ def display_stoch(data: pd.DataFrame, fastkperiod: int = 14, slowdperiod: int = 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

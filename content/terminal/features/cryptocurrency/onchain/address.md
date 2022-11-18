@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # address
 
 Load address for further analysis. You can analyze account address, token address or transaction hash. [Source: Ethplorer]
-
 ### Usage 
 ```python
 usage: address [-a] [-t] [-tx] --address ADDRESS
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | account | Account address | False | True | None |

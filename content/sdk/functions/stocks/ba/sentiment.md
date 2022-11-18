@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get sentiments from symbol.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_model.py#L125)]
-
 ```python
 def get_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol to get sentiment for | None | False |
@@ -29,11 +27,9 @@ def get_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2) -> pd.D
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of sentiment |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2) -> pd.D
 Plots sentiments from symbol
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/twitter_view.py#L79)]
-
 ```python
 def display_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2, compare: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol to get sentiment for | None | False |
@@ -61,9 +55,7 @@ def display_sentiment(symbol: str, n_tweets: int = 15, n_days_past: int = 2, com
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

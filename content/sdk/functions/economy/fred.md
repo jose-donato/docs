@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get Series data. [Source: FRED]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L208)]
-
 ```python
 def get_aggregated_series_data(series_ids: List[str], start_date: str = None, end_date: str = None) -> Tuple[pd.DataFrame, dict]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | series_ids | List[str] | Series ID to get data from | None | False |
@@ -29,11 +27,9 @@ def get_aggregated_series_data(series_ids: List[str], start_date: str = None, en
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Series data |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_aggregated_series_data(series_ids: List[str], start_date: str = None, en
 Display (multiple) series from https://fred.stlouisfed.org. [Source: FRED]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_view.py#L76)]
-
 ```python
 def display_fred_series(series_ids: List[str], start_date: str = None, end_date: str = None, limit: int = 10, get_data: bool = False, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | series_ids | List[str] | FRED Series ID from https://fred.stlouisfed.org. For multiple series use: series1,series2,series3 | None | False |
@@ -62,9 +56,7 @@ def display_fred_series(series_ids: List[str], start_date: str = None, end_date:
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

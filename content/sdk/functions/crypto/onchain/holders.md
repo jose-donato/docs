@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get info about top token holders. [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L305)]
-
 ```python
 def get_top_token_holders(address: str, sortby: str = "balance", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
@@ -29,11 +27,9 @@ def get_top_token_holders(address: str, sortby: str = "balance", ascend: bool = 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with list of top token holders. |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_top_token_holders(address: str, sortby: str = "balance", ascend: bool = 
 Display info about top ERC20 token holders. [Source: Ethplorer]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L114)]
-
 ```python
 def display_top_token_holders(address: str, limit: int = 10, sortby: str = "balance", ascend: bool = True, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
@@ -60,9 +54,7 @@ def display_top_token_holders(address: str, limit: int = 10, sortby: str = "bala
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

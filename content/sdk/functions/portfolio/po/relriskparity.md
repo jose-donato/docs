@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Builds a relaxed risk parity portfolio using the least squares approach
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_model.py#L1869)]
-
 ```python
 def get_rel_risk_parity_portfolio(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", version: str = "A", risk_cont: List[str] = None, penal_factor: float = 1, target_return: float = -1, mean: str = "hist", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio stocks | None | False |
@@ -43,11 +41,9 @@ def get_rel_risk_parity_portfolio(symbols: List[str], interval: str = "3y", star
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
-
 ---
 
 
@@ -57,13 +53,11 @@ def get_rel_risk_parity_portfolio(symbols: List[str], interval: str = "3y", star
 Builds a relaxed risk parity portfolio using the least squares approach
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_optimization/optimizer_view.py#L2445)]
-
 ```python
 def display_rel_risk_parity(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", version: str = "A", risk_cont: List[str] = None, penal_factor: float = 1, target_return: float = -1, mean: str = "hist", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, table: bool = False) -> Dict
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbols | List[str] | List of portfolio tickers | None | False |
@@ -87,9 +81,7 @@ def display_rel_risk_parity(symbols: List[str], interval: str = "3y", start_date
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

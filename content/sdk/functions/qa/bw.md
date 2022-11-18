@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Plots box and whisker plots
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L258)]
-
 ```python
 def display_bw(data: pd.DataFrame, target: str, symbol: str = "", yearly: bool = True, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Name of dataset |  | True |
@@ -25,7 +23,5 @@ def display_bw(data: pd.DataFrame, target: str, symbol: str = "", yearly: bool =
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---

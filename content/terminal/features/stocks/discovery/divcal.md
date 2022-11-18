@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # divcal
 
 Get dividend calendar for selected date
-
 ### Usage 
 ```python
 usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | date | Date to get format for | datetime.now() | True | None |
@@ -21,7 +19,6 @@ usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 03:53 (🦋) /stocks/disc/ $ divcal
                                            Dividend Calendar for 2022-02-16
@@ -49,4 +46,3 @@ usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 │ CenterPoint Energy, Inc.     │ CNP    │ 02/16/2022       │ 03/10/2022   │ 02/17/2022  │ 0.17     │ 0.68            │
 └──────────────────────────────┴────────┴──────────────────┴──────────────┴─────────────┴──────────┴─────────────────┘
 ```
-

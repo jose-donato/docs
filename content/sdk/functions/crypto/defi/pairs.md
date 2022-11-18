@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get lastly added trade-able pairs on Uniswap with parameters like:
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L164)]
-
 ```python
 def get_uniswap_pool_recently_added(last_days: int = 14, min_volume: int = 100, min_liquidity: int = 0, min_tx: int = 100) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | last_days | int | How many days back to look for added pairs. | 14 | True |
@@ -30,11 +28,9 @@ def get_uniswap_pool_recently_added(last_days: int = 14, min_volume: int = 100, 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Lastly added pairs on Uniswap DEX. |
-
 ---
 
 
@@ -44,13 +40,11 @@ def get_uniswap_pool_recently_added(last_days: int = 14, min_volume: int = 100, 
 Prints table showing Lastly added pairs on Uniswap DEX.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L102)]
-
 ```python
 def display_recently_added(limit: int = 20, days: int = 7, min_volume: int = 20, min_liquidity: int = 0, min_tx: int = 100, sortby: str = "created", ascend: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 20 | True |
@@ -64,9 +58,7 @@ def display_recently_added(limit: int = 20, days: int = 7, min_volume: int = 20,
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,22 +14,17 @@ import TabItem from '@theme/TabItem';
 Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_model.py#L62)]
-
 ```python
 def get_btc_confirmed_transactions() -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 This function does not take any parameters.
-
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | BTC confirmed transactions |
-
 ---
 
 
@@ -39,13 +34,11 @@ This function does not take any parameters.
 Returns BTC confirmed transactions [Source: https://api.blockchain.info/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/blockchain_view.py#L88)]
-
 ```python
 def display_btc_confirmed_transactions(start_date: str = "2010-01-01", end_date: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | start_date | str | Initial date, format YYYY-MM-DD | 2010-01-01 | True |
@@ -55,9 +48,7 @@ def display_btc_confirmed_transactions(start_date: str = "2010-01-01", end_date:
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

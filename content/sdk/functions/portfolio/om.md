@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get omega ratio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2034)]
-
 ```python
 def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float = 0, threshold_end: float = 1.5) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
@@ -29,11 +27,9 @@ def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with portfolio omega ratio |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start
 Display omega ratio
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L1802)]
-
 ```python
 def display_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_start: float = 0, threshold_end: float = 1.5) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
@@ -58,9 +52,7 @@ def display_omega(portfolio_engine: portfolio_model.PortfolioEngine, threshold_s
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

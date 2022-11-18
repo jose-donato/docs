@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get group (sectors, industry or country) performance data. [Source: Finviz]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L112)]
-
 ```python
 def get_performance_data(group: str = "sector", sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | group | str | Group by category. Available groups can be accessed through get_groups(). | sector | True |
@@ -23,9 +21,7 @@ def get_performance_data(group: str = "sector", sortby: str = "Name", ascend: bo
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | dataframe with performance data |
-
 ---

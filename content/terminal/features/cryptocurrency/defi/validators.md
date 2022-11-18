@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # validators
 
 Displays information about terra validators. [Source: https://fcd.terra.dev/swagger]
-
 ### Usage 
 ```python
 usage: validators [-l LIMIT] [-s {validatorName,tokensAmount,votingPower,commissionRate,status,uptime}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of validators to show | 10 | True | None |
@@ -21,7 +19,6 @@ usage: validators [-l LIMIT] [-s {validatorName,tokensAmount,votingPower,commiss
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 06:36 (🦋) /crypto/defi/ $ validators
 ┌──────────────────────────────────────────────┬─────────────────────┬───────────────┬────────────────┬───────────────────┬────────┬──────────┐
@@ -48,4 +45,3 @@ usage: validators [-l LIMIT] [-s {validatorName,tokensAmount,votingPower,commiss
 │ terra1h6rf7y2ar5vz64q8rchz5443s3tqnswrpxe69f │ Staked              │ 6.3M          │ 2.08           │ 10.00             │ active │ 100.00   │
 └──────────────────────────────────────────────┴─────────────────────┴───────────────┴────────────────┴───────────────────┴────────┴──────────┘
 ```
-

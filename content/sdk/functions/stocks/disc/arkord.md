@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Returns ARK orders in a Dataframe
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L23)]
-
 ```python
 def get_ark_orders(buys_only: bool = False, sells_only: bool = False, fund: str = "") -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | buys_only | bool | Flag to filter on buys only | False | True |
@@ -23,9 +21,7 @@ def get_ark_orders(buys_only: bool = False, sells_only: bool = False, fund: str 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | DataFrame | ARK orders data frame with the following columns -<br/>(ticker, date, shares, weight, fund, direction) |
-
 ---

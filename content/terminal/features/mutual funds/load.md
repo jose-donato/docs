@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # load
 
 Get historical data.
-
 ### Usage 
 ```python
 usage: load --fund FUND [FUND ...] [-n] [-s START] [-e END]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | fund | Fund string to search for | None | False | None |

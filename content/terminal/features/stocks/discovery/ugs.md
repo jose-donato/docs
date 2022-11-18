@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # ugs
 
 Print up to 25 undervalued stocks with revenue and earnings growth in excess of 25%. [Source: Yahoo Finance]
-
 ### Usage 
 ```python
 usage: ugs [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of stocks to display. | 5 | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 04:14 (🦋) /stocks/disc/ $ ugs -l 25
                                                              Undervalued Growth Stocks
@@ -77,4 +74,3 @@ usage: ugs [-l LIMIT]
 │ SYF    │ Synchrony Financial                 │ 44.79            │ 0.76   │ +1.73%   │ 5.374M  │ 5.908M            │ 23.348B    │ 6.10           │
 └────────┴─────────────────────────────────────┴──────────────────┴────────┴──────────┴─────────┴───────────────────┴────────────┴────────────────┘
 ```
-

@@ -14,24 +14,20 @@ import TabItem from '@theme/TabItem';
 Get splits and reverse splits events. [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L312)]
-
 ```python
 def get_splits(symbol: str) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to get forward and reverse splits | None | False |
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of forward and reverse splits |
-
 ---
 
 
@@ -41,13 +37,11 @@ def get_splits(symbol: str) -> pd.DataFrame
 Display splits and reverse splits events. [Source: Yahoo Finance]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_view.py#L258)]
-
 ```python
 def display_splits(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
@@ -56,9 +50,7 @@ def display_splits(symbol: str, export: str = "", external_axes: Optional[List[m
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get top blockchain games by daily volume and users [Source: https://dappradar.com/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_model.py#L165)]
-
 ```python
 def get_top_games(sortby: str = "", limit: int = 10) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 10 | True |
@@ -28,11 +26,9 @@ def get_top_games(sortby: str = "", limit: int = 10) -> pd.DataFrame
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Top blockchain games. Columns: Name, Daily Users, Daily Volume [$] |
-
 ---
 
 
@@ -42,13 +38,11 @@ def get_top_games(sortby: str = "", limit: int = 10) -> pd.DataFrame
 Prints table showing top blockchain games [Source: https://dappradar.com/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/dappradar_view.py#L61)]
-
 ```python
 def display_top_games(limit: int = 10, export: str = "", sortby: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 10 | True |
@@ -57,9 +51,7 @@ def display_top_games(limit: int = 10, export: str = "", sortby: str = "") -> No
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

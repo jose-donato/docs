@@ -6,20 +6,17 @@ description: OpenBB Terminal Function
 # lis
 
 Print latest insider sales. [Source: OpenInsider]
-
 ### Usage 
 ```python
 usage: lis [-l LIMIT]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 07:56 (🦋) /stocks/ins/ $ lis
                                                                                Insider Data
@@ -62,4 +59,3 @@ usage: lis [-l LIMIT]
 └───┴─────────────┴────────────┴────────┴──────────────────────┴─────────────────────┴────────────┴─────────────┴─────────┴─────────┴───────────┴──────────┴─────────────┘
 D: Derivative transaction in filing (usually option exercise)
 ```
-

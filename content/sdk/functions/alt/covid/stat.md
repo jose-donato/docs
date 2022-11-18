@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Show historical cases and deaths by country.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L136)]
-
 ```python
 def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to get data for | None | False |
@@ -29,11 +27,9 @@ def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.Dat
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of data for given country and statistic |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_covid_stat(country: str, stat: str = "cases", limit: int = 10) -> pd.Dat
 Prints table showing historical cases and deaths by country.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L172)]
-
 ```python
 def display_covid_stat(country: str, stat: str = "cases", raw: bool = False, limit: int = 10, export: str = "", plot: bool = True) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to get data for | None | False |
@@ -61,9 +55,7 @@ def display_covid_stat(country: str, stat: str = "cases", raw: bool = False, lim
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

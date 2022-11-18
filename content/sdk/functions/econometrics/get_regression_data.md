@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 This function creates a DataFrame with the required regression data as
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L114)]
-
 ```python
 def get_regression_data(regression_variables: List[tuple], data: Dict[str, pd.DataFrame], regression_type: str = "") -> Tuple[pd.DataFrame, Any, List[Any]]
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | regression_variables | list | The regressions variables entered where the first variable is<br/>the dependent variable. | None | False |
@@ -23,9 +21,7 @@ def get_regression_data(regression_variables: List[tuple], data: Dict[str, pd.Da
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | Tuple[DataFrame, Any, List[Any]] | The dataset used,<br/>Dependent variable,<br/>Independent variable,<br/>OLS model. |
-
 ---

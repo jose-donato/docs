@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Clean up NaNs from the dataset
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L88)]
-
 ```python
 def clean(dataset: pd.DataFrame, fill: Optional[str] = None, drop: Optional[str] = None, limit: Optional[int] = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | dataset | pd.DataFrame | The dataset you wish to clean | None | False |
@@ -24,9 +22,7 @@ def clean(dataset: pd.DataFrame, fill: Optional[str] = None, drop: Optional[str]
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with cleaned up data |
-
 ---

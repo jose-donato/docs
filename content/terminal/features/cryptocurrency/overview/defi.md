@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # defi
 
 Shows global DeFi statistics DeFi or Decentralized Finance refers to financial services that are built on top of distributed networks with no central intermediaries. Displays metrics like: Market Cap, Trading Volume, Defi Dominance, Top Coins...
-
 ### Usage 
 ```python
 usage: defi
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 08:11 (🦋) /crypto/ov/ $ defi
            Global DEFI Statistics
@@ -39,4 +36,3 @@ This command has no parameters
 │ Top Coin Defi Dominance │ 20.40           │
 └─────────────────────────┴─────────────────┘
 ```
-

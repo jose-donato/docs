@@ -6,18 +6,15 @@ description: OpenBB Terminal Function
 # capm
 
 Provides detailed information about a stock's risk compared to the market risk.
-
 ### Usage 
 ```python
 usage: capm
 ```
 ---
 ## Parameters
-
 This command has no parameters
 ---
 ## Examples
-
 ```python
 2022 Feb 16, 11:01 (🦋) /stocks/qa/ $ load tsla
 
@@ -34,4 +31,3 @@ Beta:                   2.02
 Systematic Risk:        23.09%
 Unsystematic Risk:      76.91%
 ```
-

@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Load custom file into dataframe.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/common_model.py#L53)]
-
 ```python
 def load(file: str, data_files: Optional[Dict[Any, Any]] = None, data_examples: Optional[Dict[Any, Any]] = None) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | file | str | Path to file | None | False |
@@ -23,9 +21,7 @@ def load(file: str, data_files: Optional[Dict[Any, Any]] = None, data_examples: 
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with custom data |
-
 ---

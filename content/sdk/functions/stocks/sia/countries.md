@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Get all countries in Yahoo Finance data based on sector or industry. [Source: Finance Database]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/sector_industry_analysis/financedatabase_model.py#L19)]
-
 ```python
 def get_countries(industry: str = "", sector: str = "") -> list
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | industry | str | Filter retrieved countries by industry |  | True |
@@ -22,9 +20,7 @@ def get_countries(industry: str = "", sector: str = "") -> list
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | list | List of possible countries |
-
 ---

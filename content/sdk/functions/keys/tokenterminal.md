@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Set Token Terminal key.
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L2273)]
-
 ```python
 def set_tokenterminal_key(key: str, persist: bool = False, show_output: bool = False) -> str
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | key | str | API key | None | False |
@@ -23,9 +21,7 @@ def set_tokenterminal_key(key: str, persist: bool = False, show_output: bool = F
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | str | Status of key set |
-
 ---

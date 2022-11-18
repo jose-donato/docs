@@ -8,13 +8,11 @@ description: OpenBB SDK Function
 Set Robinhood key
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L1134)]
-
 ```python
 def set_rh_key(username: str, password: str, persist: bool = False, show_output: bool = False) -> str
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | username | str | User username | None | False |
@@ -24,9 +22,7 @@ def set_rh_key(username: str, password: str, persist: bool = False, show_output:
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | str | Status of key set |
-
 ---

@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # search
 
 Show companies matching the search query
-
 ### Usage 
 ```python
 usage: search [-q QUERY [QUERY ...]] [-c country_name] [-s SECTOR [SECTOR ...]] [-i INDUSTRY [INDUSTRY ...]] [-e country_name]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | query | The search term used to find company tickers |  | True | None |

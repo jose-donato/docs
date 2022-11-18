@@ -6,14 +6,12 @@ description: OpenBB Terminal Function
 # pos
 
 Get dark pool short positions. [Source: Stockgrid]
-
 ### Usage 
 ```python
 usage: pos [-l LIMIT] [-s {sv,sv_pct,nsv,nsv_dollar,dpp,dpp_dollar}] [-r]
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of tickers to display. | 10 | True | None |
@@ -21,7 +19,6 @@ usage: pos [-l LIMIT] [-s {sv,sv_pct,nsv,nsv_dollar,dpp,dpp_dollar}] [-r]
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 ---
 ## Examples
-
 ```python
 2022 Feb 15, 08:51 (🦋) /stocks/dps/ $ pos
                                                       Data for: 2022-02-14
@@ -49,4 +46,3 @@ usage: pos [-l LIMIT] [-s {sv,sv_pct,nsv,nsv_dollar,dpp,dpp_dollar}] [-r]
 │ SMH    │ 1.04            │ 62.44        │ 0.41                │ 1.10                   │ 13.29            │ 3.67              │
 └────────┴─────────────────┴──────────────┴─────────────────────┴────────────────────────┴──────────────────┴───────────────────┘
 ```
-

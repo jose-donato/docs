@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get the last 100 swaps done on Uniswap [Source: https://thegraph.com/en/]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L296)]
-
 ```python
 def get_last_uni_swaps(limit: int = 100, sortby: str = "timestamp", ascend: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of swaps to return. Maximum possible number: 1000. | 100 | True |
@@ -29,11 +27,9 @@ def get_last_uni_swaps(limit: int = 100, sortby: str = "timestamp", ascend: bool
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Last 100 swaps on Uniswap |
-
 ---
 
 
@@ -43,13 +39,11 @@ def get_last_uni_swaps(limit: int = 100, sortby: str = "timestamp", ascend: bool
 Prints table showing last swaps done on Uniswap
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L218)]
-
 ```python
 def display_last_uni_swaps(limit: int = 10, sortby: str = "timestamp", ascend: bool = False, export: str = "") -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of records to display | 10 | True |
@@ -59,9 +53,7 @@ def display_last_uni_swaps(limit: int = 10, sortby: str = "timestamp", ascend: b
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

@@ -14,13 +14,11 @@ import TabItem from '@theme/TabItem';
 Get histoical option greeks
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L37)]
-
 ```python
 def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], chain_id: str = "", put: bool = False) -> pd.DataFrame
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
@@ -31,11 +29,9 @@ def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], c
 
 ---
 ## Returns
-
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing historical greeks |
-
 ---
 
 
@@ -45,13 +41,11 @@ def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], c
 Plots historical greeks for a given option. [Source: Syncretism]
 
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L107)]
-
 ```python
 def view_historical_greeks(symbol: str, expiry: str, strike: Union[float, str], greek: str = "Delta", chain_id: str = "", put: bool = False, raw: bool = False, limit: Union[int, str] = 20, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
 ---
 ## Parameters
-
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker | None | False |
@@ -67,9 +61,7 @@ def view_historical_greeks(symbol: str, expiry: str, strike: Union[float, str], 
 
 ---
 ## Returns
-
 This function does not return anything
-
 ---
 
 

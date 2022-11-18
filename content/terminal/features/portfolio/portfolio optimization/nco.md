@@ -6,7 +6,6 @@ description: OpenBB Terminal Function
 # nco
 
 Builds a nested clustered optimization portfolio
-
 ### Usage 
 ```python
 usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,tail}] [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,shrink}] [-o {MinRisk,Utility,Sharpe,ERC}] [-ra RISK_AVERSION] [-lk {single,complete,average,weighted,centroid,median,ward,dbht}] [-k AMOUNT_CLUSTERS]
@@ -16,7 +15,6 @@ usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 ```
 ---
 ## Parameters
-
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | co_dependence | The codependence or similarity matrix used to build the distance metric and clusters. Possible values are: 'pearson': pearson correlation matrix 'spearman': spearman correlation matrix 'abs_pearson': absolute value of pearson correlation matrix 'abs_spearman': absolute value of spearman correlation matrix 'distance': distance correlation matrix 'mutual_info': mutual information codependence matrix 'tail': tail index codependence matrix | pearson | True | pearson, spearman, abs_pearson, abs_spearman, distance, mutual_info, tail |
@@ -47,7 +45,6 @@ usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 | name | Save portfolio with personalized or default name | NCO_0 | True | None |
 ---
 ## Examples
-
 ```python
 2022 Apr 05, 14:34 (🦋) /portfolio/po/ $ nco
 
@@ -77,4 +74,3 @@ Annual (by 252) expected return: 15.58%
 Annual (by √252) volatility: 22.42%
 Sharpe ratio: 0.6868
 ```
-
