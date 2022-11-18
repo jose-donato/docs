@@ -1,6 +1,5 @@
 ---
-title: Economy SDK
-sidebar_position:
+title: Economy
 ---
 
 The Economy module wraps the functions from the Economy menu of the OpenBB Terminal, and provides the user with more control over their workflow. In a Jupyter Notebook environment, it is quick and easy to get going. To get the most out of these functions, it is highly recommended to acquire API keys for:
@@ -203,7 +202,7 @@ Help on Operation in module openbb_terminal.core.library.operation:
 
 <openbb_terminal.core.library.operation.Operation object>
     Get economic calendar for countries between specified dates
-    
+
     Parameters
     ----------
     countries : [List[str],str]
@@ -212,7 +211,7 @@ Help on Operation in module openbb_terminal.core.library.operation:
         Start date for calendar
     end_date : str
         End date for calendar
-    
+
     Returns
     -------
     pd.DataFrame
@@ -307,7 +306,7 @@ Help on Operation in module openbb_terminal.core.library.operation:
 <openbb_terminal.core.library.operation.Operation object>
     Use 'economy.macro_chart' to access the view.
     This functions groups the data queried from the EconDB database [Source: EconDB]
-    
+
         Parameters
         ----------
         parameters: list
@@ -322,14 +321,14 @@ Help on Operation in module openbb_terminal.core.library.operation:
             The end date, format "YEAR-MONTH-DAY", i.e. 2020-06-05.
         symbol : str
             In what currency you wish to convert all values.
-    
+
         Returns
         -------
         Tuple[pd.DataFrame, Dict[Any, Dict[Any, Any]], str]
             A DataFrame with the requested macro data of all chosen countries,
             A dictionary containing the units of each country's parameter (e.g. EUR),
             A string denomination which can be Trillions, Billions, Millions, Thousands
-    
+
         Examples
         --------
         >>> from openbb_terminal.sdk import openbb

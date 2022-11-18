@@ -1,6 +1,5 @@
 ---
-title: Futures SDK
-sidebar_position:
+title: Futures
 ---
 
 The functions from the OpenBB Terminal Futures menu is part of the SDK layer, and provides methods for programmatically accessing the data and charts associated with them. Get started by importing the OpenBB SDK to the Python script or Jupyter Notebook file.
@@ -27,12 +26,12 @@ Help on Operation in module openbb_terminal.core.library.operation:
 <openbb_terminal.core.library.operation.Operation object>
     Use 'futures.curve_chart' to access the view.
     Get curve futures [Source: Yahoo Finance]
-    
+
         Parameters
         ----------
         symbol: str
             symbol to get forward curve
-    
+
         Returns
         -------
         pd.DataFrame

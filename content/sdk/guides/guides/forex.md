@@ -1,6 +1,5 @@
 ---
-title: Forex SDK
-sidebar_location: 
+title: Forex
 ---
 The Forex module provides a way for users to get currency pair data, from a number of sources. API keys for them are handled by the Keys module. After importing the entire OpenBB SDK, no further action is required to authorize the sources. This module also provides Oanda account holders with broker integration.
 
@@ -136,7 +135,7 @@ fwd_eurusd
 | Seven Years  | 1.1372  | 1.1334  | 1.1353  |    955.5 |
 | Ten Years    | 1.1652  | 1.1584  | 1.1618  |   1220.5 |
 
-Not all currency pairs will have the same length of term structure. 
+Not all currency pairs will have the same length of term structure.
 
 ```python
 fwd_jpyeur = openbb.forex.oanda.fwd('JPY', 'EUR')
