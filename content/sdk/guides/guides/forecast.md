@@ -87,7 +87,7 @@ openbb.forecast.season(df, "Close")
 ```
 ​
 
-![Season View]("https://user-images.githubusercontent.com/72827203/202426763-ae0b5e49-a570-47d8-9558-3b3530e72b0d.png")
+![Season View](https://user-images.githubusercontent.com/72827203/202426763-ae0b5e49-a570-47d8-9558-3b3530e72b0d.png)
 ​
 ### expo
 
@@ -102,5 +102,5 @@ openbb.forecast.expo(df, "Close")
 Here was can now see a chart and table with the expected values, and historic data. The chart also tells us how our backtesing performed, so that we can know the accuracy of our prediction.
 ​
 
-![Expo View]("https://user-images.githubusercontent.com/72827203/202429347-b3ab488d-d4f6-42bb-80d1-c66b3c5a92df.png")
+![Expo View](https://user-images.githubusercontent.com/72827203/202429347-b3ab488d-d4f6-42bb-80d1-c66b3c5a92df.png)
 ​
