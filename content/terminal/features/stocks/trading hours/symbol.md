@@ -11,13 +11,10 @@ Select the symbol you wish to trade
 ```python
 usage: symbol [-n SYMBOL]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | symbol | Symbol | None | True | None |
-
-
 ---

@@ -11,7 +11,6 @@ Prints the growth of several financial statement items and ratios over time. Thi
 ```python
 usage: growth [-l LIMIT] [-q]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: growth [-l LIMIT] [-q]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest years/quarters. | 5 | True | None |
 | b_quarter | Quarter fundamental data flag. | False | True | None |
-
-
 ---

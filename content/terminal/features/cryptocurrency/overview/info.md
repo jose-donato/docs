@@ -12,7 +12,6 @@ Show basic coin information for all coins from CoinPaprika API You can display o
 usage: info [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD,SGD,NGN,PHP,MXN,BRL,THB,CLP,CNY,CZK,DKK,HUF,IDR,ILS,INR,MYR,NOK,PKR,SEK,TWD,ZAR,VND,BOB,COP,PEN,ARS,ISK}] [-l LIMIT] [-s {rank,name,symbol,price,volume_24h,circulating_supply,total_supply,max_supply,ath_price,market_cap,beta_value}]
             [-r]
 ```
-
 ---
 ## Parameters
 
@@ -22,8 +21,6 @@ usage: info [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,H
 | limit | display N number records | 20 | True | None |
 | sortby | Sort by given column. Default: rank | rank | True | rank, name, symbol, price, volume_24h, circulating_supply, total_supply, max_supply, ath_price, market_cap, beta_value |
 | reverse | Data is sorted in ascending order by default. Reverse flag will sort it in an descending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---
 ## Examples
 

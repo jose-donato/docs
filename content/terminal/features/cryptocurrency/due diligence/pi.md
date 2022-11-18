@@ -11,13 +11,10 @@ Display asset's project info [Source: https://messari.io]
 ```python
 usage: pi
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

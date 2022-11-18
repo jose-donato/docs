@@ -11,7 +11,6 @@ Prints a list of the key metrics of a company over time. This can be either quar
 ```python
 usage: metrics [-l LIMIT] [-q]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: metrics [-l LIMIT] [-q]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest years/quarters. | 5 | True | None |
 | b_quarter | Quarter fundamental data flag. | False | True | None |
-
-
 ---

@@ -11,11 +11,8 @@ Print ETF description summary
 ```python
 usage: summary
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

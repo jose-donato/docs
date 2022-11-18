@@ -11,7 +11,6 @@ description: OpenBB Terminal Function
 ```python
 usage: prices [-l LIMIT] [-s {date,cap,volumeConverted,open,high,close,low}] [-r]
 ```
-
 ---
 ## Parameters
 
@@ -20,6 +19,4 @@ usage: prices [-l LIMIT] [-s {date,cap,volumeConverted,open,high,close,low}] [-r
 | limit | display N number records | 10 | True | None |
 | sortby | Sort by given column. Default: date | date | True | date, cap, volumeConverted, open, high, close, low |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---

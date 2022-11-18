@@ -11,7 +11,6 @@ M-score: ------------------------------------------------ The Beneish model is a
 ```python
 usage: fraud [-e] [-d]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: fraud [-e] [-d]
 | ---- | ----------- | ------- | -------- | ------- |
 | exp | Shows an explanation for the metrics | False | True | None |
 | detail | Shows the details for calculating the mscore | False | True | None |
-
-
 ---

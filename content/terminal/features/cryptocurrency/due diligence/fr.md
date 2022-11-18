@@ -11,11 +11,8 @@ Display asset's fundraising details [Source: https://messari.io]
 ```python
 usage: fr
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

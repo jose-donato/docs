@@ -11,11 +11,8 @@ Show fund equity holdings.
 ```python
 usage: equity
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

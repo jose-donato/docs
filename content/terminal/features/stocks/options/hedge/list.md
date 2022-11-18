@@ -11,13 +11,10 @@ Lists available calls and puts.
 ```python
 usage: list
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

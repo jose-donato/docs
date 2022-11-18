@@ -11,13 +11,10 @@ In this view you can find different kind of scores for loaded coin. Those scores
 ```python
 usage: score
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

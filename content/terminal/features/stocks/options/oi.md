@@ -11,7 +11,6 @@ Plot open interest. Open interest represents the number of contracts that exist.
 ```python
 usage: oi [-m MIN] [-M MAX] [-c] [-p]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: oi [-m MIN] [-M MAX] [-c] [-p]
 | max | Max strike to plot | -1 | True | None |
 | calls | Flag to plot call options only | False | True | None |
 | puts | Flag to plot put options only | False | True | None |
-
-
 ---
 ## Examples
 

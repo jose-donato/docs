@@ -11,13 +11,10 @@ Create custom data column from loaded datasets. Can be mathematical expressions 
 ```python
 usage: eval [-q QUERY [QUERY ...]]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | query | Query to evaluate on loaded datasets | None | True | None |
-
-
 ---

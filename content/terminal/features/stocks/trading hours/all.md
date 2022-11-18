@@ -11,11 +11,8 @@ Show all exchanges
 ```python
 usage: exchange
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

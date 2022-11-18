@@ -11,13 +11,10 @@ Remove one of the portfolios
 ```python
 usage: rpf [-pf PORTFOLIOS]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | portfolios | portfolios to be removed from the saved portfolios |  | True | None |
-
-
 ---

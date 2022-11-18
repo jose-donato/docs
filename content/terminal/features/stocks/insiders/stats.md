@@ -11,7 +11,6 @@ Open insider filtered data using selected ticker. [Source: OpenInsider]
 ```python
 usage: stats [-l LIMIT] [-u]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: stats [-l LIMIT] [-u]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 | urls | Flag to show hyperlinks | False | True | None |
-
-
 ---

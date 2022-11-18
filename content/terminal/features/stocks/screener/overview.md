@@ -11,7 +11,6 @@ Prints overview data of the companies that meet the pre-set filtering.
 ```python
 usage: overview [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 ```
-
 ---
 ## Parameters
 
@@ -21,6 +20,4 @@ usage: overview [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 | limit | Limit of stocks to print | 10 | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | sort | Sort elements of the table. | Ticker | True | ticker, company, sector, industry, country, marketcap, p/e, price, change, volume |
-
-
 ---

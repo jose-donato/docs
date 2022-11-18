@@ -11,11 +11,8 @@ Print several metrics about the company. The following fields are expected: Comp
 ```python
 usage: data
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

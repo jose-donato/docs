@@ -11,11 +11,8 @@ Account balance details
 ```python
 usage: balances
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

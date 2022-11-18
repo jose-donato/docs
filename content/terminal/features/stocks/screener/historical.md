@@ -11,7 +11,6 @@ Historical price comparison between similar companies [Source: Yahoo Finance]
 ```python
 usage: historical [-l LIMIT] [-n] [-s START] [-t {o,h,l,c,a}]
 ```
-
 ---
 ## Parameters
 
@@ -21,6 +20,4 @@ usage: historical [-l LIMIT] [-n] [-s START] [-t {o,h,l,c,a}]
 | no_scale | Flag to not put all prices on same 0-1 scale | False | True | None |
 | start | The starting date (format YYYY-MM-DD) of the historical price to plot | 2022-05-22 | True | None |
 | type_candle | type of candles: o-open, h-high, l-low, c-close, a-adjusted close. | a | True | o, h, l, c, a |
-
-
 ---

@@ -11,11 +11,8 @@ Get information about open trades.
 ```python
 usage: trades
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

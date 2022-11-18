@@ -11,13 +11,10 @@ Perform Random Walk with Drift forecast: https://nixtla.github.io/statsforecast/
 ```python
 usage: rwd
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

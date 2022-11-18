@@ -11,7 +11,6 @@ Get all exchange markets found for given exchange You can display only N number 
 ```python
 usage: exmarkets [-e EXCHANGE] [-l LIMIT] [-s {pair,base_currency_name,quote_currency_name,category,reported_volume_24h_share,trust_score,market_url}] [-r] [-u]
 ```
-
 ---
 ## Parameters
 
@@ -22,8 +21,6 @@ usage: exmarkets [-e EXCHANGE] [-l LIMIT] [-s {pair,base_currency_name,quote_cur
 | sortby | Sort by given column. Default: reported_volume_24h_share | reported_volume_24h_share | True | pair, base_currency_name, quote_currency_name, category, reported_volume_24h_share, trust_score, market_url |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | urls | Flag to show urls. If you will use that flag you will see only: exchange, pair, trust_score, market_url columns | False | True | None |
-
-
 ---
 ## Examples
 

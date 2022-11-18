@@ -11,11 +11,8 @@ Prints information about, among other things, the industry, sector exchange and 
 ```python
 usage: profile
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

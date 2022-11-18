@@ -11,7 +11,6 @@ Function to get portfolio from predefined csv/json/xlsx file inside portfolios f
 ```python
 usage: load [-s] [-c] [--no_last_price] [--nan] [-p {}]
 ```
-
 ---
 ## Parameters
 
@@ -22,6 +21,4 @@ usage: load [-s] [-c] [--no_last_price] [--nan] [-p {}]
 | last_price | Don't add last price from yfinance | True | True | None |
 | show_nan | Show nan entries | False | True | None |
 | path | Path to portfolio file | my_portfolio.csv | True | None |
-
-
 ---

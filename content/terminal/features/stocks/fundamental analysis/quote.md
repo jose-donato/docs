@@ -11,11 +11,8 @@ Prints actual information about the company which is, among other things, the da
 ```python
 usage: quote
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

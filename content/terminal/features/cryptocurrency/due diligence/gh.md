@@ -11,7 +11,6 @@ Display github activity over time for a given coin. Github activity includes the
 ```python
 usage: gh [-i INTERVAL] [-d DEV] [-s START] [-end END]
 ```
-
 ---
 ## Parameters
 
@@ -21,6 +20,4 @@ usage: gh [-i INTERVAL] [-d DEV] [-s START] [-end END]
 | dev | Filter only for development activity. Default: False | False | True | None |
 | start | Initial date. Default: A year ago | 2021-11-18 | True | None |
 | end | End date. Default: Today | 2022-11-18 | True | None |
-
-
 ---

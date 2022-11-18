@@ -11,13 +11,10 @@ Shows social media corresponding to loaded coin. You can find there name of tele
 ```python
 usage: social
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

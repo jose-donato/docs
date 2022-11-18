@@ -11,11 +11,8 @@ Display ETH gas fees [Source: https://ethgasstation.info]
 ```python
 usage: onchain
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

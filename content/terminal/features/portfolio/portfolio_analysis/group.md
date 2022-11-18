@@ -11,7 +11,6 @@ Displays portfolio grouped by a given column
 ```python
 usage: group [-g {}] [-a]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: group [-g {}] [-a]
 | ---- | ----------- | ------- | -------- | ------- |
 | group | Column to group by | Ticker | True | Index([], dtype='object') |
 | allocation | Add allocation column in % to dataframe | False | True | None |
-
-
 ---

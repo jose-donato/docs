@@ -11,13 +11,10 @@ Perform Automatic ARIMA forecast: https://nixtla.github.io/statsforecast/example
 ```python
 usage: autoarima
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

@@ -11,7 +11,6 @@ Shows list of crypto indexes from CoinGecko. Each crypto index is made up of a s
 ```python
 usage: indexes [-l LIMIT] [-s {Rank,Name,Id,Market,Last,MultiAsset}] [-r]
 ```
-
 ---
 ## Parameters
 
@@ -20,8 +19,6 @@ usage: indexes [-l LIMIT] [-s {Rank,Name,Id,Market,Last,MultiAsset}] [-r]
 | limit | display N number records | 15 | True | None |
 | sortby | Sort by given column. Default: Rank | Rank | True | Rank, Name, Id, Market, Last, MultiAsset |
 | reverse | Data is sorted in ascending order by default. Reverse flag will sort it in an descending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---
 ## Examples
 

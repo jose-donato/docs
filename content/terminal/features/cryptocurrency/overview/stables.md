@@ -11,7 +11,6 @@ Shows stablecoins by market capitalization. Stablecoins are cryptocurrencies tha
 ```python
 usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: stables [-l LIMIT] [-s SORTBY] [-r] [--pie]
 | sortby | Sort by given column. Default: market_cap | Market_Cap_[$] | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | pie | Flag to show pie chart | False | True | None |
-
-
 ---
 ## Examples
 

@@ -11,7 +11,6 @@ The risk neutral value of the options
 ```python
 usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: rnval [-p] [-m MINI] [-M MAXI] [-r RISK]
 | mini | Minimum strike price shown | None | True | None |
 | maxi | Maximum strike price shown | None | True | None |
 | risk | The risk-free rate to use | None | True | None |
-
-
 ---
 ## Examples
 

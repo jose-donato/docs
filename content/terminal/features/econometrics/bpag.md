@@ -11,13 +11,10 @@ Show Breusch-Pagan heteroscedasticity test results. Needs OLS to be run in advan
 ```python
 usage: bpag
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

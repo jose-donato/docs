@@ -11,15 +11,12 @@ Print quick sentiment inference from last tweets that contain the ticker. This m
 ```python
 usage: infer [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of latest tweets to infer from. | 100 | True | None |
-
-
 ---
 ## Examples
 

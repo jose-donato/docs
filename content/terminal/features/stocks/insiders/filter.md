@@ -11,7 +11,6 @@ Print open insider filtered data using loaded preset. [Source: OpenInsider]
 ```python
 usage: filter [-l LIMIT] [-u]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: filter [-l LIMIT] [-u]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 | urls | Flag to show hyperlinks | False | True | None |
-
-
 ---
 ## Examples
 

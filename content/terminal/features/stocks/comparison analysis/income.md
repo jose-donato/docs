@@ -11,7 +11,6 @@ Prints either yearly or quarterly income statement the company, and compares it 
 ```python
 usage: income [-q] [-t S_TIMEFRAME]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: income [-q] [-t S_TIMEFRAME]
 | ---- | ----------- | ------- | -------- | ------- |
 | b_quarter | Quarter financial data flag. | False | True | None |
 | s_timeframe | Specify yearly/quarterly timeframe. Default is last. | None | True | None |
-
-
 ---
 ## Examples
 

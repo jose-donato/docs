@@ -13,7 +13,6 @@ usage: maxdiv [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,s
               [--name NAME]
               {sa} ...
 ```
-
 ---
 ## Parameters
 
@@ -34,8 +33,6 @@ usage: maxdiv [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,s
 | threshold_value | Value used to replace outliers that are higher to threshold in absolute value | 0.3 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | MAXDIV_0 | True | None |
-
-
 ---
 ## Examples
 

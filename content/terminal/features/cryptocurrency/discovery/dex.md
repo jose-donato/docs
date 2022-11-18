@@ -11,7 +11,6 @@ Shows top decentralized exchanges [Source: https://dappradar.com/] Accepts --sor
 ```python
 usage: dex [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: dex [-l LIMIT] [-s SORTBY [SORTBY ...]]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of records to display | 15 | True | None |
 | sortby | Sort by given column. Default: Daily Volume [$] | Daily Volume [$] | True | None |
-
-
 ---
 ## Examples
 

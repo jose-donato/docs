@@ -11,11 +11,8 @@ Show currently closed exchanges
 ```python
 usage: exchange
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

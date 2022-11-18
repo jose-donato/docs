@@ -11,7 +11,6 @@ Prints a complete income statement over time. This can be either quarterly or an
 ```python
 usage: income [-q] [-r] [-p PLOT]
 ```
-
 ---
 ## Parameters
 
@@ -20,8 +19,6 @@ usage: income [-q] [-r] [-p PLOT]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 | ratios | Shows percentage change of values. | False | True | None |
 | plot | Rows to plot, comma separated. (-1 represents invalid data) | None | True | None |
-
-
 ---
 ## Examples
 

@@ -11,13 +11,10 @@ Set a country for funds
 ```python
 usage: country [-n NAME [NAME ...]]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | name | country to select | None | True | None |
-
-
 ---

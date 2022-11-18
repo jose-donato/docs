@@ -11,13 +11,10 @@ Displays top ETF/Mutual fund decliners from wsj.com/market-data
 ```python
 usage: decliners
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

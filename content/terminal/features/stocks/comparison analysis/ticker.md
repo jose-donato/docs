@@ -11,15 +11,12 @@ Set ticker to extract similar from
 ```python
 usage: ticker -t TICKER
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | Ticker get similar tickers from | None | False | None |
-
-
 ---
 ## Examples
 

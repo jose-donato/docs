@@ -11,13 +11,10 @@ List all smart contract platforms like ethereum, solana, cosmos, polkadot, kusam
 ```python
 usage: platforms
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

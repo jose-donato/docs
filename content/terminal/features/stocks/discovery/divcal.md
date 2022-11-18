@@ -11,7 +11,6 @@ Get dividend calendar for selected date
 ```python
 usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 ```
-
 ---
 ## Parameters
 
@@ -20,8 +19,6 @@ usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 | date | Date to get format for | datetime.now() | True | None |
 | sort | Column to sort by | Dividend | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---
 ## Examples
 

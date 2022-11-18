@@ -13,7 +13,6 @@ usage: riskparity [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,CDaR,EDaR,UCI}] [-rc RISK
                   [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION] [--name NAME]
                   {sa} ...
 ```
-
 ---
 ## Parameters
 
@@ -37,8 +36,6 @@ usage: riskparity [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,CDaR,EDaR,UCI}] [-rc RISK
 | significance_level | Significance level of CVaR, EVaR, CDaR and EDaR | 0.05 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | RP_0 | True | None |
-
-
 ---
 ## Examples
 

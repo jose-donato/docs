@@ -11,15 +11,12 @@ Print other users watchlist. [Source: Reddit]
 ```python
 usage: watchlist [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of posts with watch lists retrieved. | 5 | True | None |
-
-
 ---
 ## Examples
 

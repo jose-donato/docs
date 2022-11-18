@@ -11,15 +11,12 @@ Display stats about an opensea nft collection. e.g. alien-frens [Source: https:/
 ```python
 usage: info -s SLUG
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | slug | Opensea collection slug (e.g., mutant-ape-yacht-club) | None | False | None |
-
-
 ---
 ## Examples
 

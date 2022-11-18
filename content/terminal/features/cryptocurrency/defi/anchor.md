@@ -11,7 +11,6 @@ Displays anchor protocol earnings data of a certain terra address --transactions
 ```python
 usage: anchor --address ADDRESS [--transactions]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: anchor --address ADDRESS [--transactions]
 | ---- | ----------- | ------- | -------- | ------- |
 | address | Terra address. Valid terra addresses start with 'terra' | None | False | None |
 | transactions | Flag to show transactions history in anchor earn | False | True | None |
-
-
 ---
 ## Examples
 

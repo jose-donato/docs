@@ -11,15 +11,12 @@ Print top stocks with lowest float. LowFloat.com provides a convenient sorted da
 ```python
 usage: lowfloat [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of stocks to display | 5 | True | None |
-
-
 ---
 ## Examples
 

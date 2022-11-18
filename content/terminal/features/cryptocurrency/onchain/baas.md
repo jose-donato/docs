@@ -11,7 +11,6 @@ Display average bid, ask prices, spread for given crypto pair for chosen time pe
 ```python
 usage: baas [-c COIN] [-vs VS] [-l LIMIT] [-s {date,baseCurrency,quoteCurrency,dailySpread,averageBidPrice,averageAskPrice}] [-r]
 ```
-
 ---
 ## Parameters
 
@@ -22,6 +21,4 @@ usage: baas [-c COIN] [-vs VS] [-l LIMIT] [-s {date,baseCurrency,quoteCurrency,d
 | limit | Number of days to display data for. | 10 | True | None |
 | sortby | Sort by given column. | date | True | date, baseCurrency, quoteCurrency, dailySpread, averageBidPrice, averageAskPrice |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---

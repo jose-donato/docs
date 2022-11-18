@@ -11,7 +11,6 @@ The greeks for a given option.
 ```python
 usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 ```
-
 ---
 ## Parameters
 
@@ -23,8 +22,6 @@ usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 | min | Minimum strike price to show. | None | True | None |
 | max | Maximum strike price to show. | None | True | None |
 | all | Whether to show all greeks. | False | True | None |
-
-
 ---
 ## Examples
 

@@ -11,11 +11,8 @@ Compare results between all activated Panel regression models
 ```python
 usage: compare
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

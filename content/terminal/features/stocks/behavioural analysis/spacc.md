@@ -11,7 +11,6 @@ Print other users SPACs announcement under subreddit 'SPACs'. [Source: Reddit]
 ```python
 usage: spacc [-l N_LIMIT] [-p]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: spacc [-l N_LIMIT] [-p]
 | ---- | ----------- | ------- | -------- | ------- |
 | n_limit | limit of posts with SPACs retrieved | 10 | True | None |
 | b_popular | popular flag, if true the posts retrieved are based on score rather than time | False | True | None |
-
-
 ---
 ## Examples
 

@@ -11,15 +11,12 @@ Lobbying details [Source: www.quiverquant.com]
 ```python
 usage: lobbying [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of events to show | 10 | True | None |
-
-
 ---
 ## Examples
 

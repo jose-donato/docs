@@ -14,7 +14,6 @@ usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
            [-r RISK_FREE] [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION] [--name NAME]
            {sa} ...
 ```
-
 ---
 ## Parameters
 
@@ -46,8 +45,6 @@ usage: nco [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 | significance_level | Significance level of CVaR, EVaR, CDaR and EDaR | 0.05 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | NCO_0 | True | None |
-
-
 ---
 ## Examples
 

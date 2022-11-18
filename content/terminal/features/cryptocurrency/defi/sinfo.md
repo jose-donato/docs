@@ -11,7 +11,6 @@ Displays staking info of a certain terra address. [Source: https://fcd.terra.dev
 ```python
 usage: sinfo -a ADDRESS [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: sinfo -a ADDRESS [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | address | Terra address. Valid terra addresses start with 'terra' | None | False | None |
 | limit | Number of delegations | 10 | True | None |
-
-
 ---

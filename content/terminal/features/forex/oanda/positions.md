@@ -11,11 +11,8 @@ Get information about open positions.
 ```python
 usage: positions
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

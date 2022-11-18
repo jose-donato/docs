@@ -11,11 +11,8 @@ Get current exchange rate quote
 ```python
 usage: quote
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

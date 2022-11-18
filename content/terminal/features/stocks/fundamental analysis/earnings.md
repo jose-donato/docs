@@ -11,7 +11,6 @@ Print earnings dates and reported EPS of the company. The following fields are e
 ```python
 usage: earnings [-q] [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: earnings [-q] [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 | limit | Number of latest info | 5 | True | None |
-
-
 ---
 ## Examples
 

@@ -11,7 +11,6 @@ description: OpenBB Terminal Function
 ```python
 usage: paexport -s START [-e END] [-c CURRENCY]
 ```
-
 ---
 ## Parameters
 
@@ -20,6 +19,4 @@ usage: paexport -s START [-e END] [-c CURRENCY]
 | start | Start date. | None | False | None |
 | end | End date. | datetime.now() | True | None |
 | currency | Used currency. | USD | True | None |
-
-
 ---

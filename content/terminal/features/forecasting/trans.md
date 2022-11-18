@@ -11,7 +11,6 @@ Perform Transformer Forecast: https://unit8co.github.io/darts/generated_api/dart
 ```python
 usage: trans [--d-model D_MODEL] [--nhead NHEAD] [--num_encoder_layers NUM_ENCODER_LAYERS] [--num_decoder_layers NUM_DECODER_LAYERS] [--dim_feedforward DIM_FEEDFORWARD] [--activation {relu,gelu}]
 ```
-
 ---
 ## Parameters
 
@@ -23,8 +22,6 @@ usage: trans [--d-model D_MODEL] [--nhead NHEAD] [--num_encoder_layers NUM_ENCOD
 | num_decoder_layers | The number of decoder leayers in the encoder. | 3 | True | None |
 | dim_feedforward | The dimension of the feedforward model. | 512 | True | None |
 | activation | Number of LSTM layers. | relu | True | relu, gelu |
-
-
 ---
 ## Examples
 

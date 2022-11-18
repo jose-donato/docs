@@ -11,7 +11,6 @@ Shows top NFT collections [Source: https://dappradar.com/] Accepts --sort {Name,
 ```python
 usage: nft [-l LIMIT] [-s SORTBY [SORTBY ...]]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: nft [-l LIMIT] [-s SORTBY [SORTBY ...]]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of records to display | 15 | True | None |
 | sortby | Sort by given column. Default: Market Cap | Market Cap | True | None |
-
-
 ---

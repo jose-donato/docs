@@ -11,11 +11,8 @@ Get fund information.
 ```python
 usage: info
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

@@ -11,13 +11,10 @@ Displays most active ETF/Mutual funds from wsj.com/market-data
 ```python
 usage: active
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

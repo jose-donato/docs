@@ -11,11 +11,8 @@ View TradingView for technical analysis. [Source: TradingView]
 ```python
 usage: tv
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

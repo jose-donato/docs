@@ -11,7 +11,6 @@ Monthly returns
 ```python
 usage: mret [-p {3y,5y,10y,all}] [-s]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: mret [-p {3y,5y,10y,all}] [-s]
 | ---- | ----------- | ------- | -------- | ------- |
 | period | Period to select start end of the year returns | all | True | 3y, 5y, 10y, all |
 | show_vals | Show monthly returns on heatmap | False | True | None |
-
-
 ---

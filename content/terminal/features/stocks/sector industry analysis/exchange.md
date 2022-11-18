@@ -11,11 +11,8 @@ Swap exclude international exchanges flag
 ```python
 usage: exchange
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

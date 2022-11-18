@@ -11,7 +11,6 @@ Prints a complete cash flow statement over time. This can be either quarterly or
 ```python
 usage: cash [-l LIMIT] [-q] [-r] [-p PLOT]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: cash [-l LIMIT] [-q] [-r] [-p PLOT]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 | ratios | Shows percentage change of values. | False | True | None |
 | plot | Rows to plot. (-1 represents invalid data) | None | True | None |
-
-
 ---
 ## Examples
 

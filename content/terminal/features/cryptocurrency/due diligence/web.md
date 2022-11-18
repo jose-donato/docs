@@ -11,13 +11,10 @@ Websites found for given Coin. You can find there urls to homepage, forum, annou
 ```python
 usage: web
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

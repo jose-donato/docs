@@ -11,13 +11,10 @@ Get overview data for selected etf
 ```python
 usage: overview
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

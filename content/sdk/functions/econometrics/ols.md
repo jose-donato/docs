@@ -7,7 +7,7 @@ description: OpenBB SDK Function
 
 Performs an OLS regression on timeseries data. [Source: Statsmodels]
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L177)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L178)]
 
 ```python
 def get_ols(Y: pd.DataFrame, X: pd.DataFrame) -> None
@@ -39,8 +39,6 @@ print(OLS_model.summary())`
 ```
 
 ---
-## Examples
-
 Results:
 ```python
                              OLS Regression Results

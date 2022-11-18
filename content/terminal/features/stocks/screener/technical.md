@@ -11,7 +11,6 @@ Prints technical data of the companies that meet the pre-set filtering.
 ```python
 usage: technical [-p Desired preset.] [-l LIMIT] [-r] [-s {ticker,beta,atr,sma20,sma50,sma200,52whigh,52wlow,rsi,price,change,fromopen,gap,volume}]
 ```
-
 ---
 ## Parameters
 
@@ -21,6 +20,4 @@ usage: technical [-p Desired preset.] [-l LIMIT] [-r] [-s {ticker,beta,atr,sma20
 | limit | Limit of stocks to print | 10 | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | sort | Sort elements of the table. | Ticker | True | ticker, beta, atr, sma20, sma50, sma200, 52whigh, 52wlow, rsi, price, change, fromopen, gap, volume |
-
-
 ---

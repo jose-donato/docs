@@ -11,7 +11,6 @@ The Volume Weighted Average Price that measures the average typical price by vol
 ```python
 usage: vwap [-o N_OFFSET] [--start START] [--end END]
 ```
-
 ---
 ## Parameters
 
@@ -20,8 +19,6 @@ usage: vwap [-o N_OFFSET] [--start START] [--end END]
 | n_offset | offset | 0 | True | None |
 | start | Starting date to select | None | True | None |
 | end | Ending date to select | None | True | None |
-
-
 ---
 ## Examples
 

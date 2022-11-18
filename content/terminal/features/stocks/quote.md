@@ -11,13 +11,10 @@ Current quote for stock ticker
 ```python
 usage: quote -t S_TICKER
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | s_ticker | stocks/QUOTE_ticker | None | False | None |
-
-
 ---

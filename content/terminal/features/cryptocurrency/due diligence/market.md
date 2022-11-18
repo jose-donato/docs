@@ -11,13 +11,10 @@ Market data for loaded coin. There you find metrics like: Market Cap, Supply, Ci
 ```python
 usage: market
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

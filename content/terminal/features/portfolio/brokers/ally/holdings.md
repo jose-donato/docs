@@ -11,11 +11,8 @@ Display info about your trading accounts on Ally
 ```python
 usage: holdings
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

@@ -11,7 +11,6 @@ Get all markets found for given coin. You can display only N number of markets w
 ```python
 usage: mkt [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD,SGD,NGN,PHP,MXN,BRL,THB,CLP,CNY,CZK,DKK,HUF,IDR,ILS,INR,MYR,NOK,PKR,SEK,TWD,ZAR,VND,BOB,COP,PEN,ARS,ISK}] [-l LIMIT] [-s {pct_volume_share,exchange,pair,trust_score,volume,price}] [-r] [-u]
 ```
-
 ---
 ## Parameters
 
@@ -22,8 +21,6 @@ usage: mkt [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HK
 | sortby | Sort by given column. Default: pct_volume_share | pct_volume_share | True | pct_volume_share, exchange, pair, trust_score, volume, price |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | urls | Flag to show urls. If you will use that flag you will see only: exchange, pair, trust_score, market_url columns | False | True | None |
-
-
 ---
 ## Examples
 

@@ -11,11 +11,8 @@ Plot historical data.
 ```python
 usage: plot
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

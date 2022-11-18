@@ -11,11 +11,8 @@ Get daily transactions for certain symbols in ethereum blockchain [Source: https
 ```python
 usage: dt
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

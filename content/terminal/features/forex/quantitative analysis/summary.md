@@ -11,13 +11,10 @@ Summary statistics
 ```python
 usage: summary
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

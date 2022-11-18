@@ -11,7 +11,6 @@ Export dataset to Excel
 ```python
 usage: export [-n NAME] [-t {xlsx,csv}]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: export [-n NAME] [-t {xlsx,csv}]
 | ---- | ----------- | ------- | -------- | ------- |
 | name | The name of the dataset you wish to export | None | True | None |
 | type | The file type you wish to export to | xlsx | True | xlsx, csv |
-
-
 ---
 ## Examples
 

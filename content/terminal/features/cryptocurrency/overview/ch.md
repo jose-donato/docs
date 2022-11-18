@@ -11,7 +11,6 @@ Display list of major crypto-related hacks [Source: https://rekt.news] Can be so
 ```python
 usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: ch [-l LIMIT] [--sortby SORTBY [SORTBY ...]] [-r] [-s SLUG]
 | sortby | Sort by given column. Default: Amount [$] | Amount [$] | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | slug | Slug to check crypto hack (e.g., polynetwork-rekt) |  | True | None |
-
-
 ---
 ## Examples
 

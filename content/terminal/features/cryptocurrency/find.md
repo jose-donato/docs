@@ -11,7 +11,6 @@ Find similar coin by name, symbol, or id. If you don't remember exact name or id
 ```python
 usage: find -c COIN [-k {id,symbol,name}] [-l LIMIT] [-s SKIP]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: find -c COIN [-k {id,symbol,name}] [-l LIMIT] [-s SKIP]
 | key | Specify by which column you would like to search: symbol, name, id | symbol | True | id, symbol, name |
 | limit | Number of records to display | 10 | True | None |
 | skip | Skip n of records | 0 | True | None |
-
-
 ---
 ## Examples
 

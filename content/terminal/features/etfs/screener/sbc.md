@@ -11,7 +11,6 @@ Search by category [Source: FinanceDatabase/StockAnalysis.com]
 ```python
 usage: sbc -c CATEGORY [CATEGORY ...] [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: sbc -c CATEGORY [CATEGORY ...] [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | category | Category to look for | None | False | None |
 | limit | Limit of ETFs to display | 5 | True | None |
-
-
 ---

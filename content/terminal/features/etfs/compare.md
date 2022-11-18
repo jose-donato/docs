@@ -11,15 +11,12 @@ Compare selected ETFs [Source: StockAnalysis]
 ```python
 usage: compare -e NAMES
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | names | Symbols to compare | None | False | None |
-
-
 ---
 ## Examples
 

@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 
 Calculate test statistics for Durbin Watson autocorrelation
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L495)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L496)]
 
 ```python
 def get_dwat(model: statsmodels.regression.linear_model.RegressionResultsWrapper) -> float
@@ -45,8 +45,6 @@ durbin_watson_value = openbb.econometrics.dwat(model)
 ```
 
 ---
-## Examples
-
 Result:
 ```python
 0.96

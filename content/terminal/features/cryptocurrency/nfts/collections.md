@@ -11,7 +11,6 @@ NFT Collections [Source: https://nftpricefloor.com/]
 ```python
 usage: collections [--fp] [--sales]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: collections [--fp] [--sales]
 | ---- | ----------- | ------- | -------- | ------- |
 | fp | Flag to display floor price over time for top collections | False | True | None |
 | sales | Flag to display sales over time for top collections | False | True | None |
-
-
 ---
 ## Examples
 

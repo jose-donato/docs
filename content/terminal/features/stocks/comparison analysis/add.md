@@ -11,13 +11,10 @@ Add similar tickers to compare with.
 ```python
 usage: add [-s L_SIMILAR]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | l_similar | Tickers to add to similar list |  | True | None |
-
-
 ---

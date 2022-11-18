@@ -11,7 +11,6 @@ Set a (multi) index for the dataset
 ```python
 usage: index -n {} [-i INDEX] [-a] [-d]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: index -n {} [-i INDEX] [-a] [-d]
 | index | Columns from the dataset the user wishes to set as default |  | True | None |
 | adjustment | Whether to allow for making adjustments to the dataset to align it with the use case for Timeseries and Panel Data regressions | False | True | None |
 | drop | Whether to drop the column(s) the index is set for. | False | True | None |
-
-
 ---
 ## Examples
 

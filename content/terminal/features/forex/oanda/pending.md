@@ -11,11 +11,8 @@ Get information about pending orders.
 ```python
 usage: pending
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

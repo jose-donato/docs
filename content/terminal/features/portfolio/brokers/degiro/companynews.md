@@ -11,7 +11,6 @@ description: OpenBB Terminal Function
 ```python
 usage: companynews -s SYMBOL [-l LIMIT] [-o OFFSET] [-lang LANGUAGES]
 ```
-
 ---
 ## Parameters
 
@@ -21,6 +20,4 @@ usage: companynews -s SYMBOL [-l LIMIT] [-o OFFSET] [-lang LANGUAGES]
 | limit | Number of news to display. | 10 | True | None |
 | offset | Offset of news to display. | 0 | True | None |
 | languages | Languages of news to display. | en,fr | True | None |
-
-
 ---

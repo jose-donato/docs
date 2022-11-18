@@ -11,7 +11,6 @@ A discounted cash flow statement looks to analyze the value of a company. To do 
 ```python
 usage: dcf [-a] [--no-ratios] [--no-filter] [-p PREDICTION] [-s SIMILAR] [-g]
 ```
-
 ---
 ## Parameters
 
@@ -23,8 +22,6 @@ usage: dcf [-a] [--no-ratios] [--no-filter] [-p PREDICTION] [-s SIMILAR] [-g]
 | prediction | Number of years to predict before using terminal value. | 10 | True | None |
 | similar | Number of similar companies to generate ratios for. | 6 | True | None |
 | growth | Whether to replace a linear regression estimate with a growth estimate. | False | True | None |
-
-
 ---
 ![dcf financials](https://user-images.githubusercontent.com/46355364/154241001-42be82e5-f001-4fd1-bcf4-cd55c7cef358.png)
 

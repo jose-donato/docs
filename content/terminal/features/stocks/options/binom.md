@@ -11,7 +11,6 @@ Gives the option value using binomial option valuation
 ```python
 usage: binom [-s STRIKE] [-p] [-e] [-x] [--plot] [-v VOLATILITY]
 ```
-
 ---
 ## Parameters
 
@@ -23,8 +22,6 @@ usage: binom [-s STRIKE] [-p] [-e] [-x] [--plot] [-v VOLATILITY]
 | export | Export an excel spreadsheet with binomial pricing data | False | True | None |
 | plot | Plot expected ending values | False | True | None |
 | volatility | Underlying asset annualized volatility. Historical volatility used if not supplied. | None | True | None |
-
-
 ---
 ## Examples
 

@@ -12,7 +12,6 @@ Shows Top Crypto Exchanges You can display only N number exchanges with --limit 
 usage: exchanges [-l LIMIT] [-s {Rank,Trust_Score,Id,Name,Country,Year Established,Trade_Volume_24h_BTC,rank,name,currencies,markets,fiats,confidence,volume_24h,volume_7d,volume_30d,sessions_per_month}] [-r] [-u]
                  [--vs {BTC,ETH,USD,EUR,PLN,KRW,GBP,CAD,JPY,RUB,TRY,NZD,AUD,CHF,UAH,HKD,SGD,NGN,PHP,MXN,BRL,THB,CLP,CNY,CZK,DKK,HUF,IDR,ILS,INR,MYR,NOK,PKR,SEK,TWD,ZAR,VND,BOB,COP,PEN,ARS,ISK}]
 ```
-
 ---
 ## Parameters
 
@@ -23,8 +22,6 @@ usage: exchanges [-l LIMIT] [-s {Rank,Trust_Score,Id,Name,Country,Year Establish
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | urls | Flag to add a url column. Works only with CoinGecko source | False | True | None |
 | vs | Quoted currency. Default: USD. Works only with CoinPaprika source | USD | True | BTC, ETH, USD, EUR, PLN, KRW, GBP, CAD, JPY, RUB, TRY, NZD, AUD, CHF, UAH, HKD, SGD, NGN, PHP, MXN, BRL, THB, CLP, CNY, CZK, DKK, HUF, IDR, ILS, INR, MYR, NOK, PKR, SEK, TWD, ZAR, VND, BOB, COP, PEN, ARS, ISK |
-
-
 ---
 ## Examples
 

@@ -11,7 +11,6 @@ Prints a complete balance sheet statement over time. This can be either quarterl
 ```python
 usage: balance [-q] [-r] [-p PLOT]
 ```
-
 ---
 ## Parameters
 
@@ -20,8 +19,6 @@ usage: balance [-q] [-r] [-p PLOT]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 | ratios | Shows percentage change of values. | False | True | None |
 | plot | Rows to plot, comma separated. (-1 represents invalid data) | None | True | None |
-
-
 ---
 ## Examples
 

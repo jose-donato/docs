@@ -38,8 +38,6 @@ wsj_futures = openbb.economy.futures()
 ```
 
 ---
-## Examples
-
 
 FinViz provides different options for future types.  We can get Meats with the following command:
 ```python

@@ -11,7 +11,6 @@ Show cost to borrow of stocks. [Source: Stocksera/Interactive Broker]
 ```python
 usage: ctb [-n NUMBER] [--raw]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: ctb [-n NUMBER] [--raw]
 | ---- | ----------- | ------- | -------- | ------- |
 | number | Number of records to retrieve. | 20 | True | None |
 | raw | Print raw data. | False | True | None |
-
-
 ---
 ## Examples
 

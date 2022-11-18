@@ -11,13 +11,10 @@ Stocks trending. [Source: Stocktwits]
 ```python
 usage: trending
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

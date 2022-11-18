@@ -39,6 +39,20 @@ def get_regressions_results(Y: pd.DataFrame, X: pd.DataFrame, regression_type: s
 ---
 ## Examples
 
+SDK Snippet:
+```python
+from openbb_terminal.sdk import openbb
+df = openbb.econometrics.load("wage_panel")
+df = df.set_index(["nr","year"])
+X = df[["exper","educ","union"]]
+Y = df["lwage"]
+pooled_ols_model = openbb.econometrics.panel(Y,X,"POLS")
+print(pooled_ols_model.summary)
+```
+
+---
+Results:
+```python
                     PooledOLS Estimation Summary
 ================================================================================
 Dep. Variable:                  lwage   R-squared:                        0.1634
@@ -57,7 +71,6 @@ Time periods:                       8   Distribution:                  F(3,4356)
 Avg Obs:                       545.00
 Min Obs:                       545.00
 Max Obs:                       545.00
-
                             Parameter Estimates
 ==============================================================================
             Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
@@ -67,14 +80,6 @@ exper          0.0561     0.0028     20.220     0.0000      0.0507      0.0616
 educ           0.1080     0.0045     24.034     0.0000      0.0992      0.1168
 union          0.1777     0.0172     10.344     0.0000      0.1441      0.2114
 ==============================================================================
-```python
-from openbb_terminal.sdk import openbb
-df = openbb.econometrics.load("wage_panel")
-df = df.set_index(["nr","year"])
-X = df[["exper","educ","union"]]
-Y = df["lwage"]
-pooled_ols_model = openbb.econometrics.panel(Y,X,"POLS")
-print(pooled_ols_model.summary)
 ```
 
 ---

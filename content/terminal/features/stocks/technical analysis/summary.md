@@ -11,13 +11,10 @@ Technical summary report provided by FinBrain's API. FinBrain Technologies devel
 ```python
 usage: summary
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

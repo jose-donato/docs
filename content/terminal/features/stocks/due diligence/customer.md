@@ -11,11 +11,8 @@ List of customers from ticker provided. [Source: CSIMarket]
 ```python
 usage: customer
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

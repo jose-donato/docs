@@ -11,7 +11,6 @@ Provides value at risk (short: VaR) of the selected portfolio.
 ```python
 usage: var [-m] [-a] [-s] [-p PERCENTILE]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: var [-m] [-a] [-s] [-p PERCENTILE]
 | adjusted | If the VaR should be adjusted for skew and kurtosis (Cornish-Fisher-Expansion) | False | True | None |
 | student_t | If one should use the student-t distribution | False | True | None |
 | percentile | Percentile used for VaR calculations, for example input 99.9 equals a 99.9 Percent VaR | 99.9 | True | None |
-
-
 ---
 ## Examples
 

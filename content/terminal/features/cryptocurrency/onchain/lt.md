@@ -11,7 +11,6 @@ Display Trades on Decentralized Exchanges aggregated by DEX or Month [Source: ht
 ```python
 usage: lt [-k {dex,time}] [-vs {ETH,USD,BTC,USDT}] [-l LIMIT] [-d DAYS] [-s {exchange,trades,tradeAmount}] [-r]
 ```
-
 ---
 ## Parameters
 
@@ -23,6 +22,4 @@ usage: lt [-k {dex,time}] [-vs {ETH,USD,BTC,USDT}] [-l LIMIT] [-d DAYS] [-s {exc
 | days | Number of days to display data for. | 90 | True | None |
 | sortby | Sort by given column. Default: tradeAmount. For monthly trades date. | tradeAmount | True | exchange, trades, tradeAmount |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---

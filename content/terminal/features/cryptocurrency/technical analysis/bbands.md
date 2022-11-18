@@ -11,7 +11,6 @@ Bollinger Bands consist of three lines. The middle band is a simple moving avera
 ```python
 usage: bbands [-l N_LENGTH] [-s N_STD] [-m {ema,sma,wma,hma,zlma}]
 ```
-
 ---
 ## Parameters
 
@@ -20,8 +19,6 @@ usage: bbands [-l N_LENGTH] [-s N_STD] [-m {ema,sma,wma,hma,zlma}]
 | n_length | length | 15 | True | None |
 | n_std | std | 2 | True | None |
 | s_mamode | mamode | sma | True | ema, sma, wma, hma, zlma |
-
-
 ---
 ![bbands](https://user-images.githubusercontent.com/46355364/154309951-116f3c31-342d-4ceb-b489-8b0ba78eb3a0.png)
 

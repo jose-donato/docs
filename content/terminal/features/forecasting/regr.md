@@ -11,13 +11,10 @@ Perform a regression forecast: https://unit8co.github.io/darts/generated_api/dar
 ```python
 usage: regr
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

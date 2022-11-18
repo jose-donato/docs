@@ -11,13 +11,10 @@ Perform Automatic Complex Exponential Smoothing forecast: https://nixtla.github.
 ```python
 usage: autoces
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

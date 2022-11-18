@@ -11,7 +11,6 @@ Display N coins from the data source, if the data source is CoinGecko it can rec
 ```python
 usage: top [-c CATEGORY] [-l LIMIT] [-s SORTBY [SORTBY ...]] [-r]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: top [-c CATEGORY] [-l LIMIT] [-s SORTBY [SORTBY ...]] [-r]
 | limit | Limit of records | 10 | True | None |
 | sortby | Sort by given column. Default: Market Cap Rank | Market Cap Rank | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---
 ## Examples
 

@@ -11,7 +11,6 @@ Displays what if scenario of having bought X shares at date Y
 ```python
 usage: whatif [-d DATE_SHARES_ACQUIRED] [-n NUM_SHARES_ACQUIRED]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: whatif [-d DATE_SHARES_ACQUIRED] [-n NUM_SHARES_ACQUIRED]
 | ---- | ----------- | ------- | -------- | ------- |
 | date_shares_acquired | Date at which the shares were acquired | None | True | None |
 | num_shares_acquired | Number of shares acquired | 1.0 | True | None |
-
-
 ---

@@ -11,11 +11,8 @@ description: OpenBB Terminal Function
 ```python
 usage: topnews
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

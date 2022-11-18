@@ -11,7 +11,6 @@ Removes a price from the list
 ```python
 usage: rmv -p PRICE [-a]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: rmv -p PRICE [-a]
 | ---- | ----------- | ------- | -------- | ------- |
 | price | Price you want to remove from the list | None | False | None |
 | all | Remove all prices from the list | False | True | None |
-
-
 ---
 ## Examples
 

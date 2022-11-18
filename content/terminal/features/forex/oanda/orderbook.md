@@ -11,11 +11,8 @@ Plot an orderbook for an instrument if Oanda provides one.
 ```python
 usage: orderbook
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

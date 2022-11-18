@@ -11,13 +11,10 @@ Provides detailed information about a stock's risk compared to the market risk.
 ```python
 usage: capm
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

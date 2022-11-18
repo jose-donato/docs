@@ -11,13 +11,10 @@ Perform Theta forecast: https://unit8co.github.io/darts/generated_api/darts.mode
 ```python
 usage: theta
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

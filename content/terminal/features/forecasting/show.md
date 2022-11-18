@@ -11,7 +11,6 @@ Show a portion of the DataFrame
 ```python
 usage: show [-n {}] [-s SORTBY [SORTBY ...]] [-r] [--limit-col LIMIT_COL]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: show [-n {}] [-s SORTBY [SORTBY ...]] [-r] [--limit-col LIMIT_COL]
 | sortby | Sort based on a column in the DataFrame |  | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | limit_col | Set the number of columns to display when showing the dataset | 10 | True | None |
-
-
 ---
 ## Examples
 

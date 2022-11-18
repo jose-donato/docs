@@ -11,11 +11,8 @@ Show fund info of a swedish fund.
 ```python
 usage: infoswe
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

@@ -11,7 +11,6 @@ Gets historical quotes for given option chain
 ```python
 usage: hist -s STRIKE [-p] [-c CHAIN_ID]
 ```
-
 ---
 ## Parameters
 
@@ -20,8 +19,6 @@ usage: hist -s STRIKE [-p] [-c CHAIN_ID]
 | strike | Strike price to look at | None | False | None |
 | put | Flag for showing put option | False | True | None |
 | chain_id | OCC option symbol | None | True | None |
-
-
 ---
 ## Examples
 

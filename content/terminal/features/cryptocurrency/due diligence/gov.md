@@ -11,11 +11,8 @@ Display asset's governance [Source: https://messari.io]
 ```python
 usage: gov
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

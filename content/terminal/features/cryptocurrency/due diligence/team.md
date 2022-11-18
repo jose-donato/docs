@@ -11,11 +11,8 @@ Display asset's team [Source: https://messari.io]
 ```python
 usage: team
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

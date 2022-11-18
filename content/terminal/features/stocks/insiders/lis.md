@@ -11,15 +11,12 @@ Print latest insider sales. [Source: OpenInsider]
 ```python
 usage: lis [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
-
-
 ---
 ## Examples
 

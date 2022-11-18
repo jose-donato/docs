@@ -11,7 +11,6 @@ Get top of book for loaded ticker from selected exchange
 ```python
 usage: quote -t S_TICKER [-e {BZX,EDGX,BYX,EDGA}]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: quote -t S_TICKER [-e {BZX,EDGX,BYX,EDGA}]
 | ---- | ----------- | ------- | -------- | ------- |
 | s_ticker | Ticker to get data for | None | False | None |
 | exchange |  | BZX | True | BZX, EDGX, BYX, EDGA |
-
-
 ---

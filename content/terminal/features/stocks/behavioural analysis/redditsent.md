@@ -11,7 +11,6 @@ Determine general Reddit sentiment about a ticker. [Source: Reddit]
 ```python
 usage: redditsent [-s {relevance,hot,top,new,comments}] [-c COMPANY] [--subreddits SUBREDDITS] [-l LIMIT] [-t {hour,day,week,month,year,all}] [--full] [-g] [-d]
 ```
-
 ---
 ## Parameters
 
@@ -25,8 +24,6 @@ usage: redditsent [-s {relevance,hot,top,new,comments}] [-c COMPANY] [--subreddi
 | full_search | enable comprehensive search | False | True | None |
 | graphic | display graphic | True | True | None |
 | display | Print table of sentiment values | False | True | None |
-
-
 ---
 ## Examples
 

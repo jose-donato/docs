@@ -11,15 +11,12 @@ Print up to 25 top ticker most shorted. [Source: Yahoo Finance]
 ```python
 usage: shorted [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of the most shorted stocks to retrieve. | 10 | True | None |
-
-
 ---
 ## Examples
 

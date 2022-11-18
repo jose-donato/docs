@@ -11,13 +11,10 @@ Show daily cramer recommendation
 ```python
 usage: jcdr [-i]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | inverse | Show inverse recommendation | False | True | None |
-
-
 ---

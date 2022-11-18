@@ -11,13 +11,10 @@ Displays selected option
 ```python
 usage: sop
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

@@ -11,7 +11,6 @@ Generate bond spread matrix.
 ```python
 usage: spread [-g {G7,PIIGS,EZ,AMERICAS,EUROPE,ME,APAC,AFRICA}] [-c COUNTRIES] [-m MATURITY] [--change CHANGE] [--color {rgb,binary,openbb}]
 ```
-
 ---
 ## Parameters
 
@@ -22,6 +21,4 @@ usage: spread [-g {G7,PIIGS,EZ,AMERICAS,EUROPE,ME,APAC,AFRICA}] [-c COUNTRIES] [
 | maturity | Specify maturity to compare rates. | 10Y | True | None |
 | change | Get matrix of 1 day change in rates or spreads. | False | True | None |
 | color | Set color palette on heatmap. | openbb | True | rgb, binary, openbb |
-
-
 ---

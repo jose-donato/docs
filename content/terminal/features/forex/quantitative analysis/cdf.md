@@ -11,13 +11,10 @@ Cumulative distribution function
 ```python
 usage: cdf
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

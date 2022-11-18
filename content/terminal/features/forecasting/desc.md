@@ -11,13 +11,10 @@ Show descriptive statistics of a dataset
 ```python
 usage: desc
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

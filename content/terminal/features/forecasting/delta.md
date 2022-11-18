@@ -11,13 +11,10 @@ Add %Change (Delta) to dataset based on specific column.
 ```python
 usage: delta
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

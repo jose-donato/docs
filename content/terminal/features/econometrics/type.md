@@ -11,7 +11,6 @@ Show the type of the columns of the dataset and/or change the type of the column
 ```python
 usage: type [-n {}] [--format {int,float,str,bool,category,date}]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: type [-n {}] [--format {int,float,str,bool,category,date}]
 | ---- | ----------- | ------- | -------- | ------- |
 | name | Provide dataset.column series to change type or dataset to see types. | None | True | None |
 | format | Set the format for the dataset.column defined. This can be: date, int, float, str, bool or category | None | True | int, float, str, bool, category, date |
-
-
 ---
 ## Examples
 

@@ -13,7 +13,6 @@ usage: ttcp [-l LIMIT]
             [-e {1inch,AfroDex,AirSwap,Amplbitcratic,Balancer,BestSwap,Bitox,CellSwap,Cellswap,Cofix,Coinchangex,Curve,DDEX,DUBIex,DecentrEx,DeversiFi,Dodo,ETHERCExchange,EtherBlockchain,EtherDelta,Ethernext,Ethfinex,FEGex,FFFSwap,Fordex,GUDecks,GUDeks,HiSwap,IDEX,LedgerDex,Matcha,Miniswap,Mooniswap,Oasis,OpenRelay,S.Finance,SakeSwap,SeedDex,SingularX,StarBitEx,SushiSwap,SwapX,SwitchDex,TacoSwap,TokenJar,TokenStore,TokenTrove,Tokenlon,TradexOne,Uniswap,ZeusSwap,dYdX,dex.blue}]
             [-d DAYS] [-s {base,quoted,trades,tradeAmount}] [-r]
 ```
-
 ---
 ## Parameters
 
@@ -24,6 +23,4 @@ usage: ttcp [-l LIMIT]
 | days | Number of days to display data for. | 30 | True | None |
 | sortby | Sort by given column. | tradeAmount | True | base, quoted, trades, tradeAmount |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---

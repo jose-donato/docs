@@ -11,13 +11,10 @@ The extended dupont deconstructs return on equity to allow investors to understa
 ```python
 usage: dupont [--raw]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | raw | Print raw data. | False | True | None |
-
-
 ---

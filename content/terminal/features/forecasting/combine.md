@@ -11,7 +11,6 @@ Combine two entire datasets, or add specific columns. Add specificcolumns with t
 ```python
 usage: combine [--dataset {--columns,-c}] [-c COLUMNS]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: combine [--dataset {--columns,-c}] [-c COLUMNS]
 | ---- | ----------- | ------- | -------- | ------- |
 | dataset | Dataset to add columns to | None | True | --columns, -c |
 | columns | The columns we want to add dataset.column,datasetb.column2 | None | True | None |
-
-
 ---
 ## Examples
 

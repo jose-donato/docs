@@ -11,7 +11,6 @@ Display BTC confirmed transactions [Source: https://api.blockchain.info/]
 ```python
 usage: btcct [-s SINCE] [-u UNTIL]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: btcct [-s SINCE] [-u UNTIL]
 | ---- | ----------- | ------- | -------- | ------- |
 | since | Initial date. Default: 2010-01-01 | 2010-01-01 | True | None |
 | until | Final date. Default: 2022-11-18 | 2022-11-18 | True | None |
-
-
 ---
 ![btcct](https://user-images.githubusercontent.com/46355364/154067586-d80059e8-cf7b-475a-990b-cf2aec7bc646.png)
 

@@ -11,7 +11,6 @@ Prints in-depth ratios of a company over time. This can be either quarterly or a
 ```python
 usage: ratios [-l LIMIT] [-q]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: ratios [-l LIMIT] [-q]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest years/quarters. | 5 | True | None |
 | b_quarter | Quarter fundamental data flag. | False | True | None |
-
-
 ---

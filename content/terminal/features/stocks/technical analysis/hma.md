@@ -11,7 +11,6 @@ The Hull Moving Average solves the age old dilemma of making a moving average mo
 ```python
 usage: hma [-l N_LENGTH] [-o N_OFFSET]
 ```
-
 ---
 ## Parameters
 
@@ -19,8 +18,6 @@ usage: hma [-l N_LENGTH] [-o N_OFFSET]
 | ---- | ----------- | ------- | -------- | ------- |
 | n_length | Window lengths. Multiple values indicated as comma separated values. | 10, 20 | True | None |
 | n_offset | offset | 0 | True | None |
-
-
 ---
 ![hma](https://user-images.githubusercontent.com/46355364/154310988-2e97c166-a3b9-49ae-abcd-2c1b37309072.png)
 

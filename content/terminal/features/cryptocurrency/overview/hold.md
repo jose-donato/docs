@@ -11,7 +11,6 @@ Shows overview of public companies that holds ethereum or bitcoin. You can find 
 ```python
 usage: hold [-c {ethereum,bitcoin}] [-l LIMIT] [--bar]
 ```
-
 ---
 ## Parameters
 
@@ -20,6 +19,4 @@ usage: hold [-c {ethereum,bitcoin}] [-l LIMIT] [--bar]
 | coin | companies with ethereum or bitcoin | bitcoin | True | ethereum, bitcoin |
 | limit | display N number of records | 5 | True | None |
 | bar | Flag to show bar chart | False | True | None |
-
-
 ---

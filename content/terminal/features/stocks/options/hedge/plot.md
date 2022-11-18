@@ -11,11 +11,8 @@ This function plots option payoff diagrams
 ```python
 usage: plot
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

@@ -11,13 +11,10 @@ Display prices
 ```python
 usage: show
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

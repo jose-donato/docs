@@ -11,11 +11,8 @@ Opens company's website. [Source: Yahoo Finance]
 ```python
 usage: web
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

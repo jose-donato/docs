@@ -11,11 +11,8 @@ Show portfolio maximum drawdown
 ```python
 usage: maxdd
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

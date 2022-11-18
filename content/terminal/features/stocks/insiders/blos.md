@@ -11,15 +11,12 @@ Print latest officer sales 100k. [Source: OpenInsider]
 ```python
 usage: blos [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
-
-
 ---
 ## Examples
 

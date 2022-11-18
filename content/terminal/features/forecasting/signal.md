@@ -11,13 +11,10 @@ Add price signal to dataset based on closing price. 1 if the signal is that shor
 ```python
 usage: signal
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

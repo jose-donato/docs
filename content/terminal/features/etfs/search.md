@@ -11,7 +11,6 @@ Search ETF by name [Source: FinanceDatabase/StockAnalysis.com]
 ```python
 usage: search -n NAME [NAME ...] [-d DESCRIPTION [DESCRIPTION ...]]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: search -n NAME [NAME ...] [-d DESCRIPTION [DESCRIPTION ...]]
 | ---- | ----------- | ------- | -------- | ------- |
 | name | Name to look for ETFs |  | False | None |
 | description | Name to look for ETFs |  | True | None |
-
-
 ---

@@ -11,13 +11,10 @@ Show overview of funds from selected country.
 ```python
 usage: overview [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of search results to show | 10 | True | None |
-
-
 ---

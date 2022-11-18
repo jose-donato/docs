@@ -11,11 +11,8 @@ Display asset's tokenomics [Source: https://messari.io]
 ```python
 usage: tk
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

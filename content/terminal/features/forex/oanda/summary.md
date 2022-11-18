@@ -11,11 +11,8 @@ Print some information about your account.
 ```python
 usage: summary
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

@@ -33,8 +33,6 @@ def get_economic_calendar(countries: Union[List[str], str] = "", start_date: str
 
 Get todays economic calendar for the United States
 ---
-## Examples
-
 
 To get multiple countries for a given date, pass the same start and end date as well as
 a list of countries

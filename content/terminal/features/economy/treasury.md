@@ -11,7 +11,6 @@ Obtain any set of U.S. treasuries and plot them together. These can be a range o
 ```python
 usage: treasury [-m MATURITY] [--show] [--freq {annually,monthly,weekly,daily}] [-t TYPE] [-s START_DATE] [-e END_DATE]
 ```
-
 ---
 ## Parameters
 
@@ -23,8 +22,6 @@ usage: treasury [-m MATURITY] [--show] [--freq {annually,monthly,weekly,daily}] 
 | type | Choose from: nominal, inflation, average, secondary | nominal | True | None |
 | start_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | 1934-01-31 | True | None |
 | end_date | The end date of the data (format: YEAR-DAY-MONTH, i.e. 2021-06-02) | 2022-11-18 | True | None |
-
-
 ---
 ## Examples
 

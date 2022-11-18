@@ -11,11 +11,8 @@ Displays funding rate by exchange for a certain asset [Source: https://coinglass
 ```python
 usage: fundrate
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

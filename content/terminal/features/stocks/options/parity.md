@@ -11,7 +11,6 @@ Shows whether options are over or under valued
 ```python
 usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 ```
-
 ---
 ## Parameters
 
@@ -21,8 +20,6 @@ usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 | ask | Use ask price instead of lastPrice | False | True | None |
 | mini | Minimum strike price shown | None | True | None |
 | maxi | Maximum strike price shown | None | True | None |
-
-
 ---
 ## Examples
 

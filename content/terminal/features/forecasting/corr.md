@@ -11,13 +11,10 @@ Plot correlation coefficients.
 ```python
 usage: corr
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

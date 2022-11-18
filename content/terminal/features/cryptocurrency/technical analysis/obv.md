@@ -11,13 +11,10 @@ The On Balance Volume (OBV) is a cumulative total of the up and down volume. Whe
 ```python
 usage: obv
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ![obv](https://user-images.githubusercontent.com/46355364/154311359-edb78587-744f-4e2c-b247-8b9fbf09b01f.png)
 

@@ -11,11 +11,8 @@ List of suppliers from ticker provided. [Source: CSIMarket]
 ```python
 usage: supplier
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

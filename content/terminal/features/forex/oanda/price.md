@@ -11,11 +11,8 @@ Get price for selected instrument.
 ```python
 usage: price
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

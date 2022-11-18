@@ -11,11 +11,8 @@ description: OpenBB Terminal Function
 ```python
 usage: hold
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

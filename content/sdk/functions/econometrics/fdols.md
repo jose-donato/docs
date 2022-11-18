@@ -7,7 +7,7 @@ description: OpenBB SDK Function
 
 First differencing is an alternative to using fixed effects when there might be correlation.
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L408)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L409)]
 
 ```python
 def get_fdols(Y: pd.DataFrame, X: pd.DataFrame) -> None

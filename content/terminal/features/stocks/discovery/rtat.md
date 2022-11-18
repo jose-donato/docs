@@ -11,15 +11,12 @@ Tracking over $30B USD/day of individual investors trades, RTAT gives a daily vi
 ```python
 usage: rtat [-l LIMIT]
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of days to display | 3 | True | None |
-
-
 ---
 ## Examples
 

@@ -11,11 +11,8 @@ National debt statistics for various countries. [Source: Wikipedia]
 ```python
 usage: edebt
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

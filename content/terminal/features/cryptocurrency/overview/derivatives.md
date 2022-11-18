@@ -11,7 +11,6 @@ Shows list of crypto derivatives from CoinGecko Crypto derivatives are secondary
 ```python
 usage: derivatives [-l LIMIT] [-s {Rank,Market,Symbol,Price,Pct_Change_24h,Contract_Type,Basis,Spread,Funding_Rate,Volume_24h}] [-r]
 ```
-
 ---
 ## Parameters
 
@@ -20,8 +19,6 @@ usage: derivatives [-l LIMIT] [-s {Rank,Market,Symbol,Price,Pct_Change_24h,Contr
 | limit | display N number records | 15 | True | None |
 | sortby | Sort by given column. Default: Rank | Rank | True | Rank, Market, Symbol, Price, Pct_Change_24h, Contract_Type, Basis, Spread, Funding_Rate, Volume_24h |
 | reverse | Data is sorted in ascending order by default. Reverse flag will sort it in an descending way. Only works when raw data is displayed. | False | True | None |
-
-
 ---
 ## Examples
 

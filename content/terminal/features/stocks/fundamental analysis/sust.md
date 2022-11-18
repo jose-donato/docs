@@ -11,13 +11,10 @@ Print sustainability values of the company. The following fields are expected: P
 ```python
 usage: sust
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---
 ## Examples
 

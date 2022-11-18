@@ -11,7 +11,6 @@ This function plots option hedge diagrams
 ```python
 usage: pick -p PICK [PICK ...] [-a AMOUNT]
 ```
-
 ---
 ## Parameters
 
@@ -19,6 +18,4 @@ usage: pick -p PICK [PICK ...] [-a AMOUNT]
 | ---- | ----------- | ------- | -------- | ------- |
 | pick | Choose what you would like to pick | None | False | None |
 | amount | Choose the amount invested | 1000 | True | None |
-
-
 ---

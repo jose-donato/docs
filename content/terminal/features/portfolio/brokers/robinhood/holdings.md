@@ -11,11 +11,8 @@ Display info about your trading accounts on Robinhood
 ```python
 usage: holdings
 ```
-
 ---
 ## Parameters
 
 This command has no parameters
-
-
 ---

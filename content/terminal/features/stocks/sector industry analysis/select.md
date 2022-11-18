@@ -11,13 +11,10 @@ Select stock ticker and alter the industry, sector, country and market cap accor
 ```python
 usage: select -t TICKER
 ```
-
 ---
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | Stock ticker | None | False | None |
-
-
 ---
