@@ -3,16 +3,11 @@ title: fred
 description: OpenBB Terminal Function
 ---
 
-# Economy
-
-## fred
-
-### Description
+# fred
 
 Query the FRED database and plot data based on the Series ID. [Source: FRED]
 
-### Usage
-
+### Usage 
 ```python
 usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 ```
@@ -25,6 +20,7 @@ usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 | start_date | Starting date (YYYY-MM-DD) of data | None | True | None |
 | end_date | Ending date (YYYY-MM-DD) of data | None | True | None |
 | query | Query the FRED database to obtain Series IDs given the query search term. | None | True | None |
+
 
 ## Examples
 
@@ -63,3 +59,4 @@ usage: fred [-p PARAMETER] [-s START_DATE] [-e END_DATE] [-q QUERY]
 ```
 
 ![fred](https://user-images.githubusercontent.com/46355364/158575129-1d4b26de-8bd8-49b3-b1b9-e349afaf8a50.png)
+

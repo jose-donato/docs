@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.onchain.whale_alert_model.get_whales_transactions
+Whale Alert's API allows you to retrieve live and historical transaction data from major blockchains.
 
-```python title='openbb_terminal/cryptocurrency/onchain/whale_alert_model.py'
-def get_whales_transactions(min_value: int, limit: int, sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_model.py#L86)]
+
+```python
+def get_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: str = "date", ascend: bool = False) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_model.py#L86)
-
-Description: Whale Alert's API allows you to retrieve live and historical transaction data from major blockchains.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| min_value | int | Minimum value of trade to track. | None | False |
-| limit | int | Limit of transactions. Max 100 | None | False |
-| sortby | str | Key to sort by. | None | False |
-| ascend | str | Sort in ascending order. | None | False |
+| min_value | int | Minimum value of trade to track. | 800000 | True |
+| limit | int | Limit of transactions. Max 100 | 100 | True |
+| sortby | str | Key to sort by. | date | True |
+| ascend | str | Sort in ascending order. | False | True |
 
 ## Returns
 
@@ -35,38 +33,32 @@ Description: Whale Alert's API allows you to retrieve live and historical transa
 | ---- | ----------- |
 | pd.DataFrame | Crypto wales transactions |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.onchain.whale_alert_view.display_whales_transactions
+Display huge value transactions from major blockchains. [Source: https://docs.whale-alert.io/]
 
-```python title='openbb_terminal/cryptocurrency/onchain/whale_alert_view.py'
-def display_whales_transactions(min_value: int, limit: int, sortby: str, ascend: bool, show_address: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_view.py#L21)]
+
+```python
+def display_whales_transactions(min_value: int = 800000, limit: int = 100, sortby: str = "date", ascend: bool = False, show_address: bool = False, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/whale_alert_view.py#L21)
-
-Description: Display huge value transactions from major blockchains. [Source: https://docs.whale-alert.io/]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| min_value | int | Minimum value of trade to track. | None | False |
-| limit | int | Limit of transactions. Maximum 100 | None | False |
-| sortby | str | Key to sort by. | None | False |
-| ascend | str | Sort in ascending order. | None | False |
-| show_address | bool | Flag to show addresses of transactions. | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| min_value | int | Minimum value of trade to track. | 800000 | True |
+| limit | int | Limit of transactions. Maximum 100 | 100 | True |
+| sortby | str | Key to sort by. | date | True |
+| ascend | str | Sort in ascending order. | False | True |
+| show_address | bool | Flag to show addresses of transactions. | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

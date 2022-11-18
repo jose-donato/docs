@@ -3,15 +3,11 @@ title: load
 description: OpenBB Terminal Function
 ---
 
-# Portfolio_Analysis
-
-## load
-
-### Description: 
+# load
 
 Function to get portfolio from predefined csv/json/xlsx file inside portfolios folder
 
-### Usage: 
+### Usage 
 ```python
 usage: load [-s] [-c] [--no_last_price] [--nan] [-p {}]
 ```

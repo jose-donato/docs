@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.options.yfinance_model.get_volume_open_interest
+Plot volume and open interest
 
-```python title='openbb_terminal/stocks/options/yfinance_model.py'
-def get_volume_open_interest(symbol: str, expiry: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L599)]
+
+```python
+def get_volume_open_interest(symbol: str, expiry: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L599)
-
-Description: Plot volume and open interest
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -30,40 +28,34 @@ Description: Plot volume and open interest
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.options.yfinance_view.plot_volume_open_interest
+Plot volume and open interest
 
-```python title='openbb_terminal/stocks/options/yfinance_view.py'
-def plot_volume_open_interest(symbol: str, expiry: str, min_sp: float, max_sp: float, min_vol: float, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L429)]
+
+```python
+def plot_volume_open_interest(symbol: str, expiry: str, min_sp: float = -1, max_sp: float = -1, min_vol: float = -1, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L429)
-
-Description: Plot volume and open interest
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 | expiry | str | Option expiration | None | False |
-| min_sp | float | Min strike price | None | False |
-| max_sp | float | Max strike price | None | False |
-| min_vol | float | Min volume to consider | None | False |
-| export | str | Format for exporting data | None | False |
+| min_sp | float | Min strike price | -1 | True |
+| max_sp | float | Max strike price | -1 | True |
+| min_vol | float | Min volume to consider | -1 | True |
+| export | str | Format for exporting data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

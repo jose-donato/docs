@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.discovery.pycoingecko_model.get_trending_coins
+Returns trending coins [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py'
-def get_trending_coins() -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L317)]
+
+```python
+def get_trending_coins() -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_model.py#L317)
-
-Description: Returns trending coins [Source: CoinGecko]
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,33 +28,27 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | Trending Coins |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.discovery.pycoingecko_view.display_trending
+Prints table showing trending coins [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py'
-def display_trending(export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L192)]
+
+```python
+def display_trending(export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/discovery/pycoingecko_view.py#L192)
-
-Description: Prints table showing trending coins [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

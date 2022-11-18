@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.terraengineer_model.get_history_asset_from_terra_address
+Returns historical data of an asset in a certain terra address
 
-```python title='openbb_terminal/cryptocurrency/defi/terraengineer_model.py'
-def get_history_asset_from_terra_address(asset: str, address: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L19)]
+
+```python
+def get_history_asset_from_terra_address(asset: str = "ust", address: str = "terra1tmnqgvg567ypvsvk6rwsga3srp7e3lg6u0elp8") -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_model.py#L19)
-
-Description: Returns historical data of an asset in a certain terra address
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| asset | str | Terra asset {ust,luna,sdt} | None | False |
-| address | str | Terra address. Valid terra addresses start with 'terra' | None | False |
+| asset | str | Terra asset {ust,luna,sdt} | ust | True |
+| address | str | Terra address. Valid terra addresses start with 'terra' | terra1tmnqgvg567ypvsvk6rwsga3srp7e3lg6u0elp8 | True |
 
 ## Returns
 
@@ -33,36 +31,30 @@ Description: Returns historical data of an asset in a certain terra address
 | ---- | ----------- |
 | pd.DataFrame | historical data |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.terraengineer_view.display_terra_asset_history
+Plots the 30-day history of specified asset in terra address
 
-```python title='openbb_terminal/cryptocurrency/defi/terraengineer_view.py'
-def display_terra_asset_history(asset: str, address: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L29)]
+
+```python
+def display_terra_asset_history(asset: str = "", address: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/terraengineer_view.py#L29)
-
-Description: Plots the 30-day history of specified asset in terra address
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| asset | str | Terra asset {ust,luna,sdt} | None | False |
-| address | str | Terra address. Valid terra addresses start with 'terra' | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| asset | str | Terra asset {ust,luna,sdt} |  | True |
+| address | str | Terra address. Valid terra addresses start with 'terra' |  | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

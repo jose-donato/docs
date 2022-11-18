@@ -3,15 +3,11 @@ title: from
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## from
-
-### Description: 
+# from
 
 Select the "from" currency symbol in a forex pair
 
-### Usage: 
+### Usage 
 ```python
 usage: from -n FROM_SYMBOL
 ```

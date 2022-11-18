@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.coinbase_model.get_trading_pairs
+Get a list of available currency pairs for trading. [Source: Coinbase]
 
-```python title='openbb_terminal/cryptocurrency/overview/coinbase_model.py'
-def get_trading_pairs(limit: int, sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_model.py#L24)]
+
+```python
+def get_trading_pairs(limit: int = 50, sortby: str = "quote_increment", ascend: bool = True) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_model.py#L24)
-
-Description: Get a list of available currency pairs for trading. [Source: Coinbase]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Top n of pairs | None | False |
-| sortby | str | Key to sortby data | None | False |
-| ascend | bool | Sort descending flag | None | False |
+| limit | int | Top n of pairs | 50 | True |
+| sortby | str | Key to sortby data | quote_increment | True |
+| ascend | bool | Sort descending flag | True | True |
 
 ## Returns
 
@@ -34,36 +32,30 @@ Description: Get a list of available currency pairs for trading. [Source: Coinba
 | ---- | ----------- |
 | pd.DataFrame | Available trading pairs on Coinbase |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.coinbase_view.display_trading_pairs
+Displays a list of available currency pairs for trading. [Source: Coinbase]
 
-```python title='openbb_terminal/cryptocurrency/overview/coinbase_view.py'
-def display_trading_pairs(limit: int, sortby: str, ascend: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_view.py#L19)]
+
+```python
+def display_trading_pairs(limit: int = 20, sortby: str = "quote_increment", ascend: bool = True, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinbase_view.py#L19)
-
-Description: Displays a list of available currency pairs for trading. [Source: Coinbase]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Top n of pairs | None | False |
-| sortby | str | Key to sortby data | None | False |
-| ascend | bool | Sort ascending flag | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Top n of pairs | 20 | True |
+| sortby | str | Key to sortby data | quote_increment | True |
+| ascend | bool | Sort ascending flag | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

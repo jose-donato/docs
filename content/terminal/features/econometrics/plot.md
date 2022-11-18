@@ -3,15 +3,11 @@ title: plot
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## plot
-
-### Description: 
+# plot
 
 Plot data based on the index
 
-### Usage: 
+### Usage 
 ```python
 usage: plot [-v VALUES]
 ```

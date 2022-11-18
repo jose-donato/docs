@@ -3,15 +3,11 @@ title: ols
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## ols
-
-### Description: 
+# ols
 
 Performs an OLS regression on timeseries data.
 
-### Usage: 
+### Usage 
 ```python
 usage: ols -d DEPENDENT -i INDEPENDENT [--no-output]
 ```

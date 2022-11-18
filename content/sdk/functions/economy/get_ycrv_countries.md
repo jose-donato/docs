@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # get_ycrv_countries
 
-## openbb_terminal.economy.investingcom_model.get_ycrv_countries
+Get available countries for ycrv command.
 
-```python title='openbb_terminal/economy/investingcom_model.py'
-def get_ycrv_countries() -> List
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L285)]
+
+```python
+def get_ycrv_countries() -> List[str]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/investingcom_model.py#L285)
-
-Description: Get available countries for ycrv command.
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of available countries. |
-
-## Examples
 

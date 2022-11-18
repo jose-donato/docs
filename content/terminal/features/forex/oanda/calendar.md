@@ -3,15 +3,11 @@ title: calendar
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## calendar
-
-### Description: 
+# calendar
 
 Show Calendar Data
 
-### Usage: 
+### Usage 
 ```python
 usage: calendar [-d DAYS]
 ```

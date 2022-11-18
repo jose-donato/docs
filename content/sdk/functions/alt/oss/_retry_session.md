@@ -5,28 +5,24 @@ description: OpenBB SDK Function
 
 # _retry_session
 
-## openbb_terminal.alternative.oss.runa_model._retry_session
+Helper methods that retries to make request.
 
-```python title='openbb_terminal/alternative/oss/runa_model.py'
-def _retry_session(url: str, retries: int, backoff_factor: float) -> Session
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L32)]
+
+```python
+def _retry_session(url: str, retries: int = 3, backoff_factor: float = 1.0) -> requests.sessions.Session
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L32)
-
-Description: Helper methods that retries to make request.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | url | str | Url to mount a session | None | False |
-| retries | int | How many retries | None | False |
-| backoff_factor | float | Backoff schema - time periods between retry | None | False |
+| retries | int | How many retries | 3 | True |
+| backoff_factor | float | Backoff schema - time periods between retry | 1.0 | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | requests.Session | Mounted session |
-
-## Examples
 

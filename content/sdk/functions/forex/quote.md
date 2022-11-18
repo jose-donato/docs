@@ -3,29 +3,21 @@ title: quote
 description: OpenBB SDK Function
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # quote
 
-<Tabs>
-<TabItem value="model" label="Model" default>
+Get current exchange rate quote from alpha vantage.
 
-## openbb_terminal.forex.av_model.get_quote
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L56)]
 
-```python title='openbb_terminal/forex/av_model.py'
-def get_quote(to_symbol: str, from_symbol: str) -> Dict
+```python
+def get_quote(to_symbol: str = "USD", from_symbol: str = "EUR") -> Dict[str, Any]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_model.py#L56)
-
-Description: Get current exchange rate quote from alpha vantage.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| to_symbol | str | To forex symbol | None | False |
-| from_symbol | str | From forex symbol | None | False |
+| to_symbol | str | To forex symbol | USD | True |
+| from_symbol | str | From forex symbol | EUR | True |
 
 ## Returns
 
@@ -33,36 +25,3 @@ Description: Get current exchange rate quote from alpha vantage.
 | ---- | ----------- |
 | Dict[str, Any] | Dictionary of exchange rate |
 
-## Examples
-
-
-
-</TabItem>
-<TabItem value="view" label="View">
-
-## openbb_terminal.forex.av_view.display_quote
-
-```python title='openbb_terminal/forex/av_view.py'
-def display_quote(to_symbol: str, from_symbol: str) -> None
-```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/av_view.py#L18)
-
-Description: Display current forex pair exchange rate.
-
-## Parameters
-
-| Name | Type | Description | Default | Optional |
-| ---- | ---- | ----------- | ------- | -------- |
-| to_symbol | str | To symbol | None | False |
-| from_symbol | str | From forex symbol | None | False |
-
-## Returns
-
-This function does not return anything
-
-## Examples
-
-
-
-</TabItem>
-</Tabs>

@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.technical_analysis.volatility_model.donchian
+Calculate Donchian Channels
 
-```python title='openbb_terminal/common/technical_analysis/volatility_model.py'
-def donchian(data: pd.DataFrame, upper_length: int, lower_length: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L53)]
+
+```python
+def donchian(data: pd.DataFrame, upper_length: int = 20, lower_length: int = 20) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L53)
-
-Description: Calculate Donchian Channels
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| upper_length | int | Length of window to calculate upper channel | None | False |
-| lower_length | int | Length of window to calculate lower channel | None | False |
+| upper_length | int | Length of window to calculate upper channel | 20 | True |
+| lower_length | int | Length of window to calculate lower channel | 20 | True |
 
 ## Returns
 
@@ -34,38 +32,32 @@ Description: Calculate Donchian Channels
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of upper and lower channels |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.technical_analysis.volatility_view.display_donchian
+Plots donchian channels
 
-```python title='openbb_terminal/common/technical_analysis/volatility_view.py'
-def display_donchian(data: pd.DataFrame, symbol: str, upper_length: int, lower_length: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L112)]
+
+```python
+def display_donchian(data: pd.DataFrame, symbol: str = "", upper_length: int = 20, lower_length: int = 20, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L112)
-
-Description: Plots donchian channels
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| symbol | str | Ticker symbol | None | False |
-| upper_length | int | Length of window to calculate upper channel | None | False |
-| lower_length | int | Length of window to calculate lower channel | None | False |
-| export | str | Format of export file | None | False |
+| symbol | str | Ticker symbol |  | True |
+| upper_length | int | Length of window to calculate upper channel | 20 | True |
+| lower_length | int | Length of window to calculate lower channel | 20 | True |
+| export | str | Format of export file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

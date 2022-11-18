@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # rsquare
 
-## openbb_terminal.portfolio.portfolio_model.get_r2_score
+Method that retrieves R2 Score for portfolio and benchmark selected
 
-```python title='openbb_terminal/portfolio/portfolio_model.py'
-def get_r2_score(portfolio_engine: portfolio_model.PortfolioEngine) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L825)]
+
+```python
+def get_r2_score(portfolio_engine: portfolio_model.PortfolioEngine) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L825)
-
-Description: Method that retrieves R2 Score for portfolio and benchmark selected
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Method that retrieves R2 Score for portfolio and benchmark selected
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with R2 Score between portfolio and benchmark for different periods |
-
-## Examples
 

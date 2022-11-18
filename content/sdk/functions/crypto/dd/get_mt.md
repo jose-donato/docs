@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_available_timeseries
+Returns available messari timeseries
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
-def get_available_timeseries(only_free: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L34)]
+
+```python
+def get_available_timeseries(only_free: bool = True) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L34)
-
-Description: Returns available messari timeseries
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| only_free | bool | Display only timeseries available for free | None | False |
+| only_free | bool | Display only timeseries available for free | True | True |
 
 ## Returns
 
@@ -32,36 +30,30 @@ Description: Returns available messari timeseries
 | ---- | ----------- |
 | pd.DataFrame | available timeseries |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_messari_timeseries_list
+Prints table showing messari timeseries list
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
-def display_messari_timeseries_list(limit: int, query: str, only_free: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L49)]
+
+```python
+def display_messari_timeseries_list(limit: int = 10, query: str = "", only_free: bool = True, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L49)
-
-Description: Prints table showing messari timeseries list
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | number to show | None | False |
-| query | str | Query to search across all messari timeseries | None | False |
-| only_free | bool | Display only timeseries available for free | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | number to show | 10 | True |
+| query | str | Query to search across all messari timeseries |  | True |
+| only_free | bool | Display only timeseries available for free | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

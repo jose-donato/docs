@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # gainers
 
-## openbb_terminal.stocks.discovery.yahoofinance_model.get_gainers
+Get top gainers. [Source: Yahoo Finance]
 
-```python title='openbb_terminal/stocks/discovery/yahoofinance_model.py'
-def get_gainers() -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L16)]
+
+```python
+def get_gainers() -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/yahoofinance_model.py#L16)
-
-Description: Get top gainers. [Source: Yahoo Finance]
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Stock Gainers |
-
-## Examples
 

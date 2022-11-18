@@ -5,28 +5,24 @@ description: OpenBB SDK Function
 
 # valuation
 
-## openbb_terminal.economy.finviz_model.get_valuation_data
+Get group (sectors, industry or country) valuation data. [Source: Finviz]
 
-```python title='openbb_terminal/economy/finviz_model.py'
-def get_valuation_data(group: str, sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L66)]
+
+```python
+def get_valuation_data(group: str = "sector", sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L67)
-
-Description: Get group (sectors, industry or country) valuation data. [Source: Finviz]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| group | str | Group by category. Available groups can be accessed through get_groups(). | None | False |
-| sortby | str | Column to sort by | None | False |
-| ascend | bool | Flag to sort in ascending order | None | False |
+| group | str | Group by category. Available groups can be accessed through get_groups(). | sector | True |
+| sortby | str | Column to sort by | Name | True |
+| ascend | bool | Flag to sort in ascending order | True | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | dataframe with valuation/performance data |
-
-## Examples
 

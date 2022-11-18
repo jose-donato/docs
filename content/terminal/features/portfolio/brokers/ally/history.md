@@ -3,15 +3,11 @@ title: history
 description: OpenBB Terminal Function
 ---
 
-# Ally
-
-## history
-
-### Description: 
+# history
 
 Account transaction history
 
-### Usage: 
+### Usage 
 ```python
 usage: history [-l LIMIT]
 ```

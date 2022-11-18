@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.dark_pool_shorts.finra_model.getATSdata
+Get all FINRA ATS data, and parse most promising tickers based on linear regression
 
-```python title='openbb_terminal/stocks/dark_pool_shorts/finra_model.py'
-def getATSdata(limit: int, tier_ats: str) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L214)]
+
+```python
+def getATSdata(limit: int = 1000, tier_ats: str = "T1") -> Tuple[pd.DataFrame, Dict]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_model.py#L214)
-
-Description: Get all FINRA ATS data, and parse most promising tickers based on linear regression
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of tickers to filter from entire ATS data based on the sum of the total weekly shares quantity | None | False |
-| tier_ats | int | Tier to process data from: T1, T2 or OTCE | None | False |
+| limit | int | Number of tickers to filter from entire ATS data based on the sum of the total weekly shares quantity | 1000 | True |
+| tier_ats | int | Tier to process data from: T1, T2 or OTCE | T1 | True |
 
 ## Returns
 
@@ -33,37 +31,31 @@ Description: Get all FINRA ATS data, and parse most promising tickers based on l
 | ---- | ----------- |
 | Tuple[pd.DataFrame, Dict] | Dark Pools (ATS) Data, Tickers from Dark Pools with better regression slope |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.dark_pool_shorts.finra_view.darkpool_otc
+Display dark pool (ATS) data of tickers with growing trades activity. [Source: FINRA]
 
-```python title='openbb_terminal/stocks/dark_pool_shorts/finra_view.py'
-def darkpool_otc(input_limit: int, limit: int, tier: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L188)]
+
+```python
+def darkpool_otc(input_limit: int = 1000, limit: int = 10, tier: str = "T1", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/dark_pool_shorts/finra_view.py#L189)
-
-Description: Display dark pool (ATS) data of tickers with growing trades activity. [Source: FINRA]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| input_limit | int | Number of tickers to filter from entire ATS data based on<br/>the sum of the total weekly shares quantity | None | False |
-| limit | int | Number of tickers to display from most promising with<br/>better linear regression slope | None | False |
-| tier | str | Tier to process data from: T1, T2 or OTCE | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| input_limit | int | Number of tickers to filter from entire ATS data based on<br/>the sum of the total weekly shares quantity | 1000 | True |
+| limit | int | Number of tickers to display from most promising with<br/>better linear regression slope | 10 | True |
+| tier | str | Tier to process data from: T1, T2 or OTCE | T1 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

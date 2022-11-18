@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.loanscan_model.get_rates
+Returns crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
 
-```python title='openbb_terminal/cryptocurrency/overview/loanscan_model.py'
-def get_rates(rate_type: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_model.py#L267)]
+
+```python
+def get_rates(rate_type: str = "borrow") -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_model.py#L267)
-
-Description: Returns crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | supply | False |
+| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | borrow | True |
 
 ## Returns
 
@@ -32,37 +30,31 @@ Description: Returns crypto {borrow,supply} interest rates for cryptocurrencies 
 | ---- | ----------- |
 | pd.DataFrame | crypto interest rates per platform |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.loanscan_view.display_crypto_rates
+Displays crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
 
-```python title='openbb_terminal/cryptocurrency/overview/loanscan_view.py'
-def display_crypto_rates(symbols: str, platforms: str, rate_type: str, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_view.py#L24)]
+
+```python
+def display_crypto_rates(symbols: str, platforms: str, rate_type: str = "borrow", limit: int = 10, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/loanscan_view.py#L24)
-
-Description: Displays crypto {borrow,supply} interest rates for cryptocurrencies across several platforms
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | supply | False |
-| symbols | str | Crypto separated by commas. Default: BTC,ETH,USDT,USDC | BTC | False |
-| platforms | str | Platforms separated by commas. Default: BlockFi,Ledn,SwissBorg,Youhodler | BlockFi | False |
-| limit | int | Number of records to show | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| rate_type | str | Interest rate type: {borrow, supply}. Default: supply | borrow | True |
+| symbols | str | Crypto separated by commas. Default: BTC,ETH,USDT,USDC | None | False |
+| platforms | str | Platforms separated by commas. Default: BlockFi,Ledn,SwissBorg,Youhodler | None | False |
+| limit | int | Number of records to show | 10 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

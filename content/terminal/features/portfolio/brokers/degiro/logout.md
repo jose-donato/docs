@@ -3,18 +3,17 @@ title: logout
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## logout
-
-### Description: 
+# logout
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: logout
 ```
 
+## Parameters
+
+This command has no parameters
 
 

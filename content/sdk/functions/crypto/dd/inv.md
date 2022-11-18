@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.due_diligence.messari_model.get_investors
+Returns coin investors
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/messari_model.py'
-def get_investors(symbol: str) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L494)]
+
+```python
+def get_investors(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L494)
-
-Description: Returns coin investors
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,34 +30,28 @@ Description: Returns coin investors
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Individuals,<br/>Organizations |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.due_diligence.messari_view.display_investors
+Prints table showing coin investors
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/messari_view.py'
-def display_investors(symbol: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L510)]
+
+```python
+def display_investors(symbol: str, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L510)
-
-Description: Prints table showing coin investors
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check coin investors | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

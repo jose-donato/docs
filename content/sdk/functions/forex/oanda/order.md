@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forex.oanda.oanda_model.create_order_request
+Request creation of buy/sell trade order.
 
-```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def create_order_request(price: int, units: int, instrument: Optional[str], accountID: str) -> Union
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L270)]
+
+```python
+def create_order_request(price: int = 0, units: int = 0, instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L270)
-
-Description: Request creation of buy/sell trade order.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
-| price | int | The price to set for the limit order. | None | False |
-| units | int | The number of units to place in the order request. | None | False |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
+| price | int | The price to set for the limit order. | 0 | True |
+| units | int | The number of units to place in the order request. | 0 | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
 ## Returns
 
@@ -35,36 +33,30 @@ Description: Request creation of buy/sell trade order.
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Orders data or False |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forex.oanda.oanda_view.create_order
+Create a buy/sell order.
 
-```python title='openbb_terminal/forex/oanda/oanda_view.py'
-def create_order(accountID: str, instrument: str, price: int, units: int) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L174)]
+
+```python
+def create_order(accountID: str, instrument: str = "", price: int = 0, units: int = 0) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L178)
-
-Description: Create a buy/sell order.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
-| instrument | str | The loaded currency pair | None | False |
-| price | int | The price to set for the limit order. | None | False |
-| units | int | The number of units to place in the order request. | None | False |
+| instrument | str | The loaded currency pair |  | True |
+| price | int | The price to set for the limit order. | 0 | True |
+| units | int | The number of units to place in the order request. | 0 | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

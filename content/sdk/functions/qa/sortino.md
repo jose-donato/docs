@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.quantitative_analysis.qa_model.get_sortino
+Calculates the sortino ratio
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
-def get_sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L562)]
+
+```python
+def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 252, adjusted: bool = False) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L562)
-
-Description: Calculates the sortino ratio
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | selected dataframe | None | False |
-| target_return | float | target return of the asset | None | False |
-| window | float | length of the rolling window | None | False |
-| adjusted | bool | adjust the sortino ratio | None | False |
+| target_return | float | target return of the asset | 0 | True |
+| window | float | length of the rolling window | 252 | True |
+| adjusted | bool | adjust the sortino ratio | False | True |
 
 ## Returns
 
@@ -35,22 +33,18 @@ Description: Calculates the sortino ratio
 | ---- | ----------- |
 | pd.DataFrame | sortino ratio |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.quantitative_analysis.qa_view.display_sortino
+Plots the sortino ratio
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1139)]
+
+```python
 def display_sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L1139)
-
-Description: Plots the sortino ratio
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -63,8 +57,6 @@ Description: Plots the sortino ratio
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

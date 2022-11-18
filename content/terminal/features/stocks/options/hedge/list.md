@@ -3,19 +3,18 @@ title: list
 description: OpenBB Terminal Function
 ---
 
-# Hedge
-
-## list
-
-### Description: 
+# list
 
 Lists available calls and puts.
 
-### Usage: 
+### Usage 
 ```python
 usage: list
 ```
 
+## Parameters
+
+This command has no parameters
 
 
 ## Examples

@@ -3,16 +3,11 @@ title: dwat
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## dwat
-
-### Description
+# dwat
 
 Show autocorrelation tests from Durbin-Watson. Needs OLS to be run in advance with independent and dependent variables
 
-### Usage
-
+### Usage 
 ```python
 usage: dwat [-p]
 ```
@@ -22,6 +17,7 @@ usage: dwat [-p]
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | plot | Plot the residuals | False | True | None |
+
 
 ## Examples
 
@@ -63,3 +59,4 @@ Please consider lags of the dependent or independent variable.
 ```
 
 ![durbin_watson example](https://user-images.githubusercontent.com/46355364/155514788-caaa65a2-1f5f-41d0-8db2-06e682d5a53e.png)
+

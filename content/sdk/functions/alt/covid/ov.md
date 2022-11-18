@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.alternative.covid.covid_model.get_covid_ov
+Get historical cases and deaths by country.
 
-```python title='openbb_terminal/alternative/covid/covid_model.py'
-def get_covid_ov(country: str, limit: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L105)]
+
+```python
+def get_covid_ov(country: str, limit: int = 100) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L99)
-
-Description: Get historical cases and deaths by country.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to get data for | None | False |
-| limit | int | Number of raw data to show | None | False |
+| limit | int | Number of raw data to show | 100 | True |
 
 ## Returns
 
@@ -33,37 +31,31 @@ Description: Get historical cases and deaths by country.
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical cases and deaths |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.alternative.covid.covid_view.display_covid_ov
+Prints table showing historical cases and deaths by country.
 
-```python title='openbb_terminal/alternative/covid/covid_view.py'
-def display_covid_ov(country: str, raw: bool, limit: int, export: str, plot: bool) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L131)]
+
+```python
+def display_covid_ov(country: str, raw: bool = False, limit: int = 10, export: str = "", plot: bool = True) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L130)
-
-Description: Prints table showing historical cases and deaths by country.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to get data for | None | False |
-| raw | bool | Flag to display raw data | None | False |
-| limit | int | Number of raw data to show | None | False |
-| export | str | Format to export data | None | False |
-| plot | bool | Flag to display historical plot | None | False |
+| raw | bool | Flag to display raw data | False | True |
+| limit | int | Number of raw data to show | 10 | True |
+| export | str | Format to export data |  | True |
+| plot | bool | Flag to display historical plot | True | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -3,15 +3,11 @@ title: cancel
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## cancel
-
-### Description: 
+# cancel
 
 Cancel a Pending Order.
 
-### Usage: 
+### Usage 
 ```python
 usage: cancel -i ORDERID
 ```

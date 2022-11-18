@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # score
 
-## openbb_terminal.stocks.fundamental_analysis.fmp_model.get_score
+Gets value score from fmp
 
-```python title='openbb_terminal/stocks/fundamental_analysis/fmp_model.py'
-def get_score(symbol: str) -> Optional
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L25)]
+
+```python
+def get_score(symbol: str) -> Optional[numpy.number]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L25)
-
-Description: Gets value score from fmp
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Gets value score from fmp
 | Type | Description |
 | ---- | ----------- |
 | np.number | Value score |
-
-## Examples
 

@@ -3,15 +3,11 @@ title: index
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## index
-
-### Description: 
+# index
 
 Set a (multi) index for the dataset
 
-### Usage: 
+### Usage 
 ```python
 usage: index -n {} [-i INDEX] [-a] [-d]
 ```

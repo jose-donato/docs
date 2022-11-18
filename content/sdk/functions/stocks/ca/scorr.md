@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.comparison_analysis.finbrain_model.get_sentiment_correlation
+Get correlation sentiments across similar companies. [Source: FinBrain].
 
-```python title='openbb_terminal/stocks/comparison_analysis/finbrain_model.py'
-def get_sentiment_correlation(similar: List[str]) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L125)]
+
+```python
+def get_sentiment_correlation(similar: List[str]) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_model.py#L125)
-
-Description: Get correlation sentiments across similar companies. [Source: FinBrain].
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,36 +30,30 @@ Description: Get correlation sentiments across similar companies. [Source: FinBr
 | ---- | ----------- |
 | Tuple[pd.DataFrame,pd.DataFrame] | Contains sentiment analysis from several tickers |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.comparison_analysis.finbrain_view.display_sentiment_correlation
+Plot correlation sentiments heatmap across similar companies. [Source: FinBrain].
 
-```python title='openbb_terminal/stocks/comparison_analysis/finbrain_view.py'
-def display_sentiment_correlation(similar: List[str], raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L121)]
+
+```python
+def display_sentiment_correlation(similar: List[str], raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finbrain_view.py#L122)
-
-Description: Plot correlation sentiments heatmap across similar companies. [Source: FinBrain].
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | Similar companies to compare income with.<br/>Comparable companies can be accessed through<br/>finviz_peers(), finnhub_peers() or polygon_peers(). | None | False |
 | raw | bool | Output raw values, by default False | False | True |
-| export | str | Format to export data | None | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

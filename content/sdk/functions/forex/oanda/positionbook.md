@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forex.oanda.oanda_model.positionbook_plot_data_request
+Request position book data for plotting.
 
-```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def positionbook_plot_data_request(instrument: Optional[str], accountID: str) -> Union
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L182)]
+
+```python
+def positionbook_plot_data_request(instrument: Optional[str] = None, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L182)
-
-Description: Request position book data for plotting.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| instrument | Union[str, None] | The loaded currency pair, by default None | None | False |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
 ## Returns
 
@@ -33,35 +31,29 @@ Description: Request position book data for plotting.
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Position book data or False |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forex.oanda.oanda_view.get_position_book
+Plot a position book for an instrument if Oanda provides one.
 
-```python title='openbb_terminal/forex/oanda/oanda_view.py'
-def get_position_book(accountID: str, instrument: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L116)]
+
+```python
+def get_position_book(accountID: str, instrument: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L118)
-
-Description: Plot a position book for an instrument if Oanda provides one.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
-| instrument | str | The loaded currency pair | None | False |
+| instrument | str | The loaded currency pair |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

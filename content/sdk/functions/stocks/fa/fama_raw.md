@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # fama_raw
 
-## openbb_terminal.stocks.fundamental_analysis.dcf_model.get_fama_raw
+Get Fama French data
 
-```python title='openbb_terminal/stocks/fundamental_analysis/dcf_model.py'
-def get_fama_raw() -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L240)]
+
+```python
+def get_fama_raw() -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L240)
-
-Description: Get Fama French data
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Fama French data |
-
-## Examples
 

@@ -3,15 +3,11 @@ title: norm
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## norm
-
-### Description: 
+# norm
 
 Test whether the used data is normally distributed.
 
-### Usage: 
+### Usage 
 ```python
 usage: norm -v {} [-p]
 ```

@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.coinpaprika_model.get_coins_info
+Returns basic coin information for all coins from CoinPaprika API [Source: CoinPaprika]
 
-```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
-def get_coins_info(symbols: str, sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L183)]
+
+```python
+def get_coins_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = True) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L201)
-
-Description: Returns basic coin information for all coins from CoinPaprika API [Source: CoinPaprika]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbols | str | Comma separated quotes to return e.g quotes=USD,BTC | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
+| symbols | str | Comma separated quotes to return e.g quotes=USD,BTC | USD | True |
+| sortby | str | Key by which to sort data | rank | True |
+| ascend | bool | Flag to sort data descending | True | True |
 
 ## Returns
 
@@ -34,38 +32,32 @@ Description: Returns basic coin information for all coins from CoinPaprika API [
 | ---- | ----------- |
 | pd.DataFrame | rank, name, symbol, price, volume_24h, circulating_supply, total_supply,<br/>max_supply, market_cap, beta_value, ath_price, |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.coinpaprika_view.display_all_coins_info
+Displays basic coin information for all coins from CoinPaprika API. [Source: CoinPaprika]
 
-```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
-def display_all_coins_info(symbol: str, sortby: str, ascend: bool, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L159)]
+
+```python
+def display_all_coins_info(symbol: str, sortby: str = "rank", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L159)
-
-Description: Displays basic coin information for all coins from CoinPaprika API. [Source: CoinPaprika]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Quoted currency | None | False |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
-| links | bool | Flag to display urls | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 15 | True |
+| sortby | str | Key by which to sort data | rank | True |
+| ascend | bool | Flag to sort data descending | True | True |
+| links | bool | Flag to display urls | None | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

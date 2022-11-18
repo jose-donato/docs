@@ -3,15 +3,11 @@ title: panel
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## panel
-
-### Description: 
+# panel
 
 Performs regression analysis on Panel Data. There are a multitude of options to select from to fit the needs of restrictions of the dataset.
 
-### Usage: 
+### Usage 
 ```python
 usage: panel -d DEPENDENT -i INDEPENDENT [-r {pols,re,bols,fe,fdols,POLS,RE,BOLS,FE,FDOLS}] [-e] [-t]
 ```

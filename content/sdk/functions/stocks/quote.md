@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # quote
 
-## openbb_terminal.stocks.stocks_models.load_quote
+Ticker quote.  [Source: YahooFinance]
 
-```python title='openbb_terminal/stocks/stocks_models.py'
-def load_quote(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_model.py#L233)]
+
+```python
+def load_quote(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/stocks_models.py#L233)
-
-Description: Ticker quote.  [Source: YahooFinance]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -23,6 +21,4 @@ Description: Ticker quote.  [Source: YahooFinance]
 ## Returns
 
 This function does not return anything
-
-## Examples
 

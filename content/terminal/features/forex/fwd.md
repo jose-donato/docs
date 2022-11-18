@@ -3,18 +3,17 @@ title: fwd
 description: OpenBB Terminal Function
 ---
 
-# Forex
-
-## fwd
-
-### Description: 
+# fwd
 
 Get forward rates for loaded pair.
 
-### Usage: 
+### Usage 
 ```python
 usage: fwd
 ```
 
+## Parameters
+
+This command has no parameters
 
 

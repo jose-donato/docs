@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # analyst
 
-## openbb_terminal.stocks.due_diligence.finviz_model.get_analyst_data
+Get analyst data. [Source: Finviz]
 
-```python title='openbb_terminal/stocks/due_diligence/finviz_model.py'
-def get_analyst_data(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finviz_model.py#L33)]
+
+```python
+def get_analyst_data(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/finviz_model.py#L33)
-
-Description: Get analyst data. [Source: Finviz]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get analyst data. [Source: Finviz]
 | Type | Description |
 | ---- | ----------- |
 | DataFrame | Analyst price targets |
-
-## Examples
 

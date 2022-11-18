@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.options.yfinance_model.get_iv_surface
+Gets IV surface for calls and puts for ticker
 
-```python title='openbb_terminal/stocks/options/yfinance_model.py'
-def get_iv_surface(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L367)]
+
+```python
+def get_iv_surface(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L367)
-
-Description: Gets IV surface for calls and puts for ticker
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,36 +30,30 @@ Description: Gets IV surface for calls and puts for ticker
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of DTE, Strike and IV |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.options.yfinance_view.display_vol_surface
+Display vol surface
 
-```python title='openbb_terminal/stocks/options/yfinance_view.py'
-def display_vol_surface(symbol: str, export: str, z: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L1128)]
+
+```python
+def display_vol_surface(symbol: str, export: str = "", z: str = "IV", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_view.py#L1128)
-
-Description: Display vol surface
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get surface for | None | False |
-| export | str | Format to export data | None | False |
-| z | str | The variable for the Z axis | None | False |
-| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | False |
+| export | str | Format to export data |  | True |
+| z | str | The variable for the Z axis | IV | True |
+| external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

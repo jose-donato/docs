@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.rekt_model.get_crypto_hacks
+Get major crypto-related hacks
 
-```python title='openbb_terminal/cryptocurrency/overview/rekt_model.py'
-def get_crypto_hacks(sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L93)]
+
+```python
+def get_crypto_hacks(sortby: str = "Platform", ascend: bool = False) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L93)
-
-Description: Get major crypto-related hacks
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
+| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | Platform | True |
+| ascend | bool | Flag to sort data ascending | False | True |
 
 ## Returns
 
@@ -33,37 +31,31 @@ Description: Get major crypto-related hacks
 | ---- | ----------- |
 | pd.DataFrame | Hacks with columns {Platform,Date,Amount [$],Audited,Slug,URL} |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.rekt_view.display_crypto_hacks
+Display list of major crypto-related hacks. If slug is passed
 
-```python title='openbb_terminal/cryptocurrency/overview/rekt_view.py'
-def display_crypto_hacks(limit: int, sortby: str, ascend: bool, slug: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_view.py#L18)]
+
+```python
+def display_crypto_hacks(limit: int = 15, sortby: str = "Platform", ascend: bool = False, slug: str = "polyntwork-rekt", export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_view.py#L18)
-
-Description: Display list of major crypto-related hacks. If slug is passed
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| slug | str | Crypto hack slug to check (e.g., polynetwork-rekt) | None | False |
-| limit | int | Number of hacks to search | None | False |
-| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| slug | str | Crypto hack slug to check (e.g., polynetwork-rekt) | polyntwork-rekt | True |
+| limit | int | Number of hacks to search | 15 | True |
+| sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | Platform | True |
+| ascend | bool | Flag to sort data ascending | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

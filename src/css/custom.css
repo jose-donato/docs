@@ -284,6 +284,10 @@ pre[class*="language-"] {
   line-height: 1 !important;
 }
 
+.token.builtin {
+  color: #2dba06 !important;
+}
+
 .theme-admonition-info {
   border-color: #004466 !important;
   background-color: #2A2A2A !important;

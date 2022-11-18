@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # finnhub_peers
 
-## openbb_terminal.stocks.comparison_analysis.finnhub_model.get_similar_companies
+Get similar companies from Finhub.
 
-```python title='openbb_terminal/stocks/comparison_analysis/finnhub_model.py'
-def get_similar_companies(symbol: str) -> List
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finnhub_model.py#L17)]
+
+```python
+def get_similar_companies(symbol: str) -> List[str]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/finnhub_model.py#L17)
-
-Description: Get similar companies from Finhub.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get similar companies from Finhub.
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of similar companies |
-
-## Examples
 

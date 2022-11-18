@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # av_overview
 
-## openbb_terminal.stocks.fundamental_analysis.av_model.get_overview
+Get alpha vantage company overview
 
-```python title='openbb_terminal/stocks/fundamental_analysis/av_model.py'
-def get_overview(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L36)]
+
+```python
+def get_overview(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/av_model.py#L36)
-
-Description: Get alpha vantage company overview
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get alpha vantage company overview
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of fundamentals |
-
-## Examples
 

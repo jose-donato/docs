@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # exchanges
 
-## openbb_terminal.cryptocurrency.due_diligence.ccxt_model.get_exchanges
+Helper method to get all the exchanges supported by ccxt
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py'
-def get_exchanges() -> List
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L10)]
+
+```python
+def get_exchanges() -> List[str]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L10)
-
-Description: Helper method to get all the exchanges supported by ccxt
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | List[str] | list of all the exchanges supported by ccxt |
-
-## Examples
 

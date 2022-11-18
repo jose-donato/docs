@@ -3,15 +3,11 @@ title: metric
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## metric
-
-### Description: 
+# metric
 
 Display metric of choice for different periods
 
-### Usage: 
+### Usage 
 ```python
 usage: metric [-m {volatility,sharpe,sortino,maxdrawdown,rsquare,skew,kurtosis,gaintopain,trackerr,information,tail,commonsense,jensens,calmar,kelly,payoff,profitfactor}] [-r RISK_FREE_RATE]
 ```

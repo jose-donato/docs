@@ -5,27 +5,23 @@ description: OpenBB SDK Function
 
 # fipo
 
-## openbb_terminal.stocks.discovery.finnhub_model.get_future_ipo
+Future IPOs dates. [Source: Finnhub]
 
-```python title='openbb_terminal/stocks/discovery/finnhub_model.py'
-def get_future_ipo(num_days_ahead: int, end_date: Optional[str]) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L115)]
+
+```python
+def get_future_ipo(num_days_ahead: int = 5, end_date: Optional[str] = None) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/finnhub_model.py#L115)
-
-Description: Future IPOs dates. [Source: Finnhub]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| num_days_ahead | int | Number of days to look ahead for IPOs dates | None | False |
-| end_date | datetime | The end date (format YYYY-MM-DD) to look for IPOs from today onwards | None | False |
+| num_days_ahead | int | Number of days to look ahead for IPOs dates | 5 | True |
+| end_date | datetime | The end date (format YYYY-MM-DD) to look for IPOs from today onwards | None | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Get dataframe with future IPOs |
-
-## Examples
 

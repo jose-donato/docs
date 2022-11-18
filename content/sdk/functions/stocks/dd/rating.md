@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # rating
 
-## openbb_terminal.stocks.due_diligence.fmp_model.get_rating
+Get ratings for a given ticker. [Source: Financial Modeling Prep]
 
-```python title='openbb_terminal/stocks/due_diligence/fmp_model.py'
-def get_rating(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/fmp_model.py#L17)]
+
+```python
+def get_rating(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/fmp_model.py#L17)
-
-Description: Get ratings for a given ticker. [Source: Financial Modeling Prep]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get ratings for a given ticker. [Source: Financial Modeling Prep]
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rating data |
-
-## Examples
 

@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # divs
 
-## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_model.get_dividends
+Get historical dividend for ticker
 
-```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
-def get_dividends(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L256)]
+
+```python
+def get_dividends(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L256)
-
-Description: Get historical dividend for ticker
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get historical dividend for ticker
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of dividends and dates |
-
-## Examples
 

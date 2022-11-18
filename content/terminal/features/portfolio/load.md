@@ -3,15 +3,11 @@ title: load
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## load
-
-### Description: 
+# load
 
 Load your portfolio transactions.
 
-### Usage: 
+### Usage 
 ```python
 usage: load -f FILE [-n NAME] [-r RISK_FREE_RATE]
 ```

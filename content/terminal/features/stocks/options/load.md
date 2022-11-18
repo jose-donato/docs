@@ -3,16 +3,11 @@ title: load
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## load
-
-### Description
+# load
 
 Load a ticker into option menu
 
-### Usage
-
+### Usage 
 ```python
 usage: load -t TICKER
 ```
@@ -22,6 +17,7 @@ usage: load -t TICKER
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | ticker | Stock ticker | None | False | None |
+
 
 ## Examples
 
@@ -60,3 +56,4 @@ usage: load -t TICKER
 │                                                                                                                                                                                                                                                                              │
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── OpenBB Terminal ─╯
 ```
+

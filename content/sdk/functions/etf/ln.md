@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.etf.financedatabase_model.get_etfs_by_name
+Return a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
 
-```python title='openbb_terminal/etf/financedatabase_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L15)]
+
+```python
 def get_etfs_by_name(name: str) -> Dict
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_model.py#L15)
-
-Description: Return a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,35 +30,29 @@ Description: Return a selection of ETFs based on name filtered by total assets. 
 | ---- | ----------- |
 | Dict[str, Any] | Dictionary with ETFs that match a certain name |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.etf.financedatabase_view.display_etf_by_name
+Display a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
 
-```python title='openbb_terminal/etf/financedatabase_view.py'
-def display_etf_by_name(name: str, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_view.py#L18)]
+
+```python
+def display_etf_by_name(name: str, limit: int = 10, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/financedatabase_view.py#L18)
-
-Description: Display a selection of ETFs based on name filtered by total assets. [Source: Finance Database]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | name | str | Search by name to find ETFs matching the criteria. | None | False |
-| limit | int | Limit of ETFs to display | None | False |
-| export | str | Type of format to export data | None | False |
+| limit | int | Limit of ETFs to display | 10 | True |
+| export | str | Type of format to export data |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

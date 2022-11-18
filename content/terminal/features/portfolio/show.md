@@ -3,19 +3,18 @@ title: show
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## show
-
-### Description: 
+# show
 
 Show transactions table
 
-### Usage: 
+### Usage 
 ```python
 usage: show
 ```
 
+## Parameters
+
+This command has no parameters
 
 
 ## Examples

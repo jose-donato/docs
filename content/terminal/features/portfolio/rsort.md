@@ -3,15 +3,11 @@ title: rsort
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## rsort
-
-### Description: 
+# rsort
 
 Show rolling sortino portfolio vs benchmark
 
-### Usage: 
+### Usage 
 ```python
 usage: rsort [-p {mtd,qtd,ytd,all,3m,6m,1y,3y,5y,10y}] [-r RISK_FREE_RATE]
 ```

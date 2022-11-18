@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.due_diligence.coinbase_model.get_candles
+Get candles for chosen trading pair and time interval. [Source: Coinbase]
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
-def get_candles(symbol: str, interval: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L143)]
+
+```python
+def get_candles(symbol: str, interval: str = "24h") -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L143)
-
-Description: Get candles for chosen trading pair and time interval. [Source: Coinbase]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
-| interval | str | Time interval. One from 1min, 5min ,15min, 1hour, 6hour, 24hour | None | False |
+| interval | str | Time interval. One from 1min, 5min ,15min, 1hour, 6hour, 24hour | 24h | True |
 
 ## Returns
 
@@ -33,35 +31,29 @@ Description: Get candles for chosen trading pair and time interval. [Source: Coi
 | ---- | ----------- |
 | pd.DataFrame | Candles for chosen trading pair. |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.due_diligence.coinbase_view.display_candles
+Prints table showing candles for chosen trading pair and time interval. [Source: Coinbase]
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py'
-def display_candles(symbol: str, interval: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L76)]
+
+```python
+def display_candles(symbol: str, interval: str = "24h", export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L76)
-
-Description: Prints table showing candles for chosen trading pair and time interval. [Source: Coinbase]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
-| interval | str | Time interval. One from 1m, 5m ,15m, 1h, 6h, 24h | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| interval | str | Time interval. One from 1m, 5m ,15m, 1h, 6h, 24h | 24h | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

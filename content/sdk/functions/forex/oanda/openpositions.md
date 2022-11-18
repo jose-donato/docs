@@ -11,41 +11,35 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forex.oanda.oanda_model.open_positions_request
+Request information on open positions.
 
-```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def open_positions_request(accountID: str) -> Union
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L378)]
+
+```python
+def open_positions_request(accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L378)
-
-Description: Request information on open positions.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forex.oanda.oanda_view.get_open_positions
+Get information about open positions.
 
-```python title='openbb_terminal/forex/oanda/oanda_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L216)]
+
+```python
 def get_open_positions(accountID: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L222)
-
-Description: Get information about open positions.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,8 +49,6 @@ Description: Get information about open positions.
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

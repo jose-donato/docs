@@ -3,15 +3,11 @@ title: alloc
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## alloc
-
-### Description: 
+# alloc
 
 Show your allocation to each asset or sector compared to the benchmark.
 
-### Usage: 
+### Usage 
 ```python
 usage: alloc [-a {assets,sectors,countries,regions}] [-t]
 ```

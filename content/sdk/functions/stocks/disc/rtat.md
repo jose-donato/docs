@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # rtat
 
-## openbb_terminal.stocks.discovery.nasdaq_model.get_retail_tickers
+Gets the top 10 retail stocks per day
 
-```python title='openbb_terminal/stocks/discovery/nasdaq_model.py'
-def get_retail_tickers() -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/nasdaq_model.py#L20)]
+
+```python
+def get_retail_tickers() -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/nasdaq_model.py#L20)
-
-Description: Gets the top 10 retail stocks per day
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of tickers |
-
-## Examples
 

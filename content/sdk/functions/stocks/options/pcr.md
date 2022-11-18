@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.options.alphaquery_model.get_put_call_ratio
+Gets put call ratio over last time window [Source: AlphaQuery.com]
 
-```python title='openbb_terminal/stocks/options/alphaquery_model.py'
-def get_put_call_ratio(symbol: str, window: int, start_date: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_model.py#L16)]
+
+```python
+def get_put_call_ratio(symbol: str, window: int = 30, start_date: str = None) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_model.py#L16)
-
-Description: Gets put call ratio over last time window [Source: AlphaQuery.com]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to look for | None | False |
 | window | int | Window to consider, by default 30 | 30 | True |
-| start_date | str | Start date to plot  (e.g., 2021-10-01), by default last 366 days | last | True |
+| start_date | str | Start date to plot  (e.g., 2021-10-01), by default last 366 days | None | True |
 
 ## Returns
 
@@ -34,37 +32,31 @@ Description: Gets put call ratio over last time window [Source: AlphaQuery.com]
 | ---- | ----------- |
 | pd.DataFrame | Put call ratio |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.options.alphaquery_view.display_put_call_ratio
+Display put call ratio [Source: AlphaQuery.com]
 
-```python title='openbb_terminal/stocks/options/alphaquery_view.py'
-def display_put_call_ratio(symbol: str, window: int, start_date: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_view.py#L26)]
+
+```python
+def display_put_call_ratio(symbol: str, window: int = 30, start_date: str = "2021-11-16", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/alphaquery_view.py#L26)
-
-Description: Display put call ratio [Source: AlphaQuery.com]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 | window | int | Window length to look at, by default 30 | 30 | True |
-| start_date | str | Starting date for data, by default (datetime.now() - timedelta(days=366)).strftime("%Y-%m-%d") | None | True |
-| export | str | Format to export data, by default "" | None | True |
+| start_date | str | Starting date for data, by default (datetime.now() - timedelta(days=366)).strftime("%Y-%m-%d") | 2021-11-16 | True |
+| export | str | Format to export data, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

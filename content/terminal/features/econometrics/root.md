@@ -3,15 +3,11 @@ title: root
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## root
-
-### Description: 
+# root
 
 Show unit root tests of a column of a dataset
 
-### Usage: 
+### Usage 
 ```python
 usage: root -v {} [-r {c,ct,ctt,n}] [-k {c,ct}]
 ```

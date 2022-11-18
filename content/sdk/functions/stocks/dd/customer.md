@@ -5,27 +5,23 @@ description: OpenBB SDK Function
 
 # customer
 
-## openbb_terminal.stocks.due_diligence.csimarket_model.get_customers
+Print customers from ticker provided
 
-```python title='openbb_terminal/stocks/due_diligence/csimarket_model.py'
-def get_customers(symbol: str, limit: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L66)]
+
+```python
+def get_customers(symbol: str, limit: int = 50) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/csimarket_model.py#L66)
-
-Description: Print customers from ticker provided
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker to select customers from | None | False |
-| limit | int | The maximum number of rows to show | None | False |
+| limit | int | The maximum number of rows to show | 50 | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | A dataframe of suppliers |
-
-## Examples
 

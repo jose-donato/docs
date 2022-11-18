@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # cal
 
-## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_model.get_calendar_earnings
+Get calendar earnings for ticker symbol
 
-```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
-def get_calendar_earnings(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L179)]
+
+```python
+def get_calendar_earnings(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L179)
-
-Description: Get calendar earnings for ticker symbol
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get calendar earnings for ticker symbol
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of calendar earnings |
-
-## Examples
 

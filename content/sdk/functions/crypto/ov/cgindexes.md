@@ -11,21 +11,19 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_indexes
+Get list of crypto indexes from CoinGecko API [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_indexes(sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L325)]
+
+```python
+def get_indexes(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L325)
-
-Description: Get list of crypto indexes from CoinGecko API [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
+| sortby | str | Key by which to sort data | Name | True |
+| ascend | bool | Flag to sort data ascending | True | True |
 
 ## Returns
 
@@ -33,36 +31,30 @@ Description: Get list of crypto indexes from CoinGecko API [Source: CoinGecko]
 | ---- | ----------- |
 | pd.DataFrame | Name, Id, Market, Last, MultiAsset |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_indexes
+Shows list of crypto indexes. [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_indexes(sortby: str, ascend: bool, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L625)]
+
+```python
+def display_indexes(sortby: str = "Name", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L635)
-
-Description: Shows list of crypto indexes. [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 15 | True |
+| sortby | str | Key by which to sort data | Name | True |
+| ascend | bool | Flag to sort data descending | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

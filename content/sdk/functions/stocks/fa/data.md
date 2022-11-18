@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # data
 
-## openbb_terminal.stocks.fundamental_analysis.finviz_model.get_data
+Get fundamental data from finviz
 
-```python title='openbb_terminal/stocks/fundamental_analysis/finviz_model.py'
-def get_data(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/finviz_model.py#L15)]
+
+```python
+def get_data(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/finviz_model.py#L15)
-
-Description: Get fundamental data from finviz
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Get fundamental data from finviz
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of fundamental data |
-
-## Examples
 

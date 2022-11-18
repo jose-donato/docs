@@ -5,26 +5,22 @@ description: OpenBB SDK Function
 
 # tokenomics
 
-## openbb_terminal.cryptocurrency.due_diligence.pycoingecko_model.get_coin_tokenomics
+Get tokenomics for given coin. [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py'
-def get_coin_tokenomics(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L253)]
+
+```python
+def get_coin_tokenomics(symbol: str = "") -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/pycoingecko_model.py#L253)
-
-Description: Get tokenomics for given coin. [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| symbol | str | coin symbol to check tokenomics | None | False |
+| symbol | str | coin symbol to check tokenomics |  | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Metric, Value with tokenomics |
-
-## Examples
 

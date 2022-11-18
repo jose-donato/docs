@@ -3,15 +3,11 @@ title: tob
 description: OpenBB Terminal Function
 ---
 
-# Stocks
-
-## tob
-
-### Description: 
+# tob
 
 Get top of book for loaded ticker from selected exchange
 
-### Usage: 
+### Usage 
 ```python
 usage: quote -t S_TICKER [-e {BZX,EDGX,BYX,EDGA}]
 ```

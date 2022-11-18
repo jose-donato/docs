@@ -3,15 +3,11 @@ title: curve
 description: OpenBB Terminal Function
 ---
 
-# Futures
-
-## curve
-
-### Description: 
+# curve
 
 Display futures curve. [Source: YahooFinance]
 
-### Usage: 
+### Usage 
 ```python
 usage: curve -t Futures symbol
 ```

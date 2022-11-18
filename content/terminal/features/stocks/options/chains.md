@@ -3,15 +3,11 @@ title: chains
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## chains
-
-### Description: 
+# chains
 
 Display option chains
 
-### Usage: 
+### Usage 
 ```python
 usage: chains [-c] [-p] [-m MIN_SP] [-M MAX_SP] [-d TO_DISPLAY]
 ```

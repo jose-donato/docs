@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.due_diligence.coinbase_model.get_product_stats
+Get 24 hr stats for the product. Volume is in base currency units.
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py'
-def get_product_stats(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L202)]
+
+```python
+def get_product_stats(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L202)
-
-Description: Get 24 hr stats for the product. Volume is in base currency units.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,34 +30,28 @@ Description: Get 24 hr stats for the product. Volume is in base currency units.
 | ---- | ----------- |
 | pd.DataFrame | 24h stats for chosen trading pair |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.due_diligence.coinbase_view.display_stats
+Prints table showing 24 hr stats for the product. Volume is in base currency units.
 
-```python title='openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py'
-def display_stats(symbol: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L99)]
+
+```python
+def display_stats(symbol: str, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L99)
-
-Description: Prints table showing 24 hr stats for the product. Volume is in base currency units.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

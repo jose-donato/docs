@@ -3,15 +3,11 @@ title: group
 description: OpenBB Terminal Function
 ---
 
-# Portfolio_Analysis
-
-## group
-
-### Description: 
+# group
 
 Displays portfolio grouped by a given column
 
-### Usage: 
+### Usage 
 ```python
 usage: group [-g {}] [-a]
 ```

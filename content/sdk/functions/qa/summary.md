@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.quantitative_analysis.qa_model.get_summary
+Print summary statistics
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
-def get_summary(data: pd.DataFrame) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L25)]
+
+```python
+def get_summary(data: pd.DataFrame) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L25)
-
-Description: Print summary statistics
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,34 +30,28 @@ Description: Print summary statistics
 | ---- | ----------- |
 | pd.DataFrame | Summary statistics |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.quantitative_analysis.qa_view.display_summary
+Prints table showing summary statistics
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
-def display_summary(data: pd.DataFrame, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L53)]
+
+```python
+def display_summary(data: pd.DataFrame, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L53)
-
-Description: Prints table showing summary statistics
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | DataFrame to get statistics of | None | False |
-| export | str | Format to export data | None | False |
+| export | str | Format to export data |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

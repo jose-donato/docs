@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.common.quantitative_analysis.qa_model.get_unitroot
+Calculate test statistics for unit roots
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_model.py'
-def get_unitroot(data: pd.DataFrame, fuller_reg: str, kpss_reg: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L135)]
+
+```python
+def get_unitroot(data: pd.DataFrame, fuller_reg: str = "c", kpss_reg: str = "c") -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_model.py#L135)
-
-Description: Calculate test statistics for unit roots
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | DataFrame of target variable | None | False |
-| fuller_reg | str | Type of regression of ADF test. Can be ‘c’,’ct’,’ctt’,’nc’ 'c' - Constant and t - trend order | None | False |
-| kpss_reg | str | Type of regression for KPSS test.  Can be ‘c’,’ct' | None | False |
+| fuller_reg | str | Type of regression of ADF test. Can be ‘c’,’ct’,’ctt’,’nc’ 'c' - Constant and t - trend order | c | True |
+| kpss_reg | str | Type of regression for KPSS test.  Can be ‘c’,’ct' | c | True |
 
 ## Returns
 
@@ -34,37 +32,31 @@ Description: Calculate test statistics for unit roots
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with results of ADF test and KPSS test |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.common.quantitative_analysis.qa_view.display_unitroot
+Prints table showing unit root test calculations
 
-```python title='openbb_terminal/common/quantitative_analysis/qa_view.py'
-def display_unitroot(data: pd.DataFrame, target: str, fuller_reg: str, kpss_reg: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L803)]
+
+```python
+def display_unitroot(data: pd.DataFrame, target: str, fuller_reg: str = "c", kpss_reg: str = "c", export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/qa_view.py#L803)
-
-Description: Prints table showing unit root test calculations
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | DataFrame | None | False |
 | target | str | Column of data to look at | None | False |
-| fuller_reg | str | Type of regression of ADF test. Can be ‘c’,’ct’,’ctt’,’nc’ 'c' - Constant and t - trend order | None | False |
-| kpss_reg | str | Type of regression for KPSS test. Can be ‘c’,’ct' | None | False |
-| export | str | Format for exporting data | None | False |
+| fuller_reg | str | Type of regression of ADF test. Can be ‘c’,’ct’,’ctt’,’nc’ 'c' - Constant and t - trend order | c | True |
+| kpss_reg | str | Type of regression for KPSS test. Can be ‘c’,’ct' | c | True |
+| export | str | Format for exporting data |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

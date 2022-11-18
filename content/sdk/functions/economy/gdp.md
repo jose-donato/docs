@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.economy.alphavantage_model.get_real_gdp
+Get annual or quarterly Real GDP for US
 
-```python title='openbb_terminal/economy/alphavantage_model.py'
-def get_real_gdp(interval: str, start_year: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L44)]
+
+```python
+def get_real_gdp(interval: str = "q", start_year: int = 2010) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L44)
-
-Description: Get annual or quarterly Real GDP for US
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| interval | str | Interval for GDP, by default "a" for annual, by default "q" | None | True |
+| interval | str | Interval for GDP, by default "a" for annual, by default "q" | q | True |
 | start_year | int | Start year for plot, by default 2010 | 2010 | True |
 
 ## Returns
@@ -33,37 +31,31 @@ Description: Get annual or quarterly Real GDP for US
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of GDP |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.economy.alphavantage_view.display_real_gdp
+Display US GDP from AlphaVantage
 
-```python title='openbb_terminal/economy/alphavantage_view.py'
-def display_real_gdp(interval: str, start_year: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L88)]
+
+```python
+def display_real_gdp(interval: str = "q", start_year: int = 2010, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L88)
-
-Description: Display US GDP from AlphaVantage
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| interval | str | Interval for GDP.  Either "a" or "q", by default "q" | None | False |
+| interval | str | Interval for GDP.  Either "a" or "q", by default "q" | q | True |
 | start_year | int | Start year for plot, by default 2010 | 2010 | True |
 | raw | bool | Flag to show raw data, by default False | False | True |
-| export | str | Format to export data, by default "" | None | True |
+| export | str | Format to export data, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

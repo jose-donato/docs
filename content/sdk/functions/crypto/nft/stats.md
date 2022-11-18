@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.nft.opensea_model.get_collection_stats
+Get stats of a nft collection [Source: opensea.io]
 
-```python title='openbb_terminal/cryptocurrency/nft/opensea_model.py'
-def get_collection_stats(slug: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_model.py#L17)]
+
+```python
+def get_collection_stats(slug: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_model.py#L17)
-
-Description: Get stats of a nft collection [Source: opensea.io]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,22 +30,18 @@ Description: Get stats of a nft collection [Source: opensea.io]
 | ---- | ----------- |
 | pd.DataFrame | collection stats |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.nft.opensea_view.display_collection_stats
+Prints table showing collection stats. [Source: opensea.io]
 
-```python title='openbb_terminal/cryptocurrency/nft/opensea_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_view.py#L15)]
+
+```python
 def display_collection_stats(slug: str, export: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/opensea_view.py#L15)
-
-Description: Prints table showing collection stats. [Source: opensea.io]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,8 +52,6 @@ Description: Prints table showing collection stats. [Source: opensea.io]
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

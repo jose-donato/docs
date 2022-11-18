@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.llama_model.get_grouped_defi_protocols
+Display top dApps (in terms of TVL) grouped by chain.
 
-```python title='openbb_terminal/cryptocurrency/defi/llama_model.py'
-def get_grouped_defi_protocols(limit: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L149)]
+
+```python
+def get_grouped_defi_protocols(limit: int = 50) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_model.py#L149)
-
-Description: Display top dApps (in terms of TVL) grouped by chain.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of top dApps to display | None | False |
+| limit | int | Number of top dApps to display | 50 | True |
 
 ## Returns
 
@@ -32,35 +30,29 @@ Description: Display top dApps (in terms of TVL) grouped by chain.
 | ---- | ----------- |
 | pd.DataFrame | Information about DeFi protocols grouped by chain |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.llama_view.display_grouped_defi_protocols
+Plots top dApps (in terms of TVL) grouped by chain.
 
-```python title='openbb_terminal/cryptocurrency/defi/llama_view.py'
-def display_grouped_defi_protocols(limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L28)]
+
+```python
+def display_grouped_defi_protocols(limit: int = 50, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/llama_view.py#L28)
-
-Description: Plots top dApps (in terms of TVL) grouped by chain.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| num | int | Number of top dApps to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| num | int | Number of top dApps to display | None | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

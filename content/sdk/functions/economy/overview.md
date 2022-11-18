@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # overview
 
-## openbb_terminal.economy.wsj_model.market_overview
+Scrape data for market overview
 
-```python title='openbb_terminal/economy/wsj_model.py'
-def market_overview() -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L62)]
+
+```python
+def market_overview() -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L62)
-
-Description: Scrape data for market overview
-
 ## Parameters
 
 This function does not take any parameters.
@@ -23,6 +21,4 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing name, price, net change and percent change |
-
-## Examples
 

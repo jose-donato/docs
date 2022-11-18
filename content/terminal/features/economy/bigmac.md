@@ -3,15 +3,11 @@ title: bigmac
 description: OpenBB Terminal Function
 ---
 
-# Economy
-
-## bigmac
-
-### Description: 
+# bigmac
 
 Get historical Big Mac Index [Nasdaq Data Link]
 
-### Usage: 
+### Usage 
 ```python
 usage: bigmac [--codes] [-c COUNTRIES]
 ```

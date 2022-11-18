@@ -3,18 +3,17 @@ title: quote
 description: OpenBB Terminal Function
 ---
 
-# Forex
-
-## quote
-
-### Description: 
+# quote
 
 Get current exchange rate quote
 
-### Usage: 
+### Usage 
 ```python
 usage: quote
 ```
 
+## Parameters
+
+This command has no parameters
 
 

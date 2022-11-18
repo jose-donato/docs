@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_global_markets_info
+Get global statistics about crypto markets from CoinGecko API like:
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_global_markets_info() -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L460)]
+
+```python
+def get_global_markets_info() -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L460)
-
-Description: Get global statistics about crypto markets from CoinGecko API like:
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,34 +28,28 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | Market_Cap, Volume, Market_Cap_Percentage |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_global_market_info
+Shows global statistics about crypto. [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_global_market_info(pie: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L238)]
+
+```python
+def display_global_market_info(pie: bool = False, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L240)
-
-Description: Shows global statistics about crypto. [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| pie | bool | Whether to show a pie chart | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| pie | bool | Whether to show a pie chart | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

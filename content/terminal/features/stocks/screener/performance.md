@@ -3,15 +3,11 @@ title: performance
 description: OpenBB Terminal Function
 ---
 
-# Screener
-
-## performance
-
-### Description: 
+# performance
 
 Prints performance data of the companies that meet the pre-set filtering.
 
-### Usage: 
+### Usage 
 ```python
 usage: performance [-p Desired preset.] [-l LIMIT] [-r] [-s SORT [SORT ...]]
 ```

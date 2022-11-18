@@ -3,15 +3,11 @@ title: search
 description: OpenBB Terminal Function
 ---
 
-# Futures
-
-## search
-
-### Description: 
+# search
 
 Search futures. [Source: YahooFinance]
 
-### Usage: 
+### Usage 
 ```python
 usage: search [-e {NYB,CMX,CME,CBT,NYM}] [-c {metals,agriculture,index,hydrocarbon,bonds,currency}] [-d DESCRIPTION [DESCRIPTION ...]]
 ```

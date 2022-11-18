@@ -3,15 +3,11 @@ title: candles
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## candles
-
-### Description: 
+# candles
 
 Display Candle Data
 
-### Usage: 
+### Usage 
 ```python
 usage: candles [-g GRANULARITY] [-l CANDLECOUNT] [-a] [-b] [-c] [-e] [-o] [-r] [-s] [-v]
 ```

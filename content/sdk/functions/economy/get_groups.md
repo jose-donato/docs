@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # get_groups
 
-## openbb_terminal.economy.finviz_model.get_groups
+Get group available
 
-```python title='openbb_terminal/economy/finviz_model.py'
-def get_groups() -> List
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L60)]
+
+```python
+def get_groups() -> List[str]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/finviz_model.py#L61)
-
-Description: Get group available
-
 ## Parameters
 
 This function does not take any parameters.
@@ -21,6 +19,4 @@ This function does not take any parameters.
 ## Returns
 
 This function does not return anything
-
-## Examples
 

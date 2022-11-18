@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.alternative.oss.github_model.get_top_repos
+Get repos sorted by stars or forks. Can be filtered by categories.
 
-```python title='openbb_terminal/alternative/oss/github_model.py'
-def get_top_repos(sortby: str, limit: int, categories: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L135)]
+
+```python
+def get_top_repos(sortby: str, limit: int = 50, categories: str = "") -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_model.py#L135)
-
-Description: Get repos sorted by stars or forks. Can be filtered by categories.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sortby | str | Sort repos by {stars, forks} | None | False |
-| categories | str | Check for repo categories. If more than one separate with a comma: e.g., finance,investment. Default: None | None | False |
-| limit | int | Number of repos to search for | None | False |
+| categories | str | Check for repo categories. If more than one separate with a comma: e.g., finance,investment. Default: None |  | True |
+| limit | int | Number of repos to search for | 50 | True |
 
 ## Returns
 
@@ -34,37 +32,31 @@ Description: Get repos sorted by stars or forks. Can be filtered by categories.
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with repos |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.alternative.oss.github_view.display_top_repos
+Plots repo summary [Source: https://api.github.com].
 
-```python title='openbb_terminal/alternative/oss/github_view.py'
-def display_top_repos(sortby: str, categories: str, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L65)]
+
+```python
+def display_top_repos(sortby: str, categories: str = "", limit: int = 10, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/github_view.py#L65)
-
-Description: Plots repo summary [Source: https://api.github.com].
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sortby | str | Sort repos by {stars, forks} | None | False |
-| categories | str | Check for repo categories. If more than one separate with a comma: e.g., finance,investment. Default: None | None | False |
-| limit | int | Number of repos to look at | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| categories | str | Check for repo categories. If more than one separate with a comma: e.g., finance,investment. Default: None |  | True |
+| limit | int | Number of repos to look at | 10 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

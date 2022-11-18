@@ -3,15 +3,11 @@ title: perf
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## perf
-
-### Description: 
+# perf
 
 Shows performance of each trade and total performance of the portfolio versus the benchmark.
 
-### Usage: 
+### Usage 
 ```python
 usage: performance [-t]
 ```

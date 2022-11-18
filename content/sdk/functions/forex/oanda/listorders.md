@@ -11,56 +11,48 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forex.oanda.oanda_model.order_history_request
+Request the orders list from Oanda.
 
-```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def order_history_request(order_state: str, order_count: int, accountID: str) -> Union
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L225)]
+
+```python
+def order_history_request(order_state: str = "PENDING", order_count: int = 0, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L225)
-
-Description: Request the orders list from Oanda.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | None | False |
-| order_count | int | Limit the number of orders to retrieve | None | False |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | PENDING | True |
+| order_count | int | Limit the number of orders to retrieve | 0 | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forex.oanda.oanda_view.list_orders
+List order history.
 
-```python title='openbb_terminal/forex/oanda/oanda_view.py'
-def list_orders(accountID: str, order_state: str, order_count: int) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L153)]
+
+```python
+def list_orders(accountID: str, order_state: str = "PENDING", order_count: int = 0) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L156)
-
-Description: List order history.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
-| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | None | False |
-| order_count | int | Limit the number of orders to retrieve | None | False |
+| order_state | str | Filter orders by a specific state ("PENDING", "CANCELLED", etc.) | PENDING | True |
+| order_count | int | Limit the number of orders to retrieve | 0 | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

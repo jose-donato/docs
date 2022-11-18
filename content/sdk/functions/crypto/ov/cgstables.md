@@ -11,22 +11,20 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_stable_coins
+Returns top stable coins [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_stable_coins(limit: int, sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L191)]
+
+```python
+def get_stable_coins(limit: int = 20, sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L191)
-
-Description: Returns top stable coins [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | How many rows to show | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
+| limit | int | How many rows to show | 20 | True |
+| sortby | str | Key by which to sort data | rank | True |
+| ascend | bool | Flag to sort data ascending | False | True |
 
 ## Returns
 
@@ -34,37 +32,31 @@ Description: Returns top stable coins [Source: CoinGecko]
 | ---- | ----------- |
 | pd.DataFrame | Rank, Name, Symbol, Price, Change_24h, Exchanges, Market_Cap, Change_30d, Url |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_stablecoins
+Shows stablecoins data [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_stablecoins(limit: int, export: str, sortby: str, ascend: bool, pie: bool) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L331)]
+
+```python
+def display_stablecoins(limit: int = 15, export: str = "", sortby: str = "rank", ascend: bool = False, pie: bool = False) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L337)
-
-Description: Shows stablecoins data [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
-| pie | bool | Whether to show a pie chart | None | False |
+| limit | int | Number of records to display | 15 | True |
+| sortby | str | Key by which to sort data | rank | True |
+| ascend | bool | Flag to sort data ascending | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+| pie | bool | Whether to show a pie chart | False | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -3,15 +3,11 @@ title: rename
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## rename
-
-### Description: 
+# rename
 
 The column you want to rename from a dataset.
 
-### Usage: 
+### Usage 
 ```python
 usage: rename [-d {}] -o OLDCOL -n NEWCOL
 ```

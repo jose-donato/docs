@@ -5,22 +5,20 @@ description: OpenBB SDK Function
 
 # chains
 
-## openbb_terminal.stocks.options.options_sdk_helper.get_full_option_chain
+Get Option Chain For A Stock.  No greek data is returned
 
-```python title='openbb_terminal/stocks/options/options_sdk_helper.py'
-def get_full_option_chain(symbol: str, source: str, expiration: Optional[str]) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/options_sdk_helper.py#L14)]
+
+```python
+def get_full_option_chain(symbol: str, source: str = "Nasdaq", expiration: Optional[str] = None) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/options_sdk_helper.py#L14)
-
-Description: Get Option Chain For A Stock.  No greek data is returned
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Symbol to get chain for | None | False |
-| source | str | Source to get data from, by default "Nasdaq" | None | True |
-| expiration | str | Date to get chain for.  By default returns all dates | returns | True |
+| source | str | Source to get data from, by default "Nasdaq" | Nasdaq | True |
+| expiration | str | Date to get chain for.  By default returns all dates | None | True |
 
 ## Returns
 

@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # website
 
-## openbb_terminal.stocks.fundamental_analysis.yahoo_finance_model.get_website
+Gets website of company from yfinance
 
-```python title='openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L210)]
+
+```python
 def get_website(symbol: str) -> str
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/yahoo_finance_model.py#L210)
-
-Description: Gets website of company from yfinance
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Gets website of company from yfinance
 | Type | Description |
 | ---- | ----------- |
 | str | Company website |
-
-## Examples
 

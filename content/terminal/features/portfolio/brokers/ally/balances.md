@@ -3,18 +3,17 @@ title: balances
 description: OpenBB Terminal Function
 ---
 
-# Ally
-
-## balances
-
-### Description: 
+# balances
 
 Account balance details
 
-### Usage: 
+### Usage 
 ```python
 usage: balances
 ```
 
+## Parameters
+
+This command has no parameters
 
 

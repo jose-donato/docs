@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_holdings_overview
+Returns public companies that holds ethereum or bitcoin [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_holdings_overview(endpoint: str) -> List
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L102)]
+
+```python
+def get_holdings_overview(endpoint: str = "bitcoin") -> List[Union[str, pd.DataFrame]]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L102)
-
-Description: Returns public companies that holds ethereum or bitcoin [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| endpoint | str | "bitcoin" or "ethereum" | None | False |
+| endpoint | str | "bitcoin" or "ethereum" | bitcoin | True |
 
 ## Returns
 
@@ -32,36 +30,30 @@ Description: Returns public companies that holds ethereum or bitcoin [Source: Co
 | ---- | ----------- |
 | List[Union[str, pd.DataFrame]] | - str:              Overall statistics<br/>- pd.DataFrame: Companies holding crypto |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_holdings_overview
+Shows overview of public companies that holds ethereum or bitcoin. [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_holdings_overview(symbol: str, show_bar: bool, export: str, limit: int) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L135)]
+
+```python
+def display_holdings_overview(symbol: str, show_bar: bool = False, export: str = "", limit: int = 15) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L135)
-
-Description: Shows overview of public companies that holds ethereum or bitcoin. [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Cryptocurrency: ethereum or bitcoin | None | False |
-| show_bar | bool | Whether to show a bar graph for the data | None | False |
-| export | str | Export dataframe data to csv,json,xlsx | None | False |
-| limit | int | The number of rows to show | None | False |
+| show_bar | bool | Whether to show a bar graph for the data | False | True |
+| export | str | Export dataframe data to csv,json,xlsx |  | True |
+| limit | int | The number of rows to show | 15 | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

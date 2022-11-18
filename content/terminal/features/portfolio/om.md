@@ -3,15 +3,11 @@ title: om
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## om
-
-### Description: 
+# om
 
 Provides omega ratio of the selected portfolio.
 
-### Usage: 
+### Usage 
 ```python
 usage: om [-s START] [-e END]
 ```

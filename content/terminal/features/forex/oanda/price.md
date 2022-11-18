@@ -3,18 +3,17 @@ title: price
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## price
-
-### Description: 
+# price
 
 Get price for selected instrument.
 
-### Usage: 
+### Usage 
 ```python
 usage: price
 ```
 
+## Parameters
+
+This command has no parameters
 
 

@@ -3,15 +3,11 @@ title: login
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## login
-
-### Description: 
+# login
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: login [-otp ONE_TIME_PASSWORD]
 ```

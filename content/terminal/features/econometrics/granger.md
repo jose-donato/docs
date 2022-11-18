@@ -3,15 +3,11 @@ title: granger
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## granger
-
-### Description: 
+# granger
 
 Show Granger causality between two timeseries
 
-### Usage: 
+### Usage 
 ```python
 usage: granger [-t Available time series] [-l LAGS] [-c CONFIDENCE]
 ```

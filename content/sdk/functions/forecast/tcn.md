@@ -11,37 +11,35 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forecast.tcn_model.get_tcn_data
+Perform TCN forecasting
 
-```python title='openbb_terminal/forecast/tcn_model.py'
-def get_tcn_data(data: Union[pd.Series, pd.DataFrame], target_column: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, dropout: float, num_filters: int, weight_norm: bool, dilation_base: int, n_epochs: int, learning_rate: float, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_model.py#L20)]
+
+```python
+def get_tcn_data(data: Union[pd.Series, pd.DataFrame], target_column: str = "close", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, dropout: float = 0.1, num_filters: int = 6, weight_norm: bool = True, dilation_base: int = 2, n_epochs: int = 100, learning_rate: float = 0.001, batch_size: int = 800, model_save_name: str = "tcn_model", force_reset: bool = True, save_checkpoints: bool = True) -> Tuple[List[Optional[darts.timeseries.TimeSeries]], List[Optional[darts.timeseries.TimeSeries]], List[Optional[darts.timeseries.TimeSeries]], Optional[float], Optional[type[darts.models.forecasting.tcn_model.TCNModel]]]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_model.py#L20)
-
-Description: Perform TCN forecasting
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
-| target_column | str | Target column to forecast. Defaults to "close". | s | False |
-| n_predict | int | Days to predict. Defaults to 5. | 5 | False |
-| train_split | float | Train/val split. Defaults to 0.85. | 0.85 | False |
-| past_covariates | str | Multiple secondary columns to factor in when forecasting. Defaults to None. | None | False |
-| forecast_horizon | int | Forecast horizon when performing historical forecasting. Defaults to 5. | 5 | False |
-| input_chunk_length | int | Number of past time steps that are fed to the forecasting module at prediction time. Defaults to 14. | 14 | False |
-| output_chunk_length | int | The length of the forecast of the model. Defaults to 5. | 5 | False |
-| dropout | float | Fraction of neurons affected by Dropout. Defaults to 0.1. | 0.1 | False |
-| num_filters | int | The number of filters in a convolutional layer of the TCN. Defaults to 6. | 6 | False |
-| weight_norm | bool | Boolean value indicating whether to use weight normalization. Defaults to True. | True | False |
-| dilation_base | int | The base of the exponent that will determine the dilation on every level. Defaults to 2. | 2 | False |
-| batch_size | int | Number of time series (input and output sequences) used in each training pass. Defaults to 32. | 32 | False |
-| n_epochs | int | Number of epochs over which to train the model. Defaults to 100. | 100 | False |
-| learning_rate | float | Defaults to 1e-3. | 1e-3 | False |
-| model_save_name | str | Name for model. Defaults to "brnn_model". | s | False |
-| force_reset | bool | If set to True, any previously-existing model with the same name will be reset<br/>(all checkpoints will be discarded). Defaults to True. | True | False |
-| save_checkpoints | bool | Whether or not to automatically save the untrained model and checkpoints from training.<br/>Defaults to True. | True | False |
+| target_column | str | Target column to forecast. Defaults to "close". | close | True |
+| n_predict | int | Days to predict. Defaults to 5. | 5 | True |
+| train_split | float | Train/val split. Defaults to 0.85. | 0.85 | True |
+| past_covariates | str | Multiple secondary columns to factor in when forecasting. Defaults to None. | None | True |
+| forecast_horizon | int | Forecast horizon when performing historical forecasting. Defaults to 5. | 5 | True |
+| input_chunk_length | int | Number of past time steps that are fed to the forecasting module at prediction time. Defaults to 14. | 14 | True |
+| output_chunk_length | int | The length of the forecast of the model. Defaults to 5. | 5 | True |
+| dropout | float | Fraction of neurons affected by Dropout. Defaults to 0.1. | 0.1 | True |
+| num_filters | int | The number of filters in a convolutional layer of the TCN. Defaults to 6. | 6 | True |
+| weight_norm | bool | Boolean value indicating whether to use weight normalization. Defaults to True. | True | True |
+| dilation_base | int | The base of the exponent that will determine the dilation on every level. Defaults to 2. | 2 | True |
+| batch_size | int | Number of time series (input and output sequences) used in each training pass. Defaults to 32. | 800 | True |
+| n_epochs | int | Number of epochs over which to train the model. Defaults to 100. | 100 | True |
+| learning_rate | float | Defaults to 1e-3. | 0.001 | True |
+| model_save_name | str | Name for model. Defaults to "brnn_model". | tcn_model | True |
+| force_reset | bool | If set to True, any previously-existing model with the same name will be reset<br/>(all checkpoints will be discarded). Defaults to True. | True | True |
+| save_checkpoints | bool | Whether or not to automatically save the untrained model and checkpoints from training.<br/>Defaults to True. | True | True |
 
 ## Returns
 
@@ -49,58 +47,52 @@ Description: Perform TCN forecasting
 | ---- | ----------- |
 | Tuple[List[TimeSeries], List[TimeSeries], List[TimeSeries], Optional[float], type[TCNModel]] | Adjusted Data series,<br/>Historical forecast by best RNN model,<br/>list of Predictions,<br/>Mean average precision error,<br/>Best TCN Model. |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forecast.tcn_view.display_tcn_forecast
+Display TCN forecast
 
-```python title='openbb_terminal/forecast/tcn_view.py'
-def display_tcn_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str, dataset_name: str, n_predict: int, past_covariates: str, train_split: float, forecast_horizon: int, input_chunk_length: int, output_chunk_length: int, dropout: float, num_filters: int, weight_norm: bool, dilation_base: int, n_epochs: int, learning_rate: float, batch_size: int, model_save_name: str, force_reset: bool, save_checkpoints: bool, export: str, residuals: bool, forecast_only: bool, start_date: Optional[datetime.datetime], end_date: Optional[datetime.datetime], naive: bool, export_pred_raw: bool, external_axes: Optional[List[axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_view.py#L20)]
+
+```python
+def display_tcn_forecast(data: Union[pd.DataFrame, pd.Series], target_column: str = "close", dataset_name: str = "", n_predict: int = 5, past_covariates: str = None, train_split: float = 0.85, forecast_horizon: int = 5, input_chunk_length: int = 14, output_chunk_length: int = 5, dropout: float = 0.1, num_filters: int = 6, weight_norm: bool = True, dilation_base: int = 2, n_epochs: int = 100, learning_rate: float = 0.001, batch_size: int = 800, model_save_name: str = "tcn_model", force_reset: bool = True, save_checkpoints: bool = True, export: str = "", residuals: bool = False, forecast_only: bool = False, start_date: Optional[datetime.datetime] = None, end_date: Optional[datetime.datetime] = None, naive: bool = False, export_pred_raw: bool = False, external_axes: Optional[List[axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/tcn_view.py#L20)
-
-Description: Display TCN forecast
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | Union[pd.Series, pd.DataFrame] | Input Data | None | False |
-| target_column | str | Target column to forecast. Defaults to "close". | s | False |
-| dataset_name | str | The name of the ticker to be predicted | None | False |
-| n_predict | int | Days to predict. Defaults to 5. | 5 | False |
-| train_split | float | Train/val split. Defaults to 0.85. | 0.85 | False |
-| past_covariates | str | Multiple secondary columns to factor in when forecasting. Defaults to None. | None | False |
-| forecast_horizon | int | Forecast horizon when performing historical forecasting. Defaults to 5. | 5 | False |
-| input_chunk_length | int | Number of past time steps that are fed to the forecasting module at prediction time. Defaults to 14. | 14 | False |
-| output_chunk_length | int | The length of the forecast of the model. Defaults to 5. | 5 | False |
-| dropout | float | Fraction of neurons affected by Dropout. Defaults to 0.1. | 0.1 | False |
-| num_filters | int | The number of filters in a convolutional layer of the TCN. Defaults to 6. | 6 | False |
-| weight_norm | bool | Boolean value indicating whether to use weight normalization. Defaults to True. | True | False |
-| dilation_base | int | The base of the exponent that will determine the dilation on every level. Defaults to 2. | 2 | False |
-| batch_size | int | Number of time series (input and output sequences) used in each training pass. Defaults to 32. | 32 | False |
-| n_epochs | int | Number of epochs over which to train the model. Defaults to 100. | 100 | False |
-| learning_rate | float | Defaults to 1e-3. | 1e-3 | False |
-| model_save_name | str | Name for model. Defaults to "brnn_model". | s | False |
-| force_reset | bool | If set to True, any previously-existing model with the same name will be reset<br/>(all checkpoints will be discarded). Defaults to True. | True | False |
-| save_checkpoints | bool | Whether or not to automatically save the untrained model and checkpoints from training. Defaults to True. | True | False |
-| export | str | Format to export data | None | False |
-| residuals | bool | Whether to show residuals for the model. Defaults to False. | False | False |
-| forecast_only | bool | Whether to only show dates in the forecasting range. Defaults to False. | False | False |
-| start_date | Optional[datetime] | The starting date to perform analysis, data before this is trimmed. Defaults to None. | None | False |
-| end_date | Optional[datetime] | The ending date to perform analysis, data after this is trimmed. Defaults to None. | None | False |
-| naive | bool | Whether to show the naive baseline. This just assumes the closing price will be the same<br/>as the previous day's closing price. Defaults to False. | False | False |
-| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
+| target_column | str | Target column to forecast. Defaults to "close". | close | True |
+| dataset_name | str | The name of the ticker to be predicted |  | True |
+| n_predict | int | Days to predict. Defaults to 5. | 5 | True |
+| train_split | float | Train/val split. Defaults to 0.85. | 0.85 | True |
+| past_covariates | str | Multiple secondary columns to factor in when forecasting. Defaults to None. | None | True |
+| forecast_horizon | int | Forecast horizon when performing historical forecasting. Defaults to 5. | 5 | True |
+| input_chunk_length | int | Number of past time steps that are fed to the forecasting module at prediction time. Defaults to 14. | 14 | True |
+| output_chunk_length | int | The length of the forecast of the model. Defaults to 5. | 5 | True |
+| dropout | float | Fraction of neurons affected by Dropout. Defaults to 0.1. | 0.1 | True |
+| num_filters | int | The number of filters in a convolutional layer of the TCN. Defaults to 6. | 6 | True |
+| weight_norm | bool | Boolean value indicating whether to use weight normalization. Defaults to True. | True | True |
+| dilation_base | int | The base of the exponent that will determine the dilation on every level. Defaults to 2. | 2 | True |
+| batch_size | int | Number of time series (input and output sequences) used in each training pass. Defaults to 32. | 800 | True |
+| n_epochs | int | Number of epochs over which to train the model. Defaults to 100. | 100 | True |
+| learning_rate | float | Defaults to 1e-3. | 0.001 | True |
+| model_save_name | str | Name for model. Defaults to "brnn_model". | tcn_model | True |
+| force_reset | bool | If set to True, any previously-existing model with the same name will be reset<br/>(all checkpoints will be discarded). Defaults to True. | True | True |
+| save_checkpoints | bool | Whether or not to automatically save the untrained model and checkpoints from training. Defaults to True. | True | True |
+| export | str | Format to export data |  | True |
+| residuals | bool | Whether to show residuals for the model. Defaults to False. | False | True |
+| forecast_only | bool | Whether to only show dates in the forecasting range. Defaults to False. | False | True |
+| start_date | Optional[datetime] | The starting date to perform analysis, data before this is trimmed. Defaults to None. | None | True |
+| end_date | Optional[datetime] | The ending date to perform analysis, data after this is trimmed. Defaults to None. | None | True |
+| naive | bool | Whether to show the naive baseline. This just assumes the closing price will be the same<br/>as the previous day's closing price. Defaults to False. | False | True |
+| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

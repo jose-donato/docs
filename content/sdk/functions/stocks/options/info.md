@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.options.yfinance_model.get_info
+Get info for a given ticker
 
-```python title='openbb_terminal/stocks/options/yfinance_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L325)]
+
+```python
 def get_info(symbol: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/yfinance_model.py#L325)
-
-Description: Get info for a given ticker
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,34 +30,28 @@ Description: Get info for a given ticker
 | ---- | ----------- |
 | float | The info for a given ticker |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.options.barchart_view.print_options_data
+Scrapes Barchart.com for the options information
 
-```python title='openbb_terminal/stocks/options/barchart_view.py'
-def print_options_data(symbol: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/barchart_view.py#L15)]
+
+```python
+def print_options_data(symbol: str, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/barchart_view.py#L15)
-
-Description: Scrapes Barchart.com for the options information
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get options info for | None | False |
-| export | str | Format of export file | None | False |
+| export | str | Format of export file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

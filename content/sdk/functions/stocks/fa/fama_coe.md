@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # fama_coe
 
-## openbb_terminal.stocks.fundamental_analysis.dcf_model.get_fama_coe
+Use Fama and French to get the cost of equity for a company
 
-```python title='openbb_terminal/stocks/fundamental_analysis/dcf_model.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L300)]
+
+```python
 def get_fama_coe(symbol: str) -> float
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L300)
-
-Description: Use Fama and French to get the cost of equity for a company
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,6 +23,4 @@ Description: Use Fama and French to get the cost of equity for a company
 | Type | Description |
 | ---- | ----------- |
 | float | The stock's Fama French coefficient |
-
-## Examples
 

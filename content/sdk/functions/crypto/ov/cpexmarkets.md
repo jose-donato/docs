@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.coinpaprika_model.get_exchanges_market
+List markets by exchange ID [Source: CoinPaprika]
 
-```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_model.py'
-def get_exchanges_market(exchange_id: str, symbols: str, sortby: str, ascend: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L329)]
+
+```python
+def get_exchanges_market(exchange_id: str = "binance", symbols: str = "USD", sortby: str = "pair", ascend: bool = True) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_model.py#L347)
-
-Description: List markets by exchange ID [Source: CoinPaprika]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| exchange_id | str | identifier of exchange e.g for Binance Exchange -> binance | None | False |
-| symbols | str | Comma separated quotes to return e.g quotes=USD,BTC | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
+| exchange_id | str | identifier of exchange e.g for Binance Exchange -> binance | binance | True |
+| symbols | str | Comma separated quotes to return e.g quotes=USD,BTC | USD | True |
+| sortby | str | Key by which to sort data | pair | True |
+| ascend | bool | Flag to sort data ascending | True | True |
 
 ## Returns
 
@@ -35,38 +33,32 @@ Description: List markets by exchange ID [Source: CoinPaprika]
 | ---- | ----------- |
 | pd.DataFrame | pair, base_currency_name, quote_currency_name, market_url,<br/>category, reported_volume_24h_share, trust_score, |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.coinpaprika_view.display_exchange_markets
+Get all markets for given exchange [Source: CoinPaprika]
 
-```python title='openbb_terminal/cryptocurrency/overview/coinpaprika_view.py'
-def display_exchange_markets(exchange: str, sortby: str, ascend: bool, limit: int, links: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L267)]
+
+```python
+def display_exchange_markets(exchange: str = "binance", sortby: str = "pair", ascend: bool = True, limit: int = 15, links: bool = False, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/coinpaprika_view.py#L267)
-
-Description: Get all markets for given exchange [Source: CoinPaprika]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| exchange | str | Exchange identifier e.g Binance | None | False |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
-| links | bool | Flag to display urls | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| exchange | str | Exchange identifier e.g Binance | binance | True |
+| limit | int | Number of records to display | 15 | True |
+| sortby | str | Key by which to sort data | pair | True |
+| ascend | bool | Flag to sort data descending | True | True |
+| links | bool | Flag to display urls | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

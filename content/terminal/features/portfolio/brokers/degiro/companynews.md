@@ -3,15 +3,11 @@ title: companynews
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## companynews
-
-### Description: 
+# companynews
 
 
 
-### Usage: 
+### Usage 
 ```python
 usage: companynews -s SYMBOL [-l LIMIT] [-o OFFSET] [-lang LANGUAGES]
 ```

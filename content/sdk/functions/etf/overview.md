@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.etf.stockanalysis_model.get_etf_overview
+Get overview data for selected etf
 
-```python title='openbb_terminal/etf/stockanalysis_model.py'
-def get_etf_overview(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L48)]
+
+```python
+def get_etf_overview(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_model.py#L48)
-
-Description: Get overview data for selected etf
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| etf_symbol | str | Etf symbol to get overview for | None | False |
+| etf_symbol | str | Etf symbol to get overview for | None | True |
 
 ## Returns
 
@@ -32,34 +30,28 @@ Description: Get overview data for selected etf
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of stock overview data |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.etf.stockanalysis_view.view_overview
+Print etf overview information
 
-```python title='openbb_terminal/etf/stockanalysis_view.py'
-def view_overview(symbol: str, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L17)]
+
+```python
+def view_overview(symbol: str, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/etf/stockanalysis_view.py#L17)
-
-Description: Print etf overview information
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | ETF symbols to display overview for | None | False |
-| export | str | Format to export data | None | False |
+| export | str | Format to export data |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

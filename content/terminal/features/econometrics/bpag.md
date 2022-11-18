@@ -3,19 +3,18 @@ title: bpag
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## bpag
-
-### Description: 
+# bpag
 
 Show Breusch-Pagan heteroscedasticity test results. Needs OLS to be run in advance with independent and dependent variables
 
-### Usage: 
+### Usage 
 ```python
 usage: bpag
 ```
 
+## Parameters
+
+This command has no parameters
 
 
 ## Examples

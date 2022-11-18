@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.options.screen.syncretism_model.get_screener_output
+Screen options based on preset filters
 
-```python title='openbb_terminal/stocks/options/screen/syncretism_model.py'
-def get_screener_output(preset: str) -> Tuple
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L159)]
+
+```python
+def get_screener_output(preset: str) -> Tuple[pd.DataFrame, str]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L159)
-
-Description: Screen options based on preset filters
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,37 +30,31 @@ Description: Screen options based on preset filters
 | ---- | ----------- |
 | Tuple[pd.DataFrame, str] | DataFrame with screener data or empty if errors, String containing error message if supplied |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.options.screen.syncretism_view.view_screener_output
+Print the output of screener
 
-```python title='openbb_terminal/stocks/options/screen/syncretism_view.py'
-def view_screener_output(preset: str, limit: int, export: str) -> List
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L60)]
+
+```python
+def view_screener_output(preset: str, limit: int = 20, export: str = "") -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L59)
-
-Description: Print the output of screener
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | preset | str | Chosen preset | None | False |
-| limit | int | Number of randomly sorted rows to display | None | False |
-| export | str | Format for export file | None | False |
+| limit | int | Number of randomly sorted rows to display | 20 | True |
+| export | str | Format for export file |  | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List | List of tickers screened |
-
-## Examples
 
 
 

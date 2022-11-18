@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.options.screen.syncretism_model.get_historical_greeks
+Get histoical option greeks
 
-```python title='openbb_terminal/stocks/options/screen/syncretism_model.py'
-def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], chain_id: str, put: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L37)]
+
+```python
+def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], chain_id: str = "", put: bool = False) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_model.py#L37)
-
-Description: Get histoical option greeks
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,8 +25,8 @@ Description: Get histoical option greeks
 | symbol | str | Stock ticker symbol | None | False |
 | expiry | str | Option expiration date | None | False |
 | strike | Union[str, float] | Strike price to look for | None | False |
-| chain_id | str | OCC option symbol.  Overwrites other inputs | None | False |
-| put | bool | Is this a put option? | None | False |
+| chain_id | str | OCC option symbol.  Overwrites other inputs |  | True |
+| put | bool | Is this a put option? | False | True |
 
 ## Returns
 
@@ -36,22 +34,18 @@ Description: Get histoical option greeks
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing historical greeks |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.options.screen.syncretism_view.view_historical_greeks
+Plots historical greeks for a given option. [Source: Syncretism]
 
-```python title='openbb_terminal/stocks/options/screen/syncretism_view.py'
-def view_historical_greeks(symbol: str, expiry: str, strike: Union[float, str], greek: str, chain_id: str, put: bool, raw: bool, limit: Union[int, str], export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L107)]
+
+```python
+def view_historical_greeks(symbol: str, expiry: str, strike: Union[float, str], greek: str = "Delta", chain_id: str = "", put: bool = False, raw: bool = False, limit: Union[int, str] = 20, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/options/screen/syncretism_view.py#L106)
-
-Description: Plots historical greeks for a given option. [Source: Syncretism]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -59,19 +53,17 @@ Description: Plots historical greeks for a given option. [Source: Syncretism]
 | symbol | str | Stock ticker | None | False |
 | expiry | str | Expiration date | None | False |
 | strike | Union[str, float] | Strike price to consider | None | False |
-| greek | str | Greek variable to plot | None | False |
-| chain_id | str | OCC option chain.  Overwrites other variables | None | False |
-| put | bool | Is this a put option? | None | False |
-| raw | bool | Print to console | None | False |
-| limit | int | Number of rows to show in raw | None | False |
-| export | str | Format to export data | None | False |
+| greek | str | Greek variable to plot | Delta | True |
+| chain_id | str | OCC option chain.  Overwrites other variables |  | True |
+| put | bool | Is this a put option? | False | True |
+| raw | bool | Print to console | False | True |
+| limit | int | Number of rows to show in raw | 20 | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

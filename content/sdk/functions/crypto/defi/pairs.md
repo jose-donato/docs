@@ -11,23 +11,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.defi.graph_model.get_uniswap_pool_recently_added
+Get lastly added trade-able pairs on Uniswap with parameters like:
 
-```python title='openbb_terminal/cryptocurrency/defi/graph_model.py'
-def get_uniswap_pool_recently_added(last_days: int, min_volume: int, min_liquidity: int, min_tx: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L164)]
+
+```python
+def get_uniswap_pool_recently_added(last_days: int = 14, min_volume: int = 100, min_liquidity: int = 0, min_tx: int = 100) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_model.py#L164)
-
-Description: Get lastly added trade-able pairs on Uniswap with parameters like:
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| last_days | int | How many days back to look for added pairs. | None | False |
-| min_volume | int | Minimum volume | None | False |
-| min_liquidity | int | Minimum liquidity | None | False |
-| min_tx | int | Minimum number of transactions done in given pool. | None | False |
+| last_days | int | How many days back to look for added pairs. | 14 | True |
+| min_volume | int | Minimum volume | 100 | True |
+| min_liquidity | int | Minimum liquidity | 0 | True |
+| min_tx | int | Minimum number of transactions done in given pool. | 100 | True |
 
 ## Returns
 
@@ -35,40 +33,34 @@ Description: Get lastly added trade-able pairs on Uniswap with parameters like:
 | ---- | ----------- |
 | pd.DataFrame | Lastly added pairs on Uniswap DEX. |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.defi.graph_view.display_recently_added
+Prints table showing Lastly added pairs on Uniswap DEX.
 
-```python title='openbb_terminal/cryptocurrency/defi/graph_view.py'
-def display_recently_added(limit: int, days: int, min_volume: int, min_liquidity: int, min_tx: int, sortby: str, ascend: bool, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L102)]
+
+```python
+def display_recently_added(limit: int = 20, days: int = 7, min_volume: int = 20, min_liquidity: int = 0, min_tx: int = 100, sortby: str = "created", ascend: bool = False, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/graph_view.py#L102)
-
-Description: Prints table showing Lastly added pairs on Uniswap DEX.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| days | int | Number of days the pair has been active, | None | False |
-| min_volume | int | Minimum trading volume, | None | False |
-| min_liquidity | int | Minimum liquidity | None | False |
-| min_tx | int | Minimum number of transactions | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 20 | True |
+| days | int | Number of days the pair has been active, | 7 | True |
+| min_volume | int | Minimum trading volume, | 20 | True |
+| min_liquidity | int | Minimum liquidity | 0 | True |
+| min_tx | int | Minimum number of transactions | 100 | True |
+| sortby | str | Key by which to sort data | created | True |
+| ascend | bool | Flag to sort data descending | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

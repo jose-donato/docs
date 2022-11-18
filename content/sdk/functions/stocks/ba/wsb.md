@@ -5,15 +5,13 @@ description: OpenBB SDK Function
 
 # wsb
 
-## openbb_terminal.common.behavioural_analysis.reddit_model.get_wsb_community
+Get wsb posts [Source: reddit].
 
-```python title='openbb_terminal/common/behavioural_analysis/reddit_model.py'
-def get_wsb_community(limit: int, new: bool) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L602)]
+
+```python
+def get_wsb_community(limit: int = 10, new: bool = False) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L602)
-
-Description: Get wsb posts [Source: reddit].
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,6 +24,4 @@ Description: Get wsb posts [Source: reddit].
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of reddit submissions |
-
-## Examples
 

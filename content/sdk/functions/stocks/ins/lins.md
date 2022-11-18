@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.stocks.insider.finviz_model.get_last_insider_activity
+Get last insider activity for a given stock ticker. [Source: Finviz]
 
-```python title='openbb_terminal/stocks/insider/finviz_model.py'
-def get_last_insider_activity(symbol: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_model.py#L16)]
+
+```python
+def get_last_insider_activity(symbol: str) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_model.py#L16)
-
-Description: Get last insider activity for a given stock ticker. [Source: Finviz]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -32,35 +30,29 @@ Description: Get last insider activity for a given stock ticker. [Source: Finviz
 | ---- | ----------- |
 | pd.DataFrame | Latest insider trading activity |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.stocks.insider.finviz_view.last_insider_activity
+Display insider activity for a given stock ticker. [Source: Finviz]
 
-```python title='openbb_terminal/stocks/insider/finviz_view.py'
-def last_insider_activity(symbol: str, limit: int, export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_view.py#L15)]
+
+```python
+def last_insider_activity(symbol: str, limit: int = 10, export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/insider/finviz_view.py#L15)
-
-Description: Display insider activity for a given stock ticker. [Source: Finviz]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| limit | int | Number of latest insider activity to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of latest insider activity to display | 10 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.alternative.oss.runa_model.get_startups
+Get startups from ROSS index [Source: https://runacap.com/].
 
-```python title='openbb_terminal/alternative/oss/runa_model.py'
-def get_startups() -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L104)]
+
+```python
+def get_startups() -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_model.py#L104)
-
-Description: Get startups from ROSS index [Source: https://runacap.com/].
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,40 +28,34 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | list of startups |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.alternative.oss.runa_view.display_rossindex
+Plots list of startups from ross index [Source: https://runacap.com/]
 
-```python title='openbb_terminal/alternative/oss/runa_view.py'
-def display_rossindex(limit: int, sortby: str, ascend: bool, show_chart: bool, show_growth: bool, chart_type: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_view.py#L25)]
+
+```python
+def display_rossindex(limit: int = 10, sortby: str = "Stars AGR [%]", ascend: bool = False, show_chart: bool = False, show_growth: bool = True, chart_type: str = "stars", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/oss/runa_view.py#L25)
-
-Description: Plots list of startups from ross index [Source: https://runacap.com/]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of startups to search | None | False |
-| sortby | str | Key by which to sort data. Default: Stars AGR [%] | Stars | False |
-| ascend | bool | Flag to sort data descending | None | False |
-| show_chart | bool | Flag to show chart with startups | None | False |
-| show_growth | bool | Flag to show growth line chart | None | False |
-| chart_type | str | Chart type {stars,forks} | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of startups to search | 10 | True |
+| sortby | str | Key by which to sort data. Default: Stars AGR [%] | Stars AGR [%] | True |
+| ascend | bool | Flag to sort data descending | False | True |
+| show_chart | bool | Flag to show chart with startups | False | True |
+| show_growth | bool | Flag to show growth line chart | True | True |
+| chart_type | str | Chart type {stars,forks} | stars | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

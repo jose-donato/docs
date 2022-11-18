@@ -5,27 +5,23 @@ description: OpenBB SDK Function
 
 # fred_notes
 
-## openbb_terminal.economy.fred_model.get_series_notes
+Get series notes. [Source: FRED]
 
-```python title='openbb_terminal/economy/fred_model.py'
-def get_series_notes(search_query: str, limit: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L68)]
+
+```python
+def get_series_notes(search_query: str, limit: int = -1) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/fred_model.py#L68)
-
-Description: Get series notes. [Source: FRED]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | search_query | str | Text query to search on fred series notes database | None | False |
-| limit | int | Maximum number of series notes to display | None | False |
+| limit | int | Maximum number of series notes to display | -1 | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of matched series |
-
-## Examples
 

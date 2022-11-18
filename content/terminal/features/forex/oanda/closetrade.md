@@ -3,15 +3,11 @@ title: closetrade
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## closetrade
-
-### Description: 
+# closetrade
 
 Close a trade by id.
 
-### Usage: 
+### Usage 
 ```python
 usage: closetrade [-i ORDERID] [-u UNITS]
 ```

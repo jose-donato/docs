@@ -5,27 +5,23 @@ description: OpenBB SDK Function
 
 # lobbying
 
-## openbb_terminal.stocks.government.quiverquant_model.get_lobbying
+Corporate lobbying details
 
-```python title='openbb_terminal/stocks/government/quiverquant_model.py'
-def get_lobbying(symbol: str, limit: int) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L531)]
+
+```python
+def get_lobbying(symbol: str, limit: int = 10) -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L531)
-
-Description: Corporate lobbying details
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get corporate lobbying data from | None | False |
-| limit | int | Number of events to show | None | False |
+| limit | int | Number of events to show | 10 | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with corporate lobbying data |
-
-## Examples
 

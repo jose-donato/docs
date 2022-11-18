@@ -3,15 +3,11 @@ title: deposits
 description: OpenBB Terminal Function
 ---
 
-# Coinbase
-
-## deposits
-
-### Description: 
+# deposits
 
 Display a list of deposits for your account.
 
-### Usage: 
+### Usage 
 ```python
 usage: deposits [-t {internal_deposit,deposit}] [-l LIMIT] [-s {created_at,amount}] [-r]
 ```

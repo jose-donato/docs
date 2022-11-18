@@ -11,20 +11,18 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.forex.oanda.oanda_model.pending_orders_request
+Request information on pending orders.
 
-```python title='openbb_terminal/forex/oanda/oanda_model.py'
-def pending_orders_request(accountID: str) -> Union
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L421)]
+
+```python
+def pending_orders_request(accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L421)
-
-Description: Request information on pending orders.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
 ## Returns
 
@@ -32,22 +30,18 @@ Description: Request information on pending orders.
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Pending orders data or False |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.forex.oanda.oanda_view.get_pending_orders
+Get information about pending orders.
 
-```python title='openbb_terminal/forex/oanda/oanda_view.py'
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L233)]
+
+```python
 def get_pending_orders(accountID: str) -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L240)
-
-Description: Get information about pending orders.
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,8 +51,6 @@ Description: Get information about pending orders.
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

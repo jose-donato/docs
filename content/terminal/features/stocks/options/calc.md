@@ -3,16 +3,11 @@ title: calc
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## calc
-
-### Description
+# calc
 
 Calculate profit or loss for given option settings.
 
-### Usage
-
+### Usage 
 ```python
 usage: calc [--put] [--sell] [-s STRIKE] [-p PREMIUM] [-m MIN] [-M MAX]
 ```
@@ -28,6 +23,7 @@ usage: calc [--put] [--sell] [-s STRIKE] [-p PREMIUM] [-m MIN] [-M MAX]
 | min | Min price to look at | -1 | True | None |
 | max | Max price to look at | -1 | True | None |
 
+
 ## Examples
 
 ```python
@@ -41,3 +37,4 @@ Max loss: $-600.0
 ```
 
 ![calc](https://user-images.githubusercontent.com/46355364/154277755-a6640bee-8621-4a7d-9fc6-9c197daca0e1.png)
+

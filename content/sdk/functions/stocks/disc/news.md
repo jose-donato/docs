@@ -5,27 +5,23 @@ description: OpenBB SDK Function
 
 # news
 
-## openbb_terminal.stocks.discovery.seeking_alpha_model.get_news
+Gets news. [Source: SeekingAlpha]
 
-```python title='openbb_terminal/stocks/discovery/seeking_alpha_model.py'
-def get_news(news_type: str, limit: int) -> List
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L199)]
+
+```python
+def get_news(news_type: str = "Top-News", limit: int = 5) -> List
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/seeking_alpha_model.py#L199)
-
-Description: Gets news. [Source: SeekingAlpha]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| news_type | str | From: Top-News, On-The-Move, Market-Pulse, Notable-Calls, Buybacks, Commodities, Crypto, Issuance, Global,<br/>Guidance, IPOs, SPACs, Politics, M-A, Consumer, Energy, Financials, Healthcare, MLPs, REITs, Technology | None | False |
-| limit | int | Number of news to display | None | False |
+| news_type | str | From: Top-News, On-The-Move, Market-Pulse, Notable-Calls, Buybacks, Commodities, Crypto, Issuance, Global,<br/>Guidance, IPOs, SPACs, Politics, M-A, Consumer, Energy, Financials, Healthcare, MLPs, REITs, Technology | Top-News | True |
+| limit | int | Number of news to display | 5 | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[dict] | List of dict news |
-
-## Examples
 

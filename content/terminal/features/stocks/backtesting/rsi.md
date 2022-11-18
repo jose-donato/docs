@@ -3,15 +3,11 @@ title: rsi
 description: OpenBB Terminal Function
 ---
 
-# Backtesting
-
-## rsi
-
-### Description: 
+# rsi
 
 Strategy that buys when the stock is less than a threshold and shorts when it exceeds a threshold.
 
-### Usage: 
+### Usage 
 ```python
 usage: rsi [-p PERIODS] [-u HIGH] [-l LOW] [--spy] [--no_bench] [--no_short]
 ```

@@ -3,15 +3,11 @@ title: spread
 description: OpenBB Terminal Function
 ---
 
-# Economy
-
-## spread
-
-### Description: 
+# spread
 
 Generate bond spread matrix.
 
-### Usage: 
+### Usage 
 ```python
 usage: spread [-g {G7,PIIGS,EZ,AMERICAS,EUROPE,ME,APAC,AFRICA}] [-c COUNTRIES] [-m MATURITY] [--change CHANGE] [--color {rgb,binary,openbb}]
 ```

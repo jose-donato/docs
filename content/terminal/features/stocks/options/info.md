@@ -3,19 +3,19 @@ title: info
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## info
-
-### Description
+# info
 
 Display option data [Source: Barchart.com]
 
-### Usage
-
+### Usage 
 ```python
 usage: info
 ```
+
+## Parameters
+
+This command has no parameters
+
 
 ## Examples
 
@@ -50,3 +50,4 @@ usage: info
 │ Open Int (30-Day)     │  721,047                │
 └───────────────────────┴─────────────────────────┘
 ```
+

@@ -11,15 +11,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="model" label="Model" default>
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_model.get_global_defi_info
+Get global statistics about Decentralized Finances [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_model.py'
-def get_global_defi_info() -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L489)]
+
+```python
+def get_global_defi_info() -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L489)
-
-Description: Get global statistics about Decentralized Finances [Source: CoinGecko]
-
 ## Parameters
 
 This function does not take any parameters.
@@ -30,33 +28,27 @@ This function does not take any parameters.
 | ---- | ----------- |
 | pd.DataFrame | Metric, Value |
 
-## Examples
-
 
 
 </TabItem>
 <TabItem value="view" label="View">
 
-## openbb_terminal.cryptocurrency.overview.pycoingecko_view.display_global_defi_info
+Shows global statistics about Decentralized Finances. [Source: CoinGecko]
 
-```python title='openbb_terminal/cryptocurrency/overview/pycoingecko_view.py'
-def display_global_defi_info(export: str) -> None
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L301)]
+
+```python
+def display_global_defi_info(export: str = "") -> None
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L305)
-
-Description: Shows global statistics about Decentralized Finances. [Source: CoinGecko]
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
 ## Returns
 
 This function does not return anything
-
-## Examples
 
 
 

@@ -3,15 +3,11 @@ title: set
 description: OpenBB Terminal Function
 ---
 
-# Screener
-
-## set
-
-### Description: 
+# set
 
 Set preset from custom and default ones.
 
-### Usage: 
+### Usage 
 ```python
 usage: set [-p Desired preset.]
 ```

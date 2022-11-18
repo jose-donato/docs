@@ -5,28 +5,24 @@ description: OpenBB SDK Function
 
 # arkord
 
-## openbb_terminal.stocks.discovery.ark_model.get_ark_orders
+Returns ARK orders in a Dataframe
 
-```python title='openbb_terminal/stocks/discovery/ark_model.py'
-def get_ark_orders(buys_only: bool, sells_only: bool, fund: str) -> DataFrame
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L23)]
+
+```python
+def get_ark_orders(buys_only: bool = False, sells_only: bool = False, fund: str = "") -> pd.DataFrame
 ```
-[Source Code](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/discovery/ark_model.py#L23)
-
-Description: Returns ARK orders in a Dataframe
-
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| buys_only | bool | Flag to filter on buys only | None | False |
-| sells_only | bool | Flag to sort on sells only | None | False |
-| fund | str | Optional filter by fund | None | False |
+| buys_only | bool | Flag to filter on buys only | False | True |
+| sells_only | bool | Flag to sort on sells only | False | True |
+| fund | str | Optional filter by fund |  | True |
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | DataFrame | ARK orders data frame with the following columns -<br/>(ticker, date, shares, weight, fund, direction) |
-
-## Examples
 

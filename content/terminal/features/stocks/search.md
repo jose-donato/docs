@@ -3,15 +3,11 @@ title: search
 description: OpenBB Terminal Function
 ---
 
-# Stocks
-
-## search
-
-### Description: 
+# search
 
 Show companies matching the search query
 
-### Usage: 
+### Usage 
 ```python
 usage: search [-q QUERY [QUERY ...]] [-c country_name] [-s SECTOR [SECTOR ...]] [-i INDUSTRY [INDUSTRY ...]] [-e country_name]
 ```
