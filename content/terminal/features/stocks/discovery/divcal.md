@@ -16,7 +16,7 @@ usage: divcal [-d DATE] [-s SORT [SORT ...]] [-r]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| date | Date to get format for | 2022-11-18 09:44:03.851732 | True | None |
+| date | Date to get format for | datetime.now() | True | None |
 | sort | Column to sort by | Dividend | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 

@@ -16,7 +16,7 @@ usage: combine [--dataset {--columns,-c}] [-c COLUMNS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dataset | Dataset to add columns to | None | True | --columns,  -c |
+| dataset | Dataset to add columns to | None | True | --columns, -c |
 | columns | The columns we want to add dataset.column,datasetb.column2 | None | True | None |
 
 

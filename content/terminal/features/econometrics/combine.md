@@ -16,7 +16,7 @@ usage: combine [-d {}] [-c COLUMNS]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dataset | Dataset to add columns to | None | True |  |
+| dataset | Dataset to add columns to | None | True | None |
 | columns | The columns we want to add dataset.column,dataset.column2 | None | True | None |
 
 

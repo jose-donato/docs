@@ -18,7 +18,7 @@ usage: treasury [-m MATURITY] [--show] [--freq {annually,monthly,weekly,daily}] 
 | ---- | ----------- | ------- | -------- | ------- |
 | maturity | The preferred maturity which is dependent on the type of the treasury | 10y | True | None |
 | show_maturities | Show the maturities available for every instrument. | False | True | None |
-| frequency | The frequency, this can be annually, monthly, weekly or daily | monthly | True | annually,  monthly,  weekly,  daily |
+| frequency | The frequency, this can be annually, monthly, weekly or daily | monthly | True | annually, monthly, weekly, daily |
 | type | Choose from: nominal, inflation, average, secondary | nominal | True | None |
 | start_date | The start date of the data (format: YEAR-MONTH-DAY, i.e. 2010-12-31) | 1934-01-31 | True | None |
 | end_date | The end date of the data (format: YEAR-DAY-MONTH, i.e. 2021-06-02) | 2022-11-18 | True | None |

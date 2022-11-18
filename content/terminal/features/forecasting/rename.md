@@ -16,7 +16,7 @@ usage: rename [-d {}] -o OLDCOL -n NEWCOL
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dataset | Dataset that will get a column renamed | None | True |  |
+| dataset | Dataset that will get a column renamed | None | True | None |
 | oldcol | Old column from dataset to be renamed | None | False | None |
 | newcol | New column from dataset to be renamed | None | False | None |
 

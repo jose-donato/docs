@@ -16,7 +16,7 @@ usage: norm -v {} [-p]
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| column | The dataset.column you want to test normality for | None | False |  |
+| column | The dataset.column you want to test normality for | None | False | None |
 | plot | Whether you wish to plot a histogram to visually depict normality | False | True | None |
 
 
