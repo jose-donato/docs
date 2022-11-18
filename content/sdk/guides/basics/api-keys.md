@@ -2,7 +2,7 @@
 title: Set API Keys
 ---
 
-### **API Keys**
+## **API Keys**
 
 API keys can be managed directly from the SDK environment. If there is already a Terminal installation configured with API keys, they will be recognized by the SDK. Their status can be verified with the line of code below.
 
@@ -27,7 +27,6 @@ Removing `show = True` from the syntax will hide the values for the keys, as sho
 | EODHD_KEY                 | ******* |
 | ETHPLORER_KEY             | ******* |
 
-
 Individual keys are entered like this example:
 
 ```python
@@ -37,10 +36,45 @@ obb.keys.fred(
 )
 ```
 
+The required fields for each source will vary, print the docstring for each to know the required inputs.
+
+```python
+help(openbb.keys.reddit)
+
+Help on Operation in module openbb_terminal.core.library.operation:
+
+<openbb_terminal.core.library.operation.Operation object>
+    Set Reddit key
+    
+    Parameters
+    ----------
+    client_id: str
+        Client ID
+    client_secret: str
+        Client secret
+    password: str
+        User assword
+    username: str
+        User username
+    useragent: str
+        User useragent
+    persist: bool
+        If False, api key change will be contained to where it was changed. For example, Jupyter notebook.
+        If True, api key change will be global, i.e. it will affect terminal environment variables.
+        By default, False.
+    show_output: bool
+        Display status string or not. By default, False.
+    
+    Returns
+    -------
+    str
+        Status of key set
+```
+
 <details>
   <summary><code>API Reference</code> <code>(expand to see list of API key references)</code></summary>
 
-| Key Name   | Description                                     | URL                                                                                |
+| Key Name   | Description                              | URL                                                                                |
 | :--------- | :--------------------------------------- | :--------------------------------------------------------------------------------- |
 | av         | AlphaVantage                             | https://www.alphavantage.co/support/#api-key                                       |
 | fmp        | Financial Modelling Prep                 | https://site.financialmodelingprep.com/developer/docs/                             |
@@ -75,6 +109,7 @@ obb.keys.fred(
 | tokenterminal    | Token Terminal                     | https://tokenterminal.com/                                                         |
 </details>
 
+### Importing Keys as a Variable
 
 In cases where API credentials must be passed to another process, use the following import statement:
 
@@ -103,5 +138,11 @@ gold = quandl.get("LBMA/GOLD", collapse="monthly", transform="", index_col=0, or
 | 2022-08-31 00:00:00 |    1712.4  |    1715.9  |    1472.15 |    1478.08 |     1713.6  |     1715.21 |
 | 2022-07-31 00:00:00 |    1758.9  |    1753.4  |    1447.4  |    1451.64 |     1724.07 |     1725.7  |
 
+### Creating a Backup Copy
 
-Refer to the [Keys Guide](https://openbb.co/docs/sdk/guides/guides/keys) for more information about managing API keys.
+To make a backup file containing all stored keys, use the code block below.
+
+```python
+df_keys = openbb.keys.mykeys(show = True)
+df_keys.to_excel('backup.xlsx)
+```
