@@ -103,7 +103,6 @@ indexes
 | sp600   | S&P 600 Small Cap Index        | ^SP600   |
 | sp500tr | S&P 500 TR Index               | ^SP500TR |
 | sp_xsp  | S&P 500 Mini SPX Options Index | ^XSP     |
-...continued
 | cboe_tyx  | CBOE 30 year Treasury Yields    | ^TYX     |
 | cboe_irx  | CBOE 13 Week Treasury Bill      | ^IRX     |
 | move      | ICE BofAML Move Index           | ^MOVE    |
@@ -123,7 +122,6 @@ indexes.filter(like = 'sp_', axis = 0)
 | sp_energy_equipment | S&P 500 Energy Equipment & Services Industry Index | ^SP500-101010 |
 | sp_energy_oil       | S&P 500 Oil, Gas & Consumable Fuels Industry Index | ^SP500-101020 |
 | sp_materials_sector | S&P 500 Materials Sector Index                     | ^SP500-15     |
-...continued
 | sp_utilities_sector      | S&P 500 Utilities Sector Index             | ^SP500-55     |
 | sp_utilities_electricity | S&P 500 Electric Utilities Index           | ^SP500-551010 |
 | sp_utilities_multis      | S&P 500 Multi-Utilities Industry Index     | ^SP500-551030 |
@@ -231,7 +229,6 @@ openbb.economy.events()
 |  2 | 02:00        | Italy          | Italian Car Registration | 14.6%    | -           | 5.4%       | 2022-11-17 |
 |  3 | 02:00        | Italy          | Italian Car Registration | 4.4%     | -           | 55.9%      | 2022-11-17 |
 |  4 | 02:00        | Switzerland    | Trade Balance            | 4.140B   | -           | 4.193B     | 2022-11-17 |
-...continued
 | 56 | 13:00        | United States  | 10-Year TIPS Auction    | 1.485%   | -           | 1.248%     | 2022-11-17 |
 | 57 | 18:30        | Japan          | CPI, n.s.a              | -        | -           | 0.4%       | 2022-11-17 |
 | 58 | 18:30        | Japan          | National Core CPI       | -        | 3.5%        | 3.0%       | 2022-11-17 |

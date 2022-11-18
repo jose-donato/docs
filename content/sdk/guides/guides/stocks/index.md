@@ -1,5 +1,5 @@
 ---
-title: Stocks SDK
+title: Stocks
 ---
 
 The capabilities of the Stocks menu from the OpenBB Terminal are wrapped into a powerful SDK, enabling users to work with the data in a flexible environment that can be fully customized to meet the needs of any user. Code completion and contextual help makes it easy to use. Navigating is very similar to operating the CLI Terminal Application.
