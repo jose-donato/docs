@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Prints screener data of similar companies. [Source: Finviz]
 
-### Usage 
+### Usage
+
 ```python
 usage: valuation
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -48,4 +52,6 @@ This command has no parameters
 │ VRSN   │ 23560000000.00   │ 30.45 │ 29.60   │ 3.81 │ 17.74 │ None  │ 19.65 │ 37.40 │ -0.02      │ 0.15       │ 0.20        │ 0.08        │ 0.04          │ 213.56  │ -0.00  │ 640475.00   │
 └────────┴──────────────────┴───────┴─────────┴──────┴───────┴───────┴───────┴───────┴────────────┴────────────┴─────────────┴─────────────┴───────────────┴─────────┴────────┴─────────────┘
 ```
+
+---
 

@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_github_activity(symbol: str, dev_activity: bool = False, interval: str = "1d", start_date: str = None, end_date: str = None) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,11 +31,15 @@ def get_github_activity(symbol: str, dev_activity: bool = False, interval: str =
 | start_date | int | Initial date like string (e.g., 2021-10-01) | None | True |
 | end_date | int | End date like string (e.g., 2021-10-01) | None | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | developer activity over time |
+---
 
 
 
@@ -46,6 +53,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_github_activity(symbol: str, start_date: str = None, dev_activity: bool = False, end_date: str = None, interval: str = "1d", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,9 +68,14 @@ def display_github_activity(symbol: str, start_date: str = None, dev_activity: b
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

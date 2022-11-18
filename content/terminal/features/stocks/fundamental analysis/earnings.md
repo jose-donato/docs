@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Print earnings dates and reported EPS of the company. The following fields are expected: Fiscal Date Ending and Reported EPS. [Source: Alpha Vantage]
 
-### Usage 
+### Usage
+
 ```python
 usage: earnings [-q] [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: earnings [-q] [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 | limit | Number of latest info | 5 | True | None |
-
+---
 
 ## Examples
 
@@ -83,4 +86,6 @@ usage: earnings [-q] [-l LIMIT]
 │ 2019-03-31         │ 2019-04-24    │ 1.14         │ 0.9985        │ 0.1415   │ 14.1713             │
 └────────────────────┴───────────────┴──────────────┴───────────────┴──────────┴─────────────────────┘
 ```
+
+---
 

@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Export dataset to Excel
 
-### Usage 
+### Usage
+
 ```python
 usage: export [-n NAME] [-t {xlsx,csv}]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: export [-n NAME] [-t {xlsx,csv}]
 | ---- | ----------- | ------- | -------- | ------- |
 | name | The name of the dataset you wish to export | None | True | None |
 | type | The file type you wish to export to | xlsx | True | xlsx, csv |
-
+---
 
 ## Examples
 
@@ -28,4 +31,6 @@ usage: export [-n NAME] [-t {xlsx,csv}]
 2022 Feb 24, 04:36 (🦋) /econometrics/ $ export thesis -t csv
 Saved file: /Users/jeroenbouma/My Drive/Programming/Python/OpenBBTerminal/exports/statistics/thesis_20220224_103614.csv
 ```
+
+---
 

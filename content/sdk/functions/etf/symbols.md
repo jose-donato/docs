@@ -12,13 +12,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_all_names_symbols() -> Tuple[List[str], List[str]]
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
+
+---
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[List[str], List[str]] | List of all available etf symbols, List of all available etf names |
+---
 

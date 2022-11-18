@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Print bullbear sentiment based on last 30 messages on the board. Also prints the watchlist_count. [Source: Stocktwits]
 
-### Usage 
+### Usage
+
 ```python
 usage: bullbear
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -27,4 +31,6 @@ Last 16 sentiment messages:
 Bullish 87.5%
 Bearish 12.5%
 ```
+
+---
 

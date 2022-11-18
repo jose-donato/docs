@@ -18,17 +18,24 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_summary(data: pd.DataFrame) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe to get summary statistics for | None | False |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Summary statistics |
+---
 
 
 
@@ -42,6 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_summary(data: pd.DataFrame, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -49,9 +59,14 @@ def display_summary(data: pd.DataFrame, export: str = "") -> None
 | data | pd.DataFrame | DataFrame to get statistics of | None | False |
 | export | str | Format to export data |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

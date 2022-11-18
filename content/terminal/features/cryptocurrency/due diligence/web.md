@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Websites found for given Coin. You can find there urls to homepage, forum, announcement site and others.
 
-### Usage 
+### Usage
+
 ```python
 usage: web
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -32,4 +36,6 @@ This command has no parameters
 │ Announcement Url   │                          │
 └────────────────────┴──────────────────────────┘
 ```
+
+---
 

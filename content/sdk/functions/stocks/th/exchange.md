@@ -18,17 +18,24 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_bursa(symbol: str) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Exchange symbol | None | False |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Exchange info |
+---
 
 
 
@@ -42,15 +49,23 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_exchange(symbol: str) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Exchange symbol | None | False |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

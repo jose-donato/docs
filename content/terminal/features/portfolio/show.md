@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Show transactions table
 
-### Usage 
+### Usage
+
 ```python
 usage: show
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -110,4 +114,6 @@ Risk Free Rate: 0.00%
 │ 2022-05-02 │ YUM   │ STOCK │ Consumer Cyclical      │ Restaurants                         │ United States │ North America │ 115.76   │ 11       │ 40   │ 0       │ 1273.36    │ 1    │ USD      │
 └────────────┴───────┴───────┴────────────────────────┴─────────────────────────────────────┴───────────────┴───────────────┴──────────┴──────────┴──────┴─────────┴────────────┴──────┴──────────┘
 ```
+
+---
 

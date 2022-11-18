@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_treasuries(instruments: list = None, maturities: list = None, frequency: str = "monthly", start_date: str = "1900-01-01", end_date: str = None) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,11 +31,15 @@ def get_treasuries(instruments: list = None, maturities: list = None, frequency:
 | start_date | str | Starting date, format "YEAR-MONTH-DAY", i.e. 2010-12-31. | 1900-01-01 | True |
 | end_date | str | End date, format "YEAR-MONTH-DAY", i.e. 2020-06-05. | None | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Holds data of the selected types and maturities |
+---
 
 
 
@@ -46,6 +53,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def show_treasuries(instruments: list = None, maturities: list = None, frequency: str = "monthly", start_date: str = "1900-01-01", end_date: str = None, raw: bool = False, external_axes: Optional[List[axes]] = None, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -59,11 +69,15 @@ def show_treasuries(instruments: list = None, maturities: list = None, frequency
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 | export | str | Export data to csv,json,xlsx or png,jpg,pdf,svg file |  | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Plots the Treasury Series. |  |
+---
 
 
 

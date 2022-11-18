@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_dex_trades_monthly(trade_amount_currency: str = "USD", limit: int = 90, ascend: bool = True) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,9 +23,13 @@ def get_dex_trades_monthly(trade_amount_currency: str = "USD", limit: int = 90, 
 | limit | int | Last n days to query data. Maximum 365 (bigger numbers can cause timeouts<br/>on server side) | 90 | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Trades on Decentralized Exchanges monthly aggregated |
+---
 

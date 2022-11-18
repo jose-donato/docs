@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_tokenomics(symbol: str, coingecko_id: str) -> Tuple[pd.DataFrame, pd.Dat
 | symbol | str | Crypto symbol to check tokenomics | None | False |
 | coingecko_id | str | ID from coingecko | None | False |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Metric Value tokenomics,<br/>Circulating supply overtime |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_tokenomics(symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -51,9 +61,14 @@ def display_tokenomics(symbol: str, export: str = "", external_axes: Optional[Li
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

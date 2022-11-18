@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Show portfolio maximum drawdown
 
-### Usage 
+### Usage
+
 ```python
 usage: maxdd
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

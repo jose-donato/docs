@@ -12,15 +12,22 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def _make_request(url: str) -> Optional[bs4.BeautifulSoup]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | url | str | url to scrape | None | False |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Union[BeautifulSoup, None] | BeautifulSoup object or None |
+---
 

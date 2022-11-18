@@ -18,17 +18,24 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def etf_screener(preset: str) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | preset | str | Screener to use from presets | None | False |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Screened dataframe |
+---
 
 
 
@@ -42,6 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def view_screener(preset: str, num_to_show: int, sortby: str, ascend: bool, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,9 +62,14 @@ def view_screener(preset: str, num_to_show: int, sortby: str, ascend: bool, expo
 | ascend | bool | Ascend when sorted | None | False |
 | export | str | Output format of export |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

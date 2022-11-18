@@ -18,17 +18,24 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_top_nfts(sortby: str = "", limit: int = 10) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | sortby | str | Key by which to sort data |  | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | NFTs Columns: Name, Protocols, Floor Price [$], Avg Price [$], Market Cap [$], Volume [$] |
+---
 
 
 
@@ -42,6 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_top_nfts(limit: int = 10, sortby: str = "", export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -50,9 +60,14 @@ def display_top_nfts(limit: int = 10, sortby: str = "", export: str = "") -> Non
 | sortby | str | Key by which to sort data |  | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

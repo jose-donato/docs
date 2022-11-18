@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", ascend: bool = False) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", asce
 | sortby | str | Key to sort data | Symbol | True |
 | ascend | bool | Sort data in ascending order | False | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | N coins |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_coins(category: str, limit: int = 250, sortby: str = "Symbol", export: str = "", ascend: bool = False) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,9 +65,14 @@ def display_coins(category: str, limit: int = 250, sortby: str = "Symbol", expor
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | ascend | bool | Sort data in ascending order | False | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

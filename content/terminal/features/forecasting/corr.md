@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Plot correlation coefficients.
 
-### Usage 
+### Usage
+
 ```python
 usage: corr
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -25,4 +29,6 @@ This command has no parameters
 (🦋) /forecast/ $ corr TSLA
 TODO: screen shot
 ```
+
+---
 

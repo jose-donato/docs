@@ -18,17 +18,24 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_crypto_withdrawal_fees(symbol: str) -> List[Any]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Coin to check withdrawal fees. By default bitcoin | None | False |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List | - str: Overall statistics (exchanges, lowest, average and median)<br/>- pd.DataFrame: Exchange, Withdrawal Fee, Minimum Withdrawal Amount |
+---
 
 
 
@@ -42,6 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_crypto_withdrawal_fees(symbol: str, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -49,9 +59,14 @@ def display_crypto_withdrawal_fees(symbol: str, export: str = "") -> None
 | symbol | str | Coin to check withdrawal fees | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

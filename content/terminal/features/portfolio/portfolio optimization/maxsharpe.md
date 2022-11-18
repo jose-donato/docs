@@ -7,12 +7,15 @@ description: OpenBB Terminal Function
 
 Maximizes the portfolio's return/risk ratio
 
-### Usage 
+### Usage
+
 ```python
-usage: maxsharpe [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,shrink}] [-de SMOOTHING_FACTOR_EWMA] [-vs SHORT_ALLOCATION] [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-mt NAN_FILL_METHOD]
-                 [-ct CATEGORIES] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE] [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION] [--name NAME]
+usage: maxsharpe [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,shrink}] [-de SMOOTHING_FACTOR_EWMA] [-vs SHORT_ALLOCATION] [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-mt NAN_FILL_METHOD] [-ct CATEGORIES]
+                 [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE] [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION] [--name NAME]
                  {sa} ...
 ```
+
+---
 
 ## Parameters
 
@@ -39,7 +42,7 @@ usage: maxsharpe [-tr TARGET_RETURN] [-tk TARGET_RISK] [-m {hist,ewma1,ewma2}] [
 | significance_level | Significance level of CVaR, EVaR, CDaR and EDaR | 0.05 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | MAXSHARPE_0 | True | None |
-
+---
 
 ## Examples
 
@@ -72,4 +75,6 @@ Annual (by 252) expected return: 86.15%
 Annual (by √252) volatility: 44.22%
 Sharpe ratio: 1.9441
 ```
+
+---
 

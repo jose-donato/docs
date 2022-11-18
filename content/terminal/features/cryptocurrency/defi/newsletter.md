@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Display DeFi related substack newsletters. [Source: substack.com]
 
-### Usage 
+### Usage
+
 ```python
 usage: newsletter [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Number of records to display | 10 | True | None |
-
+---
 
 ## Examples
 
@@ -42,4 +45,6 @@ usage: newsletter [-l LIMIT]
 │ Syscoin Ecosystem Update: Pegasys DEX Launch      │ 2022-01-28 18:59:03 │ https://defislate.substack.com/p/syscoin-ecosystem-update-pegasys       │
 └───────────────────────────────────────────────────┴─────────────────────┴─────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
 

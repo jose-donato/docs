@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Displays selected option
 
-### Usage 
+### Usage
+
 ```python
 usage: sop
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -30,4 +34,6 @@ This command has no parameters
 │ Call │ Long │ 155.00 │ 0.06               │
 └──────┴──────┴────────┴────────────────────┘
 ```
+
+---
 

@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Perform a linear regression forecast: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.linear_regression_model.html
 
-### Usage 
+### Usage
+
 ```python
 usage: linregr
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -45,4 +49,6 @@ Logistic Regression model obtains MAPE: 10.85%
 ```
 
 ![linregr](https://user-images.githubusercontent.com/72827203/180615335-26395da8-3848-40f4-a68b-d2c14475db95.png)
+
+---
 

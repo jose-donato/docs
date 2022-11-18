@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Display summary of portfolio vs benchmark
 
-### Usage 
+### Usage
+
 ```python
 usage: summary [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-r RISK_FREE_RATE]
 ```
+
+---
 
 ## Parameters
 
@@ -18,5 +21,5 @@ usage: summary [-p {mtd,qtd,ytd,3m,6m,1y,3y,5y,10y,all}] [-r RISK_FREE_RATE]
 | ---- | ----------- | ------- | -------- | ------- |
 | period | The file to be loaded | all | True | mtd, qtd, ytd, 3m, 6m, 1y, 3y, 5y, 10y, all |
 | risk_free_rate | Set risk free rate for calculations. | 0 | True | None |
-
+---
 

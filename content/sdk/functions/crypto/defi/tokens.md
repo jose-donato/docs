@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_uni_tokens(skip: int = 0, limit: int = 100, sortby: str = "index", ascend: bool = False) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def get_uni_tokens(skip: int = 0, limit: int = 100, sortby: str = "index", ascen
 | sortby | str | The column to sort by | index | True |
 | ascend | bool | Whether to sort in ascending order | False | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Uniswap tokens with trading volume, transaction count, liquidity. |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_uni_tokens(skip: int = 0, limit: int = 20, sortby: str = "index", ascend: bool = False, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,9 +65,14 @@ def display_uni_tokens(skip: int = 0, limit: int = 20, sortby: str = "index", as
 | ascend | bool | Flag to sort data descending | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

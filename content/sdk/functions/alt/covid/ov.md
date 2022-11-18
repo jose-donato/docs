@@ -3,7 +3,8 @@ title: ov
 description: OpenBB SDK Function
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # ov
 
@@ -12,8 +13,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Get historical cases and deaths by country.
 
-Source Code:
-[[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L105)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L105)]
 
 ```python
 def get_covid_ov(country: str, limit: int = 100) -> pd.DataFrame
@@ -23,28 +23,29 @@ def get_covid_ov(country: str, limit: int = 100) -> pd.DataFrame
 
 ## Parameters
 
-| Name    | Type | Description                | Default | Optional |
-| ------- | ---- | -------------------------- | ------- | -------- |
-| country | str  | Country to get data for    | None    | False    |
-| limit   | int  | Number of raw data to show | 100     | True     |
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country to get data for | None | False |
+| limit | int | Number of raw data to show | 100 | True |
+
 
 ---
 
 ## Returns
 
-| Type         | Description                              |
-| ------------ | ---------------------------------------- |
+| Type | Description |
+| ---- | ----------- |
 | pd.DataFrame | Dataframe of historical cases and deaths |
-
 ---
+
+
 
 </TabItem>
 <TabItem value="view" label="View">
 
 Prints table showing historical cases and deaths by country.
 
-Source Code:
-[[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L131)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L131)]
 
 ```python
 def display_covid_ov(country: str, raw: bool = False, limit: int = 10, export: str = "", plot: bool = True) -> None
@@ -54,13 +55,14 @@ def display_covid_ov(country: str, raw: bool = False, limit: int = 10, export: s
 
 ## Parameters
 
-| Name    | Type | Description                     | Default | Optional |
-| ------- | ---- | ------------------------------- | ------- | -------- |
-| country | str  | Country to get data for         | None    | False    |
-| raw     | bool | Flag to display raw data        | False   | True     |
-| limit   | int  | Number of raw data to show      | 10      | True     |
-| export  | str  | Format to export data           |         | True     |
-| plot    | bool | Flag to display historical plot | True    | True     |
+| Name | Type | Description | Default | Optional |
+| ---- | ---- | ----------- | ------- | -------- |
+| country | str | Country to get data for | None | False |
+| raw | bool | Flag to display raw data | False | True |
+| limit | int | Number of raw data to show | 10 | True |
+| export | str | Format to export data |  | True |
+| plot | bool | Flag to display historical plot | True | True |
+
 
 ---
 
@@ -69,6 +71,8 @@ def display_covid_ov(country: str, raw: bool = False, limit: int = 10, export: s
 This function does not return anything
 
 ---
+
+
 
 </TabItem>
 </Tabs>

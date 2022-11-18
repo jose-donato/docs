@@ -12,11 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def check_if_open(bursa: pd.DataFrame, exchange: str) -> bool
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
 
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 

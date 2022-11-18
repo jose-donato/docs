@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def add_sto(dataset: pd.DataFrame, close_column: str = "close", high_column: str = "high", low_column: str = "low", period: int = 10) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +22,13 @@ def add_sto(dataset: pd.DataFrame, close_column: str = "close", high_column: str
 | dataset | pd.DataFrame | The dataset you wish to calculate for | None | False |
 | period | int | Span | 10 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with added STO K & D columns |
+---
 

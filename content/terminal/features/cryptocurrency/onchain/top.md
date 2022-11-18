@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Display top ERC20 tokens. [Source: Ethplorer]
 
-### Usage 
+### Usage
+
 ```python
 usage: top [-l LIMIT] [-s {rank,name,symbol,price,txsCount,transfersCount,holdersCount}] [-r]
 ```
+
+---
 
 ## Parameters
 
@@ -19,7 +22,7 @@ usage: top [-l LIMIT] [-s {rank,name,symbol,price,txsCount,transfersCount,holder
 | limit | display N number records | 10 | True | None |
 | sortby | Sort by given column. Default: rank | rank | True | rank, name, symbol, price, txsCount, transfersCount, holdersCount |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
+---
 
 ## Examples
 
@@ -50,4 +53,6 @@ usage: top [-l LIMIT] [-s {rank,name,symbol,price,txsCount,transfersCount,holder
 │ 10   │ Gala          │ GALA   │ 0.34    │ 678.5K   │ 869.8K         │ 105.5K       │ GoGalaGames    │ gala          │
 └──────┴───────────────┴────────┴─────────┴──────────┴────────────────┴──────────────┴────────────────┴───────────────┘
 ```
+
+---
 

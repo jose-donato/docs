@@ -13,11 +13,14 @@ import TabItem from '@theme/TabItem';
 
 Calculate test statistics for autocorrelation
 
-Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L536)]
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/regression_model.py#L537)]
 
 ```python
 def get_bgod(model: pd.DataFrame, lags: int = 3) -> Tuple[float, float, float, float]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_bgod(model: pd.DataFrame, lags: int = 3) -> Tuple[float, float, float, f
 | model | OLS Model | OLS model that has been fit. | None | False |
 | lags | int | The amount of lags. | 3 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Test results from the Breusch-Godfrey Test |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_bgod(model: statsmodels.regression.linear_model.RegressionResultsWrapper, lags: int = 3, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -51,9 +61,14 @@ def display_bgod(model: statsmodels.regression.linear_model.RegressionResultsWra
 | lags | int | The amount of lags included. | 3 | True |
 | export | str | Format to export data |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

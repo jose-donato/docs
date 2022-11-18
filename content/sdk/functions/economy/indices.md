@@ -12,13 +12,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def us_indices() -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
+
+---
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing name, price, net change and percent change |
+---
 

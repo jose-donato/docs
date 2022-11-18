@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Set a different value for one of the available arguments.
 
-### Usage 
+### Usage
+
 ```python
 usage: arg [-a ARGUMENT ARGUMENT] [-s]
 ```
+
+---
 
 ## Parameters
 
@@ -18,5 +21,5 @@ usage: arg [-a ARGUMENT ARGUMENT] [-s]
 | ---- | ----------- | ------- | -------- | ------- |
 | argument | Set a value for an argument | None | True | None |
 | show | Show the available arguments, the options and a description. | False | True | None |
-
+---
 

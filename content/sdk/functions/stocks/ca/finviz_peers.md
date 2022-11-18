@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_similar_companies(symbol: str, compare_list: List[str] = None) -> List[str]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +22,13 @@ def get_similar_companies(symbol: str, compare_list: List[str] = None) -> List[s
 | symbol | str | Ticker to find comparisons for | None | False |
 | compare_list | List[str] | List of fields to compare, ["Sector", "Industry", "Country"] | None | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of similar companies |
+---
 

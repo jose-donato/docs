@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Plot open interest. Open interest represents the number of contracts that exist.
 
-### Usage 
+### Usage
+
 ```python
 usage: oi [-m MIN] [-M MAX] [-c] [-p]
 ```
+
+---
 
 ## Parameters
 
@@ -20,7 +23,7 @@ usage: oi [-m MIN] [-M MAX] [-c] [-p]
 | max | Max strike to plot | -1 | True | None |
 | calls | Flag to plot call options only | False | True | None |
 | puts | Flag to plot put options only | False | True | None |
-
+---
 
 ## Examples
 
@@ -34,4 +37,6 @@ Expiration set to 2022-03-11
 ```
 
 ![oi](https://user-images.githubusercontent.com/46355364/154282811-b8b7d36b-2e4e-44c0-8026-b244d97a8608.png)
+
+---
 

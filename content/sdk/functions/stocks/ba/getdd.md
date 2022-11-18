@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_due_dilligence(symbol: str, limit: int = 5, n_days: int = 3, show_all_flairs: bool = False) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,9 +24,13 @@ def get_due_dilligence(symbol: str, limit: int = 5, n_days: int = 3, show_all_fl
 | n_days | int | Number of days back to get posts | 3 | True |
 | show_all_flairs | bool | Search through all flairs (apart from Yolo and Meme) | False | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of submissions |
+---
 

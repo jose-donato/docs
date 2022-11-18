@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Get current exchange rate quote
 
-### Usage 
+### Usage
+
 ```python
 usage: quote
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

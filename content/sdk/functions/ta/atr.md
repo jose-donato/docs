@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int = 0) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def atr(data: pd.DataFrame, window: int = 14, mamode: str = "ema", offset: int =
 | mamode | str | Type of filter | ema | True |
 | offset | int | Offset value | 0 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of atr |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_atr(data: pd.DataFrame, symbol: str = "", window: int = 14, mamode: str = "sma", offset: int = 0, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,9 +65,14 @@ def display_atr(data: pd.DataFrame, symbol: str = "", window: int = 14, mamode: 
 | export | str | Format of export file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

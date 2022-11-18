@@ -1,12 +1,12 @@
 ---
-title: cpinfo
+title: info
 description: OpenBB SDK Function
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# cpinfo
+# info
 
 <Tabs>
 <TabItem value="model" label="Model" default>
@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_coins_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = True) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,11 +29,15 @@ def get_coins_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = Tr
 | sortby | str | Key by which to sort data | rank | True |
 | ascend | bool | Flag to sort data descending | True | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | rank, name, symbol, price, volume_24h, circulating_supply, total_supply,<br/>max_supply, market_cap, beta_value, ath_price, |
+---
 
 
 
@@ -44,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_all_coins_info(symbol: str, sortby: str = "rank", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,9 +65,14 @@ def display_all_coins_info(symbol: str, sortby: str = "rank", ascend: bool = Tru
 | links | bool | Flag to display urls | None | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

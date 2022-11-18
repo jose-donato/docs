@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_coin_exchanges_by_id(symbol: str = "BTC", sortby: str = "adjusted_volume_24h_share", ascend: bool = True) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,11 +29,15 @@ def get_coin_exchanges_by_id(symbol: str = "BTC", sortby: str = "adjusted_volume
 | sortby | str | Key by which to sort data. Every column name is valid (see for possible values:<br/>https://api.coinpaprika.com/v1). | adjusted_volume_24h_share | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | All exchanges for given coin<br/>Columns: id, name, adjusted_volume_24h_share, fiats |
+---
 
 
 
@@ -44,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_exchanges(symbol: str = "btc", limit: int = 10, sortby: str = "adjusted_volume_24h_share", ascend: bool = True, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,9 +64,14 @@ def display_exchanges(symbol: str = "btc", limit: int = 10, sortby: str = "adjus
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

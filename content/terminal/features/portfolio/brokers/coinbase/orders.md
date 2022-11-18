@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 List your current open orders
 
-### Usage 
+### Usage
+
 ```python
 usage: orders [-l LIMIT] [-s {product_id,side,price,size,type,created_at,status}] [-r]
 ```
+
+---
 
 ## Parameters
 
@@ -19,5 +22,5 @@ usage: orders [-l LIMIT] [-s {product_id,side,price,size,type,created_at,status}
 | limit | Limit parameter. | 20 | True | None |
 | sortby | Sort by given column. Default: created_at | created_at | True | product_id, side, price, size, type, created_at, status |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
+---
 

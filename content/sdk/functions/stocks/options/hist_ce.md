@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_option_history(symbol: str = "GME", date: str = "2021-02-05", call: bool = True, price: str = "90") -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def get_option_history(symbol: str = "GME", date: str = "2021-02-05", call: bool
 | call | bool | Whether to show a call or a put | True | True |
 | price | str | Strike price for a specific option | 90 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Historic information for an option |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_raw(symbol: str = "GME", expiry: str = "2021-02-05", call: bool = True, price: float = 90, limit: int = 10, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,9 +67,14 @@ def display_raw(symbol: str = "GME", expiry: str = "2021-02-05", call: bool = Tr
 | export | str | Export data as CSV, JSON, XLSX |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

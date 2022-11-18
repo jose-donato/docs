@@ -1,12 +1,12 @@
 ---
-title: cghm
+title: hm
 description: OpenBB SDK Function
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# cghm
+# hm
 
 <Tabs>
 <TabItem value="model" label="Model" default>
@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", ascend: bool = False) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def get_coins(limit: int = 250, category: str = "", sortby: str = "Symbol", asce
 | sortby | str | Key to sort data | Symbol | True |
 | ascend | bool | Sort data in ascending order | False | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | N coins |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_crypto_heatmap(category: str = "", limit: int = 15, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,9 +64,14 @@ def display_crypto_heatmap(category: str = "", limit: int = 15, export: str = ""
 | export | str | Export dataframe data to csv,json,xlsx |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

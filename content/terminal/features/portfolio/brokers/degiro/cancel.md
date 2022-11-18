@@ -7,15 +7,18 @@ description: OpenBB Terminal Function
 
 
 
-### Usage 
+### Usage
+
 ```python
 usage: cancel id
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | id | Order's id. | None | False | None |
-
+---
 

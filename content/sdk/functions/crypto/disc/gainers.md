@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_gainers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap_rank") -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,11 +29,15 @@ def get_gainers(interval: str = "1h", limit: int = 50, sortby: str = "market_cap
 | limit | int | Number of records to display | 50 | True |
 | sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation) | market_cap_rank | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Top Gainers  - coins which gain most in price in given period of time.<br/>Columns: Symbol, Name, Volume, Price, %Change_{interval}, Url |
+---
 
 
 
@@ -44,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_gainers(interval: str = "1h", limit: int = 20, sortby: str = "market_cap_rank", export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,9 +63,14 @@ def display_gainers(interval: str = "1h", limit: int = 20, sortby: str = "market
 | sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see /coins/markets in https://www.coingecko.com/en/api/documentation) | market_cap_rank | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

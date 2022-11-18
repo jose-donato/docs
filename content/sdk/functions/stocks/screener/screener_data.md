@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_screener_data(preset_loaded: str = "top_gainers", data_type: str = "overview", limit: int = 10, ascend: bool = False) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def get_screener_data(preset_loaded: str = "top_gainers", data_type: str = "over
 | limit | int | Limit of stocks filtered with presets to print | 10 | True |
 | ascend | bool | Ascended order of stocks filtered to print | False | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with loaded filtered stocks |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def screener(loaded_preset: str = "top_gainers", data_type: str = "overview", limit: int = 10, ascend: bool = False, sortby: str = "", export: str = "") -> List[str]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,11 +66,15 @@ def screener(loaded_preset: str = "top_gainers", data_type: str = "overview", li
 | sortby | str | Column to sort table by |  | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of stocks that meet preset criteria |
+---
 
 
 

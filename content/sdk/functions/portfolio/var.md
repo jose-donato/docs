@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_var(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: float = 99.9) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -22,9 +25,13 @@ def get_var(portfolio_engine: portfolio_model.PortfolioEngine, use_mean: bool = 
 | student_t | bool | If one should use the student-t distribution | False | True |
 | percentile | float | var percentile (%) | 99.9 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with portfolio VaR |
+---
 

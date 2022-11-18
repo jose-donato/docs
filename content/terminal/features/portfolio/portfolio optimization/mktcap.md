@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Returns a portfolio that is weighted based on Market Cap.
 
-### Usage 
+### Usage
+
 ```python
 usage: mktcap [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-mt NAN_FILL_METHOD] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE] [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION] [--name NAME]
 ```
+
+---
 
 ## Parameters
 
@@ -29,7 +32,7 @@ usage: mktcap [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-
 | significance_level | Significance level of CVaR, EVaR, CDaR and EDaR | 0.05 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | MKTCAP_0 | True | None |
-
+---
 
 ## Examples
 
@@ -61,4 +64,6 @@ Annual (by 252) expected return: 47.78%
 Annual (by √252) volatility: 30.44%
 Sharpe ratio: 1.5636
 ```
+
+---
 

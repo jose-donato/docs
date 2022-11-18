@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Perform Multiple Seasonalities and Trend using Loess (MSTL) forecast: https://nixtla.github.io/statsforecast/examples/multipleseasonalities.html
 
-### Usage 
+### Usage
+
 ```python
 usage: mstl
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -42,4 +46,6 @@ MSTL obtains MAPE: 3.37%
 │ 2022-11-11 │ 141.36     │
 └────────────┴────────────┘
 ```
+
+---
 

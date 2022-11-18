@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Print some information about your account.
 
-### Usage 
+### Usage
+
 ```python
 usage: summary
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

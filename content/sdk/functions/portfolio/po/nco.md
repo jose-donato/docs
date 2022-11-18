@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_nco(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", codependence: str = "pearson", covariance: str = "hist", objective: str = "minrisk", risk_measure: str = "mv", risk_free_rate: float = 0.0, risk_aversion: float = 1.0, alpha: float = 0.05, a_sim: int = 100, beta: float = None, b_sim: int = None, linkage: str = "single", k: int = None, max_k: int = 10, bins_info: str = "KN", alpha_tail: float = 0.05, leaf_order: bool = True, d_ewma: float = 0.94, value: float = 1.0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,11 +55,15 @@ def get_nco(symbols: List[str], interval: str = "3y", start_date: str = "", end_
 | value_short | float | Amount to allocate to portfolio in short positions, by default 0.0 | None | True |
 | table | bool | True if plot table weights, by default False | None | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
+---
 
 
 
@@ -70,6 +77,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_nco(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", codependence: str = "pearson", covariance: str = "hist", objective: str = "MinRisk", risk_measure: str = "mv", risk_free_rate: float = 0.0, risk_aversion: float = 1.0, alpha: float = 0.05, a_sim: int = 100, beta: float = None, b_sim: int = None, linkage: str = "ward", k: int = None, max_k: int = 10, bins_info: str = "KN", alpha_tail: float = 0.05, leaf_order: bool = True, d_ewma: float = 0.94, value: float = 1.0, table: bool = False) -> Dict
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -105,9 +115,14 @@ def display_nco(symbols: List[str], interval: str = "3y", start_date: str = "", 
 | value_short | float | Amount to allocate to portfolio in short positions, by default 0.0 | None | True |
 | table | bool | True if plot table weights, by default False | False | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

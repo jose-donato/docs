@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, value: float = 1.0, value_short: float = 0.0, n_portfolios: int = 100, seed: int = 123) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, Optional[pd.DataFrame], numpy.ndarray[Any, numpy.dtype[numpy.floating]], numpy.ndarray[Any, numpy.dtype[numpy.floating]], riskfolio.Portfolio.Portfolio]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -39,11 +42,15 @@ def get_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_d
 | n_portfolios | int | "Number of portfolios to simulate. The default value is 100. | 100 | True |
 | seed | int | Seed used to generate random portfolios. The default value is 123. | 123 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[ | pd.DataFrame,<br/>pd.DataFrame,<br/>pd.DataFrame,<br/>pd.DataFrame,<br/>Optional[pd.DataFrame],<br/>NDArray[floating],<br/>NDArray[floating],<br/>rp.Portfolio, |
+---
 
 
 
@@ -57,6 +64,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_ef(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", risk_measure: str = "MV", risk_free_rate: float = 0, alpha: float = 0.05, value: float = 1.0, value_short: float = 0.0, n_portfolios: int = 100, seed: int = 123, tangency: bool = False, plot_tickers: bool = True, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -81,9 +91,14 @@ def display_ef(symbols: List[str], interval: str = "3y", start_date: str = "", e
 | external_axes | Optional[List[plt.Axes]] | Optional axes to plot data on | None | True |
 | plot_tickers | bool | Whether to plot the tickers for the assets | True | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

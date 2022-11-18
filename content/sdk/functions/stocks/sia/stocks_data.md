@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_stocks_data(symbols: List[str] = None, finance_key: str = "ncf", stocks_data: dict = None, period: str = "annual", symbol: str = "USD") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -22,9 +25,13 @@ def get_stocks_data(symbols: List[str] = None, finance_key: str = "ncf", stocks_
 | period | str | Whether you want annually, quarterly or trailing financial statements. | annual | True |
 | symbol | str | Choose in what currency you wish to convert each company's financial statement.<br/>Default is USD (US Dollars). | USD | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary of filtered stocks data separated by financial statement |
+---
 

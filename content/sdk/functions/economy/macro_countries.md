@@ -12,13 +12,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_macro_countries() -> Dict[str, str]
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
+
+---
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, str] | A dictionary with the available countries and respective currencies. |
+---
 

@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Show selected saved portfolios
 
-### Usage 
+### Usage
+
 ```python
 usage: show [-pf PORTFOLIOS] [-ct CATEGORIES] [-v LONG_ALLOCATION]
 ```
+
+---
 
 ## Parameters
 
@@ -19,5 +22,5 @@ usage: show [-pf PORTFOLIOS] [-ct CATEGORIES] [-v LONG_ALLOCATION]
 | portfolios | Show selected saved portfolios |  | True | None |
 | categories | Show selected categories |  | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
-
+---
 

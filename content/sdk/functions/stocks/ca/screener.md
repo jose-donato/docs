@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_comparison_data(similar: List[str], data_type: str = "overview") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +22,13 @@ def get_comparison_data(similar: List[str], data_type: str = "overview") -> None
 | similar |  | List of similar companies.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
 | data_type | str | Data type between: overview, valuation, financial, ownership, performance, technical | overview | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with overview, valuation, financial, ownership, performance or technical |
+---
 

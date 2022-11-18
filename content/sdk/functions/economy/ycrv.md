@@ -18,17 +18,24 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_yield_curve(date: datetime.datetime = None) -> Tuple[pd.DataFrame, datetime.datetime]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | date | datetime | Date to get curve for.  If None, gets most recent date | None | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, datetime] | Dataframe of yields and maturities,<br/>Date for which the yield curve is obtained |
+---
 
 
 
@@ -42,6 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_yield_curve(date: datetime.datetime = None, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None, raw: bool = False, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -49,9 +59,14 @@ def display_yield_curve(date: datetime.datetime = None, external_axes: Optional[
 | date | datetime | Date to get yield curve for | None | True |
 | external_axes | Optional[List[plt.Axes]] | External axes to plot data on | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Change target variable
 
-### Usage 
+### Usage
+
 ```python
 usage: pick [-t {open,high,low,close,adjclose,volume,date_id,oc_high,oc_low,returns,logret,logprice}]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | target | Select variable to analyze | None | True | open, high, low, close, adjclose, volume, date_id, oc_high, oc_low, returns, logret, logprice |
-
+---
 
 ## Examples
 
@@ -34,4 +37,6 @@ Market:   CLOSED
 
 2022 Feb 16, 11:12 (🦋) /stocks/qa/ $ pick adjclose
 ```
+
+---
 

@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_economic_calendar(countries: Union[List[str], str] = "", start_date: str = None, end_date: str = None) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,9 +23,25 @@ def get_economic_calendar(countries: Union[List[str], str] = "", start_date: str
 | start_date | str | Start date for calendar | None | True |
 | end_date | str | End date for calendar | None | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Economic calendar |
+---
+
+## Examples
+Get todays economic calendar for the United States
+
+To get multiple countries for a given date, pass the same start and end date as well as
+a list of countries
+```python
+from openbb_terminal.sdk import openbb
+calendar = openbb.economy.events("United States")
+```
+
+---
 

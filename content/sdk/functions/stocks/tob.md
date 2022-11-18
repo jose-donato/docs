@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_top_of_book(symbol: str, exchange: str = "BZX") -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +22,13 @@ def get_top_of_book(symbol: str, exchange: str = "BZX") -> Tuple[pd.DataFrame, p
 | symbol | str | Ticker to get | None | False |
 | exchange | str | Exchange to look at.  Can be `BZX`,`EDGX`, `BYX`, `EDGA` | BZX | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DatatFrame | Dataframe of Bids |
+---
 

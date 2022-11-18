@@ -12,11 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_currency_list() -> List
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
 
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 

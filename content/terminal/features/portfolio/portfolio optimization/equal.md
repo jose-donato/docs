@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Returns an equally weighted portfolio
 
-### Usage 
+### Usage
+
 ```python
 usage: equal [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-mt NAN_FILL_METHOD] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE] [-a SIGNIFICANCE_LEVEL] [-v LONG_ALLOCATION] [--name NAME]
 ```
+
+---
 
 ## Parameters
 
@@ -29,7 +32,7 @@ usage: equal [-rm {MV,MAD,MSV,FLPM,SLPM,CVaR,EVaR,WR,ADD,UCI,CDaR,EDaR,MDD}] [-m
 | significance_level | Significance level of CVaR, EVaR, CDaR and EDaR | 0.05 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | NAME_0 | True | None |
-
+---
 
 ## Examples
 
@@ -61,4 +64,6 @@ Annual (by 252) expected return: 35.70%
 Annual (by √252) volatility: 29.50%
 Sharpe ratio: 1.2041
 ```
+
+---
 

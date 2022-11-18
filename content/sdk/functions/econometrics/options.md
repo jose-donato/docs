@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_options(datasets: Dict[str, pd.DataFrame], dataset_name: str = "") -> Dict[Union[str, Any], pd.DataFrame]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_options(datasets: Dict[str, pd.DataFrame], dataset_name: str = "") -> Di
 | datasets | dict | The available datasets. | None | False |
 | dataset_name | str | The dataset you wish to show the options for. |  | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Dict[Union[str, Any], pd.DataFrame] | A dictionary with a DataFrame for each option. With dataset_name set, only shows one<br/>options table. |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def show_options(datasets: Dict[str, pd.DataFrame], dataset_name: str = None, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -51,9 +61,14 @@ def show_options(datasets: Dict[str, pd.DataFrame], dataset_name: str = None, ex
 | dataset_name | str | The name of the dataset you wish to show options for | None | True |
 | export | str | Format to export image |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Prints screener data of similar companies. [Source: Finviz]
 
-### Usage 
+### Usage
+
 ```python
 usage: performance
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -34,4 +38,6 @@ This command has no parameters
 │ TSLA   │ -0.03     │ -0.15      │ -0.15      │ 0.28      │ 0.10      │ -0.17    │ 0.05         │ 0.06         │ 2.60  │ 26320000.00  │ 0.85       │ 875.76  │ 0.02   │ 22585472.00 │
 └────────┴───────────┴────────────┴────────────┴───────────┴───────────┴──────────┴──────────────┴──────────────┴───────┴──────────────┴────────────┴─────────┴────────┴─────────────┘
 ```
+
+---
 

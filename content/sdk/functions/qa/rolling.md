@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_rolling_avg(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_rolling_avg(data: pd.DataFrame, window: int = 14) -> Tuple[pd.DataFrame,
 | data | pd.DataFrame | Dataframe of target data | None | False |
 | window | int | Length of rolling window | 14 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dataframe of rolling mean,<br/>Dataframe of rolling standard deviation |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_mean_std(data: pd.DataFrame, target: str, symbol: str = "", window: int = 14, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,9 +64,14 @@ def display_mean_std(data: pd.DataFrame, target: str, symbol: str = "", window: 
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

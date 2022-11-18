@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Provides top penny stocks from various websites. [Source: Yfinance]
 
-### Usage 
+### Usage
+
 ```python
 usage: hotpenny [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit of stocks to display | 5 | True | None |
-
+---
 
 ## Examples
 
@@ -36,4 +39,6 @@ usage: hotpenny [-l LIMIT]
 │ RHHBY │ $46.92 │ 1.49%  │ $56,390,274  │ 1,201,629 │ 2,463    │
 └───────┴────────┴────────┴──────────────┴───────────┴──────────┘
 ```
+
+---
 

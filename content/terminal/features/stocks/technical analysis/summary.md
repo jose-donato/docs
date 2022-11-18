@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Technical summary report provided by FinBrain's API. FinBrain Technologies develops deep learning algorithms for financial analysis and prediction, which currently serves traders from more than 150 countries all around the world. [Source: Finbrain]
 
-### Usage 
+### Usage
+
 ```python
 usage: summary
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -27,4 +31,6 @@ MACD is in the Bullish area and the histogram is moving downwards.
 GOOGL price is trading below the 200-day SMA line and the SMA is trending up.
 The asset price is between the Upper and the Middle Bollinger Bands.
 ```
+
+---
 

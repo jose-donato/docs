@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Display asset's governance [Source: https://messari.io]
 
-### Usage 
+### Usage
+
 ```python
 usage: gov
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

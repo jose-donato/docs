@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def close_trades_request(orderID: str, units: Optional[int] = 0, accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,11 +29,15 @@ def close_trades_request(orderID: str, units: Optional[int] = 0, accountID: str 
 | units | Union[int, None] | Number of units to close. If empty default to all. | 0 | True |
 | accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Close trades data or False |
+---
 
 
 
@@ -44,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def close_trade(accountID: str, orderID: str = "", units: Optional[int] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,9 +62,14 @@ def close_trade(accountID: str, orderID: str = "", units: Optional[int] = None) 
 | orderID | str | ID of the order to close |  | True |
 | units | Union[int, None] | Number of units to close. If empty default to all. | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

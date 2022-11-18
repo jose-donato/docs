@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def view_ma(data: pd.Series, window: List[int] = None, offset: int = 0, ma_type: str = "EMA", symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -30,9 +33,14 @@ def view_ma(data: pd.Series, window: List[int] = None, offset: int = 0, ma_type:
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 
@@ -46,6 +54,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def view_ma(data: pd.Series, window: List[int] = None, offset: int = 0, ma_type: str = "EMA", symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,9 +69,14 @@ def view_ma(data: pd.Series, window: List[int] = None, offset: int = 0, ma_type:
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

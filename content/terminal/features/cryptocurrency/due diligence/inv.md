@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Display asset's investors [Source: https://messari.io]
 
-### Usage 
+### Usage
+
 ```python
 usage: inv
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

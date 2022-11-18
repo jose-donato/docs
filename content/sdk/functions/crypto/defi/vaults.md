@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_defi_vaults(chain: Optional[str] = None, protocol: Optional[str] = None, kind: Optional[str] = None, ascend: bool = True, sortby: str = "apy") -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,11 +29,15 @@ def get_defi_vaults(chain: Optional[str] = None, protocol: Optional[str] = None,
 | protocol | str | DeFi protocol - one from list: [<br/>'aave', 'acryptos', 'alpaca', 'anchor', 'autofarm', 'balancer', 'bancor',<br/>'beefy', 'belt', 'compound', 'convex', 'cream', 'curve', 'defichain', 'geist',<br/>'lido', 'liquity', 'mirror', 'pancakeswap', 'raydium', 'sushi', 'tarot', 'traderjoe',<br/>'tulip', 'ubeswap', 'uniswap', 'venus', 'yearn'<br/>] | None | True |
 | kind | str | Kind/type of vault - one from list: ['lp','single','noimploss','stable'] | None | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Top 100 DeFi Vaults for given chain/protocol sorted by APY. |
+---
 
 
 
@@ -44,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_defi_vaults(chain: Optional[str] = None, protocol: Optional[str] = None, kind: Optional[str] = None, limit: int = 10, sortby: str = "apy", ascend: bool = True, link: bool = False, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,9 +67,14 @@ def display_defi_vaults(chain: Optional[str] = None, protocol: Optional[str] = N
 | link | bool | Flag to show links | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

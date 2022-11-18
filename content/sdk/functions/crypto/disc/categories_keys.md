@@ -12,13 +12,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_categories_keys() -> List[str]
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
+
+---
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of categories keys |
+---
 

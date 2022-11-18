@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_hcp_portfolio(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", model: str = "HRP", codependence: str = "pearson", covariance: str = "hist", objective: str = "MinRisk", risk_measure: str = "MV", risk_free_rate: float = 0, risk_aversion: float = 1, alpha: float = 0.05, a_sim: int = 100, beta: float = None, b_sim: int = None, linkage: str = "single", k: int = 0, max_k: int = 10, bins_info: str = "KN", alpha_tail: float = 0.05, leaf_order: bool = True, d_ewma: float = 0.94, value: float = 1.0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -51,11 +54,15 @@ def get_hcp_portfolio(symbols: List[str], interval: str = "3y", start_date: str 
 | d_ewma | float | The smoothing factor of ewma methods.<br/>The default is 0.94. | 0.94 | True |
 | value | float | Amount of money to allocate. The default is 1. | 1.0 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
+---
 
 
 
@@ -69,6 +76,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_hcp(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", model: str = "HRP", codependence: str = "pearson", covariance: str = "hist", objective: str = "minrisk", risk_measure: str = "mv", risk_free_rate: float = 0.0, risk_aversion: float = 1.0, alpha: float = 0.05, a_sim: int = 100, beta: float = None, b_sim: int = None, linkage: str = "ward", k: int = None, max_k: int = 10, bins_info: str = "KN", alpha_tail: float = 0.05, leaf_order: bool = True, d_ewma: float = 0.94, value: float = 1.0, table: bool = False) -> Dict
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -103,9 +113,14 @@ def display_hcp(symbols: List[str], interval: str = "3y", start_date: str = "", 
 | value | float | Amount to allocate to portfolio, by default 1.0 | 1.0 | True |
 | table | bool | True if plot table weights, by default False | False | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

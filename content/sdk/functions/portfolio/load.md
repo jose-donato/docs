@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def generate_portfolio(transactions_file_path: str, benchmark_symbol: str = "SPY", full_shares: bool = False, risk_free_rate: float = 0) -> portfolio_model.PortfolioEngine
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,9 +24,13 @@ def generate_portfolio(transactions_file_path: str, benchmark_symbol: str = "SPY
 | full_shares | bool | Whether to mimic the portfolio trades exactly (partial shares) or round down the<br/>quantity to the nearest number | False | True |
 | risk_free_rate | float | Risk free rate in float format | 0 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations |
+---
 

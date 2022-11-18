@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Get overview data for selected etf
 
-### Usage 
+### Usage
+
 ```python
 usage: overview
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -54,4 +58,6 @@ This command has no parameters
 │ Holdings       │ 510        │
 └────────────────┴────────────┘
 ```
+
+---
 

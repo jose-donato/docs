@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_countries(industry: str = "", sector: str = "") -> list
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +22,13 @@ def get_countries(industry: str = "", sector: str = "") -> list
 | industry | str | Filter retrieved countries by industry |  | True |
 | sector | str | Filter retrieved countries by sector |  | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | list | List of possible countries |
+---
 

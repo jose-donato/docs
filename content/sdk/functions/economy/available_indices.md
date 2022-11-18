@@ -12,13 +12,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_available_indices() -> Dict[str, Dict[str, str]]
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
+
+---
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, Dict[str, str]] | Dictionary with available indices and respective detail |
+---
 

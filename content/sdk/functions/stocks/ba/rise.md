@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_rise(symbol: str, limit: int = 10) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -19,9 +22,13 @@ def get_rise(symbol: str, limit: int = 10) -> pd.DataFrame
 | symbol | str | Stock ticker symbol | None | False |
 | limit | int | Number of queries to show | 10 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing rising related queries |
+---
 

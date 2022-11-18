@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_government_buys(gov_type: str = "congress", past_transactions_months: int = 6) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_government_buys(gov_type: str = "congress", past_transactions_months: in
 | gov_type | str | Type of government data between: congress, senate and house | congress | True |
 | past_transactions_months | int | Number of months to get trading for | 6 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of top government buy trading |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_government_buys(gov_type: str = "congress", past_transactions_months: int = 6, limit: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,9 +64,14 @@ def display_government_buys(gov_type: str = "congress", past_transactions_months
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def get_ethereum_unique_senders(interval: str = "day", limit: int = 90, sortby: 
 | sortby | str | Key by which to sort data | tradeAmount | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Unique ethereum addresses which made a transaction |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_ethereum_unique_senders(interval: str = "days", limit: int = 10, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,11 +65,15 @@ def display_ethereum_unique_senders(interval: str = "days", limit: int = 10, sor
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Number of unique ethereum addresses which made a transaction in given time interval |
+---
 
 
 

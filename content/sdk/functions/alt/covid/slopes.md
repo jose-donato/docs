@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_case_slopes(days_back: int = 30, limit: int = 50, threshold: int = 10000, ascend: bool = False) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def get_case_slopes(days_back: int = 30, limit: int = 50, threshold: int = 10000
 | threshold | int | Threshold for total number of cases | 10000 | True |
 | ascend | bool | Flag to sort in ascending order | False | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing slopes |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_case_slopes(days_back: int = 30, limit: int = 10, threshold: int = 10000, ascend: bool = False, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,9 +65,14 @@ def display_case_slopes(days_back: int = 30, limit: int = 10, threshold: int = 1
 | threshold | int | Threshold for total cases over period | 10000 | True |
 | export | str | Format to export data |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

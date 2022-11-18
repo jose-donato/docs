@@ -16,23 +16,30 @@ View historical price of stocks that meet preset
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_model.py#L53)]
 
 ```python
-def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-21", type_candle: str = "a", normalize: bool = True) -> Tuple[pd.DataFrame, List[str], bool]
+def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-22", type_candle: str = "a", normalize: bool = True) -> Tuple[pd.DataFrame, List[str], bool]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | preset_loaded | str | Preset loaded to filter for tickers | top_gainers | True |
 | limit | int | Number of stocks to display | 10 | True |
-| start_date | str | Start date to display historical data, in YYYY-MM-DD format | 2022-05-21 | True |
+| start_date | str | Start date to display historical data, in YYYY-MM-DD format | 2022-05-22 | True |
 | type_candle | str | Type of candle to display | a | True |
 | normalize | bool | Boolean to normalize all stock prices using MinMax | True | True |
+
+
+---
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of the screener |
+---
 
 
 
@@ -44,25 +51,32 @@ View historical price of stocks that meet preset
 Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/screener/yahoofinance_view.py#L28)]
 
 ```python
-def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-21", type_candle: str = "a", normalize: bool = True, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> List[str]
+def historical(preset_loaded: str = "top_gainers", limit: int = 10, start_date: str = "2022-05-22", type_candle: str = "a", normalize: bool = True, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> List[str]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | preset_loaded | str | Preset loaded to filter for tickers | top_gainers | True |
 | limit | int | Number of stocks to display | 10 | True |
-| start_date | str | Start date to display historical data, in YYYY-MM-DD format | 2022-05-21 | True |
+| start_date | str | Start date to display historical data, in YYYY-MM-DD format | 2022-05-22 | True |
 | type_candle | str | Type of candle to display | a | True |
 | normalize | bool | Boolean to normalize all stock prices using MinMax | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
+
+---
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | list[str] | List of stocks |
+---
 
 
 

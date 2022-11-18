@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_rel_risk_parity_portfolio(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", version: str = "A", risk_cont: List[str] = None, penal_factor: float = 1, target_return: float = -1, mean: str = "hist", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -40,11 +43,15 @@ def get_rel_risk_parity_portfolio(symbols: List[str], interval: str = "3y", star
 | d_ewma | float | The smoothing factor of ewma methods.<br/>The default is 0.94. | 0.94 | True |
 | value | float | Amount of money to allocate. The default is 1. | 1.0 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
+---
 
 
 
@@ -58,6 +65,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_rel_risk_parity(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", version: str = "A", risk_cont: List[str] = None, penal_factor: float = 1, target_return: float = -1, mean: str = "hist", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, table: bool = False) -> Dict
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -81,9 +91,14 @@ def display_rel_risk_parity(symbols: List[str], interval: str = "3y", start_date
 | value | float | Amount to allocate to portfolio, by default 1.0 | 1.0 | True |
 | table | bool | True if plot table weights, by default False | False | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

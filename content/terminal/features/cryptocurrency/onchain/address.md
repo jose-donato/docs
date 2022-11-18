@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Load address for further analysis. You can analyze account address, token address or transaction hash. [Source: Ethplorer]
 
-### Usage 
+### Usage
+
 ```python
 usage: address [-a] [-t] [-tx] --address ADDRESS
 ```
+
+---
 
 ## Parameters
 
@@ -20,5 +23,5 @@ usage: address [-a] [-t] [-tx] --address ADDRESS
 | token | ERC20 token address | False | True | None |
 | transaction | Transaction hash | False | True | None |
 | address | Ethereum address | False | False | None |
-
+---
 

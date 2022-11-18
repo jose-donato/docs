@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Print open insider filtered data using loaded preset. [Source: OpenInsider]
 
-### Usage 
+### Usage
+
 ```python
 usage: filter [-l LIMIT] [-u]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: filter [-l LIMIT] [-u]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 | urls | Flag to show hyperlinks | False | True | None |
-
+---
 
 ## Examples
 
@@ -51,4 +54,6 @@ M: Multiple transactions in filing; earliest reported transaction date & weighte
 S - Sale: Sale of securities on an exchange or to another person
 S - Sale+OE: Sale of securities on an exchange or to another person (after option exercise)
 ```
+
+---
 

@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def plot_candles(candles_df: pd.DataFrame, volume: bool = True, ylabel: str = "", title: str = "", external_axes: Optional[list[matplotlib.axes._axes.Axes]] = None, yscale: str = "linear") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -23,7 +26,12 @@ def plot_candles(candles_df: pd.DataFrame, volume: bool = True, ylabel: str = ""
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 | yscale | str | Scaling for y axis.  Either linear or log | linear | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 

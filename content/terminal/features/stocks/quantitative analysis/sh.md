@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Provides the sharpe ratio of the selected stock.
 
-### Usage 
+### Usage
+
 ```python
 usage: sh [-r RFR] [-w WINDOW]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: sh [-r RFR] [-w WINDOW]
 | ---- | ----------- | ------- | -------- | ------- |
 | rfr | Risk free return | 0 | True | None |
 | window | Rolling window length | 1 | True | None |
-
-
 ![image](https://user-images.githubusercontent.com/75195383/163530426-77abe5ac-9c21-43e5-a975-5a37c7eb452f.png)
+
+---
 

@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Show Breusch-Pagan heteroscedasticity test results. Needs OLS to be run in advance with independent and dependent variables
 
-### Usage 
+### Usage
+
 ```python
 usage: bpag
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -76,4 +80,6 @@ Breusch-Pagan heteroscedasticity test
 
 The result 0.16 indicates the existence of heteroscedasticity. Consider taking the log or a rate for the dependent variable.
 ```
+
+---
 

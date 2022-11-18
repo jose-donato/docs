@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Blockchain explorers URLs for loaded coin. Those are sites like etherescan.io or polkascan.io in which you can see all blockchain data e.g. all txs, all tokens, all contracts...
 
-### Usage 
+### Usage
+
 ```python
 usage: bc
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -32,4 +36,6 @@ This command has no parameters
 │ 2      │ https://btc.tokenview.com/      │
 └────────┴─────────────────────────────────┘
 ```
+
+---
 

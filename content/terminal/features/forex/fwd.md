@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Get forward rates for loaded pair.
 
-### Usage 
+### Usage
+
 ```python
 usage: fwd
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

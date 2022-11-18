@@ -12,11 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def add_atr(dataset: pd.DataFrame, close_column: str = "close", high_column: str = "high", low_column: str = "low") -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
 
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 

@@ -7,15 +7,18 @@ description: OpenBB Terminal Function
 
 Remove one of the portfolios
 
-### Usage 
+### Usage
+
 ```python
 usage: rpf [-pf PORTFOLIOS]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | portfolios | portfolios to be removed from the saved portfolios |  | True | None |
-
+---
 

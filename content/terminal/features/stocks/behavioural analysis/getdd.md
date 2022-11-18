@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Print top stock's due diligence from other users. [Source: Reddit]
 
-### Usage 
+### Usage
+
 ```python
 usage: getdd [-l LIMIT] [-d DAYS] [-a]
 ```
+
+---
 
 ## Parameters
 
@@ -19,7 +22,7 @@ usage: getdd [-l LIMIT] [-d DAYS] [-a]
 | limit | limit of posts to retrieve. | 5 | True | None |
 | days | number of prior days to look for. | 3 | True | None |
 | all | search through all flairs (apart from Yolo and Meme), otherwise we focus on specific flairs: DD, technical analysis, Catalyst, News, Advice, Chart | False | True | None |
-
+---
 
 ## Examples
 
@@ -40,4 +43,6 @@ https://old.reddit.com/r/wallstreetbets/comments/sn90qs/if_you_cannot_beat_them_
 2022-02-03 20:01:06 - Thoughts on only buying large market cap stocks (Top 100, 100 billion market cap+, and significant index weighting)?
 https://old.reddit.com/r/stocks/comments/sjsqhu/thoughts_on_only_buying_large_market_cap_stocks/
 ```
+
+---
 

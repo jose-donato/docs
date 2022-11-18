@@ -12,13 +12,21 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def load_quote(symbol: str) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker | None | False |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 

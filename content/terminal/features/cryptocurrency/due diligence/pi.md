@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Display asset's project info [Source: https://messari.io]
 
-### Usage 
+### Usage
+
 ```python
 usage: pi
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -79,4 +83,6 @@ This command has no parameters
 │                                 │                           │           │ https://bitcoincore.org/en/2018/09/20/notice/                                                                                                                                                      │
 └─────────────────────────────────┴───────────────────────────┴───────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
 

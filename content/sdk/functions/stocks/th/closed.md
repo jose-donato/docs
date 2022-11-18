@@ -18,15 +18,21 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_closed() -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
+
+---
 
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Currently closed exchanges |
+---
 
 
 
@@ -40,13 +46,20 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_closed() -> None
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
 
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

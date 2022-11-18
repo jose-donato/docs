@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Load custom dataset (from previous export, custom imports).
 
-### Usage 
+### Usage
+
 ```python
 usage: load [-f FILE] [-a ALIAS]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: load [-f FILE] [-a ALIAS]
 | ---- | ----------- | ------- | -------- | ------- |
 | file | File to load data in (can be custom import, may have been exported before.) | None | True | None |
 | alias | Alias name to give to the dataset | None | True | None |
-
+---
 
 ## Examples
 
@@ -51,4 +54,6 @@ usage: load [-f FILE] [-a ALIAS]
 │ 9 │ 2019-06-21 │ 49.70 │ 50.21 │ 49.54 │ 49.69 │ 48.50     │ 191202400 │
 └───┴────────────┴───────┴───────┴───────┴───────┴───────────┴───────────┘
 ```
+
+---
 

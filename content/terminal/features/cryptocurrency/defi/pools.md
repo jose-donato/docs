@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Display uniswap pools by volume. [Source: https://thegraph.com/en/]
 
-### Usage 
+### Usage
+
 ```python
 usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,token1.symbol,volumeUSD,txCount}] [-r]
 ```
+
+---
 
 ## Parameters
 
@@ -19,7 +22,7 @@ usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,tok
 | limit | Number of records to display | 10 | True | None |
 | sortby | Sort by given column. Default: volumeUSD | volumeUSD | True | volumeUSD, token0.name, token0.symbol, token1.name, token1.symbol, volumeUSD, txCount |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
+---
 
 ## Examples
 
@@ -50,4 +53,6 @@ usage: pairs [-l LIMIT] [-s {volumeUSD,token0.name,token0.symbol,token1.name,tok
 │ DSLA                  │ DSLA          │ Wrapped Ether     │ WETH          │ 97.5M     │ 37901   │
 └───────────────────────┴───────────────┴───────────────────┴───────────────┴───────────┴─────────┘
 ```
+
+---
 

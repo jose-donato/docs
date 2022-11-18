@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Prints the discounted cash flow of a company over time including the DCF of today. The following fields are expected: DCF, Stock price, and Date. [Source: Financial Modeling Prep]
 
-### Usage 
+### Usage
+
 ```python
 usage: dcfc [-l LIMIT] [-q]
 ```
+
+---
 
 ## Parameters
 
@@ -18,5 +21,5 @@ usage: dcfc [-l LIMIT] [-q]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest years/quarters. | 5 | True | None |
 | b_quarter | Quarter fundamental data flag. | False | True | None |
-
+---
 

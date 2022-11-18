@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Print up to the last 30 messages of a user. [Source: Stocktwits]
 
-### Usage 
+### Usage
+
 ```python
 usage: stalker [-u S_USER] [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: stalker [-u S_USER] [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | s_user | username. | Newsfilter | True | None |
 | limit | limit messages shown. | 30 | True | None |
-
+---
 
 ## Examples
 
@@ -196,4 +199,6 @@ $ALKT Texans Credit Union Partners with Alkami to Amplify Its Digital Banking Ex
 
 https://newsfilter.io/a/198d92eb6e1c481b825b830659af8698
 ```
+
+---
 

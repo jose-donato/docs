@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Show a portion of the DataFrame
 
-### Usage 
+### Usage
+
 ```python
 usage: show [-n {}] [-s SORTBY [SORTBY ...]] [-r] [--limit-col LIMIT_COL]
 ```
+
+---
 
 ## Parameters
 
@@ -20,7 +23,7 @@ usage: show [-n {}] [-s SORTBY [SORTBY ...]] [-r] [--limit-col LIMIT_COL]
 | sortby | Sort based on a column in the DataFrame |  | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | limit_col | Set the number of columns to display when showing the dataset | 10 | True | None |
-
+---
 
 ## Examples
 
@@ -56,4 +59,6 @@ aapl dataset has shape (row, column): (759, 7)
 │ 9 │ 2019-06-21 │ 49.70 │ 50.21 │ 49.54 │ 49.69 │ 48.50     │ 191202400 │
 └───┴────────────┴───────┴───────┴───────┴───────┴───────────┴───────────┘
 ```
+
+---
 

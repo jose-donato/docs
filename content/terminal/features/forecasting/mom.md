@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Add momentum to dataset based on specific column.
 
-### Usage 
+### Usage
+
 ```python
 usage: mom
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -111,4 +115,6 @@ TSLA dataset has shape (row, column): (601, 8)
 │ 9 │ 2020-01-30 │ 126.48 │ 130.18 │ 123.60 │ 128.16 │ 128.16    │ 145028500 │ 24.46       │
 └───┴────────────┴────────┴────────┴────────┴────────┴───────────┴───────────┴─────────────┘
 ```
+
+---
 

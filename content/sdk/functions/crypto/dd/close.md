@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_close_price(symbol: str, start_date: str = "2010-01-01", end_date: str = None, print_errors: bool = True) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,9 +24,13 @@ def get_close_price(symbol: str, start_date: str = "2010-01-01", end_date: str =
 | end_date | str | Final date, format YYYY-MM-DD | None | True |
 | print_errors | bool | Flag to print errors. Default: True | True | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | price over time |
+---
 

@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], chain_id: str = "", put: bool = False) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,11 +31,15 @@ def get_historical_greeks(symbol: str, expiry: str, strike: Union[str, float], c
 | chain_id | str | OCC option symbol.  Overwrites other inputs |  | True |
 | put | bool | Is this a put option? | False | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing historical greeks |
+---
 
 
 
@@ -46,6 +53,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def view_historical_greeks(symbol: str, expiry: str, strike: Union[float, str], greek: str = "Delta", chain_id: str = "", put: bool = False, raw: bool = False, limit: Union[int, str] = 20, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -61,9 +71,14 @@ def view_historical_greeks(symbol: str, expiry: str, strike: Union[float, str], 
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

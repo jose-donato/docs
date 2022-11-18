@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Perform Probabilistic Exponential Smoothing forecast: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.exponential_smoothing.html
 
-### Usage 
+### Usage
+
 ```python
 usage: expo [--trend {N,A,M}] [--dampen DAMPEN]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: expo [--trend {N,A,M}] [--dampen DAMPEN]
 | ---- | ----------- | ------- | -------- | ------- |
 | trend | Trend: N: None, A: Additive, M: Multiplicative. | A | True | N, A, M |
 | dampen | Dampening | F | True | None |
-
+---
 
 ## Examples
 
@@ -48,4 +51,6 @@ Exponential smoothing obtains MAPE: 12.88%
 ```
 
 ![expo](https://user-images.githubusercontent.com/72827203/180615313-e45d6cb3-06a8-45aa-ae4e-505df07e7210.png)
+
+---
 

@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Upcoming earnings release dates. [Source: Seeking Alpha]
 
-### Usage 
+### Usage
+
 ```python
 usage: upcoming [-l LIMIT] [-p N_PAGES]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: upcoming [-l LIMIT] [-p N_PAGES]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of upcoming earnings release dates to display. | 1 | True | None |
 | n_pages | Number of pages to read upcoming earnings from in Seeking Alpha website. | 10 | True | None |
-
+---
 
 ## Examples
 
@@ -262,4 +265,6 @@ usage: upcoming [-l LIMIT] [-p N_PAGES]
 │ GOGL  │ Golden Ocean Group Limited              │
 └───────┴─────────────────────────────────────────┘
 ```
+
+---
 

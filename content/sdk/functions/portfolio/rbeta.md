@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "1y") -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: 
 | portfolio | PortfolioEngine | PortfolioEngine object | None | True |
 | window | string | Interval used for rolling values.<br/>Possible options: mtd, qtd, ytd, 1d, 5d, 10d, 1m, 3m, 6m, 1y, 3y, 5y, 10y. | 1y | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of the portfolio's rolling beta |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "1y", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,9 +62,14 @@ def display_rolling_beta(portfolio_engine: portfolio_model.PortfolioEngine, wind
 | export | str | Export to file |  | True |
 | external_axes | Optional[List[plt.Axes]] | Optional axes to display plot on | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

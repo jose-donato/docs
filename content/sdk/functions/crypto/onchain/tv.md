@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_token_volume_on_dexes(symbol: str = "UNI", trade_amount_currency: str = "USD", sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def get_token_volume_on_dexes(symbol: str = "UNI", trade_amount_currency: str = 
 | sortby | str | Key by which to sort data | tradeAmount | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Token volume on Decentralized Exchanges |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_dex_volume_for_token(symbol: str = "WBTC", trade_amount_currency: str = "USD", limit: int = 10, sortby: str = "tradeAmount", ascend: bool = True, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,11 +66,15 @@ def display_dex_volume_for_token(symbol: str = "WBTC", trade_amount_currency: st
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Token volume on different decentralized exchanges |
+---
 
 
 

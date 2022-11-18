@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Show cost to borrow of stocks. [Source: Stocksera/Interactive Broker]
 
-### Usage 
+### Usage
+
 ```python
 usage: ctb [-n NUMBER] [--raw]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: ctb [-n NUMBER] [--raw]
 | ---- | ----------- | ------- | -------- | ------- |
 | number | Number of records to retrieve. | 20 | True | None |
 | raw | Print raw data. | False | True | None |
-
+---
 
 ## Examples
 
@@ -69,4 +72,6 @@ usage: ctb [-n NUMBER] [--raw]
 │ MH PRA  │ 202.1235% │ 100000    │
 └─────────┴───────────┴───────────┘
 ```
+
+---
 

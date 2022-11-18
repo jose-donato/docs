@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_plot(data: pd.DataFrame, columns: List[str], export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,9 +30,14 @@ def display_plot(data: pd.DataFrame, columns: List[str], export: str = "", exter
 | export | str | Format to export image |  | True |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 
@@ -43,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_plot(data: pd.DataFrame, columns: List[str], export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,9 +63,14 @@ def display_plot(data: pd.DataFrame, columns: List[str], export: str = "", exter
 | export | str | Format to export image |  | True |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

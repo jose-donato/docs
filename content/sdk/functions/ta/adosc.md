@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int = 10) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int =
 | fast | int | Fast value | 3 | True |
 | slow | int | Slow value | 10 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with technical indicator |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_adosc(data: pd.DataFrame, fast: int = 3, slow: int = 10, use_open: bool = False, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,9 +67,14 @@ def display_adosc(data: pd.DataFrame, fast: int = 3, slow: int = 10, use_open: b
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

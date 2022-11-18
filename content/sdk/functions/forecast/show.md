@@ -18,13 +18,20 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def show_df(data: pd.DataFrame, limit: int = 15, limit_col: int = 10, name: str = "", export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
 
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 
@@ -38,13 +45,20 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def show_df(data: pd.DataFrame, limit: int = 15, limit_col: int = 10, name: str = "", export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 This function does not take any parameters.
 
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

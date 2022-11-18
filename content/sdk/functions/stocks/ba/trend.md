@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_trending(start_date: str = None, hour: int = 0, number: int = 10) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,11 +29,15 @@ def get_trending(start_date: str = None, hour: int = 0, number: int = 10) -> pd.
 | hour | int | Hour of the day in 24-hour notation (e.g. 14) | 0 | True |
 | number | int | Number of results returned by API call<br/>Maximum 250 per api call | 10 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of trending data |
+---
 
 
 
@@ -44,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_trending(start_date: str = None, hour: int = 0, number: int = 10, limit: int = 10, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,9 +64,14 @@ def display_trending(start_date: str = None, hour: int = 0, number: int = 10, li
 | limit | int | Number of results display on the terminal<br/>Default: 10 | 10 | True |
 | export | str | Format to export data |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

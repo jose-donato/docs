@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Yearly estimates and quarter earnings/revenues. [Source: Business Insider]
 
-### Usage 
+### Usage
+
 ```python
 usage: est [-e {annualrevenue,annualearnings,quarterearnings}]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | estimate | Estimates to get | annualearnings | True | annualrevenue, annualearnings, quarterearnings |
-
+---
 
 ## Examples
 
@@ -83,4 +86,6 @@ usage: est [-e {annualrevenue,annualearnings,quarterearnings}]
 │ Total Assets                   │ 343,493  │ 369,736 │ 419,940 │ 529,449  │ 811,911  │
 └────────────────────────────────┴──────────┴─────────┴─────────┴──────────┴──────────┘
 ```
+
+---
 

@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Discover trending coins (Top-7) on CoinGecko in the last 24 hours
 
-### Usage 
+### Usage
+
 ```python
 usage: trending
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -40,4 +44,6 @@ This command has no parameters
 │ doge-dash          │ Doge Dash          │ 950             │
 └────────────────────┴────────────────────┴─────────────────┘
 ```
+
+---
 

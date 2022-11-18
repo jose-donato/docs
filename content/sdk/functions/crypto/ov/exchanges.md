@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_exchanges(sortby: str = "Rank", ascend: bool = True) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_exchanges(sortby: str = "Rank", ascend: bool = True) -> pd.DataFrame
 | sortby | str | Key by which to sort data | Rank | True |
 | ascend | bool | Flag to sort data descending | True | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Trust_Score, Id, Name, Country, Year_Established, Trade_Volume_24h_BTC, Url |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_exchanges(sortby: str = "Rank", ascend: bool = False, limit: int = 15, links: bool = False, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,9 +63,14 @@ def display_exchanges(sortby: str = "Rank", ascend: bool = False, limit: int = 1
 | links | bool | Flag to display urls | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

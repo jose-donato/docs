@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Create order
 
-### Usage 
+### Usage
+
 ```python
 usage: order -u UNITS -p PRICE
 ```
+
+---
 
 ## Parameters
 
@@ -18,5 +21,5 @@ usage: order -u UNITS -p PRICE
 | ---- | ----------- | ------- | -------- | ------- |
 | units | The number of units to place in the order request. Positive for a long position and negative for a short position. | None | False | None |
 | price | The price to set for the limit order. | None | False | None |
-
+---
 

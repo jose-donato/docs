@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 The seasonality for a given column
 
-### Usage 
+### Usage
+
 ```python
 usage: season [-v VALUES] [-m M] [--max_lag MAX_LAG] [-a ALPHA]
 ```
+
+---
 
 ## Parameters
 
@@ -20,7 +23,7 @@ usage: season [-v VALUES] [-m M] [--max_lag MAX_LAG] [-a ALPHA]
 | m | A time lag to highlight on the plot | None | True | None |
 | max_lag | The maximal lag order to consider | 24 | True | None |
 | alpha | The confidence interval to display | 0.05 | True | None |
-
+---
 
 ## Examples
 
@@ -30,4 +33,6 @@ usage: season [-v VALUES] [-m M] [--max_lag MAX_LAG] [-a ALPHA]
 (🦋) /forecast/ $ season TSLA.volume
 TODO: screen shot
 ```
+
+---
 

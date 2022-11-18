@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Cumulative distribution function
 
-### Usage 
+### Usage
+
 ```python
 usage: cdf
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -27,4 +31,6 @@ optional arguments:
 ```
 
 ![cdf](https://user-images.githubusercontent.com/46355364/154306055-cb3bb1ef-0e61-40c9-bf51-d095bed8dc1b.png)
+
+---
 

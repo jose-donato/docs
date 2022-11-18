@@ -1,12 +1,12 @@
 ---
-title: fred_series
+title: fred
 description: OpenBB SDK Function
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# fred_series
+# fred
 
 <Tabs>
 <TabItem value="model" label="Model" default>
@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_aggregated_series_data(series_ids: List[str], start_date: str = None, end_date: str = None) -> Tuple[pd.DataFrame, dict]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,11 +29,15 @@ def get_aggregated_series_data(series_ids: List[str], start_date: str = None, en
 | start_date | str | Start date to get data from, format yyyy-mm-dd | None | True |
 | end_date | str | End data to get from, format yyyy-mm-dd | None | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Series data |
+---
 
 
 
@@ -44,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_fred_series(series_ids: List[str], start_date: str = None, end_date: str = None, limit: int = 10, get_data: bool = False, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,9 +66,14 @@ def display_fred_series(series_ids: List[str], start_date: str = None, end_date:
 | export | str | Export data to csv,json,xlsx or png,jpg,pdf,svg file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

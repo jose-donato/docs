@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_messages(symbol: str, limit: int = 30) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_messages(symbol: str, limit: int = 30) -> pd.DataFrame
 | symbol | str | Stock ticker symbol | None | False |
 | limit | int | Number of messages to get | 30 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of messages |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_messages(symbol: str, limit: int = 30) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -50,9 +60,14 @@ def display_messages(symbol: str, limit: int = 30) -> None
 | symbol | str | Stock ticker symbol | None | False |
 | limit | int | Number of messages to get | 30 | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

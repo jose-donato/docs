@@ -7,18 +7,21 @@ description: OpenBB Terminal Function
 
 The columns you want to add to a dataset. The first argument is the dataset to add columns inand the remaining could be: datasetX.column2,datasetY.column3
 
-### Usage 
+### Usage
+
 ```python
 usage: combine [-d {}] [-c COLUMNS]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| dataset | Dataset to add columns to | None | True |  |
+| dataset | Dataset to add columns to | None | True | None |
 | columns | The columns we want to add dataset.column,dataset.column2 | None | True | None |
-
+---
 
 ## Examples
 
@@ -56,4 +59,6 @@ usage: combine [-d {}] [-c COLUMNS]
 │ 9 │ 1880.00 │ 1140.00 │ 1140.00       │
 └───┴─────────┴─────────┴───────────────┘
 ```
+
+---
 

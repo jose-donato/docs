@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Plot historical data.
 
-### Usage 
+### Usage
+
 ```python
 usage: plot
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

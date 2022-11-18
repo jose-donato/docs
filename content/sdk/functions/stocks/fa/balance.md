@@ -12,6 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_balance_sheet(symbol: str, quarterly: bool = False, ratios: bool = False, source: str = "YahooFinance", limit: int = 10) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -22,18 +25,23 @@ def get_balance_sheet(symbol: str, quarterly: bool = False, ratios: bool = False
 | ratios | bool | Flag to return data as a percent change. | False | True |
 | limit | int | Number of statements to return (free tiers may be limited to 5 years) | 10 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of balance sheet |
+---
 
 ## Examples
-
 
 If you have a premium AlphaVantage key, you can use the quarterly flag to get quarterly statements
 ```python
 from openbb_terminal.sdk import openbb
 balance_sheet = openbb.stocks.fa.balance("AAPL", source="YahooFinance)
 ```
+
+---
 

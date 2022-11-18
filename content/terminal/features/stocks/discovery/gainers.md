@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Print up to 25 top gainers. [Source: Yahoo Finance]
 
-### Usage 
+### Usage
+
 ```python
 usage: gainers [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of stocks to display. | 5 | True | None |
-
+---
 
 ## Examples
 
@@ -78,4 +81,6 @@ usage: gainers [-l LIMIT]
 │ IMAB   │ I-Mab                                                │ 27.82            │ 2.93   │ +11.77%  │ 1.13M   │ 655100            │ 2.224B     │                │
 └────────┴──────────────────────────────────────────────────────┴──────────────────┴────────┴──────────┴─────────┴───────────────────┴────────────┴────────────────┘
 ```
+
+---
 

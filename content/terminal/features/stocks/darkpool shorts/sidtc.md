@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Print short interest and days to cover. [Source: Stockgrid]
 
-### Usage 
+### Usage
+
 ```python
 usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 ```
+
+---
 
 ## Parameters
 
@@ -18,7 +21,7 @@ usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of tickers to display. | 10 | True | None |
 | sort_field | Field for which to sort by, where 'float': Float Short %%, 'dtc': Days to Cover, 'si': Short Interest | float | True | float, dtc, si |
-
+---
 
 ## Examples
 
@@ -49,4 +52,6 @@ usage: sidtc [-l LIMIT] [-s {float,dtc,si}]
 │ AXDX   │ 18.75         │ 19.71         │ 7.00                │
 └────────┴───────────────┴───────────────┴─────────────────────┘
 ```
+
+---
 

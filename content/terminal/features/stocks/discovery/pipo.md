@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Past IPOs dates. [Source: https://finnhub.io]
 
-### Usage 
+### Usage
+
 ```python
 usage: pipo [-d DAYS] [-s START] [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
@@ -19,7 +22,7 @@ usage: pipo [-d DAYS] [-s START] [-l LIMIT]
 | days | Number of past days to look for IPOs. | 5 | True | None |
 | start | The starting date (format YYYY-MM-DD) to look for IPOs. When set, start date will override --days argument | None | True | None |
 | limit | Limit number of IPOs to display. | 20 | True | None |
-
+---
 
 ## Examples
 
@@ -52,4 +55,6 @@ usage: pipo [-d DAYS] [-s START] [-l LIMIT]
 │ 2022-02-11 │ NASDAQ Capital │ JUPITER NEUROSCIENCES, INC.   │ 2200000          │ 6.00-8.00  │ expected │ JUNS   │ 20240000           │
 └────────────┴────────────────┴───────────────────────────────┴──────────────────┴────────────┴──────────┴────────┴────────────────────┘
 ```
+
+---
 

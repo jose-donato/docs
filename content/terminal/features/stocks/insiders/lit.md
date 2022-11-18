@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Print latest insider trading. [Source: OpenInsider]
 
-### Usage 
+### Usage
+
 ```python
 usage: lit [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
-
+---
 
 ## Examples
 
@@ -63,4 +66,6 @@ usage: lit [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
+
+---
 

@@ -7,15 +7,18 @@ description: OpenBB Terminal Function
 
 Select the symbol you wish to trade
 
-### Usage 
+### Usage
+
 ```python
 usage: symbol [-n SYMBOL]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | symbol | Symbol | None | True | None |
-
+---
 

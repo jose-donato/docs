@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Prints a complete income statement over time. This can be either quarterly or annually. The following fields are expected: Accepted date, Cost and expenses, Cost of revenue, Depreciation and amortization, Ebitda, Ebitda Ratio, Eps, EPS Diluted, Filling date, Final link, General and administrative expenses, Gross profit, Gross profit ratio, Income before tax, Income before tax ratio, Income tax expense, Interest expense, Link, Net income, Net income ratio, Operating expenses, Operating income, Operating income ratio, Other expenses, Period, Research and development expenses, Revenue, Selling and marketing expenses, Total other income expenses net, Weighted average shs out, Weighted average shs out dil [Source: Alpha Vantage]
 
-### Usage 
+### Usage
+
 ```python
 usage: income [-q] [-r] [-p PLOT]
 ```
+
+---
 
 ## Parameters
 
@@ -19,7 +22,7 @@ usage: income [-q] [-r] [-p PLOT]
 | b_quarter | Quarter fundamental data flag. | False | True | None |
 | ratios | Shows percentage change of values. | False | True | None |
 | plot | Rows to plot, comma separated. (-1 represents invalid data) | None | True | None |
-
+---
 
 ## Examples
 
@@ -80,4 +83,6 @@ usage: income [-q] [-r] [-p PLOT]
 │ netIncome                         │ 25.489 B   │ 16.571 B   │ 39.240 B   │ 44.281 B   │ 61.271 B   │
 └───────────────────────────────────┴────────────┴────────────┴────────────┴────────────┴────────────┘
 ```
+
+---
 

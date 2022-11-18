@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Gives the option value using binomial option valuation
 
-### Usage 
+### Usage
+
 ```python
 usage: binom [-s STRIKE] [-p] [-e] [-x] [--plot] [-v VOLATILITY]
 ```
+
+---
 
 ## Parameters
 
@@ -22,7 +25,7 @@ usage: binom [-s STRIKE] [-p] [-e] [-x] [--plot] [-v VOLATILITY]
 | export | Export an excel spreadsheet with binomial pricing data | False | True | None |
 | plot | Plot expected ending values | False | True | None |
 | volatility | Underlying asset annualized volatility. Historical volatility used if not supplied. | None | True | None |
-
+---
 
 ## Examples
 
@@ -37,4 +40,6 @@ AMZN put at $3500.00 expiring on 2022-03-25 is worth $389.72
 ```
 
 ![binom](https://user-images.githubusercontent.com/46355364/154276789-b6786517-3bea-4aa7-9d2e-e6669dd82587.png)
+
+---
 

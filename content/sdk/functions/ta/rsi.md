@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def rsi(data: pd.Series, window: int = 14, scalar: float = 100, drift: int = 1) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,11 +30,15 @@ def rsi(data: pd.Series, window: int = 14, scalar: float = 100, drift: int = 1) 
 | scalar | float | Scalar variable | 100 | True |
 | drift | int | Drift variable | 1 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of technical indicator |
+---
 
 
 
@@ -45,6 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_rsi(data: pd.Series, window: int = 14, scalar: float = 100.0, drift: int = 1, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,9 +67,14 @@ def display_rsi(data: pd.Series, window: int = 14, scalar: float = 100.0, drift:
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

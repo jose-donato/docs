@@ -1,12 +1,12 @@
 ---
-title: cgexrates
+title: exrates
 description: OpenBB SDK Function
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# cgexrates
+# exrates
 
 <Tabs>
 <TabItem value="model" label="Model" default>
@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_exchange_rates(sortby: str = "Name", ascend: bool = False) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,11 +28,15 @@ def get_exchange_rates(sortby: str = "Name", ascend: bool = False) -> pd.DataFra
 | sortby | str | Key by which to sort data | Name | True |
 | ascend | bool | Flag to sort data ascending | False | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Index, Name, Unit, Value, Type |
+---
 
 
 
@@ -43,6 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_exchange_rates(sortby: str = "Name", ascend: bool = False, limit: int = 15, export: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,9 +62,14 @@ def display_exchange_rates(sortby: str = "Name", ascend: bool = False, limit: in
 | ascend | bool | Flag to sort data ascending | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

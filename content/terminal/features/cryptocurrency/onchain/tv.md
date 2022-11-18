@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Display token volume on different Decentralized Exchanges. [Source: https://graphql.bitquery.io/]
 
-### Usage 
+### Usage
+
 ```python
 usage: tv -c COIN [-vs {ETH,USD,BTC,USDT}] [-l LIMIT] [-s {exchange,trades,tradeAmount}] [-r]
 ```
+
+---
 
 ## Parameters
 
@@ -21,5 +24,5 @@ usage: tv -c COIN [-vs {ETH,USD,BTC,USDT}] [-l LIMIT] [-s {exchange,trades,trade
 | limit | display N number records | 10 | True | None |
 | sortby | Sort by given column. | trades | True | exchange, trades, tradeAmount |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
+---
 

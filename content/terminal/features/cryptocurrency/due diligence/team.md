@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Display asset's team [Source: https://messari.io]
 
-### Usage 
+### Usage
+
 ```python
 usage: team
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

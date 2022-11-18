@@ -7,13 +7,17 @@ description: OpenBB Terminal Function
 
 Compare results between all activated Panel regression models
 
-### Usage 
+### Usage
+
 ```python
 usage: compare
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 

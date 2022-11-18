@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Print analyst prices and ratings of the company. The following fields are expected: date, analyst, category, price from, price to, and rating. [Source: Finviz]
 
-### Usage 
+### Usage
+
 ```python
 usage: analyst
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -36,4 +40,6 @@ This command has no parameters
 │ 2022-01-27 │ Reiterated │ JP Morgan       │ Underweight           │ nan     │ 295.00      │ 325.00    │
 └────────────┴────────────┴─────────────────┴───────────────────────┴─────────┴─────────────┴───────────┘
 ```
+
+---
 

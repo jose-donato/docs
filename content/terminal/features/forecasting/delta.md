@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Add %Change (Delta) to dataset based on specific column.
 
-### Usage 
+### Usage
+
 ```python
 usage: delta
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -56,4 +60,6 @@ aapl_20220628_113243 dataset has shape (row, column): (759, 10)
 │ 9 │ 9          │ 2019-06-21 │ 49.70 │ 50.21 │ 49.54 │ 49.69 │ 48.50     │ 191202400 │ -0.00       │ 1.22         │
 └───┴────────────┴────────────┴───────┴───────┴───────┴───────┴───────────┴───────────┴─────────────┴──────────────┘
 ```
+
+---
 

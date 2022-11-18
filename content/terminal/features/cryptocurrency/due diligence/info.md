@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Shows basic information about loaded coin like: Name, Symbol, Description, Market Cap, Public Interest, Supply, and Price related metrics
 
-### Usage 
+### Usage
+
 ```python
 usage: info
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -77,4 +81,6 @@ This command has no parameters
 │ Current Price Usd           │ 44269                                                                            │
 └─────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
 

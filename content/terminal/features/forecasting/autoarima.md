@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Perform Automatic ARIMA forecast: https://nixtla.github.io/statsforecast/examples/getting_started_with_auto_arima_and_ets.html
 
-### Usage 
+### Usage
+
 ```python
 usage: autoarima
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -44,4 +48,6 @@ AutoARIMA obtains MAPE: 2.86%
 │ 2022-11-11 │ 138.43     │
 └────────────┴────────────┘
 ```
+
+---
 

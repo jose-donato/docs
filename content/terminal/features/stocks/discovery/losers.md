@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Print up to 25 top losers. [Source: Yahoo Finance]
 
-### Usage 
+### Usage
+
 ```python
 usage: losers [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of stocks to display. | 5 | True | None |
-
+---
 
 ## Examples
 
@@ -78,4 +81,6 @@ usage: losers [-l LIMIT]
 │ BTU    │ Peabody Energy Corporation                       │ 17.21            │ -0.81  │ -4.50%   │ 7.956M  │ 5.386M            │ 2.294B     │ 5.35           │
 └────────┴──────────────────────────────────────────────────┴──────────────────┴────────┴──────────┴─────────┴───────────────────┴────────────┴────────────────┘
 ```
+
+---
 

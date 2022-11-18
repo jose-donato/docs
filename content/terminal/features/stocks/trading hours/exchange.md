@@ -7,15 +7,18 @@ description: OpenBB Terminal Function
 
 Select the exchange you want see open hours for
 
-### Usage 
+### Usage
+
 ```python
 usage: exchange [-n EXCHANGE]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | exchange | Exchange short name | None | True | None |
-
+---
 

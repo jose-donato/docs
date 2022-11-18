@@ -7,10 +7,13 @@ description: OpenBB Terminal Function
 
 Search mutual funds in selected country based on selected field.
 
-### Usage 
+### Usage
+
 ```python
 usage: search [-b {name,issuer,isin,symbol}] --fund FUND [FUND ...] [-s {country,name,symbol,issuer,isin,asset_class,currency,underlying}] [-l LIMIT] [-r]
 ```
+
+---
 
 ## Parameters
 
@@ -21,5 +24,5 @@ usage: search [-b {name,issuer,isin,symbol}] --fund FUND [FUND ...] [-s {country
 | sortby | Column to sort by | name | True | country, name, symbol, issuer, isin, asset_class, currency, underlying |
 | limit | Number of search results to show | 10 | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
-
+---
 

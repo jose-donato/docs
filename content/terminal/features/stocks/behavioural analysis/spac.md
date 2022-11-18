@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Show other users SPACs announcement. [Source: Reddit]
 
-### Usage 
+### Usage
+
 ```python
 usage: spac [-l N_LIMIT]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | n_limit | limit of posts with SPACs retrieved. | 5 | True | None |
-
+---
 
 ## Examples
 
@@ -41,4 +44,6 @@ https://old.reddit.com/r/Superstonk/comments/sq1qv8/in_q4_citadel_advisors_llc_b
 The following stock tickers have been mentioned more than once across the previous SPACs:
 3 GME, 2 POST, 2 FTCV
 ```
+
+---
 

@@ -7,17 +7,20 @@ description: OpenBB Terminal Function
 
 Print top officer purchases of the week. [Source: OpenInsider]
 
-### Usage 
+### Usage
+
 ```python
 usage: toppw [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
-
+---
 
 ## Examples
 
@@ -61,4 +64,6 @@ usage: toppw [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
+
+---
 

@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_sharpe(data: pd.DataFrame, rfr: float = 0, window: float = 252) -> pd.DataFrame
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,11 +29,15 @@ def get_sharpe(data: pd.DataFrame, rfr: float = 0, window: float = 252) -> pd.Da
 | rfr | float | risk free rate | 0 | True |
 | window | float | length of the rolling window | 252 | True |
 
+
+---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | sharpe ratio |
+---
 
 
 
@@ -44,6 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_sharpe(data: pd.DataFrame, rfr: float = 0, window: float = 252) -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -52,9 +62,14 @@ def display_sharpe(data: pd.DataFrame, rfr: float = 0, window: float = 252) -> N
 | rfr | float | risk free rate | 0 | True |
 | window | float | length of the rolling window | 252 | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

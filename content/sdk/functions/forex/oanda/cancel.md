@@ -18,6 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def cancel_pending_order_request(orderID: str, accountID: str = "REPLACE_ME") -> Union[str, bool]
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,9 +28,14 @@ def cancel_pending_order_request(orderID: str, accountID: str = "REPLACE_ME") ->
 | orderID | str | The pending order ID to cancel. | None | False |
 | accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 
@@ -41,6 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def cancel_pending_order(accountID: str, orderID: str = "") -> None
 ```
+
+---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -48,9 +59,14 @@ def cancel_pending_order(accountID: str, orderID: str = "") -> None
 | accountID | str | Oanda user account ID | None | False |
 | orderID | str | The pending order ID to cancel. |  | True |
 
+
+---
+
 ## Returns
 
 This function does not return anything
+
+---
 
 
 

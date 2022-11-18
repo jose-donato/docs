@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Display base statistics about Uniswap DEX. [Source: https://thegraph.com/en/]
 
-### Usage 
+### Usage
+
 ```python
 usage: stats
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -36,4 +40,6 @@ This command has no parameters
 │ totalLiquidityETH │ 1.1M   │
 └───────────────────┴────────┘
 ```
+
+---
 

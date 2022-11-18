@@ -7,15 +7,19 @@ description: OpenBB Terminal Function
 
 Show library versions of required packages.
 
-### Usage 
+### Usage
+
 ```python
 usage: which
 ```
+
+---
 
 ## Parameters
 
 This command has no parameters
 
+---
 
 ## Examples
 
@@ -29,4 +33,6 @@ Recommended Max dataset size based on current RAM: 5.0G
 Torch version: 1.11.0
 Darts version: 0.21.0
 ```
+
+---
 
