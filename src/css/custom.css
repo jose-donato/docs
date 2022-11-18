@@ -30,8 +30,9 @@
   article h2 {
     @apply !text-[28px];
   }
+  
   thead tr {
-    @apply !bg-white dark:!bg-grey-900 py-[22px];
+    @apply !bg-white dark:!bg-grey-900;
   }
   th {
     @apply !font-bold uppercase tracking-widest !text-base;
@@ -181,35 +182,11 @@
 }
 
 .header_docs_sdk {
-  background: rgb(25, 10, 17);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(25, 10, 17, 1) 0%,
-    rgba(43, 17, 25, 1) 15%,
-    rgba(64, 27, 33, 1) 45%,
-    rgba(75, 33, 26, 1) 64%,
-    rgba(77, 34, 21, 1) 82%,
-    rgba(71, 35, 15, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(25, 10, 17, 1) 0%,
-    rgba(43, 17, 25, 1) 15%,
-    rgba(64, 27, 33, 1) 45%,
-    rgba(75, 33, 26, 1) 64%,
-    rgba(77, 34, 21, 1) 82%,
-    rgba(71, 35, 15, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(25, 10, 17, 1) 0%,
-    rgba(43, 17, 25, 1) 15%,
-    rgba(64, 27, 33, 1) 45%,
-    rgba(75, 33, 26, 1) 64%,
-    rgba(77, 34, 21, 1) 82%,
-    rgba(71, 35, 15, 1) 100%
-  ) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#190a11", endColorstr="#47230f", GradientType=1);
+  background: rgb(23,8,6);
+  background: -moz-linear-gradient(90deg, rgba(23,8,6,1) 0%, rgba(64,21,16,1) 15%, rgba(84,29,19,1) 45%, rgba(67,26,9,1) 64%, rgba(37,15,5,1) 82%, rgba(16,9,0,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(23,8,6,1) 0%, rgba(64,21,16,1) 15%, rgba(84,29,19,1) 45%, rgba(67,26,9,1) 64%, rgba(37,15,5,1) 82%, rgba(16,9,0,1) 100%);
+  background: linear-gradient(90deg, rgba(23,8,6,1) 0%, rgba(64,21,16,1) 15%, rgba(84,29,19,1) 45%, rgba(67,26,9,1) 64%, rgba(37,15,5,1) 82%, rgba(16,9,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#170806",endColorstr="#100900",GradientType=1);
 }
 
 /* convert to css tag */
@@ -251,7 +228,6 @@ table {
   background-color: transparent;
 
   text-align: left;
-  font-size: 90%;
 }
 
 table :is(tr, td, th, thead) {
