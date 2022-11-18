@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get real-time performance sector data
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L19)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_model.py#L19)]
 
 ```python
-def get_sector_data() -> DataFrame
+def get_sector_data() -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -31,11 +32,6 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Real-time performance data |
-
----
-
-## Examples
-
 ---
 
 
@@ -45,30 +41,28 @@ This function does not take any parameters.
 
 Display Real-Time Performance sector. [Source: AlphaVantage]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L27)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/alphavantage_view.py#L27)]
 
 ```python
-def realtime_performance_sector(raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def realtime_performance_sector(raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| raw | bool | Output only raw data | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| raw | bool | Output only raw data | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

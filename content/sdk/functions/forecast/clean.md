@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Clean up NaNs from the dataset
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L88)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L88)]
 
 ```python
-def clean(dataset: pd.DataFrame, fill: Optional[str], drop: Optional[str], limit: Optional[int]) -> DataFrame
+def clean(dataset: pd.DataFrame, fill: Optional[str] = None, drop: Optional[str] = None, limit: Optional[int] = None) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -19,9 +20,10 @@ def clean(dataset: pd.DataFrame, fill: Optional[str], drop: Optional[str], limit
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | dataset | pd.DataFrame | The dataset you wish to clean | None | False |
-| fill | Optional[str] | The method of filling NaNs | None | False |
-| drop | Optional[str] | The method of dropping NaNs | None | False |
-| limit | Optional[int] | The maximum limit you wish to apply that can be forward or backward filled | None | False |
+| fill | Optional[str] | The method of filling NaNs | None | True |
+| drop | Optional[str] | The method of dropping NaNs | None | True |
+| limit | Optional[int] | The maximum limit you wish to apply that can be forward or backward filled | None | True |
+
 
 ---
 
@@ -30,10 +32,5 @@ def clean(dataset: pd.DataFrame, fill: Optional[str], drop: Optional[str], limit
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with cleaned up data |
-
----
-
-## Examples
-
 ---
 

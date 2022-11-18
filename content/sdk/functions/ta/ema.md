@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Gets exponential moving average (EMA) for stock
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L19)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/overlap_model.py#L19)]
 
 ```python
-def ema(data: pd.Series, length: int, offset: int) -> DataFrame
+def ema(data: pd.Series, length: int = 50, offset: int = 0) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -19,8 +20,9 @@ def ema(data: pd.Series, length: int, offset: int) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | Dataframe of dates and prices | None | False |
-| length | int | Length of EMA window | None | False |
-| offset | int | Length of offset | None | False |
+| length | int | Length of EMA window | 50 | True |
+| offset | int | Length of offset | 0 | True |
+
 
 ---
 
@@ -29,10 +31,5 @@ def ema(data: pd.Series, length: int, offset: int) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing prices and EMA |
-
----
-
-## Examples
-
 ---
 

@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get stocks dcf from FMP
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L173)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L173)]
 
 ```python
-def get_dcf(symbol: str, limit: int, quarterly: bool) -> DataFrame
+def get_dcf(symbol: str, limit: int = 5, quarterly: bool = False) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -19,8 +20,9 @@ def get_dcf(symbol: str, limit: int, quarterly: bool) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| limit | int | Number to get | None | False |
+| limit | int | Number to get | 5 | True |
 | quarterly | bool | Flag to get quarterly data, by default False | False | True |
+
 
 ---
 
@@ -29,10 +31,5 @@ def get_dcf(symbol: str, limit: int, quarterly: bool) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of dcf data |
-
----
-
-## Examples
-
 ---
 

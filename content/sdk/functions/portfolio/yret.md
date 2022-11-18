@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get yearly returns
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2148)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_model.py#L2148)]
 
 ```python
-def get_yearly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str) -> DataFrame
+def get_yearly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all") -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,7 +26,8 @@ def get_yearly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
-| window | str | interval to compare cumulative returns and benchmark | None | False |
+| window | str | interval to compare cumulative returns and benchmark | all | True |
+
 
 ---
 
@@ -34,11 +36,6 @@ def get_yearly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with yearly returns |
-
----
-
-## Examples
-
 ---
 
 
@@ -48,11 +45,12 @@ def get_yearly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window
 
 Display yearly returns
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L376)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/portfolio/portfolio_view.py#L376)]
 
 ```python
-def display_yearly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str, raw: bool, export: str, external_axes: Optional[matplotlib.axes._axes.Axes]) -> None
+def display_yearly_returns(portfolio_engine: portfolio_model.PortfolioEngine, window: str = "all", raw: bool = False, export: str = "", external_axes: Optional[matplotlib.axes._axes.Axes] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -60,20 +58,17 @@ def display_yearly_returns(portfolio_engine: portfolio_model.PortfolioEngine, wi
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | portfolio_engine | PortfolioEngine | PortfolioEngine class instance, this will hold transactions and perform calculations.<br/>Use `portfolio.load` to create a PortfolioEngine. | None | False |
-| window | str | interval to compare cumulative returns and benchmark | None | False |
-| raw | False | Display raw data from cumulative return | None | False |
-| export | str | Export certain type of data | None | False |
-| external_axes | plt.Axes | Optional axes to display plot on | None | False |
+| window | str | interval to compare cumulative returns and benchmark | all | True |
+| raw | False | Display raw data from cumulative return | False | True |
+| export | str | Export certain type of data |  | True |
+| external_axes | plt.Axes | Optional axes to display plot on | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

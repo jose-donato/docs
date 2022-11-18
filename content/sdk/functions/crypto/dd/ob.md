@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Returns orderbook for a coin in a given exchange
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L46)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_model.py#L46)]
 
 ```python
-def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> None
+def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> Dict[str, Any]
 ```
+
 ---
 
 ## Parameters
@@ -28,6 +29,7 @@ def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> None
 | symbol | str | coin symbol | None | False |
 | to_symbol | str | currency to compare coin against | None | False |
 
+
 ---
 
 ## Returns
@@ -35,11 +37,6 @@ def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, Any] | With bids and asks |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,11 +46,12 @@ def get_orderbook(exchange: str, symbol: str, to_symbol: str) -> None
 
 Plots order book for a coin in a given exchange
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L19)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/ccxt_view.py#L19)]
 
 ```python
-def display_order_book(exchange: str, symbol: str, to_symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_order_book(exchange: str, symbol: str, to_symbol: str, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -62,18 +60,15 @@ def display_order_book(exchange: str, symbol: str, to_symbol: str, export: str, 
 | ---- | ---- | ----------- | ------- | -------- |
 | exchange | str | exchange id | None | False |
 | symbol | str | coin symbol | None | False |
-| vs | str | currency to compare coin against | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| vs | str | currency to compare coin against | None | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

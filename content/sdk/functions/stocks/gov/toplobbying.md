@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Corporate lobbying details
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L358)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_model.py#L358)]
 
 ```python
-def get_top_lobbying() -> DataFrame
+def get_top_lobbying() -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -31,11 +32,6 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of top corporate lobbying |
-
----
-
-## Examples
-
 ---
 
 
@@ -45,31 +41,29 @@ This function does not take any parameters.
 
 Top lobbying tickers based on total spent
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L622)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/government/quiverquant_view.py#L622)]
 
 ```python
-def display_top_lobbying(limit: int, raw: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_top_lobbying(limit: int = 10, raw: bool = False, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of tickers to show | None | False |
-| raw | bool | Show raw data | None | False |
-| export |  | Format to export data | None | False |
+| limit | int | Number of tickers to show | 10 | True |
+| raw | bool | Show raw data | False | True |
+| export |  | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

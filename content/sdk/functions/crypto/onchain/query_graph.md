@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Helper methods for querying graphql api. [Source: https://bitquery.io/]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L159)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L159)]
 
 ```python
 def query_graph(url: str, query: str) -> dict
 ```
+
 ---
 
 ## Parameters
@@ -21,6 +22,7 @@ def query_graph(url: str, query: str) -> dict
 | url | str | Endpoint url | None | False |
 | query | str | Graphql query | None | False |
 
+
 ---
 
 ## Returns
@@ -28,10 +30,5 @@ def query_graph(url: str, query: str) -> dict
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary with response data |
-
----
-
-## Examples
-
 ---
 

@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Returns correlation for a given df
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L497)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_model.py#L497)]
 
 ```python
-def corr_df(data: pd.DataFrame) -> DataFrame
+def corr_df(data: pd.DataFrame) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def corr_df(data: pd.DataFrame) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | The df to produce statistics for | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def corr_df(data: pd.DataFrame) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The df with the new data |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def corr_df(data: pd.DataFrame) -> DataFrame
 
 Plot correlation coefficients for dataset features
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L170)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forecast/forecast_view.py#L170)]
 
 ```python
-def display_corr(dataset: pd.DataFrame, export: str, external_axes: Optional[List[axes]]) -> None
+def display_corr(dataset: pd.DataFrame, export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,18 +57,15 @@ def display_corr(dataset: pd.DataFrame, export: str, external_axes: Optional[Lis
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | dataset | pd.DataFrame | The dataset fore calculating correlation coefficients | None | False |
-| export | str | Format to export image | None | False |
-| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | False |
+| export | str | Format to export image |  | True |
+| external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

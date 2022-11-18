@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get ticker profile from FMP
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L56)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L56)]
 
 ```python
-def get_profile(symbol: str) -> DataFrame
+def get_profile(symbol: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -20,6 +21,7 @@ def get_profile(symbol: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
+
 ---
 
 ## Returns
@@ -27,10 +29,5 @@ def get_profile(symbol: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of ticker profile |
-
----
-
-## Examples
-
 ---
 

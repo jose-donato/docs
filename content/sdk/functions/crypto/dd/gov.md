@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Returns coin governance
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L567)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L567)]
 
 ```python
-def get_governance(symbol: str) -> None
+def get_governance(symbol: str) -> Tuple[str, pd.DataFrame]
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_governance(symbol: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check governance | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_governance(symbol: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | Tuple[str, pd.DataFrame] | Governance summary,<br/>Metric Value with governance details |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_governance(symbol: str) -> None
 
 Prints table showing coin governance
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L602)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L602)]
 
 ```python
-def display_governance(symbol: str, export: str) -> None
+def display_governance(symbol: str, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,17 +57,14 @@ def display_governance(symbol: str, export: str) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check coin governance | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

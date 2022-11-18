@@ -7,18 +7,20 @@ description: OpenBB SDK Function
 
 Get currently set API keys.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L233)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/keys_model.py#L233)]
 
 ```python
-def get_keys(show: bool) -> DataFrame
+def get_keys(show: bool = False) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| show | bool | Flag to choose whether to show actual keys or not.<br/>By default, False. | None | False |
+| show | bool | Flag to choose whether to show actual keys or not.<br/>By default, False. | False | True |
+
 
 ---
 
@@ -27,10 +29,5 @@ def get_keys(show: bool) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Currents keys |
-
----
-
-## Examples
-
 ---
 

@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get historical prices for all comparison stocks
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L31)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_model.py#L31)]
 
 ```python
-def get_historical(similar: List[str], start_date: str, candle_type: str) -> DataFrame
+def get_historical(similar: List[str], start_date: str = None, candle_type: str = "a") -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,8 +26,9 @@ def get_historical(similar: List[str], start_date: str, candle_type: str) -> Dat
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
-| candle_type | str | Candle variable to compare, by default "a" for Adjusted Close. Possible values are: o, h, l, c, a, v, r | None | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
+| candle_type | str | Candle variable to compare, by default "a" for Adjusted Close. Possible values are: o, h, l, c, a, v, r | a | True |
+
 
 ---
 
@@ -35,11 +37,6 @@ def get_historical(similar: List[str], start_date: str, candle_type: str) -> Dat
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing candle type variable for each ticker |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,11 +46,12 @@ def get_historical(similar: List[str], start_date: str, candle_type: str) -> Dat
 
 Display historical stock prices. [Source: Yahoo Finance]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L43)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/comparison_analysis/yahoo_finance_view.py#L43)]
 
 ```python
-def display_historical(similar: List[str], start_date: str, candle_type: str, normalize: bool, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_historical(similar: List[str], start_date: str = None, candle_type: str = "a", normalize: bool = True, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -61,21 +59,18 @@ def display_historical(similar: List[str], start_date: str, candle_type: str, no
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | similar | List[str] | List of similar tickers.<br/>Comparable companies can be accessed through<br/>finnhub_peers(), finviz_peers(), polygon_peers(). | None | False |
-| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | 1 | True |
-| candle_type | str | OHLCA column to use or R to use daily returns calculated from Adjusted Close, by default "a" for Adjusted Close | None | True |
-| normalize | bool | Boolean to normalize all stock prices using MinMax defaults True | s | True |
-| export | str | Format to export historical prices, by default "" | None | True |
+| start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
+| candle_type | str | OHLCA column to use or R to use daily returns calculated from Adjusted Close, by default "a" for Adjusted Close | a | True |
+| normalize | bool | Boolean to normalize all stock prices using MinMax defaults True | True | True |
+| export | str | Format to export historical prices, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get posts containing SPAC from top subreddits [Source: reddit].
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L456)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L456)]
 
 ```python
-def get_spac(limit: int) -> None
+def get_spac(limit: int = 5) -> Tuple[pd.DataFrame, dict, int]
 ```
+
 ---
 
 ## Parameters
@@ -20,6 +21,7 @@ def get_spac(limit: int) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | limit | int | Number of posts to get for each subreddit, by default 5 | 5 | True |
 
+
 ---
 
 ## Returns
@@ -27,10 +29,5 @@ def get_spac(limit: int) -> None
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, dict, int] | Dataframe of reddit submission,<br/>Dictionary of tickers and counts,<br/>Number of posts found. |
-
----
-
-## Examples
-
 ---
 

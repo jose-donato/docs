@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get 24 hr stats for the product. Volume is in base currency units.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L202)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_model.py#L202)]
 
 ```python
-def get_product_stats(symbol: str) -> DataFrame
+def get_product_stats(symbol: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_product_stats(symbol: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_product_stats(symbol: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | 24h stats for chosen trading pair |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_product_stats(symbol: str) -> DataFrame
 
 Prints table showing 24 hr stats for the product. Volume is in base currency units.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L99)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/coinbase_view.py#L99)]
 
 ```python
-def display_stats(symbol: str, export: str) -> None
+def display_stats(symbol: str, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,17 +57,14 @@ def display_stats(symbol: str, export: str) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

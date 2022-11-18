@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get historical cases and deaths by country.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L99)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_model.py#L105)]
 
 ```python
-def get_covid_ov(country: str, limit: int) -> DataFrame
+def get_covid_ov(country: str, limit: int = 100) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,7 +26,8 @@ def get_covid_ov(country: str, limit: int) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to get data for | None | False |
-| limit | int | Number of raw data to show | None | False |
+| limit | int | Number of raw data to show | 100 | True |
+
 
 ---
 
@@ -34,11 +36,6 @@ def get_covid_ov(country: str, limit: int) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical cases and deaths |
-
----
-
-## Examples
-
 ---
 
 
@@ -48,11 +45,12 @@ def get_covid_ov(country: str, limit: int) -> DataFrame
 
 Prints table showing historical cases and deaths by country.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L129)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/alternative/covid/covid_view.py#L131)]
 
 ```python
-def display_covid_ov(country: str, raw: bool, limit: int, export: str, plot: bool) -> None
+def display_covid_ov(country: str, raw: bool = False, limit: int = 10, export: str = "", plot: bool = True) -> None
 ```
+
 ---
 
 ## Parameters
@@ -60,20 +58,17 @@ def display_covid_ov(country: str, raw: bool, limit: int, export: str, plot: boo
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | country | str | Country to get data for | None | False |
-| raw | bool | Flag to display raw data | None | False |
-| limit | int | Number of raw data to show | None | False |
-| export | str | Format to export data | None | False |
-| plot | bool | Flag to display historical plot | None | False |
+| raw | bool | Flag to display raw data | False | True |
+| limit | int | Number of raw data to show | 10 | True |
+| export | str | Format to export data |  | True |
+| plot | bool | Flag to display historical plot | True | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

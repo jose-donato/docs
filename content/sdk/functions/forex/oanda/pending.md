@@ -13,18 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Request information on pending orders.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L421)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_model.py#L421)]
 
 ```python
-def pending_orders_request(accountID: str) -> None
+def pending_orders_request(accountID: str = "REPLACE_ME") -> Union[pd.DataFrame, bool]
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | cfg.OANDA_ACCOUNT | True |
+| accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
+
 
 ---
 
@@ -33,11 +35,6 @@ def pending_orders_request(accountID: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | Union[pd.DataFrame, bool] | Pending orders data or False |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def pending_orders_request(accountID: str) -> None
 
 Get information about pending orders.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L233)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/forex/oanda/oanda_view.py#L233)]
 
 ```python
 def get_pending_orders(accountID: str) -> None
 ```
+
 ---
 
 ## Parameters
@@ -60,15 +58,12 @@ def get_pending_orders(accountID: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | accountID | str | Oanda user account ID | None | False |
 
+
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

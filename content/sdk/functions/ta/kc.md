@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Keltner Channels
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L88)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_model.py#L88)]
 
 ```python
-def kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int) -> DataFrame
+def kc(data: pd.DataFrame, window: int = 20, scalar: float = 2, mamode: str = "ema", offset: int = 0) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,10 +26,11 @@ def kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int)
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| window | int | Length of window | None | False |
-| scalar | float | Scalar value | None | False |
-| mamode | str | Type of filter | None | False |
-| offset | int | Offset value | None | False |
+| window | int | Length of window | 20 | True |
+| scalar | float | Scalar value | 2 | True |
+| mamode | str | Type of filter | ema | True |
+| offset | int | Offset value | 0 | True |
+
 
 ---
 
@@ -37,11 +39,6 @@ def kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int)
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of rolling kc |
-
----
-
-## Examples
-
 ---
 
 
@@ -51,11 +48,12 @@ def kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int)
 
 Plots Keltner Channels Indicator
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L194)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volatility_view.py#L194)]
 
 ```python
-def view_kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset: int, symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def view_kc(data: pd.DataFrame, window: int = 20, scalar: float = 2, mamode: str = "ema", offset: int = 0, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -63,23 +61,20 @@ def view_kc(data: pd.DataFrame, window: int, scalar: float, mamode: str, offset:
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| window | int | Length of window | None | False |
-| scalar | float | Scalar value | None | False |
-| mamode | str | Type of filter | None | False |
-| offset | int | Offset value | None | False |
-| symbol | str | Ticker symbol | None | False |
-| export | str | Format to export data | None | False |
+| window | int | Length of window | 20 | True |
+| scalar | float | Scalar value | 2 | True |
+| mamode | str | Type of filter | ema | True |
+| offset | int | Offset value | 0 | True |
+| symbol | str | Ticker symbol |  | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

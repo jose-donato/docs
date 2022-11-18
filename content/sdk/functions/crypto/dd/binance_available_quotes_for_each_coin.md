@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Helper methods that for every coin available on Binance add all quote assets. [Source: Binance]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_model.py#L77)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/binance_model.py#L77)]
 
 ```python
 def get_binance_available_quotes_for_each_coin() -> dict
 ```
+
 ---
 
 ## Parameters
@@ -25,10 +26,5 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | dict | All quote assets for given coin<br/>{'ETH' : ['BTC', 'USDT' ...], 'UNI' : ['ETH', 'BTC','BUSD', ...] |
-
----
-
-## Examples
-
 ---
 

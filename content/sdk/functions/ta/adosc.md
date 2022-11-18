@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Calculate AD oscillator technical indicator
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L46)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_model.py#L46)]
 
 ```python
-def adosc(data: pd.DataFrame, use_open: bool, fast: int, slow: int) -> DataFrame
+def adosc(data: pd.DataFrame, use_open: bool = False, fast: int = 3, slow: int = 10) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,9 +26,10 @@ def adosc(data: pd.DataFrame, use_open: bool, fast: int, slow: int) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of OHLC prices | None | False |
-| use_open | bool | Whether to use open prices | None | False |
-| fast | int | Fast value | None | False |
-| slow | int | Slow value | None | False |
+| use_open | bool | Whether to use open prices | False | True |
+| fast | int | Fast value | 3 | True |
+| slow | int | Slow value | 10 | True |
+
 
 ---
 
@@ -36,11 +38,6 @@ def adosc(data: pd.DataFrame, use_open: bool, fast: int, slow: int) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with technical indicator |
-
----
-
-## Examples
-
 ---
 
 
@@ -50,11 +47,12 @@ def adosc(data: pd.DataFrame, use_open: bool, fast: int, slow: int) -> DataFrame
 
 Plots AD Osc Indicator
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L141)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/technical_analysis/volume_view.py#L141)]
 
 ```python
-def display_adosc(data: pd.DataFrame, fast: int, slow: int, use_open: bool, symbol: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_adosc(data: pd.DataFrame, fast: int = 3, slow: int = 10, use_open: bool = False, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -62,22 +60,19 @@ def display_adosc(data: pd.DataFrame, fast: int, slow: int, use_open: bool, symb
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of ohlc prices | None | False |
-| use_open | bool | Whether to use open prices in calculation | None | False |
-| fast | int | Length of fast window | None | False |
-| slow | int | Length of slow window | None | False |
-| symbol | str | Stock ticker | None | False |
-| export | str | Format to export data | None | False |
+| use_open | bool | Whether to use open prices in calculation | False | True |
+| fast | int | Length of fast window | 3 | True |
+| slow | int | Length of slow window | 10 | True |
+| symbol | str | Stock ticker |  | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (3 axes are expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

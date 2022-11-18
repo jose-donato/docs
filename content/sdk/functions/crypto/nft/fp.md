@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get nft collections [Source: https://nftpricefloor.com/]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L46)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_model.py#L46)]
 
 ```python
-def get_floor_price(slug: Any) -> DataFrame
+def get_floor_price(slug: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_floor_price(slug: Any) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | slug | str | nft collection slug | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_floor_price(slug: Any) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | nft collections |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_floor_price(slug: Any) -> DataFrame
 
 Display NFT collection floor price over time. [Source: https://nftpricefloor.com/]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_view.py#L88)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/nft/nftpricefloor_view.py#L88)]
 
 ```python
-def display_floor_price(slug: str, limit: int, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]], raw: bool) -> None
+def display_floor_price(slug: str, limit: int = 10, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None, raw: bool = False) -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,20 +57,17 @@ def display_floor_price(slug: str, limit: int, export: str, external_axes: Optio
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | slug | str | NFT collection slug | None | False |
-| raw | bool | Flag to display raw data | None | False |
-| limit | int | Number of raw data to show | None | False |
-| export | str | Format to export data | None | False |
+| raw | bool | Flag to display raw data | False | True |
+| limit | int | Number of raw data to show | 10 | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

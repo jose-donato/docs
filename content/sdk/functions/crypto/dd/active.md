@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Returns active addresses of a certain symbol
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L310)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_model.py#L310)]
 
 ```python
-def get_active_addresses(symbol: str, interval: str, start_date: str, end_date: str) -> DataFrame
+def get_active_addresses(symbol: str, interval: str = "24h", start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,9 +26,10 @@ def get_active_addresses(symbol: str, interval: str, start_date: str, end_date: 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
-| interval | str | Interval frequency (e.g., 24h) | None | False |
-| start_date | str | Initial date, format YYYY-MM-DD | None | False |
-| end_date | str | Final date, format YYYY-MM-DD | None | False |
+| interval | str | Interval frequency (e.g., 24h) | 24h | True |
+| start_date | str | Initial date, format YYYY-MM-DD | 2010-01-01 | True |
+| end_date | str | Final date, format YYYY-MM-DD | None | True |
+
 
 ---
 
@@ -36,11 +38,6 @@ def get_active_addresses(symbol: str, interval: str, start_date: str, end_date: 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | active addresses over time |
-
----
-
-## Examples
-
 ---
 
 
@@ -50,11 +47,12 @@ def get_active_addresses(symbol: str, interval: str, start_date: str, end_date: 
 
 Plots active addresses of a certain symbol over time
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L32)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/glassnode_view.py#L32)]
 
 ```python
-def display_active_addresses(symbol: str, start_date: str, end_date: str, interval: str, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_active_addresses(symbol: str, start_date: str = "2010-01-01", end_date: str = None, interval: str = "24h", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -62,21 +60,18 @@ def display_active_addresses(symbol: str, start_date: str, end_date: str, interv
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Asset to search active addresses (e.g., BTC) | None | False |
-| start_date | str | Initial date, format YYYY-MM-DD | None | False |
-| end_date | str | Final date, format YYYY-MM-DD | None | False |
-| interval | str | Interval frequency (possible values are: 24h, 1w, 1month) | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| start_date | str | Initial date, format YYYY-MM-DD | 2010-01-01 | True |
+| end_date | str | Final date, format YYYY-MM-DD | None | True |
+| interval | str | Interval frequency (possible values are: 24h, 1w, 1month) | 24h | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -13,20 +13,22 @@ import TabItem from '@theme/TabItem';
 
 Get DeFi Vaults Information. DeFi Vaults are pools of funds with an assigned strategy which main goal is to
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/coindix_model.py#L107)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/coindix_model.py#L107)]
 
 ```python
-def get_defi_vaults(chain: Optional[str], protocol: Optional[str], kind: Optional[str], ascend: bool, sortby: str) -> DataFrame
+def get_defi_vaults(chain: Optional[str] = None, protocol: Optional[str] = None, kind: Optional[str] = None, ascend: bool = True, sortby: str = "apy") -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| chain | str | Blockchain - one from list [<br/>'ethereum', 'polygon', 'avalanche', 'bsc', 'terra', 'fantom',<br/>'moonriver', 'celo', 'heco', 'okex', 'cronos', 'arbitrum', 'eth',<br/>'harmony', 'fuse', 'defichain', 'solana', 'optimism'<br/>] | None | False |
-| protocol | str | DeFi protocol - one from list: [<br/>'aave', 'acryptos', 'alpaca', 'anchor', 'autofarm', 'balancer', 'bancor',<br/>'beefy', 'belt', 'compound', 'convex', 'cream', 'curve', 'defichain', 'geist',<br/>'lido', 'liquity', 'mirror', 'pancakeswap', 'raydium', 'sushi', 'tarot', 'traderjoe',<br/>'tulip', 'ubeswap', 'uniswap', 'venus', 'yearn'<br/>] | None | False |
-| kind | str | Kind/type of vault - one from list: ['lp','single','noimploss','stable'] | None | False |
+| chain | str | Blockchain - one from list [<br/>'ethereum', 'polygon', 'avalanche', 'bsc', 'terra', 'fantom',<br/>'moonriver', 'celo', 'heco', 'okex', 'cronos', 'arbitrum', 'eth',<br/>'harmony', 'fuse', 'defichain', 'solana', 'optimism'<br/>] | None | True |
+| protocol | str | DeFi protocol - one from list: [<br/>'aave', 'acryptos', 'alpaca', 'anchor', 'autofarm', 'balancer', 'bancor',<br/>'beefy', 'belt', 'compound', 'convex', 'cream', 'curve', 'defichain', 'geist',<br/>'lido', 'liquity', 'mirror', 'pancakeswap', 'raydium', 'sushi', 'tarot', 'traderjoe',<br/>'tulip', 'ubeswap', 'uniswap', 'venus', 'yearn'<br/>] | None | True |
+| kind | str | Kind/type of vault - one from list: ['lp','single','noimploss','stable'] | None | True |
+
 
 ---
 
@@ -35,11 +37,6 @@ def get_defi_vaults(chain: Optional[str], protocol: Optional[str], kind: Optiona
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Top 100 DeFi Vaults for given chain/protocol sorted by APY. |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,35 +46,33 @@ def get_defi_vaults(chain: Optional[str], protocol: Optional[str], kind: Optiona
 
 Prints table showing Top DeFi Vaults - pools of funds with an assigned strategy which main goal is to
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/coindix_view.py#L19)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/defi/coindix_view.py#L19)]
 
 ```python
-def display_defi_vaults(chain: Optional[str], protocol: Optional[str], kind: Optional[str], limit: int, sortby: str, ascend: bool, link: bool, export: str) -> None
+def display_defi_vaults(chain: Optional[str] = None, protocol: Optional[str] = None, kind: Optional[str] = None, limit: int = 10, sortby: str = "apy", ascend: bool = True, link: bool = False, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| chain | str | Blockchain - one from list [<br/>'ethereum', 'polygon', 'avalanche', 'bsc', 'terra', 'fantom',<br/>'moonriver', 'celo', 'heco', 'okex', 'cronos', 'arbitrum', 'eth',<br/>'harmony', 'fuse', 'defichain', 'solana', 'optimism'<br/>] | None | False |
-| protocol | str | DeFi protocol - one from list: [<br/>'aave', 'acryptos', 'alpaca', 'anchor', 'autofarm', 'balancer', 'bancor',<br/>'beefy', 'belt', 'compound', 'convex', 'cream', 'curve', 'defichain', 'geist',<br/>'lido', 'liquity', 'mirror', 'pancakeswap', 'raydium', 'sushi', 'tarot', 'traderjoe',<br/>'tulip', 'ubeswap', 'uniswap', 'venus', 'yearn'<br/>] | None | False |
-| kind | str | Kind/type of vault - one from list: ['lp','single','noimploss','stable'] | None | False |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data descending | None | False |
-| link | bool | Flag to show links | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| chain | str | Blockchain - one from list [<br/>'ethereum', 'polygon', 'avalanche', 'bsc', 'terra', 'fantom',<br/>'moonriver', 'celo', 'heco', 'okex', 'cronos', 'arbitrum', 'eth',<br/>'harmony', 'fuse', 'defichain', 'solana', 'optimism'<br/>] | None | True |
+| protocol | str | DeFi protocol - one from list: [<br/>'aave', 'acryptos', 'alpaca', 'anchor', 'autofarm', 'balancer', 'bancor',<br/>'beefy', 'belt', 'compound', 'convex', 'cream', 'curve', 'defichain', 'geist',<br/>'lido', 'liquity', 'mirror', 'pancakeswap', 'raydium', 'sushi', 'tarot', 'traderjoe',<br/>'tulip', 'ubeswap', 'uniswap', 'venus', 'yearn'<br/>] | None | True |
+| kind | str | Kind/type of vault - one from list: ['lp','single','noimploss','stable'] | None | True |
+| limit | int | Number of records to display | 10 | True |
+| sortby | str | Key by which to sort data | apy | True |
+| ascend | bool | Flag to sort data descending | True | True |
+| link | bool | Flag to show links | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

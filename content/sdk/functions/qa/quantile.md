@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Overlay Median & Quantile
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L72)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_model.py#L72)]
 
 ```python
-def get_quantile(data: pd.DataFrame, window: int, quantile_pct: float) -> None
+def get_quantile(data: pd.DataFrame, window: int = 14, quantile_pct: float = 0.5) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
+
 ---
 
 ## Parameters
@@ -25,8 +26,9 @@ def get_quantile(data: pd.DataFrame, window: int, quantile_pct: float) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe of targeted data | None | False |
-| window | int | Length of window | None | False |
-| quantile_pct | float | Quantile to display | None | False |
+| window | int | Length of window | 14 | True |
+| quantile_pct | float | Quantile to display | 0.5 | True |
+
 
 ---
 
@@ -35,11 +37,6 @@ def get_quantile(data: pd.DataFrame, window: int, quantile_pct: float) -> None
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dataframe of rolling median prices over window,<br/>Dataframe of rolling quantile prices over window |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,11 +46,12 @@ def get_quantile(data: pd.DataFrame, window: int, quantile_pct: float) -> None
 
 Plots rolling quantile
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L245)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/quantitative_analysis/rolling_view.py#L245)]
 
 ```python
-def display_quantile(data: pd.DataFrame, target: str, symbol: str, window: int, quantile: float, export: str, external_axes: Optional[List[matplotlib.axes._axes.Axes]]) -> None
+def display_quantile(data: pd.DataFrame, target: str, symbol: str = "", window: int = 14, quantile: float = 0.5, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
 
 ## Parameters
@@ -62,21 +60,18 @@ def display_quantile(data: pd.DataFrame, target: str, symbol: str, window: int, 
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.DataFrame | Dataframe | None | False |
 | target | str | Column in data to look at | None | False |
-| symbol | str | Stock ticker | None | False |
-| window | int | Length of window | None | False |
-| quantile | float | Quantile to get | None | False |
-| export | str | Format to export data | None | False |
+| symbol | str | Stock ticker |  | True |
+| window | int | Length of window | 14 | True |
+| quantile | float | Quantile to get | 0.5 | True |
+| export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

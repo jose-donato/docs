@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Scrape data for global currencies
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L232)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/economy/wsj_model.py#L242)]
 
 ```python
-def global_currencies() -> DataFrame
+def global_currencies() -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,10 +26,5 @@ This function does not take any parameters.
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing name, price, net change and percent change |
-
----
-
-## Examples
-
 ---
 

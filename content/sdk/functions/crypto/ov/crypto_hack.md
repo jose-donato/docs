@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get crypto hack
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L139)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/rekt_model.py#L139)]
 
 ```python
-def get_crypto_hack(slug: str) -> None
+def get_crypto_hack(slug: str) -> Optional[str]
 ```
+
 ---
 
 ## Parameters
@@ -20,6 +21,7 @@ def get_crypto_hack(slug: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | slug | str | slug of crypto hack | None | False |
 
+
 ---
 
 ## Returns
@@ -27,10 +29,5 @@ def get_crypto_hack(slug: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | Union[str, None] | Crypto hack |
-
----
-
-## Examples
-
 ---
 

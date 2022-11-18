@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Returns coin investors
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L494)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_model.py#L494)]
 
 ```python
-def get_investors(symbol: str) -> None
+def get_investors(symbol: str) -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_investors(symbol: str) -> None
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check investors | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_investors(symbol: str) -> None
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Individuals,<br/>Organizations |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_investors(symbol: str) -> None
 
 Prints table showing coin investors
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L510)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/due_diligence/messari_view.py#L510)]
 
 ```python
-def display_investors(symbol: str, export: str) -> None
+def display_investors(symbol: str, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,17 +57,14 @@ def display_investors(symbol: str, export: str) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check coin investors | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

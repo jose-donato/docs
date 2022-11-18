@@ -13,19 +13,21 @@ import TabItem from '@theme/TabItem';
 
 Get list of financial platforms from CoinGecko API [Source: CoinGecko]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L266)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_model.py#L266)]
 
 ```python
-def get_financial_platforms(sortby: str, ascend: bool) -> DataFrame
+def get_financial_platforms(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
+| sortby | str | Key by which to sort data | Name | True |
+| ascend | bool | Flag to sort data ascending | True | True |
+
 
 ---
 
@@ -34,11 +36,6 @@ def get_financial_platforms(sortby: str, ascend: bool) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rank, Name, Category, Centralized, Url |
-
----
-
-## Examples
-
 ---
 
 
@@ -48,31 +45,29 @@ def get_financial_platforms(sortby: str, ascend: bool) -> DataFrame
 
 Shows list of financial platforms. [Source: CoinGecko]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L549)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/pycoingecko_view.py#L549)]
 
 ```python
-def display_platforms(sortby: str, ascend: bool, limit: int, export: str) -> None
+def display_platforms(sortby: str = "Name", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of records to display | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of records to display | 15 | True |
+| sortby | str | Key by which to sort data | Name | True |
+| ascend | bool | Flag to sort data ascending | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

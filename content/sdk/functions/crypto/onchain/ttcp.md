@@ -13,22 +13,24 @@ import TabItem from '@theme/TabItem';
 
 Get most traded crypto pairs on given decentralized exchange in chosen time period.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L658)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_model.py#L658)]
 
 ```python
-def get_most_traded_pairs(network: str, exchange: str, limit: int, sortby: str, ascend: bool) -> DataFrame
+def get_most_traded_pairs(network: str = "ethereum", exchange: str = "Uniswap", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| network | str | EVM network. One from list: bsc (binance smart chain), ethereum or matic | None | False |
-| exchange | st | Decentralized exchange name | None | False |
-| limit | int | Number of days taken into calculation account. | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
+| network | str | EVM network. One from list: bsc (binance smart chain), ethereum or matic | ethereum | True |
+| exchange | st | Decentralized exchange name | Uniswap | True |
+| limit | int | Number of days taken into calculation account. | 90 | True |
+| sortby | str | Key by which to sort data | tradeAmount | True |
+| ascend | bool | Flag to sort data ascending | True | True |
+
 
 ---
 
@@ -37,11 +39,6 @@ def get_most_traded_pairs(network: str, exchange: str, limit: int, sortby: str, 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most traded crypto pairs on given decentralized exchange in chosen time period. |
-
----
-
-## Examples
-
 ---
 
 
@@ -51,22 +48,24 @@ def get_most_traded_pairs(network: str, exchange: str, limit: int, sortby: str, 
 
 Prints table showing most traded crypto pairs on given decentralized exchange in chosen time period.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L286)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/bitquery_view.py#L286)]
 
 ```python
-def display_most_traded_pairs(exchange: Any, days: int, limit: int, sortby: str, ascend: bool, export: str) -> None
+def display_most_traded_pairs(exchange: str = "Uniswap", days: int = 10, limit: int = 10, sortby: str = "tradeAmount", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| exchange |  | Decentralized exchange name | None | False |
-| days |  | Number of days taken into calculation account. | None | False |
-| sortby | str | Key by which to sort data | None | False |
-| ascend | bool | Flag to sort data ascending | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| exchange | str | Decentralized exchange name | Uniswap | True |
+| days | int | Number of days taken into calculation account. | 10 | True |
+| sortby | str | Key by which to sort data | tradeAmount | True |
+| ascend | bool | Flag to sort data ascending | True | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
@@ -75,11 +74,6 @@ def display_most_traded_pairs(exchange: Any, days: int, limit: int, sortby: str,
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most traded crypto pairs on given decentralized exchange in chosen time period. |
-
----
-
-## Examples
-
 ---
 
 

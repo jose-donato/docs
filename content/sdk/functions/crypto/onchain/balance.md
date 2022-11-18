@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get info about tokens on you ethereum blockchain balance. Eth balance, balance of all tokens which
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L196)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_model.py#L196)]
 
 ```python
-def get_address_info(address: str, sortby: str, ascend: bool) -> DataFrame
+def get_address_info(address: str, sortby: str = "index", ascend: bool = False) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,8 +26,9 @@ def get_address_info(address: str, sortby: str, ascend: bool) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Blockchain balance e.g. 0x3cD751E6b0078Be393132286c442345e5DC49699 | None | False |
-| sortby | str | Key to sort by. | None | False |
-| ascend | str | Sort in descending order. | None | False |
+| sortby | str | Key to sort by. | index | True |
+| ascend | str | Sort in descending order. | False | True |
+
 
 ---
 
@@ -35,11 +37,6 @@ def get_address_info(address: str, sortby: str, ascend: bool) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with list of tokens and their balances. |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,11 +46,12 @@ def get_address_info(address: str, sortby: str, ascend: bool) -> DataFrame
 
 Display info about tokens for given ethereum blockchain balance e.g. ETH balance,
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L21)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/onchain/ethplorer_view.py#L21)]
 
 ```python
-def display_address_info(address: str, limit: int, sortby: str, ascend: bool, export: str) -> None
+def display_address_info(address: str, limit: int = 15, sortby: str = "index", ascend: bool = False, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -61,20 +59,17 @@ def display_address_info(address: str, limit: int, sortby: str, ascend: bool, ex
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Ethereum balance. | None | False |
-| limit | int | Limit of transactions. Maximum 100 | None | False |
-| sortby | str | Key to sort by. | None | False |
-| ascend | str | Sort in descending order. | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Limit of transactions. Maximum 100 | 15 | True |
+| sortby | str | Key to sort by. | index | True |
+| ascend | str | Sort in descending order. | False | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get tradingview recommendation based on technical indicators
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_model.py#L56)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_model.py#L56)]
 
 ```python
-def get_tradingview_recommendation(symbol: str, screener: str, exchange: str, interval: str) -> DataFrame
+def get_tradingview_recommendation(symbol: str, screener: str = "america", exchange: str = "", interval: str = "") -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -25,9 +26,10 @@ def get_tradingview_recommendation(symbol: str, screener: str, exchange: str, in
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get the recommendation from tradingview based on technical indicators | None | False |
-| screener | str | Screener based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html | None | False |
-| exchange | str | Exchange based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html | None | False |
-| interval | str | Interval time to check technical indicators and correspondent recommendation | None | False |
+| screener | str | Screener based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html | america | True |
+| exchange | str | Exchange based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html |  | True |
+| interval | str | Interval time to check technical indicators and correspondent recommendation |  | True |
+
 
 ---
 
@@ -36,11 +38,6 @@ def get_tradingview_recommendation(symbol: str, screener: str, exchange: str, in
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of tradingview recommendations based on technical indicators |
-
----
-
-## Examples
-
 ---
 
 
@@ -50,11 +47,12 @@ def get_tradingview_recommendation(symbol: str, screener: str, exchange: str, in
 
 Print tradingview recommendation based on technical indicators
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_view.py#L17)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/technical_analysis/tradingview_view.py#L17)]
 
 ```python
-def print_recommendation(symbol: str, screener: str, exchange: str, interval: str, export: str) -> None
+def print_recommendation(symbol: str, screener: str = "america", exchange: str = "", interval: str = "", export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -62,20 +60,17 @@ def print_recommendation(symbol: str, screener: str, exchange: str, interval: st
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Ticker symbol to get tradingview recommendation based on technical indicators | None | False |
-| screener | str | Screener based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html | None | False |
-| exchange | str | Exchange based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html | None | False |
-| interval | str | Interval time to check technical indicators and correspondent recommendation | None | False |
-| export | str | Format of export file | None | False |
+| screener | str | Screener based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html | america | True |
+| exchange | str | Exchange based on tradingview docs https://python-tradingview-ta.readthedocs.io/en/latest/usage.html |  | True |
+| interval | str | Interval time to check technical indicators and correspondent recommendation |  | True |
+| export | str | Format of export file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -13,18 +13,20 @@ import TabItem from '@theme/TabItem';
 
 Scrapes top coins withdrawal fees
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L120)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_model.py#L120)]
 
 ```python
-def get_overall_withdrawal_fees(limit: int) -> DataFrame
+def get_overall_withdrawal_fees(limit: int = 100) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of coins to search, by default n=100, one page has 100 coins, so 1 page is scraped. | n | False |
+| limit | int | Number of coins to search, by default n=100, one page has 100 coins, so 1 page is scraped. | 100 | True |
+
 
 ---
 
@@ -33,11 +35,6 @@ def get_overall_withdrawal_fees(limit: int) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Coin, Lowest, Average, Median, Highest, Exchanges Compared |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,29 +44,27 @@ def get_overall_withdrawal_fees(limit: int) -> DataFrame
 
 Top coins withdrawal fees
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L18)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/cryptocurrency/overview/withdrawalfees_view.py#L18)]
 
 ```python
-def display_overall_withdrawal_fees(limit: int, export: str) -> None
+def display_overall_withdrawal_fees(limit: int = 15, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
-| limit | int | Number of coins to search | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of coins to search | 15 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

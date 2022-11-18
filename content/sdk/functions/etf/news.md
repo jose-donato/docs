@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get news for a given term. [Source: NewsAPI]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/newsapi_model.py#L18)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/newsapi_model.py#L18)]
 
 ```python
-def get_news(query: str, limit: int, start_date: str, show_newest: bool, sources: str) -> None
+def get_news(query: str, limit: int = 10, start_date: str = None, show_newest: bool = True, sources: str = "") -> List[Tuple[pd.DataFrame, Any]]
 ```
+
 ---
 
 ## Parameters
@@ -25,9 +26,10 @@ def get_news(query: str, limit: int, start_date: str, show_newest: bool, sources
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | query | str | term to search on the news articles | None | False |
-| start_date | str | date to start searching articles from formatted YYYY-MM-DD | None | False |
-| show_newest | bool | flag to show newest articles first | None | False |
-| sources | str | sources to exclusively show news from (comma separated) | None | False |
+| start_date | str | date to start searching articles from formatted YYYY-MM-DD | None | True |
+| show_newest | bool | flag to show newest articles first | True | True |
+| sources | str | sources to exclusively show news from (comma separated) |  | True |
+
 
 ---
 
@@ -36,11 +38,6 @@ def get_news(query: str, limit: int, start_date: str, show_newest: bool, sources
 | Type | Description |
 | ---- | ----------- |
 | List[Tuple[pd.DataFrame, dict]] | List of tuples containing news df in first index,<br/>dict containing title of news df. |
-
----
-
-## Examples
-
 ---
 
 
@@ -50,11 +47,12 @@ def get_news(query: str, limit: int, start_date: str, show_newest: bool, sources
 
 Prints table showing news for a given term. [Source: NewsAPI]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/newsapi_view.py#L19)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/newsapi_view.py#L19)]
 
 ```python
-def display_news(query: str, limit: int, start_date: str, show_newest: bool, sources: str, export: str) -> None
+def display_news(query: str, limit: int = 3, start_date: str = None, show_newest: bool = True, sources: str = "", export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -62,21 +60,18 @@ def display_news(query: str, limit: int, start_date: str, show_newest: bool, sou
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | query | str | term to search on the news articles | None | False |
-| start_date | str | date to start searching articles from formatted YYYY-MM-DD | None | False |
-| limit | int | number of articles to display | None | False |
-| show_newest | bool | flag to show newest articles first | None | False |
-| sources | str | sources to exclusively show news from | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| start_date | str | date to start searching articles from formatted YYYY-MM-DD | None | True |
+| limit | int | number of articles to display | 3 | True |
+| show_newest | bool | flag to show newest articles first | True | True |
+| sources | str | sources to exclusively show news from |  | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Calculate granger tests
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L210)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_model.py#L210)]
 
 ```python
-def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Series, lags: int) -> dict
+def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Series, lags: int = 3) -> dict
 ```
+
 ---
 
 ## Parameters
@@ -26,7 +27,8 @@ def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Se
 | ---- | ---- | ----------- | ------- | -------- |
 | dependent_series | Series | The series you want to test Granger Causality for. | None | False |
 | independent_series | Series | The series that you want to test whether it Granger-causes time_series_y | None | False |
-| lags | int | The amount of lags for the Granger test. By default, this is set to 3. | None | False |
+| lags | int | The amount of lags for the Granger test. By default, this is set to 3. | 3 | True |
+
 
 ---
 
@@ -35,11 +37,6 @@ def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Se
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary containing results of Granger test |
-
----
-
-## Examples
-
 ---
 
 
@@ -49,11 +46,12 @@ def get_granger_causality(dependent_series: pd.Series, independent_series: pd.Se
 
 Show granger tests
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L247)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/econometrics/econometrics_view.py#L247)]
 
 ```python
-def display_granger(dependent_series: pd.Series, independent_series: pd.Series, lags: int, confidence_level: float, export: str) -> None
+def display_granger(dependent_series: pd.Series, independent_series: pd.Series, lags: int = 3, confidence_level: float = 0.05, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -62,19 +60,16 @@ def display_granger(dependent_series: pd.Series, independent_series: pd.Series, 
 | ---- | ---- | ----------- | ------- | -------- |
 | dependent_series | Series | The series you want to test Granger Causality for. | None | False |
 | independent_series | Series | The series that you want to test whether it Granger-causes dependent_series | None | False |
-| lags | int | The amount of lags for the Granger test. By default, this is set to 3. | None | False |
-| confidence_level | float | The confidence level you wish to use. By default, this is set to 0.05. | None | False |
-| export | str | Format to export data | None | False |
+| lags | int | The amount of lags for the Granger test. By default, this is set to 3. | 3 | True |
+| confidence_level | float | The confidence level you wish to use. By default, this is set to 0.05. | 0.05 | True |
+| export | str | Format to export data |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

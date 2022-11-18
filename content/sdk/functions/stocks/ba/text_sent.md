@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Find the sentiment of a post and related comments.
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L1049)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/common/behavioural_analysis/reddit_model.py#L1049)]
 
 ```python
 def get_sentiment(post_data: List[str]) -> float
 ```
+
 ---
 
 ## Parameters
@@ -20,6 +21,7 @@ def get_sentiment(post_data: List[str]) -> float
 | ---- | ---- | ----------- | ------- | -------- |
 | post_data | list[str] | A post and its comments in string form | None | False |
 
+
 ---
 
 ## Returns
@@ -27,10 +29,5 @@ def get_sentiment(post_data: List[str]) -> float
 | Type | Description |
 | ---- | ----------- |
 | float | A number in the range [-1, 1] representing sentiment |
-
----
-
-## Examples
-
 ---
 

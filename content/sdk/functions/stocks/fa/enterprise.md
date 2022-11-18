@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Financial Modeling Prep ticker enterprise
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L131)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/fmp_model.py#L131)]
 
 ```python
-def get_enterprise(symbol: str, limit: int, quarterly: bool) -> DataFrame
+def get_enterprise(symbol: str, limit: int = 5, quarterly: bool = False) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -19,8 +20,9 @@ def get_enterprise(symbol: str, limit: int, quarterly: bool) -> DataFrame
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Fundamental analysis ticker symbol | None | False |
-| limit | int | Number to get | None | False |
-| quarterly | bool | Flag to get quarterly data | None | False |
+| limit | int | Number to get | 5 | True |
+| quarterly | bool | Flag to get quarterly data | False | True |
+
 
 ---
 
@@ -29,10 +31,5 @@ def get_enterprise(symbol: str, limit: int, quarterly: bool) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of enterprise information |
-
----
-
-## Examples
-
 ---
 

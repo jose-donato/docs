@@ -13,11 +13,12 @@ import TabItem from '@theme/TabItem';
 
 Get SEC filings for a given stock ticker. [Source: Market Watch]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_model.py#L20)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_model.py#L20)]
 
 ```python
-def get_sec_filings(symbol: str) -> DataFrame
+def get_sec_filings(symbol: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -26,6 +27,7 @@ def get_sec_filings(symbol: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
 
+
 ---
 
 ## Returns
@@ -33,11 +35,6 @@ def get_sec_filings(symbol: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | SEC filings data |
-
----
-
-## Examples
-
 ---
 
 
@@ -47,11 +44,12 @@ def get_sec_filings(symbol: str) -> DataFrame
 
 Display SEC filings for a given stock ticker. [Source: Market Watch]
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_view.py#L15)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/due_diligence/marketwatch_view.py#L15)]
 
 ```python
-def sec_filings(symbol: str, limit: int, export: str) -> None
+def sec_filings(symbol: str, limit: int = 5, export: str = "") -> None
 ```
+
 ---
 
 ## Parameters
@@ -59,18 +57,15 @@ def sec_filings(symbol: str, limit: int, export: str) -> None
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Stock ticker symbol | None | False |
-| limit | int | Number of ratings to display | None | False |
-| export | str | Export dataframe data to csv,json,xlsx file | None | False |
+| limit | int | Number of ratings to display | 5 | True |
+| export | str | Export dataframe data to csv,json,xlsx file |  | True |
+
 
 ---
 
 ## Returns
 
 This function does not return anything
-
----
-
-## Examples
 
 ---
 

@@ -7,11 +7,12 @@ description: OpenBB SDK Function
 
 Get 5 year monthly historical performance for a ticker with dividends filtered
 
-Source Code: [link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L278)
+Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/openbb_terminal/stocks/fundamental_analysis/dcf_model.py#L278)]
 
 ```python
-def get_historical_5(symbol: str) -> DataFrame
+def get_historical_5(symbol: str) -> pd.DataFrame
 ```
+
 ---
 
 ## Parameters
@@ -20,6 +21,7 @@ def get_historical_5(symbol: str) -> DataFrame
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | The ticker symbol to be analyzed | None | False |
 
+
 ---
 
 ## Returns
@@ -27,10 +29,5 @@ def get_historical_5(symbol: str) -> DataFrame
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Historical data |
-
----
-
-## Examples
-
 ---
 
