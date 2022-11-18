@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def search(query: str = "", country: str = "", sector: str = "", industry: str = "", exchange_country: str = "", limit: int = 0, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -25,9 +27,12 @@ def search(query: str = "", country: str = "", sector: str = "", industry: str =
 | limit | int | The limit of companies shown. | 0 | True |
 | export | str | Export data |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+

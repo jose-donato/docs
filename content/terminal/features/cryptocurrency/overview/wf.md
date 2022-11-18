@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Display top coins withdrawal fees [Source: https://withdrawalfees.com/]
 
-### Usage 
+### Usage
+
 ```python
 usage: wf [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit number of coins to display withdrawal fees. Default 10 | 10 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -52,4 +53,6 @@ Withdrawal fees on exchanges:
 │ Avalanche    │ FREE         │ $1.77   │ $0.88  │ $8.83 (0.1 AVAX)     │ 15                 │
 └──────────────┴──────────────┴─────────┴────────┴──────────────────────┴────────────────────┘
 ```
+
+---
 

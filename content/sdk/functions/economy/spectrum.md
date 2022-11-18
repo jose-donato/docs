@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_spectrum(group: str = "sector", export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,9 +22,12 @@ def display_spectrum(group: str = "sector", export: str = "") -> None
 | group | str | Group by category. Available groups can be accessed through get_groups(). | sector | True |
 | export | str | Format to export data |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+

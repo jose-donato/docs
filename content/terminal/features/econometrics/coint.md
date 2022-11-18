@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Show co-integration between two timeseries
 
-### Usage 
+### Usage
+
 ```python
 usage: coint -t TS [-p] [-s SIGNIFICANT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,9 +22,8 @@ usage: coint -t TS [-p] [-s SIGNIFICANT]
 | ts | The time series you wish to test co-integration on. E.g. historical.open,historical2.close. | None | False | None |
 | plot | Plot Z-Values | False | True | None |
 | significant | Show only companies that have p-values lower than this percentage | 0 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -46,4 +47,6 @@ usage: coint -t TS [-p] [-s SIGNIFICANT]
 ```
 
 ![error_terms_cointegrations](https://user-images.githubusercontent.com/46355364/155514964-dd75cf17-91ae-4326-96e8-45d9a2c7b24a.png)
+
+---
 

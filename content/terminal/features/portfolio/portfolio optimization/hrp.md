@@ -7,7 +7,8 @@ description: OpenBB Terminal Function
 
 Builds a hierarchical risk parity portfolio
 
-### Usage 
+### Usage
+
 ```python
 usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,tail}] [-cv {hist,ewma1,ewma2,ledoit,oas,shrunk,gl,jlogo,fixed,spectral,shrink}] [-rm {MV,MAD,GMD,MSV,VaR,CVaR,TG,EVaR,RG,CVRG,TGRG,WR,FLPM,SLPM,MDD,ADD,DaR,CDaR,EDaR,UCI,MDD_Rel,ADD_Rel,DaR_Rel,CDaR_Rel,EDaR_Rel,UCI_Rel}]
            [-as CVAR_SIMULATIONS_LOSSES] [-b CVAR_SIGNIFICANCE] [-bs CVAR_SIMULATIONS_GAINS] [-lk {single,complete,average,weighted,centroid,median,ward,dbht}] [-k AMOUNT_CLUSTERS] [-mk MAX_CLUSTERS] [-bi AMOUNT_BINS] [-at ALPHA_TAIL] [-lo LEAF_ORDER] [-de SMOOTHING_FACTOR_EWMA] [-mt NAN_FILL_METHOD] [-ct CATEGORIES]
@@ -16,6 +17,7 @@ usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -47,9 +49,8 @@ usage: hrp [-cd {pearson,spearman,abs_pearson,abs_spearman,distance,mutual_info,
 | significance_level | Significance level of CVaR, EVaR, CDaR and EDaR | 0.05 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | _HRP0 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -81,4 +82,6 @@ Annual (by 252) expected return: 28.03%
 Annual (by √252) volatility: 25.35%
 Sharpe ratio: 1.0982
 ```
+
+---
 

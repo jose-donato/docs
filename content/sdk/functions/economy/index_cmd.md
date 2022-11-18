@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_indices(indices: list, interval: str = "1d", start_date: int = None, end_date: int = None, column: str = "Adj Close", returns: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -30,14 +32,16 @@ def get_indices(indices: list, interval: str = "1d", start_date: int = None, end
 | column | str | Which column to load in, by default "Adjusted Close". | Adj Close | True |
 | returns | bool | Flag to show cumulative returns on index | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Dataframe with historical data on selected indices. |
-
 ---
+
 
 
 </TabItem>
@@ -50,7 +54,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def show_indices(indices: list, interval: str = "1d", start_date: int = None, end_date: int = None, column: str = "Adj Close", returns: bool = False, raw: bool = False, external_axes: Optional[List[axes]] = None, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -65,14 +71,16 @@ def show_indices(indices: list, interval: str = "1d", start_date: int = None, en
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 | export | str | Export data to csv,json,xlsx or png,jpg,pdf,svg file |  | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Plots the Series. |  |
-
 ---
+
 
 
 </TabItem>

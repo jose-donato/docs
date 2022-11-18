@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_search_futures(category: str = "", exchange: str = "", description: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,9 +23,12 @@ def get_search_futures(category: str = "", exchange: str = "", description: str 
 | exchange | str | Select the exchange where the future exists |  | True |
 | description | str | Select the description where the future exists |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+

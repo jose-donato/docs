@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def calculate_fib_levels(data: pd.DataFrame, limit: int = 120, start_date: Any = None, end_date: Any = None) -> Tuple[pd.DataFrame, pandas._libs.tslibs.timestamps.Timestamp, pandas._libs.tslibs.timestamps.Timestamp, float, float]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,14 +30,16 @@ def calculate_fib_levels(data: pd.DataFrame, limit: int = 120, start_date: Any =
 | start_date | Any | Custom start date for retracement | None | True |
 | end_date | Any | Custom end date for retracement | None | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of fib levels |
-
 ---
+
 
 
 </TabItem>
@@ -48,7 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def fibonacci_retracement(data: pd.DataFrame, limit: int = 120, start_date: Optional[str] = None, end_date: Optional[str] = None, symbol: str = "", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -61,12 +67,15 @@ def fibonacci_retracement(data: pd.DataFrame, limit: int = 120, start_date: Opti
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

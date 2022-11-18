@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Prints SEC filings of the company. The following fields are expected: Filing Date, Document Date, Type, Category, Amended, and Link. [Source: Market Watch]
 
-### Usage 
+### Usage
+
 ```python
 usage: sec [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | number of latest SEC filings. | 5 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -50,4 +51,6 @@ usage: sec [-l LIMIT]
 │ 10/20/2021 │ 10/20/2021    │ 8-K      │ Special Events          │         │ https://www.marketwatch.com/investing/stock/tsla/financials/secfilings?docid=15291361 │
 └────────────┴───────────────┴──────────┴─────────────────────────┴─────────┴───────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
 

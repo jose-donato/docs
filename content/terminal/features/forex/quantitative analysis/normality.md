@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Normality tests
 
-### Usage 
+### Usage
+
 ```python
 usage: normality
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -38,4 +40,6 @@ This command has no parameters
 │ Kolmogorov-Smirnov │ 0.4680    │ 0.0000  │
 └────────────────────┴───────────┴─────────┘
 ```
+
+---
 

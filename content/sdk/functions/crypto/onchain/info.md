@@ -18,21 +18,25 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_token_info(address: Any) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | address | str | Token balance e.g. 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 | None | False |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with information about provided ERC20 token. |
-
 ---
+
 
 
 </TabItem>
@@ -45,7 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_token_info(address: str, social: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,12 +60,15 @@ def display_token_info(address: str, social: bool = False, export: str = "") -> 
 | social | bool | Flag to display social media links | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

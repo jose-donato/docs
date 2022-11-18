@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_put_call_ratio(symbol: str, window: int = 30, start_date: str = None) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,14 +29,16 @@ def get_put_call_ratio(symbol: str, window: int = 30, start_date: str = None) ->
 | window | int | Window to consider, by default 30 | 30 | True |
 | start_date | str | Start date to plot  (e.g., 2021-10-01), by default last 366 days | None | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Put call ratio |
-
 ---
+
 
 
 </TabItem>
@@ -47,7 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_put_call_ratio(symbol: str, window: int = 30, start_date: str = "2021-11-17", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,12 +64,15 @@ def display_put_call_ratio(symbol: str, window: int = 30, start_date: str = "202
 | export | str | Format to export data, by default "" |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

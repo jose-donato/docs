@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Add in Stochastic Oscillator %K and %D
 
-### Usage 
+### Usage
+
 ```python
 usage: sto [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,9 +22,8 @@ usage: sto [--close-col CLOSE_COL] [--high-col HIGH_COL] [--low-col LOW_COL]
 | close_col | Close column name to use for Stochastic Oscillator | close | True | None |
 | high_col | High column name to use for Stochastic Oscillator | high | True | None |
 | low_col | Low column name to use for Stochastic Oscillator | low | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -91,4 +92,6 @@ TSLA dataset has shape (row, column): (611, 9)
 Namespace(drop='', fill='', help=False, limit=5, target_dataset='TSLA')
 Successfully cleaned 'TSLA' dataset
 ```
+
+---
 

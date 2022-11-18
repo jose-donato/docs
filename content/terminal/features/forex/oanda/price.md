@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Get price for selected instrument.
 
-### Usage 
+### Usage
+
 ```python
 usage: price
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

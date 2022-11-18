@@ -12,18 +12,22 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_etf_summary_description(name: str) -> str
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | name | str | ETF name | None | False |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | str | Summary description of the ETF |
-
 ---
+

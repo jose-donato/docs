@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_indexes(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def get_indexes(sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 | sortby | str | Key by which to sort data | Name | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Name, Id, Market, Last, MultiAsset |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_indexes(sortby: str = "Name", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,12 +62,15 @@ def display_indexes(sortby: str = "Name", ascend: bool = True, limit: int = 15, 
 | ascend | bool | Flag to sort data descending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

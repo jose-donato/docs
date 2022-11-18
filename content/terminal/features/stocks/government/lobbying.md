@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Lobbying details [Source: www.quiverquant.com]
 
-### Usage 
+### Usage
+
 ```python
 usage: lobbying [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of events to show | 10 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -51,4 +52,6 @@ usage: lobbying [-l LIMIT]
 2019-10-21: TESLA INC $150000
         Discussions regarding electric vehicle manufacturing and sales policies,charging infrastructure and regulation (S.2302, America's Transportation and Infrastruction Act;H.R.2616/S.674, Clean Corridors Act) Issues impacting autonomous vehicles
 ```
+
+---
 

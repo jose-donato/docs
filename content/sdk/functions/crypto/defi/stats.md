@@ -18,19 +18,22 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_uniswap_stats() -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 This function does not take any parameters.
 
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Uniswap DEX statistics like liquidity, volume, number of pairs, number of transactions. |
-
 ---
+
 
 
 </TabItem>
@@ -43,19 +46,24 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_uni_stats(export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

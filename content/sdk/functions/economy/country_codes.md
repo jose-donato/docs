@@ -12,16 +12,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_country_codes() -> List[str]
 ```
+
 ---
+
 ## Parameters
 
 This function does not take any parameters.
 
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[str] | List of ISO-3 letter country codes. |
-
 ---
+

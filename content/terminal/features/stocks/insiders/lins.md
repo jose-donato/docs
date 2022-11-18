@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Prints information about inside traders. The following fields are expected: Date, Relationship, Transaction, #Shares, Cost, Value ($), #Shares Total, Insider Trading, SEC Form 4. [Source: Finviz]
 
-### Usage 
+### Usage
+
 ```python
 usage: lins [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of latest inside traders. | 10 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -50,4 +51,6 @@ usage: lins [-l LIMIT]
 │ Aug 06 │ Senior Vice President        │ Sale        │ 14,877    │ 145.99 │ 2,171,893   │ 136,118       │ O'BRIEN DEIRDRE    │ Aug 09 06:30 PM │
 └────────┴──────────────────────────────┴─────────────┴───────────┴────────┴─────────────┴───────────────┴────────────────────┴─────────────────┘
 ```
+
+---
 

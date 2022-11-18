@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_most_traded_pairs(network: str = "ethereum", exchange: str = "Uniswap", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -29,14 +31,16 @@ def get_most_traded_pairs(network: str = "ethereum", exchange: str = "Uniswap", 
 | sortby | str | Key by which to sort data | tradeAmount | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most traded crypto pairs on given decentralized exchange in chosen time period. |
-
 ---
+
 
 
 </TabItem>
@@ -49,7 +53,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_most_traded_pairs(exchange: str = "Uniswap", days: int = 10, limit: int = 10, sortby: str = "tradeAmount", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -60,14 +66,16 @@ def display_most_traded_pairs(exchange: str = "Uniswap", days: int = 10, limit: 
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most traded crypto pairs on given decentralized exchange in chosen time period. |
-
 ---
+
 
 
 </TabItem>

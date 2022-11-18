@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_search_results(query: str, category: Optional[Any] = None, modifier: Optional[Any] = None, sortby: str = "id", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -29,14 +31,16 @@ def get_search_results(query: str, category: Optional[Any] = None, modifier: Opt
 | sortby | str | Key to sort data. The table can be sorted by every of its columns. Refer to<br/>API documentation (see https://api.coinpaprika.com/docs#tag/Tools/paths/~1search/get) | id | True |
 | ascend | bool | Flag to sort data descending | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Search Results<br/>Columns: Metric, Value |
-
 ---
+
 
 
 </TabItem>
@@ -49,7 +53,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_search_results(query: str, category: str = "all", limit: int = 10, sortby: str = "id", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -61,12 +67,15 @@ def display_search_results(query: str, category: str = "all", limit: int = 10, s
 | ascend | bool | Flag to sort data descending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

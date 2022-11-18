@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Print up to 25 top tech stocks with revenue and earnings growth in excess of 25%. [Source: Yahoo Finance]
 
-### Usage 
+### Usage
+
 ```python
 usage: gtech [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of stocks to display. | 5 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -78,4 +79,6 @@ usage: gtech [-l LIMIT]
 │ YMM    │ Full Truck Alliance Co. Ltd.        │ 9.86             │ 1.35   │ +15.86%  │ 4.733M  │ 5.647M            │ 10.706B    │                │
 └────────┴─────────────────────────────────────┴──────────────────┴────────┴──────────┴─────────┴───────────────────┴────────────┴────────────────┘
 ```
+
+---
 

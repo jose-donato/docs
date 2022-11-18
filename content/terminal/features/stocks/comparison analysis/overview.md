@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Prints screener data of similar companies. [Source: Finviz]
 
-### Usage 
+### Usage
+
 ```python
 usage: overview
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -36,4 +38,6 @@ This command has no parameters
 │ TSLA   │ Tesla, Inc.           │ Consumer Cyclical      │ Auto Manufacturers             │ USA     │ 879490000000.00  │ 177.93 │ 875.76  │ 0.02   │ 22585472.00 │
 └────────┴───────────────────────┴────────────────────────┴────────────────────────────────┴─────────┴──────────────────┴────────┴─────────┴────────┴─────────────┘
 ```
+
+---
 

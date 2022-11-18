@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_jensens_alpha(portfolio_engine: portfolio_model.PortfolioEngine, risk_free_rate: float = 0, window: str = "1y") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,11 +23,13 @@ def get_jensens_alpha(portfolio_engine: portfolio_model.PortfolioEngine, risk_fr
 | window | str | Interval used for rolling values | 1y | True |
 | risk_free_rate | float | Risk free rate | 0 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of jensens's alpha during different time windows |
-
 ---
+

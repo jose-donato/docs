@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_dex_trades_by_exchange(trade_amount_currency: str = "USD", limit: int = 90, sortby: str = "tradeAmount", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,14 +30,16 @@ def get_dex_trades_by_exchange(trade_amount_currency: str = "USD", limit: int = 
 | sortby | str | Key by which to sort data | tradeAmount | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Trades on Decentralized Exchanges aggregated by DEX |
-
 ---
+
 
 
 </TabItem>
@@ -48,7 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_dex_trades(trade_amount_currency: str = "USD", kind: str = "dex", limit: int = 20, days: int = 90, sortby: str = "tradeAmount", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -61,12 +67,15 @@ def display_dex_trades(trade_amount_currency: str = "USD", kind: str = "dex", li
 | days | int | Last n days to query data. Maximum 365 (bigger numbers can cause timeouts<br/>on server side) | 90 | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_stalker(user: str, limit: int = 30) -> List[Dict[str, Any]]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,11 +22,13 @@ def get_stalker(user: str, limit: int = 30) -> List[Dict[str, Any]]
 | user | str | User to get posts for | None | False |
 | limit | int | Number of posts to get, by default 30 | 30 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[Dict[str, Any]] | List of posts |
-
 ---
+

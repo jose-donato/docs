@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def fx_price_request(accountID: str = "REPLACE_ME", instrument: Optional[str] = None) -> Union[Dict[str, str], bool]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def fx_price_request(accountID: str = "REPLACE_ME", instrument: Optional[str] = 
 | accountID | str | Oanda account ID, by default cfg.OANDA_ACCOUNT | REPLACE_ME | True |
 | instrument | Union[str, None] | The loaded currency pair, by default None | None | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Union[Dict[str, str], bool] | The currency pair price or False |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_fx_price(account: str, instrument: Optional[str] = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -54,12 +60,15 @@ def get_fx_price(account: str, instrument: Optional[str] = "") -> None
 | accountID | str | Oanda account ID | None | True |
 | instrument | Union[str, None] | Instrument code or None |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

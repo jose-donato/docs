@@ -18,19 +18,22 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_validators(sortby: str = "votingPower", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 This function does not take any parameters.
 
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | terra validators details |
-
 ---
+
 
 
 </TabItem>
@@ -43,7 +46,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_validators(limit: int = 10, sortby: str = "votingPower", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,12 +58,15 @@ def display_validators(limit: int = 10, sortby: str = "votingPower", ascend: boo
 | ascend | bool | Flag to sort data descending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

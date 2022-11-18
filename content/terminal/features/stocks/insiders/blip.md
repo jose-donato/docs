@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Print latest insider purchases 25k. [Source: OpenInsider]
 
-### Usage 
+### Usage
+
 ```python
 usage: blip [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -64,4 +65,6 @@ usage: blip [-l LIMIT]
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
+
+---
 

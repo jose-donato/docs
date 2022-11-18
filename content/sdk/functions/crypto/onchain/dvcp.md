@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_daily_dex_volume_for_given_pair(limit: int = 100, symbol: str = "UNI", to_symbol: str = "USDT", sortby: str = "date", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -29,14 +31,16 @@ def get_daily_dex_volume_for_given_pair(limit: int = 100, symbol: str = "UNI", t
 | sortby | str | Key by which to sort data | date | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Daily volume for given pair |
-
 ---
+
 
 
 </TabItem>
@@ -49,7 +53,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_daily_volume_for_given_pair(symbol: str = "WBTC", to_symbol: str = "USDT", limit: int = 20, sortby: str = "date", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -61,14 +67,16 @@ def display_daily_volume_for_given_pair(symbol: str = "WBTC", to_symbol: str = "
 | ascend | bool | Flag to sort data ascending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Token volume on different decentralized exchanges |
-
 ---
+
 
 
 </TabItem>

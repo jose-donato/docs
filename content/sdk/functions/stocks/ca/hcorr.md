@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_correlation(similar: List[str], start_date: str = None, candle_type: str = "a") -> Tuple[pd.DataFrame, pd.DataFrame]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,14 +29,16 @@ def get_correlation(similar: List[str], start_date: str = None, candle_type: str
 | start_date | str | Initial date (e.g., 2021-10-01). Defaults to 1 year back | None | True |
 | candle_type | str | OHLCA column to use for candles or R for returns, by default "a" for Adjusted Close | a | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, pd.DataFrame] | Dataframe with correlation matrix, Dataframe with historical prices for all comparison stocks |
-
 ---
+
 
 
 </TabItem>
@@ -47,7 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_correlation(similar: List[str], start_date: str = None, candle_type: str = "a", display_full_matrix: bool = False, raw: bool = False, external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -60,12 +66,15 @@ def display_correlation(similar: List[str], start_date: str = None, candle_type:
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 | export | str | Format to export correlation prices, by default "" |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

@@ -18,19 +18,22 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_newsletters() -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 This function does not take any parameters.
 
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with recent news from most popular DeFi related newsletters. |
-
 ---
+
 
 
 </TabItem>
@@ -43,7 +46,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_newsletters(limit: int = 10, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -51,12 +56,15 @@ def display_newsletters(limit: int = 10, export: str = "") -> None
 | limit | int | Number of records to display | 10 | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

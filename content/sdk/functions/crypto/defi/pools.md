@@ -18,19 +18,22 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_uni_pools_by_volume() -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 This function does not take any parameters.
 
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Trade-able pairs listed on Uniswap by top volume. |
-
 ---
+
 
 
 </TabItem>
@@ -43,7 +46,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_uni_pools(limit: int = 20, sortby: str = "volumeUSD", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,12 +58,15 @@ def display_uni_pools(limit: int = 20, sortby: str = "volumeUSD", ascend: bool =
 | ascend | bool | Flag to sort data descending | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_search_indices(keyword: list, limit: int = 10) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,11 +22,13 @@ def get_search_indices(keyword: list, limit: int = 10) -> pd.DataFrame
 | keyword | list | The keyword you wish to search for. This can include spaces. | None | False |
 | limit | int | The amount of views you want to show, by default this is set to 10. | 10 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.Dataframe | Dataframe with the available options. |
-
 ---
+

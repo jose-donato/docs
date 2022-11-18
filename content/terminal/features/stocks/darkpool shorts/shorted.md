@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Print up to 25 top ticker most shorted. [Source: Yahoo Finance]
 
-### Usage 
+### Usage
+
 ```python
 usage: shorted [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of the most shorted stocks to retrieve. | 10 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -50,4 +51,6 @@ usage: shorted [-l LIMIT]
 │ BYND   │ Beyond Meat, Inc.                      │ 59.97            │ 1.84   │ +3.17%   │ 480665 │ 3.702M            │ 3.798B     │                │
 └────────┴────────────────────────────────────────┴──────────────────┴────────┴──────────┴────────┴───────────────────┴────────────┴────────────────┘
 ```
+
+---
 

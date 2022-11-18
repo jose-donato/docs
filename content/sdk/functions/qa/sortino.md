@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 252, adjusted: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,14 +30,16 @@ def get_sortino(data: pd.DataFrame, target_return: float = 0, window: float = 25
 | window | float | length of the rolling window | 252 | True |
 | adjusted | bool | adjust the sortino ratio | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | sortino ratio |
-
 ---
+
 
 
 </TabItem>
@@ -48,7 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_sortino(data: pd.DataFrame, target_return: float, window: float, adjusted: bool) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,12 +64,15 @@ def display_sortino(data: pd.DataFrame, target_return: float, window: float, adj
 | window | float | length of the rolling window | None | False |
 | adjusted | bool | adjust the sortino ratio | None | False |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

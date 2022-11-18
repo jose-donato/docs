@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Perform Automatic Statistical Forecast (select best statistical model from AutoARIMA, AutoETS, AutoCES, MSTL, ...)
 
-### Usage 
+### Usage
+
 ```python
 usage: autoselect
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -65,4 +67,6 @@ Forecast: 100%|█████████████████████�
 │ 2022-11-15 │ 139.47     │
 └────────────┴────────────┘
 ```
+
+---
 

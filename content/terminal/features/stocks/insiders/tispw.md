@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Print top insider sales of the week. [Source: OpenInsider]
 
-### Usage 
+### Usage
+
 ```python
 usage: tispw [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -67,4 +68,6 @@ A: Amended filing
 D: Derivative transaction in filing (usually option exercise)
 M: Multiple transactions in filing; earliest reported transaction date & weighted average transaction price
 ```
+
+---
 

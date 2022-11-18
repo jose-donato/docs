@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Perform Theta forecast: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.theta.html
 
-### Usage 
+### Usage
+
 ```python
 usage: theta
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -47,4 +49,6 @@ Theta Model obtains MAPE: 12.71%
 ```
 
 ![theta](https://user-images.githubusercontent.com/72827203/180615324-5b50445c-cc95-4efa-84a6-85e85ddc2d28.png)
+
+---
 

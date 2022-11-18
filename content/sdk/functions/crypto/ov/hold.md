@@ -18,21 +18,25 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_holdings_overview(endpoint: str = "bitcoin") -> List[Union[str, pd.DataFrame]]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | endpoint | str | "bitcoin" or "ethereum" | bitcoin | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[Union[str, pd.DataFrame]] | - str:              Overall statistics<br/>- pd.DataFrame: Companies holding crypto |
-
 ---
+
 
 
 </TabItem>
@@ -45,7 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_holdings_overview(symbol: str, show_bar: bool = False, export: str = "", limit: int = 15) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,12 +61,15 @@ def display_holdings_overview(symbol: str, show_bar: bool = False, export: str =
 | export | str | Export dataframe data to csv,json,xlsx |  | True |
 | limit | int | The number of rows to show | 15 | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

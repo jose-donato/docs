@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_wsb_community(limit: int = 10, new: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,11 +22,13 @@ def get_wsb_community(limit: int = 10, new: bool = False) -> pd.DataFrame
 | limit | int | Number of posts to get, by default 10 | 10 | True |
 | new | bool | Flag to sort by new instead of hot, by default False | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of reddit submissions |
-
 ---
+

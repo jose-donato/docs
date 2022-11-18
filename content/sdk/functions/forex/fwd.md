@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_forward_rates(to_symbol: str = "USD", from_symbol: str = "EUR") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,11 +22,13 @@ def get_forward_rates(to_symbol: str = "USD", from_symbol: str = "EUR") -> pd.Da
 | to_symbol | str | To currency | USD | True |
 | from_symbol | str | From currency | EUR | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing forward rates |
-
 ---
+

@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Averge True Range is used to measure volatility, especially volatility caused by gaps or limit moves.
 
-### Usage 
+### Usage
+
 ```python
 usage: atr [-l N_LENGTH] [-m {ema,sma,wma,hma,zlma}] [-o N_OFFSET]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,6 +22,5 @@ usage: atr [-l N_LENGTH] [-m {ema,sma,wma,hma,zlma}] [-o N_OFFSET]
 | n_length | Window length | 14 | True | None |
 | s_mamode | mamode | ema | True | ema, sma, wma, hma, zlma |
 | n_offset | offset | 0 | True | None |
-
-
 ---
+

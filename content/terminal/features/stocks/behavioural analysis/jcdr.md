@@ -7,17 +7,18 @@ description: OpenBB Terminal Function
 
 Show daily cramer recommendation
 
-### Usage 
+### Usage
+
 ```python
 usage: jcdr [-i]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | inverse | Show inverse recommendation | False | True | None |
-
-
 ---
+

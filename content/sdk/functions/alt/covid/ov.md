@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_covid_ov(country: str, limit: int = 100) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def get_covid_ov(country: str, limit: int = 100) -> pd.DataFrame
 | country | str | Country to get data for | None | False |
 | limit | int | Number of raw data to show | 100 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical cases and deaths |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_covid_ov(country: str, raw: bool = False, limit: int = 10, export: str = "", plot: bool = True) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,12 +63,15 @@ def display_covid_ov(country: str, raw: bool = False, limit: int = 10, export: s
 | export | str | Format to export data |  | True |
 | plot | bool | Flag to display historical plot | True | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

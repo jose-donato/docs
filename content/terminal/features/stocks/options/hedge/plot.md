@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 This function plots option payoff diagrams
 
-### Usage 
+### Usage
+
 ```python
 usage: plot
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

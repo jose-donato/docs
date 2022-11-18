@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Perform nhits forecast: https://unit8co.github.io/darts/generated_api/darts.models.forecasting.tft_model.html
 
-### Usage 
+### Usage
+
 ```python
 usage: nhits [--num-stacks NUM_STACKS] [--num-blocks NUM_BLOCKS] [--num-layers NUM_LAYERS] [--layer_widths LAYER_WIDTHS] [--activation {ReLU,RReLU,PReLU,Softplus,Tanh,SELU,LeakyReLU,Sigmoid}] [--max_pool_1d]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,9 +25,8 @@ usage: nhits [--num-stacks NUM_STACKS] [--num-blocks NUM_BLOCKS] [--num-layers N
 | layer_widths | The number of neurons in each layer | 3 | True | None |
 | activation | The desired activation | ReLU | True | ReLU, RReLU, PReLU, Softplus, Tanh, SELU, LeakyReLU, Sigmoid |
 | maxpool1d | Whether to use max_pool_1d or AvgPool1d | False | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -56,4 +57,6 @@ NHITS model obtains MAPE: 7.45%
 ```
 
 ![nbeats](https://user-images.githubusercontent.com/72827203/195015203-3644fe8c-e1f7-49ab-9595-a19b474948cc.png)
+
+---
 

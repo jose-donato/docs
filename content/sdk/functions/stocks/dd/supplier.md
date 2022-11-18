@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_suppliers(symbol: str, limit: int = 50) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,11 +22,13 @@ def get_suppliers(symbol: str, limit: int = 50) -> pd.DataFrame
 | symbol | str | Ticker to select suppliers from | None | False |
 | limit | int | The maximum number of rows to show | 50 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | A dataframe of suppliers |
-
 ---
+

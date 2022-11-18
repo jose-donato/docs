@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_cash_flow(symbol: str, quarterly: bool = False, ratios: bool = False, source: str = "YahooFinance", limit: int = 10) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -23,16 +25,17 @@ def get_cash_flow(symbol: str, quarterly: bool = False, ratios: bool = False, so
 | ratios | bool | Flag to return data as a percent change. | False | True |
 | limit | int | Number of statements to return (free tiers may be limited to 5 years) | 10 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of cash flow |
-
 ---
-## Examples
 
+## Examples
 
 If you have a premium AlphaVantage key, you can use the quarterly flag to get quarterly statements
 ```python
@@ -41,3 +44,4 @@ cash_flow = openbb.stocks.fa.cash("AAPL", source="YahooFinance)
 ```
 
 ---
+

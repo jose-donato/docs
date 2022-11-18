@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_mktcap(symbol: str, start_date: str = None) -> Tuple[pd.DataFrame, str]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def get_mktcap(symbol: str, start_date: str = None) -> Tuple[pd.DataFrame, str]
 | symbol | str | Ticker to get market cap over time | None | False |
 | start_date | str | Initial date (e.g., 2021-10-01). Defaults to 3 years back | None | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of estimated market cap over time |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_mktcap(symbol: str, start_date: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,12 +62,15 @@ def display_mktcap(symbol: str, start_date: str = None, export: str = "", extern
 | export | str | Format to export data |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

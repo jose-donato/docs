@@ -7,17 +7,18 @@ description: OpenBB Terminal Function
 
 Select similar companies to compare with.
 
-### Usage 
+### Usage
+
 ```python
 usage: set [-s L_SIMILAR]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | l_similar | similar companies to compare with. |  | True | None |
-
-
 ---
+

@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_income_comparison(similar: List[str], timeframe: str = "2021", quarter: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,14 +30,16 @@ def get_income_comparison(similar: List[str], timeframe: str = "2021", quarter: 
 | quarter | bool | Whether to use quarterly statements, by default False | False | True |
 | export | str | Format to export data | None | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of income statements |
-
 ---
+
 
 
 </TabItem>
@@ -48,7 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_income_comparison(symbols: List[str], timeframe: str = "2021", quarter: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,12 +64,15 @@ def display_income_comparison(symbols: List[str], timeframe: str = "2021", quart
 | quarter | bool | Whether to use quarterly statements, by default False | False | True |
 | export | str | Format to export data |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

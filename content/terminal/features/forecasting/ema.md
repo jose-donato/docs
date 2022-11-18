@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Add exponential moving average to dataset based on specific column.
 
-### Usage 
+### Usage
+
 ```python
 usage: ema
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -83,4 +85,6 @@ TSLA dataset has shape (row, column): (611, 8)
 │ 9 │ 2020-01-15 │ 105.95 │ 107.57 │ 103.36 │ 103.70 │ 103.70    │ 86844000  │ 98.08  │
 └───┴────────────┴────────┴────────┴────────┴────────┴───────────┴───────────┴────────┘
 ```
+
+---
 

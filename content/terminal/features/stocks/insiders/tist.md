@@ -7,17 +7,18 @@ description: OpenBB Terminal Function
 
 Print top insider sales of the day. [Source: OpenInsider]
 
-### Usage 
+### Usage
+
 ```python
 usage: tist [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
-
-
 ---
+

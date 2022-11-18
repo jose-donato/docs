@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Shows whether options are over or under valued
 
-### Usage 
+### Usage
+
 ```python
 usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,9 +23,8 @@ usage: parity [-p] [-a] [-m MINI] [-M MAXI]
 | ask | Use ask price instead of lastPrice | False | True | None |
 | mini | Minimum strike price shown | None | True | None |
 | maxi | Maximum strike price shown | None | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -57,4 +58,6 @@ Warning: Low volume options may be difficult to trade.
 │ 950.00 │ -3.23           │
 └────────┴─────────────────┘
 ```
+
+---
 

@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def calculate_adjusted_var(kurtosis: float, skew: float, ndp: float, std: float, mean: float) -> float
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -23,11 +25,13 @@ def calculate_adjusted_var(kurtosis: float, skew: float, ndp: float, std: float,
 | std | float | standard deviation of data | None | False |
 | mean | float | mean of data | None | False |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | float | Real adjusted VaR |
-
 ---
+

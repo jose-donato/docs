@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Stocks trending. [Source: Stocktwits]
 
-### Usage 
+### Usage
+
 ```python
 usage: trending
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -88,4 +90,6 @@ This command has no parameters
 │ GNRC   │ 3090            │ Generac Holdings Inc.                          │
 └────────┴─────────────────┴────────────────────────────────────────────────┘
 ```
+
+---
 

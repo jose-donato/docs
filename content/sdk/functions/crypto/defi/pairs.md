@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_uniswap_pool_recently_added(last_days: int = 14, min_volume: int = 100, min_liquidity: int = 0, min_tx: int = 100) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,14 +30,16 @@ def get_uniswap_pool_recently_added(last_days: int = 14, min_volume: int = 100, 
 | min_liquidity | int | Minimum liquidity | 0 | True |
 | min_tx | int | Minimum number of transactions done in given pool. | 100 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Lastly added pairs on Uniswap DEX. |
-
 ---
+
 
 
 </TabItem>
@@ -48,7 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_recently_added(limit: int = 20, days: int = 7, min_volume: int = 20, min_liquidity: int = 0, min_tx: int = 100, sortby: str = "created", ascend: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -62,12 +68,15 @@ def display_recently_added(limit: int = 20, days: int = 7, min_volume: int = 20,
 | ascend | bool | Flag to sort data descending | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

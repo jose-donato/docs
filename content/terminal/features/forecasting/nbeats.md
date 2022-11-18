@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Perform NBEATS forecast (Neural Bayesian Estimation of Time Series): https://unit8co.github.io/darts/generated_api/darts.models.forecasting.nbeats.html
 
-### Usage 
+### Usage
+
 ```python
 usage: nbeats [--num_stacks NUM_STACKS] [--num_blocks NUM_BLOCKS] [--num_layers NUM_LAYERS] [--layer_widths LAYER_WIDTHS]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,9 +23,8 @@ usage: nbeats [--num_stacks NUM_STACKS] [--num_blocks NUM_BLOCKS] [--num_layers 
 | num_blocks | The number of blocks making up every stack. | 3 | True | None |
 | num_layers | The number of fully connected layers preceding the final forking layers in each block of every stack. | 4 | True | None |
 | layer_widths | Determines the number of neurons that make up each fully connected layer in each block of every stack | 512 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -52,4 +53,6 @@ NBEATS model obtains MAPE: 23.53%
 ```
 
 ![nbeats](https://user-images.githubusercontent.com/72827203/180615396-d29126ae-ad75-4f84-9f67-2121dc4e695a.png)
+
+---
 

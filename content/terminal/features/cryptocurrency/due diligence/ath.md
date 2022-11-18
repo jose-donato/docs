@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 All time high data for loaded coin
 
-### Usage 
+### Usage
+
 ```python
 usage: ath [--vs {usd,btc}]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | vs | currency | usd | True | usd, btc |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -38,4 +39,6 @@ usage: ath [--vs {usd,btc}]
 │ All Time High Change Percentage USD │ -35.75                   │
 └─────────────────────────────────────┴──────────────────────────┘
 ```
+
+---
 

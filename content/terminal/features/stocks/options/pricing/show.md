@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Display prices
 
-### Usage 
+### Usage
+
 ```python
 usage: show
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -36,4 +38,6 @@ Estimated price(s) of AAPL at 2022-05-20
 │ 200.00 │ 0.50   │
 └────────┴────────┘
 ```
+
+---
 

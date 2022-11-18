@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Print up to 25 small cap stocks with earnings growth rates better than 25%. [Source: Yahoo Finance]
 
-### Usage 
+### Usage
+
 ```python
 usage: asc [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of stocks to display. | 5 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -80,4 +81,6 @@ usage: asc [-l LIMIT]
 │ CENX   │ Century Aluminum Company                  │ 20.35            │ 1.26   │ +6.60%   │ 1.887M │ 1.268M            │ 1.834B     │                │
 └────────┴───────────────────────────────────────────┴──────────────────┴────────┴──────────┴────────┴───────────────────┴────────────┴────────────────┘
 ```
+
+---
 

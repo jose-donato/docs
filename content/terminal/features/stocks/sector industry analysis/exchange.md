@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Swap exclude international exchanges flag
 
-### Usage 
+### Usage
+
 ```python
 usage: exchange
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

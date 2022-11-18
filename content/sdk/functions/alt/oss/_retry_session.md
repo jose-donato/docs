@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def _retry_session(url: str, retries: int = 3, backoff_factor: float = 1.0) -> requests.sessions.Session
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,11 +23,13 @@ def _retry_session(url: str, retries: int = 3, backoff_factor: float = 1.0) -> r
 | retries | int | How many retries | 3 | True |
 | backoff_factor | float | Backoff schema - time periods between retry | 1.0 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | requests.Session | Mounted session |
-
 ---
+

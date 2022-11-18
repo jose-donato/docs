@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: bool = False, chain_id: Optional[str] = None) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -29,14 +31,16 @@ def get_historical_options(symbol: str, expiry: str, strike: float = 0, put: boo
 | put | bool | Is this a put option? | False | True |
 | chain_id | Optional[str] | OCC chain ID | None | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of historical option prices |
-
 ---
+
 
 
 </TabItem>
@@ -49,7 +53,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_historical(symbol: str, expiry: str, strike: float = 0, put: bool = False, raw: bool = False, chain_id: str = None, export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -63,12 +69,15 @@ def display_historical(symbol: str, expiry: str, strike: float = 0, put: bool = 
 | export | str | Format of export file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (1 axis is expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

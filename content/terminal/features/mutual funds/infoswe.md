@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Show fund info of a swedish fund.
 
-### Usage 
+### Usage
+
 ```python
 usage: infoswe
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

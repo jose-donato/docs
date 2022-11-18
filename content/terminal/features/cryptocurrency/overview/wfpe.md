@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Coin withdrawal fees per exchange [Source: https://withdrawalfees.com/]
 
-### Usage 
+### Usage
+
 ```python
 usage: wfpe [-c COIN]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | coin | Coin to check withdrawal fees in long format (e.g., bitcoin, ethereum) | bitcoin | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -112,4 +113,6 @@ bitcoin is available on 38 exchanges with alowest fee of FREE(0 BTC), average of
 │ Coinone             │ $66.40 (0.0015 BTC)   │ $4.43 (0.0001 BTC)        │
 └─────────────────────┴───────────────────────┴───────────────────────────┘
 ```
+
+---
 

@@ -7,17 +7,18 @@ description: OpenBB Terminal Function
 
 Select parameter file to use
 
-### Usage 
+### Usage
+
 ```python
 usage: file -f FILE [FILE ...]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | file | Parameter file to be used | None | False | None |
-
-
 ---
+

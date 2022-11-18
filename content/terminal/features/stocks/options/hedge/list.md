@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Lists available calls and puts.
 
-### Usage 
+### Usage
+
 ```python
 usage: list
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -146,4 +148,6 @@ This command has no parameters
 │ 58         │ -      │ 250.00 │
 └────────────┴────────┴────────┘
 ```
+
+---
 

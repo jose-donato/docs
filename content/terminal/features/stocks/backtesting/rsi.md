@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Strategy that buys when the stock is less than a threshold and shorts when it exceeds a threshold.
 
-### Usage 
+### Usage
+
 ```python
 usage: rsi [-p PERIODS] [-u HIGH] [-l LOW] [--spy] [--no_bench] [--no_short]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -23,6 +25,5 @@ usage: rsi [-p PERIODS] [-u HIGH] [-l LOW] [--spy] [--no_bench] [--no_short]
 | spy | Flag to add spy hold comparison | False | True | None |
 | no_bench | Flag to not show buy and hold comparison | False | True | None |
 | shortable | Flag that disables the short sell | True | True | None |
-
-
 ---
+

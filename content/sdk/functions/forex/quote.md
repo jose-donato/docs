@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def quote(symbol: str, source: str = "YahooFinance") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,16 +22,17 @@ def quote(symbol: str, source: str = "YahooFinance") -> pd.DataFrame
 | symbol | str | Forex symbol to get quote for. | None | False |
 | source | str | Source to get quote from, by default "YahooFinance" | YahooFinance | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of quote data. |
-
 ---
-## Examples
 
+## Examples
 
 This also supports AlphaVantage and will handle different conventions
 ```python
@@ -38,3 +41,4 @@ EUR_USD_quote = openbb.forex.quote("EURUSD")
 ```
 
 ---
+

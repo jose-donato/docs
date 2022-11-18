@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_max_decorrelation_portfolio(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0) -> Tuple[Optional[dict], pd.DataFrame]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -37,14 +39,16 @@ def get_max_decorrelation_portfolio(symbols: List[str], interval: str = "3y", st
 | value | float | Amount of money to allocate. The default is 1. | 1.0 | True |
 | value_short | float | Amount to allocate to portfolio in short positions. The default is 0. | 0 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[Optional[dict], pd.DataFrame] | Dictionary of portfolio weights,<br/>DataFrame of stock returns. |
-
 ---
+
 
 
 </TabItem>
@@ -57,7 +61,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_max_decorr(symbols: List[str], interval: str = "3y", start_date: str = "", end_date: str = "", log_returns: bool = False, freq: str = "D", maxnan: float = 0.05, threshold: float = 0, method: str = "time", covariance: str = "hist", d_ewma: float = 0.94, value: float = 1.0, value_short: float = 0.0, table: bool = False) -> Dict
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -77,12 +83,15 @@ def display_max_decorr(symbols: List[str], interval: str = "3y", start_date: str
 | value_short | float | Amount to allocate to portfolio in short positions, by default 0.0 | 0.0 | True |
 | table | bool | True if plot table weights, by default False | False | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

@@ -7,21 +7,22 @@ description: OpenBB Terminal Function
 
 NFT Collections [Source: https://nftpricefloor.com/]
 
-### Usage 
+### Usage
+
 ```python
 usage: collections [--fp] [--sales]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | fp | Flag to display floor price over time for top collections | False | True | None |
 | sales | Flag to display sales over time for top collections | False | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -42,4 +43,6 @@ NFT Collections
 ```
 
 ![collections fp command](https://user-images.githubusercontent.com/40023817/186201697-ff15dd9c-3b09-4c3a-b498-e98a876f1338.png)
+
+---
 

@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Show currently closed exchanges
 
-### Usage 
+### Usage
+
 ```python
 usage: exchange
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

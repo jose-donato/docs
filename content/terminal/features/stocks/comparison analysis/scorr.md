@@ -7,19 +7,20 @@ description: OpenBB Terminal Function
 
 FinBrain's sentiment correlation across similar tickers.
 
-### Usage 
+### Usage
+
 ```python
 usage: sentiment_compare [-r]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | raw | Display raw sentiment data | False | True | None |
-
+![scorr](https://user-images.githubusercontent.com/46355364/154073958-a2d7afd1-2406-46a6-8dc2-fdfd8b8605a4.png)
 
 ---
-![scorr](https://user-images.githubusercontent.com/46355364/154073958-a2d7afd1-2406-46a6-8dc2-fdfd8b8605a4.png)
 

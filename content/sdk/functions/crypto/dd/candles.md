@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_candles(symbol: str, interval: str = "24h") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def get_candles(symbol: str, interval: str = "24h") -> pd.DataFrame
 | symbol | str | Trading pair of coins on Coinbase e.g ETH-USDT or UNI-ETH | None | False |
 | interval | str | Time interval. One from 1min, 5min ,15min, 1hour, 6hour, 24hour | 24h | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Candles for chosen trading pair. |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_candles(symbol: str, interval: str = "24h", export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,12 +61,15 @@ def display_candles(symbol: str, interval: str = "24h", export: str = "") -> Non
 | interval | str | Time interval. One from 1m, 5m ,15m, 1h, 6h, 24h | 24h | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

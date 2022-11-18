@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_similar_dfs(symbol: str, info: Dict[str, Any], n: int, no_filter: bool = False) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -22,11 +24,13 @@ def get_similar_dfs(symbol: str, info: Dict[str, Any], n: int, no_filter: bool =
 | n | int | The number of similar companies to produce | None | False |
 | no_filter | bool | True means that we do not filter based on market cap | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[str, pd.DataFrame] | A list of similar companies |
-
 ---
+

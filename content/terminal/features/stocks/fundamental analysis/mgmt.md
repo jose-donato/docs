@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Print management team. Namely: Name, Title, Information from google and (potentially) Insider Activity page. [Source: Business Insider]
 
-### Usage 
+### Usage
+
 ```python
 usage: mgmt
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

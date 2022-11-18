@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Display list of startups from ross index [Source: https://runacap.com/] Use --chart to display chart and -t {stars,forks} to set chart type
 
-### Usage 
+### Usage
+
 ```python
 usage: rossidx [-s SORTBY [SORTBY ...]] [-r] [-c] [-g] [-t {stars,forks}]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -22,6 +24,5 @@ usage: rossidx [-s SORTBY [SORTBY ...]] [-r] [-c] [-g] [-t {stars,forks}]
 | show_chart | Flag to show chart | False | True | None |
 | show_growth | Flag to show growth chart | False | True | None |
 | chart_type | Chart type: {stars, forks} | stars | True | stars, forks |
-
-
 ---
+

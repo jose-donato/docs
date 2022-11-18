@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_address_history(address: str, sortby: str = "timestamp", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,14 +29,16 @@ def get_address_history(address: str, sortby: str = "timestamp", ascend: bool = 
 | sortby | str | Key to sort by. | timestamp | True |
 | ascend | str | Sort in ascending order. | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with balance historical transactions (last 100) |
-
 ---
+
 
 
 </TabItem>
@@ -47,7 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_address_history(address: str, limit: int = 10, sortby: str = "timestamp", ascend: bool = True, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,12 +64,15 @@ def display_address_history(address: str, limit: int = 10, sortby: str = "timest
 | ascend | str | Sort in ascending order. | True | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

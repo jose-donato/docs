@@ -7,18 +7,19 @@ description: OpenBB Terminal Function
 
 Open insider filtered data using selected ticker. [Source: OpenInsider]
 
-### Usage 
+### Usage
+
 ```python
 usage: stats [-l LIMIT] [-u]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Limit of datarows to display | 10 | True | None |
 | urls | Flag to show hyperlinks | False | True | None |
-
-
 ---
+

@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_tickers_info_for_coin(symbol: str = "BTC", quotes: str = "USD") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def get_tickers_info_for_coin(symbol: str = "BTC", quotes: str = "USD") -> pd.Da
 | symbol | str | Cryptocurrency symbol (e.g. BTC) | BTC | True |
 | quotes | str | Comma separated quotes to return e.g quotes = USD, BTC | USD | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Most important ticker related information<br/>Columns: Metric, Value |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_price_supply(from_symbol: str = "BTC", to_symbol: str = "USD", export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,12 +61,15 @@ def display_price_supply(from_symbol: str = "BTC", to_symbol: str = "USD", expor
 | to_symbol | str | Quoted currency | USD | True |
 | export | str | Export dataframe data to csv,json,xlsx |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

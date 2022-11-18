@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_popular_tickers(limit: int = 10, post_limit: int = 50, subreddits: str = "") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,14 +29,16 @@ def get_popular_tickers(limit: int = 10, post_limit: int = 50, subreddits: str =
 | post_limit | int | How many posts to analyze in each subreddit | 50 | True |
 | subreddits | str | String of comma separated subreddits. |  | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame of top tickers from supplied subreddits |
-
 ---
+
 
 
 </TabItem>
@@ -47,7 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_popular_tickers(limit: int = 10, post_limit: int = 50, subreddits: str = "", export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,12 +63,15 @@ def display_popular_tickers(limit: int = 10, post_limit: int = 50, subreddits: s
 | subreddits | str | String of comma separated subreddits. |  | True |
 | export | str | Format to export dataframe |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Print latest popular tickers. [Source: Reddit]
 
-### Usage 
+### Usage
+
 ```python
 usage: popular [-l LIMIT] [-n NUM] [-s S_SUBREDDIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -20,9 +22,8 @@ usage: popular [-l LIMIT] [-n NUM] [-s S_SUBREDDIT]
 | limit | limit of top tickers to retrieve | 10 | True | None |
 | num | number of posts retrieved per sub reddit. | 50 | True | None |
 | s_subreddit | Subreddits to look for tickers, e.g. pennystocks,stocks. Default: pennystocks, RobinHoodPennyStocks, Daytrading, StockMarket, stocks, investing, wallstreetbets | None | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -71,4 +72,6 @@ Search for latest tickers for 50 'wallstreetbets' posts
 │ 3        │ RESN   │ Resonant Inc.                                          │ Technology           │ 4.35   │ -1.01%  │ 185.06%    │ https://finviz.com/quote.ashx?t=RESN │
 └──────────┴────────┴────────────────────────────────────────────────────────┴──────────────────────┴────────┴─────────┴────────────┴──────────────────────────────────────┘
 ```
+
+---
 

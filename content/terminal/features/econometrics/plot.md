@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Plot data based on the index
 
-### Usage 
+### Usage
+
 ```python
 usage: plot [-v VALUES]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | values | Dataset.column values to be displayed in a plot | None | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -60,4 +61,6 @@ Successfully updated 'us_macro' index to be 'year'
 ```
 
 ![unemp_data_us](https://user-images.githubusercontent.com/46355364/156058283-3888c6a8-a9a7-41c6-a091-b94b7946679b.png)
+
+---
 

@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Provides detailed information about a stock's risk compared to the market risk.
 
-### Usage 
+### Usage
+
 ```python
 usage: capm
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -37,4 +39,6 @@ Beta:                   2.02
 Systematic Risk:        23.09%
 Unsystematic Risk:      76.91%
 ```
+
+---
 

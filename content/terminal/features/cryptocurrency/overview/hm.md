@@ -7,21 +7,22 @@ description: OpenBB Terminal Function
 
 Display cryptocurrencies heatmap with daily percentage change [Source: https://coingecko.com] Accepts --category or -c to display only coins of a certain category (default no category to display all coins ranked by market cap). You can look on only top N number of records with --limit.
 
-### Usage 
+### Usage
+
 ```python
 usage: hm [-l LIMIT] [-c CATEGORY]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | Display N items | 10 | True | None |
 | category | Category (e.g., stablecoins). Empty for no category |  | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -50,4 +51,6 @@ usage: hm [-l LIMIT] [-c CATEGORY]
 │ AVAX   │ Avalanche    │ 899.9M     │ 21.7B          │ 10              │ 6.28          │ 12.72          │
 └────────┴──────────────┴────────────┴────────────────┴─────────────────┴───────────────┴────────────────┘
 ```
+
+---
 

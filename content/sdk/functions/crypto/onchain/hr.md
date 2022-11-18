@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_hashrate(symbol: str, interval: str = "24h", start_date: str = "2010-01-01", end_date: str = None) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,14 +30,16 @@ def get_hashrate(symbol: str, interval: str = "24h", start_date: str = "2010-01-
 | end_date | str | Final date, format YYYY-MM-DD | None | True |
 | interval | str | Interval frequency (e.g., 24h) | 24h | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | mean hashrate and symbol price over time |
-
 ---
+
 
 
 </TabItem>
@@ -48,7 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_hashrate(symbol: str, start_date: str = "2010-01-01", end_date: str = None, interval: str = "24h", export: str = "", external_axes: Optional[List[matplotlib.axes._axes.Axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -60,12 +66,15 @@ def display_hashrate(symbol: str, start_date: str = "2010-01-01", end_date: str 
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | external_axes | Optional[List[plt.Axes]] | External axes (2 axes are expected in the list), by default None | None | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

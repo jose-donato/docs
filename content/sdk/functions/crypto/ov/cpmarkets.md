@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_coins_market_info(symbols: str = "USD", sortby: str = "rank", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,14 +29,16 @@ def get_coins_market_info(symbols: str = "USD", sortby: str = "rank", ascend: bo
 | sortby | str | Key by which to sort data | rank | True |
 | ascend | bool | Flag to sort data ascend | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | rank, name, symbol, price, volume_24h, mcap_change_24h,<br/>pct_change_1h, pct_change_24h, ath_price, pct_from_ath, |
-
 ---
+
 
 
 </TabItem>
@@ -47,7 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_all_coins_market_info(symbol: str, sortby: str = "rank", ascend: bool = True, limit: int = 15, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -59,12 +65,15 @@ def display_all_coins_market_info(symbol: str, sortby: str = "rank", ascend: boo
 | links | bool | Flag to display urls | None | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

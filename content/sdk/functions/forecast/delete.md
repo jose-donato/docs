@@ -12,14 +12,18 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def delete_column(data: pd.DataFrame, column: str) -> None
 ```
+
 ---
+
 ## Parameters
 
 This function does not take any parameters.
 
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+

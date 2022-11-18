@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 List of customers from ticker provided. [Source: CSIMarket]
 
-### Usage 
+### Usage
+
 ```python
 usage: customer
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

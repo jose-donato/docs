@@ -18,21 +18,25 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_governance(symbol: str) -> Tuple[str, pd.DataFrame]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | symbol | str | Crypto symbol to check governance | None | False |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[str, pd.DataFrame] | Governance summary,<br/>Metric Value with governance details |
-
 ---
+
 
 
 </TabItem>
@@ -45,7 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_governance(symbol: str, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -53,12 +59,15 @@ def display_governance(symbol: str, export: str = "") -> None
 | symbol | str | Crypto symbol to check coin governance | None | False |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

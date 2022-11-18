@@ -7,17 +7,18 @@ description: OpenBB Terminal Function
 
 Print up to 30 of the last messages on the board. [Source: Stocktwits]
 
-### Usage 
+### Usage
+
 ```python
 usage: messages [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | limit | limit messages shown. | 30 | True | None |
-
-
 ---
+

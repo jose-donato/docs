@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_fraud_ratios(symbol: str, detail: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,11 +22,13 @@ def get_fraud_ratios(symbol: str, detail: bool = False) -> pd.DataFrame
 | symbol | str | Stock ticker symbol | None | False |
 | detail | bool | Whether to provide extra m-score details | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | The fraud ratios |
-
 ---
+

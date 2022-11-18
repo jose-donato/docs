@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Account balance details
 
-### Usage 
+### Usage
+
 ```python
 usage: balances
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

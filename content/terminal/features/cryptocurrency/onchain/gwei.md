@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Display ETH gas fees [Source: https://ethgasstation.info]
 
-### Usage 
+### Usage
+
 ```python
 usage: onchain
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

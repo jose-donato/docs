@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Load stock ticker to perform analysis on. When the data source is syf', an Indian ticker can be loaded by using '.NS' at the end, e.g. 'SBIN.NS'. See available market in https://help.yahoo.com/kb/exchanges-data-providers-yahoo-finance-sln2310.html.
 
-### Usage 
+### Usage
+
 ```python
 usage: load -t TICKER [-s START] [-e END] [-i {1,5,15,30,60}] [-p] [-f FILEPATH] [-m] [-w] [-r {ytd,1y,2y,5y,6m}]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -26,6 +28,5 @@ usage: load -t TICKER [-s START] [-e END] [-i {1,5,15,30,60}] [-p] [-f FILEPATH]
 | monthly | Load monthly data | False | True | None |
 | weekly | Load weekly data | False | True | None |
 | iexrange | Range for using the iexcloud api. Longer range requires more tokens in account | ytd | True | ytd, 1y, 2y, 5y, 6m |
-
-
 ---
+

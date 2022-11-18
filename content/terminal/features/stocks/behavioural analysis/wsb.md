@@ -7,21 +7,22 @@ description: OpenBB Terminal Function
 
 Print what WSB gang are up to in subreddit wallstreetbets. [Source: Reddit]
 
-### Usage 
+### Usage
+
 ```python
 usage: wsb [-l N_LIMIT] [--new]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | n_limit | limit of posts to print. | 10 | True | None |
 | b_new | new flag, if true the posts retrieved are based on being more recent rather than their score. | False | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -56,4 +57,6 @@ https://old.reddit.com/r/wallstreetbets/comments/stwxa9/make_gme_not_war/
 2022-02-16 11:24:54 - Free Money Hack - Can’t Go Tits Up
 https://old.reddit.com/r/wallstreetbets/comments/sttmmb/free_money_hack_cant_go_tits_up/
 ```
+
+---
 

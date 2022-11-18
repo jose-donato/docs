@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def add_ema(dataset: pd.DataFrame, target_column: str = "close", period: int = 10) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,11 +23,13 @@ def add_ema(dataset: pd.DataFrame, target_column: str = "close", period: int = 1
 | target_column | str | The column you wish to add the EMA to | close | True |
 | period | int | Time Span | 10 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with added EMA column |
-
 ---
+

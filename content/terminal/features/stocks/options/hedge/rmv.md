@@ -7,21 +7,22 @@ description: OpenBB Terminal Function
 
 Remove one of the options to be shown in the hedge.
 
-### Usage 
+### Usage
+
 ```python
 usage: rmv [-o OPTION [OPTION ...]] [-a]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | option | index of the option to remove | None | True | None |
 | all | remove all of the options | False | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -33,4 +34,6 @@ usage: rmv [-o OPTION [OPTION ...]] [-a]
 │ Call │ Long │ 155.00 │ 0.06               │
 └──────┴──────┴────────┴────────────────────┘
 ```
+
+---
 

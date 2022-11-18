@@ -7,7 +7,8 @@ description: OpenBB Terminal Function
 
 Optimize portfolio using Black Litterman estimates
 
-### Usage 
+### Usage
+
 ```python
 usage: blacklitterman [-bm BENCHMARK] [-o {MinRisk,Utility,Sharpe,MaxRet}] [-pv P_VIEWS] [-qv Q_VIEWS] [-ra RISK_AVERSION] [-d DELTA] [-eq] [-op] [-vs SHORT_ALLOCATION] [--file FILE] [--download DOWNLOAD] [-mt NAN_FILL_METHOD] [-ct CATEGORIES] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr]
                       [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-r RISK_FREE] [-v LONG_ALLOCATION] [--name NAME]
@@ -15,6 +16,7 @@ usage: blacklitterman [-bm BENCHMARK] [-o {MinRisk,Utility,Sharpe,MaxRet}] [-pv 
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -43,9 +45,8 @@ usage: blacklitterman [-bm BENCHMARK] [-o {MinRisk,Utility,Sharpe,MaxRet}] [-pv 
 | risk_free | Risk-free rate of borrowing/lending. The period of the risk-free rate must be annual | 0.02924 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | BL_0 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -70,4 +71,6 @@ Annual (by 252) expected return: 45.46%
 Annual (by √252) volatility: 34.16%
 Sharpe ratio: 1.3209
 ```
+
+---
 

@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Prints valuation data of the companies that meet the pre-set filtering.
 
-### Usage 
+### Usage
+
 ```python
 usage: valuation [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +23,5 @@ usage: valuation [-p Desired preset.] [-l LIMIT] [-r] [-s SORT]
 | limit | Limit of stocks to print | 10 | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | sort | Sort elements of the table. | Ticker | True | ticker, marketcap, p/e, fwdp/e, peg, p/s, p/b, p/c, p/fcf, epsthisy, epsnexty, epspast5y, epsnext5y, salespast5y, price, change, volume |
-
-
 ---
+

@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_crypto_hacks(sortby: str = "Platform", ascend: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def get_crypto_hacks(sortby: str = "Platform", ascend: bool = False) -> pd.DataF
 | sortby | str | Key by which to sort data {Platform,Date,Amount [$],Audit,Slug,URL} | Platform | True |
 | ascend | bool | Flag to sort data ascending | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Hacks with columns {Platform,Date,Amount [$],Audited,Slug,URL} |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_crypto_hacks(limit: int = 15, sortby: str = "Platform", ascend: bool = False, slug: str = "polyntwork-rekt", export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,12 +63,15 @@ def display_crypto_hacks(limit: int = 15, sortby: str = "Platform", ascend: bool
 | ascend | bool | Flag to sort data ascending | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

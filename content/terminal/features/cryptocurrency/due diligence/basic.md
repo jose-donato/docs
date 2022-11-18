@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Get basic information for coin. Like: name, symbol, rank, type, description, platform, proof_type, contract, tags, parent
 
-### Usage 
+### Usage
+
 ```python
 usage: basic
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -53,4 +55,6 @@ This command has no parameters
 │ parent      │ bnb-binance-coin                                                              │
 └─────────────┴───────────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
 

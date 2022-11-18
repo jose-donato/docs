@@ -12,16 +12,19 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_keys_info() -> Dict[str, List[str]]
 ```
+
 ---
+
 ## Parameters
 
 This function does not take any parameters.
 
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Dict[str, List[str]] | Dictionary of expected API keys and arguments |
-
 ---
+

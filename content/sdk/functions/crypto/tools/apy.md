@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def calculate_apy(apr: float, compounding_times: int) -> Tuple[pd.DataFrame, str]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def calculate_apy(apr: float, compounding_times: int) -> Tuple[pd.DataFrame, str
 | apr | float | value in percentage | None | False |
 | compounding_times | int | number of compounded periods in a year | None | False |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | Tuple[pd.DataFrame, str] | - pd.DataFrame: dataframe with results<br/>- str: narrative version of results |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_apy(apr: float, compounding_times: int, narrative: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -56,12 +62,15 @@ def display_apy(apr: float, compounding_times: int, narrative: bool = False, exp
 | narrative | str | display narrative version instead of dataframe | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Display active blockchain addresses over time [Source: https://glassnode.org] Note that free api keys only allow fetching data with a 1y lag
 
-### Usage 
+### Usage
+
 ```python
 usage: eb [-p] [-e {aggregated,binance,bittrex,coinex,gate.io,gemini,huobi,kucoin,poloniex,bibox,bigone,bitfinex,hitbtc,kraken,okex,bithumb,zb.com,cobinhood,bitmex,bitstamp,coinbase,coincheck,luno}] [-s SINCE] [-u UNTIL]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,8 +23,7 @@ usage: eb [-p] [-e {aggregated,binance,bittrex,coinex,gate.io,gemini,huobi,kucoi
 | exchange | Exchange to check change. Default: aggregated | aggregated | True | aggregated, binance, bittrex, coinex, gate.io, gemini, huobi, kucoin, poloniex, bibox, bigone, bitfinex, hitbtc, kraken, okex, bithumb, zb.com, cobinhood, bitmex, bitstamp, coinbase, coincheck, luno |
 | since | Initial date. Default: 2 years ago | 2020-11-18 | True | None |
 | until | Final date. Default: 1 year ago | 2021-11-16 | True | None |
-
+![eb](https://user-images.githubusercontent.com/46355364/154060160-3102de99-bed7-4e3b-bc98-81c684eefcb0.png)
 
 ---
-![eb](https://user-images.githubusercontent.com/46355364/154060160-3102de99-bed7-4e3b-bc98-81c684eefcb0.png)
 

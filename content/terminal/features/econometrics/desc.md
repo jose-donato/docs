@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Show the descriptive statistics of the dataset
 
-### Usage 
+### Usage
+
 ```python
 usage: desc -n {}
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | name | The name of the dataset.column you want to show the descriptive statistics | None | False | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -72,4 +73,6 @@ Statistics for dataset: 'anes96'
 │ max   │ 7.00   │
 └───────┴────────┘
 ```
+
+---
 

@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_var(data: pd.DataFrame, use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: Union[int, float] = 99.9, portfolio: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -30,14 +32,16 @@ def get_var(data: pd.DataFrame, use_mean: bool = False, adjusted_var: bool = Fal
 | percentile | Union[int,float] | VaR percentile | 99.9 | True |
 | portfolio | bool | If the data is a portfolio | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | DataFrame with Value at Risk per percentile |
-
 ---
+
 
 
 </TabItem>
@@ -50,7 +54,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_var(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, adjusted_var: bool = False, student_t: bool = False, percentile: float = 99.9, data_range: int = 0, portfolio: bool = False) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -64,12 +70,15 @@ def display_var(data: pd.DataFrame, symbol: str = "", use_mean: bool = False, ad
 | data_range | int | Number of rows you want to use VaR over | 0 | True |
 | portfolio | bool | If the data is a portfolio | False | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

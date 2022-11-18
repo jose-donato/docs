@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 
 
-### Usage 
+### Usage
+
 ```python
 usage: hold
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_balance(from_symbol: str, to_symbol: str = "USDT") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -26,14 +28,16 @@ def get_balance(from_symbol: str, to_symbol: str = "USDT") -> pd.DataFrame
 | from_symbol | str | Cryptocurrency | None | False |
 | to_symbol | str | Cryptocurrency | USDT | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with account holdings for an asset |
-
 ---
+
 
 
 </TabItem>
@@ -46,7 +50,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_balance(from_symbol: str, to_symbol: str = "USDT", export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -55,12 +61,15 @@ def display_balance(from_symbol: str, to_symbol: str = "USDT", export: str = "")
 | to_symbol | str | Cryptocurrency | USDT | True |
 | export | str | Export dataframe data to csv,json,xlsx |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

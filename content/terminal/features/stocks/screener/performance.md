@@ -7,12 +7,14 @@ description: OpenBB Terminal Function
 
 Prints performance data of the companies that meet the pre-set filtering.
 
-### Usage 
+### Usage
+
 ```python
 usage: performance [-p Desired preset.] [-l LIMIT] [-r] [-s SORTBY]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -21,6 +23,5 @@ usage: performance [-p Desired preset.] [-l LIMIT] [-r] [-s SORTBY]
 | limit | Limit of stocks to print | 10 | True | None |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
 | sort | Sort elements of the table. | Ticker | True | ticker, perfweek, perfmonth, perfquart, perfhalf, perfyear, perfytd, volatilityw, volatilitym, recom, avgvolume, relvolume, price, change, volume |
-
-
 ---
+

@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_exchanges_market(exchange_id: str = "binance", symbols: str = "USD", sortby: str = "pair", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,14 +30,16 @@ def get_exchanges_market(exchange_id: str = "binance", symbols: str = "USD", sor
 | sortby | str | Key by which to sort data | pair | True |
 | ascend | bool | Flag to sort data ascending | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | pair, base_currency_name, quote_currency_name, market_url,<br/>category, reported_volume_24h_share, trust_score, |
-
 ---
+
 
 
 </TabItem>
@@ -48,7 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_exchange_markets(exchange: str = "binance", sortby: str = "pair", ascend: bool = True, limit: int = 15, links: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -60,12 +66,15 @@ def display_exchange_markets(exchange: str = "binance", sortby: str = "pair", as
 | links | bool | Flag to display urls | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

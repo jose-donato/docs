@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Display asset's tokenomics [Source: https://messari.io]
 
-### Usage 
+### Usage
+
 ```python
 usage: tk
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

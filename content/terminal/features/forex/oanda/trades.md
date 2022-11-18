@@ -7,15 +7,17 @@ description: OpenBB Terminal Function
 
 Get information about open trades.
 
-### Usage 
+### Usage
+
 ```python
 usage: trades
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+

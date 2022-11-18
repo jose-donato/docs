@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_performance_data(group: str = "sector", sortby: str = "Name", ascend: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,11 +23,13 @@ def get_performance_data(group: str = "sector", sortby: str = "Name", ascend: bo
 | sortby | str | Column to sort by | Name | True |
 | ascend | bool | Flag to sort in ascending order | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | dataframe with performance data |
-
 ---
+

@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_last_government(gov_type: str = "congress", limit: int = -1, representative: str = "") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,11 +23,13 @@ def get_last_government(gov_type: str = "congress", limit: int = -1, representat
 | limit | int | Number of days to look back | -1 | True |
 | representative | str | Specific representative to look at |  | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Last government trading |
-
 ---
+

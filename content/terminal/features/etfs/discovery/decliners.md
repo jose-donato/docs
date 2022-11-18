@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Displays top ETF/Mutual fund decliners from wsj.com/market-data
 
-### Usage 
+### Usage
+
 ```python
 usage: decliners
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -48,4 +50,6 @@ This command has no parameters
 │ Direxion Daily Energy Bull 2X Shares                     │ 44.98  │ -2.12  │ -4.50 │ 8.8M   │
 └──────────────────────────────────────────────────────────┴────────┴────────┴───────┴────────┘
 ```
+
+---
 

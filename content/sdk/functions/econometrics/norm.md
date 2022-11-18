@@ -18,21 +18,25 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_normality(data: pd.Series) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
 | ---- | ---- | ----------- | ------- | -------- |
 | data | pd.Series | A series or column of a DataFrame to test normality for | None | False |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe containing statistics of normality |
-
 ---
+
 
 
 </TabItem>
@@ -45,7 +49,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_norm(data: pd.Series, dataset: str = "", column: str = "", plot: bool = True, export: str = "", external_axes: Optional[List[axes]] = None) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -57,12 +63,15 @@ def display_norm(data: pd.Series, dataset: str = "", column: str = "", plot: boo
 | export | str | Format to export data. |  | True |
 | external_axes | Optional[List[plt.axes]] | External axes to plot on | None | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

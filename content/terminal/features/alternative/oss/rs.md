@@ -7,17 +7,18 @@ description: OpenBB Terminal Function
 
 Display a repo summary [Source: https://api.github.com]
 
-### Usage 
+### Usage
+
 ```python
 usage: rs -r REPO
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | repo | Repository to search for repo summary. Format: org/repo, e.g., openbb-finance/openbbterminal | None | False | None |
-
-
 ---
+

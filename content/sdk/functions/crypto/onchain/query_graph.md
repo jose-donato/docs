@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def query_graph(url: str, query: str) -> dict
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,11 +22,13 @@ def query_graph(url: str, query: str) -> dict
 | url | str | Endpoint url | None | False |
 | query | str | Graphql query | None | False |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | dict | Dictionary with response data |
-
 ---
+

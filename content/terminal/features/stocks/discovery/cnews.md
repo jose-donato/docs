@@ -7,21 +7,22 @@ description: OpenBB Terminal Function
 
 Customized news. [Source: Seeking Alpha]
 
-### Usage 
+### Usage
+
 ```python
 usage: cnews [-t {top-news,on-the-move,market-pulse,notable-calls,buybacks,commodities,crypto,issuance,global,guidance,ipos,spacs,politics,m-a,consumer,energy,financials,healthcare,mlps,reits,technology}] [-l LIMIT]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | s_type | number of news to display | Top-News | True | top-news, on-the-move, market-pulse, notable-calls, buybacks, commodities, crypto, issuance, global, guidance, ipos, spacs, politics, m-a, consumer, energy, financials, healthcare, mlps, reits, technology |
 | limit | limit of news to display | 5 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -63,4 +64,6 @@ https://seekingalpha.com/news/3800020-middlefield-banc-corp-declares-0_17-divide
 2022-02-15 07:26:40 - 3799989 - LGI Homes expands stock repurchase program by $200M
 https://seekingalpha.com/news/3799989-lgi-homes-expands-stock-repurchase-program-by-200m
 ```
+
+---
 

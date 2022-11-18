@@ -7,21 +7,22 @@ description: OpenBB Terminal Function
 
 Print other users SPACs announcement under subreddit 'SPACs'. [Source: Reddit]
 
-### Usage 
+### Usage
+
 ```python
 usage: spacc [-l N_LIMIT] [-p]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | n_limit | limit of posts with SPACs retrieved | 10 | True | None |
 | b_popular | popular flag, if true the posts retrieved are based on score rather than time | False | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -41,4 +42,6 @@ https://old.reddit.com/r/SPACs/comments/st52xb/did_ibkr_resolve_my_spac_redempti
 The following stock tickers have been mentioned more than once across the previous SPACs:
 8 CCAC, 6 IBKR, 3 CLBT, 3 SLDP, 2 VIAC, 2 CND
 ```
+
+---
 

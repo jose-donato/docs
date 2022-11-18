@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_news(query: str, limit: int = 10, start_date: str = None, show_newest: bool = True, sources: str = "") -> List[Tuple[pd.DataFrame, Any]]
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -28,14 +30,16 @@ def get_news(query: str, limit: int = 10, start_date: str = None, show_newest: b
 | show_newest | bool | flag to show newest articles first | True | True |
 | sources | str | sources to exclusively show news from (comma separated) |  | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | List[Tuple[pd.DataFrame, dict]] | List of tuples containing news df in first index,<br/>dict containing title of news df. |
-
 ---
+
 
 
 </TabItem>
@@ -48,7 +52,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_news(query: str, limit: int = 3, start_date: str = None, show_newest: bool = True, sources: str = "", export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -60,12 +66,15 @@ def display_news(query: str, limit: int = 3, start_date: str = None, show_newest
 | sources | str | sources to exclusively show news from |  | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_stable_coins(limit: int = 20, sortby: str = "rank", ascend: bool = False) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -27,14 +29,16 @@ def get_stable_coins(limit: int = 20, sortby: str = "rank", ascend: bool = False
 | sortby | str | Key by which to sort data | rank | True |
 | ascend | bool | Flag to sort data ascending | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Rank, Name, Symbol, Price, Change_24h, Exchanges, Market_Cap, Change_30d, Url |
-
 ---
+
 
 
 </TabItem>
@@ -47,7 +51,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_stablecoins(limit: int = 15, export: str = "", sortby: str = "rank", ascend: bool = False, pie: bool = False) -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -58,12 +64,15 @@ def display_stablecoins(limit: int = 15, export: str = "", sortby: str = "rank",
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 | pie | bool | Whether to show a pie chart | False | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

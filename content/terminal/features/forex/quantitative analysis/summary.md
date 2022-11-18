@@ -7,18 +7,20 @@ description: OpenBB Terminal Function
 
 Summary statistics
 
-### Usage 
+### Usage
+
 ```python
 usage: summary
 ```
 
 ---
+
 ## Parameters
 
 This command has no parameters
 
-
 ---
+
 ## Examples
 
 ```python
@@ -51,4 +53,6 @@ This command has no parameters
 │ var   │ 1984.325 │ 2009.289 │ 1937.717 │ 1979.969 │ 1979.969 │ 120840695549911.328 │ 0.001   │ 0.001   │ 0.050    │
 └───────┴──────────┴──────────┴──────────┴──────────┴──────────┴─────────────────────┴─────────┴─────────┴──────────┘
 ```
+
+---
 

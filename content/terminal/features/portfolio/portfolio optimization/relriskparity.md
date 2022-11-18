@@ -7,13 +7,15 @@ description: OpenBB Terminal Function
 
 Build a relaxed risk parity portfolio based on least squares approach
 
-### Usage 
+### Usage
+
 ```python
 usage: relriskparity [-ve {A,B,C}] [-rc RISK_CONTRIBUTION] [-pf PENAL_FACTOR] [-tr TARGET_RETURN] [-de SMOOTHING_FACTOR_EWMA] [-mt NAN_FILL_METHOD] [-ct CATEGORIES] [-p HISTORIC_PERIOD] [-s START_PERIOD] [-e END_PERIOD] [-lr] [--freq {d,w,m}] [-mn MAX_NAN] [-th THRESHOLD_VALUE] [-v LONG_ALLOCATION] [--name NAME]
                      {sa} ...
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
@@ -35,9 +37,8 @@ usage: relriskparity [-ve {A,B,C}] [-rc RISK_CONTRIBUTION] [-pf PENAL_FACTOR] [-
 | threshold_value | Value used to replace outliers that are higher to threshold in absolute value | 0.3 | True | None |
 | long_allocation | Amount to allocate to portfolio | 1 | True | None |
 | name | Save portfolio with personalized or default name | RRP_0 | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -68,4 +69,6 @@ Annual (by 252) expected return: 28.99%
 Annual (by √252) volatility: 26.60%
 Sharpe ratio: 1.0899
 ```
+
+---
 

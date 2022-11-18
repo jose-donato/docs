@@ -7,17 +7,18 @@ description: OpenBB Terminal Function
 
 Remove similar tickers to compare with.
 
-### Usage 
+### Usage
+
 ```python
 usage: rmv [-s L_SIMILAR]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | l_similar | Tickers to remove from similar list |  | True | None |
-
-
 ---
+

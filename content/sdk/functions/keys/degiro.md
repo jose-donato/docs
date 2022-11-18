@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def set_degiro_key(username: str, password: str, secret: str = "", persist: bool = False, show_output: bool = False) -> str
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -23,11 +25,13 @@ def set_degiro_key(username: str, password: str, secret: str = "", persist: bool
 | persist | bool | If False, api key change will be contained to where it was changed. For example, Jupyter notebook.<br/>If True, api key change will be global, i.e. it will affect terminal environment variables.<br/>By default, False. | False | True |
 | show_output | bool | Display status string or not. By default, False. | False | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | str | Status of key set |
-
 ---
+

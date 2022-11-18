@@ -18,7 +18,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def get_defi_protocols(limit: int = 100, sortby: str = "", ascend: bool = False, description: bool = False, drop_chain: bool = True) -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -29,14 +31,16 @@ def get_defi_protocols(limit: int = 100, sortby: str = "", ascend: bool = False,
 | description | bool | Flag to display description of protocol | False | True |
 | drop_chain | bool | Whether to drop the chain column | True | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Information about DeFi protocols |
-
 ---
+
 
 
 </TabItem>
@@ -49,7 +53,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def display_defi_protocols(sortby: str, limit: int = 20, ascend: bool = False, description: bool = False, export: str = "") -> None
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -60,12 +66,15 @@ def display_defi_protocols(sortby: str, limit: int = 20, ascend: bool = False, d
 | description | bool | Flag to display description of protocol | False | True |
 | export | str | Export dataframe data to csv,json,xlsx file |  | True |
 
+
 ---
+
 ## Returns
 
 This function does not return anything
 
 ---
+
 
 
 </TabItem>

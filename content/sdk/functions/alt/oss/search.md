@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def search_repos(sortby: str = "stars", page: int = 1, categories: str = "") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -21,11 +23,13 @@ def search_repos(sortby: str = "stars", page: int = 1, categories: str = "") -> 
 | categories | str | Check for repo categories. If more than one separate with a comma: e.g., finance,investment. Default: None |  | True |
 | page | int | Page number to get repos | 1 | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe with repos |
-
 ---
+

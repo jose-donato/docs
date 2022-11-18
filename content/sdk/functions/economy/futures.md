@@ -12,7 +12,9 @@ Source Code: [[link](https://github.com/OpenBB-finance/OpenBBTerminal/tree/main/
 ```python
 def futures(source: Any = "WSJ", future_type: str = "Indices") -> pd.DataFrame
 ```
+
 ---
+
 ## Parameters
 
 | Name | Type | Description | Default | Optional |
@@ -20,25 +22,23 @@ def futures(source: Any = "WSJ", future_type: str = "Indices") -> pd.DataFrame
 | source | str | Data source for futures data.  From the following: WSJ, Finviz | WSJ | True |
 | future_type | str | (Finviz only) Future type to get.  Can be: Indices, Energy, Metals, Meats, Grains, Softs, Bonds, Currencies. | Indices | True |
 
+
 ---
+
 ## Returns
 
 | Type | Description |
 | ---- | ----------- |
 | pd.DataFrame | Dataframe of futures data. |
-
 ---
-## Examples
 
+## Examples
 
 To sort by the largest percent change:
 ```python
 from openbb_terminal.sdk import openbb
 wsj_futures = openbb.economy.futures()
 ```
-
----
-## Examples
 
 
 FinViz provides different options for future types.  We can get Meats with the following command:
@@ -47,3 +47,4 @@ futures_sorted = openbb.economy.futures().sort_values(by="%Chg", ascending=False
 ```
 
 ---
+

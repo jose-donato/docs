@@ -7,20 +7,21 @@ description: OpenBB Terminal Function
 
 Plot data based on the index
 
-### Usage 
+### Usage
+
 ```python
 usage: plot [-v VALUES]
 ```
 
 ---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | values | Dataset.column values to be displayed in a plot. Use comma to separate multiple | None | True | None |
-
-
 ---
+
 ## Examples
 
 ```python
@@ -28,4 +29,6 @@ usage: plot [-v VALUES]
 
 (🦋) /forecast/ $ plot appl.close
 ```
+
+---
 
