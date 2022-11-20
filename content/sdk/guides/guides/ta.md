@@ -48,11 +48,11 @@ The syntax for the data argument can be:
 
 - `data = ohlcv_df`
 
-    Where functions only require a single column, `data = ohlcv_df['Adj Close'])`
+    Where functions only require a single column, `data = ohlcv_df['Adj Close']`
 
 - `data = openbb.stocks.load("ticker")`
 
-    To target intraday, add the `interval` argument to the `load` syntax.
+    Target intraday by adding the `interval` argument to the `load` syntax.
 
 Best practice is to deploy the first method because the latter will work only with the commands requiring OHLC+V data as inputs. An error message will be returned if this is the case.
 
