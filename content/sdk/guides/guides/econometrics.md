@@ -67,35 +67,35 @@ file_load = openbb.econometric.load("PATH_TO_FILE/FILE.xlsx")
 
 | File               | Description                                               |
 | :----------------- | --------------------------------------------------------: | 
-│ anes96             │ American National Election Survey 1996                    │
-│ cancer             │ Breast Cancer Data                                        │
-│ ccard              │ Bill Greene’s credit scoring data.                        │
-│ cancer_china       │ Smoking and lung cancer in eight cities in China.         │
-│ co2                │ Mauna Loa Weekly Atmospheric CO2 Data                     │
-│ committee          │ First 100 days of the US House of Representatives 1995    │
-│ copper             │ World Copper Market 1951-1975 Dataset                     │
-│ cpunish            │ US Capital Punishment dataset.                            │
-│ danish_data        │ Danish Money Demand Data                                  │
-│ elnino             │ El Nino - Sea Surface Temperatures                        │
-│ engel              │ Engel (1857) food expenditure data                        │
-│ fair               │ Affairs dataset                                           │
-│ fertility          │ World Bank Fertility Data                                 │
-│ grunfeld           │ Grunfeld (1950) Investment Data                           │
-│ heart              │ Transplant Survival Data                                  │
-│ interest_inflation │ (West) German interest and inflation rate 1972-1998       │
-│ longley            │ Longley dataset                                           │
-│ macrodata          │ United States Macroeconomic data                          │
-│ modechoice         │ Travel Mode Choice                                        │
-│ nile               │ Nile River flows at Ashwan 1871-1970                      │
-│ randhie            │ RAND Health Insurance Experiment Data                     │
-│ scotland           │ Taxation Powers Vote for the Scottish Parliament 1997     │
-│ spector            │ Spector and Mazzeo (1980) - Program Effectiveness Data    │
-│ stackloss          │ Stack loss data                                           │
-│ star98             │ Star98 Educational Dataset                                │
-│ statecrim          │ Statewide Crime Data 2009                                 │
-│ strikes            │ U.S. Strike Duration Data                                 │
-│ sunspots           │ Yearly sunspots data 1700-2008                            │
-│ wage_panel         │ Veila and M. Verbeek (1998): Whose Wages Do Unions Raise? │
+| anes96             | American National Election Survey 1996                    |
+| cancer             | Breast Cancer Data                                        |
+| ccard              | Bill Greene’s credit scoring data.                        |
+| cancer_china       | Smoking and lung cancer in eight cities in China.         |
+| co2                | Mauna Loa Weekly Atmospheric CO2 Data                     |
+| committee          | First 100 days of the US House of Representatives 1995    |
+| copper             | World Copper Market 1951-1975 Dataset                     |
+| cpunish            | US Capital Punishment dataset.                            |
+| danish_data        | Danish Money Demand Data                                  |
+| elnino             | El Nino - Sea Surface Temperatures                        |
+| engel              | Engel (1857) food expenditure data                        |
+| fair               | Affairs dataset                                           |
+| fertility          | World Bank Fertility Data                                 |
+| grunfeld           | Grunfeld (1950) Investment Data                           |
+| heart              | Transplant Survival Data                                  |
+| interest_inflation | (West) German interest and inflation rate 1972-1998       |
+| longley            | Longley dataset                                           |
+| macrodata          | United States Macroeconomic data                          |
+| modechoice         | Travel Mode Choice                                        |
+| nile               | Nile River flows at Ashwan 1871-1970                      |
+| randhie            | RAND Health Insurance Experiment Data                     |
+| scotland           | Taxation Powers Vote for the Scottish Parliament 1997     |
+| spector            | Spector and Mazzeo (1980) - Program Effectiveness Data    |
+| stackloss          | Stack loss data                                           |
+| star98             | Star98 Educational Dataset                                |
+| statecrim          | Statewide Crime Data 2009                                 |
+| strikes            | U.S. Strike Duration Data                                 |
+| sunspots           | Yearly sunspots data 1700-2008                            |
+| wage_panel         | Veila and M. Verbeek (1998): Whose Wages Do Unions Raise? |
 
 
 ### Working with Time Series data
