@@ -1,16 +1,12 @@
 import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import ChevronRightIcon from "../components/Icons/ChevronRight";
-import BurgundyRadialGradient from "../components/Icons/RadialGradients/Burgundy";
 import RubyRedRadialGradient from "../components/Icons/RadialGradients/RubyRed";
-import LightBlueRadialGradient from "../components/Icons/RadialGradients/LightBlue";
 import DarkBlueRadialGradient from "../components/Icons/RadialGradients/DarkBlue";
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout description="Documentation for free and open source OpenBB products.">
       <main className="relative min-h-[75vh] py-20 md:py-0 flex flex-col items-center justify-center overflow-hidden">
@@ -18,10 +14,10 @@ export default function Home(): JSX.Element {
         <RubyRedRadialGradient className="absolute opacity-40 -right-[1000px] w-[1600px] h-[1600px] lg:-right-[1000px] lg:opacity-40 -top-20 xl:-top-60 xl:-right-[800px] 2xl:opacity-50" />
         <div className="flex mx-auto flex-col items-center justify-center w-full max-w-[906px]">
           <div className="z-10 flex flex-col items-center justify-center w-full h-full mb-10 md:mb-0">
-            <h1 className="mx-6 font-bold text-3xl lg:text-4xl leading-10 text-center mb-4 tracking-widest uppercase">
+            <h1 className="mx-6 font-bold text-2xl lg:text-3xl xl:text-4xl leading-10 text-center mb-4 tracking-widest uppercase">
               OpenBB Documentation
             </h1>
-            <p className="mx-6 w-[315px] md:w-[660px] text-center">
+            <p className="mx-6 w-[315px] md:w-[880px] text-sm lg:text-lg xl:text-xl text-center text-grey-900 dark:text-white">
               This website contains documentation for OpenBB SDK and Terminal, two
               open source projects that powers your investment research.
             </p>
@@ -34,12 +30,12 @@ export default function Home(): JSX.Element {
                 backgroundSize: "100% 110%",
               }}
               to="/terminal"
-              className="group !no-underline hover:text-grey-900 dark:hover:border-white hover:border-grey-900 dark:hover:!text-white relative w-full h-[238px] max-w-full p-8 rounded flex flex-col items-start justify-start border border-grey-400 dark:bg-grey-900"
+              className="shadow-sm group !no-underline text-grey-900 dark:text-white hover:text-grey-900 dark:hover:border-white hover:border-grey-900 dark:hover:!text-white relative w-full h-[238px] max-w-full p-8 rounded flex flex-col items-start justify-start border border-grey-400 bg-white dark:bg-grey-900"
             >
               <h3 className="uppercase tracking-widest font-bold text-2xl mb-3">
                 OpenBB Terminal
               </h3>
-              <p className="text-center text-sm dark:text-grey-300">
+              <p className="text-sm lg:text-base dark:text-grey-300">
                 Desktop application that allows you to perform your own investment
                 research.
               </p>
@@ -59,12 +55,12 @@ export default function Home(): JSX.Element {
                 backgroundSize: "100% 130%",
               }}
               to="/sdk"
-              className="group !no-underline hover:text-grey-900 dark:hover:border-white hover:border-grey-900 dark:hover:!text-white relative w-full h-[238px] max-w-full p-8 rounded flex flex-col items-start justify-start border border-grey-400 dark:bg-grey-900"
+              className="shadow-sm group !no-underline text-grey-900 dark:text-white hover:text-grey-900 dark:hover:border-white hover:border-grey-900 dark:hover:!text-white relative w-full h-[238px] max-w-full p-8 rounded flex flex-col items-start justify-start border border-grey-400 bg-white dark:bg-grey-900"
             >
               <h3 className="uppercase tracking-widest font-bold text-2xl mb-3">
                 OpenBB SDK
               </h3>
-              <p className="text-sm dark:text-grey-300">
+              <p className="text-sm lg:text-base dark:text-grey-300">
                 Python library that allows you to build your own investment
                 research platform.
               </p>
