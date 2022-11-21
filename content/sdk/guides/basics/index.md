@@ -54,9 +54,9 @@ Help on Operation in module openbb_terminal.core.library.operation:
 
 ## Requesting and Handling Data
 
-### Dataframes
+### Your First Function
 
-The results from data functions are not stored to memory unless explicitly instructed to. Most functions returning data are presented as a Pandas DataFrame.
+To get started using the OpenBB SDK you can try the below code for your first function.
 
 ```python
 openbb.economy.events()
@@ -70,6 +70,8 @@ openbb.economy.events()
 |  3 | 02:00        | United Kingdom | Claimant Count Change         | 3.3K     | 17.3K       | 3.9K       | 2022-11-15 |
 |  4 | 02:00        | United Kingdom | Employment Change 3M/3M       | -52K     | -25K        | -109K      | 2022-11-15 |
 
+:::note - The results from data functions are not stored to memory unless explicitly instructed to. Most functions returning data are presented as a Pandas DataFrame.
+:::
 
 Modify the syntax slightly to deliver the output into a DataFrame:
 
@@ -93,8 +95,9 @@ events
 | 09:00 | Germany       | German Buba Balz Speaks                | -        | -           | -          | 2022-11-15 |
 | 09:00 | Germany       | German Buba Vice President Buch Speaks | -        | -           | -          | 2022-11-15 |
 
+### Passing Results to Another Function
 
-Where the input to a function is a list, it may be desireable to derive that list from a different function. This can be useful for screening tickers, or analyzing particular industries or sectors. The Comparison Analysis sub-module, within Stocks, is one set of functions that can benefit from this kind of workflow. Instead of something like:
+Let's take a look at another example where the input to a function is a list. It may be desireable to derive that list from a different function. This can be useful for screening tickers, or analyzing particular industries or sectors. The Comparison Analysis sub-module, within Stocks, is one set of functions that can benefit from this kind of workflow. Instead of something like:
 
 ```python
 openbb.stocks.ca.screener(similar = ['AAPL', 'NFLX', 'META', 'AMZN', 'MSFT', 'GOOGL', 'DIS', 'TSLA'], data_type = 'valuation')
@@ -122,7 +125,7 @@ dia_valuation.head(5)
 
 ### Displaying Charts
 
-The OpenBB SDK has built-in charting libraries for Matplotlib, for any chart available from the Terminal. User style sheets can be added to the folder, `~/OpenBBUserData/styles/user`. Styles are shared properties between the OpenBB Terminal and the SDK.
+The OpenBB SDK has built-in charting libraries for Matplotlib, for any chart available from the Terminal. User style sheets can be added to the folder (more on this in [User Settings](/sdk/guides/advanced/user-settings)), `~/OpenBBUserData/styles/user`. Styles are shared properties between the OpenBB Terminal and the SDK.
 
 Functions, such as `candle`, exist to display charts. Others, like those within the Technical Analysis module, have the option to return either, a chart or raw data. The next examples will outline a few different scenarios.
 
