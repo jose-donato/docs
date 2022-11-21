@@ -5,7 +5,6 @@ excerpt: "This guide introduces the Forecast SDK in the context of the OpenBB SD
 
 ---
 
-
 The Forecast module provides programmatic access to the commands from within the OpenBB Terminal. Import the OpenBB SDK module, and then access the functions similarly to how the Terminal menus are navigated. The code completion will be activated upon entering `.`, after, `openbb.forecast`
 ​
 ## How to Use

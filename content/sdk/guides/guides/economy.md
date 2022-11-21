@@ -347,7 +347,6 @@ parameters.tail(5)
 | HOU     | House price index         | Monthly  | House price index defined with base 2015 for Europe with varying bases for others. See: https://www.econdb.com/main-indicators       |
 | OILPROD | Oil production            | Monthly  | The amount of oil barrels produced per day in a month within a country.                                                              |
 | POP     | Population                | Monthly  | The population of a country. This can be in thousands or, when relatively small, in actual units.                                    |
-...continued
 
 The data from the `macro` function is unpacked like:
 

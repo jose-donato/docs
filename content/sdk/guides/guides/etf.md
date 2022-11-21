@@ -12,8 +12,7 @@ The ETF module provides programmatic access to the commands from within the Open
 
 ## How to Use
 
-​
-The examples provided below will assume that the following import block is included at the beginning of the Python script or Notebook file:
+​The examples provided below will assume that the following import block is included at the beginning of the Python script or Notebook file:
 ​
 
 ```python
@@ -21,8 +20,7 @@ from openbb_terminal.sdk import openbb
 import pandas as pd
 ```
 
-​
-Below is a brief description of each function within the ETF module:
+​Below is a brief description of each function within the ETF module:
 
 |Path |Type |Description |
 |:---------|:---------:|------------------------------:|
@@ -64,8 +62,6 @@ categories = pd.DataFrame(categories[1::], columns = ['Type'])
 categories.head(6)
 ```
 
-​
-
 |     | Type                      |
 | --: | :------------------------ |
 |   0 | Pacific/Asia ex-Japan Stk |
@@ -75,8 +71,7 @@ categories.head(6)
 |   4 | Large Blend               |
 |   5 | Multisector Bond          |
 
-​
-Replacing the empty category in the syntax above will return the ETFs within that category:
+​Replacing the empty category in the syntax above will return the ETFs within that category:
 ​
 
 ```python
@@ -85,8 +80,6 @@ etf_category = etf_category.sort_values(by=['total_assets'], ascending = False)
 ​
 etf_category.head(2)
 ```
-
-​
 
 |      | short_name                      | long_name                                                | currency | summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | category            | family   | exchange | market    | total_assets |
 | :--- | :------------------------------ | :------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ | :------- | :------- | :-------- | -----------: |
