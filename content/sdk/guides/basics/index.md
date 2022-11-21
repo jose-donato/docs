@@ -127,25 +127,20 @@ dia_valuation.head(5)
 
 The OpenBB SDK has built-in charting libraries for Matplotlib, for any chart available from the Terminal. User style sheets can be added to the folder (more on this in [User Settings](/sdk/guides/advanced/user-settings)), `~/OpenBBUserData/styles/user`. Styles are shared properties between the OpenBB Terminal and the SDK.
 
-Functions, such as `candle`, exist to display charts. Others, like those within the Technical Analysis module, have the option to return either, a chart or raw data. The next examples will outline a few different scenarios.
-
-Data from the previous example, `spx_daily`, can feed the inputs to the `openbb.stocks.candle` function. However, if this particular `DateTime Index` remains sorted by descending dates, the x-axis will be backwards and the chart will read from right-to-left. To correct this, sort the index with `ascending = True`.
+Functions, such as `candle`, exist to display charts. Others, like those within the Technical Analysis module, have the option to return either, a chart or raw data. The next examples will outline a few different scenarios. Lets first get some data :
 
 ```python
-spx_daily.sort_index(ascending = True, inplace = True)
-openbb.stocks.candle(symbol = '', data = spx, asset_type = 'SPX Daily Chart From January 2, 1990')
+spy_daily = openbb.stocks.load(
+        symbol = 'SPY',
+        start_date = '1993-11-01',
+        monthly = True)
 ```
 
-![openbb.stocks.candle](https://user-images.githubusercontent.com/85772166/202800196-ca30fe7f-0a6d-4b38-8a03-a825c3467900.png "openbb.stocks.candle")
-
-If there is no data already in memory, assign the `data` argument as a load function, for example:
+Data from the previous example, `spy_daily`, can feed the inputs to the `openbb.stocks.candle` function, for example:
 
 ```python
 openbb.stocks.candle(
-    data = openbb.stocks.load(
-        symbol = 'SPY',
-        start_date = '1993-11-01',
-        monthly = True),
+    data = spy_daily,
     asset_type = 'SPY - Monthly Chart from November, 1993',
     symbol = ''
 )
