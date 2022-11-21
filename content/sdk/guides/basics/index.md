@@ -13,11 +13,12 @@ from openbb_terminal.sdk import openbb
 
 While enough to use most functions, additional modules (already installed dependencies) must be imported in order to manipulate data, and also to display inline images. Some of the most commonly used items will be:
 
+  -  Datetime
+  -  JSON
   -  Pandas
   -  Numpy
   -  Matplotlib
   -  Requests
-  -  JSON
 
 The first code block, within the Python script or Jupyter Notebook file, will expand to include these general-purpose modules.
 
@@ -25,8 +26,9 @@ The first code block, within the Python script or Jupyter Notebook file, will ex
 import json
 import requests
 import pandas as pd
+import pandas_datareader as pdr
 import numpy as np
-
+from datetime import datetime
 from matplotlib import pyplot as plt
 
 from openbb_terminal.sdk import openbb
@@ -40,31 +42,12 @@ Example snippets used in the remainder of this guide will assume the code block 
 
 In the same way as operating the OpenBB Terminal, functions are divided into menus which are scrollable after code completion is activated. Entering a period, `.`, after `openbb`, will display the Sub-menus available.
 
-TODO : Replace Pic
-![Navigation](https://user-images.githubusercontent.com/85772166/201574108-18e43425-5c14-47e7-a609-295e980f6c81.png "Navigation")
-
+![Navigation](https://user-images.githubusercontent.com/85772166/202795900-5f1cb00a-a0ff-4899-b6e2-c5af54b653d1.png "Navigation")
 
 An alternate way to view the contents of a menu is to use Python's built-in help.
 
 ```python
 help(openbb.stocks.dd)
-
-Help on Breadcrumb in module openbb_terminal.core.library.breadcrumb:
-
-<openbb_terminal.core.library.breadcrumb.Breadcrumb object>
-    DD Menu
-
-    The SDK commands of the the menu:
-            <openbb>.stocks.dd.customer
-            <openbb>.stocks.dd.news
-            <openbb>.stocks.dd.rating
-            <openbb>.stocks.dd.supplier
-            <openbb>.stocks.dd.sec
-            <openbb>.stocks.dd.arktrades
-            <openbb>.stocks.dd.analyst
-            <openbb>.stocks.dd.rot
-            <openbb>.stocks.dd.est
-            <openbb>.stocks.dd.pt
 ```
 
 ### **Docstrings**
@@ -96,7 +79,7 @@ Help on Operation in module openbb_terminal.core.library.operation:
 
 ### **OpenBBUserData Folder**
 
-The OpenBB SDK shares settings, keys, and the [OpenBBUserData](https://openbb-finance.github.io/OpenBBTerminal/#importing-and-exporting-data-in-the-openbb-terminal) folder with the Terminal. Portfolio files, screener presets, and Matplotlib style sheets are all shared resources. This folder will be created after the first installation and it is read by subsequent installations. In functions where files are read from these locations, like screeners, it is not neccessary to include the full path. The code block below returns results from the stock screener, using the preset, `unusual_options`.
+The OpenBB SDK shares settings, keys, and the `OpenBBUserData` folder with the Terminal. Portfolio files, screener presets, and Matplotlib style sheets are all shared resources. This folder will be created after the first installation and it is read by subsequent installations. The default location for it is in the root of the operating system user account folder. For functions where files are read from these locations, like screeners, it is not neccessary to include the full path. The code block below returns results from the stock screener, using the preset, `unusual_options`.
 
 ```python
 results = []
@@ -117,8 +100,6 @@ results.head(5)
 | 32 | IBTE     | nan    |  0.05 |  0.0025 | -0.0015 |  -0.0214 |    -0.0661 |    0.0076 | 53.72 |   23.89 |   0.0008 |      0.0004 |  0.0004 | 5.85758e+06 |
 | 11 | PTLO     | nan    |  1.28 |  0.033  |  0.038  |   0.0368 |    -0.6097 |    0.5187 | 52.02 |   22.53 |  -0.0941 |     -0.004  | -0.0905 | 3.96768e+06 |
 | 65 | ABMD     |   1.32 | 10.78 |  0.1822 |  0.3316 |   0.3296 |    -0.0201 |    0.7027 | 78.79 |  374.32 |   0.0006 |     -0.0006 |  0.0011 | 3.50787e+06 |
-
-
 
 ## Requesting and Handling Data
 
@@ -198,10 +179,10 @@ Data from the previous example, `spx_daily`, can feed the inputs to the `openbb.
 
 ```python
 spx_daily.sort_index(ascending = True, inplace = True)
-openbb.stocks.candle(data = spx_daily, symbol = 'Daily SPX Chart from November 12, 1990')
+openbb.stocks.candle(symbol = '', data = spx, asset_type = 'SPX Daily Chart From January 2, 1990')
 ```
 
-![openbb.stocks.candle](https://user-images.githubusercontent.com/85772166/201583252-d8f94077-bfde-4b6e-984b-a6bec1986e29.png "openbb.stocks.candle")
+![openbb.stocks.candle](https://user-images.githubusercontent.com/85772166/202800196-ca30fe7f-0a6d-4b38-8a03-a825c3467900.png "openbb.stocks.candle")
 
 If there is no data already in memory, assign the `data` argument as a load function, for example:
 
@@ -209,18 +190,19 @@ If there is no data already in memory, assign the `data` argument as a load func
 openbb.stocks.candle(
     data = openbb.stocks.load(
         symbol = 'SPY',
-        start_date = '1993-11-11',
+        start_date = '1993-11-01',
         monthly = True),
-    symbol = 'SPY - Monthly Chart from November, 1993'
+    asset_type = 'SPY - Monthly Chart from November, 1993',
+    symbol = ''
 )
 ```
 
-![openbb.stocks.candle](https://user-images.githubusercontent.com/85772166/201583325-4383c712-6210-4395-8a21-6b7645275336.png "openbb.stocks.candle")
+![openbb.stocks.candle](https://user-images.githubusercontent.com/85772166/202801049-083ec045-7038-440b-8a54-7a02269e4a40.png "openbb.stocks.candle")
 
-When the returned results can be either, a chart or a table, adding `chart = True` to the syntax will display the chart instead of a table. For example, Donchian Channels:
+Where functions in the Terminal display either a chart or raw data, the command will have an additional `_chart` component. For example, Donchian Channels:
 
 ```python
-openbb.common.ta.donchian(openbb.stocks.load('SPY', interval = 15))
+openbb.ta.donchian(openbb.stocks.load('SPY', interval = 15))
 ```
 
 | date                |   DCL_20_20 |   DCM_20_20 |   DCU_20_20 |
@@ -233,21 +215,20 @@ openbb.common.ta.donchian(openbb.stocks.load('SPY', interval = 15))
 
 
 ```python
-openbb.common.ta.donchian(
+openbb.ta.donchian_chart(
     data = openbb.stocks.load('SPY', interval = 15),
-    chart = True,
     symbol = 'SPY 15 Minute Data'
 )
 ```
 
-![openbb.common.ta.donchian](https://user-images.githubusercontent.com/85772166/201583866-33b5e950-1c00-4ee4-8792-960cbf003162.png "openbb.common.ta.donchian")
+![openbb.ta.donchian](https://user-images.githubusercontent.com/85772166/202802907-40fa97c8-055d-4ef5-bbc2-7f01a5c5b738.png "openbb.ta.donchian")
 
 Futures curves are another example where this syntax is applied:
 
 ```python
-openbb.futures.curve('GE', chart = True)
+openbb.futures.curve_chart('GE')
 ```
 
 ![openbb.futures.curve](https://user-images.githubusercontent.com/85772166/201583945-18364efa-c305-4c1a-a032-f779e28894c8.png "openbb.futures.curve")
 
-The guides for each module explore functions and provides sample code snippets. Refer to each for more more about them.
+The guides for each module explore functions and provides sample code snippets. Refer to each for more about them.
