@@ -267,6 +267,7 @@ wage_panel
 |  2 |   13 |   1982 |       0 |       3 |      0 |    2940 |         0 |     14 |       0 | 1.34446 |         9 |            9 |
 |  3 |   13 |   1983 |       0 |       4 |      0 |    2960 |         0 |     14 |       0 | 1.43321 |        16 |            9 |
 |  4 |   13 |   1984 |       0 |       5 |      0 |    3071 |         0 |     14 |       0 | 1.56812 |        25 |            5 |
+
 4360 rows × 12 columns
 
 To run panel regressions, it is important to define both _entity_ (e.g. company) and _time_ (e.g. year).
