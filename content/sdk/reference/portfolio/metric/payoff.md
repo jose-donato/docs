@@ -29,8 +29,6 @@ This function does not take any parameters.
 ---
 
 ## Examples
-## Examples
-
 During some time periods there were no losing trades. Thus some values could not be calculated.
 ```python
 from openbb_terminal.sdk import openbb

@@ -59,8 +59,6 @@ openbb.portfolio.po.nco(portfolio_engine: portfolio_optimization.po_engine.PoEng
 ---
 
 ## Examples
-## Examples
-
 (        value
  AAPL  0.25044
  MSFT  0.49509

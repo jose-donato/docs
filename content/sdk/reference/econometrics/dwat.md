@@ -38,8 +38,6 @@ openbb.econometrics.dwat(model: statsmodels.regression.linear_model.RegressionRe
 ---
 
 ## Examples
-## Examples
-
 SDK Snippet:
 ```python
 from openbb_terminal.sdk import openbb
@@ -48,8 +46,6 @@ Y, X = df["lwage"], df[["exper","educ"]]
 model = openbb.econometrics.ols(Y,X)
 durbin_watson_value = openbb.econometrics.dwat(model)
 ```
-
-## Examples
 
 Result:
 ```python

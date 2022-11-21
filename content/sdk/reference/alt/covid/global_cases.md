@@ -32,8 +32,6 @@ openbb.alt.covid.global_cases(country: str)
 ---
 
 ## Examples
-## Examples
-
 Dataframe of historical cases for United States
 
 
@@ -41,16 +39,12 @@ Dataframe of historical cases for United States
 df = get_global_cases("United States")
 ```
 
-## Examples
-
 Dataframe of historical cases for Portugal
 
 
 ```python
 df = get_global_cases("Portugal")
 ```
-
-## Examples
 
 Dataframe of historical cases for Spain
 ```python

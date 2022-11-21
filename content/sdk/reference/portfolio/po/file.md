@@ -33,16 +33,12 @@ openbb.portfolio.po.file(portfolio_engine: portfolio_optimization.po_engine.PoEn
 ---
 
 ## Examples
-## Examples
-
 {}
 ```python
 from openbb_terminal.sdk import openbb
 p = openbb.portfolio.po.load(symbols_file_path="~/openbb_terminal/miscellaneous/portfolio_examples/allocation/60_40_Portfolio.xlsx")
 p.get_params()
 ```
-
-## Examples
 
 Parameters:
     interval    : 3y
@@ -55,8 +51,6 @@ Parameters:
 parameters = openbb.portfolio.po.file(portfolio_engine=p, parameters_file_path="~/openbb_terminal/miscellaneous/portfolio_examples/optimization/defaults.ini")
 ```
 
-## Examples
-
 {'interval': '3y',
  'log_returns': '0',
  'freq': 'd',
@@ -66,8 +60,6 @@ parameters = openbb.portfolio.po.file(portfolio_engine=p, parameters_file_path="
 ```python
 p.get_params()
 ```
-
-## Examples
 
 {'interval': '3y',
 'log_returns': '0',

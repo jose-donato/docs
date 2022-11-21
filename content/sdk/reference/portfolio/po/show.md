@@ -33,8 +33,6 @@ openbb.portfolio.po.show(portfolio_engine: portfolio_optimization.po_engine.PoEn
 ---
 
 ## Examples
-## Examples
-
         "SECTOR": {
             "AAPL": "INFORMATION TECHNOLOGY",
             "MSFT": "INFORMATION TECHNOLOGY",
@@ -57,16 +55,12 @@ p = openbb.portfolio.po.load(symbols=["AAPL", "MSFT", "AMZN"])
 d = {
 ```
 
-## Examples
-
 ['SECTOR']
 ```python
 p.set_categories_dict(categories=d)
 weights, performance = openbb.portfolio.po.equal(portfolio_engine=p)
 p.get_available_categories()
 ```
-
-## Examples
 
 ['ASSET_CLASS',
  'SECTOR',

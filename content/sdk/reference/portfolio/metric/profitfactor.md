@@ -32,8 +32,6 @@ openbb.portfolio.metric.profitfactor(portfolio_engine: portfolio_engine.Portfoli
 ---
 
 ## Examples
-## Examples
-
 During some time periods there were no losing trades. Thus some values could not be calculated.
 ```python
 from openbb_terminal.sdk import openbb
