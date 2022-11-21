@@ -11,31 +11,6 @@ Now that you have the SDK installed, the first step is to import the OpenBB SDK 
 from openbb_terminal.sdk import openbb
 ```
 
-While enough to use most functions, additional modules (already installed dependencies) must be imported in order to manipulate data, and also to display inline images. Some of the most commonly used items will be:
-
-  -  Datetime
-  -  JSON
-  -  Pandas
-  -  Numpy
-  -  Matplotlib
-  -  Requests
-
-The first code block, within the Python script or Jupyter Notebook file, will expand to include these general-purpose modules.
-
-```python
-import json
-import requests
-import pandas as pd
-import pandas_datareader as pdr
-import numpy as np
-from datetime import datetime
-from matplotlib import pyplot as plt
-
-from openbb_terminal.sdk import openbb
-
-%matplotlib inline ##optional if using Jupyter Notebook
-```
-
 Example snippets used in the remainder of this guide will assume the code block above is used, and that the `Python kernel` selected is the environment created during the installation process.
 
 ### **Navigation**
