@@ -112,7 +112,6 @@ fwd_usdeur
 | Spot Next     | 0.9618  | 0.96174 | 0.96177 |   -1.97  |
 | One Week      | 0.96154 | 0.96148 | 0.96151 |   -4.61  |
 | Two Weeks     | 0.96108 | 0.96101 | 0.96104 |   -9.265 |
-...continued
 | Two Years     | 0.92285 | 0.92237 | 0.92261 | -393.605 |
 
 Currency pairs will have different term structure composition in the other direction:
@@ -125,7 +124,6 @@ fwd_eurusd
 
 | Expiration   |     Ask |     Bid |     Mid |   Points |
 |:-------------|--------:|--------:|--------:|---------:|
-...continued
 | One Year     | 1.06639 | 1.06589 | 1.06614 |    263.9 |
 | Two Years    | 1.0874  | 1.0867  | 1.08705 |    473   |
 | Three Years  | 1.10033 | 1.09933 | 1.09983 |    600.8 |
@@ -156,4 +154,3 @@ fwd_pairs
 | Two Months    |       144.989 |       144.977 |       144.983 |         -46.995  |       0.95697 |       0.95689 |       0.95693 |          -50.445 |
 | Three Months  |       144.987 |       144.974 |       144.981 |         -73.347  |       0.95468 |       0.95459 |       0.95463 |          -73.39  |
 | Four Months   |       144.984 |       144.972 |       144.978 |        -103.125  |       0.95291 |       0.95281 |       0.95286 |          -91.11  |
-...continued

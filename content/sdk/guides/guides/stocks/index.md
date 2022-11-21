@@ -78,7 +78,6 @@ spy_monthly.head(3)
 | 1993-02-01 00:00:00 | 43.9688 | 45.125  | 42.8125 | 44.4062 |     25.6043 | 5.4176e+06 |
 | 1993-03-01 00:00:00 | 44.5625 | 45.8438 | 44.2188 | 45.1875 |     26.0548 | 3.0192e+06 |
 | 1993-04-01 00:00:00 | 45.25   | 45.25   | 43.2812 | 44.0312 |     25.508  | 2.6972e+06 |
-...continued
 
 There are source-dependent differences to the DataFrame returned. For example, compare the above with below:
 

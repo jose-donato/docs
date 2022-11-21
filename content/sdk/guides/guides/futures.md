@@ -4,6 +4,9 @@ title: Futures
 
 The functions from the OpenBB Terminal Futures menu is part of the SDK layer, and provides methods for programmatically accessing the data and charts associated with them. Get started by importing the OpenBB SDK to the Python script or Jupyter Notebook file.
 
+
+## How to Use
+
 Below is a brief description of each function within the Futures module:
 
 |Path |Type |Description |
@@ -14,35 +17,11 @@ Below is a brief description of each function within the Futures module:
 |openbb.futures.historical |Function |Historical OHLC+V Data
 |openbb.futures.historical_chart |Function |Chart Historical Price of Individual Contracts
 
-## How to Use
-
-Print the doctstring for any function with:
-
-```python
-help(openbb.futures.curve)
-
-Help on Operation in module openbb_terminal.core.library.operation:
-
-<openbb_terminal.core.library.operation.Operation object>
-    Use 'futures.curve_chart' to access the view.
-    Get curve futures [Source: Yahoo Finance]
-
-        Parameters
-        ----------
-        symbol: str
-            symbol to get forward curve
-
-        Returns
-        -------
-        pd.DataFrame
-            Dictionary with sector weightings allocation
-```
-
 ## Examples
 
-The examples here will assume that the block below is included at the top of the file:
-
 ### Import Statements
+
+The examples here will assume that the block below is included at the top of the file:
 
 ```python
 from openbb_terminal.sdk import openbb
