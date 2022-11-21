@@ -42,8 +42,6 @@ openbb.econometrics.panel(Y: pd.DataFrame, X: pd.DataFrame, regression_type: str
 ---
 
 ## Examples
-## Examples
-
 SDK Snippet:
 ```python
 from openbb_terminal.sdk import openbb
@@ -54,8 +52,6 @@ Y = df["lwage"]
 pooled_ols_model = openbb.econometrics.panel(Y,X,"POLS")
 print(pooled_ols_model.summary)
 ```
-
-## Examples
 
 Results:
 ```python

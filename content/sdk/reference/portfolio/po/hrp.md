@@ -59,8 +59,6 @@ openbb.portfolio.po.hrp(portfolio_engine: portfolio_optimization.po_engine.PoEng
 ---
 
 ## Examples
-## Examples
-
 (        value
  AAPL  0.26729
  MSFT  0.30277

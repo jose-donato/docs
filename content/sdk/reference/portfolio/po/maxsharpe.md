@@ -53,8 +53,6 @@ openbb.portfolio.po.maxsharpe(portfolio_engine: portfolio_optimization.po_engine
 ---
 
 ## Examples
-## Examples
-
 (      value
  AAPL    1.0
  MSFT    0.0

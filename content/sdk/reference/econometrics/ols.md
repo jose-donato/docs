@@ -33,8 +33,6 @@ openbb.econometrics.ols(Y: pd.DataFrame, X: pd.DataFrame)
 ---
 
 ## Examples
-## Examples
-
 SDK Snippet:
 ```python
 import openbb_terminal.sdk as openbb
@@ -42,8 +40,6 @@ df = openbb.econometrics.load("wage_panel")
 OLS_model = openbb.econometrics.OLS(df["lwage"], df[["educ", "exper", "expersq"]])
 print(OLS_model.summary())`
 ```
-
-## Examples
 
 Results:
 ```python

@@ -52,8 +52,6 @@ openbb.portfolio.po.relriskparity(portfolio_engine: portfolio_optimization.po_en
 ---
 
 ## Examples
-## Examples
-
 (        value
  AAPL  0.33204
  MSFT  0.34949

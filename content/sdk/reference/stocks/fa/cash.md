@@ -36,8 +36,6 @@ openbb.stocks.fa.cash(symbol: str, quarterly: bool = False, ratios: bool = False
 ---
 
 ## Examples
-## Examples
-
 
 If you have a premium AlphaVantage key, you can use the quarterly flag to get quarterly statements
 ```python

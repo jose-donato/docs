@@ -53,8 +53,6 @@ openbb.portfolio.po.maxutil(portfolio_engine: portfolio_optimization.po_engine.P
 ---
 
 ## Examples
-## Examples
-
     (      value
      AAPL    1.0
      MSFT    0.0
