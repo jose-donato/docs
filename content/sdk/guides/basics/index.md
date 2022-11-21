@@ -231,4 +231,4 @@ openbb.futures.curve_chart('GE')
 
 ![openbb.futures.curve](https://user-images.githubusercontent.com/85772166/201583945-18364efa-c305-4c1a-a032-f779e28894c8.png "openbb.futures.curve")
 
-The guides for each module explore functions and provides sample code snippets. Refer to each for more about them.
+The guides section for each module explore further functionality and provide sample code snippets.

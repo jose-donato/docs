@@ -1,5 +1,5 @@
 ---
-title: TA (Technical Analysis) SDK
+title: Technical Analysis
 sidebar_location:
 ---
 
@@ -119,9 +119,9 @@ The `window` argument anticipates a list of integers representing the interval (
 es = openbb.stocks.load("ES=F")
 
 openbb.ta.ma_chart(
-    data = es['Adj Close'], 
-    symbol = 'E-Mini S&P Futures', 
-    ma_type = 'SMA', 
+    data = es['Adj Close'],
+    symbol = 'E-Mini S&P Futures',
+    ma_type = 'SMA',
     window = [21, 150])
 ```
 

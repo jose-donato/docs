@@ -1,5 +1,5 @@
 ---
-title: Crypto SDK
+title: Crypto
 sidebar_location:
 ---
 
@@ -48,7 +48,7 @@ Help on Operation in module openbb_terminal.core.library.operation:
 
 <openbb_terminal.core.library.operation.Operation object>
     Load crypto currency to get data for
-    
+
     Parameters
     ----------
     symbol: str
@@ -67,7 +67,7 @@ Help on Operation in module openbb_terminal.core.library.operation:
     source: str
         The source of the data
         Choose from: CCXT, CoinGecko, YahooFinance
-    
+
     Returns
     -------
     pd.DataFrame
@@ -248,7 +248,7 @@ openbb.crypto.candles(eth_df)
 
 ![openbb.crypto.candles](https://user-images.githubusercontent.com/85772166/202791587-d69c7568-69ff-46b3-b41f-146ed8796f7e.png "openbb.crypto.candles")
 
-Notice that the chart has no title. It can be added using the `title` argument. 
+Notice that the chart has no title. It can be added using the `title` argument.
 
 ```python
 openbb.crypto.candles(eth_df, title = 'ETH/USDT (Monthly)')
@@ -411,7 +411,6 @@ openbb.crypto.ov.news(post_kind = 'news',region = 'en', filter_= 'important', as
 |    |                |                    | Good Idea?                                                         |                  |                  |                                                                                                                                                   |
 | 15 | 2022-11-18     | dailyhodl.com      | ‘Secret’ Altcoin Goes Parabolic After Rumors of European Ban on    |                0 |                3 | https://cryptopanic.com/news/16925942/Secret-Altcoin-Goes-Parabolic-After-Rumors-of-European-Ban-on-Privacy-Coins-Swirl                           |
 |    |                |                    | Privacy Coins Swirl                                                |                  |                  |                                                                                                                                                   |
-...continued
 | 74 | 2022-11-15     | cryptopotato.com   | OKX Announces $100 Million Fund to Support Distressed Projects     |                0 |                4 | https://cryptopanic.com/news/16903760/OKX-Announces-100-Million-Fund-to-Support-Distressed-Projects-Following-FTX-Crash-Report |
 |    |                |                    | Following FTX Crash (Report)                                       |                  |                  |                                                                                                                                |
 | 73 | 2022-11-15     | cointelegraph.com  | Thousands petition for congressional investigation of alleged      |                1 |               36 | https://cryptopanic.com/news/16904296/Thousands-petition-for-congressional-investigation-of-alleged-GenslerSBF-links           |
