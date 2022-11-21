@@ -250,7 +250,7 @@ openbb.econometrics.bpag(ols_regression)
 
 ### Working with Panel data
 
-Within the examples of there is one panel dataset available named `wage_panel`. This is a dataset from the paper by Vella and M. Verbeek (1998), “Whose Wages Do Unions Raise? A Dynamic Model of Unionism and Wage Rate Determination for Young Men,” Journal of Applied Econometrics 13, 163-183. This is a well-known dataset also used within Chapter 14 of <a href="https://www.amazon.com/Introductory-Econometrics-Modern-Approach-Economics/dp/1111531048" target="_blank">Introduction to Econometrics by Jeffrey Wooldridge</a>.
+Within the examples there is one panel dataset available named `wage_panel`. This is a dataset from the paper by Vella and M. Verbeek (1998), “Whose Wages Do Unions Raise? A Dynamic Model of Unionism and Wage Rate Determination for Young Men,” Journal of Applied Econometrics 13, 163-183. This is a well-known dataset also used within Chapter 14 of <a href="https://www.amazon.com/Introductory-Econometrics-Modern-Approach-Economics/dp/1111531048" target="_blank">Introduction to Econometrics by Jeffrey Wooldridge</a>.
 
 ```python
 # Load the data
