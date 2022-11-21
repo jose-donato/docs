@@ -15,7 +15,7 @@ With OpenBB SDK, you can gain access to normalized financial data from dozens of
 data providers, without having to develop your own integrations from scratch. On
 top of financial data feeds, OpenBB SDK also provides you with a toolbox to
 perform financial analysis on a variety of asset classes, including stocks,
-crypto, ETFs, funds, and the economy as well as your portfolio optimization and
+crypto, ETFs, funds, and the economy as well as portfolio optimization and
 analysis.
 
 OpenBB SDK is created and maintained by the OpenBB team together with the

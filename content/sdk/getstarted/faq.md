@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # FAQ
 
-<details><summary>Where the data comes from?</summary>
+<details><summary>Where does the data comes from?</summary>
 <p>
 
 OpenBB does not provide any data. OpenBB is a data aggregator that connects to
