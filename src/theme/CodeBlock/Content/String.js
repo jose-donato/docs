@@ -38,7 +38,6 @@ export default function CodeBlockString({
     language,
     magicComments,
   });
-  const isFuncDef = code?.includes("->");
   const showLineNumbers =
     showLineNumbersProp ?? containsLineNumbers(metastring);
   return (
@@ -94,9 +93,7 @@ export default function CodeBlockString({
               isEnabled={wordWrap.isEnabled}
             />
           )}
-          {!isFuncDef && (
-            <CopyButton className={styles.codeButton} code={code} />
-          )}
+          <CopyButton className={styles.codeButton} code={code} />
         </div>
       </div>
     </Container>

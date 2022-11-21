@@ -3,18 +3,17 @@ title: list
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## list
-
-### Description: 
+# list
 
 List order history
 
-### Usage: 
+### Usage
+
 ```python
 usage: list [-s STATE] [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
@@ -22,5 +21,5 @@ usage: list [-s STATE] [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | state | List orders that have a specific state. | ALL | True | None |
 | limit | Limit the number of orders to retrieve. | 20 | True | None |
-
+---
 

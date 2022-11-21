@@ -3,18 +3,17 @@ title: candles
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## candles
-
-### Description: 
+# candles
 
 Display Candle Data
 
-### Usage: 
+### Usage
+
 ```python
 usage: candles [-g GRANULARITY] [-l CANDLECOUNT] [-a] [-b] [-c] [-e] [-o] [-r] [-s] [-v]
 ```
+
+---
 
 ## Parameters
 
@@ -30,5 +29,5 @@ usage: candles [-g GRANULARITY] [-l CANDLECOUNT] [-a] [-b] [-c] [-e] [-o] [-r] [
 | rsi | Adds rsi (Relative Strength Index) to the chart | False | True | None |
 | sma | Adds sma (Simple Moving Average) to the chart | False | True | None |
 | vwap | Adds vwap (Volume Weighted Average Price) to the chart | False | True | None |
-
+---
 

@@ -3,18 +3,21 @@ title: pending
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## pending
-
-### Description: 
+# pending
 
 Get information about pending orders.
 
-### Usage: 
+### Usage
+
 ```python
 usage: pending
 ```
 
+---
 
+## Parameters
+
+This command has no parameters
+
+---
 

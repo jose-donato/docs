@@ -3,18 +3,17 @@ title: history
 description: OpenBB Terminal Function
 ---
 
-# Coinbase
-
-## history
-
-### Description: 
+# history
 
 Display account history
 
-### Usage: 
+### Usage
+
 ```python
 usage: history [-a ACCOUNT] [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
@@ -22,5 +21,5 @@ usage: history [-a ACCOUNT] [-l LIMIT]
 | ---- | ----------- | ------- | -------- | ------- |
 | account | Symbol of coin of account or id | BTC | True | None |
 | limit | Limit parameter. | 20 | True | None |
-
+---
 

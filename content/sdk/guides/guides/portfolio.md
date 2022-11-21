@@ -6,22 +6,7 @@ menu and provides a brief description of its sub-menus"
 
 ---
 
-The capabilities of the
-<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/portfolio/" target="_blank">Portfolio
-menu</a> from the OpenBB Terminal are wrapped into a powerful SDK, enabling
-users to work with the data in a flexible environment that can be fully
-customized to meet the needs of any user. This menu is dedicated to properly
-explaining and optimizing your own portfolio with features to load your own
-orderbook (transactions) it is possible to compare your results to that of a
-<a href="https://www.investopedia.com/terms/b/benchmark.asp" target="_blank">benchmark</a>.
-For example, you are able to load both your portfolio and a benchmark, then have
-the option to look into the performance compared to the benchmark asking the
-question "_What if I invested all my money in the benchmark instead?_" as well
-as see a wide variety of statistics and metrics. Next to that, with these
-findings you can apply optimization techniques to your portfolio through
-functionalities regarding
-<a href="https://openbb-finance.github.io/OpenBBTerminal/sdk/portfolio/po/" target="_blank">Portfolio
-Optimization</a>.
+The capabilities of the [Portfolio menu](/terminal/guides/portfolio) from the OpenBB Terminal are wrapped into a powerful SDK, enabling users to work with the data in a flexible environment that can be fully customized to meet the needs of any user. This menu is dedicated to properly explaining and optimizing your own portfolio with features to load your own orderbook (transactions) it is possible to compare your results to that of a <a href="https://www.investopedia.com/terms/b/benchmark.asp" target="_blank">benchmark</a>. For example, you are able to load both your portfolio and a benchmark, then have the option to look into the performance compared to the benchmark asking the question "_What if I invested all my money in the benchmark instead?_" as well as see a wide variety of statistics and metrics. Next to that, with these findings you can apply optimization techniques to your portfolio through functionalities which can be found in the `openbb.portfolio.po` sub-module.
 
 ## How to use
 
@@ -31,45 +16,41 @@ Start a Python script or Notebook file by importing the module:
 from openbb_terminal.sdk import openbb
 ```
 
-The contents of the menu is printed by running a cell with `openbb.portfolio`
-which returns the following:
-
-```
-PORTFOLIO Menu
-
-
-A brief description below highlights the main Functions and Modules available in the ETF SDK
+Below is a brief description of each function within the Portfolio module:
 
 | Path                       |    Type    |                                  Description |
 | :------------------------- | :--------: | -------------------------------------------: |
-| openbb.portfolio.summary          |  Function  |        Chart OHLC + Volume + Moving Averages |
-| openbb.portfolio.po            | Sub-Module |         Best/Worst/Highest Volume ETFs Today |
-| openbb.portfolio.dret |  Function  |                           Lookup by Category |
-| openbb.portfolio.holdp     |  Function  |                               Lookup by Name |
-| openbb.portfolio.yret        |  Function  |                         Holdings and Weights |
-| openbb.portfolio.rbeta              |  Function  |                        Lookup by Description |
-| openbb.portfolio.rsharpe            |  Function  |                    Get Historical Price Data |
-| openbb.portfolio.distr              |  Function  | Lookup by Name (More Details Than `by_name`) |
-| openbb.portfolio.om            |  Function  |                  News Headlines for a Ticker |
-| openbb.portfolio.es        |  Function  |                  Basic Statistics for an ETF |
-| openbb.portfolio.perf             | Function |                                 ETF Screener |
-| openbb.portfolio.rsort         |  Function  |       Text Description and Summary of an ETF |
-| openbb.portfolio.bench         | Function |                  Dictionary of {Ticker:Name} |
-| openbb.portfolio.metric         |  Sub-Module  |      Table or Pie Graph of Sector Weightings |
-| openbb.portfolio.alloc         |  Function  |      Table or Pie Graph of Sector Weightings |
-| openbb.portfolio.rvol         |  Function  |      Table or Pie Graph of Sector Weightings |
-| openbb.portfolio.var         |  Function  |      Table or Pie Graph of Sector Weightings |
-| openbb.portfolio.load         |  Function  |      Table or Pie Graph of Sector Weightings |
-| openbb.portfolio.show         |  Function  |      Table or Pie Graph of Sector Weightings |
-| openbb.portfolio.mret         |  Function  |      Table or Pie Graph of Sector Weightings |
-| openbb.portfolio.holdv         |  Function  |      Table or Pie Graph of Sector Weightings |
+| openbb.portfolio.summary          |  Function  |    Portfolio and benchmark returns summary |
+| openbb.portfolio.po            | Sub-Module |         Portfolio Optimization Sub Menu |
+| openbb.portfolio.dret |  Function  |                           Get daily returns |
+| openbb.portfolio.holdp     |  Function  |                    Get holdings of assets in % |
+| openbb.portfolio.yret        |  Function  |            Get yearly returns |
+| openbb.portfolio.rbeta              |  Function  |   Rolling beta using portfolio and benchmark returns |
+| openbb.portfolio.rsharpe            |  Function  |         Rolling sharpe ratio |
+| openbb.portfolio.distr              |  Function  | Distribution of daily returns |
+| openbb.portfolio.om            |  Function  |                  Omega ratio |
+| openbb.portfolio.es        |  Function  |                 Expected shortfall |
+| openbb.portfolio.perf             | Function |         Portfolio performance vs the benchmark |
+| openbb.portfolio.rsort         |  Function  |       Rolling sortino |
+| openbb.portfolio.bench         | Function |                  Load benchmark into portfolio |
+| openbb.portfolio.metric         |  Sub-Module  |      Metric functions you can apply |
+| openbb.portfolio.alloc         |  Function  |      Region allocation compared to the benchmark |
+| openbb.portfolio.rvol         |  Function  |      Rolling volatility |
+| openbb.portfolio.var         |  Function  |      Get portfolio VaR |
+| openbb.portfolio.load         |  Function  |      Load portfolio using a file |
+| openbb.portfolio.show         |  Function  |      Get portfolio transactions |
+| openbb.portfolio.mret         |  Function  |      Get monthly returns |
+| openbb.portfolio.holdv         |  Function  |      Get holdings of assets (absolute value) |
 
 Alteratively you can print the contents of the Porfolio SDK with:
-​
 
 ```python
 help(openbb.portfolio)
 ```
+
+## Examples
+
+### Loading a Portfolio
 
 The first step in using this menu is loading a portfolio. Here, we provide an
 example titled "Public_Equity_Orderbook.xlsx" which can be loaded in. This file
@@ -91,6 +72,8 @@ P.generate_portfolio_data()
 P.load_benchmark()
 ```
 
+### Excel Sheet Format
+
 Note that the Excel sheet requires the following columns:
 
 - **Date** - The date the trade occurred
@@ -109,6 +92,8 @@ sector, country and region belongs to the loaded in equity. You can see this in
 action by loading in the "Public_Equity_Orderbook_No_Categorization.xlsx" Excel
 sheet.
 
+### get_orderbook
+
 With the `get_orderbook` on the `Portfolio` class command we can show how the
 data has been loaded in:
 
@@ -125,6 +110,8 @@ This returns the following (a portion of the data):
 |  36 | 2022-03-04 | STOCK | TSM    | Buy  | 105.06 |       30 |    0 |     3151.8 | USD      | Technology        | Semiconductors         | Taiwan        | Asia          |
 |  35 | 2022-02-02 | STOCK | BABA   | Buy  | 122.88 |       30 |    0 |     3686.4 | USD      | Consumer Cyclical | Internet Retail        | China         | Asia          |
 |  34 | 2021-12-28 | STOCK | NKE    | Buy  | 166.42 |       13 |   20 |    2183.46 | USD      | Consumer Cyclical | Footwear & Accessories | Germany       | Europe        |
+
+### perf
 
 With the portfolio and benchmark loaded in, we can see how the portfolio
 performed compared to if you invested the same amount of money into the
@@ -145,6 +132,8 @@ openbb.portfolio.perf(P)
 Compliment this by showing the volatility of the portfolio for different time
 periods with the volatility measure.
 
+### volatility
+
 ```python
 openbb.portfolio.volatility(P)
 ```
@@ -162,7 +151,7 @@ openbb.portfolio.volatility(P)
 | 10y |        72.617 |        54.408 |
 | all |        91.162 |        62.297 |
 
-## Examples
+### Further Examples - No Categorization
 
 Instead of loading the "Public_Equity_Orderbook.xlsx" file, we now load in
 "Public_Equity_Orderbook_No_Categorization.xlsx" which does not include

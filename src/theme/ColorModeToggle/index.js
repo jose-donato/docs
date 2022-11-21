@@ -29,7 +29,7 @@ function ColorModeToggle({ className, value, onChange }) {
     }
   );
   return (
-    <div className="flex gap-4 mr-10 sm:mr-0">
+    <div className="flex gap-4 ml-4 md:ml-0">
       <PopoverPrimitive.Root>
         <PopoverPrimitive.Trigger className="bg-grey-900 radix-state-open:text-white hover:border-grey-200 hover:text-grey-200 radix-state-open:border-white border -mt-[0.6px] h-[34px] w-[34px] text-grey-400 border-grey-400 rounded flex items-center justify-center">
           {value !== "dark" ? (
@@ -42,7 +42,7 @@ function ColorModeToggle({ className, value, onChange }) {
           sideOffset={5}
           align="start"
           className={clsx(
-            "bg-grey-900 border text-white border-grey-200 rounded flex flex-col divide-y divide-grey-600 p-4"
+            "z-50 bg-grey-900 border text-white border-grey-200 rounded flex flex-col divide-y divide-grey-600 p-4"
           )}
         >
           <button

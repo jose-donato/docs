@@ -2,7 +2,7 @@
 title: Comparison Analysis
 keywords:
   [
-    "stocks, stock, options, option, comparison, analysis, tickers, stocks, insight
+    "stocks, stock, options, option, comparison, analysis, tickers, stocks, insight"
   ]
 excerpt: "This guide introduces the CA SDK in the context of the OpenBB SDK."
 ---

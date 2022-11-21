@@ -19,7 +19,7 @@ OpenBB Terminal is available in all major platforms. With MacOS/Windows you can 
 :::info Installation Instructions
 
 <Tabs>
-  <TabItem value="Windows" label="Windows">Install on Windows 🍎
+  <TabItem value="Windows" label="Windows">Install on Windows
   <div class="gdoc-page">
 
 </div><p>The process starts off by downloading the installer, see below for how to download the most recent release:</p>
@@ -55,7 +55,7 @@ still in beta phase, and the team has not yet requested verification from Window
 </div>
 </TabItem>
 
-<TabItem value="macOS" label="MacOS">Install on macOS 🍊
+<TabItem value="macOS" label="MacOS">Install on macOS 🍎
 
 <div class="gdoc-page">
 </div><p>The process starts off by downloading the installer, see below for how to download the most recent release:</p>

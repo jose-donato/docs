@@ -3,18 +3,21 @@ title: summary
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## summary
-
-### Description: 
+# summary
 
 Print some information about your account.
 
-### Usage: 
+### Usage
+
 ```python
 usage: summary
 ```
 
+---
 
+## Parameters
+
+This command has no parameters
+
+---
 

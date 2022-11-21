@@ -45,7 +45,7 @@ function Footer() {
       .then((data) => setStars(data.stargazers_count))
   }, [])
   return (
-    <footer className="border-t dark:border-grey-600/50 lg:px-12 py-14 bg-white dark:bg-grey-900 z-10">
+    <footer className="px-4 border-t dark:border-grey-600/50 lg:px-12 py-14 bg-white dark:bg-grey-900 z-10 overflow-hidden">
       <div className="flex w-full flex-col justify-between gap-10 md:flex-row md:items-start">
         <div className="ml-2 mb-2 space-y-10 md:m-0">
           <Link
@@ -56,7 +56,7 @@ function Footer() {
             <LetteringLogo className="h-[14px] w-[140px]" />
           </Link>
           <a
-            className="flex h-[32px] w-[172px] rounded-md border border-grey-300 hover:bg-grey-100 dark:border-white bg-white text-xs hover:no-underline"
+            className="flex h-[32px] w-[172px] rounded-md border border-grey-300 hover:bg-grey-100 dark:border-white bg-grey-100 dark:bg-white text-xs hover:no-underline"
             href="https://github.com/OpenBB-finance/OpenBBTerminal"
             target="_blank"
             rel="noreferrer"
@@ -79,7 +79,7 @@ function Footer() {
               <div key={url.label}>
                 <Submenu label={url.label} submenu={url.submenus} />
                 <div className="hidden md:block">
-                  <p className="mb-4 text-base font-bold uppercase tracking-widest">
+                  <p className="mb-4 text-base font-bold uppercase tracking-widest text-grey-600 dark:text-white">
                     {url.label}
                   </p>
                   <ul className="hidden flex-col gap-3 md:flex">
@@ -113,7 +113,7 @@ function Footer() {
           })}
         </div>
       </div>
-      <div className="divider" />
+      <hr />
       <div className="flex w-full flex-col items-center justify-between gap-4 md:flex-row md:gap-0">
         <div className="flex flex-col items-start justify-end gap-4 self-start font-light text-grey-500 md:flex-row md:items-center">
           <p className="text-sm">{`© ${new Date().getFullYear()} OpenBB`}</p>
@@ -137,7 +137,7 @@ function Footer() {
             rel="noreferrer"
             href="https://github.com/OpenBB-finance/OpenBBTerminal"
           >
-            <GithubIcon className="h-4 w-4 text-grey-900" />
+            <GithubIcon className="h-4 w-4" />
           </a>
           <a
             aria-label="LinkedIn Link"
@@ -146,7 +146,7 @@ function Footer() {
             rel="noreferrer"
             href="https://www.linkedin.com/company/openbb-finance/"
           >
-            <LinkedinIcon className="h-4 w-4 text-grey-900" />
+            <LinkedinIcon className="h-4 w-4" />
           </a>
           <a
             aria-label="Twitter Link"
@@ -155,16 +155,7 @@ function Footer() {
             rel="noreferrer"
             href="https://twitter.com/openbb_finance"
           >
-            <TwitterIcon className="h-4 w-4 text-grey-900" />
-          </a>
-          <a
-            aria-label="Instagram Link"
-            className="_btn !h-8 !w-8 p-0"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.instagram.com/openbb.finance/"
-          >
-            <InstagramIcon className="h-4 w-4 text-grey-900" />
+            <TwitterIcon className="h-4 w-4" />
           </a>
           <a
             aria-label="Tiktok Link"
@@ -182,7 +173,7 @@ function Footer() {
             rel="noreferrer"
             href="https://www.reddit.com/r/openbb/"
           >
-            <RedditIcon className="h-4 w-4 text-grey-900" />
+            <RedditIcon className="h-4 w-4" />
           </a>
           <a
             aria-label="Discord Link"
@@ -191,7 +182,7 @@ function Footer() {
             rel="noreferrer"
             href="https://discord.gg/xPHTuHCmuV"
           >
-            <DiscordIcon className="h-4 w-4 text-grey-900" />
+            <DiscordIcon className="h-4 w-4" />
           </a>
           <a
             aria-label="Youtube Link"
@@ -200,7 +191,7 @@ function Footer() {
             rel="noreferrer noopener"
             href="https://www.youtube.com/channel/UCaeFEx-W16IuxRsHlM1ywBQ"
           >
-            <YoutubeIcon className="h-4 w-4 text-grey-900" />
+            <YoutubeIcon className="h-4 w-4" />
           </a>
         </div>
       </div>
