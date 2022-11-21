@@ -1,6 +1,5 @@
 ---
 title: Introduction to Quantitative Analysis
-sidebar_position:
 ---
 
 The `qa` module is the Terminal's Quantitative Analysis menu for the SDK environment. It provides users with more ways to interact with the library of functions, and provides cross-disciplinary utility. To activate the code completion for the menu, enter `.` after, `openbb.qa`.
