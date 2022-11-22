@@ -4,15 +4,11 @@ title: Requirements
 
 The OpenBB SDK is a set of tools for financial and data analysis. We recommend starting out with some experience in finance, markets, and Python. The purpose of this page is to outline some of the background information required to get the most out of the software.
 
-Minimum of 8GB RAM
-Minimum of 5GB free storage
-High-speed internet connection
-
 ### Recommended System Requirements
 
 - 16GB RAM or more
 - Dedicated graphics card
-- Additional storage for saved datasets
+- 5GB free storage
 - A code editor, such as VS Code, with some extensions:
 
     - Jupyter
@@ -27,7 +23,7 @@ High-speed internet connection
 ### Minumum System Requirements
 
 - 8GB RAM or more
-- 10MB Additional storage for saved datasets
+- 5GB free storage
 - A code editor, such as VS Code
 - Chrome or Firefox
 
