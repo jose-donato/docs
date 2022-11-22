@@ -13,6 +13,7 @@ The examples provided below will assume that the following import block is inclu
 ​
 ```python
 from openbb_terminal.sdk import openbb
+import pandas as pd
 %matplotlib inline
 ```
 ​
@@ -68,8 +69,7 @@ help(openbb.forecast)
 Shows a correlation matrix between columns in dataset
 ​
 ```python
-path = "/Users/colindelahunty/OpenBBUserData/exports/20221117_112156_OpenBBTerminal_openbb_terminal_load.csv"
-df = openbb.forecast.load(path)
+df = pd.read_csv(ANDREW_REPLACE)
 openbb.forecast.corr_view(df)
 ```
 ![Corr View](https://user-images.githubusercontent.com/72827203/202424217-b549b6e7-b121-4273-a7d9-b478e89cd65a.png)
@@ -80,8 +80,7 @@ openbb.forecast.corr_view(df)
 This command allows you to see seasonality patterns in your data
 
 ```python
-path = "/Users/colindelahunty/OpenBBUserData/exports/20221117_112156_OpenBBTerminal_openbb_terminal_load.csv"
-df = openbb.forecast.load(path)
+df = pd.read_csv(ANDREW_REPLACE)
 openbb.forecast.season(df, "Close")
 ```
 ​
@@ -93,8 +92,7 @@ openbb.forecast.season(df, "Close")
 Predicts the future value of time series data using exponential smoothing
 ​
 ```python
-path = "/Users/colindelahunty/OpenBBUserData/exports/20221117_112156_OpenBBTerminal_openbb_terminal_load.csv"
-df = openbb.forecast.load(path)
+df = pd.read_csv(ANDREW_REPLACE)
 openbb.forecast.expo(df, "Close")
 ```
 ​
