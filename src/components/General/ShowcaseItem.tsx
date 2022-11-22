@@ -28,7 +28,7 @@ export default function ShowcaseItem({
           ))}
         </div>
       </div>
-      <p className="text-grey-100">{description}</p>
+      <p className="dark:text-grey-100">{description}</p>
       <a href={url} className="text-sm">
         {url}
       </a>
