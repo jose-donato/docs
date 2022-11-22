@@ -13,11 +13,26 @@ multiple data providers and provides a unified API to access the data.
 </p>
 </details>
 
+<details><summary>What programs do I need to allow for Windows Firewall?</summary>
+<p>
+
+Windows Firewall will need to allow the following applications through (if not already): 
+
+- BranchCache
+- Hyper-V
+- VcXsrv
+- Windows Terminal
+
+From the Windows Security menu, click on the Firewall & Network Protection tab, then click on "Allow an app through firewall". If the applications below are not allowed to communicate through Windows Defender Firewall, change the settings to allow.
+
+</p>
+</details>
+
 <details><summary>In what Operating Systems can I run OpenBB SDK?</summary>
 <p>
 
 OpenBB SDK is compatible with Windows, Linux, and Mac OS. Check the
-[installation guide](/sdk/getstarted/installation) and [requirements outline]([installation guide](/sdk/getstarted/requirements)for more details.
+[installation guide](/sdk/getstarted/installation) and [requirements outline](/sdk/getstarted/requirements) for more details.
 
 </p>
 </details>

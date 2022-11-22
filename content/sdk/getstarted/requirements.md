@@ -8,7 +8,7 @@ Minimum of 8GB RAM
 Minimum of 5GB free storage
 High-speed internet connection
 
-### Recommended to Have
+### Recommended System Requirements
 
 - 16GB RAM or more
 - Dedicated graphics card
@@ -24,30 +24,32 @@ High-speed internet connection
 - Chrome or Firefox
 - Open Office
 
+### Minumum System Requirements
+
+- 8GB RAM or more
+- 10MB Additional storage for saved datasets
+- A code editor, such as VS Code
+- Chrome or Firefox
+
 ### MacOS
 
 The OpenBB platform requires MacOS Catalina or higher. The oldest Mac configuration known to work is a MacPro 3,1 (OS Catalina) and functions relying on the Intel Math Kernel (Forecast models like RNN) are not compatible with the CPU.
 
 ### Windows
 
-Windows 10 or higher is required, and the user account should be have administrator priviliges. Additionally, Windows Firewall will need to allow applications through. From the Windows Security menu, click on the Firewall & Network Protection tab, then click on "Allow an app through firewall". If the applications below are not allowed to communicate through Windows Defender Firewall, change the settings to allow.
+Windows 10 or higher is required, and the user account should be have administrator priviliges.
 
-- BranchCache
-- Hyper-V
-- VcXsrv
-- Windows Terminal
-
-Windows users should also install [Git for Windows](https://git-scm.com/download/win) and use `Git Bash` as the terminal application instead of CMD or PowerShell.
+Additionaly, its reccomended Windows users also install [Git for Windows](https://git-scm.com/download/win) and use `Git Bash` as the terminal application instead of CMD or PowerShell.
 
 ### Linux
 
-The OpenBB platform can be installed on a variety of Linux distributions. Due to the large of number system configuration variables, we are unable to verify compatibility across all distributions. It is known to work with up-do-date versions of Ubuntu, Debian and Raspberry Pi. 32-bit distributions are incompatible. Generally, if the system installs Miniconda3 then the OpenBB Terminal should also be installable.
+The OpenBB platform can be installed on a variety of Linux distributions. Due to the large number of system configuration variables, we are unable to verify compatibility across all distributions. It is known to work with up-do-date versions of Ubuntu, Debian and Raspberry Pi. Any 32-bit distributions are incompatible. Generally, if the system installs Miniconda3 then the OpenBB Terminal should also be installable.
 
 ## Python
 
 ### View-Model-Control
 
-OpenBB uses a [View-Model-Control](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) design. For this reason, charting functions are a separate function from the raw data. For example:
+OpenBB uses a [View-Model-Control](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) format for creating functionality in the terminal. For example:
 
 ```
 openbb.economy.ycrv()
