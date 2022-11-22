@@ -1,5 +1,5 @@
 ---
-title: Common Menus
+title: Common
 keywords: ['user', 'files', 'openbbuserdata', 'presets', 'file', 'portfolio', 'exports', 'imports', 'settings', 'styles', 'xlsx', 'csv', 'json', 'themes', 'openbb', 'bb', 'terminal', 'google', 'amazon', 'apple', 'microsoft', 'github', 'opensource', 'python', 'markets']
 excerpt: "Common Menus in the OpenBB Terminal"
 id: common

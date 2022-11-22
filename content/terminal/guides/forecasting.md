@@ -1,5 +1,5 @@
 ---
-title: Introduction to Forecast
+title: Forecasting
 keywords:
   [
     "machine learning",
@@ -11,7 +11,7 @@ keywords:
     "feature engineering",
     "hyperparameters",
   ]
-excerpt: "The introduction to Forecast explains how to use the menu"
+excerpt: "The introduction to Forecasting explains how to use the menu"
 
 ---
 
