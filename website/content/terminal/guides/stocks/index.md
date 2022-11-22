@@ -81,7 +81,7 @@ By calling `?` or `help` the stocks menu re-appears. Here you can see that multi
 
 <img src="https://user-images.githubusercontent.com/46355364/169503960-62a59aa2-1dbd-46f1-9ea0-095817d7da5d.png" alt="Stocks Menu with Ticker" width="800"/>
 
-## Sub-menus available
+### Sub-menus available
 
 The Stock menu has an extensive list of available sub-menus ranging from fundamental analysis to sector analysis to advanced prediction techniques. To find more information about each menu, click on one of the following:
 
