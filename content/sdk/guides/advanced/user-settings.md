@@ -4,7 +4,7 @@ title: User Settings
 
 ## **The OpenBBUserData Folder**
 
-The OpenBB SDK shares the `OpenBBUserData` folder with the Terminal, even with multiple versions installed on the same machine. Portfolio files, screener presets, and Matplotlib style sheets are all shared resources. This folder will be created after the first installation and it is read by subsequent installations. The default location for it is in the root of the operating system user account folder. 
+The OpenBB SDK shares the `OpenBBUserData` folder with the Terminal, even with multiple versions installed on the same machine. Portfolio files, screener presets, and Matplotlib style sheets are all shared resources. This folder will be created after the first installation and it is read by subsequent installations. The default location for it is in the root of the operating system user account folder.
 
 ### Presets
 
@@ -67,7 +67,6 @@ openbb.portfolio.show(port)
 
 |    | Date       | Type   | Ticker   | Side   |   Price |   Quantity |   Fees |   Investment | Currency   | Sector             | Industry         | Country        | Region        |
 |---:|:-----------|:-------|:---------|:-------|--------:|-----------:|-------:|-------------:|:-----------|:-------------------|:-----------------|:---------------|:--------------|
-...continued...
 |  5 | 2021-11-04 | STOCK  | ABX.TO   | Buy    |   23.46 |       1000 |    200 |      23660   | CAD        | Basic Materials    | Gold             | Canada         | North America |
 |  4 | 2021-11-04 | STOCK  | PHYS.TO  | Buy    |   17.57 |       1400 |    200 |      24798   | CAD        | Financial Services | Asset Management | Canada         | North America |
 |  1 | 2021-10-29 | STOCK  | WPM.TO   | Buy    |   51.23 |        300 |    200 |      15569   | CAD        | Basic Materials    | Gold             | Canada         | North America |
