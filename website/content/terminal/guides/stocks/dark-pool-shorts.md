@@ -8,19 +8,14 @@ excerpt: "The Introduction to Dark Pools & Short Data, within the Stocks menu, w
 provides a brief explanation of the features."
 geekdocCollapseSection: true
 ---
-Dark Pools and short selling are both, controversial and mysterious, subjects. The lack of disclosure for short sales and dark pool trades makes a lot of guess-work. It is a good idea to read through some research on the topic available from the SEC:
-  - <a href="https://www.sec.gov/marketstructure/research/ats_data_paper_october_2013.pdf" target="_blank">Alternative Trading Systems: Description of ATS Trading in National Market System Stocks</a>
-  - <a href="https://www.sec.gov/news/statement/shedding-light-on-dark-pools.html" target="_blank">Shedding Light on Dark Pools</a>
-  - <a href="https://www.sec.gov/dera/staff-papers" target="_blank">Staff Papers and Analyses</a>
 
-The purpose of this menu is to provide the user with tools for gauging the level of short interest, FTD rate, and off-exchange volume in a <a href="https://www.law.cornell.edu/cfr/text/17/242.600" target="_blank">NMS security</a>.
-There are also commands for looking at market as a whole. Enter the submenu from the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks menu</a> by typing, `dps`, and hitting `ENTER` (⏎).
+The purpose of this menu is to provide the user with tools for gauging the level of short interest, FTD rate, and off-exchange volume in a <a href="https://www.law.cornell.edu/cfr/text/17/242.600" target="_blank">NMS security</a>. There are also commands for looking at market as a whole. Enter the submenu from the <a href="/terminal/guides/stocks/" target="_blank">Stocks menu</a> by typing, `dps`, and hitting `ENTER` (⏎).
 
 <img alt="The Dark Pools Menu" src="https://user-images.githubusercontent.com/46355364/171151760-9f65424e-b4d6-41a7-b31f-e9bc1c723bd9.png"></img>
 
-To use every feature in the Dark Pools menu, an API key for <a href="https://www.quandl.com/" target="_blank">Quandl</a> must be obtained (for free) and authorized on the local installation. See the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Getting Started Guide</a> for help setting up the API keys in the OpenBB Terminal. The four commands at the bottom of the menu rely on a loaded ticker while the six above do not.
+To use every feature in the Dark Pools menu, an API key for <a href="https://www.quandl.com/" target="_blank">Quandl</a> must be obtained (for free) and authorized on the local installation. See the <a href="/terminal/quickstart/keys" target="_blank">Getting Started Guide</a> for help setting up the API keys in the OpenBB Terminal. The four commands at the bottom of the menu rely on a loaded ticker while the six above do not.
 
-## How to use
+### How to use
 
 The commands which are not ticker-specific provide screener-like utility. A list of the most-shorted stocks, according to Yahoo Finance, is displayed with the `shorted` command. It should be noted that this menu is only able to provide data for SEC-regulated equities.
 
@@ -76,7 +71,7 @@ The other end of the spectrum:
 
 Call on the help dialogue for every command by attaching, `-h` to the command. The optional arguments give the user flexibility to sort the columns, print the raw data, or export to a file.
 
-## Examples
+### Examples
 
 The cost-to-borrow is used as a proxy-measurement for an equity's specialness. `ctb` shows the  most expensive equities to short, and the number shares available to short, on Interactive Brokers.
 
