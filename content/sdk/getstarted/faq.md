@@ -1,4 +1,5 @@
 ---
+title: FAQ
 sidebar_position: 3
 ---
 
@@ -16,7 +17,7 @@ multiple data providers and provides a unified API to access the data.
 <details><summary>What programs do I need to allow for Windows Firewall?</summary>
 <p>
 
-Windows Firewall will need to allow the following applications through (if not already): 
+Windows Firewall will need to allow the following applications through (if not already):
 
 - BranchCache
 - Hyper-V
@@ -41,7 +42,7 @@ OpenBB SDK is compatible with Windows, Linux, and Mac OS. Check the
 <p>
 
 An installation will use approximately 4GB of space.
- 
+
 </p>
 </details>
 
@@ -57,7 +58,7 @@ From the command line, with the environment active, and from the root of the loc
 <p>
 
 By default, the load function requests end-of-day daily data and is not included until the EOD summary has been published. The current day's data is considered intraday and is loaded when the `interval` argument is present.
- 
+
 </p>
 </details>
 
