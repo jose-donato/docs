@@ -12,9 +12,9 @@ excerpt: "This guide introduces the Quantitative Analysis menu, which is common 
 
 The Quantitative Analysis menu is a common menu to three asset classes:
 
-- <a href = "terminal/reference/crypto/" target="_blank">Crypto</a>
-- <a href = "terminal/reference/forex/" target= "_blank">Forex</a>
-- <a href = "terminal/reference/stocks/" target = "_blank">Stocks</a>
+- <a href = "terminal/guides/intros/crypto/" target="_blank">Crypto</a>
+- <a href = "terminal/guides/intros/forex/" target= "_blank">Forex</a>
+- <a href = "terminal/guides/intros/stocks/" target = "_blank">Stocks</a>
 
 <img width="1110" alt="The Quantitative Analysis menu" src="https://user-images.githubusercontent.com/85772166/183483507-a4bef3e8-6603-46fb-a022-424f18af32d6.png"></img>
 
