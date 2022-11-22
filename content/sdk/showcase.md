@@ -2,16 +2,23 @@
 sidebar_position: 5
 ---
 
-import Terminal from "@site/src/components/Terminal"
+import ShowcaseItem from "@site/src/components/General/ShowcaseItem"
 
 # Showcase
 
-Cool stuff built with OpenBB SDK
+This page contains a list of projects that use the OpenBB SDK. If you have a project that uses the SDK, please feel free to add it to the list [here](#).
 
-[cryptodash.deno.dev](https://cryptodash.deno.dev)
-<Terminal> <iframe style={{height: 400}} className="w-full rounded"
+---
+
+<ShowcaseItem
+categories={['Crypto', 'NFTs']}
+title="Cryptodash"
+description="Cryptodash is a cryptocurrency dashboard that allows you get an overview of the current state of the cryptocurrency market."
+url="https://cryptodash.deno.dev">
+
+<iframe style={{height: 400}} className="w-full rounded"
 src="https://cryptodash.deno.dev/" title="Cryptodash"></iframe>
-</Terminal>
+</ShowcaseItem>
 
 ---
 
