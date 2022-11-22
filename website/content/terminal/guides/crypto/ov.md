@@ -6,7 +6,7 @@ with a brief overview of the features."
 geekdocCollapseSection: true
 ---
 
-The Cryptocurrency Overview menu provides, among other things, the option to obtain a complete overview of the Cryptocurrency market (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/ov/global/" target="_blank">global</a>), find cryptocurrency indices and derivatives (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/ov/indices/" target="_blank">indices</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/ov/derivatives/" target="_blank">derivatives</a>), news feeds (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/ov/news/" target="_blank">news</a>) and fees (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/ov/wf/" target="_blank">wf</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/ov/ewf/" target="_blank">ewf</a>)
+The Cryptocurrency Overview menu provides, among other things, the option to obtain a complete overview of the Cryptocurrency market (<a href="terminal/reference/crypto/ov/global" target="_blank">global</a>), find cryptocurrency indices and derivatives (<a href="terminal/reference/crypto/ov/indices" target="_blank">indices</a> and <a href="terminal/reference/crypto/ov/derivatives" target="_blank">derivatives</a>), news feeds (<a href="terminal/reference/crypto/ov/news" target="_blank">news</a>) and fees (<a href="terminal/reference/crypto/ov/wf" target="_blank">wf</a> and <a href="terminal/reference/crypto/ov/ewf" target="_blank">ewf</a>)
 
 ### How to use
 

@@ -30,7 +30,7 @@ the commands that you are able to use from any menu in the terminal (see <a href
   use `q` and press `ENTER` (⏎) you return to where you started. Validate this by typing `?` and pressing `ENTER` (⏎).
 - `support`: allows you to submit bugs, questions and suggestions.
 - `about`: this opens the related guide, linking to this website. It also has the ability to open a guide to a specific
-  command. For example, within the `stocks` menu, `about candle` opens <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/candle/" target="_blank">this guide</a>.
+  command. For example, within the `stocks` menu, `about candle` opens <a href="terminal/reference/stocks/candle/" target="_blank">this guide</a>.
 - `wiki`: search for a given expression on the Wikipedia without leaving the terminal.
 
 Continuing with the example mentioned at `quit`, revisit the `stocks` menu and look at the commands. At the top you will see a command named <a href="terminal/stocks/load" target="_blank">load</a>. To understand what this command can do, you can use `load -h` followed by `ENTER` (⏎). The `-h` stands for `help` and every command will have this feature. This will return the following:

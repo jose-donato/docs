@@ -5,9 +5,9 @@ excerpt: "The Introduction to Cryptocurrency explains how to use the Cryptocurre
 
 ---
 
-The Cryptocurrency menu allows you to discover trending cryptocurrency (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/disc/" target="_blank">disc</a>). Additionally, you can also perform research of a specific coin (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/dd/" target="_blank">dd</a>),
-NFT (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/nft/" target="_blank">nft</a>) or most lucrative Defi project
-(<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/" target="_blank">defi</a>). It does so by handing you tools to (among other things) perform technical analysis (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/ta/" target="_blank">ta</a>), quantitative analysis (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/qa/" target="_blank">qa</a>), and give you access to onchain information (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/" target="_blank">onchain</a>).
+The Cryptocurrency menu allows you to discover trending cryptocurrency (<a href="terminal/reference/crypto/disc/" target="_blank">disc</a>). Additionally, you can also perform research of a specific coin (<a href="terminal/reference/crypto/dd" target="_blank">dd</a>),
+NFT (<a href="terminal/reference/crypto/nft" target="_blank">nft</a>) or most lucrative Defi project
+(<a href="terminal/reference/crypto/defi" target="_blank">defi</a>). It does so by handing you tools to (among other things) perform technical analysis (<a href="terminal/guides/intros/common/ta/" target="_blank">ta</a>), quantitative analysis (<a href="terminal/guides/intros/common/qa" target="_blank">qa</a>), and give you access to onchain information (<a href="terminal/reference/crypto/onchain/" target="_blank">onchain</a>).
 
 ### How to use
 
@@ -43,15 +43,15 @@ Lastly, by calling `?` or `help` or `h`, the `crypto` menu will be re-populated.
 
 The Cryptocurrency menu has an extensive list of available sub-menus ranging from due diligence to NFT to onchain analysis. To find more information about each menu, you can click on one of the following:
 
-- [Introduction to Cryptocurrency Discovery](https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/disc): discovers top trending, top gainers or losers coins, as well as top NFTs, dApps and exchanges based on prices.
-- [Introduction to Cryptocurrency Overview](https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/ov/): gives the overview of the cryptocurrency market, including global Defi market, stablecoins, exchanges as well as latest news.
-- [Introduction to Cryptocurrency Onchain](https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/onchain/): provides information on different blockchains, whales transaction and traded volumes on certain crypto pair. You can also specify a Ethereum address and look up past transactions and balance history.
-- [Introduction to Cryptocurrency Decentralized Finance (DeFi)](https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/defi/): explore the decentralized finance market through a variety of indicators and data, from lending interests, staking ratio, Uniswap pools to top Defi dApps.
-- [Introduction to Cryptocurrency Tools](https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/tools/): gives you the tool to calculate crypto metrics, such as impermanent loss and converting APR to APY.
-- [Introduction to Non Fungible Tokens (NFTs)](https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/nft/): Discover latest NFT drops and OpenSea's NFT Collection statistics.
-- [Introduction to Cryptocurrency Due Diligence](https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/dd/): performs due diligence on a chosen coin based on, among other things, tokenomics, roadmaps, news, and community.
-- [Introduction to Technical Analysis](https://openbb-finance.github.io/OpenBBTerminal/terminal/common/ta/): analyzes the chosen coin's historical data extensively with moving averages and momentum, trend, volatility and volume indicators.
-- [Introduction to Forecasting Menu](https://openbb-finance.github.io/OpenBBTerminal/terminal/forecast/): applies advanced AI and Machine Learning models to form prediction of future stock prices including Recurrent Neural Network (RNN), Autoregressive Integrated Moving Average (ARIMA) and Monte Carlo forecasting
+- [Introduction to Cryptocurrency Discovery](/terminal/guides/intros/crypto/disc): discovers top trending, top gainers or losers coins, as well as top NFTs, dApps and exchanges based on prices.
+- [Introduction to Cryptocurrency Overview](/terminal/guides/intros/crypto/ov/): gives the overview of the cryptocurrency market, including global Defi market, stablecoins, exchanges as well as latest news.
+- [Introduction to Cryptocurrency Onchain](/terminal/guides/intros/crypto/onchain/): provides information on different blockchains, whales transaction and traded volumes on certain crypto pair. You can also specify a Ethereum address and look up past transactions and balance history.
+- [Introduction to Cryptocurrency Decentralized Finance (DeFi)](/terminal/guides/intros/crypto/defi/): explore the decentralized finance market through a variety of indicators and data, from lending interests, staking ratio, Uniswap pools to top Defi dApps.
+- [Introduction to Cryptocurrency Tools](/terminal/guides/intros/crypto/tools/): gives you the tool to calculate crypto metrics, such as impermanent loss and converting APR to APY.
+- [Introduction to Non Fungible Tokens (NFTs)](/terminal/guides/intros/crypto/nft/): Discover latest NFT drops and OpenSea's NFT Collection statistics.
+- [Introduction to Cryptocurrency Due Diligence](/terminal/guides/intros/crypto/dd/): performs due diligence on a chosen coin based on, among other things, tokenomics, roadmaps, news, and community.
+- [Introduction to Technical Analysis](/terminal/guides/intros/common/ta/): analyzes the chosen coin's historical data extensively with moving averages and momentum, trend, volatility and volume indicators.
+- [Introduction to Forecasting Menu](/terminal/guides/intros/forecast/): applies advanced AI and Machine Learning models to form prediction of future stock prices including Recurrent Neural Network (RNN), Autoregressive Integrated Moving Average (ARIMA) and Monte Carlo forecasting
 
 ### Examples
 

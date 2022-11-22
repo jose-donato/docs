@@ -12,9 +12,9 @@ excerpt: "This guide introduces the Quantitative Analysis menu, which is common 
 
 The Quantitative Analysis menu is a common menu to three asset classes:
 
-- <a href = "https://openbb-finance.github.io/OpenBBTerminal/terminal/crypto/" target="_blank">Crypto</a>
-- <a href = "https://openbb-finance.github.io/OpenBBTerminal/terminal/forex/" target= "_blank">Forex</a>
-- <a href = "https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target = "_blank">Stocks</a>
+- <a href = "terminal/reference/crypto/" target="_blank">Crypto</a>
+- <a href = "terminal/reference/forex/" target= "_blank">Forex</a>
+- <a href = "terminal/reference/stocks/" target = "_blank">Stocks</a>
 
 <img width="1110" alt="The Quantitative Analysis menu" src="https://user-images.githubusercontent.com/85772166/183483507-a4bef3e8-6603-46fb-a022-424f18af32d6.png"></img>
 
@@ -68,7 +68,7 @@ Loading Daily MSFT stock with starting period 2019-08-05 for analysis.
 
 <img width="762" alt="Beta of $AAPL relative to $MSFT" src="https://user-images.githubusercontent.com/85772166/183483898-dac417a8-0afe-46d2-b8e9-e855e8752fc8.png"></img>
 
-Most outputs are equipped with an `--export` flag, allowing the user to save the tables as a CSV, JSON, or XLSX file. The exports can then be imported into other menus like <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/" target="_blank"> Econometrics</a>. Additional information on each specific command is displayed by attaching `-h` to it.
+Most outputs are equipped with an `--export` flag, allowing the user to save the tables as a CSV, JSON, or XLSX file. The exports can then be imported into other menus like <a href="terminal/guides/intros/econometrics/" target="_blank"> Econometrics</a>. Additional information on each specific command is displayed by attaching `-h` to it.
 
 ### Examples
 

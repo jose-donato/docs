@@ -10,10 +10,10 @@ excerpt: "This guide introduces the Technical Analysis menu, which is common acr
 
 The Technical Analysis menu offers the user a suite of tools for analyzing the technical components of an asset's trading history. The menu can be found in most wings of the Terminal:
 
-- <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/cryptocurrency/" target="_blank">Crypto</a>
-- <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks</a>
-- <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/etf/" target="_blank">ETF</a>
-- <a href ="https://openbb-finance.github.io/OpenBBTerminal/terminal/forex/" target="blank">ForEx</a>
+- <a href="terminal/guides/intros/cryptocurrency/" target="_blank">Crypto</a>
+- <a href="terminal/guides/intros/stocks/" target="_blank">Stocks</a>
+- <a href="terminal/guides/intros/etf/" target="_blank">ETF</a>
+- <a href ="terminal/guides/intros/forex/" target="blank">ForEx</a>
 
 The commands are divided by categories that define their purpose for general-use:
 
@@ -24,7 +24,7 @@ The commands are divided by categories that define their purpose for general-use
 - Volume - Singling out volume
 - Custom - Fibonacci retracements
 
-All commands in this menu will rely on the interval and window chosen when <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/load/" target="_blank">loading an asset for analysis</a>. Refer to the directory tree on the left side of the page for information on individual commands. To get a better understanding of what these features are, and the formulas behind them, a number of sources should be consulted; but, a good starting point is <a href="https://www.investopedia.com/terms/t/technicalanalysis.asp" target="_blank">Investopedia</a>.
+All commands in this menu will rely on the interval and window chosen when <a href="terminal/reference/stocks/load" target="_blank">loading an asset for analysis</a>. Refer to the directory tree on the left side of the page for information on individual commands. To get a better understanding of what these features are, and the formulas behind them, a number of sources should be consulted; but, a good starting point is <a href="https://www.investopedia.com/terms/t/technicalanalysis.asp" target="_blank">Investopedia</a>.
 
 ### How to use
 

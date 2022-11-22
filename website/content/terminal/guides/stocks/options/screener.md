@@ -1,22 +1,13 @@
 ---
 title: Options Screener
 keywords: ["Options", "stocks", "derivatives", "puts", "calls", "oi", "vol", "greeks", "bid", "ask", "last", "lp", "price", "delta", "theta", "gamma", "interest", "screener", "dte", "expiration", "expiry", "screen"]
-date: "2020-06-06"
-type: guides
-status: publish
 excerpt: "This guide introduces the user to the Options Screener, located within the Options Menu, and provides examples for how to use."
-geekdocCollapseSection: true
 ---
-
-The OpenBB options screener is a versatile discovery tool for an options trader. It is powered by the Open Source Community: https://github.com/Tyruiop/syncretism - go give this repository a star!
+The OpenBB options screener is a versatile discovery tool for an options trader.
 
 ![The Options Screener Menu](https://user-images.githubusercontent.com/85772166/172467269-8752d7fe-a9c6-4cf6-bc6f-3f5a011037e4.png)
 
-The screener makes use of presets (.ini files) that are stored locally in the OpenBB installation folder.
-
-`~/Applications/OpenBB/openbb_terminal/stocks/options/presets/`
-
-![The folder containing preset files](https://user-images.githubusercontent.com/85772166/172467415-96aab9fe-de50-4892-8483-fbc834c17252.png)
+The screener makes use of presets (.ini files) that are stored locally within `~/OpenBBUserData/presets/stocks/options/`
 
 The file named `template.ini` is a blank slate and ready for experimentation. There are nearly infinite ways to configure an options search, so customize one and then share it with us on social media! Have a look at the available fields:
 
@@ -201,7 +192,7 @@ max-vega-100d =
 min-rho-100d =
 max-rho-100d =
 ````
-<h2> How to use the Options Screener</h2>
+### How to use
 
 The commands `set` and `view` will show the filters present. The command reads the contents of the preset file every time the command is called, which makes changes fast and easy; simply open it in a text editor.
 
@@ -248,5 +239,3 @@ Using the preset, "SPY_ATM_POOTS":
 The video below shows the process for building an options screener preset. Any simple text editor will work to make changes. Build a preset and share it with OpenBB on social media!
 
 ![Options Template Screener Demo](https://user-images.githubusercontent.com/85772166/172468268-fc839bf1-54f1-4e91-b1e2-82c8e711dea4.gif)
-
-Back to: <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/options/" target="_blank">Introduction To Options Guide</a>

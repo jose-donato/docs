@@ -6,9 +6,8 @@ menu and provides a brief description of its sub-menus"
 
 ---
 
-The Stocks menu enables you to perform an evaluation of a particular company, a sector or a market as whole by performing various techniques including fundamental, technical and behavioural analysis. It does so by handing you tools to (among other things) evaluate company news (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/news/" target="_blank">news</a>), display historic quarterly results (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/fundamental_analysis/income/" target="_blank">income</a>), determine future cash flows (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/fundamental_analysis/dcf/" target="_blank">dcf</a>),
-show analyst recommendations (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/due_diligence/pt/" target="_blank">pt</a>),
-evaluate an entire sector or industry (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/sia/" target="_blank">sia</a>), and show the historical prices, correlations and sentiment between similar companies (<a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/comparison_analysis/hcorr/" target="_blank">correlation</a>).
+The Stocks menu enables you to perform an evaluation of a particular company, a sector or a market as whole by performing various techniques including fundamental, technical and behavioural analysis. It does so by handing you tools to (among other things) evaluate company news (<a href="terminal/reference/stocks/news/" target="_blank">news</a>), display historic quarterly results (<a href="terminal/reference/stocks/fundamental_analysis/income/" target="_blank">income</a>), determine future cash flows (<a href="terminal/reference/stocks/fundamental_analysis/dcf/" target="_blank">dcf</a>),
+show analyst recommendations (<a href="terminal/reference/stocks/due_diligence/pt/" target="_blank">pt</a>), evaluate an entire sector or industry (<a href="terminal/reference/stocks/sia/" target="_blank">sia</a>), and show the historical prices, correlations and sentiment between similar companies (<a href="terminal/reference/stocks/comparison_analysis/hcorr/" target="_blank">correlation</a>).
 
 ### How to use
 
@@ -16,7 +15,7 @@ The Stocks menu is called upon by typing `stocks` which opens the following menu
 
 ![Stocks Menu](https://user-images.githubusercontent.com/46355364/169503852-e8ebe577-6e49-438a-b14a-606c9fb9a6de.png)
 
-You have the ability to <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/search/" target="_blank">search</a> a stock based on a search criteria, country, sector or industry. An example:
+You have the ability to <a href="terminal/reference/stocks/search/" target="_blank">search</a> a stock based on a search criteria, country, sector or industry. An example:
 
 ```
 2022 May 17, 08:45 (🦋) /stocks/ $ search facebook
@@ -52,7 +51,7 @@ You have the ability to <a href="https://openbb-finance.github.io/OpenBBTerminal
 --------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-This results in a selection of <a href="https://www.investopedia.com/ask/answers/12/what-is-a-stock-ticker.asp" target="_blank">stock tickers</a> and their corresponding exchange. With this information, you can load in one of the stock tickers into the menu. This can be done with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/load/" target="_blank">load</a>. See the following example:
+This results in a selection of <a href="https://www.investopedia.com/ask/answers/12/what-is-a-stock-ticker.asp" target="_blank">stock tickers</a> and their corresponding exchange. With this information, you can load in one of the stock tickers into the menu. This can be done with <a href="terminal/reference/stocks/load/" target="_blank">load</a>. See the following example:
 
 ```
 2022 May 17, 08:46 (🦋) /stocks/ $ load FB
@@ -73,7 +72,7 @@ Company:  Meta Platforms, Inc.
 ----------------------------------------------------------------------------------------------------
 ```
 
-To then view the stock chart, you can call <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/candle/" target="_blank">candle</a> which shows a candle chart for the defined period:
+To then view the stock chart, you can call <a href="terminal/reference/stocks/candle/" target="_blank">candle</a> which shows a candle chart for the defined period:
 
 <img src="https://user-images.githubusercontent.com/46355364/169503942-f3f05bbe-77f1-443e-945e-cafbe442bce8.png" alt="Candle Chart Facebook" width="800"/>
 
@@ -104,7 +103,7 @@ The Stock menu has an extensive list of available sub-menus ranging from fundame
 
 ### Examples
 
-If we want to a look at the historical data and fundamentals of Microsoft, we can do the following, starting from the `stocks` menu. First, load in the ticker of Microsoft, this is `MSFT` and can be found with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/search/" target="_blank">search</a> command:
+If we want to a look at the historical data and fundamentals of Microsoft, we can do the following, starting from the `stocks` menu. First, load in the ticker of Microsoft, this is `MSFT` and can be found with the <a href="terminal/reference/stocks/search/" target="_blank">search</a> command:
 
 ```
 2022 May 18, 05:32 (🦋) /stocks/ $ search microsoft
@@ -128,7 +127,7 @@ If we want to a look at the historical data and fundamentals of Microsoft, we ca
 | MSFT34.SA | Microsoft Corporation              | United States | Technology | Software - Infrastructure | Brazil         |
 | SMSF.L    | Leverage Shares -1x Microsoft ETC  | None          | None       | None                      | United-Kingdom |
 
-Then, load in the historical data of the company by using the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/load/" target="_blank">load</a>. We also choose a different starting period by using `-s` as shown in the documentation:
+Then, load in the historical data of the company by using the <a href="terminal/reference/stocks/load/" target="_blank">load</a>. We also choose a different starting period by using `-s` as shown in the documentation:
 
 ```
 2022 May 18, 05:43 (🦋) /stocks/ $ load MSFT -s 2021-01-01
@@ -149,7 +148,7 @@ Company:  Microsoft Corporation
 -----------------------------------------------------------------------------------------------------
 ```
 
-We can now plot the corresponding stock chart with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/candle/" target="_blank">candle</a> which shows the company's historical data from 2021-01-01 until the current date. We are also adding in the 20 and 30 day <a href="https://www.investopedia.com/terms/m/movingaverage.asp" target="_blank">moving averages (MA)</a>.
+We can now plot the corresponding stock chart with <a href="terminal/reference/stocks/candle/" target="_blank">candle</a> which shows the company's historical data from 2021-01-01 until the current date. We are also adding in the 20 and 30 day <a href="https://www.investopedia.com/terms/m/movingaverage.asp" target="_blank">moving averages (MA)</a>.
 
 ```
 2022 May 18, 05:44 (🦋) /stocks/ $ candle --ma 20,30
@@ -161,7 +160,7 @@ Now we can go ahead and enter the Fundamental Analysis menu by typing `fa`. Plea
 
 ![Fundamental Analysis Menu](https://user-images.githubusercontent.com/46355364/169504216-17484f7d-9cc5-4a56-9c62-d79cde79e91d.png)
 
-Within this menu, I am now able to present the quarterly income statements over the last 3 years (or any other period) by using <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/fundamental_analysis/income/" target="_blank">income</a>.
+Within this menu, I am now able to present the quarterly income statements over the last 3 years (or any other period) by using <a href="terminal/reference/stocks/fundamental_analysis/income/" target="_blank">income</a>.
 
 ```
 2022 May 18, 05:52 (🦋) /stocks/fa/ $ income -q -l 12

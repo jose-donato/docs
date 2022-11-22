@@ -27,11 +27,7 @@ The Futures menu provides historical prices and the current term structure for a
 
 ### How to Use
 
-There are three basic functions within this menu:
-
-- Search
-- Historical
-- Curve
+There are three basic functions within this menu Search, Historical and Curve.
 
 `Search` allows the user to find which instruments are supported, and can be searched by the description. For example, searching for silver will return these results:
 

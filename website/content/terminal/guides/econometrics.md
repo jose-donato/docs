@@ -13,7 +13,7 @@ The Econometrics menu is called upon by typing `econometrics` which opens the fo
 
 ![Econometrics Menu OpenBB Terminal](https://user-images.githubusercontent.com/46355364/174588406-7f120cf7-933e-4bef-a7f6-ba0c7c7d5028.png)
 
-You have the ability to load in your own custom datasets but there is also the option to use example datasets which are used within this guide as well. These datasets can be found by using the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/load/" target="_blank">load</a> command and typing `load --examples`. See below:
+You have the ability to load in your own custom datasets but there is also the option to use example datasets which are used within this guide as well. These datasets can be found by using the <a href="/terminal/reference/econometrics/load" target="_blank">load</a> command and typing `load --examples`. See below:
 
 ```
 2022 Jun 20, 04:33 (🦋) /econometrics/ $ load --examples
@@ -82,9 +82,7 @@ You have the ability to load in your own custom datasets but there is also the o
 └────────────────────┴───────────────────────────────────────────────────────────┘
 ```
 
-As there is a clear difference between time series data, which is 1-dimensional
-data (e.g. a single company over time) and panel data, which is 2-dimensional
-data (e.g. multiple companies over time) both use-cases are provided.
+As there is a clear difference between time series data, which is 1-dimensional data (e.g. a single company over time) and panel data, which is 2-dimensional data (e.g. multiple companies over time) both use-cases are provided.
 
 ### Working with Time Series data
 
@@ -135,7 +133,7 @@ To demonstrate the usage of the menu, the <a href="https://www.statsmodels.org/d
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── OpenBB Terminal v1.3.0 (https://openbb.co) ─╯
 ```
 
-Beneath `Loaded files and data columns` you can find the longley dataset and its columns. You can create an alias for this dataset with the `-a` argument as shown within the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/ols/" target="_blank">ols</a> command. To see a portion of this dataset, the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/show/" target="_blank">show</a> command can be used as shown below:
+Beneath `Loaded files and data columns` you can find the longley dataset and its columns. You can create an alias for this dataset with the `-a` argument as shown within the <a href="/terminal/reference/econometrics/ols" target="_blank">ols</a> command. To see a portion of this dataset, the <a href="/terminal/reference/econometrics/show" target="_blank">show</a> command can be used as shown below:
 
 ```
 2022 Jun 20, 04:38 (🦋) /econometrics/ $ show
@@ -166,7 +164,7 @@ Beneath `Loaded files and data columns` you can find the longley dataset and its
 └───┴──────────┴─────────┴───────────┴─────────┴─────────┴───────────┴─────────┘
 ```
 
-This can be extended by also showing the descriptive statistics, this can be done with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/desc/" target="_blank">desc</a> command and including the `longley` dataset. This command also allows descriptive statistics for individual columns to be displayed (e.g. `desc longley.totemp`)
+This can be extended by also showing the descriptive statistics, this can be done with the <a href="/terminal/reference/econometrics/desc" target="_blank">desc</a> command and including the `longley` dataset. This command also allows descriptive statistics for individual columns to be displayed (e.g. `desc longley.totemp`)
 
 ```
 2022 Jun 20, 04:44 (🦋) /econometrics/ $ desc longley
@@ -226,7 +224,7 @@ Unitroot from dataset 'longley of 'pop'
 └────────────────┴────────┴──────┘
 ```
 
-The longley dataset is known for the ability to create an OLS regression that results in a <a href="https://www.investopedia.com/terms/r/r-squared.asp" target="_blank">R-squared</a> of 1.0 due to the fact that the US macroeconomic variables are known to be highly collinear. See the following regression performed with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/ols/" target="_blank">ols</a> command:
+The longley dataset is known for the ability to create an OLS regression that results in a <a href="https://www.investopedia.com/terms/r/r-squared.asp" target="_blank">R-squared</a> of 1.0 due to the fact that the US macroeconomic variables are known to be highly collinear. See the following regression performed with the <a href="/terminal/reference/econometrics/ols" target="_blank">ols</a> command:
 
 ```
 2022 Jun 20, 04:56 (🦋) /econometrics/ $ ols -d longley.totemp -i longley.gnpdefl,longley.gnp,longley.unemp,longley.armed,longley.pop,longley.year
@@ -269,7 +267,7 @@ kurtosistest only valid for n>=20 ... continuing anyway, n=16
 
 The argument `-d` refers to the dependent variable, in this example `longley.totemp`, and the argument `-i` refers to the independent variables, in this example this is `longley.gnpdefl,longley.gnp,longley.unemp,longley.armed,longley.pop,longley.year`.
 
-After running the regression estimation, it is possible to perform tests on the residuals of the model. E.g. for autocorrelation and heteroscedasity as shown below with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/bgod/" target="_blank">bgod</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/bpag/" target="_blank">bpag</a> commands.
+After running the regression estimation, it is possible to perform tests on the residuals of the model. E.g. for autocorrelation and heteroscedasity as shown below with the <a href="/terminal/reference/econometrics/bgod" target="_blank">bgod</a> and <a href="/terminal/reference/econometrics/bpag" target="_blank">bpag</a> commands.
 
 ```
 2022 Jun 20, 05:00 (🦋) /econometrics/ $ bgod
@@ -358,14 +356,14 @@ Here, the dataset is loaded in and an alias is used by using the `-a` argument. 
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── OpenBB Terminal v1.3.0 (https://openbb.co) ─╯
 ```
 
-To run panel regressions with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/panel/" target="_blank">panel</a> it is important to define both _entity_ (e.g. company) and _time_ (e.g. year). Trying to run the `panel` command would right now result in the following:
+To run panel regressions with <a href="/terminal/reference/econometrics/panel" target="_blank">panel</a> it is important to define both _entity_ (e.g. company) and _time_ (e.g. year). Trying to run the `panel` command would right now result in the following:
 
 ```
 2022 Jun 20, 05:17 (🦋) /econometrics/ $ panel -d wp.lwage -i wp.black,wp.hisp,wp.exper,wp.expersq,wp.married,wp.educ,wp.union,wp.year
 The column 'lwage' from the dataset 'wp' is not a MultiIndex. Make sure you set the index correctly with the index (e.g. index wp -i lwage,nr) command where the first level is the entity (e.g. Tesla Inc.) and the second level the date (e.g. 2021-03-31)
 ```
 
-To see the effect of defining a `MultiIndex`, first a portion of the data is shown with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/show/" target="_blank">show</a> command as seen below:
+To see the effect of defining a `MultiIndex`, first a portion of the data is shown with the <a href="/terminal/reference/econometrics/show" target="_blank">show</a> command as seen below:
 
 ```
 2022 Jun 20, 05:22 (🦋) /econometrics/ $ show
@@ -396,7 +394,7 @@ To see the effect of defining a `MultiIndex`, first a portion of the data is sho
 └───┴───────┴─────────┴───────┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
 ```
 
-Within this dataset the `nr` and `year` columns define the _entity_ and _time_. To allow panel regression estimations, it is important that this is defined accordingly with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/index/" target="_blank">index</a> command. This can be done with the following (and showing the changed dataset afterwards):
+Within this dataset the `nr` and `year` columns define the _entity_ and _time_. To allow panel regression estimations, it is important that this is defined accordingly with the <a href="/terminal/reference/econometrics/index_cmd" target="_blank">index</a> command. This can be done with the following (and showing the changed dataset afterwards):
 
 ```
 2022 Jun 20, 05:22 (🦋) /econometrics/ $ index wp -i nr,year
@@ -430,7 +428,7 @@ Successfully updated 'wp' index to be 'nr, year'
 └────────────┴───────┴─────────┴───────┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
 ```
 
-The columns `nr` and `year` still exists within the dataset and could have been dropped with the `-d` argument if desired. However, in this case the `year` column is relevant for generating time effects in Pooled OLS, Fixed Effects and Random Effects estimations. To be able to do this, the type of the year column needs to be changed accordingly. The type of the columns can be displayed with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/type/" target="_blank">type</a> command as follows:
+The columns `nr` and `year` still exists within the dataset and could have been dropped with the `-d` argument if desired. However, in this case the `year` column is relevant for generating time effects in Pooled OLS, Fixed Effects and Random Effects estimations. To be able to do this, the type of the year column needs to be changed accordingly. The type of the columns can be displayed with the <a href="/terminal/reference/econometrics/type" target="_blank">type</a> command as follows:
 
 ```
 2022 Jun 20, 05:27 (🦋) /econometrics/ $ type wp
@@ -514,7 +512,7 @@ Update 'wp.year' with type 'category'
 └────────────┴──────────┘
 ```
 
-The dataset is now properly configured to allow for proper panel regressions. This can be done with the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/panel/" target="_blank">panel</a> command. On the panel page all regressions are performed that are available within the OpenBB Terminal. This can be either:
+The dataset is now properly configured to allow for proper panel regressions. This can be done with the <a href="/terminal/reference/econometrics/panel" target="_blank">panel</a> command. On the panel page all regressions are performed that are available within the OpenBB Terminal. This can be either:
 
 - `-r pols` (Pooled OLS)
 - `-r re` (Random Effects)
@@ -601,7 +599,7 @@ panel -d wp.lwage -i wp.expersq,wp.union,wp.married,wp.year -r fe
 compare
 ```
 
-Everything after the `#` _on the same line_ refers to comments and will not be executed. All other commands will be. This ultimately leads to a comparison of three models and takes less than a few seconds to execute. See below for the comparison result, obtained via the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/econometrics/compare/" target="_blank">compare</a> command:
+Everything after the `#` _on the same line_ refers to comments and will not be executed. All other commands will be. This ultimately leads to a comparison of three models and takes less than a few seconds to execute. See below for the comparison result, obtained via the <a href="/terminal/reference/econometrics/compare" target="_blank">compare</a> command:
 
 ```txt
 022 Jun 20, 06:52 (🦋) /econometrics/ $ compare

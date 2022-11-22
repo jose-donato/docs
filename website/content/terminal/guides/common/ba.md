@@ -8,7 +8,7 @@ excerpt: "An Introduction to the Behavioural Analysis menu, within the Stocks me
 
 ---
 
-The Behavioural Analysis menu offers the user tools for gauging the overall public sentiment of a company online. The complexity of the tools range from message board scrapers to deep learning algorithms for financial analysis and prediction. Sentiment is particularly useful for momentum trading strategies, discovery, and general fundamental research. Navigate into the menu from the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/" target="_blank">Stocks</a> menu by entering, `ba`; or, using absolute paths from anywhere in the Terminal: `/stocks/ba`
+The Behavioural Analysis menu offers the user tools for gauging the overall public sentiment of a company online. The complexity of the tools range from message board scrapers to deep learning algorithms for financial analysis and prediction. Sentiment is particularly useful for momentum trading strategies, discovery, and general fundamental research. Navigate into the menu from the <a href="terminal/guides/intros/stocks/" target="_blank">Stocks</a> menu by entering, `ba`; or, using absolute paths from anywhere in the Terminal: `/stocks/ba`
 
 <img alt="The Behavioural Analysis submenu" src="https://user-images.githubusercontent.com/46355364/170242317-ae66ed0b-f2e8-4304-9231-ea833d01e0e2.png"></img>
 
@@ -40,11 +40,11 @@ Some data sources will require a valid API key, which can be obtained for free a
 - <a href="https://sentimentinvestor.com/" target="_blank">Sentiment
   Investor</a><br/>
 
-See the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/#accessing-other-sources-of-data-via-api-keys" target="_blank">Getting Started Guide</a> for help setting API keys in the Terminal.
+See the <a href="/terminal/quickstart/keys" target="_blank">Getting Started Guide</a> for help setting API keys in the Terminal.
 
 ### Examples
 
-As with every command, using the `-h` argument displays the help dialogue. Running the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/headlines/" target="_blank">headlines</a> command returns the following:
+As with every command, using the `-h` argument displays the help dialogue. Running the <a href="/terminal/reference/stocks/behavioural%20analysis/headlines/" target="_blank">headlines</a> command returns the following:
 
 ```
 (🦋) /stocks/ba/ $ headlines
@@ -52,7 +52,7 @@ As with every command, using the `-h` argument displays the help dialogue. Runni
 
 <img alt="headlines" src="https://user-images.githubusercontent.com/46355364/170244924-ffe6cd15-8d17-4690-bf44-d2b496dbc310.png"></img>
 
-Alternatively, running the <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/snews/" target="_blank">snews</a> command returns the following:
+Alternatively, running the <a href="/terminal/reference/stocks/behavioural%20analysis/snews/" target="_blank">snews</a> command returns the following:
 
 ```
 (🦋) /stocks/ba/ $ snews
@@ -92,7 +92,7 @@ Reddit Submission
 |                |                 |       |            |          | 1 Sne            |
 ```
 
-The Behavioural Analysis menu also has the ability to scan for sentiment on multiple platforms including Twitter and Google with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/sentiment/" target="_blank">sentiment</a>, <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/infer/" target="_blank">infer</a> and <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/queries/" target="_blank">queries</a>.
+The Behavioural Analysis menu also has the ability to scan for sentiment on multiple platforms including Twitter and Google with <a href="/terminal/reference/stocks/behavioural%20analysis/sentiment/" target="_blank">sentiment</a>, <a href="/terminal/reference/stocks/behavioural%20analysis/infer/" target="_blank">infer</a> and <a href="/terminal/reference/stocks/behavioural%20analysis/queries/" target="_blank">queries</a>.
 
 ```
 (🦋) /stocks/ba/ $ sentiment -c
@@ -132,11 +132,11 @@ Of the last 100 tweets, 19.00 % had a higher negative sentiment
 | bb              | 5%    |
 ```
 
-The <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/sentiment/" target="_blank">sentiment</a> command returns the following:
+The <a href="/terminal/reference/stocks/behavioural%20analysis/sentiment/" target="_blank">sentiment</a> command returns the following:
 
 <img alt="sentiment" src="https://user-images.githubusercontent.com/46355364/170243539-1ea3fc6a-d7ec-4991-a6bb-ed5879753328.png"></img>
 
-More advanced techniques can also be applied by using tools from <a href="https://sentimentinvestor.com" target="_blank">Sentiment Investor</a> that analyzes millions of messages to show the most talked about stocks by hour. This has the ability to show the most trending tickers with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/trend/" target="_blank">trend</a> and historical sentiment data with <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/common/behavioural_analysis/hist/" target="_blank">hist</a>.
+More advanced techniques can also be applied by using tools from <a href="https://sentimentinvestor.com" target="_blank">Sentiment Investor</a> that analyzes millions of messages to show the most talked about stocks by hour. This has the ability to show the most trending tickers with <a href="/terminal/reference/stocks/behavioural%20analysis/trend/" target="_blank">trend</a> and historical sentiment data with <a href="/terminal/reference/stocks/behavioural%20analysis/hist/" target="_blank">hist</a>.
 
 ```
 (🦋) /stocks/ba/ $ trend
