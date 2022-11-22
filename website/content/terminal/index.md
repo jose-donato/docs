@@ -58,11 +58,11 @@ OpenBB is a leading open source investment research software platform for access
 
 ---
 
-Want to learn how to use OpenBB Terminal? Check out our [Getting Started](/docs/getting-started) guide. Installation ? Check out our [Installation](/docs/installation) guide.
+Want to learn how to install the OpenBB Terminal? Check out our [Installation](/quickstart/installation) guide.
 
-How to import and export data? Check out our [Data Import/Export](/docs/data-import-export)
+Want to know how to import and export data? Check out our [Data Import/Export](/quickstart/data)
 
-User routines? Check out our [User Routines](/docs/user-routines)
+Looking for personalized routines? Check out our [User Routines](/quickstart/scripts)
 
 [contributors-shield]: https://img.shields.io/github/contributors/OpenBB-finance/OpenBBTerminal.svg?style=for-the-badge
 [contributors-url]: https://github.com/OpenBB-finance/OpenBBTerminal/graphs/contributors
