@@ -13,6 +13,11 @@ The OpenBB SDK is a set of tools for financial and data analysis. We recommend s
 - 4GB RAM or more
 - 5GB free storage
 - A code editor or Jupyter Notebook
+- Internet connection
+
+:::note NOTES ON THE INTERNET CONNECTIVITY
+Installation of the SDK with all the toolkits would require downloading around 4GB of data. Querying data does not require a lot of bandwidth but you will certainly have a more pleasant experience if you will be on a fast internet line. 4G networks provide a good enough experience so if you're traveling your personal hot-spot will do. While it's technically possible to use a subset of the functionality in off-line mode, you will not be able to use any data that is queried from the APIs of data providers and services.
+:::info
 
 :::info OS Specific Requirements
 
@@ -21,6 +26,7 @@ The OpenBB SDK is a set of tools for financial and data analysis. We recommend s
   <div class="gdoc-page">
 
 </div><p>The OpenBB platform requires MacOS Catalina or higher. The oldest Mac configuration known to work is a MacPro 3,1 (OS Catalina) and functions relying on the Intel Math Kernel (Forecast models like RNN) are not compatible with the CPU.</p>
+<p>Portfolio Optimization Toolkit and Forecasting Toolkit on Apple Silicon: To install the Forecasting toolkit on M1/M2 macs you need to use the x86_64 version of conda and install certain dependencies from conda-forge. Further Instructions can be found in the Installation section</p>
 <div class="gdoc-columns">
 
 </div>

@@ -78,7 +78,7 @@ Right-Click the app and select <code>Open</code>. You will see a message saying 
 
 </div>
 </TabItem>
-  <TabItem value="docker" label="Docker">Install with Docker 🍌
+  <TabItem value="docker" label="Docker">Install with Docker
   Here are the steps to get OpenBBTerminal using the Docker containers that we provide:
 
 Installing Docker and Docker Compose Pulling and running OpenBBTerminal Docker
