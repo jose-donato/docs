@@ -1,5 +1,5 @@
 ---
-title: Introduction to the Options Menu
+title: Options Menu
 keywords: ["Options", "stocks", "derivatives", "puts", "calls", "oi", "vol", "greeks", "voi", "volatility", "vsurf", "chains", "parity", "binom", "screen", "pricing", "hedge", "pcr", "info", "hist", "grhist", "plot", "parity"]
 date: "2022-06-07"
 type: guides
