@@ -3,18 +3,21 @@ title: hold
 description: OpenBB Terminal Function
 ---
 
-# Degiro
-
-## hold
-
-### Description: 
+# hold
 
 
 
-### Usage: 
+### Usage
+
 ```python
 usage: hold
 ```
 
+---
 
+## Parameters
+
+This command has no parameters
+
+---
 

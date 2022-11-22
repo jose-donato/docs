@@ -3,27 +3,26 @@ title: news
 description: OpenBB Terminal Function
 ---
 
-# Stocks
-
-## news
-
-### Description: 
+# news
 
 latest news of the company
 
-### Usage: 
+### Usage
+
 ```python
 usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
-| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | 2022-11-09 19:58:48.071838 | True | None |
+| n_start_date | The starting date (format YYYY-MM-DD) to search articles from | datetime.now() - timedelta(days=365) | True | None |
 | n_oldest | Show oldest articles first | True | True | None |
 | sources | Show news only from the sources specified (e.g bloomberg,reuters) |  | True | None |
-
+---
 
 ## Examples
 
@@ -72,4 +71,6 @@ usage: news [-d N_START_DATE] [-o] [-s SOURCES]
 │ https://www.thepennyhoarder.com/save-money/carpool-apps/                                                            │
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
 

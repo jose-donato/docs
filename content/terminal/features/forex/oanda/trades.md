@@ -3,18 +3,21 @@ title: trades
 description: OpenBB Terminal Function
 ---
 
-# Oanda
-
-## trades
-
-### Description: 
+# trades
 
 Get information about open trades.
 
-### Usage: 
+### Usage
+
 ```python
 usage: trades
 ```
 
+---
 
+## Parameters
+
+This command has no parameters
+
+---
 

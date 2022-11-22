@@ -3,18 +3,17 @@ title: index
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## index
-
-### Description: 
+# index
 
 Set a (multi) index for the dataset
 
-### Usage: 
+### Usage
+
 ```python
 usage: index -n {} [-i INDEX] [-a] [-d]
 ```
+
+---
 
 ## Parameters
 
@@ -24,7 +23,7 @@ usage: index -n {} [-i INDEX] [-a] [-d]
 | index | Columns from the dataset the user wishes to set as default |  | True | None |
 | adjustment | Whether to allow for making adjustments to the dataset to align it with the use case for Timeseries and Panel Data regressions | False | True | None |
 | drop | Whether to drop the column(s) the index is set for. | False | True | None |
-
+---
 
 ## Examples
 
@@ -88,4 +87,6 @@ Successfully updated 'wp' index to be 'nr, year'
 │ (17, 1981) │ 17.00 │ 1981.00 │ 0.00  │ 5.00  │ 0.00 │ 2804.00 │ 0.00    │ 13.00 │ 0.00  │ 1.52  │ 25.00   │ 2.00       │
 └────────────┴───────┴─────────┴───────┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
 ```
+
+---
 

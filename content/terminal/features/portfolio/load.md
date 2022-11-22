@@ -3,18 +3,17 @@ title: load
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## load
-
-### Description: 
+# load
 
 Load your portfolio transactions.
 
-### Usage: 
+### Usage
+
 ```python
 usage: load -f FILE [-n NAME] [-r RISK_FREE_RATE]
 ```
+
+---
 
 ## Parameters
 
@@ -23,7 +22,7 @@ usage: load -f FILE [-n NAME] [-r RISK_FREE_RATE]
 | file | The file to be loaded | None | False | None |
 | name | The name that you wish to give to your portfolio | None | True | None |
 | risk_free_rate | Set the risk free rate. | 0 | True | None |
-
+---
 
 ## Examples
 
@@ -118,4 +117,6 @@ Risk Free Rate: 0.00%
 │ 2022-05-02 │ YUM   │ STOCK │ Consumer Cyclical      │ Restaurants                         │ United States │ North America │ 115.76   │ 11       │ 40   │ 0       │ 1273.36    │ 1    │ USD      │
 └────────────┴───────┴───────┴────────────────────────┴─────────────────────────────────────┴───────────────┴───────────────┴──────────┴──────────┴──────┴─────────┴────────────┴──────┴──────────┘
 ```
+
+---
 

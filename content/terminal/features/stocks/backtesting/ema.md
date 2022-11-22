@@ -3,18 +3,17 @@ title: ema
 description: OpenBB Terminal Function
 ---
 
-# Backtesting
-
-## ema
-
-### Description: 
+# ema
 
 Strategy where stock is bought when Price  EMA(l)
 
-### Usage: 
+### Usage
+
 ```python
 usage: ema [-l LENGTH] [--spy] [--no_bench]
 ```
+
+---
 
 ## Parameters
 
@@ -23,5 +22,5 @@ usage: ema [-l LENGTH] [--spy] [--no_bench]
 | length | EMA period to consider | 20 | True | None |
 | spy | Flag to add spy hold comparison | False | True | None |
 | no_bench | Flag to not show buy and hold comparison | False | True | None |
-
+---
 

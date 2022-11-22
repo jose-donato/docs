@@ -3,18 +3,17 @@ title: grhist
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## grhist
-
-### Description: 
+# grhist
 
 Plot historical option greeks.
 
-### Usage: 
+### Usage
+
 ```python
 usage: grhist -s STRIKE [-p] [-g {iv,gamma,theta,vega,delta,rho,premium}] [-c CHAIN_ID] [-r] [-l LIMIT]
 ```
+
+---
 
 ## Parameters
 
@@ -26,7 +25,7 @@ usage: grhist -s STRIKE [-p] [-g {iv,gamma,theta,vega,delta,rho,premium}] [-c CH
 | chain_id | OCC option symbol |  | True | None |
 | raw | Display raw data | False | True | None |
 | limit | Limit of raw data rows to display | 20 | True | None |
-
-
 ![grhist](https://user-images.githubusercontent.com/46355364/154278932-086a0005-be71-4493-843d-3f9100a60905.png)
+
+---
 

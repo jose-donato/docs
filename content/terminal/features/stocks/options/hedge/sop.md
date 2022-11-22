@@ -3,20 +3,23 @@ title: sop
 description: OpenBB Terminal Function
 ---
 
-# Hedge
-
-## sop
-
-### Description: 
+# sop
 
 Displays selected option
 
-### Usage: 
+### Usage
+
 ```python
 usage: sop
 ```
 
+---
 
+## Parameters
+
+This command has no parameters
+
+---
 
 ## Examples
 
@@ -31,4 +34,6 @@ usage: sop
 │ Call │ Long │ 155.00 │ 0.06               │
 └──────┴──────┴────────┴────────────────────┘
 ```
+
+---
 

@@ -3,25 +3,24 @@ title: delete
 description: OpenBB Terminal Function
 ---
 
-# Econometrics
-
-## delete
-
-### Description: 
+# delete
 
 The column you want to delete from a dataset.
 
-### Usage: 
+### Usage
+
 ```python
 usage: delete [-d DELETE]
 ```
+
+---
 
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | delete | The columns you want to delete from a dataset. Use format: dataset.column or multiple with dataset.column,dataset.column2 | None | True | None |
-
+---
 
 ## Examples
 
@@ -84,4 +83,6 @@ usage: delete [-d DELETE]
 │ 9 │ 17.00 │ 0.00 │ 2804.00 │ 0.00    │ 13.00 │ 0.00  │ 1.52  │ 25.00   │ 2.00       │
 └───┴───────┴──────┴─────────┴─────────┴───────┴───────┴───────┴─────────┴────────────┘
 ```
+
+---
 

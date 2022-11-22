@@ -3,18 +3,17 @@ title: group
 description: OpenBB Terminal Function
 ---
 
-# Portfolio_Analysis
-
-## group
-
-### Description: 
+# group
 
 Displays portfolio grouped by a given column
 
-### Usage: 
+### Usage
+
 ```python
 usage: group [-g {}] [-a]
 ```
+
+---
 
 ## Parameters
 
@@ -22,5 +21,5 @@ usage: group [-g {}] [-a]
 | ---- | ----------- | ------- | -------- | ------- |
 | group | Column to group by | Ticker | True | Index([], dtype='object') |
 | allocation | Add allocation column in % to dataframe | False | True | None |
-
+---
 

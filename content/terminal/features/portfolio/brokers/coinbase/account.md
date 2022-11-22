@@ -3,18 +3,17 @@ title: account
 description: OpenBB Terminal Function
 ---
 
-# Coinbase
-
-## account
-
-### Description: 
+# account
 
 Display info about your trading accounts on Coinbase
 
-### Usage: 
+### Usage
+
 ```python
 usage: account [--all] [-c CURRENCY]
 ```
+
+---
 
 ## Parameters
 
@@ -22,5 +21,5 @@ usage: account [--all] [-c CURRENCY]
 | ---- | ----------- | ------- | -------- | ------- |
 | all | Flag to display all your account | False | True | None |
 | currency | Currency to display value in. | USD | True | None |
-
+---
 

@@ -3,11 +3,7 @@ title: greeks
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## greeks
-
-### Description
+# greeks
 
 The greeks for a given option.
 
@@ -16,6 +12,8 @@ The greeks for a given option.
 ```python
 usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 ```
+
+---
 
 ## Parameters
 
@@ -27,6 +25,7 @@ usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 | min | Minimum strike price to show. | None | True | None |
 | max | Maximum strike price to show. | None | True | None |
 | all | Whether to show all greeks. | False | True | None |
+---
 
 ## Examples
 
@@ -183,3 +182,6 @@ usage: greeks [-d DIVIDEND] [-r RISK_FREE] [-p] [-m MIN] [-M MAX] [-a]
 │ 1475.00 │ 0.25        │ 0.00  │ 0.00  │ 0.00 │ 0.00  │ 0.00 │ -0.00 │ -0.00 │ 0.00  │ 0.00  │
 └─────────┴─────────────┴───────┴───────┴──────┴───────┴──────┴───────┴───────┴───────┴───────┘
 ```
+
+---
+

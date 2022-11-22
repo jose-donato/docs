@@ -3,18 +3,17 @@ title: alloc
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## alloc
-
-### Description: 
+# alloc
 
 Show your allocation to each asset or sector compared to the benchmark.
 
-### Usage: 
+### Usage
+
 ```python
 usage: alloc [-a {assets,sectors,countries,regions}] [-t]
 ```
+
+---
 
 ## Parameters
 
@@ -22,7 +21,7 @@ usage: alloc [-a {assets,sectors,countries,regions}] [-t]
 | ---- | ----------- | ------- | -------- | ------- |
 | agg | The type of allocation aggregation you wish to do | assets | True | assets, sectors, countries, regions |
 | tables | Whether to also include the assets/sectors tables of both the benchmark and the portfolio. | False | True | None |
-
+---
 
 ## Examples
 
@@ -98,4 +97,6 @@ Portfolio vs. Benchmark - Top 10 Assets Allocation
 │ Asia          │ 14.96%    │ 7.00e-04  │ 14.89%     │
 └───────────────┴───────────┴───────────┴────────────┘
 ```
+
+---
 

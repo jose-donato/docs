@@ -3,11 +3,7 @@ title: info
 description: OpenBB Terminal Function
 ---
 
-# Options
-
-## info
-
-### Description
+# info
 
 Display option data [Source: Barchart.com]
 
@@ -16,6 +12,14 @@ Display option data [Source: Barchart.com]
 ```python
 usage: info
 ```
+
+---
+
+## Parameters
+
+This command has no parameters
+
+---
 
 ## Examples
 
@@ -50,3 +54,6 @@ usage: info
 │ Open Int (30-Day)     │  721,047                │
 └───────────────────────┴─────────────────────────┘
 ```
+
+---
+

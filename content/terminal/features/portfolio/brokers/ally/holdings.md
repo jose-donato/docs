@@ -3,18 +3,21 @@ title: holdings
 description: OpenBB Terminal Function
 ---
 
-# Ally
-
-## holdings
-
-### Description: 
+# holdings
 
 Display info about your trading accounts on Ally
 
-### Usage: 
+### Usage
+
 ```python
 usage: holdings
 ```
 
+---
 
+## Parameters
+
+This command has no parameters
+
+---
 

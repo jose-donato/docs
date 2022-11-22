@@ -3,11 +3,7 @@ title: futures
 description: OpenBB Terminal Function
 ---
 
-# Economy
-
-## futures
-
-### Description
+# futures
 
 Futures/Commodities from Wall St. Journal and FinViz.
 
@@ -17,13 +13,16 @@ Futures/Commodities from Wall St. Journal and FinViz.
 usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,prevClose}] [-r]
 ```
 
+---
+
 ## Parameters
 
 | Name | Description | Default | Optional | Choices |
 | ---- | ----------- | ------- | -------- | ------- |
 | commodity | Obtain commodity futures from FinViz |  | True | energy, metals, meats, grains, softs |
-| sortby |  | ticker | True | dict_keys(['ticker', 'last', 'change', 'prevClose']) |
+| sortby |  | ticker | True | ticker, last, change, prevClose |
 | reverse | Data is sorted in descending order by default. Reverse flag will sort it in an ascending way. Only works when raw data is displayed. | False | True | None |
+---
 
 ## Examples
 
@@ -140,3 +139,6 @@ usage: futures [-c {energy,metals,meats,grains,softs}] [-s {ticker,last,change,p
 │ Cocoa        │ 2611.00   │ 2556.00 │ -2.11      │
 └──────────────┴───────────┴─────────┴────────────┘
 ```
+
+---
+

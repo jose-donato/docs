@@ -3,18 +3,21 @@ title: plot
 description: OpenBB Terminal Function
 ---
 
-# Hedge
-
-## plot
-
-### Description: 
+# plot
 
 This function plots option payoff diagrams
 
-### Usage: 
+### Usage
+
 ```python
 usage: plot
 ```
 
+---
 
+## Parameters
+
+This command has no parameters
+
+---
 

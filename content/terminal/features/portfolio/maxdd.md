@@ -3,18 +3,21 @@ title: maxdd
 description: OpenBB Terminal Function
 ---
 
-# Portfolio
-
-## maxdd
-
-### Description: 
+# maxdd
 
 Show portfolio maximum drawdown
 
-### Usage: 
+### Usage
+
 ```python
 usage: maxdd
 ```
 
+---
 
+## Parameters
+
+This command has no parameters
+
+---
 
