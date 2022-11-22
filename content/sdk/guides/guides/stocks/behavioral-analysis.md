@@ -123,7 +123,7 @@ openbb.stocks.ba.regions("TSLA")
 
 ### rise
 
-See which search queries are popula right now
+See which search queries are popular right now
 
 ```python
 openbb.stocks.ba.rise("AAPL")
