@@ -8,29 +8,11 @@ import TabItem from '@theme/TabItem';
 
 The OpenBB SDK is a set of tools for financial and data analysis. We recommend starting out with some experience in finance, markets, and Python. The purpose of this page is to outline some of the background information required to get the most out of the software.
 
-### Recommended System Requirements
-
-- 16GB RAM or more
-- Dedicated graphics card
-- 5GB free storage
-- A code editor, such as VS Code, with some extensions:
-
-    - Jupyter
-    - Jupyter Power Toys
-    - Python Environment Manager
-    - Python Extension Pack
-    - mplstyle
-
-- Chrome or Firefox
-- Open Office
-
 ### Minumum System Requirements
 
-- 8GB RAM or more
+- 4GB RAM or more
 - 5GB free storage
-- A code editor, such as VS Code
-- Chrome or Firefox
-
+- A code editor or Jupyter Notebook
 
 :::info OS Specific Requirements
 
@@ -47,9 +29,8 @@ The OpenBB SDK is a set of tools for financial and data analysis. We recommend s
   <TabItem value="Windows" label="Windows">
   <div class="gdoc-page">
 
-</div><p>Windows 10 or higher is required, and the user account should be have administrator priviliges.
+</div><p>Windows 10 or higher is required.
 
-Additionaly, its reccomended Windows users also install [Git for Windows](https://git-scm.com/download/win) and use `Git Bash` as the terminal application instead of CMD or PowerShell.
 </p>
 <div class="gdoc-columns">
 
@@ -131,24 +112,3 @@ openbb.economy.ycrv_chart()
 ```
 
 ![Screenshot 2022-11-21 at 4 29 17 PM](https://user-images.githubusercontent.com/85772166/203185342-f019414d-24e2-4d8a-a718-10eeedb59e8c.png)
-
-Users should have some experience working with Python and be comfortable working from the command line. There are many online resources dedicated to learning the Python language, such as:
-
-- [Python.org](https://www.python.org/about/gettingstarted/)
-- [W3 Schools](https://www.w3schools.com/python/)
-- [Python Wiki](https://wiki.python.org/moin/BeginnersGuide)
-## Resources for Finance
-
-Below is a collection of useful websites:
-
-- [Investopedia](https://www.investopedia.com/)
-- [The Federal Reserve Economic Database](https://fred.stlouisfed.org/)
-- [Options Industry Council](https://www.optionseducation.org/)
-- [DTCC Learning](https://dtcclearning.com/)
-- [Nasdaqtrader](https://nasdaqtrader.com/Trader.aspx?id=symbollookup)
-- [EDGAR Full Text Search](https://www.sec.gov/edgar/search/#)
-- [EDGAR Historical Documents](https://www.sec.gov/cgi-bin/srch-edgar)
-- [US Government Open Data](https://data.gov/)
-- [ECB Statistical Warehouse](https://sdw.ecb.europa.eu/)
-- [AlphaVantage Academy](https://www.alphavantage.co/academy/)
-- [FINRA](https://otce.finra.org/otce/home)
