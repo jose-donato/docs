@@ -6,13 +6,7 @@ title: Installation
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Accessing the OpenBB Terminal
-
-The OpenBB Terminal can be directly installed on your computer via our
-installation program. Within this section, you are guided through the
-installation process and how to launch the program. If you are a developer,
-please have a look here. If you struggle with the installation process, please
-don’t hesitate to reach us on Discord or visit our contact page.
+The OpenBB Terminal can be directly installed on your computer via our installation program. Within this section, you are guided through the installation process and how to launch the program. If you struggle with the installation process, please don’t hesitate to reach us on [Discord](https://openbb.co/discord) or visit our [contact page](https://openbb.co/contact).
 
 OpenBB Terminal is available in all major platforms. With MacOS/Windows you can easily install with the installer (instructions below). It is also available to install on Linux with Docker or from source.
 

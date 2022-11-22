@@ -2,8 +2,6 @@
 sidebar_position: 4
 title: Commands
 ---
-### Explanation of Commands
-
 Commands, depicted in <b><span style={{color:"#00AAFF"}}>Light Blue</span></b>, execute an action or task. For example,
 the commands that you are able to use from any menu in the terminal (see <a href="#explanation-of-menus">Explanation of Menus</a>) are as follows:
 
@@ -16,8 +14,7 @@ the commands that you are able to use from any menu in the terminal (see <a href
   command. For example, within the `stocks` menu, `about candle` opens <a href="https://openbb-finance.github.io/OpenBBTerminal/terminal/stocks/candle/" target="_blank">this guide</a>.
 - `wiki`: search for a given expression on the Wikipedia without leaving the terminal.
 
-Continuing with the example mentioned at `quit`, revisit the `stocks` menu and look at the commands. At the top you
-will see a command named <a href="terminal/stocks/load" target="_blank">load</a>. To understand what this command can do, you can use `load -h` followed by `ENTER` (⏎). The `-h` stands for `help` and every command will have this feature. This will return the following:
+Continuing with the example mentioned at `quit`, revisit the `stocks` menu and look at the commands. At the top you will see a command named <a href="terminal/stocks/load" target="_blank">load</a>. To understand what this command can do, you can use `load -h` followed by `ENTER` (⏎). The `-h` stands for `help` and every command will have this feature. This will return the following:
 
 ```
 2022 May 19, 05:27 (🦋) /stocks/ $ load -h
@@ -48,10 +45,7 @@ optional arguments:
 For more information and examples, use 'about load' to access the related guide.
 ```
 
-This shows you all **arguments** the command has. These are additional options you can provide to the command. Each
-default value is also displayed which is used when you do not select this option. For example, if I would use the
-<a href="https://www.investopedia.com/ask/answers/12/what-is-a-stock-ticker.asp" target="_blank">stock ticker</a>
-of Amazon (AMZN, which can also be found with `search amazon`), I can use `load AMZN` which will return the following:
+This shows you all **arguments** the command has. These are additional options you can provide to the command. Each default value is also displayed which is used when you do not select this option. For example, if I would use the <a href="https://www.investopedia.com/ask/answers/12/what-is-a-stock-ticker.asp" target="_blank">stock ticker</a> of Amazon (AMZN, which can also be found with `search amazon`), I can use `load AMZN` which will return the following:
 
 ```
 2022 May 19, 05:27 (🦋) /stocks/ $ load AMZN
@@ -72,14 +66,9 @@ Company:  Amazon.com, Inc.
 └─────────┴────────┴──────────┴──────────┴──────────┴─────────────────┴──────────────────┴────────────┘
 ```
 
-The default values you see within `load -h` have been inputted here. E.g. the starting period is 2019-05-15. I can
-decide to change these default values by calling the argument and inputting a different value.
+The default values you see within `load -h` have been inputted here. E.g. the starting period is 2019-05-15. I can decide to change these default values by calling the argument and inputting a different value.
 
-Whenever you wish to apply an optional argument, you use the related shortcode, e.g. `-s` or `--start`. Then, if there
-is an additional word behind the argument (in this case there is, which is `START`) it implies the argument expects you
-to define a value. Within the documentation you can read that the format must be `YYYY-MM-DD` implying that `2010-01-01`
-will be valid. If there is not an additional word behind it, it is enough to write down `load AMZN -p` (which refers to
-the prepost optional argument)
+Whenever you wish to apply an optional argument, you use the related shortcode, e.g. `-s` or `--start`. Then, if there is an additional word behind the argument (in this case there is, which is `START`) it implies the argument expects you to define a value. Within the documentation you can read that the format must be `YYYY-MM-DD` implying that `2010-01-01` will be valid. If there is not an additional word behind it, it is enough to write down `load AMZN -p` (which refers to the prepost optional argument)
 
 Let's change the starting and ending period of the data that is being loaded in by doing the following:
 
@@ -102,8 +91,7 @@ Company:  Amazon.com, Inc.
 └─────────┴─────────┴─────────┴──────────┴──────────┴─────────────────┴──────────────────┴────────────┘
 ```
 
-We can check that this period has changed by looking into the <a href="https://www.investopedia.com/trading/candlestick-charting-what-is-it/" target="_blank">candle chart</a> with `candle`. This, again shares the same `-h` argument. This results in the following which indeed depicts our
-selected period.
+We can check that this period has changed by looking into the <a href="https://www.investopedia.com/trading/candlestick-charting-what-is-it/" target="_blank">candle chart</a> with `candle`. This, again shares the same `-h` argument. This results in the following which indeed depicts our selected period.
 
 ```
 2022 May 19, 05:44 (🦋) /stocks/ $ candle
@@ -111,7 +99,4 @@ selected period.
 
 <a target="_blank" href="https://user-images.githubusercontent.com/46355364/169503345-a9409637-dc7a-4193-9c87-38b1b6ee1a08.png"><img src="https://user-images.githubusercontent.com/46355364/169503345-a9409637-dc7a-4193-9c87-38b1b6ee1a08.png" alt="Amazon Candle Chart" width="800"/></a>
 
-As mentioned in the <a href="#explanation-of-menus">Explanation of Menus</a>, some information also transfers over to other menus and this includes the
-loaded market data from <a href="terminal/stocks/load" target="_blank">load</a>.
-So, if you would visit the `ta` menu (which stands for <a href="https://www.investopedia.com/terms/t/technicalanalysis.asp" target="_blank">Technical Analysis</a>) you will see that, by running any command, the selected period above is depicted again. Return to the Stocks menu again by using `q` and use it again to return to the home screen which can be shown with `?`.
-
+As mentioned in the <a href="#explanation-of-menus">Explanation of Menus</a>, some information also transfers over to other menus and this includes the loaded market data from <a href="terminal/stocks/load" target="_blank">load</a>. So, if you would visit the `ta` menu (which stands for <a href="https://www.investopedia.com/terms/t/technicalanalysis.asp" target="_blank">Technical Analysis</a>) you will see that, by running any command, the selected period above is depicted again. Return to the Stocks menu again by using `q` and use it again to return to the home screen which can be shown with `?`.

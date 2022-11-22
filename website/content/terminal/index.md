@@ -9,11 +9,7 @@ financial terminal that will help you make more informed decisions, faster."
 
 import Card from "@site/src/components/General/Card";
 
-OpenBB is a leading open source investment research software platform for
-accessing and analyzing financial market data. We represent millions of
-investors who want to leverage state-of-the-art data science and machine
-learning technologies to make sense of raw unrefined data. Our mission is to
-make investment research effective, powerful and accessible to everyone.
+OpenBB is a leading open source investment research software platform for accessing and analyzing financial market data. We represent millions of investors who want to leverage state-of-the-art data science and machine learning technologies to make sense of raw unrefined data. Our mission is to make investment research effective, powerful and accessible to everyone.
 
 ---
 
@@ -62,12 +58,9 @@ make investment research effective, powerful and accessible to everyone.
 
 ---
 
-Want to learn how to use OpenBB Terminal? Check out our
-[Getting Started](/docs/getting-started) guide. Installation ? Check out our
-[Installation](/docs/installation) guide.
+Want to learn how to use OpenBB Terminal? Check out our [Getting Started](/docs/getting-started) guide. Installation ? Check out our [Installation](/docs/installation) guide.
 
-How to import and export data? Check out our
-[Data Import/Export](/docs/data-import-export)
+How to import and export data? Check out our [Data Import/Export](/docs/data-import-export)
 
 User routines? Check out our [User Routines](/docs/user-routines)
 
